@@ -102,23 +102,23 @@ class ClassCodeGen(object):
             self._gen(cmd)
             self._indent -= 1
 
-#import StringIO
-#from pprint import pprint
-if __name__ == '__main__':
-    #filename = "ZNB_commands_2_56.inp" ; module_name = "ZNB_gen"
-    filename = "ZVA_commands_3_60.inp" ; module_name = "ZVA_gen"
 
-    parser = CmdListParser('../SCPI_cmd_lists/' + filename)
-    #pprint(parser.cmd_tree['*OPC'])
-    #fd = StringIO.StringIO()
+def generate_SCPI_class(input_file, module_name):
+    parser = CmdListParser('SCPI_cmd_lists/' + input_file)
 
-    fd = open("../RSSscpi/gen/" + module_name + ".py", 'wb')
-    g = ClassCodeGen(module_name, parser.cmd_tree, fd, source=filename)
+    path = "RSSscpi/gen/" + module_name + ".py"
+    fd = open(path, 'wb')
+    g = ClassCodeGen(module_name, parser.cmd_tree, fd, source=input_file)
     g.gen()
     fd.close()
-    
+
     import importlib
-    importlib.import_module("RSSscpi.gen." + module_name) # Test that the module can be loaded
-    
-    #print fd.getvalue()
+    importlib.import_module("RSSscpi.gen." + module_name)  # Test that the module can be loaded
+    print "Generated " + path
+
+if __name__ == '__main__':
+    import os
+    os.chdir("..")
+    generate_SCPI_class("ZVA_commands_3_60.inp", "ZVA_gen")
+    generate_SCPI_class("ZNB_commands_2_56.inp", "ZNB_gen")
     print "All good :)"

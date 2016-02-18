@@ -1,6 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
+from tools.generate_class_defs import generate_SCPI_class
+
+
+generate_SCPI_class("ZVA_commands_3_60.inp", "ZVA_gen")
+generate_SCPI_class("ZNB_commands_2_56.inp", "ZNB_gen")
 
 setup(name='RSSscpi',
       version='0.1',

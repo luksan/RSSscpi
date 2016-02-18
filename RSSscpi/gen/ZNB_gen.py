@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from ZNB_commands_2_56.inp on 2016-02-18 09:34
+# Generated from ZNB_commands_2_56.inp on 2016-02-18 13:44
 from SCPI_gen_support import Instrument, SCPINode, SCPINodeN, SCPIQuery, SCPISet
 class ZNB_gen(Instrument):
     class CAL(SCPINode, SCPIQuery):
