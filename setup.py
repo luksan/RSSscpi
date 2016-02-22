@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup
-from tools.generate_class_defs import generate_SCPI_class
+from tools.generate_class_defs import generate_SCPI_class, RohdeZVAWebhelp, RohdeZNBWebhelp
 
 
-generate_SCPI_class("ZVA_commands_3_60.inp", "ZVA_gen")
-generate_SCPI_class("ZNB_commands_2_56.inp", "ZNB_gen")
+generate_SCPI_class("ZVA_commands_3_60.inp", "ZVA_gen", RohdeZVAWebhelp())
+generate_SCPI_class("ZNB_commands_2_56.inp", "ZNB_gen", RohdeZNBWebhelp())
 
 setup(name='RSSscpi',
       version='0.1',
