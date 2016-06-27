@@ -124,17 +124,19 @@ class SCPINodeN(SCPINodeBase):
 
     def __call__(self, N=None):
         """
+        Returns a copy of the object, with the node index set to N.
         :param N: Integer index to be appended to the command node string.
         :return: *self*
         """
+        cpy = type(self)(self._parent)
         if N is not None:
             N = str(N)
             if not N.isdigit():
                 raise TypeError(self.build_cmd() + "(XX) <- Node index must be integer, or None.")
-            self.N = N
+            cpy.N = N
         else:
-            self.N = ""
-        return self
+            cpy.N = ""
+        return cpy
 
     def __str__(self):
         return self.__class__._cmd + self.N

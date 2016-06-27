@@ -25,4 +25,11 @@ def test():
     ass(1).DEFine.w(*x)
     znb.OPC.q()
 
+    z1 = znb.CALCulate(1)
+    z = z1.MARKer(1)
+    z.q()
+    y = z1(2).MARKer(3)
+    z.q()
+    y.q()
+
 test()
