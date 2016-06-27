@@ -5,11 +5,19 @@
 @author: Lukas Sandström
 """
 
+try:
+    # For Python 3.0 and later
+    from urllib.request import urlopen
+except ImportError:
+    # Fall back to Python 2's urllib2
+    from urllib2 import urlopen, HTTPError
+    from urllib import urlretrieve
+
 from bs4 import BeautifulSoup
 import re
 
 class CmdNode(dict):
-    leaf = "_leaf"
+    leaf = "_leaf"  # Constant indicating that there are no sub-nodes.
     
     def __init__(self, is_countable=False):
         super(CmdNode, self).__init__()
@@ -45,9 +53,13 @@ class CmdListParser(object):
     def _parse(self):
         with open(self.filename) as fd:
             for line in fd:
-                if not line or line[0] == '/':
+                if not line or line[0] == '/' or line.isspace():
                     continue
-                self._add_cmd(*line.split())
+                try:
+                    self._add_cmd(*line.split())
+                except:
+                    print "Error on line: '" + line + "'"
+                    raise
             
     def _add_cmd(self, cmd, arg=None, unit=None):
         query = False
@@ -76,7 +88,7 @@ class RohdeZVAWebhelp(Webhelp):
 
     def load_urls(self):
         """
-        Load help URLs from the Index page of the online manual, saved localy.
+        Load help URLs from the Index page of the online manual, saved locally.
         :return:
         """
         for u in self.soup("a"):
@@ -102,13 +114,45 @@ class RohdeZVAWebhelp(Webhelp):
 
 class RohdeZNBWebhelp(Webhelp):
     def __init__(self):
-        html = open("SCPI_cmd_lists/ZNB_command_list.htm")
-        self.base_url = "http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_5/Content/"
-        self.common_commands = "https://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_5/Content/d36e62515.htm"
-        self.interface_messages = "https://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_5/Content/8e04d5566c46494a.htm"
-        self.soup = BeautifulSoup(html)
-        self.urls = dict()
+
+        self._base_url = "http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_{1}{0}"
+        self._help_rev = 6
+
+        self.toc_file = "SCPI_cmd_lists/ZNB_webhelp_toc.xml"
+        self.cmd_list_file = "SCPI_cmd_lists/ZNB_webhelp_command_list.htm"
+
+        self._urls = dict()
+        self._common_commands = None  # *CLS, *OPC, etc.
+        self._interface_messages = None  # VXI-11 Interface messages, @LOC, @DCL, etc.
+
+        self.download_cmd_list()
         self.load_urls()
+
+    def download_cmd_list(self):
+        doc_rev = None
+
+        for rev in range(self._help_rev, self._help_rev + 10):  # Search after newer revisions of the manual
+            try:
+                url = self._base_url.format("/Data/Toc.xml", rev)
+                toc = urlopen(url)
+            except HTTPError:
+                continue
+            print "ZNB webhelp is at revision", rev, ", started search at rev", self._help_rev
+            self._help_rev = rev
+            break
+        else:
+            raise RuntimeError("No valid ZNB web help URL found")
+
+        toc = BeautifulSoup(toc)
+        with open(self.toc_file, "w") as f:
+            f.write(toc.prettify("utf-8"))
+
+        cmd_list_url = toc.find(title="List of Commands")["link"]
+        url = self._base_url.format(cmd_list_url, self._help_rev)
+        urlretrieve(url, "SCPI_cmd_lists/ZNB_webhelp_command_list.htm")
+
+        with open("SCPI_cmd_lists/ZNB_webhelp_rev.txt", "w") as u:
+            u.write("%i" % self._help_rev)
 
     def load_urls(self):
         """
@@ -116,21 +160,30 @@ class RohdeZNBWebhelp(Webhelp):
         https://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_5/Content/c0e6efab4c3f4280.htm
         :return:
         """
-        d = self.soup.find("div", class_="block")
+        toc_soup = BeautifulSoup(open(self.toc_file))
+
+        common = toc_soup.find(title="Command Reference").find(title="Common Commands")["link"]
+        self._common_commands = self._base_url.format(common, self._help_rev)
+
+        if_msg = toc_soup.find(title="VXI-11 Interface Messages")["link"]
+        self._interface_messages = self._base_url.format(if_msg, self._help_rev)
+
+        cmd_soup = BeautifulSoup(open(self.cmd_list_file))
+        d = cmd_soup.find("div", class_="block")
         for u in d("a"):
             cmd = u.string
             url = u['href']
             cmd_key = str(cmd).translate(None, "[]?")
             cmd_key = re.sub(r"([^:])<\w+?>", r"\1", cmd_key)
-            self.urls[cmd_key] = (cmd, url)
+            self._urls[cmd_key] = (cmd, url)
 
     def get_help_url(self, cmd):
         if cmd[0][0] == "*":
-            return self.common_commands
+            return self._common_commands
         if cmd[0][0] == "@":
-            return self.interface_messages
+            return self._interface_messages
         try:
-            return self.base_url + self.urls[":".join(cmd)][1]
+            return self._base_url.format("/Content/" + self._urls[":".join(cmd)][1], self._help_rev)
         except KeyError:
             return None
 
@@ -239,6 +292,6 @@ if __name__ == '__main__':
     import os
     os.chdir("..")
     generate_SCPI_class("ZVA_commands_3_60.inp", "ZVA_gen", RohdeZVAWebhelp())
-    generate_SCPI_class("ZNB_commands_2_56.inp", "ZNB_gen", RohdeZNBWebhelp())
+    generate_SCPI_class("ZNB_commands_2_70.inp", "ZNB_gen", RohdeZNBWebhelp())
     print "All good :)"
 
