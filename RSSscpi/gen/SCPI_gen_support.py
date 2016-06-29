@@ -32,13 +32,13 @@ class SCPINodeBase(object):
         self._parent = parent
 
     def __str__(self):
-        return self.__class__._cmd
+        return self._cmd
 
     def __getattribute__(self, name):
         x = object.__getattribute__(self, name)
-        if inspect.isclass(x) and issubclass(x, SCPINodeBase):
+        if inspect.isclass(x) and issubclass(x, SCPINodeBase) and name == x.__name__:
             # Automatic instantiation of SCPINodeBase class accesses
-            return x(self)
+            return x(parent=self)
         return x
 
     def build_cmd(self):
@@ -47,8 +47,8 @@ class SCPINodeBase(object):
 
     def _build_cmd_r(self):
         if not self._parent:
-            return str(self)
-        return self._parent._build_cmd_r() + ":" + str(self)
+            return self._cmd
+        return self._parent._build_cmd_r() + ":" + self._cmd
 
     def _get_root(self):
         """
@@ -65,7 +65,7 @@ class SCPINode(SCPINodeBase):
 
     def __call__(self, *args):
         if len(args):
-            raise TypeError(self.build_cmd() + "(XX) <- invalid index operation, command node does not support indexing.")
+            raise TypeError(self.build_cmd() + "(XX) <- invalid index operation, SCPI node does not support indexing.")
         return self
 
 
@@ -119,8 +119,12 @@ class SCPINodeN(SCPINodeBase):
     _cmd = "SPCINodeN"
 
     def __init__(self, parent=None):
-        super(SCPINodeN, self).__init__(parent)
-        self.N = ""
+        super(SCPINodeN, self).__init__(parent=parent)
+        self._N = ""
+
+    def _N_setter(self, n):
+        self._cmd = self.__class__._cmd + str(n)
+    _N = property(None, _N_setter)
 
     def __call__(self, N=None):
         """
@@ -128,18 +132,13 @@ class SCPINodeN(SCPINodeBase):
         :param N: Integer index to be appended to the command node string.
         :return: *self*
         """
-        cpy = type(self)(self._parent)
+        cpy = self.__class__(parent=self._parent)
         if N is not None:
             N = str(N)
             if not N.isdigit():
-                raise TypeError(self.build_cmd() + "(XX) <- Node index must be integer, or None.")
-            cpy.N = N
-        else:
-            cpy.N = ""
+                raise ValueError(self.build_cmd() + "(%s) <- Node index must be integer, or None." % N)
+            cpy._N = N
         return cpy
-
-    def __str__(self):
-        return self.__class__._cmd + self.N
 
 
 class SCPICmd(SCPINodeBase):
