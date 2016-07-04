@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 import re
 
 class CmdNode(dict):
-    leaf = "_leaf"  # Constant indicating that there are no sub-nodes.
+    leaf = "_leaf"  # Constant indicating that the current node is a leaf node
     
     def __init__(self, is_countable=False):
         super(CmdNode, self).__init__()
@@ -73,6 +73,12 @@ class CmdListParser(object):
 
 class Webhelp(object):
     def get_help_url(self, cmd):
+        """
+        :param cmd: A SCPI command, ex. CALCULATE:MARKER, in the form of a string list with one element per node.
+        :type cmd: list of str
+        :return: A string URL for the relevant page in the online manual, or None if not found.
+        :rtype: str or None
+        """
         return None
 
 
@@ -232,6 +238,7 @@ class ClassCodeGen(object):
 
         :param class_name: The name of the Python module to be generated.
         :param cmd_tree: A SCPI command tree structure, obtained from a CmdListParser.
+        :type cmd_tree: CmdNode
         :param io_obj: An IO object to output the module to.
         :param source: String comment indicating the source file of the SCPI command structure.
         """
@@ -243,13 +250,13 @@ class ClassCodeGen(object):
         self.hlp = webhelp
 
         self._cmd_cnt = 0
-        self._cmd_help_cnd = 0
+        self._cmd_help_cnt = 0
     
     def _preamble(self):
         import time
         self._out("# -*- coding: utf-8 -*-")
         self._out("# Generated from " + self.source + " on " + time.strftime("%Y-%m-%d %H:%M"))
-        self._out("from SCPI_gen_support import Instrument, SCPINode, SCPINodeN, SCPIQuery, SCPISet")
+        self._out("from SCPI_gen_support import Instrument, SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool")
         self._out("class " + self.class_name + "(Instrument):")
         self._indent += 1
         
@@ -258,45 +265,67 @@ class ClassCodeGen(object):
         self._gen(self.cmd_tree, [])
         self._out("# END OF " + self.class_name)
         c1 = self._cmd_cnt
-        c2 = self._cmd_help_cnd
+        c2 = self._cmd_help_cnt
         c3 = str(int(float(c2)/c1 * 100))
         print self.class_name + ":", c1, "commands,", c2, "have a help URL (" + c3 + "%)."
 
     def _out(self, str_):
         self._output.write(" "*(self._indent*4) + str_ + "\n")
 
-    def _make_docstr(self, cmd):
+    def _make_docstr(self, cmd, cmd_str_list):
+        """
+        Creates the docstring for the generated SCPI node
+
+        :param cmd: The CmdNode being processed
+        :type cmd: CmdNode
+        :param cmd_str_list: A list of strings making up the SCPI command
+        :type cmd_str_list: list of str
+        :rtype: None
+        """
         self._cmd_cnt += 1
         self._out('"""')
-        cmd_str = ":".join(cmd)
-        url = self.hlp.get_help_url(cmd)
+        cmd_str = ":".join(cmd_str_list)
+        url = self.hlp.get_help_url(cmd_str_list)
         if url is not None:
             self._out("`"+cmd_str)
             self._out("<" + url + ">`_")
-            self._cmd_help_cnd += 1
+            self._cmd_help_cnt += 1
         else:
             self._out(cmd_str)
+        self._out("")
+        self._out("Arguments: " + ", ".join(cmd.args))
         self._out('"""')
 
     def _gen(self, cmd_tree, parents):
+        """
+        Generates the class definitions for the command tree.
+
+        :param cmd_tree:
+        :type cmd_tree: CmdNode
+        :param parents:
+        :type parents: list of str
+        """
         for cmd_str in sorted(cmd_tree):
             cmd = cmd_tree[cmd_str]
 
-            base_class = "SCPINode"
-            if cmd.is_countable:
-                base_class = "SCPINodeN"
-            if cmd.has_query:
-                base_class += ", SCPIQuery"
-            if cmd.has_set:
-                base_class += ", SCPISet"
+            base_class = "SCPINodeN" if cmd.is_countable else "SCPINode"
+
+            if "ON" in cmd.args:
+                base_class += ", SCPIBool"
+            else:
+                if cmd.has_query:
+                    base_class += ", SCPIQuery"
+                if cmd.has_set:
+                    base_class += ", SCPISet"
 
             name = cmd_str
             if name[0] == '*' or name[0] == '@':
                 name = name[1:]            
             self._out("class " + name+"(" + base_class + "):")
             self._indent += 1
-            self._make_docstr(parents + [cmd_str])
+            self._make_docstr(cmd, parents + [cmd_str])
             self._out('_cmd = "' + cmd_str + '"')
+            self._out('args = ["' + '", "'.join(cmd.args) + '"]')
             self._out("")
             self._gen(cmd, parents + [cmd_str])
             self._indent -= 1

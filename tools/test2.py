@@ -6,11 +6,15 @@ Created on Wed Feb 10 21:57:01 2016
 """
 
 from RSSscpi.gen.ZNB_gen import ZNB_gen
-from RSSscpi.gen.SCPI_gen_support import DummyVisa
+from RSSscpi.gen.SCPI_gen_support import DummyVisa, SCPINodeBase
+from RSSscpi import ZNB
+import inspect
+
+znb = ZNB(DummyVisa("K1"))
+
 
 def test():
-    znb = ZNB_gen(DummyVisa("K1"))
-    
+    print "*  test()"
     znb.CALCulate.MARKer(3).FUNCtion().BWIDth.q("asd")
     
     znb.CALCulate.MARKer()
@@ -32,4 +36,42 @@ def test():
     z.q()
     y.q()
 
+
+def test2():
+    assert inspect.isclass(znb.ABORt.__class__)
+    assert isinstance(znb.ABORt, SCPINodeBase)
+
+def test_marker():
+    print "*  test_marker()"
+    ch = znb.get_channel(1)
+    tr = ch.get_trace("Tr1")
+    m1 = tr.get_marker(1)
+    x = m1.tracking
+    m1.tracking = False
+    m1.state = True
+    m1.state = "OFF"
+    m1.y
+    try:
+        m1.y = 2
+    except AttributeError as a:
+        print a
+
+def test_trace():
+    print "*  test_trace()"
+    ch = znb.get_channel(2)
+    tr = ch.get_trace("Tr2")
+    x = tr.format
+    tr.format = 2
+
+def test_channel():
+    print "*  test_channel()"
+    ch = znb.get_channel(3)
+    x = ch.sweep_points.query_default()
+    ch.sweep_points.value = 301
+
+test_channel()
+test_trace()
+test_marker()
+
+test2()
 test()
