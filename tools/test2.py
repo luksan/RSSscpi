@@ -69,9 +69,15 @@ def test_channel():
     x = ch.sweep_points.query_default()
     ch.sweep_points.value = 301
 
+def test_diagram():
+    print "*  test_diagram()"
+    dia = znb.get_diagram(1)
+    dia.save_screenshot("hej.png")
+
 test_channel()
 test_trace()
 test_marker()
+test_diagram()
 
 test2()
 test()

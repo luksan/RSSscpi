@@ -24,7 +24,7 @@ class DummyVisa(object):
 class SCPINodeBase(object):
     _cmd = "SCPINodeBase"
 
-    def __init__(self, parent):
+    def __init__(self, parent=None):
         """
         :param parent: The command node level above this node.
         :type parent: SCPINodeBase or None
@@ -81,19 +81,37 @@ class Instrument(SCPINodeBase):
         """
 
     @staticmethod
-    def _build_arg_str(args):
-        return ", ".join([str(x) for x in args])
+    def _build_arg_str(cmd, args):
+        if "'string'" in cmd.args:  # string arguments need to be quoted
+            ret = []
+            for x in args:
+                if x is None:
+                    continue
+                x = str(x)
+                if x in cmd.args or x[0] == "'" and x[-1] == "'" or x[0] == "#":
+                    ret.append(x)
+                else:
+                    ret.append("'" + x + "'")
+        else:
+            ret = [str(x) for x in args if x is not None]
+        return ", ".join(ret)
 
     def write(self, cmd, *args):
         """
-        Send a string to the instrument, without reading a respone.\n
+        Send a string to the instrument, without reading a respone.
+
         :param cmd: The SCPI command
         :type cmd: SCPINodeBase
         :param args: Any number of arguments for the command, will be converted with str()
         :rtype: None
         """
         self.command_cnt += 1
-        self._visa_res.write(cmd.build_cmd() + " " + self._build_arg_str(args))
+        x = cmd.build_cmd() + " " + self._build_arg_str(cmd, args)
+        try:
+            self._visa_res.write(x)
+        except:
+            print "Resource error", x
+            raise
 
     def opc(self, cmd, *args):
         """Send command followed by *OPC? query in the same command string.\n
@@ -103,20 +121,32 @@ class Instrument(SCPINodeBase):
         :rtype: None
         """
         self.command_cnt += 1
-        self._visa_res.query(cmd.build_cmd() + " " + self._build_arg_str(args) + ";*OPC?")
+        x = cmd.build_cmd() + " " + self._build_arg_str(cmd, args) + ";*OPC?"
+        try:
+            self._visa_res.query(x)
+        except:
+            print "Resource error",
+            raise
 
     def query(self, cmd, *args):
         """
-        Execute a SCPI query.\n
+        Execute a SCPI query
+
         :param cmd: The SCPI command
         :type cmd: SCPINodeBase
-        :param args: A list of arguments for the command, will be converted with str()
+        :param args: A list of arguments for the command, will be converted with str() and joined with ", "
         :return: The response from the pyvisa query
+        :rtype: SCPIResponse
         """
         # TODO: parse return values?
         # TODO: add function to read back result later
         self.command_cnt += 1
-        return self._visa_res.query(cmd.build_cmd() + "? " + self._build_arg_str(args))
+        x = cmd.build_cmd() + "? " + self._build_arg_str(cmd, args)
+        try:
+            return SCPIResponse(self._visa_res.query(x))
+        except:
+            print "Resource error", x
+            raise
 
     def preset(self):
         self.RST.w()
@@ -125,7 +155,7 @@ class Instrument(SCPINodeBase):
 class SCPINodeN(SCPINodeBase):
     _cmd = "SPCINodeN"
 
-    def __init__(self, parent):
+    def __init__(self, parent=None):
         super(SCPINodeN, self).__init__(parent=parent)
         self._n = None
 
@@ -172,7 +202,59 @@ class SCPIResponse(object):
         return str(self) in ["1", "ON"]
 
     def __str__(self):
-        return self.raw.strip()
+        return self.raw.strip().strip("'")
+
+    def __int__(self):
+        return int(str(self))
+
+    def comma_list_pairs(self):
+        """
+        Split the comma separated response into a list of tuples,
+        where each tuple containing two consecutive response elements.
+
+        :return: [ (str1, str2), ..]
+        """
+        x = self.split_comma()
+        return zip(x[0::2], x[1::2])
+
+    def split_comma(self):
+        """
+        Split the response into a list, separated by commas.
+        Each list element is stripped of leading and trailing whitespace.
+
+        :return: a string list
+        :rtype: list of str
+        """
+        return map(str.strip, self.raw.split(","))
+
+    def block_data(self):
+        """
+        Interpret the response as a SCPI block data transfer
+
+        :return: the data from the block transfer
+        """
+        return SCPIBlockData.parse(self.raw)
+
+
+class SCPIBlockData(object):
+    def __init__(self, data=None):
+        self.data = data
+
+    @staticmethod
+    def parse(blk):
+        if blk[0] != "#":
+            print "WARN: invalid block data header"
+        n = int(blk[1])  # The number of digits in the data length specifier
+        l = int(blk[2:n + 2])  # data length
+        return blk[n + 2:l + n + 2]
+
+    @staticmethod
+    def format(data):
+        l = str(len(data))
+        return "#" + str(len(l)) + l + data
+
+    def __str__(self):
+        return self.format(self.data)
 
 
 class SCPICmd(SCPINodeBase):
@@ -190,7 +272,8 @@ class SCPIQuery(SCPICmd):
 class SCPISet(SCPICmd):
     def w(self, *args):
         """
-        Send a string to the VISA resorce, without reading the respone.
+        Send a string to the VISA resource, without reading the response.
+
         :rtype: None
         """
         return self._get_root().write(self, *args)
