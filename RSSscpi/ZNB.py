@@ -17,6 +17,7 @@ class ZNB(ZNB_gen):
         self.filesystem = Filesystem(self)
 
     def init(self):
+        super(ZNB_gen, self).init()
         self.SYSTem.COMMunicate.GPIB.SELF.RTERminator().w("EOI")
         self.SYSTem.COMMunicate.CODec().w("UTF8")  # Set the character encoding
 
@@ -96,22 +97,44 @@ class Channel(object):
         """
         :param n: Channel number
         :param instrument: A SCPINode instance, linked to the instrument
-        :type instrument: ZNB_gen
+        :type instrument: ZNB
         """
         self.n = n
         self.instrument = instrument
         self.CALC = instrument.CALCulate(n)
         self.CONFch = instrument.CONFigure.CHANnel(n)
         self.SWEep = instrument.SENSe(n).SWEep
+        self.CORRection = instrument.SENSe(n).CORRection
 
-    def get_trace(self, name, n=None):
+    name = SCPIProperty(["NAME"], None, lambda self: self.CONFch)
+    """
+    The channel name, CONFigure:CHANnel<Ch>:NAME
+    """
+
+    def get_trace(self, name):
         """
 
         :param name: The name of the trace
-        :param n: The trace id, if known
         :rtype: Trace
         """
         return Trace(name, self)
+
+    def create_trace(self, name, parameter, diagram=None):
+        """
+        Create a new trace with a measurement parameter according to CALCulate<Ch>:PARameter:SDEFine
+
+        :param name: The trace name
+        :param parameter: A string defining the measured quantity
+        :param diagram: An optional Diagram, which the trace will be assigned to
+        :type diagram: Diagram
+        :return: A reference to the new trace
+        :rtype: Trace
+        """
+        self.CALC.PARameter.SDEFine().w(name, parameter)
+        trace = self.get_trace(name)
+        if diagram is not None:
+            trace.assign_diagram(diagram)
+        return trace
 
     @property
     def active_trace(self):
@@ -127,20 +150,35 @@ class Channel(object):
     @active_trace.setter
     def active_trace(self, trace):
         name = trace.name if isinstance(trace, Trace) else str(trace)
-        self.CALC.PARameter.SELect.w(name)
+        self.CALC.PARameter.SELect().w(name)
 
     sweep_points = SCPIPropertyMinMax(["POINts"], None, lambda self: self.SWEep)
     """
     The number of points in the sweep. SENSe<Ch>:SWEep:POINts
     """
 
+    def cal_auto(self, vna_ports, cal_unit_ports=None, cal_type="FNPort", cal_unit_characterization=""):
+        cal_unit_characterization = "'" + cal_unit_characterization + "'"
+        if cal_unit_ports:
+            self.CORRection.COLLect.AUTO.PORTs.TYPE().w(cal_type, cal_unit_characterization,
+                                                        *[str(x) + ", " + str(y) for x,y in zip(vna_ports, cal_unit_ports)])
+        else:
+            self.CORRection.COLLect.AUTO.TYPE().w(cal_type, cal_unit_characterization, *vna_ports)
 
-class Sweep(ZNB_gen.SENSe.SWEep):
+    def save_touchstone(self, filename, ports, fmt="LOGPhase", mode_impedance="CIMPedance"):
+        self.instrument.MMEMory.STORe.TRACe.PORTs().w(self.n, filename, fmt, mode_impedance, *ports)
+        return File(self.instrument, filename)
+
+
+class Sweep(ZNB_gen.SENSe.SWEep.__class__):
     def __init__(self, channel):
         super(Sweep, self).__init__(parent=channel.SWEep)
 
 
 class Trace(object):
+    """
+    A class representing a trace on the VNA. Instances are obtained via Channel.create_trace() and Channel.get_trace()
+    """
     def __init__(self, name, channel):
         """
         :param n: The trace ID, CONF:TRAC:CHAN:NAME:ID? '<trace name>'
@@ -204,6 +242,15 @@ class Trace(object):
         :rtype: Marker
         """
         return Marker(n, self)
+
+    def assign_diagram(self, diagram):
+        """
+        Assigns the trace to a diagram.
+
+        :param diagram: An existing Diagram area
+        :type diagram: Diagram
+        """
+        diagram.TRACe.EFEed().w(self.name)
 
 
 class Marker(ZNB_gen.CALCulate.MARKer):  # Add direct inheritance from object to un-confuse PyCharm
@@ -342,6 +389,9 @@ class Path(object):
             self.filename = filename
             self.path = path
 
+    def __str__(self):
+        return ntpath.join(self.path, self.filename)
+
 
 class Directory(Path):
     def __init__(self, path, instrument):
@@ -378,7 +428,10 @@ class Directory(Path):
 
 
 class File(Path):
-    def __init__(self, instrument, filename, path):
+    """
+    An object representing a file on the instrument.
+    """
+    def __init__(self, instrument, filename, path=None):
         """
 
         :param instrument:
@@ -387,13 +440,9 @@ class File(Path):
         :param path:
         """
         Path.__init__(self, filename=filename, path=path)
-
         self.instrument = instrument
-        if ntpath.isabs(filename):
-            self.path, self.filename = ntpath.split(filename)
-        else:
-            self.filename = filename
-            self.path = path
+        if self.path is None:
+            self.path = instrument.filesystem.getcwd()
 
     @staticmethod
     def isdir():

@@ -7,6 +7,14 @@ Created on Thu Feb 11 11:30:33 2016
 
 import inspect
 
+# TODO
+# Implement the cmd structure with properties returning a Cmd object
+# znb.SENSe -> SENSe(znb)
+# class ZNB_gen(object):
+#   SENSe = SCPICmdProp_SENSe("SENSe")
+# class SCPICmdProp_SENSe(object):
+#    FREQuency = SCPICmdProp_SENSe_FREQuency("FREQuency")
+
 
 class DummyVisa(object):
 
@@ -34,6 +42,11 @@ class SCPINodeBase(object):
     def __str__(self):
         return self._cmd
 
+    # def __get__(self, instance, owner):
+    #     if not instance:
+    #         return self
+    #     return self.__class__(parent=instance)
+
     def __getattribute__(self, name):
         x = object.__getattribute__(self, name)
         if inspect.isclass(x) and issubclass(x, SCPINodeBase) and name == x.__name__:
@@ -53,7 +66,7 @@ class SCPINodeBase(object):
     def _get_root(self):
         """
         :return: Returns the root node of the command tree, an Instrument.
-        :rtype: Instrument
+        :rtype: RSSscpi.gen.Instrument
         """
         if not self._parent:
             return self
@@ -67,89 +80,6 @@ class SCPINode(SCPINodeBase):
         if len(args):
             raise TypeError(self.build_cmd() + "(XX) <- invalid index operation, SCPI node does not support indexing.")
         return self
-
-
-class Instrument(SCPINodeBase):
-    _cmd = ""
-
-    def __init__(self, visa_res):
-        super(Instrument, self).__init__(None)
-        self._visa_res = visa_res
-        self.command_cnt = 0
-        """
-        The number of writes/queries performed in total
-        """
-
-    @staticmethod
-    def _build_arg_str(cmd, args):
-        if "'string'" in cmd.args:  # string arguments need to be quoted
-            ret = []
-            for x in args:
-                if x is None:
-                    continue
-                x = str(x)
-                if x in cmd.args or x[0] == "'" and x[-1] == "'" or x[0] == "#":
-                    ret.append(x)
-                else:
-                    ret.append("'" + x + "'")
-        else:
-            ret = [str(x) for x in args if x is not None]
-        return ", ".join(ret)
-
-    def write(self, cmd, *args):
-        """
-        Send a string to the instrument, without reading a respone.
-
-        :param cmd: The SCPI command
-        :type cmd: SCPINodeBase
-        :param args: Any number of arguments for the command, will be converted with str()
-        :rtype: None
-        """
-        self.command_cnt += 1
-        x = cmd.build_cmd() + " " + self._build_arg_str(cmd, args)
-        try:
-            self._visa_res.write(x)
-        except:
-            print "Resource error", x
-            raise
-
-    def opc(self, cmd, *args):
-        """Send command followed by *OPC? query in the same command string.\n
-        :param cmd: The SCPI command
-        :type cmd: SCPINodeBase
-        :param args: A list of arguments for the command, will be converted with str()
-        :rtype: None
-        """
-        self.command_cnt += 1
-        x = cmd.build_cmd() + " " + self._build_arg_str(cmd, args) + ";*OPC?"
-        try:
-            self._visa_res.query(x)
-        except:
-            print "Resource error",
-            raise
-
-    def query(self, cmd, *args):
-        """
-        Execute a SCPI query
-
-        :param cmd: The SCPI command
-        :type cmd: SCPINodeBase
-        :param args: A list of arguments for the command, will be converted with str() and joined with ", "
-        :return: The response from the pyvisa query
-        :rtype: SCPIResponse
-        """
-        # TODO: parse return values?
-        # TODO: add function to read back result later
-        self.command_cnt += 1
-        x = cmd.build_cmd() + "? " + self._build_arg_str(cmd, args)
-        try:
-            return SCPIResponse(self._visa_res.query(x))
-        except:
-            print "Resource error", x
-            raise
-
-    def preset(self):
-        self.RST.w()
 
 
 class SCPINodeN(SCPINodeBase):
@@ -210,7 +140,7 @@ class SCPIResponse(object):
     def comma_list_pairs(self):
         """
         Split the comma separated response into a list of tuples,
-        where each tuple containing two consecutive response elements.
+        with each tuple containing two consecutive response elements.
 
         :return: [ (str1, str2), ..]
         """
@@ -225,7 +155,7 @@ class SCPIResponse(object):
         :return: a string list
         :rtype: list of str
         """
-        return map(str.strip, self.raw.split(","))
+        return [x.strip() for x in self.raw.split(",")]
 
     def block_data(self):
         """
@@ -277,12 +207,6 @@ class SCPISet(SCPICmd):
         :rtype: None
         """
         return self._get_root().write(self, *args)
-
-    def opc(self, *args):
-        """
-        Send command followed by *OPC? query in the same command string
-        """
-        return self._get_root().opc(self, *args)
 
 
 class SCPIBool(SCPIQuery, SCPISet):

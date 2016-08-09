@@ -16,6 +16,7 @@ except ImportError:
 from bs4 import BeautifulSoup
 import re
 
+
 class CmdNode(dict):
     leaf = "_leaf"  # Constant indicating that the current node is a leaf node
     
@@ -23,9 +24,9 @@ class CmdNode(dict):
         super(CmdNode, self).__init__()
         self.units = []
         self.args = []
-        self.has_query = False # query command supported
-        self.has_set = False # set command supported
-        self.is_countable = is_countable # An integer can be appended to the node name
+        self.has_query = False  # query command supported
+        self.has_set = False  # set command supported
+        self.is_countable = is_countable  # An integer can be appended to the node name
 
     def add_cmd(self, node_list, arg, unit, query):
         cmd = node_list.pop(0)
@@ -38,18 +39,20 @@ class CmdNode(dict):
         if len(node_list):
             return node.add_cmd(node_list, arg, unit, query)
 
-        arg and arg not in node.args and node.args.append(arg)
+        if arg and arg not in node.args:
+            node.args.append(str(arg))
         unit and node.units.append(unit)
         node.has_query |= query
         node.has_set |= not query
    
+
 class CmdListParser(object):
     """Parses a command set file obtained from RS GPIB Explorer (ICEWIN32)"""
     def __init__(self, filename):
         self.filename = filename   
         self.cmd_tree = CmdNode()
         self._parse()
-    
+
     def _parse(self):
         with open(self.filename) as fd:
             for line in fd:
@@ -66,8 +69,8 @@ class CmdListParser(object):
         if cmd[-1] == '?':
             query = True
             cmd = cmd[:-1]
+
         c = cmd.split(':')
-        
         self.cmd_tree.add_cmd(c, arg, unit, query)
 
 
@@ -83,13 +86,14 @@ class Webhelp(object):
 
 
 class RohdeZVAWebhelp(Webhelp):
-    def __init__(self):
+    def __init__(self, download_webhelp=False):
         self._base_url = "http://www.rohde-schwarz.com/webhelp/webhelp_zva_{1}{0}"
         self._help_rev = 6
 
         self.cmd_list_file = "SCPI_cmd_lists/ZVA_help_index.htm"
 
-        self.download_cmd_list()
+        if download_webhelp:
+            self.download_cmd_list()
 
         self._urls = dict()
         self._common_commands = None
@@ -136,7 +140,8 @@ class RohdeZVAWebhelp(Webhelp):
             f.write(soup.prettify())
 
         for u in soup("key"):
-            cmd = u['name'].split()[0].translate(None, '"\\')  # TODO: The next item in the list can contain "(deprecated)". Use this info?
+            # TODO: The second item in the list can contain "(deprecated)". Use this info?
+            cmd = u['name'].split()[0].translate(None, '"\\')
             if not cmd[0:3].isupper():
                 continue  # All SCPI commands start with at least three capital letters
             cmd_key = str(cmd).translate(None, '[]?')
@@ -156,10 +161,10 @@ class RohdeZVAWebhelp(Webhelp):
 
 
 class RohdeZNBWebhelp(Webhelp):
-    def __init__(self):
+    def __init__(self, download_webhelp=False):
 
         self._base_url = "http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_{1}{0}"
-        self._help_rev = 6
+        self._help_rev = 7
 
         self.toc_file = "SCPI_cmd_lists/ZNB_webhelp_toc.xml"
         self.cmd_list_file = "SCPI_cmd_lists/ZNB_webhelp_command_list.htm"
@@ -168,7 +173,8 @@ class RohdeZNBWebhelp(Webhelp):
         self._common_commands = None  # *CLS, *OPC, etc.
         self._interface_messages = None  # VXI-11 Interface messages, @LOC, @DCL, etc.
 
-        self.download_cmd_list()
+        if download_webhelp:
+            self.download_cmd_list()
         self.load_urls()
 
     def download_cmd_list(self):
@@ -256,7 +262,8 @@ class ClassCodeGen(object):
         import time
         self._out("# -*- coding: utf-8 -*-")
         self._out("# Generated from " + self.source + " on " + time.strftime("%Y-%m-%d %H:%M"))
-        self._out("from SCPI_gen_support import Instrument, SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool")
+        self._out("from SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool")
+        self._out("from . import Instrument")
         self._out("class " + self.class_name + "(Instrument):")
         self._indent += 1
         
@@ -329,21 +336,42 @@ class ClassCodeGen(object):
             self._out("")
             self._gen(cmd, parents + [cmd_str])
             self._indent -= 1
+            # Uncomment to generate attributes
+            #self._out(name + " = _" + name + "()")
+            #self._make_docstr(cmd, parents + [cmd_str])
+            #self._out("")
 
+class ZNBTreePatcher(object):
+    def __init__(self):
+        self.fixit = dict()
+        self.fixit[("MMEMory:STORe:TRACe:PORTs", "args")] = \
+            ["1", "'string'", "COMPlex", "LINPhase", "LOGPhase", "CIMPedance", "PIMPedance"]
+    def __call__(self, cmd_tree):
+        for cmd, prop in self.fixit.keys():
+            x = cmd_tree
+            for c in cmd.split(":"):
+                x = x[c]
+            setattr(x, prop, self.fixit[(cmd, prop)])
+        return cmd_tree
 
-def generate_SCPI_class(input_file, module_name, webhelp=Webhelp()):
+def generate_SCPI_class(input_file, module_name, webhelp=Webhelp(), tree_patcher=None):
     """
 
     :param input_file: filename of the command list from GPIB Explorer
     :param module_name: Name of the module to be generated
     :param webhelp: Webhelp subclass instance, generating help URLs
+    :param tree_patcher: Function used to fix errors in the command tree before the code generation
     :return: None
     """
     parser = CmdListParser('SCPI_cmd_lists/' + input_file)
 
+    if tree_patcher:
+        cmd_tree = tree_patcher(parser.cmd_tree)
+    else:
+        cmd_tree = parser.cmd_tree
     path = "RSSscpi/gen/" + module_name + ".py"
     with open(path, 'wb') as fd:
-        g = ClassCodeGen(module_name, parser.cmd_tree, fd, source=input_file, webhelp=webhelp)
+        g = ClassCodeGen(module_name, cmd_tree, fd, source=input_file, webhelp=webhelp)
         g.gen()
 
     import importlib
@@ -354,7 +382,7 @@ def generate_SCPI_class(input_file, module_name, webhelp=Webhelp()):
 if __name__ == '__main__':
     import os
     os.chdir("..")
-    generate_SCPI_class("ZVA_commands_3_70.inp", "ZVA_gen", RohdeZVAWebhelp())
-    generate_SCPI_class("ZNB_commands_2_70.inp", "ZNB_gen", RohdeZNBWebhelp())
+    download = True
+    generate_SCPI_class("ZVA_commands_3_70.inp", "ZVA_gen", RohdeZVAWebhelp(download_webhelp=download))
+    generate_SCPI_class("ZNB_commands_2_70.inp", "ZNB_gen", RohdeZNBWebhelp(download_webhelp=download), tree_patcher=ZNBTreePatcher())
     print "All good :)"
-
