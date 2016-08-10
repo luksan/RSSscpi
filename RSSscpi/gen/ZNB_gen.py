@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from ZNB_commands_2_70.inp on 2016-08-09 11:52
+# Generated from ZNB_commands_2_70.inp on 2016-08-09 14:56
 from SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from . import Instrument
 class ZNB_gen(Instrument):
@@ -8462,10 +8462,10 @@ class ZNB_gen(Instrument):
                 `SENSe:CORRection:CDATa
                 <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_7/Content/56c4604324f74fdd.htm#ID_61872ddefa962a0b0a00206a00f647f7-3f3fd3eafa96245d0a00206a01a6673d-en-US>`_
                 
-                Arguments: 'string'
+                Arguments: 1, 'string'
                 """
                 _cmd = "CDATa"
-                args = ["'string'"]
+                args = ["1", "'string'"]
                 
                 class CATalog(SCPINodeN, SCPIQuery, SCPISet):
                     """
@@ -10777,10 +10777,10 @@ class ZNB_gen(Instrument):
                         `SENSe:CORRection:COLLect:METHod:DEFine
                         <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_7/Content/24bc511f46a7483a.htm#ID_aaba0ddffa9cde440a00206a019c590e-74fbf89bfa9cd8490a00206a01a6673d-en-US>`_
                         
-                        Arguments: 'string'
+                        Arguments: 1, 'string', ETOM, ETSM, FOPort1, FOPort12, FOPort2, FOPTport, FRTRans, FTRans, REFL1, REFL12, REFL2, ROPTport, RTRans, TNA, TOM, TOSM, TPORt, TRL, TRM, TSM, UOSM
                         """
                         _cmd = "DEFine"
-                        args = ["'string'"]
+                        args = ["1", "'string'", "ETOM", "ETSM", "FOPort1", "FOPort12", "FOPort2", "FOPTport", "FRTRans", "FTRans", "REFL1", "REFL12", "REFL2", "ROPTport", "RTRans", "TNA", "TOM", "TOSM", "TPORt", "TRL", "TRM", "TSM", "UOSM"]
                         
                 class PMETer(SCPINode):
                     """

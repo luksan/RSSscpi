@@ -344,14 +344,24 @@ class ClassCodeGen(object):
 class ZNBTreePatcher(object):
     def __init__(self):
         self.fixit = dict()
+
         self.fixit[("MMEMory:STORe:TRACe:PORTs", "args")] = \
             ["1", "'string'", "COMPlex", "LINPhase", "LOGPhase", "CIMPedance", "PIMPedance"]
+
+        self.fixit[("SENSe:CORRection:COLLect:METHod:DEFine", "args")] = \
+            ["1", "'string'", "ETOM", "ETSM", "FOPort1", "FOPort12", "FOPort2", "FOPTport", "FRTRans",
+             "FTRans", "REFL1", "REFL12", "REFL2",
+             "ROPTport", "RTRans", "TNA", "TOM", "TOSM", "TPORt", "TRL", "TRM", "TSM", "UOSM"]
+
+        self.fixit[("SENSe:CORRection:CDATa", "args")] = ["1", "'string'"]
+
     def __call__(self, cmd_tree):
         for cmd, prop in self.fixit.keys():
             x = cmd_tree
             for c in cmd.split(":"):
                 x = x[c]
             setattr(x, prop, self.fixit[(cmd, prop)])
+
         return cmd_tree
 
 def generate_SCPI_class(input_file, module_name, webhelp=Webhelp(), tree_patcher=None):
@@ -382,7 +392,7 @@ def generate_SCPI_class(input_file, module_name, webhelp=Webhelp(), tree_patcher
 if __name__ == '__main__':
     import os
     os.chdir("..")
-    download = True
+    download = False
     generate_SCPI_class("ZVA_commands_3_70.inp", "ZVA_gen", RohdeZVAWebhelp(download_webhelp=download))
     generate_SCPI_class("ZNB_commands_2_70.inp", "ZNB_gen", RohdeZNBWebhelp(download_webhelp=download), tree_patcher=ZNBTreePatcher())
     print "All good :)"
