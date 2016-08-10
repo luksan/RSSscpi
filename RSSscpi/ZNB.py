@@ -158,15 +158,17 @@ class Channel(object):
     """
 
     def cal_auto(self, vna_ports, cal_unit_ports=None, cal_type="FNPort", cal_unit_characterization=""):
-        cal_unit_characterization = "'" + cal_unit_characterization + "'"
         if cal_unit_ports:
-            self.CORRection.COLLect.AUTO.PORTs.TYPE().w(cal_type, cal_unit_characterization,
-                                                        *[str(x) + ", " + str(y) for x,y in zip(vna_ports, cal_unit_ports)])
+            cmd_fmt = "{:s}, {:q}, {:d**}"
+            self.CORRection.COLLect.AUTO.PORTs.TYPE().w(
+                cal_type, cal_unit_characterization, zip(vna_ports, cal_unit_ports), fmt=cmd_fmt)
         else:
-            self.CORRection.COLLect.AUTO.TYPE().w(cal_type, cal_unit_characterization, *vna_ports)
+            cmd_fmt = "{:s}, {:q}, {:d*}"
+            self.CORRection.COLLect.AUTO.TYPE().w(cal_type, cal_unit_characterization, vna_ports, fmt=cmd_fmt)
 
     def save_touchstone(self, filename, ports, fmt="LOGPhase", mode_impedance="CIMPedance"):
-        self.instrument.MMEMory.STORe.TRACe.PORTs().w(self.n, filename, fmt, mode_impedance, *ports)
+        cmd_fmt="{:d}, {:q}, {:s}, {:s}, {:d*}"
+        self.instrument.MMEMory.STORe.TRACe.PORTs().w(self.n, filename, fmt, mode_impedance, ports, fmt=cmd_fmt)
         return File(self.instrument, filename)
 
 

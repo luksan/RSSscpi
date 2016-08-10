@@ -20,7 +20,7 @@ def test():
     znb.CALCulate.MARKer()
     z = znb.CALCulate(2).MARKer("3").FUNCtion.BWIDth
     
-    z.MODE.opc(123, 123,123333)
+    z.MODE.w(123, 123,123333)
 
     ass = znb.SENSe.CORRection.COLLect.AUTO.ASSignment
     ass(2).DEFine.w(5,4,3,2,1)

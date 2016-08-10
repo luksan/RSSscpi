@@ -192,21 +192,21 @@ class SCPICmd(SCPINodeBase):
 
 
 class SCPIQuery(SCPICmd):
-    def q(self, *args):
+    def q(self, *args, **kwargs):
         """
         Execeute a SCPI query.
         """
-        return self._get_root().query(self, *args)
+        return self._get_root().query(self, *args, **kwargs)
 
 
 class SCPISet(SCPICmd):
-    def w(self, *args):
+    def w(self, *args, **kwargs):
         """
         Send a string to the VISA resource, without reading the response.
 
         :rtype: None
         """
-        return self._get_root().write(self, *args)
+        return self._get_root().write(self, *args, **kwargs)
 
 
 class SCPIBool(SCPIQuery, SCPISet):
@@ -216,9 +216,6 @@ class SCPIBool(SCPIQuery, SCPISet):
 
     def w(self, x):
         super(SCPIBool, self).w(self._mk_arg(x))
-
-    def opc(self, x):
-        super(SCPIBool, self).opc(self._mk_arg(x))
 
 
 class SCPIProperty(object):

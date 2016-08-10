@@ -4,11 +4,12 @@ from RSSscpi.gen.SCPI_gen_support import SCPIResponse
 import visa
 
 from time import ctime
-import timeit
-import threading
+import timeit, time
+import threading, traceback
 from multiprocessing import Queue
 
-import re
+import re, string
+
 
 class VISAEvent(object):
     def __init__(self, duration, stb, esr):
@@ -17,8 +18,54 @@ class VISAEvent(object):
         self.esr = esr
 
 
+class SCPICmdFormatter(string.Formatter):
+    def __init__(self):
+        self.last_number = 0
+        super(SCPICmdFormatter, self).__init__()
+
+    def vformat(self, format_string, args, kwargs):
+        ret = super(SCPICmdFormatter, self).vformat(format_string, args, kwargs)
+        self.last_number = 0
+        return ret
+
+    def get_value(self, key, args, kwargs):
+        if key == '':
+            key = self.last_number
+            self.last_number += 1
+        return super(SCPICmdFormatter, self).get_value(key, args, kwargs)
+
+    def format_field(self, value, format_spec):
+        if not format_spec:  # check for empty string
+            pass
+        elif format_spec[-1] == "*":  # code for list unpack
+            return ", ".join(map(lambda x: self.format_field(x, format_spec[:-1]), value))
+        elif format_spec[-1] == "q":  # code for single quoted string
+            format_spec = format_spec[:-1] + "s"
+            return "'" + self.format_field(value, format_spec) + "'"
+        elif format_spec[-1] == "s":  # coerce everything with str() for convenience
+            value = str(value)
+
+        return super(SCPICmdFormatter, self).format_field(value, format_spec)
+
+
+# http://stackoverflow.com/questions/16244923/how-to-make-a-custom-exception-class-with-multiple-init-args-pickleable
+class InstrumentError(BaseException):
+    def __init__(self, err_no=0, err_str="", stack=None):
+        self.err_no = err_no
+        self.err_str = err_str
+        self.stack = stack
+
+    def __str__(self):
+        ret = "SCPI error: {:d},{}\n".format(self.err_no, self.err_str)
+        if self.stack:
+            ret += "".join(traceback.format_list(self.stack))
+        return ret
+
+
 class Instrument(SCPINodeBase):
     _cmd = ""
+
+    Error = InstrumentError
 
     def __init__(self, visa_res):
         """
@@ -40,7 +87,8 @@ class Instrument(SCPINodeBase):
         self.last_cmd_time = 0
 
         self._visa_lock = threading.Lock()
-        """Lock used to synchronize VISA operations."""
+        self._in_callback = threading.Lock()
+        """Locks used to synchronize VISA operations."""
 
         self.event_queue = Queue()
         """
@@ -51,6 +99,9 @@ class Instrument(SCPINodeBase):
         """
         Errors fetched from the instrument are queued here.
         """
+
+        self.exception_on_error = True
+        self._cmd_debug = dict()
 
     def init(self):
         """
@@ -79,48 +130,27 @@ class Instrument(SCPINodeBase):
         duration = timeit.default_timer() - self.last_cmd_time
         #print "Handling service request"
         with self._visa_lock:
-            stb = self._visa_res.read_stb()  # Read out the SRQ status byte
-            if stb & 32:
-                esr = self._call_visa(self._visa_res.query, "*ESR?")  # read and reset the event status register
-            else:
-                esr = 0
-            self.log("VISA event: STB: {:08b}, ESR: {:08b}, duration {:.2f} ms".format(stb, int(esr), duration*1e3))
-            self.event_queue.put_nowait(VISAEvent(duration, stb, esr))
+            with self._in_callback:
+                stb = self._visa_res.read_stb()  # Read out the SRQ status byte
+                if stb & 32:
+                    esr = self._call_visa(self._visa_res.query, "*ESR?")  # read and reset the event status register
+                else:
+                    esr = 0
+                self.log("VISA event: STB: {:08b}, ESR: {:08b}, duration {:.2f} ms".format(stb, int(esr), duration*1e3))
+                self.event_queue.put_nowait(VISAEvent(duration, stb, esr))
 
-            if stb & (1 << 2):  # Error queue not empty bit
-                self._get_error_queue()
+                if stb & (1 << 2):  # Error queue not empty bit
+                    self._get_error_queue()
         return visa.constants.VI_SUCCESS
 
     def _get_error_queue(self):
         err = self._query("SYSTem:ERRor:ALL?")
         for r in re.finditer(r'(-?\d+),"([^"]*)"', str(err)):
             x = (int(r.group(1)), r.group(2))
-            print x
-            self.error_queue.put_nowait(x)
+            bad_cmd = x[1].split(";", 1)[1]
+            tb = self._cmd_debug.get(bad_cmd)
+            self.error_queue.put_nowait(InstrumentError(x[0], x[1], tb))
             self.log("%d %s" % x)
-
-    @staticmethod
-    def _build_arg_str(cmd, args):
-        if "'string'" in cmd.args:  # string arguments need to be quoted
-            ret = []
-            for x in args:
-                if x is None:
-                    continue
-                x = str(x)
-                try:  # don't quote numbers
-                    float(x)
-                    if "1" in cmd.args:
-                        ret.append(x)
-                        continue
-                except ValueError:
-                    pass
-                if x in cmd.args or x[0] == "'" and x[-1] == "'" or x[0] == "#":
-                    ret.append(x)
-                else:
-                    ret.append("'" + x + "'")
-        else:
-            ret = [str(x) for x in args if x is not None]
-        return ", ".join(ret)
 
     def log(self, line):
         if not self.logger:
@@ -131,7 +161,12 @@ class Instrument(SCPINodeBase):
         self.logger.write("\n")
 
     def _call_visa(self, func, arg):
+        if not self.error_queue.empty() and self.exception_on_error and self._in_callback.acquire(False):
+            self._in_callback.release()  # Don't raise the exception from the VISA library callback thread
+            raise self.error_queue.get(block=False)
+
         self.command_cnt += 1
+        self._cmd_debug[arg] = traceback.extract_stack()[0:-3]  # Store the current stack for later debugging
         start = timeit.default_timer()
         try:
             ret = func(arg)
@@ -144,10 +179,21 @@ class Instrument(SCPINodeBase):
         self.log("%.2f ms \t %s" % (elapsed, arg))
         return ret
 
+    @staticmethod
+    def _build_arg_str(cmd, args, kwargs):
+        fmt = kwargs.get("fmt")
+        if not fmt:
+            args = (args, )
+            if kwargs.get("quote") or "'string'" in cmd.args:
+                fmt = "{:q*}"
+            else:
+                fmt = "{:s*}"
+        return SCPICmdFormatter().vformat(fmt, args, kwargs)
+
     def _write(self, cmd_str):
         self._call_visa(self._visa_res.write, cmd_str)
 
-    def write(self, cmd, *args):
+    def write(self, cmd, *args, **kwargs):
         """
         Send a string to the instrument, without reading a respone.
 
@@ -156,14 +202,14 @@ class Instrument(SCPINodeBase):
         :param args: Any number of arguments for the command, will be converted with str()
         :rtype: None
         """
-        x = cmd.build_cmd() + " " + self._build_arg_str(cmd, args)
+        x = cmd.build_cmd() + " " + self._build_arg_str(cmd, args, kwargs)
         with self._visa_lock:
             self._call_visa(self._visa_res.write, x)
 
     def _query(self, cmd_str):
         return SCPIResponse(self._call_visa(self._visa_res.query, cmd_str))
 
-    def query(self, cmd, *args):
+    def query(self, cmd, *args, **kwargs):
         """
         Execute a SCPI query
 
@@ -174,7 +220,7 @@ class Instrument(SCPINodeBase):
         :rtype: SCPIResponse
         """
         # TODO: add function to read back result later
-        x = cmd.build_cmd() + "? " + self._build_arg_str(cmd, args)
+        x = cmd.build_cmd() + "? " + self._build_arg_str(cmd, args, kwargs)
         with self._visa_lock:
             return SCPIResponse(self._call_visa(self._visa_res.query, x))
 
