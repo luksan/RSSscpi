@@ -170,13 +170,17 @@ class Instrument(SCPINodeBase):
         start = timeit.default_timer()
         try:
             ret = func(arg)
-        except object, e:
-            self.log("Resource error: " + str(e) + ", " + arg)
+            err = None
+        except visa.Error, e:
+            err = "Resource error: " + str(e) + ", " + arg
             print "Resource error", arg, e
             raise
-        self.last_cmd_time = timeit.default_timer()
-        elapsed = (self.last_cmd_time - start) * 1e3
-        self.log("%.2f ms \t %s" % (elapsed, arg))
+        finally:
+            self.last_cmd_time = timeit.default_timer()
+            elapsed = (self.last_cmd_time - start) * 1e3
+            self.log("%.2f ms \t %s" % (elapsed, arg))
+            if err:
+                self.log(err)
         return ret
 
     @staticmethod
@@ -221,8 +225,15 @@ class Instrument(SCPINodeBase):
         """
         # TODO: add function to read back result later
         x = cmd.build_cmd() + "? " + self._build_arg_str(cmd, args, kwargs)
-        with self._visa_lock:
-            return SCPIResponse(self._call_visa(self._visa_res.query, x))
+        try:
+            with self._visa_lock:
+                return SCPIResponse(self._call_visa(self._visa_res.query, x))
+        except visa.VisaIOError, e:
+            if e.error_code == visa.constants.VI_ERROR_TMO:  # timeout
+                if self.exception_on_error and self._in_callback.acquire(False):
+                    self._in_callback.release()  # Don't raise the exception from the VISA library callback thread
+                    raise self.error_queue.get(timeout=0.5)  # Wait for up to 500 ms for the error callback to be processed
+            raise
 
     def preset(self):
         self.RST.w()
