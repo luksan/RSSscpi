@@ -15,6 +15,12 @@ class SocketInterface(object):
         self._socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 0)  # Disable Nagle algorithm
         self._socket.connect((self.ip, 5025))
 
+    def install_handler(self, *args):
+        pass
+
+    def enable_event(self, *args):
+        pass
+
     @staticmethod
     def open_resource(ip_address):
         return SocketInterface(ip_address)
