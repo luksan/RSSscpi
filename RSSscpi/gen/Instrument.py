@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+
+@author: Lukas Sandström
+"""
+
 from RSSscpi.gen import SCPINodeBase
 from RSSscpi.gen.SCPI_gen_support import SCPIResponse
 
@@ -148,12 +154,18 @@ class Instrument(SCPINodeBase):
 
     def _get_error_queue(self):
         err = self._query("SYSTem:ERRor:ALL?")
-        for r in re.finditer(r'(-?\d+),"([^"]*)"', str(err)):
-            x = (int(r.group(1)), r.group(2))
-            bad_cmd = x[1].split(";", 1)[1]
+        cnt = 0
+        for r in re.finditer(r'(-?\d+),"(.*?([A-Z]{3}.*?)?(?:\n.*?)?)"', str(err)):
+            cnt += 1
+            x = (int(r.group(1)), r.group(2).replace("\n", " "))
+            bad_cmd = r.group(3)
             tb = self._cmd_debug.get(bad_cmd)
+            if not tb:
+                print "No stack for", str(err), r.groups()
             self.error_queue.put_nowait(InstrumentError(x[0], x[1], tb))
             self.log("%d %s" % x)
+        if not cnt:
+            self.error_queue.put_nowait(InstrumentError(-1, str(err), None))
 
     def log(self, line):
         if not self.logger:
@@ -167,7 +179,8 @@ class Instrument(SCPINodeBase):
         if not self.error_queue.empty() and self.exception_on_error and self._in_callback.acquire(False):
             # http://blog.bstpierre.org/python-exception-handling-cleanup-and-reraise
             self._in_callback.release()  # Don't raise the exception from the VISA library callback thread
-            raise self.error_queue.get(block=False)  # TODO: raise with original stack trace instead?
+            # TODO: raise with original stack trace instead?
+            raise self.error_queue.get(block=False)
 
     def _call_visa(self, func, arg):
         self.check_error_queue()
@@ -206,7 +219,7 @@ class Instrument(SCPINodeBase):
 
     def write(self, cmd, *args, **kwargs):
         """
-        Send a string to the instrument, without reading a respone.
+        Send a string to the instrument, without reading a response.
 
         :param cmd: The SCPI command
         :type cmd: SCPINodeBase
