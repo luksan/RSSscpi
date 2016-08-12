@@ -14,8 +14,35 @@ import timeit, time
 import threading, traceback
 
 import Queue  # Use Queue.Queue, not multiprocessing.Queue, to avoid unnecessary pickling
-
+from collections import OrderedDict
+import itertools
 import re, string
+
+
+class LimitedCapacityDict(OrderedDict):
+    def __init__(self, max_len=None):
+        self._max_len = max_len
+        super(LimitedCapacityDict, self).__init__()
+
+    @property
+    def max_len(self):
+        return self._max_len
+
+    @max_len.setter
+    def max_len(self, value):
+        self._max_len = value
+        self._check_len()
+
+    def _check_len(self):
+        if self._max_len and self._max_len < len(self):
+            for n, key in itertools.izip(range(len(self) - self._max_len), self):
+                del self[key]  # Deleting while iterating is valid for OrderedCollections
+
+    def __setitem__(self, key, value, dict_setitem=dict.__setitem__):
+        if key in self:  # Move the element to the end, if already inserted
+            del self[key]
+        super(LimitedCapacityDict, self).__setitem__(key, value, dict_setitem)
+        self._check_len()
 
 
 class VISAEvent(object):
@@ -110,7 +137,10 @@ class Instrument(SCPINodeBase):
         """
 
         self.exception_on_error = True
-        self._cmd_debug = dict()  # TODO: put a size limit on this dict for long-running programs?
+        self._cmd_debug = LimitedCapacityDict(max_len=500)
+        """
+        _call_visa(...) stores the stack trace here for each command.
+        """
 
     def init(self):
         """
