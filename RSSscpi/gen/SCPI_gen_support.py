@@ -132,7 +132,8 @@ class SCPIResponse(object):
         return str(self) in ["1", "ON"]
 
     def __str__(self):
-        return self.raw.strip().strip("'")
+        x = self.raw.replace("\r", "\n")
+        return x.strip().strip("'")
 
     def __int__(self):
         return int(str(self))
