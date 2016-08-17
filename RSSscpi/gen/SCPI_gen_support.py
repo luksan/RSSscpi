@@ -6,6 +6,7 @@ Created on Thu Feb 11 11:30:33 2016
 """
 
 import inspect
+from SCPIResponse import SCPIResponse
 
 # TODO
 # Implement the cmd structure with properties returning a Cmd object
@@ -116,78 +117,6 @@ class SCPINodeN(SCPINodeBase):
         return cpy
 
 
-class SCPIResponse(object):
-    """
-    Class used for containing and parsing responses from SCPI queries.
-    """
-    def __init__(self, res):
-        self.raw = res
-
-    def __nonzero__(self):
-        """
-        Converts the instrument response to a boolean value
-
-        :return: bool
-        """
-        return str(self) in ["1", "ON"]
-
-    def __str__(self):
-        x = self.raw.replace("\r", "\n")
-        return x.strip().strip("'")
-
-    def __int__(self):
-        return int(str(self))
-
-    def comma_list_pairs(self):
-        """
-        Split the comma separated response into a list of tuples,
-        with each tuple containing two consecutive response elements.
-
-        :return: [ (str1, str2), ..]
-        """
-        x = self.split_comma()
-        return zip(x[0::2], x[1::2])
-
-    def split_comma(self):
-        """
-        Split the response into a list, separated by commas.
-        Each list element is stripped of leading and trailing whitespace.
-
-        :return: a string list
-        :rtype: list of str
-        """
-        return [x.strip() for x in self.raw.split(",")]
-
-    def block_data(self):
-        """
-        Interpret the response as a SCPI block data transfer
-
-        :return: the data from the block transfer
-        """
-        return SCPIBlockData.parse(self.raw)
-
-
-class SCPIBlockData(object):
-    def __init__(self, data=None):
-        self.data = data
-
-    @staticmethod
-    def parse(blk):
-        if blk[0] != "#":
-            print "WARN: invalid block data header"
-        n = int(blk[1])  # The number of digits in the data length specifier
-        l = int(blk[2:n + 2])  # data length
-        return blk[n + 2:l + n + 2]
-
-    @staticmethod
-    def format(data):
-        l = str(len(data))
-        return "#" + str(len(l)) + l + data
-
-    def __str__(self):
-        return self.format(self.data)
-
-
 class SCPICmd(SCPINodeBase):
     pass
 
@@ -196,6 +125,9 @@ class SCPIQuery(SCPICmd):
     def q(self, *args, **kwargs):
         """
         Execeute a SCPI query.
+
+        :returns: a SCPIResponse instance
+        :rtype: SCPIResponse
         """
         return self._get_root().query(self, *args, **kwargs)
 

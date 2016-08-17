@@ -5,7 +5,8 @@ Created on 16 feb. 2016
 @author: Lukas Sandström
 """
 
-from gen import ZNB_gen, SCPIProperty, SCPIPropertyMinMax, SCPIBlockData
+from gen import ZNB_gen, SCPIProperty, SCPIPropertyMinMax
+from RSSscpi.gen import SCPIBlockData
 
 import ntpath
 import os.path

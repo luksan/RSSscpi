@@ -5,7 +5,7 @@
 """
 
 from RSSscpi.gen import SCPINodeBase
-from RSSscpi.gen.SCPI_gen_support import SCPIResponse
+from RSSscpi.gen.SCPIResponse import SCPIResponse
 
 import visa
 
