@@ -104,6 +104,7 @@ class Channel(object):
         self.instrument = instrument
         self.CALC = instrument.CALCulate(n)
         self.CONFch = instrument.CONFigure.CHANnel(n)
+        self.SENSe = instrument.SENSe(n)
         self.SWEep = instrument.SENSe(n).SWEep
         self.CORRection = instrument.SENSe(n).CORRection
 
@@ -173,9 +174,47 @@ class Channel(object):
         return File(self.instrument, filename)
 
 
-class Sweep(ZNB_gen.SENSe.SWEep.__class__):
+class SweepSegment(object):
+    def __init__(self, n, channel):
+        """
+        :param n: The sweep segment number
+        :param channel:
+        :type channel: Channel
+        """
+        self.channel = channel
+        self.n = n
+
+    def _get_seg(self):
+        return self.channel.SENSe.SEGMent(self.n)
+
+    if_bandwidth = SCPIProperty(["BWIDth", "RESolution"], get_root_node=_get_seg)
+    if_selectivity = SCPIProperty(["BWIDth", "RESolution", "SELect"])
+
+
+class Sweep(ZNB_gen.SENSe.SWEep):
+    LIN = "LIN"
+    LOG = "LOG"
+    POWER = "POW"
+    CW = "CW"
+    POINT = "POIN"
+    SEGMENT = "SEGM"
+
     def __init__(self, channel):
         super(Sweep, self).__init__(parent=channel.SWEep)
+        self.type = None
+
+    def _get_sweep(self):
+        return self
+
+    analog_sweep_enable = SCPIProperty(["GENeration"], get_root_node=_get_sweep)
+    analog_sweep_status = SCPIProperty(["GENeration", "ANALog", "CONDition"], get_root_node=_get_sweep)
+    dwell_time = SCPIProperty(["DWELl"], get_root_node=_get_sweep)
+    dwell_on_each_point = SCPIProperty(["DWELl", "IPOint"], get_root_node=_get_sweep)
+    points = SCPIPropertyMinMax(["POINts"], get_root_node=_get_sweep)
+    sweep_count = SCPIProperty(["COUNt"], get_root_node=_get_sweep)  # FIXME: move to Channel?
+    sweep_time = SCPIPropertyMinMax(["TIME"], get_root_node=_get_sweep)
+    sweep_time_auto = SCPIPropertyMinMax(["TIME", "AUTO"], get_root_node=_get_sweep)
+    step = SCPIPropertyMinMax(["STEP"], get_root_node=_get_sweep)
 
 
 class Trace(object):
@@ -198,6 +237,9 @@ class Trace(object):
     def _corr_node(self):
         return self.channel.CORRection
 
+    def _sweep_node(self):
+        return self.channel.SWEep
+
     def _make_active_cb(self, *args, **kwargs):
         self.make_active()
 
@@ -219,7 +261,7 @@ class Trace(object):
     @name.setter
     def name(self, name):
         name = str(name)
-        self.channel.instrument.CONFigure.TRACe.REName.w(self.name, name)
+        self.channel.instrument.CONFigure.TRACe.REName().w(self.name, name)
         self._name = name
 
     @property
@@ -234,6 +276,7 @@ class Trace(object):
     # TODO: argument checking?
     format = SCPIProperty(["FORMat"], _make_active_cb, _calc_node)
     cal_state_label = SCPIProperty(["SSTate"], _make_active_cb, _corr_node)
+    source_port = SCPIProperty(["SRCPort"], _make_active_cb, _sweep_node)
 
     def is_active(self):
         return self.channel.active_trace.name == self.name
