@@ -184,16 +184,19 @@ class Trace(object):
     """
     def __init__(self, name, channel):
         """
-        :param n: The trace ID, CONF:TRAC:CHAN:NAME:ID? '<trace name>'
         :param name: The trace name
         :param channel: The channel the trace belongs to
         :type channel: Channel
         """
+        self._n = None
         self._name = str(name)
         self.channel = channel
 
-    def _root_node(self):
-        return self.channel.instrument
+    def _calc_node(self):
+        return self.channel.CALC
+
+    def _corr_node(self):
+        return self.channel.CORRection
 
     def _make_active_cb(self, *args, **kwargs):
         self.make_active()
@@ -224,10 +227,13 @@ class Trace(object):
         """
         :return: CONFigure.TRACe.NAME.ID?
         """
-        return int(self.channel.instrument.CONFigure.TRACe.NAME.ID.q(self.name))
+        if not self._n:
+            self._n = int(self.channel.instrument.CONFigure.TRACe.NAME.ID().q(self.name))
+        return self._n
 
     # TODO: argument checking?
-    format = SCPIProperty(["CALCulate", "FORMat"], _make_active_cb, _root_node)
+    format = SCPIProperty(["FORMat"], _make_active_cb, _calc_node)
+    cal_state_label = SCPIProperty(["SSTate"], _make_active_cb, _corr_node)
 
     def is_active(self):
         return self.channel.active_trace.name == self.name
