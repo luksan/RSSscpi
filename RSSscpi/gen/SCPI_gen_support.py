@@ -164,8 +164,7 @@ class SCPIProperty(object):
     def __init__(self, nodes, callback=None, get_root_node=None, docstr=None):
         """
 
-        :param nodes: A list of strings representing the nodes under the root node
-        :type nodes: list of str
+        :param nodes: A list of strings representing the nodes under the root node, or a class derived from SCPINodeBase
         :param callback: A function called before each write and query
         :param get_root_node: A function returning a SCPINodeBase, the root of nodes
         :param docstr: The property doctring
@@ -182,7 +181,20 @@ class SCPIProperty(object):
         return x
 
     def _get_leaf(self, instance):
+        if not isinstance(self._nodes, list) and issubclass(self._nodes, SCPINodeBase):
+            return self._get_leaf2(instance)
         return self._leaf(self._get_root_node(instance)) if self._get_root_node else self._leaf(instance)
+
+    def _get_leaf2(self, instance):
+        root = instance
+        if self._get_root_node:
+            root = self._get_root_node(root)
+        x = [self._nodes]  # a scpi leaf class
+        while not issubclass(x[-1], root.__class__):
+            x.append(x[-1]._parent_class)
+        for c in reversed(x):
+            root = c(parent=root)
+        return root
 
     def __get__(self, instance, owner=None):
         if instance is None:

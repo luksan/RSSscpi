@@ -154,7 +154,7 @@ class Channel(object):
         name = trace.name if isinstance(trace, Trace) else str(trace)
         self.CALC.PARameter.SELect().w(name)
 
-    sweep_points = SCPIPropertyMinMax(["POINts"], None, lambda self: self.SWEep)
+    sweep_points = SCPIPropertyMinMax(ZNB.SENSe.SWEep.POINts, None, lambda self: self.SWEep)
     """
     The number of points in the sweep. SENSe<Ch>:SWEep:POINts
     """
