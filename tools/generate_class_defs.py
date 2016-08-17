@@ -277,7 +277,10 @@ class ClassCodeGen(object):
         print self.class_name + ":", c1, "commands,", c2, "have a help URL (" + c3 + "%)."
 
     def _out(self, str_):
-        self._output.write(" "*(self._indent*4) + str_ + "\n")
+        if not str_:
+            self._output.write("\n")  # don't print lines with only indentation
+        else:
+            self._output.write(" "*(self._indent*4) + str_ + "\n")
 
     def _make_docstr(self, cmd, cmd_str_list):
         """
@@ -328,7 +331,7 @@ class ClassCodeGen(object):
             name = cmd_str
             if name[0] == '*' or name[0] == '@':
                 name = name[1:]            
-            self._out("class " + name+"(" + base_class + "):")
+            self._out("class " + name + "(" + base_class + "):")
             self._indent += 1
             self._make_docstr(cmd, parents + [cmd_str])
             self._out('_cmd = "' + cmd_str + '"')
@@ -336,10 +339,11 @@ class ClassCodeGen(object):
             self._out("")
             self._gen(cmd, parents + [cmd_str])
             self._indent -= 1
-            # Uncomment to generate attributes
-            #self._out(name + " = _" + name + "()")
-            #self._make_docstr(cmd, parents + [cmd_str])
-            #self._out("")
+            # Uncomment below to generate attributes
+            self._out(name + " = " + name + "()")
+            self._make_docstr(cmd, parents + [cmd_str])
+            self._out("")
+
 
 class ZNBTreePatcher(object):
     def __init__(self):

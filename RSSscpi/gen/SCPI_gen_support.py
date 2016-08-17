@@ -32,6 +32,8 @@ class DummyVisa(object):
 
 class SCPINodeBase(object):
     _cmd = "SCPINodeBase"
+    _parent_class = None  # The class of the parent of the command node
+    _SCPI_class = None  # Identifies the original class type in cases of subclassing
 
     def __init__(self, parent=None):
         """
@@ -43,17 +45,21 @@ class SCPINodeBase(object):
     def __str__(self):
         return self._cmd
 
-    # def __get__(self, instance, owner):
-    #     if not instance:
-    #         return self
-    #     return self.__class__(parent=instance)
+    def __get__(self, instance, owner):
+        # Since the class definitions are nested we have to resolve the parent at runtime
+        if self._SCPI_class is None:
+            self.__class__._SCPI_class = self.__class__
+            self.__class__._parent_class = owner._SCPI_class  # TODO: introspection to check for subclassing?
+        if not instance:
+            return self.__class__
+        return self.__class__(parent=instance)
 
-    def __getattribute__(self, name):
-        x = object.__getattribute__(self, name)
-        if inspect.isclass(x) and issubclass(x, SCPINodeBase) and name == x.__name__:
-            # Automatic instantiation of SCPINodeBase class accesses
-            return x(parent=self)
-        return x
+    # def __getattribute__(self, name):
+    #     x = object.__getattribute__(self, name)
+    #     if inspect.isclass(x) and issubclass(x, SCPINodeBase) and name == x.__name__:
+    #         # Automatic instantiation of SCPINodeBase class accesses
+    #         return x(parent=self)
+    #     return x
 
     def build_cmd(self):
         x = self._build_cmd_r()

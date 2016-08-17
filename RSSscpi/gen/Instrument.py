@@ -101,6 +101,9 @@ class InstrumentError(BaseException):
 class Instrument(SCPINodeBase):
     _cmd = ""
 
+    def __get__(self, instance, owner):
+        return self
+
     Error = InstrumentError
 
     def __init__(self, visa_res):
