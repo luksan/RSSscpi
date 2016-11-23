@@ -169,6 +169,19 @@ class Channel(object):
             self.CORRection.COLLect.AUTO.TYPE().w(cal_type, cal_unit_characterization, vna_ports, fmt=cmd_fmt)
 
     def save_touchstone(self, filename, ports, fmt="LOGPhase", mode_impedance="CIMPedance"):
+        """
+        Save the S-parameters for the selected ports to a Touchstone file on the instrument.
+        MMEMory:STORe:TRACe:PORTs
+
+        :param filename: Desired filename
+        :type filename: str
+        :param ports: List of integers designating the logical ports which shall be included in the file
+        :type ports: list of int
+        :param fmt: Data format of the Touchstone file, default is "LOGPhase". "COMPlex" and "LINPhase" are the alternatives.
+        :param mode_impedance: "CIMPedance" (default) or "PIMPedance". Determines if port impedances are renormalized according to common target impedance (50 ohm) or the individual port impedances.
+        :return: A File object representing the stored file
+        :rtype: File
+        """
         cmd_fmt="{:d}, {:q}, {:s}, {:s}, {:d*}"
         self.instrument.MMEMory.STORe.TRACe.PORTs().w(self.n, filename, fmt, mode_impedance, ports, fmt=cmd_fmt)
         return File(self.instrument, filename)
