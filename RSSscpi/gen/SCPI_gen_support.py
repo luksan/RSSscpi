@@ -188,13 +188,13 @@ class SCPIProperty(object):
     def _get_leaf2(self, instance):
         root = instance
         if self._get_root_node:
-            root = self._get_root_node(root)
+            root = self._get_root_node(instance)
         x = [self._nodes]  # a scpi leaf class
-        while not issubclass(x[-1], root.__class__):
+        while not issubclass(x[-1]._parent_class, root.__class__):
             x.append(x[-1]._parent_class)
         for c in reversed(x):
             root = c(parent=root)
-        return root
+        return root  # Return the instantiated leaf node, properly linked to the root node
 
     def __get__(self, instance, owner=None):
         if instance is None:

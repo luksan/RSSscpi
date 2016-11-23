@@ -206,15 +206,16 @@ class Sweep(ZNB_gen.SENSe.SWEep):
     def _get_sweep(self):
         return self
 
-    analog_sweep_enable = SCPIProperty(["GENeration"], get_root_node=_get_sweep)
-    analog_sweep_status = SCPIProperty(["GENeration", "ANALog", "CONDition"], get_root_node=_get_sweep)
-    dwell_time = SCPIProperty(["DWELl"], get_root_node=_get_sweep)
-    dwell_on_each_point = SCPIProperty(["DWELl", "IPOint"], get_root_node=_get_sweep)
-    points = SCPIPropertyMinMax(["POINts"], get_root_node=_get_sweep)
-    sweep_count = SCPIProperty(["COUNt"], get_root_node=_get_sweep)  # FIXME: move to Channel?
-    sweep_time = SCPIPropertyMinMax(["TIME"], get_root_node=_get_sweep)
-    sweep_time_auto = SCPIPropertyMinMax(["TIME", "AUTO"], get_root_node=_get_sweep)
-    step = SCPIPropertyMinMax(["STEP"], get_root_node=_get_sweep)
+    _SWE = ZNB.SENSe.SWEep
+    analog_sweep_enable = SCPIProperty(_SWE.GENeration)
+    analog_sweep_status = SCPIProperty(_SWE.GENeration.ANALog.CONDition)
+    dwell_time = SCPIProperty(_SWE.DWELl)
+    dwell_on_each_point = SCPIProperty(_SWE.DWELl.IPOint)
+    points = SCPIPropertyMinMax(_SWE.POINts)
+    sweep_count = SCPIProperty(_SWE.COUNt)  # FIXME: move to Channel?
+    sweep_time = SCPIPropertyMinMax(_SWE.TIME)
+    sweep_time_auto = SCPIPropertyMinMax(_SWE.TIME.AUTO)
+    step = SCPIPropertyMinMax(_SWE.STEP)
 
 
 class Trace(object):
