@@ -290,5 +290,15 @@ class Instrument(SCPINodeBase):
                         pass
             raise e
 
+    def update_display(self, state=True, once=False):
+        if state:
+            if once:
+                cmd = "ONCE"
+            else:
+                cmd = "ON"
+        else:
+            cmd = "OFF"
+        self.SYSTem.DISPlay.UPDate().w(cmd)
+
     def preset(self):
         self.RST.w()
