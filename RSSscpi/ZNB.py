@@ -187,21 +187,106 @@ class Channel(object):
         return File(self.instrument, filename)
 
 
-class SweepSegment(object):
+class SweepSegment(ZNB.SENSe.SEGMent):
     def __init__(self, n, channel):
         """
         :param n: The sweep segment number
-        :param channel:
-        :type channel: Channel
+        :param Channel channel:
         """
+        super(SweepSegment, self).__init__(parent=channel.SENSe)
         self.channel = channel
         self.n = n
 
-    def _get_seg(self):
-        return self.channel.SENSe.SEGMent(self.n)
+    def delete(self):
+        self.DELete().w()
 
-    if_bandwidth = SCPIProperty(["BWIDth", "RESolution"], get_root_node=_get_seg)
-    if_selectivity = SCPIProperty(["BWIDth", "RESolution", "SELect"])
+    _SEG = ZNB.SENSe.SEGMent
+    dwell_time = SCPIProperty(_SEG.SWEep.DWELl)
+    is_enabled = SCPIProperty(_SEG.STATe)
+    freq_start = SCPIProperty(_SEG.FREQuency.STARt)
+    freq_stop = SCPIProperty(_SEG.FREQuency.STOP)
+    if_bandwidth = SCPIProperty(_SEG.BWIDth.RESolution)
+    # if_gain = SCPIProperty(_SEG.POWer.GAINcontrol)  # TODO: this behaves differently from the other per segment settings...
+    if_selectivity = SCPIProperty(_SEG.BWIDth.RESolution.SELect)
+    number_of_points = SCPIProperty(_SEG.SWEep.POINts)
+    power_level = SCPIProperty(_SEG.POWer)
+    sweep_time = SCPIProperty(_SEG.SWEep.TIME)
+    sweep_mode = SCPIProperty(_SEG.SWEep.GENeration)
+
+
+class SweepSegments(object):
+    def __init__(self, channel):
+        """
+        :param Channel channel: The channel which the sweep segments belong to
+        """
+        self.channel = channel
+        self._SEG = self.channel.SENSe.SEGMent
+
+    def __len__(self):
+        return int(self._SEG.COUNt().q())
+
+    def __getitem__(self, item):
+        if isinstance(item, slice):
+            return [SweepSegment(x+1, self.channel) for x in range(*item.indices(len(self)))]
+        return SweepSegment(item + 1, self.channel)
+
+    def __delitem__(self, key):
+        if isinstance(key, slice):
+            r = range(*key.indices(len(self)))
+            r.sort(reverse=True)  # Make sure we delete the segments in descending order
+            for x in r:
+                del self[x]
+        else:
+            self[key].delete()
+
+    def __iter__(self):
+        for x in xrange(len(self)):
+            yield self[x]
+
+    def insert_segment(self, start_freq, stop_freq, points, ifbw, power, time="AUTO",
+                       lo_sideband="AUTO", if_selectivity="NORMal", sweep_mode="STEPped", position=0):
+        """
+
+        :param float start_freq: Segment start frequency in Hz
+        :param float stop_freq: Segment stop frequency in Hz
+        :param int points: Number of sweep points in the segment
+        :param float ifbw: IF bandwidth
+        :param float power: Segment source power in dBm
+        :param float time: Segment sweep time or segment dwell time in seconds
+        :param str lo_sideband: "POSitive" | "NEGative" | "AUTO" (default)
+        :param str if_selectivity: "NORMal" (default) | "MEDium" | "HIGH"
+        :param str sweep_mode: "STEPped" | "ANALog"
+        :param int position: The position in the segment list which the created segment will be inserted at. Default is 0 (top).
+        :return:
+        """
+        self._SEG(position+1).INSert().w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity, sweep_mode)
+        return SweepSegment(position, self.channel)
+
+    def remove_segment(self, n):
+        """
+        Remove segment number <n> from the segment list. The same as del Segments[n]
+
+        :param n: Segment index or slice, [0, len(segments))
+        """
+        del self[n]
+
+    def remove_all_segments(self):
+        self._SEG.DELete.ALL().w()
+
+    def disable_per_segment_dwell_time(self):
+        self._SEG.SWEep.DWELl.CONTrol().w(False)
+
+    def disable_per_segment_if_selectivity(self):
+        self._SEG.BWIDth.RESolution.SELect.CONTrol().w(False)
+
+    def disable_per_segment_power(self):
+        self._SEG.POWer.LEVel.CONTrol().w(False)
+
+    def disable_per_segment_sweep_time(self):
+        self._SEG.SWEep.TIME.CONTrol().w(False)
+
+    def query_total_sweep_time(self):
+        return float(self._SEG.SWEep.TIME.SUM().q())
 
 
 class Sweep(ZNB_gen.SENSe.SWEep):
@@ -214,21 +299,32 @@ class Sweep(ZNB_gen.SENSe.SWEep):
 
     def __init__(self, channel):
         super(Sweep, self).__init__(parent=channel.SWEep)
-        self.type = None
-
-    def _get_sweep(self):
-        return self
+        self.channel = channel
+        self.segments = SweepSegments(self.channel)
 
     _SWE = ZNB.SENSe.SWEep
-    analog_sweep_enable = SCPIProperty(_SWE.GENeration)
-    analog_sweep_status = SCPIProperty(_SWE.GENeration.ANALog.CONDition)
+
+    @property
+    def analog_sweep_enabled(self):
+        return self.GENeration().q() == "ANALog"
+
+    @analog_sweep_enabled.setter
+    def analog_sweep_enabled(self, state):
+        if state:
+            self.GENeration().w("ANALog")
+        else:
+            self.GENeration().w("STEPped")
+
+    def query_analog_sweep_status(self):
+        return self.GENeration.ANALog.CONDition().q()
+
     dwell_time = SCPIProperty(_SWE.DWELl)
-    dwell_on_each_point = SCPIProperty(_SWE.DWELl.IPOint)
-    points = SCPIPropertyMinMax(_SWE.POINts)
+    dwell_on_each_partial_measurement = SCPIProperty(_SWE.DWELl.IPOint)  # FIXME: the instrument doesn't use ON/OFF for this
+    number_of_points = SCPIPropertyMinMax(_SWE.POINts)
     sweep_count = SCPIProperty(_SWE.COUNt)  # FIXME: move to Channel?
     sweep_time = SCPIPropertyMinMax(_SWE.TIME)
     sweep_time_auto = SCPIPropertyMinMax(_SWE.TIME.AUTO)
-    step = SCPIPropertyMinMax(_SWE.STEP)
+    step_size = SCPIPropertyMinMax(_SWE.STEP)
 
 
 class Trace(object):
