@@ -351,10 +351,21 @@ class Trace(object):
     def _sweep_node(self):
         return self.channel.SWEep
 
+    def _disp_node(self):
+        return self.channel.instrument.DISPlay
+
     def _make_active_cb(self, *args, **kwargs):
         if self._cmd_cnt != self.channel.instrument.command_cnt:
             self.select_trace()
         self._cmd_cnt = self.channel.instrument.command_cnt + 1
+
+    def copy_data_to_mem(self, trace_name):
+        self.channel.instrument.TRACe.COPY().w(trace_name, self.name)
+        return Trace(trace_name, self.channel)
+
+    def copy_math_to_mem(self, trace_name):
+        self.channel.instrument.TRACe.COPY.MATH().w(trace_name, self.name)
+        return Trace(trace_name, self.channel)
 
     def delete(self):
         """
@@ -388,8 +399,24 @@ class Trace(object):
 
     # TODO: argument checking?
     format = SCPIProperty(["FORMat"], _make_active_cb, _calc_node)
+
+    def _add_trace_name_arg_cb(self, value=None, **kwargs):
+        if value is not None:
+            return str(value) + ", '" + self.name + "'"
+        return "'" + self.name + "'"
+
+    scale_per_div = SCPIProperty(ZNB.DISPlay.WINDow.TRACe.Y.SCALe.PDIVision, _add_trace_name_arg_cb, _disp_node)
+    scale_top = SCPIProperty(ZNB.DISPlay.WINDow.TRACe.Y.SCALe.TOP, _add_trace_name_arg_cb, _disp_node)
+    scale_bottom = SCPIProperty(ZNB.DISPlay.WINDow.TRACe.Y.SCALe.BOTTom, _add_trace_name_arg_cb, _disp_node)
+    ref_level = SCPIProperty(ZNB.DISPlay.WINDow.TRACe.Y.SCALe.RLEVel, _add_trace_name_arg_cb, _disp_node)
+    ref_pos = SCPIProperty(ZNB.DISPlay.WINDow.TRACe.Y.SCALe.RPOSition, _add_trace_name_arg_cb, _disp_node)
+
     cal_state_label = SCPIProperty(["SSTate"], _make_active_cb, _corr_node)
     source_port = SCPIProperty(["SRCPort"], _make_active_cb, _sweep_node)
+
+    math_equation = SCPIProperty(ZNB.CALCulate.MATH.EXPRession.SDEFine, _make_active_cb, _calc_node)
+    math_is_enabled = SCPIProperty(ZNB.CALCulate.MATH.STATe, _make_active_cb, _calc_node)
+    math_is_wave_quantity = SCPIProperty(ZNB.CALCulate.MATH.WUNit.STATe, _make_active_cb, _calc_node)
 
     def is_active(self):
         return self.channel.active_trace.name == self.name
