@@ -494,17 +494,16 @@ class Diagram(ZNB_gen.DISPlay.WINDow):
         """
         return self.instrument.save_screenshot(filename=filename, diagram_n=self.n)
 
-    def traces(self):
+    def query_assigned_traces(self):
         """
         Get the traces assigned to the diagram
 
         :return: A generator returning Traces
-        :rtype: Trace
         """
         l = self.CATalog().q()
         for wnr, name in l.comma_list_pairs():
             ch = self.instrument.CONFigure.TRACe.CHANnel.NAME.ID.q(name)
-            yield Trace(name=name, channel=ch)
+            yield Trace(name=name, channel=Channel(int(ch), self.instrument))
 
 
 class Filesystem(ZNB_gen.MMEMory):
