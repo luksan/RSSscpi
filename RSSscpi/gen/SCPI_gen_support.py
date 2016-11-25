@@ -202,16 +202,21 @@ class SCPIProperty(object):
         leaf = self._get_leaf(instance)
         if not hasattr(leaf, "q"):
             raise AttributeError("SCPI node doesn't support query")
+        args = []
         if self._callback:
-            self._callback(self=instance, get=True)
-        return leaf.q()
+            cb = self._callback(self=instance, get=True)
+            if cb is not None:
+                args = cb
+        return leaf.q(args)
 
     def __set__(self, instance, value):
         leaf = self._get_leaf(instance)
         if not hasattr(leaf, "w"):
             raise AttributeError("SCPI node doesn't support write")
         if self._callback:
-            self._callback(self=instance, get=False)
+            cb = self._callback(self=instance, get=False, value=value)
+            if cb is not None:
+                value = cb
         leaf.w(value)
 
 
