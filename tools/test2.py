@@ -60,8 +60,8 @@ def test_trace():
     print "*  test_trace()"
     ch = znb.get_channel(2)
     tr = ch.get_trace("Tr2")
-    x = tr.format
-    tr.format = 2
+    x = tr.trace_format
+    tr.trace_format = 2
 
 def test_channel():
     print "*  test_channel()"
@@ -73,6 +73,9 @@ def test_diagram():
     print "*  test_diagram()"
     dia = znb.get_diagram(1)
     dia.save_screenshot("hej.png")
+
+def test_sweep():
+    pass
 
 test_channel()
 test_trace()

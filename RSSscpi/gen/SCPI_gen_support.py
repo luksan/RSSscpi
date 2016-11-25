@@ -35,6 +35,7 @@ class DummyVisa(object):
     def enable_event(*args):
         print "Not implemented"
 
+
 class SCPINodeBase(object):
     _cmd = "SCPINodeBase"
     _parent_class = None  # The class of the parent of the command node
@@ -51,6 +52,7 @@ class SCPINodeBase(object):
         return self._cmd
 
     def __get__(self, instance, owner):
+        # type: (SCPINodeBase, SCPINodeBase) -> SCPINodeBase
         # Since the class definitions are nested we have to resolve the parent at runtime
         if self._SCPI_class is None:
             self.__class__._SCPI_class = self.__class__
@@ -78,7 +80,7 @@ class SCPINodeBase(object):
     def _get_root(self):
         """
         :return: Returns the root node of the command tree, an Instrument.
-        :rtype: RSSscpi.gen.Instrument
+        :rtype: RSSscpi.gen.Instrument.Instrument
         """
         if not self._parent:
             return self
@@ -166,36 +168,28 @@ class SCPIProperty(object):
     """
     Getter/setter class for turning SCPINodes to class properties
     """
-    def __init__(self, nodes, callback=None, get_root_node=None, docstr=None):
+    # TODO: add type coercion
+    def __init__(self, node, callback=None, get_root_node=None, docstr=None):
         """
 
-        :param nodes: A list of strings representing the nodes under the root node, or a class derived from SCPINodeBase
-        :param callback: A function called before each write and query
-        :param get_root_node: A function returning a SCPINodeBase, the root of nodes
-        :param docstr: The property doctring
+        :param SCPINodeBase node: A __class__ derived from SCPINodeBase, which q() and w() will be invoked on an instance of.
+        :param callback: A function called before each write and query, if the return is not None it will be passed as the argument to q()/w()
+        :param get_root_node: A function returning a SCPINodeBase instance, nodes between root and <node> will be instantiated an linked to root
+        :param str docstr: The property doctring
         """
-        self._nodes = nodes
-        self._callback = callback
-        self._get_root_node = get_root_node  # Function which returns a SCPINodeBase instance
+        self._leaf_node = node
+        self._callback = callback  # type: (*args, **kwargs) -> T
+        self._get_root_node = get_root_node  # type: (T) -> SCPINodeBase
         if docstr:
             self.__doc__ = docstr
 
-    def _leaf(self, x):
-        for n in self._nodes:
-            x = getattr(x, n)
-        return x
-
     def _get_leaf(self, instance):
-        if not isinstance(self._nodes, list) and issubclass(self._nodes, SCPINodeBase):
-            return self._get_leaf2(instance)
-        return self._leaf(self._get_root_node(instance)) if self._get_root_node else self._leaf(instance)
-
-    def _get_leaf2(self, instance):
+        # type: (T) -> SCPINodeBase
         root = instance
         if self._get_root_node:
-            root = self._get_root_node(instance)
-        x = [self._nodes]  # a scpi leaf class
-        while not issubclass(x[-1]._parent_class, root.__class__):
+            root = self._get_root_node(instance)  # type: SCPINodeBase
+        x = [self._leaf_node]
+        while not issubclass(root.__class__, x[-1]._parent_class):
             x.append(x[-1]._parent_class)
         for c in reversed(x):
             root = c(parent=root)
@@ -204,10 +198,10 @@ class SCPIProperty(object):
     def __get__(self, instance, owner=None):
         if instance is None:
             return self
-        leaf = self._get_leaf(instance)
+        leaf = self._get_leaf(instance)  # type: SCPIQuery
         if not hasattr(leaf, "q"):
             raise AttributeError("SCPI node doesn't support query")
-        args = []
+        args = ""  # FIXME: the callback argument mangling needs improvement
         if self._callback:
             cb = self._callback(self=instance, get=True)
             if cb is not None:
@@ -215,7 +209,7 @@ class SCPIProperty(object):
         return leaf.q(args)
 
     def __set__(self, instance, value):
-        leaf = self._get_leaf(instance)
+        leaf = self._get_leaf(instance)  # type: SCPISet
         if not hasattr(leaf, "w"):
             raise AttributeError("SCPI node doesn't support write")
         if self._callback:

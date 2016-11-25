@@ -23,9 +23,6 @@ class ZNB(ZNB_gen):
         self.SYSTem.COMMunicate.CODec().w("UTF8")  # Set the character encoding
 
     def set_source_power_offset(self, channel=None, src=0, power=-300, relative=True):
-        """
-        :type relative: bool
-        """
         if relative:
             x = 'CPAD'
         else:
@@ -108,7 +105,7 @@ class Channel(object):
         self.SWEep = instrument.SENSe(n).SWEep
         self.CORRection = instrument.SENSe(n).CORRection
 
-    name = SCPIProperty(["NAME"], None, lambda self: self.CONFch)
+    name = SCPIProperty(ZNB.CONFigure.CHANnel.NAME, None, lambda self: self.CONFch)
     """
     The channel name, CONFigure:CHANnel<Ch>:NAME
     """
@@ -145,8 +142,8 @@ class Channel(object):
 
         :rtype: Trace
         """
-        name = str(self.CALC.PARameter.SELect.q())
-        #n = self.instrument.CONFigure.TRACe.CHANnel.NAME.ID.q(name)
+        name = str(self.CALC.PARameter.SELect().q())
+        # n = self.instrument.CONFigure.TRACe.CHANnel.NAME.ID.q(name)
         return Trace(name, self)
 
     @active_trace.setter
@@ -182,7 +179,7 @@ class Channel(object):
         :return: A File object representing the stored file
         :rtype: File
         """
-        cmd_fmt="{:d}, {:q}, {:s}, {:s}, {:d*}"
+        cmd_fmt = "{:d}, {:q}, {:s}, {:s}, {:d*}"
         self.instrument.MMEMory.STORe.TRACe.PORTs().w(self.n, filename, fmt, mode_impedance, ports, fmt=cmd_fmt)
         return File(self.instrument, filename)
 
@@ -354,6 +351,7 @@ class Trace(object):
     def _disp_node(self):
         return self.channel.instrument.DISPlay
 
+    # noinspection PyUnusedLocal
     def _make_active_cb(self, *args, **kwargs):
         if self._cmd_cnt != self.channel.instrument.command_cnt:
             self.select_trace()
@@ -398,21 +396,23 @@ class Trace(object):
         return self._n
 
     # TODO: argument checking?
-    format = SCPIProperty(["FORMat"], _make_active_cb, _calc_node)
+    trace_format = SCPIProperty(ZNB.CALCulate.FORMat, _make_active_cb, _calc_node)
 
+    # noinspection PyUnusedLocal
     def _add_trace_name_arg_cb(self, value=None, **kwargs):
         if value is not None:
             return str(value) + ", '" + self.name + "'"
         return "'" + self.name + "'"
 
-    scale_per_div = SCPIProperty(ZNB.DISPlay.WINDow.TRACe.Y.SCALe.PDIVision, _add_trace_name_arg_cb, _disp_node)
-    scale_top = SCPIProperty(ZNB.DISPlay.WINDow.TRACe.Y.SCALe.TOP, _add_trace_name_arg_cb, _disp_node)
-    scale_bottom = SCPIProperty(ZNB.DISPlay.WINDow.TRACe.Y.SCALe.BOTTom, _add_trace_name_arg_cb, _disp_node)
-    ref_level = SCPIProperty(ZNB.DISPlay.WINDow.TRACe.Y.SCALe.RLEVel, _add_trace_name_arg_cb, _disp_node)
-    ref_pos = SCPIProperty(ZNB.DISPlay.WINDow.TRACe.Y.SCALe.RPOSition, _add_trace_name_arg_cb, _disp_node)
+    _SCALE = ZNB.DISPlay.WINDow.TRACe.Y.SCALe
+    scale_per_div = SCPIProperty(_SCALE.PDIVision, _add_trace_name_arg_cb, _disp_node)
+    scale_top = SCPIProperty(_SCALE.TOP, _add_trace_name_arg_cb, _disp_node)
+    scale_bottom = SCPIProperty(_SCALE.BOTTom, _add_trace_name_arg_cb, _disp_node)
+    ref_level = SCPIProperty(_SCALE.RLEVel, _add_trace_name_arg_cb, _disp_node)
+    ref_pos = SCPIProperty(_SCALE.RPOSition, _add_trace_name_arg_cb, _disp_node)
 
-    cal_state_label = SCPIProperty(["SSTate"], _make_active_cb, _corr_node)
-    source_port = SCPIProperty(["SRCPort"], _make_active_cb, _sweep_node)
+    cal_state_label = SCPIProperty(ZNB.SENSe.CORRection.SSTate, _make_active_cb, _corr_node)  # FIXME: read-only -> method
+    source_port = SCPIProperty(ZNB.SENSe.SWEep.SRCPort, _make_active_cb, _sweep_node)  # Logical port number of the simulus port
 
     math_equation = SCPIProperty(ZNB.CALCulate.MATH.EXPRession.SDEFine, _make_active_cb, _calc_node)
     math_is_enabled = SCPIProperty(ZNB.CALCulate.MATH.STATe, _make_active_cb, _calc_node)
@@ -445,7 +445,7 @@ class Trace(object):
         diagram.TRACe.EFEed().w(self.name)
 
 
-class Marker(ZNB_gen.CALCulate.MARKer):  # Add direct inheritance from object to un-confuse PyCharm
+class Marker(ZNB.CALCulate.MARKer):
     """
     Represents a trace marker in the VNA.
     Property access will make the trace associated with the marker the active trace in the channel.
@@ -462,18 +462,20 @@ class Marker(ZNB_gen.CALCulate.MARKer):  # Add direct inheritance from object to
         self.trace = trace
         self._cmd_cnt = None
 
+    # noinspection PyUnusedLocal
     def _prop_callback(self, *args, **kwargs):
         if not self._cmd_cnt or self._cmd_cnt != self.trace.channel.instrument.command_cnt:
             self.trace.select_trace()
         self._cmd_cnt = self.trace.channel.instrument.command_cnt + 1
 
-    tracking = SCPIProperty(["SEARch", "TRACking"], _prop_callback) #: Marker tracking enabled
-    state = SCPIProperty(["STATe"], _prop_callback)
+    _MKR = ZNB.CALCulate.MARKer
+    tracking = SCPIProperty(_MKR.SEARch.TRACking, _prop_callback)  #: Marker tracking enabled
+    state = SCPIProperty(_MKR.STATe, _prop_callback)
     """Enable/disable the marker"""
     #: Marker position
-    x = SCPIProperty(["X"], _prop_callback)
+    x = SCPIProperty(_MKR.X, _prop_callback)
     #: Marker value
-    y = SCPIProperty(["Y"], _prop_callback)
+    y = SCPIProperty(_MKR.Y, _prop_callback)  # FIXME: query only -> query_y() method
 
 
 class Diagram(ZNB_gen.DISPlay.WINDow):
@@ -488,28 +490,33 @@ class Diagram(ZNB_gen.DISPlay.WINDow):
         self.n = n
 
     def delete(self):
+        # FIXME: make some kind of callback to update all remaining Diagram instances?? requires a weakref dict.
         """
-        Remove the diagram area.
+        Remove the diagram area. Note that this will re-number all remaining diagrams, so use with care.
+        Renumbering causes the diagram name to be reset to the diagram number, this is arguably a FW bug.
+        Also deletes all traces assigned to the diagram.
         :return:
         """
         self.STATe().w("OFF")
 
-    is_maximized = SCPIProperty(["MAXimize"])
+    _WIN = ZNB.DISPlay.WINDow
+
+    is_maximized = SCPIProperty(_WIN.MAXimize)
     """
     Displays the diagram on top of the other diagrams, filling the whole screen.
     """
 
-    name = SCPIProperty(["NAME"])
+    name = SCPIProperty(_WIN.NAME)
     """
     The diagram name, shown in upper right corner. Returned with DISPlay:CATalog?
     """
 
-    title = SCPIProperty(["TITLe", "DATA"])
+    title = SCPIProperty(_WIN.TITLe.DATA)
     """
     The diagram title, shown on screen.
     """
 
-    show_title = SCPIProperty(["TITLe"])
+    title_is_visible = SCPIProperty(_WIN.TITLe.STATe)
     """
     Determines whether the diagram title is shown or not.
     """
@@ -680,4 +687,4 @@ class File(Path):
 
         :param target: The location of the copy
         """
-        self.instrument.MMEMory.COPY.w(self.full_path, str(target))
+        self.instrument.MMEMory.COPY().w(self.full_path, str(target))
