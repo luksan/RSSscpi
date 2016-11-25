@@ -340,6 +340,7 @@ class Trace(object):
         self._n = None
         self._name = str(name)
         self.channel = channel
+        self._cmd_cnt = None
 
     def _calc_node(self):
         return self.channel.CALC
@@ -351,7 +352,9 @@ class Trace(object):
         return self.channel.SWEep
 
     def _make_active_cb(self, *args, **kwargs):
-        self.make_active()
+        if self._cmd_cnt != self.channel.instrument.command_cnt:
+            self.select_trace()
+        self._cmd_cnt = self.channel.instrument.command_cnt + 1
 
     def delete(self):
         """
@@ -391,11 +394,11 @@ class Trace(object):
     def is_active(self):
         return self.channel.active_trace.name == self.name
 
-    def make_active(self):
+    def select_trace(self):
         """
         Makes the trace the active trace in the channel.
         """
-        self.channel.CALC.PARameter.SELect.w(self.name)
+        self.channel.CALC.PARameter.SELect().w(self.name)
 
     def get_marker(self, n):
         """
@@ -434,7 +437,7 @@ class Marker(ZNB_gen.CALCulate.MARKer):  # Add direct inheritance from object to
 
     def _prop_callback(self, *args, **kwargs):
         if not self._cmd_cnt or self._cmd_cnt != self.trace.channel.instrument.command_cnt:
-            self.trace.make_active()
+            self.trace.select_trace()
         self._cmd_cnt = self.trace.channel.instrument.command_cnt + 1
 
     tracking = SCPIProperty(["SEARch", "TRACking"], _prop_callback) #: Marker tracking enabled
