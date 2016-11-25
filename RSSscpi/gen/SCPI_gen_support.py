@@ -29,6 +29,11 @@ class DummyVisa(object):
     def write(self, w):
         print "Visa write,", self.name, w
 
+    def install_handler(*args):
+        print "Install handler not implemented"
+
+    def enable_event(*args):
+        print "Not implemented"
 
 class SCPINodeBase(object):
     _cmd = "SCPINodeBase"
