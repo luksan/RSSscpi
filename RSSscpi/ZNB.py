@@ -5,7 +5,7 @@ Created on 16 feb. 2016
 @author: Lukas Sandström
 """
 
-from gen import ZNB_gen, SCPIProperty, SCPIPropertyMinMax
+from gen import ZNB_gen, SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
 from RSSscpi.gen import SCPIBlockData
 
 import ntpath
@@ -62,7 +62,7 @@ class ZNB(ZNB_gen):
         """
         return Diagram(n, self)
 
-    def save_screenshot(self, filename, diagram_n=None):
+    def save_screenshot(self, filename, diagram_n=None):  # FIXME: pass Diagram instance instead of number
         """
         Take a screenshot containing only this diagram. The file type is inferred from the filename extension,
         valid options are BMP, EMF, EWMF, JPG, PDF, PNG, SVG, WMF.
@@ -82,7 +82,7 @@ class ZNB(ZNB_gen):
         self.HCOPy.DEVice.LANGuage().w(filetype)  # Define the file type
         if diagram_n:
             d = self.get_diagram(diagram_n)
-            d.is_maximized = d.is_maximized  # Make the diagram active
+            d.is_maximized = d.is_maximized  # Make the diagram active FIXME: implement as Diagram method
             self.HCOPy.PAGE.WINDow().w("ACTive")  # Print only the active diagram
         else:
             self.HCOPy.PAGE.WINDow().w("HARDcopy")
@@ -105,7 +105,7 @@ class Channel(object):
         self.SWEep = instrument.SENSe(n).SWEep
         self.CORRection = instrument.SENSe(n).CORRection
 
-    name = SCPIProperty(ZNB.CONFigure.CHANnel.NAME, None, lambda self: self.CONFch)
+    name = SCPIProperty(ZNB.CONFigure.CHANnel.NAME, str, get_root_node=lambda self: self.CONFch)
     """
     The channel name, CONFigure:CHANnel<Ch>:NAME
     """
@@ -151,7 +151,7 @@ class Channel(object):
         name = trace.name if isinstance(trace, Trace) else str(trace)
         self.CALC.PARameter.SELect().w(name)
 
-    sweep_points = SCPIPropertyMinMax(ZNB.SENSe.SWEep.POINts, None, lambda self: self.SWEep)
+    sweep_points = SCPIPropertyMinMax(ZNB.SENSe.SWEep.POINts, int, get_root_node=lambda self: self.SWEep)
     """
     The number of points in the sweep. SENSe<Ch>:SWEep:POINts
     """
@@ -198,17 +198,17 @@ class SweepSegment(ZNB.SENSe.SEGMent):
         self.DELete().w()
 
     _SEG = ZNB.SENSe.SEGMent
-    dwell_time = SCPIProperty(_SEG.SWEep.DWELl)
-    is_enabled = SCPIProperty(_SEG.STATe)
-    freq_start = SCPIProperty(_SEG.FREQuency.STARt)
-    freq_stop = SCPIProperty(_SEG.FREQuency.STOP)
-    if_bandwidth = SCPIProperty(_SEG.BWIDth.RESolution)
-    # if_gain = SCPIProperty(_SEG.POWer.GAINcontrol)  # TODO: this behaves differently from the other per segment settings...
-    if_selectivity = SCPIProperty(_SEG.BWIDth.RESolution.SELect)
-    number_of_points = SCPIProperty(_SEG.SWEep.POINts)
-    power_level = SCPIProperty(_SEG.POWer)
-    sweep_time = SCPIProperty(_SEG.SWEep.TIME)
-    sweep_mode = SCPIProperty(_SEG.SWEep.GENeration)
+    dwell_time = SCPIProperty(_SEG.SWEep.DWELl, float)
+    is_enabled = SCPIProperty(_SEG.STATe, bool)
+    freq_start = SCPIProperty(_SEG.FREQuency.STARt, float)
+    freq_stop = SCPIProperty(_SEG.FREQuency.STOP, float)
+    if_bandwidth = SCPIProperty(_SEG.BWIDth.RESolution, float)
+    # if_gain = SCPIProperty(_SEG.POWer.GAINcontrol, str)  # TODO: this behaves differently from the other per segment settings...
+    if_selectivity = SCPIProperty(_SEG.BWIDth.RESolution.SELect, str)
+    number_of_points = SCPIProperty(_SEG.SWEep.POINts, int)
+    power_level = SCPIProperty(_SEG.POWer, float)
+    sweep_time = SCPIProperty(_SEG.SWEep.TIME, float)
+    sweep_mode = SCPIProperty(_SEG.SWEep.GENeration, str)  # FIXME: see Sweep
 
 
 class SweepSegments(object):
@@ -301,27 +301,14 @@ class Sweep(ZNB_gen.SENSe.SWEep):
 
     _SWE = ZNB.SENSe.SWEep
 
-    @property
-    def analog_sweep_enabled(self):
-        return self.GENeration().q() == "ANALog"
-
-    @analog_sweep_enabled.setter
-    def analog_sweep_enabled(self, state):
-        if state:
-            self.GENeration().w("ANALog")
-        else:
-            self.GENeration().w("STEPped")
-
-    def query_analog_sweep_status(self):
-        return self.GENeration.ANALog.CONDition().q()
-
-    dwell_time = SCPIProperty(_SWE.DWELl)
-    dwell_on_each_partial_measurement = SCPIProperty(_SWE.DWELl.IPOint)  # FIXME: the instrument doesn't use ON/OFF for this
-    number_of_points = SCPIPropertyMinMax(_SWE.POINts)
-    sweep_count = SCPIProperty(_SWE.COUNt)  # FIXME: move to Channel?
-    sweep_time = SCPIPropertyMinMax(_SWE.TIME)
-    sweep_time_auto = SCPIPropertyMinMax(_SWE.TIME.AUTO)
-    step_size = SCPIPropertyMinMax(_SWE.STEP)
+    analog_sweep_is_enabled = SCPIPropertyMapping(_SWE.GENeration, str, {"ANALog": True, "STEPped": False})
+    dwell_time = SCPIProperty(_SWE.DWELl, float)
+    dwell_on_each_partial_measurement = SCPIPropertyMapping(_SWE.DWELl.IPOint, str, {"ALL": True, "FIRSt": False})
+    number_of_points = SCPIPropertyMinMax(_SWE.POINts, int)
+    sweep_count = SCPIProperty(_SWE.COUNt, int)  # FIXME: move to Channel?
+    sweep_time = SCPIPropertyMinMax(_SWE.TIME, float)
+    sweep_time_auto = SCPIPropertyMinMax(_SWE.TIME.AUTO, bool)
+    step_size = SCPIPropertyMinMax(_SWE.STEP, float)
 
 
 class Trace(object):
@@ -396,7 +383,7 @@ class Trace(object):
         return self._n
 
     # TODO: argument checking?
-    trace_format = SCPIProperty(ZNB.CALCulate.FORMat, _make_active_cb, _calc_node)
+    trace_format = SCPIProperty(ZNB.CALCulate.FORMat, str, callback=_make_active_cb, get_root_node=_calc_node)
 
     # noinspection PyUnusedLocal
     def _add_trace_name_arg_cb(self, value=None, **kwargs):
@@ -405,18 +392,18 @@ class Trace(object):
         return "'" + self.name + "'"
 
     _SCALE = ZNB.DISPlay.WINDow.TRACe.Y.SCALe
-    scale_per_div = SCPIProperty(_SCALE.PDIVision, _add_trace_name_arg_cb, _disp_node)
-    scale_top = SCPIProperty(_SCALE.TOP, _add_trace_name_arg_cb, _disp_node)
-    scale_bottom = SCPIProperty(_SCALE.BOTTom, _add_trace_name_arg_cb, _disp_node)
-    ref_level = SCPIProperty(_SCALE.RLEVel, _add_trace_name_arg_cb, _disp_node)
-    ref_pos = SCPIProperty(_SCALE.RPOSition, _add_trace_name_arg_cb, _disp_node)
+    scale_per_div = SCPIProperty(_SCALE.PDIVision, float, callback=_add_trace_name_arg_cb, get_root_node=_disp_node)
+    scale_top = SCPIProperty(_SCALE.TOP, float, callback=_add_trace_name_arg_cb, get_root_node=_disp_node)
+    scale_bottom = SCPIProperty(_SCALE.BOTTom, float, callback=_add_trace_name_arg_cb, get_root_node=_disp_node)
+    ref_level = SCPIProperty(_SCALE.RLEVel, float, callback=_add_trace_name_arg_cb, get_root_node=_disp_node)
+    ref_pos = SCPIProperty(_SCALE.RPOSition, float, callback=_add_trace_name_arg_cb, get_root_node=_disp_node)
 
-    cal_state_label = SCPIProperty(ZNB.SENSe.CORRection.SSTate, _make_active_cb, _corr_node)  # FIXME: read-only -> method
-    source_port = SCPIProperty(ZNB.SENSe.SWEep.SRCPort, _make_active_cb, _sweep_node)  # Logical port number of the simulus port
+    cal_state_label = SCPIProperty(ZNB.SENSe.CORRection.SSTate, str, callback=_make_active_cb, get_root_node=_corr_node)  # FIXME: read-only -> method
+    source_port = SCPIProperty(ZNB.SENSe.SWEep.SRCPort, int, callback=_make_active_cb, get_root_node=_sweep_node)  # Logical port number of the simulus port
 
-    math_equation = SCPIProperty(ZNB.CALCulate.MATH.EXPRession.SDEFine, _make_active_cb, _calc_node)
-    math_is_enabled = SCPIProperty(ZNB.CALCulate.MATH.STATe, _make_active_cb, _calc_node)
-    math_is_wave_quantity = SCPIProperty(ZNB.CALCulate.MATH.WUNit.STATe, _make_active_cb, _calc_node)
+    math_equation = SCPIProperty(ZNB.CALCulate.MATH.EXPRession.SDEFine, str, callback=_make_active_cb, get_root_node=_calc_node)
+    math_is_enabled = SCPIProperty(ZNB.CALCulate.MATH.STATe, bool, callback=_make_active_cb, get_root_node=_calc_node)
+    math_is_wave_quantity = SCPIProperty(ZNB.CALCulate.MATH.WUNit.STATe, bool, callback=_make_active_cb, get_root_node=_calc_node)
 
     def is_active(self):
         return self.channel.active_trace.name == self.name
@@ -469,13 +456,13 @@ class Marker(ZNB.CALCulate.MARKer):
         self._cmd_cnt = self.trace.channel.instrument.command_cnt + 1
 
     _MKR = ZNB.CALCulate.MARKer
-    tracking = SCPIProperty(_MKR.SEARch.TRACking, _prop_callback)  #: Marker tracking enabled
-    state = SCPIProperty(_MKR.STATe, _prop_callback)
+    tracking = SCPIProperty(_MKR.SEARch.TRACking, bool, callback=_prop_callback)  #: Marker tracking enabled
+    state = SCPIProperty(_MKR.STATe, bool, callback=_prop_callback)  # FIXME: rename -> is_enabled
     """Enable/disable the marker"""
     #: Marker position
-    x = SCPIProperty(_MKR.X, _prop_callback)
+    x = SCPIProperty(_MKR.X, float, callback=_prop_callback)
     #: Marker value
-    y = SCPIProperty(_MKR.Y, _prop_callback)  # FIXME: query only -> query_y() method
+    y = SCPIProperty(_MKR.Y, float, callback=_prop_callback)  # FIXME: query only -> query_y() method
 
 
 class Diagram(ZNB_gen.DISPlay.WINDow):
@@ -501,22 +488,22 @@ class Diagram(ZNB_gen.DISPlay.WINDow):
 
     _WIN = ZNB.DISPlay.WINDow
 
-    is_maximized = SCPIProperty(_WIN.MAXimize)
+    is_maximized = SCPIProperty(_WIN.MAXimize, bool)
     """
     Displays the diagram on top of the other diagrams, filling the whole screen.
     """
 
-    name = SCPIProperty(_WIN.NAME)
+    name = SCPIProperty(_WIN.NAME, str)
     """
     The diagram name, shown in upper right corner. Returned with DISPlay:CATalog?
     """
 
-    title = SCPIProperty(_WIN.TITLe.DATA)
+    title = SCPIProperty(_WIN.TITLe.DATA, str)
     """
     The diagram title, shown on screen.
     """
 
-    title_is_visible = SCPIProperty(_WIN.TITLe.STATe)
+    title_is_visible = SCPIProperty(_WIN.TITLe.STATe, bool)
     """
     Determines whether the diagram title is shown or not.
     """

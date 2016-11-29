@@ -27,7 +27,12 @@ class SCPIResponse(object):
         return x.strip().strip("'")
 
     def __int__(self):
-        return int(str(self))
+        x = str(self).split()[0]  # Remove the unit string
+        return int(x)
+
+    def __float__(self):
+        x = str(self).split()[0]  # Remove the unit string
+        return float(x)
 
     def comma_list_pairs(self):
         """
