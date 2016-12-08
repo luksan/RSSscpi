@@ -31,12 +31,7 @@ class SCPIProperty(object):
     def _get_leaf(self, instance):
         # type: (T) -> SCPINodeBase
         root = self._get_root_node(instance)  # type: SCPINodeBase
-        x = [self._leaf_node]
-        while not issubclass(root.__class__, x[-1]._parent_class):
-            x.append(x[-1]._parent_class)
-        for c in reversed(x):
-            root = c(parent=root)
-        return root  # Return the instantiated leaf node, properly linked to the root node
+        return self._leaf_node.relink_to_ancestor(root)
 
     def __get__(self, instance, owner=None):
         if instance is None:

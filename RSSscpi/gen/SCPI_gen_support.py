@@ -86,6 +86,24 @@ class SCPINodeBase(object):
             return self
         return self._parent._get_root()
 
+    @classmethod
+    def relink_to_ancestor(cls, ancestor):
+        """
+        Create a new instance with the parent chain linking to ancestor.
+
+        :param ancestor: The SCPINodeBase instance to link to
+        :type ancestor: SCPINodeBase
+        :rtype: SCPINodeBase
+        """
+        assert isinstance(ancestor, SCPINodeBase)
+        x = [cls]
+        while not issubclass(ancestor._SCPI_class, x[-1]._parent_class):
+            x.append(x[-1]._parent_class)
+        leaf = ancestor
+        for c in reversed(x):
+            leaf = c(parent=leaf)
+        return leaf  # Return the instantiated leaf node, properly linked to the root node
+
 
 class SCPINode(SCPINodeBase):
     _cmd = "SCPINode"
