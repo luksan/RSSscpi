@@ -16,10 +16,10 @@ znb = ZNB(DummyVisa("K1"))
 def test():
     print "*  test()"
     znb.CALCulate.MARKer(3).FUNCtion().BWIDth.q("asd")
-    
+
     znb.CALCulate.MARKer()
     z = znb.CALCulate(2).MARKer("3").FUNCtion.BWIDth
-    
+
     z.MODE.w(123, 123,123333)
 
     ass = znb.SENSe.CORRection.COLLect.AUTO.ASSignment
