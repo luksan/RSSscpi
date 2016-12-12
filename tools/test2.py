@@ -48,8 +48,8 @@ def test_marker():
     m1 = tr.get_marker(1)
     x = m1.tracking
     m1.tracking = False
-    m1.state = True
-    m1.state = "OFF"
+    m1.is_enabled = True
+    m1.is_enabled = "OFF"
     m1.y
     try:
         m1.y = 2

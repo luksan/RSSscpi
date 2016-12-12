@@ -62,14 +62,13 @@ class ZNB(ZNB_gen):
         """
         return Diagram(n, self)
 
-    def save_screenshot(self, filename, diagram_n=None):  # FIXME: pass Diagram instance instead of number
+    def save_screenshot(self, filename, diagram=None):
         """
         Take a screenshot containing only this diagram. The file type is inferred from the filename extension,
         valid options are BMP, EMF, EWMF, JPG, PDF, PNG, SVG, WMF.
 
-        :param filename: The filename under which the screenshot will be saved on the instrument.
-        :param diagram_n: The number of the diagram to be captured. The whole screen will be captured if None.
-        :type diagram_n: int or None
+        :param str filename: The filename under which the screenshot will be saved on the instrument.
+        :param Diagram diagram: The diagram to be captured. The whole screen will be captured if None.
         :return: a File object representing the captured screenshot
         :rtype: File
         """
@@ -77,12 +76,11 @@ class ZNB(ZNB_gen):
         filetype = filetype[1:].upper()
         if filetype not in self.HCOPy.DEVice.LANGuage.args:
             raise ValueError("Invalid file extension for screenshot: " + filetype)
-        self.MMEMory.NAME.w(filename)  # Define the filename
+        self.MMEMory.NAME().w(filename)  # Define the filename
         self.HCOPy.DESTination().w("MMEM")  # Print to mass storage
         self.HCOPy.DEVice.LANGuage().w(filetype)  # Define the file type
-        if diagram_n:
-            d = self.get_diagram(diagram_n)
-            d.is_maximized = d.is_maximized  # Make the diagram active FIXME: implement as Diagram method
+        if diagram is not None:
+            diagram.select_diagram()
             self.HCOPy.PAGE.WINDow().w("ACTive")  # Print only the active diagram
         else:
             self.HCOPy.PAGE.WINDow().w("HARDcopy")
@@ -207,8 +205,8 @@ class SweepSegment(ZNB.SENSe.SEGMent):
     if_selectivity = SCPIProperty(_SEG.BWIDth.RESolution.SELect, str)
     number_of_points = SCPIProperty(_SEG.SWEep.POINts, int)
     power_level = SCPIProperty(_SEG.POWer, float)
-    sweep_time = SCPIProperty(_SEG.SWEep.TIME, float)
-    sweep_mode = SCPIProperty(_SEG.SWEep.GENeration, str)  # FIXME: see Sweep
+    sweep_time = SCPIProperty(_SEG.SWEep.TIME, float)  # type: float
+    analog_sweep_is_enabled = SCPIPropertyMapping(_SEG.SWEep.GENeration, str, {"ANALog": True, "STEPped": False})
 
 
 class SweepSegments(object):
@@ -457,7 +455,7 @@ class Marker(ZNB.CALCulate.MARKer):
 
     _MKR = ZNB.CALCulate.MARKer
     tracking = SCPIProperty(_MKR.SEARch.TRACking, bool, callback=_prop_callback)  #: Marker tracking enabled
-    state = SCPIProperty(_MKR.STATe, bool, callback=_prop_callback)  # FIXME: rename -> is_enabled
+    is_enabled = SCPIProperty(_MKR.STATe, bool, callback=_prop_callback)
     """Enable/disable the marker"""
     #: Marker position
     x = SCPIProperty(_MKR.X, float, callback=_prop_callback)
@@ -485,6 +483,14 @@ class Diagram(ZNB_gen.DISPlay.WINDow):
         :return:
         """
         self.STATe().w("OFF")
+
+    def select_diagram(self):
+        """
+        Make the diagram the active diagram.
+
+        :return: None
+        """
+        self.is_maximized = self.is_maximized
 
     _WIN = ZNB.DISPlay.WINDow
 
@@ -516,7 +522,7 @@ class Diagram(ZNB_gen.DISPlay.WINDow):
         :return: a File object representing the captured screenshot
         :rtype: File
         """
-        return self.instrument.save_screenshot(filename=filename, diagram_n=self.n)
+        return self.instrument.save_screenshot(filename=filename, diagram=self)
 
     def query_assigned_traces(self):
         """
