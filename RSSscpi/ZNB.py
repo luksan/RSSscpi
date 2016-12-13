@@ -267,7 +267,7 @@ class SweepSegments(object):
             yield self[x]
 
     def insert_segment(self, start_freq, stop_freq, points, ifbw, power, time="AUTO",
-                       lo_sideband="AUTO", if_selectivity="NORMal", sweep_mode="STEPped", position=0):
+                       lo_sideband="AUTO", if_selectivity="NORMal", analog_sweep=False, position=0):
         """
 
         :param float start_freq: Segment start frequency in Hz
@@ -278,10 +278,14 @@ class SweepSegments(object):
         :param float time: Segment sweep time or segment dwell time in seconds
         :param str lo_sideband: "POSitive" | "NEGative" | "AUTO" (default)
         :param str if_selectivity: "NORMal" (default) | "MEDium" | "HIGH"
-        :param str sweep_mode: "STEPped" | "ANALog"
+        :param bool analog_sweep: Sets the generator sweep type for the segment, "STEPped" (False) or "ANALog" (True)
         :param int position: The position in the segment list which the created segment will be inserted at. Default is 0 (top).
         :return:
         """
+        if analog_sweep:
+            sweep_mode = "ANALog"
+        else:
+            sweep_mode = "STEPped"
         self._SEG(position+1).INSert().w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity, sweep_mode)
         return SweepSegment(position, self.channel)
 
