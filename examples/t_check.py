@@ -30,19 +30,11 @@ znb.init()
 znb.RST.w()
 znb.INITiate.CONTinuous.ALL().w("OFF")
 
-ch_no = 1
 ch = znb.get_channel(1)
 ch.name = "SP_ch_1"
 dia1 = znb.get_diagram(1)
 
-sense = znb.SENSe(ch_no)
-
-sense.FREQuency.STARt().w(100e6)
-sense.FREQuency.STOP().w(3e9)
-
-sense.SWEep.POINts().w(801)
-znb.SOURce(ch_no).POWer.LEVel().w("0 dBm")
-
+ch.configure_freq_sweep(start_freq=100e6, stop_freq=3e9, points=801, power=0)
 
 # Add traces
 ch.active_trace.delete()  # remove the predefined trace

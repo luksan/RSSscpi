@@ -63,11 +63,16 @@ def test_trace():
     x = tr.trace_format
     tr.trace_format = 2
 
+
 def test_channel():
     print "*  test_channel()"
     ch = znb.get_channel(3)
-    x = ch.sweep_points.query_default()
-    ch.sweep_points.value = 301
+    ch.sweep.points.query_default()
+    ch.sweep.points.value = 301
+    ch.sweep.points = 301
+    ch.sweep.TYPE.w("LIN")
+    ch.configure_freq_sweep(10, 10e6, points=101, ifbw=1e3, power=-10, log_sweep=True)
+
 
 def test_diagram():
     print "*  test_diagram()"

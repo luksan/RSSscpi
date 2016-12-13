@@ -102,6 +102,9 @@ class Channel(object):
         self.SENSe = instrument.SENSe(n)
         self.SWEep = instrument.SENSe(n).SWEep
         self.CORRection = instrument.SENSe(n).CORRection
+        self.SOURce = instrument.SOURce(n)
+
+        self.sweep = Sweep(self)
 
     name = SCPIProperty(ZNB.CONFigure.CHANnel.NAME, str, get_root_node=lambda self: self.CONFch)
     """
@@ -149,9 +152,9 @@ class Channel(object):
         name = trace.name if isinstance(trace, Trace) else str(trace)
         self.CALC.PARameter.SELect().w(name)
 
-    sweep_points = SCPIPropertyMinMax(ZNB.SENSe.SWEep.POINts, int, get_root_node=lambda self: self.SWEep)
+    power_level = SCPIProperty(ZNB.SOURce.POWer.LEVel.IMMediate.AMPLitude, float, get_root_node=lambda self: self.SOURce)  # type: float
     """
-    The number of points in the sweep. SENSe<Ch>:SWEep:POINts
+    The channel power level, in dBm.
     """
 
     def cal_auto(self, vna_ports, cal_unit_ports=None, cal_type="FNPort", cal_unit_characterization=""):
@@ -162,6 +165,31 @@ class Channel(object):
         else:
             cmd_fmt = "{:s}, {:q}, {:d*}"
             self.CORRection.COLLect.AUTO.TYPE().w(cal_type, cal_unit_characterization, vna_ports, fmt=cmd_fmt)
+
+    def configure_freq_sweep(self, start_freq, stop_freq, points=None, ifbw=None, power=None, log_sweep=False):
+        """
+        Configure the instrument for a frequency sweep. Parameters which are not provided are left as is.
+
+        :param float start_freq: Start frequency
+        :param float stop_freq: Stop frequency
+        :param int points: Number of sweep points
+        :param float ifbw: Measurement IF bandwidth
+        :param float power: Channel power setting, in dBm
+        :param bool log_sweep: Sets the sweep type to LOGarithmic if True, LINear if False (default).
+        """
+        if not log_sweep:
+            self.sweep.TYPE().w("LIN")
+        else:
+            self.sweep.TYPE().w("LOG")
+
+        self.SENSe.FREQuency.STARt().w(start_freq)
+        self.SENSe.FREQuency.STOP().w(stop_freq)
+        if points is not None:
+            self.sweep.points = points
+        if ifbw is not None:
+            self.SENSe.BANDwidth().w(ifbw)
+        if power is not None:
+            self.power_level = power
 
     def save_touchstone(self, filename, ports, fmt="LOGPhase", mode_impedance="CIMPedance"):
         """
@@ -302,10 +330,10 @@ class Sweep(ZNB_gen.SENSe.SWEep):
     analog_sweep_is_enabled = SCPIPropertyMapping(_SWE.GENeration, str, {"ANALog": True, "STEPped": False})
     dwell_time = SCPIProperty(_SWE.DWELl, float)
     dwell_on_each_partial_measurement = SCPIPropertyMapping(_SWE.DWELl.IPOint, str, {"ALL": True, "FIRSt": False})
-    number_of_points = SCPIPropertyMinMax(_SWE.POINts, int)
-    sweep_count = SCPIProperty(_SWE.COUNt, int)  # FIXME: move to Channel?
-    sweep_time = SCPIPropertyMinMax(_SWE.TIME, float)
-    sweep_time_auto = SCPIPropertyMinMax(_SWE.TIME.AUTO, bool)
+    points = SCPIPropertyMinMax(_SWE.POINts, int)
+    count = SCPIProperty(_SWE.COUNt, int)
+    time = SCPIPropertyMinMax(_SWE.TIME, float)
+    use_auto_time = SCPIProperty(_SWE.TIME.AUTO, bool)
     step_size = SCPIPropertyMinMax(_SWE.STEP, float)
 
 
