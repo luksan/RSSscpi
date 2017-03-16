@@ -21,6 +21,10 @@ class ZNB(ZNB_gen):
         super(ZNB_gen, self).init()
         self.SYSTem.COMMunicate.GPIB.SELF.RTERminator().w("EOI")
         self.SYSTem.COMMunicate.CODec().w("UTF8")  # Set the character encoding
+        orig_lang = str(self.SYSTem.LANGuage().q())
+        if orig_lang != "SCPI":
+            self.visa_logger.warning("Changing remote language from '%s' to 'SCPI' (default)", orig_lang)
+            self.SYSTem.LANGuage().w("SCPI")
 
     def set_source_power_offset(self, channel=None, src=0, power=-300, relative=True):
         if relative:
