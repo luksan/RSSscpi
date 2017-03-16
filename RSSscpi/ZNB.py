@@ -178,9 +178,9 @@ class Channel(object):
         :param bool log_sweep: Sets the sweep type to LOGarithmic if True, LINear if False (default).
         """
         if not log_sweep:
-            self.sweep.TYPE().w("LIN")
+            self.SWEep.TYPE().w("LIN")
         else:
-            self.sweep.TYPE().w("LOG")
+            self.SWEep.TYPE().w("LOG")
 
         self.SENSe.FREQuency.STARt().w(start_freq)
         self.SENSe.FREQuency.STOP().w(stop_freq)
@@ -325,7 +325,11 @@ class Sweep(ZNB_gen.SENSe.SWEep):
     SEGMENT = "SEGM"
 
     def __init__(self, channel):
-        super(Sweep, self).__init__(parent=channel.SWEep)
+        """
+
+        :param Channel channel:
+        """
+        super(Sweep, self).__init__(parent=channel.SENSe)
         self.channel = channel
         self.segments = SweepSegments(self.channel)
 
