@@ -7,6 +7,10 @@
 from RSSscpi import ZNB
 import visa
 
+import logging
+
+#logging.basicConfig(level=logging.WARN, filename=__file__[:-3]+"_log.txt", filemode="w")
+
 rm = visa.ResourceManager()
 
 znb_ip = "192.168.56.101"
@@ -18,7 +22,8 @@ visa_res = rm.open_resource('TCPIP::' + znb_ip + '::INSTR')
 
 znb = ZNB(visa_res)
 
-znb.logger = open("t_check_visa_log.txt", "wb")
+znb.visa_logger.setLevel(logging.DEBUG)
+znb.visa_logger.addHandler(logging.FileHandler(filename=__file__[:-3]+"_visa_log.txt", mode="wb"))
 znb.init()
 
 # Instrument setup

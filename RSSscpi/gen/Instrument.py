@@ -18,6 +18,8 @@ from collections import OrderedDict
 import itertools
 import re, string
 
+import logging
+
 
 class LimitedCapacityDict(OrderedDict):
     def __init__(self, max_len=None):
@@ -118,10 +120,12 @@ class Instrument(SCPINodeBase):
         """
         The number of writes/queries performed in total
         """
-        self.logger = None
+
+        self.visa_logger = logging.getLogger(__name__ + ".VISA")
         """
-        A file-like object used for logging VISA operations
+        A logging.Logger instance for all VISA interactions
         """
+
         self._service_request_callback_handle = None
         self.last_cmd_time = 0
 
@@ -170,7 +174,7 @@ class Instrument(SCPINodeBase):
         :return:
         """
         duration = timeit.default_timer() - self.last_cmd_time
-        #print "Handling service request"
+        self.visa_logger.debug("Handling service request")
         with self._visa_lock:
             with self._in_callback:
                 stb = self._visa_res.read_stb()  # Read out the SRQ status byte
@@ -178,7 +182,7 @@ class Instrument(SCPINodeBase):
                     esr = self._call_visa(self._visa_res.query, "*ESR?")  # read and reset the event status register
                 else:
                     esr = 0
-                self.log("VISA event: STB: {:08b}, ESR: {:08b}, duration {:.2f} ms".format(stb, int(esr), duration*1e3))
+                self.visa_logger.info("VISA event: STB: {:08b}, ESR: {:08b}, duration {:.2f} ms".format(stb, int(esr), duration*1e3))
                 self.event_queue.put_nowait(VISAEvent(duration, stb, esr))
 
                 if stb & (1 << 2):  # Error queue not empty bit
@@ -194,19 +198,11 @@ class Instrument(SCPINodeBase):
             bad_cmd = r.group(3)
             tb = self._cmd_debug.get(bad_cmd)
             if not tb:
-                print "No stack for", str(err), r.groups()
+                self.visa_logger.debug("No stack for %s %s", str(err), str(r.groups()))
             self.error_queue.put_nowait(InstrumentError(x[0], x[1], tb))
-            self.log("%d %s" % x)
+            self.visa_logger.error("%d %s", *x)
         if not cnt:
             self.error_queue.put_nowait(InstrumentError(-1, str(err), None))
-
-    def log(self, line):
-        if not self.logger:
-            return
-        self.logger.write(ctime())
-        self.logger.write("\t")
-        self.logger.write(line)
-        self.logger.write("\n")
 
     def check_error_queue(self):
         if not self.error_queue.empty() and self.exception_on_error and self._in_callback.acquire(False):
@@ -226,14 +222,12 @@ class Instrument(SCPINodeBase):
             ret = func(arg)
         except visa.Error, e:
             err = "Resource error: " + str(e) + ", " + arg
-            print err
+            self.visa_logger.exception(err)
             raise
         finally:
             self.last_cmd_time = timeit.default_timer()
             elapsed = (self.last_cmd_time - start) * 1e3
-            self.log("%.2f ms \t %s" % (elapsed, arg))
-            if err:
-                self.log(err)
+            self.visa_logger.info("%.2f ms \t %s", elapsed, arg, extra={"duration": elapsed})
         return ret
 
     @staticmethod

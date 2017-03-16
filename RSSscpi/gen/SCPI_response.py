@@ -4,6 +4,7 @@
 @author: Lukas Sandström
 """
 
+import logging
 import numpy
 
 
@@ -79,7 +80,8 @@ class SCPIBlockData(object):
     @staticmethod
     def parse(blk):
         if blk[0] != "#":
-            print "WARN: invalid block data header"
+            logging.getLogger(__name__).error("Invalid block data header: '%s[...]", str(blk[0:5]))
+            #FIXME: raise exception here?
         n = int(blk[1])  # The number of digits in the data length specifier
         l = int(blk[2:n + 2])  # data length
         return blk[n + 2:l + n + 2]
