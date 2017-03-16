@@ -199,7 +199,6 @@ class Channel(object):
         :param filename: Desired filename
         :type filename: str
         :param ports: List of integers designating the logical ports which shall be included in the file
-        :type ports: list of int
         :param fmt: Data format of the Touchstone file, default is "LOGPhase". "COMPlex" and "LINPhase" are the alternatives.
         :param mode_impedance: "CIMPedance" (default) or "PIMPedance". Determines if port impedances are renormalized according to common target impedance (50 ohm) or the individual port impedances.
         :return: A File object representing the stored file

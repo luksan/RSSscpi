@@ -5,7 +5,6 @@ Created on Thu Feb 11 11:30:33 2016
 @author: Lukas Sandström
 """
 
-import inspect
 from SCPI_response import SCPIResponse
 
 # TODO
@@ -70,11 +69,11 @@ class SCPINodeBase(object):
 
     def build_cmd(self):
         x = self._build_cmd_r()
-        return x[1:]  # remove leading colon
+        return x[1:]  # Remove leading colon. This assumes that the top node is the empty string
 
     def _build_cmd_r(self):
         if not self._parent:
-            return self._cmd
+            return self._cmd  # If self._parent == None, then self._cmd == ""
         return self._parent._build_cmd_r() + ":" + self._cmd
 
     def _get_root(self):
