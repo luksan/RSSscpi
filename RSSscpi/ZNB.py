@@ -110,6 +110,7 @@ class ZNB(ZNB_gen):
             self.SENSe = instrument.SENSe(n)
             self.CORRection = instrument.SENSe(n).CORRection
             self.SOURce = instrument.SOURce(n)
+            self.TRIGger = instrument.TRIGger(n)  # type: ZNB_gen.TRIGger
 
             self.sweep = instrument.Sweep(self)
 
