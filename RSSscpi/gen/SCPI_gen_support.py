@@ -177,6 +177,15 @@ class SCPIBool(SCPIQuery, SCPISet):
     def _mk_arg(x):
         return "OFF" if not x or x == "0" or str(x).upper() == "OFF" else "ON"
 
+    def q(self, *args, **kwargs):
+        return bool(super(SCPIBool, self).q(*args, **kwargs))
+
     def w(self, x):
         super(SCPIBool, self).w(self._mk_arg(x))
+
+    def on(self):
+        self.w("ON")
+
+    def off(self):
+        self.w("OFF")
 
