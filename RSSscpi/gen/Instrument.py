@@ -232,15 +232,31 @@ class Instrument(SCPINodeBase):
             self.visa_logger.info("%.2f ms \t %s", elapsed, arg, extra={"duration": elapsed})
         return ret
 
-    @staticmethod
-    def _build_arg_str(cmd, args, kwargs):
-        fmt = kwargs.get("fmt")
-        if not fmt:
-            args = (args, )
-            if kwargs.get("quote") or "'string'" in cmd.args:
-                fmt = "{:q*}"
+    def _build_arg_str(self, cmd, args, kwargs):
+        """
+
+        :param SCPINode cmd: The SCPINode which the arguments belong to
+        :param tuple args: *args from query()/write()
+        :param dict kwargs: **kwargs from query()/write()
+        :return: The formatted command arguments
+        """
+        fmt = kwargs.get("fmt", "")
+        if not fmt and args:
+            if "quote" in kwargs:
+                if kwargs["quote"]:
+                    fmt = "{:q}"
+                else:
+                    fmt = "{:s}"
+            elif "'string'" in cmd.args and str(args[0]).lower() not in (x.lower() for x in cmd.args):
+                fmt = "{:q}"
+            elif cmd.args and all(x[0] == "'" and x[-1] == "'" for x in cmd.args if x):
+                # Quote the argument if all alternatives are quoted
+                # See TRIGger:SEQuence:LINK
+                fmt = "{:q}"
             else:
-                fmt = "{:s*}"
+                fmt = "{:s}"
+            if not cmd.args:
+                self.visa_logger.warning("Command %s does not specify any arguments. Supply fmt= kwarg to suppress this warning.", cmd.build_cmd())
         return SCPICmdFormatter().vformat(fmt, args, kwargs)
 
     def _write(self, cmd_str):

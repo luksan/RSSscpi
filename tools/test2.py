@@ -10,6 +10,11 @@ from RSSscpi.gen.SCPI_gen_support import DummyVisa, SCPINodeBase
 from RSSscpi import ZNB
 import inspect
 
+import logging
+import sys
+
+logging.basicConfig(stream=sys.stdout)
+
 znb = ZNB(DummyVisa("K1"))
 
 
@@ -84,6 +89,19 @@ def test_diagram():
 def test_sweep():
     pass
 
+def cmd_formatting():
+    print "* cmd_formatting()"
+    znb.TRACe.COPY.MATH().w("MDATA8")  # This shouldn't be quoted
+    znb.TRACe.COPY.MATH().w("sq")  # Quote
+    znb.SENSe.SWEep.POINts().w(1e9)
+    znb.SENSe.SWEep.POINts().w("1000000000")
+    znb.SENSe.SWEep.POINts().w(1000000000)
+    znb.TRIGger.SEQuence.LINK().w("POINt")  # This should be quoted
+    znb.TRIGger.SEQuence.LINK().w("'POINT'")  # This should only have one pair of quotes
+    znb.CALCulate.MARKer.Y().q("")
+    znb.CALCulate.MARKer.Y().q("asd")
+
+cmd_formatting()
 test_channel()
 test_trace()
 test_marker()
