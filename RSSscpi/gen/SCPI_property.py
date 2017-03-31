@@ -39,12 +39,12 @@ class SCPIProperty(object):
         leaf = self._get_leaf(instance)  # type: SCPIQuery
         if not hasattr(leaf, "q"):
             raise AttributeError("SCPI node doesn't support query")
-        args = ""  # FIXME: the callback argument mangling needs improvement
+        args = ()  # FIXME: the callback argument mangling needs improvement
         if self._callback:
             cb = self._callback(self=instance, get=True)
             if cb is not None:
-                args = cb
-        return self._conv(leaf.q(args))
+                args = (cb, )
+        return self._conv(leaf.q(*args))
 
     def __set__(self, instance, value):
         leaf = self._get_leaf(instance)  # type: SCPISet
