@@ -59,7 +59,7 @@ class ZNB(ZNB_gen):
         """
 
         :param n: Channel number
-        :rtype: Channel
+        :rtype: ZNB.Channel
         """
         return self.Channel(n, self)
 
@@ -67,7 +67,7 @@ class ZNB(ZNB_gen):
         """
 
         :param n: The diagram id, Wnd
-        :rtype: Diagram
+        :rtype: ZNB.Diagram
         """
         return self.Diagram(n, self)
 
@@ -122,7 +122,7 @@ class ZNB(ZNB_gen):
             """
 
             :param name: The name of the trace
-            :rtype: Trace
+            :rtype: ZNB.Trace
             """
             return self.instrument.Trace(name, self)
 
@@ -217,7 +217,7 @@ class ZNB(ZNB_gen):
             :param fmt: Data format of the Touchstone file, default is "LOGPhase". "COMPlex" and "LINPhase" are the alternatives.
             :param mode_impedance: "CIMPedance" (default) or "PIMPedance". Determines if port impedances are renormalized according to common target impedance (50 ohm) or the individual port impedances.
             :return: A File object representing the stored file
-            :rtype: File
+            :rtype: ZNB.File
             """
             cmd_fmt = "{:d}, {:q}, {:s}, {:s}, {:d*}"
             self.instrument.MMEMory.STORe.TRACe.PORTs().w(self.n, filename, fmt, mode_impedance, ports, fmt=cmd_fmt)
@@ -463,7 +463,7 @@ class ZNB(ZNB_gen):
             """
 
             :param n: Marker number
-            :rtype: Marker
+            :rtype: ZNB.Marker
             """
             return self.channel.instrument.Marker(n, self)
 
