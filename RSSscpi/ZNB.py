@@ -108,7 +108,6 @@ class ZNB(ZNB_gen):
             self.CALC = instrument.CALCulate(n)
             self.CONFch = instrument.CONFigure.CHANnel(n)
             self.SENSe = instrument.SENSe(n)
-            self.SWEep = instrument.SENSe(n).SWEep
             self.CORRection = instrument.SENSe(n).CORRection
             self.SOURce = instrument.SOURce(n)
 
@@ -379,7 +378,7 @@ class ZNB(ZNB_gen):
             return self.channel.CORRection
 
         def _sweep_node(self):
-            return self.channel.SWEep
+            return self.channel.SENSe.SWEep
 
         def _disp_node(self):
             return self.channel.instrument.DISPlay
