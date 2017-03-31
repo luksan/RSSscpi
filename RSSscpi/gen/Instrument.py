@@ -295,4 +295,25 @@ class Instrument(SCPINodeBase):
         self.SYSTem.DISPlay.UPDate().w(cmd)
 
     def preset(self):
+        """
+        Send *RST to the instrument.
+        """
         self.RST.w()
+
+    def query_OPC(self):
+        """
+        Send *OPC? to the instrument and wait for the response.
+        """
+        return str(self.OPC.q())
+
+    def send_OPC(self):
+        """
+        Send *OPC to the instrument.
+        """
+        self.OPC.w()
+
+    def send_TRG(self):
+        """
+        Send *TRG to the instrument.
+        """
+        self.TRG.w()

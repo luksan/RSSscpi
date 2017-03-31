@@ -65,4 +65,4 @@ tr_Tcheck.ref_pos = 50
 
 # Make a measurement sweep
 znb.INITiate.IMMediate.ALL.w()
-znb.OPC.q()
+znb.query_OPC()

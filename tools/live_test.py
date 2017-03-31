@@ -24,7 +24,7 @@ znb = ZNB(znb_res)
 znb.init()
 
 print znb.IDN.q()
-znb.OPC.q()
+znb.query_OPC()
 
 cwd = znb.filesystem.getcwd()
 #print cwd

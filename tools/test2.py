@@ -28,6 +28,7 @@ def test():
     x = [5,4,3]
     ass(1).DEFine.w(*x)
     znb.OPC.q()
+    znb.query_OPC()
 
     z1 = znb.CALCulate(1)
     z = z1.MARKer(1)

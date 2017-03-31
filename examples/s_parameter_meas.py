@@ -71,7 +71,7 @@ tr_s22 = ch.create_trace("S22", "S22", dia1)
 
 #ch.cal_auto((1, 2))
 znb.INITiate.IMMediate.ALL.w()
-znb.OPC.w()
+znb.send_OPC()
 
 
 def wait_for_event():
@@ -90,7 +90,7 @@ print "done"
 
 # Make the measurement
 znb.INITiate.IMMediate.ALL.w()
-znb.OPC.w()
+znb.send_OPC()
 
 print "Measuring",
 wait_for_event()
@@ -99,4 +99,4 @@ print "done"
 # Save the S-parameter data
 print ch.save_touchstone("test.s2p", ports=(1,2))
 # Final OPC before the program terminates
-znb.OPC.q()
+znb.query_OPC()
