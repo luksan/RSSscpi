@@ -73,6 +73,7 @@ def test_channel():
     ch.sweep.points = 301
     ch.sweep.TYPE.w("LIN")
     ch.configure_freq_sweep(10, 10e6, points=101, ifbw=1e3, power=-10, log_sweep=True)
+    ch.init_sweep()
 
 
 def test_diagram():

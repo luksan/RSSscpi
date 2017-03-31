@@ -186,9 +186,9 @@ class ZNB(ZNB_gen):
             :param bool log_sweep: Sets the sweep type to LOGarithmic if True, LINear if False (default).
             """
             if not log_sweep:
-                self.SWEep.TYPE().w("LIN")
+                self.SENSe.SWEep.TYPE().w("LIN")
             else:
-                self.SWEep.TYPE().w("LOG")
+                self.SENSe.SWEep.TYPE().w("LOG")
 
             self.SENSe.FREQuency.STARt().w(start_freq)
             self.SENSe.FREQuency.STOP().w(stop_freq)
@@ -198,6 +198,14 @@ class ZNB(ZNB_gen):
                 self.SENSe.BANDwidth().w(ifbw)
             if power is not None:
                 self.power_level = power
+
+        def init_sweep(self):
+            """
+            INITiate:IMMediate
+
+            This is valid in single sweep mode only.
+            """
+            self.instrument.INITiate(self.n).IMMediate().w()
 
         def save_touchstone(self, filename, ports, fmt="LOGPhase", mode_impedance="CIMPedance"):
             """

@@ -70,7 +70,7 @@ tr_s22 = ch.create_trace("S22", "S22", dia1)
 # Calibrate
 
 #ch.cal_auto((1, 2))
-znb.INITiate.IMMediate.ALL.w()
+ch.init_sweep()
 znb.send_OPC()
 
 
@@ -89,7 +89,7 @@ print "done"
 #print opc
 
 # Make the measurement
-znb.INITiate.IMMediate.ALL.w()
+ch.init_sweep()
 znb.send_OPC()
 
 print "Measuring",
