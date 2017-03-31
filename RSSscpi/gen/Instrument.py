@@ -77,7 +77,9 @@ class SCPICmdFormatter(string.Formatter):
             return ", ".join(map(lambda x: self.format_field(x, format_spec[:-1]), value))
         elif format_spec[-1] == "q":  # code for single quoted string
             format_spec = format_spec[:-1] + "s"
-            return "'" + self.format_field(value, format_spec) + "'"
+            value = str(value)
+            if not value or value[0] not in ["'", '"'] or value[0] != value[-1]:  # The arg isn't quoted
+                value = "'%s'" % (value, )
         elif format_spec[-1] == "s":  # coerce everything with str() for convenience
             value = str(value)
 
