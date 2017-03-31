@@ -88,7 +88,7 @@ class Webhelp(object):
 class RohdeZVAWebhelp(Webhelp):
     def __init__(self, download_webhelp=False):
         self._base_url = "http://www.rohde-schwarz.com/webhelp/webhelp_zva_{1}{0}"
-        self._help_rev = 6
+        self._help_rev = 8
 
         self.cmd_list_file = "SCPI_cmd_lists/ZVA_help_index.htm"
 
@@ -135,13 +135,13 @@ class RohdeZVAWebhelp(Webhelp):
             "/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages", self._help_rev)
 
         with open(self.cmd_list_file) as f:
-            soup = BeautifulSoup(f)
+            soup = BeautifulSoup(f, "html.parser")
         with open(self.cmd_list_file, "w") as f:
             f.write(soup.prettify())
 
         for u in soup("key"):
             # TODO: The second item in the list can contain "(deprecated)". Use this info?
-            cmd = u['name'].split()[0].translate(None, '"\\')
+            cmd = str(u['name'].split()[0]).translate(None, '"\\')  # Remove " and \ from the command
             if not cmd[0:3].isupper():
                 continue  # All SCPI commands start with at least three capital letters
             cmd_key = str(cmd).translate(None, '[]?')
@@ -164,7 +164,7 @@ class RohdeZNBWebhelp(Webhelp):
     def __init__(self, download_webhelp=False):
 
         self._base_url = "http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_{1}{0}"
-        self._help_rev = 7
+        self._help_rev = 8
 
         self.toc_file = "SCPI_cmd_lists/ZNB_webhelp_toc.xml"
         self.cmd_list_file = "SCPI_cmd_lists/ZNB_webhelp_command_list.htm"
@@ -190,7 +190,7 @@ class RohdeZNBWebhelp(Webhelp):
         else:
             raise RuntimeError("No valid ZNB web help URL found")
 
-        toc = BeautifulSoup(toc)
+        toc = BeautifulSoup(toc, "html.parser")
         with open(self.toc_file, "w") as f:
             f.write(toc.prettify("utf-8"))
 
@@ -198,16 +198,13 @@ class RohdeZNBWebhelp(Webhelp):
         url = self._base_url.format(cmd_list_url, self._help_rev)
         urlretrieve(url, "SCPI_cmd_lists/ZNB_webhelp_command_list.htm")
 
-        with open("SCPI_cmd_lists/ZNB_webhelp_rev.txt", "w") as u:
-            u.write("%i" % self._help_rev)
-
     def load_urls(self):
         """
         Load help URLs from the SCPI command list.
         https://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_5/Content/c0e6efab4c3f4280.htm
         :return:
         """
-        toc_soup = BeautifulSoup(open(self.toc_file))
+        toc_soup = BeautifulSoup(open(self.toc_file), "html.parser")
 
         common = toc_soup.find(title="Command Reference").find(title="Common Commands")["link"]
         self._common_commands = self._base_url.format(common, self._help_rev)
@@ -215,7 +212,7 @@ class RohdeZNBWebhelp(Webhelp):
         if_msg = toc_soup.find(title="VXI-11 Interface Messages")["link"]
         self._interface_messages = self._base_url.format(if_msg, self._help_rev)
 
-        cmd_soup = BeautifulSoup(open(self.cmd_list_file))
+        cmd_soup = BeautifulSoup(open(self.cmd_list_file), "html.parser")
         d = cmd_soup.find("div", class_="block")
         for u in d("a"):
             cmd = u.string
@@ -335,7 +332,10 @@ class ClassCodeGen(object):
             self._indent += 1
             self._make_docstr(cmd, parents + [cmd_str])
             self._out('_cmd = "' + cmd_str + '"')
-            self._out('args = ["' + '", "'.join(cmd.args) + '"]')
+            if cmd.args:
+                self._out('args = ["' + '", "'.join(cmd.args) + '"]')
+            else:
+                self._out('args = []')  # Don't emit the empty string if we don't have any arguments
             self._out("")
             self._gen(cmd, parents + [cmd_str])
             self._indent -= 1
@@ -367,6 +367,7 @@ class ZNBTreePatcher(object):
             setattr(x, prop, self.fixit[(cmd, prop)])
 
         return cmd_tree
+
 
 def generate_SCPI_class(input_file, module_name, webhelp=Webhelp(), tree_patcher=None):
     """
