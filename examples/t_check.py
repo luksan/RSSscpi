@@ -9,7 +9,21 @@ import visa
 
 import logging
 
-#logging.basicConfig(level=logging.WARN, filename=__file__[:-3]+"_log.txt", filemode="w")
+
+class VISAFilter(logging.Filter):
+    def filter(self, record):
+        """
+        :param logging.LogRecord record:
+        :return: bool
+        """
+        if record.name.endswith(".VISA") and record.levelno <= logging.INFO:
+            return False
+        return True
+
+# logging.basicConfig(level=logging.WARN, filename=__file__[:-3]+"_log.txt", filemode="w")
+logging.basicConfig()
+logger = logging.getLogger()
+logger.handlers[0].addFilter(VISAFilter())  # don't print VISA INFO logging to the console
 
 rm = visa.ResourceManager()
 
