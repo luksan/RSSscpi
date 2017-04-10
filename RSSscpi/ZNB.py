@@ -24,7 +24,11 @@ class ZNB(ZNB_gen):
     def init(self):
         super(ZNB, self).init()
         self.SYSTem.COMMunicate.GPIB.SELF.RTERminator().w("EOI")
-        self.SYSTem.COMMunicate.CODec().w("UTF8")  # Set the character encoding
+        try:
+            self.SYSTem.COMMunicate.CODec().w("UTF8")  # Set the character encoding
+        except AttributeError:
+            # FIXME: subclass this properly
+            pass  # This command isn't available on ZVA
         orig_lang = str(self.SYSTem.LANGuage().q())
         if orig_lang != "SCPI":
             self.visa_logger.warning("Changing remote language from '%s' to 'SCPI' (default)", orig_lang)

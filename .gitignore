@@ -9,3 +9,8 @@
 /.externalToolBuilders
 /.settings
 /.idea
+
+/doc
+/scratch
+
+*log.txt
