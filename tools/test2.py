@@ -5,13 +5,12 @@ Created on Wed Feb 10 21:57:01 2016
 @author: Lukas Sandström
 """
 
-from RSSscpi.gen.ZNB_gen import ZNB_gen
-from RSSscpi.gen.SCPI_gen_support import DummyVisa, SCPINodeBase
-from RSSscpi import ZNB
 import inspect
-
 import logging
 import sys
+
+from RSSscpi import ZNB
+from RSSscpi.gen.SCPI_gen_support import DummyVisa, SCPINodeBase
 
 logging.basicConfig(stream=sys.stdout)
 
