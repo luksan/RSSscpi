@@ -102,7 +102,7 @@ class RohdeZVAWebhelp(Webhelp):
         self._base_url = "http://www.rohde-schwarz.com/webhelp/webhelp_zva_{1}{0}"
         self._help_rev = 8
 
-        self.cmd_list_file = "SCPI_cmd_lists/ZVA_help_index.xml"
+        self.cmd_list_file = "code_gen/SCPI_cmd_lists/ZVA_help_index.xml"
 
         if download_webhelp:
             self.download_cmd_list()
@@ -177,8 +177,8 @@ class RohdeZNBWebhelp(Webhelp):
 
         self._base_url = "http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en{0}"
 
-        self.toc_file = "SCPI_cmd_lists/ZNB_webhelp_toc.xml"
-        self.cmd_list_file = "SCPI_cmd_lists/ZNB_webhelp_command_list.htm"
+        self.toc_file = "code_gen/SCPI_cmd_lists/ZNB_webhelp_toc.xml"
+        self.cmd_list_file = "code_gen/SCPI_cmd_lists/ZNB_webhelp_command_list.htm"
 
         self._urls = dict()
         self._common_commands = None  # *CLS, *OPC, etc.
@@ -378,7 +378,7 @@ def generate_SCPI_class(input_file, module_name, webhelp=Webhelp(), tree_patcher
     :param tree_patcher: Function used to fix errors in the command tree before the code generation
     :return: None
     """
-    parser = CmdListParser('SCPI_cmd_lists/' + input_file)
+    parser = CmdListParser('code_gen/SCPI_cmd_lists/' + input_file)
 
     if tree_patcher:
         cmd_tree = tree_patcher(parser.cmd_tree)
