@@ -16,6 +16,8 @@ except ImportError:
 from bs4 import BeautifulSoup
 import re
 
+import logging
+
 
 class CmdNode(dict):
     """
@@ -71,7 +73,7 @@ class CmdListParser(object):
                 try:
                     self._add_cmd(*line.split())
                 except:
-                    print "Error on line: '" + line + "'"
+                    logging.exception("Error on line: '%s'", line)
                     raise
             
     def _add_cmd(self, cmd, arg=None, unit=None):
@@ -118,7 +120,7 @@ class RohdeZVAWebhelp(Webhelp):
                 index = urlopen(url)
             except HTTPError:
                 continue
-            print "ZVA webhelp is at revision", rev, ", started search at rev", self._help_rev
+            logging.info("ZVA webhelp is at revision %d, started search at rev %d.", rev, self._help_rev)
             self._help_rev = rev
             break
         else:
@@ -197,7 +199,7 @@ class RohdeZNBWebhelp(Webhelp):
         with open(self.cmd_list_file, "w") as f:
             f.write(cmd_list.prettify("utf-8"))
 
-        print "ZNB_gen: commandlist downloaded."
+        logging.info("ZNB commandlist downloaded.")
 
     def load_urls(self):
         """
@@ -269,8 +271,7 @@ class ClassCodeGen(object):
         self._out("# END OF " + self.class_name)
         c1 = self._cmd_cnt
         c2 = self._cmd_help_cnt
-        c3 = str(int(float(c2)/c1 * 100))
-        print self.class_name + ":", c1, "commands,", c2, "have a help URL (" + c3 + "%)."
+        logging.info("%s: %d commands, %d have a help URL (%i%%).", self.class_name, c1, c2, 100*float(c2)/c1)
 
     def _out(self, str_):
         if not str_:
@@ -390,13 +391,14 @@ def generate_SCPI_class(input_file, module_name, webhelp=Webhelp(), tree_patcher
 
     import importlib
     importlib.import_module("RSSscpi.gen." + module_name)  # Test that the module can be loaded
-    print "Generated " + path
+    logging.info("Generated %s", path)
 
 
 if __name__ == '__main__':
-    import os
+    import sys, os
+    logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     os.chdir("..")
     download = False
     generate_SCPI_class("ZVA_commands_3_70.inp", "ZVA_gen", RohdeZVAWebhelp(download_webhelp=download))
     generate_SCPI_class("ZNB_commands_2_70.inp", "ZNB_gen", RohdeZNBWebhelp(download_webhelp=download), tree_patcher=ZNBTreePatcher())
-    print "All good :)"
+    logging.info("All good :)")
