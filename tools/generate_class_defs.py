@@ -163,8 +163,7 @@ class RohdeZVAWebhelp(Webhelp):
 class RohdeZNBWebhelp(Webhelp):
     def __init__(self, download_webhelp=False):
 
-        self._base_url = "http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_{1}{0}"
-        self._help_rev = 8
+        self._base_url = "http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en{0}"
 
         self.toc_file = "SCPI_cmd_lists/ZNB_webhelp_toc.xml"
         self.cmd_list_file = "SCPI_cmd_lists/ZNB_webhelp_command_list.htm"
@@ -178,25 +177,17 @@ class RohdeZNBWebhelp(Webhelp):
         self.load_urls()
 
     def download_cmd_list(self):
-        for rev in range(self._help_rev, self._help_rev + 10):  # Search after newer revisions of the manual
-            try:
-                url = self._base_url.format("/Data/Toc.xml", rev)
-                toc = urlopen(url)
-            except HTTPError:
-                continue
-            print "ZNB webhelp is at revision", rev, ", started search at rev", self._help_rev
-            self._help_rev = rev
-            break
-        else:
-            raise RuntimeError("No valid ZNB web help URL found")
+        url = self._base_url.format("/Data/Toc.xml")
+        toc = urlopen(url)
 
         toc = BeautifulSoup(toc, "html.parser")
         with open(self.toc_file, "w") as f:
             f.write(toc.prettify("utf-8"))
 
         cmd_list_url = toc.find(title="List of Commands")["link"]
-        url = self._base_url.format(cmd_list_url, self._help_rev)
+        url = self._base_url.format(cmd_list_url)
         urlretrieve(url, "SCPI_cmd_lists/ZNB_webhelp_command_list.htm")
+        print "ZNB_gen: commandlist downloaded."
 
     def load_urls(self):
         """
@@ -207,10 +198,10 @@ class RohdeZNBWebhelp(Webhelp):
         toc_soup = BeautifulSoup(open(self.toc_file), "html.parser")
 
         common = toc_soup.find(title="Command Reference").find(title="Common Commands")["link"]
-        self._common_commands = self._base_url.format(common, self._help_rev)
+        self._common_commands = self._base_url.format(common)
 
         if_msg = toc_soup.find(title="VXI-11 Interface Messages")["link"]
-        self._interface_messages = self._base_url.format(if_msg, self._help_rev)
+        self._interface_messages = self._base_url.format(if_msg)
 
         cmd_soup = BeautifulSoup(open(self.cmd_list_file), "html.parser")
         d = cmd_soup.find("div", class_="block")
@@ -227,7 +218,7 @@ class RohdeZNBWebhelp(Webhelp):
         if cmd[0][0] == "@":
             return self._interface_messages
         try:
-            return self._base_url.format("/Content/" + self._urls[":".join(cmd)][1], self._help_rev)
+            return self._base_url.format("/Content/" + self._urls[":".join(cmd)][1])
         except KeyError:
             return None
 
