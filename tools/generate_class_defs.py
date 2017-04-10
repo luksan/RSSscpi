@@ -18,8 +18,9 @@ import re
 
 
 class CmdNode(dict):
-    leaf = "_leaf"  # Constant indicating that the current node is a leaf node
-    
+    """
+    CmdNode instances are used to represent the SCPI command tree.
+    """
     def __init__(self, is_countable=False):
         super(CmdNode, self).__init__()
         self.units = []
@@ -29,6 +30,15 @@ class CmdNode(dict):
         self.is_countable = is_countable  # An integer can be appended to the node name
 
     def add_cmd(self, node_list, arg, unit, query):
+        """
+
+        :param node_list: A list of strings, from "SENSE1:CAL...".split(":")
+        :type node_list: list of str
+        :param arg:
+        :param unit:
+        :param bool query: True if this is the query form of the command
+        :rtype: None
+        """
         cmd = node_list.pop(0)
         is_countable = False
         if cmd[-1].isdigit():
@@ -90,7 +100,7 @@ class RohdeZVAWebhelp(Webhelp):
         self._base_url = "http://www.rohde-schwarz.com/webhelp/webhelp_zva_{1}{0}"
         self._help_rev = 8
 
-        self.cmd_list_file = "SCPI_cmd_lists/ZVA_help_index.htm"
+        self.cmd_list_file = "SCPI_cmd_lists/ZVA_help_index.xml"
 
         if download_webhelp:
             self.download_cmd_list()
@@ -177,23 +187,21 @@ class RohdeZNBWebhelp(Webhelp):
         self.load_urls()
 
     def download_cmd_list(self):
-        url = self._base_url.format("/Data/Toc.xml")
-        toc = urlopen(url)
-
-        toc = BeautifulSoup(toc, "html.parser")
+        toc_url = self._base_url.format("/Data/Toc.xml")
+        toc = BeautifulSoup(urlopen(toc_url), "html.parser")
         with open(self.toc_file, "w") as f:
             f.write(toc.prettify("utf-8"))
 
         cmd_list_url = toc.find(title="List of Commands")["link"]
-        url = self._base_url.format(cmd_list_url)
-        urlretrieve(url, "SCPI_cmd_lists/ZNB_webhelp_command_list.htm")
+        cmd_list = BeautifulSoup(urlopen(self._base_url.format(cmd_list_url)), "html.parser")
+        with open(self.cmd_list_file, "w") as f:
+            f.write(cmd_list.prettify("utf-8"))
+
         print "ZNB_gen: commandlist downloaded."
 
     def load_urls(self):
         """
         Load help URLs from the SCPI command list.
-        https://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en_5/Content/c0e6efab4c3f4280.htm
-        :return:
         """
         toc_soup = BeautifulSoup(open(self.toc_file), "html.parser")
 
@@ -206,10 +214,10 @@ class RohdeZNBWebhelp(Webhelp):
         cmd_soup = BeautifulSoup(open(self.cmd_list_file), "html.parser")
         d = cmd_soup.find("div", class_="block")
         for u in d("a"):
-            cmd = u.string
+            cmd = u.string.strip()
             url = u['href']
-            cmd_key = str(cmd).translate(None, "[]?")
-            cmd_key = re.sub(r"([^:])<\w+?>", r"\1", cmd_key)
+            cmd_key = str(cmd).translate(None, "[]?")  # Remove all brackets and question marks
+            cmd_key = re.sub(r"([^:])<\w+?>", r"\1", cmd_key)  # Convert "SENSE<Ch>" to "SENSE"
             self._urls[cmd_key] = (cmd, url)
 
     def get_help_url(self, cmd):
