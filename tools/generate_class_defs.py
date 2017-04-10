@@ -384,13 +384,16 @@ def generate_SCPI_class(input_file, module_name, webhelp=Webhelp(), tree_patcher
         cmd_tree = tree_patcher(parser.cmd_tree)
     else:
         cmd_tree = parser.cmd_tree
-    path = "RSSscpi/gen/" + module_name + ".py"
+    path = "src/RSSscpi/gen/" + module_name + ".py"
     with open(path, 'wb') as fd:
         g = ClassCodeGen(module_name, cmd_tree, fd, source=input_file, webhelp=webhelp)
         g.gen()
 
-    import importlib
+    import importlib, sys, os
+    sys.path.insert(0, os.path.join(os.getcwd(), "src"))
     importlib.import_module("RSSscpi.gen." + module_name)  # Test that the module can be loaded
+    sys.path.pop(0)
+
     logging.info("Generated %s", path)
 
 

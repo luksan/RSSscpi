@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from ZVA_commands_3_70.inp on 2017-03-31 09:35
+# Generated from ZVA_commands_3_70.inp on 2017-04-10 16:12
 from SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from . import Instrument
 class ZVA_gen(Instrument):
