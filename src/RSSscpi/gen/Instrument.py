@@ -19,6 +19,7 @@ import itertools
 import re, string
 
 import logging
+import warnings
 
 
 class LimitedCapacityDict(OrderedDict):
@@ -241,22 +242,24 @@ class Instrument(SCPINodeBase):
         :return: The formatted command arguments
         """
         fmt = kwargs.get("fmt", "")
-        if not fmt and args:
+        assert isinstance(fmt, str)
+        if "fmt" not in kwargs and args:
             if "quote" in kwargs:
                 if kwargs["quote"]:
-                    fmt = "{:q}"
+                    fmt = "{:q*}"
                 else:
-                    fmt = "{:s}"
+                    fmt = "{:s*}"
             elif "'string'" in cmd.args and str(args[0]).lower() not in (x.lower() for x in cmd.args):
-                fmt = "{:q}"
+                fmt = "{:q*}"
             elif cmd.args and all(x[0] == "'" and x[-1] == "'" for x in cmd.args if x):
                 # Quote the argument if all alternatives are quoted
                 # See TRIGger:SEQuence:LINK
-                fmt = "{:q}"
+                fmt = "{:q*}"
             else:
-                fmt = "{:s}"
+                fmt = "{:s*}"
+            args = (args, )  # Assume that all positional arguments are to be sent comma separated, with the same formatting.
             if not cmd.args:
-                self.visa_logger.warning("Command %s does not specify any arguments. Supply fmt= kwarg to suppress this warning.", cmd.build_cmd())
+                warnings.warn("Command %s does not specify any arguments. Supply fmt= kwarg to suppress this warning." % cmd.build_cmd())
         return SCPICmdFormatter().vformat(fmt, args, kwargs)
 
     def _write(self, cmd_str):
