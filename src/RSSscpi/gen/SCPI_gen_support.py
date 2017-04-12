@@ -96,8 +96,24 @@ class SCPINodeBase(object):
         """
         assert isinstance(ancestor, SCPINodeBase)
         x = [cls]
-        while not issubclass(ancestor._SCPI_class, x[-1]._parent_class):
+        while x[-1] is not None:
+            # We can't use isinstance(), since ZVA is subclassed from ZNB
+            a = ancestor.__class__
+            b = x[-1]._parent_class  # type: SCPINodeBase
+            if a._cmd == b._cmd:
+                # Check that we found the correct ancestor node
+                while a is not None:
+                    if b is None or a._cmd != b._cmd:
+                        break
+                    a = a._parent_class  # type: SCPINodeBase
+                    b = b._parent_class  # type: SCPINodeBase
+                else:
+                    break
             x.append(x[-1]._parent_class)
+        else:
+            raise ValueError("The given ancestor was not found in the command tree.")
+
+
         leaf = ancestor
         for c in reversed(x):
             leaf = c(parent=leaf)
