@@ -55,7 +55,10 @@ class SCPINodeBase(object):
         # Since the class definitions are nested we have to resolve the parent at runtime
         if self._SCPI_class is None:
             self.__class__._SCPI_class = self.__class__
-            self.__class__._parent_class = owner._SCPI_class  # TODO: introspection to check for subclassing?
+            if owner._SCPI_class is not None:
+                self.__class__._parent_class = owner._SCPI_class  # TODO: introspection to check for subclassing?
+            else:
+                self.__class__._parent_class = owner
         if not instance:
             return self.__class__
         return self.__class__(parent=instance)
