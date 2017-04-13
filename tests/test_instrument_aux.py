@@ -4,8 +4,7 @@
 @author: Lukas Sandström
 """
 
-import pytest
-from common import *
+from .common import *
 from RSSscpi.gen.Instrument import SCPICmdFormatter
 from RSSscpi.gen.Instrument import LimitedCapacityDict
 
@@ -27,7 +26,7 @@ def test_SCPICmdFormatter():
     assert f().format("{:s*}", arg_str_list) == "'Q', Q, S, 'S'"
 
 
-def test_cmd_formatting(znb):
+def test_cmd_formatting(znb, visa):
     znb.TRACe.COPY.MATH().w("MDATA8")  # This shouldn't be quoted
     znb.TRACe.COPY.MATH().w("sq")  # Quote
     znb.SENSe.SWEep.POINts().w(1e9)

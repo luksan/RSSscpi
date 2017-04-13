@@ -4,6 +4,7 @@
 @author: Lukas Sandström
 """
 
+from .common import *
 import pytest
 from pytest import raises
 import inspect
@@ -11,12 +12,11 @@ import logging
 import sys
 
 from RSSscpi import ZNB, ZVA
-from common import *
 
 logging.basicConfig(stream=sys.stdout)
 
 
-def test_marker(dummy_vna):
+def test_marker(dummy_vna, visa):
     """
     Test that the Marker class works as expected.
 

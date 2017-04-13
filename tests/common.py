@@ -51,11 +51,14 @@ class VISA(DummyVisa):
             print('"%s",' % (x))
         print("] == visa.cmd")
 
-visa = VISA()
+
+@pytest.fixture
+def visa():
+    return VISA()
 
 
 @pytest.fixture(params=["ZVA", "ZNB"])
-def dummy_vna(request):
+def dummy_vna(request, visa):
     visa.clear_cmd()
     if request.param == "ZVA":
         yield ZNB(visa_res=visa)
@@ -64,5 +67,5 @@ def dummy_vna(request):
 
 
 @pytest.fixture
-def znb():
+def znb(visa):
     return ZNB(visa_res=visa)
