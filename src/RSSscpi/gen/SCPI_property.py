@@ -118,23 +118,21 @@ class SCPIPropertyMapping(SCPIProperty):
 
 
 class MinMax(object):
-    def __init__(self, instance, leaf, callback):
+    """
+    The MinMax class is used as return value from SCPIPropertyMinMax.__get__(..).
+    """
+    def __init__(self, prop, instance):
+        """
+        :param SCPIPropertyMinMax prop:
+        :param instance:
+        """
         self._instance = instance
-        self._leaf = leaf
-        self._cb = callback
-
-    def _q(self, *args):
-        if self._cb:
-            self._cb(self=self._instance, get=True)
-        self._leaf.q(*args)
-
-    def _w(self, *args):
-        if self._cb:
-            self._cb(self=self._instance, get=False)
-        self._leaf.w(*args)
+        self._w = lambda x="": prop.w(instance, x)
+        self._q = lambda x="": prop.q(instance, value=x, fmt="{value:s}")
 
     @property
     def value(self):
+        """Attribute that queries/sets the value of the property."""
         return self._q()
 
     @value.setter
@@ -142,21 +140,27 @@ class MinMax(object):
         self._w(value)
 
     def query_min(self):
+        """ Returns the lowest value that the property can have. """
         return self._q("MIN")
 
     def set_min(self):
+        """ Set the property to the lowest possible value. """
         self._w("MIN")
 
     def query_max(self):
+        """ Returns the highest possible value that the property can have. """
         return self._q("MAX")
 
     def set_max(self):
+        """ Set the property to the highest possible value. """
         self._w("MAX")
 
     def query_default(self):
+        """ Returns the default value of the property. """
         return self._q("DEF")
 
     def set_default(self):
+        """Set the property to the default value."""
         self._w("DEF")
 
 
@@ -170,4 +174,4 @@ class SCPIPropertyMinMax(SCPIProperty):
     def __get__(self, instance, owner=None):
         if instance is None:
             return self
-        return MinMax(instance, self._get_leaf(instance), self._callback)
+        return MinMax(self, instance)
