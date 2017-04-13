@@ -122,7 +122,6 @@ class Instrument(SCPINodeBase):
         """
 
         super(Instrument, self).__init__(None)
-        self.__class__._SCPI_class = Instrument
 
         self._visa_res = visa_res
         self.command_cnt = 0

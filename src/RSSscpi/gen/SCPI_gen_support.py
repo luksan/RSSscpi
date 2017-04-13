@@ -47,6 +47,8 @@ class SCPINodeBase(object):
         :type parent: SCPINodeBase or None
         """
         self._parent = parent
+        if self.__class__._SCPI_class is None:
+            self.__class__._SCPI_class = self.__class__
 
     def __str__(self):
         return self._cmd
@@ -54,8 +56,7 @@ class SCPINodeBase(object):
     def __get__(self, instance, owner):
         # type: (SCPINodeBase, SCPINodeBase) -> SCPINodeBase
         # Since the class definitions are nested we have to resolve the parent at runtime
-        if self._SCPI_class is None:
-            self.__class__._SCPI_class = self.__class__
+        if self.__class__._parent_class is None:
             if owner._SCPI_class is not None:
                 self.__class__._parent_class = owner._SCPI_class  # TODO: introspection to check for subclassing?
             else:
