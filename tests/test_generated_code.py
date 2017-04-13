@@ -3,18 +3,13 @@
 
 @author: Lukas Sandström
 """
-import pytest
-from pytest import raises
+
 import inspect
-import logging
-import sys
+
 from .common import *
 
 from RSSscpi import ZNB, ZVA
 from RSSscpi.gen.SCPI_gen_support import SCPINodeBase
-
-logging.basicConfig(stream=sys.stdout)
-
 
 
 def test_basic(dummy_vna, visa):

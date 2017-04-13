@@ -4,6 +4,7 @@ This example shows how to configure the ZVA or ZNB for a per point triggered mea
 
 @author: Lukas Sandström
 """
+from __future__ import print_function
 
 from RSSscpi import ZVA
 import visa
@@ -44,13 +45,13 @@ ch1.TRIGger.SEQuence.SOURce().w("MAN")
 ch1.init_sweep()
 
 sweep_time = float(zva.SENSe.SWEep.TIME().q())
-print "Total sweep time:", sweep_time, "seconds"
+print("Total sweep time:", sweep_time, "seconds")
 
-print "Starting sweep"
+print("Starting sweep")
 for n in range(sweep_points):
     zva.send_TRG()
     time.sleep(sweep_time/sweep_points)
 
-print "Final OPC"
+print("Final OPC")
 time.sleep(2)
-print zva.query_OPC()
+print(zva.query_OPC())

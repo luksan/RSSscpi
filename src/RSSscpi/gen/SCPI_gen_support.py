@@ -4,6 +4,7 @@ Created on Thu Feb 11 11:30:33 2016
 
 @author: Lukas Sandström
 """
+from __future__ import print_function
 
 from SCPI_response import SCPIResponse
 
@@ -22,17 +23,17 @@ class DummyVisa(object):
         self.name = name
 
     def query(self, q):
-        print "Visa query,", self.name, q
+        print("Visa query,", self.name, q)
         return "1 A"
 
     def write(self, w):
-        print "Visa write,", self.name, w
+        print("Visa write,", self.name, w)
 
     def install_handler(*args):
-        print "Install handler not implemented"
+        print("Install handler not implemented")
 
     def enable_event(*args):
-        print "Not implemented"
+        print("Not implemented")
 
 
 class SCPINodeBase(object):

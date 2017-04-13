@@ -13,7 +13,11 @@ from time import ctime
 import timeit, time
 import threading, traceback
 
-import Queue  # Use Queue.Queue, not multiprocessing.Queue, to avoid unnecessary pickling
+try:
+    import Queue  # Use Queue.Queue, not multiprocessing.Queue, to avoid unnecessary pickling
+except ImportError:
+    import queue as Queue
+
 from collections import OrderedDict
 import itertools
 import re, string
@@ -107,7 +111,7 @@ class Instrument(SCPINodeBase):
     _cmd = ""
 
     def __get__(self, instance, owner):
-        return self
+        return self  # FIXME: remove __get__/__set__ from instrument instead
 
     Error = InstrumentError
 
@@ -225,7 +229,7 @@ class Instrument(SCPINodeBase):
         err = None
         try:
             ret = func(arg)
-        except visa.Error, e:
+        except visa.Error as e:
             err = "Resource error: " + str(e) + ", " + arg
             self.visa_logger.exception(err)
             raise
@@ -298,7 +302,7 @@ class Instrument(SCPINodeBase):
         try:
             with self._visa_lock:
                 return SCPIResponse(self._call_visa(self._visa_res.query, x))
-        except visa.VisaIOError, e:
+        except visa.VisaIOError as e:
             if e.error_code == visa.constants.VI_ERROR_TMO:  # timeout
                 if self.exception_on_error:
                     try:

@@ -3,6 +3,7 @@
 
 @author: Lukas Sandström
 """
+from __future__ import print_function
 
 from RSSscpi import ZNB
 
@@ -75,28 +76,29 @@ znb.send_OPC()
 
 
 def wait_for_event():
+    # FIXME: add a wait_for_event() or similar to Instrument
     for x in range(100):  # wait for at most 10 seconds for completion
         try:
             return znb.event_queue.get(timeout=0.1)
         except Queue.Empty:
-            print ".",
+            print(".", end="")
             continue
     return None
 
-print "Calibrating",
+print("Calibrating", end="")
 opc = wait_for_event()
-print "done"
+print("done")
 #print opc
 
 # Make the measurement
 ch.init_sweep()
 znb.send_OPC()
 
-print "Measuring",
+print("Measuring", end="")
 wait_for_event()
-print "done"
+print("done")
 
 # Save the S-parameter data
-print ch.save_touchstone("test.s2p", ports=(1,2))
+print(ch.save_touchstone("test.s2p", ports=(1,2)))
 # Final OPC before the program terminates
 znb.query_OPC()

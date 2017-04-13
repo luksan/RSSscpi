@@ -281,7 +281,7 @@ class ZNB(ZNB_gen):
                 self[key].delete()
 
         def __iter__(self):
-            for x in xrange(len(self)):
+            for x in range(len(self)):
                 yield self[x]
 
         def insert_segment(self, start_freq, stop_freq, points, ifbw, power, time="AUTO",
