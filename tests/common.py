@@ -16,10 +16,12 @@ from RSSscpi.gen.SCPI_gen_support import DummyVisa
 logging.basicConfig(stream=open(os.devnull, "w"))
 logging.captureWarnings(True)
 
+
 class VISA(DummyVisa):
     def __init__(self):
         super(VISA, self).__init__("")
         self._cmd = []
+        self.ret = "1"
 
     def write(self, w):
         assert isinstance(w, str)
@@ -28,7 +30,7 @@ class VISA(DummyVisa):
     def query(self, q):
         assert isinstance(q, str)
         self._cmd.append(q.strip())
-        return "1"
+        return self.ret
 
     def clear_cmd(self):
         self._cmd = []
