@@ -104,10 +104,16 @@ class SCPIPropertyMapping(SCPIProperty):
         if instance is None:
             return self
         x = super(SCPIPropertyMapping, self).__get__(instance, owner)
-        return self._map[self._conv(x)]
+        try:
+            return self._map[self._conv(x)]
+        except KeyError as e:  # TODO: How should values missing from the mapping be handled? type coercion? Exception?
+            raise KeyError("The response '{:s}' from the instrument was not found in the mapping dict.". format(str(x)))
 
     def __set__(self, instance, value):
-        v = self._rev_map[value]
+        try:
+            v = self._rev_map[value]
+        except KeyError as e:
+            raise KeyError("Value not found in the reverse mapping.")
         super(SCPIPropertyMapping, self).__set__(instance, v)
 
 
