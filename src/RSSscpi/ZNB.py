@@ -437,9 +437,11 @@ class ZNB(ZNB_gen):
 
         # noinspection PyUnusedLocal
         def _add_trace_name_arg_cb(self, value=None, **kwargs):
+            ret = {"name": self.name, "fmt": "{name:q}"}
             if value is not None:
-                return str(value) + ", '" + self.name + "'"
-            return "'" + self.name + "'"
+                ret["value"] = value
+                ret["fmt"] = "{value:s}, {name:q}"
+            return ret
 
         _SCALE = ZNB_gen.DISPlay.WINDow.TRACe.Y.SCALe
         scale_per_div = SCPIProperty(_SCALE.PDIVision, float, callback=_add_trace_name_arg_cb, get_root_node=_disp_node)

@@ -16,8 +16,8 @@ class SCPIProperty(object):
 
         :param SCPINodeBase node: A __class__ derived from SCPINodeBase, which q() and w() will be invoked on an instance of.
         :param conv: A function which converts a SCPIResponse object to the desired type of the property.
-        :param callback: A function called before each write and query, if the return is not None it will be passed as the argument to q()/w()
-        :param get_root_node: A function returning a SCPINodeBase instance, nodes between root and <node> will be instantiated an linked to root
+        :param callback: A function called before each write and query, returning either a dict or None. The dict will be used as parameters for write()/query()
+        :param get_root_node: A function returning a SCPINodeBase instance, called with instance as only parameter. Nodes between root and <node> will be instantiated an linked to root
         :type get_root_node: (T, ) -> SCPINodeBase
         :param str docstr: The property doctring
         """
@@ -36,25 +36,46 @@ class SCPIProperty(object):
     def __get__(self, instance, owner=None):
         if instance is None:
             return self
+        return self.q(instance)
+
+    def q(self, instance, **kwargs):
+        """
+        Executes a query on the SCPI node represented by the property.
+
+        :param instance: The object which the SCPIProperty is an attribute of.
+        :param kwargs: Any additional keyword parameters will be passed to query(), if the callback returns None.
+        :return: The result of passing the SCPIResponse object to the conv function.
+        """
         leaf = self._get_leaf(instance)  # type: SCPIQuery
         if not hasattr(leaf, "q"):
             raise AttributeError("SCPI node doesn't support query")
-        args = ()  # FIXME: the callback argument mangling needs improvement
         if self._callback:
             cb = self._callback(self=instance, get=True)
             if cb is not None:
-                args = (cb, )
-        return self._conv(leaf.q(*args))
+                return self._conv(leaf.q(**cb))
+        return self._conv(leaf.q(**kwargs))
 
     def __set__(self, instance, value):
+        self.w(instance, value)
+
+    def w(self, instance, value, **kwargs):
+        """
+        Executes a write on the SCPI node represented by the property.
+
+        :param instance: The object which the SCPIProperty is an attribute of.
+        :param value: This will be passed as the first, and only, positional argument to write(), if callback returns None
+        :param kwargs: Any additional keyword parameters will be passed to write(), if the callback returns None.
+        :return:
+        """
         leaf = self._get_leaf(instance)  # type: SCPISet
         if not hasattr(leaf, "w"):
             raise AttributeError("SCPI node doesn't support write")
+
         if self._callback:
             cb = self._callback(self=instance, get=False, value=value)
             if cb is not None:
-                value = cb
-        leaf.w(value)
+                return leaf.w(**cb)
+        return leaf.w(value, **kwargs)
 
 
 class SCPIPropertyMapping(SCPIProperty):
