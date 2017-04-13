@@ -39,6 +39,46 @@ def test_channel(dummy_vna, visa):
             ] == visa.cmd
 
 
+def test_diagram(dummy_vna, visa):
+    """
+    :param ZNB dummy_vna:
+    :param VISA visa:
+    """
+    dia = dummy_vna.get_diagram(1)
+    f = dia.save_screenshot("hej.png")
+    assert str(f) == "1\hej.png"
+    assert ["MMEMory:NAME 'hej.png'",
+            "HCOPy:DESTination 'MMEM'",
+            "HCOPy:DEVice:LANGuage PNG",
+            "DISPlay:WINDow1:MAXimize?",
+            "DISPlay:WINDow1:MAXimize ON",
+            "HCOPy:PAGE:WINDow ACTive",
+            "HCOPy:IMMediate",
+            "MMEMory:CDIRectory?",
+            ] == visa.cmd
+    assert dia.is_maximized
+    dia.is_maximized = False
+    dia.select_diagram()
+    assert dia.n == 1
+    dia.delete()
+    assert dia.name == "1"
+    dia.name = "Name2"
+    assert dia.title == "1"
+    dia.title = "Title2"
+    assert dia.title_is_visible is True
+    assert ["DISPlay:WINDow1:MAXimize?",
+            "DISPlay:WINDow1:MAXimize OFF",
+            "DISPlay:WINDow1:MAXimize?",
+            "DISPlay:WINDow1:MAXimize ON",
+            "DISPlay:WINDow1:STATe OFF",
+            "DISPlay:WINDow1:NAME?",
+            "DISPlay:WINDow1:NAME 'Name2'",
+            "DISPlay:WINDow1:TITLe:DATA?",
+            "DISPlay:WINDow1:TITLe:DATA 'Title2'",
+            "DISPlay:WINDow1:TITLe:STATe?",
+            ] == visa.cmd
+
+
 def test_marker(dummy_vna, visa):
     """
     Test that the Marker class works as expected.
