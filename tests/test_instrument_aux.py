@@ -24,6 +24,12 @@ def test_SCPICmdFormatter():
     assert f().format("{:q}, {:q}, {:s}, {:s}", *arg_str_list) == "'Q', 'Q', S, 'S'"
     assert f().format("{:q*}", arg_str_list) == "'Q', 'Q', 'S', 'S'"
     assert f().format("{:s*}", arg_str_list) == "'Q', Q, S, 'S'"
+    assert f().format("{0:s}", "hej") == "hej"
+    assert f().format("{0:q}", "HEJsan") == "'HEJsan'"
+    assert f().format("{0:d*}", [1, 2, 3]) == "1, 2, 3"
+    assert f().format("{:.2f*}", [1, 2, 3]) == "1.00, 2.00, 3.00"
+    assert f().format("{} - {:q*}", "CMd", ["str", "list"]) == "CMd - 'str', 'list'"
+    assert f().format("{:d**}", zip([1, 2, 3], [4, 5, 6])) == "1, 4, 2, 5, 3, 6"
 
 
 def test_cmd_formatting(znb, visa):
