@@ -43,6 +43,6 @@ setup(name='RSSscpi',
       # for example:
       # $ pip install -e .[dev,test]
       extras_require={
-          'dev': ['beautifulsoup4>=4.5.1', 'pytest>=3.07']
+          'dev': ['beautifulsoup4>=4.5.1', 'pytest>=3.07', 'numpy>=1.11.2']
       }
       )

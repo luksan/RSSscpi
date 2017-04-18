@@ -5,7 +5,14 @@
 """
 
 import logging
-import numpy
+import warnings
+
+try:
+    import numpy
+except ImportError:
+    warnings.warn("numpy import failed. Some functionality will be missing.")
+    class numpy:
+        float64 = None
 
 
 class SCPIResponse(object):
