@@ -1,0 +1,8 @@
+# These are the requirements for development, the installation requrements are in setup.py
+
+beautifulsoup4>=4.5.1
+enum34>=1.1.6
+numpy>=1.11.2
+pytest>=3.0.7
+PyVISA>=1.8
+

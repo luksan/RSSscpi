@@ -2,6 +2,11 @@
 
 from setuptools import setup
 from setuptools import find_packages
+from glob import glob
+from os.path import basename
+from os.path import dirname
+from os.path import join
+from os.path import splitext
 
 setup(name='RSSscpi',
       version='0.1.0',
@@ -12,6 +17,7 @@ setup(name='RSSscpi',
       license='BSD',
       packages=find_packages('src'),
       package_dir={'': 'src'},
+      py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
       classifiers=[
               # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
               'Development Status :: 3 - Alpha',
@@ -31,4 +37,12 @@ setup(name='RSSscpi',
               #'Programming Language :: Python :: Implementation :: PyPy',
               'Topic :: Software Development :: Libraries',
           ],
-)
+      install_requires=['PyVISA>=1.8', 'enum34'],
+      # List additional groups of dependencies here (e.g. development
+      # dependencies). You can install these using the following syntax,
+      # for example:
+      # $ pip install -e .[dev,test]
+      extras_require={
+          'dev': ['beautifulsoup4>=4.5.1', 'pytest>=3.07']
+      }
+      )
