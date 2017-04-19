@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-# Generated from ZVA_commands_3_70.inp on 2017-04-10 16:12
-from SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
+# Generated from ZVA_commands_3_70.inp on 2017-04-19 09:08
+from .SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from . import Instrument
 class ZVA_gen(Instrument):
     class CAL(SCPINode, SCPIQuery):

@@ -4,14 +4,13 @@
 @author: Lukas Sandström
 """
 
-from gen import ZVA_gen, SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
-from RSSscpi.gen import SCPIBlockData
-import ZNB
+from .gen import ZVA_gen, SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
+from . import ZNB
 
 import logging
 
 
-class ZVA(ZVA_gen, ZNB.ZNB):
+class ZVA(ZVA_gen, ZNB):
     def __init__(self, visa_res):
         super(ZVA, self).__init__(visa_res=visa_res)
         self.logger = logging.getLogger(__name__)

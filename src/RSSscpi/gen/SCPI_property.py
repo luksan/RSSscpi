@@ -4,7 +4,7 @@
 @author: Lukas Sandström
 """
 
-from SCPI_gen_support import SCPINodeBase, SCPIQuery, SCPISet
+from .SCPI_gen_support import SCPINodeBase, SCPIQuery, SCPISet
 
 
 class SCPIProperty(object):

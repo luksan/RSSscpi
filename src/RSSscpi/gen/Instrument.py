@@ -4,8 +4,8 @@
 @author: Lukas Sandström
 """
 
-from SCPI_gen_support import SCPINodeBase
-from SCPI_response import SCPIResponse
+from .SCPI_gen_support import SCPINodeBase
+from .SCPI_response import SCPIResponse
 
 import visa
 

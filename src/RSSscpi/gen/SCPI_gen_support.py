@@ -6,7 +6,7 @@ Created on Thu Feb 11 11:30:33 2016
 """
 from __future__ import print_function
 
-from SCPI_response import SCPIResponse
+from .SCPI_response import SCPIResponse
 
 # TODO
 # Implement the cmd structure with properties returning a Cmd object
