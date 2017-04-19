@@ -19,7 +19,10 @@ except ImportError:
     import queue as Queue
 
 from collections import OrderedDict
-import itertools
+try:
+    from itertools import izip
+except ImportError:
+    izip = zip
 import re, string
 
 import logging
@@ -42,7 +45,7 @@ class LimitedCapacityDict(OrderedDict):
 
     def _check_len(self):
         if self._max_len and self._max_len < len(self):
-            for n, key in itertools.izip(range(len(self) - self._max_len), self):
+            for n, key in izip(range(len(self) - self._max_len), self):
                 del self[key]  # Deleting while iterating is valid for OrderedCollections
 
     def __setitem__(self, key, value, dict_setitem=dict.__setitem__):
