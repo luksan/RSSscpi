@@ -1,0 +1,19 @@
+#graft docs
+graft examples
+graft src
+graft tests
+
+include .coveragerc
+
+#include AUTHORS.rst
+#include CONTRIBUTING.rst
+#include LICENSE
+include README.txt
+include *.txt
+
+include tox.ini .travis.yml
+
+global-exclude *.py[cod] __pycache__ *.so *.dylib
+
+prune scratch
+prune code_gen
