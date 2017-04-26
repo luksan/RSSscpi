@@ -7,10 +7,13 @@
 
 try:
     # For Python 3.0 and later
+    # noinspection PyCompatibility
     from urllib.request import urlopen, urlretrieve
+    # noinspection PyCompatibility
     from urllib.error import HTTPError
 except ImportError:
     # Fall back to Python 2's urllib2
+    # noinspection PyCompatibility
     from urllib2 import urlopen, HTTPError
     from urllib import urlretrieve
 
@@ -263,6 +266,8 @@ class ClassCodeGen(object):
         self._out("# Generated from " + self.source + " on " + time.strftime("%Y-%m-%d %H:%M"))
         self._out("from .SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool")
         self._out("from . import Instrument")
+        self._out("")
+        self._out("")
         self._out("class " + self.class_name + "(Instrument):")
         self._indent += 1
         
@@ -275,10 +280,8 @@ class ClassCodeGen(object):
         logging.info("%s: %d commands, %d have a help URL (%i%%).", self.class_name, c1, c2, 100*float(c2)/c1)
 
     def _out(self, str_):
-        if not str_:
-            self._output.write("\n")  # don't print lines with only indentation
-        else:
-            self._output.write(" "*(self._indent*4) + str_ + "\n")
+        o = " "*(self._indent*4) + str_
+        self._output.write(o.rstrip() + "\n")
 
     def _make_docstr(self, cmd, cmd_str_list):
         """

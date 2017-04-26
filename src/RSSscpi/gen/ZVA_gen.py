@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
-# Generated from ZVA_commands_3_70.inp on 2017-04-19 09:08
+# Generated from ZVA_commands_3_70.inp on 2017-04-26 21:02
 from .SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from . import Instrument
+
+
 class ZVA_gen(Instrument):
     class CAL(SCPINode, SCPIQuery):
         """
         `*CAL
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "*CAL"
         args = []
@@ -18,7 +20,7 @@ class ZVA_gen(Instrument):
     `*CAL
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class CLS(SCPINode, SCPISet):
@@ -26,7 +28,7 @@ class ZVA_gen(Instrument):
         `*CLS
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "*CLS"
         args = []
@@ -36,7 +38,7 @@ class ZVA_gen(Instrument):
     `*CLS
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class ESE(SCPINode, SCPIQuery, SCPISet):
@@ -80,7 +82,7 @@ class ZVA_gen(Instrument):
         `*IDN
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "*IDN"
         args = []
@@ -90,7 +92,7 @@ class ZVA_gen(Instrument):
     `*IDN
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class IST(SCPINode, SCPIQuery, SCPISet):
@@ -116,7 +118,7 @@ class ZVA_gen(Instrument):
         `*OPC
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "*OPC"
         args = []
@@ -126,7 +128,7 @@ class ZVA_gen(Instrument):
     `*OPC
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class OPT(SCPINode, SCPIQuery):
@@ -134,7 +136,7 @@ class ZVA_gen(Instrument):
         `*OPT
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "*OPT"
         args = []
@@ -144,7 +146,7 @@ class ZVA_gen(Instrument):
     `*OPT
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class PCB(SCPINode, SCPISet):
@@ -206,7 +208,7 @@ class ZVA_gen(Instrument):
         `*RST
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "*RST"
         args = []
@@ -216,7 +218,7 @@ class ZVA_gen(Instrument):
     `*RST
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class SRE(SCPINode, SCPIQuery, SCPISet):
@@ -242,7 +244,7 @@ class ZVA_gen(Instrument):
         `*STB
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "*STB"
         args = []
@@ -252,7 +254,7 @@ class ZVA_gen(Instrument):
     `*STB
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class TRG(SCPINode, SCPISet):
@@ -260,7 +262,7 @@ class ZVA_gen(Instrument):
         `*TRG
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "*TRG"
         args = []
@@ -270,7 +272,7 @@ class ZVA_gen(Instrument):
     `*TRG
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class TST(SCPINode, SCPIQuery):
@@ -278,7 +280,7 @@ class ZVA_gen(Instrument):
         `*TST
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "*TST"
         args = []
@@ -288,7 +290,7 @@ class ZVA_gen(Instrument):
     `*TST
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class WAI(SCPINode, SCPISet):
@@ -296,7 +298,7 @@ class ZVA_gen(Instrument):
         `*WAI
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "*WAI"
         args = []
@@ -306,7 +308,7 @@ class ZVA_gen(Instrument):
     `*WAI
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/common_commands.htm>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class DCL(SCPINode, SCPIQuery, SCPISet):
@@ -314,7 +316,7 @@ class ZVA_gen(Instrument):
         `@DCL
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "@DCL"
         args = []
@@ -324,7 +326,7 @@ class ZVA_gen(Instrument):
     `@DCL
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class GET(SCPINode, SCPIQuery, SCPISet):
@@ -332,7 +334,7 @@ class ZVA_gen(Instrument):
         `@GET
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "@GET"
         args = []
@@ -342,7 +344,7 @@ class ZVA_gen(Instrument):
     `@GET
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class LOC(SCPINode, SCPIQuery, SCPISet):
@@ -350,7 +352,7 @@ class ZVA_gen(Instrument):
         `@LOC
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "@LOC"
         args = []
@@ -360,7 +362,7 @@ class ZVA_gen(Instrument):
     `@LOC
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class REM(SCPINode, SCPIQuery, SCPISet):
@@ -368,7 +370,7 @@ class ZVA_gen(Instrument):
         `@REM
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "@REM"
         args = []
@@ -378,7 +380,7 @@ class ZVA_gen(Instrument):
     `@REM
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class ABORt(SCPINode, SCPISet):
@@ -386,7 +388,7 @@ class ZVA_gen(Instrument):
         `ABORt
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/abort/abort.htm#ABORt>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "ABORt"
         args = []
@@ -396,14 +398,14 @@ class ZVA_gen(Instrument):
     `ABORt
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/abort/abort.htm#ABORt>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class CALCulate(SCPINodeN):
         """
         CALCulate
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "CALCulate"
         args = []
@@ -412,7 +414,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:CLIMits
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "CLIMits"
             args = []
@@ -422,7 +424,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:CLIMits:FAIL
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_climits.htm#FAIL>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "FAIL"
                 args = []
@@ -432,14 +434,14 @@ class ZVA_gen(Instrument):
             `CALCulate:CLIMits:FAIL
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_climits.htm#FAIL>`_
 
-            Arguments: 
+            Arguments:
             """
 
         CLIMits = CLIMits()
         """
         CALCulate:CLIMits
 
-        Arguments: 
+        Arguments:
         """
 
         class DATA(SCPINode, SCPIQuery, SCPISet):
@@ -485,7 +487,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:DATA:CALL:CATalog
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_data.htm#DATA_CALL_CATalog>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "CATalog"
                     args = []
@@ -495,7 +497,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:DATA:CALL:CATalog
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_data.htm#DATA_CALL_CATalog>`_
 
-                Arguments: 
+                Arguments:
                 """
 
             CALL = CALL()
@@ -538,7 +540,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:DATA:NSWeep:COUNt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_data.htm#NSWeep_COUNt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "COUNt"
                     args = []
@@ -548,7 +550,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:DATA:NSWeep:COUNt
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_data.htm#NSWeep_COUNt>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class FIRSt(SCPINode, SCPIQuery, SCPISet):
@@ -617,7 +619,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:DATA:STIMulus
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_data.htm#STIMulus>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "STIMulus"
                 args = []
@@ -627,7 +629,7 @@ class ZVA_gen(Instrument):
             `CALCulate:DATA:STIMulus
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_data.htm#STIMulus>`_
 
-            Arguments: 
+            Arguments:
             """
 
         DATA = DATA()
@@ -678,7 +680,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:FILTer
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "FILTer"
             args = []
@@ -687,7 +689,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:FILTer:GATE
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "GATE"
                 args = []
@@ -892,14 +894,14 @@ class ZVA_gen(Instrument):
             """
             CALCulate:FILTer:GATE
 
-            Arguments: 
+            Arguments:
             """
 
         FILTer = FILTer()
         """
         CALCulate:FILTer
 
-        Arguments: 
+        Arguments:
         """
 
         class FORMat(SCPINode, SCPIQuery, SCPISet):
@@ -940,7 +942,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:FSIMulator
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "FSIMulator"
             args = []
@@ -949,7 +951,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:FSIMulator:BALun
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "BALun"
                 args = []
@@ -974,7 +976,7 @@ class ZVA_gen(Instrument):
                     """
                     CALCulate:FSIMulator:BALun:DMCircuit
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "DMCircuit"
                     args = []
@@ -983,7 +985,7 @@ class ZVA_gen(Instrument):
                         """
                         CALCulate:FSIMulator:BALun:DMCircuit:BPORt
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "BPORt"
                         args = []
@@ -992,7 +994,7 @@ class ZVA_gen(Instrument):
                             """
                             CALCulate:FSIMulator:BALun:DMCircuit:BPORt:PARameters
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "PARameters"
                             args = []
@@ -1033,28 +1035,28 @@ class ZVA_gen(Instrument):
                         """
                         CALCulate:FSIMulator:BALun:DMCircuit:BPORt:PARameters
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     BPORt = BPORt()
                     """
                     CALCulate:FSIMulator:BALun:DMCircuit:BPORt
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 DMCircuit = DMCircuit()
                 """
                 CALCulate:FSIMulator:BALun:DMCircuit
 
-                Arguments: 
+                Arguments:
                 """
 
                 class DZConversion(SCPINode):
                     """
                     CALCulate:FSIMulator:BALun:DZConversion
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "DZConversion"
                     args = []
@@ -1063,7 +1065,7 @@ class ZVA_gen(Instrument):
                         """
                         CALCulate:FSIMulator:BALun:DZConversion:BPORt
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "BPORt"
                         args = []
@@ -1136,21 +1138,21 @@ class ZVA_gen(Instrument):
                     """
                     CALCulate:FSIMulator:BALun:DZConversion:BPORt
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 DZConversion = DZConversion()
                 """
                 CALCulate:FSIMulator:BALun:DZConversion
 
-                Arguments: 
+                Arguments:
                 """
 
             BALun = BALun()
             """
             CALCulate:FSIMulator:BALun
 
-            Arguments: 
+            Arguments:
             """
 
             class STATe(SCPINode, SCPIBool):
@@ -1173,14 +1175,14 @@ class ZVA_gen(Instrument):
         """
         CALCulate:FSIMulator
 
-        Arguments: 
+        Arguments:
         """
 
         class GDAPerture(SCPINode):
             """
             CALCulate:GDAPerture
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "GDAPerture"
             args = []
@@ -1207,14 +1209,14 @@ class ZVA_gen(Instrument):
         """
         CALCulate:GDAPerture
 
-        Arguments: 
+        Arguments:
         """
 
         class LDEViation(SCPINode):
             """
             CALCulate:LDEViation
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "LDEViation"
             args = []
@@ -1313,14 +1315,14 @@ class ZVA_gen(Instrument):
         """
         CALCulate:LDEViation
 
-        Arguments: 
+        Arguments:
         """
 
         class LIMit(SCPINodeN):
             """
             CALCulate:LIMit
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "LIMit"
             args = []
@@ -1417,7 +1419,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:LIMit:DELete
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "DELete"
                 args = []
@@ -1427,7 +1429,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:LIMit:DELete:ALL
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_limit.htm#DELete_ALL>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "ALL"
                     args = []
@@ -1437,14 +1439,14 @@ class ZVA_gen(Instrument):
                 `CALCulate:LIMit:DELete:ALL
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_limit.htm#DELete_ALL>`_
 
-                Arguments: 
+                Arguments:
                 """
 
             DELete = DELete()
             """
             CALCulate:LIMit:DELete
 
-            Arguments: 
+            Arguments:
             """
 
             class DISPlay(SCPINode, SCPIBool):
@@ -1486,7 +1488,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:LIMit:FAIL
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_limit.htm#FAIL>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "FAIL"
                 args = []
@@ -1496,7 +1498,7 @@ class ZVA_gen(Instrument):
             `CALCulate:LIMit:FAIL
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_limit.htm#FAIL>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class LOWer(SCPINode, SCPIQuery, SCPISet):
@@ -1591,7 +1593,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:LIMit:RDOMain
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "RDOMain"
                 args = []
@@ -1654,14 +1656,14 @@ class ZVA_gen(Instrument):
             """
             CALCulate:LIMit:RDOMain
 
-            Arguments: 
+            Arguments:
             """
 
             class SEGMent(SCPINodeN):
                 """
                 CALCulate:LIMit:SEGMent
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "SEGMent"
                 args = []
@@ -1670,7 +1672,7 @@ class ZVA_gen(Instrument):
                     """
                     CALCulate:LIMit:SEGMent:AMPLitude
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "AMPLitude"
                     args = []
@@ -1715,7 +1717,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:LIMit:SEGMent:AMPLitude
 
-                Arguments: 
+                Arguments:
                 """
 
                 class COUNt(SCPINode, SCPIQuery):
@@ -1723,7 +1725,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:LIMit:SEGMent:COUNt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_limit.htm#SEG_COUNt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "COUNt"
                     args = []
@@ -1733,14 +1735,14 @@ class ZVA_gen(Instrument):
                 `CALCulate:LIMit:SEGMent:COUNt
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_limit.htm#SEG_COUNt>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class STIMulus(SCPINode):
                     """
                     CALCulate:LIMit:SEGMent:STIMulus
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "STIMulus"
                     args = []
@@ -1785,7 +1787,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:LIMit:SEGMent:STIMulus
 
-                Arguments: 
+                Arguments:
                 """
 
                 class TYPE(SCPINode, SCPIQuery, SCPISet):
@@ -1810,7 +1812,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:LIMit:SEGMent
 
-            Arguments: 
+            Arguments:
             """
 
             class SOUNd(SCPINode, SCPIBool):
@@ -1991,7 +1993,7 @@ class ZVA_gen(Instrument):
         """
         CALCulate:LIMit
 
-        Arguments: 
+        Arguments:
         """
 
         class MARKer(SCPINodeN, SCPIBool):
@@ -2008,7 +2010,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:AOFF
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#AOFF>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "AOFF"
                 args = []
@@ -2018,7 +2020,7 @@ class ZVA_gen(Instrument):
             `CALCulate:MARKer:AOFF
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#AOFF>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class BWIDth(SCPINode, SCPIQuery, SCPISet):
@@ -2136,7 +2138,7 @@ class ZVA_gen(Instrument):
                     """
                     CALCulate:MARKer:FUNCtion:APEak
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "APEak"
                     args = []
@@ -2181,7 +2183,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:MARKer:FUNCtion:APEak
 
-                Arguments: 
+                Arguments:
                 """
 
                 class BWIDth(SCPINode, SCPIQuery, SCPISet):
@@ -2243,7 +2245,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:MARKer:FUNCtion:CENTer
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#FUNCtion_CENTer>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "CENTer"
                     args = []
@@ -2253,14 +2255,14 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:FUNCtion:CENTer
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#FUNCtion_CENTer>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class DELTa(SCPINode):
                     """
                     CALCulate:MARKer:FUNCtion:DELTa
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "DELTa"
                     args = []
@@ -2287,14 +2289,14 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:MARKer:FUNCtion:DELTa
 
-                Arguments: 
+                Arguments:
                 """
 
                 class DOMain(SCPINode):
                     """
                     CALCulate:MARKer:FUNCtion:DOMain
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "DOMain"
                     args = []
@@ -2375,7 +2377,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:MARKer:FUNCtion:DOMain
 
-                Arguments: 
+                Arguments:
                 """
 
                 class EXECute(SCPINode, SCPISet):
@@ -2401,7 +2403,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:MARKer:FUNCtion:RESult
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#RESult>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "RESult"
                     args = []
@@ -2411,7 +2413,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:FUNCtion:RESult
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#RESult>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class SELect(SCPINode, SCPIQuery, SCPISet):
@@ -2437,7 +2439,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:MARKer:FUNCtion:STARt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#FUNCTion_STARt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "STARt"
                     args = []
@@ -2447,7 +2449,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:FUNCtion:STARt
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#FUNCTion_STARt>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class STOP(SCPINode, SCPISet):
@@ -2455,7 +2457,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:MARKer:FUNCtion:STOP
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#FUNCtion_STOP>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "STOP"
                     args = []
@@ -2465,7 +2467,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:FUNCtion:STOP
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#FUNCtion_STOP>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class TARGet(SCPINode, SCPIQuery, SCPISet):
@@ -2498,7 +2500,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:MAXimum
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#MAXimum>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "MAXimum"
                 args = []
@@ -2508,7 +2510,7 @@ class ZVA_gen(Instrument):
             `CALCulate:MARKer:MAXimum
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#MAXimum>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class MINimum(SCPINode, SCPISet):
@@ -2516,7 +2518,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:MINimum
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#MINimum>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "MINimum"
                 args = []
@@ -2526,7 +2528,7 @@ class ZVA_gen(Instrument):
             `CALCulate:MARKer:MINimum
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#MINimum>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class MODE(SCPINode, SCPIQuery, SCPISet):
@@ -2669,7 +2671,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:MARKer:REFerence:Y
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#REFerence_Y>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "Y"
                     args = []
@@ -2679,7 +2681,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:REFerence:Y
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#REFerence_Y>`_
 
-                Arguments: 
+                Arguments:
                 """
 
             REFerence = REFerence()
@@ -2693,7 +2695,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:MARKer:SEARch
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "SEARch"
                 args = []
@@ -2702,7 +2704,7 @@ class ZVA_gen(Instrument):
                     """
                     CALCulate:MARKer:SEARch:BFILter
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "BFILter"
                     args = []
@@ -2745,7 +2747,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:MARKer:SEARch:BFILter
 
-                Arguments: 
+                Arguments:
                 """
 
                 class IMMediate(SCPINode, SCPISet):
@@ -2753,7 +2755,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:MARKer:SEARch:IMMediate
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#SEARch_IMMediate>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "IMMediate"
                     args = []
@@ -2763,7 +2765,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:SEARch:IMMediate
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#SEARch_IMMediate>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class LEFT(SCPINode, SCPISet):
@@ -2771,7 +2773,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:MARKer:SEARch:LEFT
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#SEARch_LEFT>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "LEFT"
                     args = []
@@ -2781,7 +2783,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:SEARch:LEFT
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#SEARch_LEFT>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class NEXT(SCPINode, SCPISet):
@@ -2789,7 +2791,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:MARKer:SEARch:NEXT
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#SEARch_NEXT>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "NEXT"
                     args = []
@@ -2799,7 +2801,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:SEARch:NEXT
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#SEARch_NEXT>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class RIGHt(SCPINode, SCPISet):
@@ -2807,7 +2809,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:MARKer:SEARch:RIGHt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#SEARch_RIGHt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "RIGHt"
                     args = []
@@ -2817,7 +2819,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:SEARch:RIGHt
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#SEARch_RIGHt>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class TRACking(SCPINode, SCPIBool):
@@ -2842,7 +2844,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:MARKer:SEARch
 
-            Arguments: 
+            Arguments:
             """
 
             class STATe(SCPINode, SCPIBool):
@@ -2920,7 +2922,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MARKer:Y
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#Y>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "Y"
                 args = []
@@ -2930,7 +2932,7 @@ class ZVA_gen(Instrument):
             `CALCulate:MARKer:Y
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_marker.htm#Y>`_
 
-            Arguments: 
+            Arguments:
             """
 
         MARKer = MARKer()
@@ -3024,7 +3026,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:MATH:MEMorize
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_math.htm#MEMorize>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "MEMorize"
                 args = []
@@ -3034,7 +3036,7 @@ class ZVA_gen(Instrument):
             `CALCulate:MATH:MEMorize
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_math.htm#MEMorize>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class STATe(SCPINode, SCPIBool):
@@ -3100,7 +3102,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:PARameter
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "PARameter"
             args = []
@@ -3110,7 +3112,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:PARameter:CATalog
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_parameter.htm#CATalog>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CATalog"
                 args = []
@@ -3120,7 +3122,7 @@ class ZVA_gen(Instrument):
             `CALCulate:PARameter:CATalog
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_parameter.htm#CATalog>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class DEFine(SCPINode, SCPISet):
@@ -3174,7 +3176,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:PARameter:DELete:ALL
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_parameter.htm#DELete_ALL>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "ALL"
                     args = []
@@ -3184,7 +3186,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:PARameter:DELete:ALL
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_parameter.htm#DELete_ALL>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class CALL(SCPINode, SCPISet):
@@ -3192,7 +3194,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:PARameter:DELete:CALL
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_parameter.htm#DELete_CALL>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "CALL"
                     args = []
@@ -3202,7 +3204,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:PARameter:DELete:CALL
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_parameter.htm#DELete_CALL>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class SGRoup(SCPINode, SCPISet):
@@ -3210,7 +3212,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:PARameter:DELete:SGRoup
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_parameter.htm#DELete_SGRoup>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "SGRoup"
                     args = []
@@ -3220,7 +3222,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:PARameter:DELete:SGRoup
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_parameter.htm#DELete_SGRoup>`_
 
-                Arguments: 
+                Arguments:
                 """
 
             DELete = DELete()
@@ -3253,7 +3255,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:PARameter:NFIGure
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "NFIGure"
                 args = []
@@ -3280,7 +3282,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:PARameter:NFIGure
 
-            Arguments: 
+            Arguments:
             """
 
             class SDEFine(SCPINode, SCPISet):
@@ -3323,7 +3325,7 @@ class ZVA_gen(Instrument):
         """
         CALCulate:PARameter
 
-        Arguments: 
+        Arguments:
         """
 
         class PHOLd(SCPINode, SCPIQuery, SCPISet):
@@ -3348,7 +3350,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:RIPPle
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "RIPPle"
             args = []
@@ -3357,7 +3359,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:RIPPle:CONTrol
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CONTrol"
                 args = []
@@ -3384,7 +3386,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:RIPPle:CONTrol
 
-            Arguments: 
+            Arguments:
             """
 
             class DATA(SCPINode, SCPIQuery, SCPISet):
@@ -3409,7 +3411,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:RIPPle:DELete
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "DELete"
                 args = []
@@ -3419,7 +3421,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:RIPPle:DELete:ALL
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_ripple.htm#DELete_ALL>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "ALL"
                     args = []
@@ -3429,14 +3431,14 @@ class ZVA_gen(Instrument):
                 `CALCulate:RIPPle:DELete:ALL
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_ripple.htm#DELete_ALL>`_
 
-                Arguments: 
+                Arguments:
                 """
 
             DELete = DELete()
             """
             CALCulate:RIPPle:DELete
 
-            Arguments: 
+            Arguments:
             """
 
             class DISPlay(SCPINode, SCPIBool):
@@ -3478,7 +3480,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:RIPPle:FAIL
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_ripple.htm#FAIL>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "FAIL"
                 args = []
@@ -3488,14 +3490,14 @@ class ZVA_gen(Instrument):
             `CALCulate:RIPPle:FAIL
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_ripple.htm#FAIL>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class RDOMain(SCPINode):
                 """
                 CALCulate:RIPPle:RDOMain
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "RDOMain"
                 args = []
@@ -3522,7 +3524,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:RIPPle:RDOMain
 
-            Arguments: 
+            Arguments:
             """
 
             class SEGMent(SCPINodeN, SCPIBool):
@@ -3539,7 +3541,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:RIPPle:SEGMent:COUNt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_ripple.htm#SEG_COUNt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "COUNt"
                     args = []
@@ -3549,7 +3551,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:RIPPle:SEGMent:COUNt
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_ripple.htm#SEG_COUNt>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class LIMit(SCPINode, SCPIQuery, SCPISet):
@@ -3575,7 +3577,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:RIPPle:SEGMent:RESult
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_ripple.htm#SEG_RESult>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "RESult"
                     args = []
@@ -3585,7 +3587,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:RIPPle:SEGMent:RESult
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_ripple.htm#SEG_RESult>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class STATe(SCPINode, SCPIBool):
@@ -3610,7 +3612,7 @@ class ZVA_gen(Instrument):
                     """
                     CALCulate:RIPPle:SEGMent:STIMulus
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "STIMulus"
                     args = []
@@ -3655,7 +3657,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:RIPPle:SEGMent:STIMulus
 
-                Arguments: 
+                Arguments:
                 """
 
             SEGMent = SEGMent()
@@ -3721,7 +3723,7 @@ class ZVA_gen(Instrument):
         """
         CALCulate:RIPPle
 
-        Arguments: 
+        Arguments:
         """
 
         class SMOothing(SCPINode, SCPIBool):
@@ -3789,7 +3791,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:STATistics:DOMain
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "DOMain"
                 args = []
@@ -3870,7 +3872,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:STATistics:DOMain
 
-            Arguments: 
+            Arguments:
             """
 
             class EPDelay(SCPINode, SCPIBool):
@@ -3977,7 +3979,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:STATistics:NLINear
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "NLINear"
                 args = []
@@ -4014,7 +4016,7 @@ class ZVA_gen(Instrument):
                         `CALCulate:STATistics:NLINear:COMP:RESult
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_statistics.htm#COMP_RESult>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "RESult"
                         args = []
@@ -4024,7 +4026,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:STATistics:NLINear:COMP:RESult
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_statistics.htm#COMP_RESult>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class STATe(SCPINode, SCPIBool):
@@ -4056,7 +4058,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:STATistics:NLINear
 
-            Arguments: 
+            Arguments:
             """
 
             class RESult(SCPINode, SCPIQuery, SCPISet):
@@ -4174,7 +4176,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:TDIF
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "TDIF"
             args = []
@@ -4183,7 +4185,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:TDIF:IMBalance
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "IMBalance"
                 args = []
@@ -4226,21 +4228,21 @@ class ZVA_gen(Instrument):
             """
             CALCulate:TDIF:IMBalance
 
-            Arguments: 
+            Arguments:
             """
 
         TDIF = TDIF()
         """
         CALCulate:TDIF
 
-        Arguments: 
+        Arguments:
         """
 
         class TRANsform(SCPINode):
             """
             CALCulate:TRANsform
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "TRANsform"
             args = []
@@ -4267,7 +4269,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:TRANsform:IMPedance
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "IMPedance"
                 args = []
@@ -4294,7 +4296,7 @@ class ZVA_gen(Instrument):
             """
             CALCulate:TRANsform:IMPedance
 
-            Arguments: 
+            Arguments:
             """
 
             class TIME(SCPINode, SCPIQuery, SCPISet):
@@ -4385,7 +4387,7 @@ class ZVA_gen(Instrument):
                             `CALCulate:TRANsform:TIME:LPASs:DCSParam:EXTRapolate
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_transform.htm#LPASs_DSCParam_EXTRapolate>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "EXTRapolate"
                             args = []
@@ -4395,7 +4397,7 @@ class ZVA_gen(Instrument):
                         `CALCulate:TRANsform:TIME:LPASs:DCSParam:EXTRapolate
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_transform.htm#LPASs_DSCParam_EXTRapolate>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     DCSParam = DCSParam()
@@ -4419,7 +4421,7 @@ class ZVA_gen(Instrument):
                     `CALCulate:TRANsform:TIME:LPFRequency
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_transform.htm#LPFRequency>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "LPFRequency"
                     args = []
@@ -4429,7 +4431,7 @@ class ZVA_gen(Instrument):
                 `CALCulate:TRANsform:TIME:LPFRequency
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_transform.htm#LPFRequency>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class METHod(SCPINode, SCPIQuery, SCPISet):
@@ -4452,7 +4454,7 @@ class ZVA_gen(Instrument):
                     """
                     CALCulate:TRANsform:TIME:RESolution
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "RESolution"
                     args = []
@@ -4479,7 +4481,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:TRANsform:TIME:RESolution
 
-                Arguments: 
+                Arguments:
                 """
 
                 class SPAN(SCPINode, SCPIQuery, SCPISet):
@@ -4637,7 +4639,7 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:TRANsform:VNETworks
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "VNETworks"
                 args = []
@@ -4646,7 +4648,7 @@ class ZVA_gen(Instrument):
                     """
                     CALCulate:TRANsform:VNETworks:BALanced
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "BALanced"
                     args = []
@@ -4664,7 +4666,7 @@ class ZVA_gen(Instrument):
                             """
                             CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "PARameters"
                             args = []
@@ -4727,7 +4729,7 @@ class ZVA_gen(Instrument):
                         """
                         CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class STATe(SCPINode, SCPIBool):
@@ -4786,7 +4788,7 @@ class ZVA_gen(Instrument):
                             """
                             CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "PARameters"
                             args = []
@@ -4849,7 +4851,7 @@ class ZVA_gen(Instrument):
                         """
                         CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class STATe(SCPINode, SCPIBool):
@@ -4899,14 +4901,14 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:TRANsform:VNETworks:BALanced
 
-                Arguments: 
+                Arguments:
                 """
 
                 class GLOop(SCPINode):
                     """
                     CALCulate:TRANsform:VNETworks:GLOop
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "GLOop"
                     args = []
@@ -4924,7 +4926,7 @@ class ZVA_gen(Instrument):
                             """
                             CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:PARameters
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "PARameters"
                             args = []
@@ -4987,7 +4989,7 @@ class ZVA_gen(Instrument):
                         """
                         CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:PARameters
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class STATe(SCPINode, SCPIBool):
@@ -5046,7 +5048,7 @@ class ZVA_gen(Instrument):
                             """
                             CALCulate:TRANsform:VNETworks:GLOop:EMBedding:PARameters
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "PARameters"
                             args = []
@@ -5109,7 +5111,7 @@ class ZVA_gen(Instrument):
                         """
                         CALCulate:TRANsform:VNETworks:GLOop:EMBedding:PARameters
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class STATe(SCPINode, SCPIBool):
@@ -5157,14 +5159,14 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:TRANsform:VNETworks:GLOop
 
-                Arguments: 
+                Arguments:
                 """
 
                 class PPAir(SCPINode):
                     """
                     CALCulate:TRANsform:VNETworks:PPAir
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "PPAir"
                     args = []
@@ -5201,7 +5203,7 @@ class ZVA_gen(Instrument):
                             `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:DELete
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_DEEMbedding_DELete>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "DELete"
                             args = []
@@ -5211,14 +5213,14 @@ class ZVA_gen(Instrument):
                         `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:DELete
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_DEEMbedding_DELete>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class PARameters(SCPINode):
                             """
                             CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:PARameters
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "PARameters"
                             args = []
@@ -5281,7 +5283,7 @@ class ZVA_gen(Instrument):
                         """
                         CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:PARameters
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class STATe(SCPINode, SCPIBool):
@@ -5359,7 +5361,7 @@ class ZVA_gen(Instrument):
                             `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:DELete
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_EMBedding_DELete>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "DELete"
                             args = []
@@ -5369,14 +5371,14 @@ class ZVA_gen(Instrument):
                         `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:DELete
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_EMBedding_DELete>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class PARameters(SCPINode):
                             """
                             CALCulate:TRANsform:VNETworks:PPAir:EMBedding:PARameters
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "PARameters"
                             args = []
@@ -5439,7 +5441,7 @@ class ZVA_gen(Instrument):
                         """
                         CALCulate:TRANsform:VNETworks:PPAir:EMBedding:PARameters
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class STATe(SCPINode, SCPIBool):
@@ -5489,14 +5491,14 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:TRANsform:VNETworks:PPAir
 
-                Arguments: 
+                Arguments:
                 """
 
                 class SENDed(SCPINode):
                     """
                     CALCulate:TRANsform:VNETworks:SENDed
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "SENDed"
                     args = []
@@ -5514,7 +5516,7 @@ class ZVA_gen(Instrument):
                             """
                             CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "PARameters"
                             args = []
@@ -5577,7 +5579,7 @@ class ZVA_gen(Instrument):
                         """
                         CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class STATe(SCPINode, SCPIBool):
@@ -5636,7 +5638,7 @@ class ZVA_gen(Instrument):
                             """
                             CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "PARameters"
                             args = []
@@ -5699,7 +5701,7 @@ class ZVA_gen(Instrument):
                         """
                         CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class STATe(SCPINode, SCPIBool):
@@ -5749,35 +5751,35 @@ class ZVA_gen(Instrument):
                 """
                 CALCulate:TRANsform:VNETworks:SENDed
 
-                Arguments: 
+                Arguments:
                 """
 
             VNETworks = VNETworks()
             """
             CALCulate:TRANsform:VNETworks
 
-            Arguments: 
+            Arguments:
             """
 
         TRANsform = TRANsform()
         """
         CALCulate:TRANsform
 
-        Arguments: 
+        Arguments:
         """
 
     CALCulate = CALCulate()
     """
     CALCulate
 
-    Arguments: 
+    Arguments:
     """
 
     class CONFigure(SCPINode):
         """
         CONFigure
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "CONFigure"
         args = []
@@ -5796,7 +5798,7 @@ class ZVA_gen(Instrument):
                 `CONFigure:CHANnel:CATalog
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/configure/configure.htm#CATalog>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CATalog"
                 args = []
@@ -5806,7 +5808,7 @@ class ZVA_gen(Instrument):
             `CONFigure:CHANnel:CATalog
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/configure/configure.htm#CATalog>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class NAME(SCPINode, SCPIQuery, SCPISet):
@@ -5867,7 +5869,7 @@ class ZVA_gen(Instrument):
                 """
                 CONFigure:CHANnel:TRACe
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "TRACe"
                 args = []
@@ -5894,7 +5896,7 @@ class ZVA_gen(Instrument):
             """
             CONFigure:CHANnel:TRACe
 
-            Arguments: 
+            Arguments:
             """
 
         CHANnel = CHANnel()
@@ -5908,7 +5910,7 @@ class ZVA_gen(Instrument):
             """
             CONFigure:TRACe
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "TRACe"
             args = []
@@ -5918,7 +5920,7 @@ class ZVA_gen(Instrument):
                 `CONFigure:TRACe:CATalog
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/configure/configure.htm#TRACe_CATalog_>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CATalog"
                 args = []
@@ -5928,14 +5930,14 @@ class ZVA_gen(Instrument):
             `CONFigure:TRACe:CATalog
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/configure/configure.htm#TRACe_CATalog_>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class CHANnel(SCPINode):
                 """
                 CONFigure:TRACe:CHANnel
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CHANnel"
                 args = []
@@ -5980,7 +5982,7 @@ class ZVA_gen(Instrument):
             """
             CONFigure:TRACe:CHANnel
 
-            Arguments: 
+            Arguments:
             """
 
             class NAME(SCPINode, SCPIQuery, SCPISet):
@@ -6041,21 +6043,21 @@ class ZVA_gen(Instrument):
         """
         CONFigure:TRACe
 
-        Arguments: 
+        Arguments:
         """
 
     CONFigure = CONFigure()
     """
     CONFigure
 
-    Arguments: 
+    Arguments:
     """
 
     class CONTrol(SCPINode):
         """
         CONTrol
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "CONTrol"
         args = []
@@ -6064,7 +6066,7 @@ class ZVA_gen(Instrument):
             """
             CONTrol:AUXiliary
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "AUXiliary"
             args = []
@@ -6175,14 +6177,14 @@ class ZVA_gen(Instrument):
         """
         CONTrol:AUXiliary
 
-        Arguments: 
+        Arguments:
         """
 
         class HANDler(SCPINode):
             """
             CONTrol:HANDler
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "HANDler"
             args = []
@@ -6433,7 +6435,7 @@ class ZVA_gen(Instrument):
                 """
                 CONTrol:HANDler:EXTension
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "EXTension"
                 args = []
@@ -6442,7 +6444,7 @@ class ZVA_gen(Instrument):
                     """
                     CONTrol:HANDler:EXTension:INDex
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "INDex"
                     args = []
@@ -6469,14 +6471,14 @@ class ZVA_gen(Instrument):
                 """
                 CONTrol:HANDler:EXTension:INDex
 
-                Arguments: 
+                Arguments:
                 """
 
                 class RTRigger(SCPINode):
                     """
                     CONTrol:HANDler:EXTension:RTRigger
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "RTRigger"
                     args = []
@@ -6503,14 +6505,14 @@ class ZVA_gen(Instrument):
                 """
                 CONTrol:HANDler:EXTension:RTRigger
 
-                Arguments: 
+                Arguments:
                 """
 
             EXTension = EXTension()
             """
             CONTrol:HANDler:EXTension
 
-            Arguments: 
+            Arguments:
             """
 
             class F(SCPINode, SCPIQuery, SCPISet):
@@ -6604,7 +6606,7 @@ class ZVA_gen(Instrument):
                 `CONTrol:HANDler:RESet
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/control/control_handler.htm#RESet>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "RESet"
                 args = []
@@ -6614,28 +6616,28 @@ class ZVA_gen(Instrument):
             `CONTrol:HANDler:RESet
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/control/control_handler.htm#RESet>`_
 
-            Arguments: 
+            Arguments:
             """
 
         HANDler = HANDler()
         """
         CONTrol:HANDler
 
-        Arguments: 
+        Arguments:
         """
 
     CONTrol = CONTrol()
     """
     CONTrol
 
-    Arguments: 
+    Arguments:
     """
 
     class DIAGnostic(SCPINode):
         """
         DIAGnostic
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "DIAGnostic"
         args = []
@@ -6644,7 +6646,7 @@ class ZVA_gen(Instrument):
             """
             DIAGnostic:ALC
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "ALC"
             args = []
@@ -6707,7 +6709,7 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:ALC:DMODe
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "DMODe"
                 args = []
@@ -6764,7 +6766,7 @@ class ZVA_gen(Instrument):
             """
             DIAGnostic:ALC:DMODe
 
-            Arguments: 
+            Arguments:
             """
 
             class PIParameter(SCPINode, SCPIQuery, SCPISet):
@@ -6947,14 +6949,14 @@ class ZVA_gen(Instrument):
         """
         DIAGnostic:ALC
 
-        Arguments: 
+        Arguments:
         """
 
         class DEVice(SCPINode):
             """
             DIAGnostic:DEVice
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "DEVice"
             args = []
@@ -6981,14 +6983,14 @@ class ZVA_gen(Instrument):
         """
         DIAGnostic:DEVice
 
-        Arguments: 
+        Arguments:
         """
 
         class PRODuct(SCPINode):
             """
             DIAGnostic:PRODuct
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "PRODuct"
             args = []
@@ -6997,7 +6999,7 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:PRODuct:CATalog
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CATalog"
                 args = []
@@ -7006,14 +7008,14 @@ class ZVA_gen(Instrument):
             """
             DIAGnostic:PRODuct:CATalog
 
-            Arguments: 
+            Arguments:
             """
 
             class DESCription(SCPINode, SCPIQuery):
                 """
                 DIAGnostic:PRODuct:DESCription
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "DESCription"
                 args = []
@@ -7022,14 +7024,14 @@ class ZVA_gen(Instrument):
             """
             DIAGnostic:PRODuct:DESCription
 
-            Arguments: 
+            Arguments:
             """
 
             class ID(SCPINode, SCPIQuery):
                 """
                 DIAGnostic:PRODuct:ID
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "ID"
                 args = []
@@ -7038,14 +7040,14 @@ class ZVA_gen(Instrument):
             """
             DIAGnostic:PRODuct:ID
 
-            Arguments: 
+            Arguments:
             """
 
             class MACaddress(SCPINode, SCPIQuery):
                 """
                 DIAGnostic:PRODuct:MACaddress
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "MACaddress"
                 args = []
@@ -7054,14 +7056,14 @@ class ZVA_gen(Instrument):
             """
             DIAGnostic:PRODuct:MACaddress
 
-            Arguments: 
+            Arguments:
             """
 
             class OPTion(SCPINode):
                 """
                 DIAGnostic:PRODuct:OPTion
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "OPTion"
                 args = []
@@ -7070,7 +7072,7 @@ class ZVA_gen(Instrument):
                     """
                     DIAGnostic:PRODuct:OPTion:LICence
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "LICence"
                     args = []
@@ -7111,14 +7113,14 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:PRODuct:OPTion:LICence
 
-                Arguments: 
+                Arguments:
                 """
 
                 class LIST(SCPINode, SCPIQuery):
                     """
                     DIAGnostic:PRODuct:OPTion:LIST
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "LIST"
                     args = []
@@ -7127,7 +7129,7 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:PRODuct:OPTion:LIST
 
-                Arguments: 
+                Arguments:
                 """
 
                 class STATus(SCPINode, SCPIQuery, SCPISet):
@@ -7150,7 +7152,7 @@ class ZVA_gen(Instrument):
             """
             DIAGnostic:PRODuct:OPTion
 
-            Arguments: 
+            Arguments:
             """
 
             class SELect(SCPINode, SCPIQuery, SCPISet):
@@ -7173,7 +7175,7 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:PRODuct:TIME
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "TIME"
                 args = []
@@ -7182,7 +7184,7 @@ class ZVA_gen(Instrument):
                     """
                     DIAGnostic:PRODuct:TIME:OPERating
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "OPERating"
                     args = []
@@ -7191,28 +7193,28 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:PRODuct:TIME:OPERating
 
-                Arguments: 
+                Arguments:
                 """
 
             TIME = TIME()
             """
             DIAGnostic:PRODuct:TIME
 
-            Arguments: 
+            Arguments:
             """
 
         PRODuct = PRODuct()
         """
         DIAGnostic:PRODuct
 
-        Arguments: 
+        Arguments:
         """
 
         class SERVice(SCPINode):
             """
             DIAGnostic:SERVice
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "SERVice"
             args = []
@@ -7275,14 +7277,14 @@ class ZVA_gen(Instrument):
         """
         DIAGnostic:SERVice
 
-        Arguments: 
+        Arguments:
         """
 
         class UPDate(SCPINode):
             """
             DIAGnostic:UPDate
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "UPDate"
             args = []
@@ -7291,7 +7293,7 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:UPDate:BOOT
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "BOOT"
                 args = []
@@ -7300,14 +7302,14 @@ class ZVA_gen(Instrument):
             """
             DIAGnostic:UPDate:BOOT
 
-            Arguments: 
+            Arguments:
             """
 
             class CATalog(SCPINode, SCPIQuery):
                 """
                 DIAGnostic:UPDate:CATalog
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CATalog"
                 args = []
@@ -7316,14 +7318,14 @@ class ZVA_gen(Instrument):
             """
             DIAGnostic:UPDate:CATalog
 
-            Arguments: 
+            Arguments:
             """
 
             class CHAP(SCPINode):
                 """
                 DIAGnostic:UPDate:CHAP
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CHAP"
                 args = []
@@ -7332,7 +7334,7 @@ class ZVA_gen(Instrument):
                     """
                     DIAGnostic:UPDate:CHAP:CHALlenge
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "CHALlenge"
                     args = []
@@ -7341,14 +7343,14 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:UPDate:CHAP:CHALlenge
 
-                Arguments: 
+                Arguments:
                 """
 
                 class PRESet(SCPINode, SCPISet):
                     """
                     DIAGnostic:UPDate:CHAP:PRESet
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "PRESet"
                     args = []
@@ -7357,7 +7359,7 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:UPDate:CHAP:PRESet
 
-                Arguments: 
+                Arguments:
                 """
 
                 class RESPonse(SCPINode, SCPISet):
@@ -7380,7 +7382,7 @@ class ZVA_gen(Instrument):
             """
             DIAGnostic:UPDate:CHAP
 
-            Arguments: 
+            Arguments:
             """
 
             class EXECute(SCPINode, SCPISet):
@@ -7412,7 +7414,7 @@ class ZVA_gen(Instrument):
                     """
                     DIAGnostic:UPDate:INSTall:BEGin
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "BEGin"
                     args = []
@@ -7421,14 +7423,14 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:UPDate:INSTall:BEGin
 
-                Arguments: 
+                Arguments:
                 """
 
                 class END(SCPINode, SCPISet):
                     """
                     DIAGnostic:UPDate:INSTall:END
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "END"
                     args = []
@@ -7437,14 +7439,14 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:UPDate:INSTall:END
 
-                Arguments: 
+                Arguments:
                 """
 
                 class STATus(SCPINode, SCPIQuery):
                     """
                     DIAGnostic:UPDate:INSTall:STATus
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "STATus"
                     args = []
@@ -7453,7 +7455,7 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:UPDate:INSTall:STATus
 
-                Arguments: 
+                Arguments:
                 """
 
             INSTall = INSTall()
@@ -7483,7 +7485,7 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:UPDate:TRANsfer
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "TRANsfer"
                 args = []
@@ -7492,7 +7494,7 @@ class ZVA_gen(Instrument):
                     """
                     DIAGnostic:UPDate:TRANsfer:CLOSe
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "CLOSe"
                     args = []
@@ -7501,7 +7503,7 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:UPDate:TRANsfer:CLOSe
 
-                Arguments: 
+                Arguments:
                 """
 
                 class DATA(SCPINode, SCPISet):
@@ -7540,7 +7542,7 @@ class ZVA_gen(Instrument):
                     """
                     DIAGnostic:UPDate:TRANsfer:VERSion
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "VERSion"
                     args = []
@@ -7549,35 +7551,35 @@ class ZVA_gen(Instrument):
                 """
                 DIAGnostic:UPDate:TRANsfer:VERSion
 
-                Arguments: 
+                Arguments:
                 """
 
             TRANsfer = TRANsfer()
             """
             DIAGnostic:UPDate:TRANsfer
 
-            Arguments: 
+            Arguments:
             """
 
         UPDate = UPDate()
         """
         DIAGnostic:UPDate
 
-        Arguments: 
+        Arguments:
         """
 
     DIAGnostic = DIAGnostic()
     """
     DIAGnostic
 
-    Arguments: 
+    Arguments:
     """
 
     class DISPlay(SCPINode):
         """
         DISPlay
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "DISPlay"
         args = []
@@ -7586,7 +7588,7 @@ class ZVA_gen(Instrument):
             """
             DISPlay:ANNotation
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "ANNotation"
             args = []
@@ -7663,14 +7665,14 @@ class ZVA_gen(Instrument):
         """
         DISPlay:ANNotation
 
-        Arguments: 
+        Arguments:
         """
 
         class CMAP(SCPINodeN):
             """
             DISPlay:CMAP
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "CMAP"
             args = []
@@ -7731,7 +7733,7 @@ class ZVA_gen(Instrument):
                 """
                 DISPlay:CMAP:TRACe
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "TRACe"
                 args = []
@@ -7792,21 +7794,21 @@ class ZVA_gen(Instrument):
             """
             DISPlay:CMAP:TRACe
 
-            Arguments: 
+            Arguments:
             """
 
         CMAP = CMAP()
         """
         DISPlay:CMAP
 
-        Arguments: 
+        Arguments:
         """
 
         class MENU(SCPINode):
             """
             DISPlay:MENU
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "MENU"
             args = []
@@ -7815,7 +7817,7 @@ class ZVA_gen(Instrument):
                 """
                 DISPlay:MENU:KEY
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "KEY"
                 args = []
@@ -7860,14 +7862,14 @@ class ZVA_gen(Instrument):
             """
             DISPlay:MENU:KEY
 
-            Arguments: 
+            Arguments:
             """
 
         MENU = MENU()
         """
         DISPlay:MENU
 
-        Arguments: 
+        Arguments:
         """
 
         class RFSize(SCPINode, SCPIQuery, SCPISet):
@@ -7892,7 +7894,7 @@ class ZVA_gen(Instrument):
             """
             DISPlay:WINDow
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "WINDow"
             args = []
@@ -7902,7 +7904,7 @@ class ZVA_gen(Instrument):
                 `DISPlay:WINDow:CATalog
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/display/display.htm#WINDow_CATalog>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CATalog"
                 args = []
@@ -7912,7 +7914,7 @@ class ZVA_gen(Instrument):
             `DISPlay:WINDow:CATalog
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/display/display.htm#WINDow_CATalog>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class MAXimize(SCPINode, SCPIBool):
@@ -8025,7 +8027,7 @@ class ZVA_gen(Instrument):
                 """
                 DISPlay:WINDow:TRACe
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "TRACe"
                 args = []
@@ -8035,7 +8037,7 @@ class ZVA_gen(Instrument):
                     `DISPlay:WINDow:TRACe:CATalog
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/display/display.htm#WINDow_TRACe_CATalog>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "CATalog"
                     args = []
@@ -8045,7 +8047,7 @@ class ZVA_gen(Instrument):
                 `DISPlay:WINDow:TRACe:CATalog
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/display/display.htm#WINDow_TRACe_CATalog>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class DELete(SCPINode, SCPISet):
@@ -8053,7 +8055,7 @@ class ZVA_gen(Instrument):
                     `DISPlay:WINDow:TRACe:DELete
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/display/display.htm#DELete>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "DELete"
                     args = []
@@ -8063,7 +8065,7 @@ class ZVA_gen(Instrument):
                 `DISPlay:WINDow:TRACe:DELete
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/display/display.htm#DELete>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class EFEed(SCPINode, SCPISet):
@@ -8124,7 +8126,7 @@ class ZVA_gen(Instrument):
                     """
                     DISPlay:WINDow:TRACe:X
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "X"
                     args = []
@@ -8151,14 +8153,14 @@ class ZVA_gen(Instrument):
                 """
                 DISPlay:WINDow:TRACe:X
 
-                Arguments: 
+                Arguments:
                 """
 
                 class Y(SCPINode):
                     """
                     DISPlay:WINDow:TRACe:Y
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "Y"
                     args = []
@@ -8185,7 +8187,7 @@ class ZVA_gen(Instrument):
                         """
                         DISPlay:WINDow:TRACe:Y:SCALe
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "SCALe"
                         args = []
@@ -8302,35 +8304,35 @@ class ZVA_gen(Instrument):
                     """
                     DISPlay:WINDow:TRACe:Y:SCALe
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 Y = Y()
                 """
                 DISPlay:WINDow:TRACe:Y
 
-                Arguments: 
+                Arguments:
                 """
 
             TRACe = TRACe()
             """
             DISPlay:WINDow:TRACe
 
-            Arguments: 
+            Arguments:
             """
 
         WINDow = WINDow()
         """
         DISPlay:WINDow
 
-        Arguments: 
+        Arguments:
         """
 
     DISPlay = DISPlay()
     """
     DISPlay
 
-    Arguments: 
+    Arguments:
     """
 
     class FORMat(SCPINode, SCPIQuery, SCPISet):
@@ -8382,7 +8384,7 @@ class ZVA_gen(Instrument):
             """
             FORMat:DEXPort
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "DEXPort"
             args = []
@@ -8409,7 +8411,7 @@ class ZVA_gen(Instrument):
         """
         FORMat:DEXPort
 
-        Arguments: 
+        Arguments:
         """
 
     FORMat = FORMat()
@@ -8423,7 +8425,7 @@ class ZVA_gen(Instrument):
         """
         HCOPy
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "HCOPy"
         args = []
@@ -8450,7 +8452,7 @@ class ZVA_gen(Instrument):
             """
             HCOPy:DEVice
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "DEVice"
             args = []
@@ -8477,7 +8479,7 @@ class ZVA_gen(Instrument):
         """
         HCOPy:DEVice
 
-        Arguments: 
+        Arguments:
         """
 
         class IMMediate(SCPINode, SCPISet):
@@ -8485,7 +8487,7 @@ class ZVA_gen(Instrument):
             `HCOPy:IMMediate
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/hcopy/hcopy.htm#IMMediate>`_
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "IMMediate"
             args = []
@@ -8495,14 +8497,14 @@ class ZVA_gen(Instrument):
         `HCOPy:IMMediate
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/hcopy/hcopy.htm#IMMediate>`_
 
-        Arguments: 
+        Arguments:
         """
 
         class ITEM(SCPINode):
             """
             HCOPy:ITEM
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "ITEM"
             args = []
@@ -8512,7 +8514,7 @@ class ZVA_gen(Instrument):
                 `HCOPy:ITEM:ALL
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/hcopy/hcopy.htm#ITEM_ALL>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "ALL"
                 args = []
@@ -8522,7 +8524,7 @@ class ZVA_gen(Instrument):
             `HCOPy:ITEM:ALL
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/hcopy/hcopy.htm#ITEM_ALL>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class LOGO(SCPINode, SCPIBool):
@@ -8629,14 +8631,14 @@ class ZVA_gen(Instrument):
         """
         HCOPy:ITEM
 
-        Arguments: 
+        Arguments:
         """
 
         class MITem(SCPINode):
             """
             HCOPy:MITem
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "MITem"
             args = []
@@ -8713,14 +8715,14 @@ class ZVA_gen(Instrument):
         """
         HCOPy:MITem
 
-        Arguments: 
+        Arguments:
         """
 
         class MPAGe(SCPINode):
             """
             HCOPy:MPAGe
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "MPAGe"
             args = []
@@ -8747,14 +8749,14 @@ class ZVA_gen(Instrument):
         """
         HCOPy:MPAGe
 
-        Arguments: 
+        Arguments:
         """
 
         class PAGE(SCPINode):
             """
             HCOPy:PAGE
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "PAGE"
             args = []
@@ -8763,7 +8765,7 @@ class ZVA_gen(Instrument):
                 """
                 HCOPy:PAGE:MARGin
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "MARGin"
                 args = []
@@ -8844,7 +8846,7 @@ class ZVA_gen(Instrument):
             """
             HCOPy:PAGE:MARGin
 
-            Arguments: 
+            Arguments:
             """
 
             class ORIentation(SCPINode, SCPIQuery, SCPISet):
@@ -8887,21 +8889,21 @@ class ZVA_gen(Instrument):
         """
         HCOPy:PAGE
 
-        Arguments: 
+        Arguments:
         """
 
     HCOPy = HCOPy()
     """
     HCOPy
 
-    Arguments: 
+    Arguments:
     """
 
     class INITiate(SCPINodeN, SCPIQuery, SCPISet):
         """
         INITiate
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "INITiate"
         args = []
@@ -8929,7 +8931,7 @@ class ZVA_gen(Instrument):
             `INITiate:IMMediate
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/initiate/initiate.htm#IMMediate>`_
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "IMMediate"
             args = []
@@ -8938,7 +8940,7 @@ class ZVA_gen(Instrument):
                 """
                 INITiate:IMMediate:DUMMy
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "DUMMy"
                 args = []
@@ -8947,7 +8949,7 @@ class ZVA_gen(Instrument):
             """
             INITiate:IMMediate:DUMMy
 
-            Arguments: 
+            Arguments:
             """
 
             class SCOPe(SCPINode, SCPIQuery, SCPISet):
@@ -8973,21 +8975,21 @@ class ZVA_gen(Instrument):
         `INITiate:IMMediate
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/initiate/initiate.htm#IMMediate>`_
 
-        Arguments: 
+        Arguments:
         """
 
     INITiate = INITiate()
     """
     INITiate
 
-    Arguments: 
+    Arguments:
     """
 
     class INPut(SCPINodeN):
         """
         INPut
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "INPut"
         args = []
@@ -9014,7 +9016,7 @@ class ZVA_gen(Instrument):
     """
     INPut
 
-    Arguments: 
+    Arguments:
     """
 
     class INSTrument(SCPINode, SCPIQuery, SCPISet):
@@ -9048,7 +9050,7 @@ class ZVA_gen(Instrument):
             """
             INSTrument:PORT
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "PORT"
             args = []
@@ -9058,7 +9060,7 @@ class ZVA_gen(Instrument):
                 `INSTrument:PORT:COUNt
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/instrument/instrument.htm#PORT_COUNt>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "COUNt"
                 args = []
@@ -9068,14 +9070,14 @@ class ZVA_gen(Instrument):
             `INSTrument:PORT:COUNt
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/instrument/instrument.htm#PORT_COUNt>`_
 
-            Arguments: 
+            Arguments:
             """
 
         PORT = PORT()
         """
         INSTrument:PORT
 
-        Arguments: 
+        Arguments:
         """
 
         class SELect(SCPINode, SCPIQuery, SCPISet):
@@ -9107,7 +9109,7 @@ class ZVA_gen(Instrument):
         """
         MEMory
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "MEMory"
         args = []
@@ -9117,7 +9119,7 @@ class ZVA_gen(Instrument):
             `MEMory:CATalog
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/memory/memory.htm#CATalog>`_
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "CATalog"
             args = []
@@ -9127,7 +9129,7 @@ class ZVA_gen(Instrument):
         `MEMory:CATalog
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/memory/memory.htm#CATalog>`_
 
-        Arguments: 
+        Arguments:
         """
 
         class DEFine(SCPINode, SCPISet):
@@ -9162,7 +9164,7 @@ class ZVA_gen(Instrument):
                 `MEMory:DELete:ALL
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/memory/memory.htm#DELete_ALL>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "ALL"
                 args = []
@@ -9172,7 +9174,7 @@ class ZVA_gen(Instrument):
             `MEMory:DELete:ALL
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/memory/memory.htm#DELete_ALL>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class NAME(SCPINode, SCPISet):
@@ -9222,14 +9224,14 @@ class ZVA_gen(Instrument):
     """
     MEMory
 
-    Arguments: 
+    Arguments:
     """
 
     class MMEMory(SCPINode):
         """
         MMEMory
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "MMEMory"
         args = []
@@ -9238,7 +9240,7 @@ class ZVA_gen(Instrument):
             """
             MMEMory:AKAL
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "AKAL"
             args = []
@@ -9247,7 +9249,7 @@ class ZVA_gen(Instrument):
                 """
                 MMEMory:AKAL:FACTory
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "FACTory"
                 args = []
@@ -9274,14 +9276,14 @@ class ZVA_gen(Instrument):
             """
             MMEMory:AKAL:FACTory
 
-            Arguments: 
+            Arguments:
             """
 
             class USER(SCPINode):
                 """
                 MMEMory:AKAL:USER
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "USER"
                 args = []
@@ -9308,14 +9310,14 @@ class ZVA_gen(Instrument):
             """
             MMEMory:AKAL:USER
 
-            Arguments: 
+            Arguments:
             """
 
         AKAL = AKAL()
         """
         MMEMory:AKAL
 
-        Arguments: 
+        Arguments:
         """
 
         class CATalog(SCPINode, SCPIQuery, SCPISet):
@@ -9745,7 +9747,7 @@ class ZVA_gen(Instrument):
                 """
                 MMEMory:LOAD:VNETworks
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "VNETworks"
                 args = []
@@ -9754,7 +9756,7 @@ class ZVA_gen(Instrument):
                     """
                     MMEMory:LOAD:VNETworks:BALanced
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "BALanced"
                     args = []
@@ -9799,14 +9801,14 @@ class ZVA_gen(Instrument):
                 """
                 MMEMory:LOAD:VNETworks:BALanced
 
-                Arguments: 
+                Arguments:
                 """
 
                 class GLOop(SCPINode):
                     """
                     MMEMory:LOAD:VNETworks:GLOop
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "GLOop"
                     args = []
@@ -9851,14 +9853,14 @@ class ZVA_gen(Instrument):
                 """
                 MMEMory:LOAD:VNETworks:GLOop
 
-                Arguments: 
+                Arguments:
                 """
 
                 class PPAir(SCPINode):
                     """
                     MMEMory:LOAD:VNETworks:PPAir
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "PPAir"
                     args = []
@@ -9903,14 +9905,14 @@ class ZVA_gen(Instrument):
                 """
                 MMEMory:LOAD:VNETworks:PPAir
 
-                Arguments: 
+                Arguments:
                 """
 
                 class SENDed(SCPINode):
                     """
                     MMEMory:LOAD:VNETworks:SENDed
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "SENDed"
                     args = []
@@ -9955,14 +9957,14 @@ class ZVA_gen(Instrument):
                 """
                 MMEMory:LOAD:VNETworks:SENDed
 
-                Arguments: 
+                Arguments:
                 """
 
             VNETworks = VNETworks()
             """
             MMEMory:LOAD:VNETworks
 
-            Arguments: 
+            Arguments:
             """
 
         LOAD = LOAD()
@@ -10066,7 +10068,7 @@ class ZVA_gen(Instrument):
             """
             MMEMory:SETTings
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "SETTings"
             args = []
@@ -10075,7 +10077,7 @@ class ZVA_gen(Instrument):
                 """
                 MMEMory:SETTings:RENorm
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "RENorm"
                 args = []
@@ -10138,21 +10140,21 @@ class ZVA_gen(Instrument):
             """
             MMEMory:SETTings:RENorm
 
-            Arguments: 
+            Arguments:
             """
 
         SETTings = SETTings()
         """
         MMEMory:SETTings
 
-        Arguments: 
+        Arguments:
         """
 
         class STORe(SCPINode):
             """
             MMEMory:STORe
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "STORe"
             args = []
@@ -10449,14 +10451,14 @@ class ZVA_gen(Instrument):
         """
         MMEMory:STORe
 
-        Arguments: 
+        Arguments:
         """
 
     MMEMory = MMEMory()
     """
     MMEMory
 
-    Arguments: 
+    Arguments:
     """
 
     class OUTPut(SCPINodeN, SCPIBool):
@@ -10544,7 +10546,7 @@ class ZVA_gen(Instrument):
             """
             OUTPut:UPORt
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "UPORt"
             args = []
@@ -10553,7 +10555,7 @@ class ZVA_gen(Instrument):
                 """
                 OUTPut:UPORt:BUSY
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "BUSY"
                 args = []
@@ -10580,7 +10582,7 @@ class ZVA_gen(Instrument):
             """
             OUTPut:UPORt:BUSY
 
-            Arguments: 
+            Arguments:
             """
 
             class ECBits(SCPINode, SCPIBool):
@@ -10605,7 +10607,7 @@ class ZVA_gen(Instrument):
                 """
                 OUTPut:UPORt:SEGMent
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "SEGMent"
                 args = []
@@ -10633,7 +10635,7 @@ class ZVA_gen(Instrument):
                     `OUTPut:UPORt:SEGMent:VALue
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/output/output.htm#UPORt_SEGMent_VALue>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "VALue"
                     args = []
@@ -10643,14 +10645,14 @@ class ZVA_gen(Instrument):
                 `OUTPut:UPORt:SEGMent:VALue
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/output/output.htm#UPORt_SEGMent_VALue>`_
 
-                Arguments: 
+                Arguments:
                 """
 
             SEGMent = SEGMent()
             """
             OUTPut:UPORt:SEGMent
 
-            Arguments: 
+            Arguments:
             """
 
             class VALue(SCPINode, SCPIQuery):
@@ -10658,7 +10660,7 @@ class ZVA_gen(Instrument):
                 `OUTPut:UPORt:VALue
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/output/output.htm#UPORt_VALue>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "VALue"
                 args = []
@@ -10668,14 +10670,14 @@ class ZVA_gen(Instrument):
             `OUTPut:UPORt:VALue
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/output/output.htm#UPORt_VALue>`_
 
-            Arguments: 
+            Arguments:
             """
 
         UPORt = UPORt()
         """
         OUTPut:UPORt
 
-        Arguments: 
+        Arguments:
         """
 
     OUTPut = OUTPut()
@@ -10689,7 +10691,7 @@ class ZVA_gen(Instrument):
         """
         PROGram
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "PROGram"
         args = []
@@ -10698,7 +10700,7 @@ class ZVA_gen(Instrument):
             """
             PROGram:SELected
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "SELected"
             args = []
@@ -10780,7 +10782,7 @@ class ZVA_gen(Instrument):
                 `PROGram:SELected:RETVal
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/program/program.htm#RETVal>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "RETVal"
                 args = []
@@ -10790,7 +10792,7 @@ class ZVA_gen(Instrument):
             `PROGram:SELected:RETVal
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/program/program.htm#RETVal>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class STRing(SCPINode, SCPIQuery, SCPISet):
@@ -10814,7 +10816,7 @@ class ZVA_gen(Instrument):
                 `PROGram:SELected:WAIT
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/program/program.htm#WAIT>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "WAIT"
                 args = []
@@ -10824,28 +10826,28 @@ class ZVA_gen(Instrument):
             `PROGram:SELected:WAIT
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/program/program.htm#WAIT>`_
 
-            Arguments: 
+            Arguments:
             """
 
         SELected = SELected()
         """
         PROGram:SELected
 
-        Arguments: 
+        Arguments:
         """
 
     PROGram = PROGram()
     """
     PROGram
 
-    Arguments: 
+    Arguments:
     """
 
     class ROUTe(SCPINodeN):
         """
         ROUTe
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "ROUTe"
         args = []
@@ -10890,14 +10892,14 @@ class ZVA_gen(Instrument):
     """
     ROUTe
 
-    Arguments: 
+    Arguments:
     """
 
     class SENSe(SCPINodeN):
         """
         SENSe
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "SENSe"
         args = []
@@ -10917,7 +10919,7 @@ class ZVA_gen(Instrument):
                 `SENSe:AVERage:CLEar
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_ch___average.htm#CLEar>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CLEar"
                 args = []
@@ -10927,7 +10929,7 @@ class ZVA_gen(Instrument):
             `SENSe:AVERage:CLEar
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_ch___average.htm#CLEar>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class COUNt(SCPINode, SCPIQuery, SCPISet):
@@ -11236,7 +11238,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:CONVerter
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "CONVerter"
             args = []
@@ -11317,7 +11319,7 @@ class ZVA_gen(Instrument):
         """
         SENSe:CONVerter
 
-        Arguments: 
+        Arguments:
         """
 
         class CORRection(SCPINode, SCPIBool):
@@ -11385,7 +11387,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:CORRection:CKIT
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CKIT"
                 args = []
@@ -12324,7 +12326,7 @@ class ZVA_gen(Instrument):
                     """
                     SENSe:CORRection:CKIT:N
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "N"
                     args = []
@@ -12717,7 +12719,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:CORRection:CKIT:N
 
-                Arguments: 
+                Arguments:
                 """
 
                 class OSHort(SCPINodeN, SCPIQuery, SCPISet):
@@ -12756,7 +12758,7 @@ class ZVA_gen(Instrument):
                     """
                     SENSe:CORRection:CKIT:PC
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "PC"
                     args = []
@@ -13149,7 +13151,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:CORRection:CKIT:PC
 
-                Arguments: 
+                Arguments:
                 """
 
                 class SELect(SCPINode, SCPIQuery, SCPISet):
@@ -13174,7 +13176,7 @@ class ZVA_gen(Instrument):
                     """
                     SENSe:CORRection:CKIT:SMA
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "SMA"
                     args = []
@@ -13567,14 +13569,14 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:CORRection:CKIT:SMA
 
-                Arguments: 
+                Arguments:
                 """
 
                 class STANdard(SCPINode):
                     """
                     SENSe:CORRection:CKIT:STANdard
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "STANdard"
                     args = []
@@ -13619,14 +13621,14 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:CORRection:CKIT:STANdard
 
-                Arguments: 
+                Arguments:
                 """
 
                 class USER(SCPINodeN):
                     """
                     SENSe:CORRection:CKIT:USER
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "USER"
                     args = []
@@ -14051,14 +14053,14 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:CORRection:CKIT:USER
 
-                Arguments: 
+                Arguments:
                 """
 
             CKIT = CKIT()
             """
             SENSe:CORRection:CKIT
 
-            Arguments: 
+            Arguments:
             """
 
             class COLLect(SCPINode, SCPIQuery, SCPISet):
@@ -14152,7 +14154,7 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:CORRection:COLLect:AUTO:ASSignment
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "ASSignment"
                         args = []
@@ -14162,7 +14164,7 @@ class ZVA_gen(Instrument):
                             `SENSe:CORRection:COLLect:AUTO:ASSignment:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#AUTO_ASSignment_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ACQuire"
                             args = []
@@ -14172,7 +14174,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:COLLect:AUTO:ASSignment:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#AUTO_ASSignment_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class DEFine(SCPINode, SCPIQuery, SCPISet):
@@ -14197,7 +14199,7 @@ class ZVA_gen(Instrument):
                             """
                             SENSe:CORRection:COLLect:AUTO:ASSignment:DELete
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "DELete"
                             args = []
@@ -14207,7 +14209,7 @@ class ZVA_gen(Instrument):
                                 `SENSe:CORRection:COLLect:AUTO:ASSignment:DELete:ALL
                                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#AUTO_ASSignment_DELete>`_
 
-                                Arguments: 
+                                Arguments:
                                 """
                                 _cmd = "ALL"
                                 args = []
@@ -14217,21 +14219,21 @@ class ZVA_gen(Instrument):
                             `SENSe:CORRection:COLLect:AUTO:ASSignment:DELete:ALL
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#AUTO_ASSignment_DELete>`_
 
-                            Arguments: 
+                            Arguments:
                             """
 
                         DELete = DELete()
                         """
                         SENSe:CORRection:COLLect:AUTO:ASSignment:DELete
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     ASSignment = ASSignment()
                     """
                     SENSe:CORRection:COLLect:AUTO:ASSignment
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class CKIT(SCPINode, SCPISet):
@@ -14303,7 +14305,7 @@ class ZVA_gen(Instrument):
                             `SENSe:CORRection:COLLect:AUTO:PORTs:CONNection
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#AUTO_PORTs_CONNection>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "CONNection"
                             args = []
@@ -14313,7 +14315,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:COLLect:AUTO:PORTs:CONNection
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#AUTO_PORTs_CONNection>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class TYPE(SCPINode, SCPISet):
@@ -14365,7 +14367,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:COLLect:AUTO:SAVE
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#AUTO_SAVE>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "SAVE"
                         args = []
@@ -14375,7 +14377,7 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:COLLect:AUTO:SAVE
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#AUTO_SAVE>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class TYPE(SCPINode, SCPISet):
@@ -14400,7 +14402,7 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:CORRection:COLLect:AUTO:VMIXer
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "VMIXer"
                         args = []
@@ -14427,7 +14429,7 @@ class ZVA_gen(Instrument):
                     """
                     SENSe:CORRection:COLLect:AUTO:VMIXer
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 AUTO = AUTO()
@@ -14646,7 +14648,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:COLLect:FIXTure:SAVE
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#FIXTure_SAVE>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "SAVE"
                         args = []
@@ -14656,7 +14658,7 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:COLLect:FIXTure:SAVE
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#FIXTure_SAVE>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class STARt(SCPINode, SCPISet):
@@ -14664,7 +14666,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:COLLect:FIXTure:STARt
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#FIXTure_STARt>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "STARt"
                         args = []
@@ -14674,7 +14676,7 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:COLLect:FIXTure:STARt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#FIXTure_STARt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 FIXTure = FIXTure()
@@ -14786,7 +14788,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:COLLect:NFIGure:END
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#NFIGure_END>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "END"
                         args = []
@@ -14796,7 +14798,7 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:COLLect:NFIGure:END
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#NFIGure_END>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class SAVE(SCPINode, SCPISet):
@@ -14804,7 +14806,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:COLLect:NFIGure:SAVE
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#NFIGure_AQUire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "SAVE"
                         args = []
@@ -14814,7 +14816,7 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:COLLect:NFIGure:SAVE
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#NFIGure_AQUire>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class STARt(SCPINode, SCPISet):
@@ -14865,7 +14867,7 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:COLLect:SAVE
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#SAVE>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "SAVE"
                     args = []
@@ -14875,7 +14877,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:COLLect:SAVE:DEFault
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#SAVE_DEFault>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "DEFault"
                         args = []
@@ -14885,14 +14887,14 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:COLLect:SAVE:DEFault
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#SAVE_DEFault>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class DUMMy(SCPINode, SCPISet):
                         """
                         SENSe:CORRection:COLLect:SAVE:DUMMy
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "DUMMy"
                         args = []
@@ -14901,7 +14903,7 @@ class ZVA_gen(Instrument):
                     """
                     SENSe:CORRection:COLLect:SAVE:DUMMy
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class SELected(SCPINode, SCPISet):
@@ -14909,7 +14911,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:COLLect:SAVE:SELected
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#SAVE_SELected>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "SELected"
                         args = []
@@ -14919,7 +14921,7 @@ class ZVA_gen(Instrument):
                             `SENSe:CORRection:COLLect:SAVE:SELected:DEFault
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#SAVE_SELected_DEFault>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "DEFault"
                             args = []
@@ -14929,14 +14931,14 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:COLLect:SAVE:SELected:DEFault
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#SAVE_SELected_DEFault>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class DUMMy(SCPINode, SCPISet):
                             """
                             SENSe:CORRection:COLLect:SAVE:SELected:DUMMy
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "DUMMy"
                             args = []
@@ -14945,7 +14947,7 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:CORRection:COLLect:SAVE:SELected:DUMMy
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     SELected = SELected()
@@ -14953,7 +14955,7 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:COLLect:SAVE:SELected
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#SAVE_SELected>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 SAVE = SAVE()
@@ -14961,7 +14963,7 @@ class ZVA_gen(Instrument):
                 `SENSe:CORRection:COLLect:SAVE
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_collect.htm#SAVE>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class SCONnection(SCPINodeN, SCPIQuery, SCPISet):
@@ -15004,7 +15006,7 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:CONNection:CATalog
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_data.htm#CONNection_CATalog>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "CATalog"
                     args = []
@@ -15014,7 +15016,7 @@ class ZVA_gen(Instrument):
                 `SENSe:CORRection:CONNection:CATalog
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_data.htm#CONNection_CATalog>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class DELete(SCPINode, SCPISet):
@@ -15047,7 +15049,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:CORRection:CSET
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CSET"
                 args = []
@@ -15072,7 +15074,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:CORRection:CSET
 
-            Arguments: 
+            Arguments:
             """
 
             class DATA(SCPINode, SCPIQuery, SCPISet):
@@ -15099,7 +15101,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:DATA:PARameter:COUNt
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_data.htm#DATA_PARameter_COUNt>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "COUNt"
                         args = []
@@ -15109,7 +15111,7 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:DATA:PARameter:COUNt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_data.htm#DATA_PARameter_COUNt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 PARameter = PARameter()
@@ -15132,7 +15134,7 @@ class ZVA_gen(Instrument):
                 `SENSe:CORRection:DATE
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_data.htm#DATE>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "DATE"
                 args = []
@@ -15142,7 +15144,7 @@ class ZVA_gen(Instrument):
             `SENSe:CORRection:DATE
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_data.htm#DATE>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class EDELay(SCPINodeN, SCPIQuery, SCPISet):
@@ -15429,7 +15431,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:CORRection:NSTate
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "NSTate"
                 args = []
@@ -15438,7 +15440,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:CORRection:NSTate
 
-            Arguments: 
+            Arguments:
             """
 
             class OFFSet(SCPINodeN, SCPIBool):
@@ -15644,7 +15646,7 @@ class ZVA_gen(Instrument):
                     """
                     SENSe:CORRection:POWer:HARMonic
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "HARMonic"
                     args = []
@@ -15654,7 +15656,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:POWer:HARMonic:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#HARMonic_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "ACQuire"
                         args = []
@@ -15664,21 +15666,21 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:POWer:HARMonic:ACQuire
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#HARMonic_ACQuire>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 HARMonic = HARMonic()
                 """
                 SENSe:CORRection:POWer:HARMonic
 
-                Arguments: 
+                Arguments:
                 """
 
                 class IMODulation(SCPINode):
                     """
                     SENSe:CORRection:POWer:IMODulation
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "IMODulation"
                     args = []
@@ -15688,7 +15690,7 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:POWer:IMODulation:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#IMODulation_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "ACQuire"
                         args = []
@@ -15698,14 +15700,14 @@ class ZVA_gen(Instrument):
                     `SENSe:CORRection:POWer:IMODulation:ACQuire
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#IMODulation_ACQuire>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class RPORt(SCPINode):
                         """
                         SENSe:CORRection:POWer:IMODulation:RPORt
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "RPORt"
                         args = []
@@ -15715,7 +15717,7 @@ class ZVA_gen(Instrument):
                             `SENSe:CORRection:POWer:IMODulation:RPORt:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#IMODulation_RPORt_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ACQuire"
                             args = []
@@ -15725,28 +15727,28 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:POWer:IMODulation:RPORt:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#IMODulation_RPORt_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     RPORt = RPORt()
                     """
                     SENSe:CORRection:POWer:IMODulation:RPORt
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 IMODulation = IMODulation()
                 """
                 SENSe:CORRection:POWer:IMODulation
 
-                Arguments: 
+                Arguments:
                 """
 
                 class MIXer(SCPINode):
                     """
                     SENSe:CORRection:POWer:MIXer
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "MIXer"
                     args = []
@@ -15755,7 +15757,7 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:CORRection:POWer:MIXer:IF
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "IF"
                         args = []
@@ -15765,7 +15767,7 @@ class ZVA_gen(Instrument):
                             `SENSe:CORRection:POWer:MIXer:IF:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#MIXer_IF_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ACQuire"
                             args = []
@@ -15775,14 +15777,14 @@ class ZVA_gen(Instrument):
                         `SENSe:CORRection:POWer:MIXer:IF:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#MIXer_IF_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class NFIGure(SCPINode):
                             """
                             SENSe:CORRection:POWer:MIXer:IF:NFIGure
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "NFIGure"
                             args = []
@@ -15792,7 +15794,7 @@ class ZVA_gen(Instrument):
                                 `SENSe:CORRection:POWer:MIXer:IF:NFIGure:ACQuire
                                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#MIXer_IF_NFIGure_ACQuire>`_
 
-                                Arguments: 
+                                Arguments:
                                 """
                                 _cmd = "ACQuire"
                                 args = []
@@ -15802,28 +15804,28 @@ class ZVA_gen(Instrument):
                             `SENSe:CORRection:POWer:MIXer:IF:NFIGure:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#MIXer_IF_NFIGure_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
 
                         NFIGure = NFIGure()
                         """
                         SENSe:CORRection:POWer:MIXer:IF:NFIGure
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     IF = IF()
                     """
                     SENSe:CORRection:POWer:MIXer:IF
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 MIXer = MIXer()
                 """
                 SENSe:CORRection:POWer:MIXer
 
-                Arguments: 
+                Arguments:
                 """
 
                 class STATe(SCPINode, SCPIBool):
@@ -15856,7 +15858,7 @@ class ZVA_gen(Instrument):
                 `SENSe:CORRection:PSTate
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#PSTate>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "PSTate"
                 args = []
@@ -15866,7 +15868,7 @@ class ZVA_gen(Instrument):
             `SENSe:CORRection:PSTate
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#PSTate>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class SSTate(SCPINode, SCPIQuery):
@@ -15874,7 +15876,7 @@ class ZVA_gen(Instrument):
                 `SENSe:CORRection:SSTate
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#SSTate>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "SSTate"
                 args = []
@@ -15884,7 +15886,7 @@ class ZVA_gen(Instrument):
             `SENSe:CORRection:SSTate
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#SSTate>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class STATe(SCPINode, SCPIBool):
@@ -15910,7 +15912,7 @@ class ZVA_gen(Instrument):
                 `SENSe:CORRection:STIMulus
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#STIMulus>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "STIMulus"
                 args = []
@@ -15920,7 +15922,7 @@ class ZVA_gen(Instrument):
             `SENSe:CORRection:STIMulus
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_correction_power.htm#STIMulus>`_
 
-            Arguments: 
+            Arguments:
             """
 
         CORRection = CORRection()
@@ -15952,7 +15954,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:EUNit
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "EUNit"
             args = []
@@ -16063,7 +16065,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:EUNit:PGENerator
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "PGENerator"
                 args = []
@@ -16090,7 +16092,7 @@ class ZVA_gen(Instrument):
                     """
                     SENSe:EUNit:PGENerator:INPut
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "INPut"
                     args = []
@@ -16117,14 +16119,14 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:EUNit:PGENerator:INPut
 
-                Arguments: 
+                Arguments:
                 """
 
                 class OUTPut(SCPINode):
                     """
                     SENSe:EUNit:PGENerator:OUTPut
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "OUTPut"
                     args = []
@@ -16151,14 +16153,14 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:EUNit:PGENerator:OUTPut
 
-                Arguments: 
+                Arguments:
                 """
 
             PGENerator = PGENerator()
             """
             SENSe:EUNit:PGENerator
 
-            Arguments: 
+            Arguments:
             """
 
             class PMODulator(SCPINodeN, SCPIBool):
@@ -16199,7 +16201,7 @@ class ZVA_gen(Instrument):
         """
         SENSe:EUNit
 
-        Arguments: 
+        Arguments:
         """
 
         class FREQuency(SCPINodeN, SCPIQuery, SCPISet):
@@ -16313,7 +16315,7 @@ class ZVA_gen(Instrument):
                     """
                     SENSe:FREQuency:CONVersion:DEVice
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "DEVice"
                     args = []
@@ -16394,14 +16396,14 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:FREQuency:CONVersion:DEVice
 
-                Arguments: 
+                Arguments:
                 """
 
                 class GAIN(SCPINode):
                     """
                     SENSe:FREQuency:CONVersion:GAIN
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "GAIN"
                     args = []
@@ -16428,14 +16430,14 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:FREQuency:CONVersion:GAIN
 
-                Arguments: 
+                Arguments:
                 """
 
                 class HARMonic(SCPINode):
                     """
                     SENSe:FREQuency:CONVersion:HARMonic
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "HARMonic"
                     args = []
@@ -16516,14 +16518,14 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:FREQuency:CONVersion:HARMonic
 
-                Arguments: 
+                Arguments:
                 """
 
                 class MIXer(SCPINode):
                     """
                     SENSe:FREQuency:CONVersion:MIXer
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "MIXer"
                     args = []
@@ -16910,7 +16912,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:FREQuency:CONVersion:MIXer
 
-                Arguments: 
+                Arguments:
                 """
 
             CONVersion = CONVersion()
@@ -16961,7 +16963,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:FREQuency:IMODulation
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "IMODulation"
                 args = []
@@ -17232,7 +17234,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:FREQuency:IMODulation
 
-            Arguments: 
+            Arguments:
             """
 
             class LPNoise(SCPINode, SCPIBool):
@@ -17257,7 +17259,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:FREQuency:MDELay
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "MDELay"
                 args = []
@@ -17267,7 +17269,7 @@ class ZVA_gen(Instrument):
                     `SENSe:FREQuency:MDELay:ACQuire
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_frequency_mdelay.htm#ACQuire>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "ACQuire"
                     args = []
@@ -17277,7 +17279,7 @@ class ZVA_gen(Instrument):
                 `SENSe:FREQuency:MDELay:ACQuire
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_frequency_mdelay.htm#ACQuire>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class APERture(SCPINode, SCPIQuery, SCPISet):
@@ -17496,7 +17498,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:FREQuency:MDELay
 
-            Arguments: 
+            Arguments:
             """
 
             class MODE(SCPINode, SCPIQuery, SCPISet):
@@ -17521,7 +17523,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:FREQuency:OFFSet
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "OFFSet"
                 args = []
@@ -17566,7 +17568,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:FREQuency:OFFSet
 
-            Arguments: 
+            Arguments:
             """
 
             class SBANd(SCPINode, SCPIQuery, SCPISet):
@@ -17686,7 +17688,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:IFRequency
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "IFRequency"
             args = []
@@ -17695,7 +17697,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:IFRequency:CONVersion
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CONVersion"
                 args = []
@@ -17720,14 +17722,14 @@ class ZVA_gen(Instrument):
             """
             SENSe:IFRequency:CONVersion
 
-            Arguments: 
+            Arguments:
             """
 
         IFRequency = IFRequency()
         """
         SENSe:IFRequency
 
-        Arguments: 
+        Arguments:
         """
 
         class LOMeasure(SCPINodeN, SCPIBool):
@@ -17802,7 +17804,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:LPORt
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "LPORt"
             args = []
@@ -17847,14 +17849,14 @@ class ZVA_gen(Instrument):
         """
         SENSe:LPORt
 
-        Arguments: 
+        Arguments:
         """
 
         class NFIGure(SCPINode):
             """
             SENSe:NFIGure
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "NFIGure"
             args = []
@@ -17935,14 +17937,14 @@ class ZVA_gen(Instrument):
         """
         SENSe:NFIGure
 
-        Arguments: 
+        Arguments:
         """
 
         class PAE(SCPINode):
             """
             SENSe:PAE
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "PAE"
             args = []
@@ -18005,7 +18007,7 @@ class ZVA_gen(Instrument):
         """
         SENSe:PAE
 
-        Arguments: 
+        Arguments:
         """
 
         class PMMO(SCPINode, SCPIBool):
@@ -18030,7 +18032,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:PORT
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "PORT"
             args = []
@@ -18057,14 +18059,14 @@ class ZVA_gen(Instrument):
         """
         SENSe:PORT
 
-        Arguments: 
+        Arguments:
         """
 
         class POWer(SCPINode):
             """
             SENSe:POWer
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "POWer"
             args = []
@@ -18091,7 +18093,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:POWer:IFGain
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "IFGain"
                 args = []
@@ -18136,21 +18138,21 @@ class ZVA_gen(Instrument):
             """
             SENSe:POWer:IFGain
 
-            Arguments: 
+            Arguments:
             """
 
         POWer = POWer()
         """
         SENSe:POWer
 
-        Arguments: 
+        Arguments:
         """
 
         class PULSe(SCPINode):
             """
             SENSe:PULSe
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "PULSe"
             args = []
@@ -18346,7 +18348,7 @@ class ZVA_gen(Instrument):
                     """
                     SENSe:PULSe:GENerator:TRAin
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "TRAin"
                     args = []
@@ -18373,7 +18375,7 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:PULSe:GENerator:TRAin:DELete
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "DELete"
                         args = []
@@ -18383,7 +18385,7 @@ class ZVA_gen(Instrument):
                             `SENSe:PULSe:GENerator:TRAin:DELete:ALL
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_pulse_generator.htm#TRAin_DELete_ALL>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ALL"
                             args = []
@@ -18393,14 +18395,14 @@ class ZVA_gen(Instrument):
                         `SENSe:PULSe:GENerator:TRAin:DELete:ALL
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_pulse_generator.htm#TRAin_DELete_ALL>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     DELete = DELete()
                     """
                     SENSe:PULSe:GENerator:TRAin:DELete
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class PERiod(SCPINode, SCPIQuery, SCPISet):
@@ -18435,7 +18437,7 @@ class ZVA_gen(Instrument):
                             `SENSe:PULSe:GENerator:TRAin:SEGMent:COUNt
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_pulse_generator.htm#TRAin_SEGMent_COUNt>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "COUNt"
                             args = []
@@ -18445,7 +18447,7 @@ class ZVA_gen(Instrument):
                         `SENSe:PULSe:GENerator:TRAin:SEGMent:COUNt
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_pulse_generator.htm#TRAin_SEGMent_COUNt>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class STARt(SCPINode, SCPIQuery, SCPISet):
@@ -18513,7 +18515,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:PULSe:GENerator:TRAin
 
-                Arguments: 
+                Arguments:
                 """
 
                 class TYPE(SCPINode, SCPIQuery, SCPISet):
@@ -18563,7 +18565,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:PULSe:RECeiver
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "RECeiver"
                 args = []
@@ -18572,7 +18574,7 @@ class ZVA_gen(Instrument):
                     """
                     SENSe:PULSe:RECeiver:A
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "A"
                     args = []
@@ -18581,7 +18583,7 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:PULSe:RECeiver:A:GENerator
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "GENerator"
                         args = []
@@ -18590,7 +18592,7 @@ class ZVA_gen(Instrument):
                             """
                             SENSe:PULSe:RECeiver:A:GENerator:EVALuation
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "EVALuation"
                             args = []
@@ -18653,7 +18655,7 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:PULSe:RECeiver:A:GENerator:EVALuation
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class LINes(SCPINode, SCPIBool):
@@ -18694,7 +18696,7 @@ class ZVA_gen(Instrument):
                             """
                             SENSe:PULSe:RECeiver:A:GENerator:TRIGger
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "TRIGger"
                             args = []
@@ -18721,21 +18723,21 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:PULSe:RECeiver:A:GENerator:TRIGger
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     GENerator = GENerator()
                     """
                     SENSe:PULSe:RECeiver:A:GENerator
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class SRCPort(SCPINodeN):
                         """
                         SENSe:PULSe:RECeiver:A:SRCPort
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "SRCPort"
                         args = []
@@ -18744,7 +18746,7 @@ class ZVA_gen(Instrument):
                             """
                             SENSe:PULSe:RECeiver:A:SRCPort:EVALuation
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "EVALuation"
                             args = []
@@ -18807,7 +18809,7 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:PULSe:RECeiver:A:SRCPort:EVALuation
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class LINes(SCPINode, SCPIBool):
@@ -18848,7 +18850,7 @@ class ZVA_gen(Instrument):
                             """
                             SENSe:PULSe:RECeiver:A:SRCPort:TRIGger
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "TRIGger"
                             args = []
@@ -18875,28 +18877,28 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:PULSe:RECeiver:A:SRCPort:TRIGger
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     SRCPort = SRCPort()
                     """
                     SENSe:PULSe:RECeiver:A:SRCPort
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 A = A()
                 """
                 SENSe:PULSe:RECeiver:A
 
-                Arguments: 
+                Arguments:
                 """
 
                 class B(SCPINodeN):
                     """
                     SENSe:PULSe:RECeiver:B
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "B"
                     args = []
@@ -18905,7 +18907,7 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:PULSe:RECeiver:B:GENerator
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "GENerator"
                         args = []
@@ -18914,7 +18916,7 @@ class ZVA_gen(Instrument):
                             """
                             SENSe:PULSe:RECeiver:B:GENerator:EVALuation
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "EVALuation"
                             args = []
@@ -18977,7 +18979,7 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:PULSe:RECeiver:B:GENerator:EVALuation
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class LINes(SCPINode, SCPIBool):
@@ -19018,7 +19020,7 @@ class ZVA_gen(Instrument):
                             """
                             SENSe:PULSe:RECeiver:B:GENerator:TRIGger
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "TRIGger"
                             args = []
@@ -19045,21 +19047,21 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:PULSe:RECeiver:B:GENerator:TRIGger
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     GENerator = GENerator()
                     """
                     SENSe:PULSe:RECeiver:B:GENerator
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class SRCPort(SCPINodeN):
                         """
                         SENSe:PULSe:RECeiver:B:SRCPort
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "SRCPort"
                         args = []
@@ -19068,7 +19070,7 @@ class ZVA_gen(Instrument):
                             """
                             SENSe:PULSe:RECeiver:B:SRCPort:EVALuation
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "EVALuation"
                             args = []
@@ -19131,7 +19133,7 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:PULSe:RECeiver:B:SRCPort:EVALuation
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class LINes(SCPINode, SCPIBool):
@@ -19172,7 +19174,7 @@ class ZVA_gen(Instrument):
                             """
                             SENSe:PULSe:RECeiver:B:SRCPort:TRIGger
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "TRIGger"
                             args = []
@@ -19199,35 +19201,35 @@ class ZVA_gen(Instrument):
                         """
                         SENSe:PULSe:RECeiver:B:SRCPort:TRIGger
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     SRCPort = SRCPort()
                     """
                     SENSe:PULSe:RECeiver:B:SRCPort
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 B = B()
                 """
                 SENSe:PULSe:RECeiver:B
 
-                Arguments: 
+                Arguments:
                 """
 
             RECeiver = RECeiver()
             """
             SENSe:PULSe:RECeiver
 
-            Arguments: 
+            Arguments:
             """
 
             class TIME(SCPINode):
                 """
                 SENSe:PULSe:TIME
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "TIME"
                 args = []
@@ -19306,14 +19308,14 @@ class ZVA_gen(Instrument):
             """
             SENSe:PULSe:TIME
 
-            Arguments: 
+            Arguments:
             """
 
         PULSe = PULSe()
         """
         SENSe:PULSe
 
-        Arguments: 
+        Arguments:
         """
 
         class ROSCillator(SCPINode, SCPIQuery, SCPISet):
@@ -19329,7 +19331,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:ROSCillator:EXTernal
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "EXTernal"
                 args = []
@@ -19356,7 +19358,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:ROSCillator:EXTernal
 
-            Arguments: 
+            Arguments:
             """
 
             class SOURce(SCPINode, SCPIQuery, SCPISet):
@@ -19398,7 +19400,7 @@ class ZVA_gen(Instrument):
                 `SENSe:SEGMent:ADD
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#ADD>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "ADD"
                 args = []
@@ -19408,7 +19410,7 @@ class ZVA_gen(Instrument):
             `SENSe:SEGMent:ADD
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#ADD>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class BWIDth(SCPINode, SCPIQuery, SCPISet):
@@ -19504,7 +19506,7 @@ class ZVA_gen(Instrument):
                 `SENSe:SEGMent:CLEar
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#CLEAr>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CLEar"
                 args = []
@@ -19514,7 +19516,7 @@ class ZVA_gen(Instrument):
             `SENSe:SEGMent:CLEar
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#CLEAr>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class COUNt(SCPINode, SCPIQuery):
@@ -19522,7 +19524,7 @@ class ZVA_gen(Instrument):
                 `SENSe:SEGMent:COUNt
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#COUNt>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "COUNt"
                 args = []
@@ -19532,7 +19534,7 @@ class ZVA_gen(Instrument):
             `SENSe:SEGMent:COUNt
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#COUNt>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class DEFine(SCPINodeN, SCPIQuery, SCPISet):
@@ -19576,7 +19578,7 @@ class ZVA_gen(Instrument):
                 `SENSe:SEGMent:DELete
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#DELete>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "DELete"
                 args = []
@@ -19586,7 +19588,7 @@ class ZVA_gen(Instrument):
                     `SENSe:SEGMent:DELete:ALL
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#DELete_ALL>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "ALL"
                     args = []
@@ -19596,14 +19598,14 @@ class ZVA_gen(Instrument):
                 `SENSe:SEGMent:DELete:ALL
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#DELete_ALL>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class DUMMy(SCPINode, SCPIQuery, SCPISet):
                     """
                     SENSe:SEGMent:DELete:DUMMy
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "DUMMy"
                     args = []
@@ -19612,7 +19614,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:SEGMent:DELete:DUMMy
 
-                Arguments: 
+                Arguments:
                 """
 
             DELete = DELete()
@@ -19620,14 +19622,14 @@ class ZVA_gen(Instrument):
             `SENSe:SEGMent:DELete
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#DELete>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class FREQuency(SCPINode):
                 """
                 SENSe:SEGMent:FREQuency
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "FREQuency"
                 args = []
@@ -19708,7 +19710,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:SEGMent:FREQuency
 
-            Arguments: 
+            Arguments:
             """
 
             class INSert(SCPINodeN, SCPIQuery, SCPISet):
@@ -19893,7 +19895,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:SEGMent:SWEep
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "SWEep"
                 args = []
@@ -19985,7 +19987,7 @@ class ZVA_gen(Instrument):
                         `SENSe:SEGMent:SWEep:TIME:SUM
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#TIME_SUM>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "SUM"
                         args = []
@@ -19995,7 +19997,7 @@ class ZVA_gen(Instrument):
                     `SENSe:SEGMent:SWEep:TIME:SUM
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/sense/sense_segment.htm#TIME_SUM>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 TIME = TIME()
@@ -20010,7 +20012,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:SEGMent:SWEep
 
-            Arguments: 
+            Arguments:
             """
 
             class TRIGger(SCPINode, SCPIBool):
@@ -20076,7 +20078,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:SWEep
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "SWEep"
             args = []
@@ -20085,7 +20087,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:SWEep:AXIS
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "AXIS"
                 args = []
@@ -20130,7 +20132,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:SWEep:AXIS
 
-            Arguments: 
+            Arguments:
             """
 
             class COUNt(SCPINode, SCPIQuery, SCPISet):
@@ -20153,7 +20155,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:SWEep:DETector
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "DETector"
                 args = []
@@ -20180,7 +20182,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:SWEep:DETector
 
-            Arguments: 
+            Arguments:
             """
 
             class DWELl(SCPINode, SCPIQuery, SCPISet):
@@ -20363,14 +20365,14 @@ class ZVA_gen(Instrument):
         """
         SENSe:SWEep
 
-        Arguments: 
+        Arguments:
         """
 
         class TEUNit(SCPINode):
             """
             SENSe:TEUNit
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "TEUNit"
             args = []
@@ -20569,7 +20571,7 @@ class ZVA_gen(Instrument):
                 """
                 SENSe:TEUNit:REAR
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "REAR"
                 args = []
@@ -20614,7 +20616,7 @@ class ZVA_gen(Instrument):
             """
             SENSe:TEUNit:REAR
 
-            Arguments: 
+            Arguments:
             """
 
             class UMEas(SCPINodeN, SCPIBool):
@@ -20689,14 +20691,14 @@ class ZVA_gen(Instrument):
         """
         SENSe:TEUNit
 
-        Arguments: 
+        Arguments:
         """
 
         class UDSParams(SCPINodeN):
             """
             SENSe:UDSParams
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "UDSParams"
             args = []
@@ -20741,21 +20743,21 @@ class ZVA_gen(Instrument):
         """
         SENSe:UDSParams
 
-        Arguments: 
+        Arguments:
         """
 
     SENSe = SENSe()
     """
     SENSe
 
-    Arguments: 
+    Arguments:
     """
 
     class SOURce(SCPINodeN):
         """
         SOURce
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "SOURce"
         args = []
@@ -20764,7 +20766,7 @@ class ZVA_gen(Instrument):
             """
             SOURce:CMODe
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "CMODe"
             args = []
@@ -20859,7 +20861,7 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:CMODe:TOLerance
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "TOLerance"
                 args = []
@@ -20902,14 +20904,14 @@ class ZVA_gen(Instrument):
             """
             SOURce:CMODe:TOLerance
 
-            Arguments: 
+            Arguments:
             """
 
         CMODe = CMODe()
         """
         SOURce:CMODe
 
-        Arguments: 
+        Arguments:
         """
 
         class FREQuency(SCPINodeN, SCPIQuery, SCPISet):
@@ -20925,7 +20927,7 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:FREQuency:CONVersion
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CONVersion"
                 args = []
@@ -20934,7 +20936,7 @@ class ZVA_gen(Instrument):
                     """
                     SOURce:FREQuency:CONVersion:ARBitrary
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "ARBitrary"
                     args = []
@@ -20997,14 +20999,14 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:FREQuency:CONVersion:ARBitrary
 
-                Arguments: 
+                Arguments:
                 """
 
                 class MIXer(SCPINode):
                     """
                     SOURce:FREQuency:CONVersion:MIXer
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "MIXer"
                     args = []
@@ -21103,14 +21105,14 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:FREQuency:CONVersion:MIXer
 
-                Arguments: 
+                Arguments:
                 """
 
             CONVersion = CONVersion()
             """
             SOURce:FREQuency:CONVersion
 
-            Arguments: 
+            Arguments:
             """
 
             class CW(SCPINode, SCPIQuery, SCPISet):
@@ -21185,7 +21187,7 @@ class ZVA_gen(Instrument):
                 `SOURce:GROup:COUNt
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch.htm#GROup_COUNt>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "COUNt"
                 args = []
@@ -21195,7 +21197,7 @@ class ZVA_gen(Instrument):
             `SOURce:GROup:COUNt
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch.htm#GROup_COUNt>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class PORTs(SCPINode, SCPIQuery, SCPISet):
@@ -21239,7 +21241,7 @@ class ZVA_gen(Instrument):
                         `SOURce:GROup:SIMultaneous:FOFFset:CONDition
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch.htm#GROup_SIMultaneous_FOFFset_CONDition>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "CONDition"
                         args = []
@@ -21249,14 +21251,14 @@ class ZVA_gen(Instrument):
                     `SOURce:GROup:SIMultaneous:FOFFset:CONDition
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch.htm#GROup_SIMultaneous_FOFFset_CONDition>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class MOFFset(SCPINode):
                         """
                         SOURce:GROup:SIMultaneous:FOFFset:MOFFset
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "MOFFset"
                         args = []
@@ -21319,7 +21321,7 @@ class ZVA_gen(Instrument):
                     """
                     SOURce:GROup:SIMultaneous:FOFFset:MOFFset
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class STATe(SCPINode, SCPIBool):
@@ -21736,7 +21738,7 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:ATTenuation:AUTO:VALue
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power__level_.htm#ATTenuation_AUTO_VALue>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "VALue"
                         args = []
@@ -21746,7 +21748,7 @@ class ZVA_gen(Instrument):
                     `SOURce:POWer:ATTenuation:AUTO:VALue
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power__level_.htm#ATTenuation_AUTO_VALue>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 AUTO = AUTO()
@@ -21803,7 +21805,7 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:POWer:CONVerter
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CONVerter"
                 args = []
@@ -21830,7 +21832,7 @@ class ZVA_gen(Instrument):
                     """
                     SOURce:POWer:CONVerter:TRANsfer
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "TRANsfer"
                     args = []
@@ -21911,7 +21913,7 @@ class ZVA_gen(Instrument):
                         """
                         SOURce:POWer:CONVerter:TRANsfer:ELECtronic
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "ELECtronic"
                         args = []
@@ -21974,14 +21976,14 @@ class ZVA_gen(Instrument):
                     """
                     SOURce:POWer:CONVerter:TRANsfer:ELECtronic
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class MECHanical(SCPINode):
                         """
                         SOURce:POWer:CONVerter:TRANsfer:MECHanical
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "MECHanical"
                         args = []
@@ -22008,7 +22010,7 @@ class ZVA_gen(Instrument):
                     """
                     SOURce:POWer:CONVerter:TRANsfer:MECHanical
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class OFFSet(SCPINode, SCPIQuery, SCPISet):
@@ -22069,14 +22071,14 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:POWer:CONVerter:TRANsfer
 
-                Arguments: 
+                Arguments:
                 """
 
             CONVerter = CONVerter()
             """
             SOURce:POWer:CONVerter
 
-            Arguments: 
+            Arguments:
             """
 
             class CORRection(SCPINode, SCPISet):
@@ -22102,7 +22104,7 @@ class ZVA_gen(Instrument):
                         """
                         SOURce:POWer:CORRection:ACQuire:VERification
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "VERification"
                         args = []
@@ -22112,7 +22114,7 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:ACQuire:VERification:RESult
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#ACQuire_VERification_RESult>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "RESult"
                             args = []
@@ -22122,14 +22124,14 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:ACQuire:VERification:RESult
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#ACQuire_VERification_RESult>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     VERification = VERification()
                     """
                     SOURce:POWer:CORRection:ACQuire:VERification
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 ACQuire = ACQuire()
@@ -22363,7 +22365,7 @@ class ZVA_gen(Instrument):
                         """
                         SOURce:POWer:CORRection:CONVerter:LEVel
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "LEVel"
                         args = []
@@ -22390,7 +22392,7 @@ class ZVA_gen(Instrument):
                     """
                     SOURce:POWer:CORRection:CONVerter:LEVel
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class STATe(SCPINode, SCPIBool):
@@ -22443,7 +22445,7 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:DATA:PARameter:COUNt
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#DATA_PARameter_COUNt>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "COUNt"
                             args = []
@@ -22453,7 +22455,7 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:DATA:PARameter:COUNt
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#DATA_PARameter_COUNt>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     PARameter = PARameter()
@@ -22521,7 +22523,7 @@ class ZVA_gen(Instrument):
                         """
                         SOURce:POWer:CORRection:GENerator:LEVel
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "LEVel"
                         args = []
@@ -22548,7 +22550,7 @@ class ZVA_gen(Instrument):
                     """
                     SOURce:POWer:CORRection:GENerator:LEVel
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class STATe(SCPINode, SCPIBool):
@@ -22580,7 +22582,7 @@ class ZVA_gen(Instrument):
                     """
                     SOURce:POWer:CORRection:HARMonic
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "HARMonic"
                     args = []
@@ -22590,7 +22592,7 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:HARMonic:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#HARMonic_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "ACQuire"
                         args = []
@@ -22600,21 +22602,21 @@ class ZVA_gen(Instrument):
                     `SOURce:POWer:CORRection:HARMonic:ACQuire
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#HARMonic_ACQuire>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 HARMonic = HARMonic()
                 """
                 SOURce:POWer:CORRection:HARMonic
 
-                Arguments: 
+                Arguments:
                 """
 
                 class IMODulation(SCPINode):
                     """
                     SOURce:POWer:CORRection:IMODulation
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "IMODulation"
                     args = []
@@ -22623,7 +22625,7 @@ class ZVA_gen(Instrument):
                         """
                         SOURce:POWer:CORRection:IMODulation:LTONe
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "LTONe"
                         args = []
@@ -22633,7 +22635,7 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:IMODulation:LTONe:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#IMODulation_LOWer_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ACQuire"
                             args = []
@@ -22643,21 +22645,21 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:IMODulation:LTONe:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#IMODulation_LOWer_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     LTONe = LTONe()
                     """
                     SOURce:POWer:CORRection:IMODulation:LTONe
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class RPORt(SCPINode, SCPISet):
                         """
                         SOURce:POWer:CORRection:IMODulation:RPORt
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "RPORt"
                         args = []
@@ -22667,7 +22669,7 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:IMODulation:RPORt:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#IMODulation_RPORt_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ACQuire"
                             args = []
@@ -22677,21 +22679,21 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:IMODulation:RPORt:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#IMODulation_RPORt_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     RPORt = RPORt()
                     """
                     SOURce:POWer:CORRection:IMODulation:RPORt
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class SPORts(SCPINode, SCPISet):
                         """
                         SOURce:POWer:CORRection:IMODulation:SPORts
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "SPORts"
                         args = []
@@ -22701,7 +22703,7 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:IMODulation:SPORts:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#IMODulation_SPORts_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ACQuire"
                             args = []
@@ -22711,21 +22713,21 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:IMODulation:SPORts:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#IMODulation_SPORts_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     SPORts = SPORts()
                     """
                     SOURce:POWer:CORRection:IMODulation:SPORts
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class UTONe(SCPINode, SCPISet):
                         """
                         SOURce:POWer:CORRection:IMODulation:UTONe
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "UTONe"
                         args = []
@@ -22735,7 +22737,7 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:IMODulation:UTONe:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#IMODulation_UPPer_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ACQuire"
                             args = []
@@ -22745,28 +22747,28 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:IMODulation:UTONe:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#IMODulation_UPPer_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     UTONe = UTONe()
                     """
                     SOURce:POWer:CORRection:IMODulation:UTONe
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 IMODulation = IMODulation()
                 """
                 SOURce:POWer:CORRection:IMODulation
 
-                Arguments: 
+                Arguments:
                 """
 
                 class LEVel(SCPINode):
                     """
                     SOURce:POWer:CORRection:LEVel
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "LEVel"
                     args = []
@@ -22793,14 +22795,14 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:POWer:CORRection:LEVel
 
-                Arguments: 
+                Arguments:
                 """
 
                 class MIXer(SCPINode):
                     """
                     SOURce:POWer:CORRection:MIXer
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "MIXer"
                     args = []
@@ -22809,7 +22811,7 @@ class ZVA_gen(Instrument):
                         """
                         SOURce:POWer:CORRection:MIXer:IF
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "IF"
                         args = []
@@ -22819,7 +22821,7 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:MIXer:IF:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#MIXer_IF_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ACQuire"
                             args = []
@@ -22829,21 +22831,21 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:MIXer:IF:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#MIXer_IF_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     IF = IF()
                     """
                     SOURce:POWer:CORRection:MIXer:IF
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class LO(SCPINodeN, SCPISet):
                         """
                         SOURce:POWer:CORRection:MIXer:LO
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "LO"
                         args = []
@@ -22853,7 +22855,7 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:MIXer:LO:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#MIXer_LO_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ACQuire"
                             args = []
@@ -22863,21 +22865,21 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:MIXer:LO:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#MIXer_LO_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     LO = LO()
                     """
                     SOURce:POWer:CORRection:MIXer:LO
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class RF(SCPINode, SCPISet):
                         """
                         SOURce:POWer:CORRection:MIXer:RF
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "RF"
                         args = []
@@ -22887,7 +22889,7 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:MIXer:RF:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#MIXer_RF_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ACQuire"
                             args = []
@@ -22897,14 +22899,14 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:MIXer:RF:ACQuire
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#MIXer_RF_ACQuire>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class NFIGure(SCPINode, SCPISet):
                             """
                             SOURce:POWer:CORRection:MIXer:RF:NFIGure
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "NFIGure"
                             args = []
@@ -22914,7 +22916,7 @@ class ZVA_gen(Instrument):
                                 `SOURce:POWer:CORRection:MIXer:RF:NFIGure:ACQuire
                                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#MIXer_RF_NFIGure_ACQuire>`_
 
-                                Arguments: 
+                                Arguments:
                                 """
                                 _cmd = "ACQuire"
                                 args = []
@@ -22924,28 +22926,28 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:MIXer:RF:NFIGure:ACQuire
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction.htm#MIXer_RF_NFIGure_ACQuire>`_
 
-                            Arguments: 
+                            Arguments:
                             """
 
                         NFIGure = NFIGure()
                         """
                         SOURce:POWer:CORRection:MIXer:RF:NFIGure
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     RF = RF()
                     """
                     SOURce:POWer:CORRection:MIXer:RF
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 MIXer = MIXer()
                 """
                 SOURce:POWer:CORRection:MIXer
 
-                Arguments: 
+                Arguments:
                 """
 
                 class NREadings(SCPINode, SCPIQuery, SCPISet):
@@ -23004,7 +23006,7 @@ class ZVA_gen(Instrument):
                     """
                     SOURce:POWer:CORRection:PMETer
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "PMETer"
                     args = []
@@ -23031,7 +23033,7 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:POWer:CORRection:PMETer
 
-                Arguments: 
+                Arguments:
                 """
 
                 class STATe(SCPINode, SCPIBool):
@@ -23084,7 +23086,7 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:TCOefficient:COUNt
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#COUNt>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "COUNt"
                         args = []
@@ -23094,7 +23096,7 @@ class ZVA_gen(Instrument):
                     `SOURce:POWer:CORRection:TCOefficient:COUNt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#COUNt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class DEFine(SCPINodeN, SCPIQuery, SCPISet):
@@ -23119,7 +23121,7 @@ class ZVA_gen(Instrument):
                         """
                         SOURce:POWer:CORRection:TCOefficient:DELete
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "DELete"
                         args = []
@@ -23129,7 +23131,7 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:TCOefficient:DELete:ALL
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#DELete_ALL>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ALL"
                             args = []
@@ -23139,7 +23141,7 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:TCOefficient:DELete:ALL
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#DELete_ALL>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                         class DUMMy(SCPINode, SCPIQuery, SCPISet):
@@ -23147,7 +23149,7 @@ class ZVA_gen(Instrument):
                             `SOURce:POWer:CORRection:TCOefficient:DELete:DUMMy
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#DELete>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "DUMMy"
                             args = []
@@ -23157,14 +23159,14 @@ class ZVA_gen(Instrument):
                         `SOURce:POWer:CORRection:TCOefficient:DELete:DUMMy
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#DELete>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     DELete = DELete()
                     """
                     SOURce:POWer:CORRection:TCOefficient:DELete
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class FEED(SCPINode, SCPISet):
@@ -23255,7 +23257,7 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:POWer:GENerator
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "GENerator"
                 args = []
@@ -23386,7 +23388,7 @@ class ZVA_gen(Instrument):
             """
             SOURce:POWer:GENerator
 
-            Arguments: 
+            Arguments:
             """
 
             class LEVel(SCPINode, SCPIQuery, SCPISet):
@@ -23723,7 +23725,7 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:TDIF:IMBalance
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "IMBalance"
                 args = []
@@ -23732,7 +23734,7 @@ class ZVA_gen(Instrument):
                     """
                     SOURce:TDIF:IMBalance:AMPLitude
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "AMPLitude"
                     args = []
@@ -23795,14 +23797,14 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:TDIF:IMBalance:AMPLitude
 
-                Arguments: 
+                Arguments:
                 """
 
                 class PHASe(SCPINode):
                     """
                     SOURce:TDIF:IMBalance:PHASe
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "PHASe"
                     args = []
@@ -23865,14 +23867,14 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:TDIF:IMBalance:PHASe
 
-                Arguments: 
+                Arguments:
                 """
 
             IMBalance = IMBalance()
             """
             SOURce:TDIF:IMBalance
 
-            Arguments: 
+            Arguments:
             """
 
             class STATe(SCPINode, SCPIBool):
@@ -23897,7 +23899,7 @@ class ZVA_gen(Instrument):
                 """
                 SOURce:TDIF:TOLerance
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "TOLerance"
                 args = []
@@ -23940,7 +23942,7 @@ class ZVA_gen(Instrument):
             """
             SOURce:TDIF:TOLerance
 
-            Arguments: 
+            Arguments:
             """
 
             class WAVes(SCPINode, SCPIQuery, SCPISet):
@@ -23972,7 +23974,7 @@ class ZVA_gen(Instrument):
     """
     SOURce
 
-    Arguments: 
+    Arguments:
     """
 
     class STATus(SCPINode):
@@ -23980,7 +23982,7 @@ class ZVA_gen(Instrument):
         `STATus
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/remote_control/status_reporting_system/status_registers.htm#IX_Operation_Register>`_
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "STATus"
         args = []
@@ -23989,7 +23991,7 @@ class ZVA_gen(Instrument):
             """
             STATus:OPERation
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "OPERation"
             args = []
@@ -23998,7 +24000,7 @@ class ZVA_gen(Instrument):
                 """
                 STATus:OPERation:CONDition
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CONDition"
                 args = []
@@ -24007,7 +24009,7 @@ class ZVA_gen(Instrument):
             """
             STATus:OPERation:CONDition
 
-            Arguments: 
+            Arguments:
             """
 
             class ENABle(SCPINode, SCPIQuery, SCPISet):
@@ -24030,7 +24032,7 @@ class ZVA_gen(Instrument):
                 """
                 STATus:OPERation:EVENt
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "EVENt"
                 args = []
@@ -24039,7 +24041,7 @@ class ZVA_gen(Instrument):
             """
             STATus:OPERation:EVENt
 
-            Arguments: 
+            Arguments:
             """
 
             class NTRansition(SCPINode, SCPIQuery, SCPISet):
@@ -24078,7 +24080,7 @@ class ZVA_gen(Instrument):
         """
         STATus:OPERation
 
-        Arguments: 
+        Arguments:
         """
 
         class PRESet(SCPINode, SCPISet):
@@ -24086,7 +24088,7 @@ class ZVA_gen(Instrument):
             `STATus:PRESet
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#PRESet>`_
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "PRESet"
             args = []
@@ -24096,14 +24098,14 @@ class ZVA_gen(Instrument):
         `STATus:PRESet
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#PRESet>`_
 
-        Arguments: 
+        Arguments:
         """
 
         class QUEStionable(SCPINode, SCPIQuery, SCPISet):
             """
             STATus:QUEStionable
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "QUEStionable"
             args = []
@@ -24113,7 +24115,7 @@ class ZVA_gen(Instrument):
                 `STATus:QUEStionable:CONDition
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#QUES_CONDition>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "CONDition"
                 args = []
@@ -24123,7 +24125,7 @@ class ZVA_gen(Instrument):
             `STATus:QUEStionable:CONDition
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#QUES_CONDition>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class ENABle(SCPINode, SCPIQuery, SCPISet):
@@ -24149,7 +24151,7 @@ class ZVA_gen(Instrument):
                 `STATus:QUEStionable:EVENt
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#LIMit_EVENt>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "EVENt"
                 args = []
@@ -24159,14 +24161,14 @@ class ZVA_gen(Instrument):
             `STATus:QUEStionable:EVENt
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#LIMit_EVENt>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class INTegrity(SCPINode, SCPIQuery, SCPISet):
                 """
                 STATus:QUEStionable:INTegrity
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "INTegrity"
                 args = []
@@ -24176,7 +24178,7 @@ class ZVA_gen(Instrument):
                     `STATus:QUEStionable:INTegrity:CONDition
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#INTegrity_CONDition>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "CONDition"
                     args = []
@@ -24186,7 +24188,7 @@ class ZVA_gen(Instrument):
                 `STATus:QUEStionable:INTegrity:CONDition
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#INTegrity_CONDition>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class ENABle(SCPINode, SCPIQuery, SCPISet):
@@ -24212,7 +24214,7 @@ class ZVA_gen(Instrument):
                     `STATus:QUEStionable:INTegrity:EVENt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#INTegrity_EVENt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "EVENt"
                     args = []
@@ -24222,14 +24224,14 @@ class ZVA_gen(Instrument):
                 `STATus:QUEStionable:INTegrity:EVENt
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#INTegrity_EVENt>`_
 
-                Arguments: 
+                Arguments:
                 """
 
                 class HARDware(SCPINode, SCPIQuery, SCPISet):
                     """
                     STATus:QUEStionable:INTegrity:HARDware
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "HARDware"
                     args = []
@@ -24239,7 +24241,7 @@ class ZVA_gen(Instrument):
                         `STATus:QUEStionable:INTegrity:HARDware:CONDition
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#INTegrity_HARDware_CONDition>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "CONDition"
                         args = []
@@ -24249,7 +24251,7 @@ class ZVA_gen(Instrument):
                     `STATus:QUEStionable:INTegrity:HARDware:CONDition
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#INTegrity_HARDware_CONDition>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class ENABle(SCPINode, SCPIQuery, SCPISet):
@@ -24275,7 +24277,7 @@ class ZVA_gen(Instrument):
                         `STATus:QUEStionable:INTegrity:HARDware:EVENt
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#INTegrity_HARDware_EVENt>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "EVENt"
                         args = []
@@ -24285,7 +24287,7 @@ class ZVA_gen(Instrument):
                     `STATus:QUEStionable:INTegrity:HARDware:EVENt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#INTegrity_HARDware_EVENt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class NTRansition(SCPINode, SCPIQuery, SCPISet):
@@ -24328,7 +24330,7 @@ class ZVA_gen(Instrument):
                 """
                 STATus:QUEStionable:INTegrity:HARDware
 
-                Arguments: 
+                Arguments:
                 """
 
                 class NTRansition(SCPINode, SCPIQuery, SCPISet):
@@ -24371,14 +24373,14 @@ class ZVA_gen(Instrument):
             """
             STATus:QUEStionable:INTegrity
 
-            Arguments: 
+            Arguments:
             """
 
             class LIMit(SCPINodeN, SCPIQuery, SCPISet):
                 """
                 STATus:QUEStionable:LIMit
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "LIMit"
                 args = []
@@ -24387,7 +24389,7 @@ class ZVA_gen(Instrument):
                     """
                     STATus:QUEStionable:LIMit:CONDition
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "CONDition"
                     args = []
@@ -24396,7 +24398,7 @@ class ZVA_gen(Instrument):
                 """
                 STATus:QUEStionable:LIMit:CONDition
 
-                Arguments: 
+                Arguments:
                 """
 
                 class ENABle(SCPINode, SCPIQuery, SCPISet):
@@ -24419,7 +24421,7 @@ class ZVA_gen(Instrument):
                     """
                     STATus:QUEStionable:LIMit:EVENt
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "EVENt"
                     args = []
@@ -24428,7 +24430,7 @@ class ZVA_gen(Instrument):
                 """
                 STATus:QUEStionable:LIMit:EVENt
 
-                Arguments: 
+                Arguments:
                 """
 
                 class NTRansition(SCPINode, SCPIQuery, SCPISet):
@@ -24467,7 +24469,7 @@ class ZVA_gen(Instrument):
             """
             STATus:QUEStionable:LIMit
 
-            Arguments: 
+            Arguments:
             """
 
             class NTRansition(SCPINode, SCPIQuery, SCPISet):
@@ -24510,14 +24512,14 @@ class ZVA_gen(Instrument):
         """
         STATus:QUEStionable
 
-        Arguments: 
+        Arguments:
         """
 
         class QUEue(SCPINode, SCPIQuery, SCPISet):
             """
             STATus:QUEue
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "QUEue"
             args = []
@@ -24527,7 +24529,7 @@ class ZVA_gen(Instrument):
                 `STATus:QUEue:NEXT
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#QUEue>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "NEXT"
                 args = []
@@ -24537,14 +24539,14 @@ class ZVA_gen(Instrument):
             `STATus:QUEue:NEXT
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/status/status.htm#QUEue>`_
 
-            Arguments: 
+            Arguments:
             """
 
         QUEue = QUEue()
         """
         STATus:QUEue
 
-        Arguments: 
+        Arguments:
         """
 
     STATus = STATus()
@@ -24552,14 +24554,14 @@ class ZVA_gen(Instrument):
     `STATus
     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/remote_control/status_reporting_system/status_registers.htm#IX_Operation_Register>`_
 
-    Arguments: 
+    Arguments:
     """
 
     class SYSTem(SCPINode):
         """
         SYSTem
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "SYSTem"
         args = []
@@ -24568,7 +24570,7 @@ class ZVA_gen(Instrument):
             """
             SYSTem:COMMunicate
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "COMMunicate"
             args = []
@@ -24577,7 +24579,7 @@ class ZVA_gen(Instrument):
                 """
                 SYSTem:COMMunicate:AKAL
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "AKAL"
                 args = []
@@ -24638,14 +24640,14 @@ class ZVA_gen(Instrument):
             """
             SYSTem:COMMunicate:AKAL
 
-            Arguments: 
+            Arguments:
             """
 
             class GPIB(SCPINode):
                 """
                 SYSTem:COMMunicate:GPIB
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "GPIB"
                 args = []
@@ -24654,7 +24656,7 @@ class ZVA_gen(Instrument):
                     """
                     SYSTem:COMMunicate:GPIB:SELF
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "SELF"
                     args = []
@@ -24699,21 +24701,21 @@ class ZVA_gen(Instrument):
                 """
                 SYSTem:COMMunicate:GPIB:SELF
 
-                Arguments: 
+                Arguments:
                 """
 
             GPIB = GPIB()
             """
             SYSTem:COMMunicate:GPIB
 
-            Arguments: 
+            Arguments:
             """
 
             class INTernal(SCPINode):
                 """
                 SYSTem:COMMunicate:INTernal
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "INTernal"
                 args = []
@@ -24722,7 +24724,7 @@ class ZVA_gen(Instrument):
                     """
                     SYSTem:COMMunicate:INTernal:COMMand
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "COMMand"
                     args = []
@@ -24747,7 +24749,7 @@ class ZVA_gen(Instrument):
                 """
                 SYSTem:COMMunicate:INTernal:COMMand
 
-                Arguments: 
+                Arguments:
                 """
 
                 class REMote(SCPINode, SCPIBool):
@@ -24770,14 +24772,14 @@ class ZVA_gen(Instrument):
             """
             SYSTem:COMMunicate:INTernal
 
-            Arguments: 
+            Arguments:
             """
 
             class NET(SCPINode):
                 """
                 SYSTem:COMMunicate:NET
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "NET"
                 args = []
@@ -24804,14 +24806,14 @@ class ZVA_gen(Instrument):
             """
             SYSTem:COMMunicate:NET
 
-            Arguments: 
+            Arguments:
             """
 
             class RDEVice(SCPINode):
                 """
                 SYSTem:COMMunicate:RDEVice
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "RDEVice"
                 args = []
@@ -24820,7 +24822,7 @@ class ZVA_gen(Instrument):
                     """
                     SYSTem:COMMunicate:RDEVice:AKAL
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "AKAL"
                     args = []
@@ -24840,7 +24842,7 @@ class ZVA_gen(Instrument):
                             `SYSTem:COMMunicate:RDEVice:AKAL:ADDRess:ALL
                             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_AKAL_ADDRess_ALL>`_
 
-                            Arguments: 
+                            Arguments:
                             """
                             _cmd = "ALL"
                             args = []
@@ -24850,7 +24852,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:AKAL:ADDRess:ALL
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_AKAL_ADDRess_ALL>`_
 
-                        Arguments: 
+                        Arguments:
                         """
 
                     ADDRess = ADDRess()
@@ -24899,14 +24901,14 @@ class ZVA_gen(Instrument):
                 """
                 SYSTem:COMMunicate:RDEVice:AKAL
 
-                Arguments: 
+                Arguments:
                 """
 
                 class EUNit(SCPINode):
                     """
                     SYSTem:COMMunicate:RDEVice:EUNit
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "EUNit"
                     args = []
@@ -24916,7 +24918,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:EUNit:IDN
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_EUNit_IDN>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "IDN"
                         args = []
@@ -24926,7 +24928,7 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:EUNit:IDN
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_EUNit_IDN>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class OPT(SCPINode, SCPIQuery):
@@ -24934,7 +24936,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:EUNit:OPT
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_EUNit_OPT>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "OPT"
                         args = []
@@ -24944,21 +24946,21 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:EUNit:OPT
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_EUNit_OPT>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 EUNit = EUNit()
                 """
                 SYSTem:COMMunicate:RDEVice:EUNit
 
-                Arguments: 
+                Arguments:
                 """
 
                 class GENerator(SCPINodeN):
                     """
                     SYSTem:COMMunicate:RDEVice:GENerator
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "GENerator"
                     args = []
@@ -24968,7 +24970,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:GENerator:CATalog
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_GENerator_CATalog>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "CATalog"
                         args = []
@@ -24978,7 +24980,7 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:GENerator:CATalog
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_GENerator_CATalog>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class COUNt(SCPINode, SCPIQuery):
@@ -24986,7 +24988,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:GENerator:COUNt
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_GENerator_COUNt>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "COUNt"
                         args = []
@@ -24996,7 +24998,7 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:GENerator:COUNt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_GENerator_COUNt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class DEFine(SCPINode, SCPIQuery, SCPISet):
@@ -25022,7 +25024,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:GENerator:DELete
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_GENerator_DELete>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "DELete"
                         args = []
@@ -25032,21 +25034,21 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:GENerator:DELete
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_GENerator_DELete>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 GENerator = GENerator()
                 """
                 SYSTem:COMMunicate:RDEVice:GENerator
 
-                Arguments: 
+                Arguments:
                 """
 
                 class PMETer(SCPINodeN):
                     """
                     SYSTem:COMMunicate:RDEVice:PMETer
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "PMETer"
                     args = []
@@ -25056,7 +25058,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:PMETer:AZERo
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_PMETer_AZERo>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "AZERo"
                         args = []
@@ -25066,7 +25068,7 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:PMETer:AZERo
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_PMETer_AZERo>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class CATalog(SCPINode, SCPIQuery):
@@ -25074,7 +25076,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:PMETer:CATalog
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_PMETer_CATalog>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "CATalog"
                         args = []
@@ -25084,14 +25086,14 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:PMETer:CATalog
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_PMETer_CATalog>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class CONFigure(SCPINode):
                         """
                         SYSTem:COMMunicate:RDEVice:PMETer:CONFigure
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "CONFigure"
                         args = []
@@ -25134,7 +25136,7 @@ class ZVA_gen(Instrument):
                     """
                     SYSTem:COMMunicate:RDEVice:PMETer:CONFigure
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class COUNt(SCPINode, SCPIQuery):
@@ -25142,7 +25144,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:PMETer:COUNt
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_PMETer_COUNt>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "COUNt"
                         args = []
@@ -25152,7 +25154,7 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:PMETer:COUNt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_PMETer_COUNt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class DEFine(SCPINode, SCPIQuery, SCPISet):
@@ -25178,7 +25180,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:PMETer:DELete
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_PMETer_DELete>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "DELete"
                         args = []
@@ -25188,21 +25190,21 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:PMETer:DELete
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_PMETer_DELete>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 PMETer = PMETer()
                 """
                 SYSTem:COMMunicate:RDEVice:PMETer
 
-                Arguments: 
+                Arguments:
                 """
 
                 class RECeiver(SCPINode):
                     """
                     SYSTem:COMMunicate:RDEVice:RECeiver
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "RECeiver"
                     args = []
@@ -25230,7 +25232,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:RECeiver:DELete
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_RECeiver_DELete>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "DELete"
                         args = []
@@ -25240,21 +25242,21 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:RECeiver:DELete
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_RECeiver_DELete>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 RECeiver = RECeiver()
                 """
                 SYSTem:COMMunicate:RDEVice:RECeiver
 
-                Arguments: 
+                Arguments:
                 """
 
                 class TEUNit(SCPINode):
                     """
                     SYSTem:COMMunicate:RDEVice:TEUNit
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "TEUNit"
                     args = []
@@ -25264,7 +25266,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:TEUNit:COUNt
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_TEUNit_COUNt>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "COUNt"
                         args = []
@@ -25274,7 +25276,7 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:TEUNit:COUNt
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_TEUNit_COUNt>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class IDN(SCPINode, SCPIQuery):
@@ -25282,7 +25284,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:TEUNit:IDN
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_TEUNit_IDN>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "IDN"
                         args = []
@@ -25292,7 +25294,7 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:TEUNit:IDN
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_TEUNit_IDN>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                     class OPT(SCPINode, SCPIQuery):
@@ -25300,7 +25302,7 @@ class ZVA_gen(Instrument):
                         `SYSTem:COMMunicate:RDEVice:TEUNit:OPT
                         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_TEUNit_OPT>`_
 
-                        Arguments: 
+                        Arguments:
                         """
                         _cmd = "OPT"
                         args = []
@@ -25310,28 +25312,28 @@ class ZVA_gen(Instrument):
                     `SYSTem:COMMunicate:RDEVice:TEUNit:OPT
                     <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#RDEVice_TEUNit_OPT>`_
 
-                    Arguments: 
+                    Arguments:
                     """
 
                 TEUNit = TEUNit()
                 """
                 SYSTem:COMMunicate:RDEVice:TEUNit
 
-                Arguments: 
+                Arguments:
                 """
 
             RDEVice = RDEVice()
             """
             SYSTem:COMMunicate:RDEVice
 
-            Arguments: 
+            Arguments:
             """
 
             class TCPip(SCPINode):
                 """
                 SYSTem:COMMunicate:TCPip
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "TCPip"
                 args = []
@@ -25340,7 +25342,7 @@ class ZVA_gen(Instrument):
                     """
                     SYSTem:COMMunicate:TCPip:CONTrol
 
-                    Arguments: 
+                    Arguments:
                     """
                     _cmd = "CONTrol"
                     args = []
@@ -25349,28 +25351,28 @@ class ZVA_gen(Instrument):
                 """
                 SYSTem:COMMunicate:TCPip:CONTrol
 
-                Arguments: 
+                Arguments:
                 """
 
             TCPip = TCPip()
             """
             SYSTem:COMMunicate:TCPip
 
-            Arguments: 
+            Arguments:
             """
 
         COMMunicate = COMMunicate()
         """
         SYSTem:COMMunicate
 
-        Arguments: 
+        Arguments:
         """
 
         class CORRection(SCPINode):
             """
             SYSTem:CORRection
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "CORRection"
             args = []
@@ -25413,14 +25415,14 @@ class ZVA_gen(Instrument):
         """
         SYSTem:CORRection
 
-        Arguments: 
+        Arguments:
         """
 
         class DATA(SCPINode):
             """
             SYSTem:DATA
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "DATA"
             args = []
@@ -25447,7 +25449,7 @@ class ZVA_gen(Instrument):
         """
         SYSTem:DATA
 
-        Arguments: 
+        Arguments:
         """
 
         class DATE(SCPINode, SCPIQuery, SCPISet):
@@ -25472,7 +25474,7 @@ class ZVA_gen(Instrument):
             """
             SYSTem:DISPlay
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "DISPlay"
             args = []
@@ -25517,14 +25519,14 @@ class ZVA_gen(Instrument):
         """
         SYSTem:DISPlay
 
-        Arguments: 
+        Arguments:
         """
 
         class ERRor(SCPINode, SCPIQuery, SCPISet):
             """
             SYSTem:ERRor
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "ERRor"
             args = []
@@ -25534,7 +25536,7 @@ class ZVA_gen(Instrument):
                 `SYSTem:ERRor:ALL
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#ERRor_ALL>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "ALL"
                 args = []
@@ -25544,7 +25546,7 @@ class ZVA_gen(Instrument):
             `SYSTem:ERRor:ALL
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#ERRor_ALL>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class DISPlay(SCPINode, SCPIBool):
@@ -25570,7 +25572,7 @@ class ZVA_gen(Instrument):
                 `SYSTem:ERRor:NEXT
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#ERRor_NEXT>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "NEXT"
                 args = []
@@ -25580,21 +25582,21 @@ class ZVA_gen(Instrument):
             `SYSTem:ERRor:NEXT
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#ERRor_NEXT>`_
 
-            Arguments: 
+            Arguments:
             """
 
         ERRor = ERRor()
         """
         SYSTem:ERRor
 
-        Arguments: 
+        Arguments:
         """
 
         class FIRMware(SCPINode):
             """
             SYSTem:FIRMware
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "FIRMware"
             args = []
@@ -25621,7 +25623,7 @@ class ZVA_gen(Instrument):
         """
         SYSTem:FIRMware
 
-        Arguments: 
+        Arguments:
         """
 
         class FPReset(SCPINode, SCPISet):
@@ -25629,7 +25631,7 @@ class ZVA_gen(Instrument):
             `SYSTem:FPReset
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#FPReset>`_
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "FPReset"
             args = []
@@ -25639,7 +25641,7 @@ class ZVA_gen(Instrument):
         `SYSTem:FPReset
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#FPReset>`_
 
-        Arguments: 
+        Arguments:
         """
 
         class FREQuency(SCPINode, SCPIQuery, SCPISet):
@@ -25664,7 +25666,7 @@ class ZVA_gen(Instrument):
             """
             SYSTem:IDENtify
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "IDENtify"
             args = []
@@ -25674,7 +25676,7 @@ class ZVA_gen(Instrument):
                 `SYSTem:IDENtify:FACTory
                 <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#IDENtify_FACTory>`_
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "FACTory"
                 args = []
@@ -25684,7 +25686,7 @@ class ZVA_gen(Instrument):
             `SYSTem:IDENtify:FACTory
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#IDENtify_FACTory>`_
 
-            Arguments: 
+            Arguments:
             """
 
             class STRing(SCPINode, SCPIQuery, SCPISet):
@@ -25709,7 +25711,7 @@ class ZVA_gen(Instrument):
         """
         SYSTem:IDENtify
 
-        Arguments: 
+        Arguments:
         """
 
         class KLOCk(SCPINode, SCPIBool):
@@ -25752,7 +25754,7 @@ class ZVA_gen(Instrument):
             """
             SYSTem:LOGGing
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "LOGGing"
             args = []
@@ -25793,14 +25795,14 @@ class ZVA_gen(Instrument):
         """
         SYSTem:LOGGing
 
-        Arguments: 
+        Arguments:
         """
 
         class NOPeration(SCPINode, SCPIQuery, SCPISet):
             """
             SYSTem:NOPeration
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "NOPeration"
             args = []
@@ -25809,7 +25811,7 @@ class ZVA_gen(Instrument):
         """
         SYSTem:NOPeration
 
-        Arguments: 
+        Arguments:
         """
 
         class PASSword(SCPINode, SCPISet):
@@ -25851,7 +25853,7 @@ class ZVA_gen(Instrument):
             `SYSTem:PRESet
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#PRESet>`_
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "PRESet"
             args = []
@@ -25860,7 +25862,7 @@ class ZVA_gen(Instrument):
                 """
                 SYSTem:PRESet:DUMMy
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "DUMMy"
                 args = []
@@ -25869,7 +25871,7 @@ class ZVA_gen(Instrument):
             """
             SYSTem:PRESet:DUMMy
 
-            Arguments: 
+            Arguments:
             """
 
             class REMote(SCPINode, SCPIBool):
@@ -25981,7 +25983,7 @@ class ZVA_gen(Instrument):
         `SYSTem:PRESet
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#PRESet>`_
 
-        Arguments: 
+        Arguments:
         """
 
         class PRIority(SCPINode, SCPIQuery, SCPISet):
@@ -26006,7 +26008,7 @@ class ZVA_gen(Instrument):
             """
             SYSTem:SETTings
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "SETTings"
             args = []
@@ -26031,7 +26033,7 @@ class ZVA_gen(Instrument):
         """
         SYSTem:SETTings
 
-        Arguments: 
+        Arguments:
         """
 
         class SHUTdown(SCPINode, SCPISet):
@@ -26039,7 +26041,7 @@ class ZVA_gen(Instrument):
             `SYSTem:SHUTdown
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#SHUTdown>`_
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "SHUTdown"
             args = []
@@ -26049,14 +26051,14 @@ class ZVA_gen(Instrument):
         `SYSTem:SHUTdown
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#SHUTdown>`_
 
-        Arguments: 
+        Arguments:
         """
 
         class SOUNd(SCPINode):
             """
             SYSTem:SOUNd
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "SOUNd"
             args = []
@@ -26133,7 +26135,7 @@ class ZVA_gen(Instrument):
         """
         SYSTem:SOUNd
 
-        Arguments: 
+        Arguments:
         """
 
         class TIME(SCPINode, SCPIQuery, SCPISet):
@@ -26192,7 +26194,7 @@ class ZVA_gen(Instrument):
             """
             SYSTem:USER
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "USER"
             args = []
@@ -26201,7 +26203,7 @@ class ZVA_gen(Instrument):
                 """
                 SYSTem:USER:DISPlay
 
-                Arguments: 
+                Arguments:
                 """
                 _cmd = "DISPlay"
                 args = []
@@ -26228,7 +26230,7 @@ class ZVA_gen(Instrument):
             """
             SYSTem:USER:DISPlay
 
-            Arguments: 
+            Arguments:
             """
 
             class FKEY(SCPINode, SCPIQuery, SCPISet):
@@ -26287,7 +26289,7 @@ class ZVA_gen(Instrument):
         """
         SYSTem:USER
 
-        Arguments: 
+        Arguments:
         """
 
         class VERSion(SCPINode, SCPIQuery, SCPISet):
@@ -26295,7 +26297,7 @@ class ZVA_gen(Instrument):
             `SYSTem:VERSion
             <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#VERSion_>`_
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "VERSion"
             args = []
@@ -26305,7 +26307,7 @@ class ZVA_gen(Instrument):
         `SYSTem:VERSion
         <http://www.rohde-schwarz.com/webhelp/webhelp_zva_8/scpi_reference/system/system.htm#VERSion_>`_
 
-        Arguments: 
+        Arguments:
         """
 
         class WAIT(SCPINode, SCPIQuery, SCPISet):
@@ -26328,7 +26330,7 @@ class ZVA_gen(Instrument):
     """
     SYSTem
 
-    Arguments: 
+    Arguments:
     """
 
     class TRACe(SCPINode, SCPIQuery, SCPISet):
@@ -26489,7 +26491,7 @@ class ZVA_gen(Instrument):
         """
         TRIGger
 
-        Arguments: 
+        Arguments:
         """
         _cmd = "TRIGger"
         args = []
@@ -26498,7 +26500,7 @@ class ZVA_gen(Instrument):
             """
             TRIGger:SEQuence
 
-            Arguments: 
+            Arguments:
             """
             _cmd = "SEQuence"
             args = []
@@ -26669,14 +26671,14 @@ class ZVA_gen(Instrument):
         """
         TRIGger:SEQuence
 
-        Arguments: 
+        Arguments:
         """
 
     TRIGger = TRIGger()
     """
     TRIGger
 
-    Arguments: 
+    Arguments:
     """
 
     # END OF ZVA_gen
