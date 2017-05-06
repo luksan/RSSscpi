@@ -48,9 +48,11 @@ def test_cb_prop(visa):
     vna.cb_prop = "A"
     assert vna.cb_value == "A"
     x = vna.cb_prop
+    assert x == "1"
     assert vna.cb_value is None
     vna.cb_prop = {"value": 123.4, "fmt": "{value:.2f}"}
     x = vna.cb_prop
+    assert x == "1"
     assert ["SENSe:SWEep:TYPE",
             "SENSe:SWEep:TYPE A",
             "SENSe:SWEep:TYPE?",

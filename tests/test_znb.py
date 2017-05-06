@@ -131,7 +131,9 @@ def test_trace(dummy_vna, visa):
     ch = dummy_vna.get_channel(2)
     tr = ch.get_trace("Tr7")
     tr.ref_level = 8
+    visa.ret = "REAL"
     x = tr.trace_format
+    assert x == "REAL"
     tr.trace_format = 2
     assert ["DISPlay:WINDow:TRACe:Y:SCALe:RLEVel 8, 'Tr7'",
             "CALCulate2:PARameter:SELect 'Tr7'",

@@ -11,6 +11,7 @@ try:
     import numpy
 except ImportError:
     warnings.warn("numpy import failed. Some functionality will be missing.")
+
     class numpy:
         float64 = None
 
@@ -50,7 +51,7 @@ class SCPIResponse(object):
         :return: [ (str1, str2), ..]
         """
         x = self.split_comma()
-        return zip(*[iter(x)]*2)
+        return zip(*[iter(x)] * 2)
 
     def split_comma(self):
         """
@@ -88,7 +89,7 @@ class SCPIBlockData(object):
     def parse(blk):
         if blk[0] != "#":
             logging.getLogger(__name__).error("Invalid block data header: '%s[...]", str(blk[0:5]))
-            #FIXME: raise exception here?
+            # FIXME: raise exception here?
         n = int(blk[1])  # The number of digits in the data length specifier
         l = int(blk[2:n + 2])  # data length
         return blk[n + 2:l + n + 2]

@@ -9,8 +9,7 @@ from .SCPI_response import SCPIResponse
 
 import visa
 
-from time import ctime
-import timeit, time
+import timeit
 import threading, traceback
 
 try:
@@ -199,7 +198,7 @@ class Instrument(SCPINodeBase):
                     esr = self._call_visa(self._visa_res.query, "*ESR?")  # read and reset the event status register
                 else:
                     esr = 0
-                self.visa_logger.info("VISA event: STB: {:08b}, ESR: {:08b}, duration {:.2f} ms".format(stb, int(esr), duration*1e3))
+                self.visa_logger.info("VISA event: STB: {:08b}, ESR: {:08b}, duration {:.2f} ms".format(stb, int(esr), duration * 1e3))
                 self.event_queue.put_nowait(VISAEvent(duration, stb, esr))
 
                 if stb & (1 << 2):  # Error queue not empty bit

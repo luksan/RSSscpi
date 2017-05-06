@@ -6,16 +6,6 @@ Created on Thu Feb 11 11:30:33 2016
 """
 from __future__ import print_function
 
-from .SCPI_response import SCPIResponse
-
-# TODO
-# Implement the cmd structure with properties returning a Cmd object
-# znb.SENSe -> SENSe(znb)
-# class ZNB_gen(object):
-#   SENSe = SCPICmdProp_SENSe("SENSe")
-# class SCPICmdProp_SENSe(object):
-#    FREQuency = SCPICmdProp_SENSe_FREQuency("FREQuency")
-
 
 class DummyVisa(object):
 
@@ -118,7 +108,6 @@ class SCPINodeBase(object):
         else:
             raise ValueError("The given ancestor was not found in the command tree.")
 
-
         leaf = ancestor
         for c in reversed(x):
             leaf = c(parent=leaf)
@@ -178,7 +167,7 @@ class SCPIQuery(SCPICmd):
         Execeute a SCPI query.
 
         :returns: a SCPIResponse instance
-        :rtype: SCPIResponse
+        :rtype: RSSscpi.gen.SCPI_response.SCPIResponse
         """
         return self._get_root().query(self, *args, **kwargs)
 
@@ -209,4 +198,3 @@ class SCPIBool(SCPIQuery, SCPISet):
 
     def off(self):
         self.w("OFF")
-

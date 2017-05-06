@@ -22,6 +22,9 @@ class VISA(DummyVisa):
         super(VISA, self).__init__("")
         self._cmd = []
         self.ret = "1"
+        """
+        The value returned from query()
+        """
 
     def write(self, w):
         assert isinstance(w, str)

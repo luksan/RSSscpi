@@ -267,7 +267,7 @@ class ZNB(ZNB_gen):
 
         def __getitem__(self, item):
             if isinstance(item, slice):
-                return [self._seg_type(x+1, self.channel) for x in range(*item.indices(len(self)))]
+                return [self._seg_type(x + 1, self.channel) for x in range(*item.indices(len(self)))]
             return self._seg_type(item + 1, self.channel)
 
         def __delitem__(self, key):
@@ -303,7 +303,7 @@ class ZNB(ZNB_gen):
                 sweep_mode = "ANALog"
             else:
                 sweep_mode = "STEPped"
-            self._SEG(position+1).INSert().w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity, sweep_mode)
+            self._SEG(position + 1).INSert().w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity, sweep_mode)
             return self._seg_type(position, self.channel)
 
         def remove_segment(self, n):

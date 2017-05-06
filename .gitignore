@@ -2,7 +2,7 @@
 
 /dist/
 
-/*.egg-info
+*.egg-info*
 /.cache
 /.project
 /.pydevproject
