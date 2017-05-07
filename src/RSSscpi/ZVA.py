@@ -4,7 +4,7 @@
 @author: Lukas Sandström
 """
 
-from .gen import ZVA_gen, SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
+from .gen import ZVA_gen
 from . import ZNB
 
 import logging

@@ -264,8 +264,8 @@ class ClassCodeGen(object):
         import time
         self._out("# -*- coding: utf-8 -*-")
         self._out("# Generated from " + self.source + " on " + time.strftime("%Y-%m-%d %H:%M"))
-        self._out("from .SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool")
-        self._out("from . import Instrument")
+        self._out("from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool")
+        self._out("from RSSscpi.Instrument import Instrument")
         self._out("")
         self._out("")
         self._out("class " + self.class_name + "(Instrument):")

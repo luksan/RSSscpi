@@ -4,13 +4,14 @@
 @author: Lukas Sandström
 """
 
-from .SCPI_gen_support import SCPINodeBase
-from .SCPI_response import SCPIResponse
+import threading
+import timeit
+import traceback
 
 import visa
 
-import timeit
-import threading, traceback
+from RSSscpi.SCPI_gen_support import SCPINodeBase
+from RSSscpi.SCPI_response import SCPIResponse
 
 try:
     import Queue  # Use Queue.Queue, not multiprocessing.Queue, to avoid unnecessary pickling

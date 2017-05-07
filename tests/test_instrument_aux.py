@@ -4,9 +4,9 @@
 @author: Lukas Sandström
 """
 
+from RSSscpi.Instrument import LimitedCapacityDict
+from RSSscpi.Instrument import SCPICmdFormatter
 from .common import *
-from RSSscpi.gen.Instrument import SCPICmdFormatter
-from RSSscpi.gen.Instrument import LimitedCapacityDict
 
 
 def test_SCPICmdFormatter():

@@ -5,17 +5,15 @@
 """
 
 import inspect
-
 from .common import *
-
-from RSSscpi import ZNB, ZVA
-from RSSscpi.gen.SCPI_gen_support import SCPINodeBase
+from RSSscpi import ZNB
+from RSSscpi.SCPI_gen_support import SCPINodeBase
 
 
 def test_basic(dummy_vna, visa):
     """
 
-    :param ZNB dummy_vna:
+    :param RSSscpi.ZNB dummy_vna:
     :return:
     """
     znb = dummy_vna

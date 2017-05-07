@@ -6,12 +6,12 @@
 from __future__ import print_function
 
 import logging
-import sys
 import os
+
 import pytest
 
 from RSSscpi import ZVA, ZNB
-from RSSscpi.gen.SCPI_gen_support import DummyVisa
+from RSSscpi.SCPI_gen_support import DummyVisa
 
 logging.basicConfig(stream=open(os.devnull, "w"))
 logging.captureWarnings(True)

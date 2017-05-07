@@ -5,15 +5,12 @@
 """
 from __future__ import print_function
 
-from RSSscpi import ZNB
-
 import Queue
-import time, timeit
-
-from RSSscpi.gen.SCPI_gen_support import DummyVisa
-from RSSscpi import SocketInterface
-
 import logging
+
+from RSSscpi import ZNB
+# from RSSscpi.SCPI_gen_support import DummyVisa
+# from RSSscpi import SocketInterface
 # logging.basicConfig(level=logging.WARN, filename=__file__[:-3]+"_log.txt", filemode="w")
 logging.basicConfig(level=logging.WARN)
 

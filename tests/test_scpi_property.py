@@ -4,10 +4,9 @@
 @author: Lukas Sandström
 """
 
-from .common import *
-
-from RSSscpi.gen.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
+from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
 from RSSscpi.gen import ZNB_gen
+from .common import *
 
 
 class VNAProp(ZNB_gen):
