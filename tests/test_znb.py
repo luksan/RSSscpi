@@ -165,7 +165,9 @@ def test_segmented_sweep(dummy_vna, visa):
             ] == visa.cmd
 
     sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3)
+    sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3, analog_sweep=True)
     assert ["SENSe2:SEGMent4:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, STEPped",
+            "SENSe2:SEGMent4:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, ANALog",
             ] == visa.cmd
 
     visa.ret = "5"
@@ -390,4 +392,28 @@ def test_trace(dummy_vna, visa):
             "CALCulate2:PARameter:SELect 'Tr7'",
             "CALCulate2:FORMat?",
             "CALCulate2:FORMat 2",
+            ] == visa.cmd
+
+    tr.copy_data_to_mem("Mem1")
+    tr.copy_math_to_mem("MathMem1")
+    assert ["TRACe:COPY 'Mem1', 'Tr7'",
+            "TRACe:COPY:MATH 'MathMem1', 'Tr7'",
+            ] == visa.cmd
+
+    visa.ret = "1"
+    assert tr.n == 1
+    assert tr.n == 1
+    pytest.raises(AttributeError, 'tr.n = 2')
+    tr.delete()
+    assert ["CONFigure:TRACe:NAME:ID? 'Tr7'",
+            "CALCulate2:PARameter:DELete 'Tr7'",
+            ] == visa.cmd
+
+    visa.ret = "Tr7\r\n"
+    assert tr.is_active()
+    visa.ret = "Tr6\r\n"
+    assert not tr.is_active()
+    del tr
+    assert ["CALCulate2:PARameter:SELect?",
+            "CALCulate2:PARameter:SELect?",
             ] == visa.cmd
