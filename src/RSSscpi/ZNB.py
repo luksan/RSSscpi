@@ -275,7 +275,7 @@ class ZNB(ZNB_gen):
 
         def __delitem__(self, key):
             if isinstance(key, slice):
-                r = range(*key.indices(len(self)))
+                r = list(range(*key.indices(len(self))))
                 r.sort(reverse=True)  # Make sure we delete the segments in descending order
                 for x in r:
                     del self[x]
