@@ -30,6 +30,7 @@ class SCPINodeBase(object):
     _cmd = "SCPINodeBase"
     _parent_class = None  # The class of the parent of the command node
     _SCPI_class = None  # Identifies the original class type in cases of subclassing
+    args = []  # The arguments available, from the command list
 
     def __init__(self, parent=None):
         """
@@ -183,8 +184,9 @@ class SCPISet(SCPICmd):
 
 
 class SCPIBool(SCPIQuery, SCPISet):
-    @staticmethod
-    def _mk_arg(x):
+    def _mk_arg(self, x):
+        if str(x) in self.args:  # Allow extensions, such as ONCE to SYSTem:DISPlay:UPDate
+            return str(x)
         return "OFF" if not x or x == "0" or str(x).upper() == "OFF" else "ON"
 
     def q(self, *args, **kwargs):

@@ -321,7 +321,7 @@ class ClassCodeGen(object):
 
             base_class = "SCPINodeN" if cmd.is_countable else "SCPINode"
 
-            if "ON" in cmd.args:
+            if {"ON", "OFF"}.issubset(cmd.args):
                 base_class += ", SCPIBool"
             else:
                 if cmd.has_query:
