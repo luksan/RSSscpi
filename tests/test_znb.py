@@ -7,7 +7,21 @@
 import pytest
 from .conftest import VISA  # noqa: F401
 
-from RSSscpi import ZNB
+from RSSscpi import ZNB  # noqa: F401
+
+
+def test_init(znb, visa):
+    """
+    :param ZNB znb:
+    :param VISA visa:
+    """
+    znb.init()
+    assert ["*CLS;*ESE 127;*SRE 36",
+            "SYSTem:COMMunicate:GPIB:SELF:RTERminator EOI",
+            "SYSTem:COMMunicate:CODec UTF8",
+            "SYSTem:LANGuage?",
+            "SYSTem:LANGuage 'SCPI'",
+            ] == visa.cmd
 
 
 def test_channel(dummy_vna, visa):

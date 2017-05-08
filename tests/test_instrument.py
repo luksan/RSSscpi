@@ -43,3 +43,31 @@ def test_generic_commands(dummy_vna, visa):
             ] == visa.cmd
 
 
+def test_query_write(znb, visa):
+    """
+    :param ZNB znb:
+    :param VISA visa:
+    """
+    vna = znb
+    vna.OPC.q("ABC", quote=True)
+    vna.OPC.q("'ABC'", quote=True)
+    vna.OPC.q("ABC", quote=False)
+    vna.OPC.w("ABC", quote=True)
+    vna.OPC.w("'ABC'", quote=True)
+    vna.OPC.w("ABC", quote=False)
+    vna.OPC.w("ABC")
+    assert ["*OPC? 'ABC'",
+            "*OPC? 'ABC'",
+            "*OPC? ABC",
+            "*OPC 'ABC'",
+            "*OPC 'ABC'",
+            "*OPC ABC",
+            "*OPC ABC",
+            ] == visa.cmd
+    vna.OPC.w("A", "B", "C", "", "E")
+    vna.OPC.w("A", "B", "C", "", "E", quote=True)
+    vna.OPC.w(("A", "B", "C", "", "E"), quote=True, fmt="{:s*}")
+    assert ["*OPC A, B, C, , E",
+            "*OPC 'A', 'B', 'C', '', 'E'",
+            "*OPC A, B, C, , E",
+            ] == visa.cmd
