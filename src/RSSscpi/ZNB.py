@@ -592,7 +592,7 @@ class ZNB(ZNB_gen):
 
             :return: A generator returning Traces
             """
-            l = self.CATalog().q()
+            l = self.TRACe.CATalog().q()
             for wnr, name in l.comma_list_pairs():
                 ch = self.instrument.CONFigure.TRACe.CHANnel.NAME.ID.q(name)
                 yield self.instrument.Trace(name=name, channel=self.instrument.Channel(int(ch), self.instrument))

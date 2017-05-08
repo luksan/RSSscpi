@@ -304,6 +304,32 @@ def test_diagram(dummy_vna, visa):
             ] == visa.cmd
 
 
+def test_diagram_assigned_traces(dummy_vna, visa):
+    """
+    :param ZNB dummy_vna:
+    :param VISA visa:
+    """
+    dia = dummy_vna.get_diagram(2)
+    traces = []
+    for a in range(1, 3):
+        for b in range(1, 3):
+            n = (a - 1) * 2 + b
+            traces.append((n, "S%i%i" % (b, a)))
+
+    visa.ret_dict["DISPlay:WINDow2:TRACe:CATalog?"] = "'1,S11,2,S21,3,S12,4,S22'"
+    cnt = 0
+    for (tr, (n, name)) in zip(dia.query_assigned_traces(), traces):
+        assert tr.name == name
+        cnt += 1
+    assert cnt == 4
+    assert ["DISPlay:WINDow2:TRACe:CATalog?",
+            "CONFigure:TRACe:CHANnel:NAME:ID? 'S11'",
+            "CONFigure:TRACe:CHANnel:NAME:ID? 'S21'",
+            "CONFigure:TRACe:CHANnel:NAME:ID? 'S12'",
+            "CONFigure:TRACe:CHANnel:NAME:ID? 'S22'",
+            ] == visa.cmd
+
+
 def test_marker(dummy_vna, visa):
     """
     Test that the Marker class works as expected.
