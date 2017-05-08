@@ -396,13 +396,13 @@ class ZNB(ZNB_gen):
                 self.select_trace()
             self._cmd_cnt = self.channel.instrument.command_cnt + 1
 
-        def copy_data_to_mem(self, trace_name):
-            self.channel.instrument.TRACe.COPY().w(trace_name, self.name)
-            return self.__class__(trace_name, self.channel)
+        def copy_data_to_mem(self, target_trace_name):
+            self.channel.instrument.TRACe.COPY().w(target_trace_name, self.name)
+            return self.__class__(target_trace_name, self.channel)
 
-        def copy_math_to_mem(self, trace_name):
-            self.channel.instrument.TRACe.COPY.MATH().w(trace_name, self.name)
-            return self.__class__(trace_name, self.channel)
+        def copy_math_to_mem(self, target_trace_name):
+            self.channel.instrument.TRACe.COPY.MATH().w(target_trace_name, self.name)
+            return self.__class__(target_trace_name, self.channel)
 
         def delete(self):
             """
