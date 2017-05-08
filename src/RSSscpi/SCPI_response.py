@@ -31,6 +31,8 @@ class SCPIResponse(object):
         """
         return str(self) in ["1", "ON"]
 
+    __bool__ = __nonzero__
+
     def __str__(self):
         x = self.raw.replace("\r", "\n")
         return x.strip().strip("'")
