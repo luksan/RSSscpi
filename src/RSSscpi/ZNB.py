@@ -7,7 +7,7 @@ Created on 16 feb. 2016
 
 from .gen import ZNB_gen
 from .SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
-from .SCPI_response import SCPIBlockData
+
 import ntpath
 import os.path
 

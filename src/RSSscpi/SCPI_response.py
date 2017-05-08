@@ -53,7 +53,7 @@ class SCPIResponse(object):
         :return: [ (str1, str2), ..]
         """
         x = self.split_comma()
-        return zip(*[iter(x)] * 2)
+        return list(zip(*[iter(x)] * 2))
 
     def split_comma(self):
         """
@@ -80,26 +80,24 @@ class SCPIResponse(object):
 
         :return: the data from the block transfer
         """
-        return SCPIBlockData.parse(self.raw)
+        try:
+            if self.raw[0] != "#":
+                logging.getLogger(__name__).error("Invalid block data header: '%s'", str(self.raw[0:5]))
+            n = int(self.raw[1])  # The number of digits in the data length specifier
+            l = int(self.raw[2:n + 2])  # data length
+            return self.raw[n + 2:l + n + 2]
+        except:
+            raise ValueError("Invalid block data header: '%s'" % str(self.raw[0:5]))
 
 
-class SCPIBlockData(object):
-    def __init__(self, data=None):
-        self.data = data
+def format_SCPI_block_data(data):
+    """
+    Adds a SCPI block data header to the input string.
 
-    @staticmethod
-    def parse(blk):
-        if blk[0] != "#":
-            logging.getLogger(__name__).error("Invalid block data header: '%s[...]", str(blk[0:5]))
-            # FIXME: raise exception here?
-        n = int(blk[1])  # The number of digits in the data length specifier
-        l = int(blk[2:n + 2])  # data length
-        return blk[n + 2:l + n + 2]
+    :param string data:
+    :return: The input string with a SCPI block data header prepended
+    """
+    l = str(len(data))
+    return "#" + str(len(l)) + l + data
 
-    @staticmethod
-    def format(data):
-        l = str(len(data))
-        return "#" + str(len(l)) + l + data
 
-    def __str__(self):
-        return self.format(self.data)

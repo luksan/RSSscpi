@@ -94,5 +94,5 @@ def znb(visa):
 
 def pytest_exception_interact(node, call, report):
     # print the VISA command log on exception
-    if 'visa' in node.funcargs:
+    if hasattr(node, 'funcargs') and 'visa' in node.funcargs:
         node.funcargs['visa'].print_cmd()
