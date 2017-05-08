@@ -24,6 +24,43 @@ def test_init(znb, visa):
             ] == visa.cmd
 
 
+def test_active_channel(dummy_vna, visa):
+    """
+    :param ZNB dummy_vna:
+    :param VISA visa:
+    """
+    vna = dummy_vna
+    x = vna.active_channel
+    assert x.n == 1
+    vna.active_channel = 3
+    vna.active_channel = "2"
+    vna.active_channel = x
+    assert ["INSTrument:NSELect?",
+            "INSTrument:NSELect 3",
+            "INSTrument:NSELect 2",
+            "INSTrument:NSELect 1",
+            ] == visa.cmd
+
+
+def test_znb_screenshot(dummy_vna, visa):
+    """
+    :param ZNB dummy_vna:
+    :param VISA visa:
+    """
+    vna = dummy_vna
+    scr = vna.save_screenshot("scr.png")
+    assert scr.filename == "scr.png"
+    assert ["MMEMory:NAME 'scr.png'",
+            "HCOPy:DESTination 'MMEM'",
+            "HCOPy:DEVice:LANGuage PNG",
+            "HCOPy:PAGE:WINDow HARDcopy",
+            "HCOPy:IMMediate",
+            "MMEMory:CDIRectory?",
+            ] == visa.cmd
+    pytest.raises(ValueError, 'vna.save_screenshot("scr.docx")')
+    assert visa.cmd == []
+
+
 def test_channel(dummy_vna, visa):
     """
     :param ZNB dummy_vna:

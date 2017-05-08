@@ -46,17 +46,19 @@ class ZNB(ZNB_gen):
     def active_channel(self):
         """
         Get the active channel, INSTrument:NSELect? \n
-        :return: int
+        :return: ZNB.Channel
         """
-        return int(self.INSTrument.NSELect().q())
+        return self.get_channel(int(self.INSTrument.NSELect().q()))
 
     @active_channel.setter
     def active_channel(self, n):
         """
         Set the active channel, INSTrument:NSELect n \n
-        :param n: (int, str)
+        :param n: (int, str, Channel)
         :return: None
         """
+        if hasattr(n, "n"):
+            n = n.n
         self.INSTrument.NSELect().w(n)
 
     def get_channel(self, n):
