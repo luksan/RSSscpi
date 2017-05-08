@@ -90,3 +90,9 @@ def dummy_vna(request, visa):
 @pytest.fixture
 def znb(visa):
     return ZNB(visa_res=visa)
+
+
+def pytest_exception_interact(node, call, report):
+    # print the VISA command log on exception
+    if 'visa' in node.funcargs:
+        node.funcargs['visa'].print_cmd()
