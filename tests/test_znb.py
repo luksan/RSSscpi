@@ -4,15 +4,16 @@
 @author: Lukas Sandström
 """
 
-from .common import *
-from RSSscpi import ZNB, ZVA
+import pytest
+from .conftest import VISA  # noqa: F401
+
+from RSSscpi import ZNB
 
 
 def test_channel(dummy_vna, visa):
     """
-
     :param ZNB dummy_vna:
-    :return:
+    :param VISA visa:
     """
     ch = dummy_vna.get_channel(3)
     x = ch.sweep.points.query_default()
@@ -84,6 +85,7 @@ def test_marker(dummy_vna, visa):
     Test that the Marker class works as expected.
 
     :param ZNB dummy_vna: This can be either a ZVA or ZNB instance with visa_res = visa dummy.
+    :param VISA visa:
     """
     ch = dummy_vna.get_channel(2)
     tr = ch.get_trace("Tr1")
@@ -124,9 +126,8 @@ def test_marker(dummy_vna, visa):
 
 def test_trace(dummy_vna, visa):
     """
-
     :param ZNB dummy_vna:
-    :return:
+    :param VISA visa:
     """
     ch = dummy_vna.get_channel(2)
     tr = ch.get_trace("Tr7")

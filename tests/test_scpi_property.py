@@ -4,9 +4,11 @@
 @author: Lukas Sandström
 """
 
+import pytest
+from .conftest import VISA  # noqa: F401
+
 from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
 from RSSscpi.gen import ZNB_gen
-from .common import *
 
 
 class VNAProp(ZNB_gen):
@@ -41,6 +43,9 @@ class VNAProp(ZNB_gen):
 
 
 def test_cb_prop(visa):
+    """
+    :param VISA visa:
+    """
     vna = VNAProp(visa)
     vna.cb_prop = ""
     assert vna.cb_value == ""
@@ -61,6 +66,9 @@ def test_cb_prop(visa):
 
 
 def test_prop(visa):
+    """
+    :param VISA visa:
+    """
     vna = VNAProp(visa)
 
     vna.str_prop = "abc123"

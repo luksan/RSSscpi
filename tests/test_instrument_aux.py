@@ -4,9 +4,11 @@
 @author: Lukas Sandström
 """
 
+import pytest
+from .conftest import VISA  # noqa: F401
+
 from RSSscpi.Instrument import LimitedCapacityDict
 from RSSscpi.Instrument import SCPICmdFormatter
-from .common import *
 
 
 def test_SCPICmdFormatter():
@@ -33,6 +35,10 @@ def test_SCPICmdFormatter():
 
 
 def test_cmd_formatting(znb, visa):
+    """
+    :param ZNB znb:
+    :param VISA visa:
+    """
     znb.TRACe.COPY.MATH().w("MDATA8")  # This shouldn't be quoted
     znb.TRACe.COPY.MATH().w("sq")  # Quote
     znb.SENSe.SWEep.POINts().w(1e9)

@@ -5,16 +5,17 @@
 """
 
 import inspect
-from .common import *
+
+from .conftest import VISA  # noqa: F401
+
 from RSSscpi import ZNB
 from RSSscpi.SCPI_gen_support import SCPINodeBase
 
 
 def test_basic(dummy_vna, visa):
     """
-
-    :param RSSscpi.ZNB dummy_vna:
-    :return:
+    :param ZNB dummy_vna:
+    :param VISA visa:
     """
     znb = dummy_vna
 

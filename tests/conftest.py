@@ -66,9 +66,9 @@ def visa():
 def dummy_vna(request, visa):
     visa.clear_cmd()
     if request.param == "ZVA":
-        yield ZNB(visa_res=visa)
-    if request.param == "ZNB":
         yield ZVA(visa_res=visa)
+    if request.param == "ZNB":
+        yield ZNB(visa_res=visa)
 
 
 @pytest.fixture
