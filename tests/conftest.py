@@ -7,6 +7,7 @@ from __future__ import print_function
 
 import logging
 import os
+import collections
 
 import pytest
 
@@ -21,10 +22,21 @@ class VISA(DummyVisa):
     def __init__(self):
         super(VISA, self).__init__("")
         self._cmd = []
-        self.ret = "1"
+        self._def_ret = "1"
+        self._def_set = False  # Indicates if the default was changed since the last query
+        self.ret_dict = collections.defaultdict(lambda: self._def_ret)
+
+    @property
+    def ret(self):
         """
         The value returned from query()
         """
+        return self._def_ret
+
+    @ret.setter
+    def ret(self, val):
+        self._def_ret = val
+        self._def_set = True
 
     def write(self, w):
         assert isinstance(w, str)
@@ -32,8 +44,12 @@ class VISA(DummyVisa):
 
     def query(self, q):
         assert isinstance(q, str)
-        self._cmd.append(q.strip())
-        return self.ret
+        q = q.strip()  # FIXME: .query() shouldn't output trailing whitespace
+        self._cmd.append(q)
+        if self._def_set:  # If the default was changed we overwrite any existing value for the following query
+            self.ret_dict[q] = self._def_ret
+            self._def_set = False
+        return self.ret_dict[q]
 
     def clear_cmd(self):
         self._cmd = []
