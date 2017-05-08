@@ -451,6 +451,10 @@ class ZNB(ZNB_gen):
         scale_bottom = SCPIProperty(_SCALE.BOTTom, float, callback=_add_trace_name_arg_cb, get_root_node=_disp_node)
         ref_level = SCPIProperty(_SCALE.RLEVel, float, callback=_add_trace_name_arg_cb, get_root_node=_disp_node)
         ref_pos = SCPIProperty(_SCALE.RPOSition, float, callback=_add_trace_name_arg_cb, get_root_node=_disp_node)
+        """
+        The reference position of the trace on the screen specified in percent,
+        where 0 is the bottom and 100 is the top of the screen.
+        """
 
         cal_state_label = SCPIProperty(ZNB_gen.SENSe.CORRection.SSTate, str, callback=_make_active_cb, get_root_node=_corr_node)  # FIXME: read-only -> method
         source_port = SCPIProperty(ZNB_gen.SENSe.SWEep.SRCPort, int, callback=_make_active_cb, get_root_node=_sweep_node)  # Logical port number of the simulus port

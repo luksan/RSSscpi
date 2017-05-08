@@ -417,3 +417,33 @@ def test_trace(dummy_vna, visa):
     assert ["CALCulate2:PARameter:SELect?",
             "CALCulate2:PARameter:SELect?",
             ] == visa.cmd
+
+
+def test_trace_scaling(dummy_vna, visa):
+    """
+    :param ZNB dummy_vna:
+    :param VISA visa:
+    """
+    tr = dummy_vna.get_channel(2).get_trace("Tr3")
+    tr.scale_per_div = 10
+    tr.scale_top = 8
+    tr.scale_bottom = 2
+    tr.ref_level = 0.8
+    tr.ref_pos = 50  # Position in percent
+    assert ["DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 10, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:TOP 8, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom 2, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel 0.8, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition 50, 'Tr3'",
+            ] == visa.cmd
+    assert tr.scale_per_div == 1
+    assert tr.scale_top == 1
+    assert tr.scale_bottom == 1
+    assert tr.ref_level == 1
+    assert tr.ref_pos == 1
+    assert ["DISPlay:WINDow:TRACe:Y:SCALe:PDIVision? 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:TOP? 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom? 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel? 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition? 'Tr3'",
+            ] == visa.cmd
