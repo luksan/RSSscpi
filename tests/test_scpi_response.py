@@ -38,7 +38,7 @@ def test_float(param, expect):
 
 
 def test_comma_list_pairs():
-    s = map(str, range(10))
+    s = list(map(str, range(10)))
     n = ",".join(s)
     assert SCPIResponse(n).comma_list_pairs() == list(zip(s[0::2], s[1::2]))
 

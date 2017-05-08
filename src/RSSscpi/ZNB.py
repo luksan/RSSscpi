@@ -667,7 +667,7 @@ class ZNB(ZNB_gen):
             used_size, free_disk, files = str(x).split(", ", 2)
             # We can't split files on comma alone, since a comma might be contained in a filename
             r = re.finditer('(.*?), (?:(<DIR>), |, (\d+)),', files)
-            return map(mk_list, r)
+            return list(map(mk_list, r))
 
         @staticmethod
         def isdir():
