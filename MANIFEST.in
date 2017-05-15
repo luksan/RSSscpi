@@ -8,7 +8,7 @@ include .coveragerc
 #include AUTHORS.rst
 #include CONTRIBUTING.rst
 #include LICENSE
-include README.txt
+include README.rst
 include *.txt
 
 include tox.ini .travis.yml
