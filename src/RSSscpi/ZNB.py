@@ -118,7 +118,7 @@ class ZNB(ZNB_gen):
             self.SOURce = instrument.SOURce(n)
             self.TRIGger = instrument.TRIGger(n)  # type: ZNB_gen.TRIGger
 
-            self.sweep = instrument.Sweep(self)
+            self.sweep = instrument.Sweep(self)  # type: ZNB.Sweep
 
         name = SCPIProperty(ZNB_gen.CONFigure.CHANnel.NAME, str, get_root_node=lambda self: self.CONFch)
         """
@@ -205,7 +205,7 @@ class ZNB(ZNB_gen):
             if power is not None:
                 self.power_level = power
 
-        def init_sweep(self):
+        def init_sweep(self):  # FIXME: rename to start_sweep() or similar??
             """
             INITiate:IMMediate
 
@@ -336,7 +336,7 @@ class ZNB(ZNB_gen):
             return float(self._SEG.SWEep.TIME.SUM().q())
 
     class Sweep(ZNB_gen.SENSe.SWEep):
-        LIN = "LIN"
+        LIN = "LIN"  # FIXME: use enum instead
         LOG = "LOG"
         POWER = "POW"
         CW = "CW"
@@ -350,7 +350,7 @@ class ZNB(ZNB_gen):
             """
             super(ZNB.Sweep, self).__init__(parent=channel.SENSe)
             self.channel = channel
-            self.segments = self.channel.instrument.SweepSegments(self.channel)
+            self.segments = self.channel.instrument.SweepSegments(self.channel)  # type: ZNB.SweepSegments
 
         _SWE = ZNB_gen.SENSe.SWEep
 
@@ -430,7 +430,7 @@ class ZNB(ZNB_gen):
             """
             :return: CONFigure.TRACe.NAME.ID?
             """
-            if not self._n:
+            if not self._n:  # FIXME: check if the trace id changes when deleting a trace
                 self._n = int(self.channel.instrument.CONFigure.TRACe.NAME.ID().q(self.name))
             return self._n
 
