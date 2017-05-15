@@ -8,7 +8,9 @@ RSSscpi - Instrument (VNA) control in a pythonic fashion
     :stub-columns: 1
 
     * - tests
-      - |travis| |codecov|
+      - |travis| |codecov|     
+    * - package
+      - |version| |wheel| |supported-versions| |supported-implementations|
 
 .. |travis| image:: https://travis-ci.org/luksan/RSSscpi.svg?branch=master
     :alt: Travis-CI Build Status
@@ -18,6 +20,22 @@ RSSscpi - Instrument (VNA) control in a pythonic fashion
     :alt: Coverage Status
     :target: https://codecov.io/github/luksan/RSSscpi
 
+.. |version| image:: https://img.shields.io/pypi/v/RSSscpi.svg
+    :alt: PyPI Package latest release
+    :target: https://pypi.python.org/pypi/RSSscpi
+    
+.. |wheel| image:: https://img.shields.io/pypi/wheel/RSSscpi.svg
+    :alt: PyPI Wheel
+    :target: https://pypi.python.org/pypi/RSSscpi
+
+.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/RSSscpi.svg
+    :alt: Supported versions
+    :target: https://pypi.python.org/pypi/RSSscpi
+
+.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/RSSscpi.svg
+    :alt: Supported implementations
+    :target: https://pypi.python.org/pypi/RSSscpi
+    
 .. end-badges
 
 The purpose of this Python library is to provide a nice way of writing measurement instrument remote control programs
