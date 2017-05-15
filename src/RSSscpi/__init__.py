@@ -2,4 +2,3 @@
 
 from .ZNB import ZNB
 from .ZVA import ZVA
-from .SocketInterface import SocketInterface
