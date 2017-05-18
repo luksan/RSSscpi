@@ -25,8 +25,15 @@ class SCPIProperty(object):
         self._conv = conv
         self._callback = callback  # type: (*args, **kwargs) -> T
         self._get_root_node = get_root_node  # type: (T, ) -> SCPINodeBase
+        self._set_doc()
         if docstr:  # FIXME: remove the argument and assign self.__doc__ =  node.__doc__ unconditionally
             self.__doc__ = docstr
+
+    def _set_doc(self):
+        doc = [x.strip() for x in self._leaf_node.__doc__.splitlines()]
+        doc.append("")
+        doc.append("Conversion: `" + self._conv.__name__ + "`")
+        self.__doc__ = "\n".join(doc)
 
     def _get_leaf(self, instance):
         # type: (T) -> SCPINodeBase
@@ -94,11 +101,18 @@ class SCPIPropertyMapping(SCPIProperty):
         :param args: Parameters for SCPIProperty
         :param kwargs: Parameters for SCPIProperty
         """
-        super(SCPIPropertyMapping, self).__init__(node, conv, *args, **kwargs)
         self._map = mapping
         self._rev_map = rev_mapping
         if rev_mapping is None:
             self._rev_map = {v: k for k, v in self._map.items()}
+        super(SCPIPropertyMapping, self).__init__(node, conv, *args, **kwargs)
+
+    def _set_doc(self):
+        doc = [x.strip() for x in self._leaf_node.__doc__.splitlines() if not x.strip().startswith("Arguments")]
+        doc.append("::\n")
+        for a in self._map:
+            doc.append("    " + str(a) + " : " + str(self._map[a]))
+        self.__doc__ = "\n".join(doc)
 
     def __get__(self, instance, owner=None):
         if instance is None:
@@ -170,6 +184,11 @@ class SCPIPropertyMinMax(SCPIProperty):
         :rtype: MinMax
         """
         super(SCPIPropertyMinMax, self).__init__(*args, **kwargs)
+
+    def _set_doc(self):
+        doc = [x.strip() for x in self._leaf_node.__doc__.splitlines() if not x.strip().startswith("Arguments")]
+        doc.append(":class:`RSSscpi.SCPI_property.MinMax` instance, type conversion `" + self._conv.__name__ + "`")
+        self.__doc__ = "\n".join(doc)
 
     def __get__(self, instance, owner=None):
         if instance is None:

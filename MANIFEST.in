@@ -1,4 +1,4 @@
-#graft docs
+graft doc
 graft examples
 graft src
 graft tests

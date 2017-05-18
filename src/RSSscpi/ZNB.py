@@ -45,7 +45,7 @@ class ZNB(ZNB_gen):
     @property
     def active_channel(self):
         """
-        Get the active channel, INSTrument:NSELect? \n
+        Get/set the active channel, INSTrument:NSELect? \n
         :return: ZNB.Channel
         """
         return self.get_channel(int(self.INSTrument.NSELect().q()))

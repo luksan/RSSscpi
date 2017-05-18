@@ -30,7 +30,10 @@ class SCPINodeBase(object):
     _cmd = "SCPINodeBase"
     _parent_class = None  # The class of the parent of the command node
     _SCPI_class = None  # Identifies the original class type in cases of subclassing
-    args = []  # The arguments available, from the command list
+    args = []
+    """
+    The arguments available for the SCPI node, as reported by GPIB Explorer.
+    """
 
     def __init__(self, parent=None):
         """
@@ -133,6 +136,11 @@ class SCPINodeN(SCPINodeBase):
 
     @property
     def n(self):
+        """
+        The index of the node, ie. channel or marker number.
+
+        :rtype: int
+        """
         return self._n
 
     @n.setter
@@ -168,7 +176,7 @@ class SCPIQuery(SCPICmd):
         Execeute a SCPI query.
 
         :returns: a SCPIResponse instance
-        :rtype: RSSscpi.gen.SCPI_response.SCPIResponse
+        :rtype: RSSscpi.SCPI_response.SCPIResponse
         """
         return self._get_root().query(self, *args, **kwargs)
 
