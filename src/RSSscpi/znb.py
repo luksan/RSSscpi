@@ -113,14 +113,14 @@ class Channel(object):
         """
         self.n = n
         self.instrument = instrument
-        self.CALC = instrument.CALCulate(n)
+        self.CALC = instrument.CALCulate(n)  # type: ZNB_gen.CALCulate
         self.CONFch = instrument.CONFigure.CHANnel(n)
         self.SENSe = instrument.SENSe(n)
         self.CORRection = instrument.SENSe(n).CORRection
         self.SOURce = instrument.SOURce(n)
         self.TRIGger = instrument.TRIGger(n)  # type: ZNB_gen.TRIGger
 
-        self.sweep = Sweep(self)
+        self.sweep = self.get_sweep()
 
     name = SCPIProperty(ZNB_gen.CONFigure.CHANnel.NAME, str, get_root_node=lambda self: self.CONFch)
     """
@@ -134,6 +134,9 @@ class Channel(object):
         :rtype: ZNB.Trace
         """
         return Trace(name=name, channel=self)
+
+    def get_sweep(self):
+        return Sweep(self)
 
     def create_trace(self, name, parameter, diagram=None):
         """
