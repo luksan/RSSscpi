@@ -7,6 +7,7 @@ Created on 16 feb. 2016
 
 from .gen import ZNB_gen
 from .SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
+from .SCPI_response import format_SCPI_block_data
 
 import ntpath
 import os.path
@@ -728,7 +729,7 @@ class File(Path):
 
     def write(self, data):
         # FIXME: rename to reflect that the method overwrites the existing file
-        self.instrument.MMEMory.DATA().w(self.full_path, SCPIBlockData(data))
+        self.instrument.MMEMory.DATA().w(self.full_path, format_SCPI_block_data(data))
 
     def get(self, local_target):
         """
