@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
 
-from .ZNB import ZNB
-from .ZVA import ZVA
+from .znb import ZNB
+from .zva import ZVA
