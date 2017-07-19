@@ -3,9 +3,10 @@
 
 @author: Lukas Sandström
 """
+from __future__ import absolute_import, division, print_function, unicode_literals
 
 from .gen import ZVA_gen
-import znb
+from . import znb
 
 import logging
 
