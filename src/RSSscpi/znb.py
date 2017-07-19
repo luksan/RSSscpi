@@ -64,10 +64,10 @@ class ZNB(ZNB_gen):
         self.INSTrument.NSELect().w(n)
 
     def get_channel(self, n):
+        # type: (int) -> Channel
         """
-
-        :param n: Channel number
-        :rtype: ZNB.Channel
+        :param n: The number of the channel
+        :return: A Channel object
         """
         return Channel(n, self)
 
@@ -144,10 +144,10 @@ class Channel(object):
     """
 
     def get_trace(self, name):
+        # type: ([unicode, str]) -> Trace
         """
-
         :param name: The name of the trace
-        :rtype: ZNB.Trace
+        :return: A Trace object
         """
         return Trace(name=name, channel=self)
 
@@ -395,8 +395,7 @@ class Trace(object):
     def __init__(self, name, channel):
         """
         :param name: The trace name
-        :param channel: The channel the trace belongs to
-        :type channel: ZNB.Channel
+        :param Channel channel: The channel the trace belongs to
         """
         self._n = None
         self._name = str(name)

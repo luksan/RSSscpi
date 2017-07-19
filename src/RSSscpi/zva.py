@@ -21,18 +21,22 @@ class ZVA(ZVA_gen, znb.ZNB):
         # SYSTem:DATA:SIZE ALL | AUTO
 
     def get_channel(self, n):
+        # type: (int) -> Channel
         return Channel(n, self)
 
     def get_diagram(self, n):
+        # type: (int) -> Diagram
         return Diagram(n, self)
 
 
 class Channel(znb.Channel):
 
     def get_sweep(self):
+        # type: () -> Sweep
         return Sweep(self)
 
     def get_trace(self, name):
+        # type: ([str, unicode]) -> Trace
         return Trace(name=name, channel=self)
 
 
