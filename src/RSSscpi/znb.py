@@ -420,6 +420,12 @@ class Trace(object):
             self.select_trace()
         self._cmd_cnt = self.channel.instrument.command_cnt + 1
 
+    def autoscale(self):
+        """
+        Activate the autoscaling function for the trace
+        """
+        self.channel.instrument.DISPlay.WINDow.TRACe.Y.SCALe.AUTO().w("ONCE", self.name, fmt="{:s}, {:q}")
+
     def copy_data_to_mem(self, target_trace_name):
         self.channel.instrument.TRACe.COPY().w(target_trace_name, self.name)
         return self.__class__(target_trace_name, self.channel)

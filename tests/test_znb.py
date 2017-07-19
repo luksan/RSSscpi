@@ -464,3 +464,7 @@ def test_trace_scaling(dummy_vna, visa):
             "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel? 'Tr3'",
             "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition? 'Tr3'",
             ] == visa.cmd
+
+    tr.autoscale()
+    assert ["DISPlay:WINDow:TRACe:Y:SCALe:AUTO ONCE, 'Tr3'",
+            ] == visa.cmd
