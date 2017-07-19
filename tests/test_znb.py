@@ -468,3 +468,20 @@ def test_trace_scaling(dummy_vna, visa):
     tr.autoscale()
     assert ["DISPlay:WINDow:TRACe:Y:SCALe:AUTO ONCE, 'Tr3'",
             ] == visa.cmd
+
+
+def test_trace_measurement(dummy_vna, visa):
+    """
+    :param ZNB dummy_vna:
+    :param VISA visa:
+    """
+    tr = dummy_vna.get_channel(3).get_trace("Tr3")
+    meas = tr.measurement
+    assert isinstance(meas, str)
+    tr.measurement = "S21AVG"
+    assert ["CALCulate3:PARameter:MEASure? 'Tr3'",
+            "CALCulate3:PARameter:MEASure 'Tr3', 'S21AVG'",
+            ] == visa.cmd
+    tr.measurement = tr.MeasParam.Wave("b", 1, src_port=1, detector="sam")
+    assert ["CALCulate3:PARameter:MEASure 'Tr3', 'B01D01SAM'",
+            ] == visa.cmd

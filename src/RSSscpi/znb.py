@@ -388,10 +388,33 @@ class Sweep(ZNB_gen.SENSe.SWEep):
     step_size = SCPIPropertyMinMax(_SWE.STEP, float)
 
 
+class MeasParamBase(object):
+    def __init__(self, dst_port, src_port, detector=""):
+        self.dst_port = dst_port
+        self.src_port = src_port
+        self.detector = str(detector).upper()
+
+
 class Trace(object):
     """
     A class representing a trace on the VNA. Instances are obtained via Channel.create_trace() and Channel.get_trace()
     """
+
+    class MeasParam(object):
+        class S(MeasParamBase):
+            def __str__(self):
+                return "S{:02d}{:02d}{!s}".format(self.dst_port, self.src_port, self.detector)
+
+        class Wave(MeasParamBase):
+            def __init__(self, receiver, dst_port, src_port=None, detector=""):
+                super(Trace.MeasParam.Wave, self).__init__(dst_port, src_port, detector)
+                if src_port is None:
+                    self.src_port = self.dst_port
+                self.receiver = str(receiver).upper()
+
+            def __str__(self):
+                return "{!s}{:02d}D{:02d}{!s}".format(self.receiver, self.dst_port, self.src_port, self.detector)
+
     def __init__(self, name, channel):
         """
         :param name: The trace name
@@ -439,6 +462,22 @@ class Trace(object):
         Deletes the trace. CALCulate<Ch>:​PARameter:​DELete
         """
         self.channel.CALC.PARameter.DELete().w(self.name)
+
+    @property
+    def measurement(self):
+        """
+        A string describing the measurement associated with the trace.
+        See CALCulate<Ch>:PARameter:SDEFine for all possible options.
+
+        Use the Trace.MeasParam... helpers for easier use.
+
+        Example: tr1.measurement = tr1.MeasParam.Wave("b", 1, src_port=1, detector="sam")
+        """
+        return str(self.channel.CALC.PARameter.MEASure().q(self.name))
+
+    @measurement.setter
+    def measurement(self, param):
+        self.channel.CALC.PARameter.MEASure().w(self.name, str(param))
 
     @property
     def name(self):
