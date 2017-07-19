@@ -42,6 +42,23 @@ def test_active_channel(dummy_vna, visa):
             ] == visa.cmd
 
 
+def test_query_port_count(dummy_vna, visa):
+    """
+    :param ZNB dummy_vna:
+    :param VISA visa:
+    """
+    vna = dummy_vna
+    visa.ret = "4"
+    x = vna.query_number_of_ports()
+    assert x == 4
+    assert ["INSTrument:PORT:COUNt?",
+            ] == visa.cmd
+    visa.ret = "1"
+    x = vna.query_number_of_ports()  # The number of ports on the instrument should be cached
+    assert x == 4
+    assert [] == visa.cmd
+
+
 def test_znb_screenshot(dummy_vna, visa):
     """
     :param ZNB dummy_vna:

@@ -21,6 +21,7 @@ class ZNB(ZNB_gen):
         self.filesystem = Filesystem(self)
         self.logger = logging.getLogger(__name__)
         self.visa_logger = self.logger.getChild("VISA")
+        self._port_count = None
 
     def init(self):
         super(ZNB, self).init()
@@ -77,6 +78,21 @@ class ZNB(ZNB_gen):
         :rtype: ZNB.Diagram
         """
         return Diagram(n, self)
+
+    def query_number_of_ports(self):
+        # type: () -> int
+        """
+        Query the instrument about how many physical ports there are on the instrument.
+        This can be different from the number of test ports, i.e if a switch matrix is connected
+        to the instrument.
+
+        :return: The number of physical ports on the instrument
+        """
+        if self._port_count:
+            return self._port_count
+        x = int(self.INSTrument.PORT.COUNt().q())
+        self._port_count = x
+        return x
 
     def save_screenshot(self, filename, diagram=None):
         """
