@@ -12,19 +12,33 @@ import collections
 import pytest
 
 from RSSscpi import ZVA, ZNB
-from RSSscpi.SCPI_gen_support import DummyVisa
 
 logging.basicConfig(stream=open(os.devnull, "w"))
 logging.captureWarnings(True)
 
 
-class VISA(DummyVisa):
+class VISA(object):
     def __init__(self):
-        super(VISA, self).__init__("")
         self._cmd = []
         self._def_ret = "1"
         self._def_set = False  # Indicates if the default was changed since the last query
         self.ret_dict = collections.defaultdict(lambda: self._def_ret)
+        self.srq_callback = None
+        self.stb = 0
+
+    def install_handler(self, event_type, func, user_handle):
+        self.srq_callback = func
+
+    def raise_error(self):
+        self.stb = 0x04
+        self.srq_callback(None, None, None, None)
+        self.stb = 0
+
+    def enable_event(*args):
+        pass
+
+    def read_stb(self):
+        return self.stb
 
     @property
     def ret(self):
@@ -85,6 +99,11 @@ def dummy_vna(request, visa):
         yield ZVA(visa_res=visa)
     if request.param == "ZNB":
         yield ZNB(visa_res=visa)
+
+
+@pytest.fixture
+def zva(visa):
+    return ZVA(visa_res=visa)
 
 
 @pytest.fixture

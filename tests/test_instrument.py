@@ -7,7 +7,8 @@
 import pytest
 from .conftest import VISA  # noqa: F401
 
-from RSSscpi import ZNB  # noqa: F401
+from RSSscpi import ZVA, ZNB  # noqa: F401
+from RSSscpi.Instrument import InstrumentError
 
 
 def test_generic_commands(dummy_vna, visa):
@@ -71,3 +72,23 @@ def test_query_write(znb, visa):
             "*OPC 'A', 'B', 'C', '', 'E'",
             "*OPC A, B, C, , E",
             ] == visa.cmd
+
+
+def test_error_handling(zva, visa):
+    """
+    :param ZVA zva:
+    :param VISA visa:
+    """
+    zva.init()
+    zva.SOURce(1).POWer(1).ATTenuation().w(80)
+    visa.ret_dict["SYSTem:ERRor:ALL?"] = '-222,"Data out of range;SOURce1:POWer1:ATTenuation 80\n"'
+    visa.raise_error()
+    with pytest.raises(InstrumentError) as excinfo:
+        zva.query_OPC()
+    assert excinfo.value.stack is not None
+    visa.ret_dict["SYSTem:ERRor:ALL?"] = '''-151,"Invalid string data;CALCulate1:PARameter:SDEFine '...",-114,"Header suffix out of range;DISPlay:WINDow1:TRACe:EFEed 'A..."'''
+    zva.CALCulate(1).PARameter.SDEFine().w('AVG', 'BASD01D01AVG')
+    visa.raise_error()
+    with pytest.raises(InstrumentError) as excinfo:
+        zva.query_OPC()
+    assert excinfo.value.stack is not None

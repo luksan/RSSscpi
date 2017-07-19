@@ -7,25 +7,6 @@ Created on Thu Feb 11 11:30:33 2016
 from __future__ import print_function
 
 
-class DummyVisa(object):
-
-    def __init__(self, name):
-        self.name = name
-
-    def query(self, q):
-        print("Visa query,", self.name, q)
-        return "1 A"
-
-    def write(self, w):
-        print("Visa write,", self.name, w)
-
-    def install_handler(*args):
-        print("Install handler not implemented")
-
-    def enable_event(*args):
-        print("Not implemented")
-
-
 class SCPINodeBase(object):
     _cmd = "SCPINodeBase"
     _parent_class = None  # The class of the parent of the command node
@@ -114,7 +95,7 @@ class SCPINodeBase(object):
 
         leaf = ancestor
         for c in reversed(x):
-            leaf = c(parent=leaf)
+            leaf = c(parent=leaf)  # FIXME: this doesn't create ZVA nodes, since cls is ZNB-derived. Use gettattr?
         return leaf  # Return the instantiated leaf node, properly linked to the root node
 
 

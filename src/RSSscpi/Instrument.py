@@ -211,13 +211,15 @@ class Instrument(SCPINodeBase):
     def _get_error_queue(self):
         err = self._query("SYSTem:ERRor:ALL?")
         cnt = 0
-        for r in re.finditer(r'(-?\d+),"(.*?([A-Z]{3}.*?)?(?:\n.*?)?)"', str(err)):
+        # -222,"Data out of range;SOURce1:POWer1:ATTenuation 80\n"
+        # -151,"Invalid string data;CALCulate1:PARameter:SDEFine '...",-114,"Header suffix out of range;DISPlay:WINDow1:TRACe:EFEed 'A..."
+        for r in re.finditer(r'(-?\d+),"(.*?([A-Z]{3}\S*).*?(?:\n.*?)?)"', str(err)):
             cnt += 1
             x = (int(r.group(1)), r.group(2).replace("\n", " "))
             bad_cmd = r.group(3)
             tb = self._cmd_debug.get(bad_cmd)
             if not tb:
-                self.visa_logger.debug("No stack for %s %s", str(err), str(r.groups()))
+                self.visa_logger.debug("No stack for <%s> <%s>", str(err), str(r.groups()))
             self.error_queue.put_nowait(InstrumentError(x[0], x[1], tb))
             self.visa_logger.error("%d %s", *x)
         if not cnt:
@@ -234,7 +236,8 @@ class Instrument(SCPINodeBase):
         self.check_error_queue()
 
         self.command_cnt += 1
-        self._cmd_debug[arg] = traceback.extract_stack()[:-2]  # Store the current stack for later debugging
+        cmd = arg.split()[0]
+        self._cmd_debug[cmd] = traceback.extract_stack()[:-2]  # Store the current stack for later debugging
         start = timeit.default_timer()
         err = None
         try:
