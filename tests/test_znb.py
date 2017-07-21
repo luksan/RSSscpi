@@ -155,6 +155,40 @@ def test_channel_sweep(dummy_vna, visa):
             ] == visa.cmd
 
 
+def test_channel_properties(dummy_vna, visa):
+    # type: (ZNB, VISA) -> None
+    ch = dummy_vna.get_channel(1)
+    visa.ret = "'Ch1'"
+    assert ch.name == "Ch1"
+    ch.name = "Ch2"
+    assert ["CONFigure:CHANnel1:NAME?",
+            "CONFigure:CHANnel1:NAME 'Ch2'",
+            ] == visa.cmd
+
+    visa.ret = "-12.3"
+    assert ch.power_level == -12.3
+    assert ["SOURce1:POWer:LEVel:IMMediate:AMPLitude?",
+            ] == visa.cmd
+
+    visa.ret = "43499999999.5"
+    assert ch.freq_cw == 43499999999.5
+    assert ch.freq_start == 43499999999.5
+    assert ch.freq_stop == 43499999999.5
+    assert ch.freq_center == 43499999999.5
+    assert ch.freq_span == 43499999999.5
+    assert ["SENSe1:FREQuency:CW?",
+            "SENSe1:FREQuency:STARt?",
+            "SENSe1:FREQuency:STOP?",
+            "SENSe1:FREQuency:CENTer?",
+            "SENSe1:FREQuency:SPAN?",
+            ] == visa.cmd
+
+    visa.ret = "10"
+    assert ch.ifbw == 10
+    assert ["SENSe1:BANDwidth?",
+            ] == visa.cmd
+
+
 def test_segmented_sweep(dummy_vna, visa):
     """
     :param ZNB dummy_vna:

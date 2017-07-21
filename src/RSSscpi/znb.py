@@ -192,6 +192,15 @@ class Channel(object):
     The channel power level, in dBm.
     """
 
+    _FRQ = ZNB_gen.SENSe.FREQuency
+    freq_cw = SCPIPropertyMinMax(_FRQ.CW, float, get_root_node=lambda x: x.SENSe)
+    freq_start = SCPIPropertyMinMax(_FRQ.STARt, float, get_root_node=lambda x: x.SENSe)
+    freq_stop = SCPIPropertyMinMax(_FRQ.STOP, float, get_root_node=lambda x: x.SENSe)
+    freq_center = SCPIPropertyMinMax(_FRQ.CENTer, float, get_root_node=lambda x: x.SENSe)
+    freq_span = SCPIPropertyMinMax(_FRQ.SPAN, float, get_root_node=lambda x: x.SENSe)
+
+    ifbw = SCPIPropertyMinMax(ZNB_gen.SENSe.BANDwidth, int, get_root_node=lambda x: x.SENSe)
+
     def cal_auto(self, vna_ports, cal_unit_ports=None, cal_type="FNPort", cal_unit_characterization=""):
         if cal_unit_ports:
             cmd_fmt = "{:s}, {:q}, {:d**}"
