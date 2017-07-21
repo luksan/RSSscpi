@@ -3,7 +3,7 @@
 
 @author: Lukas Sandström
 """
-from __future__ import print_function
+from __future__ import absolute_import, division, print_function, unicode_literals
 
 import logging
 import os
@@ -53,11 +53,11 @@ class VISA(object):
         self._def_set = True
 
     def write(self, w):
-        assert isinstance(w, str)
+        assert isinstance(w, str) or isinstance(w, type(u""))
         self._cmd.append(w.strip())  # read()/write() in Instrument appends a space to the command even without arguments
 
     def query(self, q):
-        assert isinstance(q, str)
+        assert isinstance(q, str) or isinstance(q, type(u""))
         q = q.strip()  # FIXME: .query() shouldn't output trailing whitespace
         self._cmd.append(q)
         if self._def_set:  # If the default was changed we overwrite any existing value for the following query

@@ -4,6 +4,7 @@ Created on 16 feb. 2016
 
 @author: Lukas Sandström
 """
+from __future__ import absolute_import, division, print_function, unicode_literals
 
 from .gen import ZNB_gen
 from .SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping

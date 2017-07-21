@@ -3,6 +3,7 @@
 
 @author: Lukas Sandström
 """
+from __future__ import absolute_import, division, print_function, unicode_literals
 
 import threading
 import timeit
@@ -261,7 +262,7 @@ class Instrument(SCPINodeBase):
         :return: The formatted command arguments
         """
         fmt = kwargs.get("fmt", "")
-        assert isinstance(fmt, str)
+        assert isinstance(fmt, str) or isinstance(fmt, type(u""))
         if "fmt" not in kwargs and args:
             if "quote" in kwargs:
                 if kwargs["quote"]:
