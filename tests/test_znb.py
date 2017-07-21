@@ -455,6 +455,13 @@ def test_trace(dummy_vna, visa):
             "TRACe:COPY:MATH 'MathMem1', 'Tr7'",
             ] == visa.cmd
 
+    visa.ret = "S11"
+    tr_new = tr.copy("NEW_TRACE")
+    assert isinstance(tr_new, type(tr))
+    assert ["CALCulate2:PARameter:MEASure? 'Tr7'",
+            "CALCulate2:PARameter:SDEFine 'NEW_TRACE', 'S11'",
+            ] == visa.cmd
+
     visa.ret = "1"
     assert tr.n == 1
     assert tr.n == 1

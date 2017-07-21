@@ -466,6 +466,17 @@ class Trace(object):
         self.channel.instrument.TRACe.COPY.MATH().w(target_trace_name, self.name)
         return self.__class__(target_trace_name, self.channel)
 
+    def copy(self, new_name):
+        # type: ([str, unicode]) -> Trace
+        """
+        Create a copy of the trace. The trace is not assigned to a diagram area.
+
+        :param new_name: The name of the new trace
+        :return: A new Trace instance
+        """
+        meas = self.measurement
+        return self.channel.create_trace(new_name, meas)
+
     def delete(self):
         """
         Deletes the trace. CALCulate<Ch>:​PARameter:​DELete
