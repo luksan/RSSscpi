@@ -235,6 +235,25 @@ class Channel(object):
         if power is not None:
             self.power_level = power
 
+    def configure_power_sweep(self, freq, start_power, stop_power, points=None, ifbw=None):
+        """
+        Configure the channel for a power sweep. Unspecified parameters are not modified.
+
+        :param float freq: The CW frequency for the channel
+        :param float start_power: Start power level in dBm
+        :param float stop_power: Stop power level in dBm
+        :param int points: Number of sweep points
+        :param ifbw: IF bandwidth
+        """
+        self.sweep.type = Sweep.POWER
+        self.freq_cw = freq
+        self.SOURce.POWer(1).STARt().w(start_power)  # The port number suffix on POWer is ignored by the instrument
+        self.SOURce.POWer(1).STOP().w(stop_power)
+        if points:
+            self.sweep.points = points
+        if ifbw:
+            self.ifbw = ifbw
+
     def init_sweep(self):  # FIXME: rename to start_sweep() or similar??
         """
         INITiate:IMMediate

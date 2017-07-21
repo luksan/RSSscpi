@@ -163,6 +163,15 @@ def test_channel_sweep(dummy_vna, visa):
             "INITiate3:IMMediate",
             ] == visa.cmd
 
+    ch.configure_power_sweep(freq=40e9, start_power=-40, stop_power=10, points=41, ifbw=1e3)
+    assert ["SENSe3:SWEep:TYPE POW",
+            "SENSe3:FREQuency:CW 40000000000.0",
+            "SOURce3:POWer1:STARt -40",
+            "SOURce3:POWer1:STOP 10",
+            "SENSe3:SWEep:POINts 41",
+            "SENSe3:BANDwidth 1000.0",
+            ] == visa.cmd
+
 
 def test_channel_properties(dummy_vna, visa):
     # type: (ZNB, VISA) -> None
