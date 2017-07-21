@@ -138,11 +138,20 @@ def test_channel_sweep(dummy_vna, visa):
             "SENSe3:SWEep:POINts 301",
             "SENSe3:SWEep:TYPE LIN",
             ] == visa.cmd
+
+    visa.ret = "LIN"
+    assert ch.sweep.type == "LIN"
+    ch.sweep.type = "POW"
+    assert ["SENSe3:SWEep:TYPE?",
+            "SENSe3:SWEep:TYPE POW",
+            ] == visa.cmd
+
     ch.configure_freq_sweep(10e6, 9e9)
     assert ["SENSe3:SWEep:TYPE LIN",
             "SENSe3:FREQuency:STARt 10000000.0",
             "SENSe3:FREQuency:STOP 9000000000.0",
             ] == visa.cmd
+
     ch.configure_freq_sweep(10, 10e6, points=101, ifbw=1e3, power=-10, log_sweep=True)
     ch.init_sweep()
     assert ["SENSe3:SWEep:TYPE LOG",

@@ -222,16 +222,16 @@ class Channel(object):
         :param bool log_sweep: Sets the sweep type to LOGarithmic if True, LINear if False (default).
         """
         if not log_sweep:
-            self.SENSe.SWEep.TYPE().w("LIN")
+            self.sweep.type = Sweep.LIN
         else:
-            self.SENSe.SWEep.TYPE().w("LOG")
+            self.sweep.type = Sweep.LOG
 
-        self.SENSe.FREQuency.STARt().w(start_freq)
-        self.SENSe.FREQuency.STOP().w(stop_freq)
+        self.freq_start = start_freq
+        self.freq_stop = stop_freq
         if points is not None:
             self.sweep.points = points
         if ifbw is not None:
-            self.SENSe.BANDwidth().w(ifbw)
+            self.ifbw = ifbw
         if power is not None:
             self.power_level = power
 
@@ -388,11 +388,12 @@ class Sweep(ZNB_gen.SENSe.SWEep):
     _SWE = ZNB_gen.SENSe.SWEep
 
     analog_sweep_is_enabled = SCPIPropertyMapping(_SWE.GENeration, str, {"ANALog": True, "STEPped": False})
+    count = SCPIProperty(_SWE.COUNt, int)
     dwell_time = SCPIProperty(_SWE.DWELl, float)
     dwell_on_each_partial_measurement = SCPIPropertyMapping(_SWE.DWELl.IPOint, str, {"ALL": True, "FIRSt": False})
     points = SCPIPropertyMinMax(_SWE.POINts, int)
-    count = SCPIProperty(_SWE.COUNt, int)
     time = SCPIPropertyMinMax(_SWE.TIME, float)
+    type = SCPIProperty(_SWE.TYPE, str)
     use_auto_time = SCPIProperty(_SWE.TIME.AUTO, bool)
     step_size = SCPIPropertyMinMax(_SWE.STEP, float)
 
