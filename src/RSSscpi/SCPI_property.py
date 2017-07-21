@@ -5,6 +5,9 @@
 """
 
 from .SCPI_gen_support import SCPINodeBase, SCPIQuery, SCPISet
+import functools
+import numbers
+import math
 
 
 class SCPIProperty(object):
@@ -72,7 +75,6 @@ class SCPIProperty(object):
         :param instance: The object which the SCPIProperty is an attribute of.
         :param value: This will be passed as the first, and only, positional argument to write(), if callback returns None
         :param kwargs: Any additional keyword parameters will be passed to write(), if the callback returns None.
-        :return:
         """
         leaf = self._get_leaf(instance)  # type: SCPISet
         if not hasattr(leaf, "w"):
@@ -82,7 +84,7 @@ class SCPIProperty(object):
             cb = self._callback(self=instance, get=False, value=value)
             if cb is not None:
                 return leaf.w(**cb)
-        return leaf.w(value, **kwargs)
+        leaf.w(value, **kwargs)
 
 
 class SCPIPropertyMapping(SCPIProperty):
@@ -131,7 +133,8 @@ class SCPIPropertyMapping(SCPIProperty):
         super(SCPIPropertyMapping, self).__set__(instance, v)
 
 
-class MinMax(object):
+@functools.total_ordering
+class MinMaxFloat(numbers.Real):
     """
     The MinMax class is used as return value from SCPIPropertyMinMax.__get__(..).
     """
@@ -146,7 +149,10 @@ class MinMax(object):
 
     @property
     def value(self):
-        """Attribute that queries/sets the value of the property."""
+        """
+        Attribute that queries/sets the value of the property.
+        The return type is determined by the `conv` attribute of the SCPIProperty.
+        """
         return self._q()
 
     @value.setter
@@ -177,6 +183,88 @@ class MinMax(object):
         """Set the property to the default value."""
         self._w("DEF")
 
+    # Methods for numbers.Complex
+
+    def __abs__(self):
+        return abs(self.value)
+
+    def __eq__(self, other):
+        return self.value == other
+
+    def __radd__(self, other):
+        return other + self.value
+
+    def __bool__(self):
+        return bool(self.value)
+
+    def __neg__(self):
+        return -self.value
+
+    def __pos__(self):
+        return +self.value
+
+    def __add__(self, other):
+        return self.value + other
+
+    def __mul__(self, other):
+        return self.value * other
+
+    def __rmul__(self, other):
+        return other * self.value
+
+    def __truediv__(self, other):
+        return float(self) / other
+
+    def __pow__(self, exponent):
+        return self.value ** exponent
+
+    def __rpow__(self, base):
+        return base ** self.value
+
+    # Methods for numbers.Real
+
+    def __float__(self):
+        return float(self.value)
+
+    def __div__(self, other):
+        return float(self) / other
+
+    def __rdiv__(self, other):
+        return other / float(self)
+
+    def __rtruediv__(self, other):
+        return other / float(self)
+
+    def __floor__(self):
+        return math.floor(float(self))
+
+    def __ceil__(self):
+        return math.ceil(float(self))
+
+    def __round__(self, n=None):
+        return round(float(self))
+
+    def __floordiv__(self, other):
+        return float(self).__floordiv__(other)
+
+    def __rfloordiv__(self, other):
+        return float(self).__rfloordiv__(other)
+
+    def __mod__(self, other):
+        return float(self) % other
+
+    def __lt__(self, other):
+        return float(self) < other
+
+    def __le__(self, other):
+        return float(self) <= other
+
+    def __rmod__(self, other):
+        return other % self.value
+
+    def __trunc__(self):
+        return math.trunc(self.value)
+
 
 class SCPIPropertyMinMax(SCPIProperty):
     def __init__(self, *args, **kwargs):
@@ -191,6 +279,7 @@ class SCPIPropertyMinMax(SCPIProperty):
         self.__doc__ = "\n".join(doc)
 
     def __get__(self, instance, owner=None):
+        # type: (SCPINodeBase, object) -> MinMaxFloat
         if instance is None:
             return self
-        return MinMax(self, instance)
+        return MinMaxFloat(self, instance)

@@ -3,6 +3,7 @@
 
 @author: Lukas Sandström
 """
+from __future__ import absolute_import, division, print_function
 
 import pytest
 from .conftest import VISA  # noqa: F401
@@ -124,8 +125,11 @@ def test_channel_sweep(dummy_vna, visa):
     x = ch.sweep.points.query_default()
     assert isinstance(x, int)
     ch.sweep.points.value = 301
-    x = ch.sweep.points.value
+    a = ch.sweep.points
+    visa.ret = "301"
+    x = a.value
     assert isinstance(x, int)
+    assert x == 301
     ch.sweep.points = 301
     ch.sweep.TYPE.w("LIN")
     assert ["SENSe3:SWEep:POINts? DEF",
