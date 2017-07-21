@@ -14,6 +14,7 @@ import ntpath
 import os.path
 
 import logging
+import re
 
 
 class ZNB(ZNB_gen):
@@ -480,10 +481,12 @@ class Trace(object):
         self.channel.instrument.DISPlay.WINDow.TRACe.Y.SCALe.AUTO().w("ONCE", self.name, fmt="{:s}, {:q}")
 
     def copy_data_to_mem(self, target_trace_name):
+        self.check_if_name_is_valid(target_trace_name, raise_err=True)
         self.channel.instrument.TRACe.COPY().w(target_trace_name, self.name)
         return self.__class__(target_trace_name, self.channel)
 
     def copy_math_to_mem(self, target_trace_name):
+        self.check_if_name_is_valid(target_trace_name, raise_err=True)
         self.channel.instrument.TRACe.COPY.MATH().w(target_trace_name, self.name)
         return self.__class__(target_trace_name, self.channel)
 
@@ -495,6 +498,7 @@ class Trace(object):
         :param new_name: The name of the new trace
         :return: A new Trace instance
         """
+        self.check_if_name_is_valid(new_name, raise_err=True)
         meas = self.measurement
         return self.channel.create_trace(new_name, meas)
 
@@ -532,8 +536,23 @@ class Trace(object):
     @name.setter
     def name(self, name):
         name = str(name)
+        self.check_if_name_is_valid(name, raise_err=True)
         self.channel.instrument.CONFigure.TRACe.REName().w(self.name, name)
         self._name = name
+
+    @staticmethod
+    def check_if_name_is_valid(name, raise_err=False):
+        # type: (str) -> bool
+        """
+
+        :param name: A string which will be checked to see if it is a valid trace name
+        :param raise_err: Raise a ValueError if the name is invalid
+        """
+        ret = re.match(r"^[A-Za-z\[\]_][A-Za-z\[\]_0-9]*$", name) is not None
+        if not ret and raise_err:
+            raise ValueError("Invalid trace name '%s'" % name)
+        return ret
+
 
     @property
     def n(self):

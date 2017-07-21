@@ -499,6 +499,25 @@ def test_trace(dummy_vna, visa):
             ] == visa.cmd
 
 
+def test_trace_name(dummy_vna, visa):
+    tr = dummy_vna.get_channel(1).get_trace(1)
+    tr.name = "Abc[12]"
+    with pytest.raises(ValueError):
+        tr.name = "0"
+    with pytest.raises(ValueError):
+        tr.name = "ASD.a"
+    tr.name = "[MEM]a"
+    with pytest.raises(ValueError):
+        tr.copy("...")
+    with pytest.raises(ValueError):
+        tr.copy_data_to_mem("09a")
+    with pytest.raises(ValueError):
+        tr.copy_math_to_mem("0x")
+    assert ["CONFigure:TRACe:REName '1', 'Abc[12]'",
+            "CONFigure:TRACe:REName 'Abc[12]', '[MEM]a'",
+            ] == visa.cmd
+
+
 def test_trace_scaling(dummy_vna, visa):
     """
     :param ZNB dummy_vna:
