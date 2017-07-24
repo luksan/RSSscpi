@@ -97,6 +97,18 @@ class CmdListParser(object):
         self.cmd_tree.add_cmd(c, arg, unit, query)
 
 
+class NRPCmdListParser(CmdListParser):
+    def _add_cmd(self, cmd):  # The NRP command list is copied from the PDF, so no arguments or units
+        query_only = cmd[-1] == '?'
+        if query_only:
+            cmd = cmd[:-1]
+        cmd = str(cmd).translate(None, "[]")
+        cmd = re.sub(r'<.*?>', '1', cmd)  # GPIB explorer indicates an indexed node by appending "1" to the name
+        self.cmd_tree.add_cmd(cmd.split(":"), None, None, True)
+        if not query_only:
+            self.cmd_tree.add_cmd(cmd.split(":"), 1, None, False)
+
+
 class Webhelp(object):
     def get_help_url(self, cmd):
         """
@@ -415,5 +427,6 @@ if __name__ == '__main__':
     generate_SCPI_class(CmdListParser("ZVA_commands_3_70.inp"), "ZVA_gen", RohdeZVAWebhelp(download_webhelp=download))
     generate_SCPI_class(CmdListParser("ZNB_commands_2_70.inp"), "ZNB_gen", RohdeZNBWebhelp(download_webhelp=download),
                         tree_patcher=ZNBTreePatcher())
+    generate_SCPI_class(NRPCmdListParser("NRPxxSN_rev07.txt"), "NRPxxSN_gen")
 
     logging.info("All good :)")
