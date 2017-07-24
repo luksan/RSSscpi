@@ -5,6 +5,9 @@
 @author: Lukas Sandström
 """
 
+import os
+import sys
+
 try:
     # For Python 3.0 and later
     # noinspection PyCompatibility
@@ -21,6 +24,10 @@ from bs4 import BeautifulSoup
 import re
 
 import logging
+
+_module_dir = os.path.abspath(os.path.dirname(__file__))
+_cmd_list_dir = os.path.join(_module_dir, "SCPI_cmd_lists")
+_output_dir = os.path.join(_module_dir, '..', 'src', 'RSSscpi', 'gen')
 
 
 class CmdNode(dict):
@@ -70,7 +77,7 @@ class CmdListParser(object):
         self._parse()
 
     def _parse(self):
-        with open(self.filename) as fd:
+        with open(os.path.join(_cmd_list_dir, self.filename)) as fd:
             for line in fd:
                 if not line or line[0] == '/' or line.isspace():
                     continue
@@ -106,7 +113,7 @@ class RohdeZVAWebhelp(Webhelp):
         self._base_url = "http://www.rohde-schwarz.com/webhelp/webhelp_zva_{1}{0}"
         self._help_rev = 8
 
-        self.cmd_list_file = "code_gen/SCPI_cmd_lists/ZVA_help_index.xml"
+        self.cmd_list_file = os.path.join(_cmd_list_dir, "ZVA_help_index.xml")
 
         if download_webhelp:
             self.download_cmd_list()
@@ -181,8 +188,8 @@ class RohdeZNBWebhelp(Webhelp):
 
         self._base_url = "http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en{0}"
 
-        self.toc_file = "code_gen/SCPI_cmd_lists/ZNB_webhelp_toc.xml"
-        self.cmd_list_file = "code_gen/SCPI_cmd_lists/ZNB_webhelp_command_list.htm"
+        self.toc_file = os.path.join(_cmd_list_dir, "ZNB_webhelp_toc.xml")
+        self.cmd_list_file = os.path.join(_cmd_list_dir, "ZNB_webhelp_command_list.htm")
 
         self._urls = dict()
         self._common_commands = None  # *CLS, *OPC, etc.
@@ -373,28 +380,27 @@ class ZNBTreePatcher(object):
         return cmd_tree
 
 
-def generate_SCPI_class(input_file, module_name, webhelp=Webhelp(), tree_patcher=None):
+def generate_SCPI_class(parser, module_name, webhelp=Webhelp(), tree_patcher=None):
     """
 
-    :param input_file: filename of the command list from GPIB Explorer
+    :param CmdListParser parser: A CmdListParser instance
     :param module_name: Name of the module to be generated
     :param webhelp: Webhelp subclass instance, generating help URLs
     :param tree_patcher: Function used to fix errors in the command tree before the code generation
     :return: None
     """
-    parser = CmdListParser('code_gen/SCPI_cmd_lists/' + input_file)
 
     if tree_patcher:
         cmd_tree = tree_patcher(parser.cmd_tree)
     else:
         cmd_tree = parser.cmd_tree
-    path = "src/RSSscpi/gen/" + module_name + ".py"
+    path = os.path.join(_output_dir, module_name + ".py")
     with open(path, 'wb') as fd:
-        g = ClassCodeGen(module_name, cmd_tree, fd, source=input_file, webhelp=webhelp)
+        g = ClassCodeGen(module_name, cmd_tree, fd, source=parser.filename, webhelp=webhelp)
         g.gen()
 
-    import importlib, sys, os
-    sys.path.insert(0, os.path.join(os.getcwd(), "src"))
+    import importlib
+    sys.path.insert(0, _output_dir)
     importlib.import_module("RSSscpi.gen." + module_name)  # Test that the module can be loaded
     sys.path.pop(0)
 
@@ -402,10 +408,12 @@ def generate_SCPI_class(input_file, module_name, webhelp=Webhelp(), tree_patcher
 
 
 if __name__ == '__main__':
-    import sys, os
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
-    os.chdir("..")
+
     download = False
-    generate_SCPI_class("ZVA_commands_3_70.inp", "ZVA_gen", RohdeZVAWebhelp(download_webhelp=download))
-    generate_SCPI_class("ZNB_commands_2_70.inp", "ZNB_gen", RohdeZNBWebhelp(download_webhelp=download), tree_patcher=ZNBTreePatcher())
+
+    generate_SCPI_class(CmdListParser("ZVA_commands_3_70.inp"), "ZVA_gen", RohdeZVAWebhelp(download_webhelp=download))
+    generate_SCPI_class(CmdListParser("ZNB_commands_2_70.inp"), "ZNB_gen", RohdeZNBWebhelp(download_webhelp=download),
+                        tree_patcher=ZNBTreePatcher())
+
     logging.info("All good :)")
