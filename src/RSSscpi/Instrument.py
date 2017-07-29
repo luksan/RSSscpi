@@ -337,9 +337,11 @@ class Instrument(SCPINodeBase):
 
     def preset(self):
         """
-        Send `*RST` to the instrument.
+        Send `*RST` to the instrument, and set up the event registers again.
         """
         self.RST.w()
+        self.query_OPC()
+        self._write("*CLS;*ESE 127;*SRE 36")
 
     def query_OPC(self):
         """

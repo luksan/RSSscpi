@@ -39,6 +39,8 @@ def test_generic_commands(dummy_vna, visa):
             "SYSTem:DISPlay:UPDate OFF",
             "*RST",
             "*OPC?",
+            "*CLS;*ESE 127;*SRE 36",
+            "*OPC?",
             "*OPC",
             "*TRG",
             ] == visa.cmd
@@ -84,7 +86,7 @@ def test_error_handling(zva, visa):
     visa.ret_dict["SYSTem:ERRor:ALL?"] = '-222,"Data out of range;SOURce1:POWer1:ATTenuation 80\n"'
     visa.raise_error()
     with pytest.raises(InstrumentError) as excinfo:
-        zva.query_OPC()
+        zva.query_OPC()  # The exception won't be raised until the next SCPI operation
     assert excinfo.value.stack is not None
     visa.ret_dict["SYSTem:ERRor:ALL?"] = '''-151,"Invalid string data;CALCulate1:PARameter:SDEFine '...",-114,"Header suffix out of range;DISPlay:WINDow1:TRACe:EFEed 'A..."'''
     zva.CALCulate(1).PARameter.SDEFine().w('AVG', 'BASD01D01AVG')
