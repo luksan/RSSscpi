@@ -12,6 +12,7 @@ import collections
 import pytest
 
 from RSSscpi import ZVA, ZNB
+import RSSscpi.nrp
 
 logging.basicConfig(stream=open(os.devnull, "w"))
 logging.captureWarnings(True)
@@ -109,6 +110,11 @@ def zva(visa):
 @pytest.fixture
 def znb(visa):
     return ZNB(visa_res=visa)
+
+
+@pytest.fixture
+def nrpxxsn(visa):
+    return RSSscpi.nrp.NRPxxSN(visa_res=visa)
 
 
 def pytest_exception_interact(node, call, report):
