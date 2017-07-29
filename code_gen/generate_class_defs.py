@@ -230,12 +230,11 @@ def generate_SCPI_class(parser, module_name, webhelp=Webhelp(), tree_patcher=Non
     """
 
     if tree_patcher:
-        cmd_tree = tree_patcher(parser.cmd_tree)
-    else:
-        cmd_tree = parser.cmd_tree
+        tree_patcher(parser.cmd_tree)
+
     path = os.path.join(output_dir, module_name + ".py")
     with open(path, 'wb') as fd:
-        g = ClassCodeGen(module_name, cmd_tree, fd, source=parser.filename, webhelp=webhelp)
+        g = ClassCodeGen(module_name, parser.cmd_tree, fd, source=parser.filename, webhelp=webhelp)
         g.gen()
 
     import importlib

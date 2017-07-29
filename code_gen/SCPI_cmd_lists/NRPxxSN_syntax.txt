@@ -1,0 +1,216 @@
+*CLS
+*ESE[?] <numeric_value>
+*ESR?
+*IDN?
+*IST?
+*OPC[?]
+*OPT?
+*PRE[?] <numeric_value>
+*RCL <numeric_value>
+*RST
+*SAV <numeric_value>
+*SRE[?] <numeric_value>
+*STB?
+*TRG
+*TST?
+*WAI
+:ABORt
+:CALCulate:FEED[?] <string>
+:CALibration:DATA:LENGth?
+:CALibration:DATA[?] <block_data>
+:CALibration:USER:DATA:LENGth?
+:CALibration:USER:DATA[?] <block_data>
+:CALibration:ZERO:AUTO[?] <boolean>|ONCE
+:FETCh{1..*}:ARRay[:POWer][:AVG]?
+:FETCh{1..*}[:SCALar][:POWer][:AVG]?
+:FETCh{1..*}[:SCALar][:POWer]:BURSt?
+:FETCh{1..*}[:SCALar][:POWer]:TSLot?
+:FORMat:BORDer[?] NORMal|SWAPped
+:FORMat[:DATA][?] ASCii|REAL,<numeric_value>
+:FORMat:SREGister[?] ASCii|BINary|HEXadecimal|OCTal
+:INITiate:ALL
+:INITiate:CONTinuous[?] <boolean>
+:INITiate[:IMMediate]
+:READ{1..*}:ARRay[:POWer][:AVG]?
+:READ{1..*}[:SCALar][:POWer][:AVG]?
+:READ{1..*}[:SCALar][:POWer]:BURSt?
+:READ{1..*}[:SCALar][:POWer]:TSLot?
+:READ{1..*}:XTIMe[:POWer]?
+[:SENSe{1..*}]:AUXiliary[?] MINMax|NONE|RNDMax
+[:SENSe{1..*}]:AVERage:COUNt:AUTO:MTIMe[?] <numeric_value>
+[:SENSe{1..*}]:AVERage:COUNt:AUTO:NSRatio[?] <numeric_value>
+[:SENSe{1..*}]:AVERage:COUNt:AUTO:RESolution[?] <numeric_value>
+[:SENSe{1..*}]:AVERage:COUNt:AUTO:SLOT[?] <numeric_value>
+[:SENSe{1..*}]:AVERage:COUNt:AUTO:TYPE[?] NSRatio|RESolution
+[:SENSe{1..*}]:AVERage:COUNt:AUTO[?] <boolean>|ONCE
+[:SENSe{1..*}]:AVERage:COUNt[?] <numeric_value>
+[:SENSe{1..*}]:AVERage:RESet
+[:SENSe{1..*}]:AVERage[:STATe][?] <boolean>
+[:SENSe{1..*}]:AVERage:TCONtrol[?] MOVing|REPeat
+[:SENSe{1..*}]:CORRection:DCYCle:STATe[?] <boolean>
+[:SENSe{1..*}]:CORRection:DCYCle[?] <numeric_value>
+[:SENSe{1..*}]:CORRection:OFFSet:STATe[?] <boolean>
+[:SENSe{1..*}]:CORRection:OFFSet[?] <numeric_value>
+[:SENSe{1..*}]:CORRection:SPDevice:LIST?
+[:SENSe{1..*}]:CORRection:SPDevice:SELect[?] <numeric_value>
+[:SENSe{1..*}]:CORRection:SPDevice:STATe[?] <boolean>
+[:SENSe{1..*}]:FREQuency[?] <numeric_value>
+[:SENSe{1..*}]:FUNCtion[?] <string>
+[:SENSe{1..*}][:POWer][:AVG]:APERture[?] <numeric_value>
+[:SENSe{1..*}][:POWer][:AVG]:BUFFer:CLEar
+[:SENSe{1..*}][:POWer][:AVG]:BUFFer:COUNt?
+[:SENSe{1..*}][:POWer][:AVG]:BUFFer:DATA?
+[:SENSe{1..*}][:POWer][:AVG]:BUFFer:INFO? <string>
+[:SENSe{1..*}][:POWer][:AVG]:BUFFer:SIZE[?] <numeric_value>
+[:SENSe{1..*}][:POWer][:AVG]:BUFFer:STATe[?] <boolean>
+[:SENSe{1..*}][:POWer][:AVG]:FAST[?] <boolean>
+[:SENSe{1..*}][:POWer][:AVG]:SMOothing:STATe[?] <boolean>
+[:SENSe{1..*}][:POWer]:BURSt:DTOLerance[?] <numeric_value>
+[:SENSe{1..*}][:POWer]:BURSt:LENGth?
+[:SENSe{1..*}][:POWer]:TSLot[:AVG]:COUNt[?] <numeric_value>
+[:SENSe{1..*}][:POWer]:TSLot[:AVG][:EXCLude]:MID:OFFSet[:TIME][?] <numeric_value>
+[:SENSe{1..*}][:POWer]:TSLot[:AVG][:EXCLude]:MID[:STATe][?] <boolean>
+[:SENSe{1..*}][:POWer]:TSLot[:AVG][:EXCLude]:MID:TIME[?] <numeric_value>
+[:SENSe{1..*}][:POWer]:TSLot[:AVG]:WIDTh[?] <numeric_value>
+[:SENSe{1..*}]:RANGe:AUTO[?] <boolean>
+[:SENSe{1..*}]:RANGe:CLEVel[?] <numeric_value>
+[:SENSe{1..*}]:RANGe[?] <numeric_value>
+[:SENSe{1..*}]:SAMPling[?] FREQ1
+[:SENSe{1..*}]:SGAMma:CORRection:STATe[?] <boolean>
+[:SENSe{1..*}]:SGAMma:MAGNitude[?] <numeric_value>
+[:SENSe{1..*}]:SGAMma:PHASe[?] <numeric_value>
+[:SENSe{1..*}]:TIMing:EXCLude:STARt[?] <numeric_value>
+[:SENSe{1..*}]:TIMing:EXCLude:STOP[?] <numeric_value>
+[:SENSe{1..*}]:TRACe:AVERage:COUNt[?] <numeric_value>
+[:SENSe{1..*}]:TRACe:AVERage[:STATe][?] <boolean>
+[:SENSe{1..*}]:TRACe:AVERage:TCONtrol[?] MOVing|REPeat
+[:SENSe{1..*}]:TRACe:DATA?
+[:SENSe{1..*}]:TRACe:MPWidth?
+[:SENSe{1..*}]:TRACe:OFFSet:TIME[?] <numeric_value>
+[:SENSe{1..*}]:TRACe:POINts[?] <numeric_value>
+[:SENSe{1..*}]:TRACe:REALtime[?] <boolean>
+[:SENSe{1..*}]:TRACe:TIME[?] <numeric_value>
+:STATus:DEVice:CONDition?
+:STATus:DEVice:ENABle[?] <numeric_value>
+:STATus:DEVice[:EVENt]?
+:STATus:DEVice:NTRansition[?] <numeric_value>
+:STATus:DEVice:PTRansition[?] <numeric_value>
+:STATus:OPERation:CALibrating:CONDition?
+:STATus:OPERation:CALibrating:ENABle[?] <numeric_value>
+:STATus:OPERation:CALibrating:NTRansition[?] <numeric_value>
+:STATus:OPERation:CALibrating:PTRansition[?] <numeric_value>
+:STATus:OPERation:CALibrating[:SUMMary][:EVENt]?
+:STATus:OPERation:CONDition?
+:STATus:OPERation:ENABle[?] <numeric_value>
+:STATus:OPERation[:EVENt]?
+:STATus:OPERation:LLFail:CONDition?
+:STATus:OPERation:LLFail:ENABle[?] <numeric_value>
+:STATus:OPERation:LLFail:NTRansition[?] <numeric_value>
+:STATus:OPERation:LLFail:PTRansition[?] <numeric_value>
+:STATus:OPERation:LLFail[:SUMMary][:EVENt]?
+:STATus:OPERation:MEASuring:CONDition?
+:STATus:OPERation:MEASuring:ENABle[?] <numeric_value>
+:STATus:OPERation:MEASuring:NTRansition[?] <numeric_value>
+:STATus:OPERation:MEASuring:PTRansition[?] <numeric_value>
+:STATus:OPERation:MEASuring[:SUMMary][:EVENt]?
+:STATus:OPERation:NTRansition[?] <numeric_value>
+:STATus:OPERation:PTRansition[?] <numeric_value>
+:STATus:OPERation:SENSe:CONDition?
+:STATus:OPERation:SENSe:ENABle[?] <numeric_value>
+:STATus:OPERation:SENSe:NTRansition[?] <numeric_value>
+:STATus:OPERation:SENSe:PTRansition[?] <numeric_value>
+:STATus:OPERation:SENSe[:SUMMary][:EVENt]?
+:STATus:OPERation:TRIGger:CONDition?
+:STATus:OPERation:TRIGger:ENABle[?] <numeric_value>
+:STATus:OPERation:TRIGger:NTRansition[?] <numeric_value>
+:STATus:OPERation:TRIGger:PTRansition[?] <numeric_value>
+:STATus:OPERation:TRIGger[:SUMMary][:EVENt]?
+:STATus:OPERation:ULFail:CONDition?
+:STATus:OPERation:ULFail:ENABle[?] <numeric_value>
+:STATus:OPERation:ULFail:NTRansition[?] <numeric_value>
+:STATus:OPERation:ULFail:PTRansition[?] <numeric_value>
+:STATus:OPERation:ULFail[:SUMMary][:EVENt]?
+:STATus:PRESet
+:STATus:QUEStionable:CALibration:CONDition?
+:STATus:QUEStionable:CALibration:ENABle[?] <numeric_value>
+:STATus:QUEStionable:CALibration:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:CALibration:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:CALibration[:SUMMary][:EVENt]?
+:STATus:QUEStionable:CONDition?
+:STATus:QUEStionable:ENABle[?] <numeric_value>
+:STATus:QUEStionable[:EVENt]?
+:STATus:QUEStionable:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:POWer:CONDition?
+:STATus:QUEStionable:POWer:ENABle[?] <numeric_value>
+:STATus:QUEStionable:POWer:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:POWer:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:POWer[:SUMMary][:EVENt]?
+:STATus:QUEStionable:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:WINDow:CONDition?
+:STATus:QUEStionable:WINDow:ENABle[?] <numeric_value>
+:STATus:QUEStionable:WINDow:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:WINDow:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:WINDow[:SUMMary][:EVENt]?
+:STATus:QUEue[:NEXT]?
+:SYSTem:CLOCk:SOURce[?] EXTernal|INTernal
+:SYSTem:COMMunicate:NETWork[:COMMon]:DOMain[?] <string>
+:SYSTem:COMMunicate:NETWork[:COMMon]:HOSTname[?] <string>
+:SYSTem:COMMunicate:NETWork:IPADdress:GATeway[?] <string>
+:SYSTem:COMMunicate:NETWork:IPADdress:INFO?
+:SYSTem:COMMunicate:NETWork:IPADdress:MODE[?] AUTO|STATic
+:SYSTem:COMMunicate:NETWork:IPADdress:SUBNet:MASK[?] <string>
+:SYSTem:COMMunicate:NETWork:IPADdress[?] <string>
+:SYSTem:COMMunicate:NETWork:RESTart
+:SYSTem:COMMunicate:NETWork:RESet
+:SYSTem:COMMunicate:NETWork:STATus?
+:SYSTem:DFPRint?
+:SYSTem:ERRor:ALL?
+:SYSTem:ERRor:CODE:ALL?
+:SYSTem:ERRor:CODE[:NEXT]?
+:SYSTem:ERRor:COUNt?
+:SYSTem:ERRor[:NEXT]?
+:SYSTem:FEATures? <numeric_value>
+:SYSTem:FWUPdate <block_data>
+:SYSTem:FWUPdate:STATus?
+:SYSTem:HELP:HEADers? <block_data>
+:SYSTem:HELP:SYNTax:ALL?
+:SYSTem:HELP:SYNTax? <string>
+:SYSTem:INFO? <string>
+:SYSTem:INITialize
+:SYSTem:LANGuage[?] SCPI
+:SYSTem:LED:COLor[?] <numeric_value>
+:SYSTem:LED:MODE[?] SENSor|USER
+:SYSTem:LIMits? <numeric_value>
+:SYSTem:MINPower?
+:SYSTem:PRESet[?] <block_data>
+:SYSTem:REBoot
+:SYSTem:RUTime[?] <numeric_value>
+:SYSTem[:SENSor]:NAME[?] <string>
+:SYSTem:SERRor:LIST:ALL?
+:SYSTem:SERRor:LIST[:NEXT]?
+:SYSTem:SERRor?
+:SYSTem:SUTime[?] <numeric_value>
+:SYSTem:TLEVels?
+:SYSTem:TRANsaction:BEGin
+:SYSTem:TRANsaction:END
+:SYSTem:VERSion?
+:TEST:SENSor? <string>
+:TRIGger:ATRigger:DELay[?] <numeric_value>
+:TRIGger:ATRigger:EXECuted?
+:TRIGger:ATRigger:STATe[?] <boolean>
+:TRIGger:COUNt[?] <numeric_value>
+:TRIGger:DELay:AUTO[?] <boolean>
+:TRIGger:DELay[?] <numeric_value>
+:TRIGger:DTIMe[?] <numeric_value>
+:TRIGger:EXTernal{1..*}:IMPedance[?] HIGH|LOW
+:TRIGger:HOLDoff[?] <numeric_value>
+:TRIGger:HYSTeresis[?] <numeric_value>[dB|PCT]
+:TRIGger:IMMediate
+:TRIGger:LEVel[?] <numeric_value>[mW|W|dBm|dBuV]
+:TRIGger:MASTer:PORT[?] EXT1|EXT2|EXTernal1|EXTernal2
+:TRIGger:MASTer:STATe[?] <boolean>
+:TRIGger:SLOPe[?] NEGative|POSitive
+:TRIGger:SOURce[?] BUS|EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|HOLD|IMMediate|INTernal
+:TRIGger:SYNC:PORT[?] EXT1|EXT2|EXTernal1|EXTernal2
+:TRIGger:SYNC:STATe[?] <boolean>
+:UNIT:POWer[?] DBM|DBUV|W

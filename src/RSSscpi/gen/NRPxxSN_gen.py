@@ -1,24 +1,24 @@
 # -*- coding: utf-8 -*-
-# Generated from NRPxxSN_rev07.txt on 2017-07-24 19:18
+# Generated from NRPxxSN_syntax.txt on 2017-07-29 18:55
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
 
 class NRPxxSN_gen(Instrument):
-    class CLS(SCPINode, SCPIQuery, SCPISet):
+    class CLS(SCPINode, SCPISet):
         """
         *CLS
 
-        Arguments: 1
+        Arguments:
         """
         _cmd = "*CLS"
-        args = ["1"]
+        args = []
 
     CLS = CLS()
     """
     *CLS
 
-    Arguments: 1
+    Arguments:
     """
 
     class ESE(SCPINode, SCPIQuery, SCPISet):
@@ -89,16 +89,16 @@ class NRPxxSN_gen(Instrument):
         """
         *OPC
 
-        Arguments: 1
+        Arguments:
         """
         _cmd = "*OPC"
-        args = ["1"]
+        args = []
 
     OPC = OPC()
     """
     *OPC
 
-    Arguments: 1
+    Arguments:
     """
 
     class OPT(SCPINode, SCPIQuery):
@@ -133,7 +133,7 @@ class NRPxxSN_gen(Instrument):
     Arguments: 1
     """
 
-    class RCL(SCPINode, SCPIQuery, SCPISet):
+    class RCL(SCPINode, SCPISet):
         """
         *RCL
 
@@ -149,23 +149,23 @@ class NRPxxSN_gen(Instrument):
     Arguments: 1
     """
 
-    class RST(SCPINode, SCPIQuery, SCPISet):
+    class RST(SCPINode, SCPISet):
         """
         *RST
 
-        Arguments: 1
+        Arguments:
         """
         _cmd = "*RST"
-        args = ["1"]
+        args = []
 
     RST = RST()
     """
     *RST
 
-    Arguments: 1
+    Arguments:
     """
 
-    class SAV(SCPINode, SCPIQuery, SCPISet):
+    class SAV(SCPINode, SCPISet):
         """
         *SAV
 
@@ -213,20 +213,20 @@ class NRPxxSN_gen(Instrument):
     Arguments:
     """
 
-    class TRG(SCPINode, SCPIQuery, SCPISet):
+    class TRG(SCPINode, SCPISet):
         """
         *TRG
 
-        Arguments: 1
+        Arguments:
         """
         _cmd = "*TRG"
-        args = ["1"]
+        args = []
 
     TRG = TRG()
     """
     *TRG
 
-    Arguments: 1
+    Arguments:
     """
 
     class TST(SCPINode, SCPIQuery):
@@ -245,36 +245,36 @@ class NRPxxSN_gen(Instrument):
     Arguments:
     """
 
-    class WAI(SCPINode, SCPIQuery, SCPISet):
+    class WAI(SCPINode, SCPISet):
         """
         *WAI
 
-        Arguments: 1
+        Arguments:
         """
         _cmd = "*WAI"
-        args = ["1"]
+        args = []
 
     WAI = WAI()
     """
     *WAI
 
-    Arguments: 1
+    Arguments:
     """
 
-    class ABORt(SCPINode, SCPIQuery, SCPISet):
+    class ABORt(SCPINode, SCPISet):
         """
         ABORt
 
-        Arguments: 1
+        Arguments:
         """
         _cmd = "ABORt"
-        args = ["1"]
+        args = []
 
     ABORt = ABORt()
     """
     ABORt
 
-    Arguments: 1
+    Arguments:
     """
 
     class CALCulate(SCPINode):
@@ -290,16 +290,16 @@ class NRPxxSN_gen(Instrument):
             """
             CALCulate:FEED
 
-            Arguments: 1
+            Arguments: 'string'
             """
             _cmd = "FEED"
-            args = ["1"]
+            args = ["'string'"]
 
         FEED = FEED()
         """
         CALCulate:FEED
 
-        Arguments: 1
+        Arguments: 'string'
         """
 
     CALCulate = CALCulate()
@@ -322,10 +322,10 @@ class NRPxxSN_gen(Instrument):
             """
             CALibration:DATA
 
-            Arguments: 1
+            Arguments: <block_data>
             """
             _cmd = "DATA"
-            args = ["1"]
+            args = ["<block_data>"]
 
             class LENGth(SCPINode, SCPIQuery):
                 """
@@ -347,7 +347,7 @@ class NRPxxSN_gen(Instrument):
         """
         CALibration:DATA
 
-        Arguments: 1
+        Arguments: <block_data>
         """
 
         class USER(SCPINode):
@@ -363,10 +363,10 @@ class NRPxxSN_gen(Instrument):
                 """
                 CALibration:USER:DATA
 
-                Arguments: 1
+                Arguments: <block_data>
                 """
                 _cmd = "DATA"
-                args = ["1"]
+                args = ["<block_data>"]
 
                 class LENGth(SCPINode, SCPIQuery):
                     """
@@ -388,7 +388,7 @@ class NRPxxSN_gen(Instrument):
             """
             CALibration:USER:DATA
 
-            Arguments: 1
+            Arguments: <block_data>
             """
 
         USER = USER()
@@ -411,16 +411,16 @@ class NRPxxSN_gen(Instrument):
                 """
                 CALibration:ZERO:AUTO
 
-                Arguments: 1
+                Arguments: ONCE
                 """
                 _cmd = "AUTO"
-                args = ["1"]
+                args = ["ONCE"]
 
             AUTO = AUTO()
             """
             CALibration:ZERO:AUTO
 
-            Arguments: 1
+            Arguments: ONCE
             """
 
         ZERO = ZERO()
@@ -437,7 +437,7 @@ class NRPxxSN_gen(Instrument):
     Arguments:
     """
 
-    class FETCh(SCPINode, SCPIQuery):
+    class FETCh(SCPINodeN, SCPIQuery):
         """
         FETCh
 
@@ -494,6 +494,86 @@ class NRPxxSN_gen(Instrument):
         Arguments:
         """
 
+        class SCALar(SCPINode):
+            """
+            FETCh:SCALar
+
+            Arguments:
+            """
+            _cmd = "SCALar"
+            args = []
+
+            class POWer(SCPINode):
+                """
+                FETCh:SCALar:POWer
+
+                Arguments:
+                """
+                _cmd = "POWer"
+                args = []
+
+                class AVG(SCPINode, SCPIQuery):
+                    """
+                    FETCh:SCALar:POWer:AVG
+
+                    Arguments:
+                    """
+                    _cmd = "AVG"
+                    args = []
+
+                AVG = AVG()
+                """
+                FETCh:SCALar:POWer:AVG
+
+                Arguments:
+                """
+
+                class BURSt(SCPINode, SCPIQuery):
+                    """
+                    FETCh:SCALar:POWer:BURSt
+
+                    Arguments:
+                    """
+                    _cmd = "BURSt"
+                    args = []
+
+                BURSt = BURSt()
+                """
+                FETCh:SCALar:POWer:BURSt
+
+                Arguments:
+                """
+
+                class TSLot(SCPINode, SCPIQuery):
+                    """
+                    FETCh:SCALar:POWer:TSLot
+
+                    Arguments:
+                    """
+                    _cmd = "TSLot"
+                    args = []
+
+                TSLot = TSLot()
+                """
+                FETCh:SCALar:POWer:TSLot
+
+                Arguments:
+                """
+
+            POWer = POWer()
+            """
+            FETCh:SCALar:POWer
+
+            Arguments:
+            """
+
+        SCALar = SCALar()
+        """
+        FETCh:SCALar
+
+        Arguments:
+        """
+
     FETCh = FETCh()
     """
     FETCh
@@ -514,48 +594,48 @@ class NRPxxSN_gen(Instrument):
             """
             FORMat:BORDer
 
-            Arguments: 1
+            Arguments: NORMal, SWAPped
             """
             _cmd = "BORDer"
-            args = ["1"]
+            args = ["NORMal", "SWAPped"]
 
         BORDer = BORDer()
         """
         FORMat:BORDer
 
-        Arguments: 1
+        Arguments: NORMal, SWAPped
         """
 
         class DATA(SCPINode, SCPIQuery, SCPISet):
             """
             FORMat:DATA
 
-            Arguments: 1
+            Arguments: ASCii, REAL
             """
             _cmd = "DATA"
-            args = ["1"]
+            args = ["ASCii", "REAL"]
 
         DATA = DATA()
         """
         FORMat:DATA
 
-        Arguments: 1
+        Arguments: ASCii, REAL
         """
 
         class SREGister(SCPINode, SCPIQuery, SCPISet):
             """
             FORMat:SREGister
 
-            Arguments: 1
+            Arguments: ASCii, BINary, HEXadecimal, OCTal
             """
             _cmd = "SREGister"
-            args = ["1"]
+            args = ["ASCii", "BINary", "HEXadecimal", "OCTal"]
 
         SREGister = SREGister()
         """
         FORMat:SREGister
 
-        Arguments: 1
+        Arguments: ASCii, BINary, HEXadecimal, OCTal
         """
 
     FORMat = FORMat()
@@ -574,41 +654,233 @@ class NRPxxSN_gen(Instrument):
         _cmd = "INITiate"
         args = []
 
-        class CONTinuous(SCPINode, SCPIQuery, SCPISet):
+        class ALL(SCPINode, SCPISet):
+            """
+            INITiate:ALL
+
+            Arguments:
+            """
+            _cmd = "ALL"
+            args = []
+
+        ALL = ALL()
+        """
+        INITiate:ALL
+
+        Arguments:
+        """
+
+        class CONTinuous(SCPINode, SCPIBool):
             """
             INITiate:CONTinuous
 
-            Arguments: 1
+            Arguments: 1, ON, OFF
             """
             _cmd = "CONTinuous"
-            args = ["1"]
+            args = ["1", "ON", "OFF"]
 
         CONTinuous = CONTinuous()
         """
         INITiate:CONTinuous
 
-        Arguments: 1
+        Arguments: 1, ON, OFF
         """
 
-        class IMMediate(SCPINode, SCPIQuery, SCPISet):
+        class IMMediate(SCPINode, SCPISet):
             """
             INITiate:IMMediate
 
-            Arguments: 1
+            Arguments:
             """
             _cmd = "IMMediate"
-            args = ["1"]
+            args = []
 
         IMMediate = IMMediate()
         """
         INITiate:IMMediate
 
-        Arguments: 1
+        Arguments:
         """
 
     INITiate = INITiate()
     """
     INITiate
+
+    Arguments:
+    """
+
+    class READ(SCPINodeN):
+        """
+        READ
+
+        Arguments:
+        """
+        _cmd = "READ"
+        args = []
+
+        class ARRay(SCPINode):
+            """
+            READ:ARRay
+
+            Arguments:
+            """
+            _cmd = "ARRay"
+            args = []
+
+            class POWer(SCPINode):
+                """
+                READ:ARRay:POWer
+
+                Arguments:
+                """
+                _cmd = "POWer"
+                args = []
+
+                class AVG(SCPINode, SCPIQuery):
+                    """
+                    READ:ARRay:POWer:AVG
+
+                    Arguments:
+                    """
+                    _cmd = "AVG"
+                    args = []
+
+                AVG = AVG()
+                """
+                READ:ARRay:POWer:AVG
+
+                Arguments:
+                """
+
+            POWer = POWer()
+            """
+            READ:ARRay:POWer
+
+            Arguments:
+            """
+
+        ARRay = ARRay()
+        """
+        READ:ARRay
+
+        Arguments:
+        """
+
+        class SCALar(SCPINode):
+            """
+            READ:SCALar
+
+            Arguments:
+            """
+            _cmd = "SCALar"
+            args = []
+
+            class POWer(SCPINode):
+                """
+                READ:SCALar:POWer
+
+                Arguments:
+                """
+                _cmd = "POWer"
+                args = []
+
+                class AVG(SCPINode, SCPIQuery):
+                    """
+                    READ:SCALar:POWer:AVG
+
+                    Arguments:
+                    """
+                    _cmd = "AVG"
+                    args = []
+
+                AVG = AVG()
+                """
+                READ:SCALar:POWer:AVG
+
+                Arguments:
+                """
+
+                class BURSt(SCPINode, SCPIQuery):
+                    """
+                    READ:SCALar:POWer:BURSt
+
+                    Arguments:
+                    """
+                    _cmd = "BURSt"
+                    args = []
+
+                BURSt = BURSt()
+                """
+                READ:SCALar:POWer:BURSt
+
+                Arguments:
+                """
+
+                class TSLot(SCPINode, SCPIQuery):
+                    """
+                    READ:SCALar:POWer:TSLot
+
+                    Arguments:
+                    """
+                    _cmd = "TSLot"
+                    args = []
+
+                TSLot = TSLot()
+                """
+                READ:SCALar:POWer:TSLot
+
+                Arguments:
+                """
+
+            POWer = POWer()
+            """
+            READ:SCALar:POWer
+
+            Arguments:
+            """
+
+        SCALar = SCALar()
+        """
+        READ:SCALar
+
+        Arguments:
+        """
+
+        class XTIMe(SCPINode):
+            """
+            READ:XTIMe
+
+            Arguments:
+            """
+            _cmd = "XTIMe"
+            args = []
+
+            class POWer(SCPINode, SCPIQuery):
+                """
+                READ:XTIMe:POWer
+
+                Arguments:
+                """
+                _cmd = "POWer"
+                args = []
+
+            POWer = POWer()
+            """
+            READ:XTIMe:POWer
+
+            Arguments:
+            """
+
+        XTIMe = XTIMe()
+        """
+        READ:XTIMe
+
+        Arguments:
+        """
+
+    READ = READ()
+    """
+    READ
 
     Arguments:
     """
@@ -626,16 +898,16 @@ class NRPxxSN_gen(Instrument):
             """
             SENSe:AUXiliary
 
-            Arguments: 1
+            Arguments: MINMax, NONE, RNDMax
             """
             _cmd = "AUXiliary"
-            args = ["1"]
+            args = ["MINMax", "NONE", "RNDMax"]
 
         AUXiliary = AUXiliary()
         """
         SENSe:AUXiliary
 
-        Arguments: 1
+        Arguments: MINMax, NONE, RNDMax
         """
 
         class AVERage(SCPINode):
@@ -660,10 +932,10 @@ class NRPxxSN_gen(Instrument):
                     """
                     SENSe:AVERage:COUNt:AUTO
 
-                    Arguments: 1
+                    Arguments: <boolean>, ONCE
                     """
                     _cmd = "AUTO"
-                    args = ["1"]
+                    args = ["<boolean>", "ONCE"]
 
                     class MTIMe(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -733,23 +1005,23 @@ class NRPxxSN_gen(Instrument):
                         """
                         SENSe:AVERage:COUNt:AUTO:TYPE
 
-                        Arguments: 1
+                        Arguments: NSRatio, RESolution
                         """
                         _cmd = "TYPE"
-                        args = ["1"]
+                        args = ["NSRatio", "RESolution"]
 
                     TYPE = TYPE()
                     """
                     SENSe:AVERage:COUNt:AUTO:TYPE
 
-                    Arguments: 1
+                    Arguments: NSRatio, RESolution
                     """
 
                 AUTO = AUTO()
                 """
                 SENSe:AVERage:COUNt:AUTO
 
-                Arguments: 1
+                Arguments: <boolean>, ONCE
                 """
 
             COUNt = COUNt()
@@ -759,52 +1031,52 @@ class NRPxxSN_gen(Instrument):
             Arguments: 1
             """
 
-            class RESet(SCPINode, SCPIQuery, SCPISet):
+            class RESet(SCPINode, SCPISet):
                 """
                 SENSe:AVERage:RESet
 
-                Arguments: 1
+                Arguments:
                 """
                 _cmd = "RESet"
-                args = ["1"]
+                args = []
 
             RESet = RESet()
             """
             SENSe:AVERage:RESet
 
-            Arguments: 1
+            Arguments:
             """
 
-            class STATe(SCPINode, SCPIQuery, SCPISet):
+            class STATe(SCPINode, SCPIBool):
                 """
                 SENSe:AVERage:STATe
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
                 _cmd = "STATe"
-                args = ["1"]
+                args = ["1", "ON", "OFF"]
 
             STATe = STATe()
             """
             SENSe:AVERage:STATe
 
-            Arguments: 1
+            Arguments: 1, ON, OFF
             """
 
             class TCONtrol(SCPINode, SCPIQuery, SCPISet):
                 """
                 SENSe:AVERage:TCONtrol
 
-                Arguments: 1
+                Arguments: MOVing, REPeat
                 """
                 _cmd = "TCONtrol"
-                args = ["1"]
+                args = ["MOVing", "REPeat"]
 
             TCONtrol = TCONtrol()
             """
             SENSe:AVERage:TCONtrol
 
-            Arguments: 1
+            Arguments: MOVing, REPeat
             """
 
         AVERage = AVERage()
@@ -832,20 +1104,20 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "DCYCle"
                 args = ["1"]
 
-                class STATe(SCPINode, SCPIQuery, SCPISet):
+                class STATe(SCPINode, SCPIBool):
                     """
                     SENSe:CORRection:DCYCle:STATe
 
-                    Arguments: 1
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "STATe"
-                    args = ["1"]
+                    args = ["1", "ON", "OFF"]
 
                 STATe = STATe()
                 """
                 SENSe:CORRection:DCYCle:STATe
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
 
             DCYCle = DCYCle()
@@ -864,20 +1136,20 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "OFFSet"
                 args = ["1"]
 
-                class STATe(SCPINode, SCPIQuery, SCPISet):
+                class STATe(SCPINode, SCPIBool):
                     """
                     SENSe:CORRection:OFFSet:STATe
 
-                    Arguments: 1
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "STATe"
-                    args = ["1"]
+                    args = ["1", "ON", "OFF"]
 
                 STATe = STATe()
                 """
                 SENSe:CORRection:OFFSet:STATe
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
 
             OFFSet = OFFSet()
@@ -928,20 +1200,20 @@ class NRPxxSN_gen(Instrument):
                 Arguments: 1
                 """
 
-                class STATe(SCPINode, SCPIQuery, SCPISet):
+                class STATe(SCPINode, SCPIBool):
                     """
                     SENSe:CORRection:SPDevice:STATe
 
-                    Arguments: 1
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "STATe"
-                    args = ["1"]
+                    args = ["1", "ON", "OFF"]
 
                 STATe = STATe()
                 """
                 SENSe:CORRection:SPDevice:STATe
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
 
             SPDevice = SPDevice()
@@ -978,16 +1250,16 @@ class NRPxxSN_gen(Instrument):
             """
             SENSe:FUNCtion
 
-            Arguments: 1
+            Arguments: 'string'
             """
             _cmd = "FUNCtion"
-            args = ["1"]
+            args = ["'string'"]
 
         FUNCtion = FUNCtion()
         """
         SENSe:FUNCtion
 
-        Arguments: 1
+        Arguments: 'string'
         """
 
         class POWer(SCPINode):
@@ -1033,20 +1305,20 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "BUFFer"
                     args = []
 
-                    class CLEar(SCPINode, SCPIQuery, SCPISet):
+                    class CLEar(SCPINode, SCPISet):
                         """
                         SENSe:POWer:AVG:BUFFer:CLEar
 
-                        Arguments: 1
+                        Arguments:
                         """
                         _cmd = "CLEar"
-                        args = ["1"]
+                        args = []
 
                     CLEar = CLEar()
                     """
                     SENSe:POWer:AVG:BUFFer:CLEar
 
-                    Arguments: 1
+                    Arguments:
                     """
 
                     class COUNt(SCPINode, SCPIQuery):
@@ -1081,6 +1353,22 @@ class NRPxxSN_gen(Instrument):
                     Arguments:
                     """
 
+                    class INFO(SCPINode, SCPIQuery):
+                        """
+                        SENSe:POWer:AVG:BUFFer:INFO
+
+                        Arguments: 'string'
+                        """
+                        _cmd = "INFO"
+                        args = ["'string'"]
+
+                    INFO = INFO()
+                    """
+                    SENSe:POWer:AVG:BUFFer:INFO
+
+                    Arguments: 'string'
+                    """
+
                     class SIZE(SCPINode, SCPIQuery, SCPISet):
                         """
                         SENSe:POWer:AVG:BUFFer:SIZE
@@ -1097,20 +1385,20 @@ class NRPxxSN_gen(Instrument):
                     Arguments: 1
                     """
 
-                    class STATe(SCPINode, SCPIQuery, SCPISet):
+                    class STATe(SCPINode, SCPIBool):
                         """
                         SENSe:POWer:AVG:BUFFer:STATe
 
-                        Arguments: 1
+                        Arguments: 1, ON, OFF
                         """
                         _cmd = "STATe"
-                        args = ["1"]
+                        args = ["1", "ON", "OFF"]
 
                     STATe = STATe()
                     """
                     SENSe:POWer:AVG:BUFFer:STATe
 
-                    Arguments: 1
+                    Arguments: 1, ON, OFF
                     """
 
                 BUFFer = BUFFer()
@@ -1120,20 +1408,20 @@ class NRPxxSN_gen(Instrument):
                 Arguments:
                 """
 
-                class FAST(SCPINode, SCPIQuery, SCPISet):
+                class FAST(SCPINode, SCPIBool):
                     """
                     SENSe:POWer:AVG:FAST
 
-                    Arguments: 1
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "FAST"
-                    args = ["1"]
+                    args = ["1", "ON", "OFF"]
 
                 FAST = FAST()
                 """
                 SENSe:POWer:AVG:FAST
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
 
                 class SMOothing(SCPINode):
@@ -1145,20 +1433,20 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "SMOothing"
                     args = []
 
-                    class STATe(SCPINode, SCPIQuery, SCPISet):
+                    class STATe(SCPINode, SCPIBool):
                         """
                         SENSe:POWer:AVG:SMOothing:STATe
 
-                        Arguments: 1
+                        Arguments: 1, ON, OFF
                         """
                         _cmd = "STATe"
-                        args = ["1"]
+                        args = ["1", "ON", "OFF"]
 
                     STATe = STATe()
                     """
                     SENSe:POWer:AVG:SMOothing:STATe
 
-                    Arguments: 1
+                    Arguments: 1, ON, OFF
                     """
 
                 SMOothing = SMOothing()
@@ -1183,38 +1471,6 @@ class NRPxxSN_gen(Instrument):
                 """
                 _cmd = "BURSt"
                 args = []
-
-                class CHOPper(SCPINode):
-                    """
-                    SENSe:POWer:BURSt:CHOPper
-
-                    Arguments:
-                    """
-                    _cmd = "CHOPper"
-                    args = []
-
-                    class STATe(SCPINode, SCPIQuery, SCPISet):
-                        """
-                        SENSe:POWer:BURSt:CHOPper:STATe
-
-                        Arguments: 1
-                        """
-                        _cmd = "STATe"
-                        args = ["1"]
-
-                    STATe = STATe()
-                    """
-                    SENSe:POWer:BURSt:CHOPper:STATe
-
-                    Arguments: 1
-                    """
-
-                CHOPper = CHOPper()
-                """
-                SENSe:POWer:BURSt:CHOPper
-
-                Arguments:
-                """
 
                 class DTOLerance(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -1339,20 +1595,20 @@ class NRPxxSN_gen(Instrument):
                             Arguments:
                             """
 
-                            class STATe(SCPINode, SCPIQuery, SCPISet):
+                            class STATe(SCPINode, SCPIBool):
                                 """
                                 SENSe:POWer:TSLot:AVG:EXCLude:MID:STATe
 
-                                Arguments: 1
+                                Arguments: 1, ON, OFF
                                 """
                                 _cmd = "STATe"
-                                args = ["1"]
+                                args = ["1", "ON", "OFF"]
 
                             STATe = STATe()
                             """
                             SENSe:POWer:TSLot:AVG:EXCLude:MID:STATe
 
-                            Arguments: 1
+                            Arguments: 1, ON, OFF
                             """
 
                             class TIME(SCPINode, SCPIQuery, SCPISet):
@@ -1426,25 +1682,25 @@ class NRPxxSN_gen(Instrument):
             """
             SENSe:RANGe
 
-            Arguments: 1
+            Arguments: 0, 1, 2
             """
             _cmd = "RANGe"
-            args = ["1"]
+            args = ["0", "1", "2"]
 
-            class AUTO(SCPINode, SCPIQuery, SCPISet):
+            class AUTO(SCPINode, SCPIBool):
                 """
                 SENSe:RANGe:AUTO
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
                 _cmd = "AUTO"
-                args = ["1"]
+                args = ["1", "ON", "OFF"]
 
             AUTO = AUTO()
             """
             SENSe:RANGe:AUTO
 
-            Arguments: 1
+            Arguments: 1, ON, OFF
             """
 
             class CLEVel(SCPINode, SCPIQuery, SCPISet):
@@ -1467,7 +1723,23 @@ class NRPxxSN_gen(Instrument):
         """
         SENSe:RANGe
 
-        Arguments: 1
+        Arguments: 0, 1, 2
+        """
+
+        class SAMPling(SCPINode, SCPIQuery, SCPISet):
+            """
+            SENSe:SAMPling
+
+            Arguments: FREQ1
+            """
+            _cmd = "SAMPling"
+            args = ["FREQ1"]
+
+        SAMPling = SAMPling()
+        """
+        SENSe:SAMPling
+
+        Arguments: FREQ1
         """
 
         class SGAMma(SCPINode):
@@ -1488,20 +1760,20 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "CORRection"
                 args = []
 
-                class STATe(SCPINode, SCPIQuery, SCPISet):
+                class STATe(SCPINode, SCPIBool):
                     """
                     SENSe:SGAMma:CORRection:STATe
 
-                    Arguments: 1
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "STATe"
-                    args = ["1"]
+                    args = ["1", "ON", "OFF"]
 
                 STATe = STATe()
                 """
                 SENSe:SGAMma:CORRection:STATe
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
 
             CORRection = CORRection()
@@ -1648,36 +1920,36 @@ class NRPxxSN_gen(Instrument):
                 Arguments: 1
                 """
 
-                class STATe(SCPINode, SCPIQuery, SCPISet):
+                class STATe(SCPINode, SCPIBool):
                     """
                     SENSe:TRACe:AVERage:STATe
 
-                    Arguments: 1
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "STATe"
-                    args = ["1"]
+                    args = ["1", "ON", "OFF"]
 
                 STATe = STATe()
                 """
                 SENSe:TRACe:AVERage:STATe
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
 
                 class TCONtrol(SCPINode, SCPIQuery, SCPISet):
                     """
                     SENSe:TRACe:AVERage:TCONtrol
 
-                    Arguments: 1
+                    Arguments: MOVing, REPeat
                     """
                     _cmd = "TCONtrol"
-                    args = ["1"]
+                    args = ["MOVing", "REPeat"]
 
                 TCONtrol = TCONtrol()
                 """
                 SENSe:TRACe:AVERage:TCONtrol
 
-                Arguments: 1
+                Arguments: MOVing, REPeat
                 """
 
             AVERage = AVERage()
@@ -1767,20 +2039,20 @@ class NRPxxSN_gen(Instrument):
             Arguments: 1
             """
 
-            class REALtime(SCPINode, SCPIQuery, SCPISet):
+            class REALtime(SCPINode, SCPIBool):
                 """
                 SENSe:TRACe:REALtime
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
                 _cmd = "REALtime"
-                args = ["1"]
+                args = ["1", "ON", "OFF"]
 
             REALtime = REALtime()
             """
             SENSe:TRACe:REALtime
 
-            Arguments: 1
+            Arguments: 1, ON, OFF
             """
 
             class TIME(SCPINode, SCPIQuery, SCPISet):
@@ -2686,20 +2958,20 @@ class NRPxxSN_gen(Instrument):
         Arguments:
         """
 
-        class PRESet(SCPINode, SCPIQuery, SCPISet):
+        class PRESet(SCPINode, SCPISet):
             """
             STATus:PRESet
 
-            Arguments: 1
+            Arguments:
             """
             _cmd = "PRESet"
-            args = ["1"]
+            args = []
 
         PRESet = PRESet()
         """
         STATus:PRESet
 
-        Arguments: 1
+        Arguments:
         """
 
         class QUEStionable(SCPINode):
@@ -3015,6 +3287,118 @@ class NRPxxSN_gen(Instrument):
             Arguments: 1
             """
 
+            class WINDow(SCPINode):
+                """
+                STATus:QUEStionable:WINDow
+
+                Arguments:
+                """
+                _cmd = "WINDow"
+                args = []
+
+                class CONDition(SCPINode, SCPIQuery):
+                    """
+                    STATus:QUEStionable:WINDow:CONDition
+
+                    Arguments:
+                    """
+                    _cmd = "CONDition"
+                    args = []
+
+                CONDition = CONDition()
+                """
+                STATus:QUEStionable:WINDow:CONDition
+
+                Arguments:
+                """
+
+                class ENABle(SCPINode, SCPIQuery, SCPISet):
+                    """
+                    STATus:QUEStionable:WINDow:ENABle
+
+                    Arguments: 1
+                    """
+                    _cmd = "ENABle"
+                    args = ["1"]
+
+                ENABle = ENABle()
+                """
+                STATus:QUEStionable:WINDow:ENABle
+
+                Arguments: 1
+                """
+
+                class NTRansition(SCPINode, SCPIQuery, SCPISet):
+                    """
+                    STATus:QUEStionable:WINDow:NTRansition
+
+                    Arguments: 1
+                    """
+                    _cmd = "NTRansition"
+                    args = ["1"]
+
+                NTRansition = NTRansition()
+                """
+                STATus:QUEStionable:WINDow:NTRansition
+
+                Arguments: 1
+                """
+
+                class PTRansition(SCPINode, SCPIQuery, SCPISet):
+                    """
+                    STATus:QUEStionable:WINDow:PTRansition
+
+                    Arguments: 1
+                    """
+                    _cmd = "PTRansition"
+                    args = ["1"]
+
+                PTRansition = PTRansition()
+                """
+                STATus:QUEStionable:WINDow:PTRansition
+
+                Arguments: 1
+                """
+
+                class SUMMary(SCPINode):
+                    """
+                    STATus:QUEStionable:WINDow:SUMMary
+
+                    Arguments:
+                    """
+                    _cmd = "SUMMary"
+                    args = []
+
+                    class EVENt(SCPINode, SCPIQuery):
+                        """
+                        STATus:QUEStionable:WINDow:SUMMary:EVENt
+
+                        Arguments:
+                        """
+                        _cmd = "EVENt"
+                        args = []
+
+                    EVENt = EVENt()
+                    """
+                    STATus:QUEStionable:WINDow:SUMMary:EVENt
+
+                    Arguments:
+                    """
+
+                SUMMary = SUMMary()
+                """
+                STATus:QUEStionable:WINDow:SUMMary
+
+                Arguments:
+                """
+
+            WINDow = WINDow()
+            """
+            STATus:QUEStionable:WINDow
+
+            Arguments:
+            """
+
         QUEStionable = QUEStionable()
         """
         STATus:QUEStionable
@@ -3070,6 +3454,38 @@ class NRPxxSN_gen(Instrument):
         _cmd = "SYSTem"
         args = []
 
+        class CLOCk(SCPINode):
+            """
+            SYSTem:CLOCk
+
+            Arguments:
+            """
+            _cmd = "CLOCk"
+            args = []
+
+            class SOURce(SCPINode, SCPIQuery, SCPISet):
+                """
+                SYSTem:CLOCk:SOURce
+
+                Arguments: EXTernal, INTernal
+                """
+                _cmd = "SOURce"
+                args = ["EXTernal", "INTernal"]
+
+            SOURce = SOURce()
+            """
+            SYSTem:CLOCk:SOURce
+
+            Arguments: EXTernal, INTernal
+            """
+
+        CLOCk = CLOCk()
+        """
+        SYSTem:CLOCk
+
+        Arguments:
+        """
+
         class COMMunicate(SCPINode):
             """
             SYSTem:COMMunicate
@@ -3101,32 +3517,32 @@ class NRPxxSN_gen(Instrument):
                         """
                         SYSTem:COMMunicate:NETWork:COMMon:DOMain
 
-                        Arguments: 1
+                        Arguments: 'string'
                         """
                         _cmd = "DOMain"
-                        args = ["1"]
+                        args = ["'string'"]
 
                     DOMain = DOMain()
                     """
                     SYSTem:COMMunicate:NETWork:COMMon:DOMain
 
-                    Arguments: 1
+                    Arguments: 'string'
                     """
 
                     class HOSTname(SCPINode, SCPIQuery, SCPISet):
                         """
                         SYSTem:COMMunicate:NETWork:COMMon:HOSTname
 
-                        Arguments: 1
+                        Arguments: 'string'
                         """
                         _cmd = "HOSTname"
-                        args = ["1"]
+                        args = ["'string'"]
 
                     HOSTname = HOSTname()
                     """
                     SYSTem:COMMunicate:NETWork:COMMon:HOSTname
 
-                    Arguments: 1
+                    Arguments: 'string'
                     """
 
                 COMMon = COMMon()
@@ -3140,25 +3556,25 @@ class NRPxxSN_gen(Instrument):
                     """
                     SYSTem:COMMunicate:NETWork:IPADdress
 
-                    Arguments: 1
+                    Arguments: 'string'
                     """
                     _cmd = "IPADdress"
-                    args = ["1"]
+                    args = ["'string'"]
 
                     class GATeway(SCPINode, SCPIQuery, SCPISet):
                         """
                         SYSTem:COMMunicate:NETWork:IPADdress:GATeway
 
-                        Arguments: 1
+                        Arguments: 'string'
                         """
                         _cmd = "GATeway"
-                        args = ["1"]
+                        args = ["'string'"]
 
                     GATeway = GATeway()
                     """
                     SYSTem:COMMunicate:NETWork:IPADdress:GATeway
 
-                    Arguments: 1
+                    Arguments: 'string'
                     """
 
                     class INFO(SCPINode, SCPIQuery):
@@ -3181,16 +3597,16 @@ class NRPxxSN_gen(Instrument):
                         """
                         SYSTem:COMMunicate:NETWork:IPADdress:MODE
 
-                        Arguments: 1
+                        Arguments: AUTO, STATic
                         """
                         _cmd = "MODE"
-                        args = ["1"]
+                        args = ["AUTO", "STATic"]
 
                     MODE = MODE()
                     """
                     SYSTem:COMMunicate:NETWork:IPADdress:MODE
 
-                    Arguments: 1
+                    Arguments: AUTO, STATic
                     """
 
                     class SUBNet(SCPINode):
@@ -3206,16 +3622,16 @@ class NRPxxSN_gen(Instrument):
                             """
                             SYSTem:COMMunicate:NETWork:IPADdress:SUBNet:MASK
 
-                            Arguments: 1
+                            Arguments: 'string'
                             """
                             _cmd = "MASK"
-                            args = ["1"]
+                            args = ["'string'"]
 
                         MASK = MASK()
                         """
                         SYSTem:COMMunicate:NETWork:IPADdress:SUBNet:MASK
 
-                        Arguments: 1
+                        Arguments: 'string'
                         """
 
                     SUBNet = SUBNet()
@@ -3229,39 +3645,39 @@ class NRPxxSN_gen(Instrument):
                 """
                 SYSTem:COMMunicate:NETWork:IPADdress
 
-                Arguments: 1
+                Arguments: 'string'
                 """
 
-                class RESTart(SCPINode, SCPIQuery, SCPISet):
+                class RESTart(SCPINode, SCPISet):
                     """
                     SYSTem:COMMunicate:NETWork:RESTart
 
-                    Arguments: 1
+                    Arguments:
                     """
                     _cmd = "RESTart"
-                    args = ["1"]
+                    args = []
 
                 RESTart = RESTart()
                 """
                 SYSTem:COMMunicate:NETWork:RESTart
 
-                Arguments: 1
+                Arguments:
                 """
 
-                class RESet(SCPINode, SCPIQuery, SCPISet):
+                class RESet(SCPINode, SCPISet):
                     """
                     SYSTem:COMMunicate:NETWork:RESet
 
-                    Arguments: 1
+                    Arguments:
                     """
                     _cmd = "RESet"
-                    args = ["1"]
+                    args = []
 
                 RESet = RESet()
                 """
                 SYSTem:COMMunicate:NETWork:RESet
 
-                Arguments: 1
+                Arguments:
                 """
 
                 class STATus(SCPINode, SCPIQuery):
@@ -3426,26 +3842,26 @@ class NRPxxSN_gen(Instrument):
             """
             SYSTem:FEATures
 
-            Arguments:
+            Arguments: 1
             """
             _cmd = "FEATures"
-            args = []
+            args = ["1"]
 
         FEATures = FEATures()
         """
         SYSTem:FEATures
 
-        Arguments:
+        Arguments: 1
         """
 
-        class FWUPdate(SCPINode, SCPIQuery, SCPISet):
+        class FWUPdate(SCPINode, SCPISet):
             """
             SYSTem:FWUPdate
 
-            Arguments: 1
+            Arguments: <block_data>
             """
             _cmd = "FWUPdate"
-            args = ["1"]
+            args = ["<block_data>"]
 
             class STATus(SCPINode, SCPIQuery):
                 """
@@ -3467,7 +3883,7 @@ class NRPxxSN_gen(Instrument):
         """
         SYSTem:FWUPdate
 
-        Arguments: 1
+        Arguments: <block_data>
         """
 
         class HELP(SCPINode):
@@ -3499,10 +3915,10 @@ class NRPxxSN_gen(Instrument):
                 """
                 SYSTem:HELP:SYNTax
 
-                Arguments:
+                Arguments: 'string'
                 """
                 _cmd = "SYNTax"
-                args = []
+                args = ["'string'"]
 
                 class ALL(SCPINode, SCPIQuery):
                     """
@@ -3524,7 +3940,7 @@ class NRPxxSN_gen(Instrument):
             """
             SYSTem:HELP:SYNTax
 
-            Arguments:
+            Arguments: 'string'
             """
 
         HELP = HELP()
@@ -3538,48 +3954,48 @@ class NRPxxSN_gen(Instrument):
             """
             SYSTem:INFO
 
-            Arguments:
+            Arguments: 'string'
             """
             _cmd = "INFO"
-            args = []
+            args = ["'string'"]
 
         INFO = INFO()
         """
         SYSTem:INFO
 
-        Arguments:
+        Arguments: 'string'
         """
 
-        class INITialize(SCPINode, SCPIQuery, SCPISet):
+        class INITialize(SCPINode, SCPISet):
             """
             SYSTem:INITialize
 
-            Arguments: 1
+            Arguments:
             """
             _cmd = "INITialize"
-            args = ["1"]
+            args = []
 
         INITialize = INITialize()
         """
         SYSTem:INITialize
 
-        Arguments: 1
+        Arguments:
         """
 
         class LANGuage(SCPINode, SCPIQuery, SCPISet):
             """
             SYSTem:LANGuage
 
-            Arguments: 1
+            Arguments: SCPI
             """
             _cmd = "LANGuage"
-            args = ["1"]
+            args = ["SCPI"]
 
         LANGuage = LANGuage()
         """
         SYSTem:LANGuage
 
-        Arguments: 1
+        Arguments: SCPI
         """
 
         class LED(SCPINode):
@@ -3611,16 +4027,16 @@ class NRPxxSN_gen(Instrument):
                 """
                 SYSTem:LED:MODE
 
-                Arguments: 1
+                Arguments: SENSor, USER
                 """
                 _cmd = "MODE"
-                args = ["1"]
+                args = ["SENSor", "USER"]
 
             MODE = MODE()
             """
             SYSTem:LED:MODE
 
-            Arguments: 1
+            Arguments: SENSor, USER
             """
 
         LED = LED()
@@ -3634,16 +4050,16 @@ class NRPxxSN_gen(Instrument):
             """
             SYSTem:LIMits
 
-            Arguments:
+            Arguments: 1
             """
             _cmd = "LIMits"
-            args = []
+            args = ["1"]
 
         LIMits = LIMits()
         """
         SYSTem:LIMits
 
-        Arguments:
+        Arguments: 1
         """
 
         class MINPower(SCPINode, SCPIQuery):
@@ -3666,30 +4082,46 @@ class NRPxxSN_gen(Instrument):
             """
             SYSTem:PRESet
 
-            Arguments: 1
+            Arguments:
             """
             _cmd = "PRESet"
-            args = ["1"]
+            args = []
 
         PRESet = PRESet()
         """
         SYSTem:PRESet
 
-        Arguments: 1
+        Arguments:
         """
 
-        class REBoot(SCPINode, SCPIQuery, SCPISet):
+        class REBoot(SCPINode, SCPISet):
             """
             SYSTem:REBoot
 
-            Arguments: 1
+            Arguments:
             """
             _cmd = "REBoot"
-            args = ["1"]
+            args = []
 
         REBoot = REBoot()
         """
         SYSTem:REBoot
+
+        Arguments:
+        """
+
+        class RUTime(SCPINode, SCPIQuery, SCPISet):
+            """
+            SYSTem:RUTime
+
+            Arguments: 1
+            """
+            _cmd = "RUTime"
+            args = ["1"]
+
+        RUTime = RUTime()
+        """
+        SYSTem:RUTime
 
         Arguments: 1
         """
@@ -3707,16 +4139,16 @@ class NRPxxSN_gen(Instrument):
                 """
                 SYSTem:SENSor:NAME
 
-                Arguments: 1
+                Arguments: 'string'
                 """
                 _cmd = "NAME"
-                args = ["1"]
+                args = ["'string'"]
 
             NAME = NAME()
             """
             SYSTem:SENSor:NAME
 
-            Arguments: 1
+            Arguments: 'string'
             """
 
         SENSor = SENSor()
@@ -3790,6 +4222,22 @@ class NRPxxSN_gen(Instrument):
         Arguments:
         """
 
+        class SUTime(SCPINode, SCPIQuery, SCPISet):
+            """
+            SYSTem:SUTime
+
+            Arguments: 1
+            """
+            _cmd = "SUTime"
+            args = ["1"]
+
+        SUTime = SUTime()
+        """
+        SYSTem:SUTime
+
+        Arguments: 1
+        """
+
         class TLEVels(SCPINode, SCPIQuery):
             """
             SYSTem:TLEVels
@@ -3815,36 +4263,36 @@ class NRPxxSN_gen(Instrument):
             _cmd = "TRANsaction"
             args = []
 
-            class BEGin(SCPINode, SCPIQuery, SCPISet):
+            class BEGin(SCPINode, SCPISet):
                 """
                 SYSTem:TRANsaction:BEGin
 
-                Arguments: 1
+                Arguments:
                 """
                 _cmd = "BEGin"
-                args = ["1"]
+                args = []
 
             BEGin = BEGin()
             """
             SYSTem:TRANsaction:BEGin
 
-            Arguments: 1
+            Arguments:
             """
 
-            class END(SCPINode, SCPIQuery, SCPISet):
+            class END(SCPINode, SCPISet):
                 """
                 SYSTem:TRANsaction:END
 
-                Arguments: 1
+                Arguments:
                 """
                 _cmd = "END"
-                args = ["1"]
+                args = []
 
             END = END()
             """
             SYSTem:TRANsaction:END
 
-            Arguments: 1
+            Arguments:
             """
 
         TRANsaction = TRANsaction()
@@ -3890,16 +4338,16 @@ class NRPxxSN_gen(Instrument):
             """
             TEST:SENSor
 
-            Arguments:
+            Arguments: 'string'
             """
             _cmd = "SENSor"
-            args = []
+            args = ["'string'"]
 
         SENSor = SENSor()
         """
         TEST:SENSor
 
-        Arguments:
+        Arguments: 'string'
         """
 
     TEST = TEST()
@@ -3959,20 +4407,20 @@ class NRPxxSN_gen(Instrument):
             Arguments:
             """
 
-            class STATe(SCPINode, SCPIQuery, SCPISet):
+            class STATe(SCPINode, SCPIBool):
                 """
                 TRIGger:ATRigger:STATe
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
                 _cmd = "STATe"
-                args = ["1"]
+                args = ["1", "ON", "OFF"]
 
             STATe = STATe()
             """
             TRIGger:ATRigger:STATe
 
-            Arguments: 1
+            Arguments: 1, ON, OFF
             """
 
         ATRigger = ATRigger()
@@ -4007,20 +4455,20 @@ class NRPxxSN_gen(Instrument):
             _cmd = "DELay"
             args = ["1"]
 
-            class AUTO(SCPINode, SCPIQuery, SCPISet):
+            class AUTO(SCPINode, SCPIBool):
                 """
                 TRIGger:DELay:AUTO
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
                 _cmd = "AUTO"
-                args = ["1"]
+                args = ["1", "ON", "OFF"]
 
             AUTO = AUTO()
             """
             TRIGger:DELay:AUTO
 
-            Arguments: 1
+            Arguments: 1, ON, OFF
             """
 
         DELay = DELay()
@@ -4059,16 +4507,16 @@ class NRPxxSN_gen(Instrument):
                 """
                 TRIGger:EXTernal:IMPedance
 
-                Arguments: 1
+                Arguments: HIGH, LOW
                 """
                 _cmd = "IMPedance"
-                args = ["1"]
+                args = ["HIGH", "LOW"]
 
             IMPedance = IMPedance()
             """
             TRIGger:EXTernal:IMPedance
 
-            Arguments: 1
+            Arguments: HIGH, LOW
             """
 
         EXTernal = EXTernal()
@@ -4110,20 +4558,20 @@ class NRPxxSN_gen(Instrument):
         Arguments: 1
         """
 
-        class IMMediate(SCPINode, SCPIQuery, SCPISet):
+        class IMMediate(SCPINode, SCPISet):
             """
             TRIGger:IMMediate
 
-            Arguments: 1
+            Arguments:
             """
             _cmd = "IMMediate"
-            args = ["1"]
+            args = []
 
         IMMediate = IMMediate()
         """
         TRIGger:IMMediate
 
-        Arguments: 1
+        Arguments:
         """
 
         class LEVel(SCPINode, SCPIQuery, SCPISet):
@@ -4155,32 +4603,32 @@ class NRPxxSN_gen(Instrument):
                 """
                 TRIGger:MASTer:PORT
 
-                Arguments: 1
+                Arguments: EXT1, EXT2, EXTernal1, EXTernal2
                 """
                 _cmd = "PORT"
-                args = ["1"]
+                args = ["EXT1", "EXT2", "EXTernal1", "EXTernal2"]
 
             PORT = PORT()
             """
             TRIGger:MASTer:PORT
 
-            Arguments: 1
+            Arguments: EXT1, EXT2, EXTernal1, EXTernal2
             """
 
-            class STATe(SCPINode, SCPIQuery, SCPISet):
+            class STATe(SCPINode, SCPIBool):
                 """
                 TRIGger:MASTer:STATe
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
                 _cmd = "STATe"
-                args = ["1"]
+                args = ["1", "ON", "OFF"]
 
             STATe = STATe()
             """
             TRIGger:MASTer:STATe
 
-            Arguments: 1
+            Arguments: 1, ON, OFF
             """
 
         MASTer = MASTer()
@@ -4194,32 +4642,32 @@ class NRPxxSN_gen(Instrument):
             """
             TRIGger:SLOPe
 
-            Arguments: 1
+            Arguments: NEGative, POSitive
             """
             _cmd = "SLOPe"
-            args = ["1"]
+            args = ["NEGative", "POSitive"]
 
         SLOPe = SLOPe()
         """
         TRIGger:SLOPe
 
-        Arguments: 1
+        Arguments: NEGative, POSitive
         """
 
         class SOURce(SCPINode, SCPIQuery, SCPISet):
             """
             TRIGger:SOURce
 
-            Arguments: 1
+            Arguments: BUS, EXT1, EXT2, EXTernal, EXTernal1, EXTernal2, HOLD, IMMediate, INTernal
             """
             _cmd = "SOURce"
-            args = ["1"]
+            args = ["BUS", "EXT1", "EXT2", "EXTernal", "EXTernal1", "EXTernal2", "HOLD", "IMMediate", "INTernal"]
 
         SOURce = SOURce()
         """
         TRIGger:SOURce
 
-        Arguments: 1
+        Arguments: BUS, EXT1, EXT2, EXTernal, EXTernal1, EXTernal2, HOLD, IMMediate, INTernal
         """
 
         class SYNC(SCPINode):
@@ -4235,32 +4683,32 @@ class NRPxxSN_gen(Instrument):
                 """
                 TRIGger:SYNC:PORT
 
-                Arguments: 1
+                Arguments: EXT1, EXT2, EXTernal1, EXTernal2
                 """
                 _cmd = "PORT"
-                args = ["1"]
+                args = ["EXT1", "EXT2", "EXTernal1", "EXTernal2"]
 
             PORT = PORT()
             """
             TRIGger:SYNC:PORT
 
-            Arguments: 1
+            Arguments: EXT1, EXT2, EXTernal1, EXTernal2
             """
 
-            class STATe(SCPINode, SCPIQuery, SCPISet):
+            class STATe(SCPINode, SCPIBool):
                 """
                 TRIGger:SYNC:STATe
 
-                Arguments: 1
+                Arguments: 1, ON, OFF
                 """
                 _cmd = "STATe"
-                args = ["1"]
+                args = ["1", "ON", "OFF"]
 
             STATe = STATe()
             """
             TRIGger:SYNC:STATe
 
-            Arguments: 1
+            Arguments: 1, ON, OFF
             """
 
         SYNC = SYNC()
@@ -4290,16 +4738,16 @@ class NRPxxSN_gen(Instrument):
             """
             UNIT:POWer
 
-            Arguments: 1
+            Arguments: DBM, DBUV, W
             """
             _cmd = "POWer"
-            args = ["1"]
+            args = ["DBM", "DBUV", "W"]
 
         POWer = POWer()
         """
         UNIT:POWer
 
-        Arguments: 1
+        Arguments: DBM, DBUV, W
         """
 
     UNIT = UNIT()

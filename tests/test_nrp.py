@@ -45,7 +45,6 @@ def test_numpy(nrpxxsn, visa):
     assert numpy.array_equal(x, [1, 2, 3, 4, 5, 6])
 
 
-@pytest.mark.xfail(reason="init_cont is not a SCPIBool yet")
 def test_nrp_scpi_properties(nrpxxsn, visa):
     # type: (NRPxxSN, VISA) -> None
 
