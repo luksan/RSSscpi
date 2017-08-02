@@ -156,6 +156,9 @@ class Channel(object):
     def get_sweep(self):
         return Sweep(self)
 
+    def get_vna_port(self, port_no):
+        return ChannelVNAPort(self, port_no)
+
     def create_trace(self, name, parameter, diagram=None):
         """
         Create a new trace with a measurement parameter according to CALCulate<Ch>:PARameter:SDEFine
@@ -280,6 +283,49 @@ class Channel(object):
         cmd_fmt = "{:d}, {:q}, {:s}, {:s}, {:d*}"
         self.instrument.MMEMory.STORe.TRACe.PORTs().w(self.n, filename, fmt, mode_impedance, ports, fmt=cmd_fmt)
         return self.instrument.filesystem.file(filename)
+
+
+class ChannelVNAPort(ZNB_gen.SOURce.POWer):
+    def __init__(self, channel, port_no):
+        super(ChannelVNAPort, self).__init__(parent=channel.SOURce)
+        self.channel = channel
+        self.n = port_no
+
+    _POW = ZNB_gen.SOURce.POWer
+
+    cal_power_offset = SCPIProperty(_POW.CORRection.LEVel.OFFSet, float)
+    """This offset only changes the displayed port power, the source level is not affected"""
+
+    power_enabled = SCPIProperty(_POW.STATe, bool)
+    """Turn the source power on or off"""
+
+    power_gen = SCPIProperty(_POW.PERManent.STATe, bool)
+    """If power_gen is set to True the port power is on for all partial measurements."""
+
+    power_slope = SCPIProperty(_POW.LEVel.IMMediate.SLOPe, float)
+    """Set a slope for the port power in dB/GHz"""
+
+    def get_source_power_offset(self):
+        """
+        The method returs a 2-tuple. The first element is the power offset in dB, the second element is True
+        if the offset is relative to the channel base power. If false the first element is the port power in dBm.
+        """
+        (power, rel) = self.LEVel.IMMediate.OFFSet().q().split_comma()
+        return float(power), rel == "CPAD"
+
+    def set_source_power_offset(self, power, relative=True):
+        """
+        Set the port power effset. If relative is true `power` is an offset to the channel base power. If `relative`
+        is False then power is the port power in dBm.
+
+        :param power: Port power offset in dB, or port power in dBm.
+        :param bool relative: Determines whether `power` is relative to the channel base power, or an absolute power.
+        """
+        if relative:
+            x = 'CPAD'
+        else:
+            x = 'ONLY'
+        self.LEVel.IMMediate.OFFSet().w(power, x)
 
 
 class SweepSegment(ZNB_gen.SENSe.SEGMent):

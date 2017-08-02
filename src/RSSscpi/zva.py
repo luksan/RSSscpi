@@ -6,6 +6,7 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 from .gen import ZVA_gen
+from .SCPI_property import SCPIProperty
 from . import znb
 
 import logging
@@ -40,6 +41,9 @@ class Channel(znb.Channel):
         # type: ([str, unicode]) -> Trace
         return Trace(name=name, channel=self)
 
+    def get_vna_port(self, port_no):
+        return ChannelVNAPort(self, port_no)
+
 
 class Diagram(ZVA_gen.DISPlay.WINDow, znb.Diagram):
     pass
@@ -55,6 +59,26 @@ class Limit(ZVA_gen.CALCulate.LIMit, znb.Limit):
 
 class Marker(ZVA_gen.CALCulate.MARKer, znb.Marker):
     pass
+
+
+class ChannelVNAPort(ZVA_gen.SOURce.POWer, znb.ChannelVNAPort):
+    @property
+    def src_attenuator(self):
+        """
+        Sets/queries the source attenuator value. If the attenuator setting is in auto mode,
+        the current value of the attenuator will be returned.
+
+        SOURce:POWer:ATTenuation / SOURce:POWer:ATTenuation:AUTO:VALue?
+        """
+        return int(self.ATTenuation.AUTO.VALue().q())
+
+    @src_attenuator.setter
+    def src_attenuator(self, att):
+        # TODO: check that the att parameter is within the range of the instrument
+        self.ATTenuation().w(int(att))
+
+    src_attenuator_mode = SCPIProperty(ZVA_gen.SOURce.POWer.ATTenuation.MODE, str)
+    """AUTO | MANual | LNOise"""
 
 
 class Sweep(ZVA_gen.SENSe.SWEep, znb.Sweep):
