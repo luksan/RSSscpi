@@ -1,0 +1,136 @@
+// Generated from SMA100B, fw: 4.15.010.12
+&ABO
+&BRK
+&DCL
+&DFC
+&GET
+&GTL
+&GTM
+&GTR
+&HFC
+&LLO
+&NREN
+&POL
+&RLSD
+&SFC
+&STB
+*CLS
+*DEV[?] <numeric_value>
+*DMC[?] <string>,<block_data>|<string>
+*EMC[?] <boolean>
+*ESE[?] <numeric_value>
+*ESR?
+*GCLS
+*GMC? <string>
+*GOPC?
+*GWAI
+*IDN?
+*IST?
+*LMC?
+*OPC[?]
+*OPT?
+*PMC
+*PRE[?] <numeric_value>
+*PSC[?] <boolean>
+*RCL <numeric_value>
+*RMC <string>
+*RST
+*SAV <numeric_value>
+*SRE[?] <numeric_value>
+*SRQ? <integer>|DOWN|MAXimum|MINimum|UP
+*STB?
+*TRG
+*TST?
+*WAI
+*XESE[?] <expression>
+*XESR?
+*XPRE[?] <expression>
+*XSRE[?] <expression>
+*XSTB?
+:MMEMory:ALIases?
+:MMEMory:ATTRibute[?] <string>,<string>
+:MMEMory:CATalog:LENGth? <string>
+:MMEMory:CATalog? <string>,ALL|WTIMe
+:MMEMory:CDIRectory[?] <string>
+:MMEMory:COPY <string>,<string>
+:MMEMory:DATA[?] <string>,<block_data>,APPend
+:MMEMory:DCATalog:LENGth? <string>
+:MMEMory:DCATalog? <string>
+:MMEMory:DELete <string>
+:MMEMory:DRIVes?
+:MMEMory:LOAD:ITEM <string>,<string>
+:MMEMory:LOAD:MACRo <string>,<string>,<string>
+:MMEMory:LOAD:STATe <numeric_value>,<string>,<string>
+:MMEMory:MDIRectory <string>
+:MMEMory:MOVE <string>,<string>
+:MMEMory:MSIS[?] <string>
+:MMEMory:RCL <string>,<string>
+:MMEMory:RDIRectory <string>
+:MMEMory:SAV <string>,<string>
+:MMEMory:STORe:ITEM <string>,<string>
+:MMEMory:STORe:MACRo <string>,<string>,<string>
+:MMEMory:STORe:STATe <integer>,<string>,<string>
+:STATus:OPERation:BIT{1..*}:CONDition?
+:STATus:OPERation:BIT{1..*}:ENABle[?] <numeric_value>
+:STATus:OPERation:BIT{1..*}[:EVENt]?
+:STATus:OPERation:BIT{1..*}:NTRansition[?] <boolean>
+:STATus:OPERation:BIT{1..*}:PTRansition[?] <boolean>
+:STATus:OPERation:CONDition?
+:STATus:OPERation:ENABle[?] <integer>
+:STATus:OPERation[:EVENt]?
+:STATus:OPERation:NTRansition[?] <integer>
+:STATus:OPERation:PTRansition[?] <integer>
+:STATus:PRESet
+:STATus:QUEStionable:BIT{1..*}:CONDition?
+:STATus:QUEStionable:BIT{1..*}:ENABle[?] <boolean>
+:STATus:QUEStionable:BIT{1..*}[:EVENt]?
+:STATus:QUEStionable:BIT{1..*}:NTRansition[?] <boolean>
+:STATus:QUEStionable:BIT{1..*}:PTRansition[?] <boolean>
+:STATus:QUEStionable:CONDition?
+:STATus:QUEStionable:ENABle[?] <integer>
+:STATus:QUEStionable[:EVENt]?
+:STATus:QUEStionable:NTRansition[?] <integer>
+:STATus:QUEStionable:PTRansition[?] <integer>
+:STATus:QUEue[:NEXT]?
+:SYSTem:DATE:LOCal[?] <integer>,<integer>,<integer>
+:SYSTem:DATE:UTC[?] <integer>,<integer>,<integer>
+:SYSTem:DATE[?] <integer>,<integer>,<integer>
+:SYSTem:DEVice:ID?
+:SYSTem:DFPRint:HISTory:COUNt?
+:SYSTem:DFPRint:HISTory:ENTRy? <integer>
+:SYSTem:DFPRint[?] <string>
+:SYSTem:DID?
+:SYSTem:DISPlay:UPDate[?] <boolean>
+:SYSTem:ERRor:ALL?
+:SYSTem:ERRor:CODE:ALL?
+:SYSTem:ERRor:CODE[:NEXT]?
+:SYSTem:ERRor:COUNt?
+:SYSTem:ERRor[:NEXT]?
+:SYSTem:HELP:HEADers? <string>
+:SYSTem:HELP:SYNTax:ALL?
+:SYSTem:HELP:SYNTax? <string>
+:SYSTem:KLOCk[?] <boolean>
+:SYSTem:LOCK:NAME:DETailed?
+:SYSTem:LOCK:NAME?
+:SYSTem:LOCK:OWNer:DETailed?
+:SYSTem:LOCK:OWNer?
+:SYSTem:LOCK:RELease
+:SYSTem:LOCK:RELease:ALL
+:SYSTem:LOCK:REQuest[:EXCLusive]? <integer>|INFinite
+:SYSTem:LOCK:REQuest:SHARed? <string>,<integer>|INFinite
+:SYSTem:LOCK:SHARed:STRing?
+:SYSTem:LOCK:TIMeout[?] <integer>|INFinite
+:SYSTem:PRESet
+:SYSTem:TIME:DSTime:MODE[?] <boolean>
+:SYSTem:TIME:DSTime:RULE:CATalog?
+:SYSTem:TIME:DSTime:RULE[?] <string>
+:SYSTem:TIME:HRTimer:ABSolute <numeric_value>
+:SYSTem:TIME:HRTimer:ABSolute:SET[?]
+:SYSTem:TIME:HRTimer:RELative <integer>
+:SYSTem:TIME:LOCal[?] <integer>,<integer>,<integer>
+:SYSTem:TIME:UTC[?] <integer>,<integer>,<integer>
+:SYSTem:TIME[?] <integer>,<integer>,<integer>
+:SYSTem:TZONe[?] <numeric_value>,<numeric_value>
+:SYSTem:VERSion?
+@LLO
+@LOC

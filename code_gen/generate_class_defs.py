@@ -200,7 +200,7 @@ class ClassCodeGen(object):
                     base_class += ", SCPISet"
 
             name = cmd_str
-            if name[0] == '*' or name[0] == '@':
+            if name[0] == '*' or name[0] == '@' or name[0] == '&':
                 name = name[1:]            
             self._out("class " + name + "(" + base_class + "):")
             self._indent += 1

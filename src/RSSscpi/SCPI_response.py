@@ -63,7 +63,7 @@ class SCPIResponse(object):
         :return: a string list
         :rtype: list of str
         """
-        return [x.strip(" '") for x in self.raw.split(",")]
+        return [x.strip(" '\n") for x in self.raw.split(",")]
 
     def numpy_array(self, dtype=numpy.float64):
         return numpy.fromstring(self.raw, sep=",", dtype=dtype)
