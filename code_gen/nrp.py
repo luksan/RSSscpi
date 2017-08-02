@@ -6,7 +6,10 @@
 from __future__ import division, print_function
 
 from generate_class_defs import *
-import re
+
+from RSSscpi import nrp
+
+syntax_file = "NRPxxSN_syntax.txt"
 
 
 class NRPCmdListParser(CmdListParser):
@@ -70,8 +73,22 @@ class NRPTreePatcher(object):
             setattr(x, prop, self.fixit[(cmd, prop)])
 
 
+def upate_syntax_definition(sensor):
+    """
+    Updates the command syntax definition file with data from the power sensor.
+
+    :param nrp.NRPxxSN sensor:
+    """
+    x = sensor.SYSTem.HELP.SYNTax.ALL.q().block_data()
+    info = sensor.query_system_info()
+    with open(os.path.join(cmd_list_dir, syntax_file), "wb") as fd:
+        fd.write("// Generated from %s, fw: %s\n" % (info["Type"], info["SW Build"]))
+        fd.write(x.lstrip())
+
+
 def generate():
-    generate_SCPI_class(NRPCmdListParser("NRPxxSN_syntax.txt"), "NRPxxSN_gen", tree_patcher=NRPTreePatcher())
+    generate_SCPI_class(NRPCmdListParser(syntax_file), "NRPxxSN_gen", tree_patcher=NRPTreePatcher())
 
 if __name__ == "__main__":
+    upate_syntax_definition(nrp.connect_ethernet(nrp.find_sensors(max_sensors=1)[0].ip_address))
     generate()

@@ -1,3 +1,4 @@
+// Generated from NRP33SN, fw: 16.05.13.02
 *CLS
 *ESE[?] <numeric_value>
 *ESR?
