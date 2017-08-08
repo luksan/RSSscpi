@@ -26,51 +26,16 @@ class NRPCmdListParser(CmdListParser):
             self.cmd_tree.add_cmd(cmd.split(":"), arg, None, False)
 
 
-class NRPTreePatcher(object):
-    def __init__(self):
-        self.fixit = dict()
 
+class NRPTreePatcher(SystHelpTreePatcher):
+    def __init__(self):
+        super(NRPTreePatcher, self).__init__()
         self.fixit[("CALibration:ZERO:AUTO", "args")] = ["ONCE"]
         self.fixit[("FETCh", "has_query")] = True
         self.fixit[("FORMat:DATA", "args")] = ["ASCii", "REAL"]
         self.fixit[("SENSe:RANGe", "args")] = ["0", "1", "2"]
         self.fixit[("SYSTem:HELP:HEADers", "args")] = []
         self.fixit[("SYSTem:PRESet", "args")] = []
-
-    def fix_args(self, cmd_tree):
-        for node_name in cmd_tree:
-            self.fix_args(cmd_tree[node_name])
-
-            args = cmd_tree[node_name].args
-            if not args:
-                continue
-            assert len(args) == 1
-            arg = args[0]
-            # :TRIGger:HYSTeresis[?] <numeric_value>[dB|PCT]
-            u = arg.rfind("[")
-            if u != -1:
-                cmd_tree[node_name].units = arg[u+1:-1].split("|")
-                arg = arg[:u]
-
-            if arg == "<numeric_value>":
-                args[:] = ["1"]
-            elif arg == "<boolean>":
-                args[:] = ["1", "ON", "OFF"]
-            elif arg == "<block_data>":
-                pass  # TODO: this is useful, maybe do something similar for ZNB/ZVA
-            elif arg == "<string>":
-                args[:] = ["'string'"]
-            else:
-                args[:] = arg.split("|")
-
-    def __call__(self, cmd_tree):
-        self.fix_args(cmd_tree)
-
-        for cmd, prop in self.fixit.keys():
-            x = cmd_tree
-            for c in cmd.split(":"):
-                x = x[c]
-            setattr(x, prop, self.fixit[(cmd, prop)])
 
 
 def upate_syntax_definition(sensor):

@@ -26,9 +26,9 @@ class RohdeZNBWebhelp(ModernRohdeWebhelp):
         self._interface_messages = self._base_url.format(if_msg)
 
 
-class ZNBTreePatcher(object):
+class ZNBTreePatcher(TreePatcher):
     def __init__(self):
-        self.fixit = dict()
+        super(ZNBTreePatcher, self).__init__()
 
         self.fixit[("MMEMory:STORe:TRACe:PORTs", "args")] = \
             ["1", "'string'", "COMPlex", "LINPhase", "LOGPhase", "CIMPedance", "PIMPedance"]
@@ -39,15 +39,6 @@ class ZNBTreePatcher(object):
              "ROPTport", "RTRans", "TNA", "TOM", "TOSM", "TPORt", "TRL", "TRM", "TSM", "UOSM"]
 
         self.fixit[("SENSe:CORRection:CDATa", "args")] = ["1", "'string'"]
-
-    def __call__(self, cmd_tree):
-        for cmd, prop in self.fixit.keys():
-            x = cmd_tree
-            for c in cmd.split(":"):
-                x = x[c]
-            setattr(x, prop, self.fixit[(cmd, prop)])
-
-        return cmd_tree
 
 
 def generate():

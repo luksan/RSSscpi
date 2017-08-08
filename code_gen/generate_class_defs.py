@@ -181,6 +181,53 @@ class ModernRohdeWebhelp(Webhelp):
             return None
 
 
+class TreePatcher(object):
+    def __init__(self):
+        self.fixit = dict()
+
+    def __call__(self, cmd_tree):
+        for cmd, prop in self.fixit.keys():
+            x = cmd_tree
+            for c in cmd.split(":"):
+                x = x[c]
+            setattr(x, prop, self.fixit[(cmd, prop)])
+
+        return cmd_tree
+
+
+class SystHelpTreePatcher(TreePatcher):
+    def fix_args(self, cmd_tree):
+        for node_name in cmd_tree:
+            self.fix_args(cmd_tree[node_name])
+
+            args = cmd_tree[node_name].args
+            if not args:
+                continue
+            if not len(args) == 1:
+                logging.error("More than one element in args %s, %s", node_name, args)
+            arg = args[0]
+            # :TRIGger:HYSTeresis[?] <numeric_value>[dB|PCT]
+            u = arg.rfind("[")
+            if u != -1:
+                cmd_tree[node_name].units = arg[u+1:-1].split("|")
+                arg = arg[:u]
+
+            if arg == "<numeric_value>" or arg == "<integer>":
+                args[:] = ["1"]
+            elif arg == "<boolean>":
+                args[:] = ["1", "ON", "OFF"]
+            elif arg == "<block_data>":
+                pass  # TODO: this is useful, maybe do something similar for ZNB/ZVA
+            elif arg == "<string>":
+                args[:] = ["'string'"]
+            else:
+                args[:] = arg.split("|")
+
+    def __call__(self, cmd_tree):
+        self.fix_args(cmd_tree)
+        super(SystHelpTreePatcher, self).__call__(cmd_tree)
+
+
 class ClassCodeGen(object):
     """
     Generates a Python module with a SCPI command class structure for the instrument.
