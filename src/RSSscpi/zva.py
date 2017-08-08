@@ -82,7 +82,13 @@ class ChannelVNAPort(ZVA_gen.SOURce.POWer, znb.ChannelVNAPort):
 
 
 class Sweep(ZVA_gen.SENSe.SWEep, znb.Sweep):
-    pass
+
+    @property
+    def dwell_on_each_partial_measurement(self):
+        """
+        The ZVA does not support setting dwell time on only the first partial measurement.
+        """
+        return True
 
 
 class SweepSegment(ZVA_gen.SENSe.SEGMent, znb.SweepSegment):

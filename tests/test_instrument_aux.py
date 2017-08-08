@@ -34,22 +34,22 @@ def test_SCPICmdFormatter():
     assert f().format("{:d**}", zip([1, 2, 3], [4, 5, 6])) == "1, 4, 2, 5, 3, 6"
 
 
-def test_cmd_formatting(znb, visa):
+def test_cmd_formatting(zva, visa):
     """
-    :param ZNB znb:
+    :param ZVA zva:
     :param VISA visa:
     """
-    znb.TRACe.COPY.MATH().w("MDATA8")  # This shouldn't be quoted
-    znb.TRACe.COPY.MATH().w("sq")  # Quote
-    znb.SENSe.SWEep.POINts().w(1e9)
-    znb.SENSe.SWEep.POINts().w("1000000000")
-    znb.SENSe.SWEep.POINts().w(1000000000)
-    znb.TRIGger.SEQuence.LINK().w("POINt")  # This should be quoted
-    znb.TRIGger.SEQuence.LINK().w("'POINT'")  # This should only have one pair of quotes
-    with pytest.warns(UserWarning) as record:
-        znb.CALCulate.MARKer.Y().q("")
-        znb.CALCulate.MARKer.Y().q("asd", fmt="{:s}")
-        znb.CALCulate.MARKer.Y().q("asd", fmt="")
+    zva.TRACe.COPY.MATH().w("MDATA8")  # This shouldn't be quoted
+    zva.TRACe.COPY.MATH().w("sq")  # Quote
+    zva.SENSe.SWEep.POINts().w(1e9)
+    zva.SENSe.SWEep.POINts().w("1000000000")
+    zva.SENSe.SWEep.POINts().w(1000000000)
+    zva.TRIGger.SEQuence.LINK().w("POINt")  # This should be quoted
+    zva.TRIGger.SEQuence.LINK().w("'POINT'")  # This should only have one pair of quotes
+    with pytest.warns(UserWarning) as record:  # This should warn since ..:Y? has an empty argument list
+        zva.CALCulate.MARKer.Y().q("")
+        zva.CALCulate.MARKer.Y().q("asd", fmt="{:s}")
+        zva.CALCulate.MARKer.Y().q("asd", fmt="")
     assert len(record) == 1
     assert ["TRACe:COPY:MATH MDATA8",
             "TRACe:COPY:MATH 'sq'",

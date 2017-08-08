@@ -11,6 +11,7 @@ from .conftest import VISA  # noqa: F401
 
 from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping, MinMaxFloat
 from RSSscpi.gen import ZNB_gen
+from RSSscpi.gen import ZVA_gen
 
 
 class VNAProp(ZNB_gen):
@@ -40,9 +41,24 @@ class VNAProp(ZNB_gen):
     int_prop = SCPIPropertyMinMax(_SWE.POINts, int)
     float_prop = SCPIProperty(_SWE.TIME, float)
     float_minmax = SCPIPropertyMinMax(_SWE.DWELl, float)
+    znb_only = SCPIPropertyMapping(_SWE.DWELl.IPOint, str, {"ALL": True, "FIRSt": False})
     map_prop = SCPIPropertyMapping(_SWE.GENeration, str, mapping={"ANALog": True, "STEPped": False})
 
     cb_prop = SCPIProperty(_SWE.TYPE, str, callback=cb, get_root_node=get_root)
+
+
+class BadPropInheritance(ZVA_gen, VNAProp):
+    pass
+
+
+def test_inheritance(visa):
+    znb = VNAProp(visa)
+    znb.znb_only = True
+    assert ["SENSe:SWEep:DWELl:IPOint ALL"] == visa.cmd
+    zva = BadPropInheritance(visa)
+    with pytest.raises(AttributeError):
+        zva.znb_only = True
+    assert [] == visa.cmd
 
 
 def test_cb_prop(visa):

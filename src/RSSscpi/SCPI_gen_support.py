@@ -95,7 +95,11 @@ class SCPINodeBase(object):
 
         leaf = ancestor
         for c in reversed(x):
-            leaf = c(parent=leaf)  # FIXME: this doesn't create ZVA nodes, since cls is ZNB-derived. Use gettattr?
+            # We use getattr(..) instead of direct instantiation, since ZVA is subclassed from ZNB
+            try:
+                leaf = getattr(leaf, c.__name__)
+            except AttributeError as e:  # Apparently the subclassing was incorrect
+                raise AttributeError(str(e) + " -- " + ancestor.build_cmd() + ":" + ":".join(map(lambda x: x._cmd, reversed(x))))
         return leaf  # Return the instantiated leaf node, properly linked to the root node
 
 

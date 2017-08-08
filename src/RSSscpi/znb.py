@@ -651,7 +651,7 @@ class Trace(object):
         """
 
         :param n: Marker number
-        :rtype: ZNB.Marker
+        :rtype: Marker
         """
         return Marker(n, self)
 

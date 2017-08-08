@@ -207,6 +207,25 @@ def test_channel_properties(dummy_vna, visa):
             ] == visa.cmd
 
 
+def test_sweep_dwell(znb, visa):
+    # type: (ZNB, VISA) -> None
+    """
+    This setting is not available on the ZVA
+    """
+    sw = znb.get_channel(2).sweep
+    sw.dwell_on_each_partial_measurement = True
+    sw.dwell_on_each_partial_measurement = False
+    visa.ret = "FIRSt"
+    assert sw.dwell_on_each_partial_measurement is False
+    visa.ret = "ALL"
+    assert sw.dwell_on_each_partial_measurement is True
+    assert ["SENSe2:SWEep:DWELl:IPOint ALL",
+            "SENSe2:SWEep:DWELl:IPOint FIRSt",
+            "SENSe2:SWEep:DWELl:IPOint?",
+            "SENSe2:SWEep:DWELl:IPOint?",
+            ] == visa.cmd
+
+
 def test_segmented_sweep(dummy_vna, visa):
     """
     :param ZNB dummy_vna:
@@ -218,8 +237,6 @@ def test_segmented_sweep(dummy_vna, visa):
     sw.analog_sweep_is_enabled = True
     sw.analog_sweep_is_enabled = False
     sw.dwell_time = 1.2
-    sw.dwell_on_each_partial_measurement = True
-    sw.dwell_on_each_partial_measurement = False
     sw.points = 41
     sw.count = 2
     sw.time = 0.1
@@ -228,8 +245,6 @@ def test_segmented_sweep(dummy_vna, visa):
     assert ["SENSe2:SWEep:GENeration ANALog",
             "SENSe2:SWEep:GENeration STEPped",
             "SENSe2:SWEep:DWELl 1.2",
-            "SENSe2:SWEep:DWELl:IPOint ALL",
-            "SENSe2:SWEep:DWELl:IPOint FIRSt",
             "SENSe2:SWEep:POINts 41",
             "SENSe2:SWEep:COUNt 2",
             "SENSe2:SWEep:TIME 0.1",
@@ -489,8 +504,18 @@ def test_marker(dummy_vna, visa):
     assert ["CALCulate2:MARKer3:Y?"] == visa.cmd
     assert isinstance(x, float)
 
-    with pytest.raises(AttributeError, message="Assignment to marker y value is not possible."):
-        m1.y = 2
+
+def test_marker_y_set(znb, visa):
+    # type: (ZNB, VISA) -> None
+    m1 = znb.get_channel(2).get_trace("Tr2").get_marker(3)
+    m1.TYPE.w("ARB")
+    m1.y = 2
+    assert m1.y == 1
+    assert ["CALCulate2:MARKer3:TYPE ARB",
+            "CALCulate2:PARameter:SELect 'Tr2'",
+            "CALCulate2:MARKer3:Y 2",
+            "CALCulate2:MARKer3:Y?",
+            ] == visa.cmd
 
 
 def test_trace(dummy_vna, visa):

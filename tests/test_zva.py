@@ -29,3 +29,23 @@ def test_vna_port(zva, visa):
     assert ["SOURce1:POWer2:ATTenuation:MODE AUTO",
             "SOURce1:POWer2:ATTenuation:MODE?",
             ] == visa.cmd
+
+
+def test_marker_y_set(zva, visa):
+    # type: (ZVA, VISA) -> None
+    m4 = zva.get_channel(2).get_trace("Tr2").get_marker(4)
+    assert [] == visa.cmd
+    with pytest.raises(AttributeError, message="Assignment to marker y value is not possible."):
+        m4.y = 2
+
+
+def test_sweep_dwell(zva, visa):
+    # type: (ZVA, VISA) -> None
+    """
+    This setting is not available on the ZVA
+    """
+    sw = zva.get_channel(2).sweep
+    with pytest.raises(AttributeError):
+        sw.dwell_on_each_partial_measurement = True
+    assert sw.dwell_on_each_partial_measurement is True
+    assert [] == visa.cmd
