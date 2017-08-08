@@ -8,8 +8,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import visa
 import socket
 import threading
-
-from RSSscpi.Instrument import Instrument
+import logging
 
 
 def connect_ethernet(instr_class, ip_address, proto="INSTR"):
@@ -56,17 +55,17 @@ class ZeroconfListener(object):
     def __init__(self):
         self.max_devices = None
         self.found_sensors = []
-        self.stop_search = threading.Condition()
+        self.stop_search = threading.Event()
 
     def add_service(self, zc, type_, name):
-        self.stop_search.acquire()
+        logging.debug("Service added, %s, %s", type_, name)
         info = zc.get_service_info(type_, name)
         if not self.filter_zc_info(info):
             return
         self.found_sensors.append(self.info_class(info))
+        logging.debug("Found device %s", self.found_sensors[-1])
         if self.max_devices is not None and len(self.found_sensors) >= self.max_devices:
-            self.stop_search.notify_all()
-        self.stop_search.release()
+            self.stop_search.set()
 
     def filter_zc_info(self, zc_info):
         """
@@ -88,7 +87,6 @@ def zeroconf_scan(listener, max_time=2, max_devices=None):
 
     z = Zeroconf()
     listener.max_devices = max_devices
-    listener.stop_search.acquire()
     try:
         ServiceBrowser(z, listener.service_name, listener)
         listener.stop_search.wait(max_time)
