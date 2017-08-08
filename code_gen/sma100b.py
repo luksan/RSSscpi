@@ -12,6 +12,19 @@ from RSSscpi import sma100b
 syntax_file = "SMA100B_syntax.txt"
 
 
+class SMB100AWebhelp(ModernRohdeWebhelp):
+    _base_url = "http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en{0}"
+    toc_file = "SMA100B_webhelp_toc.xml"
+    cmd_list_file = "SMA100B_webhelp_command_list.htm"
+
+    def parse_toc(self):
+        super(SMB100AWebhelp, self).parse_toc()
+
+
+class SMA100BTreePatcher(SystHelpTreePatcher):
+    pass
+
+
 def upate_syntax_definition(sma):
     """
     Updates the command syntax definition file with data from the power sensor.
@@ -26,8 +39,12 @@ def upate_syntax_definition(sma):
 
 
 def generate():
-    generate_SCPI_class(NRPCmdListParser(syntax_file), "SMA100B_gen")
+    generate_SCPI_class(NRPCmdListParser(syntax_file), "SMA100B_gen",
+                        tree_patcher=SMA100BTreePatcher(),
+                        webhelp=SMB100AWebhelp(download))
 
 if __name__ == "__main__":
+    logging.basicConfig(level=logging.DEBUG)
     upate_syntax_definition(sma100b.connect_ethernet(sma100b.find_sma100b(max_devices=1)[0].ip_address))
+    download = True
     generate()

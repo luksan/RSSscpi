@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from SMA100B_syntax.txt on 2017-08-02 19:04
+# Generated from SMA100B_syntax.txt on 2017-08-08 18:48
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -265,64 +265,64 @@ class SMA100B_gen(Instrument):
         """
         *DEV
 
-        Arguments: <numeric_value>
+        Arguments: 1
         """
         _cmd = "*DEV"
-        args = ["<numeric_value>"]
+        args = ["1"]
 
     DEV = DEV()
     """
     *DEV
 
-    Arguments: <numeric_value>
+    Arguments: 1
     """
 
     class DMC(SCPINode, SCPIQuery, SCPISet):
         """
         *DMC
 
-        Arguments: <string>,<block_data>|<string>
+        Arguments: <string>,<block_data>, <string>
         """
         _cmd = "*DMC"
-        args = ["<string>,<block_data>|<string>"]
+        args = ["<string>,<block_data>", "<string>"]
 
     DMC = DMC()
     """
     *DMC
 
-    Arguments: <string>,<block_data>|<string>
+    Arguments: <string>,<block_data>, <string>
     """
 
-    class EMC(SCPINode, SCPIQuery, SCPISet):
+    class EMC(SCPINode, SCPIBool):
         """
         *EMC
 
-        Arguments: <boolean>
+        Arguments: 1, ON, OFF
         """
         _cmd = "*EMC"
-        args = ["<boolean>"]
+        args = ["1", "ON", "OFF"]
 
     EMC = EMC()
     """
     *EMC
 
-    Arguments: <boolean>
+    Arguments: 1, ON, OFF
     """
 
     class ESE(SCPINode, SCPIQuery, SCPISet):
         """
         *ESE
 
-        Arguments: <numeric_value>
+        Arguments: 1
         """
         _cmd = "*ESE"
-        args = ["<numeric_value>"]
+        args = ["1"]
 
     ESE = ESE()
     """
     *ESE
 
-    Arguments: <numeric_value>
+    Arguments: 1
     """
 
     class ESR(SCPINode, SCPIQuery):
@@ -361,16 +361,16 @@ class SMA100B_gen(Instrument):
         """
         *GMC
 
-        Arguments: <string>
+        Arguments: 'string'
         """
         _cmd = "*GMC"
-        args = ["<string>"]
+        args = ["'string'"]
 
     GMC = GMC()
     """
     *GMC
 
-    Arguments: <string>
+    Arguments: 'string'
     """
 
     class GOPC(SCPINode, SCPIQuery):
@@ -505,64 +505,64 @@ class SMA100B_gen(Instrument):
         """
         *PRE
 
-        Arguments: <numeric_value>
+        Arguments: 1
         """
         _cmd = "*PRE"
-        args = ["<numeric_value>"]
+        args = ["1"]
 
     PRE = PRE()
     """
     *PRE
 
-    Arguments: <numeric_value>
+    Arguments: 1
     """
 
-    class PSC(SCPINode, SCPIQuery, SCPISet):
+    class PSC(SCPINode, SCPIBool):
         """
         *PSC
 
-        Arguments: <boolean>
+        Arguments: 1, ON, OFF
         """
         _cmd = "*PSC"
-        args = ["<boolean>"]
+        args = ["1", "ON", "OFF"]
 
     PSC = PSC()
     """
     *PSC
 
-    Arguments: <boolean>
+    Arguments: 1, ON, OFF
     """
 
     class RCL(SCPINode, SCPISet):
         """
         *RCL
 
-        Arguments: <numeric_value>
+        Arguments: 1
         """
         _cmd = "*RCL"
-        args = ["<numeric_value>"]
+        args = ["1"]
 
     RCL = RCL()
     """
     *RCL
 
-    Arguments: <numeric_value>
+    Arguments: 1
     """
 
     class RMC(SCPINode, SCPISet):
         """
         *RMC
 
-        Arguments: <string>
+        Arguments: 'string'
         """
         _cmd = "*RMC"
-        args = ["<string>"]
+        args = ["'string'"]
 
     RMC = RMC()
     """
     *RMC
 
-    Arguments: <string>
+    Arguments: 'string'
     """
 
     class RST(SCPINode, SCPISet):
@@ -585,48 +585,48 @@ class SMA100B_gen(Instrument):
         """
         *SAV
 
-        Arguments: <numeric_value>
+        Arguments: 1
         """
         _cmd = "*SAV"
-        args = ["<numeric_value>"]
+        args = ["1"]
 
     SAV = SAV()
     """
     *SAV
 
-    Arguments: <numeric_value>
+    Arguments: 1
     """
 
     class SRE(SCPINode, SCPIQuery, SCPISet):
         """
         *SRE
 
-        Arguments: <numeric_value>
+        Arguments: 1
         """
         _cmd = "*SRE"
-        args = ["<numeric_value>"]
+        args = ["1"]
 
     SRE = SRE()
     """
     *SRE
 
-    Arguments: <numeric_value>
+    Arguments: 1
     """
 
     class SRQ(SCPINode, SCPIQuery):
         """
         *SRQ
 
-        Arguments: <integer>|DOWN|MAXimum|MINimum|UP
+        Arguments: <integer>, DOWN, MAXimum, MINimum, UP
         """
         _cmd = "*SRQ"
-        args = ["<integer>|DOWN|MAXimum|MINimum|UP"]
+        args = ["<integer>", "DOWN", "MAXimum", "MINimum", "UP"]
 
     SRQ = SRQ()
     """
     *SRQ
 
-    Arguments: <integer>|DOWN|MAXimum|MINimum|UP
+    Arguments: <integer>, DOWN, MAXimum, MINimum, UP
     """
 
     class STB(SCPINode, SCPIQuery):
@@ -848,55 +848,62 @@ class SMA100B_gen(Instrument):
 
         class CATalog(SCPINode, SCPIQuery):
             """
-            MMEMory:CATalog
+            `MMEMory:CATalog
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/81fb5b7cd1124455.htm#ID_d86b0432900f3f010a00206a015692f4-808cf704900f3f010a00206a01eae7a4-en-US>`_
 
-            Arguments: <string>,ALL|WTIMe
+            Arguments: <string>,ALL, WTIMe
             """
             _cmd = "CATalog"
-            args = ["<string>,ALL|WTIMe"]
+            args = ["<string>,ALL", "WTIMe"]
 
             class LENGth(SCPINode, SCPIQuery):
                 """
-                MMEMory:CATalog:LENGth
+                `MMEMory:CATalog:LENGth
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/f52dbc720a0a48f9.htm#ID_de3b183c900f4f0f0a00206a0011b22f-adb17661900f4f0f0a00206a01eae7a4-en-US>`_
 
-                Arguments: <string>
+                Arguments: 'string'
                 """
                 _cmd = "LENGth"
-                args = ["<string>"]
+                args = ["'string'"]
 
             LENGth = LENGth()
             """
-            MMEMory:CATalog:LENGth
+            `MMEMory:CATalog:LENGth
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/f52dbc720a0a48f9.htm#ID_de3b183c900f4f0f0a00206a0011b22f-adb17661900f4f0f0a00206a01eae7a4-en-US>`_
 
-            Arguments: <string>
+            Arguments: 'string'
             """
 
         CATalog = CATalog()
         """
-        MMEMory:CATalog
+        `MMEMory:CATalog
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/81fb5b7cd1124455.htm#ID_d86b0432900f3f010a00206a015692f4-808cf704900f3f010a00206a01eae7a4-en-US>`_
 
-        Arguments: <string>,ALL|WTIMe
+        Arguments: <string>,ALL, WTIMe
         """
 
         class CDIRectory(SCPINode, SCPIQuery, SCPISet):
             """
-            MMEMory:CDIRectory
+            `MMEMory:CDIRectory
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/884f6bb587664b1f.htm#ID_1b7d70d1900f44510a00206a01aa7e4f-154c448f900f44510a00206a01eae7a4-en-US>`_
 
-            Arguments: <string>
+            Arguments: 'string'
             """
             _cmd = "CDIRectory"
-            args = ["<string>"]
+            args = ["'string'"]
 
         CDIRectory = CDIRectory()
         """
-        MMEMory:CDIRectory
+        `MMEMory:CDIRectory
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/884f6bb587664b1f.htm#ID_1b7d70d1900f44510a00206a01aa7e4f-154c448f900f44510a00206a01eae7a4-en-US>`_
 
-        Arguments: <string>
+        Arguments: 'string'
         """
 
         class COPY(SCPINode, SCPISet):
             """
-            MMEMory:COPY
+            `MMEMory:COPY
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/0e2783010cfb4004.htm#ID_7d4d0053900f49a00a00206a019b2e3f-088f7246900f49a00a00206a01eae7a4-en-US>`_
 
             Arguments: <string>,<string>
             """
@@ -905,14 +912,16 @@ class SMA100B_gen(Instrument):
 
         COPY = COPY()
         """
-        MMEMory:COPY
+        `MMEMory:COPY
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/0e2783010cfb4004.htm#ID_7d4d0053900f49a00a00206a019b2e3f-088f7246900f49a00a00206a01eae7a4-en-US>`_
 
         Arguments: <string>,<string>
         """
 
         class DATA(SCPINode, SCPIQuery, SCPISet):
             """
-            MMEMory:DATA
+            `MMEMory:DATA
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/a6f2e81575a74bab.htm#ID_9d80e2ff0a9fe57e0a00201900ac1637-ac44fdb80a9fe3e80a00201900ad6d49-en-US>`_
 
             Arguments: <string>,<block_data>,APPend
             """
@@ -921,57 +930,64 @@ class SMA100B_gen(Instrument):
 
         DATA = DATA()
         """
-        MMEMory:DATA
+        `MMEMory:DATA
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/a6f2e81575a74bab.htm#ID_9d80e2ff0a9fe57e0a00201900ac1637-ac44fdb80a9fe3e80a00201900ad6d49-en-US>`_
 
         Arguments: <string>,<block_data>,APPend
         """
 
         class DCATalog(SCPINode, SCPIQuery):
             """
-            MMEMory:DCATalog
+            `MMEMory:DCATalog
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/9143817b0b724e69.htm#ID_a8aa6937900ef1cc0a00206a010ba9d5-cf37708c900ef1cc0a00206a01eae7a4-en-US>`_
 
-            Arguments: <string>
+            Arguments: 'string'
             """
             _cmd = "DCATalog"
-            args = ["<string>"]
+            args = ["'string'"]
 
             class LENGth(SCPINode, SCPIQuery):
                 """
-                MMEMory:DCATalog:LENGth
+                `MMEMory:DCATalog:LENGth
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/a083db692d2a43f1.htm#ID_4e070651900ef70b0a00206a016f7a85-a0f33d76900ef70b0a00206a01eae7a4-en-US>`_
 
-                Arguments: <string>
+                Arguments: 'string'
                 """
                 _cmd = "LENGth"
-                args = ["<string>"]
+                args = ["'string'"]
 
             LENGth = LENGth()
             """
-            MMEMory:DCATalog:LENGth
+            `MMEMory:DCATalog:LENGth
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/a083db692d2a43f1.htm#ID_4e070651900ef70b0a00206a016f7a85-a0f33d76900ef70b0a00206a01eae7a4-en-US>`_
 
-            Arguments: <string>
+            Arguments: 'string'
             """
 
         DCATalog = DCATalog()
         """
-        MMEMory:DCATalog
+        `MMEMory:DCATalog
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/9143817b0b724e69.htm#ID_a8aa6937900ef1cc0a00206a010ba9d5-cf37708c900ef1cc0a00206a01eae7a4-en-US>`_
 
-        Arguments: <string>
+        Arguments: 'string'
         """
 
         class DELete(SCPINode, SCPISet):
             """
-            MMEMory:DELete
+            `MMEMory:DELete
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/04c3a6e184634827.htm#ID_48ccd5f3900eec4d0a00206a007d4e66-412debbb900eec4d0a00206a01eae7a4-en-US>`_
 
-            Arguments: <string>
+            Arguments: 'string'
             """
             _cmd = "DELete"
-            args = ["<string>"]
+            args = ["'string'"]
 
         DELete = DELete()
         """
-        MMEMory:DELete
+        `MMEMory:DELete
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/04c3a6e184634827.htm#ID_48ccd5f3900eec4d0a00206a007d4e66-412debbb900eec4d0a00206a01eae7a4-en-US>`_
 
-        Arguments: <string>
+        Arguments: 'string'
         """
 
         class DRIVes(SCPINode, SCPIQuery):
@@ -1033,7 +1049,8 @@ class SMA100B_gen(Instrument):
 
             class STATe(SCPINode, SCPISet):
                 """
-                MMEMory:LOAD:STATe
+                `MMEMory:LOAD:STATe
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/9de91cebcfaf4dfb.htm#ID_e4b148b6b16d7e450a00206a00d7d85c-f2c489ebb16d7e450a00206a002cfbf4-en-US>`_
 
                 Arguments: <numeric_value>,<string>,<string>
                 """
@@ -1042,7 +1059,8 @@ class SMA100B_gen(Instrument):
 
             STATe = STATe()
             """
-            MMEMory:LOAD:STATe
+            `MMEMory:LOAD:STATe
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/9de91cebcfaf4dfb.htm#ID_e4b148b6b16d7e450a00206a00d7d85c-f2c489ebb16d7e450a00206a002cfbf4-en-US>`_
 
             Arguments: <numeric_value>,<string>,<string>
             """
@@ -1056,23 +1074,26 @@ class SMA100B_gen(Instrument):
 
         class MDIRectory(SCPINode, SCPISet):
             """
-            MMEMory:MDIRectory
+            `MMEMory:MDIRectory
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/78d90e9c1a164918.htm#ID_28e36f85900ad56d0a00206a01580c40-8ea01a92900ad56d0a00206a01eae7a4-en-US>`_
 
-            Arguments: <string>
+            Arguments: 'string'
             """
             _cmd = "MDIRectory"
-            args = ["<string>"]
+            args = ["'string'"]
 
         MDIRectory = MDIRectory()
         """
-        MMEMory:MDIRectory
+        `MMEMory:MDIRectory
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/78d90e9c1a164918.htm#ID_28e36f85900ad56d0a00206a01580c40-8ea01a92900ad56d0a00206a01eae7a4-en-US>`_
 
-        Arguments: <string>
+        Arguments: 'string'
         """
 
         class MOVE(SCPINode, SCPISet):
             """
-            MMEMory:MOVE
+            `MMEMory:MOVE
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/fff605aef2744a3a.htm#ID_0716a486900adacc0a00206a005facc9-a630b5e6900adacc0a00206a01eae7a4-en-US>`_
 
             Arguments: <string>,<string>
             """
@@ -1081,25 +1102,28 @@ class SMA100B_gen(Instrument):
 
         MOVE = MOVE()
         """
-        MMEMory:MOVE
+        `MMEMory:MOVE
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/fff605aef2744a3a.htm#ID_0716a486900adacc0a00206a005facc9-a630b5e6900adacc0a00206a01eae7a4-en-US>`_
 
         Arguments: <string>,<string>
         """
 
         class MSIS(SCPINode, SCPIQuery, SCPISet):
             """
-            MMEMory:MSIS
+            `MMEMory:MSIS
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/4b20fae1f5a54f03.htm#ID_a6615653900a4cc50a00206a01813515-cd2889b0900a4cc50a00206a01eae7a4-en-US>`_
 
-            Arguments: <string>
+            Arguments: 'string'
             """
             _cmd = "MSIS"
-            args = ["<string>"]
+            args = ["'string'"]
 
         MSIS = MSIS()
         """
-        MMEMory:MSIS
+        `MMEMory:MSIS
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/4b20fae1f5a54f03.htm#ID_a6615653900a4cc50a00206a01813515-cd2889b0900a4cc50a00206a01eae7a4-en-US>`_
 
-        Arguments: <string>
+        Arguments: 'string'
         """
 
         class RCL(SCPINode, SCPISet):
@@ -1120,18 +1144,20 @@ class SMA100B_gen(Instrument):
 
         class RDIRectory(SCPINode, SCPISet):
             """
-            MMEMory:RDIRectory
+            `MMEMory:RDIRectory
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/0605b8a725804d3f.htm#ID_845b819f9007a0b00a00206a00db9c2f-f178d5259007a0b00a00206a01eae7a4-en-US>`_
 
-            Arguments: <string>
+            Arguments: 'string'
             """
             _cmd = "RDIRectory"
-            args = ["<string>"]
+            args = ["'string'"]
 
         RDIRectory = RDIRectory()
         """
-        MMEMory:RDIRectory
+        `MMEMory:RDIRectory
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/0605b8a725804d3f.htm#ID_845b819f9007a0b00a00206a00db9c2f-f178d5259007a0b00a00206a01eae7a4-en-US>`_
 
-        Arguments: <string>
+        Arguments: 'string'
         """
 
         class SAV(SCPINode, SCPISet):
@@ -1193,7 +1219,8 @@ class SMA100B_gen(Instrument):
 
             class STATe(SCPINode, SCPISet):
                 """
-                MMEMory:STORe:STATe
+                `MMEMory:STORe:STATe
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/a5614cb446644ab0.htm#ID_45c41292b170604d0a00206a0129c63d-053ce38db170604d0a00206a01567e4b-en-US>`_
 
                 Arguments: <integer>,<string>,<string>
                 """
@@ -1202,7 +1229,8 @@ class SMA100B_gen(Instrument):
 
             STATe = STATe()
             """
-            MMEMory:STORe:STATe
+            `MMEMory:STORe:STATe
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/a5614cb446644ab0.htm#ID_45c41292b170604d0a00206a0129c63d-053ce38db170604d0a00206a01567e4b-en-US>`_
 
             Arguments: <integer>,<string>,<string>
             """
@@ -1268,16 +1296,16 @@ class SMA100B_gen(Instrument):
                     """
                     STATus:OPERation:BIT:ENABle
 
-                    Arguments: <numeric_value>
+                    Arguments: 1
                     """
                     _cmd = "ENABle"
-                    args = ["<numeric_value>"]
+                    args = ["1"]
 
                 ENABle = ENABle()
                 """
                 STATus:OPERation:BIT:ENABle
 
-                Arguments: <numeric_value>
+                Arguments: 1
                 """
 
                 class EVENt(SCPINode, SCPIQuery):
@@ -1296,36 +1324,36 @@ class SMA100B_gen(Instrument):
                 Arguments:
                 """
 
-                class NTRansition(SCPINode, SCPIQuery, SCPISet):
+                class NTRansition(SCPINode, SCPIBool):
                     """
                     STATus:OPERation:BIT:NTRansition
 
-                    Arguments: <boolean>
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "NTRansition"
-                    args = ["<boolean>"]
+                    args = ["1", "ON", "OFF"]
 
                 NTRansition = NTRansition()
                 """
                 STATus:OPERation:BIT:NTRansition
 
-                Arguments: <boolean>
+                Arguments: 1, ON, OFF
                 """
 
-                class PTRansition(SCPINode, SCPIQuery, SCPISet):
+                class PTRansition(SCPINode, SCPIBool):
                     """
                     STATus:OPERation:BIT:PTRansition
 
-                    Arguments: <boolean>
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "PTRansition"
-                    args = ["<boolean>"]
+                    args = ["1", "ON", "OFF"]
 
                 PTRansition = PTRansition()
                 """
                 STATus:OPERation:BIT:PTRansition
 
-                Arguments: <boolean>
+                Arguments: 1, ON, OFF
                 """
 
             BIT = BIT()
@@ -1337,7 +1365,8 @@ class SMA100B_gen(Instrument):
 
             class CONDition(SCPINode, SCPIQuery):
                 """
-                STATus:OPERation:CONDition
+                `STATus:OPERation:CONDition
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/eb9e616c44d34723.htm#ID_4d81c86771e8195f0a00206a0077942b-79a3ea6771e8195f0a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -1346,30 +1375,34 @@ class SMA100B_gen(Instrument):
 
             CONDition = CONDition()
             """
-            STATus:OPERation:CONDition
+            `STATus:OPERation:CONDition
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/eb9e616c44d34723.htm#ID_4d81c86771e8195f0a00206a0077942b-79a3ea6771e8195f0a00206a012bc823-en-US>`_
 
             Arguments:
             """
 
             class ENABle(SCPINode, SCPIQuery, SCPISet):
                 """
-                STATus:OPERation:ENABle
+                `STATus:OPERation:ENABle
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/98bc7031b17e43d1.htm#ID_8a49b59171e820350a00206a00df2aff-e8cb628971e820350a00206a012bc823-en-US>`_
 
-                Arguments: <integer>
+                Arguments: 1
                 """
                 _cmd = "ENABle"
-                args = ["<integer>"]
+                args = ["1"]
 
             ENABle = ENABle()
             """
-            STATus:OPERation:ENABle
+            `STATus:OPERation:ENABle
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/98bc7031b17e43d1.htm#ID_8a49b59171e820350a00206a00df2aff-e8cb628971e820350a00206a012bc823-en-US>`_
 
-            Arguments: <integer>
+            Arguments: 1
             """
 
             class EVENt(SCPINode, SCPIQuery):
                 """
-                STATus:OPERation:EVENt
+                `STATus:OPERation:EVENt
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/6adf4ecb81884cba.htm#ID_4526902e71e80ba30a00206a0056f13c-3203e98571e80bb30a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -1378,41 +1411,46 @@ class SMA100B_gen(Instrument):
 
             EVENt = EVENt()
             """
-            STATus:OPERation:EVENt
+            `STATus:OPERation:EVENt
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/6adf4ecb81884cba.htm#ID_4526902e71e80ba30a00206a0056f13c-3203e98571e80bb30a00206a012bc823-en-US>`_
 
             Arguments:
             """
 
             class NTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
-                STATus:OPERation:NTRansition
+                `STATus:OPERation:NTRansition
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/7972c214b7914431.htm#ID_c40b400271e8268e0a00206a01d0b5f6-bab207fb71e8268e0a00206a012bc823-en-US>`_
 
-                Arguments: <integer>
+                Arguments: 1
                 """
                 _cmd = "NTRansition"
-                args = ["<integer>"]
+                args = ["1"]
 
             NTRansition = NTRansition()
             """
-            STATus:OPERation:NTRansition
+            `STATus:OPERation:NTRansition
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/7972c214b7914431.htm#ID_c40b400271e8268e0a00206a01d0b5f6-bab207fb71e8268e0a00206a012bc823-en-US>`_
 
-            Arguments: <integer>
+            Arguments: 1
             """
 
             class PTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
-                STATus:OPERation:PTRansition
+                `STATus:OPERation:PTRansition
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/19ddd521fccc4c10.htm#ID_7baf119671e812690a00206a0185198a-e4673fbb71e812690a00206a012bc823-en-US>`_
 
-                Arguments: <integer>
+                Arguments: 1
                 """
                 _cmd = "PTRansition"
-                args = ["<integer>"]
+                args = ["1"]
 
             PTRansition = PTRansition()
             """
-            STATus:OPERation:PTRansition
+            `STATus:OPERation:PTRansition
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/19ddd521fccc4c10.htm#ID_7baf119671e812690a00206a0185198a-e4673fbb71e812690a00206a012bc823-en-US>`_
 
-            Arguments: <integer>
+            Arguments: 1
             """
 
         OPERation = OPERation()
@@ -1424,7 +1462,8 @@ class SMA100B_gen(Instrument):
 
         class PRESet(SCPINode, SCPISet):
             """
-            STATus:PRESet
+            `STATus:PRESet
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/790fdbfc3c41487f.htm#ID_e484e63b71e7fde70a00206a00a80b3f-98d3fe7771e7fde70a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -1433,7 +1472,8 @@ class SMA100B_gen(Instrument):
 
         PRESet = PRESet()
         """
-        STATus:PRESet
+        `STATus:PRESet
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/790fdbfc3c41487f.htm#ID_e484e63b71e7fde70a00206a00a80b3f-98d3fe7771e7fde70a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -1472,20 +1512,20 @@ class SMA100B_gen(Instrument):
                 Arguments:
                 """
 
-                class ENABle(SCPINode, SCPIQuery, SCPISet):
+                class ENABle(SCPINode, SCPIBool):
                     """
                     STATus:QUEStionable:BIT:ENABle
 
-                    Arguments: <boolean>
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "ENABle"
-                    args = ["<boolean>"]
+                    args = ["1", "ON", "OFF"]
 
                 ENABle = ENABle()
                 """
                 STATus:QUEStionable:BIT:ENABle
 
-                Arguments: <boolean>
+                Arguments: 1, ON, OFF
                 """
 
                 class EVENt(SCPINode, SCPIQuery):
@@ -1504,36 +1544,36 @@ class SMA100B_gen(Instrument):
                 Arguments:
                 """
 
-                class NTRansition(SCPINode, SCPIQuery, SCPISet):
+                class NTRansition(SCPINode, SCPIBool):
                     """
                     STATus:QUEStionable:BIT:NTRansition
 
-                    Arguments: <boolean>
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "NTRansition"
-                    args = ["<boolean>"]
+                    args = ["1", "ON", "OFF"]
 
                 NTRansition = NTRansition()
                 """
                 STATus:QUEStionable:BIT:NTRansition
 
-                Arguments: <boolean>
+                Arguments: 1, ON, OFF
                 """
 
-                class PTRansition(SCPINode, SCPIQuery, SCPISet):
+                class PTRansition(SCPINode, SCPIBool):
                     """
                     STATus:QUEStionable:BIT:PTRansition
 
-                    Arguments: <boolean>
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "PTRansition"
-                    args = ["<boolean>"]
+                    args = ["1", "ON", "OFF"]
 
                 PTRansition = PTRansition()
                 """
                 STATus:QUEStionable:BIT:PTRansition
 
-                Arguments: <boolean>
+                Arguments: 1, ON, OFF
                 """
 
             BIT = BIT()
@@ -1545,7 +1585,8 @@ class SMA100B_gen(Instrument):
 
             class CONDition(SCPINode, SCPIQuery):
                 """
-                STATus:QUEStionable:CONDition
+                `STATus:QUEStionable:CONDition
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/f08a3423b9ea496f.htm#ID_e3fc15a371e842430a00206a009728a6-98e12c6f71e842430a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -1554,30 +1595,34 @@ class SMA100B_gen(Instrument):
 
             CONDition = CONDition()
             """
-            STATus:QUEStionable:CONDition
+            `STATus:QUEStionable:CONDition
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/f08a3423b9ea496f.htm#ID_e3fc15a371e842430a00206a009728a6-98e12c6f71e842430a00206a012bc823-en-US>`_
 
             Arguments:
             """
 
             class ENABle(SCPINode, SCPIQuery, SCPISet):
                 """
-                STATus:QUEStionable:ENABle
+                `STATus:QUEStionable:ENABle
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/08e648cd32434240.htm#ID_d432e5c771e849670a00206a00cb59b5-0bf1cb4571e849670a00206a012bc823-en-US>`_
 
-                Arguments: <integer>
+                Arguments: 1
                 """
                 _cmd = "ENABle"
-                args = ["<integer>"]
+                args = ["1"]
 
             ENABle = ENABle()
             """
-            STATus:QUEStionable:ENABle
+            `STATus:QUEStionable:ENABle
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/08e648cd32434240.htm#ID_d432e5c771e849670a00206a00cb59b5-0bf1cb4571e849670a00206a012bc823-en-US>`_
 
-            Arguments: <integer>
+            Arguments: 1
             """
 
             class EVENt(SCPINode, SCPIQuery):
                 """
-                STATus:QUEStionable:EVENt
+                `STATus:QUEStionable:EVENt
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/baaaa61d6eeb4c8f.htm#ID_8f72e6de71e834880a00206a01c75738-c55f605671e834880a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -1586,41 +1631,46 @@ class SMA100B_gen(Instrument):
 
             EVENt = EVENt()
             """
-            STATus:QUEStionable:EVENt
+            `STATus:QUEStionable:EVENt
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/baaaa61d6eeb4c8f.htm#ID_8f72e6de71e834880a00206a01c75738-c55f605671e834880a00206a012bc823-en-US>`_
 
             Arguments:
             """
 
             class NTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
-                STATus:QUEStionable:NTRansition
+                `STATus:QUEStionable:NTRansition
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/792d9ce3f9bf4fdd.htm#ID_3172142271e8509b0a00206a01b3f2a1-b4d8282f71e8509b0a00206a012bc823-en-US>`_
 
-                Arguments: <integer>
+                Arguments: 1
                 """
                 _cmd = "NTRansition"
-                args = ["<integer>"]
+                args = ["1"]
 
             NTRansition = NTRansition()
             """
-            STATus:QUEStionable:NTRansition
+            `STATus:QUEStionable:NTRansition
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/792d9ce3f9bf4fdd.htm#ID_3172142271e8509b0a00206a01b3f2a1-b4d8282f71e8509b0a00206a012bc823-en-US>`_
 
-            Arguments: <integer>
+            Arguments: 1
             """
 
             class PTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
-                STATus:QUEStionable:PTRansition
+                `STATus:QUEStionable:PTRansition
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/13c14e2f83164444.htm#ID_4ed8eafd71e83b5e0a00206a01c2fbb1-c632286d71e83b5e0a00206a012bc823-en-US>`_
 
-                Arguments: <integer>
+                Arguments: 1
                 """
                 _cmd = "PTRansition"
-                args = ["<integer>"]
+                args = ["1"]
 
             PTRansition = PTRansition()
             """
-            STATus:QUEStionable:PTRansition
+            `STATus:QUEStionable:PTRansition
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/13c14e2f83164444.htm#ID_4ed8eafd71e83b5e0a00206a01c2fbb1-c632286d71e83b5e0a00206a012bc823-en-US>`_
 
-            Arguments: <integer>
+            Arguments: 1
             """
 
         QUEStionable = QUEStionable()
@@ -1641,7 +1691,8 @@ class SMA100B_gen(Instrument):
 
             class NEXT(SCPINode, SCPIQuery):
                 """
-                STATus:QUEue:NEXT
+                `STATus:QUEue:NEXT
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/4a06b365f17842a7.htm#ID_85f56928ee2f7fee0a001ae7261adfe9-813de58aee2f7e670a001ae72bbdbcb4-en-US>`_
 
                 Arguments:
                 """
@@ -1650,7 +1701,8 @@ class SMA100B_gen(Instrument):
 
             NEXT = NEXT()
             """
-            STATus:QUEue:NEXT
+            `STATus:QUEue:NEXT
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/4a06b365f17842a7.htm#ID_85f56928ee2f7fee0a001ae7261adfe9-813de58aee2f7e670a001ae72bbdbcb4-en-US>`_
 
             Arguments:
             """
@@ -1680,7 +1732,8 @@ class SMA100B_gen(Instrument):
 
         class DATE(SCPINode, SCPIQuery, SCPISet):
             """
-            SYSTem:DATE
+            `SYSTem:DATE
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/779bb1a4775d490c.htm#ID_09e1ebc9a6ab7e490a001ae70d84cfcf-cf76dd7da6ab7d3f0a001ae71f12f61a-en-US>`_
 
             Arguments: <integer>,<integer>,<integer>
             """
@@ -1721,7 +1774,8 @@ class SMA100B_gen(Instrument):
 
         DATE = DATE()
         """
-        SYSTem:DATE
+        `SYSTem:DATE
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/779bb1a4775d490c.htm#ID_09e1ebc9a6ab7e490a001ae70d84cfcf-cf76dd7da6ab7d3f0a001ae71f12f61a-en-US>`_
 
         Arguments: <integer>,<integer>,<integer>
         """
@@ -1762,10 +1816,10 @@ class SMA100B_gen(Instrument):
             """
             SYSTem:DFPRint
 
-            Arguments: <string>
+            Arguments: 'string'
             """
             _cmd = "DFPRint"
-            args = ["<string>"]
+            args = ["'string'"]
 
             class HISTory(SCPINode):
                 """
@@ -1796,16 +1850,16 @@ class SMA100B_gen(Instrument):
                     """
                     SYSTem:DFPRint:HISTory:ENTRy
 
-                    Arguments: <integer>
+                    Arguments: 1
                     """
                     _cmd = "ENTRy"
-                    args = ["<integer>"]
+                    args = ["1"]
 
                 ENTRy = ENTRy()
                 """
                 SYSTem:DFPRint:HISTory:ENTRy
 
-                Arguments: <integer>
+                Arguments: 1
                 """
 
             HISTory = HISTory()
@@ -1819,7 +1873,7 @@ class SMA100B_gen(Instrument):
         """
         SYSTem:DFPRint
 
-        Arguments: <string>
+        Arguments: 'string'
         """
 
         class DID(SCPINode, SCPIQuery):
@@ -1847,20 +1901,20 @@ class SMA100B_gen(Instrument):
             _cmd = "DISPlay"
             args = []
 
-            class UPDate(SCPINode, SCPIQuery, SCPISet):
+            class UPDate(SCPINode, SCPIBool):
                 """
                 SYSTem:DISPlay:UPDate
 
-                Arguments: <boolean>
+                Arguments: 1, ON, OFF
                 """
                 _cmd = "UPDate"
-                args = ["<boolean>"]
+                args = ["1", "ON", "OFF"]
 
             UPDate = UPDate()
             """
             SYSTem:DISPlay:UPDate
 
-            Arguments: <boolean>
+            Arguments: 1, ON, OFF
             """
 
         DISPlay = DISPlay()
@@ -1881,7 +1935,8 @@ class SMA100B_gen(Instrument):
 
             class ALL(SCPINode, SCPIQuery):
                 """
-                SYSTem:ERRor:ALL
+                `SYSTem:ERRor:ALL
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/7b0fb769f8c94c63.htm#ID_01d81ebc71d1c5670a00206a018810ed-c1e0759071d1c5670a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -1890,7 +1945,8 @@ class SMA100B_gen(Instrument):
 
             ALL = ALL()
             """
-            SYSTem:ERRor:ALL
+            `SYSTem:ERRor:ALL
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/7b0fb769f8c94c63.htm#ID_01d81ebc71d1c5670a00206a018810ed-c1e0759071d1c5670a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -1906,7 +1962,8 @@ class SMA100B_gen(Instrument):
 
                 class ALL(SCPINode, SCPIQuery):
                     """
-                    SYSTem:ERRor:CODE:ALL
+                    `SYSTem:ERRor:CODE:ALL
+                    <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/ab9328e7820e4ab2.htm#ID_e106118871d1d3610a00206a00df0731-260d42f471d1d3610a00206a012bc823-en-US>`_
 
                     Arguments:
                     """
@@ -1915,14 +1972,16 @@ class SMA100B_gen(Instrument):
 
                 ALL = ALL()
                 """
-                SYSTem:ERRor:CODE:ALL
+                `SYSTem:ERRor:CODE:ALL
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/ab9328e7820e4ab2.htm#ID_e106118871d1d3610a00206a00df0731-260d42f471d1d3610a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
 
                 class NEXT(SCPINode, SCPIQuery):
                     """
-                    SYSTem:ERRor:CODE:NEXT
+                    `SYSTem:ERRor:CODE:NEXT
+                    <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/7327faef63024f01.htm#ID_782a7ff371d1ccaa0a00206a00d211bc-ce97f85471d1ccaa0a00206a012bc823-en-US>`_
 
                     Arguments:
                     """
@@ -1931,7 +1990,8 @@ class SMA100B_gen(Instrument):
 
                 NEXT = NEXT()
                 """
-                SYSTem:ERRor:CODE:NEXT
+                `SYSTem:ERRor:CODE:NEXT
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/7327faef63024f01.htm#ID_782a7ff371d1ccaa0a00206a00d211bc-ce97f85471d1ccaa0a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -1945,7 +2005,8 @@ class SMA100B_gen(Instrument):
 
             class COUNt(SCPINode, SCPIQuery):
                 """
-                SYSTem:ERRor:COUNt
+                `SYSTem:ERRor:COUNt
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/ba0d0e59bbb0493c.htm#ID_00c603b971d1daa50a00206a0178d1e6-77aa4c6371d1daa50a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -1954,14 +2015,16 @@ class SMA100B_gen(Instrument):
 
             COUNt = COUNt()
             """
-            SYSTem:ERRor:COUNt
+            `SYSTem:ERRor:COUNt
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/ba0d0e59bbb0493c.htm#ID_00c603b971d1daa50a00206a0178d1e6-77aa4c6371d1daa50a00206a012bc823-en-US>`_
 
             Arguments:
             """
 
             class NEXT(SCPINode, SCPIQuery):
                 """
-                SYSTem:ERRor:NEXT
+                `SYSTem:ERRor:NEXT
+                <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/9041c827635042ae.htm#ID_3ca90d7f71d1f7830a00206a00d63293-4855f86871d1f7830a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -1970,7 +2033,8 @@ class SMA100B_gen(Instrument):
 
             NEXT = NEXT()
             """
-            SYSTem:ERRor:NEXT
+            `SYSTem:ERRor:NEXT
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/9041c827635042ae.htm#ID_3ca90d7f71d1f7830a00206a00d63293-4855f86871d1f7830a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -1995,26 +2059,26 @@ class SMA100B_gen(Instrument):
                 """
                 SYSTem:HELP:HEADers
 
-                Arguments: <string>
+                Arguments: 'string'
                 """
                 _cmd = "HEADers"
-                args = ["<string>"]
+                args = ["'string'"]
 
             HEADers = HEADers()
             """
             SYSTem:HELP:HEADers
 
-            Arguments: <string>
+            Arguments: 'string'
             """
 
             class SYNTax(SCPINode, SCPIQuery):
                 """
                 SYSTem:HELP:SYNTax
 
-                Arguments: <string>
+                Arguments: 'string'
                 """
                 _cmd = "SYNTax"
-                args = ["<string>"]
+                args = ["'string'"]
 
                 class ALL(SCPINode, SCPIQuery):
                     """
@@ -2036,7 +2100,7 @@ class SMA100B_gen(Instrument):
             """
             SYSTem:HELP:SYNTax
 
-            Arguments: <string>
+            Arguments: 'string'
             """
 
         HELP = HELP()
@@ -2046,20 +2110,22 @@ class SMA100B_gen(Instrument):
         Arguments:
         """
 
-        class KLOCk(SCPINode, SCPIQuery, SCPISet):
+        class KLOCk(SCPINode, SCPIBool):
             """
-            SYSTem:KLOCk
+            `SYSTem:KLOCk
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/cbb799b612914e37.htm#ID_a7f3c503a58e7f280a00201900122e30-4255d8a4a58e7d430a00201901ee4d9f-en-US>`_
 
-            Arguments: <boolean>
+            Arguments: 1, ON, OFF
             """
             _cmd = "KLOCk"
-            args = ["<boolean>"]
+            args = ["1", "ON", "OFF"]
 
         KLOCk = KLOCk()
         """
-        SYSTem:KLOCk
+        `SYSTem:KLOCk
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/cbb799b612914e37.htm#ID_a7f3c503a58e7f280a00201900122e30-4255d8a4a58e7d430a00201901ee4d9f-en-US>`_
 
-        Arguments: <boolean>
+        Arguments: 1, ON, OFF
         """
 
         class LOCK(SCPINode):
@@ -2180,32 +2246,32 @@ class SMA100B_gen(Instrument):
                     """
                     SYSTem:LOCK:REQuest:EXCLusive
 
-                    Arguments: <integer>|INFinite
+                    Arguments: <integer>, INFinite
                     """
                     _cmd = "EXCLusive"
-                    args = ["<integer>|INFinite"]
+                    args = ["<integer>", "INFinite"]
 
                 EXCLusive = EXCLusive()
                 """
                 SYSTem:LOCK:REQuest:EXCLusive
 
-                Arguments: <integer>|INFinite
+                Arguments: <integer>, INFinite
                 """
 
                 class SHARed(SCPINode, SCPIQuery):
                     """
                     SYSTem:LOCK:REQuest:SHARed
 
-                    Arguments: <string>,<integer>|INFinite
+                    Arguments: <string>,<integer>, INFinite
                     """
                     _cmd = "SHARed"
-                    args = ["<string>,<integer>|INFinite"]
+                    args = ["<string>,<integer>", "INFinite"]
 
                 SHARed = SHARed()
                 """
                 SYSTem:LOCK:REQuest:SHARed
 
-                Arguments: <string>,<integer>|INFinite
+                Arguments: <string>,<integer>, INFinite
                 """
 
             REQuest = REQuest()
@@ -2251,16 +2317,16 @@ class SMA100B_gen(Instrument):
                 """
                 SYSTem:LOCK:TIMeout
 
-                Arguments: <integer>|INFinite
+                Arguments: <integer>, INFinite
                 """
                 _cmd = "TIMeout"
-                args = ["<integer>|INFinite"]
+                args = ["<integer>", "INFinite"]
 
             TIMeout = TIMeout()
             """
             SYSTem:LOCK:TIMeout
 
-            Arguments: <integer>|INFinite
+            Arguments: <integer>, INFinite
             """
 
         LOCK = LOCK()
@@ -2272,7 +2338,8 @@ class SMA100B_gen(Instrument):
 
         class PRESet(SCPINode, SCPISet):
             """
-            SYSTem:PRESet
+            `SYSTem:PRESet
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/fea01e424ecf4cc4.htm#ID_a64c6dbf4ecf62470a00206a0141ec63-ed39c76a4ecf62470a00206a0024546d-en-US>`_
 
             Arguments:
             """
@@ -2281,14 +2348,16 @@ class SMA100B_gen(Instrument):
 
         PRESet = PRESet()
         """
-        SYSTem:PRESet
+        `SYSTem:PRESet
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/fea01e424ecf4cc4.htm#ID_a64c6dbf4ecf62470a00206a0141ec63-ed39c76a4ecf62470a00206a0024546d-en-US>`_
 
         Arguments:
         """
 
         class TIME(SCPINode, SCPIQuery, SCPISet):
             """
-            SYSTem:TIME
+            `SYSTem:TIME
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/f17cde1b40ba4722.htm#ID_57f998aba6ab7fcf0a001ae73f23664c-f3909540a6ab7ee50a001ae71f12f61a-en-US>`_
 
             Arguments: <integer>,<integer>,<integer>
             """
@@ -2304,30 +2373,30 @@ class SMA100B_gen(Instrument):
                 _cmd = "DSTime"
                 args = []
 
-                class MODE(SCPINode, SCPIQuery, SCPISet):
+                class MODE(SCPINode, SCPIBool):
                     """
                     SYSTem:TIME:DSTime:MODE
 
-                    Arguments: <boolean>
+                    Arguments: 1, ON, OFF
                     """
                     _cmd = "MODE"
-                    args = ["<boolean>"]
+                    args = ["1", "ON", "OFF"]
 
                 MODE = MODE()
                 """
                 SYSTem:TIME:DSTime:MODE
 
-                Arguments: <boolean>
+                Arguments: 1, ON, OFF
                 """
 
                 class RULE(SCPINode, SCPIQuery, SCPISet):
                     """
                     SYSTem:TIME:DSTime:RULE
 
-                    Arguments: <string>
+                    Arguments: 'string'
                     """
                     _cmd = "RULE"
-                    args = ["<string>"]
+                    args = ["'string'"]
 
                     class CATalog(SCPINode, SCPIQuery):
                         """
@@ -2349,7 +2418,7 @@ class SMA100B_gen(Instrument):
                 """
                 SYSTem:TIME:DSTime:RULE
 
-                Arguments: <string>
+                Arguments: 'string'
                 """
 
             DSTime = DSTime()
@@ -2372,10 +2441,10 @@ class SMA100B_gen(Instrument):
                     """
                     SYSTem:TIME:HRTimer:ABSolute
 
-                    Arguments: <numeric_value>
+                    Arguments: 1
                     """
                     _cmd = "ABSolute"
-                    args = ["<numeric_value>"]
+                    args = ["1"]
 
                     class SET(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -2397,23 +2466,23 @@ class SMA100B_gen(Instrument):
                 """
                 SYSTem:TIME:HRTimer:ABSolute
 
-                Arguments: <numeric_value>
+                Arguments: 1
                 """
 
                 class RELative(SCPINode, SCPISet):
                     """
                     SYSTem:TIME:HRTimer:RELative
 
-                    Arguments: <integer>
+                    Arguments: 1
                     """
                     _cmd = "RELative"
-                    args = ["<integer>"]
+                    args = ["1"]
 
                 RELative = RELative()
                 """
                 SYSTem:TIME:HRTimer:RELative
 
-                Arguments: <integer>
+                Arguments: 1
                 """
 
             HRTimer = HRTimer()
@@ -2457,7 +2526,8 @@ class SMA100B_gen(Instrument):
 
         TIME = TIME()
         """
-        SYSTem:TIME
+        `SYSTem:TIME
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/f17cde1b40ba4722.htm#ID_57f998aba6ab7fcf0a001ae73f23664c-f3909540a6ab7ee50a001ae71f12f61a-en-US>`_
 
         Arguments: <integer>,<integer>,<integer>
         """
@@ -2480,7 +2550,8 @@ class SMA100B_gen(Instrument):
 
         class VERSion(SCPINode, SCPIQuery):
             """
-            SYSTem:VERSion
+            `SYSTem:VERSion
+            <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/1687c21d3b684121.htm#ID_83b8bf4871d1f0010a00206a01566d1c-c7a8cef471d1f0010a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -2489,7 +2560,8 @@ class SMA100B_gen(Instrument):
 
         VERSion = VERSion()
         """
-        SYSTem:VERSion
+        `SYSTem:VERSion
+        <http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en/Content/1687c21d3b684121.htm#ID_83b8bf4871d1f0010a00206a01566d1c-c7a8cef471d1f0010a00206a012bc823-en-US>`_
 
         Arguments:
         """
