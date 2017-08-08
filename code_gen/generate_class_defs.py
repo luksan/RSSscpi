@@ -21,6 +21,8 @@ except ImportError:
     from urllib import urlretrieve
 
 import logging
+from bs4 import BeautifulSoup
+import re
 
 module_dir = os.path.abspath(os.path.dirname(__file__))
 cmd_list_dir = os.path.join(module_dir, "SCPI_cmd_lists")
@@ -105,6 +107,78 @@ class Webhelp(object):
         :rtype: str or None
         """
         return None
+
+
+class ModernRohdeWebhelp(Webhelp):
+    _base_url = None
+    """The root of the online help URLs, without trailing slash.
+
+    example: http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en{0}
+    """
+
+    toc_file = None
+    """The filename for caching the table of contents."""
+
+    cmd_list_file = None
+    """The filename for caching the commad list."""
+
+    def __init__(self, download_webhelp=False):
+        self.toc_file = os.path.join(cmd_list_dir, self.toc_file)
+        self.cmd_list_file = os.path.join(cmd_list_dir, self.cmd_list_file)
+
+        self._urls = dict()
+        self._common_commands = None  # *CLS, *OPC, etc.
+        self._interface_messages = None  # VXI-11 Interface messages, @LOC, @DCL, etc.
+
+        if download_webhelp:
+            self.download_cmd_list()
+
+        self._toc_soup = None
+        self._cmd_list_soup = None
+
+        self.parse_toc()
+        self.parse_cmd_list()
+
+    def download_cmd_list(self):
+        toc_url = self._base_url.format("/Data/Toc.xml")
+        toc = BeautifulSoup(urlopen(toc_url), "html.parser")
+        with open(self.toc_file, "w") as f:
+            f.write(toc.prettify("utf-8"))
+        logging.debug("TOC downloaded from %s" % toc_url)
+
+        cmd_list_url = toc.find(title="List of Commands")["link"]
+        cmd_list = BeautifulSoup(urlopen(self._base_url.format(cmd_list_url)), "html.parser")
+        with open(self.cmd_list_file, "w") as f:
+            f.write(cmd_list.prettify("utf-8"))
+
+        logging.debug("Command list downloaded from %s" % self._base_url.format(cmd_list_url))
+
+    def parse_toc(self):
+        """
+        Load help URLs from the SCPI command list.
+        """
+        self._toc_soup = BeautifulSoup(open(self.toc_file), "html.parser")
+
+    def parse_cmd_list(self):
+        self._cmd_list_soup = BeautifulSoup(open(self.cmd_list_file), "html.parser")
+        d = self._cmd_list_soup.find("div", class_="block")
+        for u in d("a"):
+            cmd = u.string.strip()
+            url = u['href']
+            cmd_key = str(cmd).translate(None, "[]?")  # Remove all brackets and question marks
+            cmd_key = re.sub(r"([^:])<\w+?>", r"\1", cmd_key)  # Convert "SENSE<Ch>" to "SENSE"
+            cmd_key = cmd_key.lstrip(":")  # Remove leading colon from key
+            self._urls[cmd_key] = (cmd, url)
+
+    def get_help_url(self, cmd):
+        if cmd[0][0] == "*":
+            return self._common_commands
+        if cmd[0][0] == "@":
+            return self._interface_messages
+        try:
+            return self._base_url.format("/Content/" + self._urls[":".join(cmd)][1])
+        except KeyError:
+            return None
 
 
 class ClassCodeGen(object):
