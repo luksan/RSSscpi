@@ -51,7 +51,7 @@ class ZNBTreePatcher(object):
 
 
 def generate():
-    generate_SCPI_class(CmdListParser("ZNB_commands_2_70.inp"), "ZNB_gen", RohdeZNBWebhelp(download_webhelp=download),
+    generate_SCPI_class(CmdListParser("ZNB_commands.inp"), "ZNB_gen", RohdeZNBWebhelp(download_webhelp=download),
                         tree_patcher=ZNBTreePatcher())
 
 if __name__ == "__main__":

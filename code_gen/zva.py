@@ -76,7 +76,7 @@ class RohdeZVAWebhelp(Webhelp):
 
 
 def generate():
-    generate_SCPI_class(CmdListParser("ZVA_commands_3_70.inp"), "ZVA_gen", RohdeZVAWebhelp(download_webhelp=download))
+    generate_SCPI_class(CmdListParser("ZVA_commands.inp"), "ZVA_gen", RohdeZVAWebhelp(download_webhelp=download))
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
