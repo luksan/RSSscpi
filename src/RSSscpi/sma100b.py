@@ -7,10 +7,9 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 
 from RSSscpi.gen.SMA100B_gen import SMA100B_gen
 from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax
+import RSSscpi.network as net
 
-import visa
 import socket
-import threading
 
 
 def connect_ethernet(ip_address):
@@ -23,17 +22,15 @@ def connect_ethernet(ip_address):
     :return: An initialized SMA100B instance.
     :rtype: SMA100B
     """
-    rm = visa.ResourceManager()
-    visa_str = 'TCPIP::' + ip_address + '::hislip0'
-    visa_res = rm.open_resource(visa_str)
-    nrp = SMA100B(visa_res)
-    nrp.visa_logger.info("Connected to " + visa_str)
-    nrp.init()
-    return nrp
+    return net.connect_ethernet(SMA100B, ip_address)
 
 
-class SMA100BZeroconf(object):
+class SMA100BZeroconf(net.ZeroconfInfo):
     def __init__(self, zeroconf_info):
+        self.fw = ""
+        super(SMA100BZeroconf, self).__init__(zeroconf_info)
+
+    def parse_zc_info(self, zeroconf_info):
         i = zeroconf_info
         (sma, fw, sn) = i.name.split()
         self.name = sma + "-" + sn[:6]  # SMA100B-xxxxxx
@@ -42,6 +39,14 @@ class SMA100BZeroconf(object):
 
     def __str__(self):
         return "%s, %s, %s" % (self.name, self.fw, self.ip_address)
+
+
+class ZCListener(net.ZeroconfListener):
+    info_class = SMA100BZeroconf
+    service_name = "_hislip._tcp.local."
+
+    def filter_zc_info(self, zc_info):
+        return zc_info.name.startswith("SMA100B")
 
 
 def find_sma100b(max_time=2, max_devices=None):
@@ -53,32 +58,8 @@ def find_sma100b(max_time=2, max_devices=None):
     :return: A list of SMA100BZeroconf objects describing the found devices.
     :rtype: list[SMA100BZeroconf]
     """
-    from zeroconf import Zeroconf, ServiceBrowser
-    found_devices = []
-    stop_search = threading.Condition()
 
-    class Listener(object):
-        @staticmethod
-        def add_service(zc, type_, name):
-            stop_search.acquire()
-            info = zc.get_service_info(type_, name)
-            if not info.name.startswith("SMA100B"):
-                return
-            found_devices.append(SMA100BZeroconf(info))
-            if max_devices is not None and len(found_devices) >= max_devices:
-                stop_search.notify_all()
-            stop_search.release()
-
-    z = Zeroconf()
-    listener = Listener()
-    stop_search.acquire()
-    try:
-        ServiceBrowser(z, "_hislip._tcp.local.", listener)
-        stop_search.wait(max_time)
-    finally:
-        z.close()
-
-    return found_devices
+    return net.zeroconf_scan(ZCListener(), max_time, max_devices)
 
 
 class SMA100B(SMA100B_gen):
