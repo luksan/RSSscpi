@@ -1,4 +1,4 @@
-// ZNB fw 2.70
+// ZNB fw 2.84
 *CAL?
 *CLS
 *ESE 1
@@ -170,6 +170,45 @@ CALCulate1:DLINe:STATe 1
 CALCulate1:DLINe:STATe OFF
 CALCulate1:DLINe:STATe ON
 CALCulate1:DLINe:STATe?
+CALCulate1:DTIMe:DATA
+CALCulate1:DTIMe:DATA ALL
+CALCulate1:DTIMe:DATA?
+CALCulate1:DTIMe:LIMit:FAIL?
+CALCulate1:DTIMe:LIMit:FAIL:BEEP 1
+CALCulate1:DTIMe:LIMit:FAIL:BEEP OFF
+CALCulate1:DTIMe:LIMit:FAIL:BEEP ON
+CALCulate1:DTIMe:LIMit:FAIL:BEEP?
+CALCulate1:DTIMe:LIMit:LIMit 1
+CALCulate1:DTIMe:LIMit:LIMit 1 KM
+CALCulate1:DTIMe:LIMit:LIMit 1 M
+CALCulate1:DTIMe:LIMit:LIMit 1 MM
+CALCulate1:DTIMe:LIMit:LIMit 1 MS
+CALCulate1:DTIMe:LIMit:LIMit 1 NM
+CALCulate1:DTIMe:LIMit:LIMit 1 NN
+CALCulate1:DTIMe:LIMit:LIMit 1 NS
+CALCulate1:DTIMe:LIMit:LIMit 1 PM
+CALCulate1:DTIMe:LIMit:LIMit 1 PS
+CALCulate1:DTIMe:LIMit:LIMit 1 S
+CALCulate1:DTIMe:LIMit:LIMit 1 UM
+CALCulate1:DTIMe:LIMit:LIMit 1 US
+CALCulate1:DTIMe:LIMit:LIMit DEFault
+CALCulate1:DTIMe:LIMit:LIMit DOWN
+CALCulate1:DTIMe:LIMit:LIMit MAXimum
+CALCulate1:DTIMe:LIMit:LIMit MINimum
+CALCulate1:DTIMe:LIMit:LIMit UP
+CALCulate1:DTIMe:LIMit:LIMit?
+CALCulate1:DTIMe:LIMit:STATe 1
+CALCulate1:DTIMe:LIMit:STATe OFF
+CALCulate1:DTIMe:LIMit:STATe ON
+CALCulate1:DTIMe:LIMit:STATe?
+CALCulate1:DTIMe:POSition 1
+CALCulate1:DTIMe:POSition?
+CALCulate1:DTIMe:STATe 1
+CALCulate1:DTIMe:STATe OFF
+CALCulate1:DTIMe:STATe ON
+CALCulate1:DTIMe:STATe?
+CALCulate1:DTIMe:TARGet 'string'
+CALCulate1:DTIMe:TARGet?
 CALCulate1:EYE:DUT:MODE IDEal
 CALCulate1:EYE:DUT:MODE MEASured
 CALCulate1:EYE:DUT:MODE?
@@ -384,6 +423,7 @@ CALCulate1:EYE:JITTer:TYPE:USER 1
 CALCulate1:EYE:JITTer:TYPE:USER OFF
 CALCulate1:EYE:JITTer:TYPE:USER ON
 CALCulate1:EYE:JITTer:TYPE:USER?
+CALCulate1:EYE:MASK AUTO
 CALCulate1:EYE:MASK:CENTer:HORizontal 1
 CALCulate1:EYE:MASK:CENTer:HORizontal 1 MS
 CALCulate1:EYE:MASK:CENTer:HORizontal 1 NS
@@ -1773,6 +1813,7 @@ CALCulate1:MARKer1:REFerence:STATe 1
 CALCulate1:MARKer1:REFerence:STATe OFF
 CALCulate1:MARKer1:REFerence:STATe ON
 CALCulate1:MARKer1:REFerence:STATe?
+CALCulate1:MARKer1:REFerence:TYPE ARBitrary
 CALCulate1:MARKer1:REFerence:TYPE FIXed
 CALCulate1:MARKer1:REFerence:TYPE NORMal
 CALCulate1:MARKer1:REFerence:TYPE?
@@ -1801,6 +1842,66 @@ CALCulate1:MARKer1:REFerence:X MAXimum
 CALCulate1:MARKer1:REFerence:X MINimum
 CALCulate1:MARKer1:REFerence:X UP
 CALCulate1:MARKer1:REFerence:X?
+CALCulate1:MARKer1:REFerence:Y 1
+CALCulate1:MARKer1:REFerence:Y 1 DB
+CALCulate1:MARKer1:REFerence:Y 1 DBM
+CALCulate1:MARKer1:REFerence:Y 1 DBMV
+CALCulate1:MARKer1:REFerence:Y 1 DBUV
+CALCulate1:MARKer1:REFerence:Y 1 DBV
+CALCulate1:MARKer1:REFerence:Y 1 DBW
+CALCulate1:MARKer1:REFerence:Y 1 DEG
+CALCulate1:MARKer1:REFerence:Y 1 F
+CALCulate1:MARKer1:REFerence:Y 1 FF
+CALCulate1:MARKer1:REFerence:Y 1 FH
+CALCulate1:MARKer1:REFerence:Y 1 FUNIT
+CALCulate1:MARKer1:REFerence:Y 1 GOHM
+CALCulate1:MARKer1:REFerence:Y 1 H
+CALCulate1:MARKer1:REFerence:Y 1 KDEG
+CALCulate1:MARKer1:REFerence:Y 1 KOHM
+CALCulate1:MARKer1:REFerence:Y 1 MDEG
+CALCulate1:MARKer1:REFerence:Y 1 MF
+CALCulate1:MARKer1:REFerence:Y 1 MH
+CALCulate1:MARKer1:REFerence:Y 1 MOHM
+CALCulate1:MARKer1:REFerence:Y 1 MS
+CALCulate1:MARKer1:REFerence:Y 1 MSIE
+CALCulate1:MARKer1:REFerence:Y 1 MUNIT
+CALCulate1:MARKer1:REFerence:Y 1 MV
+CALCulate1:MARKer1:REFerence:Y 1 MW
+CALCulate1:MARKer1:REFerence:Y 1 NDEG
+CALCulate1:MARKer1:REFerence:Y 1 NF
+CALCulate1:MARKer1:REFerence:Y 1 NH
+CALCulate1:MARKer1:REFerence:Y 1 NN
+CALCulate1:MARKer1:REFerence:Y 1 NS
+CALCulate1:MARKer1:REFerence:Y 1 NSIE
+CALCulate1:MARKer1:REFerence:Y 1 NUNIT
+CALCulate1:MARKer1:REFerence:Y 1 NV
+CALCulate1:MARKer1:REFerence:Y 1 NW
+CALCulate1:MARKer1:REFerence:Y 1 OHM
+CALCulate1:MARKer1:REFerence:Y 1 PDEG
+CALCulate1:MARKer1:REFerence:Y 1 PF
+CALCulate1:MARKer1:REFerence:Y 1 PH
+CALCulate1:MARKer1:REFerence:Y 1 PS
+CALCulate1:MARKer1:REFerence:Y 1 PUNIT
+CALCulate1:MARKer1:REFerence:Y 1 PV
+CALCulate1:MARKer1:REFerence:Y 1 PW
+CALCulate1:MARKer1:REFerence:Y 1 S
+CALCulate1:MARKer1:REFerence:Y 1 SIE
+CALCulate1:MARKer1:REFerence:Y 1 UDEG
+CALCulate1:MARKer1:REFerence:Y 1 UF
+CALCulate1:MARKer1:REFerence:Y 1 UH
+CALCulate1:MARKer1:REFerence:Y 1 UNIT
+CALCulate1:MARKer1:REFerence:Y 1 US
+CALCulate1:MARKer1:REFerence:Y 1 USIE
+CALCulate1:MARKer1:REFerence:Y 1 UUNIT
+CALCulate1:MARKer1:REFerence:Y 1 UV
+CALCulate1:MARKer1:REFerence:Y 1 UW
+CALCulate1:MARKer1:REFerence:Y 1 V
+CALCulate1:MARKer1:REFerence:Y 1 W
+CALCulate1:MARKer1:REFerence:Y DEFault
+CALCulate1:MARKer1:REFerence:Y DOWN
+CALCulate1:MARKer1:REFerence:Y MAXimum
+CALCulate1:MARKer1:REFerence:Y MINimum
+CALCulate1:MARKer1:REFerence:Y UP
 CALCulate1:MARKer1:REFerence:Y?
 CALCulate1:MARKer1:SEARch
 CALCulate1:MARKer1:SEARch:BFILter:RESult 1
@@ -1847,6 +1948,7 @@ CALCulate1:MARKer1:TARGet MAXimum
 CALCulate1:MARKer1:TARGet MINimum
 CALCulate1:MARKer1:TARGet UP
 CALCulate1:MARKer1:TARGet?
+CALCulate1:MARKer1:TYPE ARBitrary
 CALCulate1:MARKer1:TYPE FIXed
 CALCulate1:MARKer1:TYPE NORMal
 CALCulate1:MARKer1:TYPE?
@@ -1876,6 +1978,66 @@ CALCulate1:MARKer1:X MAXimum
 CALCulate1:MARKer1:X MINimum
 CALCulate1:MARKer1:X UP
 CALCulate1:MARKer1:X?
+CALCulate1:MARKer1:Y 1
+CALCulate1:MARKer1:Y 1 DB
+CALCulate1:MARKer1:Y 1 DBM
+CALCulate1:MARKer1:Y 1 DBMV
+CALCulate1:MARKer1:Y 1 DBUV
+CALCulate1:MARKer1:Y 1 DBV
+CALCulate1:MARKer1:Y 1 DBW
+CALCulate1:MARKer1:Y 1 DEG
+CALCulate1:MARKer1:Y 1 F
+CALCulate1:MARKer1:Y 1 FF
+CALCulate1:MARKer1:Y 1 FH
+CALCulate1:MARKer1:Y 1 FUNIT
+CALCulate1:MARKer1:Y 1 GOHM
+CALCulate1:MARKer1:Y 1 H
+CALCulate1:MARKer1:Y 1 KDEG
+CALCulate1:MARKer1:Y 1 KOHM
+CALCulate1:MARKer1:Y 1 MDEG
+CALCulate1:MARKer1:Y 1 MF
+CALCulate1:MARKer1:Y 1 MH
+CALCulate1:MARKer1:Y 1 MOHM
+CALCulate1:MARKer1:Y 1 MS
+CALCulate1:MARKer1:Y 1 MSIE
+CALCulate1:MARKer1:Y 1 MUNIT
+CALCulate1:MARKer1:Y 1 MV
+CALCulate1:MARKer1:Y 1 MW
+CALCulate1:MARKer1:Y 1 NDEG
+CALCulate1:MARKer1:Y 1 NF
+CALCulate1:MARKer1:Y 1 NH
+CALCulate1:MARKer1:Y 1 NN
+CALCulate1:MARKer1:Y 1 NS
+CALCulate1:MARKer1:Y 1 NSIE
+CALCulate1:MARKer1:Y 1 NUNIT
+CALCulate1:MARKer1:Y 1 NV
+CALCulate1:MARKer1:Y 1 NW
+CALCulate1:MARKer1:Y 1 OHM
+CALCulate1:MARKer1:Y 1 PDEG
+CALCulate1:MARKer1:Y 1 PF
+CALCulate1:MARKer1:Y 1 PH
+CALCulate1:MARKer1:Y 1 PS
+CALCulate1:MARKer1:Y 1 PUNIT
+CALCulate1:MARKer1:Y 1 PV
+CALCulate1:MARKer1:Y 1 PW
+CALCulate1:MARKer1:Y 1 S
+CALCulate1:MARKer1:Y 1 SIE
+CALCulate1:MARKer1:Y 1 UDEG
+CALCulate1:MARKer1:Y 1 UF
+CALCulate1:MARKer1:Y 1 UH
+CALCulate1:MARKer1:Y 1 UNIT
+CALCulate1:MARKer1:Y 1 US
+CALCulate1:MARKer1:Y 1 USIE
+CALCulate1:MARKer1:Y 1 UUNIT
+CALCulate1:MARKer1:Y 1 UV
+CALCulate1:MARKer1:Y 1 UW
+CALCulate1:MARKer1:Y 1 V
+CALCulate1:MARKer1:Y 1 W
+CALCulate1:MARKer1:Y DEFault
+CALCulate1:MARKer1:Y DOWN
+CALCulate1:MARKer1:Y MAXimum
+CALCulate1:MARKer1:Y MINimum
+CALCulate1:MARKer1:Y UP
 CALCulate1:MARKer1:Y?
 CALCulate1:MATH (expression)
 CALCulate1:MATH?
@@ -1908,6 +2070,8 @@ CALCulate1:PARameter:CATalog?
 CALCulate1:PARameter:CATalog:SENDed?
 CALCulate1:PARameter:DEFine
 CALCulate1:PARameter:DEFine 'string'
+CALCulate1:PARameter:DEFine:EXTended
+CALCulate1:PARameter:DEFine:EXTended 'string'
 CALCulate1:PARameter:DEFine:SGRoup
 CALCulate1:PARameter:DEFine:SGRoup 1
 CALCulate1:PARameter:DEFine:SGRoup DEFault
@@ -1926,6 +2090,7 @@ CALCulate1:PARameter:MEASure 'string'
 CALCulate1:PARameter:MEASure?
 CALCulate1:PARameter:MEASure:SENDed 'string'
 CALCulate1:PARameter:MEASure:SENDed?
+CALCulate1:PARameter:NFIGure:CSETtings 'string'
 CALCulate1:PARameter:SDEFine 'string'
 CALCulate1:PARameter:SDEFine:SENDed 'string'
 CALCulate1:PARameter:SELect 'string'
@@ -3008,6 +3173,18 @@ CALCulate1:TRANsform:VNETworks:SENDed:EMBedding1:TNDefinition SLC
 CALCulate1:TRANsform:VNETworks:SENDed:EMBedding1:TNDefinition SLG
 CALCulate1:TRANsform:VNETworks:SENDed:EMBedding1:TNDefinition SLL
 CALCulate1:TRANsform:VNETworks:SENDed:EMBedding1:TNDefinition?
+CALCulate1:TTIMe:DATA
+CALCulate1:TTIMe:DATA ALL
+CALCulate1:TTIMe:DATA?
+CALCulate1:TTIMe:STATe 1
+CALCulate1:TTIMe:STATe OFF
+CALCulate1:TTIMe:STATe ON
+CALCulate1:TTIMe:STATe?
+CALCulate1:TTIMe:THReshold
+CALCulate1:TTIMe:THReshold 1
+CALCulate1:TTIMe:THReshold T1_9
+CALCulate1:TTIMe:THReshold T2_8
+CALCulate1:TTIMe:THReshold?
 CONFigure:CHANnel1 1
 CONFigure:CHANnel1 OFF
 CONFigure:CHANnel1 ON
@@ -3443,6 +3620,9 @@ CONTrol1:SEQuence1:GPIO1:VOLTage UP
 CONTrol1:SEQuence1:GPIO1:VOLTage?
 CONTrol1:SEQuence1:RFFE1:COMMand:DATA 'string'
 CONTrol1:SEQuence1:RFFE1:COMMand:DATA?
+CONTrol1:SIGNal BNC1
+CONTrol1:SIGNal BNC2
+CONTrol1:SIGNal?
 DIAGnostic:ALC:SETTings 1
 DIAGnostic:ALC:SETTings OFF
 DIAGnostic:ALC:SETTings ON
@@ -3460,6 +3640,7 @@ DIAGnostic:DUMP:SIZE MINI
 DIAGnostic:DUMP:SIZE NONE
 DIAGnostic:DUMP:SIZE NORMal
 DIAGnostic:DUMP:SIZE?
+DIAGnostic:PARSer?
 DIAGnostic:PRODuct:CATalog?
 DIAGnostic:PRODuct:DESCription?
 DIAGnostic:PRODuct:ID?
@@ -5361,6 +5542,20 @@ SENSe1:CORRection:COLLect:METHod?
 SENSe1:CORRection:COLLect:METHod:DEFine
 SENSe1:CORRection:COLLect:METHod:DEFine 'string'
 SENSe1:CORRection:COLLect:METHod:DEFine?
+SENSe1:CORRection:COLLect:NFIGure ATTenuator
+SENSe1:CORRection:COLLect:NFIGure RECeiver
+SENSe1:CORRection:COLLect:NFIGure SOURce
+SENSe1:CORRection:COLLect:NFIGure:ACQuire ATTenuator
+SENSe1:CORRection:COLLect:NFIGure:ACQuire RECeiver
+SENSe1:CORRection:COLLect:NFIGure:ACQuire SOURce
+SENSe1:CORRection:COLLect:NFIGure:END
+SENSe1:CORRection:COLLect:NFIGure:SAVE
+SENSe1:CORRection:COLLect:NFIGure:STARt 1
+SENSe1:CORRection:COLLect:NFIGure:STARt DEFault
+SENSe1:CORRection:COLLect:NFIGure:STARt DOWN
+SENSe1:CORRection:COLLect:NFIGure:STARt MAXimum
+SENSe1:CORRection:COLLect:NFIGure:STARt MINimum
+SENSe1:CORRection:COLLect:NFIGure:STARt UP
 SENSe1:CORRection:COLLect:PMETer:ID 1
 SENSe1:CORRection:COLLect:PMETer:ID DEFault
 SENSe1:CORRection:COLLect:PMETer:ID DOWN
@@ -5382,6 +5577,9 @@ SENSe1:CORRection:CONNection 'string'
 SENSe1:CORRection:CONNection?
 SENSe1:CORRection:CONNection:CATalog?
 SENSe1:CORRection:CONNection:DELete 'string'
+SENSe1:CORRection:CSET:ACTivate
+SENSe1:CORRection:CSET:ACTivate 'string'
+SENSe1:CORRection:CSET:ACTivate?
 SENSe1:CORRection:CSET:DESCription 'string'
 SENSe1:CORRection:CSET:DESCription?
 SENSe1:CORRection:DATA 'string'
@@ -5520,6 +5718,14 @@ SENSe1:CORRection:LOSS1:OFFSet MAXimum
 SENSe1:CORRection:LOSS1:OFFSet MINimum
 SENSe1:CORRection:LOSS1:OFFSet UP
 SENSe1:CORRection:LOSS1:OFFSet?
+SENSe1:CORRection:NFIGure 1
+SENSe1:CORRection:NFIGure OFF
+SENSe1:CORRection:NFIGure ON
+SENSe1:CORRection:NFIGure?
+SENSe1:CORRection:NFIGure:STATe 1
+SENSe1:CORRection:NFIGure:STATe OFF
+SENSe1:CORRection:NFIGure:STATe ON
+SENSe1:CORRection:NFIGure:STATe?
 SENSe1:CORRection:OFFSet1 1
 SENSe1:CORRection:OFFSet1 OFF
 SENSe1:CORRection:OFFSet1 ON
@@ -5843,6 +6049,22 @@ SENSe1:FREQuency1:FIXed MAXimum
 SENSe1:FREQuency1:FIXed MINimum
 SENSe1:FREQuency1:FIXed UP
 SENSe1:FREQuency1:FIXed?
+SENSe1:FREQuency1:IFConst 1
+SENSe1:FREQuency1:IFConst 1 GHZ
+SENSe1:FREQuency1:IFConst 1 HZ
+SENSe1:FREQuency1:IFConst 1 KHZ
+SENSe1:FREQuency1:IFConst 1 MHZ
+SENSe1:FREQuency1:IFConst 1 THZ
+SENSe1:FREQuency1:IFConst DEFault
+SENSe1:FREQuency1:IFConst DOWN
+SENSe1:FREQuency1:IFConst MAXimum
+SENSe1:FREQuency1:IFConst MINimum
+SENSe1:FREQuency1:IFConst UP
+SENSe1:FREQuency1:IFConst?
+SENSe1:FREQuency1:IFConst:STATe 1
+SENSe1:FREQuency1:IFConst:STATe OFF
+SENSe1:FREQuency1:IFConst:STATe ON
+SENSe1:FREQuency1:IFConst:STATe?
 SENSe1:FREQuency1:IMODulation:CONVersion OFF
 SENSe1:FREQuency1:IMODulation:LTONe
 SENSe1:FREQuency1:IMODulation:LTONe GENerator
@@ -5947,40 +6169,13 @@ SENSe1:FREQuency1:STOP MAXimum
 SENSe1:FREQuency1:STOP MINimum
 SENSe1:FREQuency1:STOP UP
 SENSe1:FREQuency1:STOP?
+SENSe1:FUNCtion
 SENSe1:FUNCtion 'string'
 SENSe1:FUNCtion?
-SENSe1:FUNCtion:ON 'XFRequency:POWer:A1'
-SENSe1:FUNCtion:ON 'XFRequency:POWer:B1'
-SENSe1:FUNCtion:ON 'XFRequency:POWer:KFACtor'
-SENSe1:FUNCtion:ON 'XFRequency:POWer:MUFactor1'
-SENSe1:FUNCtion:ON 'XFRequency:POWer:RATio'
-SENSe1:FUNCtion:ON 'XFRequency:POWer:S1'
-SENSe1:FUNCtion:ON 'XFRequency:POWer:S1:DUMMy'
-SENSe1:FUNCtion:ON 'XFRequency:POWer:Y1'
-SENSe1:FUNCtion:ON 'XFRequency:POWer:Z1'
-SENSe1:FUNCtion:ON 'XFRequency:VOLTage'
-SENSe1:FUNCtion:ON 'XFRequency:VOLTage:DC'
-SENSe1:FUNCtion:ON 'XPOWer:POWer:A1'
-SENSe1:FUNCtion:ON 'XPOWer:POWer:B1'
-SENSe1:FUNCtion:ON 'XPOWer:POWer:RATio'
-SENSe1:FUNCtion:ON 'XPOWer:POWer:S1'
-SENSe1:FUNCtion:ON 'XPOWer:POWer:S1:DUMMy'
-SENSe1:FUNCtion:ON 'XPOWer:POWer:Y1'
-SENSe1:FUNCtion:ON 'XPOWer:POWer:Z1'
-SENSe1:FUNCtion:ON 'XPOWer:VOLTage'
-SENSe1:FUNCtion:ON 'XPOWer:VOLTage:DC'
-SENSe1:FUNCtion:ON 'XTIMe:POWer:A1'
-SENSe1:FUNCtion:ON 'XTIMe:POWer:B1'
-SENSe1:FUNCtion:ON 'XTIMe:POWer:KFACtor'
-SENSe1:FUNCtion:ON 'XTIMe:POWer:MUFactor1'
-SENSe1:FUNCtion:ON 'XTIMe:POWer:RATio'
-SENSe1:FUNCtion:ON 'XTIMe:POWer:S1'
-SENSe1:FUNCtion:ON 'XTIMe:POWer:S1:DUMMy'
-SENSe1:FUNCtion:ON 'XTIMe:POWer:Y1'
-SENSe1:FUNCtion:ON 'XTIMe:POWer:Z1'
-SENSe1:FUNCtion:ON 'XTIMe:VOLTage'
-SENSe1:FUNCtion:ON 'XTIMe:VOLTage:DC'
+SENSe1:FUNCtion:ON
+SENSe1:FUNCtion:ON 'string'
 SENSe1:FUNCtion:ON?
+SENSe1:HARMonic?
 SENSe1:HARMonic:AUTO 1
 SENSe1:HARMonic:AUTO OFF
 SENSe1:HARMonic:AUTO ON
@@ -5997,6 +6192,39 @@ SENSe1:HARMonic:DLENgth:DATA MAXimum
 SENSe1:HARMonic:DLENgth:DATA MINimum
 SENSe1:HARMonic:DLENgth:DATA UP
 SENSe1:HARMonic:DLENgth:DATA?
+SENSe1:HARMonic:ELENgth:DATA 1
+SENSe1:HARMonic:ELENgth:DATA 1 KM
+SENSe1:HARMonic:ELENgth:DATA 1 M
+SENSe1:HARMonic:ELENgth:DATA 1 MM
+SENSe1:HARMonic:ELENgth:DATA 1 NM
+SENSe1:HARMonic:ELENgth:DATA 1 PM
+SENSe1:HARMonic:ELENgth:DATA 1 UM
+SENSe1:HARMonic:ELENgth:DATA DEFault
+SENSe1:HARMonic:ELENgth:DATA DOWN
+SENSe1:HARMonic:ELENgth:DATA MAXimum
+SENSe1:HARMonic:ELENgth:DATA MINimum
+SENSe1:HARMonic:ELENgth:DATA UP
+SENSe1:HARMonic:ELENgth:DATA?
+SENSe1:HARMonic:MLENgth:DATA 1
+SENSe1:HARMonic:MLENgth:DATA 1 KM
+SENSe1:HARMonic:MLENgth:DATA 1 M
+SENSe1:HARMonic:MLENgth:DATA 1 MM
+SENSe1:HARMonic:MLENgth:DATA 1 NM
+SENSe1:HARMonic:MLENgth:DATA 1 PM
+SENSe1:HARMonic:MLENgth:DATA 1 UM
+SENSe1:HARMonic:MLENgth:DATA DEFault
+SENSe1:HARMonic:MLENgth:DATA DOWN
+SENSe1:HARMonic:MLENgth:DATA MAXimum
+SENSe1:HARMonic:MLENgth:DATA MINimum
+SENSe1:HARMonic:MLENgth:DATA UP
+SENSe1:HARMonic:MLENgth:DATA?
+SENSe1:HARMonic:PERMittivity:DATA 1
+SENSe1:HARMonic:PERMittivity:DATA DEFault
+SENSe1:HARMonic:PERMittivity:DATA DOWN
+SENSe1:HARMonic:PERMittivity:DATA MAXimum
+SENSe1:HARMonic:PERMittivity:DATA MINimum
+SENSe1:HARMonic:PERMittivity:DATA UP
+SENSe1:HARMonic:PERMittivity:DATA?
 SENSe1:HARMonic:RTIMe:DATA 1
 SENSe1:HARMonic:RTIMe:DATA 1 MS
 SENSe1:HARMonic:RTIMe:DATA 1 NS
@@ -6012,6 +6240,13 @@ SENSe1:HARMonic:RTIMe:DATA?
 SENSe1:HARMonic:RTIMe:THReshold T1_9
 SENSe1:HARMonic:RTIMe:THReshold T2_8
 SENSe1:HARMonic:RTIMe:THReshold?
+SENSe1:HARMonic:VELocity:DATA 1
+SENSe1:HARMonic:VELocity:DATA DEFault
+SENSe1:HARMonic:VELocity:DATA DOWN
+SENSe1:HARMonic:VELocity:DATA MAXimum
+SENSe1:HARMonic:VELocity:DATA MINimum
+SENSe1:HARMonic:VELocity:DATA UP
+SENSe1:HARMonic:VELocity:DATA?
 SENSe1:LPORt1:ZCOMmon
 SENSe1:LPORt1:ZCOMmon 1
 SENSe1:LPORt1:ZCOMmon 1 GOHM
@@ -6044,6 +6279,22 @@ SENSe1:LPORt1:ZDIFferent MAXimum
 SENSe1:LPORt1:ZDIFferent MINimum
 SENSe1:LPORt1:ZDIFferent UP
 SENSe1:LPORt1:ZDIFferent?
+SENSe1:NFIGure:ISNoise 1
+SENSe1:NFIGure:ISNoise OFF
+SENSe1:NFIGure:ISNoise ON
+SENSe1:NFIGure:ISNoise?
+SENSe1:NFIGure:NDUT 1
+SENSe1:NFIGure:NDUT OFF
+SENSe1:NFIGure:NDUT ON
+SENSe1:NFIGure:NDUT?
+SENSe1:NFIGure:RFICorr 1
+SENSe1:NFIGure:RFICorr OFF
+SENSe1:NFIGure:RFICorr ON
+SENSe1:NFIGure:RFICorr?
+SENSe1:NFIGure:SEQuential 1
+SENSe1:NFIGure:SEQuential OFF
+SENSe1:NFIGure:SEQuential ON
+SENSe1:NFIGure:SEQuential?
 SENSe1:PAE:DCINput:MAIN DC1
 SENSe1:PAE:DCINput:MAIN DC2
 SENSe1:PAE:DCINput:MAIN DC3
@@ -6126,6 +6377,9 @@ SENSe1:POWer:ATTenuation UP
 SENSe1:POWer:ATTenuation?
 SENSe1:POWer:GAINcontrol 'string'
 SENSe1:POWer:GAINcontrol?
+SENSe1:POWer:GAINcontrol:ALL AUTO
+SENSe1:POWer:GAINcontrol:ALL LDIStortion
+SENSe1:POWer:GAINcontrol:ALL LNOise
 SENSe1:POWer:GAINcontrol:GLOBal AUTO
 SENSe1:POWer:GAINcontrol:GLOBal LDIStortion
 SENSe1:POWer:GAINcontrol:GLOBal LNOise
@@ -6291,6 +6545,9 @@ SENSe1:SEGMent1:POWer UP
 SENSe1:SEGMent1:POWer?
 SENSe1:SEGMent1:POWer:GAINcontrol 'string'
 SENSe1:SEGMent1:POWer:GAINcontrol?
+SENSe1:SEGMent1:POWer:GAINcontrol:ALL AUTO
+SENSe1:SEGMent1:POWer:GAINcontrol:ALL LDIStortion
+SENSe1:SEGMent1:POWer:GAINcontrol:ALL LNOise
 SENSe1:SEGMent1:POWer:GAINcontrol:CONTrol 1
 SENSe1:SEGMent1:POWer:GAINcontrol:CONTrol OFF
 SENSe1:SEGMent1:POWer:GAINcontrol:CONTrol ON
@@ -6468,6 +6725,23 @@ SENSe1:SWEep:TIME:AUTO 1
 SENSe1:SWEep:TIME:AUTO OFF
 SENSe1:SWEep:TIME:AUTO ON
 SENSe1:SWEep:TIME:AUTO?
+SENSe1:SWEep:TRIGger:DELay 1
+SENSe1:SWEep:TRIGger:DELay 1 MS
+SENSe1:SWEep:TRIGger:DELay 1 NS
+SENSe1:SWEep:TRIGger:DELay 1 PS
+SENSe1:SWEep:TRIGger:DELay 1 S
+SENSe1:SWEep:TRIGger:DELay 1 US
+SENSe1:SWEep:TRIGger:DELay DEFault
+SENSe1:SWEep:TRIGger:DELay DOWN
+SENSe1:SWEep:TRIGger:DELay MAXimum
+SENSe1:SWEep:TRIGger:DELay MINimum
+SENSe1:SWEep:TRIGger:DELay UP
+SENSe1:SWEep:TRIGger:DELay?
+SENSe1:SWEep:TRIGger:MODE CHANnel
+SENSe1:SWEep:TRIGger:MODE POINt
+SENSe1:SWEep:TRIGger:MODE SWEep
+SENSe1:SWEep:TRIGger:MODE TRACe
+SENSe1:SWEep:TRIGger:MODE?
 SENSe1:SWEep:TYPE CW
 SENSe1:SWEep:TYPE LINear
 SENSe1:SWEep:TYPE LOGarithmic
@@ -7298,6 +7572,10 @@ SYSTem:COMMunicate:CODec UTF8
 SYSTem:COMMunicate:CODec?
 SYSTem:COMMunicate:GPIB:SELF:ADDRess 1
 SYSTem:COMMunicate:GPIB:SELF:ADDRess?
+SYSTem:COMMunicate:GPIB:SELF:DCLear:SUPPress 1
+SYSTem:COMMunicate:GPIB:SELF:DCLear:SUPPress OFF
+SYSTem:COMMunicate:GPIB:SELF:DCLear:SUPPress ON
+SYSTem:COMMunicate:GPIB:SELF:DCLear:SUPPress?
 SYSTem:COMMunicate:GPIB:SELF:INIT:WAIT 1
 SYSTem:COMMunicate:GPIB:SELF:INIT:WAIT OFF
 SYSTem:COMMunicate:GPIB:SELF:INIT:WAIT ON
@@ -7681,13 +7959,13 @@ SYSTem:USER:KEY:FUNCtion MAXimum
 SYSTem:USER:KEY:FUNCtion MINimum
 SYSTem:USER:KEY:FUNCtion UP
 SYSTem:USER:KEY:FUNCtion?
-SYSTem:VERSion?
 SYSTem:WAIT 1
 SYSTem:WAIT DEFault
 SYSTem:WAIT DOWN
 SYSTem:WAIT MAXimum
 SYSTem:WAIT MINimum
 SYSTem:WAIT UP
+SYSTem:VERSion?
 TRACe CH1Data
 TRACe CH1Mem
 TRACe CH2Data
@@ -7857,10 +8135,7 @@ TRIGger1:SEQuence:HOLDoff MAXimum
 TRIGger1:SEQuence:HOLDoff MINimum
 TRIGger1:SEQuence:HOLDoff UP
 TRIGger1:SEQuence:HOLDoff?
-TRIGger1:SEQuence:LINK 'POINt'
-TRIGger1:SEQuence:LINK 'PPOint'
-TRIGger1:SEQuence:LINK 'SEGMent'
-TRIGger1:SEQuence:LINK 'SWEep'
+TRIGger1:SEQuence:LINK 'string'
 TRIGger1:SEQuence:LINK?
 TRIGger1:SEQuence:MULTiple:HOLDoff
 TRIGger1:SEQuence:MULTiple:HOLDoff POINt
@@ -7880,6 +8155,9 @@ TRIGger1:SEQuence:MULTiple:SOURce PPOint
 TRIGger1:SEQuence:MULTiple:SOURce SEGMent
 TRIGger1:SEQuence:MULTiple:SOURce SWEep
 TRIGger1:SEQuence:MULTiple:SOURce?
+TRIGger1:SEQuence:SCOPe ALL
+TRIGger1:SEQuence:SCOPe CURRent
+TRIGger1:SEQuence:SCOPe?
 TRIGger1:SEQuence:SLOPe HIGH
 TRIGger1:SEQuence:SLOPe LOW
 TRIGger1:SEQuence:SLOPe NEGative

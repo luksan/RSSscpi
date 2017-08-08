@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from ZVA_commands_3_70.inp on 2017-08-08 14:47
+# Generated from ZVA_commands.inp on 2017-08-08 16:37
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -24895,6 +24895,24 @@ class ZVA_gen(Instrument):
                     SYSTem:COMMunicate:RDEVice:AKAL:PREDuction
 
                     Arguments: 1, OFF, ON
+                    """
+
+                    class SANitize(SCPINode, SCPISet):
+                        """
+                        `SYSTem:COMMunicate:RDEVice:AKAL:SANitize
+                        <http://www.rohde-schwarz.com/webhelp/webhelp_zva/scpi_reference/system/system.htm#AKAL_SANitize>`_
+
+                        Arguments:
+                        """
+                        _cmd = "SANitize"
+                        args = []
+
+                    SANitize = SANitize()
+                    """
+                    `SYSTem:COMMunicate:RDEVice:AKAL:SANitize
+                    <http://www.rohde-schwarz.com/webhelp/webhelp_zva/scpi_reference/system/system.htm#AKAL_SANitize>`_
+
+                    Arguments:
                     """
 
                 AKAL = AKAL()

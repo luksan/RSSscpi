@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<catapulttoc descendantcount="2493" version="1">
+<catapulttoc descendantcount="2502" version="1">
  <!-- saved from url=(0014)about:internet -->
  <tocentry computedfirsttopic="true" computedresetpagelayout="true" descendantcount="0" link="/Content/welcome.htm" title="Legal Notice">
  </tocentry>
- <tocentry computedfirsttopic="false" descendantcount="37" link="/Content/standard.htm" title="Welcome to the R&amp;S ZNB/ZNBT">
-  <tocentry computedfirsttopic="false" descendantcount="33" link="/Content/60a0cff97ddf4825.htm" title="Release Notes for Firmware V2.82">
+ <tocentry computedfirsttopic="false" descendantcount="38" link="/Content/standard.htm" title="Welcome to the R&amp;S ZNB/ZNBT">
+  <tocentry computedfirsttopic="false" descendantcount="34" link="/Content/60a0cff97ddf4825.htm" title="Release Notes for Firmware V2.84">
+   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/bcf8c600f8524124.htm" title="V2.82 (compared to V2.80)">
+   </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/93c5c8ff736145bf.htm" title="V2.80 (compared to V2.75)">
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/68903da09cd041d8.htm" title="V2.75 (R&amp;S ZNBT20 only; compared to V2.70)">
@@ -74,7 +76,7 @@
   </tocentry>
   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/5191823a301a4c64.htm" title="Documentation Map">
   </tocentry>
-  <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e7205.htm" title="Your Rohde &amp; Schwarz Partners">
+  <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e7464.htm" title="Your Rohde &amp; Schwarz Partners">
   </tocentry>
   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/help.htm" title="About this Help">
   </tocentry>
@@ -128,7 +130,7 @@
    <tocentry computedfirsttopic="false" descendantcount="9" link="/Content/1cfe2c50ca3f4d8b.htm" title="Front Panel R&amp;S ZNB">
     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/ab3f77fdbe69402e.htm" title="Touchscreen">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/71c4debf768c43d2.htm" title="Setup Keys">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/71c4debf768c43d2.htm" title="Function Keys">
     </tocentry>
     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/55cb8b9502db4f65.htm" title="Data Entry Keys">
     </tocentry>
@@ -164,7 +166,7 @@
     </tocentry>
     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/e9c97e1e5cdf4f62.htm" title="Toolbar">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/148617da7d0946bf.htm" title="Softtool Panels">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/148617da7d0946bf.htm" title="Softtools">
     </tocentry>
     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/7c4e8736300c4539.htm" title="Menu Bar">
     </tocentry>
@@ -231,7 +233,7 @@
    </tocentry>
   </tocentry>
  </tocentry>
- <tocentry computedfirsttopic="false" descendantcount="173" link="/Content/c0a3e09d82e64bb4.htm" title="Concepts and Features">
+ <tocentry computedfirsttopic="false" descendantcount="175" link="/Content/c0a3e09d82e64bb4.htm" title="Concepts and Features">
   <tocentry computedfirsttopic="false" descendantcount="12" link="/Content/0d9f07f336634e1d.htm" title="Basic Concepts">
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/a4112b6b0a104f75.htm" title="Global (Persistent) Settings">
    </tocentry>
@@ -258,8 +260,8 @@
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/1cbf87b4d4f24593.htm" title="Data Flow">
    </tocentry>
   </tocentry>
-  <tocentry computedfirsttopic="false" descendantcount="27" link="/Content/a8555e24d47042df.htm" title="Screen Elements">
-   <tocentry computedfirsttopic="false" descendantcount="14" link="/Content/e7cd9a3c0da446c5.htm" title="Display Elements in the Diagram">
+  <tocentry computedfirsttopic="false" descendantcount="29" link="/Content/a8555e24d47042df.htm" title="Screen Elements">
+   <tocentry computedfirsttopic="false" descendantcount="14" link="/Content/e7cd9a3c0da446c5.htm" title="Display Elements of a Diagram">
     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/b3b417543a91437a.htm" title="Title">
     </tocentry>
     <tocentry computedfirsttopic="false" descendantcount="2" link="/Content/38b536c3d1d04f91.htm" title="Traces">
@@ -299,18 +301,22 @@
      </tocentry>
     </tocentry>
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="6" link="/Content/917bdbf5dffa4bee.htm" title="Display Formats and Diagram Types">
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/04d96580752a4eee.htm" title="Cartesian Diagrams">
+   <tocentry computedfirsttopic="false" descendantcount="8" link="/Content/917bdbf5dffa4bee.htm" title="Trace Formats">
+    <tocentry computedfirsttopic="false" descendantcount="2" link="/Content/04d96580752a4eee.htm" title="Cartesian Trace Formats">
+     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/e55a1cc39cf54f22.htm" title="Diagram Representation">
+     </tocentry>
+     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d72d48c904a84fa7.htm" title="Conversion of Complex to Real Quantities">
+     </tocentry>
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/fb1f857fddba4594.htm" title="Conversion of Complex into Real Quantities">
+    <tocentry computedfirsttopic="false" descendantcount="3" link="/Content/5f9a17bf63c747d3.htm" title="Complex Trace Formats">
+     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/5c0ec713634047e5.htm" title="Polar">
+     </tocentry>
+     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/6a58772c3ebb4a44.htm" title="Smith">
+     </tocentry>
+     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/95536f32480e4707.htm" title="Inv Smith">
+     </tocentry>
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/7506689457974dc4.htm" title="Polar Diagrams">
-    </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/a75ee2d004564240.htm" title="Smith Chart">
-    </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/3e823478f5374992.htm" title="Inverted Smith Chart">
-    </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/5adb9e6d36fe43ba.htm" title="Measured Quantities and Display Formats">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/5adb9e6d36fe43ba.htm" title="Measured Quantities and Trace Formats">
     </tocentry>
    </tocentry>
   </tocentry>
@@ -355,24 +361,24 @@
     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/e5a8485411474235.htm" title="Imbalance and Common Mode Rejection">
     </tocentry>
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e17727.htm" title="Reference Impedances">
+   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/635cb896953740ad.htm" title="Reference Impedances">
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/83c5f2da77f2491e.htm" title="Stability Factors">
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e17932.htm" title="Delay, Aperture, Electrical Length">
+   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e18879.htm" title="Delay, Aperture, Electrical Length">
    </tocentry>
   </tocentry>
   <tocentry computedfirsttopic="false" descendantcount="10" link="/Content/4cdee326416c4ecb.htm" title="Operations on Traces">
-   <tocentry computedfirsttopic="false" descendantcount="5" link="/Content/d36e18018.htm" title="Limit Check">
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e18068.htm" title="Rules for Limit Line Definition">
+   <tocentry computedfirsttopic="false" descendantcount="5" link="/Content/da3e7a7e95994685.htm" title="Limit Check">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/a88607fce17f4f42.htm" title="Rules for Limit Line Definition">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e18122.htm" title="Rules for Ripple Test Definition">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/dc4afd90355c4bb6.htm" title="Rules for Ripple Test Definition">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e18157.htm" title="Circle Limits">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/c02ff5080bcc4ac6.htm" title="Circle Limits">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e18185.htm" title="File Format for Limit Lines">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/a0c3cc1190414bf3.htm" title="File Format for Limit Lines">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e18223.htm" title="File Format for Ripple Limits">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/f514e478738c4f3d.htm" title="File Format for Ripple Limits">
     </tocentry>
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="3" link="/Content/0297605eea254b05.htm" title="Trace Files">
@@ -445,14 +451,14 @@
     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/fe6e71d7aab84694.htm" title="Extended Test Setups">
     </tocentry>
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="4" link="/Content/d36e22383.htm" title="SMARTerCal">
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e22431.htm" title="Calibration Procedure">
+   <tocentry computedfirsttopic="false" descendantcount="4" link="/Content/d36e23359.htm" title="SMARTerCal">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e23407.htm" title="Calibration Procedure">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e22451.htm" title="Calibration Types">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e23427.htm" title="Calibration Types">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e22640.htm" title="Combining SMARTerCal with Scalar Power Calibration">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e23616.htm" title="Combining SMARTerCal with Scalar Power Calibration">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e22673.htm" title="Calibration Labels">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e23649.htm" title="Calibration Labels">
     </tocentry>
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/828103d17bed4316.htm" title="Parallel Calibration of Multiple Channels">
@@ -476,7 +482,7 @@
     </tocentry>
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="9" link="/Content/5e4e04211f2a4f1a.htm" title="Embedding and Deembedding">
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/e4fa1318b54642c4.htm" title="Embedding a DUT">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/c493bc0d1ba541fd.htm" title="Embedding a DUT">
     </tocentry>
     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/27b0b2a478e14abd.htm" title="Deembedding a DUT">
     </tocentry>
@@ -558,12 +564,12 @@
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/96dcf2955e7d4e38.htm" title="Extended Dynamic Range">
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="1" link="/Content/4aaf6f3832e0410a.htm" title="DC Inputs">
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e28388.htm" title="Power Added Efficiency">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e29677.htm" title="Power Added Efficiency">
     </tocentry>
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e28514.htm" title="External Power Meters">
+   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/52ea9a701e77425e.htm" title="External Power Meters">
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e28579.htm" title="External Generators">
+   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e29869.htm" title="External Generators">
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="5" link="/Content/15784e8c6609432b.htm" title="External Switch Matrices">
     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/e0cb92adf55f400e.htm" title="Overview">
@@ -579,7 +585,7 @@
    </tocentry>
   </tocentry>
  </tocentry>
- <tocentry chunk="Toc_Chunk2.xml" computedfirsttopic="false" descendantcount="1094" link="/Content/ff8e2e733358463d.htm" title="GUI Reference">
+ <tocentry chunk="Toc_Chunk2.xml" computedfirsttopic="false" descendantcount="1098" link="/Content/ff8e2e733358463d.htm" title="GUI Reference">
  </tocentry>
  <tocentry computedfirsttopic="false" descendantcount="51" link="/Content/ac62015cef2b4ea3.htm" title="Remote Control">
   <tocentry computedfirsttopic="false" descendantcount="6" link="/Content/66c2efb563824894.htm" title="Introduction to Remote Control">
@@ -618,7 +624,7 @@
     </tocentry>
     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/c95bf05d546f4738.htm" title="Strings">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e82111.htm" title="Block Data Format">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e84255.htm" title="Block Data Format">
     </tocentry>
     <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/106bbab27d9b4df4.htm" title="Overview of Syntax Elements">
     </tocentry>
@@ -685,7 +691,7 @@
    </tocentry>
   </tocentry>
  </tocentry>
- <tocentry computedfirsttopic="false" descendantcount="982" link="/Content/77eb0fa50bda4051.htm" title="Command Reference">
+ <tocentry computedfirsttopic="false" descendantcount="983" link="/Content/77eb0fa50bda4051.htm" title="Command Reference">
   <tocentry computedfirsttopic="false" descendantcount="4" link="/Content/5219f39d60da4011.htm" title="Special Terms and Notation">
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/7f8b7a528a864b9a.htm" title="Upper/Lower Case">
    </tocentry>
@@ -696,9 +702,9 @@
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/cacbea761bbf412c.htm" title="Numeric Suffixes">
    </tocentry>
   </tocentry>
-  <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e84816.htm" title="Common Commands">
+  <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e86966.htm" title="Common Commands">
   </tocentry>
-  <tocentry chunk="Toc_Chunk5.xml" computedfirsttopic="false" descendantcount="938" link="/Content/cc5ecea116ae4a96.htm" title="SCPI Command Reference">
+  <tocentry chunk="Toc_Chunk5.xml" computedfirsttopic="false" descendantcount="939" link="/Content/cc5ecea116ae4a96.htm" title="SCPI Command Reference">
   </tocentry>
   <tocentry computedfirsttopic="false" descendantcount="36" link="/Content/218000eb86b944a1.htm" title="R&amp;S ZVR/ZVAB Compatible Commands">
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/e8aa35068b694faf.htm" title="CALCulate&lt;Chn&gt;:LIMit:CONTrol:DOMain">
@@ -729,19 +735,19 @@
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/49b93df4d2974c24.htm" title="CALCulate&lt;Chn&gt;:MATH[:EXPRession][:DEFine]">
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e144361.htm" title="DIAGnostic:SERVice:FUNCtion">
+   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/5ee0a31dd99445bf.htm" title="DIAGnostic:SERVice:FUNCtion">
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/a4122895a8614cd4.htm" title="FORMat:DEXPort:SOURce">
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/7f41ca301ecf4a76.htm" title="INPut&lt;PhyPt&gt;:ATTenuation">
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e144551.htm" title="INSTrument[:SELect]">
+   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e147054.htm" title="INSTrument[:SELect]">
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/0c0cec1ef82643e1.htm" title="OUTPut&lt;Chn&gt;:DPORt">
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/7faee8b1cfee4f49.htm" title="[SENSe&lt;Ch&gt;:]CORRection:CKIT:&lt;ConnType&gt;:&lt;StandardType&gt;">
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e144783.htm" title="[SENSe:]CORRection:CKIT:INSTall">
+   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e147286.htm" title="[SENSe:]CORRection:CKIT:INSTall">
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/5bae4485a66a4fdb.htm" title="[SENSe&lt;Ch&gt;:]CORRection:COLLect[:ACQuire]">
    </tocentry>
@@ -769,30 +775,30 @@
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/ac86031e502949ce.htm" title="TRACe:CLEar">
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e145938.htm" title="TRACe[:DATA][:RESPonse][:ALL]?">
+   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e148465.htm" title="TRACe[:DATA][:RESPonse][:ALL]?">
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e146011.htm" title="TRACe[:DATA]:STIMulus[:ALL]?">
+   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e148538.htm" title="TRACe[:DATA]:STIMulus[:ALL]?">
    </tocentry>
   </tocentry>
  </tocentry>
  <tocentry computedfirsttopic="false" descendantcount="36" link="/Content/51330bf6f6f246bc.htm" title="Programming Examples">
-  <tocentry computedfirsttopic="false" descendantcount="9" link="/Content/d36e146077.htm" title="Basic Tasks">
-   <tocentry computedfirsttopic="false" descendantcount="4" link="/Content/d36e146089.htm" title="Typical Stages of a Remote Control Program">
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e146118.htm" title="Basic Instrument Settings">
+  <tocentry computedfirsttopic="false" descendantcount="9" link="/Content/d36e148605.htm" title="Basic Tasks">
+   <tocentry computedfirsttopic="false" descendantcount="4" link="/Content/d36e148617.htm" title="Typical Stages of a Remote Control Program">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e148646.htm" title="Basic Instrument Settings">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e146147.htm" title="Adjusting the Test Setup">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e148675.htm" title="Adjusting the Test Setup">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e146153.htm" title="Start of the Measurement and Command Synchronization">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e148681.htm" title="Start of the Measurement and Command Synchronization">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e146192.htm" title="Retrieving Measurement Results">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e148720.htm" title="Retrieving Measurement Results">
     </tocentry>
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="3" link="/Content/d36e146214.htm" title="Channel, Trace and Diagram Handling">
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e146238.htm" title="Several Traces with Equal Channel Settings">
+   <tocentry computedfirsttopic="false" descendantcount="3" link="/Content/d36e148742.htm" title="Channel, Trace and Diagram Handling">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e148766.htm" title="Several Traces with Equal Channel Settings">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e146308.htm" title="Several Traces with Different Channel Settings...">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e148836.htm" title="Several Traces with Different Channel Settings...">
     </tocentry>
-    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e146376.htm" title="Markers and Limit Lines...">
+    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e148904.htm" title="Markers and Limit Lines...">
     </tocentry>
    </tocentry>
   </tocentry>
@@ -850,18 +856,18 @@
   </tocentry>
  </tocentry>
  <tocentry computedfirsttopic="false" descendantcount="5" link="/Content/7ed9dfebdca749ae.htm" title="Error Messages and Troubleshooting">
-  <tocentry computedfirsttopic="false" descendantcount="3" link="/Content/69ef062b951142b9.htm" title="Errors during Firmware Operation">
+  <tocentry computedfirsttopic="false" descendantcount="2" link="/Content/69ef062b951142b9.htm" title="Errors during Firmware Operation">
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/ffa6238c8f2e4dd7.htm" title="Asynchronous Errors">
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/0246c03a4bf74923.htm" title="Errors during Measurement">
    </tocentry>
-   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/5c2dccc2bb32459e.htm" title="Obtaining Technical Support">
-   </tocentry>
   </tocentry>
   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/7ad5e46623ec47ad.htm" title="Errors during Firmware Installation/Update">
   </tocentry>
+  <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/5c2dccc2bb32459e.htm" title="Obtaining Technical Support">
+  </tocentry>
  </tocentry>
- <tocentry computedfirsttopic="false" descendantcount="28" link="/Content/adc49e088208423d.htm" title="Annexes">
+ <tocentry computedfirsttopic="false" descendantcount="29" link="/Content/adc49e088208423d.htm" title="Annexes">
   <tocentry computedfirsttopic="false" descendantcount="2" link="/Content/b1dcee87d8cb4e87.htm" title="Administrative Tasks">
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/0c1efe33e0b54d89.htm" title="Windows Operating System">
    </tocentry>
@@ -908,13 +914,15 @@
     </tocentry>
    </tocentry>
   </tocentry>
-  <tocentry computedfirsttopic="false" descendantcount="2" link="/Content/8287045a45c849ec.htm" title="Maintenance">
+  <tocentry computedfirsttopic="false" descendantcount="3" link="/Content/8287045a45c849ec.htm" title="Maintenance">
+   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e153105.htm" title="Cleaning">
+   </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/3ace06bf3ace40eb.htm" title="Storing and Packing the Instrument">
    </tocentry>
    <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/7198995b107240a1.htm" title="Replacing Fuses">
    </tocentry>
   </tocentry>
-  <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d36e150645.htm" title="Showroom Mode">
+  <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/d6f12820fb3f4f86.htm" title="Showroom Mode">
   </tocentry>
   <tocentry computedfirsttopic="false" descendantcount="0" link="/Content/10b603ddf1424237.htm" title="ENA Emulation Commands">
   </tocentry>

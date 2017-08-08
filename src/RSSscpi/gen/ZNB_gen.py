@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from ZNB_commands_2_70.inp on 2017-05-07 17:36
+# Generated from ZNB_commands.inp on 2017-08-08 16:38
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -8,7 +8,7 @@ class ZNB_gen(Instrument):
     class CAL(SCPINode, SCPIQuery):
         """
         `*CAL
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments:
         """
@@ -18,7 +18,7 @@ class ZNB_gen(Instrument):
     CAL = CAL()
     """
     `*CAL
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments:
     """
@@ -26,7 +26,7 @@ class ZNB_gen(Instrument):
     class CLS(SCPINode, SCPISet):
         """
         `*CLS
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments:
         """
@@ -36,7 +36,7 @@ class ZNB_gen(Instrument):
     CLS = CLS()
     """
     `*CLS
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments:
     """
@@ -44,7 +44,7 @@ class ZNB_gen(Instrument):
     class ESE(SCPINode, SCPIQuery, SCPISet):
         """
         `*ESE
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments: 1
         """
@@ -54,7 +54,7 @@ class ZNB_gen(Instrument):
     ESE = ESE()
     """
     `*ESE
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments: 1
     """
@@ -62,7 +62,7 @@ class ZNB_gen(Instrument):
     class ESR(SCPINode, SCPIQuery):
         """
         `*ESR
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments:
         """
@@ -72,7 +72,7 @@ class ZNB_gen(Instrument):
     ESR = ESR()
     """
     `*ESR
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments:
     """
@@ -80,7 +80,7 @@ class ZNB_gen(Instrument):
     class IDN(SCPINode, SCPIQuery):
         """
         `*IDN
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments:
         """
@@ -90,7 +90,7 @@ class ZNB_gen(Instrument):
     IDN = IDN()
     """
     `*IDN
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments:
     """
@@ -98,7 +98,7 @@ class ZNB_gen(Instrument):
     class IST(SCPINode, SCPIQuery, SCPISet):
         """
         `*IST
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments: 1
         """
@@ -108,7 +108,7 @@ class ZNB_gen(Instrument):
     IST = IST()
     """
     `*IST
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments: 1
     """
@@ -116,7 +116,7 @@ class ZNB_gen(Instrument):
     class OPC(SCPINode, SCPIQuery, SCPISet):
         """
         `*OPC
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments:
         """
@@ -126,7 +126,7 @@ class ZNB_gen(Instrument):
     OPC = OPC()
     """
     `*OPC
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments:
     """
@@ -134,7 +134,7 @@ class ZNB_gen(Instrument):
     class OPT(SCPINode, SCPIQuery):
         """
         `*OPT
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments:
         """
@@ -144,7 +144,7 @@ class ZNB_gen(Instrument):
     OPT = OPT()
     """
     `*OPT
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments:
     """
@@ -152,7 +152,7 @@ class ZNB_gen(Instrument):
     class PCB(SCPINode, SCPISet):
         """
         `*PCB
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments: 1
         """
@@ -162,7 +162,7 @@ class ZNB_gen(Instrument):
     PCB = PCB()
     """
     `*PCB
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments: 1
     """
@@ -170,7 +170,7 @@ class ZNB_gen(Instrument):
     class PRE(SCPINode, SCPIQuery, SCPISet):
         """
         `*PRE
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments: 1
         """
@@ -180,7 +180,7 @@ class ZNB_gen(Instrument):
     PRE = PRE()
     """
     `*PRE
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments: 1
     """
@@ -188,7 +188,7 @@ class ZNB_gen(Instrument):
     class PSC(SCPINode, SCPIBool):
         """
         `*PSC
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments: 1, OFF, ON
         """
@@ -198,7 +198,7 @@ class ZNB_gen(Instrument):
     PSC = PSC()
     """
     `*PSC
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments: 1, OFF, ON
     """
@@ -206,7 +206,7 @@ class ZNB_gen(Instrument):
     class RST(SCPINode, SCPISet):
         """
         `*RST
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments:
         """
@@ -216,7 +216,7 @@ class ZNB_gen(Instrument):
     RST = RST()
     """
     `*RST
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments:
     """
@@ -224,7 +224,7 @@ class ZNB_gen(Instrument):
     class SRE(SCPINode, SCPIQuery, SCPISet):
         """
         `*SRE
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments: 1
         """
@@ -234,7 +234,7 @@ class ZNB_gen(Instrument):
     SRE = SRE()
     """
     `*SRE
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments: 1
     """
@@ -242,7 +242,7 @@ class ZNB_gen(Instrument):
     class STB(SCPINode, SCPIQuery):
         """
         `*STB
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments:
         """
@@ -252,7 +252,7 @@ class ZNB_gen(Instrument):
     STB = STB()
     """
     `*STB
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments:
     """
@@ -260,7 +260,7 @@ class ZNB_gen(Instrument):
     class TRG(SCPINode, SCPISet):
         """
         `*TRG
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments:
         """
@@ -270,7 +270,7 @@ class ZNB_gen(Instrument):
     TRG = TRG()
     """
     `*TRG
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments:
     """
@@ -278,7 +278,7 @@ class ZNB_gen(Instrument):
     class TST(SCPINode, SCPIQuery):
         """
         `*TST
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments:
         """
@@ -288,7 +288,7 @@ class ZNB_gen(Instrument):
     TST = TST()
     """
     `*TST
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments:
     """
@@ -296,7 +296,7 @@ class ZNB_gen(Instrument):
     class WAI(SCPINode, SCPISet):
         """
         `*WAI
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
         Arguments:
         """
@@ -306,7 +306,7 @@ class ZNB_gen(Instrument):
     WAI = WAI()
     """
     `*WAI
-    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e84816.htm>`_
+    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e86966.htm>`_
 
     Arguments:
     """
@@ -744,6 +744,182 @@ class ZNB_gen(Instrument):
         <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/789e52d0d45d4a05.htm#ID_86597917fa8866680a00206a00b6f794-18a084d6fa88608c0a00206a01a6673d-en-US>`_
 
         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+        """
+
+        class DTIMe(SCPINode):
+            """
+            CALCulate:DTIMe
+
+            Arguments:
+            """
+            _cmd = "DTIMe"
+            args = []
+
+            class DATA(SCPINode, SCPIQuery, SCPISet):
+                """
+                `CALCulate:DTIMe:DATA
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/ff7e4c8da1c74134.htm#ID_82578f8a72622caa0a001ae75fe582f8-25637d2672622b720a001ae7588b56f3-en-US>`_
+
+                Arguments: ALL
+                """
+                _cmd = "DATA"
+                args = ["ALL"]
+
+            DATA = DATA()
+            """
+            `CALCulate:DTIMe:DATA
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/ff7e4c8da1c74134.htm#ID_82578f8a72622caa0a001ae75fe582f8-25637d2672622b720a001ae7588b56f3-en-US>`_
+
+            Arguments: ALL
+            """
+
+            class LIMit(SCPINode):
+                """
+                CALCulate:DTIMe:LIMit
+
+                Arguments:
+                """
+                _cmd = "LIMit"
+                args = []
+
+                class FAIL(SCPINode, SCPIQuery):
+                    """
+                    `CALCulate:DTIMe:LIMit:FAIL
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/b500c06ed60f48a1.htm#ID_d4bbd43072622e6f0a001ae734f0be54-705416f772622d850a001ae7588b56f3-en-US>`_
+
+                    Arguments:
+                    """
+                    _cmd = "FAIL"
+                    args = []
+
+                    class BEEP(SCPINode, SCPIBool):
+                        """
+                        `CALCulate:DTIMe:LIMit:FAIL:BEEP
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/137f18a7656e4924.htm#ID_8c36daa9726230250a001ae73f95cb45-e7478cda72622f1b0a001ae7588b56f3-en-US>`_
+
+                        Arguments: 1, OFF, ON
+                        """
+                        _cmd = "BEEP"
+                        args = ["1", "OFF", "ON"]
+
+                    BEEP = BEEP()
+                    """
+                    `CALCulate:DTIMe:LIMit:FAIL:BEEP
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/137f18a7656e4924.htm#ID_8c36daa9726230250a001ae73f95cb45-e7478cda72622f1b0a001ae7588b56f3-en-US>`_
+
+                    Arguments: 1, OFF, ON
+                    """
+
+                FAIL = FAIL()
+                """
+                `CALCulate:DTIMe:LIMit:FAIL
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/b500c06ed60f48a1.htm#ID_d4bbd43072622e6f0a001ae734f0be54-705416f772622d850a001ae7588b56f3-en-US>`_
+
+                Arguments:
+                """
+
+                class LIMit(SCPINode, SCPIQuery, SCPISet):
+                    """
+                    `CALCulate:DTIMe:LIMit:LIMit
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/7089fc90e70647dd.htm#ID_00e9ffb9726231da0a001ae7719d724f-54d98854726230c10a001ae7588b56f3-en-US>`_
+
+                    Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                    """
+                    _cmd = "LIMit"
+                    args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
+
+                LIMit = LIMit()
+                """
+                `CALCulate:DTIMe:LIMit:LIMit
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/7089fc90e70647dd.htm#ID_00e9ffb9726231da0a001ae7719d724f-54d98854726230c10a001ae7588b56f3-en-US>`_
+
+                Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                """
+
+                class STATe(SCPINode, SCPIBool):
+                    """
+                    `CALCulate:DTIMe:LIMit:STATe
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/100cd2af36e24c63.htm#ID_418cc9ff726233710a001ae736e576da-e24a2ed4726232570a001ae7588b56f3-en-US>`_
+
+                    Arguments: 1, OFF, ON
+                    """
+                    _cmd = "STATe"
+                    args = ["1", "OFF", "ON"]
+
+                STATe = STATe()
+                """
+                `CALCulate:DTIMe:LIMit:STATe
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/100cd2af36e24c63.htm#ID_418cc9ff726233710a001ae736e576da-e24a2ed4726232570a001ae7588b56f3-en-US>`_
+
+                Arguments: 1, OFF, ON
+                """
+
+            LIMit = LIMit()
+            """
+            CALCulate:DTIMe:LIMit
+
+            Arguments:
+            """
+
+            class POSition(SCPINode, SCPIQuery, SCPISet):
+                """
+                `CALCulate:DTIMe:POSition
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/9fb90addd44040c2.htm#ID_42a58364726235550a001ae7630af22b-781e257c7262343c0a001ae7588b56f3-en-US>`_
+
+                Arguments: 1
+                """
+                _cmd = "POSition"
+                args = ["1"]
+
+            POSition = POSition()
+            """
+            `CALCulate:DTIMe:POSition
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/9fb90addd44040c2.htm#ID_42a58364726235550a001ae7630af22b-781e257c7262343c0a001ae7588b56f3-en-US>`_
+
+            Arguments: 1
+            """
+
+            class STATe(SCPINode, SCPIBool):
+                """
+                `CALCulate:DTIMe:STATe
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/fa071282da2b4bea.htm#ID_92fe5ca8726237390a001ae74ce161bf-a88a6bb9726236200a001ae7588b56f3-en-US>`_
+
+                Arguments: 1, OFF, ON
+                """
+                _cmd = "STATe"
+                args = ["1", "OFF", "ON"]
+
+            STATe = STATe()
+            """
+            `CALCulate:DTIMe:STATe
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/fa071282da2b4bea.htm#ID_92fe5ca8726237390a001ae74ce161bf-a88a6bb9726236200a001ae7588b56f3-en-US>`_
+
+            Arguments: 1, OFF, ON
+            """
+
+            class TARGet(SCPINode, SCPIQuery, SCPISet):
+                """
+                `CALCulate:DTIMe:TARGet
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/67955541b2bd4010.htm#ID_30bfeb127262391e0a001ae71ef2c957-6ce92325726237f50a001ae7588b56f3-en-US>`_
+
+                Arguments: 'string'
+                """
+                _cmd = "TARGet"
+                args = ["'string'"]
+
+            TARGet = TARGet()
+            """
+            `CALCulate:DTIMe:TARGet
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/67955541b2bd4010.htm#ID_30bfeb127262391e0a001ae71ef2c957-6ce92325726237f50a001ae7588b56f3-en-US>`_
+
+            Arguments: 'string'
+            """
+
+        DTIMe = DTIMe()
+        """
+        CALCulate:DTIMe
+
+        Arguments:
         """
 
         class EYE(SCPINode):
@@ -1461,14 +1637,14 @@ class ZNB_gen(Instrument):
             Arguments:
             """
 
-            class MASK(SCPINode):
+            class MASK(SCPINode, SCPISet):
                 """
                 CALCulate:EYE:MASK
 
-                Arguments:
+                Arguments: AUTO
                 """
                 _cmd = "MASK"
-                args = []
+                args = ["AUTO"]
 
                 class CENTer(SCPINode):
                     """
@@ -1930,7 +2106,7 @@ class ZNB_gen(Instrument):
             """
             CALCulate:EYE:MASK
 
-            Arguments:
+            Arguments: AUTO
             """
 
             class MEASurement(SCPINode):
@@ -4229,17 +4405,17 @@ class ZNB_gen(Instrument):
                     `CALCulate:MARKer:REFerence:TYPE
                     <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/7c0f3d498f264e9e.htm#ID_20c235fafa8b6eb30a00206a01dede11-49a0afa4fa8b685a0a00206a01a6673d-en-US>`_
 
-                    Arguments: FIXed, NORMal
+                    Arguments: ARBitrary, FIXed, NORMal
                     """
                     _cmd = "TYPE"
-                    args = ["FIXed", "NORMal"]
+                    args = ["ARBitrary", "FIXed", "NORMal"]
 
                 TYPE = TYPE()
                 """
                 `CALCulate:MARKer:REFerence:TYPE
                 <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/7c0f3d498f264e9e.htm#ID_20c235fafa8b6eb30a00206a01dede11-49a0afa4fa8b685a0a00206a01a6673d-en-US>`_
 
-                Arguments: FIXed, NORMal
+                Arguments: ARBitrary, FIXed, NORMal
                 """
 
                 class X(SCPINode, SCPIQuery, SCPISet):
@@ -4260,22 +4436,22 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-                class Y(SCPINode, SCPIQuery):
+                class Y(SCPINode, SCPIQuery, SCPISet):
                     """
                     `CALCulate:MARKer:REFerence:Y
                     <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/90520d3afddd4fde.htm#ID_6e8f4665fa8b7e630a00206a01ed19b0-7b490ccffa8b78b60a00206a01a6673d-en-US>`_
 
-                    Arguments:
+                    Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
                     _cmd = "Y"
-                    args = []
+                    args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
                 Y = Y()
                 """
                 `CALCulate:MARKer:REFerence:Y
                 <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/90520d3afddd4fde.htm#ID_6e8f4665fa8b7e630a00206a01ed19b0-7b490ccffa8b78b60a00206a01a6673d-en-US>`_
 
-                Arguments:
+                Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
             REFerence = REFerence()
@@ -4536,17 +4712,17 @@ class ZNB_gen(Instrument):
                 `CALCulate:MARKer:TYPE
                 <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/8740dafec1944a52.htm#ID_6ec07d71fa8bc8aa0a00206a01cd9de5-4689d12efa8bc0ea0a00206a01a6673d-en-US>`_
 
-                Arguments: FIXed, NORMal
+                Arguments: ARBitrary, FIXed, NORMal
                 """
                 _cmd = "TYPE"
-                args = ["FIXed", "NORMal"]
+                args = ["ARBitrary", "FIXed", "NORMal"]
 
             TYPE = TYPE()
             """
             `CALCulate:MARKer:TYPE
             <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/8740dafec1944a52.htm#ID_6ec07d71fa8bc8aa0a00206a01cd9de5-4689d12efa8bc0ea0a00206a01a6673d-en-US>`_
 
-            Arguments: FIXed, NORMal
+            Arguments: ARBitrary, FIXed, NORMal
             """
 
             class X(SCPINode, SCPIQuery, SCPISet):
@@ -4567,22 +4743,22 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-            class Y(SCPINode, SCPIQuery):
+            class Y(SCPINode, SCPIQuery, SCPISet):
                 """
                 `CALCulate:MARKer:Y
                 <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/8d8c242cdd7e4572.htm#ID_68d57989fa8bd9540a00206a0034e41b-a588c4c5fa8bd3590a00206a01a6673d-en-US>`_
 
-                Arguments:
+                Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
                 _cmd = "Y"
-                args = []
+                args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
             Y = Y()
             """
             `CALCulate:MARKer:Y
             <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/8d8c242cdd7e4572.htm#ID_68d57989fa8bd9540a00206a0034e41b-a588c4c5fa8bd3590a00206a01a6673d-en-US>`_
 
-            Arguments:
+            Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
         MARKer = MARKer()
@@ -4803,6 +4979,22 @@ class ZNB_gen(Instrument):
                 _cmd = "DEFine"
                 args = ["'string'"]
 
+                class EXTended(SCPINode, SCPISet):
+                    """
+                    CALCulate:PARameter:DEFine:EXTended
+
+                    Arguments: 'string'
+                    """
+                    _cmd = "EXTended"
+                    args = ["'string'"]
+
+                EXTended = EXTended()
+                """
+                CALCulate:PARameter:DEFine:EXTended
+
+                Arguments: 'string'
+                """
+
                 class SGRoup(SCPINode, SCPIQuery, SCPISet):
                     """
                     `CALCulate:PARameter:DEFine:SGRoup
@@ -4842,7 +5034,7 @@ class ZNB_gen(Instrument):
                 class ALL(SCPINode, SCPISet):
                     """
                     `CALCulate:PARameter:DELete:ALL
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e95155.htm#ID_aaf85c1de1568dfc0a00206a01ec5604-135cad8de15685420a00206a00796295-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/c33d8af74c784000.htm#ID_aaf85c1de1568dfc0a00206a01ec5604-135cad8de15685420a00206a00796295-en-US>`_
 
                     Arguments:
                     """
@@ -4852,7 +5044,7 @@ class ZNB_gen(Instrument):
                 ALL = ALL()
                 """
                 `CALCulate:PARameter:DELete:ALL
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e95155.htm#ID_aaf85c1de1568dfc0a00206a01ec5604-135cad8de15685420a00206a00796295-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/c33d8af74c784000.htm#ID_aaf85c1de1568dfc0a00206a01ec5604-135cad8de15685420a00206a00796295-en-US>`_
 
                 Arguments:
                 """
@@ -4971,6 +5163,38 @@ class ZNB_gen(Instrument):
             <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/10abfaa35dcf40f3.htm#ID_b2e7e077fa8c3ef30a00206a00c865a1-07a6d833fa8c39460a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
+            """
+
+            class NFIGure(SCPINode):
+                """
+                CALCulate:PARameter:NFIGure
+
+                Arguments:
+                """
+                _cmd = "NFIGure"
+                args = []
+
+                class CSETtings(SCPINode, SCPISet):
+                    """
+                    CALCulate:PARameter:NFIGure:CSETtings
+
+                    Arguments: 'string'
+                    """
+                    _cmd = "CSETtings"
+                    args = ["'string'"]
+
+                CSETtings = CSETtings()
+                """
+                CALCulate:PARameter:NFIGure:CSETtings
+
+                Arguments: 'string'
+                """
+
+            NFIGure = NFIGure()
+            """
+            CALCulate:PARameter:NFIGure
+
+            Arguments:
             """
 
             class SDEFine(SCPINode, SCPISet):
@@ -8044,6 +8268,76 @@ class ZNB_gen(Instrument):
         Arguments:
         """
 
+        class TTIMe(SCPINode):
+            """
+            CALCulate:TTIMe
+
+            Arguments:
+            """
+            _cmd = "TTIMe"
+            args = []
+
+            class DATA(SCPINode, SCPIQuery, SCPISet):
+                """
+                `CALCulate:TTIMe:DATA
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/8053b2746b294c82.htm#ID_5b08ed0b7262ab7f0a001ae76ed1b8da-b19aa5f17262aa660a001ae7588b56f3-en-US>`_
+
+                Arguments: ALL
+                """
+                _cmd = "DATA"
+                args = ["ALL"]
+
+            DATA = DATA()
+            """
+            `CALCulate:TTIMe:DATA
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/8053b2746b294c82.htm#ID_5b08ed0b7262ab7f0a001ae76ed1b8da-b19aa5f17262aa660a001ae7588b56f3-en-US>`_
+
+            Arguments: ALL
+            """
+
+            class STATe(SCPINode, SCPIBool):
+                """
+                `CALCulate:TTIMe:STATe
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/c18d02bbe2fa4d55.htm#ID_b15ce6497262ad830a001ae714009482-f0151a457262ac690a001ae7588b56f3-en-US>`_
+
+                Arguments: 1, OFF, ON
+                """
+                _cmd = "STATe"
+                args = ["1", "OFF", "ON"]
+
+            STATe = STATe()
+            """
+            `CALCulate:TTIMe:STATe
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/c18d02bbe2fa4d55.htm#ID_b15ce6497262ad830a001ae714009482-f0151a457262ac690a001ae7588b56f3-en-US>`_
+
+            Arguments: 1, OFF, ON
+            """
+
+            class THReshold(SCPINode, SCPIQuery, SCPISet):
+                """
+                `CALCulate:TTIMe:THReshold
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/996021acfaf54f53.htm#ID_0de05d757262af480a001ae718266790-b1d8db787262ae2e0a001ae7588b56f3-en-US>`_
+
+                Arguments: 1, T1_9, T2_8
+                """
+                _cmd = "THReshold"
+                args = ["1", "T1_9", "T2_8"]
+
+            THReshold = THReshold()
+            """
+            `CALCulate:TTIMe:THReshold
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/996021acfaf54f53.htm#ID_0de05d757262af480a001ae718266790-b1d8db787262ae2e0a001ae7588b56f3-en-US>`_
+
+            Arguments: 1, T1_9, T2_8
+            """
+
+        TTIMe = TTIMe()
+        """
+        CALCulate:TTIMe
+
+        Arguments:
+        """
+
     CALCulate = CALCulate()
     """
     CALCulate
@@ -8072,7 +8366,7 @@ class ZNB_gen(Instrument):
             class CATalog(SCPINode, SCPIQuery):
                 """
                 `CONFigure:CHANnel:CATalog
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e103902.htm#ID_8267d8bffa90756d0a00206a012834d2-871f66dffa906fe00a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/9c40b6d672e3489c.htm#ID_8267d8bffa90756d0a00206a012834d2-871f66dffa906fe00a00206a01a6673d-en-US>`_
 
                 Arguments:
                 """
@@ -8082,7 +8376,7 @@ class ZNB_gen(Instrument):
             CATalog = CATalog()
             """
             `CONFigure:CHANnel:CATalog
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e103902.htm#ID_8267d8bffa90756d0a00206a012834d2-871f66dffa906fe00a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/9c40b6d672e3489c.htm#ID_8267d8bffa90756d0a00206a012834d2-871f66dffa906fe00a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -8108,7 +8402,7 @@ class ZNB_gen(Instrument):
                     class STATe(SCPINode, SCPIBool):
                         """
                         `CONFigure:CHANnel:MEASure:ALL:STATe
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e103934.htm#ID_958019b491dbf9e30a00206a01973116-3beacfd491dbf1670a00206a00e9ecac-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/f4de82a2bc4545d4.htm#ID_958019b491dbf9e30a00206a01973116-3beacfd491dbf1670a00206a00e9ecac-en-US>`_
 
                         Arguments: 1, OFF, ON
                         """
@@ -8118,7 +8412,7 @@ class ZNB_gen(Instrument):
                     STATe = STATe()
                     """
                     `CONFigure:CHANnel:MEASure:ALL:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e103934.htm#ID_958019b491dbf9e30a00206a01973116-3beacfd491dbf1670a00206a00e9ecac-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/f4de82a2bc4545d4.htm#ID_958019b491dbf9e30a00206a01973116-3beacfd491dbf1670a00206a00e9ecac-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -8280,7 +8574,7 @@ class ZNB_gen(Instrument):
             class CATalog(SCPINode, SCPIQuery):
                 """
                 `CONFigure:TRACe:CATalog
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e104260.htm#ID_bce7da14fa909b060a00206a01cbd9eb-e44e55bcfa9095780a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/587cc54182fe483e.htm#ID_bce7da14fa909b060a00206a01cbd9eb-e44e55bcfa9095780a00206a01a6673d-en-US>`_
 
                 Arguments:
                 """
@@ -8290,7 +8584,7 @@ class ZNB_gen(Instrument):
             CATalog = CATalog()
             """
             `CONFigure:TRACe:CATalog
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e104260.htm#ID_bce7da14fa909b060a00206a01cbd9eb-e44e55bcfa9095780a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/587cc54182fe483e.htm#ID_bce7da14fa909b060a00206a01cbd9eb-e44e55bcfa9095780a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -9010,7 +9304,7 @@ class ZNB_gen(Instrument):
                     class STATe(SCPINode, SCPIBool):
                         """
                         `CONTrol:HANDler:EXTension:INDex:STATe
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e105640.htm#ID_9ab7d58afa9122e30a00206a00a25190-37519af1fa911d260a00206a01a6673d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e107908.htm#ID_9ab7d58afa9122e30a00206a00a25190-37519af1fa911d260a00206a01a6673d-en-US>`_
 
                         Arguments: 1, OFF, ON
                         """
@@ -9020,7 +9314,7 @@ class ZNB_gen(Instrument):
                     STATe = STATe()
                     """
                     `CONTrol:HANDler:EXTension:INDex:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e105640.htm#ID_9ab7d58afa9122e30a00206a00a25190-37519af1fa911d260a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e107908.htm#ID_9ab7d58afa9122e30a00206a00a25190-37519af1fa911d260a00206a01a6673d-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -9044,7 +9338,7 @@ class ZNB_gen(Instrument):
                     class STATe(SCPINode, SCPIBool):
                         """
                         `CONTrol:HANDler:EXTension:RTRigger:STATe
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e105691.htm#ID_822beadefa912aa30a00206a00c2e325-f42ab4a7fa9124e70a00206a01a6673d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e107959.htm#ID_822beadefa912aa30a00206a00c2e325-f42ab4a7fa9124e70a00206a01a6673d-en-US>`_
 
                         Arguments: 1, OFF, ON
                         """
@@ -9054,7 +9348,7 @@ class ZNB_gen(Instrument):
                     STATe = STATe()
                     """
                     `CONTrol:HANDler:EXTension:RTRigger:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e105691.htm#ID_822beadefa912aa30a00206a00c2e325-f42ab4a7fa9124e70a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e107959.htm#ID_822beadefa912aa30a00206a00c2e325-f42ab4a7fa9124e70a00206a01a6673d-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -9196,7 +9490,7 @@ class ZNB_gen(Instrument):
             class LOGic(SCPINode, SCPIQuery, SCPISet):
                 """
                 `CONTrol:HANDler:LOGic
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e105768.htm#ID_f78b1faaaaa766d30a00206a00cb9c6b-84654118aaa758e80a00206a00dee6b8-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108036.htm#ID_f78b1faaaaa766d30a00206a00cb9c6b-84654118aaa758e80a00206a00dee6b8-en-US>`_
 
                 Arguments: NEGative, POSitive
                 """
@@ -9206,7 +9500,7 @@ class ZNB_gen(Instrument):
             LOGic = LOGic()
             """
             `CONTrol:HANDler:LOGic
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e105768.htm#ID_f78b1faaaaa766d30a00206a00cb9c6b-84654118aaa758e80a00206a00dee6b8-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108036.htm#ID_f78b1faaaaa766d30a00206a00cb9c6b-84654118aaa758e80a00206a00dee6b8-en-US>`_
 
             Arguments: NEGative, POSitive
             """
@@ -9275,7 +9569,7 @@ class ZNB_gen(Instrument):
                 class LOGic(SCPINode, SCPIQuery, SCPISet):
                     """
                     `CONTrol:HANDler:PASSfail:LOGic
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e105955.htm#ID_2595b82eaaa775590a00206a007fcf6d-a5b09155aaa769530a00206a00dee6b8-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108223.htm#ID_2595b82eaaa775590a00206a007fcf6d-a5b09155aaa769530a00206a00dee6b8-en-US>`_
 
                     Arguments: NEGative, POSitive
                     """
@@ -9285,7 +9579,7 @@ class ZNB_gen(Instrument):
                 LOGic = LOGic()
                 """
                 `CONTrol:HANDler:PASSfail:LOGic
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e105955.htm#ID_2595b82eaaa775590a00206a007fcf6d-a5b09155aaa769530a00206a00dee6b8-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108223.htm#ID_2595b82eaaa775590a00206a007fcf6d-a5b09155aaa769530a00206a00dee6b8-en-US>`_
 
                 Arguments: NEGative, POSitive
                 """
@@ -9293,7 +9587,7 @@ class ZNB_gen(Instrument):
                 class MODE(SCPINode, SCPIQuery, SCPISet):
                     """
                     `CONTrol:HANDler:PASSfail:MODE
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106005.htm#ID_f9bf98a0aaa783340a00206a00322e82-b914a914aaa777ea0a00206a00dee6b8-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108273.htm#ID_f9bf98a0aaa783340a00206a00322e82-b914a914aaa777ea0a00206a00dee6b8-en-US>`_
 
                     Arguments: FAIL, NOWait, PASS
                     """
@@ -9303,7 +9597,7 @@ class ZNB_gen(Instrument):
                 MODE = MODE()
                 """
                 `CONTrol:HANDler:PASSfail:MODE
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106005.htm#ID_f9bf98a0aaa783340a00206a00322e82-b914a914aaa777ea0a00206a00dee6b8-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108273.htm#ID_f9bf98a0aaa783340a00206a00322e82-b914a914aaa777ea0a00206a00dee6b8-en-US>`_
 
                 Arguments: FAIL, NOWait, PASS
                 """
@@ -9311,7 +9605,7 @@ class ZNB_gen(Instrument):
                 class POLicy(SCPINode, SCPIQuery, SCPISet):
                     """
                     `CONTrol:HANDler:PASSfail:POLicy
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106089.htm#ID_c5cf67d0aaa791ca0a00206a00b576ef-911cc27baaa785c40a00206a00dee6b8-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108357.htm#ID_c5cf67d0aaa791ca0a00206a00b576ef-911cc27baaa785c40a00206a00dee6b8-en-US>`_
 
                     Arguments: ALLMeas, ALLTests
                     """
@@ -9321,7 +9615,7 @@ class ZNB_gen(Instrument):
                 POLicy = POLicy()
                 """
                 `CONTrol:HANDler:PASSfail:POLicy
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106089.htm#ID_c5cf67d0aaa791ca0a00206a00b576ef-911cc27baaa785c40a00206a00dee6b8-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108357.htm#ID_c5cf67d0aaa791ca0a00206a00b576ef-911cc27baaa785c40a00206a00dee6b8-en-US>`_
 
                 Arguments: ALLMeas, ALLTests
                 """
@@ -9329,7 +9623,7 @@ class ZNB_gen(Instrument):
                 class SCOPe(SCPINode, SCPIQuery, SCPISet):
                     """
                     `CONTrol:HANDler:PASSfail:SCOPe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106139.htm#ID_8f644a34aaa7a10c0a00206a01c34f32-a532dcccaaa794f70a00206a00dee6b8-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108407.htm#ID_8f644a34aaa7a10c0a00206a01c34f32-a532dcccaaa794f70a00206a00dee6b8-en-US>`_
 
                     Arguments: CHANnel, GLOBal
                     """
@@ -9339,7 +9633,7 @@ class ZNB_gen(Instrument):
                 SCOPe = SCOPe()
                 """
                 `CONTrol:HANDler:PASSfail:SCOPe
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106139.htm#ID_8f644a34aaa7a10c0a00206a01c34f32-a532dcccaaa794f70a00206a00dee6b8-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108407.htm#ID_8f644a34aaa7a10c0a00206a01c34f32-a532dcccaaa794f70a00206a00dee6b8-en-US>`_
 
                 Arguments: CHANnel, GLOBal
                 """
@@ -9347,7 +9641,7 @@ class ZNB_gen(Instrument):
                 class STATus(SCPINode, SCPIQuery):
                     """
                     `CONTrol:HANDler:PASSfail:STATus
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106199.htm#ID_669da323aaa7adfd0a00206a01e58d7b-4babcd6caaa7a3eb0a00206a00dee6b8-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108467.htm#ID_669da323aaa7adfd0a00206a01e58d7b-4babcd6caaa7a3eb0a00206a00dee6b8-en-US>`_
 
                     Arguments:
                     """
@@ -9357,7 +9651,7 @@ class ZNB_gen(Instrument):
                 STATus = STATus()
                 """
                 `CONTrol:HANDler:PASSfail:STATus
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106199.htm#ID_669da323aaa7adfd0a00206a01e58d7b-4babcd6caaa7a3eb0a00206a00dee6b8-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108467.htm#ID_669da323aaa7adfd0a00206a01e58d7b-4babcd6caaa7a3eb0a00206a00dee6b8-en-US>`_
 
                 Arguments:
                 """
@@ -9372,7 +9666,7 @@ class ZNB_gen(Instrument):
             class RESet(SCPINode, SCPISet):
                 """
                 `CONTrol:HANDler:RESet
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106246.htm#ID_feafcc0afa911b520a00206a01d0958a-3c810aa7fa9115c40a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108514.htm#ID_feafcc0afa911b520a00206a01d0958a-3c810aa7fa9115c40a00206a01a6673d-en-US>`_
 
                 Arguments:
                 """
@@ -9382,7 +9676,7 @@ class ZNB_gen(Instrument):
             RESet = RESet()
             """
             `CONTrol:HANDler:RESet
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106246.htm#ID_feafcc0afa911b520a00206a01d0958a-3c810aa7fa9115c40a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108514.htm#ID_feafcc0afa911b520a00206a01d0958a-3c810aa7fa9115c40a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -9390,7 +9684,7 @@ class ZNB_gen(Instrument):
             class SWEepend(SCPINode, SCPIQuery, SCPISet):
                 """
                 `CONTrol:HANDler:SWEepend
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106265.htm#ID_4b826235aaa7c8f70a00206a001fcebb-4e04fab1aaa7bc740a00206a00dee6b8-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108533.htm#ID_4b826235aaa7c8f70a00206a001fcebb-4e04fab1aaa7bc740a00206a00dee6b8-en-US>`_
 
                 Arguments: CHANnel, GLOBal, SWEep
                 """
@@ -9400,7 +9694,7 @@ class ZNB_gen(Instrument):
             SWEepend = SWEepend()
             """
             `CONTrol:HANDler:SWEepend
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e106265.htm#ID_4b826235aaa7c8f70a00206a001fcebb-4e04fab1aaa7bc740a00206a00dee6b8-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e108533.htm#ID_4b826235aaa7c8f70a00206a001fcebb-4e04fab1aaa7bc740a00206a00dee6b8-en-US>`_
 
             Arguments: CHANnel, GLOBal, SWEep
             """
@@ -10314,6 +10608,22 @@ class ZNB_gen(Instrument):
         Arguments:
         """
 
+        class SIGNal(SCPINode, SCPIQuery, SCPISet):
+            """
+            CONTrol:SIGNal
+
+            Arguments: BNC1, BNC2
+            """
+            _cmd = "SIGNal"
+            args = ["BNC1", "BNC2"]
+
+        SIGNal = SIGNal()
+        """
+        CONTrol:SIGNal
+
+        Arguments: BNC1, BNC2
+        """
+
     CONTrol = CONTrol()
     """
     CONTrol
@@ -10406,7 +10716,7 @@ class ZNB_gen(Instrument):
             class STATe(SCPINode, SCPISet):
                 """
                 `DIAGnostic:DEVice:STATe
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e107819.htm#ID_4ccbc72a134d7a160a00206a00fc7723-c47502c8134d740b0a00206a0182dc26-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110087.htm#ID_4ccbc72a134d7a160a00206a00fc7723-c47502c8134d740b0a00206a0182dc26-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -10416,7 +10726,7 @@ class ZNB_gen(Instrument):
             STATe = STATe()
             """
             `DIAGnostic:DEVice:STATe
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e107819.htm#ID_4ccbc72a134d7a160a00206a00fc7723-c47502c8134d740b0a00206a0182dc26-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110087.htm#ID_4ccbc72a134d7a160a00206a00fc7723-c47502c8134d740b0a00206a0182dc26-en-US>`_
 
             Arguments: 'string'
             """
@@ -10458,6 +10768,22 @@ class ZNB_gen(Instrument):
         DUMP = DUMP()
         """
         DIAGnostic:DUMP
+
+        Arguments:
+        """
+
+        class PARSer(SCPINode, SCPIQuery):
+            """
+            DIAGnostic:PARSer
+
+            Arguments:
+            """
+            _cmd = "PARSer"
+            args = []
+
+        PARSer = PARSer()
+        """
+        DIAGnostic:PARSer
 
         Arguments:
         """
@@ -10748,7 +11074,7 @@ class ZNB_gen(Instrument):
             class FUNCtion(SCPINode, SCPIQuery, SCPISet):
                 """
                 `DIAGnostic:SERVice:FUNCtion
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144361.htm#ID_351c4edbfa91942b0a00206a019938ad-c622f7b0fa918e7e0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/5ee0a31dd99445bf.htm#ID_351c4edbfa91942b0a00206a019938ad-c622f7b0fa918e7e0a00206a01a6673d-en-US>`_
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
@@ -10758,7 +11084,7 @@ class ZNB_gen(Instrument):
             FUNCtion = FUNCtion()
             """
             `DIAGnostic:SERVice:FUNCtion
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144361.htm#ID_351c4edbfa91942b0a00206a019938ad-c622f7b0fa918e7e0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/5ee0a31dd99445bf.htm#ID_351c4edbfa91942b0a00206a019938ad-c622f7b0fa918e7e0a00206a01a6673d-en-US>`_
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
@@ -10766,7 +11092,7 @@ class ZNB_gen(Instrument):
             class RFPower(SCPINode, SCPIBool):
                 """
                 `DIAGnostic:SERVice:RFPower
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e107927.htm#ID_05ffa5f6fa919bcc0a00206a006174c7-16a66f8cfa91960f0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110195.htm#ID_05ffa5f6fa919bcc0a00206a006174c7-16a66f8cfa91960f0a00206a01a6673d-en-US>`_
 
                 Arguments: 1, OFF, ON
                 """
@@ -10776,7 +11102,7 @@ class ZNB_gen(Instrument):
             RFPower = RFPower()
             """
             `DIAGnostic:SERVice:RFPower
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e107927.htm#ID_05ffa5f6fa919bcc0a00206a006174c7-16a66f8cfa91960f0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110195.htm#ID_05ffa5f6fa919bcc0a00206a006174c7-16a66f8cfa91960f0a00206a01a6673d-en-US>`_
 
             Arguments: 1, OFF, ON
             """
@@ -11258,7 +11584,7 @@ class ZNB_gen(Instrument):
                     class STATe(SCPINode, SCPIBool):
                         """
                         `DISPlay:CMAP:LIMit:FCOLorize:STATe
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110010.htm#ID_07203f1f996b99230a00206a01fea816-cd8545fd996b91050a00206a0049ced2-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112293.htm#ID_07203f1f996b99230a00206a01fea816-cd8545fd996b91050a00206a0049ced2-en-US>`_
 
                         Arguments: 1, OFF, ON
                         """
@@ -11268,7 +11594,7 @@ class ZNB_gen(Instrument):
                     STATe = STATe()
                     """
                     `DISPlay:CMAP:LIMit:FCOLorize:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110010.htm#ID_07203f1f996b99230a00206a01fea816-cd8545fd996b91050a00206a0049ced2-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112293.htm#ID_07203f1f996b99230a00206a01fea816-cd8545fd996b91050a00206a0049ced2-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -11292,7 +11618,7 @@ class ZNB_gen(Instrument):
                     class STATe(SCPINode, SCPIBool):
                         """
                         `DISPlay:CMAP:LIMit:FSYMbol:STATe
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110042.htm#ID_a789ec67996ba7b90a00206a01775331-994b212d996b9e720a00206a0049ced2-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112325.htm#ID_a789ec67996ba7b90a00206a01775331-994b212d996b9e720a00206a0049ced2-en-US>`_
 
                         Arguments: 1, OFF, ON
                         """
@@ -11302,7 +11628,7 @@ class ZNB_gen(Instrument):
                     STATe = STATe()
                     """
                     `DISPlay:CMAP:LIMit:FSYMbol:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110042.htm#ID_a789ec67996ba7b90a00206a01775331-994b212d996b9e720a00206a0049ced2-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112325.htm#ID_a789ec67996ba7b90a00206a01775331-994b212d996b9e720a00206a0049ced2-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -11317,7 +11643,7 @@ class ZNB_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `DISPlay:CMAP:LIMit:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110071.htm#ID_b72519cea06b7a720a00206a006d9d2b-2c0171cca06b736d0a00206a013722ca-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112354.htm#ID_b72519cea06b7a720a00206a006d9d2b-2c0171cca06b736d0a00206a013722ca-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -11327,7 +11653,7 @@ class ZNB_gen(Instrument):
                 STATe = STATe()
                 """
                 `DISPlay:CMAP:LIMit:STATe
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110071.htm#ID_b72519cea06b7a720a00206a006d9d2b-2c0171cca06b736d0a00206a013722ca-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112354.htm#ID_b72519cea06b7a720a00206a006d9d2b-2c0171cca06b736d0a00206a013722ca-en-US>`_
 
                 Arguments: 1, OFF, ON
                 """
@@ -11351,7 +11677,7 @@ class ZNB_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `DISPlay:CMAP:MARKer:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110121.htm#ID_e76ed6a7fa922c050a00206a00aef132-0ec64a50fa92261a0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112404.htm#ID_e76ed6a7fa922c050a00206a00aef132-0ec64a50fa92261a0a00206a01a6673d-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -11361,7 +11687,7 @@ class ZNB_gen(Instrument):
                 STATe = STATe()
                 """
                 `DISPlay:CMAP:MARKer:STATe
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110121.htm#ID_e76ed6a7fa922c050a00206a00aef132-0ec64a50fa92261a0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112404.htm#ID_e76ed6a7fa922c050a00206a00aef132-0ec64a50fa92261a0a00206a01a6673d-en-US>`_
 
                 Arguments: 1, OFF, ON
                 """
@@ -11412,7 +11738,7 @@ class ZNB_gen(Instrument):
                     class STATe(SCPINode, SCPIBool):
                         """
                         `DISPlay:CMAP:TRACe:COLor:STATe
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110437.htm#ID_96913623fa923b670a00206a01ee5bbf-923eb8ebfa9235aa0a00206a01a6673d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112720.htm#ID_96913623fa923b670a00206a01ee5bbf-923eb8ebfa9235aa0a00206a01a6673d-en-US>`_
 
                         Arguments: 1, OFF, ON
                         """
@@ -11422,7 +11748,7 @@ class ZNB_gen(Instrument):
                     STATe = STATe()
                     """
                     `DISPlay:CMAP:TRACe:COLor:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110437.htm#ID_96913623fa923b670a00206a01ee5bbf-923eb8ebfa9235aa0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112720.htm#ID_96913623fa923b670a00206a01ee5bbf-923eb8ebfa9235aa0a00206a01a6673d-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -11437,7 +11763,7 @@ class ZNB_gen(Instrument):
                 class RGB(SCPINode, SCPIQuery, SCPISet):
                     """
                     `DISPlay:CMAP:TRACe:RGB
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110485.htm#ID_71191c2cfa9243080a00206a015c1979-8ce5c12bfa923d4b0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112768.htm#ID_71191c2cfa9243080a00206a015c1979-8ce5c12bfa923d4b0a00206a01a6673d-en-US>`_
 
                     Arguments: 'string'
                     """
@@ -11447,7 +11773,7 @@ class ZNB_gen(Instrument):
                 RGB = RGB()
                 """
                 `DISPlay:CMAP:TRACe:RGB
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e110485.htm#ID_71191c2cfa9243080a00206a015c1979-8ce5c12bfa923d4b0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112768.htm#ID_71191c2cfa9243080a00206a015c1979-8ce5c12bfa923d4b0a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -11713,7 +12039,7 @@ class ZNB_gen(Instrument):
         class RFSize(SCPINode, SCPIQuery, SCPISet):
             """
             `DISPlay:RFSize
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111190.htm#ID_26a7f2c7fa9259db0a00206a00f26a73-0ebe17bdfa9253ff0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113477.htm#ID_26a7f2c7fa9259db0a00206a00f26a73-0ebe17bdfa9253ff0a00206a01a6673d-en-US>`_
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
@@ -11723,7 +12049,7 @@ class ZNB_gen(Instrument):
         RFSize = RFSize()
         """
         `DISPlay:RFSize
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111190.htm#ID_26a7f2c7fa9259db0a00206a00f26a73-0ebe17bdfa9253ff0a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113477.htm#ID_26a7f2c7fa9259db0a00206a00f26a73-0ebe17bdfa9253ff0a00206a01a6673d-en-US>`_
 
         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
         """
@@ -12325,7 +12651,7 @@ class ZNB_gen(Instrument):
         class BORDer(SCPINode, SCPIQuery, SCPISet):
             """
             `FORMat:BORDer
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111306.htm#ID_3675bceefa92f1f40a00206a0080e1b0-61996525fa92ec470a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113593.htm#ID_3675bceefa92f1f40a00206a0080e1b0-61996525fa92ec470a00206a01a6673d-en-US>`_
 
             Arguments: NORMal, SWAPped
             """
@@ -12335,7 +12661,7 @@ class ZNB_gen(Instrument):
         BORDer = BORDer()
         """
         `FORMat:BORDer
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111306.htm#ID_3675bceefa92f1f40a00206a0080e1b0-61996525fa92ec470a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113593.htm#ID_3675bceefa92f1f40a00206a0080e1b0-61996525fa92ec470a00206a01a6673d-en-US>`_
 
         Arguments: NORMal, SWAPped
         """
@@ -12343,7 +12669,7 @@ class ZNB_gen(Instrument):
         class DATA(SCPINode, SCPIQuery, SCPISet):
             """
             `FORMat:DATA
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111232.htm#ID_42b1c1edfa9301c30a00206a005a835f-27d15adffa92fc260a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/fd9584184d114c87.htm#ID_42b1c1edfa9301c30a00206a005a835f-27d15adffa92fc260a00206a01a6673d-en-US>`_
 
             Arguments: ASCii, REAL
             """
@@ -12353,7 +12679,7 @@ class ZNB_gen(Instrument):
         DATA = DATA()
         """
         `FORMat:DATA
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111232.htm#ID_42b1c1edfa9301c30a00206a005a835f-27d15adffa92fc260a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/fd9584184d114c87.htm#ID_42b1c1edfa9301c30a00206a005a835f-27d15adffa92fc260a00206a01a6673d-en-US>`_
 
         Arguments: ASCii, REAL
         """
@@ -12411,7 +12737,7 @@ class ZNB_gen(Instrument):
         class DESTination(SCPINode, SCPIQuery, SCPISet):
             """
             `HCOPy:DESTination
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111372.htm#ID_4d99c38afa9309840a00206a01d41aa4-cb1d3d15fa9303a80a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113659.htm#ID_4d99c38afa9309840a00206a01d41aa4-cb1d3d15fa9303a80a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -12421,7 +12747,7 @@ class ZNB_gen(Instrument):
         DESTination = DESTination()
         """
         `HCOPy:DESTination
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111372.htm#ID_4d99c38afa9309840a00206a01d41aa4-cb1d3d15fa9303a80a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113659.htm#ID_4d99c38afa9309840a00206a01d41aa4-cb1d3d15fa9303a80a00206a01a6673d-en-US>`_
 
         Arguments: 'string'
         """
@@ -12438,7 +12764,7 @@ class ZNB_gen(Instrument):
             class LANGuage(SCPINode, SCPIQuery, SCPISet):
                 """
                 `HCOPy:DEVice:LANGuage
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111425.htm#ID_bd2a6c37fa9311150a00206a01b42ce6-ccf29715fa930b680a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113712.htm#ID_bd2a6c37fa9311150a00206a01b42ce6-ccf29715fa930b680a00206a01a6673d-en-US>`_
 
                 Arguments: BMP, EMF, EWMF, JPG, PDF, PNG, SVG, WMF
                 """
@@ -12448,7 +12774,7 @@ class ZNB_gen(Instrument):
             LANGuage = LANGuage()
             """
             `HCOPy:DEVice:LANGuage
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111425.htm#ID_bd2a6c37fa9311150a00206a01b42ce6-ccf29715fa930b680a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113712.htm#ID_bd2a6c37fa9311150a00206a01b42ce6-ccf29715fa930b680a00206a01a6673d-en-US>`_
 
             Arguments: BMP, EMF, EWMF, JPG, PDF, PNG, SVG, WMF
             """
@@ -12463,7 +12789,7 @@ class ZNB_gen(Instrument):
         class IMMediate(SCPINode, SCPISet):
             """
             `HCOPy:IMMediate
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111350.htm#ID_d21a6a5ffa9365110a00206a01870b2a-5d6c01cbfa935f640a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113637.htm#ID_d21a6a5ffa9365110a00206a01870b2a-5d6c01cbfa935f640a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -12473,7 +12799,7 @@ class ZNB_gen(Instrument):
         IMMediate = IMMediate()
         """
         `HCOPy:IMMediate
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111350.htm#ID_d21a6a5ffa9365110a00206a01870b2a-5d6c01cbfa935f640a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113637.htm#ID_d21a6a5ffa9365110a00206a01870b2a-5d6c01cbfa935f640a00206a01a6673d-en-US>`_
 
         Arguments:
         """
@@ -12490,7 +12816,7 @@ class ZNB_gen(Instrument):
             class ALL(SCPINode, SCPISet):
                 """
                 `HCOPy:ITEM:ALL
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111479.htm#ID_94da1e3bfa9318c60a00206a00ef3e34-3800e316fa9312ea0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113766.htm#ID_94da1e3bfa9318c60a00206a00ef3e34-3800e316fa9312ea0a00206a01a6673d-en-US>`_
 
                 Arguments:
                 """
@@ -12500,7 +12826,7 @@ class ZNB_gen(Instrument):
             ALL = ALL()
             """
             `HCOPy:ITEM:ALL
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111479.htm#ID_94da1e3bfa9318c60a00206a00ef3e34-3800e316fa9312ea0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113766.htm#ID_94da1e3bfa9318c60a00206a00ef3e34-3800e316fa9312ea0a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -12517,7 +12843,7 @@ class ZNB_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `HCOPy:ITEM:LOGO:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111510.htm#ID_ac9df7a7fa9320860a00206a00ec5c45-4c4a58fcfa931a9b0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113797.htm#ID_ac9df7a7fa9320860a00206a00ec5c45-4c4a58fcfa931a9b0a00206a01a6673d-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -12527,7 +12853,7 @@ class ZNB_gen(Instrument):
                 STATe = STATe()
                 """
                 `HCOPy:ITEM:LOGO:STATe
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111510.htm#ID_ac9df7a7fa9320860a00206a00ec5c45-4c4a58fcfa931a9b0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113797.htm#ID_ac9df7a7fa9320860a00206a00ec5c45-4c4a58fcfa931a9b0a00206a01a6673d-en-US>`_
 
                 Arguments: 1, OFF, ON
                 """
@@ -12551,7 +12877,7 @@ class ZNB_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `HCOPy:ITEM:MLISt:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111548.htm#ID_854db6e1fa9328370a00206a01529a20-c066e67cfa93227a0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113835.htm#ID_854db6e1fa9328370a00206a01529a20-c066e67cfa93227a0a00206a01a6673d-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -12561,7 +12887,7 @@ class ZNB_gen(Instrument):
                 STATe = STATe()
                 """
                 `HCOPy:ITEM:MLISt:STATe
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111548.htm#ID_854db6e1fa9328370a00206a01529a20-c066e67cfa93227a0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113835.htm#ID_854db6e1fa9328370a00206a01529a20-c066e67cfa93227a0a00206a01a6673d-en-US>`_
 
                 Arguments: 1, OFF, ON
                 """
@@ -12585,7 +12911,7 @@ class ZNB_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `HCOPy:ITEM:TIME:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111580.htm#ID_83e3f4d2fa932f9a0a00206a010f0f4e-404ea32bfa932a0c0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113867.htm#ID_83e3f4d2fa932f9a0a00206a010f0f4e-404ea32bfa932a0c0a00206a01a6673d-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -12595,7 +12921,7 @@ class ZNB_gen(Instrument):
                 STATe = STATe()
                 """
                 `HCOPy:ITEM:TIME:STATe
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111580.htm#ID_83e3f4d2fa932f9a0a00206a010f0f4e-404ea32bfa932a0c0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113867.htm#ID_83e3f4d2fa932f9a0a00206a010f0f4e-404ea32bfa932a0c0a00206a01a6673d-en-US>`_
 
                 Arguments: 1, OFF, ON
                 """
@@ -12626,7 +12952,7 @@ class ZNB_gen(Instrument):
             class COLor(SCPINode, SCPIBool):
                 """
                 `HCOPy:PAGE:COLor
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111612.htm#ID_5105d1a3134de2840a00206a0114a6f3-dca49ae8134ddcc80a00206a0182dc26-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113899.htm#ID_5105d1a3134de2840a00206a0114a6f3-dca49ae8134ddcc80a00206a0182dc26-en-US>`_
 
                 Arguments: 1, OFF, ON
                 """
@@ -12636,7 +12962,7 @@ class ZNB_gen(Instrument):
             COLor = COLor()
             """
             `HCOPy:PAGE:COLor
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111612.htm#ID_5105d1a3134de2840a00206a0114a6f3-dca49ae8134ddcc80a00206a0182dc26-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113899.htm#ID_5105d1a3134de2840a00206a0114a6f3-dca49ae8134ddcc80a00206a0182dc26-en-US>`_
 
             Arguments: 1, OFF, ON
             """
@@ -12653,7 +12979,7 @@ class ZNB_gen(Instrument):
                 class BOTTom(SCPINode, SCPIQuery, SCPISet):
                     """
                     `HCOPy:PAGE:MARGin:BOTTom
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111649.htm#ID_3dea753bfa93372b0a00206a01c0ca2d-3f62fe82fa93317e0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113936.htm#ID_3dea753bfa93372b0a00206a01c0ca2d-3f62fe82fa93317e0a00206a01a6673d-en-US>`_
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
@@ -12663,7 +12989,7 @@ class ZNB_gen(Instrument):
                 BOTTom = BOTTom()
                 """
                 `HCOPy:PAGE:MARGin:BOTTom
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111649.htm#ID_3dea753bfa93372b0a00206a01c0ca2d-3f62fe82fa93317e0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113936.htm#ID_3dea753bfa93372b0a00206a01c0ca2d-3f62fe82fa93317e0a00206a01a6673d-en-US>`_
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
@@ -12671,7 +12997,7 @@ class ZNB_gen(Instrument):
                 class LEFT(SCPINode, SCPIQuery, SCPISet):
                     """
                     `HCOPy:PAGE:MARGin:LEFT
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111679.htm#ID_8992c875fa933ebc0a00206a00922775-5c119a03fa93390f0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113966.htm#ID_8992c875fa933ebc0a00206a00922775-5c119a03fa93390f0a00206a01a6673d-en-US>`_
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
@@ -12681,7 +13007,7 @@ class ZNB_gen(Instrument):
                 LEFT = LEFT()
                 """
                 `HCOPy:PAGE:MARGin:LEFT
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111679.htm#ID_8992c875fa933ebc0a00206a00922775-5c119a03fa93390f0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113966.htm#ID_8992c875fa933ebc0a00206a00922775-5c119a03fa93390f0a00206a01a6673d-en-US>`_
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
@@ -12689,7 +13015,7 @@ class ZNB_gen(Instrument):
                 class RIGHt(SCPINode, SCPIQuery, SCPISet):
                     """
                     `HCOPy:PAGE:MARGin:RIGHt
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111709.htm#ID_c7f0b442fa93465e0a00206a008d1d63-960d34d5fa9340b00a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113996.htm#ID_c7f0b442fa93465e0a00206a008d1d63-960d34d5fa9340b00a00206a01a6673d-en-US>`_
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
@@ -12699,7 +13025,7 @@ class ZNB_gen(Instrument):
                 RIGHt = RIGHt()
                 """
                 `HCOPy:PAGE:MARGin:RIGHt
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111709.htm#ID_c7f0b442fa93465e0a00206a008d1d63-960d34d5fa9340b00a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113996.htm#ID_c7f0b442fa93465e0a00206a008d1d63-960d34d5fa9340b00a00206a01a6673d-en-US>`_
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
@@ -12707,7 +13033,7 @@ class ZNB_gen(Instrument):
                 class TOP(SCPINode, SCPIQuery, SCPISet):
                     """
                     `HCOPy:PAGE:MARGin:TOP
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111739.htm#ID_6228e4b0fa934def0a00206a0086d622-cebe271bfa9348520a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114026.htm#ID_6228e4b0fa934def0a00206a0086d622-cebe271bfa9348520a00206a01a6673d-en-US>`_
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
@@ -12717,7 +13043,7 @@ class ZNB_gen(Instrument):
                 TOP = TOP()
                 """
                 `HCOPy:PAGE:MARGin:TOP
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111739.htm#ID_6228e4b0fa934def0a00206a0086d622-cebe271bfa9348520a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114026.htm#ID_6228e4b0fa934def0a00206a0086d622-cebe271bfa9348520a00206a01a6673d-en-US>`_
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
@@ -12732,7 +13058,7 @@ class ZNB_gen(Instrument):
             class ORIentation(SCPINode, SCPIQuery, SCPISet):
                 """
                 `HCOPy:PAGE:ORIentation
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111769.htm#ID_f7b8f767fa9355a00a00206a00c03771-29a7b9bafa934fe30a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114056.htm#ID_f7b8f767fa9355a00a00206a00c03771-29a7b9bafa934fe30a00206a01a6673d-en-US>`_
 
                 Arguments: LANDscape, PORTrait
                 """
@@ -12742,7 +13068,7 @@ class ZNB_gen(Instrument):
             ORIentation = ORIentation()
             """
             `HCOPy:PAGE:ORIentation
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111769.htm#ID_f7b8f767fa9355a00a00206a00c03771-29a7b9bafa934fe30a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114056.htm#ID_f7b8f767fa9355a00a00206a00c03771-29a7b9bafa934fe30a00206a01a6673d-en-US>`_
 
             Arguments: LANDscape, PORTrait
             """
@@ -12801,7 +13127,7 @@ class ZNB_gen(Instrument):
             class ALL(SCPINode, SCPIBool):
                 """
                 `INITiate:CONTinuous:ALL
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111900.htm#ID_6387403cd8d5523c0a00206a01023265-128b12f9d8d54b860a00206a0133a7b4-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114187.htm#ID_6387403cd8d5523c0a00206a01023265-128b12f9d8d54b860a00206a0133a7b4-en-US>`_
 
                 Arguments: 1, OFF, ON
                 """
@@ -12811,7 +13137,7 @@ class ZNB_gen(Instrument):
             ALL = ALL()
             """
             `INITiate:CONTinuous:ALL
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111900.htm#ID_6387403cd8d5523c0a00206a01023265-128b12f9d8d54b860a00206a0133a7b4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114187.htm#ID_6387403cd8d5523c0a00206a01023265-128b12f9d8d54b860a00206a0133a7b4-en-US>`_
 
             Arguments: 1, OFF, ON
             """
@@ -12836,7 +13162,7 @@ class ZNB_gen(Instrument):
             class ALL(SCPINode, SCPISet):
                 """
                 `INITiate:IMMediate:ALL
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111855.htm#ID_912c0160d8d55d770a00206a01491fbe-eddf9798d8d555d60a00206a0133a7b4-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/32492e7b327e4fdb.htm#ID_912c0160d8d55d770a00206a01491fbe-eddf9798d8d555d60a00206a0133a7b4-en-US>`_
 
                 Arguments:
                 """
@@ -12846,7 +13172,7 @@ class ZNB_gen(Instrument):
             ALL = ALL()
             """
             `INITiate:IMMediate:ALL
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e111855.htm#ID_912c0160d8d55d770a00206a01491fbe-eddf9798d8d555d60a00206a0133a7b4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/32492e7b327e4fdb.htm#ID_912c0160d8d55d770a00206a01491fbe-eddf9798d8d555d60a00206a0133a7b4-en-US>`_
 
             Arguments:
             """
@@ -12947,7 +13273,7 @@ class ZNB_gen(Instrument):
         class NSELect(SCPINode, SCPIQuery, SCPISet):
             """
             `INSTrument:NSELect
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112146.htm#ID_078f22a7fa938ba40a00206a0072b3e0-af650a43fa9385d70a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114433.htm#ID_078f22a7fa938ba40a00206a0072b3e0-af650a43fa9385d70a00206a01a6673d-en-US>`_
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
@@ -12957,7 +13283,7 @@ class ZNB_gen(Instrument):
         NSELect = NSELect()
         """
         `INSTrument:NSELect
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112146.htm#ID_078f22a7fa938ba40a00206a0072b3e0-af650a43fa9385d70a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114433.htm#ID_078f22a7fa938ba40a00206a0072b3e0-af650a43fa9385d70a00206a01a6673d-en-US>`_
 
         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
         """
@@ -12974,7 +13300,7 @@ class ZNB_gen(Instrument):
             class COUNt(SCPINode, SCPIQuery):
                 """
                 `INSTrument:PORT:COUNt
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112183.htm#ID_9eb542a9fa9393a30a00206a01fd78a5-0f241535fa938d880a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114470.htm#ID_9eb542a9fa9393a30a00206a01fd78a5-0f241535fa938d880a00206a01a6673d-en-US>`_
 
                 Arguments:
                 """
@@ -12984,7 +13310,7 @@ class ZNB_gen(Instrument):
             COUNt = COUNt()
             """
             `INSTrument:PORT:COUNt
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112183.htm#ID_9eb542a9fa9393a30a00206a01fd78a5-0f241535fa938d880a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114470.htm#ID_9eb542a9fa9393a30a00206a01fd78a5-0f241535fa938d880a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -12999,7 +13325,7 @@ class ZNB_gen(Instrument):
         class SELect(SCPINode, SCPIQuery, SCPISet):
             """
             `INSTrument:SELect
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144551.htm#ID_49cfdf62fa939b440a00206a013fc5ae-d0c31584fa9395870a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e147054.htm#ID_49cfdf62fa939b440a00206a013fc5ae-d0c31584fa9395870a00206a01a6673d-en-US>`_
 
             Arguments: CHANnel1, CHANnel2, CHANnel3, CHANnel4
             """
@@ -13009,7 +13335,7 @@ class ZNB_gen(Instrument):
         SELect = SELect()
         """
         `INSTrument:SELect
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144551.htm#ID_49cfdf62fa939b440a00206a013fc5ae-d0c31584fa9395870a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e147054.htm#ID_49cfdf62fa939b440a00206a013fc5ae-d0c31584fa9395870a00206a01a6673d-en-US>`_
 
         Arguments: CHANnel1, CHANnel2, CHANnel3, CHANnel4
         """
@@ -13085,7 +13411,7 @@ class ZNB_gen(Instrument):
         class CATalog(SCPINode, SCPIQuery):
             """
             `MEMory:CATalog
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112268.htm#ID_952acba6fa93a2a60a00206a00158e32-18081993fa939d180a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/e8ee842e10b34a25.htm#ID_952acba6fa93a2a60a00206a00158e32-18081993fa939d180a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -13113,7 +13439,7 @@ class ZNB_gen(Instrument):
         CATalog = CATalog()
         """
         `MEMory:CATalog
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112268.htm#ID_952acba6fa93a2a60a00206a00158e32-18081993fa939d180a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/e8ee842e10b34a25.htm#ID_952acba6fa93a2a60a00206a00158e32-18081993fa939d180a00206a01a6673d-en-US>`_
 
         Arguments:
         """
@@ -13121,7 +13447,7 @@ class ZNB_gen(Instrument):
         class DEFine(SCPINode, SCPISet):
             """
             `MEMory:DEFine
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112308.htm#ID_061ba650fa93aa180a00206a00c6cfff-c04a3e9ffa93a48b0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/ed449faf63004fdc.htm#ID_061ba650fa93aa180a00206a00c6cfff-c04a3e9ffa93a48b0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -13131,7 +13457,7 @@ class ZNB_gen(Instrument):
         DEFine = DEFine()
         """
         `MEMory:DEFine
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112308.htm#ID_061ba650fa93aa180a00206a00c6cfff-c04a3e9ffa93a48b0a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/ed449faf63004fdc.htm#ID_061ba650fa93aa180a00206a00c6cfff-c04a3e9ffa93a48b0a00206a01a6673d-en-US>`_
 
         Arguments: 'string'
         """
@@ -13148,7 +13474,7 @@ class ZNB_gen(Instrument):
             class ALL(SCPINode, SCPISet):
                 """
                 `MEMory:DELete:ALL
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112365.htm#ID_35efca29fa93b18b0a00206a00349680-421059c6fa93abfd0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/cc17ea685d8c443e.htm#ID_35efca29fa93b18b0a00206a00349680-421059c6fa93abfd0a00206a01a6673d-en-US>`_
 
                 Arguments:
                 """
@@ -13158,7 +13484,7 @@ class ZNB_gen(Instrument):
             ALL = ALL()
             """
             `MEMory:DELete:ALL
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112365.htm#ID_35efca29fa93b18b0a00206a00349680-421059c6fa93abfd0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/cc17ea685d8c443e.htm#ID_35efca29fa93b18b0a00206a00349680-421059c6fa93abfd0a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -13166,7 +13492,7 @@ class ZNB_gen(Instrument):
             class NAME(SCPINode, SCPISet):
                 """
                 `MEMory:DELete:NAME
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112338.htm#ID_a4188fedfa93b8fd0a00206a007bbe38-13217951fa93b36f0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/e579c3d2535842d4.htm#ID_a4188fedfa93b8fd0a00206a007bbe38-13217951fa93b36f0a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -13176,7 +13502,7 @@ class ZNB_gen(Instrument):
             NAME = NAME()
             """
             `MEMory:DELete:NAME
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112338.htm#ID_a4188fedfa93b8fd0a00206a007bbe38-13217951fa93b36f0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/e579c3d2535842d4.htm#ID_a4188fedfa93b8fd0a00206a007bbe38-13217951fa93b36f0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -13243,7 +13569,7 @@ class ZNB_gen(Instrument):
                 class CONVersion(SCPINode, SCPISet):
                     """
                     `MMEMory:AKAL:FACTory:CONVersion
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112517.htm#ID_00f3bd41fa93c7f10a00206a01f83ace-1386d072fa93c2440a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/b8c6d4dc3fae4762.htm#ID_00f3bd41fa93c7f10a00206a01f83ace-1386d072fa93c2440a00206a01a6673d-en-US>`_
 
                     Arguments: 'string'
                     """
@@ -13253,7 +13579,7 @@ class ZNB_gen(Instrument):
                 CONVersion = CONVersion()
                 """
                 `MMEMory:AKAL:FACTory:CONVersion
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112517.htm#ID_00f3bd41fa93c7f10a00206a01f83ace-1386d072fa93c2440a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/b8c6d4dc3fae4762.htm#ID_00f3bd41fa93c7f10a00206a01f83ace-1386d072fa93c2440a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -13277,7 +13603,7 @@ class ZNB_gen(Instrument):
                 class CONVersion(SCPINode, SCPISet):
                     """
                     `MMEMory:AKAL:USER:CONVersion
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112549.htm#ID_0bfad8be134e0c050a00206a0178239a-ada6c16a134e06490a00206a0182dc26-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/73d7bff36b4646d7.htm#ID_0bfad8be134e0c050a00206a0178239a-ada6c16a134e06490a00206a0182dc26-en-US>`_
 
                     Arguments: 'string'
                     """
@@ -13287,7 +13613,7 @@ class ZNB_gen(Instrument):
                 CONVersion = CONVersion()
                 """
                 `MMEMory:AKAL:USER:CONVersion
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112549.htm#ID_0bfad8be134e0c050a00206a0178239a-ada6c16a134e06490a00206a0182dc26-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/73d7bff36b4646d7.htm#ID_0bfad8be134e0c050a00206a0178239a-ada6c16a134e06490a00206a0182dc26-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -13345,7 +13671,7 @@ class ZNB_gen(Instrument):
         class CDIRectory(SCPINode, SCPIQuery, SCPISet):
             """
             `MMEMory:CDIRectory
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112756.htm#ID_a851e04afa93deb50a00206a01ba773c-866493dbfa93d8f80a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115112.htm#ID_a851e04afa93deb50a00206a01ba773c-866493dbfa93d8f80a00206a01a6673d-en-US>`_
 
             Arguments: DEFault, 'string'
             """
@@ -13355,7 +13681,7 @@ class ZNB_gen(Instrument):
         CDIRectory = CDIRectory()
         """
         `MMEMory:CDIRectory
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112756.htm#ID_a851e04afa93deb50a00206a01ba773c-866493dbfa93d8f80a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115112.htm#ID_a851e04afa93deb50a00206a01ba773c-866493dbfa93d8f80a00206a01a6673d-en-US>`_
 
         Arguments: DEFault, 'string'
         """
@@ -13397,7 +13723,7 @@ class ZNB_gen(Instrument):
         class COPY(SCPINode, SCPISet):
             """
             `MMEMory:COPY
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112794.htm#ID_5982002afa93e6270a00206a00a5825e-91ceacf0fa93e08a0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115214.htm#ID_5982002afa93e6270a00206a00a5825e-91ceacf0fa93e08a0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -13407,7 +13733,7 @@ class ZNB_gen(Instrument):
         COPY = COPY()
         """
         `MMEMory:COPY
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112794.htm#ID_5982002afa93e6270a00206a00a5825e-91ceacf0fa93e08a0a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115214.htm#ID_5982002afa93e6270a00206a00a5825e-91ceacf0fa93e08a0a00206a01a6673d-en-US>`_
 
         Arguments: 'string'
         """
@@ -13415,7 +13741,7 @@ class ZNB_gen(Instrument):
         class DATA(SCPINode, SCPIQuery, SCPISet):
             """
             `MMEMory:DATA
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112902.htm#ID_b272d43dfa93eda90a00206a004c602f-6ae124d7fa93e80c0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115258.htm#ID_b272d43dfa93eda90a00206a004c602f-6ae124d7fa93e80c0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -13425,7 +13751,7 @@ class ZNB_gen(Instrument):
         DATA = DATA()
         """
         `MMEMory:DATA
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112902.htm#ID_b272d43dfa93eda90a00206a004c602f-6ae124d7fa93e80c0a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115258.htm#ID_b272d43dfa93eda90a00206a004c602f-6ae124d7fa93e80c0a00206a01a6673d-en-US>`_
 
         Arguments: 'string'
         """
@@ -13433,7 +13759,7 @@ class ZNB_gen(Instrument):
         class DELete(SCPINode, SCPISet):
             """
             `MMEMory:DELete
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112948.htm#ID_4f6d0f68fa93f5690a00206a00977265-306d4498fa93efad0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115304.htm#ID_4f6d0f68fa93f5690a00206a00977265-306d4498fa93efad0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -13443,7 +13769,7 @@ class ZNB_gen(Instrument):
             class CORRection(SCPINode, SCPISet):
                 """
                 `MMEMory:DELete:CORRection
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112995.htm#ID_f4141b0cfa93fceb0a00206a015c2d71-9c1f0333fa93f74e0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115351.htm#ID_f4141b0cfa93fceb0a00206a015c2d71-9c1f0333fa93f74e0a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -13453,7 +13779,7 @@ class ZNB_gen(Instrument):
             CORRection = CORRection()
             """
             `MMEMory:DELete:CORRection
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112995.htm#ID_f4141b0cfa93fceb0a00206a015c2d71-9c1f0333fa93f74e0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115351.htm#ID_f4141b0cfa93fceb0a00206a015c2d71-9c1f0333fa93f74e0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -13461,7 +13787,7 @@ class ZNB_gen(Instrument):
         DELete = DELete()
         """
         `MMEMory:DELete
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e112948.htm#ID_4f6d0f68fa93f5690a00206a00977265-306d4498fa93efad0a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115304.htm#ID_4f6d0f68fa93f5690a00206a00977265-306d4498fa93efad0a00206a01a6673d-en-US>`_
 
         Arguments: 'string'
         """
@@ -13496,7 +13822,7 @@ class ZNB_gen(Instrument):
             class CKIT(SCPINode, SCPISet):
                 """
                 `MMEMory:LOAD:CKIT
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113102.htm#ID_c78e3dc3fa940c6c0a00206a01f47c9b-d1fd8855fa9406a00a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/c78008ab43124a25.htm#ID_c78e3dc3fa940c6c0a00206a01f47c9b-d1fd8855fa9406a00a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -13542,7 +13868,7 @@ class ZNB_gen(Instrument):
                 class UDIRectory(SCPINode, SCPIQuery, SCPISet):
                     """
                     `MMEMory:LOAD:CKIT:UDIRectory
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113438.htm#ID_3825c580fa941b7f0a00206a014d2f58-aa68faf7fa9415b30a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/03dde4a1202c409e.htm#ID_3825c580fa941b7f0a00206a014d2f58-aa68faf7fa9415b30a00206a01a6673d-en-US>`_
 
                     Arguments: 'string'
                     """
@@ -13552,7 +13878,7 @@ class ZNB_gen(Instrument):
                 UDIRectory = UDIRectory()
                 """
                 `MMEMory:LOAD:CKIT:UDIRectory
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113438.htm#ID_3825c580fa941b7f0a00206a014d2f58-aa68faf7fa9415b30a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/03dde4a1202c409e.htm#ID_3825c580fa941b7f0a00206a014d2f58-aa68faf7fa9415b30a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -13560,7 +13886,7 @@ class ZNB_gen(Instrument):
             CKIT = CKIT()
             """
             `MMEMory:LOAD:CKIT
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113102.htm#ID_c78e3dc3fa940c6c0a00206a01f47c9b-d1fd8855fa9406a00a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/c78008ab43124a25.htm#ID_c78e3dc3fa940c6c0a00206a01f47c9b-d1fd8855fa9406a00a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -13568,7 +13894,7 @@ class ZNB_gen(Instrument):
             class CMAP(SCPINode, SCPISet):
                 """
                 `MMEMory:LOAD:CMAP
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113496.htm#ID_351cf3d6fa9422f20a00206a018d97ca-e2d6eb23fa941d540a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115853.htm#ID_351cf3d6fa9422f20a00206a018d97ca-e2d6eb23fa941d540a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -13578,7 +13904,7 @@ class ZNB_gen(Instrument):
             CMAP = CMAP()
             """
             `MMEMory:LOAD:CMAP
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113496.htm#ID_351cf3d6fa9422f20a00206a018d97ca-e2d6eb23fa941d540a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115853.htm#ID_351cf3d6fa9422f20a00206a018d97ca-e2d6eb23fa941d540a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -13586,7 +13912,7 @@ class ZNB_gen(Instrument):
             class CORRection(SCPINode, SCPIQuery, SCPISet):
                 """
                 `MMEMory:LOAD:CORRection
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113550.htm#ID_25d6c84ffa942a830a00206a0004052a-3d57daf0fa9424c60a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115907.htm#ID_25d6c84ffa942a830a00206a0004052a-3d57daf0fa9424c60a00206a01a6673d-en-US>`_
 
                 Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                 """
@@ -13614,7 +13940,7 @@ class ZNB_gen(Instrument):
                 class RESolve(SCPINode, SCPISet):
                     """
                     `MMEMory:LOAD:CORRection:RESolve
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113717.htm#ID_e782fc7bfa9431f50a00206a01e86316-b5f1ce83fa942c580a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/02aae260a86c47ae.htm#ID_e782fc7bfa9431f50a00206a01e86316-b5f1ce83fa942c580a00206a01a6673d-en-US>`_
 
                     Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                     """
@@ -13624,7 +13950,7 @@ class ZNB_gen(Instrument):
                 RESolve = RESolve()
                 """
                 `MMEMory:LOAD:CORRection:RESolve
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113717.htm#ID_e782fc7bfa9431f50a00206a01e86316-b5f1ce83fa942c580a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/02aae260a86c47ae.htm#ID_e782fc7bfa9431f50a00206a01e86316-b5f1ce83fa942c580a00206a01a6673d-en-US>`_
 
                 Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                 """
@@ -13650,7 +13976,7 @@ class ZNB_gen(Instrument):
             CORRection = CORRection()
             """
             `MMEMory:LOAD:CORRection
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e113550.htm#ID_25d6c84ffa942a830a00206a0004052a-3d57daf0fa9424c60a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115907.htm#ID_25d6c84ffa942a830a00206a0004052a-3d57daf0fa9424c60a00206a01a6673d-en-US>`_
 
             Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
             """
@@ -13778,7 +14104,7 @@ class ZNB_gen(Instrument):
             class RIPPle(SCPINode, SCPISet):
                 """
                 `MMEMory:LOAD:RIPPle
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114146.htm#ID_53d05c7afa9457fc0a00206a0134102b-a6dd69cffa94523f0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d5bb5c6003e24c6a.htm#ID_53d05c7afa9457fc0a00206a0134102b-a6dd69cffa94523f0a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -13788,7 +14114,7 @@ class ZNB_gen(Instrument):
             RIPPle = RIPPle()
             """
             `MMEMory:LOAD:RIPPle
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114146.htm#ID_53d05c7afa9457fc0a00206a0134102b-a6dd69cffa94523f0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d5bb5c6003e24c6a.htm#ID_53d05c7afa9457fc0a00206a0134102b-a6dd69cffa94523f0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -13832,7 +14158,7 @@ class ZNB_gen(Instrument):
             class TRACe(SCPINode, SCPISet):
                 """
                 `MMEMory:LOAD:TRACe
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114317.htm#ID_71cd29a3fa94ccdd0a00206a00176ef8-c8a94a32fa94c7300a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/3bd2aef07f2641af.htm#ID_71cd29a3fa94ccdd0a00206a00176ef8-c8a94a32fa94c7300a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -13860,7 +14186,7 @@ class ZNB_gen(Instrument):
             TRACe = TRACe()
             """
             `MMEMory:LOAD:TRACe
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e114317.htm#ID_71cd29a3fa94ccdd0a00206a00176ef8-c8a94a32fa94c7300a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/3bd2aef07f2641af.htm#ID_71cd29a3fa94ccdd0a00206a00176ef8-c8a94a32fa94c7300a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -14131,7 +14457,7 @@ class ZNB_gen(Instrument):
         class MDIRectory(SCPINode, SCPISet):
             """
             `MMEMory:MDIRectory
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115296.htm#ID_fd35f1fcfa9501b80a00206a0100c42b-88ece1edfa94fc0b0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117663.htm#ID_fd35f1fcfa9501b80a00206a0100c42b-88ece1edfa94fc0b0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -14141,7 +14467,7 @@ class ZNB_gen(Instrument):
         MDIRectory = MDIRectory()
         """
         `MMEMory:MDIRectory
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115296.htm#ID_fd35f1fcfa9501b80a00206a0100c42b-88ece1edfa94fc0b0a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117663.htm#ID_fd35f1fcfa9501b80a00206a0100c42b-88ece1edfa94fc0b0a00206a01a6673d-en-US>`_
 
         Arguments: 'string'
         """
@@ -14149,7 +14475,7 @@ class ZNB_gen(Instrument):
         class MOVE(SCPINode, SCPISet):
             """
             `MMEMory:MOVE
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115340.htm#ID_5a4f49b8fa95092a0a00206a01f9980a-904752d9fa95038d0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117707.htm#ID_5a4f49b8fa95092a0a00206a01f9980a-904752d9fa95038d0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -14159,7 +14485,7 @@ class ZNB_gen(Instrument):
         MOVE = MOVE()
         """
         `MMEMory:MOVE
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115340.htm#ID_5a4f49b8fa95092a0a00206a01f9980a-904752d9fa95038d0a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117707.htm#ID_5a4f49b8fa95092a0a00206a01f9980a-904752d9fa95038d0a00206a01a6673d-en-US>`_
 
         Arguments: 'string'
         """
@@ -14183,7 +14509,7 @@ class ZNB_gen(Instrument):
         class NAME(SCPINode, SCPIQuery, SCPISet):
             """
             `MMEMory:NAME
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115387.htm#ID_7ed3f8e1fa95183e0a00206a018c947f-39b72916fa9512810a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117754.htm#ID_7ed3f8e1fa95183e0a00206a018c947f-39b72916fa9512810a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -14193,7 +14519,7 @@ class ZNB_gen(Instrument):
         NAME = NAME()
         """
         `MMEMory:NAME
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115387.htm#ID_7ed3f8e1fa95183e0a00206a018c947f-39b72916fa9512810a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117754.htm#ID_7ed3f8e1fa95183e0a00206a018c947f-39b72916fa9512810a00206a01a6673d-en-US>`_
 
         Arguments: 'string'
         """
@@ -14201,7 +14527,7 @@ class ZNB_gen(Instrument):
         class RDIRectory(SCPINode, SCPISet):
             """
             `MMEMory:RDIRectory
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115454.htm#ID_13316b07fa951fdf0a00206a008fc1f6-bf8fd2b9fa951a220a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117821.htm#ID_13316b07fa951fdf0a00206a008fc1f6-bf8fd2b9fa951a220a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -14211,7 +14537,7 @@ class ZNB_gen(Instrument):
         RDIRectory = RDIRectory()
         """
         `MMEMory:RDIRectory
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115454.htm#ID_13316b07fa951fdf0a00206a008fc1f6-bf8fd2b9fa951a220a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117821.htm#ID_13316b07fa951fdf0a00206a008fc1f6-bf8fd2b9fa951a220a00206a01a6673d-en-US>`_
 
         Arguments: 'string'
         """
@@ -14228,7 +14554,7 @@ class ZNB_gen(Instrument):
             class CKIT(SCPINode, SCPISet):
                 """
                 `MMEMory:STORe:CKIT
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115481.htm#ID_539cfe2efa9527410a00206a01d2a4ac-dd207886fa9521b40a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/446c9eb860c0491b.htm#ID_539cfe2efa9527410a00206a01d2a4ac-dd207886fa9521b40a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -14256,7 +14582,7 @@ class ZNB_gen(Instrument):
             CKIT = CKIT()
             """
             `MMEMory:STORe:CKIT
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115481.htm#ID_539cfe2efa9527410a00206a01d2a4ac-dd207886fa9521b40a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/446c9eb860c0491b.htm#ID_539cfe2efa9527410a00206a01d2a4ac-dd207886fa9521b40a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -14264,7 +14590,7 @@ class ZNB_gen(Instrument):
             class CMAP(SCPINode, SCPISet):
                 """
                 `MMEMory:STORe:CMAP
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115594.htm#ID_cbd50bdafa952f400a00206a00ec799b-eab4a1d4fa9529260a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117963.htm#ID_cbd50bdafa952f400a00206a00ec799b-eab4a1d4fa9529260a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -14274,7 +14600,7 @@ class ZNB_gen(Instrument):
             CMAP = CMAP()
             """
             `MMEMory:STORe:CMAP
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115594.htm#ID_cbd50bdafa952f400a00206a00ec799b-eab4a1d4fa9529260a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117963.htm#ID_cbd50bdafa952f400a00206a00ec799b-eab4a1d4fa9529260a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -14282,7 +14608,7 @@ class ZNB_gen(Instrument):
             class CORRection(SCPINode, SCPISet):
                 """
                 `MMEMory:STORe:CORRection
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115630.htm#ID_c353e6ebfa9536b20a00206a01588c09-64171fb4fa9531150a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/07e5bb4206f64b5d.htm#ID_c353e6ebfa9536b20a00206a01588c09-64171fb4fa9531150a00206a01a6673d-en-US>`_
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
@@ -14292,7 +14618,7 @@ class ZNB_gen(Instrument):
                 class TCOefficient(SCPINode, SCPISet):
                     """
                     `MMEMory:STORe:CORRection:TCOefficient
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115682.htm#ID_9ae3f47f6127dd220a00206a00f0280f-08ed84676127d39c0a00206a01ed2866-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/a0c818bdcc01478f.htm#ID_9ae3f47f6127dd220a00206a00f0280f-08ed84676127d39c0a00206a01ed2866-en-US>`_
 
                     Arguments: 'string'
                     """
@@ -14302,7 +14628,7 @@ class ZNB_gen(Instrument):
                 TCOefficient = TCOefficient()
                 """
                 `MMEMory:STORe:CORRection:TCOefficient
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115682.htm#ID_9ae3f47f6127dd220a00206a00f0280f-08ed84676127d39c0a00206a01ed2866-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/a0c818bdcc01478f.htm#ID_9ae3f47f6127dd220a00206a00f0280f-08ed84676127d39c0a00206a01ed2866-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -14310,7 +14636,7 @@ class ZNB_gen(Instrument):
             CORRection = CORRection()
             """
             `MMEMory:STORe:CORRection
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115630.htm#ID_c353e6ebfa9536b20a00206a01588c09-64171fb4fa9531150a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/07e5bb4206f64b5d.htm#ID_c353e6ebfa9536b20a00206a01588c09-64171fb4fa9531150a00206a01a6673d-en-US>`_
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
@@ -14388,7 +14714,7 @@ class ZNB_gen(Instrument):
             class LIMit(SCPINode, SCPISet):
                 """
                 `MMEMory:STORe:LIMit
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115879.htm#ID_782b2ad6fa953e250a00206a019dc625-b89a0a63fa9538870a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/2ef76634a95648ec.htm#ID_782b2ad6fa953e250a00206a019dc625-b89a0a63fa9538870a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -14398,7 +14724,7 @@ class ZNB_gen(Instrument):
             LIMit = LIMit()
             """
             `MMEMory:STORe:LIMit
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115879.htm#ID_782b2ad6fa953e250a00206a019dc625-b89a0a63fa9538870a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/2ef76634a95648ec.htm#ID_782b2ad6fa953e250a00206a019dc625-b89a0a63fa9538870a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -14440,7 +14766,7 @@ class ZNB_gen(Instrument):
             class RIPPle(SCPINode, SCPISet):
                 """
                 `MMEMory:STORe:RIPPle
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115976.htm#ID_f13d0426fa955c6b0a00206a0012a7ed-6e6fe2c3fa9556bd0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/a4372f1c06a0463a.htm#ID_f13d0426fa955c6b0a00206a0012a7ed-6e6fe2c3fa9556bd0a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -14450,7 +14776,7 @@ class ZNB_gen(Instrument):
             RIPPle = RIPPle()
             """
             `MMEMory:STORe:RIPPle
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e115976.htm#ID_f13d0426fa955c6b0a00206a0012a7ed-6e6fe2c3fa9556bd0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/a4372f1c06a0463a.htm#ID_f13d0426fa955c6b0a00206a0012a7ed-6e6fe2c3fa9556bd0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -14504,7 +14830,7 @@ class ZNB_gen(Instrument):
                 class CHANnel(SCPINode, SCPISet):
                     """
                     `MMEMory:STORe:TRACe:CHANnel
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e116267.htm#ID_5e3f64c9fa957aa10a00206a0151de90-1d6679b9fa9575030a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/5d8cb12038e14646.htm#ID_5e3f64c9fa957aa10a00206a0151de90-1d6679b9fa9575030a00206a01a6673d-en-US>`_
 
                     Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                     """
@@ -14514,7 +14840,7 @@ class ZNB_gen(Instrument):
                 CHANnel = CHANnel()
                 """
                 `MMEMory:STORe:TRACe:CHANnel
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e116267.htm#ID_5e3f64c9fa957aa10a00206a0151de90-1d6679b9fa9575030a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/5d8cb12038e14646.htm#ID_5e3f64c9fa957aa10a00206a0151de90-1d6679b9fa9575030a00206a01a6673d-en-US>`_
 
                 Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                 """
@@ -14704,7 +15030,7 @@ class ZNB_gen(Instrument):
             class ECBits(SCPINode, SCPIBool):
                 """
                 `OUTPut:UPORt:ECBits
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e116622.htm#ID_954978c2134e5c960a00206a00bd7009-5e1d0c11134e56e90a00206a0182dc26-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e119017.htm#ID_954978c2134e5c960a00206a00bd7009-5e1d0c11134e56e90a00206a0182dc26-en-US>`_
 
                 Arguments: 1, OFF, ON
                 """
@@ -14714,7 +15040,7 @@ class ZNB_gen(Instrument):
             ECBits = ECBits()
             """
             `OUTPut:UPORt:ECBits
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e116622.htm#ID_954978c2134e5c960a00206a00bd7009-5e1d0c11134e56e90a00206a0182dc26-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e119017.htm#ID_954978c2134e5c960a00206a00bd7009-5e1d0c11134e56e90a00206a0182dc26-en-US>`_
 
             Arguments: 1, OFF, ON
             """
@@ -14838,7 +15164,7 @@ class ZNB_gen(Instrument):
             class INIMessage(SCPINode, SCPIQuery, SCPISet):
                 """
                 `PROGram:SELected:INIMessage
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e116917.htm#ID_40e3620ffa95bfa80a00206a008f8ff5-31d51170fa95ba0b0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e119314.htm#ID_40e3620ffa95bfa80a00206a008f8ff5-31d51170fa95ba0b0a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -14848,7 +15174,7 @@ class ZNB_gen(Instrument):
             INIMessage = INIMessage()
             """
             `PROGram:SELected:INIMessage
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e116917.htm#ID_40e3620ffa95bfa80a00206a008f8ff5-31d51170fa95ba0b0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e119314.htm#ID_40e3620ffa95bfa80a00206a008f8ff5-31d51170fa95ba0b0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -14856,7 +15182,7 @@ class ZNB_gen(Instrument):
             class INIParameter(SCPINode, SCPIQuery, SCPISet):
                 """
                 `PROGram:SELected:INIParameter
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117033.htm#ID_7a6b9636fa95c73a0a00206a00d1a901-d14937334d3699ed0a00206a01f0cf39-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e119430.htm#ID_7a6b9636fa95c73a0a00206a00d1a901-d14937334d3699ed0a00206a01f0cf39-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -14866,7 +15192,7 @@ class ZNB_gen(Instrument):
             INIParameter = INIParameter()
             """
             `PROGram:SELected:INIParameter
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117033.htm#ID_7a6b9636fa95c73a0a00206a00d1a901-d14937334d3699ed0a00206a01f0cf39-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e119430.htm#ID_7a6b9636fa95c73a0a00206a00d1a901-d14937334d3699ed0a00206a01f0cf39-en-US>`_
 
             Arguments: 'string'
             """
@@ -14874,7 +15200,7 @@ class ZNB_gen(Instrument):
             class NAME(SCPINode, SCPIQuery, SCPISet):
                 """
                 `PROGram:SELected:NAME
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117134.htm#ID_c54cbe36fa95cebc0a00206a00f8e5b9-e2ad44defa95c91e0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e119531.htm#ID_c54cbe36fa95cebc0a00206a00f8e5b9-e2ad44defa95c91e0a00206a01a6673d-en-US>`_
 
                 Arguments: PROG
                 """
@@ -14884,7 +15210,7 @@ class ZNB_gen(Instrument):
             NAME = NAME()
             """
             `PROGram:SELected:NAME
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e117134.htm#ID_c54cbe36fa95cebc0a00206a00f8e5b9-e2ad44defa95c91e0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e119531.htm#ID_c54cbe36fa95cebc0a00206a00f8e5b9-e2ad44defa95c91e0a00206a01a6673d-en-US>`_
 
             Arguments: PROG
             """
@@ -15247,7 +15573,7 @@ class ZNB_gen(Instrument):
                 class DELete(SCPINode, SCPISet):
                     """
                     `SENSe:CORRection:CKIT:DELete
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e118508.htm#ID_d581a0a8fa96390e0a00206a0093c656-0318d330fa9633710a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e120905.htm#ID_d581a0a8fa96390e0a00206a0093c656-0318d330fa9633710a00206a01a6673d-en-US>`_
 
                     Arguments: 'string'
                     """
@@ -15257,7 +15583,7 @@ class ZNB_gen(Instrument):
                 DELete = DELete()
                 """
                 `SENSe:CORRection:CKIT:DELete
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e118508.htm#ID_d581a0a8fa96390e0a00206a0093c656-0318d330fa9633710a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e120905.htm#ID_d581a0a8fa96390e0a00206a0093c656-0318d330fa9633710a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -15763,7 +16089,7 @@ class ZNB_gen(Instrument):
                 class INSTall(SCPINode, SCPISet):
                     """
                     `SENSe:CORRection:CKIT:INSTall
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144783.htm#ID_0d28ed7afa968ceb0a00206a00c14d10-2f7f204bfa96872e0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e147286.htm#ID_0d28ed7afa968ceb0a00206a00c14d10-2f7f204bfa96872e0a00206a01a6673d-en-US>`_
 
                     Arguments: 'string'
                     """
@@ -15773,7 +16099,7 @@ class ZNB_gen(Instrument):
                 INSTall = INSTall()
                 """
                 `SENSe:CORRection:CKIT:INSTall
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144783.htm#ID_0d28ed7afa968ceb0a00206a00c14d10-2f7f204bfa96872e0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e147286.htm#ID_0d28ed7afa968ceb0a00206a00c14d10-2f7f204bfa96872e0a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -17391,7 +17717,7 @@ class ZNB_gen(Instrument):
                 class SELect(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SENSe:CORRection:CKIT:SELect
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e118659.htm#ID_b65e4b76fa9a70630a00206a0107a5c6-69af0339fa9a6aa60a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e121056.htm#ID_b65e4b76fa9a70630a00206a0107a5c6-69af0339fa9a6aa60a00206a01a6673d-en-US>`_
 
                     Arguments: 'string'
                     """
@@ -17401,7 +17727,7 @@ class ZNB_gen(Instrument):
                 SELect = SELect()
                 """
                 `SENSe:CORRection:CKIT:SELect
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e118659.htm#ID_b65e4b76fa9a70630a00206a0107a5c6-69af0339fa9a6aa60a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e121056.htm#ID_b65e4b76fa9a70630a00206a0107a5c6-69af0339fa9a6aa60a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -18623,7 +18949,7 @@ class ZNB_gen(Instrument):
                         class PASSword(SCPINode, SCPISet):
                             """
                             `SENSe:CORRection:COLLect:AUTO:CKIT:PASSword
-                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e120352.htm#ID_2a769be13f255d480a00206a00c9e150-22af427d3f2551130a00206a01f2dc17-en-US>`_
+                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e122749.htm#ID_2a769be13f255d480a00206a00c9e150-22af427d3f2551130a00206a01f2dc17-en-US>`_
 
                             Arguments: 'string'
                             """
@@ -18633,7 +18959,7 @@ class ZNB_gen(Instrument):
                         PASSword = PASSword()
                         """
                         `SENSe:CORRection:COLLect:AUTO:CKIT:PASSword
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e120352.htm#ID_2a769be13f255d480a00206a00c9e150-22af427d3f2551130a00206a01f2dc17-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e122749.htm#ID_2a769be13f255d480a00206a00c9e150-22af427d3f2551130a00206a01f2dc17-en-US>`_
 
                         Arguments: 'string'
                         """
@@ -18846,7 +19172,7 @@ class ZNB_gen(Instrument):
                     class ALL(SCPINode, SCPIBool):
                         """
                         `SENSe:CORRection:COLLect:CHANnels:ALL
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e120625.htm#ID_34af02743512c65b0a00206a00362a14-7b024c7c3512beaa0a00206a01f2dc17-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/441ccb920f0b4445.htm#ID_34af02743512c65b0a00206a00362a14-7b024c7c3512beaa0a00206a01f2dc17-en-US>`_
 
                         Arguments: 1, OFF, ON
                         """
@@ -18856,7 +19182,7 @@ class ZNB_gen(Instrument):
                     ALL = ALL()
                     """
                     `SENSe:CORRection:COLLect:CHANnels:ALL
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e120625.htm#ID_34af02743512c65b0a00206a00362a14-7b024c7c3512beaa0a00206a01f2dc17-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/441ccb920f0b4445.htm#ID_34af02743512c65b0a00206a00362a14-7b024c7c3512beaa0a00206a01f2dc17-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -19288,6 +19614,86 @@ class ZNB_gen(Instrument):
                 Arguments: ETOM, ETSM, FOPort1, FOPort12, FOPort2, FOPTport, FRTRans, FTRans, REFL1, REFL12, REFL2, ROPTport, RTRans, TNA, TOM, TOSM, TPORt, TRL, TRM, TSM, UOSM
                 """
 
+                class NFIGure(SCPINode, SCPISet):
+                    """
+                    SENSe:CORRection:COLLect:NFIGure
+
+                    Arguments: ATTenuator, RECeiver, SOURce
+                    """
+                    _cmd = "NFIGure"
+                    args = ["ATTenuator", "RECeiver", "SOURce"]
+
+                    class ACQuire(SCPINode, SCPISet):
+                        """
+                        SENSe:CORRection:COLLect:NFIGure:ACQuire
+
+                        Arguments: ATTenuator, RECeiver, SOURce
+                        """
+                        _cmd = "ACQuire"
+                        args = ["ATTenuator", "RECeiver", "SOURce"]
+
+                    ACQuire = ACQuire()
+                    """
+                    SENSe:CORRection:COLLect:NFIGure:ACQuire
+
+                    Arguments: ATTenuator, RECeiver, SOURce
+                    """
+
+                    class END(SCPINode, SCPISet):
+                        """
+                        SENSe:CORRection:COLLect:NFIGure:END
+
+                        Arguments:
+                        """
+                        _cmd = "END"
+                        args = []
+
+                    END = END()
+                    """
+                    SENSe:CORRection:COLLect:NFIGure:END
+
+                    Arguments:
+                    """
+
+                    class SAVE(SCPINode, SCPISet):
+                        """
+                        SENSe:CORRection:COLLect:NFIGure:SAVE
+
+                        Arguments:
+                        """
+                        _cmd = "SAVE"
+                        args = []
+
+                    SAVE = SAVE()
+                    """
+                    SENSe:CORRection:COLLect:NFIGure:SAVE
+
+                    Arguments:
+                    """
+
+                    class STARt(SCPINode, SCPISet):
+                        """
+                        SENSe:CORRection:COLLect:NFIGure:STARt
+
+                        Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                        """
+                        _cmd = "STARt"
+                        args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
+
+                    STARt = STARt()
+                    """
+                    SENSe:CORRection:COLLect:NFIGure:STARt
+
+                    Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                    """
+
+                NFIGure = NFIGure()
+                """
+                SENSe:CORRection:COLLect:NFIGure
+
+                Arguments: ATTenuator, RECeiver, SOURce
+                """
+
                 class PMETer(SCPINode):
                     """
                     SENSe:CORRection:COLLect:PMETer
@@ -19300,7 +19706,7 @@ class ZNB_gen(Instrument):
                     class ID(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SENSe:CORRection:COLLect:PMETer:ID
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e120871.htm#ID_5bda58c53512d2ed0a00206a010922a3-3fb7cfcf3512c9a60a00206a01f2dc17-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e123274.htm#ID_5bda58c53512d2ed0a00206a010922a3-3fb7cfcf3512c9a60a00206a01f2dc17-en-US>`_
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
@@ -19310,7 +19716,7 @@ class ZNB_gen(Instrument):
                     ID = ID()
                     """
                     `SENSe:CORRection:COLLect:PMETer:ID
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e120871.htm#ID_5bda58c53512d2ed0a00206a010922a3-3fb7cfcf3512c9a60a00206a01f2dc17-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e123274.htm#ID_5bda58c53512d2ed0a00206a010922a3-3fb7cfcf3512c9a60a00206a01f2dc17-en-US>`_
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
@@ -19513,6 +19919,22 @@ class ZNB_gen(Instrument):
                 """
                 _cmd = "CSET"
                 args = []
+
+                class ACTivate(SCPINode, SCPIQuery, SCPISet):
+                    """
+                    SENSe:CORRection:CSET:ACTivate
+
+                    Arguments: 'string'
+                    """
+                    _cmd = "ACTivate"
+                    args = ["'string'"]
+
+                ACTivate = ACTivate()
+                """
+                SENSe:CORRection:CSET:ACTivate
+
+                Arguments: 'string'
+                """
 
                 class DESCription(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -19819,6 +20241,38 @@ class ZNB_gen(Instrument):
             <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/2902157d598f48ce.htm#ID_e6e77f94fa9db56a0a00206a0193f03d-33f5f50ffa9daf8e0a00206a01a6673d-en-US>`_
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+            """
+
+            class NFIGure(SCPINode, SCPIBool):
+                """
+                SENSe:CORRection:NFIGure
+
+                Arguments: 1, OFF, ON
+                """
+                _cmd = "NFIGure"
+                args = ["1", "OFF", "ON"]
+
+                class STATe(SCPINode, SCPIBool):
+                    """
+                    SENSe:CORRection:NFIGure:STATe
+
+                    Arguments: 1, OFF, ON
+                    """
+                    _cmd = "STATe"
+                    args = ["1", "OFF", "ON"]
+
+                STATe = STATe()
+                """
+                SENSe:CORRection:NFIGure:STATe
+
+                Arguments: 1, OFF, ON
+                """
+
+            NFIGure = NFIGure()
+            """
+            SENSe:CORRection:NFIGure
+
+            Arguments: 1, OFF, ON
             """
 
             class OFFSet(SCPINodeN, SCPIBool):
@@ -20468,7 +20922,7 @@ class ZNB_gen(Instrument):
                 class ARBitrary(SCPINode):
                     """
                     `SENSe:FREQuency:CONVersion:ARBitrary
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e126021.htm#ID_98a8a17bfa9f45010a00206a009ce494-022448048c5dc3830a00206a0022f285-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e128433.htm#ID_98a8a17bfa9f45010a00206a009ce494-022448048c5dc3830a00206a0022f285-en-US>`_
 
                     Arguments:
                     """
@@ -20496,7 +20950,7 @@ class ZNB_gen(Instrument):
                 ARBitrary = ARBitrary()
                 """
                 `SENSe:FREQuency:CONVersion:ARBitrary
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e126021.htm#ID_98a8a17bfa9f45010a00206a009ce494-022448048c5dc3830a00206a0022f285-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e128433.htm#ID_98a8a17bfa9f45010a00206a009ce494-022448048c5dc3830a00206a0022f285-en-US>`_
 
                 Arguments:
                 """
@@ -20951,6 +21405,38 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
+            class IFConst(SCPINode, SCPIQuery, SCPISet):
+                """
+                SENSe:FREQuency:IFConst
+
+                Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                """
+                _cmd = "IFConst"
+                args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
+
+                class STATe(SCPINode, SCPIBool):
+                    """
+                    SENSe:FREQuency:IFConst:STATe
+
+                    Arguments: 1, OFF, ON
+                    """
+                    _cmd = "STATe"
+                    args = ["1", "OFF", "ON"]
+
+                STATe = STATe()
+                """
+                SENSe:FREQuency:IFConst:STATe
+
+                Arguments: 1, OFF, ON
+                """
+
+            IFConst = IFConst()
+            """
+            SENSe:FREQuency:IFConst
+
+            Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+            """
+
             class IMODulation(SCPINode):
                 """
                 SENSe:FREQuency:IMODulation
@@ -21304,17 +21790,17 @@ class ZNB_gen(Instrument):
                 `SENSe:FUNCtion:ON
                 <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/a60c5184e5484818.htm#ID_5611a1c6faaa7b640a00206a00e83a51-a685455efaaa75a70a00206a01a6673d-en-US>`_
 
-                Arguments: 'XFRequency:POWer:A1', 'XFRequency:POWer:B1', 'XFRequency:POWer:KFACtor', 'XFRequency:POWer:MUFactor1', 'XFRequency:POWer:RATio', 'XFRequency:POWer:S1', 'XFRequency:POWer:S1:DUMMy', 'XFRequency:POWer:Y1', 'XFRequency:POWer:Z1', 'XFRequency:VOLTage', 'XFRequency:VOLTage:DC', 'XPOWer:POWer:A1', 'XPOWer:POWer:B1', 'XPOWer:POWer:RATio', 'XPOWer:POWer:S1', 'XPOWer:POWer:S1:DUMMy', 'XPOWer:POWer:Y1', 'XPOWer:POWer:Z1', 'XPOWer:VOLTage', 'XPOWer:VOLTage:DC', 'XTIMe:POWer:A1', 'XTIMe:POWer:B1', 'XTIMe:POWer:KFACtor', 'XTIMe:POWer:MUFactor1', 'XTIMe:POWer:RATio', 'XTIMe:POWer:S1', 'XTIMe:POWer:S1:DUMMy', 'XTIMe:POWer:Y1', 'XTIMe:POWer:Z1', 'XTIMe:VOLTage', 'XTIMe:VOLTage:DC'
+                Arguments: 'string'
                 """
                 _cmd = "ON"
-                args = ["'XFRequency:POWer:A1'", "'XFRequency:POWer:B1'", "'XFRequency:POWer:KFACtor'", "'XFRequency:POWer:MUFactor1'", "'XFRequency:POWer:RATio'", "'XFRequency:POWer:S1'", "'XFRequency:POWer:S1:DUMMy'", "'XFRequency:POWer:Y1'", "'XFRequency:POWer:Z1'", "'XFRequency:VOLTage'", "'XFRequency:VOLTage:DC'", "'XPOWer:POWer:A1'", "'XPOWer:POWer:B1'", "'XPOWer:POWer:RATio'", "'XPOWer:POWer:S1'", "'XPOWer:POWer:S1:DUMMy'", "'XPOWer:POWer:Y1'", "'XPOWer:POWer:Z1'", "'XPOWer:VOLTage'", "'XPOWer:VOLTage:DC'", "'XTIMe:POWer:A1'", "'XTIMe:POWer:B1'", "'XTIMe:POWer:KFACtor'", "'XTIMe:POWer:MUFactor1'", "'XTIMe:POWer:RATio'", "'XTIMe:POWer:S1'", "'XTIMe:POWer:S1:DUMMy'", "'XTIMe:POWer:Y1'", "'XTIMe:POWer:Z1'", "'XTIMe:VOLTage'", "'XTIMe:VOLTage:DC'"]
+                args = ["'string'"]
 
             ON = ON()
             """
             `SENSe:FUNCtion:ON
             <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/a60c5184e5484818.htm#ID_5611a1c6faaa7b640a00206a00e83a51-a685455efaaa75a70a00206a01a6673d-en-US>`_
 
-            Arguments: 'XFRequency:POWer:A1', 'XFRequency:POWer:B1', 'XFRequency:POWer:KFACtor', 'XFRequency:POWer:MUFactor1', 'XFRequency:POWer:RATio', 'XFRequency:POWer:S1', 'XFRequency:POWer:S1:DUMMy', 'XFRequency:POWer:Y1', 'XFRequency:POWer:Z1', 'XFRequency:VOLTage', 'XFRequency:VOLTage:DC', 'XPOWer:POWer:A1', 'XPOWer:POWer:B1', 'XPOWer:POWer:RATio', 'XPOWer:POWer:S1', 'XPOWer:POWer:S1:DUMMy', 'XPOWer:POWer:Y1', 'XPOWer:POWer:Z1', 'XPOWer:VOLTage', 'XPOWer:VOLTage:DC', 'XTIMe:POWer:A1', 'XTIMe:POWer:B1', 'XTIMe:POWer:KFACtor', 'XTIMe:POWer:MUFactor1', 'XTIMe:POWer:RATio', 'XTIMe:POWer:S1', 'XTIMe:POWer:S1:DUMMy', 'XTIMe:POWer:Y1', 'XTIMe:POWer:Z1', 'XTIMe:VOLTage', 'XTIMe:VOLTage:DC'
+            Arguments: 'string'
             """
 
         FUNCtion = FUNCtion()
@@ -21324,7 +21810,7 @@ class ZNB_gen(Instrument):
         Arguments: 'string'
         """
 
-        class HARMonic(SCPINode):
+        class HARMonic(SCPINode, SCPIQuery):
             """
             `SENSe:HARMonic
             <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/7d2547f84a1a4d78.htm#ID_272d33589a3f4ece0a001ae75b3c409e-8c8e41039a3f4d760a001ae737de4a6f-en-US>`_
@@ -21386,6 +21872,108 @@ class ZNB_gen(Instrument):
             Arguments:
             """
 
+            class ELENgth(SCPINode):
+                """
+                SENSe:HARMonic:ELENgth
+
+                Arguments:
+                """
+                _cmd = "ELENgth"
+                args = []
+
+                class DATA(SCPINode, SCPIQuery, SCPISet):
+                    """
+                    `SENSe:HARMonic:ELENgth:DATA
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/5d520c433cb64cab.htm#ID_a05260f5726385e10a001ae743990efe-e0c4646c726384c80a001ae7588b56f3-en-US>`_
+
+                    Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                    """
+                    _cmd = "DATA"
+                    args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
+
+                DATA = DATA()
+                """
+                `SENSe:HARMonic:ELENgth:DATA
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/5d520c433cb64cab.htm#ID_a05260f5726385e10a001ae743990efe-e0c4646c726384c80a001ae7588b56f3-en-US>`_
+
+                Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                """
+
+            ELENgth = ELENgth()
+            """
+            SENSe:HARMonic:ELENgth
+
+            Arguments:
+            """
+
+            class MLENgth(SCPINode):
+                """
+                SENSe:HARMonic:MLENgth
+
+                Arguments:
+                """
+                _cmd = "MLENgth"
+                args = []
+
+                class DATA(SCPINode, SCPIQuery, SCPISet):
+                    """
+                    `SENSe:HARMonic:MLENgth:DATA
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/0d66768221af4ab7.htm#ID_13f30da2726387c60a001ae77442b6d2-0749d448726386ac0a001ae7588b56f3-en-US>`_
+
+                    Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                    """
+                    _cmd = "DATA"
+                    args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
+
+                DATA = DATA()
+                """
+                `SENSe:HARMonic:MLENgth:DATA
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/0d66768221af4ab7.htm#ID_13f30da2726387c60a001ae77442b6d2-0749d448726386ac0a001ae7588b56f3-en-US>`_
+
+                Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                """
+
+            MLENgth = MLENgth()
+            """
+            SENSe:HARMonic:MLENgth
+
+            Arguments:
+            """
+
+            class PERMittivity(SCPINode):
+                """
+                SENSe:HARMonic:PERMittivity
+
+                Arguments:
+                """
+                _cmd = "PERMittivity"
+                args = []
+
+                class DATA(SCPINode, SCPIQuery, SCPISet):
+                    """
+                    `SENSe:HARMonic:PERMittivity:DATA
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/a92ddc3bb24f4035.htm#ID_0d98c971726389e80a001ae754580e7c-b851aaea726388910a001ae7588b56f3-en-US>`_
+
+                    Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                    """
+                    _cmd = "DATA"
+                    args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
+
+                DATA = DATA()
+                """
+                `SENSe:HARMonic:PERMittivity:DATA
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/a92ddc3bb24f4035.htm#ID_0d98c971726389e80a001ae754580e7c-b851aaea726388910a001ae7588b56f3-en-US>`_
+
+                Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                """
+
+            PERMittivity = PERMittivity()
+            """
+            SENSe:HARMonic:PERMittivity
+
+            Arguments:
+            """
+
             class RTIMe(SCPINode):
                 """
                 SENSe:HARMonic:RTIMe
@@ -21434,6 +22022,40 @@ class ZNB_gen(Instrument):
             RTIMe = RTIMe()
             """
             SENSe:HARMonic:RTIMe
+
+            Arguments:
+            """
+
+            class VELocity(SCPINode):
+                """
+                SENSe:HARMonic:VELocity
+
+                Arguments:
+                """
+                _cmd = "VELocity"
+                args = []
+
+                class DATA(SCPINode, SCPIQuery, SCPISet):
+                    """
+                    `SENSe:HARMonic:VELocity:DATA
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/02a0199bc58d4322.htm#ID_62e5b52872638d150a001ae72c16f0d7-22ecb4e172638bbd0a001ae7588b56f3-en-US>`_
+
+                    Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                    """
+                    _cmd = "DATA"
+                    args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
+
+                DATA = DATA()
+                """
+                `SENSe:HARMonic:VELocity:DATA
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/02a0199bc58d4322.htm#ID_62e5b52872638d150a001ae72c16f0d7-22ecb4e172638bbd0a001ae7588b56f3-en-US>`_
+
+                Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                """
+
+            VELocity = VELocity()
+            """
+            SENSe:HARMonic:VELocity
 
             Arguments:
             """
@@ -21528,6 +22150,86 @@ class ZNB_gen(Instrument):
         LPORt = LPORt()
         """
         SENSe:LPORt
+
+        Arguments:
+        """
+
+        class NFIGure(SCPINode):
+            """
+            SENSe:NFIGure
+
+            Arguments:
+            """
+            _cmd = "NFIGure"
+            args = []
+
+            class ISNoise(SCPINode, SCPIBool):
+                """
+                SENSe:NFIGure:ISNoise
+
+                Arguments: 1, OFF, ON
+                """
+                _cmd = "ISNoise"
+                args = ["1", "OFF", "ON"]
+
+            ISNoise = ISNoise()
+            """
+            SENSe:NFIGure:ISNoise
+
+            Arguments: 1, OFF, ON
+            """
+
+            class NDUT(SCPINode, SCPIBool):
+                """
+                SENSe:NFIGure:NDUT
+
+                Arguments: 1, OFF, ON
+                """
+                _cmd = "NDUT"
+                args = ["1", "OFF", "ON"]
+
+            NDUT = NDUT()
+            """
+            SENSe:NFIGure:NDUT
+
+            Arguments: 1, OFF, ON
+            """
+
+            class RFICorr(SCPINode, SCPIBool):
+                """
+                SENSe:NFIGure:RFICorr
+
+                Arguments: 1, OFF, ON
+                """
+                _cmd = "RFICorr"
+                args = ["1", "OFF", "ON"]
+
+            RFICorr = RFICorr()
+            """
+            SENSe:NFIGure:RFICorr
+
+            Arguments: 1, OFF, ON
+            """
+
+            class SEQuential(SCPINode, SCPIBool):
+                """
+                SENSe:NFIGure:SEQuential
+
+                Arguments: 1, OFF, ON
+                """
+                _cmd = "SEQuential"
+                args = ["1", "OFF", "ON"]
+
+            SEQuential = SEQuential()
+            """
+            SENSe:NFIGure:SEQuential
+
+            Arguments: 1, OFF, ON
+            """
+
+        NFIGure = NFIGure()
+        """
+        SENSe:NFIGure
 
         Arguments:
         """
@@ -21828,6 +22530,24 @@ class ZNB_gen(Instrument):
                 """
                 _cmd = "GAINcontrol"
                 args = ["'string'"]
+
+                class ALL(SCPINode, SCPISet):
+                    """
+                    `SENSe:POWer:GAINcontrol:ALL
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/4a4451b271d14682.htm#ID_fbb74a189b3f7ca50a001ae7792f153e-a98ed4bb9b3f7b0f0a001ae77ea6eb4d-en-US>`_
+
+                    Arguments: AUTO, LDIStortion, LNOise
+                    """
+                    _cmd = "ALL"
+                    args = ["AUTO", "LDIStortion", "LNOise"]
+
+                ALL = ALL()
+                """
+                `SENSe:POWer:GAINcontrol:ALL
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/4a4451b271d14682.htm#ID_fbb74a189b3f7ca50a001ae7792f153e-a98ed4bb9b3f7b0f0a001ae77ea6eb4d-en-US>`_
+
+                Arguments: AUTO, LDIStortion, LNOise
+                """
 
                 class GLOBal(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -22364,6 +23084,24 @@ class ZNB_gen(Instrument):
                     _cmd = "GAINcontrol"
                     args = ["'string'"]
 
+                    class ALL(SCPINode, SCPISet):
+                        """
+                        `SENSe:SEGMent:POWer:GAINcontrol:ALL
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/4ac0a752978a4be8.htm#ID_be73e5399b3f8a900a001ae76fd4e5e1-f73a0a119b3f89090a001ae77ea6eb4d-en-US>`_
+
+                        Arguments: AUTO, LDIStortion, LNOise
+                        """
+                        _cmd = "ALL"
+                        args = ["AUTO", "LDIStortion", "LNOise"]
+
+                    ALL = ALL()
+                    """
+                    `SENSe:SEGMent:POWer:GAINcontrol:ALL
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/4ac0a752978a4be8.htm#ID_be73e5399b3f8a900a001ae76fd4e5e1-f73a0a119b3f89090a001ae77ea6eb4d-en-US>`_
+
+                    Arguments: AUTO, LDIStortion, LNOise
+                    """
+
                     class CONTrol(SCPINode, SCPIBool):
                         """
                         `SENSe:SEGMent:POWer:GAINcontrol:CONTrol
@@ -22674,7 +23412,7 @@ class ZNB_gen(Instrument):
                 class ALL(SCPINode, SCPISet):
                     """
                     `SENSe:SWEep:COUNt:ALL
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e131439.htm#ID_b22fd8a02b98b6df0a00206a00b47198-7af948622b98af1e0a00206a0020d3a0-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e133854.htm#ID_b22fd8a02b98b6df0a00206a00b47198-7af948622b98af1e0a00206a0020d3a0-en-US>`_
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
@@ -22684,7 +23422,7 @@ class ZNB_gen(Instrument):
                 ALL = ALL()
                 """
                 `SENSe:SWEep:COUNt:ALL
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e131439.htm#ID_b22fd8a02b98b6df0a00206a00b47198-7af948622b98af1e0a00206a0020d3a0-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e133854.htm#ID_b22fd8a02b98b6df0a00206a00b47198-7af948622b98af1e0a00206a0020d3a0-en-US>`_
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
@@ -22941,6 +23679,54 @@ class ZNB_gen(Instrument):
             <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/8227ae4383e449fe.htm#ID_68a69f3cfaaa64810a00206a010d0e5b-25292a32faaa5ee30a00206a01a6673d-en-US>`_
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+            """
+
+            class TRIGger(SCPINode):
+                """
+                SENSe:SWEep:TRIGger
+
+                Arguments:
+                """
+                _cmd = "TRIGger"
+                args = []
+
+                class DELay(SCPINode, SCPIQuery, SCPISet):
+                    """
+                    SENSe:SWEep:TRIGger:DELay
+
+                    Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                    """
+                    _cmd = "DELay"
+                    args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
+
+                DELay = DELay()
+                """
+                SENSe:SWEep:TRIGger:DELay
+
+                Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
+                """
+
+                class MODE(SCPINode, SCPIQuery, SCPISet):
+                    """
+                    SENSe:SWEep:TRIGger:MODE
+
+                    Arguments: CHANnel, POINt, SWEep, TRACe
+                    """
+                    _cmd = "MODE"
+                    args = ["CHANnel", "POINt", "SWEep", "TRACe"]
+
+                MODE = MODE()
+                """
+                SENSe:SWEep:TRIGger:MODE
+
+                Arguments: CHANnel, POINt, SWEep, TRACe
+                """
+
+            TRIGger = TRIGger()
+            """
+            SENSe:SWEep:TRIGger
+
+            Arguments:
             """
 
             class TYPE(SCPINode, SCPIQuery, SCPISet):
@@ -24476,7 +25262,7 @@ class ZNB_gen(Instrument):
                     class ID(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:POWer:CORRection:PMETer:ID
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e134605.htm#ID_718458d9faae4fd90a00206a014851d1-3e93700cfaae49ce0a00206a01a6673d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e137026.htm#ID_718458d9faae4fd90a00206a014851d1-3e93700cfaae49ce0a00206a01a6673d-en-US>`_
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
@@ -24486,7 +25272,7 @@ class ZNB_gen(Instrument):
                     ID = ID()
                     """
                     `SOURce:POWer:CORRection:PMETer:ID
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e134605.htm#ID_718458d9faae4fd90a00206a014851d1-3e93700cfaae49ce0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e137026.htm#ID_718458d9faae4fd90a00206a014851d1-3e93700cfaae49ce0a00206a01a6673d-en-US>`_
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
@@ -25397,7 +26183,7 @@ class ZNB_gen(Instrument):
         class PRESet(SCPINode, SCPISet):
             """
             `STATus:PRESet
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e137535.htm#ID_14990f1cfaaf5cf30a00206a01af2d38-6dc6fe51faaf57740a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139959.htm#ID_14990f1cfaaf5cf30a00206a01af2d38-6dc6fe51faaf57740a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -25407,7 +26193,7 @@ class ZNB_gen(Instrument):
         PRESet = PRESet()
         """
         `STATus:PRESet
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e137535.htm#ID_14990f1cfaaf5cf30a00206a01af2d38-6dc6fe51faaf57740a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139959.htm#ID_14990f1cfaaf5cf30a00206a01af2d38-6dc6fe51faaf57740a00206a01a6673d-en-US>`_
 
         Arguments:
         """
@@ -25848,7 +26634,7 @@ class ZNB_gen(Instrument):
             class NEXT(SCPINode, SCPIQuery):
                 """
                 `STATus:QUEue:NEXT
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e138309.htm#ID_3d4f47acfaaffc300a00206a0013451f-0611f439faaff6630a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/aa213f3a03ba4915.htm#ID_3d4f47acfaaffc300a00206a0013451f-0611f439faaff6630a00206a01a6673d-en-US>`_
 
                 Arguments:
                 """
@@ -25858,7 +26644,7 @@ class ZNB_gen(Instrument):
             NEXT = NEXT()
             """
             `STATus:QUEue:NEXT
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e138309.htm#ID_3d4f47acfaaffc300a00206a0013451f-0611f439faaff6630a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/aa213f3a03ba4915.htm#ID_3d4f47acfaaffc300a00206a0013451f-0611f439faaff6630a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -25907,7 +26693,7 @@ class ZNB_gen(Instrument):
                 class CONNection(SCPINode, SCPISet):
                     """
                     `SYSTem:COMMunicate:AKAL:CONNection
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e138360.htm#ID_b6e9a9a2fab003a20a00206a016cc0b8-27c8d699faaffe040a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140784.htm#ID_b6e9a9a2fab003a20a00206a016cc0b8-27c8d699faaffe040a00206a01a6673d-en-US>`_
 
                     Arguments: MATCh, OPEN, SHORt, THRough
                     """
@@ -25917,7 +26703,7 @@ class ZNB_gen(Instrument):
                 CONNection = CONNection()
                 """
                 `SYSTem:COMMunicate:AKAL:CONNection
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e138360.htm#ID_b6e9a9a2fab003a20a00206a016cc0b8-27c8d699faaffe040a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140784.htm#ID_b6e9a9a2fab003a20a00206a016cc0b8-27c8d699faaffe040a00206a01a6673d-en-US>`_
 
                 Arguments: MATCh, OPEN, SHORt, THRough
                 """
@@ -25934,7 +26720,7 @@ class ZNB_gen(Instrument):
                     class STATe(SCPINode, SCPIBool):
                         """
                         `SYSTem:COMMunicate:AKAL:MMEMory:STATe
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e138406.htm#ID_34916594fab00b430a00206a0082898c-7dad1344fab005860a00206a01a6673d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140830.htm#ID_34916594fab00b430a00206a0082898c-7dad1344fab005860a00206a01a6673d-en-US>`_
 
                         Arguments: 1, OFF, ON
                         """
@@ -25944,7 +26730,7 @@ class ZNB_gen(Instrument):
                     STATe = STATe()
                     """
                     `SYSTem:COMMunicate:AKAL:MMEMory:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e138406.htm#ID_34916594fab00b430a00206a0082898c-7dad1344fab005860a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140830.htm#ID_34916594fab00b430a00206a0082898c-7dad1344fab005860a00206a01a6673d-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -26015,6 +26801,40 @@ class ZNB_gen(Instrument):
                     <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/b3ba68fb72ee42d8.htm#ID_61513521fab012e40a00206a01da716c-2ddf570ffab00d270a00206a01a6673d-en-US>`_
 
                     Arguments: 1
+                    """
+
+                    class DCLear(SCPINode):
+                        """
+                        SYSTem:COMMunicate:GPIB:SELF:DCLear
+
+                        Arguments:
+                        """
+                        _cmd = "DCLear"
+                        args = []
+
+                        class SUPPress(SCPINode, SCPIBool):
+                            """
+                            `SYSTem:COMMunicate:GPIB:SELF:DCLear:SUPPress
+                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/8052961da3cc46b4.htm#ID_13ef61cd9a3f887c0a001ae7150f1998-7ce365c19a3f87820a001ae737de4a6f-en-US>`_
+
+                            Arguments: 1, OFF, ON
+                            """
+                            _cmd = "SUPPress"
+                            args = ["1", "OFF", "ON"]
+
+                        SUPPress = SUPPress()
+                        """
+                        `SYSTem:COMMunicate:GPIB:SELF:DCLear:SUPPress
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/8052961da3cc46b4.htm#ID_13ef61cd9a3f887c0a001ae7150f1998-7ce365c19a3f87820a001ae737de4a6f-en-US>`_
+
+                        Arguments: 1, OFF, ON
+                        """
+
+                    DCLear = DCLear()
+                    """
+                    SYSTem:COMMunicate:GPIB:SELF:DCLear
+
+                    Arguments:
                     """
 
                     class INIT(SCPINode):
@@ -26192,7 +27012,8 @@ class ZNB_gen(Instrument):
 
                 class HOSTname(SCPINode, SCPIQuery, SCPISet):
                     """
-                    SYSTem:COMMunicate:NET:HOSTname
+                    `SYSTem:COMMunicate:NET:HOSTname
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/cfcd2bfc1c7740b5.htm#ID_ffe4951235162f730a00206a008ef8e4-2e19e65a3516267a0a00206a01f2dc17-en-US>`_
 
                     Arguments: 'string'
                     """
@@ -26201,7 +27022,8 @@ class ZNB_gen(Instrument):
 
                 HOSTname = HOSTname()
                 """
-                SYSTem:COMMunicate:NET:HOSTname
+                `SYSTem:COMMunicate:NET:HOSTname
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/cfcd2bfc1c7740b5.htm#ID_ffe4951235162f730a00206a008ef8e4-2e19e65a3516267a0a00206a01f2dc17-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -26244,7 +27066,7 @@ class ZNB_gen(Instrument):
                         class ALL(SCPINode, SCPIQuery):
                             """
                             `SYSTem:COMMunicate:RDEVice:AKAL:ADDRess:ALL
-                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e138690.htm#ID_12b46c80fab038fa0a00206a00cf3f89-d294ec5bfab0332e0a00206a01a6673d-en-US>`_
+                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141135.htm#ID_12b46c80fab038fa0a00206a00cf3f89-d294ec5bfab0332e0a00206a01a6673d-en-US>`_
 
                             Arguments:
                             """
@@ -26254,7 +27076,7 @@ class ZNB_gen(Instrument):
                         ALL = ALL()
                         """
                         `SYSTem:COMMunicate:RDEVice:AKAL:ADDRess:ALL
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e138690.htm#ID_12b46c80fab038fa0a00206a00cf3f89-d294ec5bfab0332e0a00206a01a6673d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141135.htm#ID_12b46c80fab038fa0a00206a00cf3f89-d294ec5bfab0332e0a00206a01a6673d-en-US>`_
 
                         Arguments:
                         """
@@ -26513,7 +27335,7 @@ class ZNB_gen(Instrument):
                         class STATe(SCPINode, SCPIBool):
                             """
                             `SYSTem:COMMunicate:RDEVice:AKAL:PREDuction:STATe
-                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e138941.htm#ID_79a5e788e15d18260a00206a0144c9a6-aa8db572e15d11020a00206a00796295-en-US>`_
+                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141386.htm#ID_79a5e788e15d18260a00206a0144c9a6-aa8db572e15d11020a00206a00796295-en-US>`_
 
                             Arguments: 1, OFF, ON
                             """
@@ -26523,7 +27345,7 @@ class ZNB_gen(Instrument):
                         STATe = STATe()
                         """
                         `SYSTem:COMMunicate:RDEVice:AKAL:PREDuction:STATe
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e138941.htm#ID_79a5e788e15d18260a00206a0144c9a6-aa8db572e15d11020a00206a00796295-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141386.htm#ID_79a5e788e15d18260a00206a0144c9a6-aa8db572e15d11020a00206a00796295-en-US>`_
 
                         Arguments: 1, OFF, ON
                         """
@@ -26565,7 +27387,7 @@ class ZNB_gen(Instrument):
                         class STATe(SCPINode, SCPIQuery):
                             """
                             `SYSTem:COMMunicate:RDEVice:AKAL:WARMup:STATe
-                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139059.htm#ID_276e3c1791e11bb80a00206a01ac5dc5-a50c9ce891e1132d0a00206a00e9ecac-en-US>`_
+                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141504.htm#ID_276e3c1791e11bb80a00206a01ac5dc5-a50c9ce891e1132d0a00206a00e9ecac-en-US>`_
 
                             Arguments:
                             """
@@ -26575,7 +27397,7 @@ class ZNB_gen(Instrument):
                         STATe = STATe()
                         """
                         `SYSTem:COMMunicate:RDEVice:AKAL:WARMup:STATe
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139059.htm#ID_276e3c1791e11bb80a00206a01ac5dc5-a50c9ce891e1132d0a00206a00e9ecac-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141504.htm#ID_276e3c1791e11bb80a00206a01ac5dc5-a50c9ce891e1132d0a00206a00e9ecac-en-US>`_
 
                         Arguments:
                         """
@@ -26624,7 +27446,7 @@ class ZNB_gen(Instrument):
                     class COUNt(SCPINode, SCPIQuery):
                         """
                         `SYSTem:COMMunicate:RDEVice:GENerator:COUNt
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139124.htm#ID_3b5eb98efab0578e0a00206a017a57f7-77203d8ffab051d10a00206a01a6673d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141569.htm#ID_3b5eb98efab0578e0a00206a017a57f7-77203d8ffab051d10a00206a01a6673d-en-US>`_
 
                         Arguments:
                         """
@@ -26634,7 +27456,7 @@ class ZNB_gen(Instrument):
                     COUNt = COUNt()
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:COUNt
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139124.htm#ID_3b5eb98efab0578e0a00206a017a57f7-77203d8ffab051d10a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141569.htm#ID_3b5eb98efab0578e0a00206a017a57f7-77203d8ffab051d10a00206a01a6673d-en-US>`_
 
                     Arguments:
                     """
@@ -26660,7 +27482,7 @@ class ZNB_gen(Instrument):
                     class DELete(SCPINode, SCPISet):
                         """
                         `SYSTem:COMMunicate:RDEVice:GENerator:DELete
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139140.htm#ID_96c9fc01fab066ff0a00206a00727635-ee59ffa2fab061620a00206a01a6673d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141585.htm#ID_96c9fc01fab066ff0a00206a00727635-ee59ffa2fab061620a00206a01a6673d-en-US>`_
 
                         Arguments:
                         """
@@ -26670,7 +27492,7 @@ class ZNB_gen(Instrument):
                     DELete = DELete()
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:DELete
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139140.htm#ID_96c9fc01fab066ff0a00206a00727635-ee59ffa2fab061620a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141585.htm#ID_96c9fc01fab066ff0a00206a00727635-ee59ffa2fab061620a00206a01a6673d-en-US>`_
 
                     Arguments:
                     """
@@ -26816,7 +27638,7 @@ class ZNB_gen(Instrument):
                     class COUNt(SCPINode, SCPIQuery):
                         """
                         `SYSTem:COMMunicate:RDEVice:PMETer:COUNt
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139454.htm#ID_86a7eabafab085350a00206a00f99a37-d17da2c6fab07f690a00206a01a6673d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141899.htm#ID_86a7eabafab085350a00206a00f99a37-d17da2c6fab07f690a00206a01a6673d-en-US>`_
 
                         Arguments:
                         """
@@ -26826,7 +27648,7 @@ class ZNB_gen(Instrument):
                     COUNt = COUNt()
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:COUNt
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139454.htm#ID_86a7eabafab085350a00206a00f99a37-d17da2c6fab07f690a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141899.htm#ID_86a7eabafab085350a00206a00f99a37-d17da2c6fab07f690a00206a01a6673d-en-US>`_
 
                     Arguments:
                     """
@@ -26852,7 +27674,7 @@ class ZNB_gen(Instrument):
                     class DELete(SCPINode, SCPISet):
                         """
                         `SYSTem:COMMunicate:RDEVice:PMETer:DELete
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139470.htm#ID_163a5ca7fab094870a00206a00ff0043-f41c5122fab08eea0a00206a01a6673d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141915.htm#ID_163a5ca7fab094870a00206a00ff0043-f41c5122fab08eea0a00206a01a6673d-en-US>`_
 
                         Arguments:
                         """
@@ -26862,7 +27684,7 @@ class ZNB_gen(Instrument):
                     DELete = DELete()
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:DELete
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e139470.htm#ID_163a5ca7fab094870a00206a00ff0043-f41c5122fab08eea0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141915.htm#ID_163a5ca7fab094870a00206a00ff0043-f41c5122fab08eea0a00206a01a6673d-en-US>`_
 
                     Arguments:
                     """
@@ -27035,7 +27857,7 @@ class ZNB_gen(Instrument):
                         class MTESt(SCPINode, SCPIQuery, SCPISet):
                             """
                             `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:MTESt
-                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140244.htm#ID_02dd88c3e2b5384b0a00201900a1ec16-5e68904ee2b537120a002019017b841c-en-US>`_
+                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e142683.htm#ID_02dd88c3e2b5384b0a00201900a1ec16-5e68904ee2b537120a002019017b841c-en-US>`_
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
@@ -27045,7 +27867,7 @@ class ZNB_gen(Instrument):
                         MTESt = MTESt()
                         """
                         `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:MTESt
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140244.htm#ID_02dd88c3e2b5384b0a00201900a1ec16-5e68904ee2b537120a002019017b841c-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e142683.htm#ID_02dd88c3e2b5384b0a00201900a1ec16-5e68904ee2b537120a002019017b841c-en-US>`_
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
@@ -27053,7 +27875,7 @@ class ZNB_gen(Instrument):
                         class MVNA(SCPINode, SCPIQuery, SCPISet):
                             """
                             `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:MVNA
-                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140307.htm#ID_2e3b266be2b53a2f0a002019002c349a-fcb7090be2b538c80a002019017b841c-en-US>`_
+                            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e142746.htm#ID_2e3b266be2b53a2f0a002019002c349a-fcb7090be2b538c80a002019017b841c-en-US>`_
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
@@ -27063,7 +27885,7 @@ class ZNB_gen(Instrument):
                         MVNA = MVNA()
                         """
                         `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:MVNA
-                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140307.htm#ID_2e3b266be2b53a2f0a002019002c349a-fcb7090be2b538c80a002019017b841c-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e142746.htm#ID_2e3b266be2b53a2f0a002019002c349a-fcb7090be2b538c80a002019017b841c-en-US>`_
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
@@ -27636,7 +28458,7 @@ class ZNB_gen(Instrument):
             class COLor(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SYSTem:DISPlay:COLor
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140695.htm#ID_21c088fffab0b33a0a00206a01c816e7-d31ab677fab0ad9d0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/8bbb674b956c4ee7.htm#ID_21c088fffab0b33a0a00206a01c816e7-d31ab677fab0ad9d0a00206a01a6673d-en-US>`_
 
                 Arguments: BWLStyles, BWSolid, DBACkground, LBACkground
                 """
@@ -27646,7 +28468,7 @@ class ZNB_gen(Instrument):
             COLor = COLor()
             """
             `SYSTem:DISPlay:COLor
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140695.htm#ID_21c088fffab0b33a0a00206a01c816e7-d31ab677fab0ad9d0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/8bbb674b956c4ee7.htm#ID_21c088fffab0b33a0a00206a01c816e7-d31ab677fab0ad9d0a00206a01a6673d-en-US>`_
 
             Arguments: BWLStyles, BWSolid, DBACkground, LBACkground
             """
@@ -27738,7 +28560,7 @@ class ZNB_gen(Instrument):
             class UPDate(SCPINode, SCPIBool):
                 """
                 `SYSTem:DISPlay:UPDate
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140768.htm#ID_4f17f97cfab0badb0a00206a019d73b8-482f9258fab0b53e0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143210.htm#ID_4f17f97cfab0badb0a00206a019d73b8-482f9258fab0b53e0a00206a01a6673d-en-US>`_
 
                 Arguments: 1, OFF, ON, ONCE
                 """
@@ -27748,7 +28570,7 @@ class ZNB_gen(Instrument):
             UPDate = UPDate()
             """
             `SYSTem:DISPlay:UPDate
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140768.htm#ID_4f17f97cfab0badb0a00206a019d73b8-482f9258fab0b53e0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143210.htm#ID_4f17f97cfab0badb0a00206a019d73b8-482f9258fab0b53e0a00206a01a6673d-en-US>`_
 
             Arguments: 1, OFF, ON, ONCE
             """
@@ -27772,7 +28594,7 @@ class ZNB_gen(Instrument):
             class ALL(SCPINode, SCPIQuery):
                 """
                 `SYSTem:ERRor:ALL
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140838.htm#ID_3bd07848fab0c23e0a00206a01bf19dc-2c14d208fab0bcb00a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143280.htm#ID_3bd07848fab0c23e0a00206a01bf19dc-2c14d208fab0bcb00a00206a01a6673d-en-US>`_
 
                 Arguments:
                 """
@@ -27782,7 +28604,7 @@ class ZNB_gen(Instrument):
             ALL = ALL()
             """
             `SYSTem:ERRor:ALL
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140838.htm#ID_3bd07848fab0c23e0a00206a01bf19dc-2c14d208fab0bcb00a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143280.htm#ID_3bd07848fab0c23e0a00206a01bf19dc-2c14d208fab0bcb00a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -27896,7 +28718,7 @@ class ZNB_gen(Instrument):
             class NEXT(SCPINode, SCPIQuery):
                 """
                 `SYSTem:ERRor:NEXT
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140811.htm#ID_7655f04ffab0d1510a00206a00680a86-25be5834fab0cbb40a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143253.htm#ID_7655f04ffab0d1510a00206a00680a86-25be5834fab0cbb40a00206a01a6673d-en-US>`_
 
                 Arguments:
                 """
@@ -27906,7 +28728,7 @@ class ZNB_gen(Instrument):
             NEXT = NEXT()
             """
             `SYSTem:ERRor:NEXT
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e140811.htm#ID_7655f04ffab0d1510a00206a00680a86-25be5834fab0cbb40a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143253.htm#ID_7655f04ffab0d1510a00206a00680a86-25be5834fab0cbb40a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -27930,7 +28752,7 @@ class ZNB_gen(Instrument):
             class UPDate(SCPINode, SCPISet):
                 """
                 `SYSTem:FIRMware:UPDate
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141033.htm#ID_0bcb7667fab0d8d30a00206a00b6a20a-9fd656e1fab0d3360a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143475.htm#ID_0bcb7667fab0d8d30a00206a00b6a20a-9fd656e1fab0d3360a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -27940,7 +28762,7 @@ class ZNB_gen(Instrument):
             UPDate = UPDate()
             """
             `SYSTem:FIRMware:UPDate
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141033.htm#ID_0bcb7667fab0d8d30a00206a00b6a20a-9fd656e1fab0d3360a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143475.htm#ID_0bcb7667fab0d8d30a00206a00b6a20a-9fd656e1fab0d3360a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -27955,7 +28777,7 @@ class ZNB_gen(Instrument):
         class FPReset(SCPINode, SCPISet):
             """
             `SYSTem:FPReset
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141065.htm#ID_f22e24cafab0e0650a00206a00d64c6a-b86b5b25fab0dab80a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/40c8db60ebf64644.htm#ID_f22e24cafab0e0650a00206a00d64c6a-b86b5b25fab0dab80a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -27965,7 +28787,7 @@ class ZNB_gen(Instrument):
         FPReset = FPReset()
         """
         `SYSTem:FPReset
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141065.htm#ID_f22e24cafab0e0650a00206a00d64c6a-b86b5b25fab0dab80a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/40c8db60ebf64644.htm#ID_f22e24cafab0e0650a00206a00d64c6a-b86b5b25fab0dab80a00206a01a6673d-en-US>`_
 
         Arguments:
         """
@@ -27973,7 +28795,7 @@ class ZNB_gen(Instrument):
         class FREQuency(SCPINode, SCPIQuery, SCPISet):
             """
             `SYSTem:FREQuency
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141087.htm#ID_1a39d97dfab0e7f60a00206a018a7f6e-2fc01ddafab0e2390a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143547.htm#ID_1a39d97dfab0e7f60a00206a018a7f6e-2fc01ddafab0e2390a00206a01a6673d-en-US>`_
 
             Arguments: MAXimum, MINimum
             """
@@ -27983,7 +28805,7 @@ class ZNB_gen(Instrument):
         FREQuency = FREQuency()
         """
         `SYSTem:FREQuency
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141087.htm#ID_1a39d97dfab0e7f60a00206a018a7f6e-2fc01ddafab0e2390a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143547.htm#ID_1a39d97dfab0e7f60a00206a018a7f6e-2fc01ddafab0e2390a00206a01a6673d-en-US>`_
 
         Arguments: MAXimum, MINimum
         """
@@ -28000,7 +28822,7 @@ class ZNB_gen(Instrument):
             class FACTory(SCPINode, SCPISet):
                 """
                 `SYSTem:IDENtify:FACTory
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141168.htm#ID_c1695db591e160a10a00206a00cd77f5-e99d3c9c91e158440a00206a00e9ecac-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143628.htm#ID_c1695db591e160a10a00206a00cd77f5-e99d3c9c91e158440a00206a00e9ecac-en-US>`_
 
                 Arguments:
                 """
@@ -28010,7 +28832,7 @@ class ZNB_gen(Instrument):
             FACTory = FACTory()
             """
             `SYSTem:IDENtify:FACTory
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141168.htm#ID_c1695db591e160a10a00206a00cd77f5-e99d3c9c91e158440a00206a00e9ecac-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143628.htm#ID_c1695db591e160a10a00206a00cd77f5-e99d3c9c91e158440a00206a00e9ecac-en-US>`_
 
             Arguments:
             """
@@ -28018,7 +28840,7 @@ class ZNB_gen(Instrument):
             class STRing(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SYSTem:IDENtify:STRing
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141138.htm#ID_437487be91e16d910a00206a003f7503-85833b1a91e164a80a00206a00e9ecac-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143598.htm#ID_437487be91e16d910a00206a003f7503-85833b1a91e164a80a00206a00e9ecac-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -28028,7 +28850,7 @@ class ZNB_gen(Instrument):
             STRing = STRing()
             """
             `SYSTem:IDENtify:STRing
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141138.htm#ID_437487be91e16d910a00206a003f7503-85833b1a91e164a80a00206a00e9ecac-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143598.htm#ID_437487be91e16d910a00206a003f7503-85833b1a91e164a80a00206a00e9ecac-en-US>`_
 
             Arguments: 'string'
             """
@@ -28077,7 +28899,7 @@ class ZNB_gen(Instrument):
         class KLOCk(SCPINode, SCPIBool):
             """
             `SYSTem:KLOCk
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141232.htm#ID_9346e83cfab0ef780a00206a01c95e16-25df267cfab0e9cb0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143692.htm#ID_9346e83cfab0ef780a00206a01c95e16-25df267cfab0e9cb0a00206a01a6673d-en-US>`_
 
             Arguments: 1, OFF, ON
             """
@@ -28087,7 +28909,7 @@ class ZNB_gen(Instrument):
         KLOCk = KLOCk()
         """
         `SYSTem:KLOCk
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141232.htm#ID_9346e83cfab0ef780a00206a01c95e16-25df267cfab0e9cb0a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143692.htm#ID_9346e83cfab0ef780a00206a01c95e16-25df267cfab0e9cb0a00206a01a6673d-en-US>`_
 
         Arguments: 1, OFF, ON
         """
@@ -28131,7 +28953,7 @@ class ZNB_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SYSTem:LOGGing:REMote:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141309.htm#ID_2859a837fab0feab0a00206a0104b6ad-22b5a74ffab0f8ee0a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d3ec37d3cbda4347.htm#ID_2859a837fab0feab0a00206a0104b6ad-22b5a74ffab0f8ee0a00206a01a6673d-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -28141,7 +28963,7 @@ class ZNB_gen(Instrument):
                 STATe = STATe()
                 """
                 `SYSTem:LOGGing:REMote:STATe
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141309.htm#ID_2859a837fab0feab0a00206a0104b6ad-22b5a74ffab0f8ee0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d3ec37d3cbda4347.htm#ID_2859a837fab0feab0a00206a0104b6ad-22b5a74ffab0f8ee0a00206a01a6673d-en-US>`_
 
                 Arguments: 1, OFF, ON
                 """
@@ -28204,7 +29026,7 @@ class ZNB_gen(Instrument):
             class FACTory(SCPINode, SCPISet):
                 """
                 `SYSTem:OPTions:FACTory
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141349.htm#ID_efb9e44791e18d2f0a00206a01117c44-73da166c91e183f80a00206a00e9ecac-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143814.htm#ID_efb9e44791e18d2f0a00206a01117c44-73da166c91e183f80a00206a00e9ecac-en-US>`_
 
                 Arguments:
                 """
@@ -28214,7 +29036,7 @@ class ZNB_gen(Instrument):
             FACTory = FACTory()
             """
             `SYSTem:OPTions:FACTory
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141349.htm#ID_efb9e44791e18d2f0a00206a01117c44-73da166c91e183f80a00206a00e9ecac-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143814.htm#ID_efb9e44791e18d2f0a00206a01117c44-73da166c91e183f80a00206a00e9ecac-en-US>`_
 
             Arguments:
             """
@@ -28222,7 +29044,7 @@ class ZNB_gen(Instrument):
             class STRing(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SYSTem:OPTions:STRing
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141374.htm#ID_fcf476dc91e1979f0a00206a008bad5a-3055959091e18fdf0a00206a00e9ecac-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143839.htm#ID_fcf476dc91e1979f0a00206a008bad5a-3055959091e18fdf0a00206a00e9ecac-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -28232,7 +29054,7 @@ class ZNB_gen(Instrument):
             STRing = STRing()
             """
             `SYSTem:OPTions:STRing
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141374.htm#ID_fcf476dc91e1979f0a00206a008bad5a-3055959091e18fdf0a00206a00e9ecac-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143839.htm#ID_fcf476dc91e1979f0a00206a008bad5a-3055959091e18fdf0a00206a00e9ecac-en-US>`_
 
             Arguments: 'string'
             """
@@ -28256,7 +29078,7 @@ class ZNB_gen(Instrument):
             class CENable(SCPINode, SCPISet):
                 """
                 `SYSTem:PASSword:CENable
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141404.htm#ID_5deccfb4fab1062c0a00206a015e85f5-4817c3fbfab1008f0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143869.htm#ID_5deccfb4fab1062c0a00206a015e85f5-4817c3fbfab1008f0a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -28266,7 +29088,7 @@ class ZNB_gen(Instrument):
             CENable = CENable()
             """
             `SYSTem:PASSword:CENable
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141404.htm#ID_5deccfb4fab1062c0a00206a015e85f5-4817c3fbfab1008f0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e143869.htm#ID_5deccfb4fab1062c0a00206a015e85f5-4817c3fbfab1008f0a00206a01a6673d-en-US>`_
 
             Arguments: 'string'
             """
@@ -28290,7 +29112,7 @@ class ZNB_gen(Instrument):
             class DUMMy(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SYSTem:PRESet:DUMMy
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141672.htm#ID_0ce589adfab124920a00206a01485f4a-3a5f7062fab11e960a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/eee1ebe5a66049d5.htm#ID_0ce589adfab124920a00206a01485f4a-3a5f7062fab11e960a00206a01a6673d-en-US>`_
 
                 Arguments:
                 """
@@ -28300,7 +29122,7 @@ class ZNB_gen(Instrument):
             DUMMy = DUMMy()
             """
             `SYSTem:PRESet:DUMMy
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141672.htm#ID_0ce589adfab124920a00206a01485f4a-3a5f7062fab11e960a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/eee1ebe5a66049d5.htm#ID_0ce589adfab124920a00206a01485f4a-3a5f7062fab11e960a00206a01a6673d-en-US>`_
 
             Arguments:
             """
@@ -28342,7 +29164,7 @@ class ZNB_gen(Instrument):
             class SCOPe(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SYSTem:PRESet:SCOPe
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141483.htm#ID_f14f0f4efab10d9f0a00206a00724e94-7cbf2c2dfab108110a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/e8cf427a46394aac.htm#ID_f14f0f4efab10d9f0a00206a00724e94-7cbf2c2dfab108110a00206a01a6673d-en-US>`_
 
                 Arguments: ALL, SINGle
                 """
@@ -28352,7 +29174,7 @@ class ZNB_gen(Instrument):
             SCOPe = SCOPe()
             """
             `SYSTem:PRESet:SCOPe
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141483.htm#ID_f14f0f4efab10d9f0a00206a00724e94-7cbf2c2dfab108110a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/e8cf427a46394aac.htm#ID_f14f0f4efab10d9f0a00206a00724e94-7cbf2c2dfab108110a00206a01a6673d-en-US>`_
 
             Arguments: ALL, SINGle
             """
@@ -28387,7 +29209,7 @@ class ZNB_gen(Instrument):
                 class NAME(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SYSTem:PRESet:USER:NAME
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141635.htm#ID_9e06eeaefab115300a00206a00cb4ce5-0538d3bbfab10f830a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/a96979ad43ae4579.htm#ID_9e06eeaefab115300a00206a00cb4ce5-0538d3bbfab10f830a00206a01a6673d-en-US>`_
 
                     Arguments: 'string'
                     """
@@ -28397,7 +29219,7 @@ class ZNB_gen(Instrument):
                 NAME = NAME()
                 """
                 `SYSTem:PRESet:USER:NAME
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141635.htm#ID_9e06eeaefab115300a00206a00cb4ce5-0538d3bbfab10f830a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/a96979ad43ae4579.htm#ID_9e06eeaefab115300a00206a00cb4ce5-0538d3bbfab10f830a00206a01a6673d-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -28405,7 +29227,7 @@ class ZNB_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SYSTem:PRESet:USER:STATe
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141527.htm#ID_66b8f316fab11cc20a00206a0087213c-35caa738fab117050a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144074.htm#ID_66b8f316fab11cc20a00206a0087213c-35caa738fab117050a00206a01a6673d-en-US>`_
 
                     Arguments: 1, OFF, ON
                     """
@@ -28415,7 +29237,7 @@ class ZNB_gen(Instrument):
                 STATe = STATe()
                 """
                 `SYSTem:PRESet:USER:STATe
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141527.htm#ID_66b8f316fab11cc20a00206a0087213c-35caa738fab117050a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144074.htm#ID_66b8f316fab11cc20a00206a0087213c-35caa738fab117050a00206a01a6673d-en-US>`_
 
                 Arguments: 1, OFF, ON
                 """
@@ -28462,7 +29284,7 @@ class ZNB_gen(Instrument):
             class UPDate(SCPINode, SCPISet):
                 """
                 `SYSTem:SETTings:UPDate
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141729.htm#ID_e5afdc76fab134220a00206a00902fa2-2837511dfab12e360a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/f32fcad83f5c4e5c.htm#ID_e5afdc76fab134220a00206a00902fa2-2837511dfab12e360a00206a01a6673d-en-US>`_
 
                 Arguments: ONCE
                 """
@@ -28472,7 +29294,7 @@ class ZNB_gen(Instrument):
             UPDate = UPDate()
             """
             `SYSTem:SETTings:UPDate
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141729.htm#ID_e5afdc76fab134220a00206a00902fa2-2837511dfab12e360a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/f32fcad83f5c4e5c.htm#ID_e5afdc76fab134220a00206a00902fa2-2837511dfab12e360a00206a01a6673d-en-US>`_
 
             Arguments: ONCE
             """
@@ -28705,7 +29527,7 @@ class ZNB_gen(Instrument):
         class TSLock(SCPINode, SCPIQuery, SCPISet):
             """
             `SYSTem:TSLock
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141976.htm#ID_48769b733516bd2c0a00206a005ec64c-a13ed1c43516b4a10a00206a01f2dc17-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144479.htm#ID_48769b733516bd2c0a00206a005ec64c-a13ed1c43516b4a10a00206a01f2dc17-en-US>`_
 
             Arguments: DIAGrams, OFF, SCReen
             """
@@ -28715,7 +29537,7 @@ class ZNB_gen(Instrument):
         TSLock = TSLock()
         """
         `SYSTem:TSLock
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e141976.htm#ID_48769b733516bd2c0a00206a005ec64c-a13ed1c43516b4a10a00206a01f2dc17-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144479.htm#ID_48769b733516bd2c0a00206a005ec64c-a13ed1c43516b4a10a00206a01f2dc17-en-US>`_
 
         Arguments: DIAGrams, OFF, SCReen
         """
@@ -28780,7 +29602,7 @@ class ZNB_gen(Instrument):
             class KEY(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SYSTem:USER:KEY
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e142026.htm#ID_5b19f768fab15a190a00206a003ab4cd-5c1d14c8fab1547b0a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144529.htm#ID_5b19f768fab15a190a00206a003ab4cd-5c1d14c8fab1547b0a00206a01a6673d-en-US>`_
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
@@ -28806,7 +29628,7 @@ class ZNB_gen(Instrument):
             KEY = KEY()
             """
             `SYSTem:USER:KEY
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e142026.htm#ID_5b19f768fab15a190a00206a003ab4cd-5c1d14c8fab1547b0a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144529.htm#ID_5b19f768fab15a190a00206a003ab4cd-5c1d14c8fab1547b0a00206a01a6673d-en-US>`_
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
@@ -28889,7 +29711,7 @@ class ZNB_gen(Instrument):
         class COPY(SCPINode, SCPISet):
             """
             `TRACe:COPY
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e142290.htm#ID_701570b0fab1805d0a00206a00ce1355-b06fb49ffab17aa10a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144793.htm#ID_701570b0fab1805d0a00206a00ce1355-b06fb49ffab17aa10a00206a01a6673d-en-US>`_
 
             Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8, 'string'
             """
@@ -28899,7 +29721,7 @@ class ZNB_gen(Instrument):
             class MATH(SCPINode, SCPISet):
                 """
                 `TRACe:COPY:MATH
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e142385.htm#ID_8db7b1cffab1880e0a00206a015a07f4-f95d19b4fab182510a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144888.htm#ID_8db7b1cffab1880e0a00206a015a07f4-f95d19b4fab182510a00206a01a6673d-en-US>`_
 
                 Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8, 'string'
                 """
@@ -28909,7 +29731,7 @@ class ZNB_gen(Instrument):
             MATH = MATH()
             """
             `TRACe:COPY:MATH
-            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e142385.htm#ID_8db7b1cffab1880e0a00206a015a07f4-f95d19b4fab182510a00206a01a6673d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144888.htm#ID_8db7b1cffab1880e0a00206a015a07f4-f95d19b4fab182510a00206a01a6673d-en-US>`_
 
             Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8, 'string'
             """
@@ -28917,7 +29739,7 @@ class ZNB_gen(Instrument):
         COPY = COPY()
         """
         `TRACe:COPY
-        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e142290.htm#ID_701570b0fab1805d0a00206a00ce1355-b06fb49ffab17aa10a00206a01a6673d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e144793.htm#ID_701570b0fab1805d0a00206a00ce1355-b06fb49ffab17aa10a00206a01a6673d-en-US>`_
 
         Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8, 'string'
         """
@@ -28943,7 +29765,7 @@ class ZNB_gen(Instrument):
                 class ALL(SCPINode, SCPIQuery, SCPISet):
                     """
                     `TRACe:DATA:RESPonse:ALL
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e145938.htm#ID_2a0bba9afab1979e0a00206a01b06d03-c178a5b4fab191c20a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e148465.htm#ID_2a0bba9afab1979e0a00206a01b06d03-c178a5b4fab191c20a00206a01a6673d-en-US>`_
 
                     Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                     """
@@ -28953,7 +29775,7 @@ class ZNB_gen(Instrument):
                 ALL = ALL()
                 """
                 `TRACe:DATA:RESPonse:ALL
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e145938.htm#ID_2a0bba9afab1979e0a00206a01b06d03-c178a5b4fab191c20a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e148465.htm#ID_2a0bba9afab1979e0a00206a01b06d03-c178a5b4fab191c20a00206a01a6673d-en-US>`_
 
                 Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                 """
@@ -28977,7 +29799,7 @@ class ZNB_gen(Instrument):
                 class ALL(SCPINode, SCPIQuery, SCPISet):
                     """
                     `TRACe:DATA:STIMulus:ALL
-                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e146011.htm#ID_b73c7a35fab18fde0a00206a00c988a1-92a8d8b0fab189f20a00206a01a6673d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e148538.htm#ID_b73c7a35fab18fde0a00206a00c988a1-92a8d8b0fab189f20a00206a01a6673d-en-US>`_
 
                     Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                     """
@@ -28987,7 +29809,7 @@ class ZNB_gen(Instrument):
                 ALL = ALL()
                 """
                 `TRACe:DATA:STIMulus:ALL
-                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e146011.htm#ID_b73c7a35fab18fde0a00206a00c988a1-92a8d8b0fab189f20a00206a01a6673d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/d36e148538.htm#ID_b73c7a35fab18fde0a00206a00c988a1-92a8d8b0fab189f20a00206a01a6673d-en-US>`_
 
                 Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                 """
@@ -29176,17 +29998,17 @@ class ZNB_gen(Instrument):
                 `TRIGger:SEQuence:LINK
                 <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/e09399d307a34f01.htm#ID_a4da22c4fab1a6c10a00206a01179287-42cdd25ffab1a1050a00206a01a6673d-en-US>`_
 
-                Arguments: 'POINt', 'PPOint', 'SEGMent', 'SWEep'
+                Arguments: 'string'
                 """
                 _cmd = "LINK"
-                args = ["'POINt'", "'PPOint'", "'SEGMent'", "'SWEep'"]
+                args = ["'string'"]
 
             LINK = LINK()
             """
             `TRIGger:SEQuence:LINK
             <http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en/Content/e09399d307a34f01.htm#ID_a4da22c4fab1a6c10a00206a01179287-42cdd25ffab1a1050a00206a01a6673d-en-US>`_
 
-            Arguments: 'POINt', 'PPOint', 'SEGMent', 'SWEep'
+            Arguments: 'string'
             """
 
             class MULTiple(SCPINode):
@@ -29257,6 +30079,22 @@ class ZNB_gen(Instrument):
             TRIGger:SEQuence:MULTiple
 
             Arguments:
+            """
+
+            class SCOPe(SCPINode, SCPIQuery, SCPISet):
+                """
+                TRIGger:SEQuence:SCOPe
+
+                Arguments: ALL, CURRent
+                """
+                _cmd = "SCOPe"
+                args = ["ALL", "CURRent"]
+
+            SCOPe = SCOPe()
+            """
+            TRIGger:SEQuence:SCOPe
+
+            Arguments: ALL, CURRent
             """
 
             class SLOPe(SCPINode, SCPIQuery, SCPISet):

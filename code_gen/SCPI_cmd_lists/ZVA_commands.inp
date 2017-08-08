@@ -1,4 +1,4 @@
-// ZVA fw 3.70
+// ZVA fw 3.90
 *CAL?
 *CLS
 *ESE 1
@@ -6935,6 +6935,7 @@ SYSTem:COMMunicate:RDEVice:AKAL:PREDuction:STATe 1
 SYSTem:COMMunicate:RDEVice:AKAL:PREDuction:STATe OFF
 SYSTem:COMMunicate:RDEVice:AKAL:PREDuction:STATe ON
 SYSTem:COMMunicate:RDEVice:AKAL:PREDuction:STATe?
+SYSTem:COMMunicate:RDEVice:AKAL:SANitize
 SYSTem:COMMunicate:RDEVice:EUNit:IDN?
 SYSTem:COMMunicate:RDEVice:EUNit:OPT?
 SYSTem:COMMunicate:RDEVice:GENerator1:CATalog?
@@ -7109,8 +7110,6 @@ SYSTem:USER:KEY:FUNCtion MAXimum
 SYSTem:USER:KEY:FUNCtion MINimum
 SYSTem:USER:KEY:FUNCtion UP
 SYSTem:USER:KEY:FUNCtion?
-SYSTem:VERSion
-SYSTem:VERSion?
 SYSTem:WAIT 1
 SYSTem:WAIT DEFault
 SYSTem:WAIT DOWN
@@ -7118,6 +7117,8 @@ SYSTem:WAIT MAXimum
 SYSTem:WAIT MINimum
 SYSTem:WAIT UP
 SYSTem:WAIT?
+SYSTem:VERSion
+SYSTem:VERSion?
 TRACe CH1Data
 TRACe CH1Mem
 TRACe CH2Data
