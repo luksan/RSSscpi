@@ -20,11 +20,21 @@ class NRPCmdListParser(CmdListParser):
         # GPIB explorer indicates an indexed node by appending "1" to the name
         cmd = str(cmd).translate(None, "[]").rstrip("?").lstrip(":").replace("{1..*}", "1")
 
+        cmd = self._filter_cmd(cmd)
+        if cmd is None:
+            return
+
         if has_query:
             self.cmd_tree.add_cmd(cmd.split(":"), arg, None, True)
         if has_write:
             self.cmd_tree.add_cmd(cmd.split(":"), arg, None, False)
 
+    def _filter_cmd(self, cmd):
+        """
+        Return cmd, optionally modified, if the command should be included in the command tree.
+        Return None if the command should be ignored.
+        """
+        return cmd
 
 
 class NRPTreePatcher(SystHelpTreePatcher):

@@ -1,0 +1,4560 @@
+// Generated from SMB100A, fw: 3.1.19.15-3.20.390.24
+&ABO
+&BRK
+&DCL
+&DFC
+&GET
+&GTL
+&GTM
+&GTR
+&HFC
+&LLO
+&NREN
+&POL
+&RLSD
+&SFC
+&STB
+*CLS
+*DEV[?] <numeric_value>
+*DMC <string>,<string>
+*DMC[?] <string>,<block_data>|<string>
+*EMC[?] <boolean>
+*EMC[?] <boolean>
+*ESE[?] <numeric_value>
+*ESR?
+*GCLS
+*GMC? <string>
+*GMC? <string>
+*GOPC?
+*GWAI
+*IDN?
+*IST?
+*LMC?
+*LMC?
+*LRN?
+*OPC[?]
+*OPT?
+*PMC
+*PMC
+*PRE[?] <numeric_value>
+*PSC[?] <boolean>
+*RCL <numeric_value>
+*RMC <string>
+*RMC <string>
+*RST
+*SAV <numeric_value>
+*SRE[?] <numeric_value>
+*SRQ? <integer>|DOWN|MAXimum|MINimum|UP
+*STB?
+*TRG
+*TST?
+*WAI
+*XESE[?] <expression>
+*XESR?
+*XPRE[?] <expression>
+*XSRE[?] <expression>
+*XSTB?
+:@1
+:@1
+:@2
+:@2
+:@3
+:@3
+:@9
+:@9
+:@9
+:@A
+:@A
+:@A
+:A0
+:A0
+:A1
+:A1
+:A2
+:A2 <numeric_value>[DB]
+:A3
+:A3 <numeric_value>[DB]
+:AA <numeric_value>[DM|DB|VL|MV|UV|DU]
+:AB <numeric_value>[DM|DB|VL|MV|UV|DU]
+:ABORt
+:ABORt
+:ABORt
+:ABORt
+:ABORt
+:ABORt:DM
+:ABORt:LIST
+:ABORt:LIST
+:ABORt:MSEQuence
+:ABORt:MSEQuence
+:ABORt[:SWEep]
+:ABORt[:SWEep]
+:ABORt:XMEM
+:ACW[?]
+:AD
+:AD1[?]
+:AD5[?]
+:AD6[?]
+:ADD[?] <numeric_value>[ADR]
+:ADP1[?] <numeric_value>[PCT]
+:ADP2[?] <numeric_value>[DB]
+:AF1[?]
+:AF3[?]
+:AF:Fixed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:AF:Log_step[?] <numeric_value>[PCT]
+:AF:Marker[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:AF:OFF
+:AF:ON
+:AF:Output:Fixed
+:AF:Output:Synthesizer
+:AF:Output?
+:AF:STArt[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:AF:STEp[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:AF:STOp[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:AF[:Synthesizer][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:AF:Var_step[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:AF:Waveform:SAwtooth:Down
+:AF:Waveform:SAwtooth[:Up]
+:AF:Waveform:SIne
+:AF:Waveform:SQuare
+:AF:Waveform?
+:AFA <numeric_value>[KZ|HZ]
+:AFF <numeric_value>[KZ|HZ]
+:AFU[?]
+:AK0
+:AK1
+:AL0
+:AL0[?]
+:AL1 <numeric_value>
+:AL1[?]
+:AL2[?]
+:AL3[?]
+:AL4[?]
+:AL5[?]
+:AL6[?]
+:AL7[?]
+:AL8[?]
+:AL9[?]
+:ALW[?] <block_data>
+:ALc:AUto
+:ALc:Fixed
+:ALc:NARrow
+:ALc:Normal
+:ALc:WIDe
+:ALc?
+:AM <numeric_value>[PC]
+:AM <numeric_value>[PC]
+:AM <numeric_value>[PC]
+:AM <numeric_value>[PCT]
+:AM <numeric_value>[PC|PCT]
+:AM <numeric_value>|OF|ON|T1|T4|XD
+:AM0
+:AM0[?]
+:AM1
+:AM1[?]
+:AM2[?]
+:AM7[?]
+:AM8[?]
+:AM:Broadband:OFF
+:AM:Broadband:ON
+:AM:Broadband?
+:AM:COUPling[?] AC|DC|GROund
+:AM[:DEPTh]:STEP[:INCRement][?] <numeric_value>[PCT]
+:AM[:DEPTh][?] <numeric_value>[PCT]
+:AM:Dual[:Ac] <numeric_value>[PCT]
+:AM:Dual:Dc <numeric_value>[PCT]
+:AM:Dual:Internal <numeric_value>[PCT]
+:AM:External[:Ac] <numeric_value>[PCT]
+:AM:External:Dc <numeric_value>[PCT]
+:AM:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:AM:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:AM:Internal:Fixed <numeric_value>[PCT]
+:AM:Internal[:Synthesizer] <numeric_value>[PCT]
+:AM:OFF
+:AM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:AM:STATe[?] <boolean>
+:AM:Square:Inverted <numeric_value>[PCT]
+:AM:Square[:Normal] <numeric_value>[PCT]
+:AM:Var_step[?] <numeric_value>[PCT]
+:AMI[?]
+:AMO[?]
+:AMPLitude[:OUT]:ALC
+:AMPLitude[:OUT]:ALC:BANDwidth
+:AMPLitude[:OUT]:ALC:BANDwidth:AUTO[?] <boolean>
+:AMPLitude[:OUT]:ATTenuation:AUTO[?] <boolean>
+:AMPLitude[:OUT]:ATTenuation:STEP[:INCRement][?] <numeric_value>[DB]
+:AMPLitude[:OUT]:ATTenuation[?] <numeric_value>[DB]
+:AMPLitude[:OUT]:GAIN[?] <numeric_value>[DB]
+:AMPLitude[:OUT][:LEVel]:STEP[:INCRement][?] <numeric_value>[DB|V|MV|UV]
+:AMPLitude[:OUT][:LEVel]:STEP:UNIT[?] DB|V
+:AMPLitude[:OUT][:LEVel][?] <numeric_value>[DBM|DBMW|DBUV|V|MV|UV]
+:AMPLitude[:OUT]:MUTing[?] <boolean>
+:AMPLitude[:OUT]:STATe[?] <boolean>
+:AMPLitude[:OUT]:ULIMit[?] <numeric_value>[DBM|DBMW|DBUV|V|MV|UV]
+:AMPLitude[:OUT]:UNIT[?] DBM|DBMW|DBUV|V
+:AMPLitude:SOURce:ALC
+:AMPLitude:SOURce:ALC:BANDwidth
+:AMPLitude:SOURce:ALC:BANDwidth:AUTO[?] <boolean>
+:AMPLitude:SOURce:ATTenuation:AUTO[?] <boolean>
+:AMPLitude:SOURce:ATTenuation:STEP[:INCRement][?] <numeric_value>[DB]
+:AMPLitude:SOURce:ATTenuation[?] <numeric_value>[DB]
+:AMPLitude:SOURce:GAIN[?] <numeric_value>[DB]
+:AMPLitude:SOURce[:LEVel]:STEP[:INCRement][?] <numeric_value>[DB|V|MV|UV]
+:AMPLitude:SOURce[:LEVel]:STEP:UNIT[?] DB|V
+:AMPLitude:SOURce[:LEVel][?] <numeric_value>[DBM|DBMW|DBUV|V|MV|UV]
+:AMPLitude:SOURce:MUTing[?] <boolean>
+:AMPLitude:SOURce:STATe[?] <boolean>
+:AMPLitude:SOURce:ULIMit[?] <numeric_value>[DBM|DBMW|DBUV|V|MV|UV]
+:AMPLitude:SOURce:UNIT[?] DBM|DBMW|DBUV|V
+:AMR[?] <numeric_value>[HZ|KH|MH]
+:AMS[?] <numeric_value>[PCV]
+:AMW1[?]
+:AMW2[?]
+:AMW3[?]
+:AMW4[?]
+:AMW5[?]
+:AMW6[?]
+:AMW7[?]
+:AMW8[?]
+:AM{1..*}:DEPTh <numeric_value>[PCT]
+:AM{1..*}:DEPTh <numeric_value>[PCT]
+:AM{1..*}:DN
+:AM{1..*}:DN
+:AM{1..*}:EXT1ac
+:AM{1..*}:EXT1alc
+:AM{1..*}:EXT1dc
+:AM{1..*}:EXT2ac
+:AM{1..*}:EXT2alc
+:AM{1..*}:EXT2dc
+:AM{1..*}:EXTDc
+:AM{1..*}:EXTac
+:AM{1..*}:EXTalc
+:AM{1..*}:INC <numeric_value>[PCT]
+:AM{1..*}:INC <numeric_value>[PCT]
+:AM{1..*}:INT
+:AM{1..*}:INTF{1..*}
+:AM{1..*}:MODF:DN
+:AM{1..*}:MODF:INC <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:AM{1..*}:MODF:PHASe <numeric_value>[DEG]
+:AM{1..*}:MODF:RETN
+:AM{1..*}:MODF:SIN
+:AM{1..*}:MODF:SQR
+:AM{1..*}:MODF:TRI
+:AM{1..*}:MODF:UP
+:AM{1..*}:MODF:VALue <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:AM{1..*}:MODF:XFER
+:AM{1..*}:MODF[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:AM{1..*}:OFF
+:AM{1..*}:OFF
+:AM{1..*}:ON
+:AM{1..*}:ON
+:AM{1..*}:RETN
+:AM{1..*}:RETN
+:AM{1..*}:UP
+:AM{1..*}:UP
+:AM{1..*}:XFER
+:AM{1..*}:XFER
+:AM{1..*}[?] <numeric_value>[PCT]
+:AM{1..*}[?] <numeric_value>[PCT]
+:AO
+:AO
+:AO <numeric_value>[DB]
+:AP <numeric_value>
+:AP <numeric_value>[DB|DM]
+:AP <numeric_value>[DB|DM|MV]|OF|ON
+:AP <numeric_value>[DB|V|VO|MV|UV|NV]
+:AP <numeric_value>[DM|DB|VL|MV|UV|DU]
+:AP <numeric_value>[DM|MV|UV|-D|+D|-DM|+DM]
+:AR <numeric_value>[DB|V|VO|MV|UV|NV]
+:AR0[?] <block_data>
+:AR1[?] <block_data>
+:AS
+:AS <numeric_value>
+:AS <numeric_value>[DB|V|VO|MV|UV|NV]
+:AS0
+:AS1
+:ASD[?] <numeric_value>[DV]
+:AT <numeric_value>[DB]
+:AT0[?]
+:AT1[?]
+:ATT00[?]
+:ATT01[?]
+:ATT02[?]
+:ATT03[?]
+:ATT04[?]
+:ATT05[?]
+:ATT06[?]
+:ATT07[?]
+:ATT08[?]
+:ATT09[?]
+:ATT10[?]
+:ATT11[?]
+:ATTen:LOCK
+:ATTen:UNLock
+:ATTen?
+:ATtenuator:Cont?
+:ATtenuator:Fixed
+:ATtenuator:Normal
+:ATtenuator?
+:AU
+:AU
+:AUT[?]
+:BA
+:BACKl:OFF
+:BACKl:ON
+:BC
+:BC
+:BD
+:BL
+:BLANk <numeric_value>
+:BLANk:OFF
+:BLANk:ON
+:BLANk?
+:BP
+:BPN[?]
+:BPP[?]
+:BS
+:BS
+:BY
+:Blank:Inverted
+:Blank:Normal
+:Blank:OFF
+:Blank:ON
+:Blank?
+:C1
+:C2
+:C3
+:C4
+:CALibration
+:CALibration
+:CALibration
+:CALibration[:ALL]?
+:CALibration[:ALL]?
+:CALibration:AMPLitude
+:CALibration:AMPLitude:STATe[?] <boolean>
+:CALibration:ATTenuator:STATe[?] <boolean>
+:CALibration:DCFM
+:CALibration:DCFM
+:CALibration:DCFM
+:CALibration:FM:DATA?
+:CALibration:FM[:MEASure]?
+:CALibration:FM:OFFSet?
+:CALibration:FMOFfset[:MEASure]?
+:CALibration:HARMfilter[:MEASure]?
+:CALibration:IFFilter[:MEASure]?
+:CALibration:IQ:DC
+:CALibration:IQ:DEFault
+:CALibration:IQ:FULL
+:CALibration:IQ:FULL
+:CALibration:IQ:STARt[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CALibration:IQ:STOP[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CALibration:IQ[:USER]
+:CALibration:LEVel
+:CALibration:LEVel:DATA?
+:CALibration:LEVel:FRANge[?] MIXer|NORMal
+:CALibration:LEVel:PMODulator[?] <boolean>
+:CALibration:LEVel:STATe[?] <boolean>
+:CALibration:LEVel:STATe[?] <boolean>
+:CALibration:LFGenlevel[:MEASure]?
+:CALibration:LFReset:DATA?
+:CALibration:LFReset[:MEASure]?
+:CALibration:LFReset[:MEASure]?
+:CALibration:MAINloop[:MEASure]?
+:CALibration:MULTfilter[:MEASure]?
+:CALibration:PULSe:DATA?
+:CALibration:PULSe[:MEASure]?
+:CALibration:QPSK[:DATA][?] <numeric_value>[S|MS|US|NS|PS]
+:CALibration:QPSK:STORe
+:CALibration:ROSCillator[:DATA][?] <numeric_value>
+:CALibration:ROSCillator[:DATA]? MAXimum|MINimum
+:CALibration:ROSCillator:STORe
+:CALibration:VMODulation[:MEASure]? ONCE
+:CALibration:VSUMmation:DAC?
+:CALibration:VSUMmation:KOS?
+:CALibration:VSUMmation[:MEASure]?
+:CALibration:VSUMmation:OFFSet?
+:CALibration:VSYNthesis:DATA?
+:CALibration:VSYNthesis[:MEASure]?
+:CAlibration
+:CAlibration:IQ
+:CCR?
+:CCR?
+:CE
+:CF <numeric_value>[HZ|KZ|MZ|GZ]
+:CF <numeric_value>[HZ|KZ|MZ|GZ]
+:CF0[?] <numeric_value>[HZ|KH|MH|GH]
+:CF1[?] <numeric_value>[HZ|KH|MH|GH]
+:CF2[?] <numeric_value>[HZ|KH|MH|GH]
+:CF3[?] <numeric_value>[HZ|KH|MH|GH]
+:CF4[?] <numeric_value>[HZ|KH|MH|GH]
+:CF5[?] <numeric_value>[HZ|KH|MH|GH]
+:CF6[?] <numeric_value>[HZ|KH|MH|GH]
+:CF7[?] <numeric_value>[HZ|KH|MH|GH]
+:CF8[?] <numeric_value>[HZ|KH|MH|GH]
+:CF9[?] <numeric_value>[HZ|KH|MH|GH]
+:CF:Marker[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CF:SPan[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CF:STep[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CF[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CFRQ:DN
+:CFRQ:DN
+:CFRQ:INC <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CFRQ:INC <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CFRQ:MODE FIXed|SWEPt
+:CFRQ:PHASe <numeric_value>
+:CFRQ:PHASe <numeric_value>[DEG]
+:CFRQ:RETN
+:CFRQ:RETN
+:CFRQ:STARt <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CFRQ:STOP <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CFRQ:TIME <numeric_value>[S|MS|US|NS]
+:CFRQ:UP
+:CFRQ:UP
+:CFRQ:VALue <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CFRQ:VALue <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CFRQ:XFER
+:CFRQ:XFER
+:CFRQ[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CFRQ[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CLO[?]
+:CLR[?]
+:CM0[?] <numeric_value>[HZ|KH|MH|GH]
+:CM1[?] <numeric_value>[HZ|KH|MH|GH]
+:CM2[?] <numeric_value>[HZ|KH|MH|GH]
+:CM3[?] <numeric_value>[HZ|KH|MH|GH]
+:CM4[?] <numeric_value>[HZ|KH|MH|GH]
+:CM5[?] <numeric_value>[HZ|KH|MH|GH]
+:CM6[?] <numeric_value>[HZ|KH|MH|GH]
+:CM7[?] <numeric_value>[HZ|KH|MH|GH]
+:CM8[?] <numeric_value>[HZ|KH|MH|GH]
+:CM9[?] <numeric_value>[HZ|KH|MH|GH]
+:CONTrast[?] <numeric_value>
+:CONTrol
+:CONTrol:BLANking
+:CONTrol:BLANking:POLarity[?] INVerted|NORMal
+:CONTrol:PENLift
+:CONTrol:PENLift:POLarity[?] INVerted|NORMal
+:CONTrol:RAMP:REST[?] STARt|STOP
+:CONTrol:RAMP[:STATe][?] <boolean>
+:CONTrol:RAMP:TIME[?] <numeric_value>
+:CS
+:CS
+:CS0[?]
+:CS1[?]
+:CSB[?]
+:CSE[?] <numeric_value>
+:CSE[?] <numeric_value>
+:CSR?
+:CSR?
+:CT
+:CT A0|AO|DN|M0|M1|M2|M3|M4|MO|N1|N2|N4|N5|T1|T2|T3|T4|T5|UP|W1|W2|W3|W4|X6|X7|Y0|Y1|Y2|Y3
+:CTL[?]
+:CTONes:EDIT:LOAD CTC1|CTC2|USER
+:CTONes:EDIT:SAVE
+:CTONes:EDIT:TFRQ <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:CTONes:EDIT:TNUM <numeric_value>
+:CTONes:EDIT?
+:CW <numeric_value>[HZ|KZ|MZ|GZ]
+:CW <numeric_value>[HZ|KZ|MZ|GZ]
+:D0
+:D1
+:D1[?] <numeric_value>[SEC|MS|US|NS]
+:D2
+:D2[?] <numeric_value>[SEC|MS|US|NS]
+:D3
+:D3[?] <numeric_value>[SEC|MS|US|NS]
+:D4
+:D4[?] <numeric_value>[SEC|MS|US|NS]
+:D5
+:D6
+:D7
+:DATE?
+:DB
+:DCFMnl
+:DCFMnl
+:DEVTrg FLSWp|SEQT|SSSWp|VOID
+:DEcrement
+:DEcrement:AF
+:DEcrement:AM
+:DEcrement:FM
+:DEcrement:Level:AF
+:DEcrement:Level[:RF]
+:DEcrement:PHAse
+:DEcrement:PHM
+:DEcrement:RF
+:DEcrement:Swp
+:DF
+:DF <numeric_value>[HZ|KZ|MZ|GZ]
+:DF <numeric_value>[HZ|KZ|MZ|GZ]
+:DF0[?]
+:DF1[?]
+:DF5[?]
+:DF6[?]
+:DFF[?] <numeric_value>[HZ|KH|MH|GH]
+:DFM[?] <numeric_value>[HZ|KH|MH|GH]
+:DG <numeric_value>
+:DIAGnostic
+:DIAGnostic[:CPU]
+:DIAGnostic[:CPU]
+:DIAGnostic[:CPU]:INFormation
+:DIAGnostic[:CPU]:INFormation:BOARds?
+:DIAGnostic[:CPU]:INFormation:BOARds[?]
+:DIAGnostic[:CPU]:INFormation:CCOunt
+:DIAGnostic[:CPU]:INFormation:CCOunt:ATTenuator?
+:DIAGnostic[:CPU]:INFormation:CCOunt:ATTenuator?
+:DIAGnostic[:CPU]:INFormation:CCOunt:ATTenuator?
+:DIAGnostic[:CPU]:INFormation:CCOunt:PON?
+:DIAGnostic[:CPU]:INFormation:CCOunt:PON?
+:DIAGnostic[:CPU]:INFormation:CCOunt:PON?
+:DIAGnostic[:CPU]:INFormation:CCOunt:PROTection?
+:DIAGnostic[:CPU]:INFormation:CCOunt:PROTection?
+:DIAGnostic[:CPU]:INFormation:DISPlay
+:DIAGnostic[:CPU]:INFormation:DISPlay:OTIMe?
+:DIAGnostic[:CPU]:INFormation:DISPlay:OTIMe?
+:DIAGnostic[:CPU]:INFormation:DISPlay:OTIMe?
+:DIAGnostic[:CPU]:INFormation:LICense
+:DIAGnostic[:CPU]:INFormation:LICense:AUXiliary?
+:DIAGnostic[:CPU]:INFormation:LICense:WAVeform?
+:DIAGnostic[:CPU]:INFormation:OPTions:DETail?
+:DIAGnostic[:CPU]:INFormation:OPTions:DETail?
+:DIAGnostic[:CPU]:INFormation:OPTions:DETail?
+:DIAGnostic[:CPU]:INFormation:OPTions?
+:DIAGnostic[:CPU]:INFormation:OPTions?
+:DIAGnostic[:CPU]:INFormation:OPTions?
+:DIAGnostic[:CPU]:INFormation:OTIMe?
+:DIAGnostic[:CPU]:INFormation:OTIMe?
+:DIAGnostic[:CPU]:INFormation:OTIMe?
+:DIAGnostic[:CPU]:INFormation:REVision?
+:DIAGnostic[:CPU]:INFormation:REVision?
+:DIAGnostic[:CPU]:INFormation:REVision?
+:DIAGnostic[:CPU]:INFormation:SDATe?
+:DIAGnostic[:CPU]:INFormation:SDATe?
+:DIAGnostic[:CPU]:INFormation:SDATe?
+:DIAGnostic[:CPU]:INFormation:WLICence[:VALue]? <numeric_value>
+:DIAGnostic:INFO:CCOunt:ATTenuator{1..*}?
+:DIAGnostic:INFO:CCOunt:ATTenuator{1..6}?
+:DIAGnostic:INFO:CCOunt:POWer?
+:DIAGnostic:INFO:CCOunt:POWer?
+:DIAGnostic:INFO:MODules?
+:DIAGnostic:INFO:MODules?
+:DIAGnostic:INFO:OTIMe?
+:DIAGnostic:INFO:OTIMe?
+:DIAGnostic:INFO:SDATe?
+:DIAGnostic:INFO:SDATe?
+:DIAGnostic:INFO:SERialno?
+:DIAGnostic:INFO:SVERsion?
+:DIAGnostic[:MEASure]:POINt? <numeric_value>
+:DIAGnostic[:MEASure]:POINt? <numeric_value>
+:DIAGnostic:SNUM?
+:DIAGnostic:XMEM:CHECksum:ATTenuate?
+:DIAGnostic:XMEM:CHECksum:BURSt?
+:DIAGnostic:XMEM:CHECksum:CALCulate[?]
+:DIAGnostic:XMEM:CHECksum:DATA?
+:DIAGnostic:XMEM:CHECksum[:TOTal]?
+:DIGital:CAL
+:DIGital:CONFig:IQ DISabled|ENABled
+:DIGital:CONFig:MIXer EXTernal|INTernal
+:DIGital:CONFig:PULSe DISabled|ENABled
+:DIGital:CONFig?
+:DIGital:ERRor:DISable
+:DIGital:ERRor:ENABle
+:DIGital:ERRor?
+:DIGital:EXT_par
+:DIGital:EXT_par:DATapol INVerse|NORMal
+:DIGital:EXT_par:SYMPol NEG_edge|POS_edge
+:DIGital:EXT_par:SYMStat EXTernal|INTernal
+:DIGital:EXT_ser
+:DIGital:EXT_ser:BITPol NEG_edge|POS_edge
+:DIGital:EXT_ser:BITStat EXTernal|INTernal
+:DIGital:EXT_ser:DATapol INVerse|NORMal
+:DIGital:EXT_ser:SYMPol NEG_edge|POS_edge
+:DIGital:EXT_ser:SYMStat EXTernal|INTernal
+:DIGital:FADing:CTRL DISabled|RAYLeigh|RICian
+:DIGital:FADing:DIR_dopp <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:DIGital:FADing:RATio <numeric_value>[DB]
+:DIGital:FADing:SPEed <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:DIGital:FADing?
+:DIGital:GAIN:OFF
+:DIGital:GAIN:ON
+:DIGital:GAIN:VALue <numeric_value>[DB]
+:DIGital:GAIN[?] <numeric_value>[DB]
+:DIGital:INT_0s
+:DIGital:INT_0s:CLOCk EXT_bit|EXT_sym|INT_sym
+:DIGital:INT_0s:CLOCkpol NEG_edge|POS_edge
+:DIGital:INT_0s:DATapol INVerse|NORMal
+:DIGital:INT_1s
+:DIGital:INT_1s:CLOCk EXT_bit|EXT_sym|INT_sym
+:DIGital:INT_1s:CLOCkpol NEG_edge|POS_edge
+:DIGital:INT_1s:DATapol INVerse|NORMal
+:DIGital:LEAK:OFF
+:DIGital:LEAK:ON
+:DIGital:LEAK:VALue <numeric_value>[PCT]
+:DIGital:LEAK[?] <numeric_value>[PCT]
+:DIGital:MODopt:ENVelope DISabled|ENABled
+:DIGital:MODopt:IF AUTO|MHZ120|MHZ132|MHZ160|MHZ176
+:DIGital:MODopt:MODPol INVerse|NORMal
+:DIGital:MODopt:SBANd AUTO|LOWer|UPPer
+:DIGital:MODopt?
+:DIGital:PRBS:CLOCk EXT_bit|EXT_sym|INT_sym
+:DIGital:PRBS:CLOCkpol NEG_edge|POS_edge
+:DIGital:PRBS:DATapol INVerse|NORMal
+:DIGital:PRBS:VALue <numeric_value>
+:DIGital:PRBS[?] <numeric_value>
+:DIGital:SKEW:OFF
+:DIGital:SKEW:ON
+:DIGital:SKEW:VALue <numeric_value>[DEG]
+:DIGital:SKEW[?] <numeric_value>[DEG]
+:DIGital:SYSTem:ALPHa <numeric_value>
+:DIGital:SYSTem:DEVN <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:DIGital:SYSTem:FILTer GAUSs|R_Cos|R_R_cos
+:DIGital:SYSTem:FORMat BPSK|D_BPsk|D_PSk8|D_QPsk|FSK2|FSK4|GMSK|O_BPsk|O_PSk8|O_QPsk|PSK8|QAM16|QAM256|QAM4|QAM64|QPSK|TOQPsk|T_Tones
+:DIGital:SYSTem:SELect CDPD|CITY1200|CITY2400|CITY4800|CITY512|DSRR16|DSRR4|ERMes|GSM|INMar_m|MC9|MD100w|MD120w|MD160n|MD192w|MD24n|MD24w|MD36n|MD36w|MD48n|MD48w|MD80n|MD80w|MD96n|MD96w|MOBitex|NADC|PDC|POC1200|POC2400|POC4800|POC512|Q_APco25|TETRa|TFTS|USER1|USER2|USER3|USER4|USER5|VDR
+:DIGital:SYSTem:STO USER1|USER2|USER3|USER4|USER5
+:DIGital:SYSTem:SYM_rate <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:DIGital:SYSTem:THRee_db <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:DIGital:SYSTem?
+:DIGital:T_Tones
+:DIGital:T_Tones:ANGLe[?] <numeric_value>[DEG]
+:DIGital:T_Tones:FREQ[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:DIGital:T_Tones:I_AMp[?] <numeric_value>[V|MV|UV|DBMV]
+:DIGital:T_Tones:I_DC[?] <numeric_value>[V|MV|UV|DBMV]
+:DIGital:T_Tones:Q_AMp[?] <numeric_value>[V|MV|UV|DBMV]
+:DIGital:T_Tones:Q_DC[?] <numeric_value>[V|MV|UV|DBMV]
+:DIGital?
+:DIRect[?] <block_data>
+:DISPlay
+:DISPlay:ANNotation
+:DISPlay:ANNotation
+:DISPlay:ANNotation
+:DISPlay:ANNotation[:ALL][?] <boolean>
+:DISPlay:ANNotation[:ALL][?] <boolean>
+:DISPlay:ANNotation[:ALL][?] <boolean>
+:DISPlay:ANNotation:AMPLitude[:STATe][?] <boolean>
+:DISPlay:ANNotation:AMPLitude[:STATe][?] <boolean>
+:DISPlay:ANNotation:AMPLitude[:STATe][?] <boolean>
+:DISPlay:ANNotation:AMPLitude:UNIT[?] DB|DBM|DBUV|DBUVemf|V|VEMF
+:DISPlay:ANNotation:AMPLitude:UNIT[?] DB|DBM|DBUV|DBUVemf|V|VEMF
+:DISPlay:ANNotation:AMPLitude:UNIT[?] DB|DBM|DBUV|DBUVemf|V|VEMF
+:DISPlay:ANNotation:AMPLitude[?] <boolean>
+:DISPlay:ANNotation:AMPLitude[?] <boolean>
+:DISPlay:ANNotation:AMPLitude[?] <boolean>
+:DISPlay:ANNotation:CLOCk:DATE
+:DISPlay:ANNotation:CLOCk:DATE:FORMat[?] DMY|MDY
+:DISPlay:ANNotation:CLOCk[:STATe][?] <boolean>
+:DISPlay:ANNotation:FREQuency[:STATe][?] <boolean>
+:DISPlay:ANNotation:FREQuency[:STATe][?] <boolean>
+:DISPlay:ANNotation:FREQuency[:STATe][?] <boolean>
+:DISPlay:ANNotation:FREQuency[?] <boolean>
+:DISPlay:ANNotation:FREQuency[?] <boolean>
+:DISPlay:ANNotation:FREQuency[?] <boolean>
+:DISPlay:ANNotation:LFSource[?] <boolean>
+:DISPlay:ANNotation:MODulation[?] <boolean>
+:DISPlay:BRIGhtness[?] <numeric_value>
+:DISPlay:CAPTure
+:DISPlay:CONTrast[?] <numeric_value>
+:DISPlay:INVerse[?] <boolean>
+:DISPlay:RADix[?] EURopean|US
+:DISPlay:REMote[?] <boolean>
+:DISPlay:REMote[?] <boolean>
+:DISPlay:REMote[?] <boolean>
+:DISPlay:STATe[?] <boolean>
+:DISPlay[:WINDow]
+:DISPlay[:WINDow][:STATe][?] <boolean>
+:DISPlay[:WINDow][:STATe][?] <boolean>
+:DISPlay[:WINDow]:TEXT
+:DISPlay[:WINDow]:TEXT:STATe[?] <boolean>
+:DISplay
+:DISplay:OFF
+:DL1[?]
+:DLF[?] <numeric_value>[HZ|KH|MH|GH]
+:DM
+:DM
+:DM:CLock
+:DM:CLock:Adc
+:DM:CLock:Bit
+:DM:CLock:Inverted
+:DM:CLock:Jdc
+:DM:CLock:Normal
+:DM:CLock:Symbol
+:DM:COder
+:DM:COder:OFF
+:DM:COder:ON
+:DM:Filter[?] <numeric_value>
+:DM:Inverted
+:DM:Normal
+:DM:OFF
+:DM:ON
+:DM:Prbs:Long
+:DM:Prbs:OFF
+:DM:Prbs:Short
+:DM:Prbs?
+:DM?
+:DN
+:DN
+:DN
+:DN
+:DN
+:DN[?]
+:DO
+:DPT[?]
+:DR <numeric_value>[MZ|MHZ]
+:DS0[?]
+:DS1[?]
+:DU0
+:DU0[?]
+:DU1
+:DU1[?]
+:DW <numeric_value>[MS]
+:EA <numeric_value>
+:EBW0[?]
+:EBW1[?]
+:EBW2[?]
+:EBW3[?]
+:EF
+:EF <numeric_value>
+:EGI[?] <numeric_value>[SPS]
+:EGO[?]
+:EK
+:EL0[?]
+:EL1[?]
+:ELAPsed:RESet
+:ELAPsed?
+:ELAPsed?
+:ELI[?] <numeric_value>
+:ELN0[?]
+:ELN1[?]
+:ELN2[?]
+:ELN3[?]
+:EM
+:EM OF|ON
+:EMOF
+:EMON
+:EP0[?]
+:EP1[?]
+:ERASe
+:ERASe
+:ERASe:ALL
+:ERASe:ALL
+:ERASe:CFRQ
+:ERASe:CFRQ
+:ERASe:FULL
+:ERASe:FULL
+:ERASe:PART
+:ERASe:RAM
+:ERASe:SEQT
+:ERASe:SWEep
+:ERRor?
+:ERRor?
+:ERrors?
+:ES0[?]
+:ES1[?]
+:EX
+:EX
+:EX
+:EX
+:EX
+:EXT[?]
+:EXTTrg FLSWp|MEMDn|MEMup|SEQT|SSSWp|VOID
+:EXecution_mode:Normal
+:EXecution_mode:Triggered
+:EXecution_mode[?]
+:F0
+:F0[?] <numeric_value>[HZ|KH|MH|GH]
+:F1 <numeric_value>[HZ|KZ|MZ|GZ]
+:F1[?] <numeric_value>[HZ|KH|MH|GH]
+:F2[?] <numeric_value>[HZ|KH|MH|GH]
+:F3[?] <numeric_value>[HZ|KH|MH|GH]
+:F4[?] <numeric_value>[HZ|KH|MH|GH]
+:F5[?] <numeric_value>[HZ|KH|MH|GH]
+:F6[?] <numeric_value>[HZ|KH|MH|GH]
+:F7[?] <numeric_value>[HZ|KH|MH|GH]
+:F8[?] <numeric_value>[HZ|KH|MH|GH]
+:F9[?] <numeric_value>[HZ|KH|MH|GH]
+:FA <numeric_value>[HZ|KZ|MZ|GZ]
+:FA <numeric_value>[HZ|KZ|MZ|GZ]
+:FA <numeric_value>[HZ|KZ|MZ|GZ]
+:FA <numeric_value>[HZ|KZ|MZ|GZ]
+:FB <numeric_value>[HZ|KZ|MZ|GZ]
+:FB <numeric_value>[HZ|KZ|MZ|GZ]
+:FB <numeric_value>[HZ|KZ|MZ|GZ]
+:FB <numeric_value>[HZ|KZ|MZ|GZ]
+:FB0[?]
+:FB1[?]
+:FD
+:FDV[?] <numeric_value>[KH|MH]
+:FI <numeric_value>[HZ|KZ|MZ|GZ]
+:FLW[?] <block_data>
+:FM <numeric_value>[HZ|KZ|MZ]
+:FM <numeric_value>[HZ|KZ|MZ|GZ]
+:FM <numeric_value>[HZ|KZ|MZ|GZ]
+:FM <numeric_value>[HZ|KZ|MZ|GZ]
+:FM <numeric_value>|OF|ON|T1|T4|XD
+:FM0
+:FM0[?]
+:FM1
+:FM1[?]
+:FM2[?]
+:FM7[?]
+:FM8[?]
+:FM9[?]
+:FM:Broadband:External <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:Broadband:External:Ac <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:Broadband:Internal <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:Broadband:Internal:Fixed <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:Broadband:Internal:Synthesizer <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:Broadband:OFF
+:FM:Broadband?
+:FM:COUPling[?] AC|DC|GROund
+:FM:DELay[?] <boolean>
+:FM[:DEViation]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FM[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FM:Dual[:Ac] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:Dual:Dc <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:Dual:Internal <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:External[:Ac] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:External:Dc <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FM:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FM:Fsk:Inverted <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:Fsk[:Normal] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:IMPedance? <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FM:Internal:Fixed <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:Internal[:Synthesizer] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM:MODE[?] DIGitized|LINear
+:FM:OFF
+:FM:PREemphasis:STATe[?] <boolean>
+:FM:Preemphasis:OFF
+:FM:Preemphasis:ON
+:FM:Preemphasis[?] <numeric_value>[S|MS|US]
+:FM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:FM:STATe[?] <boolean>
+:FM:Var_step[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FMD[?]
+:FML[?]
+:FMN[?]
+:FMO[?]
+:FMR[?] <numeric_value>[HZ|KH|MH]
+:FMS[?] <numeric_value>[KV|MV]
+:FMU[?]
+:FMW[?]
+:FM{1..*}:DEVN <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM{1..*}:DEVN <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM{1..*}:DN
+:FM{1..*}:DN
+:FM{1..*}:EXT1ac
+:FM{1..*}:EXT1alc
+:FM{1..*}:EXT1dc
+:FM{1..*}:EXT2ac
+:FM{1..*}:EXT2alc
+:FM{1..*}:EXT2dc
+:FM{1..*}:EXTDc
+:FM{1..*}:EXTac
+:FM{1..*}:EXTalc
+:FM{1..*}:INC <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM{1..*}:INC <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM{1..*}:INT
+:FM{1..*}:INTF{1..*}
+:FM{1..*}:MODF:DN
+:FM{1..*}:MODF:INC <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM{1..*}:MODF:PHASe <numeric_value>[DEG]
+:FM{1..*}:MODF:RETN
+:FM{1..*}:MODF:SIN
+:FM{1..*}:MODF:SQR
+:FM{1..*}:MODF:TRI
+:FM{1..*}:MODF:UP
+:FM{1..*}:MODF:VALue <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM{1..*}:MODF:XFER
+:FM{1..*}:MODF[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM{1..*}:OFF
+:FM{1..*}:OFF
+:FM{1..*}:ON
+:FM{1..*}:ON
+:FM{1..*}:RETN
+:FM{1..*}:RETN
+:FM{1..*}:UP
+:FM{1..*}:UP
+:FM{1..*}:XFER
+:FM{1..*}:XFER
+:FM{1..*}[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FM{1..*}[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:FN <numeric_value>[HZ|KZ|MZ|GZ]
+:FO
+:FO <numeric_value>[HZ|KZ|MZ|GZ]
+:FORMat:BORDer[?] NORMal|SWAPped
+:FORMat[:DATA][?] ASCii|PACKed|REAL|REAL32|REAL64
+:FP <numeric_value>
+:FQ <numeric_value>[HZ|KZ|MZ|GZ]
+:FR <numeric_value>[HZ|KZ|MZ]
+:FR <numeric_value>[HZ|KZ|MZ|GZ]
+:FR <numeric_value>[HZ|KZ|MZ|GZ]
+:FR <numeric_value>[HZ|KZ|MZ|GZ]
+:FR <numeric_value>[HZ|KZ|MZ|GZ]
+:FR <numeric_value>[MZ|KZ|HZ|MHZ]
+:FR0[?]
+:FR1[?]
+:FREQuency:CENTer:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency:CENTer[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency[:CW]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency:INSTantaneous?
+:FREQuency:MANual[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency:MODE[?] CW|SWEep
+:FREQuency:MULTiplier[?] <numeric_value>
+:FREQuency:OFFSet[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency:SPAN:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency:SPAN[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency:STARt:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency:STARt[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency:STOP:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency:STOP[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:FREQuency:SYNThesis:AUTO[?] <boolean>
+:FREQuency:SYNThesis[?] <numeric_value>
+:FRS[?] <numeric_value>[TMS]
+:FS <numeric_value>[HZ|KZ|MZ|GZ]
+:FS <numeric_value>[HZ|KZ|MZ|GZ]
+:FS <numeric_value>[HZ|KZ|MZ|GZ]
+:FSTD[?] EXT10dir|EXT10ind|EXT1ind|INT|INT10out
+:FSTD[?] EXT1|EXT10|EXT5|INT0|INT1|INT10|INT5
+:FT <numeric_value>[HZ|KZ|MZ|GZ]
+:FU
+:FUL[?]
+:FWV1[?]
+:FWV2[?]
+:FWV3[?]
+:FWV4[?]
+:FWV5[?]
+:FWV6[?]
+:FWV7[?]
+:GP[?]
+:GPIB <numeric_value>
+:GS0
+:GS1
+:GT
+:GTC[?]
+:GTD[?]
+:GTF[?]
+:GTL[?]
+:GTO[?]
+:GTS[?]
+:GTT[?]
+:GTU[?]
+:HCR?
+:HCR?
+:HEAder
+:HEAder:OFF
+:HEAder:ON
+:HET_band
+:HET_band:High
+:HET_band:Low
+:HM <numeric_value>[RD]
+:HOPSeq[?] <numeric_value>,<numeric_value>
+:HSE[?] <numeric_value>
+:HSE[?] <numeric_value>
+:HSR?
+:HSR?
+:HWT[?]
+:ID
+:IF
+:IF
+:II0[?]
+:II1[?]
+:IL <block_data>
+:IL1[?]
+:IM1[?]
+:IMODe NORMal|SWEeper
+:IMPedance[?] Z50R|Z75R
+:IN0
+:IN1
+:IN2
+:IN3
+:IN4
+:IN5
+:INITialize:ABORt
+:INITialize:CONTinuous[?] <boolean>
+:INITialize[:IMMediate]
+:INITialize[:IMMediate]
+:INITialize:MODE[?] CONTinuous|SINGle
+:INITialize:STATe[?] PAUSe|RUN
+:INITiate
+:INITiate:CONTinous[:ALL][?] <boolean>
+:INITiate:CONTinous[:ALL][?] <boolean>
+:INITiate:CONTinous[:ALL][?] <boolean>
+:INITiate:CONTinuous[?] <boolean>
+:INITiate[:IMMediate]
+:INITiate:IMMediate[:ALL]
+:INITiate[:IMMediate][:ALL]
+:INITiate[:IMMediate][:ALL]
+:INPut:IF:STATe[?] <boolean>
+:INPut:POLarity[?] INVerted|NORMal
+:INTF{1..*}:CTC1 <numeric_value>
+:INTF{1..*}:CTC2 <numeric_value>
+:INTF{1..*}:DN
+:INTF{1..*}:FREQ <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:INTF{1..*}:INC <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:INTF{1..*}:PHASe <numeric_value>[DEG]
+:INTF{1..*}:RETN
+:INTF{1..*}:SIN
+:INTF{1..*}:SQU
+:INTF{1..*}:TEMP <numeric_value>
+:INTF{1..*}:TRI
+:INTF{1..*}:UP
+:INTF{1..*}:USER <numeric_value>
+:INTF{1..*}:XFER
+:INTF{1..*}[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:IP
+:IP
+:IP
+:IP
+:IP
+:IP[?]
+:IQ:Carrier_leakage[?] <numeric_value>[PCT]
+:IQ:IMBalance[?] <numeric_value>[PCT]
+:IQ:IMPairment
+:IQ:IMPairment:OFF
+:IQ:OFF
+:IQ:ON
+:IQ:Quadrature_offs[?] <numeric_value>[DEG]
+:IQ?
+:IS
+:IS <numeric_value>[HZ|KZ|MZ|DM|DF|DB|PC|PCT]
+:IS <numeric_value>[HZ|KZ|MZ|GZ|DM|DB|VL|MV|UV|DU]
+:IS <numeric_value>[HZ|KZ|MZ|GZ|PC|DG|DB|MV|UV]
+:Increment
+:Increment:AF
+:Increment:AM
+:Increment:FM
+:Increment:Level:AF
+:Increment:Level[:RF]
+:Increment:PHAse
+:Increment:PHM
+:Increment:RF
+:Increment:Swp
+:K0
+:K1
+:K2
+:KLOCk
+:KLOCk
+:KR
+:KUNLock
+:KUNLock
+:L0[?] <numeric_value>[DM|VT]
+:L1
+:L1[?]
+:L1[?] <numeric_value>[DM|VT]
+:L2
+:L2[?]
+:L2[?] <numeric_value>[DM|VT]
+:L3[?] <numeric_value>[DM|VT]
+:L4[?] <numeric_value>[DM|VT]
+:L5[?] <numeric_value>[DM|VT]
+:L6[?] <numeric_value>[DM|VT]
+:L7[?] <numeric_value>[DM|VT]
+:L8[?] <numeric_value>[DM|VT]
+:L9[?] <numeric_value>[DM|VT]
+:LA0[?]
+:LA1[?]
+:LDT[?] <numeric_value>[SEC|MS]
+:LE <numeric_value>[DB|DM]
+:LE <numeric_value>[DB|DM|MV]|OF|ON
+:LE0[?]
+:LE1[?]
+:LEA[?]
+:LEL[?]
+:LF:GEN
+:LF:MON AM1S|AM2S|AMD|ANG1s|ANG2s|ANGD|OFF
+:LF:OFF
+:LF:ON
+:LF?
+:LF[?] <numeric_value>[HZ|KH|MH|GH],<numeric_value>[HZ|KH|MH|GH]
+:LFGF:DN
+:LFGF:INC <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:LFGF:RETN
+:LFGF:SIN
+:LFGF:SQU
+:LFGF:TRI
+:LFGF:UP
+:LFGF:VALue <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:LFGF:XFER
+:LFGF[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:LFGL:DN
+:LFGL:INC <numeric_value>[DB]
+:LFGL:RETN
+:LFGL:UNITs DBM|DBMV|DBUV|DBV|MV|UV|V
+:LFGL:UP
+:LFGL:VALue <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:LFGL:XFER
+:LFGL[?] <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:LFSource{1..*}:AM[:DEPTh]:STEP[:INCRement][?] <numeric_value>[PCT]
+:LFSource{1..*}:AM[:DEPTh][?] <numeric_value>[PCT]
+:LFSource{1..*}:AM:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}:AM:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}:AM:PHASe[:ADJust]:STEP[:INCRement][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:AM:PHASe[:ADJust][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:AM:STATe[?] <boolean>
+:LFSource{1..*}:AM:WAVeform[?] SAWTooth|SINE|SQUare|TRIangle|WGNoise
+:LFSource{1..*}:AVIonics:SETup:GSLope
+:LFSource{1..*}:AVIonics:SETup:IMBeacon
+:LFSource{1..*}:AVIonics:SETup:LOCalizer
+:LFSource{1..*}:AVIonics:SETup:MMBeacon
+:LFSource{1..*}:AVIonics:SETup:OMBeacon
+:LFSource{1..*}:AVIonics:SETup:VOR
+:LFSource{1..*}:FM[:DEViation]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}:FM[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}:FM:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}:FM:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}:FM:PHASe[:ADJust]:STEP[:INCRement][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:FM:PHASe[:ADJust][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:FM:STATe[?] <boolean>
+:LFSource{1..*}:FM:WAVeform[?] SAWTooth|SINE|SQUare|TRIangle|WGNoise
+:LFSource{1..*}[:FREQuency{1..*}]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}[:FREQuency{1..*}][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}:LEVel{1..*}:STEP[:INCRement][?] <numeric_value>[V|MV|UV]
+:LFSource{1..*}:LEVel{1..*}[?] <numeric_value>[V|MV|UV]
+:LFSource{1..*}:PHASe{1..*}[:ADJust]:STEP[:INCRement][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:PHASe{1..*}[:ADJust][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:PM[:DEViation]:STEP[:INCRement][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:PM[:DEViation][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:PM:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}:PM:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}:PM:PHASe[:ADJust]:STEP[:INCRement][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:PM:PHASe[:ADJust][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:PM:STATe[?] <boolean>
+:LFSource{1..*}:PM:WAVeform[?] SAWTooth|SINE|SQUare|TRIangle|WGNoise
+:LFSource{1..*}:PULSe:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}:PULSe:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:LFSource{1..*}:PULSe:PHASe[:ADJust]:STEP[:INCRement][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:PULSe:PHASe[:ADJust][?] <numeric_value>[DEG|RAD]
+:LFSource{1..*}:PULSe[:STATe][?] <boolean>
+:LFSource{1..*}:STATe{1..*}[?] <boolean>
+:LFSource{1..*}:TRIGger[:IMMediate]
+:LFSource{1..*}:TRIGger:SOURce[?] CONTinuous|EXTernal
+:LFSource{1..*}:WAVeform{1..*}[?] SAWTooth|SINE|SQUare|TRIangle|WGNoise
+:LGS[?]
+:LIB[?] <numeric_value>
+:LIE[?] <numeric_value>
+:LIN[?]
+:LIS[?]
+:LM1
+:LM2
+:LO0[?]
+:LO1[?]
+:LOG[?]
+:LOS[?] <numeric_value>[DB|VT]
+:LP[?] <numeric_value>[DM],<numeric_value>[DM]
+:LS0[?]
+:LS1[?]
+:LSP[?]
+:LST[?]
+:LU0[?]
+:LU1[?]
+:LU2[?]
+:LU3[?]
+:LU4[?]
+:LU5[?]
+:LUR[?]
+:LUS[?]
+:LV0[?]
+:LV1[?]
+:LVP[?]
+:Level:AF:OFF[?]
+:Level:AF:ON
+:Level:AF:Var_step[?] <numeric_value>[V|MV|UV]
+:Level:AF[?] <numeric_value>[V|MV|UV]
+:Level[:RF]:CONtrol
+:Level[:RF]:CONtrol:Calibration
+:Level[:RF]:CONtrol:Lookup
+:Level[:RF]:CORRECTION:OFF
+:Level[:RF]:CORRECTION:ON
+:Level[:RF]:CORRECTION[?] <numeric_value>[DB]
+:Level[:RF]:CORRECT_Index[?] <numeric_value>
+:Level[:RF]:Emf[?] <numeric_value>[DBUV|DB|V|MV|UV]
+:Level[:RF]:Marker[?] <numeric_value>[DBM|DBUV|DB|V|MV|UV]
+:Level[:RF]:OFF
+:Level[:RF]:OFFSet:OFF
+:Level[:RF]:OFFSet:ON
+:Level[:RF]:OFFSet[?] <numeric_value>[DB]
+:Level[:RF]:ON
+:Level[:RF]:STArt[?] <numeric_value>[DBM|DBUV|DB|V|MV|UV]
+:Level[:RF]:STEp[?] <numeric_value>[DB]
+:Level[:RF]:STOp[?] <numeric_value>[DBM|DBUV|DB|V|MV|UV]
+:Level[:RF]:Var_step[?] <numeric_value>[DB]
+:Level[:RF][?] <numeric_value>[DBM|DBUV|DB|V|MV|UV]
+:M0
+:M0
+:M0[?] <numeric_value>[HZ|KH|MH|GH]
+:M1 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:M1 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:M1 <numeric_value>[HZ|KZ|MZ|GZ|PC|DG]
+:M1[?] <numeric_value>[HZ|KH|MH|GH]
+:M2 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:M2 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:M2 <numeric_value>[HZ|KZ|MZ|GZ|PC|DG]
+:M2[?] <numeric_value>[HZ|KH|MH|GH]
+:M3 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:M3 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:M3 <numeric_value>[HZ|KZ|MZ|GZ|PC|DG]
+:M3[?] <numeric_value>[HZ|KH|MH|GH]
+:M4 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:M4 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:M4 <numeric_value>[HZ|KZ|MZ|GZ|PC|DG]
+:M4[?] <numeric_value>[HZ|KH|MH|GH]
+:M5 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:M5 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:M5[?] <numeric_value>[HZ|KH|MH|GH]
+:M6[?] <numeric_value>[HZ|KH|MH|GH]
+:M7[?] <numeric_value>[HZ|KH|MH|GH]
+:M8[?] <numeric_value>[HZ|KH|MH|GH]
+:M9[?] <numeric_value>[HZ|KH|MH|GH]
+:MA0
+:MA1
+:MA2
+:MA3
+:MA4
+:MA5
+:MAN[?]
+:MARKer{1..*}:AOFF
+:MARKer{1..*}[:FREQuency]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:MARKer{1..*}[:FREQuency][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:MARKer{1..*}:STATe[?] <boolean>
+:MB0[?]
+:MB1[?]
+:MB2[?]
+:MC
+:MD0
+:MD1 M1M2|M1M3|M1M4|M1M5|M2M1|M2M3|M2M4|M2M5|M3M1|M3M2|M3M4|M3M5|M4M1|M4M2|M4M3|M4M5|M5M1|M5M2|M5M3|M5M4
+:ME
+:ME0[?]
+:ME1[?]
+:MEMory
+:MEMory
+:MEMory
+:MEMory:CATalog[:ALL]?
+:MEMory:CATalog[:ALL]?
+:MEMory:CATalog[:ALL]?
+:MEMory:CATalog[:ALL]?
+:MEMory:CATalog:BINary?
+:MEMory:CATalog:BIT?
+:MEMory:CATalog:CDMA?
+:MEMory:CATalog:DMOD?
+:MEMory:CATalog:DWCDma?
+:MEMory:CATalog:FCDMa?
+:MEMory:CATalog:FIR?
+:MEMory:CATalog:FSK?
+:MEMory:CATalog:IQ?
+:MEMory:CATalog:LIST?
+:MEMory:CATalog:LIST?
+:MEMory:CATalog:LIST?
+:MEMory:CATalog:MCDMa?
+:MEMory:CATalog:MDMod?
+:MEMory:CATalog:MDWCdma?
+:MEMory:CATalog:MFCDma?
+:MEMory:CATalog:MTONe?
+:MEMory:CATalog:RCDMa?
+:MEMory:CATalog:SEQ?
+:MEMory:CATalog:SHAPe?
+:MEMory:CATalog:STATe?
+:MEMory:CATalog:TABLe?
+:MEMory:CATalog:UFLT?
+:MEMory:CATalog:UFLT?
+:MEMory:CATalog:UFLT?
+:MEMory:CATalog:UWCDma?
+:MEMory:COPY[:NAME] <string>,<string>
+:MEMory:COPY[:NAME] <string>,<string>
+:MEMory:COPY[:NAME] <string>,<string>
+:MEMory:DATA:APPend[?] <string>,<block_data>
+:MEMory:DATA:APPend[?] <string>,<block_data>
+:MEMory:DATA:APPend[?] <string>,<block_data>
+:MEMory:DATA:BIT[?] <string>,<numeric_value>,<block_data>
+:MEMory:DATA:FIR[?] <string>,<numeric_value>,<numeric_value>,<numeric_value>
+:MEMory:DATA:FSK[?] <string>,<numeric_value>,<numeric_value>
+:MEMory:DATA:IQ[?] <string>,<numeric_value>,<numeric_value>
+:MEMory:DATA:PRAM:FILE:BLOCk[?] <string>,<block_data>
+:MEMory:DATA:PRAM:FILE:LIST[?] <string>,<block_data>
+:MEMory:DATA:PRAM:FILE?
+:MEMory:DATA:PRAM?
+:MEMory:DATA:SHAPe[?] <string>,<numeric_value>,<numeric_value>
+:MEMory:DATA:UNPRotected[?] <string>,<block_data>
+:MEMory:DATA:UNPRotected[?] <string>,<block_data>
+:MEMory:DATA[?] <string>,<block_data>
+:MEMory:DATA[?] <string>,<block_data>
+:MEMory:DATA[?] <string>,<block_data>
+:MEMory:DELete:ALL[?]
+:MEMory:DELete:ALL[?]
+:MEMory:DELete:ALL[?]
+:MEMory:DELete:BINary
+:MEMory:DELete:BIT
+:MEMory:DELete:CDMA
+:MEMory:DELete:DMOD
+:MEMory:DELete:DWCDma
+:MEMory:DELete:FCDMa
+:MEMory:DELete:FIR
+:MEMory:DELete:FSK
+:MEMory:DELete:IQ
+:MEMory:DELete:LIST
+:MEMory:DELete:LIST
+:MEMory:DELete:LIST
+:MEMory:DELete:MCDMa
+:MEMory:DELete:MDMod
+:MEMory:DELete:MDWCdma
+:MEMory:DELete:MFCDma
+:MEMory:DELete:MTONe
+:MEMory:DELete[:NAME] <string>
+:MEMory:DELete[:NAME] <string>
+:MEMory:DELete[:NAME] <string>
+:MEMory:DELete:RCDMa
+:MEMory:DELete:SEQ
+:MEMory:DELete:SHAPe
+:MEMory:DELete:STATe
+:MEMory:DELete:UFLT
+:MEMory:DELete:UFLT
+:MEMory:DELete:UFLT
+:MEMory:DELete:UWCDma
+:MEMory:FREE[:ALL]?
+:MEMory:FREE[:ALL]?
+:MEMory:FREE:MACRo?
+:MEMory:LOAD
+:MEMory:LOAD
+:MEMory:LOAD
+:MEMory:LOAD:LIST <string>
+:MEMory:LOAD:LIST <string>
+:MEMory:LOAD:LIST <string>
+:MEMory:MOVE <string>,<string>
+:MEMory:MOVE <string>,<string>
+:MEMory:MOVE <string>,<string>
+:MEMory:NSTates?
+:MEMory:NSTates?
+:MEMory:RAM:INITialize[:ALL]
+:MEMory:SIZE? <string>
+:MEMory:STATe
+:MEMory:STATe:COMMent[?] <numeric_value>,<numeric_value>,<string>
+:MEMory:STORe
+:MEMory:STORe
+:MEMory:STORe
+:MEMory:STORe:LIST <string>
+:MEMory:STORe:LIST <string>
+:MEMory:STORe:LIST <string>
+:MEMory:TABLe:FREQuency:POINts? <numeric_value>
+:MEMory:TABLe:FREQuency[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ],<numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+:MEMory:TABLe:LOSS[:MAGNitude]:POINts? <numeric_value>
+:MEMory:TABLe:LOSS[:MAGNitude][?] <numeric_value>[DB],<numeric_value>[DB]
+:MEMory:TABLe:SELect[?] FDAT1|FDAT2|FDAT3|FDAT4
+:MEmory:Fast
+:MEmory:Fast:STArt[?] <numeric_value>
+:MEmory:Fast:STOp[?] <numeric_value>
+:MEmory:STArt[?] <numeric_value>
+:MEmory:STOp[?] <numeric_value>
+:MF <numeric_value>[HZ|KZ|MZ|GZ]
+:MF <numeric_value>[HZ|KZ|MZ|GZ]
+:MF0
+:MF1
+:MF2
+:MF3
+:MF4
+:MF5
+:MG
+:MH0
+:MH1
+:MH2
+:MH3
+:MH4
+:MH5
+:MI <numeric_value>
+:MKO[?]
+:ML <numeric_value>[VL|MV|UV]
+:MMEMory:ALIases?
+:MMEMory:ATTRibute[?] <string>,<string>
+:MMEMory:CATalog[:ALL]? <string>
+:MMEMory:CATalog:LENGth? <string>
+:MMEMory:CATalog? <string>
+:MMEMory:CATalog? <string>
+:MMEMory:CATalog? <string>,ALL|WTIMe
+:MMEMory:CDIRectory[?] <string>
+:MMEMory:COPY <string>,<string>
+:MMEMory:COPY <string>,<string>
+:MMEMory:COPY <string>,<string>
+:MMEMory:COPY <string>,<string>
+:MMEMory:DATA[?] <string>,<block_data>
+:MMEMory:DATA[?] <string>,<block_data>
+:MMEMory:DATA[?] <string>,<block_data>
+:MMEMory:DATA[?] <string>,<block_data>,APPend
+:MMEMory:DCATalog:LENGth? <string>
+:MMEMory:DCATalog? <string>
+:MMEMory:DELete <string>
+:MMEMory:DELete[:NAME] <string>
+:MMEMory:DELete[:NAME] <string>
+:MMEMory:DELete[:NAME] <string>
+:MMEMory:DELete:NVWFm
+:MMEMory:DELete:NVWFm
+:MMEMory:DELete:WFM
+:MMEMory:DELete:WFM
+:MMEMory:DELete:WFM1
+:MMEMory:DRIVes?
+:MMEMory:HEADer
+:MMEMory:HEADer:CLEar <string>
+:MMEMory:HEADer:DESCription <string>,<string>
+:MMEMory:LOAD
+:MMEMory:LOAD
+:MMEMory:LOAD
+:MMEMory:LOAD:ITEM <string>,<string>
+:MMEMory:LOAD:LIST <string>
+:MMEMory:LOAD:LIST <string>
+:MMEMory:LOAD:LIST <string>
+:MMEMory:LOAD:MACRo <string>,<string>,<string>
+:MMEMory:LOAD:STATe <numeric_value>,<string>,<string>
+:MMEMory:MDIRectory <string>
+:MMEMory:MOVE <string>,<string>
+:MMEMory:MOVE <string>,<string>
+:MMEMory:MOVE <string>,<string>
+:MMEMory:MOVE <string>,<string>
+:MMEMory:MSIS[?] <string>
+:MMEMory:RCL <string>,<string>
+:MMEMory:RDIRectory <string>
+:MMEMory:SAV <string>,<string>
+:MMEMory:STORe
+:MMEMory:STORe
+:MMEMory:STORe
+:MMEMory:STORe:ITEM <string>,<string>
+:MMEMory:STORe:LIST <string>
+:MMEMory:STORe:LIST <string>
+:MMEMory:STORe:LIST <string>
+:MMEMory:STORe:MACRo <string>,<string>,<string>
+:MMEMory:STORe:STATe <integer>,<string>,<string>
+:MNT[?]
+:MO
+:MO
+:MO <numeric_value>
+:MOD:OFF
+:MOD:OFF
+:MOD:ON
+:MOD:ON
+:MOD?
+:MOD?
+:MODE[?] AM|AM1|AM2|BEAR|DDM|DIGital|DME|FM|FM1|FM2|PM|PM1|PM2|PULSe|SDM|VECTor|VOR|WBFM,AM|AM1|AM2|BEAR|DDM|DME|FM|FM1|FM2|PM|PM1|PM2|PULSe|SDM|VOR|WBFM,AM|AM1|AM2|BEAR|DDM|FM|FM1|FM2|PM|PM1|PM2|PULSe|SDM|VOR|WBFM,AM|AM1|AM2|BEAR|DDM|DME|FM|FM1|FM2|PM|PM1|PM2|PULSe|SDM|VOR|WBFM
+:MODE[?] AM|AM1|AM2|FM|FM1|FM2|FSK2l|FSK4l|PM|PM1|PM2|PULSe,AM|AM1|AM2|FM|FM1|FM2|FSK2l|FSK4l|PM|PM1|PM2|PULSe,AM|AM1|AM2|FM|FM1|FM2|FSK2l|FSK4l|PM|PM1|PM2|PULSe
+:MODulation:STATe[?] <boolean>
+:MOM[?]
+:MOdulation:Normal
+:MOdulation:Reduced
+:MOdulation?
+:MP0
+:MP0
+:MP1
+:MP1
+:MP2
+:MP3
+:MP4
+:MP5
+:MPN[?]
+:MPP[?]
+:MPRot:OFF
+:MPRot:ON
+:MPRot:STARt <numeric_value>
+:MPRot:STOP <numeric_value>
+:MPRot?
+:MR <numeric_value>
+:MR[?]
+:MRME <numeric_value>
+:MS
+:MS <numeric_value>
+:MS <numeric_value>[PC]
+:MSEQ:MODE OFF|SEQ1|SEQ2|SEQ3|SEQ4|SEQ5|SEQ6|SEQ7|SEQ8|SEQ9
+:MSEQ:SEQ{1..*}:STARt <numeric_value>
+:MSEQ:SEQ{1..*}:STOP <numeric_value>
+:MSEQ:SEQ{1..*}?
+:MSEQ?
+:MTRig:OFF
+:MTRig:ON
+:MTRig?
+:MU <numeric_value>[XF]
+:MV
+:MY <numeric_value>[XF]
+:N0
+:N1
+:N1
+:N2
+:N3 <numeric_value>[HZ|KZ|MZ|GZ]
+:N4
+:N5
+:NA
+:NM
+:NO
+:NT
+:NT <numeric_value>,<numeric_value>,<numeric_value>
+:OA
+:OA
+:OAB[?]
+:OAD1[?]
+:OAD2[?]
+:OAR[?]
+:OAS[?]
+:OAW[?]
+:OB
+:OC
+:OC
+:OD
+:OD1[?]
+:OD2[?]
+:OD3[?]
+:OD4[?]
+:ODD[?]
+:ODE[?]
+:ODF[?]
+:ODL[?]
+:ODP[?]
+:ODS[?]
+:OEBW[?]
+:OEM[?]
+:OES[?]
+:OF
+:OF
+:OF0[?]
+:OF1[?]
+:OF2[?]
+:OF3[?]
+:OF4[?]
+:OF5[?]
+:OF6[?]
+:OF7[?]
+:OF8[?]
+:OF9[?]
+:OFD[?]
+:OFH[?]
+:OFK[?]
+:OFL[?]
+:OFM[?]
+:OFR[?]
+:OFS[?]
+:OFW[?]
+:OGI
+:OI
+:OI[?]
+:OK
+:OK
+:OL
+:OL0[?]
+:OL2[?]
+:OL3[?]
+:OL4[?]
+:OL5[?]
+:OL6[?]
+:OL7[?]
+:OL8[?]
+:OL9[?]
+:OLO[?]
+:OM
+:OM0[?]
+:OM1[?]
+:OM2[?]
+:OM3[?]
+:OM4[?]
+:OM5[?]
+:OM6[?]
+:OM7[?]
+:OM8[?]
+:OM9[?]
+:OMD[?]
+:OMM[?]
+:ON
+:OO[?]
+:OP CF|CW|DF|FA|FB|M1|M2|M3|M4|M5|MD|PL|PS|S3|SF|SHCF|SHPL|SHST|SM|SN|SP|ST|TL
+:OP0
+:OP1
+:OP5[?]
+:OPC[?]
+:OPD[?]
+:OPER?
+:OPER?
+:OPHD[?]
+:OPHI[?]
+:OPHM[?]
+:OPHR[?]
+:OPHS[?]
+:OPHW[?]
+:OPM[?]
+:OPO[?]
+:OPP[?]
+:OPR[?]
+:OPT[?]
+:OPW[?]
+:OR
+:OR
+:OS
+:OS
+:OSB[?]
+:OSD[?]
+:OSE[?]
+:OSM[?]
+:OSR[?]
+:OSS[?]
+:OST[?]
+:OUTPut
+:OUTPut:BLANking:AUTO[?] <boolean>
+:OUTPut:BLANking:AUTO[?] <boolean>
+:OUTPut:BLANking:AUTO[?] <boolean>
+:OUTPut:BLANking[:STATe][?] <boolean>
+:OUTPut:BLANking[:STATe][?] <boolean>
+:OUTPut:BLANking[:STATe][?] <boolean>
+:OUTPut:DISable
+:OUTPut:ENABle
+:OUTPut:IMPedance?
+:OUTPut:IMPedance? <numeric_value>
+:OUTPut:MODulation[:STATe][?] <boolean>
+:OUTPut:MODulation[:STATe][?] <boolean>
+:OUTPut:MODulation[:STATe][?] <boolean>
+:OUTPut:PROTection:RETRace[?] <boolean>
+:OUTPut:PROTection[:STATe][?] <boolean>
+:OUTPut:PROTection[:STATe][?] <boolean>
+:OUTPut:PROTection[?] <boolean>
+:OUTPut:STANdby[:STATe][?] <boolean>
+:OUTPut[:STATe]:BACKup[?] <boolean>
+:OUTPut[:STATe][?] <boolean>
+:OUTPut[:STATe][?] <boolean>
+:OUTPut[:STATe][?] <boolean>
+:OUTPut[:STATe][?] <boolean>
+:OUTPut[:STATe][?] <boolean>
+:OUTPut[:STATe][?] <boolean>
+:OUTPut:STATe[?] <boolean>
+:OUTPut[:STATe][?] <boolean>
+:OUTPut[:STATe][?] <boolean>
+:OUTPut[:STATe][?] <boolean>
+:OUTPut[:STATe][?] <boolean>
+:OUTPut?
+:OUTPut{0..3}:AMODe[?] AUTO|FIXed
+:OUTPut{0..3}:BLANk:POLarity[?] INVerted|NORMal
+:OUTPut{0..3}:IMPedance?
+:OUTPut{0..3}:PROTection:CLEar
+:OUTPut{0..3}:PROTection:TRIPped?
+:OUTPut{0..3}:SCALe[?] <numeric_value>
+:OUTPut{0..3}:SOURce:STEReo[?] MPX|PILot
+:OUTPut{0..3}:SOURce[?] <numeric_value>
+:OUTPut{0..3}[:STATe]:PON[?] OFF|UNCHanged
+:OUTPut{0..3}[:STATe][?] <boolean>
+:OUTPut{0..3}:VOLTage[?] <numeric_value>[V|MV|UV]
+:OUTPut{1..*}:AFIXed:RANGe:LOWer?
+:OUTPut{1..*}:AFIXed:RANGe:UPPer?
+:OUTPut{1..*}:AMODe[?] AUTO|FIXed
+:OUTPut{1..*}:ATTenuation[?] <numeric_value>[DB]
+:OUTPut{1..*}:BLANk:POLarity[?] INVerted|NORMal
+:OUTPut{1..*}:IMPedance?
+:OUTPut{1..*}:LIBLanking[?] NORMal|OFF
+:OUTPut{1..*}:POLarity:PULSe[?] INVerted|NORMal
+:OUTPut{1..*}:RFBLanking[?] <boolean>|AUTO
+:OUTPut{1..*}:SCALe[?] <numeric_value>
+:OUTPut{1..*}:SOURce[?] OFF|PULSegen|VIDeo
+:OUTPut{1..*}[:STATe]:PON[?] OFF|UNCHanged
+:OUTPut{1..*}[:STATe][?] <boolean>
+:OUTPut{1..*}:VOLTage[?] <numeric_value>[V|MV|UV|NV|PV]
+:OVN[?]
+:OW1[?]
+:OW2[?]
+:OW3[?]
+:OW4[?]
+:OWT[?]
+:P0
+:P0[?]
+:P1
+:P1 B00000000|B00000001|B00000010|B00000011|B00000100|B00000101|B00000110|B00000111|B00001000|B00001001|B00001010|B00001011|B00001100|B00001101|B00001110|B00001111|B00010000|B00010001|B00010010|B00010011|B00010100|B00010101|B00010110|B00010111|B00011000|B00011001|B00011010|B00011011|B00011100|B00011101|B00011110|B00011111|B00100000|B00100001|B00100010|B00100011|B00100100|B00100101|B00100110|B00100111|B00101000|B00101001|B00101010|B00101011|B00101100|B00101101|B00101110|B00101111|B00110000|B00110001|B00110010|B00110011|B00110100|B00110101|B00110110|B00110111|B00111000|B00111001|B00111010|B00111011|B00111100|B00111101|B00111110|B00111111|B01000000|B01000001|B01000010|B01000011|B01000100|B01000101|B01000110|B01000111|B01001000|B01001001|B01001010|B01001011|B01001100|B01001101|B01001110|B01001111|B01010000|B01010001|B01010010|B01010011|B01010100|B01010101|B01010110|B01010111|B01011000|B01011001|B01011010|B01011011|B01011100|B01011101|B01011110|B01011111|B01100000|B01100001|B01100010|B01100011|B01100100|B01100101|B01100110|B01100111|B01101000|B01101001|B01101010|B01101011|B01101100|B01101101|B01101110|B01101111|B01110000|B01110001|B01110010|B01110011|B01110100|B01110101|B01110110|B01110111|B01111000|B01111001|B01111010|B01111011|B01111100|B01111101|B01111110|B01111111|B10000000|B10000001|B10000010|B10000011|B10000100|B10000101|B10000110|B10000111|B10001000|B10001001|B10001010|B10001011|B10001100|B10001101|B10001110|B10001111|B10010000|B10010001|B10010010|B10010011|B10010100|B10010101|B10010110|B10010111|B10011000|B10011001|B10011010|B10011011|B10011100|B10011101|B10011110|B10011111|B10100000|B10100001|B10100010|B10100011|B10100100|B10100101|B10100110|B10100111|B10101000|B10101001|B10101010|B10101011|B10101100|B10101101|B10101110|B10101111|B10110000|B10110001|B10110010|B10110011|B10110100|B10110101|B10110110|B10110111|B10111000|B10111001|B10111010|B10111011|B10111100|B10111101|B10111110|B10111111|B11000000|B11000001|B11000010|B11000011|B11000100|B11000101|B11000110|B11000111|B11001000|B11001001|B11001010|B11001011|B11001100|B11001101|B11001110|B11001111|B11010000|B11010001|B11010010|B11010011|B11010100|B11010101|B11010110|B11010111|B11011000|B11011001|B11011010|B11011011|B11011100|B11011101|B11011110|B11011111|B11100000|B11100001|B11100010|B11100011|B11100100|B11100101|B11100110|B11100111|B11101000|B11101001|B11101010|B11101011|B11101100|B11101101|B11101110|B11101111|B11110000|B11110001|B11110010|B11110011|B11110100|B11110101|B11110110|B11110111|B11111000|B11111001|B11111010|B11111011|B11111100|B11111101|B11111110|B11111111|D0|D1|D10|D100|D101|D102|D103|D104|D105|D106|D107|D108|D109|D11|D110|D111|D112|D113|D114|D115|D116|D117|D118|D119|D12|D120|D121|D122|D123|D124|D125|D126|D127|D128|D129|D13|D130|D131|D132|D133|D134|D135|D136|D137|D138|D139|D14|D140|D141|D142|D143|D144|D145|D146|D147|D148|D149|D15|D150|D151|D152|D153|D154|D155|D156|D157|D158|D159|D16|D160|D161|D162|D163|D164|D165|D166|D167|D168|D169|D17|D170|D171|D172|D173|D174|D175|D176|D177|D178|D179|D18|D180|D181|D182|D183|D184|D185|D186|D187|D188|D189|D19|D190|D191|D192|D193|D194|D195|D196|D197|D198|D199|D2|D20|D200|D201|D202|D203|D204|D205|D206|D207|D208|D209|D21|D210|D211|D212|D214|D215|D216|D217|D218|D219|D22|D220|D221|D222|D223|D224|D225|D226|D227|D228|D229|D23|D230|D231|D232|D233|D234|D235|D236|D237|D238|D239|D24|D240|D241|D242|D243|D244|D245|D246|D247|D248|D249|D25|D250|D251|D252|D253|D254|D255|D26|D27|D28|D29|D3|D30|D31|D32|D33|D34|D35|D36|D37|D38|D39|D4|D40|D41|D42|D43|D44|D45|D46|D47|D48|D49|D5|D50|D51|D52|D53|D54|D55|D56|D57|D58|D59|D6|D60|D61|D62|D63|D64|D65|D66|D67|D68|D69|D7|D70|D71|D72|D73|D74|D75|D76|D77|D78|D79|D8|D80|D81|D82|D83|D84|D85|D86|D87|D88|D89|D9|D90|D91|D92|D93|D94|D95|D96|D97|D98|D99|H00|H01|H02|H03|H04|H05|H06|H07|H08|H09|H0A|H0B|H0C|H0D|H0E|H0F|H10|H11|H12|H13|H14|H15|H16|H17|H18|H19|H1A|H1B|H1C|H1D|H1E|H1F|H20|H21|H22|H23|H24|H25|H26|H27|H28|H29|H2A|H2B|H2C|H2D|H2E|H2F|H30|H31|H32|H33|H34|H35|H36|H37|H38|H39|H3A|H3B|H3C|H3D|H3E|H3F|H40|H41|H42|H43|H44|H45|H46|H47|H48|H49|H4A|H4B|H4C|H4D|H4E|H4F|H50|H51|H52|H53|H54|H55|H56|H57|H58|H59|H5A|H5B|H5C|H5D|H5E|H5F|H60|H61|H62|H63|H64|H65|H66|H67|H68|H69|H6A|H6B|H6C|H6D|H6E|H6F|H70|H71|H72|H73|H74|H75|H76|H77|H78|H79|H7A|H7B|H7C|H7D|H7E|H7F|H80|H81|H82|H83|H84|H85|H86|H87|H88|H89|H8A|H8B|H8C|H8D|H8E|H8F|H90|H91|H92|H93|H94|H95|H96|H97|H98|H99|H9A|H9B|H9C|H9D|H9E|H9F|HA0|HA1|HA2|HA3|HA4|HA5|HA6|HA7|HA8|HA9|HAA|HAB|HAC|HAD|HAE|HAF|HB0|HB1|HB2|HB3|HB4|HB5|HB6|HB7|HB8|HB9|HBA|HBB|HBC|HBD|HBE|HBF|HC0|HC1|HC2|HC3|HC4|HC5|HC6|HC7|HC8|HC9|HCA|HCB|HCC|HCD|HCE|HCF|HD0|HD1|HD2|HD3|HD4|HD5|HD6|HD7|HD8|HD9|HDA|HDB|HDC|HDD|HDE|HDF|HE0|HE1|HE2|HE3|HE4|HE5|HE6|HE7|HE8|HE9|HEA|HEB|HEC|HED|HEE|HEF|HF0|HF1|HF2|HF3|HF4|HF5|HF6|HF7|HF8|HF9|HFA|HFB|HFC|HFD|HFE|HFF|R0|R1|R2|R3|R4|R5|R6|R7|S0|S1|S2|S3|S4|S5|S6|S7
+:P1[?]
+:P2
+:P2 B00000000|B00000001|B00000010|B00000011|B00000100|B00000101|B00000110|B00000111|B00001000|B00001001|B00001010|B00001011|B00001100|B00001101|B00001110|B00001111|B00010000|B00010001|B00010010|B00010011|B00010100|B00010101|B00010110|B00010111|B00011000|B00011001|B00011010|B00011011|B00011100|B00011101|B00011110|B00011111|B00100000|B00100001|B00100010|B00100011|B00100100|B00100101|B00100110|B00100111|B00101000|B00101001|B00101010|B00101011|B00101100|B00101101|B00101110|B00101111|B00110000|B00110001|B00110010|B00110011|B00110100|B00110101|B00110110|B00110111|B00111000|B00111001|B00111010|B00111011|B00111100|B00111101|B00111110|B00111111|B01000000|B01000001|B01000010|B01000011|B01000100|B01000101|B01000110|B01000111|B01001000|B01001001|B01001010|B01001011|B01001100|B01001101|B01001110|B01001111|B01010000|B01010001|B01010010|B01010011|B01010100|B01010101|B01010110|B01010111|B01011000|B01011001|B01011010|B01011011|B01011100|B01011101|B01011110|B01011111|B01100000|B01100001|B01100010|B01100011|B01100100|B01100101|B01100110|B01100111|B01101000|B01101001|B01101010|B01101011|B01101100|B01101101|B01101110|B01101111|B01110000|B01110001|B01110010|B01110011|B01110100|B01110101|B01110110|B01110111|B01111000|B01111001|B01111010|B01111011|B01111100|B01111101|B01111110|B01111111|B10000000|B10000001|B10000010|B10000011|B10000100|B10000101|B10000110|B10000111|B10001000|B10001001|B10001010|B10001011|B10001100|B10001101|B10001110|B10001111|B10010000|B10010001|B10010010|B10010011|B10010100|B10010101|B10010110|B10010111|B10011000|B10011001|B10011010|B10011011|B10011100|B10011101|B10011110|B10011111|B10100000|B10100001|B10100010|B10100011|B10100100|B10100101|B10100110|B10100111|B10101000|B10101001|B10101010|B10101011|B10101100|B10101101|B10101110|B10101111|B10110000|B10110001|B10110010|B10110011|B10110100|B10110101|B10110110|B10110111|B10111000|B10111001|B10111010|B10111011|B10111100|B10111101|B10111110|B10111111|B11000000|B11000001|B11000010|B11000011|B11000100|B11000101|B11000110|B11000111|B11001000|B11001001|B11001010|B11001011|B11001100|B11001101|B11001110|B11001111|B11010000|B11010001|B11010010|B11010011|B11010100|B11010101|B11010110|B11010111|B11011000|B11011001|B11011010|B11011011|B11011100|B11011101|B11011110|B11011111|B11100000|B11100001|B11100010|B11100011|B11100100|B11100101|B11100110|B11100111|B11101000|B11101001|B11101010|B11101011|B11101100|B11101101|B11101110|B11101111|B11110000|B11110001|B11110010|B11110011|B11110100|B11110101|B11110110|B11110111|B11111000|B11111001|B11111010|B11111011|B11111100|B11111101|B11111110|B11111111|D0|D1|D10|D100|D101|D102|D103|D104|D105|D106|D107|D108|D109|D11|D110|D111|D112|D113|D114|D115|D116|D117|D118|D119|D12|D120|D121|D122|D123|D124|D125|D126|D127|D128|D129|D13|D130|D131|D132|D133|D134|D135|D136|D137|D138|D139|D14|D140|D141|D142|D143|D144|D145|D146|D147|D148|D149|D15|D150|D151|D152|D153|D154|D155|D156|D157|D158|D159|D16|D160|D161|D162|D163|D164|D165|D166|D167|D168|D169|D17|D170|D171|D172|D173|D174|D175|D176|D177|D178|D179|D18|D180|D181|D182|D183|D184|D185|D186|D187|D188|D189|D19|D190|D191|D192|D193|D194|D195|D196|D197|D198|D199|D2|D20|D200|D201|D202|D203|D204|D205|D206|D207|D208|D209|D21|D210|D211|D212|D214|D215|D216|D217|D218|D219|D22|D220|D221|D222|D223|D224|D225|D226|D227|D228|D229|D23|D230|D231|D232|D233|D234|D235|D236|D237|D238|D239|D24|D240|D241|D242|D243|D244|D245|D246|D247|D248|D249|D25|D250|D251|D252|D253|D254|D255|D26|D27|D28|D29|D3|D30|D31|D32|D33|D34|D35|D36|D37|D38|D39|D4|D40|D41|D42|D43|D44|D45|D46|D47|D48|D49|D5|D50|D51|D52|D53|D54|D55|D56|D57|D58|D59|D6|D60|D61|D62|D63|D64|D65|D66|D67|D68|D69|D7|D70|D71|D72|D73|D74|D75|D76|D77|D78|D79|D8|D80|D81|D82|D83|D84|D85|D86|D87|D88|D89|D9|D90|D91|D92|D93|D94|D95|D96|D97|D98|D99|H00|H01|H02|H03|H04|H05|H06|H07|H08|H09|H0A|H0B|H0C|H0D|H0E|H0F|H10|H11|H12|H13|H14|H15|H16|H17|H18|H19|H1A|H1B|H1C|H1D|H1E|H1F|H20|H21|H22|H23|H24|H25|H26|H27|H28|H29|H2A|H2B|H2C|H2D|H2E|H2F|H30|H31|H32|H33|H34|H35|H36|H37|H38|H39|H3A|H3B|H3C|H3D|H3E|H3F|H40|H41|H42|H43|H44|H45|H46|H47|H48|H49|H4A|H4B|H4C|H4D|H4E|H4F|H50|H51|H52|H53|H54|H55|H56|H57|H58|H59|H5A|H5B|H5C|H5D|H5E|H5F|H60|H61|H62|H63|H64|H65|H66|H67|H68|H69|H6A|H6B|H6C|H6D|H6E|H6F|H70|H71|H72|H73|H74|H75|H76|H77|H78|H79|H7A|H7B|H7C|H7D|H7E|H7F|H80|H81|H82|H83|H84|H85|H86|H87|H88|H89|H8A|H8B|H8C|H8D|H8E|H8F|H90|H91|H92|H93|H94|H95|H96|H97|H98|H99|H9A|H9B|H9C|H9D|H9E|H9F|HA0|HA1|HA2|HA3|HA4|HA5|HA6|HA7|HA8|HA9|HAA|HAB|HAC|HAD|HAE|HAF|HB0|HB1|HB2|HB3|HB4|HB5|HB6|HB7|HB8|HB9|HBA|HBB|HBC|HBD|HBE|HBF|HC0|HC1|HC2|HC3|HC4|HC5|HC6|HC7|HC8|HC9|HCA|HCB|HCC|HCD|HCE|HCF|HD0|HD1|HD2|HD3|HD4|HD5|HD6|HD7|HD8|HD9|HDA|HDB|HDC|HDD|HDE|HDF|HE0|HE1|HE2|HE3|HE4|HE5|HE6|HE7|HE8|HE9|HEA|HEB|HEC|HED|HEE|HEF|HF0|HF1|HF2|HF3|HF4|HF5|HF6|HF7|HF8|HF9|HFA|HFB|HFC|HFD|HFE|HFF|R0|R1|R2|R3|R4|R5|R6|R7|S0|S1|S2|S3|S4|S5|S6|S7
+:P3
+:P3
+:PC1[?]
+:PC4[?]
+:PD
+:PDT[?] <numeric_value>[SEC|MS]
+:PDY[?] <numeric_value>[SEC|MS|US|NS]
+:PE0[?]
+:PE1[?]
+:PER[?] <numeric_value>[SEC|MS|US|NS]
+:PF
+:PGEN:DELay <numeric_value>[MS|US|NS]
+:PGEN:D_Delay <numeric_value>[MS|US|NS]
+:PGEN:RATE <numeric_value>[MS|US|NS]
+:PGEN:SOURce EXTernal|INTernal
+:PGEN:STATe DOUBle|SINGle
+:PGEN:TRIGger EXTernal|INTernal
+:PGEN:WIDTh <numeric_value>[MS|US|NS]
+:PGEN?
+:PH0[?]
+:PH1[?]
+:PH2[?]
+:PH7[?]
+:PH8[?]
+:PHASe[:ADJust]:STEP[:INCRement][?] <numeric_value>[DEG|RAD]
+:PHASe[:ADJust][?] <numeric_value>[DEG|RAD]
+:PHASe:REFerence
+:PHAse:Internal <numeric_value>[DEG]
+:PHAse:OFF
+:PHAse:Var_step[?] <numeric_value>[DEG]
+:PHAse[?] <numeric_value>[DEG]
+:PHD[?] <numeric_value>[RD]
+:PHM:Dual[:Ac] <numeric_value>[RAD]
+:PHM:Dual:Internal <numeric_value>[RAD]
+:PHM:External[:Ac] <numeric_value>[RAD]
+:PHM:Internal:Fixed <numeric_value>[RAD]
+:PHM:Internal[:Synthesizer] <numeric_value>[RAD]
+:PHM:OFF
+:PHM:Var_step[?] <numeric_value>[RAD]
+:PHM[?] <numeric_value>[RAD]
+:PHN[?]
+:PHO[?]
+:PHR[?] <numeric_value>[HZ|KH|MH]
+:PHS[?] <numeric_value>[RV]
+:PHV1[?]
+:PHV2[?]
+:PHV3[?]
+:PHV4[?]
+:PHV5[?]
+:PHV6[?]
+:PHV7[?]
+:PHW[?]
+:PI
+:PL
+:PL
+:PL <numeric_value>[DB]
+:PL <numeric_value>[DB|DM]
+:PL <numeric_value>|OF|ON
+:PL1[?]
+:PLW[?] <block_data>
+:PM
+:PM
+:PM <numeric_value>[DG]
+:PM <numeric_value>[RD]
+:PM0
+:PM0[?]
+:PM1
+:PM1[?]
+:PM:COUPling[?] AC|DC|GROund
+:PM[:DEViation]:STEP[:INCRement][?] <numeric_value>[DEG|RAD]
+:PM[:DEViation][?] <numeric_value>[DEG|RAD]
+:PM:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:PM:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:PM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:PM:STATe[?] <boolean>
+:PMD1[?]
+:PMD2[?]
+:PMD3[?]
+:PMD4[?]
+:PMETer[:POWer]? <numeric_value>[DBM|DBMW|DBUV|V|MV|UV]
+:PMR0[?]
+:PMR1[?]
+:PM{1..*}:DEVN <numeric_value>[RAD|RADS]
+:PM{1..*}:DEVN <numeric_value>[RAD|RADS]
+:PM{1..*}:DN
+:PM{1..*}:DN
+:PM{1..*}:EXT1ac
+:PM{1..*}:EXT1alc
+:PM{1..*}:EXT1dc
+:PM{1..*}:EXT2ac
+:PM{1..*}:EXT2alc
+:PM{1..*}:EXT2dc
+:PM{1..*}:EXTDc
+:PM{1..*}:EXTac
+:PM{1..*}:EXTalc
+:PM{1..*}:INC <numeric_value>[RAD|RADS]
+:PM{1..*}:INC <numeric_value>[RAD|RADS]
+:PM{1..*}:INT
+:PM{1..*}:INTF{1..*}
+:PM{1..*}:MODF:DN
+:PM{1..*}:MODF:INC <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:PM{1..*}:MODF:PHASe <numeric_value>[DEG]
+:PM{1..*}:MODF:RETN
+:PM{1..*}:MODF:SIN
+:PM{1..*}:MODF:SQR
+:PM{1..*}:MODF:TRI
+:PM{1..*}:MODF:UP
+:PM{1..*}:MODF:VALue <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:PM{1..*}:MODF:XFER
+:PM{1..*}:MODF[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:PM{1..*}:OFF
+:PM{1..*}:OFF
+:PM{1..*}:ON
+:PM{1..*}:ON
+:PM{1..*}:RETN
+:PM{1..*}:RETN
+:PM{1..*}:UP
+:PM{1..*}:UP
+:PM{1..*}:XFER
+:PM{1..*}:XFER
+:PM{1..*}[?] <numeric_value>[RAD|RADS]
+:PM{1..*}[?] <numeric_value>[RAD|RADS]
+:PNS[?] <numeric_value>[SPS]
+:PO
+:POWer[:OUT]:ALC
+:POWer[:OUT]:ALC:BANDwidth
+:POWer[:OUT]:ALC:BANDwidth:AUTO[?] <boolean>
+:POWer[:OUT]:ATTenuation:AUTO[?] <boolean>
+:POWer[:OUT]:ATTenuation:STEP[:INCRement][?] <numeric_value>[DB]
+:POWer[:OUT]:ATTenuation[?] <numeric_value>[DB]
+:POWer[:OUT]:GAIN[?] <numeric_value>[DB]
+:POWer[:OUT][:LEVel]:STEP[:INCRement][?] <numeric_value>[DB|V|MV|UV]
+:POWer[:OUT][:LEVel]:STEP:UNIT[?] DB|V
+:POWer[:OUT][:LEVel][?] <numeric_value>[DBM|DBMW|DBUV|V|MV|UV]
+:POWer[:OUT]:MUTing[?] <boolean>
+:POWer[:OUT]:STATe[?] <boolean>
+:POWer[:OUT]:ULIMit[?] <numeric_value>[DBM|DBMW|DBUV|V|MV|UV]
+:POWer[:OUT]:UNIT[?] DBM|DBMW|DBUV|V
+:POWer:SOURce:ALC
+:POWer:SOURce:ALC:BANDwidth
+:POWer:SOURce:ALC:BANDwidth:AUTO[?] <boolean>
+:POWer:SOURce:ATTenuation:AUTO[?] <boolean>
+:POWer:SOURce:ATTenuation:STEP[:INCRement][?] <numeric_value>[DB]
+:POWer:SOURce:ATTenuation[?] <numeric_value>[DB]
+:POWer:SOURce:GAIN[?] <numeric_value>[DB]
+:POWer:SOURce[:LEVel]:STEP[:INCRement][?] <numeric_value>[DB|V|MV|UV]
+:POWer:SOURce[:LEVel]:STEP:UNIT[?] DB|V
+:POWer:SOURce[:LEVel][?] <numeric_value>[DBM|DBMW|DBUV|V|MV|UV]
+:POWer:SOURce:MUTing[?] <boolean>
+:POWer:SOURce:STATe[?] <boolean>
+:POWer:SOURce:ULIMit[?] <numeric_value>[DBM|DBMW|DBUV|V|MV|UV]
+:POWer:SOURce:UNIT[?] DBM|DBMW|DBUV|V
+:POWup:MEM <numeric_value>
+:POWup:MODE FACTory|MEMory
+:POWup?
+:PPC[?]
+:PPO[?]
+:PR <numeric_value>
+:PR[?] <numeric_value>[HZ|KH|MH]
+:PReset
+:PS0
+:PS0[?]
+:PS1 <numeric_value>[DB]
+:PS1[?]
+:PSO[?] <numeric_value>[DG]
+:PSZ[?]
+:PT0[?]
+:PT1[?]
+:PTC[?] <block_data>
+:PTF[?]
+:PTG1[?]
+:PTG2[?]
+:PTG3[?]
+:PTG4[?]
+:PTG5[?]
+:PTL[?] <block_data>
+:PTR[?]
+:PU0[?]
+:PU1[?]
+:PU2[?]
+:PULSe:CAL:DISable
+:PULSe:CAL:ENABle
+:PULSe:CAL?
+:PULSe:CONDitioning[?] <boolean>
+:PULSe:DELay:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+:PULSe:DELay[?] <numeric_value>[S|MS|US|NS]
+:PULSe:EXT
+:PULSe:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:PULSe:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|MAHZ|GHZ]
+:PULSe:IMPedance[?] <numeric_value>[OHM|KOHM|MOHM]
+:PULSe:INT
+:PULSe:MODF:VALue <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:PULSe:MODF[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:PULSe:OFF
+:PULSe:OFF
+:PULSe:ON
+:PULSe:ON
+:PULSe:SLOPe[?] BOTH|NEGative|POSitive
+:PULSe:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:PULSe[:STATe][?] <boolean>
+:PULSe:WIDTh:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+:PULSe:WIDTh[?] <numeric_value>[S|MS|US|NS]
+:PULSe?
+:PULSe?
+:PUlse:Inverted
+:PUlse:Normal
+:PUlse:OFF
+:PUlse:ON
+:PUlse[?]
+:PVT[?] <numeric_value>[HZ|KH|MH|GH]
+:PW[?] <numeric_value>[SEC|MS|US|NS]
+:QG?
+:QS
+:R0
+:R0
+:R1
+:R1
+:R1
+:R2
+:R2
+:R3
+:R3
+:R4
+:R5
+:R5
+:RA <numeric_value>[DB]
+:RA <numeric_value>[DB|DM]
+:RB
+:RC <numeric_value>
+:RC <numeric_value>
+:RC <numeric_value>
+:RC <numeric_value>
+:RC <numeric_value>
+:RC <numeric_value>
+:RC0[?]
+:RC1[?]
+:RCF[?]
+:RCL
+:RCL:CFRQ <numeric_value>
+:RCL:CFRQ <numeric_value>
+:RCL:DN
+:RCL:FULL <numeric_value>
+:RCL:FULL <numeric_value>
+:RCL:FXCF <numeric_value>
+:RCL:MEM <numeric_value>
+:RCL:PART <numeric_value>
+:RCL:PXCF <numeric_value>
+:RCL:RAM <numeric_value>
+:RCL:SEQT <numeric_value>
+:RCL:SWEep <numeric_value>
+:RCL:UP
+:RCL[?] <numeric_value>
+:RCM[?]
+:RD
+:RD?
+:RE
+:REFerence_oscil:CORrection <numeric_value>
+:REFerence_oscil:CORrection:STOre
+:REFerence_oscil:External
+:REFerence_oscil:High
+:REFerence_oscil:Internal
+:REFerence_oscil:Low
+:REFerence_oscil[?]
+:REcall <numeric_value>
+:RF <numeric_value>[HZ|KZ|MZ|GZ]
+:RF0
+:RF0
+:RF0[?]
+:RF1
+:RF1
+:RF1[?]
+:RF:Log_step[?] <numeric_value>[PCT]
+:RF:Marker[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:RF:OFFSet:OFF
+:RF:OFFSet:ON
+:RF:OFFSet[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:RF:STArt[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:RF:STEp[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:RF:STOp[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:RF:Var_step[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:RF[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:RFLV:DN
+:RFLV:DN
+:RFLV:HYST:DISable
+:RFLV:HYST:ENABle
+:RFLV:HYST?
+:RFLV:INC <numeric_value>[DB]
+:RFLV:INC <numeric_value>[DB]
+:RFLV:LIMit:DISable
+:RFLV:LIMit:DISable
+:RFLV:LIMit:ENABle
+:RFLV:LIMit:ENABle
+:RFLV:LIMit:SAVE
+:RFLV:LIMit:SAVE
+:RFLV:LIMit:VALue <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:RFLV:LIMit:VALue <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:RFLV:LIMit[?] <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:RFLV:LIMit[?] <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:RFLV:OFF
+:RFLV:OFF
+:RFLV:OFFS:DISable
+:RFLV:OFFS:DISable
+:RFLV:OFFS:ENABle
+:RFLV:OFFS:ENABle
+:RFLV:OFFS:OFF
+:RFLV:OFFS:ON
+:RFLV:OFFS:SAVE
+:RFLV:OFFS:SAVE
+:RFLV:OFFS:VALue <numeric_value>[DB]
+:RFLV:OFFS:VALue <numeric_value>[DB]
+:RFLV:OFFS?
+:RFLV:OFFS[?] <numeric_value>[DB]
+:RFLV:ON
+:RFLV:ON
+:RFLV:RETN
+:RFLV:RETN
+:RFLV:TYPE EMF|PD
+:RFLV:TYPE EMF|PD
+:RFLV:UNITs DBM|DBMV|DBUV|DBV|MV|UV|V
+:RFLV:UNITs DBM|DBMV|DBUV|DBV|MV|UV|V
+:RFLV:UP
+:RFLV:UP
+:RFLV:VALue <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:RFLV:VALue <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:RFLV:XFER
+:RFLV:XFER
+:RFLV[?] <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:RFLV[?] <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:RL <numeric_value>
+:RL <numeric_value>
+:RL[?]
+:RM
+:RM
+:RM1
+:RM2
+:RM?
+:RO
+:RO0[?]
+:RO1[?]
+:ROSCillator
+:ROSCillator:CALibration:STEP[:INCRement]? <numeric_value>
+:ROSCillator:CALibration[?] <numeric_value>
+:ROSCillator:SOURce:AUTO[?] <boolean>
+:ROSCillator:SOURce[?] EXTernal|INTernal
+:RP
+:RP0
+:RP1
+:RPP <numeric_value>
+:RPP:COUNt?
+:RPP:RESet
+:RPP:TRIPped?
+:RPPR
+:RS
+:RS
+:RS <numeric_value>
+:RSN1[?]
+:RSN2[?]
+:RSN3[?]
+:RSN4[?]
+:RSN5[?]
+:RSN6[?]
+:RSN7[?]
+:RSN8[?]
+:RSN9[?]
+:RSS[?]
+:RST[?]
+:RT0[?]
+:RT1[?]
+:RU
+:RU?
+:S0[?]
+:S1
+:S1
+:S1[?]
+:S2
+:S2
+:S3
+:S3 <numeric_value>[HZ|KZ|MZ|GZ]
+:S4
+:S5 <numeric_value>[HZ|KZ|MZ]
+:SA
+:SAF[?]
+:SAM[?]
+:SB0[?]
+:SB1[?]
+:SC0[?]
+:SC1[?]
+:SCPI
+:SCPI?
+:SCR?
+:SCR?
+:SD
+:SD0[?]
+:SD1[?]
+:SDD[?] <numeric_value>[SEC|MS|US|NS]
+:SDE[?] <numeric_value>[SEC|MS|US|NS]
+:SDL[?] <numeric_value>[SEC|MS|US]
+:SDS[?] <numeric_value>[SEC|MS|US|NS]
+:SDT[?] <numeric_value>[SEC|MS]
+:SE
+:SE0[?]
+:SE1[?]
+:SEQT:DUR <string>
+:SEQT:EDIT:EXTD <numeric_value>
+:SEQT:EDIT:LOAD CCIR|DZVei|EEA|EIA|EURO|NATel|USER1|USER2|ZVEi1|ZVEi2
+:SEQT:EDIT:SAVE USER1|USER2
+:SEQT:EDIT:TDUR <numeric_value>[MS]
+:SEQT:EDIT:TFRQ <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SEQT:EDIT:TGAP <numeric_value>[MS]
+:SEQT:EDIT?
+:SEQT:MODE:MOD AM1|AM2|FM1|FM2|NO_Tones|PM1|PM2|TOTal_am|TOTal_fm|TOTal_pm
+:SEQT:MODE:STD CCIR|DTMF|DZVei|EEA|EIA|EURO|NATel|TEMP|USER1|USER2|ZVEi1|ZVEi2
+:SEQT:MODE?
+:SEQT:PARam:EXTD <numeric_value>[MS]
+:SEQT:PARam:RPTT <string>
+:SEQT:PARam:SDLY <numeric_value>[MS]
+:SEQT:PARam:SHFT <numeric_value>[PCT]
+:SEQT:PARam:TDUR <numeric_value>[MS]
+:SEQT:PARam:TGAP <numeric_value>[MS]
+:SEQT:PARam?
+:SEQT:SEND <numeric_value>
+:SEQT:SEQ <string>
+:SEQT:STOP
+:SEQT?
+:SEQuence[:IMMediate]
+:SEQuence:REGister[?] <numeric_value>,<numeric_value>
+:SEQuence:STATe[?] <boolean>
+:SERVice
+:SERVice
+:SERVice
+:SERVice
+:SERVice
+:SERVice:DIRect
+:SERVice:DIRect
+:SERVice:DIRect:COMMand[?] <string>
+:SERVice:DIRect:COMMand[?] <string>
+:SERVice:HCOPy[:EXECute][?]
+:SERVice:HCOPy[:EXECute][?]
+:SERVice:HCOPy:IMAGe:FORMat[?] BMP|JPG|PNG|XPM
+:SERVice:HCOPy:IMAGe:FORMat[?] BMP|JPG|PNG|XPM
+:SERVice:SEQuence
+:SERVice:SEQuence:MODE[?] <numeric_value>
+:SERVice:SPECial:FUNCtion[?] AA|AB|AM|AP|FA|FB|FM|FR|MF|ML|NONE|PL|PM|ST
+:SERVice:SPECial:FUNCtion[?] AA|AB|AM|AP|FA|FB|FM|FR|MF|ML|NONE|PL|PM|ST
+:SERVice:SPECial:FUNCtion[?] AM|AP|DCFM|FM|FR|NONE
+:SERVice:SPECial:SOURce[?] NONE|S1|S2|S3
+:SERVice:TALKer
+:SERVice:TALKer:MODE[?] <numeric_value>
+:SERVice:TEST[?] <numeric_value>
+:SERVice:TEST[?] <numeric_value>
+:SEquence
+:SF <numeric_value>
+:SF <numeric_value>[HZ|KZ|MZ|GZ]
+:SF <numeric_value>[HZ|KZ|MZ|GZ]
+:SF1[?]
+:SF3[?]
+:SG
+:SG
+:SH
+:SHA1
+:SHA20
+:SHA21
+:SHA3
+:SHAK
+:SHAM
+:SHCF <numeric_value>[HZ|KZ|MZ|GZ]
+:SHCW <numeric_value>[HZ|KZ|MZ|GZ]
+:SHFA <numeric_value>
+:SHFB <numeric_value>[HZ|KZ|MZ|GZ]
+:SHGZ <numeric_value>
+:SHHZ
+:SHKZ <numeric_value>
+:SHM0
+:SHM1
+:SHM2
+:SHM3
+:SHM5
+:SHMO
+:SHMP
+:SHMZ <numeric_value>
+:SHPL <numeric_value>[DB]
+:SHPM
+:SHPS <numeric_value>[DB]
+:SHRC
+:SHRP
+:SHS10
+:SHS11
+:SHS3
+:SHSL <numeric_value>[DB]
+:SHST <numeric_value>[HZ|KZ|MZ|GZ]
+:SHSV
+:SHT1
+:SHT20
+:SHT21
+:SHT3
+:SL0
+:SL0[?]
+:SL1 <numeric_value>[DB]
+:SL1[?]
+:SLDF[?] <numeric_value>[HZ|KH|MH|GH]
+:SLF0[?] <numeric_value>[HZ|KH|MH|GH]
+:SLF1[?] <numeric_value>[HZ|KH|MH|GH]
+:SLF2[?] <numeric_value>[HZ|KH|MH|GH]
+:SLF3[?] <numeric_value>[HZ|KH|MH|GH]
+:SLF4[?] <numeric_value>[HZ|KH|MH|GH]
+:SLF5[?] <numeric_value>[HZ|KH|MH|GH]
+:SLF6[?] <numeric_value>[HZ|KH|MH|GH]
+:SLF7[?] <numeric_value>[HZ|KH|MH|GH]
+:SLF8[?] <numeric_value>[HZ|KH|MH|GH]
+:SLF9[?] <numeric_value>[HZ|KH|MH|GH]
+:SLL1[?] <numeric_value>[DM|VT]
+:SLL2[?] <numeric_value>[DM|VT]
+:SLM0[?] <numeric_value>[HZ|KH|MH|GH]
+:SLM1[?] <numeric_value>[HZ|KH|MH|GH]
+:SLM2[?] <numeric_value>[HZ|KH|MH|GH]
+:SLM3[?] <numeric_value>[HZ|KH|MH|GH]
+:SLM4[?] <numeric_value>[HZ|KH|MH|GH]
+:SLM5[?] <numeric_value>[HZ|KH|MH|GH]
+:SLM6[?] <numeric_value>[HZ|KH|MH|GH]
+:SLM7[?] <numeric_value>[HZ|KH|MH|GH]
+:SLM8[?] <numeric_value>[HZ|KH|MH|GH]
+:SLM9[?] <numeric_value>[HZ|KH|MH|GH]
+:SLP[?]
+:SLV[?] <numeric_value>[DM|VT]
+:SM
+:SM
+:SM <numeric_value>[HZ|KZ|MZ|GZ]
+:SM[?]
+:SN <numeric_value>
+:SNR[?] <block_data>
+:SNS[?] <numeric_value>[SPS]
+:SOF[?] <numeric_value>[HZ|KH|MH|GH]
+:SOURce
+[:SOURce]
+:SOURce
+:SOURce
+:SOURce
+:SOURce
+[:SOURce]
+[:SOURce]:AM[:DEPTh]:EXPonential[?] <numeric_value>[DB]
+[:SOURce]:AM[:DEPTh][:LINear][?] <numeric_value>[PCT]
+[:SOURce]:AM[:DEPTh]:STEP[:INCRement][?] <numeric_value>[PCT]
+:SOURce:AM[:DEPTh]:STEP[:INCRement][?] <numeric_value>[PCT]
+:SOURce:AM[:DEPTh]:STEP[:INCRement][?] <numeric_value>[PCT]
+:SOURce:AM[:DEPTh][?] <numeric_value>[PCT]
+[:SOURce]:AM[:DEPTh][?] <numeric_value>[PCT]
+:SOURce:AM[:DEPTh][?] <numeric_value>[PCT]
+:SOURce:AM[:DEPTh][?] <numeric_value>[PCT]
+:SOURce:AM[:DEPTh][?] <numeric_value>[PCT]
+:SOURce:AM[:DEPTh][?] <numeric_value>[PCT]
+[:SOURce]:AM:EXTernal
+[:SOURce]:AM:EXTernal
+[:SOURce]:AM:EXTernal:COUPling[?] AC|DC
+:SOURce:AM:EXTernal:COUPling[?] AC|DC
+[:SOURce]:AM:EXTernal:COUPling[?] AC|DC
+:SOURce:AM:EXTernal:COUPling[?] AC|DC
+:SOURce:AM:EXTernal:COUPling[?] AC|DC
+:SOURce:AM:EXTernal:COUPling[?] AC|DC
+:SOURce:AM:EXTernal:IMPedance[?] <numeric_value>[OHM]
+:SOURce:AM:EXTernal:IMPedance[?] <numeric_value>[OHM]
+[:SOURce]:AM:INTernal
+[:SOURce]:AM:INTernal:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:AM:INTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:AM:INTernal:FUNCtion:SHAPe[?] SINE|SQUare
+[:SOURce]:AM:INTernal{1..*}
+[:SOURce]:AM:INTernal{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:AM:INTernal{1..*}:FUNCtion
+[:SOURce]:AM:INTernal{1..*}:FUNCtion:SHAPe[?] SAW|SINE|SQUare|TRIangle
+[:SOURce]:AM:SOURce[?] EXTernal|INT1|INT2|INTernal|INTernal1|INTernal2,EXTernal|INT1|INTernal|INTernal1
+[:SOURce]:AM:SOURce[?] EXTernal|INTernal
+:SOURce:AM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:SOURce:AM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:SOURce:AM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:SOURce:AM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:SOURce:AM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:SOURce:AM:STATe:EMULation[?] <boolean>
+[:SOURce]:AM:STATe[?] <boolean>
+:SOURce:AM:STATe[?] <boolean>
+[:SOURce]:AM:STATe[?] <boolean>
+:SOURce:AM:STATe[?] <boolean>
+:SOURce:AM:STATe[?] <boolean>
+:SOURce:AM:STATe[?] <boolean>
+:SOURce:AM:STATe[?] <boolean>
+[:SOURce]:AM:TYPE[?] EXPonential|LINear
+[:SOURce]:AM{1..*}[:DEPTh]:EXPonential[?] <numeric_value>[DB]
+[:SOURce]:AM{1..*}[:DEPTh][:LINear]:TRACk[?] <boolean>
+[:SOURce]:AM{1..*}[:DEPTh][:LINear]:TRACk[?] <boolean>
+[:SOURce]:AM{1..*}[:DEPTh][:LINear][?] <numeric_value>[PCT]
+[:SOURce]:AM{1..*}[:DEPTh][:LINear][?] <numeric_value>[PCT]
+[:SOURce]:AM{1..*}[:DEPTh]:STEP[:INCRement][?] <numeric_value>[PCT]
+[:SOURce]:AM{1..*}[:DEPTh]:STEP[:INCRement][?] <numeric_value>[PCT]
+[:SOURce]:AM{1..*}:EXTernal{1..*}
+[:SOURce]:AM{1..*}:EXTernal{1..*}
+[:SOURce]:AM{1..*}:EXTernal{1..*}:COUPling[?] AC|DC
+[:SOURce]:AM{1..*}:EXTernal{1..*}:COUPling[?] AC|DC
+[:SOURce]:AM{1..*}:EXTernal{1..*}:IMPedance[?] <numeric_value>[OHM]
+[:SOURce]:AM{1..*}:INTernal{1..*}
+[:SOURce]:AM{1..*}:INTernal{1..*}
+[:SOURce]:AM{1..*}:INTernal{1..*}:FREQuency:ALTernate:AMPLitude
+[:SOURce]:AM{1..*}:INTernal{1..*}:FREQuency:ALTernate:AMPLitude:PERCent[?] <numeric_value>[PCT]
+[:SOURce]:AM{1..*}:INTernal{1..*}:FREQuency:ALTernate[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:AM{1..*}:INTernal{1..*}:FREQuency:ALTernate[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:AM{1..*}:INTernal{1..*}:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:AM{1..*}:INTernal{1..*}:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:AM{1..*}:INTernal{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:AM{1..*}:INTernal{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:AM{1..*}:INTernal{1..*}:FUNCtion:NOISe[?] GAUSsian|UNIForm
+[:SOURce]:AM{1..*}:INTernal{1..*}:FUNCtion:SHAPe[?] DUALsine|NOISe|RAMP|SINE|SQUare|SWEPtsine|TRIangle
+[:SOURce]:AM{1..*}:INTernal{1..*}:FUNCtion:SHAPe[?] DUALsine|NOISe|RAMP|SINE|SQUare|SWEPtsine|TRIangle
+[:SOURce]:AM{1..*}:INTernal{1..*}:SWEep
+[:SOURce]:AM{1..*}:INTernal{1..*}:SWEep
+[:SOURce]:AM{1..*}:INTernal{1..*}:SWEep:RATE[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:AM{1..*}:INTernal{1..*}:SWEep:TIME[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:AM{1..*}:INTernal{1..*}:SWEep:TRIGger[?] BUS|EXTernal|IMMediate|KEY
+[:SOURce]:AM{1..*}:INTernal{1..*}:SWEep:TRIGger[?] BUS|EXTernal|IMMediate|KEY
+[:SOURce]:AM{1..*}:MODE[?] DEEP|NORMal
+[:SOURce]:AM{1..*}:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INT1|INT2|INTernal|INTernal1|INTernal2
+[:SOURce]:AM{1..*}:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INT1|INTernal|INTernal1
+[:SOURce]:AM{1..*}:STATe[?] <boolean>
+[:SOURce]:AM{1..*}:STATe[?] <boolean>
+[:SOURce]:AM{1..*}:TYPE[?] EXPonential|LINear
+[:SOURce]:AM{1..*}:WIDeband
+[:SOURce]:AM{1..*}:WIDeband:SENSitivity[?] <numeric_value>[DB]
+[:SOURce]:AM{1..*}:WIDeband:STATe[?] <boolean>
+[:SOURce]:AM{1..*}:WIDeband:STATe[?] <boolean>
+[:SOURce]:BURSt
+[:SOURce]:BURSt:SOURce[?] EXTernal|EXTernal1|INTernal|INTernal1
+[:SOURce]:BURSt:STATe[?] <boolean>
+[:SOURce]:CAL
+[:SOURce]:CAL:DCFM
+[:SOURce]:CORRection:CSET
+[:SOURce]:CORRection:CSET:SELect[?] NONE|USER1|USER2|USER3|USER4|USER5
+[:SOURce]:CORRection:FLATness:LOAD[?] <string>
+[:SOURce]:CORRection:FLATness:LOAD[?] <string>
+[:SOURce]:CORRection:FLATness:LOAD[?] <string>
+[:SOURce]:CORRection:FLATness:PAIR <numeric_value>[DB|HZ|KHZ|MHZ|GHZ],<numeric_value>[DB|HZ|KHZ|MHZ|GHZ],<numeric_value>[DB|HZ|KHZ|MHZ|GHZ],<numeric_value>[DB|HZ|KHZ|MHZ|GHZ]
+[:SOURce]:CORRection:FLATness:PAIR <numeric_value>[DB|HZ|KHZ|MHZ|GHZ],<numeric_value>[DB|HZ|KHZ|MHZ|GHZ],<numeric_value>[DB|HZ|KHZ|MHZ|GHZ],<numeric_value>[DB|HZ|KHZ|MHZ|GHZ]
+[:SOURce]:CORRection:FLATness:PAIR <numeric_value>[DB|HZ|KHZ|MHZ|GHZ],<numeric_value>[DB|HZ|KHZ|MHZ|GHZ],<numeric_value>[DB|HZ|KHZ|MHZ|GHZ],<numeric_value>[DB|HZ|KHZ|MHZ|GHZ]
+[:SOURce]:CORRection:FLATness:POINts?
+[:SOURce]:CORRection:FLATness:POINts?
+[:SOURce]:CORRection:FLATness:POINts?
+[:SOURce]:CORRection:FLATness:PRESet
+[:SOURce]:CORRection:FLATness:PRESet
+[:SOURce]:CORRection:FLATness:PRESet
+[:SOURce]:CORRection:FLATness:STORe <string>
+[:SOURce]:CORRection:FLATness:STORe <string>
+[:SOURce]:CORRection:FLATness:STORe <string>
+[:SOURce]:CORRection[:STATe][?] <boolean>
+[:SOURce]:CORRection[:STATe][?] <boolean>
+[:SOURce]:CORRection[:STATe][?] <boolean>
+[:SOURce]:CORRection[:STATe][?] <boolean>
+[:SOURce]:DM
+[:SOURce]:DM
+[:SOURce]:DM:BBFilter[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]|THRough
+[:SOURce]:DM:EXTernal
+[:SOURce]:DM:EXTernal
+[:SOURce]:DM:EXTernal:ALC:BANDwidth[?] <numeric_value>|NARRow|NORMal
+[:SOURce]:DM:EXTernal:ALC:BWIDth[?] <numeric_value>|NARRow|NORMal
+[:SOURce]:DM:EXTernal:FILTer:AUTO[?] <boolean>
+[:SOURce]:DM:EXTernal:FILTer[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]|THRough
+[:SOURce]:DM:EXTernal:HCRest[:STATe][?] <boolean>
+[:SOURce]:DM:EXTernal:HICRest[:STATe][?] <boolean>
+[:SOURce]:DM:EXTernal:POLarity[?] INVert|NORMal
+[:SOURce]:DM:EXTernal:POLarity[?] INVert|NORMal
+[:SOURce]:DM:EXTernal:SOURce[?] BBG1|EXT600|EXTernal|INTernal|OFF|SUM
+[:SOURce]:DM:IQADjustment:BBG
+[:SOURce]:DM:IQADjustment:BBG:QSKew[?] <numeric_value>[DEG]
+[:SOURce]:DM:IQADjustment:DELay[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:DM:IQADjustment:EXTernal
+[:SOURce]:DM:IQADjustment:EXTernal:COFFset[?] <numeric_value>[V|MV|UV|DBMV]
+[:SOURce]:DM:IQADjustment:EXTernal:DIOFfset[?] <numeric_value>[V|MV|UV|DBMV]
+[:SOURce]:DM:IQADjustment:EXTernal:DQOFfset[?] <numeric_value>[V|MV|UV|DBMV]
+[:SOURce]:DM:IQADjustment:EXTernal:GAIN[?] <numeric_value>[DB]
+[:SOURce]:DM:IQADjustment:EXTernal:IOFFset[?] <numeric_value>[DB]
+[:SOURce]:DM:IQADjustment:EXTernal:IQATten[?] <numeric_value>[DB]
+[:SOURce]:DM:IQADjustment:EXTernal:QOFFset[?] <numeric_value>[V|MV|UV|DBMV]
+[:SOURce]:DM:IQADjustment:GAIN[?] <numeric_value>[DB]
+[:SOURce]:DM:IQADjustment:GAIN[?] <numeric_value>[DB]
+[:SOURce]:DM:IQADjustment:IOFFset[?] <numeric_value>[PCT]
+[:SOURce]:DM:IQADjustment:IOFFset[?] <numeric_value>[PCT]
+[:SOURce]:DM:IQADjustment:QOFFset[?] <numeric_value>[PCT]
+[:SOURce]:DM:IQADjustment:QOFFset[?] <numeric_value>[PCT]
+[:SOURce]:DM:IQADjustment:QSKew[?] <numeric_value>[DEG]
+[:SOURce]:DM:IQADjustment:QSKew[?] <numeric_value>[DEG]
+[:SOURce]:DM:IQADjustment:SKEW[:DELay][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:DM:IQADjustment:SKEW:PATH[?] BB|RF
+[:SOURce]:DM:IQADjustment:SKEW[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:DM:IQADjustment[:STATe][?] <boolean>
+[:SOURce]:DM:IQADjustment[:STATe][?] <boolean>
+[:SOURce]:DM:MODulation
+[:SOURce]:DM:MODulation:ATTen:AUTO[?] <boolean>
+[:SOURce]:DM:MODulation:ATTen[?] <numeric_value>[DB]
+[:SOURce]:DM:MODulation:FILTer:AUTO[?] <boolean>
+[:SOURce]:DM:MODulation:FILTer[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]|THRough
+[:SOURce]:DM:POLarity[:ALL][?] INVert|NORMal
+[:SOURce]:DM:POLarity[:ALL][?] INVert|NORMal
+[:SOURce]:DM:SKEW:PATH[?] BB|RF
+[:SOURce]:DM:SKEW[:STATe][?] <boolean>
+[:SOURce]:DM:SOURce[?] EXTernal|INTernal|SUM
+[:SOURce]:DM:SOURce{1..*}[?] BBG1|EXT600|EXTernal|INTernal|OFF|SUM
+[:SOURce]:DM:SRATio[?] <numeric_value>[DB]
+[:SOURce]:DM:STATe[?] <boolean>
+[:SOURce]:DM:STATe[?] <boolean>
+[:SOURce]:FM[:DEViation]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FM[:DEViation]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FM[:DEViation]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FM[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FM[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FM[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FM[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FM[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM:EXTernal
+[:SOURce]:FM:EXTernal
+[:SOURce]:FM:EXTernal:COUPling[?] AC|DC
+:SOURce:FM:EXTernal:COUPling[?] AC|DC
+[:SOURce]:FM:EXTernal:COUPling[?] AC|DC
+:SOURce:FM:EXTernal:COUPling[?] AC|DC
+:SOURce:FM:EXTernal:COUPling[?] AC|DC
+:SOURce:FM:EXTernal:COUPling[?] AC|DC
+:SOURce:FM:EXTernal:IMPedance[?] <numeric_value>[OHM]
+:SOURce:FM:EXTernal:IMPedance[?] <numeric_value>[OHM]
+[:SOURce]:FM:INTernal
+[:SOURce]:FM:INTernal:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM:INTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM:INTernal:FUNCtion:SHAPe[?] SINE|SQUare
+[:SOURce]:FM:INTernal{1..*}
+[:SOURce]:FM:INTernal{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM:INTernal{1..*}:FUNCtion
+[:SOURce]:FM:INTernal{1..*}:FUNCtion:SHAPe[?] SAW|SINE|SQUare|TRIangle
+[:SOURce]:FM:SOURce[?] EXTernal|INT1|INT2|INTernal|INTernal1|INTernal2,EXTernal|INT1|INTernal|INTernal1
+[:SOURce]:FM:SOURce[?] EXTernal|INTernal
+:SOURce:FM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:SOURce:FM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:SOURce:FM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:SOURce:FM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:SOURce:FM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:SOURce:FM:STATe:EMULation[?] <boolean>
+[:SOURce]:FM:STATe[?] <boolean>
+:SOURce:FM:STATe[?] <boolean>
+[:SOURce]:FM:STATe[?] <boolean>
+:SOURce:FM:STATe[?] <boolean>
+:SOURce:FM:STATe[?] <boolean>
+:SOURce:FM:STATe[?] <boolean>
+:SOURce:FM:STATe[?] <boolean>
+[:SOURce]:FM{1..*}[:DEViation]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM{1..*}[:DEViation]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM{1..*}[:DEViation]:TRACk[?] <boolean>
+[:SOURce]:FM{1..*}[:DEViation]:TRACk[?] <boolean>
+[:SOURce]:FM{1..*}[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM{1..*}[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM{1..*}:EXTernal{1..*}
+[:SOURce]:FM{1..*}:EXTernal{1..*}
+[:SOURce]:FM{1..*}:EXTernal{1..*}:COUPling[?] AC|DC
+[:SOURce]:FM{1..*}:EXTernal{1..*}:COUPling[?] AC|DC
+[:SOURce]:FM{1..*}:EXTernal{1..*}:IMPedance[?] <numeric_value>[OHM]
+[:SOURce]:FM{1..*}:INTernal{1..*}
+[:SOURce]:FM{1..*}:INTernal{1..*}
+[:SOURce]:FM{1..*}:INTernal{1..*}:FREQuency:ALTernate:AMPLitude
+[:SOURce]:FM{1..*}:INTernal{1..*}:FREQuency:ALTernate:AMPLitude:PERCent[?] <numeric_value>[PCT]
+[:SOURce]:FM{1..*}:INTernal{1..*}:FREQuency:ALTernate[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM{1..*}:INTernal{1..*}:FREQuency:ALTernate[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM{1..*}:INTernal{1..*}:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM{1..*}:INTernal{1..*}:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM{1..*}:INTernal{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM{1..*}:INTernal{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM{1..*}:INTernal{1..*}:FUNCtion:NOISe[?] GAUSsian|UNIForm
+[:SOURce]:FM{1..*}:INTernal{1..*}:FUNCtion:SHAPe[?] DUALsine|NOISe|RAMP|SINE|SQUare|SWEPtsine|TRIangle
+[:SOURce]:FM{1..*}:INTernal{1..*}:FUNCtion:SHAPe[?] DUALsine|NOISe|RAMP|SINE|SQUare|SWEPtsine|TRIangle
+[:SOURce]:FM{1..*}:INTernal{1..*}:SWEep
+[:SOURce]:FM{1..*}:INTernal{1..*}:SWEep
+[:SOURce]:FM{1..*}:INTernal{1..*}:SWEep:RATE[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FM{1..*}:INTernal{1..*}:SWEep:TIME[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:FM{1..*}:INTernal{1..*}:SWEep:TRIGger[?] BUS|EXTernal|IMMediate|KEY
+[:SOURce]:FM{1..*}:INTernal{1..*}:SWEep:TRIGger[?] BUS|EXTernal|IMMediate|KEY
+[:SOURce]:FM{1..*}:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INT1|INT2|INTernal|INTernal1|INTernal2
+[:SOURce]:FM{1..*}:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INT1|INTernal|INTernal1
+[:SOURce]:FM{1..*}:STATe[?] <boolean>
+[:SOURce]:FM{1..*}:STATe[?] <boolean>
+[:SOURce]:FREQuency
+[:SOURce]:FREQuency:CENTer[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:CENTer[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:CENTer[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:CENTer[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:CHANnels:BAND[?] B15|B390|B420|B450|B460|B480|B8|B850|B915|BDCS|BEGSm|BPCS|BPGSm|BRGSm|DECT|GM450|M15|M380|M410|M450|M480|M8|M850|M870|MDCS|MEGSm|MPCS|MPGSm|MRGSm|NBASe|NMOBile|PHS
+[:SOURce]:FREQuency:CHANnels:NUMBer[?] <numeric_value>
+[:SOURce]:FREQuency:CHANnels[:STATe][?] <boolean>
+:SOURce:FREQuency[:CW]:BACKup[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency[:CW]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency[:CW]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency[:CW]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency[:CW]:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:FIXed:BACKup[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:FIXed:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:FIXed:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:FIXed:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:MANual[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:MODE[?] ALSW|CW|FIXed|LIST|LIST1|LIST2|LIST3|LIST4|SWCW|SWE1|SWEep|SWEep1
+[:SOURce]:FREQuency:MODE[?] CW|FIXed|LIST
+[:SOURce]:FREQuency:MODE[?] CW|FIXed|LIST|SWEep
+[:SOURce]:FREQuency:MODE[?] CW|FIXed|LIST|SWEep
+:SOURce:FREQuency:MODE[?] CW|FIXed|SWEep
+:SOURce:FREQuency:MODE[?] CW|FIXed|SWEep
+:SOURce:FREQuency:MODE[?] CW|FIXed|SWEep
+[:SOURce]:FREQuency:MULTiplier[?] <numeric_value>
+[:SOURce]:FREQuency:MULTiplier[?] <numeric_value>
+[:SOURce]:FREQuency:MULTiplier[?] <numeric_value>
+[:SOURce]:FREQuency:MULTiplier[?] <numeric_value>
+:SOURce:FREQuency:MULTiplier[?] <numeric_value>
+[:SOURce]:FREQuency:OFFSet:STATe[?] <boolean>
+[:SOURce]:FREQuency:OFFSet:STATe[?] <boolean>
+[:SOURce]:FREQuency:OFFSet:STATe[?] <boolean>
+[:SOURce]:FREQuency:OFFSet[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:OFFSet[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:OFFSet[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:OFFSet[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:OFFSet[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:OFFSet[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:PHASe
+[:SOURce]:FREQuency:PHASe:CONTinuous
+[:SOURce]:FREQuency:PHASe:CONTinuous:HIGH?
+[:SOURce]:FREQuency:PHASe:CONTinuous:LOW?
+[:SOURce]:FREQuency:PHASe:CONTinuous:MODE NARRow|WIDE
+[:SOURce]:FREQuency:PHASe:CONTinuous:STATe[?] <boolean>
+[:SOURce]:FREQuency:REFerence:SET
+[:SOURce]:FREQuency:REFerence:SET
+[:SOURce]:FREQuency:REFerence:STATe[?] <boolean>
+[:SOURce]:FREQuency:REFerence:STATe[?] <boolean>
+[:SOURce]:FREQuency:REFerence:STATe[?] <boolean>
+[:SOURce]:FREQuency:REFerence:STATe[?] <boolean>
+[:SOURce]:FREQuency:REFerence[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:REFerence[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:REFerence[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:REFerence[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:SPAN[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:SPAN[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:SPAN[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:SPAN{1..*}:FULL[?]
+[:SOURce]:FREQuency:SPAN{1..*}[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:STARt[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:STARt[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:STARt[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:STARt[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:STARt[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:STARt[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:STARt{1..*}[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:STOP[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:STOP[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:STOP[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:STOP[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:STOP[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:FREQuency:STOP[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:STOP{1..*}[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:FREQuency:SYNThesis[?] <numeric_value>
+[:SOURce]:LFOutput
+[:SOURce]:LFOutput
+[:SOURce]:LFOutput:AMPLitude[?] <numeric_value>[V|MV|UV|DBMV]
+[:SOURce]:LFOutput:AMPLitude[?] <numeric_value>[V|MV|UV|DBMV]
+:SOURce:LFOutput:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:LFOutput:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:LFOutput:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:LFOutput:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:LFOutput:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LFOutput:FUNCtion
+[:SOURce]:LFOutput:FUNCtion:FREQuency:ALTernate:AMPLitude
+[:SOURce]:LFOutput:FUNCtion:FREQuency:ALTernate:AMPLitude:PERCent[?] <numeric_value>[PCT]
+[:SOURce]:LFOutput:FUNCtion:FREQuency:ALTernate[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LFOutput:FUNCtion:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LFOutput:FUNCtion:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LFOutput:FUNCtion:PERiod:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:LFOutput:FUNCtion:PERiod[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:LFOutput:FUNCtion:PWIDth:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:LFOutput:FUNCtion:PWIDth[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:LFOutput:FUNCtion:SHAPe[?] DUALsine|NOISe|RAMP|SINE|SQUare|SWEPtsine|TRIangle
+[:SOURce]:LFOutput:FUNCtion:SWEep
+[:SOURce]:LFOutput:FUNCtion:SWEep:TIME[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:LFOutput:FUNCtion:SWEep:TRIGger[?] BUS|EXTernal|IMMediate|KEY
+[:SOURce]:LFOutput:FUNCtion{1..*}
+[:SOURce]:LFOutput:FUNCtion{1..*}:FREQuency:ALTernate[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LFOutput:FUNCtion{1..*}:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LFOutput:FUNCtion{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LFOutput:FUNCtion{1..*}:SHAPe:NOISe[?] GAUSsian|UNIForm
+[:SOURce]:LFOutput:FUNCtion{1..*}:SHAPe:RAMP[?] NEGative|POSitive
+[:SOURce]:LFOutput:FUNCtion{1..*}:SHAPe[?] DUALsine|NOISe|RAMP|SINE|SQUare|SWEPtsine|TRIangle
+[:SOURce]:LFOutput:FUNCtion{1..*}:SWEep
+[:SOURce]:LFOutput:FUNCtion{1..*}:SWEep:RATE[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LFOutput:FUNCtion{1..*}:SWEep:TRIGger[?] BUS|EXTernal|IMMediate|KEY
+[:SOURce]:LFOutput:SOURce[?] FUNC1|FUNC2|FUNCtion1|FUNCtion2|INT1|INT2|INTernal|INTernal1|INTernal2
+[:SOURce]:LFOutput:SOURce[?] FUNC1|FUNCtion|FUNCtion1|INT1|INTernal|INTernal1
+[:SOURce]:LFOutput:STATe[?] <boolean>
+[:SOURce]:LFOutput:STATe[?] <boolean>
+:SOURce:LFOutput:VOLTage[?] <numeric_value>[V|MV|UV]
+:SOURce:LFOutput:VOLTage[?] <numeric_value>[V|MV|UV]
+[:SOURce]:LIST
+[:SOURce]:LIST
+[:SOURce]:LIST
+[:SOURce]:LIST:CPOint?
+[:SOURce]:LIST:DIRection[?] DOWN|UP
+[:SOURce]:LIST:DIRection[?] DOWN|UP
+[:SOURce]:LIST:DIRection[?] DOWN|UP
+[:SOURce]:LIST:DWELl:POINts?
+[:SOURce]:LIST:DWELl:POINts?
+[:SOURce]:LIST:DWELl:POINts?
+[:SOURce]:LIST:DWELl:TYPE[?] LIST|STEP
+[:SOURce]:LIST:DWELl:TYPE[?] LIST|STEP
+[:SOURce]:LIST:DWELl:TYPE[?] LIST|STEP
+[:SOURce]:LIST:DWELl[?] <numeric_value>[S|MS|US|NS],<numeric_value>[S|MS|US|NS]
+[:SOURce]:LIST:DWELl[?] <numeric_value>[S|MS|US|NS],<numeric_value>[S|MS|US|NS]
+[:SOURce]:LIST:DWELl[?] <numeric_value>[S|MS|US|NS],<numeric_value>[S|MS|US|NS]
+[:SOURce]:LIST:FREQuency:POINts?
+[:SOURce]:LIST:FREQuency:POINts?
+[:SOURce]:LIST:FREQuency:POINts?
+[:SOURce]:LIST:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ],<numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LIST:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ],<numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LIST:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ],<numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LIST:MANual[?] <numeric_value>
+[:SOURce]:LIST:MANual[?] <numeric_value>
+[:SOURce]:LIST:MANual[?] <numeric_value>
+[:SOURce]:LIST:MODE[?] AUTO|MANual
+[:SOURce]:LIST:MODE[?] AUTO|MANual
+[:SOURce]:LIST:MODE[?] AUTO|MANual
+[:SOURce]:LIST:POWer:POINts?
+[:SOURce]:LIST:POWer:POINts?
+[:SOURce]:LIST:POWer:POINts?
+[:SOURce]:LIST:POWer[?] <numeric_value>[DB],<numeric_value>[DB]
+[:SOURce]:LIST:POWer[?] <numeric_value>[DB],<numeric_value>[DB]
+[:SOURce]:LIST:POWer[?] <numeric_value>[DB],<numeric_value>[DB]
+[:SOURce]:LIST:RETRace[?] <boolean>
+[:SOURce]:LIST:RETRace[?] <boolean>
+[:SOURce]:LIST:TRIGger
+[:SOURce]:LIST:TRIGger
+[:SOURce]:LIST:TRIGger
+[:SOURce]:LIST:TRIGger:SOURce[?] BUS|EXTernal|IMMediate|KEY
+[:SOURce]:LIST:TRIGger:SOURce[?] BUS|EXTernal|IMMediate|KEY|MANual|TIMer
+[:SOURce]:LIST:TRIGger:SOURce[?] BUS|EXTernal|IMMediate|KEY|MANual|TIMer
+[:SOURce]:LIST:TYPE:LIST
+[:SOURce]:LIST:TYPE:LIST
+[:SOURce]:LIST:TYPE:LIST
+[:SOURce]:LIST:TYPE:LIST:INITialize
+[:SOURce]:LIST:TYPE:LIST:INITialize
+[:SOURce]:LIST:TYPE:LIST:INITialize
+[:SOURce]:LIST:TYPE:LIST:INITialize:FSTep
+[:SOURce]:LIST:TYPE:LIST:INITialize:FSTep
+[:SOURce]:LIST:TYPE:LIST:INITialize:FSTep
+[:SOURce]:LIST:TYPE:LIST:INITialize:PRESet
+[:SOURce]:LIST:TYPE:LIST:INITialize:PRESet
+[:SOURce]:LIST:TYPE:LIST:INITialize:PRESet
+[:SOURce]:LIST:TYPE[?] LIST|STEP
+[:SOURce]:LIST:TYPE[?] LIST|STEP
+[:SOURce]:LIST:TYPE[?] LIST|STEP
+[:SOURce]:LIST{1..*}
+[:SOURce]:LIST{1..*}:CALCulate
+[:SOURce]:LIST{1..*}:DWELl[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:LIST{1..*}:FREQuency:POINts?
+[:SOURce]:LIST{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:LIST{1..*}:INDex[?] <numeric_value>
+[:SOURce]:LIST{1..*}:POWer:POINts?
+[:SOURce]:LIST{1..*}:POWer[?] <numeric_value>[DBM]
+[:SOURce]:LIST{1..*}:STARt[?] <numeric_value>
+[:SOURce]:LIST{1..*}:STOP[?] <numeric_value>
+[:SOURce]:MARKer{0..9}:AMPLitude[:STATe][?] <boolean>
+[:SOURce]:MARKer{0..9}:AMPLitude[:STATe][?] <boolean>
+[:SOURce]:MARKer{0..9}:AMPLitude:VALue[?] <numeric_value>[DB]
+[:SOURce]:MARKer{0..9}:AMPLitude:VALue[?] <numeric_value>[DB]
+[:SOURce]:MARKer{0..9}:AOFF
+[:SOURce]:MARKer{0..9}:AOFF
+[:SOURce]:MARKer{0..9}:DELTa? <numeric_value>,<numeric_value>
+[:SOURce]:MARKer{0..9}:DELTa? <numeric_value>,<numeric_value>
+[:SOURce]:MARKer{0..9}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:MARKer{0..9}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:MARKer{0..9}:MODE[?] DELTa|FREQuency
+[:SOURce]:MARKer{0..9}:MODE[?] DELTa|FREQuency
+[:SOURce]:MARKer{0..9}:REFerence[?] <numeric_value>
+[:SOURce]:MARKer{0..9}:REFerence[?] <numeric_value>
+[:SOURce]:MARKer{0..9}[:STATe][?] <boolean>
+[:SOURce]:MARKer{0..9}[:STATe][?] <boolean>
+[:SOURce]:MARKer{1..*}
+[:SOURce]:MARKer{1..*}:AOFF
+[:SOURce]:MARKer{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:MARKer{1..*}:POLarity[?] NEGative|POSitive
+[:SOURce]:MARKer{1..*}:STATe[?] <boolean>
+[:SOURce]:MARKer{1..*}:VIDeo[?] <boolean>
+:SOURce:MODulation[:ALL]
+:SOURce:MODulation[:ALL]:MODE[?] AM|DM|FM
+:SOURce:MODulation[:ALL]:STATe[?] <boolean>
+[:SOURce]:PHASe[:ADJust][?] <numeric_value>[DEG|RAD]
+[:SOURce]:PHASe[:ADJust][?] <numeric_value>[DEG|RAD]
+[:SOURce]:PHASe[:ADJust][?] <numeric_value>[DEG|RAD]
+:SOURce:PHASe:REFerence
+:SOURce:PHASe:REFerence
+[:SOURce]:PHASe:REFerence[?]
+[:SOURce]:PHASe:REFerence[?]
+[:SOURce]:PHASe:REFerence[?]
+:SOURce:PHASe[?] <numeric_value>[DEGREE|RADIANS]
+:SOURce:PHASe[?] <numeric_value>[DEGREE|RADIANS]
+[:SOURce]:PM:BANDwidth[?] HIGH|NORMal
+[:SOURce]:PM:BWIDth[?] HIGH|NORMal
+[:SOURce]:PM[:DEViation]:STEP[:INCRement][?] <numeric_value>[DEG|PIRAD|RAD]
+[:SOURce]:PM[:DEViation][?] <numeric_value>[DEG|PIRAD|RAD]
+[:SOURce]:PM[:DEViation][?] <numeric_value>[RAD]
+:SOURce:PM[:DEViation][?] <numeric_value>[RAD|DEGREE]
+:SOURce:PM[:DEViation][?] <numeric_value>[RAD|DEGREE]
+[:SOURce]:PM:EXTernal
+[:SOURce]:PM:EXTernal
+[:SOURce]:PM:EXTernal:COUPling[?] AC|DC
+:SOURce:PM:EXTernal:COUPling[?] AC|DC
+[:SOURce]:PM:EXTernal:COUPling[?] AC|DC
+:SOURce:PM:EXTernal:COUPling[?] AC|DC
+[:SOURce]:PM:INTernal
+[:SOURce]:PM:INTernal:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PM:INTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PM:INTernal:FUNCtion:SHAPe[?] SINE|SQUare
+[:SOURce]:PM:INTernal{1..*}
+[:SOURce]:PM:INTernal{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PM:INTernal{1..*}:FUNCtion
+[:SOURce]:PM:INTernal{1..*}:FUNCtion:SHAPe[?] SAW|SINE|SQUare|TRIangle
+[:SOURce]:PM:SOURce[?] EXTernal|INT1|INT2|INTernal|INTernal1|INTernal2,EXTernal|INT1|INTernal|INTernal1
+[:SOURce]:PM:SOURce[?] EXTernal|INTernal
+:SOURce:PM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+:SOURce:PM:SOURce[?] EXTernal|INTernal,EXTernal|INTernal
+[:SOURce]:PM:STATe[?] <boolean>
+:SOURce:PM:STATe[?] <boolean>
+[:SOURce]:PM:STATe[?] <boolean>
+:SOURce:PM:STATe[?] <boolean>
+[:SOURce]:PM{1..*}:BANDwidth[?] HIGH|NORMal
+[:SOURce]:PM{1..*}:BANDwidth[?] HIGH|NORMal
+[:SOURce]:PM{1..*}:BWIDth[?] HIGH|NORMal
+[:SOURce]:PM{1..*}:BWIDth[?] HIGH|NORMal
+[:SOURce]:PM{1..*}[:DEViation]:STEP[:INCRement][?] <numeric_value>[DEG|PIRAD|RAD]
+[:SOURce]:PM{1..*}[:DEViation]:STEP[:INCRement][?] <numeric_value>[DEG|PIRAD|RAD]
+[:SOURce]:PM{1..*}[:DEViation]:TRACk[?] <boolean>
+[:SOURce]:PM{1..*}[:DEViation]:TRACk[?] <boolean>
+[:SOURce]:PM{1..*}[:DEViation][?] <numeric_value>[DEG|PIRAD|RAD]
+[:SOURce]:PM{1..*}[:DEViation][?] <numeric_value>[DEG|PIRAD|RAD]
+[:SOURce]:PM{1..*}:EXTernal{1..*}
+[:SOURce]:PM{1..*}:EXTernal{1..*}
+[:SOURce]:PM{1..*}:EXTernal{1..*}:COUPling[?] AC|DC
+[:SOURce]:PM{1..*}:EXTernal{1..*}:COUPling[?] AC|DC
+[:SOURce]:PM{1..*}:EXTernal{1..*}:IMPedance[?] <numeric_value>[OHM]
+[:SOURce]:PM{1..*}:INTernal{1..*}
+[:SOURce]:PM{1..*}:INTernal{1..*}
+[:SOURce]:PM{1..*}:INTernal{1..*}:FREQuency:ALTernate:AMPLitude
+[:SOURce]:PM{1..*}:INTernal{1..*}:FREQuency:ALTernate:AMPLitude:PERCent[?] <numeric_value>[PCT]
+[:SOURce]:PM{1..*}:INTernal{1..*}:FREQuency:ALTernate[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PM{1..*}:INTernal{1..*}:FREQuency:ALTernate[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PM{1..*}:INTernal{1..*}:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PM{1..*}:INTernal{1..*}:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PM{1..*}:INTernal{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PM{1..*}:INTernal{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PM{1..*}:INTernal{1..*}:FUNCtion:NOISe[?] GAUSsian|UNIForm
+[:SOURce]:PM{1..*}:INTernal{1..*}:FUNCtion:SHAPe[?] DUALsine|NOISe|RAMP|SINE|SQUare|SWEPtsine|TRIangle
+[:SOURce]:PM{1..*}:INTernal{1..*}:FUNCtion:SHAPe[?] DUALsine|NOISe|RAMP|SINE|SQUare|SWEPtsine|TRIangle
+[:SOURce]:PM{1..*}:INTernal{1..*}:SWEep
+[:SOURce]:PM{1..*}:INTernal{1..*}:SWEep
+[:SOURce]:PM{1..*}:INTernal{1..*}:SWEep:RATE[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PM{1..*}:INTernal{1..*}:SWEep:TIME[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PM{1..*}:INTernal{1..*}:SWEep:TRIGger[?] BUS|EXTernal|IMMediate|KEY
+[:SOURce]:PM{1..*}:INTernal{1..*}:SWEep:TRIGger[?] BUS|EXTernal|IMMediate|KEY
+[:SOURce]:PM{1..*}:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INT1|INT2|INTernal|INTernal1|INTernal2
+[:SOURce]:PM{1..*}:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INT1|INTernal|INTernal1
+[:SOURce]:PM{1..*}:STATe[?] <boolean>
+[:SOURce]:PM{1..*}:STATe[?] <boolean>
+[:SOURce]:POWer:ALC
+[:SOURce]:POWer:ALC:BANDwidth:AUTO[?] <boolean>
+[:SOURce]:POWer:ALC:BANDwidth:AUTO[?] <boolean>
+[:SOURce]:POWer:ALC:BANDwidth[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:POWer:ALC:BANDwidth[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:POWer:ALC:BWIDth:AUTO[?] <boolean>
+[:SOURce]:POWer:ALC:BWIDth:AUTO[?] <boolean>
+[:SOURce]:POWer:ALC:BWIDth[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:POWer:ALC:BWIDth[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:POWer:ALC:LEVel[?] <numeric_value>[DB]
+[:SOURce]:POWer:ALC:LEVel[?] <numeric_value>[DB]
+[:SOURce]:POWer:ALC:SEARch:REFerence[?] FIXed|MODulated
+[:SOURce]:POWer:ALC:SEARch:SPAN:STARt[?] <numeric_value>[DB]
+[:SOURce]:POWer:ALC:SEARch:SPAN[:STATe][?] <boolean>
+[:SOURce]:POWer:ALC:SEARch:SPAN:STOP[?] <numeric_value>[DB]
+[:SOURce]:POWer:ALC:SEARch:SPAN:TYPE[?] FULL|USER
+[:SOURce]:POWer:ALC:SEARch[?] <boolean>|ONCE
+[:SOURce]:POWer:ALC:SEARch[?] <boolean>|ONCE
+[:SOURce]:POWer:ALC:SEARch[?] <boolean>|ONCE|SPAN
+[:SOURce]:POWer:ALC:SOURce:EXTernal:COUPling[?] <numeric_value>[DB]
+[:SOURce]:POWer:ALC:SOURce[?] DIOD1|DIOD2|DIODe|DIODe1|DIODe2|FIXed|INTernal|PMET1|PMET2|PMETer|PMETer1|PMETer2
+[:SOURce]:POWer:ALC:SOURce[?] DIODe|INTernal
+[:SOURce]:POWer:ALC:SOURce[?] DIODe|INTernal|MMHead
+[:SOURce]:POWer:ALC[:STATe][?] <boolean>
+[:SOURce]:POWer:ALC[:STATe][?] <boolean>
+[:SOURce]:POWer:ALC[:STATe][?] <boolean>
+[:SOURce]:POWer:ALTernate
+[:SOURce]:POWer:ALTernate:AMPLitude[?] <numeric_value>[DB]
+[:SOURce]:POWer:ALTernate:MANual[?] DELTa|MAIN
+[:SOURce]:POWer:ALTernate:STATe[?] <boolean>
+[:SOURce]:POWer:ALTernate:TRIGger[:SOURce][?] EXTernal|INTernal|MANual
+[:SOURce]:POWer:ATTenuation
+[:SOURce]:POWer:ATTenuation:AUTO[?] <boolean>
+[:SOURce]:POWer:ATTenuation:AUTO[?] <boolean>
+[:SOURce]:POWer:ATTenuation:AUTO[?] <boolean>
+[:SOURce]:POWer:ATTenuation:AUTO[?] <boolean>
+[:SOURce]:POWer:ATTenuation:AUTO[?] <boolean>
+[:SOURce]:POWer:ATTenuation:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce]:POWer:ATTenuation[?] <numeric_value>[DB]
+[:SOURce]:POWer:ATTenuation[?] <numeric_value>[DB]
+[:SOURce]:POWer:ATTenuation[?] <numeric_value>[DB]
+[:SOURce]:POWer:ATTenuation[?] <numeric_value>[DB]
+[:SOURce]:POWer:CENTer[?] <numeric_value>[DBM]
+[:SOURce]:POWer:DISPlay
+[:SOURce]:POWer:DISPlay:OFFSet:STATe[?] <boolean>
+[:SOURce]:POWer:DISPlay:OFFSet[?] <numeric_value>[DB]
+:SOURce:POWer:EMF[:STATe][?] <boolean>
+:SOURce:POWer:EMF[:STATe][?] <boolean>
+:SOURce:POWer:EMF[:STATe][?] <boolean>
+:SOURce:POWer:EMF[:STATe][?] <boolean>
+:SOURce:POWer:EMF[:STATe][?] <boolean>
+[:SOURce]:POWer[:LEVel]:ALTernate[?] <numeric_value>[DBM]
+:SOURce:POWer[:LEVel][:IMMediate][:AMPLitude]:BACKup[?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+[:SOURce]:POWer[:LEVel][:IMMediate][:AMPLitude]:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce]:POWer[:LEVel][:IMMediate][:AMPLitude]:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce]:POWer[:LEVel][:IMMediate][:AMPLitude]:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce]:POWer[:LEVel][:IMMediate][:AMPLitude]:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce]:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM]
+:SOURce:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+:SOURce:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+:SOURce:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+:SOURce:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+:SOURce:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+[:SOURce]:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBUV|DBUVEMF|DB|V|MV|UV|VEMF|MVEMF|UVEMF]
+[:SOURce]:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+:SOURce:POWer[:LEVel][:IMMediate]:OFFSet:LINear[?] <numeric_value>[V|MV|UV]
+:SOURce:POWer[:LEVel][:IMMediate]:OFFSet:LOGarithmic[?] <numeric_value>[DB]
+[:SOURce]:POWer[:LEVel][:IMMediate]:OFFSet[?] <numeric_value>[DB]
+[:SOURce]:POWer[:LEVel][:IMMediate]:OFFSet[?] <numeric_value>[DB]
+[:SOURce]:POWer[:LEVel][:IMMediate]:OFFSet[?] <numeric_value>[DB]
+:SOURce:POWer[:LEVel][:IMMediate]:OFFSet[?] <numeric_value>[DB]
+:SOURce:POWer[:LEVel][:IMMediate]:OFFSet[?] <numeric_value>[DB]
+:SOURce:POWer[:LEVel][:IMMediate]:OFFSet[?] <numeric_value>[DB]
+:SOURce:POWer[:LEVel][:IMMediate]:OFFSet[?] <numeric_value>[DB]
+[:SOURce]:POWer:MODE[?] ALSW|CW|FIXed|LIST|LIST1|LIST2|LIST3|LIST4|SWE1|SWE2|SWEep|SWEep1|SWEep2
+:SOURce:POWer:MODE[?] CW|FIXed|SWEep
+:SOURce:POWer:MODE[?] CW|FIXed|SWEep
+:SOURce:POWer:MODE[?] CW|FIXed|SWEep
+[:SOURce]:POWer:MODE[?] FIXed|LIST
+[:SOURce]:POWer:MODE[?] FIXed|LIST|SWEep
+[:SOURce]:POWer:MODE[?] FIXed|LIST|SWEep
+[:SOURce]:POWer:REFerence:STATe[?] <boolean>
+[:SOURce]:POWer:REFerence:STATe[?] <boolean>
+[:SOURce]:POWer:REFerence:STATe[?] <boolean>
+[:SOURce]:POWer:REFerence:STATe[?] <boolean>
+[:SOURce]:POWer:REFerence[?] <numeric_value>[DBM|DBUV|DBUVEMF|DB|V|MV|UV|VEMF|MVEMF|UVEMF]
+[:SOURce]:POWer:REFerence[?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:POWer:REFerence[?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:POWer:REFerence[?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:POWer:SLOPe:PIVot[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:POWer:SLOPe:STATe[?] <boolean>
+[:SOURce]:POWer:SLOPe:STEP[:INCRement][?] <numeric_value>
+[:SOURce]:POWer:SLOPe[?] <numeric_value>
+[:SOURce]:POWer:SPAN:FULL
+[:SOURce]:POWer:SPAN[?] <numeric_value>[DBM]
+[:SOURce]:POWer:STARt[?] <numeric_value>[DBM]
+:SOURce:POWer:STARt[?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+:SOURce:POWer:STARt[?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+:SOURce:POWer:STARt[?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+[:SOURce]:POWer:STARt[?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:POWer:STARt[?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:POWer:STARt[?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:POWer:STATe[?] <boolean>
+[:SOURce]:POWer:STATe[?] <boolean>
+[:SOURce]:POWer:STATe[?] <boolean>
+[:SOURce]:POWer:STATe[?] <boolean>
+:SOURce:POWer:STEP[:INCRement]:LINear[?] <numeric_value>[V|MV|UV]
+:SOURce:POWer:STEP[:INCRement]:LOGarithmic[?] <numeric_value>[DB]
+:SOURce:POWer:STEP[:INCRement][?] <numeric_value>[DB]
+:SOURce:POWer:STEP[:INCRement][?] <numeric_value>[DB]
+:SOURce:POWer:STEP[:INCRement][?] <numeric_value>[DB]
+:SOURce:POWer:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce]:POWer:STOP[?] <numeric_value>[DBM]
+:SOURce:POWer:STOP[?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+:SOURce:POWer:STOP[?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+:SOURce:POWer:STOP[?] <numeric_value>[DBM|DBUV|DBMV|DBV|UV|MV|V]
+[:SOURce]:POWer:STOP[?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:POWer:STOP[?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:POWer:STOP[?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:POWer:USER:ENABle[?] <boolean>
+[:SOURce]:POWer:USER:MAXimum[?] <numeric_value>[DBM|DBV|DBVEMF|DBMV|DBMVEMF|DBUV|DBUVEMF|MV|MVEMF|UV|UVEMF|V|VEMF]
+[:SOURce]:PULM
+[:SOURce]:PULM
+[:SOURce]:PULM
+[:SOURce]:PULM
+[:SOURce]:PULM:EXTernal
+[:SOURce]:PULM:EXTernal
+[:SOURce]:PULM:EXTernal
+:SOURce:PULM:EXTernal:IMPedance[?] <numeric_value>[OHM]
+:SOURce:PULM:EXTernal:IMPedance[?] <numeric_value>[OHM]
+[:SOURce]:PULM:EXTernal:POLarity[?] INVerted|NORMal
+[:SOURce]:PULM:EXTernal:POLarity[?] INVerted|NORMal
+[:SOURce]:PULM:EXTernal:POLarity[?] INVerted|NORMal
+[:SOURce]:PULM:INTernal
+[:SOURce]:PULM:INTernal
+[:SOURce]:PULM:INTernal:DELay{1..*}:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:DELay{1..*}:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:DELay{1..*}[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:DELay{1..*}[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PULM:INTernal:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PULM:INTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PULM:INTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PULM:INTernal:PERiod:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:PERiod:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:PERiod[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:PERiod[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:PWIDth{1..*}:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:PWIDth{1..*}:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:PWIDth{1..*}[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:PWIDth{1..*}[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal:VIDeo
+[:SOURce]:PULM:INTernal:VIDeo:POLarity[?] INVerted|NORMal
+[:SOURce]:PULM:INTernal{1..*}
+[:SOURce]:PULM:INTernal{1..*}:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PULM:INTernal{1..*}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:PULM:INTernal{1..*}:FUNCtion:SHAPe[?] PULSe|SQUare
+[:SOURce]:PULM:INTernal{1..*}:PERiod:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal{1..*}:PERiod[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal{1..*}:PWIDth{1..*}:STEP[:INCRement][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:INTernal{1..*}:PWIDth{1..*}[?] <numeric_value>[S|MS|US|NS]
+:SOURce:PULM:PERiod[?] <numeric_value>[S|MS|US|NS]
+:SOURce:PULM:PERiod[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:PULM:SOURce:INTernal[?] ADOublet|DOUBlet|FRUN|GATed|SQUare|TRIGgered
+[:SOURce]:PULM:SOURce:INTernal[?] DOUBlet|FRUN|GATed|SQUare|TRIGgered
+[:SOURce]:PULM:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INTernal
+[:SOURce]:PULM:SOURce[?] EXTernal|INTernal
+:SOURce:PULM:SOURce[?] EXTernal|INTernal
+:SOURce:PULM:SOURce[?] EXTernal|INTernal
+:SOURce:PULM:SOURce[?] EXTernal|INTernal
+:SOURce:PULM:SOURce[?] EXTernal|INTernal
+:SOURce:PULM:SOURce[?] EXTernal|INTernal
+[:SOURce]:PULM:SOURce[?] EXTernal|INTernal|SCALar
+[:SOURce]:PULM:STATe[?] <boolean>
+[:SOURce]:PULM:STATe[?] <boolean>
+[:SOURce]:PULM:STATe[?] <boolean>
+:SOURce:PULM:STATe[?] <boolean>
+[:SOURce]:PULM:STATe[?] <boolean>
+:SOURce:PULM:STATe[?] <boolean>
+:SOURce:PULM:STATe[?] <boolean>
+:SOURce:PULM:STATe[?] <boolean>
+:SOURce:PULM:STATe[?] <boolean>
+:SOURce:PULM:WIDTh[?] <numeric_value>[S|MS|US|NS]
+:SOURce:PULM:WIDTh[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:RADio
+[:SOURce]:RADio
+[:SOURce]:RADio:ALL
+[:SOURce]:RADio:ALL
+[:SOURce]:RADio:ALL:OFF
+[:SOURce]:RADio:ALL:OFF
+[:SOURce]:RADio:ARB:CLIPping[?] <string>,IJQ|IORQ,<numeric_value>,<numeric_value>
+[:SOURce]:RADio:ARB:CLIPping[?] <string>,IJQ|IORQ,<numeric_value>,<numeric_value>
+[:SOURce]:RADio:ARB:CLOCk:REFerence:EXTernal
+[:SOURce]:RADio:ARB:CLOCk:REFerence:EXTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:RADio:ARB:CLOCk:REFerence[:SOURce][?] EXTernal|INTernal
+[:SOURce]:RADio:ARB:CLOCk:SRATe[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:RADio:ARB:DACS
+[:SOURce]:RADio:ARB:DACS:ALIGn
+[:SOURce]:RADio:ARB:GENerate
+[:SOURce]:RADio:ARB:GENerate
+[:SOURce]:RADio:ARB:GENerate:SINE[?] <string>,<numeric_value>,<numeric_value>,I|IQ|Q
+[:SOURce]:RADio:ARB:GENerate:SINE[?] <string>,<numeric_value>,<numeric_value>,I|IQ|Q
+[:SOURce]:RADio:ARB:HEADer
+[:SOURce]:RADio:ARB:HEADer
+[:SOURce]:RADio:ARB:HEADer:CLEar
+[:SOURce]:RADio:ARB:HEADer:CLEar
+[:SOURce]:RADio:ARB:HEADer:RMS[?] <string>,<numeric_value>|UNSPecified
+[:SOURce]:RADio:ARB:HEADer:RMS[?] <string>,<numeric_value>|UNSPecified
+[:SOURce]:RADio:ARB:HEADer:SAVE
+[:SOURce]:RADio:ARB:HEADer:SAVE
+[:SOURce]:RADio:ARB:IQ
+[:SOURce]:RADio:ARB:IQ
+[:SOURce]:RADio:ARB:IQ:EXTernal
+[:SOURce]:RADio:ARB:IQ:EXTernal
+[:SOURce]:RADio:ARB:IQ:EXTernal:FILTer:AUTO[?] <boolean>
+[:SOURce]:RADio:ARB:IQ:EXTernal:FILTer:AUTO[?] <boolean>
+[:SOURce]:RADio:ARB:IQ:EXTernal:FILTer[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]|THRough
+[:SOURce]:RADio:ARB:IQ:EXTernal:FILTer[?] <numeric_value>|THRough
+[:SOURce]:RADio:ARB:IQ:MODulation
+[:SOURce]:RADio:ARB:IQ:MODulation
+[:SOURce]:RADio:ARB:IQ:MODulation:ATTen:AUTO[?] <boolean>
+[:SOURce]:RADio:ARB:IQ:MODulation:ATTen:AUTO[?] <boolean>
+[:SOURce]:RADio:ARB:IQ:MODulation:ATTen[?] <numeric_value>[DB]
+[:SOURce]:RADio:ARB:IQ:MODulation:ATTen[?] <numeric_value>[DB]
+[:SOURce]:RADio:ARB:IQ:MODulation:FILTer:AUTO[?] <boolean>
+[:SOURce]:RADio:ARB:IQ:MODulation:FILTer:AUTO[?] <boolean>
+[:SOURce]:RADio:ARB:IQ:MODulation:FILTer[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]|THRough
+[:SOURce]:RADio:ARB:IQ:MODulation:FILTer[?] <numeric_value>|THRough
+[:SOURce]:RADio:ARB:MARKer:CLEar:ALL[?] <string>,<numeric_value>
+[:SOURce]:RADio:ARB:MARKer:CLEar:ALL[?] <string>,<numeric_value>
+[:SOURce]:RADio:ARB:MARKer:CLEar[?] <string>,<numeric_value>,<numeric_value>,<numeric_value>
+[:SOURce]:RADio:ARB:MARKer:CLEar[?] <string>,<numeric_value>,<numeric_value>,<numeric_value>
+[:SOURce]:RADio:ARB:MARKer:ROTate[?] <string>,<numeric_value>
+[:SOURce]:RADio:ARB:MARKer:ROTate[?] <string>,<numeric_value>
+[:SOURce]:RADio:ARB:MARKer[:SET][?] <string>,<numeric_value>,<numeric_value>,<numeric_value>,<numeric_value>
+[:SOURce]:RADio:ARB:MARKer[:SET][?] <string>,<numeric_value>,<numeric_value>,<numeric_value>,<numeric_value>
+[:SOURce]:RADio:ARB:MDEStination
+[:SOURce]:RADio:ARB:MDEStination
+[:SOURce]:RADio:ARB:MDEStination:AAMPlitude[?] M1|M2|M3|M4|NONE
+[:SOURce]:RADio:ARB:MDEStination:AAMPlitude[?] M1|M2|M3|M4|NONE
+[:SOURce]:RADio:ARB:MDEStination:ALCHold[?] M1|M2|M3|M4|NONE
+[:SOURce]:RADio:ARB:MDEStination:ALCHold[?] M1|M2|M3|M4|NONE
+[:SOURce]:RADio:ARB:MDEStination:PULSe[?] M1|M2|M3|M4|NONE
+[:SOURce]:RADio:ARB:MDEStination:PULSe[?] M1|M2|M3|M4|NONE
+[:SOURce]:RADio:ARB:MPOLarity
+[:SOURce]:RADio:ARB:MPOLarity
+[:SOURce]:RADio:ARB:MPOLarity:MARKer{1..*}[?] NEGative|POSitive
+[:SOURce]:RADio:ARB:MPOLarity:MARKer{1..*}[?] NEGative|POSitive
+[:SOURce]:RADio:ARB:NOISe:BFACtor[?] <numeric_value>
+[:SOURce]:RADio:ARB:NOISe:BFACtor[?] <numeric_value>
+[:SOURce]:RADio:ARB:NOISe:CBWidth[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:RADio:ARB:NOISe:CBWidth[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:RADio:ARB:NOISe:CN[?] <numeric_value>[DB]
+[:SOURce]:RADio:ARB:NOISe:CN[?] <numeric_value>[DB]
+[:SOURce]:RADio:ARB:NOISe[:STATe][?] <boolean>
+[:SOURce]:RADio:ARB:NOISe[:STATe][?] <boolean>
+[:SOURce]:RADio:ARB:REFerence:EXTernal
+[:SOURce]:RADio:ARB:REFerence:EXTernal
+[:SOURce]:RADio:ARB:REFerence:EXTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:RADio:ARB:REFerence:EXTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:RADio:ARB:REFerence[:SOURce][?] EXTernal|INTernal
+[:SOURce]:RADio:ARB:REFerence[:SOURce][?] EXTernal|INTernal
+[:SOURce]:RADio:ARB:RETRigger[?] <boolean>|IMMediate
+[:SOURce]:RADio:ARB:RETRigger[?] <boolean>|IMMediate
+[:SOURce]:RADio:ARB:RFILter[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]|THRough
+[:SOURce]:RADio:ARB:RSCaling[?] <numeric_value>
+[:SOURce]:RADio:ARB:RSCaling[?] <numeric_value>
+[:SOURce]:RADio:ARB:SCALing[?] <string>,<numeric_value>
+[:SOURce]:RADio:ARB:SCALing[?] <string>,<numeric_value>
+[:SOURce]:RADio:ARB:SCLock
+[:SOURce]:RADio:ARB:SCLock
+[:SOURce]:RADio:ARB:SCLock:RATE[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:RADio:ARB:SCLock:RATE[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:RADio:ARB:SEQuence[?] <string>
+[:SOURce]:RADio:ARB:SEQuence[?] <string>
+[:SOURce]:RADio:ARB[:STATe][?] <boolean>
+[:SOURce]:RADio:ARB[:STATe][?] <boolean>
+[:SOURce]:RADio:ARB:TRIGger[:SOURce]:EXTernal:DELay:SAMPles[?] <numeric_value>
+[:SOURce]:RADio:ARB:TRIGger[:SOURce]:EXTernal:DELay:SAMPles[?] <numeric_value>
+[:SOURce]:RADio:ARB:TRIGger[:SOURce]:EXTernal:DELay:STATe[?] <boolean>
+[:SOURce]:RADio:ARB:TRIGger[:SOURce]:EXTernal:DELay:STATe[?] <boolean>
+[:SOURce]:RADio:ARB:TRIGger[:SOURce]:EXTernal:DELay[:TIME][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:RADio:ARB:TRIGger[:SOURce]:EXTernal:DELay[:TIME][?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:RADio:ARB:TRIGger[:SOURce]:EXTernal:SLOPe[?] NEGative|POSitive
+[:SOURce]:RADio:ARB:TRIGger[:SOURce]:EXTernal:SLOPe[?] NEGative|POSitive
+[:SOURce]:RADio:ARB:TRIGger[:SOURce]:EXTernal[:SOURce][?] EPT1|EPT2|EPTRigger1|EPTRigger2
+[:SOURce]:RADio:ARB:TRIGger[:SOURce]:EXTernal[:SOURce][?] EPT1|EPT2|EPTRigger1|EPTRigger2
+[:SOURce]:RADio:ARB:TRIGger[:SOURce][?] BUS|EXTernal|KEY
+[:SOURce]:RADio:ARB:TRIGger[:SOURce][?] BUS|EXTernal|KEY
+[:SOURce]:RADio:ARB:TRIGger:TYPE:CONTinuous[:TYPE][?] FREE|RESet|TRIGger
+[:SOURce]:RADio:ARB:TRIGger:TYPE:CONTinuous[:TYPE][?] FREE|RESet|TRIGger
+[:SOURce]:RADio:ARB:TRIGger:TYPE:GATE:ACTive[?] HIGH|LOW
+[:SOURce]:RADio:ARB:TRIGger:TYPE:GATE:ACTive[?] HIGH|LOW
+[:SOURce]:RADio:ARB:TRIGger:TYPE:SADVance[:TYPE][?] CONTinuous|SINGle
+[:SOURce]:RADio:ARB:TRIGger:TYPE:SADVance[:TYPE][?] CONTinuous|SINGle
+[:SOURce]:RADio:ARB:TRIGger:TYPE[?] CONTinuous|GATE|SADVance|SINGle
+[:SOURce]:RADio:ARB:TRIGger:TYPE[?] CONTinuous|GATE|SADVance|SINGle
+[:SOURce]:RADio:ARB:VCO
+[:SOURce]:RADio:ARB:VCO:CLOCk[?] EXTernal|INTernal
+[:SOURce]:RADio:ARB:WAVeform:NHEaders[?] <string>
+[:SOURce]:RADio:ARB:WAVeform:NHEaders[?] <string>
+[:SOURce]:RADio:ARB:WAVeform[?] <string>
+[:SOURce]:RADio:ARB:WAVeform[?] <string>
+[:SOURce]:RADio:AWGN
+[:SOURce]:RADio:AWGN:ARB:BWIDth[?] <numeric_value>
+[:SOURce]:RADio:AWGN:ARB:HEADer
+[:SOURce]:RADio:AWGN:ARB:HEADer:CLEar
+[:SOURce]:RADio:AWGN:ARB:HEADer:SAVE
+[:SOURce]:RADio:AWGN:ARB:IQ
+[:SOURce]:RADio:AWGN:ARB:IQ:EXTernal
+[:SOURce]:RADio:AWGN:ARB:IQ:EXTernal:FILTer:AUTO[?] <boolean>
+[:SOURce]:RADio:AWGN:ARB:IQ:EXTernal:FILTer[?] <numeric_value>|THRough
+[:SOURce]:RADio:AWGN:ARB:IQ:MODulation
+[:SOURce]:RADio:AWGN:ARB:IQ:MODulation:ATTenuation:AUTO[?] <boolean>
+[:SOURce]:RADio:AWGN:ARB:IQ:MODulation:ATTenuation[?] <numeric_value>[DB]
+[:SOURce]:RADio:AWGN:ARB:IQ:MODulation:FILTer:AUTO[?] <boolean>
+[:SOURce]:RADio:AWGN:ARB:IQ:MODulation:FILTer[?] <numeric_value>|THRough
+[:SOURce]:RADio:AWGN:ARB:LENGth?
+[:SOURce]:RADio:AWGN:ARB:MDEStination
+[:SOURce]:RADio:AWGN:ARB:MDEStination:AAMPlitude[?] M1|M2|M3|M4|NONE
+[:SOURce]:RADio:AWGN:ARB:MDEStination:ALCHold[?] M1|M2|M3|M4|NONE
+[:SOURce]:RADio:AWGN:ARB:MDEStination:PULSe[?] M1|M2|M3|M4|NONE
+[:SOURce]:RADio:AWGN:ARB:MPOLartity
+[:SOURce]:RADio:AWGN:ARB:MPOLartity:MARKer{1..*}[?] NEGative|POSitive
+[:SOURce]:RADio:AWGN:ARB:REFerence:EXTernal
+[:SOURce]:RADio:AWGN:ARB:REFerence:EXTernal:FREQuency[?] <numeric_value>
+[:SOURce]:RADio:AWGN:ARB:REFerence[:SOURce][?] EXTernal|INTernal
+[:SOURce]:RADio:AWGN:ARB:SCLock
+[:SOURce]:RADio:AWGN:ARB:SCLock:RATE[?] <numeric_value>
+[:SOURce]:RADio:AWGN:ARB:SEED[?] FIXed|RANDom
+[:SOURce]:RADio:AWGN:ARB[:STATe][?] <boolean>
+[:SOURce]:RADio:AWGN:RT:BWIDth[?] <numeric_value>
+[:SOURce]:RADio:AWGN:RT:IQ
+[:SOURce]:RADio:AWGN:RT:IQ:ATTenuation:AUTO[?] <boolean>
+[:SOURce]:RADio:AWGN:RT:IQ:ATTenuation[?] <numeric_value>
+[:SOURce]:RADio:AWGN:RT[:STATe][?] <boolean>
+[:SOURce]:RADio:MTONe:ARB:REFerence:EXTernal
+[:SOURce]:RADio:MTONe:ARB:REFerence:EXTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:RADio:MTONe:ARB:REFerence[:SOURce][?] EXTernal|INTernal
+[:SOURce]:RADio:MTONe:ARB:SCLock
+[:SOURce]:RADio:MTONe:ARB:SCLock:RATE[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:RADio:MTONe:ARB:SETup:STORe[?] <string>
+[:SOURce]:RADio:MTONe:ARB:SETup:TABLe:FSPacing[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:RADio:MTONe:ARB:SETup:TABLe:NTONes[?] <numeric_value>
+[:SOURce]:RADio:MTONe:ARB:SETup:TABLe:PHASe:INITialize:SEED[?] FIXed|RANDom
+[:SOURce]:RADio:MTONe:ARB:SETup:TABLe:PHASe:INITialize[?] FIXed|RANDom
+[:SOURce]:RADio:MTONe:ARB:SETup:TABLe:ROW[?] <numeric_value>,<numeric_value>,<numeric_value>,<boolean>
+[:SOURce]:RADio:MTONe:ARB:SETup:TABLe[?] <numeric_value>,<numeric_value>,FIXed|RANDom,<boolean>
+[:SOURce]:RADio:MTONe:ARB:SETup[?] <string>
+[:SOURce]:RADio:MTONe:ARB[:STATe][?] <boolean>
+[:SOURce]:ROSCillator
+[:SOURce]:ROSCillator
+[:SOURce]:ROSCillator
+[:SOURce]:ROSCillator
+[:SOURce]:ROSCillator:FREQuency:EXTernal[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:ROSCillator:SOURce:AUTO[?] <boolean>
+[:SOURce]:ROSCillator:SOURce:AUTO[?] <boolean>
+[:SOURce]:ROSCillator:SOURce:AUTO[?] <boolean>
+[:SOURce]:ROSCillator:SOURce?
+[:SOURce]:ROSCillator:SOURce?
+[:SOURce]:ROSCillator:SOURce[?] <numeric_value>,EXTernal
+[:SOURce]:ROSCillator:SOURce[?] EXTernal|INTernal
+[:SOURce]:SWEep
+[:SOURce]:SWEep
+[:SOURce]:SWEep
+[:SOURce]:SWEep:CONTrol
+[:SOURce]:SWEep:CONTrol:STATe[?] <boolean>
+[:SOURce]:SWEep:CONTrol:TYPE[?] MASTer|SLAVe
+[:SOURce]:SWEep:CPOint?
+[:SOURce]:SWEep:DWELl[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:SWEep:DWELl[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:SWEep:DWELl[?] <numeric_value>[S|MS|US|NS]
+:SOURce:SWEep[:FREQuency]:DWELl[?] <numeric_value>[S|MS|US]
+:SOURce:SWEep[:FREQuency]:DWELl[?] <numeric_value>[S|MS|US|NS]
+:SOURce:SWEep[:FREQuency]:DWELl[?] <numeric_value>[S|MS|US|NS]
+:SOURce:SWEep[:FREQuency]:MODE[?] AUTO|MANual|STEP
+:SOURce:SWEep[:FREQuency]:MODE[?] AUTO|MANual|STEP
+:SOURce:SWEep[:FREQuency][:STEP]:LINear[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SOURce:SWEep[:FREQuency][:STEP]:LINear[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:SWEep:GENeration[?] ANALog|STEPped
+[:SOURce]:SWEep:GENeration[?] STEPped
+[:SOURce]:SWEep:MODE[?] AUTO|MANual
+[:SOURce]:SWEep:POINts[?] <numeric_value>
+[:SOURce]:SWEep:POINts[?] <numeric_value>
+[:SOURce]:SWEep:POINts[?] <numeric_value>
+:SOURce:SWEep:POWer:DWELl[?] <numeric_value>[S|MS|US|NS]
+:SOURce:SWEep:POWer:DWELl[?] <numeric_value>[S|MS|US|NS]
+:SOURce:SWEep:POWer:MODE[?] AUTO|MANual|STEP
+:SOURce:SWEep:POWer:MODE[?] AUTO|MANual|STEP
+:SOURce:SWEep:POWer[:STEP]:LOGarithmic[?] <numeric_value>[DB]
+:SOURce:SWEep:POWer[:STEP]:LOGarithmic[?] <numeric_value>[DB]
+[:SOURce]:SWEep:SPACing[?] LINear|LOGarithmic
+[:SOURce]:SWEep:TIME:AUTO[?] <boolean>
+[:SOURce]:SWEep:TIME[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:SWEep{1..*}:DIRection[?] DOWN|UP
+[:SOURce]:SWEep{1..*}:DWELl:AUTO[?] <boolean>
+[:SOURce]:SWEep{1..*}:DWELl[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:SWEep{1..*}[:FREQuency]
+[:SOURce]:SWEep{1..*}[:FREQuency]:STEP[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce]:SWEep{1..*}:GENeration[?] STEPped
+[:SOURce]:SWEep{1..*}:POINts[?] <numeric_value>
+[:SOURce]:SWEep{1..*}:POWer
+[:SOURce]:SWEep{1..*}:POWer:STEP[?] <numeric_value>[DB]
+[:SOURce]:SWEep{1..*}:SPACing[?] LINear|LOGarithmic
+[:SOURce]:SWEep{1..*}:TIME:AUTO[?] <boolean>
+[:SOURce]:SWEep{1..*}:TIME:LLIMit? <numeric_value>[S|MS|US|NS]
+[:SOURce]:SWEep{1..*}:TIME[?] <numeric_value>[S|MS|US|NS]
+[:SOURce]:TSWeep
+[:SOURce]:TSWeep
+[:SOURce{0..2}]:AM[:DEPTh][?] <numeric_value>[PCT]
+[:SOURce{0..2}]:AM:EXTernal:COUPling[?] AC|DC
+[:SOURce{0..2}]:AM:EXTernal:IMPedance[?] <numeric_value>[OHM|KOHM]
+[:SOURce{0..2}]:AM:INTernal{1..2}:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:AM:POLarity[?] INVerted|NORMal
+[:SOURce{0..2}]:AM:SCAN:SENSitivity[?] <numeric_value>[DBPERV]
+[:SOURce{0..2}]:AM:SOURce[?] EXT1|EXTernal|EXTernal1|INT1|INT2|INTernal|INTernal1|INTernal2,INT1|INT2|INTernal|INTernal1|INTernal2,EXT1|EXTernal|EXTernal1
+[:SOURce{0..2}]:AM:STATe[?] <boolean>
+[:SOURce{0..2}]:CORRection:CSET:CATalog?
+[:SOURce{0..2}]:CORRection:CSET:DATA:FREQuency:POINts?
+[:SOURce{0..2}]:CORRection:CSET:DATA:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ],<numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:CORRection:CSET:DATA:POWer:POINts?
+[:SOURce{0..2}]:CORRection:CSET:DATA:POWer[?] <numeric_value>[DB],<numeric_value>[DB]
+[:SOURce{0..2}]:CORRection:CSET:DELete <string>
+[:SOURce{0..2}]:CORRection:CSET[:SELect][?] <string>
+[:SOURce{0..2}]:CORRection[:STATe][?] <boolean>
+[:SOURce{0..2}]:DM:ASK:DEPTh[?] <numeric_value>[PCT]
+[:SOURce{0..2}]:DM:ASK:POLarity[?] INVerted|NORMal
+[:SOURce{0..2}]:DM:EXTernal:IMPedance[?] <numeric_value>[OHM|KOHM]
+[:SOURce{0..2}]:DM:FSK:DEViation[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:DM:FSK:MODE[?] LOCKed|PRECise|UNLocked
+[:SOURce{0..2}]:DM:FSK:POLarity[?] INVerted|NORMal
+[:SOURce{0..2}]:DM:STATe[?] <boolean>
+[:SOURce{0..2}]:DM:TYPE[?] ASK|FSK
+[:SOURce{0..2}]:FM{1..2}[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:FM{1..2}:EXTernal{1..2}:COUPling[?] AC|DC
+[:SOURce{0..2}]:FM{1..2}:EXTernal{1..2}:IMPedance[?] <numeric_value>[OHM|KOHM]
+[:SOURce{0..2}]:FM{1..2}:INTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:FM{1..2}:MODE[?] LOCKed|PRECise|UNLocked
+[:SOURce{0..2}]:FM{1..2}:PREemphasis[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{0..2}]:FM{1..2}:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INT1|INTernal|INTernal1,EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INT1|INTernal|INTernal1
+[:SOURce{0..2}]:FM{1..2}:STATe[?] <boolean>
+[:SOURce{0..2}]:FREQuency:CENTer[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:FREQuency[:CW]:RCL[?] EXCLude|INCLude
+[:SOURce{0..2}]:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:FREQuency:FIXed:RCL[?] EXCLude|INCLude
+[:SOURce{0..2}]:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:FREQuency:MANual[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:FREQuency:MODE[?] CW|FIXed|LIST|SWEep
+[:SOURce{0..2}]:FREQuency:MULTiplier[?] <numeric_value>
+[:SOURce{0..2}]:FREQuency:OFFSet[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:FREQuency:SPAN[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:FREQuency:STARt[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:FREQuency:STOP[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:FUNCtion[:SHAPe][?] PRNoise|SAWTooth|SINusoid|SQUare|TRIangle
+[:SOURce{0..2}]:ILS[:GS]:COMid:DEPTh[?] <numeric_value>[PCT]
+[:SOURce{0..2}]:ILS[:GS]:COMid:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:ILS[:GS]:COMid[:STATe][?] <boolean>
+[:SOURce{0..2}]:ILS[:GS]:DDM:CURRent[?] <numeric_value>[A|MA|UA]
+[:SOURce{0..2}]:ILS[:GS]:DDM[:DEPTh][?] <numeric_value>[PCT]
+[:SOURce{0..2}]:ILS[:GS]:DDM:DIRection[?] DOWN|UP
+[:SOURce{0..2}]:ILS[:GS]:DDM:LOGarithmic[?] <numeric_value>
+[:SOURce{0..2}]:ILS[:GS]:LLOBe[:FREQuency][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:ILS[:GS]:MODE[?] LLOBe|NORMal|ULOBe
+[:SOURce{0..2}]:ILS[:GS]:PHASe[?] <numeric_value>[DEG|RAD]
+[:SOURce{0..2}]:ILS[:GS]:PRESet[?]
+[:SOURce{0..2}]:ILS[:GS]:SODepth[?] <numeric_value>[PCT]
+[:SOURce{0..2}]:ILS[:GS]:ULOBe[:FREQuency][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:ILS:GSLope:COMid:DEPTh[?] <numeric_value>[PCT]
+[:SOURce{0..2}]:ILS:GSLope:COMid:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:ILS:GSLope:COMid[:STATe][?] <boolean>
+[:SOURce{0..2}]:ILS:GSLope:DDM:CURRent[?] <numeric_value>[A|MA|UA]
+[:SOURce{0..2}]:ILS:GSLope:DDM[:DEPTh][?] <numeric_value>[PCT]
+[:SOURce{0..2}]:ILS:GSLope:DDM:DIRection[?] DOWN|UP
+[:SOURce{0..2}]:ILS:GSLope:DDM:LOGarithmic[?] <numeric_value>
+[:SOURce{0..2}]:ILS:GSLope:LLOBe[:FREQuency][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:ILS:GSLope:MODE[?] LLOBe|NORMal|ULOBe
+[:SOURce{0..2}]:ILS:GSLope:PHASe[?] <numeric_value>[DEG|RAD]
+[:SOURce{0..2}]:ILS:GSLope:PRESet[?]
+[:SOURce{0..2}]:ILS:GSLope:SODepth[?] <numeric_value>[PCT]
+[:SOURce{0..2}]:ILS:GSLope:ULOBe[:FREQuency][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:ILS:LOCalizer:COMid:DEPTh[?] <numeric_value>[PCT]
+[:SOURce{0..2}]:ILS:LOCalizer:COMid:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:ILS:LOCalizer:COMid[:STATe][?] <boolean>
+[:SOURce{0..2}]:ILS:LOCalizer:DDM:CURRent[?] <numeric_value>[A|MA|UA]
+[:SOURce{0..2}]:ILS:LOCalizer:DDM[:DEPTh][?] <numeric_value>[PCT]
+[:SOURce{0..2}]:ILS:LOCalizer:DDM:DIRection[?] LEFT|RIGHt
+[:SOURce{0..2}]:ILS:LOCalizer:DDM:LOGarithmic[?] <numeric_value>
+[:SOURce{0..2}]:ILS:LOCalizer:LLOBe[:FREQuency][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:ILS:LOCalizer:MODE[?] LLOBe|NORMal|RLOBe
+[:SOURce{0..2}]:ILS:LOCalizer:PHASe[?] <numeric_value>[DEG|RAD]
+[:SOURce{0..2}]:ILS:LOCalizer:PRESet[?]
+[:SOURce{0..2}]:ILS:LOCalizer:RLOBe[:FREQuency][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:ILS:LOCalizer:SODepth[?] <numeric_value>[PCT]
+[:SOURce{0..2}]:ILS:SOURce[?] INT2|INTernal2,EXTernal
+[:SOURce{0..2}]:ILS:STATe[?] <boolean>
+[:SOURce{0..2}]:ILS:TYPE[?] GS|GSLope|LOCalizer
+[:SOURce{0..2}]:LIST:CATalog?
+[:SOURce{0..2}]:LIST:DELete <string>
+[:SOURce{0..2}]:LIST:DELete:ALL
+[:SOURce{0..2}]:LIST:DWELl:POINts?
+[:SOURce{0..2}]:LIST:DWELl[?] <numeric_value>[S|MS|US|NS|PS],<numeric_value>[S|MS|US|NS|PS]
+[:SOURce{0..2}]:LIST:FREE?
+[:SOURce{0..2}]:LIST:FREQuency:POINts?
+[:SOURce{0..2}]:LIST:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ],<numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:LIST:LEARn
+[:SOURce{0..2}]:LIST:MODE[?] AUTO|STEP
+[:SOURce{0..2}]:LIST:POWer:POINts?
+[:SOURce{0..2}]:LIST:POWer[?] <numeric_value>[DBM|DBW|DBMW|DBUW|DBV|DBMV|DBUV|V|MV|UV],<numeric_value>[DBM|DBW|DBMW|DBUW|DBV|DBMV|DBUV|V|MV|UV]
+[:SOURce{0..2}]:LIST:SELect[?] <string>
+[:SOURce{0..2}]:MARKer{1..3}[:FSWeep]:AMPLitude[?] <boolean>
+[:SOURce{0..2}]:MARKer{1..3}[:FSWeep]:AOFF
+[:SOURce{0..2}]:MARKer{1..3}[:FSWeep]:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:MARKer{1..3}[:FSWeep][:STATe][?] <boolean>
+[:SOURce{0..2}]:MARKer{1..3}:POLarity[?] INVerted|NORMal
+[:SOURce{0..2}]:MARKer{1..3}:PSWeep:AOFF
+[:SOURce{0..2}]:MARKer{1..3}:PSWeep:POWer[?] <numeric_value>[DBM|DBW|DBMW|DBUW|DBV|DBMV|DBUV|V|MV|UV]
+[:SOURce{0..2}]:MARKer{1..3}:PSWeep[:STATe][?] <boolean>
+[:SOURce{0..2}]:MBEacon:COMid:DEPTh[?] <numeric_value>[PCT]
+[:SOURce{0..2}]:MBEacon:COMid:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:MBEacon:COMid[:STATe][?] <boolean>
+[:SOURce{0..2}]:MBEacon[:MARKer]:DEPTh[?] <numeric_value>[PCT]
+[:SOURce{0..2}]:MBEacon[:MARKer]:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:MBEacon:STATe[?] <boolean>
+[:SOURce{0..2}]:MODulation[:ALL]
+[:SOURce{0..2}]:MODulation[:ALL]:STATe[?] <boolean>
+[:SOURce{0..2}]:PHASe[:ADJust][?] <numeric_value>[DEG|RAD]
+[:SOURce{0..2}]:PHASe:REFerence
+[:SOURce{0..2}]:PM{1..2}:BANDwidth[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:PM{1..2}[:DEViation][?] <numeric_value>[DEG|RAD]
+[:SOURce{0..2}]:PM{1..2}:EXTernal{1..2}:COUPling[?] AC|DC
+[:SOURce{0..2}]:PM{1..2}:EXTernal{1..2}:IMPedance[?] <numeric_value>[OHM|KOHM]
+[:SOURce{0..2}]:PM{1..2}:INTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:PM{1..2}:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INT1|INTernal|INTernal1,EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INT1|INTernal|INTernal1
+[:SOURce{0..2}]:PM{1..2}:STATe[?] <boolean>
+[:SOURce{0..2}]:POWer:ALC:BANDwidth:AUTO[?] <boolean>|ONCE
+[:SOURce{0..2}]:POWer:ALC:BANDwidth[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:POWer:ALC:BWIDth:AUTO[?] <boolean>|ONCE
+[:SOURce{0..2}]:POWer:ALC:BWIDth[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:POWer:ALC:REFerence[?] <numeric_value>[V|MV|UV]
+[:SOURce{0..2}]:POWer:ALC:SEARch[?] <boolean>|ONCE
+[:SOURce{0..2}]:POWer:ALC:SOURce:PMETer[?] HP436a|RS_Nrvs
+[:SOURce{0..2}]:POWer:ALC:SOURce[?] DIODe|INTernal|PMETer
+[:SOURce{0..2}]:POWer:ALC[:STATe][?] <boolean>
+[:SOURce{0..2}]:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBW|DBMW|DBUW|DBV|DBMV|DBUV|V|MV|UV]
+[:SOURce{0..2}]:POWer[:LEVel][:IMMediate]:OFFSet[?] <numeric_value>[DB]
+[:SOURce{0..2}]:POWer[:LEVel][:IMMediate]:RCL[?] EXCLude|INCLude
+[:SOURce{0..2}]:POWer:LIMit[:AMPLitude][?] <numeric_value>[DBM|DBW|DBMW|DBUW|DBV|DBMV|DBUV|V|MV|UV]
+[:SOURce{0..2}]:POWer:MANual[?] <numeric_value>[DBM|DBW|DBMW|DBUW|DBV|DBMV|DBUV|V|MV|UV]
+[:SOURce{0..2}]:POWer:MODE[?] FIXed|LIST|SWEep
+[:SOURce{0..2}]:POWer:STARt[?] <numeric_value>[DBM|DBW|DBMW|DBUW|DBV|DBMV|DBUV|V|MV|UV]
+[:SOURce{0..2}]:POWer:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce{0..2}]:POWer:STOP[?] <numeric_value>[DBM|DBW|DBMW|DBUW|DBV|DBMV|DBUV|V|MV|UV]
+[:SOURce{0..2}]:PULM:EXTernal:IMPedance[?] <numeric_value>[OHM|KOHM]
+[:SOURce{0..2}]:PULM:INTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:PULM:POLarity[?] INVerted|NORMal
+[:SOURce{0..2}]:PULM:SOURce[?] EXTernal|INTernal
+[:SOURce{0..2}]:PULM:STATe[?] <boolean>
+[:SOURce{0..2}]:PULSe:DELay[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{0..2}]:PULSe:DOUBle:DELay[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{0..2}]:PULSe:DOUBle[:STATe][?] <boolean>
+[:SOURce{0..2}]:PULSe:PERiod[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{0..2}]:PULSe:WIDTh[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{0..2}]:ROSCillator:EXTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:ROSCillator[:INTernal]:ADJust[:STATe][?] <boolean>
+[:SOURce{0..2}]:ROSCillator[:INTernal]:ADJust:VALue[?] <numeric_value>
+[:SOURce{0..2}]:ROSCillator:SOURce[?] EXTernal|INTernal
+[:SOURce{0..2}]:STEReo:ARI:BK[:CODE][?] A|B|C|D|E|F
+[:SOURce{0..2}]:STEReo:ARI[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:STEReo:ARI:STATe[?] <boolean>
+[:SOURce{0..2}]:STEReo:ARI:TYPE[?] BK|DK|OFF
+[:SOURce{0..2}]:STEReo:AUDio[:FREQuency][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:STEReo:AUDio:MODE[?] LEFT|RELeft|REMLeft|RIGHt
+[:SOURce{0..2}]:STEReo:AUDio:PREemphasis[?] <numeric_value>[S|MS|US|NS|PS]|OFF
+[:SOURce{0..2}]:STEReo[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:STEReo:PILot[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:STEReo:PILot:PHASe[?] <numeric_value>[DEG|RAD]
+[:SOURce{0..2}]:STEReo:PILot:STATe[?] <boolean>
+[:SOURce{0..2}]:STEReo:SIGNal[?] ARI|AUDio
+[:SOURce{0..2}]:STEReo:STATe[?] <boolean>
+[:SOURce{0..2}]:SWEep:BTIMe[?] LONG|NORMal[S|MS|US|NS|PS]
+[:SOURce{0..2}]:SWEep[:FREQuency]:DWELl[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{0..2}]:SWEep[:FREQuency]:MODE[?] AUTO|MANual|STEP
+[:SOURce{0..2}]:SWEep[:FREQuency]:POINts[?] <numeric_value>
+[:SOURce{0..2}]:SWEep[:FREQuency]:SPACing[?] LINear|LOGarithmic
+[:SOURce{0..2}]:SWEep[:FREQuency]:STEP[:LINear][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:SWEep[:FREQuency]:STEP:LOGarithmic[?] <numeric_value>[PCT]
+[:SOURce{0..2}]:SWEep:POWer:DWELl[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{0..2}]:SWEep:POWer:MODE[?] AUTO|MANual|STEP
+[:SOURce{0..2}]:SWEep:POWer:POINts[?] <numeric_value>
+[:SOURce{0..2}]:SWEep:POWer:SPACing[?] LOGarithmic
+[:SOURce{0..2}]:SWEep:POWer:STEP[:LOGarithmic][?] <numeric_value>[DB]
+[:SOURce{0..2}]:VOR[:BANGle]:DIRection[?] FROM|TO
+[:SOURce{0..2}]:VOR[:BANGle][?] <numeric_value>[DEG|RAD]
+[:SOURce{0..2}]:VOR:COMid:DEPTh[?] <numeric_value>[PCT]
+[:SOURce{0..2}]:VOR:COMid:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:VOR:COMid[:STATe][?] <boolean>
+[:SOURce{0..2}]:VOR:MODE[?] FMSubcarrier|NORM|SUBCarrier|VAR
+[:SOURce{0..2}]:VOR:PRESet
+[:SOURce{0..2}]:VOR:REFerence[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:VOR:SOURce[?] INT2|INTernal2,EXTernal
+[:SOURce{0..2}]:VOR:STATe[?] <boolean>
+[:SOURce{0..2}]:VOR:SUBCarrier[:DEPTh][?] <numeric_value>[PCT]
+[:SOURce{0..2}]:VOR:SUBCarrier:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{0..2}]:VOR:VAR[:DEPTh][?] <numeric_value>[PCT]
+[:SOURce{0..2}]:VOR:VAR:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:AM[:DEPTh]:STEP[:INCRement][?] <numeric_value>[PCT|DB]
+[:SOURce{1..*}]:AM[:DEPTh][?] <numeric_value>[PCT|DB]
+[:SOURce{1..*}]:AM[:DEPTh][?] <numeric_value>[PCT|ONE]
+[:SOURce{1..*}]:AM:EXTernal{1..*}:COUPling[?] AC|DC
+[:SOURce{1..*}]:AM:EXTernal{1..*}:IMPedance[?] <numeric_value>[OHM|KOHM]
+[:SOURce{1..*}]:AM:INTernal:FREQuency:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:AM:INTernal:FREQuency[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:AM:INTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:AM:INTernal:FUNCtion[?] GAUSsian|NOISe|RAMP|SINusoid|SQUare|TRIangle|UNIForm
+[:SOURce{1..*}]:AM:MODE[?] DEEP|NORMal
+[:SOURce{1..*}]:AM:SCAN:SENSitivity[?] <numeric_value>[DBPERV]
+[:SOURce{1..*}]:AM:SCAN[:STATe][?] <boolean>
+[:SOURce{1..*}]:AM:SENSitivity[?] <numeric_value>[PCT/VOLT|DB/VOLT]
+[:SOURce{1..*}]:AM:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INTernal|TTONe
+[:SOURce{1..*}]:AM:SOURce[?] EXTernal|FEED|INTernal
+[:SOURce{1..*}]:AM:STATe[?] <boolean>
+[:SOURce{1..*}]:AM:STATe[?] <boolean>
+[:SOURce{1..*}]:AM:TYPE[?] EXPonential|LINear
+[:SOURce{1..*}]:CORRection:CSET:CATalog?
+[:SOURce{1..*}]:CORRection:CSET:DATA:FREQuency:POINts?
+[:SOURce{1..*}]:CORRection:CSET:DATA:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ],<numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:CORRection:CSET:DATA:POWer:POINts?
+[:SOURce{1..*}]:CORRection:CSET:DATA:POWer[?] <numeric_value>[DB],<numeric_value>[DB]
+[:SOURce{1..*}]:CORRection:CSET:DELete <string>
+[:SOURce{1..*}]:CORRection:CSET:DELete:ALL
+[:SOURce{1..*}]:CORRection:CSET:FREE?
+[:SOURce{1..*}]:CORRection:CSET[:SELect][?] <string>
+[:SOURce{1..*}]:CORRection:CSET[:SELect][?] FDAT1|FDAT2|FDAT3|FDAT4
+[:SOURce{1..*}]:CORRection:CSET:STATe[?] <boolean>
+[:SOURce{1..*}]:CORRection:FLATness[:DATA][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ|DB],<numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ|DB]
+[:SOURce{1..*}]:CORRection:FLATness:POINts? <numeric_value>
+[:SOURce{1..*}]:CORRection:SOURce{0..1}[?] ARRay|FLATness
+[:SOURce{1..*}]:CORRection[:STATe][?] <boolean>
+[:SOURce{1..*}]:CORRection[:STATe][?] <boolean>
+[:SOURce{1..*}]:DM:ASK[:DEPTh][?] <numeric_value>[PCT|ONE]
+[:SOURce{1..*}]:DM:ASK:POLarity[?] INVerted|NORMal
+[:SOURce{1..*}]:DM:EXTernal:IMPedance[?] <numeric_value>[OHM|KOHM]
+[:SOURce{1..*}]:DM:FSK[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:DM:FSK:POLarity[?] INVerted|NORMal
+[:SOURce{1..*}]:DM:IMPairment[:STATe][?] <boolean>
+[:SOURce{1..*}]:DM:IQ:CREStfactor[?] <numeric_value>[DB]
+[:SOURce{1..*}]:DM:IQ[:STATe][?] <boolean>
+[:SOURce{1..*}]:DM:IQRatio[:MAGNitude][?] <numeric_value>[PCT|ONE]
+[:SOURce{1..*}]:DM:IQSWap[:STATe][?] <boolean>
+[:SOURce{1..*}]:DM:LEAKage[:MAGNitude][?] <numeric_value>[PCT|ONE]
+[:SOURce{1..*}]:DM:QUADrature:ANGLe[?] <numeric_value>[DEG]
+[:SOURce{1..*}]:DM[:STATe][?] <boolean>
+[:SOURce{1..*}]:DM:TYPE[?] ASK|FSK
+[:SOURce{1..*}]:FM:BANDwidth[?] STANdard|WIDE
+[:SOURce{1..*}]:FM:COUPling[?] AC|DC
+[:SOURce{1..*}]:FM[:DEViation]:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FM[:DEViation][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FM[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:FM:EXTernal{1..*}:COUPling[?] AC|DC
+[:SOURce{1..*}]:FM:EXTernal{1..*}:IMPedance[?] <numeric_value>[OHM|KOHM]
+[:SOURce{1..*}]:FM:FILTer:HPASs[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FM:INTernal:FREQuency:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FM:INTernal:FREQuency[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FM:INTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:FM:INTernal:FUNCtion[?] GAUSsian|NOISe|RAMP|SINusoid|SQUare|TRIangle|UNIForm
+[:SOURce{1..*}]:FM:SENSitivity[?] <numeric_value>[AHZ/VOLT|FHZ/VOLT|PHZ/VOLT|NHZ/VOLT|UHZ/VOLT|HZ/VOLT|KHZ/VOLT|MHZ/VOLT|GHZ/VOLT|THZ/VOLT|PEHZ/VOLT|EXHZ/VOLT|AHZ/V|FHZ/V|PHZ/V|NHZ/V|UHZ/V|HZ/V|KHZ/V|MHZ/V|GHZ/V|THZ/V|PEHZ/V|EXHZ/V]
+[:SOURce{1..*}]:FM:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INTernal|TTONe
+[:SOURce{1..*}]:FM:SOURce[?] EXTernal|FEED|INTernal
+[:SOURce{1..*}]:FM:STATe[?] <boolean>
+[:SOURce{1..*}]:FM:STATe[?] <boolean>
+[:SOURce{1..*}]:FREQuency:CENTer:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency:CENTer[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency:CENTer[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:FREQuency[:CW]:AUTO[?] <boolean>
+[:SOURce{1..*}]:FREQuency[:CW]:STEP:AUTO[?] <boolean>
+[:SOURce{1..*}]:FREQuency[:CW]:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency[:CW][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency[:CW][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:FREQuency:ERANge[?] <boolean>
+[:SOURce{1..*}]:FREQuency:FIXed:AUTO[?] <boolean>
+[:SOURce{1..*}]:FREQuency:FIXed:STEP:AUTO[?] <boolean>
+[:SOURce{1..*}]:FREQuency:FIXed:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency:FIXed[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency:FIXed[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:FREQuency:MANual[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency:MANual[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:FREQuency:MODE[?] CW|FIXed|LIST|SWEep
+[:SOURce{1..*}]:FREQuency:MODE[?] CW|FIXed|LIST|SWEep
+[:SOURce{1..*}]:FREQuency:MULTiplier:STATe[?] <boolean>
+[:SOURce{1..*}]:FREQuency:MULTiplier:STEP[:INCRement][?] <numeric_value>
+[:SOURce{1..*}]:FREQuency:MULTiplier[?] <numeric_value>
+[:SOURce{1..*}]:FREQuency:MULTiplier[?] <numeric_value>
+[:SOURce{1..*}]:FREQuency:OFFSet:STATe[?] <boolean>
+[:SOURce{1..*}]:FREQuency:OFFSet[?] <numeric_value>
+[:SOURce{1..*}]:FREQuency:OFFSet[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:FREQuency:RCL[?] EXCLude|INCLude
+[:SOURce{1..*}]:FREQuency:SPAN:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency:SPAN[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency:SPAN[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:FREQuency:STARt:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency:STARt[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency:STARt[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:FREQuency:STEP[:INCRement][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:FREQuency:STOP:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency:STOP[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:FREQuency:STOP[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:FUNCtion[:SHAPe][?] SINusoid|SQUare
+[:SOURce{1..*}]:LIST:CATalog[?]
+[:SOURce{1..*}]:LIST:DELete <string>
+[:SOURce{1..*}]:LIST:DELete:ALL
+[:SOURce{1..*}]:LIST:DWELl:POINts?
+[:SOURce{1..*}]:LIST:DWELl:POINts?
+[:SOURce{1..*}]:LIST:DWELl[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS],<numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:LIST:DWELl[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{1..*}]:LIST:FREE?
+[:SOURce{1..*}]:LIST:FREQuency:POINts?
+[:SOURce{1..*}]:LIST:FREQuency:POINts?
+[:SOURce{1..*}]:LIST:FREQuency[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ],<numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:LIST:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ],<numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:LIST:MANual[?] <numeric_value>
+[:SOURce{1..*}]:LIST:MODE[?] AUTO|MANual
+[:SOURce{1..*}]:LIST:MODE[?] AUTO|STEP
+[:SOURce{1..*}]:LIST[:POWer]:CORRection:POINts?
+[:SOURce{1..*}]:LIST[:POWer]:CORRection[?] <numeric_value>[DB],<numeric_value>[DB]
+[:SOURce{1..*}]:LIST:POWer:POINts?
+[:SOURce{1..*}]:LIST:POWer[?] <numeric_value>[DB],<numeric_value>[DB]
+[:SOURce{1..*}]:LIST[:SELect][?] <string>
+[:SOURce{1..*}]:LIST:TRIGger:SOURce[?] BUS|EXTernal|IMMediate
+[:SOURce{1..*}]:MARKer{1..*}[:FSWeep]:AMPLitude[?] <boolean>
+[:SOURce{1..*}]:MARKer{1..*}[:FSWeep]:AOFF[?]
+[:SOURce{1..*}]:MARKer{1..*}[:FSWeep]:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:MARKer{1..*}[:FSWeep][:STATe][?] <boolean>
+[:SOURce{1..*}]:MARKer{1..*}:POLarity[?] INVerted|NORMal
+[:SOURce{1..*}]:MARKer{1..*}:PSWeep:AOFF[?]
+[:SOURce{1..*}]:MARKer{1..*}:PSWeep:POWer[?] <numeric_value>[DBM|DBUV|V|MV|UV|NV|PV]
+[:SOURce{1..*}]:MARKer{1..*}:PSWeep[:STATe][?] <boolean>
+[:SOURce{1..*}]:MARKer{1..5}:AMPLitude[:STATe][?] <boolean>
+[:SOURce{1..*}]:MARKer{1..5}:AMPLitude:VALue[?] <numeric_value>[DB]
+[:SOURce{1..*}]:MARKer{1..5}:AOFF
+[:SOURce{1..*}]:MARKer{1..5}:DELTa? <numeric_value>
+[:SOURce{1..*}]:MARKer{1..5}:FREQuency:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:MARKer{1..5}:FREQuency[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:MARKer{1..5}:MODE[?] DELTa|FREQuency
+[:SOURce{1..*}]:MARKer{1..5}:REFerence[?] <numeric_value>
+[:SOURce{1..*}]:MARKer{1..5}[:STATe][?] <boolean>
+[:SOURce{1..*}]:MODulation[:ALL]:STATe[?] <boolean>
+[:SOURce{1..*}]:MODulation:AOFF
+[:SOURce{1..*}]:MODulation:OUTPut:SOURce[?] AM|FM|OFF
+[:SOURce{1..*}]:MODulation:OUTPut:STATe[?] <boolean>
+[:SOURce{1..*}]:MODulation:OVDR
+[:SOURce{1..*}]:MODulation:STATe[?] <boolean>
+[:SOURce{1..*}]:PHASe:REFerence
+[:SOURce{1..*}]:PHASe:STATe[?] <boolean>
+[:SOURce{1..*}]:PHASe:STEP[?] <numeric_value>[DEG]
+[:SOURce{1..*}]:PHASe[?] <numeric_value>[DEG]
+[:SOURce{1..*}]:PM:BANDwidth[?] STANdard|WIDE
+[:SOURce{1..*}]:PM:COUPling[?] AC|DC
+[:SOURce{1..*}]:PM[:DEViation]:STEP[:INCRement][?] <numeric_value>[RAD]
+[:SOURce{1..*}]:PM[:DEViation][?] <numeric_value>[RAD]
+[:SOURce{1..*}]:PM[:DEViation][?] <numeric_value>[RAD]
+[:SOURce{1..*}]:PM:EXTernal{1..*}:COUPling[?] AC|DC
+[:SOURce{1..*}]:PM:EXTernal{1..*}:IMPedance[?] <numeric_value>[OHM|KOHM]
+[:SOURce{1..*}]:PM:INTernal:FREQuency:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:PM:INTernal:FREQuency[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:PM:INTernal:FREQuency[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:PM:INTernal:FUNCtion[?] GAUSsian|NOISe|RAMP|SINusoid|SQUare|TRIangle|UNIForm
+[:SOURce{1..*}]:PM:RANGe[?] AUTO|HIGH|LOW
+[:SOURce{1..*}]:PM:SENSitivity[?] <numeric_value>[RAD/VOLT]
+[:SOURce{1..*}]:PM:SOURce[?] EXT1|EXT2|EXTernal|EXTernal1|EXTernal2|INTernal|TTONe
+[:SOURce{1..*}]:PM:SOURce[?] EXTernal|FEED|INTernal
+[:SOURce{1..*}]:PM:STATe[?] <boolean>
+[:SOURce{1..*}]:PM:STATe[?] <boolean>
+[:SOURce{1..*}]:POWer:ALC:BANDwidth:AUTO[?] <boolean>
+[:SOURce{1..*}]:POWer:ALC:BANDwidth[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:POWer:ALC:CFACtor[?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:ALC:PMETer[:LEVel][:AMPLitude][?] <numeric_value>[DBM|DBAW|DBFW|DBPW|DBNW|DBUW|DBMW|DBW|DBKW|DBMAW|DBGW|DBPEW|DBEXW|DBAV|DBFV|DBPV|DBNV|DBUV|DBMV|DBV|DBKV|DBMAV|DBGV|DBPEV|DBEXV|AW|FW|PW|NW|UW|MW|W|KW|MAW|GW|PEW|EXW|AV|FV|PV|NV|UV|MV|V|KV|MAV|GV|PEV|EXV]
+[:SOURce{1..*}]:POWer:ALC:PMETer[:LEVel]:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:ALC:REFerence[?] <numeric_value>[V|MV|UV|NV|PV]
+[:SOURce{1..*}]:POWer:ALC:SEARch?
+[:SOURce{1..*}]:POWer:ALC:SLOPe[?] FAST|MEDium|SLOW
+[:SOURce{1..*}]:POWer:ALC:SOURce:PMETer[?] HP436a|RS_Nrvs
+[:SOURce{1..*}]:POWer:ALC:SOURce[?] DIODe|INTernal|MMHead|PMETer
+[:SOURce{1..*}]:POWer:ALC:SOURce[?] DIODe|INTernal|PMETer
+[:SOURce{1..*}]:POWer:ALC[:STATe][?] <boolean>
+[:SOURce{1..*}]:POWer:ALC[:STATe][?] <boolean>
+[:SOURce{1..*}]:POWer:ATTenuation:AUTO[?] <boolean>|ONCE
+[:SOURce{1..*}]:POWer:ATTenuation[?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:CENTer:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:CENTer[?] <numeric_value>[DBM|DBAW|DBFW|DBPW|DBNW|DBUW|DBMW|DBW|DBKW|DBMAW|DBGW|DBPEW|DBEXW|DBAV|DBFV|DBPV|DBNV|DBUV|DBMV|DBV|DBKV|DBMAV|DBGV|DBPEV|DBEXV|AW|FW|PW|NW|UW|MW|W|KW|MAW|GW|PEW|EXW|AV|FV|PV|NV|UV|MV|V|KV|MAV|GV|PEV|EXV]
+[:SOURce{1..*}]:POWer[:LEVel][:IMMediate][:AMPLitude]:STEP:AUTO[?] <boolean>
+[:SOURce{1..*}]:POWer[:LEVel][:IMMediate][:AMPLitude]:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBAW|DBFW|DBPW|DBNW|DBUW|DBMW|DBW|DBKW|DBMAW|DBGW|DBPEW|DBEXW|DBAV|DBFV|DBPV|DBNV|DBUV|DBMV|DBV|DBKV|DBMAV|DBGV|DBPEV|DBEXV|AW|FW|PW|NW|UW|MW|W|KW|MAW|GW|PEW|EXW|AV|FV|PV|NV|UV|MV|V|KV|MAV|GV|PEV|EXV]
+[:SOURce{1..*}]:POWer[:LEVel][:IMMediate][:AMPLitude][?] <numeric_value>[DBM|DBUV|V|MV|UV|NV|PV]
+[:SOURce{1..*}]:POWer[:LEVel][:IMMediate]:OFFSet[?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:LIMit[:AMPLitude][?] <numeric_value>[DBM|DBUV|V|MV|UV|NV|PV]
+[:SOURce{1..*}]:POWer:MANual[?] <numeric_value>[DBM|DBUV|V|MV|UV|NV|PV]
+[:SOURce{1..*}]:POWer:MODE[?] CW|FIXed|LIST|SWEep
+[:SOURce{1..*}]:POWer:MODE[?] FIXed|SWEep
+[:SOURce{1..*}]:POWer:OFFSet:STATe[?] <boolean>
+[:SOURce{1..*}]:POWer:OFFSet[?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:PROTection:STATe[?] <boolean>
+[:SOURce{1..*}]:POWer:PROTection[?] <boolean>
+[:SOURce{1..*}]:POWer:RANGe[?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:RCL[?] EXCLude|INCLude
+[:SOURce{1..*}]:POWer:SEARch[?] <boolean>|ONCE
+[:SOURce{1..*}]:POWer:SLOPe:STATe[?] <boolean>
+[:SOURce{1..*}]:POWer:SLOPe[?] <numeric_value>[DB/GHZ]
+[:SOURce{1..*}]:POWer:SPAN:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:SPAN[?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:STARt:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:STARt[?] <numeric_value>[DBM|DBAW|DBFW|DBPW|DBNW|DBUW|DBMW|DBW|DBKW|DBMAW|DBGW|DBPEW|DBEXW|DBAV|DBFV|DBPV|DBNV|DBUV|DBMV|DBV|DBKV|DBMAV|DBGV|DBPEV|DBEXV|AW|FW|PW|NW|UW|MW|W|KW|MAW|GW|PEW|EXW|AV|FV|PV|NV|UV|MV|V|KV|MAV|GV|PEV|EXV]
+[:SOURce{1..*}]:POWer:STARt[?] <numeric_value>[DBM|DBUV|V|MV|UV|NV|PV]
+[:SOURce{1..*}]:POWer:STATe[?] <boolean>
+[:SOURce{1..*}]:POWer:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:STOP:STEP[:INCRement][?] <numeric_value>[DB]
+[:SOURce{1..*}]:POWer:STOP[?] <numeric_value>[DBM|DBAW|DBFW|DBPW|DBNW|DBUW|DBMW|DBW|DBKW|DBMAW|DBGW|DBPEW|DBEXW|DBAV|DBFV|DBPV|DBNV|DBUV|DBMV|DBV|DBKV|DBMAV|DBGV|DBPEV|DBEXV|AW|FW|PW|NW|UW|MW|W|KW|MAW|GW|PEW|EXW|AV|FV|PV|NV|UV|MV|V|KV|MAV|GV|PEV|EXV]
+[:SOURce{1..*}]:POWer:STOP[?] <numeric_value>[DBM|DBUV|V|MV|UV|NV|PV]
+[:SOURce{1..*}]:POWer:UNIT[?] DBM|DBUV|V
+[:SOURce{1..*}]:PULM:EXTernal:DELay:STEP[:INCRement][?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULM:EXTernal:DELay[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULM:EXTernal:IMPedance[?] <numeric_value>[OHM|KOHM]
+[:SOURce{1..*}]:PULM:EXTernal:POLarity[?] INVerted|NORMal
+[:SOURce{1..*}]:PULM:INTernal:FREQuency:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:PULM:INTernal:FREQuency[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:PULM:INTernal:GATE[?] <boolean>
+[:SOURce{1..*}]:PULM:INTernal:PERiod:STEP[:INCRement][?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULM:INTernal:PERiod[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULM:INTernal:TRIGger:SOURce[?] EXTernal|INTernal
+[:SOURce{1..*}]:PULM:INTernal:WIDTh:STEP[:INCRement][?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULM:INTernal:WIDTh[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULM:POLarity[?] INVerse|NORMal
+[:SOURce{1..*}]:PULM:SLEW:AUTO[?] <boolean>
+[:SOURce{1..*}]:PULM:SLEW[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULM:SOURce[?] EXTernal|INTernal
+[:SOURce{1..*}]:PULM:SOURce[?] EXTernal|INTernal|SCALar
+[:SOURce{1..*}]:PULM:STATe[?] <boolean>
+[:SOURce{1..*}]:PULM:STATe[?] <boolean>
+[:SOURce{1..*}]:PULSe:DELay:STEP[:INCRement][?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULSe:DELay[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULSe:DELay[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{1..*}]:PULSe:DOUBle:DELay[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{1..*}]:PULSe:DOUBle[:STATe][?] <boolean>
+[:SOURce{1..*}]:PULSe:DOUBle[:STATe][?] <boolean>
+[:SOURce{1..*}]:PULSe:INTernal:FREQuency:STEP[:INCRement][?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:PULSe:INTernal:FREQuency[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ]
+[:SOURce{1..*}]:PULSe:PERiod:STEP[:INCRement][?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULSe:PERiod[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULSe:PERiod[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{1..*}]:PULSe:SOURce[?] EXTernal|INTernal|SCALar
+[:SOURce{1..*}]:PULSe:STATe[?] <boolean>
+[:SOURce{1..*}]:PULSe:TRANsition[:LEADing][?] FAST|MEDium|SLOW
+[:SOURce{1..*}]:PULSe:TRANsition:STATe[?] <boolean>
+[:SOURce{1..*}]:PULSe:TRANsition:TRAiling[?] FAST|MEDium|SLOW
+[:SOURce{1..*}]:PULSe:WIDTh:STEP[:INCRement][?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULSe:WIDTh[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:PULSe:WIDTh[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{1..*}]:ROSCillator[:INTernal]:ADJust[:STATe][?] <boolean>
+[:SOURce{1..*}]:ROSCillator[:INTernal]:ADJust:VALue[?] <numeric_value>
+[:SOURce{1..*}]:ROSCillator[:INTernal]:RLOop[?] NARRow|NORMal
+[:SOURce{1..*}]:ROSCillator:SOURce:AUTO[?] <boolean>
+[:SOURce{1..*}]:ROSCillator:SOURce[?] EXTernal|INTernal
+[:SOURce{1..*}]:ROSCillator:SOURce[?] EXTernal|INTernal|NONE
+[:SOURce{1..*}]:STEReo:ARI:BK[:CODE][?] A|B|C|D|E|F
+[:SOURce{1..*}]:STEReo:ARI[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:STEReo:ARI:STATe[?] <boolean>
+[:SOURce{1..*}]:STEReo:ARI:TYPE:STATe[?] <boolean>
+[:SOURce{1..*}]:STEReo:ARI:TYPE[?] BK|BKDK|DK
+[:SOURce{1..*}]:STEReo:AUDio[:FREQuency][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:STEReo:AUDio:MODE[?] LEFT|RELeft|REMLeft|RIGHt|RNELeft
+[:SOURce{1..*}]:STEReo:AUDio:PREemphasis:STATe[?] <boolean>
+[:SOURce{1..*}]:STEReo:AUDio:PREemphasis[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{1..*}]:STEReo[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:STEReo:DIRect[?] <string>
+[:SOURce{1..*}]:STEReo:EXTernal:IMPedance[?] <numeric_value>[OHM|KOHM]
+[:SOURce{1..*}]:STEReo:PILot[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:STEReo:PILot:PHASe[?] <numeric_value>[DEG]
+[:SOURce{1..*}]:STEReo:PILot:STATe[?] <boolean>
+[:SOURce{1..*}]:STEReo:RDS:DATaset[?] DS1|DS2|DS3|DS4|DS5
+[:SOURce{1..*}]:STEReo:RDS[:DEViation][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:STEReo:RDS:STATe[?] <boolean>
+[:SOURce{1..*}]:STEReo:RDS:TRAFfic:ANNouncement[:STATe][?] <boolean>
+[:SOURce{1..*}]:STEReo:RDS:TRAFfic:PROGram[:STATe][?] <boolean>
+[:SOURce{1..*}]:STEReo:SOURce[?] LFGen|LREXt|SPEXt
+[:SOURce{1..*}]:STEReo:STATe[?] <boolean>
+[:SOURce{1..*}]:SWEep:BTIMe[?] LONG|NORMal
+[:SOURce{1..*}]:SWEep:CONTrol:STATe[?] <boolean>
+[:SOURce{1..*}]:SWEep:CONTrol:TYPE[?] MASTer|SLAVe
+[:SOURce{1..*}]:SWEep:DWELl:AUTO[?] <boolean>
+[:SOURce{1..*}]:SWEep:DWELl[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:SWEep[:FREQuency]:DWELl[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{1..*}]:SWEep[:FREQuency]:MODE[?] AUTO|MANual|STEP
+[:SOURce{1..*}]:SWEep[:FREQuency]:RUNNing?
+[:SOURce{1..*}]:SWEep[:FREQuency]:SPACing[?] LINear|LOGarithmic|RAMP
+[:SOURce{1..*}]:SWEep[:FREQuency]:STEP[:LINear][?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+[:SOURce{1..*}]:SWEep[:FREQuency]:STEP:LOGarithmic[?] <numeric_value>[PCT|ONE]
+[:SOURce{1..*}]:SWEep[:FREQuency]:TIME[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{1..*}]:SWEep:GENeration[?] ANALog|STEPped
+[:SOURce{1..*}]:SWEep:MANual:POINt[?] <numeric_value>
+[:SOURce{1..*}]:SWEep:MANual[:RELative][?] <numeric_value>[PCT|DB]
+[:SOURce{1..*}]:SWEep:MARKer:STATe[?] <boolean>
+[:SOURce{1..*}]:SWEep:MARKer:XFER
+[:SOURce{1..*}]:SWEep:MODE[?] AUTO|MANual
+[:SOURce{1..*}]:SWEep:POINts[?] <numeric_value>
+[:SOURce{1..*}]:SWEep:POWer:DWELl[?] <numeric_value>[S|MS|US|NS|PS]
+[:SOURce{1..*}]:SWEep:POWer:MODE[?] AUTO|MANual|STEP
+[:SOURce{1..*}]:SWEep:POWer:RUNNing?
+[:SOURce{1..*}]:SWEep:POWer:SPACing[?] LOGarithmic
+[:SOURce{1..*}]:SWEep:POWer:STEP[:LOGarithmic][?] <numeric_value>[DB]
+[:SOURce{1..*}]:SWEep:STEP[?] <numeric_value>[AHZ|FHZ|PHZ|NHZ|UHZ|HZ|KHZ|MHZ|GHZ|THZ|PEHZ|EXHZ|DB]
+[:SOURce{1..*}]:SWEep:TIME:AUTO[?] <boolean>
+[:SOURce{1..*}]:SWEep:TIME:LLIMit[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:SWEep:TIME[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+[:SOURce{1..*}]:SWEep:TRIGger:SOURce[?] BUS|EXTernal|IMMediate
+:SP <numeric_value>[DB]
+:SP <numeric_value>[HZ|KZ|MZ|GZ|DM|MV|UV|-D|+D|-DM|+DM]
+:SP <numeric_value>[HZ|KZ|MZ|GZ|SS]
+:SP0[?]
+:SP1[?]
+:SPecial_functio[?] <numeric_value>,<numeric_value>
+:SQ
+:SQ
+:SQ0[?]
+:SQ1[?]
+:SQD[?] <numeric_value>[HZ|KH|MH|GH]
+:SQF[?] <numeric_value>[HZ|KH|MH|GH]
+:SQP[?] <numeric_value>[MH]
+:SQU[?] <numeric_value>[HZ|KH|MH|GH]
+:SR0[?] <block_data>
+:SR1[?] <block_data>
+:SS <numeric_value>[HZ|KZ|MZ|GZ|SP]
+:SS[?] <numeric_value>
+:SSE[?] <numeric_value>
+:SSE[?] <numeric_value>
+:SSN1[?]
+:SSN2[?]
+:SSN3[?]
+:SSN4[?]
+:SSN5[?]
+:SSN6[?]
+:SSN7[?]
+:SSN8[?]
+:SSN9[?]
+:SSP[?]
+:SSR?
+:SSR?
+:ST <numeric_value>
+:ST <numeric_value>
+:ST <numeric_value>
+:ST <numeric_value>
+:ST <numeric_value>[SC|MS]
+:ST <numeric_value>[SC|MS]
+:STATus
+:STATus
+:STATus
+:STATus
+:STATus
+:STATus[:DEVice]:CONDition?
+:STATus[:DEVice]:DQUestionable:CONDition?
+:STATus[:DEVice]:DQUestionable:ENABle[?] <numeric_value>
+:STATus[:DEVice]:DQUestionable[:EVENt]?
+:STATus[:DEVice]:DQUestionable:NTRansition?
+:STATus[:DEVice]:DQUestionable:PTRansition?
+:STATus[:DEVice]:ENABle[?] <numeric_value>
+:STATus[:DEVice][:EVENt]?
+:STATus[:DEVice]:NTRansition?
+:STATus[:DEVice]:PTRansition?
+:STATus[:DEVice]:SINTegrity:AMPLitude:CONDition?
+:STATus[:DEVice]:SINTegrity:AMPLitude:ENABle[?] <numeric_value>
+:STATus[:DEVice]:SINTegrity:AMPLitude[:EVENt]?
+:STATus[:DEVice]:SINTegrity:AMPLitude:NTRansition?
+:STATus[:DEVice]:SINTegrity:AMPLitude:PTRansition?
+:STATus[:DEVice]:SINTegrity:CONDition?
+:STATus[:DEVice]:SINTegrity:ENABle[?] <numeric_value>
+:STATus[:DEVice]:SINTegrity[:EVENt]?
+:STATus[:DEVice]:SINTegrity:FREQuency:CONDition?
+:STATus[:DEVice]:SINTegrity:FREQuency:ENABle[?] <numeric_value>
+:STATus[:DEVice]:SINTegrity:FREQuency[:EVENt]?
+:STATus[:DEVice]:SINTegrity:FREQuency:NTRansition?
+:STATus[:DEVice]:SINTegrity:FREQuency:PTRansition?
+:STATus[:DEVice]:SINTegrity:HARDware:CONDition?
+:STATus[:DEVice]:SINTegrity:HARDware:ENABle[?] <numeric_value>
+:STATus[:DEVice]:SINTegrity:HARDware[:EVENt]?
+:STATus[:DEVice]:SINTegrity:HARDware:NTRansition?
+:STATus[:DEVice]:SINTegrity:HARDware:PTRansition?
+:STATus[:DEVice]:SINTegrity:MODulation:CONDition?
+:STATus[:DEVice]:SINTegrity:MODulation:ENABle[?] <numeric_value>
+:STATus[:DEVice]:SINTegrity:MODulation[:EVENt]?
+:STATus[:DEVice]:SINTegrity:MODulation:NTRansition?
+:STATus[:DEVice]:SINTegrity:MODulation:PTRansition?
+:STATus[:DEVice]:SINTegrity:NTRansition?
+:STATus[:DEVice]:SINTegrity:PTRansition?
+:STATus[:DEVice]:SINTegrity:REFerence:CONDition?
+:STATus[:DEVice]:SINTegrity:REFerence:ENABle[?] <numeric_value>
+:STATus[:DEVice]:SINTegrity:REFerence[:EVENt]?
+:STATus[:DEVice]:SINTegrity:REFerence:NTRansition?
+:STATus[:DEVice]:SINTegrity:REFerence:PTRansition?
+:STATus:OPERation:BASeband:CONDition[?]
+:STATus:OPERation:BASeband:ENABle[?] <numeric_value>
+:STATus:OPERation:BASeband[:EVENt]?
+:STATus:OPERation:BASeband:NTRansition[?] <numeric_value>
+:STATus:OPERation:BASeband:PTRansition[?] <numeric_value>
+:STATus:OPERation:BIT{1..*}:CONDition?
+:STATus:OPERation:BIT{1..*}:ENABle[?] <numeric_value>
+:STATus:OPERation:BIT{1..*}[:EVENt]?
+:STATus:OPERation:BIT{1..*}:NTRansition[?] <boolean>
+:STATus:OPERation:BIT{1..*}:PTRansition[?] <boolean>
+:STATus:OPERation:CONDition?
+:STATus:OPERation:CONDition[?]
+:STATus:OPERation:CONDition?
+:STATus:OPERation:CONDition?
+:STATus:OPERation:CONDition?
+:STATus:OPERation:CONDition?
+:STATus:OPERation:CONDition?
+:STATus:OPERation:CONDition[?] <numeric_value>
+:STATus:OPERation:CONDition[?] <numeric_value>
+:STATus:OPERation:ENABle[?] <integer>
+:STATus:OPERation:ENABle[?] <numeric_value>
+:STATus:OPERation:ENABle[?] <numeric_value>
+:STATus:OPERation:ENABle[?] <numeric_value>
+:STATus:OPERation:ENABle[?] <numeric_value>
+:STATus:OPERation:ENABle[?] <numeric_value>
+:STATus:OPERation:ENABle[?] <numeric_value>
+:STATus:OPERation:ENABle[?] <numeric_value>
+:STATus:OPERation:ENABle[?] <numeric_value>
+:STATus:OPERation[:EVENt]?
+:STATus:OPERation[:EVENt]?
+:STATus:OPERation[:EVENt]?
+:STATus:OPERation[:EVENt]?
+:STATus:OPERation[:EVENt]?
+:STATus:OPERation[:EVENt]?
+:STATus:OPERation[:EVENt]?
+:STATus:OPERation[:EVENt]?
+:STATus:OPERation[:EVENt]?
+:STATus:OPERation:NTRansition[?] <integer>
+:STATus:OPERation:NTRansition[?] <numeric_value>
+:STATus:OPERation:NTRansition[?] <numeric_value>
+:STATus:OPERation:NTRansition[?] <numeric_value>
+:STATus:OPERation:NTRansition[?] <numeric_value>
+:STATus:OPERation:NTRansition[?] <numeric_value>
+:STATus:OPERation:NTRansition[?] <numeric_value>
+:STATus:OPERation:NTRanstition[?] <numeric_value>
+:STATus:OPERation:NTRanstition[?] <numeric_value>
+:STATus:OPERation:PTRansition[?] <integer>
+:STATus:OPERation:PTRansition[?] <numeric_value>
+:STATus:OPERation:PTRansition[?] <numeric_value>
+:STATus:OPERation:PTRansition[?] <numeric_value>
+:STATus:OPERation:PTRansition[?] <numeric_value>
+:STATus:OPERation:PTRansition[?] <numeric_value>
+:STATus:OPERation:PTRansition[?] <numeric_value>
+:STATus:OPERation:PTRanstition[?] <numeric_value>
+:STATus:OPERation:PTRanstition[?] <numeric_value>
+:STATus:PRESet
+:STATus:PRESet
+:STATus:PRESet
+:STATus:PRESet
+:STATus:PRESet
+:STATus:PRESet
+:STATus:PRESet
+:STATus:PRESet
+:STATus:QUEStionable:BERT:CONDition[?]
+:STATus:QUEStionable:BERT:ENABle[?] <numeric_value>
+:STATus:QUEStionable:BERT[:EVENt]?
+:STATus:QUEStionable:BERT:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:BERT:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:BIT{1..*}:CONDition?
+:STATus:QUEStionable:BIT{1..*}:ENABle[?] <boolean>
+:STATus:QUEStionable:BIT{1..*}[:EVENt]?
+:STATus:QUEStionable:BIT{1..*}:NTRansition[?] <boolean>
+:STATus:QUEStionable:BIT{1..*}:PTRansition[?] <boolean>
+:STATus:QUEStionable:CALibration:CONDition[?]
+:STATus:QUEStionable:CALibration:CONDition?
+:STATus:QUEStionable:CALibration:ENABle[?] <numeric_value>
+:STATus:QUEStionable:CALibration:ENABle[?] <numeric_value>
+:STATus:QUEStionable:CALibration[:EVENt]?
+:STATus:QUEStionable:CALibration[:EVENt]?
+:STATus:QUEStionable:CALibration:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:CALibration:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:CALibration:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:CALibration:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:CONDition?
+:STATus:QUEStionable:CONDition[?]
+:STATus:QUEStionable:CONDition?
+:STATus:QUEStionable:CONDition?
+:STATus:QUEStionable:CONDition?
+:STATus:QUEStionable:CONDition?
+:STATus:QUEStionable:CONDition?
+:STATus:QUEStionable:CONDition[?] <numeric_value>
+:STATus:QUEStionable:CONDition[?] <numeric_value>
+:STATus:QUEStionable:ENABle[?] <integer>
+:STATus:QUEStionable:ENABle[?] <numeric_value>
+:STATus:QUEStionable:ENABle[?] <numeric_value>
+:STATus:QUEStionable:ENABle[?] <numeric_value>
+:STATus:QUEStionable:ENABle[?] <numeric_value>
+:STATus:QUEStionable:ENABle[?] <numeric_value>
+:STATus:QUEStionable:ENABle[?] <numeric_value>
+:STATus:QUEStionable:ENABle[?] <numeric_value>
+:STATus:QUEStionable:ENABle[?] <numeric_value>
+:STATus:QUEStionable[:EVENt]?
+:STATus:QUEStionable[:EVENt]?
+:STATus:QUEStionable[:EVENt]?
+:STATus:QUEStionable[:EVENt]?
+:STATus:QUEStionable[:EVENt]?
+:STATus:QUEStionable[:EVENt]?
+:STATus:QUEStionable[:EVENt]?
+:STATus:QUEStionable[:EVENt]?
+:STATus:QUEStionable[:EVENt]?
+:STATus:QUEStionable:FREQuency:CONDition[?]
+:STATus:QUEStionable:FREQuency:ENABle[?] <numeric_value>
+:STATus:QUEStionable:FREQuency[:EVENt]?
+:STATus:QUEStionable:FREQuency:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:FREQuency:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:MODulation:CONDition[?]
+:STATus:QUEStionable:MODulation:CONDition?
+:STATus:QUEStionable:MODulation:ENABle[?] <numeric_value>
+:STATus:QUEStionable:MODulation:ENABle[?] <numeric_value>
+:STATus:QUEStionable:MODulation[:EVENt]?
+:STATus:QUEStionable:MODulation[:EVENt]?
+:STATus:QUEStionable:MODulation:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:MODulation:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:MODulation:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:MODulation:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:NTRansition[?] <integer>
+:STATus:QUEStionable:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:NTRanstition[?] <numeric_value>
+:STATus:QUEStionable:NTRanstition[?] <numeric_value>
+:STATus:QUEStionable:PAGing:CONDition?
+:STATus:QUEStionable:PAGing:ENABle[?] <numeric_value>
+:STATus:QUEStionable:PAGing[:EVENt]?
+:STATus:QUEStionable:PAGing:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:PAGing:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:POWer:CONDition[?]
+:STATus:QUEStionable:POWer:CONDition?
+:STATus:QUEStionable:POWer:ENABle[?] <numeric_value>
+:STATus:QUEStionable:POWer:ENABle[?] <numeric_value>
+:STATus:QUEStionable:POWer[:EVENt]?
+:STATus:QUEStionable:POWer[:EVENt]?
+:STATus:QUEStionable:POWer:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:POWer:NTRansition[?] <numeric_value>
+:STATus:QUEStionable:POWer:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:POWer:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:PTRansition[?] <integer>
+:STATus:QUEStionable:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:PTRansition[?] <numeric_value>
+:STATus:QUEStionable:PTRanstition[?] <numeric_value>
+:STATus:QUEStionable:PTRanstition[?] <numeric_value>
+:STATus:QUEue[:NEXT]?
+:STATus:QUEue[:NEXT]?
+:STATus:QUEue[:NEXT]?
+:STATus:QUEue[:NEXT]?
+:STO
+:STO <numeric_value>
+:STO:CFRQ <numeric_value>
+:STO:CFRQ <numeric_value>
+:STO:FULL <numeric_value>
+:STO:FULL <numeric_value>
+:STO:MEM <numeric_value>
+:STO:PART <numeric_value>
+:STO:RAM <numeric_value>
+:STO:SEQT <numeric_value>
+:STO:SWEep <numeric_value>
+:STore <numeric_value>
+:STore:Fast <numeric_value>
+:SU
+:SV <numeric_value>
+:SV <numeric_value>
+:SV <numeric_value>
+:SV <numeric_value>
+:SW0
+:SW0[?]
+:SW1
+:SW1[?]
+:SW2[?]
+:SW3[?]
+:SW4[?]
+:SWEep:CALC
+:SWEep:CFRQ:INC <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:CFRQ:LOGinc <numeric_value>[PCT]
+:SWEep:CFRQ:MKRNum <numeric_value>
+:SWEep:CFRQ:MKRoff
+:SWEep:CFRQ:MKRon
+:SWEep:CFRQ:STARt <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:CFRQ:STARt <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:CFRQ:STEP <numeric_value>
+:SWEep:CFRQ:STOP <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:CFRQ:STOP <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:CFRQ:TIME <numeric_value>[MS]
+:SWEep:CFRQ:TIME <numeric_value>[S|MS|US|NS]
+:SWEep:CFRQ:VALue[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:CFRQ?
+:SWEep:CFRQ?
+:SWEep:CONT
+:SWEep:CONT
+:SWEep:DN
+:SWEep:DN
+:SWEep[:FREQuency]
+:SWEep[:FREQuency]:GENeration[?] ANALog|STEPped
+:SWEep[:FREQuency]:MODE[?] AUTO|MANual
+:SWEep[:FREQuency]:SPACing[?] LINear|LOGarithmic
+:SWEep[:FREQuency]:TIME:STEP[:INCRement]? <numeric_value>[S|MS|US|NS]
+:SWEep[:FREQuency]:TIME:STEP:MODE? LOGarithmic
+:SWEep[:FREQuency]:TIME[?] <numeric_value>[S|MS|US|NS]
+:SWEep:GO
+:SWEep:GO
+:SWEep:HALT
+:SWEep:HALT
+:SWEep:HOP:TIME <numeric_value>[MS]
+:SWEep:HOP?
+:SWEep:INTF:MKRNum <numeric_value>
+:SWEep:INTF:MKRoff
+:SWEep:INTF:MKRon
+:SWEep:INTF:STARt <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:INTF:STEP <numeric_value>
+:SWEep:INTF:STOP <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:INTF:TIME <numeric_value>[MS]
+:SWEep:INTF:VALue[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:INTF?
+:SWEep:LFGF:MKRNum <numeric_value>
+:SWEep:LFGF:MKRoff
+:SWEep:LFGF:MKRon
+:SWEep:LFGF:STARt <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:LFGF:STEP <numeric_value>
+:SWEep:LFGF:STOP <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:LFGF:TIME <numeric_value>[MS]
+:SWEep:LFGF:VALue[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:SWEep:LFGF?
+:SWEep:LFGL:MKRNum <numeric_value>
+:SWEep:LFGL:MKRoff
+:SWEep:LFGL:MKRon
+:SWEep:LFGL:STARt <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:SWEep:LFGL:STEP <numeric_value>
+:SWEep:LFGL:STOP <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:SWEep:LFGL:TIME <numeric_value>[MS]
+:SWEep:LFGL:VALue[?] <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:SWEep:LFGL?
+:SWEep:MKRoff
+:SWEep:MKRon
+:SWEep:MODE CONT|EXT|SNGL
+:SWEep:MODE CONT|SNGL
+:SWEep:RESet
+:SWEep:RESet
+:SWEep:RETN
+:SWEep:RFLV:MKRNum <numeric_value>
+:SWEep:RFLV:MKRoff
+:SWEep:RFLV:MKRon
+:SWEep:RFLV:STARt <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:SWEep:RFLV:STEP <numeric_value>
+:SWEep:RFLV:STOP <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:SWEep:RFLV:TIME <numeric_value>[MS]
+:SWEep:RFLV:VALue[?] <numeric_value>[DBM|DBV|DBMV|DBUV|V|MV|UV]
+:SWEep:RFLV?
+:SWEep:TRIG OFF|STARt|STARtstop|STEP
+:SWEep:TYPE CFRQ|HOP|INTF1|INTF2|INTF3|INTF4|INTF5|INTF6|LFGF|LFGL|OFF|RFLV
+:SWEep:TYPE LIN|LOG
+:SWEep:UP
+:SWEep:UP
+:SWEep:XFER
+:SWEep:XFER
+:SWEep?
+:SWEep?
+:SWP:Auto
+:SWP:Break
+:SWP:MANual
+:SWP:MARker:Inverted
+:SWP:MARker:Normal
+:SWP:MARker:OFF
+:SWP:MARker:ON
+:SWP:MARker?
+:SWP:MOde:AF[:LIn]
+:SWP:MOde:AF:LOg
+:SWP:MOde:CF[:LIn]
+:SWP:MOde:Level[:RF]
+:SWP:MOde:MEmory
+:SWP:MOde:MEmory:Fast
+:SWP:MOde:MEmory:Hop_bus
+:SWP:MOde:RF[:LIn]
+:SWP:MOde:RF:LOg
+:SWP:MOde?
+:SWP:OFF
+:SWP:ON
+:SWP:Reset
+:SWP:Single
+:SWP:Z_axis
+:SWP:Z_axis:Inverted
+:SWP:Z_axis:Normal
+:SWP[?]
+:SWP?
+:SWT[?] <numeric_value>[SEC|MS]
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem
+:SYSTem:ALTernate:STATe[?] <boolean>
+:SYSTem:BEEPer:STATe[?] <boolean>
+:SYSTem:CAPability?
+:SYSTem:CAPability?
+:SYSTem:CAPability?
+:SYSTem:COMMunicate
+:SYSTem:COMMunicate
+:SYSTem:COMMunicate
+:SYSTem:COMMunicate:GPIB
+:SYSTem:COMMunicate:GPIB
+:SYSTem:COMMunicate:GPIB
+:SYSTem:COMMunicate:GPIB:ADDRess[?] <numeric_value>
+:SYSTem:COMMunicate:GPIB:ADDRess[?] <numeric_value>
+:SYSTem:COMMunicate:GPIB:ADDRess[?] <numeric_value>
+:SYSTem:COMMunicate:GPIB:ADDRess[?] <numeric_value>
+:SYSTem:COMMunicate:GPIB[:SELF]:ADDRess[?] <numeric_value>
+:SYSTem:COMMunicate:GPIB[:SELF]:ADDRess[?] <numeric_value>
+:SYSTem:COMMunicate:GTLocal
+:SYSTem:COMMunicate:GTLocal
+:SYSTem:COMMunicate:GTLocal
+:SYSTem:COMMunicate:LAN
+:SYSTem:COMMunicate:LAN
+:SYSTem:COMMunicate:LAN
+:SYSTem:COMMunicate:LAN:CONFig[?] AIP|AUTO|DHCP|MANual
+:SYSTem:COMMunicate:LAN:CONFig[?] DHCP|MANual
+:SYSTem:COMMunicate:LAN:CONFig[?] DHCP|MANual
+:SYSTem:COMMunicate:LAN:DEFaults
+:SYSTem:COMMunicate:LAN:DOMain[?] <string>
+:SYSTem:COMMunicate:LAN:GATeway[?] <string>
+:SYSTem:COMMunicate:LAN:GATeway[?] <string>
+:SYSTem:COMMunicate:LAN:GATeway[?] <string>
+:SYSTem:COMMunicate:LAN:HOSTname[?] <string>
+:SYSTem:COMMunicate:LAN:HOSTname[?] <string>
+:SYSTem:COMMunicate:LAN:HOSTname[?] <string>
+:SYSTem:COMMunicate:LAN:IP[?] <string>
+:SYSTem:COMMunicate:LAN:IP[?] <string>
+:SYSTem:COMMunicate:LAN:IP[?] <string>
+:SYSTem:COMMunicate:LAN:RESTart
+:SYSTem:COMMunicate:LAN:SUBNet[?] <string>
+:SYSTem:COMMunicate:LAN:SUBNet[?] <string>
+:SYSTem:COMMunicate:LAN:SUBNet[?] <string>
+:SYSTem:COMMunicate:PMETer
+:SYSTem:COMMunicate:PMETer:ADDRess[?] <numeric_value>
+:SYSTem:COMMunicate:PMETer:ADDRess[?] <numeric_value>
+:SYSTem:COMMunicate:PMETer:CHANnel[?] A|B
+:SYSTem:COMMunicate:PMETer:IDN[?] E4416a|E4417a|E4418b|E4419b
+:SYSTem:COMMunicate:PMETer:TIMeout[?] <numeric_value>[S|MS|US|NS]
+:SYSTem:COMMunicate:SERial
+:SYSTem:COMMunicate:SERial
+:SYSTem:COMMunicate:SERial:BAUD[?] <numeric_value>
+:SYSTem:COMMunicate:SERial:BAUD[?] <numeric_value>
+:SYSTem:COMMunicate:SERial:BAUD[?] <numeric_value>
+:SYSTem:COMMunicate:SERial:BAUD[?] <numeric_value>
+:SYSTem:COMMunicate:SERial:BITS[?] <numeric_value>
+:SYSTem:COMMunicate:SERial:CONTrol:RTS[?] IBFull|ON|RFR
+:SYSTem:COMMunicate:SERial:CONTrol:RTS[?] IBFull|ON|RFR
+:SYSTem:COMMunicate:SERial:ECHO[?] <boolean>
+:SYSTem:COMMunicate:SERial:PACE[?] NONE|XON
+:SYSTem:COMMunicate:SERial:PACE[?] NONE|XON
+:SYSTem:COMMunicate:SERial:PARity[?] EVEN|NONE|ODD|ONE|ZERO
+:SYSTem:COMMunicate:SERial:RESet
+:SYSTem:COMMunicate:SERial:SBITs[?] <numeric_value>
+:SYSTem:COMMunicate:SERial:TOUT[?] <numeric_value>[S|MS|US|NS]
+:SYSTem:DATE:LOCal[?] <integer>,<integer>,<integer>
+:SYSTem:DATE:UTC[?] <integer>,<integer>,<integer>
+:SYSTem:DATE[?] <integer>,<integer>,<integer>
+:SYSTem:DATE[?] <numeric_value>,<numeric_value>,<numeric_value>
+:SYSTem:DATE[?] <numeric_value>,<numeric_value>,<numeric_value>
+:SYSTem:DATE[?] <numeric_value>,<numeric_value>,<numeric_value>
+:SYSTem:DEVice:ID?
+:SYSTem:DFPRint:HISTory:COUNt?
+:SYSTem:DFPRint:HISTory:ENTRy? <integer>
+:SYSTem:DFPRint[?] <string>
+:SYSTem:DID?
+:SYSTem:DISPlay:UPDate[:STATe][?] <boolean>
+:SYSTem:DISPlay:UPDate[?] <boolean>
+:SYSTem:DUMP:ERRor?
+:SYSTem:DUMP:PRINter?
+:SYSTem:ERRor:ALL?
+:SYSTem:ERRor:CODE:ALL?
+:SYSTem:ERRor:CODE[:NEXT]?
+:SYSTem:ERRor:CODE[:NEXT]?
+:SYSTem:ERRor:CODE[:NEXT]?
+:SYSTem:ERRor:COUNt?
+:SYSTem:ERRor[:NEXT]?
+:SYSTem:ERRor[:NEXT]?
+:SYSTem:ERRor[:NEXT]?
+:SYSTem:ERRor[:NEXT]?
+:SYSTem:ERRor:SCPI[:SYNTax][?] <boolean>
+:SYSTem:ERRor?
+:SYSTem:ERRor?
+:SYSTem:ERRor?
+:SYSTem:ERRor?
+:SYSTem:ERRor?
+:SYSTem:ERRor[?] NUMeric|STRing
+:SYSTem:FILesystem[:SAFemode]? <boolean>
+:SYSTem:FPReset
+:SYSTem:FPReset
+:SYSTem:FPReset
+:SYSTem:FPReset
+:SYSTem:FPReset
+:SYSTem:HELP
+:SYSTem:HELP:HEADers? <string>
+:SYSTem:HELP:MODE[?] CONTinuous|SINGle
+:SYSTem:HELP:SYNTax:ALL?
+:SYSTem:HELP:SYNTax? <string>
+:SYSTem:IDN[?] <string>
+:SYSTem:IDN[?] <string>
+:SYSTem:IDN[?] <string>
+:SYSTem:KEY:ASSign[?] <numeric_value>
+:SYSTem:KEY:CLEar[?] <numeric_value>
+:SYSTem:KEY:DISable[?] SAVE
+:SYSTem:KEY:ENABle[?] SAVE
+:SYSTem:KEY[?] <numeric_value>
+:SYSTem:KLOCk[?] <boolean>
+:SYSTem:KLOCk[?] <boolean>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>
+:SYSTem:LANGuage[?] <string>|CIIL|COMPatible|EXIT|SCPI
+:SYSTem:LOCK:NAME:DETailed?
+:SYSTem:LOCK:NAME?
+:SYSTem:LOCK:OWNer:DETailed?
+:SYSTem:LOCK:OWNer?
+:SYSTem:LOCK:RELease
+:SYSTem:LOCK:RELease:ALL
+:SYSTem:LOCK:REQuest[:EXCLusive]? <integer>|INFinite
+:SYSTem:LOCK:REQuest:SHARed? <string>,<integer>|INFinite
+:SYSTem:LOCK:SHARed:STRing?
+:SYSTem:LOCK:TIMeout[?] <integer>|INFinite
+:SYSTem:MMHead:SELect:AUTO[?] <boolean>
+:SYSTem:MMHead:SELect[?] FRONt|NONE|REAR
+:SYSTem:MODE[?] FIXed|MSEQuence
+:SYSTem:MODE[?] FIXed|MSEQuence
+:SYSTem:MSEQuence:CATalog[?]
+:SYSTem:MSEQuence:CATalog?
+:SYSTem:MSEQuence:DELete <string>
+:SYSTem:MSEQuence:DELete:ALL
+:SYSTem:MSEQuence:DELete:ALL
+:SYSTem:MSEQuence:DELete[?] <string>
+:SYSTem:MSEQuence:DWELl[?] <numeric_value>[S|MS|US|NS|PS]
+:SYSTem:MSEQuence:DWELl[?] <numeric_value>[S|MS|US|NS|PS],<numeric_value>[S|MS|US|NS|PS]
+:SYSTem:MSEQuence:FREE?
+:SYSTem:MSEQuence:FREE?
+:SYSTem:MSEQuence:MODE[?] AUTO|STEP
+:SYSTem:MSEQuence:MODE[?] AUTO|STEP
+:SYSTem:MSEQuence[:RCL]:POINts?
+:SYSTem:MSEQuence[:RCL]:POINts?
+:SYSTem:MSEQuence[:RCL][?] <numeric_value>,<numeric_value>
+:SYSTem:MSEQuence[:RCL][?] <numeric_value>,<numeric_value>
+:SYSTem:MSEQuence:SELect[?] <string>
+:SYSTem:MSEQuence:SELect[?] <string>
+:SYSTem:OPT[?] <string>
+:SYSTem:OPT[?] <string>
+:SYSTem:OPT[?] <string>
+:SYSTem:PDOWn
+:SYSTem:PDOWn
+:SYSTem:PDOWn
+:SYSTem:PON
+:SYSTem:PON
+:SYSTem:PON
+:SYSTem:PON:TYPE[?] LAST|PRESet|USER
+:SYSTem:PON:TYPE[?] LAST|PRESet|USER
+:SYSTem:PON:TYPE[?] LAST|PRESet|USER
+:SYSTem:PRESet
+:SYSTem:PRESet
+:SYSTem:PRESet
+:SYSTem:PRESet
+:SYSTem:PRESet
+:SYSTem:PRESet <string>
+:SYSTem:PRESet:ALL
+:SYSTem:PRESet:ALL
+:SYSTem:PRESet:ALL
+:SYSTem:PRESet:ALL
+:SYSTem:PRESet:BASE
+:SYSTem:PRESet[:EXECute]
+:SYSTem:PRESet:LANGuage[?] <string>
+:SYSTem:PRESet:PERSistent
+:SYSTem:PRESet:PN9[?] NORMal|QUICk
+:SYSTem:PRESet:SAVE
+:SYSTem:PRESet:TYPE[?] FACTory|USER
+:SYSTem:PRESet:TYPE[?] NORMal|USER
+:SYSTem:PRESet[:USER]
+:SYSTem:PRESet[:USER]:SAVE
+:SYSTem:PROTect{1..*}[:STATe][?] <boolean>,<numeric_value>
+:SYSTem:PROTect{1..3}[:STATe][?] <boolean>,<numeric_value>
+:SYSTem:RESet <string>
+:SYSTem:RESet:ALL
+:SYSTem:RESet:BASE
+:SYSTem:SECurity
+:SYSTem:SECurity:COUNt[?] <numeric_value>
+:SYSTem:SECurity:DISPlay[?] <boolean>
+:SYSTem:SECurity:ERASeall
+:SYSTem:SECurity:LEVel:STATe[?] <boolean>
+:SYSTem:SECurity:LEVel[?] ERASe|NONE|OVERwrite|SANitize
+:SYSTem:SECurity:OVERwrite
+:SYSTem:SECurity:SANitize
+:SYSTem:SECurity[:STATe][?] <boolean>
+:SYSTem:SECurity[:STATe][?] <boolean>
+:SYSTem:SECurity[:STATe][?] <boolean>
+:SYSTem:SECurity[?] <boolean>
+:SYSTem:SERRor?
+:SYSTem:SERRor?
+:SYSTem:SSAVer
+:SYSTem:SSAVer:DELay[?] <numeric_value>
+:SYSTem:SSAVer:MODE[?] LIGHt|TEXT
+:SYSTem:SSAVer:STATe[?] <boolean>
+:SYSTem:STATe
+:SYSTem:STATe:CALL
+:SYSTem:TIME:DSTime:MODE[?] <boolean>
+:SYSTem:TIME:DSTime:RULE:CATalog?
+:SYSTem:TIME:DSTime:RULE[?] <string>
+:SYSTem:TIME:HRTimer:ABSolute <numeric_value>
+:SYSTem:TIME:HRTimer:ABSolute:SET[?]
+:SYSTem:TIME:HRTimer:RELative <integer>
+:SYSTem:TIME:LOCal[?] <integer>,<integer>,<integer>
+:SYSTem:TIME:UTC[?] <integer>,<integer>,<integer>
+:SYSTem:TIME[?] <integer>,<integer>,<integer>
+:SYSTem:TIME[?] <numeric_value>,<numeric_value>,<numeric_value>
+:SYSTem:TIME[?] <numeric_value>,<numeric_value>,<numeric_value>
+:SYSTem:TIME[?] <numeric_value>,<numeric_value>,<numeric_value>
+:SYSTem:TZONe[?] <numeric_value>,<numeric_value>
+:SYSTem:VERSion?
+:SYSTem:VERSion?
+:SYSTem:VERSion?
+:SYSTem:VERSion?
+:SYSTem:VERSion?
+:SYSTem:VERSion?
+:SYSTem:VERSion?
+:SYSTem:VERSion?
+:SYSTem:VERSion?
+:SYZ[?] <numeric_value>[HZ|KH|MH|GH]
+:T1
+:T1
+:T1
+:T2
+:T2
+:T2
+:T3
+:T3
+:T3
+:T4
+:T5
+:TAlk_terminator
+:TAlk_terminator:Cr_nl_end
+:TAlk_terminator:Nl_end
+:TEST
+:TEST
+:TEST:ASSY[?] ATTen|CPU|FRE|FSK|FSK_hp|IQMod1|IQMod2|MOD|MS11|MS12|MS13|MS135|MS15|MS18|MS19|MS20|MS21|MS22|MS23|OPTRef|OPU1|OPU3|PUM|STEReo|SYN,<numeric_value>,<string>
+:TEST:BATTery[:RAM]?
+:TEST:BATTery:XMEM?
+:TEST:BATTery?
+:TEST:DIRect:ALCA[?]
+:TEST:DIRect:ATTC[?]
+:TEST:DIRect:AXIFc[?]
+:TEST:DIRect:DCOD[?]
+:TEST:DIRect:DSYN0mux[?]
+:TEST:DIRect:DSYN1mux[?]
+:TEST:DIRect:FMOD[?]
+:TEST:DIRect:LFGena[?]
+:TEST:DIRect:LFGenb[?]
+:TEST:DIRect:MGEN[?]
+:TEST:DIRect:MWIFc[?]
+:TEST:DIRect:OPU1m[?]
+:TEST:DIRect:OPU3m[?]
+:TEST:DIRect:OPU6m[?]
+:TEST:DIRect:PUM[?]
+:TEST:DIRect:REFSs[?]
+:TEST:DIRect:ROSC[?]
+:TEST:DIRect:SUM[?]
+:TEST:DIRect:TSYN[?]
+:TEST:DIRect:YPLL[?]
+:TEST:DIRect[?] <numeric_value>,<numeric_value>,<string>
+:TEST:FUNCtion[?] A0|A1|A2|A3|AP|AT1|AT2|AT3|AT9|ATA|BS|BY|C1|C2|C3|C4|CF|CS|CT|CW|D0|D1|D2|D3|D4|D5|D6|D7|DF|DN|DW|F1|FA|FB|FI|FN|FO|FR|FS|FT|IF|IP|K0|K1|K2|L1|L2|LE|M0|M1|M2|M3|M4|M5|MG|MU|MY|N0|N1|NM|NONE|OA|OC|OK|OL|OR|OS|P0|P1|P2|P3|PL|R0|R1|RA|RC|RD|RF0|RF1|RL|RM|RS|RU|SCPI|SD|SE|SF|SH|SP|SS|ST|SU|SV|T1|T2|T3|TI|TR|UP|VE|W0|W1|W2|W3|W4|W5|W6|W7|W8|X0|X1|X2|X3|X4|X5|Y0|Y1
+:TEST:RAM?
+:TEST:RAM?
+:TEST:ROM?
+:TEST:ROM?
+:TEX[?]
+:TEst
+:TEst:OFF
+:TEst:Point[?] <numeric_value>
+:TEst:Voltage[?]
+:TF <numeric_value>
+:TI
+:TI
+:TIME?
+:TIme:AF_swp[?] <numeric_value>[S|MS|US]
+:TIme:CF_swp[?] <numeric_value>[S|MS|US]
+:TIme:Level_swp[:RF][?] <numeric_value>[S|MS|US]
+:TIme:MEmory_swp:Fast[?] <numeric_value>[S|MS|US]
+:TIme:MEmory_swp[?] <numeric_value>[S|MS|US]
+:TIme[:RF_swp][?] <numeric_value>[S|MS|US]
+:TL <numeric_value>[SC|MS]
+:TM <numeric_value>
+:TO <numeric_value>
+:TR
+:TR
+:TR0[?]
+:TR1[?]
+:TRG[?]
+:TRIGger
+:TRIGger
+:TRIGger[:FSWeep]:SOURce[?] AUTO|EXTernal|SINGle
+:TRIGger[:FSWeep]:SOURce[?] AUTO|EXTernal|SINGle
+:TRIGger:IMMediate
+:TRIGger:ODELay[?] <numeric_value>[AS|FS|PS|NS|US|MS|S|KS|MAS|GS|TS|PES|EXS]
+:TRIGger:OUTPut
+:TRIGger:OUTPut
+:TRIGger:OUTPut:POLarity[?] NEGative|POSitive
+:TRIGger:OUTPut:POLarity[?] NEGative|POSitive
+:TRIGger[:PSWeep]:SOURce[?] AUTO|EXTernal|SINGle
+:TRIGger[:PSWeep]:SOURce[?] AUTO|EXTernal|SINGle
+:TRIGger[:SEQuence][:IMMediate]
+:TRIGger[:SEQuence][:IMMediate][?]
+:TRIGger[:SEQuence][:IMMediate][?]
+:TRIGger[:SEQuence][:IMMediate][?]
+:TRIGger[:SEQuence]:SLOPe[?] NEGative|POSitive
+:TRIGger[:SEQuence]:SLOPe[?] NEGative|POSitive
+:TRIGger[:SEQuence]:SLOPe[?] NEGative|POSitive
+:TRIGger[:SEQuence]:SOURce[?] BUS|EXTernal|HOLD|IMMediate
+:TRIGger[:SEQuence]:SOURce[?] BUS|EXTernal|IMMediate|KEY
+:TRIGger[:SEQuence]:SOURce[?] BUS|EXTernal|IMMediate|KEY
+:TRIGger[:SEQuence]:SOURce[?] BUS|EXTernal|IMMediate|KEY
+:TRIGger[:SEQuence{1..2}]:SLOPe[?] NEGative
+:TRIGger[:SEQuence{1..2}]:SOURce[?] BUS|EXTernal|IMMediate
+:TRIGger[:SEQuence{1..2}]:STOP:SOURce[?] EXTernal|IMMediate
+:TRIGger:STARt[:IMMediate]
+:TRIGger:STARt:SOURce[?] BUS|EXTernal|HOLD|IMMediate
+:TRIGger:STARt:SOURce[?] EXTernal|IMMediate
+:TRIGger{1..*}:LIST[:IMMediate]
+:TRIGger{1..*}:LIST:SOURce[?] AUTO|EXTernal|SINGle
+:TRIGger{1..*}:MSEQuence[:IMMediate]
+:TRIGger{1..*}:MSEQuence:SOURce[?] AUTO|EXTernal|SINGle
+:TRIGger{1..*}:PULSe:EGATed:POLarity[?] INVerted|NORMal
+:TRIGger{1..*}:PULSe[:IMMediate]
+:TRIGger{1..*}:PULSe:LEVel[?] TTL|V05|VM25
+:TRIGger{1..*}:PULSe:SLOPe[?] NEGative|POSitive
+:TRIGger{1..*}:PULSe:SOURce[?] AUTO|EGATed|EXT_gated|EXTern|EXTernal|SINGle
+:TRIGger{1..*}:SLOPe[?] EITHer|NEGative|POSitive
+:TRIGger{1..*}[:SWEep][:IMMediate]
+:TRIGger{1..*}[:SWEep]:SOURce[?] AUTO|EXTernal|SINGle
+:TRIGger{1..2}:DM[:IMMediate]
+:TRIGger{1..2}:DM:SOURce[?] AUTO|EXTernal|SINGle
+:TRIGger{1..2}:LIST[:IMMediate]
+:TRIGger{1..2}:LIST:SOURce[?] AUTO|EXTernal|SINGle
+:TRIGger{1..2}:MSEQuence[:IMMediate]
+:TRIGger{1..2}:MSEQuence:SOURce[?] AUTO|EXTernal|SINGle
+:TRIGger{1..2}:PULSe:SLOPe[?] NEGative|POSitive
+:TRIGger{1..2}:PULSe:SOURce[?] AUTO|EXTernal
+:TRIGger{1..2}:SLOPe[?] EITHer|NEGative|POSitive
+:TRIGger{1..2}[:SWEep][:IMMediate]
+:TRIGger{1..2}[:SWEep]:SOURce[?] AUTO|EXTernal|SINGle
+:TRS[?]
+:TS
+:TSS[?]
+:TST[?]
+:TSWeep
+:TSWeep
+:TSWeep
+:UL0[?]
+:UL1[?]
+:UNIT
+:UNIT
+:UNIT
+:UNIT
+:UNIT
+:UNIT
+:UNIT
+:UNIT
+:UNIT:AM[?] DB|PCT
+:UNIT:ANGLe[?] DEGRee|RADian
+:UNIT:FREQuency[?] AHZ|EXHZ|FHZ|GHZ|HZ|KHZ|MHZ|NHZ|PEHZ|PHZ|THZ|UHZ
+:UNIT:FREQuency[?] GHZ|HZ|KHZ|MHZ
+:UNIT:POWer:OFFSet[?] DB|V
+:UNIT:POWer:STEP[?] DB|V
+:UNIT:POWer[?] AV|AW|DBAV|DBAW|DBEXv|DBEXw|DBFV|DBFW|DBGV|DBGW|DBKV|DBKW|DBM|DBMV|DBMW|DBMav|DBMaw|DBNV|DBNW|DBPV|DBPW|DBPev|DBPew|DBTV|DBTW|DBUV|DBUW|DBV|DBW|EXV|EXW|FV|FW|GV|GW|KV|KW|MAV|MAW|MV|MW|NV|NW|PEV|PEW|PV|PW|TW|UV|UW|V|VT|W
+:UNIT:POWer[?] DBM|DBMV|DBMW|DBUV|DBUW|DBV|DBW|MV|UV|V
+:UNIT:POWer[?] DBM|DBUV|V
+:UNIT:POWer[?] DBM|DBUV|V
+:UNIT:POWer[?] DBM|DBUV|V|VOLT
+:UNIT:POWer[?] DBM|MV|UV|V
+:UNIT:POWer[?] DB|DBM|DBMV|DBMVemf|DBUV|DBUVemf|DBV|DBVemf|MV|MVEMf|UV|UVEMf|V|VEMF
+:UNIT:POWer[?] DB|DBM|DBMV|DBMVemf|DBUV|DBUVemf|DBV|DBVemf|MV|MVEMf|UV|UVEMf|V|VEMF
+:UNIT:POWer[?] DB|DBM|DBMV|DBMVemf|DBUV|DBUVemf|DBV|DBVemf|MV|MVEMf|UV|UVEMf|V|VEMF
+:UNIT:TIME[?] AS|EXS|FS|GS|KS|MAS|MS|NS|PES|PS|S|TS|US
+:UNIT:TIME[?] MS|NS|S|US
+:UNIT:VOLT
+:UNIT:VOLT:TYPE[?] EMF|PD
+:UNIT:VOLTage[?] AV|AW|DBAV|DBAW|DBEXv|DBEXw|DBFV|DBFW|DBGV|DBGW|DBKV|DBKW|DBM|DBMV|DBMW|DBMav|DBMaw|DBNV|DBNW|DBPV|DBPW|DBPev|DBPew|DBTV|DBTW|DBUV|DBUW|DBV|DBW|EXV|EXW|FV|FW|GV|GW|KV|KW|MAV|MAW|MV|MW|NV|NW|PEV|PEW|PV|PW|TW|UV|UW|V|VT|W
+:UP
+:UP
+:UP
+:UP
+:UP
+:UP[?]
+:UV
+:VE <numeric_value>[DB|DM]
+:VECTor
+:VECTor:CAL
+:VECTor:CONFig:IQ OHMS300|OHMS50
+:VECTor:CONFig:MIXer EXTernal|INTernal
+:VECTor:CONFig:PULSe DISabled|ENABled
+:VECTor:CONFig?
+:VECTor:FADing:CTRL DISabled|RAYLeigh|RICian
+:VECTor:FADing:DIR_dopp <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:VECTor:FADing:RATio <numeric_value>[DB]
+:VECTor:FADing:SPEed <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:VECTor:FADing?
+:VECTor:MODopt:ENVelope DISabled|ENABled
+:VECTor:MODopt:MODPol INVerse|NORMal
+:VECTor:MODopt?
+:VL
+:VM1[?]
+:VMETer:MODE[?] AC|DC
+:VMETer[:VOLTage]? <numeric_value>[V|MV|UV]
+:W0
+:W1
+:W1
+:W1[?] <numeric_value>[SEC|MS|US|NS]
+:W2
+:W2
+:W2[?] <numeric_value>[SEC|MS|US|NS]
+:W3
+:W3
+:W3[?] <numeric_value>[SEC|MS|US|NS]
+:W4
+:W4
+:W4[?] <numeric_value>[SEC|MS|US|NS]
+:W5
+:W6
+:W7
+:W8
+:WAVeform[?] SAWTooth|SINE|SQUare|TRIangle|WGNoise
+:WBFM:AC
+:WBFM:DC
+:WBFM:DEVN <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:WBFM:OFF
+:WBFM:ON
+:WBFM[?] <numeric_value>[HZ|KHZ|MHZ|GHZ]
+:WFS[?]
+:WO
+:WY
+:X0
+:X1 <numeric_value>[HZ|KZ|MZ|GZ]
+:X1 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:X2 <numeric_value>[HZ|KZ|MZ|GZ]
+:X2 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:X3 <numeric_value>[HZ|KZ|MZ|GZ]
+:X3 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:X4 <numeric_value>[HZ|KZ|MZ|GZ]
+:X4 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:X5 <numeric_value>[HZ|KZ|MZ|GZ]
+:X5 <numeric_value>[HZ|KZ|MZ|GZ]|M0|MO
+:X6
+:X7
+:XA
+:XD
+:XL0[?] <numeric_value>[DM|VT]
+:XL0[?] <numeric_value>[DM|VT]
+:XL1[?] <numeric_value>[DM|VT]
+:XL2[?] <numeric_value>[DM|VT]
+:XL3[?] <numeric_value>[DM|VT]
+:XL4[?] <numeric_value>[DM|VT]
+:XL5[?] <numeric_value>[DM|VT]
+:XL6[?] <numeric_value>[DM|VT]
+:XL7[?] <numeric_value>[DM|VT]
+:XL8[?] <numeric_value>[DM|VT]
+:XL9[?] <numeric_value>[DM|VT]
+:XO
+:XP[?]
+:Y0
+:Y0
+:Y1
+:Y1
+:Y2
+:Y3
+:Y[?]
+:YO
+:ZEL[?]
+:ZL[?] <numeric_value>
+:ZPN[?] <numeric_value>
+:ZS[?] <numeric_value>
+:ZTL[?] <block_data>
+@LLO
+@LOC
