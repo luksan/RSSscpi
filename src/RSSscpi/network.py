@@ -10,6 +10,8 @@ import socket
 import threading
 import logging
 
+logger = logging.getLogger(__name__)
+
 
 def connect_ethernet(instr_class, ip_address, proto="INSTR"):
     """
@@ -58,12 +60,12 @@ class ZeroconfListener(object):
         self.stop_search = threading.Event()
 
     def add_service(self, zc, type_, name):
-        logging.debug("Service added, %s, %s", type_, name)
+        logger.debug("Service added, %s, %s", type_, name)
         info = zc.get_service_info(type_, name)
         if not self.filter_zc_info(info):
             return
         self.found_sensors.append(self.info_class(info))
-        logging.debug("Found device %s", self.found_sensors[-1])
+        logger.debug("Found device %s", self.found_sensors[-1])
         if self.max_devices is not None and len(self.found_sensors) >= self.max_devices:
             self.stop_search.set()
 
