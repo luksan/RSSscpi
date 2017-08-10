@@ -11,6 +11,15 @@ from .conftest import VISA  # noqa: F401
 from RSSscpi.zva import ZVA  # noqa: F401
 
 
+def test_init(zva, visa):
+    # type: (ZVA, VISA) -> None
+    zva.init()
+    assert ["*CLS;*ESE 127;*SRE 36",
+            "SYSTem:LANGuage?",
+            "SYSTem:LANGuage 'SCPI'",
+            ] == visa.cmd
+
+
 def test_vna_port(zva, visa):
     # type: (ZVA, VISA) -> None
     ch = zva.get_channel(1)

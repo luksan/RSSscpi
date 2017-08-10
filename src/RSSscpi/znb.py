@@ -77,7 +77,6 @@ class ZNB(ZNB_gen):
 
     def init(self):
         super(ZNB, self).init()
-        self.SYSTem.COMMunicate.GPIB.SELF.RTERminator().w("EOI")
         try:
             self.SYSTem.COMMunicate.CODec().w("UTF8")  # Set the character encoding
         except AttributeError:
