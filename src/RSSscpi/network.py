@@ -35,16 +35,14 @@ def connect_ethernet(instr_class, ip_address, proto="INSTR"):
 class ZeroconfInfo(object):
     def __init__(self, zeroconf_info):
         self.name = ""
-        self.ip_address = ""
+        self.ip_address = socket.inet_ntoa(zeroconf_info.address)
         self.mac = ""
-
         self.parse_zc_info(zeroconf_info)
 
     def parse_zc_info(self, zeroconf_info):
         i = zeroconf_info
         self.name = i.name.split()[0]  # nrp33sn-100927
         self.mac = i.name.split()[1][1:len("00:90:b8:1f:7c:29")+1]
-        self.ip_address = socket.inet_ntoa(i.address)
 
     def __str__(self):
         return "%s, %s, %s" % (self.name, self.mac, self.ip_address)

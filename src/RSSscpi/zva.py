@@ -5,11 +5,50 @@
 """
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-from .gen import ZVA_gen
-from .SCPI_property import SCPIProperty
-from . import znb
+from RSSscpi.gen import ZVA_gen
+from RSSscpi.SCPI_property import SCPIProperty
+from RSSscpi import znb
+import RSSscpi.network as net
 
 import logging
+
+
+def connect_ethernet(ip_address):
+    # type: ([str, unicode]) -> ZVA
+    """
+    Helper to connect to a ZVA VNA via Ethernet / TCPIP / VISA.
+    Creates an ZVA instance and calls init() on it before returning.
+
+    :param ip_address: The ip address in string format
+    :return: An initialized ZVA instance.
+    :rtype: ZVA
+    """
+    return net.connect_ethernet(ZVA, ip_address)
+
+
+class ZVAZeroconf(znb.ZNBZeroconf):
+    pass
+
+
+class ZCListener(net.ZeroconfListener):
+    info_class = ZVAZeroconf
+    service_name = "_vxi-11._tcp.local."
+
+    def filter_zc_info(self, zc_info):
+        return "ZVA" in zc_info.name
+
+
+def find_zva(max_time=2, max_devices=None):
+    """
+    Use zeroconf to scan the local network for ZVA VNAs
+
+    :param float max_time: The maximum time we will wait, in seconds
+    :param int max_devices: Stop the search after this many devices have been found
+    :return: A list of ZVAZeroconf objects describing the found devices.
+    :rtype: list[ZVAZeroconf]
+    """
+
+    return net.zeroconf_scan(ZCListener(), max_time, max_devices)
 
 
 class ZVA(ZVA_gen, znb.ZNB):
@@ -98,3 +137,8 @@ class SweepSegment(ZVA_gen.SENSe.SEGMent, znb.SweepSegment):
 class Trace(znb.Trace):
     def get_marker(self, n):
         return Marker(n, self)
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.DEBUG)
+    print([str(x) for x in find_zva(max_devices=10, max_time=1)])

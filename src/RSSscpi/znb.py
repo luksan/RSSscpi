@@ -6,15 +6,65 @@ Created on 16 feb. 2016
 """
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-from .gen import ZNB_gen
-from .SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
-from .SCPI_response import format_SCPI_block_data
+from RSSscpi.gen import ZNB_gen
+from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
+from RSSscpi.SCPI_response import format_SCPI_block_data
+import RSSscpi.network as net
 
 import ntpath
 import os.path
 
 import logging
 import re
+
+
+def connect_ethernet(ip_address):
+    # type: ([str, unicode]) -> ZNB
+    """
+    Helper to connect to a ZNB VNA via Ethernet / TCPIP / VISA.
+    Creates an ZNB instance and calls init() on it before returning.
+
+    :param ip_address: The ip address in string format
+    :return: An initialized ZNB instance.
+    :rtype: ZNB
+    """
+    return net.connect_ethernet(ZNB, ip_address, "hislip0")
+
+
+class ZNBZeroconf(net.ZeroconfInfo):
+    def __init__(self, zeroconf_info):
+        self.fw = ""
+        self.serial = ""
+        super(ZNBZeroconf, self).__init__(zeroconf_info)
+
+    def parse_zc_info(self, i):
+        self.name = i.properties['fqdn'].split(".")[0]
+        self.fw = i.properties['FirmwareVersion']
+        self.serial = i.properties['SerialNumber']
+
+    def __str__(self):
+        return "%s, %s, %s" % (self.name, self.fw, self.ip_address)
+
+
+class ZCListener(net.ZeroconfListener):
+    info_class = ZNBZeroconf
+    service_name = "_vxi-11._tcp.local."
+
+    def filter_zc_info(self, zc_info):
+        return "ZNB" in zc_info.name
+
+
+def find_znb(max_time=2, max_devices=None):
+    """
+    Use zeroconf to scan the local network for ZNB VNAs
+
+    :param float max_time: The maximum time we will wait, in seconds
+    :param int max_devices: Stop the search after this many devices have been found
+    :return: A list of ZNBZeroconf objects describing the found devices.
+    :rtype: list[ZNBZeroconf]
+    """
+
+    return net.zeroconf_scan(ZCListener(), max_time, max_devices)
 
 
 class ZNB(ZNB_gen):
@@ -928,3 +978,11 @@ class File(Path):
         :param target: The location of the copy
         """
         self.instrument.MMEMory.COPY().w(self.full_path, str(target))
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    devices = find_znb(max_devices=10, max_time=1)
+    print([str(x) for x in devices])
+    znb = connect_ethernet(devices[0].ip_address)
+    print(znb.IDN.q())
