@@ -123,7 +123,9 @@ class Instrument(SCPINodeBase):
     _cmd = ""
 
     def __get__(self, instance, owner):
-        return self  # FIXME: remove __get__/__set__ from instrument instead
+        # We can't delete __get__ from the class, so this overrides
+        # the SCPINodeBase __get__ method, essentially making it a no-op.
+        return self
 
     Error = InstrumentError
 
