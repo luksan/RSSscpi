@@ -296,7 +296,7 @@ class Instrument(SCPINodeBase):
         """
         x = cmd.build_cmd() + " " + self._build_arg_str(cmd, args, kwargs)
         with self._visa_lock:
-            self._write(x)
+            self._write(x.strip())
 
     def _query(self, cmd_str):
         return SCPIResponse(self._call_visa(self._visa_res.query, cmd_str))
@@ -315,7 +315,7 @@ class Instrument(SCPINodeBase):
         x = cmd.build_cmd() + "? " + self._build_arg_str(cmd, args, kwargs)
         try:
             with self._visa_lock:
-                return self._query(x)
+                return self._query(x.strip())
         except visa.VisaIOError as e:
             if e.error_code == visa.constants.VI_ERROR_TMO:  # timeout
                 if self.exception_on_error:

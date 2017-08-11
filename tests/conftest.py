@@ -55,11 +55,10 @@ class VISA(object):
 
     def write(self, w):
         assert isinstance(w, str) or isinstance(w, type(u""))
-        self._cmd.append(w.strip())  # read()/write() in Instrument appends a space to the command even without arguments
+        self._cmd.append(w)
 
     def query(self, q):
         assert isinstance(q, str) or isinstance(q, type(u""))
-        q = q.strip()  # FIXME: .query() shouldn't output trailing whitespace
         self._cmd.append(q)
         if self._def_set:  # If the default was changed we overwrite any existing value for the following query
             self.ret_dict[q] = self._def_ret
