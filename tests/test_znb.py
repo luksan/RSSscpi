@@ -548,20 +548,37 @@ def test_trace(dummy_vna, visa):
     visa.ret = "1"
     assert tr.n == 1
     assert tr.n == 1
-    pytest.raises(AttributeError, 'tr.n = 2')
-    tr.delete()
-    assert ["CONFigure:TRACe:NAME:ID? 'Tr7'",
-            "CALCulate2:PARameter:DELete 'Tr7'",
+    with pytest.raises(AttributeError):
+        tr.n = 2
+    assert ["CONFigure:TRACe:NAME:ID? 'Tr7'"] == visa.cmd
+
+    # test fetching the cal state label
+    visa.ret = "Cal"
+    x = tr.query_cal_state_label()
+    assert isinstance(x, str) and x == "Cal"
+    assert ["CALCulate2:PARameter:SELect 'Tr7'",
+            "SENSe2:CORRection:SSTate?",
             ] == visa.cmd
 
+    # Test is_active()
     visa.ret = "Tr7\r\n"
     assert tr.is_active()
     visa.ret = "Tr6\r\n"
     assert not tr.is_active()
-    del tr
     assert ["CALCulate2:PARameter:SELect?",
             "CALCulate2:PARameter:SELect?",
             ] == visa.cmd
+
+
+def test_trace_removal(dummy_vna, visa):
+    # type: (ZNB, VISA) -> None
+    tr = dummy_vna.get_channel(2).get_trace("Tr7")
+
+    tr.delete()
+    assert ["CALCulate2:PARameter:DELete 'Tr7'"] == visa.cmd
+
+    del tr
+    assert [] == visa.cmd
 
 
 def test_trace_name(dummy_vna, visa):

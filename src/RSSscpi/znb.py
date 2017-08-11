@@ -648,7 +648,6 @@ class Trace(object):
             raise ValueError("Invalid trace name '%s'" % name)
         return ret
 
-
     @property
     def n(self):
         """
@@ -657,6 +656,13 @@ class Trace(object):
         if not self._n:  # FIXME: check if the trace id changes when deleting a trace
             self._n = int(self.channel.instrument.CONFigure.TRACe.NAME.ID().q(self.name))
         return self._n
+
+    def query_cal_state_label(self):
+        """
+        Returns the system error correction state label for the trace as a string.
+        """
+        self._make_active_cb()
+        return str(self._corr_node().SSTate.q())
 
     # TODO: argument checking?
     trace_format = SCPIProperty(ZNB_gen.CALCulate.FORMat, str, callback=_make_active_cb, get_root_node=_calc_node)
@@ -680,7 +686,6 @@ class Trace(object):
     where 0 is the bottom and 100 is the top of the screen.
     """
 
-    cal_state_label = SCPIProperty(ZNB_gen.SENSe.CORRection.SSTate, str, callback=_make_active_cb, get_root_node=_corr_node)  # FIXME: read-only -> method
     source_port = SCPIProperty(ZNB_gen.SENSe.SWEep.SRCPort, int, callback=_make_active_cb, get_root_node=_sweep_node)  # Logical port number of the simulus port
 
     math_equation = SCPIProperty(ZNB_gen.CALCulate.MATH.EXPRession.SDEFine, str, callback=_make_active_cb, get_root_node=_calc_node)
@@ -744,7 +749,7 @@ class Marker(ZNB_gen.CALCulate.MARKer):
     #: Marker position
     x = SCPIProperty(_MKR.X, float, callback=_prop_callback)
     #: Marker value
-    y = SCPIProperty(_MKR.Y, float, callback=_prop_callback)  # FIXME: query only -> query_y() method
+    y = SCPIProperty(_MKR.Y, float, callback=_prop_callback)
 
 
 class Limit(ZNB_gen.CALCulate.LIMit):
@@ -982,6 +987,6 @@ class File(Path):
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     devices = find_znb(max_devices=10, max_time=1)
-    print([str(x) for x in devices])
+    print([str(_dev) for _dev in devices])
     znb = connect_ethernet(devices[0].ip_address)
     print(znb.IDN.q())
