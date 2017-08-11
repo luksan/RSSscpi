@@ -645,7 +645,7 @@ class Trace(object):
         """
         :return: CONFigure.TRACe.NAME.ID?
         """
-        if not self._n:  # FIXME: check if the trace id changes when deleting a trace
+        if not self._n:  # The trace number doesn't change with trace add/delete, so it's ok to cache it.
             self._n = int(self.channel.instrument.CONFigure.TRACe.NAME.ID().q(self.name))
         return self._n
 
