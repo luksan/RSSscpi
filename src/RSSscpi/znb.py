@@ -87,14 +87,6 @@ class ZNB(ZNB_gen):
             self.visa_logger.warning("Changing remote language from '%s' to 'SCPI' (default)", orig_lang)
             self.SYSTem.LANGuage().w("SCPI")
 
-    def set_source_power_offset(self, channel=None, src=0, power=-300, relative=True):
-        # FIXME: remove this method from ZNB(), put in Channel
-        if relative:
-            x = 'CPAD'
-        else:
-            x = 'ONLY'
-        self.SOURce(channel).POWer(src).LEVel.IMMediate.OFFSet().w(power, x)
-
     @property
     def active_channel(self):
         """
