@@ -97,8 +97,10 @@ def test_channel(dummy_vna, visa):
             "DISPlay:WINDow1:TRACe:EFEed 'Tr2'",
             ] == visa.cmd
 
+    visa.ret = "Tr1"
     tr = ch.active_trace
-    assert tr.name == "1"
+    visa.ret = "1"
+    assert tr.name == "Tr1"
     ch.active_trace = "Tr3"
     ch.active_trace = ch.get_trace("Tr2")
     assert ["CALCulate3:PARameter:SELect?",
@@ -608,21 +610,27 @@ class TestTrace(object):
 
     def test_trace_name(self, tr, visa):
         # type: (znb.Trace, VISA) -> None
+        """Test that the trace name attribute works and is cached"""
+        assert tr.name == "Tr3"
         tr.name = "Abc[12]"
-        with pytest.raises(ValueError):
-            tr.name = "0"
-        with pytest.raises(ValueError):
-            tr.name = "ASD.a"
         tr.name = "[MEM]a"
-        with pytest.raises(ValueError):
-            tr.copy("...")
-        with pytest.raises(ValueError):
-            tr.copy_data_to_mem("09a")
-        with pytest.raises(ValueError):
-            tr.copy_math_to_mem("0x")
         assert ["CONFigure:TRACe:REName 'Tr3', 'Abc[12]'",
                 "CONFigure:TRACe:REName 'Abc[12]', '[MEM]a'",
                 ] == visa.cmd
+
+    @pytest.mark.parametrize("name", [
+        "0"  # Leading integer
+        "ASD.a",  # "." in name
+        "...",  # "." in name
+        "09a",  # Leading integer
+    ])
+    def test_trace_name_validation(self, name, tr, visa):
+            assert pytest.raises(ValueError, "tr.channel.get_trace(name)")
+            assert pytest.raises(ValueError, "tr.name = name")
+            assert pytest.raises(ValueError, "tr.copy(name)")
+            assert pytest.raises(ValueError, "tr.copy_data_to_mem(name)")
+            assert pytest.raises(ValueError, "tr.copy_math_to_mem(name)")
+            assert [] == visa.cmd
 
     def test_trace_scaling(self, tr, visa):
         # type: (znb.Trace, VISA) -> None

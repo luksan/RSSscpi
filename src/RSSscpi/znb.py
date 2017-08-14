@@ -540,6 +540,7 @@ class Trace(object):
         """
         self._n = None
         self._name = str(name)
+        self.check_if_name_is_valid(self._name, raise_err=True)
         self.channel = channel
         self._cmd_cnt = None
 
@@ -631,6 +632,8 @@ class Trace(object):
     def check_if_name_is_valid(name, raise_err=False):
         # type: (str) -> bool
         """
+        The first character of a trace name can be either one of the upper case letters A to Z, one of the lower case letters a to z, an underscore _ or a square bracket [ or ].
+        For all other characters of a trace name, the numbers 0 to 9 can be used in addition.
 
         :param name: A string which will be checked to see if it is a valid trace name
         :param raise_err: Raise a ValueError if the name is invalid
