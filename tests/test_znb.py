@@ -9,6 +9,7 @@ import pytest
 from .conftest import VISA  # noqa: F401
 
 from RSSscpi import ZNB  # noqa: F401
+from RSSscpi import znb  # noqa: F401
 
 
 def test_init(znb, visa):
@@ -514,138 +515,127 @@ def test_marker_y_set(znb, visa):
             ] == visa.cmd
 
 
-def test_trace(dummy_vna, visa):
-    """
-    :param ZNB dummy_vna:
-    :param VISA visa:
-    """
-    ch = dummy_vna.get_channel(2)
-    tr = ch.get_trace("Tr7")
-    tr.ref_level = 8
-    visa.ret = "REAL"
-    x = tr.trace_format
-    assert x == "REAL"
-    tr.trace_format = 2
-    assert ["DISPlay:WINDow:TRACe:Y:SCALe:RLEVel 8, 'Tr7'",
-            "CALCulate2:PARameter:SELect 'Tr7'",
-            "CALCulate2:FORMat?",
-            "CALCulate2:FORMat 2",
-            ] == visa.cmd
+class PropertyTester(object):
+    @staticmethod
+    def float_prop_parametrize(props):
+        return pytest.mark.parametrize('prop_name, scpi_cmd, scpi_write, scpi_query', props, ids=[x[0] for x in props])
 
-    tr.copy_data_to_mem("Mem1")
-    tr.copy_math_to_mem("MathMem1")
-    assert ["TRACe:COPY 'Mem1', 'Tr7'",
-            "TRACe:COPY:MATH 'MathMem1', 'Tr7'",
-            ] == visa.cmd
-
-    visa.ret = "S11"
-    tr_new = tr.copy("NEW_TRACE")
-    assert isinstance(tr_new, type(tr))
-    assert ["CALCulate2:PARameter:MEASure? 'Tr7'",
-            "CALCulate2:PARameter:SDEFine 'NEW_TRACE', 'S11'",
-            ] == visa.cmd
-
-    visa.ret = "1"
-    assert tr.n == 1
-    assert tr.n == 1
-    with pytest.raises(AttributeError):
-        tr.n = 2
-    assert ["CONFigure:TRACe:NAME:ID? 'Tr7'"] == visa.cmd
-
-    # test fetching the cal state label
-    visa.ret = "Cal"
-    x = tr.query_cal_state_label()
-    assert isinstance(x, str) and x == "Cal"
-    assert ["CALCulate2:PARameter:SELect 'Tr7'",
-            "SENSe2:CORRection:SSTate?",
-            ] == visa.cmd
-
-    # Test is_active()
-    visa.ret = "Tr7\r\n"
-    assert tr.is_active()
-    visa.ret = "Tr6\r\n"
-    assert not tr.is_active()
-    assert ["CALCulate2:PARameter:SELect?",
-            "CALCulate2:PARameter:SELect?",
-            ] == visa.cmd
+    @staticmethod
+    def test_float_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, instance, visa):
+        visa.ret = scpi_float[1]  # the string representation of the float value
+        x = getattr(instance, prop_name)
+        assert isinstance(x, float) and x == scpi_float[0]  # the float value
+        setattr(instance, prop_name, scpi_float[0])
+        assert [scpi_query.format(scpi_cmd), scpi_write.format(scpi_cmd, scpi_float[1])] == visa.cmd
 
 
-def test_trace_removal(dummy_vna, visa):
-    # type: (ZNB, VISA) -> None
-    tr = dummy_vna.get_channel(2).get_trace("Tr7")
+class TestTrace(object):
+    @pytest.fixture
+    def tr(self, dummy_vna):
+        return dummy_vna.get_channel(2).get_trace("Tr3")
 
-    tr.delete()
-    assert ["CALCulate2:PARameter:DELete 'Tr7'"] == visa.cmd
+    float_properties = [
+        ("scale_per_div",   "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision",   "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
+        ("scale_top",       "DISPlay:WINDow:TRACe:Y:SCALe:TOP",         "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
+        ("scale_bottom",    "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom",      "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
+        ("ref_level",       "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel",      "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
+        ("ref_pos",         "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition",   "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
+    ]
 
-    del tr
-    assert [] == visa.cmd
+    @PropertyTester.float_prop_parametrize(float_properties)
+    def test_float_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, tr, visa):
+        PropertyTester.test_float_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, tr, visa)
 
+    def test_trace_format(self, tr, visa):
+        # type: (ZNB, VISA) -> None
+        visa.ret = "REAL"
+        assert tr.trace_format == "REAL"
+        tr.trace_format = 2
+        assert ["CALCulate2:PARameter:SELect 'Tr3'",
+                "CALCulate2:FORMat?",
+                "CALCulate2:FORMat 2",
+                ] == visa.cmd
 
-def test_trace_name(dummy_vna, visa):
-    tr = dummy_vna.get_channel(1).get_trace(1)
-    tr.name = "Abc[12]"
-    with pytest.raises(ValueError):
-        tr.name = "0"
-    with pytest.raises(ValueError):
-        tr.name = "ASD.a"
-    tr.name = "[MEM]a"
-    with pytest.raises(ValueError):
-        tr.copy("...")
-    with pytest.raises(ValueError):
-        tr.copy_data_to_mem("09a")
-    with pytest.raises(ValueError):
-        tr.copy_math_to_mem("0x")
-    assert ["CONFigure:TRACe:REName '1', 'Abc[12]'",
-            "CONFigure:TRACe:REName 'Abc[12]', '[MEM]a'",
-            ] == visa.cmd
+    def test_trace_copy(self, tr, visa):
+        # type: (znb.Trace, VISA) -> None
+        tr.copy_data_to_mem("Mem1")
+        tr.copy_math_to_mem("MathMem1")
+        assert ["TRACe:COPY 'Mem1', 'Tr3'",
+                "TRACe:COPY:MATH 'MathMem1', 'Tr3'",
+                ] == visa.cmd
 
+        visa.ret = "S11"
+        tr_new = tr.copy("NEW_TRACE")
+        assert isinstance(tr_new, type(tr))
+        assert ["CALCulate2:PARameter:MEASure? 'Tr3'",
+                "CALCulate2:PARameter:SDEFine 'NEW_TRACE', 'S11'",
+                ] == visa.cmd
 
-def test_trace_scaling(dummy_vna, visa):
-    """
-    :param ZNB dummy_vna:
-    :param VISA visa:
-    """
-    tr = dummy_vna.get_channel(2).get_trace("Tr3")
-    tr.scale_per_div = 10
-    tr.scale_top = 8
-    tr.scale_bottom = 2
-    tr.ref_level = 0.8
-    tr.ref_pos = 50  # Position in percent
-    assert ["DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 10, 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:TOP 8, 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom 2, 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel 0.8, 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition 50, 'Tr3'",
-            ] == visa.cmd
-    assert tr.scale_per_div == 1
-    assert tr.scale_top == 1
-    assert tr.scale_bottom == 1
-    assert tr.ref_level == 1
-    assert tr.ref_pos == 1
-    assert ["DISPlay:WINDow:TRACe:Y:SCALe:PDIVision? 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:TOP? 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom? 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel? 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition? 'Tr3'",
-            ] == visa.cmd
+    def test_trace_id(self, tr, visa):
+        # type: (znb.Trace, VISA) -> None
+        """Test that the trace id is cached, and can't be assigned"""
+        visa.ret = "1"
+        assert tr.n == 1
+        assert tr.n == 1
+        with pytest.raises(AttributeError):
+            tr.n = 2
+        assert ["CONFigure:TRACe:NAME:ID? 'Tr3'"] == visa.cmd
 
-    tr.autoscale()
-    assert ["DISPlay:WINDow:TRACe:Y:SCALe:AUTO ONCE, 'Tr3'",
-            ] == visa.cmd
+    def test_cal_state_label(self, tr, visa):
+        # type: (znb.Trace, VISA) -> None
+        """"Test fetching the cal state label"""
+        visa.ret = "Cal"
+        x = tr.query_cal_state_label()
+        assert isinstance(x, str) and x == "Cal"
+        assert ["CALCulate2:PARameter:SELect 'Tr3'",
+                "SENSe2:CORRection:SSTate?",
+                ] == visa.cmd
 
+    def test_is_active(self, tr, visa):
+        # type: (znb.Trace, VISA) -> None
+        visa.ret = "Tr3\r\n"
+        assert tr.is_active() is True
+        visa.ret = "Tr6\r\n"
+        assert not tr.is_active()
+        assert ["CALCulate2:PARameter:SELect?",
+                "CALCulate2:PARameter:SELect?",
+                ] == visa.cmd
 
-def test_trace_measurement(dummy_vna, visa):
-    """
-    :param ZNB dummy_vna:
-    :param VISA visa:
-    """
-    tr = dummy_vna.get_channel(3).get_trace("Tr3")
-    meas = tr.measurement
-    assert isinstance(meas, str)
-    tr.measurement = "S21AVG"
-    assert ["CALCulate3:PARameter:MEASure? 'Tr3'",
-            "CALCulate3:PARameter:MEASure 'Tr3', 'S21AVG'",
-            ] == visa.cmd
-    tr.measurement = tr.MeasParam.Wave("b", 1, src_port=1, detector="sam")
-    assert ["CALCulate3:PARameter:MEASure 'Tr3', 'B01D01SAM'",
-            ] == visa.cmd
+    def test_trace_removal(self, tr, visa):
+        # type: (znb.Trace, VISA) -> None
+        tr.delete()
+        assert ["CALCulate2:PARameter:DELete 'Tr3'"] == visa.cmd
+
+    def test_trace_name(self, tr, visa):
+        # type: (znb.Trace, VISA) -> None
+        tr.name = "Abc[12]"
+        with pytest.raises(ValueError):
+            tr.name = "0"
+        with pytest.raises(ValueError):
+            tr.name = "ASD.a"
+        tr.name = "[MEM]a"
+        with pytest.raises(ValueError):
+            tr.copy("...")
+        with pytest.raises(ValueError):
+            tr.copy_data_to_mem("09a")
+        with pytest.raises(ValueError):
+            tr.copy_math_to_mem("0x")
+        assert ["CONFigure:TRACe:REName 'Tr3', 'Abc[12]'",
+                "CONFigure:TRACe:REName 'Abc[12]', '[MEM]a'",
+                ] == visa.cmd
+
+    def test_trace_scaling(self, tr, visa):
+        # type: (znb.Trace, VISA) -> None
+        tr.autoscale()
+        assert ["DISPlay:WINDow:TRACe:Y:SCALe:AUTO ONCE, 'Tr3'"] == visa.cmd
+
+    def test_trace_measurement(self, tr, visa):
+        # type: (znb.Trace, VISA) -> None
+        meas = tr.measurement
+        assert isinstance(meas, str)
+        tr.measurement = "S21AVG"
+        assert ["CALCulate2:PARameter:MEASure? 'Tr3'",
+                "CALCulate2:PARameter:MEASure 'Tr3', 'S21AVG'",
+                ] == visa.cmd
+        tr.measurement = tr.MeasParam.Wave("b", 1, src_port=1, detector="sam")
+        assert ["CALCulate2:PARameter:MEASure 'Tr3', 'B01D01SAM'"] == visa.cmd
