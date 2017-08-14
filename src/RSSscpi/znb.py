@@ -239,13 +239,19 @@ class Channel(object):
     """
 
     _FRQ = ZNB_gen.SENSe.FREQuency
-    freq_cw = SCPIPropertyMinMax(_FRQ.CW, float, get_root_node=lambda x: x.SENSe)
-    freq_start = SCPIPropertyMinMax(_FRQ.STARt, float, get_root_node=lambda x: x.SENSe)
-    freq_stop = SCPIPropertyMinMax(_FRQ.STOP, float, get_root_node=lambda x: x.SENSe)
-    freq_center = SCPIPropertyMinMax(_FRQ.CENTer, float, get_root_node=lambda x: x.SENSe)
-    freq_span = SCPIPropertyMinMax(_FRQ.SPAN, float, get_root_node=lambda x: x.SENSe)
+    freq_cw = SCPIProperty(_FRQ.CW, float, get_root_node=lambda x: x.SENSe)
+    freq_cw_minmax = SCPIPropertyMinMax(freq_cw)
+    freq_start = SCPIProperty(_FRQ.STARt, float, get_root_node=lambda x: x.SENSe)
+    freq_start_minmax = SCPIPropertyMinMax(freq_start)
+    freq_stop = SCPIProperty(_FRQ.STOP, float, get_root_node=lambda x: x.SENSe)
+    freq_stop_minmax = SCPIPropertyMinMax(freq_stop)
+    freq_center = SCPIProperty(_FRQ.CENTer, float, get_root_node=lambda x: x.SENSe)
+    freq_center_minmax = SCPIPropertyMinMax(freq_center)
+    freq_span = SCPIProperty(_FRQ.SPAN, float, get_root_node=lambda x: x.SENSe)
+    freq_span_minmax = SCPIPropertyMinMax(freq_span)
 
-    ifbw = SCPIPropertyMinMax(ZNB_gen.SENSe.BANDwidth, int, get_root_node=lambda x: x.SENSe)
+    ifbw = SCPIProperty(ZNB_gen.SENSe.BANDwidth, int, get_root_node=lambda x: x.SENSe)
+    ifbw_minmax = SCPIPropertyMinMax(ifbw)
 
     def cal_auto(self, vna_ports, cal_unit_ports=None, cal_type="FNPort", cal_unit_characterization=""):
         if cal_unit_ports:
@@ -499,11 +505,14 @@ class Sweep(ZNB_gen.SENSe.SWEep):
     count = SCPIProperty(_SWE.COUNt, int)
     dwell_time = SCPIProperty(_SWE.DWELl, float)
     dwell_on_each_partial_measurement = SCPIPropertyMapping(_SWE.DWELl.IPOint, str, {"ALL": True, "FIRSt": False})
-    points = SCPIPropertyMinMax(_SWE.POINts, int)
-    time = SCPIPropertyMinMax(_SWE.TIME, float)
+    points = SCPIProperty(_SWE.POINts, int)
+    points_minmax = SCPIPropertyMinMax(points)
+    time = SCPIProperty(_SWE.TIME, float)
+    time_minmax = SCPIPropertyMinMax(time)
     type = SCPIProperty(_SWE.TYPE, str)
     use_auto_time = SCPIProperty(_SWE.TIME.AUTO, bool)
-    step_size = SCPIPropertyMinMax(_SWE.STEP, float)
+    step_size = SCPIProperty(_SWE.STEP, float)
+    step_size_minmax = SCPIPropertyMinMax(step_size)
 
 
 class MeasParamBase(object):

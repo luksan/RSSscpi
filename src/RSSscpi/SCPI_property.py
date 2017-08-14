@@ -5,9 +5,6 @@
 """
 
 from .SCPI_gen_support import SCPINodeBase, SCPIQuery, SCPISet
-import functools
-import numbers
-import math
 
 
 class SCPIProperty(object):
@@ -133,31 +130,28 @@ class SCPIPropertyMapping(SCPIProperty):
         super(SCPIPropertyMapping, self).__set__(instance, v)
 
 
-@functools.total_ordering
-class MinMaxFloat(numbers.Real):
-    """
-    The MinMax class is used as return value from SCPIPropertyMinMax.__get__(..).
-    """
-    def __init__(self, prop, instance):
+class SCPIPropertyMinMax(SCPIProperty):
+    def __init__(self, prop, instance=None):
         """
-        :param SCPIPropertyMinMax prop:
-        :param instance:
+        This class is used to create a class attribute with min/max/default methods from a SCPIProperty
+
+        :param SCPIProperty prop: A SCPIProprety attribute which supports min/max
+        :param instance: The object which we are an attribute of
         """
-        self._instance = instance
+        super(SCPIPropertyMinMax, self).__init__(prop._leaf_node, prop._conv, prop._callback, prop._get_root_node)
+        self._prop = prop
         self._w = lambda x="": prop.w(instance, x)
         self._q = lambda x="": prop.q(instance, value=x, fmt="{value:s}")
 
-    @property
-    def value(self):
-        """
-        Attribute that queries/sets the value of the property.
-        The return type is determined by the `conv` attribute of the SCPIProperty.
-        """
-        return self._q()
+    def _set_doc(self):
+        doc = [x.strip() for x in self._leaf_node.__doc__.splitlines() if not x.strip().startswith("Arguments")]
+        doc.append(":class:`RSSscpi.SCPI_property.MinMax` instance, type conversion `" + self._conv.__name__ + "`")
+        self.__doc__ = "\n".join(doc)
 
-    @value.setter
-    def value(self, value):
-        self._w(value)
+    def __get__(self, instance, owner=None):
+        if instance is None:
+            return self
+        return SCPIPropertyMinMax(self._prop, instance)
 
     def query_min(self):
         """ Returns the lowest value that the property can have. """
@@ -183,103 +177,3 @@ class MinMaxFloat(numbers.Real):
         """Set the property to the default value."""
         self._w("DEF")
 
-    # Methods for numbers.Complex
-
-    def __abs__(self):
-        return abs(self.value)
-
-    def __eq__(self, other):
-        return self.value == other
-
-    def __radd__(self, other):
-        return other + self.value
-
-    def __bool__(self):
-        return bool(self.value)
-
-    def __neg__(self):
-        return -self.value
-
-    def __pos__(self):
-        return +self.value
-
-    def __add__(self, other):
-        return self.value + other
-
-    def __mul__(self, other):
-        return self.value * other
-
-    def __rmul__(self, other):
-        return other * self.value
-
-    def __truediv__(self, other):
-        return float(self) / other
-
-    def __pow__(self, exponent):
-        return self.value ** exponent
-
-    def __rpow__(self, base):
-        return base ** self.value
-
-    # Methods for numbers.Real
-
-    def __float__(self):
-        return float(self.value)
-
-    def __div__(self, other):
-        return float(self) / other
-
-    def __rdiv__(self, other):
-        return other / float(self)
-
-    def __rtruediv__(self, other):
-        return other / float(self)
-
-    def __floor__(self):
-        return math.floor(float(self))
-
-    def __ceil__(self):
-        return math.ceil(float(self))
-
-    def __round__(self, n=None):
-        return round(float(self))
-
-    def __floordiv__(self, other):
-        return float(self).__floordiv__(other)
-
-    def __rfloordiv__(self, other):
-        return float(self).__rfloordiv__(other)
-
-    def __mod__(self, other):
-        return float(self) % other
-
-    def __lt__(self, other):
-        return float(self) < other
-
-    def __le__(self, other):
-        return float(self) <= other
-
-    def __rmod__(self, other):
-        return other % self.value
-
-    def __trunc__(self):
-        return math.trunc(self.value)
-
-
-class SCPIPropertyMinMax(SCPIProperty):
-    def __init__(self, *args, **kwargs):
-        """
-        :rtype: MinMax
-        """
-        super(SCPIPropertyMinMax, self).__init__(*args, **kwargs)
-
-    def _set_doc(self):
-        doc = [x.strip() for x in self._leaf_node.__doc__.splitlines() if not x.strip().startswith("Arguments")]
-        doc.append(":class:`RSSscpi.SCPI_property.MinMax` instance, type conversion `" + self._conv.__name__ + "`")
-        self.__doc__ = "\n".join(doc)
-
-    def __get__(self, instance, owner=None):
-        # type: (SCPINodeBase, object) -> MinMaxFloat
-        if instance is None:
-            return self
-        return MinMaxFloat(self, instance)

@@ -106,7 +106,8 @@ class NRPxxSN(NRPxxSN_gen):
         """
         return self.FETCh.q().numpy_array()
 
-    frequency = SCPIPropertyMinMax(NRPxxSN_gen.SENSe.FREQuency, float)
+    frequency = SCPIProperty(NRPxxSN_gen.SENSe.FREQuency, float)
+    frequency_minmax = SCPIPropertyMinMax(frequency)
     init_cont = SCPIProperty(NRPxxSN_gen.INITiate.CONTinuous, bool)  # FIXME: This node should be a SCPIBool
 
 

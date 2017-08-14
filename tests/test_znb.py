@@ -121,15 +121,10 @@ def test_channel_sweep(dummy_vna, visa):
     :param VISA visa:
     """
     ch = dummy_vna.get_channel(3)
-    x = ch.sweep.points.query_default()
-    assert isinstance(x, int)
-    ch.sweep.points.value = 301
-    a = ch.sweep.points
-    visa.ret = "301"
-    x = a.value
-    assert isinstance(x, int)
-    assert x == 301
+    assert isinstance(ch.sweep.points_minmax.query_default(), int)
     ch.sweep.points = 301
+    assert isinstance(ch.sweep.points, int)
+    ch.sweep.points_minmax = 301
     ch.sweep.TYPE.w("LIN")
     assert ["SENSe3:SWEep:POINts? DEF",
             "SENSe3:SWEep:POINts 301",

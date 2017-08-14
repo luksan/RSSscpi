@@ -50,8 +50,10 @@ def test_nrp_scpi_properties(nrpxxsn, visa):
 
     nrpxxsn.frequency = 20e9
     assert nrpxxsn.frequency == 1
+    nrpxxsn.frequency_minmax.query_default()
     assert ["SENSe:FREQuency 20000000000.0",
             "SENSe:FREQuency?",
+            "SENSe:FREQuency? DEF",
             ] == visa.cmd
 
     nrpxxsn.init_cont = "OFF"

@@ -5,11 +5,10 @@
 """
 from __future__ import absolute_import, division, print_function
 
-import math
 import pytest
 from .conftest import VISA  # noqa: F401
 
-from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping, MinMaxFloat
+from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
 from RSSscpi.gen import ZNB_gen
 from RSSscpi.gen import ZVA_gen
 
@@ -38,9 +37,11 @@ class VNAProp(ZNB_gen):
 
     _SWE = ZNB_gen.SENSe.SWEep
     str_prop = SCPIProperty(_SWE.TYPE, str)
-    int_prop = SCPIPropertyMinMax(_SWE.POINts, int)
+    int_prop = SCPIProperty(_SWE.POINts, int)
+    int_prop_minmax = SCPIPropertyMinMax(int_prop)
     float_prop = SCPIProperty(_SWE.TIME, float)
-    float_minmax = SCPIPropertyMinMax(_SWE.DWELl, float)
+    float_minmax = SCPIPropertyMinMax(float_prop)
+
     znb_only = SCPIPropertyMapping(_SWE.DWELl.IPOint, str, {"ALL": True, "FIRSt": False})
     map_prop = SCPIPropertyMapping(_SWE.GENeration, str, mapping={"ANALog": True, "STEPped": False})
 
@@ -98,17 +99,17 @@ def test_prop(visa):
             ] == visa.cmd
 
     vna.int_prop = 2
-    vna.int_prop.value = 3
-    x = vna.int_prop.value
+    x = vna.int_prop
     assert isinstance(x, int)
-    vna.int_prop.query_max()
-    vna.int_prop.query_min()
-    vna.int_prop.query_default()
-    vna.int_prop.set_max()
-    vna.int_prop.set_min()
-    vna.int_prop.set_default()
+    vna.int_prop_minmax.query_max()
+    vna.int_prop_minmax.query_min()
+    vna.int_prop_minmax.query_default()
+    vna.int_prop_minmax.set_max()
+    vna.int_prop_minmax.set_min()
+    vna.int_prop_minmax.set_default()
+    vna.int_prop_minmax = 3
+
     assert ["SENSe:SWEep:POINts 2",
-            "SENSe:SWEep:POINts 3",
             "SENSe:SWEep:POINts?",
             "SENSe:SWEep:POINts? MAX",
             "SENSe:SWEep:POINts? MIN",
@@ -116,8 +117,8 @@ def test_prop(visa):
             "SENSe:SWEep:POINts MAX",
             "SENSe:SWEep:POINts MIN",
             "SENSe:SWEep:POINts DEF",
+            "SENSe:SWEep:POINts 3",
             ] == visa.cmd
-
     vna.map_prop = True
     vna.map_prop = False
     pytest.raises(KeyError, "vna.map_prop = 9")
@@ -140,42 +141,3 @@ def test_prop(visa):
             "SENSe:SWEep:GENeration?",
             "SENSe:SWEep:GENeration?",
             ] == visa.cmd
-
-
-@pytest.mark.parametrize("ref", [-1e9, -1.23456789, -1, -1e-9, 0, 1e-9, 1, 1.23456789, 1e9])
-def test_minmaxfloat(visa, ref):
-    vna = VNAProp(visa)
-    visa.ret = str(ref)
-    f = vna.float_minmax
-    assert [] == visa.cmd
-    assert isinstance(f, MinMaxFloat)
-
-    assert complex(f) == complex(ref)
-    assert bool(f) == bool(ref)
-
-    assert f.real == complex(ref).real
-    assert f.imag == complex(ref).imag
-
-    assert f == ref
-    assert f >= ref
-    assert f <= ref
-    assert f < ref + 1
-    assert f > ref - 1
-
-    assert +f == +ref
-    assert -f == -ref
-    assert f + 1 == 1 + f
-    assert -f - 1 == -1 - f
-    assert f + 1 == ref + 1
-    assert f - 1 == ref - 1
-    assert f * 2 == ref * 2
-    assert f / 2 == ref / 2
-    assert f ** 2 == ref ** 2
-    try:
-        assert 2 ** f == 2 ** ref
-    except OverflowError:
-        pass
-
-    assert abs(f) == abs(ref)
-    assert round(f) == round(ref)
-    assert math.trunc(f) == math.trunc(ref)
