@@ -345,8 +345,9 @@ class TestSweep(object):
 
         seg = sw.segments[5]
         seg.delete()
+        visa.ret = "0"
         assert seg.is_enabled is False
-        assert seg.if_selectivity == "5"
+        assert seg.if_selectivity == "0"
         seg.analog_sweep_is_enabled = True
         seg.analog_sweep_is_enabled = False
         del seg  # This shouldn't delete the segment

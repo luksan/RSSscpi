@@ -29,7 +29,9 @@ class SCPIResponse(object):
 
         :return: bool
         """
-        return str(self) in ["1", "ON"]
+        if not str(self).upper() in ["1", "ON", "0", "OFF"]:
+            raise ValueError("Can't convert '%s' to bool.", str(self))
+        return str(self).upper() in ["1", "ON"]
 
     __bool__ = __nonzero__
 

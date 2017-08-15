@@ -10,10 +10,17 @@ from .conftest import VISA  # noqa: F401
 from RSSscpi.SCPI_response import format_SCPI_block_data, SCPIResponse  # noqa: F401
 
 
-@pytest.mark.parametrize('param', [(True, ("1", "ON")), (False, "0", "5", "OFF")])
-def test_bool(param):
-    for x in param[1]:
-        assert param[0] == bool(SCPIResponse(x))
+@pytest.mark.parametrize('expected, txt', [
+    (True,  ("1", "ON", "on", "On")),
+    (False, ("0", "OFF", "off", "Off")),
+    (None,  ("OF", "O", "1.0", "0.0"))
+    ])
+def test_bool(expected, txt):
+    for x in txt:
+        if expected is None:
+            assert pytest.raises(ValueError, "bool(SCPIResponse(x))")
+        else:
+            assert expected == bool(SCPIResponse(x))
 
 
 @pytest.mark.parametrize('param,expect', [
