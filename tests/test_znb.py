@@ -348,13 +348,19 @@ class TestSweep(object):
         visa.ret = "0"
         assert seg.is_enabled is False
         assert seg.if_selectivity == "0"
-        seg.analog_sweep_is_enabled = True
-        seg.analog_sweep_is_enabled = False
         del seg  # This shouldn't delete the segment
         assert ["SENSe2:SEGMent6:DELete",
                 "SENSe2:SEGMent6:STATe?",
                 "SENSe2:SEGMent6:BWIDth:RESolution:SELect?",
-                "SENSe2:SEGMent6:SWEep:GENeration ANALog",
+                ] == visa.cmd
+
+    def test_segment_analog_sweep(self, dummy_znb, visa):
+        # type: (ZNB, VISA) -> None
+        """ANALog sweeps are only supported on the ZNB"""
+        seg = dummy_znb.get_channel(2).sweep.segments[5]
+        seg.analog_sweep_is_enabled = True
+        seg.analog_sweep_is_enabled = False
+        assert ["SENSe2:SEGMent6:SWEep:GENeration ANALog",
                 "SENSe2:SEGMent6:SWEep:GENeration STEPped",
                 ] == visa.cmd
 

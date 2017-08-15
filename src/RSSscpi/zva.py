@@ -129,9 +129,17 @@ class Sweep(ZVA_gen.SENSe.SWEep, znb.Sweep):
         """
         return True
 
+    def get_segment(self, n):
+        # type: (int) -> SweepSegment
+        return SweepSegment(n, self.channel)
+
 
 class SweepSegment(ZVA_gen.SENSe.SEGMent, znb.SweepSegment):
-    pass
+
+    @property
+    def analog_sweep_is_enabled(self):
+        """The ZVA does not support ANALog sweeps"""
+        return False
 
 
 class Trace(znb.Trace):

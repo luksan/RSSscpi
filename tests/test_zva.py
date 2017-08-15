@@ -58,3 +58,12 @@ def test_sweep_dwell(dummy_zva, visa):
         sw.dwell_on_each_partial_measurement = True
     assert sw.dwell_on_each_partial_measurement is True
     assert [] == visa.cmd
+
+
+def test_sweep_segment(dummy_zva, visa):
+    # type: (ZVA, VISA) -> None
+    """ANALog sweeps are not supported on the ZVA"""
+    seg = dummy_zva.get_channel(2).sweep.segments[5]
+    assert seg.analog_sweep_is_enabled is False
+    assert pytest.raises(AttributeError, "seg.analog_sweep_is_enabled = True")
+    assert [] == visa.cmd

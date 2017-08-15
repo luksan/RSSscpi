@@ -403,21 +403,20 @@ class SweepSegment(ZNB_gen.SENSe.SEGMent):
 
 
 class SweepSegments(object):
-    def __init__(self, channel):
+    def __init__(self, sweep):
         """
-        :param ZNB.Channel channel: The channel which the sweep segments belong to
+        :param Sweep sweep: The Sweep which the sweep segments belong to
         """
-        self.channel = channel
-        self._SEG = self.channel.SENSe.SEGMent
-        self._seg_type = SweepSegment
+        self._sweep = sweep
+        self._SEG = sweep.channel.SENSe.SEGMent
 
     def __len__(self):
         return int(self._SEG.COUNt().q())
 
     def __getitem__(self, item):
         if isinstance(item, slice):
-            return [self._seg_type(x + 1, self.channel) for x in range(*item.indices(len(self)))]
-        return self._seg_type(item + 1, self.channel)
+            return [self.get_segment(x + 1) for x in range(*item.indices(len(self)))]
+        return self.get_segment(item + 1)
 
     def __delitem__(self, key):
         if isinstance(key, slice):
@@ -431,6 +430,10 @@ class SweepSegments(object):
     def __iter__(self):
         for x in range(len(self)):
             yield self[x]
+
+    def get_segment(self, n):
+        # type: (int) -> SweepSegment
+        return self._sweep.get_segment(n)
 
     def insert_segment(self, start_freq, stop_freq, points, ifbw, power, time="AUTO",
                        lo_sideband="AUTO", if_selectivity="NORMal", analog_sweep=False, position=0):
@@ -453,7 +456,7 @@ class SweepSegments(object):
         else:
             sweep_mode = "STEPped"
         self._SEG(position + 1).INSert().w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity, sweep_mode)
-        return self._seg_type(position, self.channel)
+        return self.get_segment(position)
 
     def remove_segment(self, n):
         """
@@ -497,7 +500,11 @@ class Sweep(ZNB_gen.SENSe.SWEep):
         """
         super(Sweep, self).__init__(parent=channel.SENSe)
         self.channel = channel
-        self.segments = SweepSegments(self.channel)
+        self.segments = SweepSegments(self)
+
+    def get_segment(self, n):
+        # type: (int) -> SweepSegment
+        return SweepSegment(n, self.channel)
 
     _SWE = ZNB_gen.SENSe.SWEep
 
