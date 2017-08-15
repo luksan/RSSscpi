@@ -34,11 +34,9 @@ def test_SCPICmdFormatter():
     assert f().format("{:d**}", zip([1, 2, 3], [4, 5, 6])) == "1, 4, 2, 5, 3, 6"
 
 
-def test_cmd_formatting(zva, visa):
-    """
-    :param ZVA zva:
-    :param VISA visa:
-    """
+def test_cmd_formatting(dummy_zva, visa):
+    # type: (ZVA, VISA) -> None
+    zva = dummy_zva
     zva.TRACe.COPY.MATH().w("MDATA8")  # This shouldn't be quoted
     zva.TRACe.COPY.MATH().w("sq")  # Quote
     zva.SENSe.SWEep.POINts().w(1e9)

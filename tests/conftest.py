@@ -102,12 +102,12 @@ def dummy_vna(request, visa):
 
 
 @pytest.fixture
-def zva(visa):
+def dummy_zva(visa):
     return ZVA(visa_res=visa)
 
 
 @pytest.fixture
-def znb(visa):
+def dummy_znb(visa):
     return ZNB(visa_res=visa)
 
 

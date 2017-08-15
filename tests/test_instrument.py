@@ -46,12 +46,12 @@ def test_generic_commands(dummy_vna, visa):
             ] == visa.cmd
 
 
-def test_query_write(znb, visa):
+def test_query_write(dummy_znb, visa):
     """
     :param ZNB znb:
     :param VISA visa:
     """
-    vna = znb
+    vna = dummy_znb
     vna.OPC.q("ABC", quote=True)
     vna.OPC.q("'ABC'", quote=True)
     vna.OPC.q("ABC", quote=False)
@@ -76,11 +76,9 @@ def test_query_write(znb, visa):
             ] == visa.cmd
 
 
-def test_error_handling(zva, visa):
-    """
-    :param ZVA zva:
-    :param VISA visa:
-    """
+def test_error_handling(dummy_zva, visa):
+    # type: (ZVA, VISA) -> None
+    zva = dummy_zva
     zva.init()
     zva.SOURce(1).POWer(1).ATTenuation().w(80)
     visa.ret_dict["SYSTem:ERRor:ALL?"] = '-222,"Data out of range;SOURce1:POWer1:ATTenuation 80\n"'

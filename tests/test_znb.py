@@ -12,9 +12,9 @@ from RSSscpi import ZNB  # noqa: F401
 from RSSscpi import znb  # noqa: F401
 
 
-def test_init(znb, visa):
+def test_init(dummy_znb, visa):
     # type: (ZNB, VISA) -> None
-    znb.init()
+    dummy_znb.init()
     assert ["*CLS;*ESE 127;*SRE 36",
             "SYSTem:COMMunicate:CODec UTF8",
             "SYSTem:LANGuage?",
@@ -499,9 +499,9 @@ def test_marker(dummy_vna, visa):
     assert isinstance(x, float)
 
 
-def test_marker_y_set(znb, visa):
+def test_marker_y_set(dummy_znb, visa):
     # type: (ZNB, VISA) -> None
-    m1 = znb.get_channel(2).get_trace("Tr2").get_marker(3)
+    m1 = dummy_znb.get_channel(2).get_trace("Tr2").get_marker(3)
     m1.TYPE.w("ARB")
     m1.y = 2
     assert m1.y == 1
