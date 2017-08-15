@@ -10,6 +10,30 @@ from .conftest import VISA  # noqa: F401
 
 from RSSscpi import ZNB  # noqa: F401
 from RSSscpi import znb  # noqa: F401
+from RSSscpi.SCPI_property import SCPIPropertyMinMax
+
+
+class PropertyTester(object):
+    @staticmethod
+    def prop_parametrize(props):
+        return pytest.mark.parametrize('prop_name, scpi_cmd, scpi_write, scpi_query', props, ids=[x[0] for x in props])
+
+    @staticmethod
+    def test_float_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, instance, visa):
+        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, instance, visa, float)
+
+    @staticmethod
+    def test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_values, instance, visa, type_):
+        visa.ret = scpi_values[1]  # the string representation of the value
+        x = getattr(instance, prop_name)
+        assert isinstance(x, type_) and x == scpi_values[0]
+        setattr(instance, prop_name, scpi_values[0])
+        assert [scpi_query.format(scpi_cmd), scpi_write.format(scpi_cmd, scpi_values[1])] == visa.cmd
+        minmax = prop_name + "_minmax"
+        if hasattr(instance, minmax):
+            assert isinstance(getattr(instance, minmax), SCPIPropertyMinMax)
+            setattr(instance, minmax, scpi_values[0])
+            assert [scpi_write.format(scpi_cmd, scpi_values[1])] == visa.cmd
 
 
 def test_init(dummy_znb, visa):
@@ -512,20 +536,6 @@ def test_marker_y_set(dummy_znb, visa):
             ] == visa.cmd
 
 
-class PropertyTester(object):
-    @staticmethod
-    def float_prop_parametrize(props):
-        return pytest.mark.parametrize('prop_name, scpi_cmd, scpi_write, scpi_query', props, ids=[x[0] for x in props])
-
-    @staticmethod
-    def test_float_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, instance, visa):
-        visa.ret = scpi_float[1]  # the string representation of the float value
-        x = getattr(instance, prop_name)
-        assert isinstance(x, float) and x == scpi_float[0]  # the float value
-        setattr(instance, prop_name, scpi_float[0])
-        assert [scpi_query.format(scpi_cmd), scpi_write.format(scpi_cmd, scpi_float[1])] == visa.cmd
-
-
 class TestTrace(object):
     @pytest.fixture
     def tr(self, dummy_vna):
@@ -539,7 +549,7 @@ class TestTrace(object):
         ("ref_pos",         "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition",   "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
     ]
 
-    @PropertyTester.float_prop_parametrize(float_properties)
+    @PropertyTester.prop_parametrize(float_properties)
     def test_float_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, tr, visa):
         PropertyTester.test_float_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, tr, visa)
 
