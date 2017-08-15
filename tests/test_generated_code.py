@@ -4,6 +4,8 @@
 @author: Lukas Sandström
 """
 
+import pytest
+
 import inspect
 
 from .conftest import VISA  # noqa: F401
@@ -56,3 +58,12 @@ def test_basic(dummy_vna, visa):
             "CALCulate1:MARKer1?",
             "CALCulate1:MARKer1?",
             "CALCulate2:MARKer3?"] == visa.cmd
+
+
+def test_node_base(dummy_znb, visa):
+    # type: (ZNB, VISA) -> None
+
+    # Verify that assignment to the SPCINodes is prevented
+    assert hasattr(dummy_znb, "OPC")
+    with pytest.raises(AttributeError):
+        dummy_znb.OPC = ""

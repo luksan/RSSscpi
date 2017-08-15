@@ -40,6 +40,9 @@ class SCPINodeBase(object):
             return self.__class__
         return self.__class__(parent=instance)
 
+    def __set__(self, instance, value):
+        raise AttributeError("You probably don't want to do this assignment. Use .w() instead.")
+
     # def __getattribute__(self, name):
     #     x = object.__getattribute__(self, name)
     #     if inspect.isclass(x) and issubclass(x, SCPINodeBase) and name == x.__name__:
