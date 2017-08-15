@@ -116,11 +116,16 @@ def nrpxxsn(visa):
     return RSSscpi.nrp.NRPxxSN(visa_res=visa)
 
 
-@pytest.fixture(params=[0, 1, 1e9])
+@pytest.fixture(params=[-12.3, 0, 1, 1e9, 43499999999.5])
 def scpi_float(request):
     x = request.param
     return x, str(x)
 
+
+@pytest.fixture(params=[-2, 0, 1, 9999])
+def scpi_int(request):
+    x = request.param
+    return x, str(x)
 
 def pytest_exception_interact(node, call, report):
     # print the VISA command log on exception

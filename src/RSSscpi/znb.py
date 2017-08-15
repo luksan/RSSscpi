@@ -393,7 +393,7 @@ class SweepSegment(ZNB_gen.SENSe.SEGMent):
     is_enabled = SCPIProperty(_SEG.STATe, bool)
     freq_start = SCPIProperty(_SEG.FREQuency.STARt, float)
     freq_stop = SCPIProperty(_SEG.FREQuency.STOP, float)
-    if_bandwidth = SCPIProperty(_SEG.BWIDth.RESolution, float)
+    if_bandwidth = SCPIProperty(_SEG.BWIDth.RESolution, int)
     # if_gain = SCPIProperty(_SEG.POWer.GAINcontrol, str)  # TODO: this behaves differently from the other per segment settings...
     if_selectivity = SCPIProperty(_SEG.BWIDth.RESolution.SELect, str)
     number_of_points = SCPIProperty(_SEG.SWEep.POINts, int)

@@ -100,276 +100,283 @@ def test_znb_screenshot(dummy_vna, visa):
     assert visa.cmd == []
 
 
-def test_channel(dummy_vna, visa):
-    """
-    :param ZNB dummy_vna:
-    :param VISA visa:
-    """
-    ch = dummy_vna.get_channel(3)
-    assert ch.name == "1"
-    ch.name = "Ch2"
-    assert ["CONFigure:CHANnel3:NAME?",
-            "CONFigure:CHANnel3:NAME 'Ch2'",
-            ] == visa.cmd
+class TestChannel(object):
+    @pytest.fixture
+    def ch(self, dummy_vna):
+        return dummy_vna.get_channel(2)
 
-    tr = ch.create_trace("Tr1", "S11")
-    assert tr.name == "Tr1"
-    tr = ch.create_trace("Tr2", "S22", dummy_vna.get_diagram(1))
-    assert tr.name == "Tr2"
-    assert ["CALCulate3:PARameter:SDEFine 'Tr1', 'S11'",
-            "CALCulate3:PARameter:SDEFine 'Tr2', 'S22'",
-            "DISPlay:WINDow1:TRACe:EFEed 'Tr2'",
-            ] == visa.cmd
+    def test_channel(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        ch = dummy_vna.get_channel(3)
+        assert ch.name == "1"
+        ch.name = "Ch2"
+        assert ["CONFigure:CHANnel3:NAME?",
+                "CONFigure:CHANnel3:NAME 'Ch2'",
+                ] == visa.cmd
 
-    visa.ret = "Tr1"
-    tr = ch.active_trace
-    visa.ret = "1"
-    assert tr.name == "Tr1"
-    ch.active_trace = "Tr3"
-    ch.active_trace = ch.get_trace("Tr2")
-    assert ["CALCulate3:PARameter:SELect?",
-            "CALCulate3:PARameter:SELect 'Tr3'",
-            "CALCulate3:PARameter:SELect 'Tr2'",
-            ] == visa.cmd
+        tr = ch.create_trace("Tr1", "S11")
+        assert tr.name == "Tr1"
+        tr = ch.create_trace("Tr2", "S22", dummy_vna.get_diagram(1))
+        assert tr.name == "Tr2"
+        assert ["CALCulate3:PARameter:SDEFine 'Tr1', 'S11'",
+                "CALCulate3:PARameter:SDEFine 'Tr2', 'S22'",
+                "DISPlay:WINDow1:TRACe:EFEed 'Tr2'",
+                ] == visa.cmd
 
-    ch.power_level = -10.33
-    assert ch.power_level == 1.
-    assert ["SOURce3:POWer:LEVel:IMMediate:AMPLitude -10.33",
-            "SOURce3:POWer:LEVel:IMMediate:AMPLitude?",
-            ] == visa.cmd
+        visa.ret = "Tr1"
+        tr = ch.active_trace
+        visa.ret = "1"
+        assert tr.name == "Tr1"
+        ch.active_trace = "Tr3"
+        ch.active_trace = ch.get_trace("Tr2")
+        assert ["CALCulate3:PARameter:SELect?",
+                "CALCulate3:PARameter:SELect 'Tr3'",
+                "CALCulate3:PARameter:SELect 'Tr2'",
+                ] == visa.cmd
 
+        ch.power_level = -10.33
+        assert ch.power_level == 1.
+        assert ["SOURce3:POWer:LEVel:IMMediate:AMPLitude -10.33",
+                "SOURce3:POWer:LEVel:IMMediate:AMPLitude?",
+                ] == visa.cmd
 
-def test_channel_sweep(dummy_vna, visa):
-    """
-    :param ZNB dummy_vna:
-    :param VISA visa:
-    """
-    ch = dummy_vna.get_channel(3)
-    assert isinstance(ch.sweep.points_minmax.query_default(), int)
-    ch.sweep.points = 301
-    assert isinstance(ch.sweep.points, int)
-    ch.sweep.points_minmax = 301
-    ch.sweep.TYPE.w("LIN")
-    assert ["SENSe3:SWEep:POINts? DEF",
-            "SENSe3:SWEep:POINts 301",
-            "SENSe3:SWEep:POINts?",
-            "SENSe3:SWEep:POINts 301",
-            "SENSe3:SWEep:TYPE LIN",
-            ] == visa.cmd
+    def test_channel_sweep(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        ch = dummy_vna.get_channel(3)
+        assert isinstance(ch.sweep.points_minmax.query_default(), int)
+        ch.sweep.points = 301
+        assert isinstance(ch.sweep.points, int)
+        ch.sweep.points_minmax = 301
+        ch.sweep.TYPE.w("LIN")
+        assert ["SENSe3:SWEep:POINts? DEF",
+                "SENSe3:SWEep:POINts 301",
+                "SENSe3:SWEep:POINts?",
+                "SENSe3:SWEep:POINts 301",
+                "SENSe3:SWEep:TYPE LIN",
+                ] == visa.cmd
 
-    visa.ret = "LIN"
-    assert ch.sweep.type == "LIN"
-    ch.sweep.type = "POW"
-    assert ["SENSe3:SWEep:TYPE?",
-            "SENSe3:SWEep:TYPE POW",
-            ] == visa.cmd
+        visa.ret = "LIN"
+        assert ch.sweep.type == "LIN"
+        ch.sweep.type = "POW"
+        assert ["SENSe3:SWEep:TYPE?",
+                "SENSe3:SWEep:TYPE POW",
+                ] == visa.cmd
 
-    ch.configure_freq_sweep(10e6, 9e9)
-    assert ["SENSe3:SWEep:TYPE LIN",
-            "SENSe3:FREQuency:STARt 10000000.0",
-            "SENSe3:FREQuency:STOP 9000000000.0",
-            ] == visa.cmd
+        ch.configure_freq_sweep(10e6, 9e9)
+        assert ["SENSe3:SWEep:TYPE LIN",
+                "SENSe3:FREQuency:STARt 10000000.0",
+                "SENSe3:FREQuency:STOP 9000000000.0",
+                ] == visa.cmd
 
-    ch.configure_freq_sweep(10, 10e6, points=101, ifbw=1e3, power=-10, log_sweep=True)
-    ch.init_sweep()
-    assert ["SENSe3:SWEep:TYPE LOG",
-            "SENSe3:FREQuency:STARt 10",
-            "SENSe3:FREQuency:STOP 10000000.0",
-            "SENSe3:SWEep:POINts 101",
-            "SENSe3:BANDwidth 1000.0",
-            "SOURce3:POWer:LEVel:IMMediate:AMPLitude -10",
-            "INITiate3:IMMediate",
-            ] == visa.cmd
+        ch.configure_freq_sweep(10, 10e6, points=101, ifbw=1e3, power=-10, log_sweep=True)
+        ch.init_sweep()
+        assert ["SENSe3:SWEep:TYPE LOG",
+                "SENSe3:FREQuency:STARt 10",
+                "SENSe3:FREQuency:STOP 10000000.0",
+                "SENSe3:SWEep:POINts 101",
+                "SENSe3:BANDwidth 1000.0",
+                "SOURce3:POWer:LEVel:IMMediate:AMPLitude -10",
+                "INITiate3:IMMediate",
+                ] == visa.cmd
 
-    ch.configure_power_sweep(freq=40e9, start_power=-40, stop_power=10, points=41, ifbw=1e3)
-    assert ["SENSe3:SWEep:TYPE POW",
-            "SENSe3:FREQuency:CW 40000000000.0",
-            "SOURce3:POWer1:STARt -40",
-            "SOURce3:POWer1:STOP 10",
-            "SENSe3:SWEep:POINts 41",
-            "SENSe3:BANDwidth 1000.0",
-            ] == visa.cmd
+        ch.configure_power_sweep(freq=40e9, start_power=-40, stop_power=10, points=41, ifbw=1e3)
+        assert ["SENSe3:SWEep:TYPE POW",
+                "SENSe3:FREQuency:CW 40000000000.0",
+                "SOURce3:POWer1:STARt -40",
+                "SOURce3:POWer1:STOP 10",
+                "SENSe3:SWEep:POINts 41",
+                "SENSe3:BANDwidth 1000.0",
+                ] == visa.cmd
 
+    float_properties = [
+        ("freq_cw", "SENSe2:FREQuency:CW", "{:s} {:s}", "{:s}?"),
+        ("freq_start", "SENSe2:FREQuency:STARt", "{:s} {:s}", "{:s}?"),
+        ("freq_stop", "SENSe2:FREQuency:STOP", "{:s} {:s}", "{:s}?"),
+        ("freq_center", "SENSe2:FREQuency:CENTer", "{:s} {:s}", "{:s}?"),
+        ("freq_span", "SENSe2:FREQuency:SPAN", "{:s} {:s}", "{:s}?"),
+        ("power_level", "SOURce2:POWer:LEVel:IMMediate:AMPLitude", "{:s} {:s}", "{:s}?"),
+    ]
 
-def test_channel_properties(dummy_vna, visa):
-    # type: (ZNB, VISA) -> None
-    ch = dummy_vna.get_channel(1)
-    visa.ret = "'Ch1'"
-    assert ch.name == "Ch1"
-    ch.name = "Ch2"
-    assert ["CONFigure:CHANnel1:NAME?",
-            "CONFigure:CHANnel1:NAME 'Ch2'",
-            ] == visa.cmd
+    @PropertyTester.prop_parametrize(float_properties)
+    def test_float_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, ch, visa):
+        PropertyTester.test_float_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, ch, visa)
 
-    visa.ret = "-12.3"
-    assert ch.power_level == -12.3
-    assert ["SOURce1:POWer:LEVel:IMMediate:AMPLitude?",
-            ] == visa.cmd
+    int_properties = [
+        ("ifbw", "SENSe2:BANDwidth", "{:s} {:s}", "{:s}?"),
+    ]
 
-    visa.ret = "43499999999.5"
-    assert ch.freq_cw == 43499999999.5
-    assert ch.freq_start == 43499999999.5
-    assert ch.freq_stop == 43499999999.5
-    assert ch.freq_center == 43499999999.5
-    assert ch.freq_span == 43499999999.5
-    assert ["SENSe1:FREQuency:CW?",
-            "SENSe1:FREQuency:STARt?",
-            "SENSe1:FREQuency:STOP?",
-            "SENSe1:FREQuency:CENTer?",
-            "SENSe1:FREQuency:SPAN?",
-            ] == visa.cmd
+    @PropertyTester.prop_parametrize(int_properties)
+    def test_int_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, ch, visa):
+        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, ch, visa, int)
 
-    visa.ret = "10"
-    assert ch.ifbw == 10
-    assert ["SENSe1:BANDwidth?",
-            ] == visa.cmd
+    def test_channel_properties(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        ch = dummy_vna.get_channel(1)
+        visa.ret = "'Ch1'"
+        assert ch.name == "Ch1"
+        ch.name = "Ch2"
+        assert ["CONFigure:CHANnel1:NAME?",
+                "CONFigure:CHANnel1:NAME 'Ch2'",
+                ] == visa.cmd
 
+    def test_channel_cal(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        ch = dummy_vna.get_channel(2)
+        ch.cal_auto((1, 2, 3, 4))
+        assert ["SENSe2:CORRection:COLLect:AUTO:TYPE FNPort, '', 1, 2, 3, 4",
+                ] == visa.cmd
+        ch.cal_auto((1, 2, 3, 4), (3, 4, 1, 2), cal_type="FOPort")
+        assert ["SENSe2:CORRection:COLLect:AUTO:PORTs:TYPE FOPort, '', 1, 3, 2, 4, 3, 1, 4, 2",
+                ] == visa.cmd
+        ch.cal_auto((1, 2, 3, 4), cal_unit_characterization="user2.calkit")
+        assert ["SENSe2:CORRection:COLLect:AUTO:TYPE FNPort, 'user2.calkit', 1, 2, 3, 4",
+                ] == visa.cmd
 
-def test_sweep_dwell(znb, visa):
-    # type: (ZNB, VISA) -> None
-    """
-    This setting is not available on the ZVA
-    """
-    sw = znb.get_channel(2).sweep
-    sw.dwell_on_each_partial_measurement = True
-    sw.dwell_on_each_partial_measurement = False
-    visa.ret = "FIRSt"
-    assert sw.dwell_on_each_partial_measurement is False
-    visa.ret = "ALL"
-    assert sw.dwell_on_each_partial_measurement is True
-    assert ["SENSe2:SWEep:DWELl:IPOint ALL",
-            "SENSe2:SWEep:DWELl:IPOint FIRSt",
-            "SENSe2:SWEep:DWELl:IPOint?",
-            "SENSe2:SWEep:DWELl:IPOint?",
-            ] == visa.cmd
+    def test_channel_save_touchstone(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        ch = dummy_vna.get_channel(2)
+        f = ch.save_touchstone("file.s3p", (1, 2, 3))
+        assert f.filename == "file.s3p"
+        assert ["MMEMory:STORe:TRACe:PORTs 2, 'file.s3p', LOGPhase, CIMPedance, 1, 2, 3",
+                "MMEMory:CDIRectory?",
+                ] == visa.cmd
 
 
-def test_segmented_sweep(dummy_vna, visa):
-    """
-    :param ZNB dummy_vna:
-    :param VISA visa:
-    """
-    ch = dummy_vna.get_channel(2)
-    sw = ch.sweep
-    sw.TYPE = ch.sweep.SEGMENT
-    sw.analog_sweep_is_enabled = True
-    sw.analog_sweep_is_enabled = False
-    sw.dwell_time = 1.2
-    sw.points = 41
-    sw.count = 2
-    sw.time = 0.1
-    sw.use_auto_time = True
-    sw.step_size = 1e6
-    assert ["SENSe2:SWEep:GENeration ANALog",
-            "SENSe2:SWEep:GENeration STEPped",
-            "SENSe2:SWEep:DWELl 1.2",
-            "SENSe2:SWEep:POINts 41",
-            "SENSe2:SWEep:COUNt 2",
-            "SENSe2:SWEep:TIME 0.1",
-            "SENSe2:SWEep:TIME:AUTO ON",
-            "SENSe2:SWEep:STEP 1000000.0",
-            ] == visa.cmd
+class TestSweep(object):
+    @pytest.fixture
+    def sw(self, dummy_vna):
+        return dummy_vna.get_channel(2).sweep
 
-    sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3)
-    sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3, analog_sweep=True)
-    assert ["SENSe2:SEGMent4:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, STEPped",
-            "SENSe2:SEGMent4:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, ANALog",
-            ] == visa.cmd
+    @pytest.fixture
+    def seg(self, sw):
+        return sw.segments[5]
 
-    visa.ret = "5"
-    assert len(sw.segments) == 5
-    assert sw.segments[0].n == 1
-    assert len(sw.segments[1:5]) == 4
-    assert ["SENSe2:SEGMent:COUNt?",
-            "SENSe2:SEGMent:COUNt?",
-            ] == visa.cmd
+    def test_sweep_dwell(self, dummy_znb, visa):
+        # type: (ZNB, VISA) -> None
+        """
+        This setting is not available on the ZVA
+        """
+        sw = dummy_znb.get_channel(2).sweep
+        sw.dwell_on_each_partial_measurement = True
+        sw.dwell_on_each_partial_measurement = False
+        visa.ret = "FIRSt"
+        assert sw.dwell_on_each_partial_measurement is False
+        visa.ret = "ALL"
+        assert sw.dwell_on_each_partial_measurement is True
+        assert ["SENSe2:SWEep:DWELl:IPOint ALL",
+                "SENSe2:SWEep:DWELl:IPOint FIRSt",
+                "SENSe2:SWEep:DWELl:IPOint?",
+                "SENSe2:SWEep:DWELl:IPOint?",
+                ] == visa.cmd
 
-    for (seg, n) in zip(iter(sw.segments), range(5)):
-        assert seg.n == n + 1
-    visa.clear_cmd()
+    float_properties = [
+        ("dwell_time", "SENSe2:SWEep:DWELl", "{:s} {:s}", "{:s}?"),
+        ("time",       "SENSe2:SWEep:TIME",  "{:s} {:s}", "{:s}?"),
+        ("step_size",  "SENSe2:SWEep:STEP",  "{:s} {:s}", "{:s}?"),
+    ]
 
-    del sw.segments[2]
-    del sw.segments[0:5:2]
-    assert ["SENSe2:SEGMent3:DELete",
-            "SENSe2:SEGMent:COUNt?",
-            "SENSe2:SEGMent5:DELete",
-            "SENSe2:SEGMent3:DELete",
-            "SENSe2:SEGMent1:DELete",
-            ] == visa.cmd
+    @PropertyTester.prop_parametrize(float_properties)
+    def test_float_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, sw, visa):
+        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, sw, visa, float)
 
-    sw.segments.remove_all_segments()
-    sw.segments.remove_segment(2)
-    sw.segments.disable_per_segment_dwell_time()
-    sw.segments.disable_per_segment_if_selectivity()
-    sw.segments.disable_per_segment_power()
-    sw.segments.disable_per_segment_sweep_time()
-    sw.segments.query_total_sweep_time()
-    assert ["SENSe2:SEGMent:DELete:ALL",
-            "SENSe2:SEGMent3:DELete",
-            "SENSe2:SEGMent:SWEep:DWELl:CONTrol OFF",
-            "SENSe2:SEGMent:BWIDth:RESolution:SELect:CONTrol OFF",
-            "SENSe2:SEGMent:POWer:LEVel:CONTrol OFF",
-            "SENSe2:SEGMent:SWEep:TIME:CONTrol OFF",
-            "SENSe2:SEGMent:SWEep:TIME:SUM?",
-            ] == visa.cmd
+    int_properties = [
+        ("points", "SENSe2:SWEep:POINts", "{:s} {:s}", "{:s}?"),
+        ("count", "SENSe2:SWEep:COUNt",   "{:s} {:s}", "{:s}?"),
+    ]
 
-    seg = sw.segments[5]
-    seg.delete()
-    assert seg.dwell_time == 5
-    assert seg.is_enabled == False
-    assert seg.freq_start == 5
-    assert seg.freq_stop == 5
-    assert seg.if_bandwidth == 5
-    assert seg.if_selectivity == "5"
-    assert seg.number_of_points == 5
-    assert seg.power_level == 5
-    assert seg.sweep_time == 5
-    seg.analog_sweep_is_enabled = True
-    seg.analog_sweep_is_enabled = False
-    del seg  # This shouldn't delete the segment
-    assert ["SENSe2:SEGMent6:DELete",
-            "SENSe2:SEGMent6:SWEep:DWELl?",
-            "SENSe2:SEGMent6:STATe?",
-            "SENSe2:SEGMent6:FREQuency:STARt?",
-            "SENSe2:SEGMent6:FREQuency:STOP?",
-            "SENSe2:SEGMent6:BWIDth:RESolution?",
-            "SENSe2:SEGMent6:BWIDth:RESolution:SELect?",
-            "SENSe2:SEGMent6:SWEep:POINts?",
-            "SENSe2:SEGMent6:POWer?",
-            "SENSe2:SEGMent6:SWEep:TIME?",
-            "SENSe2:SEGMent6:SWEep:GENeration ANALog",
-            "SENSe2:SEGMent6:SWEep:GENeration STEPped",
-            ] == visa.cmd
+    @PropertyTester.prop_parametrize(int_properties)
+    def test_int_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, sw, visa):
+        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, sw, visa, int)
 
+    def test_segmented_sweep(self, sw, visa):
+        # type: (znb.Sweep, VISA) -> None
+        sw.TYPE.w(sw.SEGMENT)
+        sw.analog_sweep_is_enabled = True
+        sw.analog_sweep_is_enabled = False
+        sw.use_auto_time = True
+        assert ["SENSe2:SWEep:TYPE SEGM",
+                "SENSe2:SWEep:GENeration ANALog",
+                "SENSe2:SWEep:GENeration STEPped",
+                "SENSe2:SWEep:TIME:AUTO ON",
+                ] == visa.cmd
 
-def test_channel_cal(dummy_vna, visa):
-    """
-    :param ZNB dummy_vna:
-    :param VISA visa:
-    """
-    ch = dummy_vna.get_channel(2)
-    ch.cal_auto((1, 2, 3, 4))
-    assert ["SENSe2:CORRection:COLLect:AUTO:TYPE FNPort, '', 1, 2, 3, 4",
-            ] == visa.cmd
-    ch.cal_auto((1, 2, 3, 4), (3, 4, 1, 2), cal_type="FOPort")
-    assert ["SENSe2:CORRection:COLLect:AUTO:PORTs:TYPE FOPort, '', 1, 3, 2, 4, 3, 1, 4, 2",
-            ] == visa.cmd
-    ch.cal_auto((1, 2, 3, 4), cal_unit_characterization="user2.calkit")
-    assert ["SENSe2:CORRection:COLLect:AUTO:TYPE FNPort, 'user2.calkit', 1, 2, 3, 4",
-            ] == visa.cmd
+        sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3)
+        sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3, analog_sweep=True)
+        assert ["SENSe2:SEGMent4:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, STEPped",
+                "SENSe2:SEGMent4:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, ANALog",
+                ] == visa.cmd
 
+        visa.ret = "5"
+        assert len(sw.segments) == 5
+        assert sw.segments[0].n == 1
+        assert len(sw.segments[1:5]) == 4
+        assert ["SENSe2:SEGMent:COUNt?",
+                "SENSe2:SEGMent:COUNt?",
+                ] == visa.cmd
 
-def test_channel_save_touchstone(dummy_vna, visa):
-    """
-    :param ZNB dummy_vna:
-    :param VISA visa:
-    """
-    ch = dummy_vna.get_channel(2)
-    f = ch.save_touchstone("file.s3p", (1, 2, 3))
-    assert f.filename == "file.s3p"
-    assert ["MMEMory:STORe:TRACe:PORTs 2, 'file.s3p', LOGPhase, CIMPedance, 1, 2, 3",
-            "MMEMory:CDIRectory?",
-            ] == visa.cmd
+        for (seg, n) in zip(iter(sw.segments), range(5)):
+            assert seg.n == n + 1
+        visa.clear_cmd()
+
+        del sw.segments[2]
+        del sw.segments[0:5:2]
+        assert ["SENSe2:SEGMent3:DELete",
+                "SENSe2:SEGMent:COUNt?",
+                "SENSe2:SEGMent5:DELete",
+                "SENSe2:SEGMent3:DELete",
+                "SENSe2:SEGMent1:DELete",
+                ] == visa.cmd
+
+        sw.segments.remove_all_segments()
+        sw.segments.remove_segment(2)
+        sw.segments.disable_per_segment_dwell_time()
+        sw.segments.disable_per_segment_if_selectivity()
+        sw.segments.disable_per_segment_power()
+        sw.segments.disable_per_segment_sweep_time()
+        sw.segments.query_total_sweep_time()
+        assert ["SENSe2:SEGMent:DELete:ALL",
+                "SENSe2:SEGMent3:DELete",
+                "SENSe2:SEGMent:SWEep:DWELl:CONTrol OFF",
+                "SENSe2:SEGMent:BWIDth:RESolution:SELect:CONTrol OFF",
+                "SENSe2:SEGMent:POWer:LEVel:CONTrol OFF",
+                "SENSe2:SEGMent:SWEep:TIME:CONTrol OFF",
+                "SENSe2:SEGMent:SWEep:TIME:SUM?",
+                ] == visa.cmd
+
+        seg = sw.segments[5]
+        seg.delete()
+        assert seg.is_enabled is False
+        assert seg.if_selectivity == "5"
+        seg.analog_sweep_is_enabled = True
+        seg.analog_sweep_is_enabled = False
+        del seg  # This shouldn't delete the segment
+        assert ["SENSe2:SEGMent6:DELete",
+                "SENSe2:SEGMent6:STATe?",
+                "SENSe2:SEGMent6:BWIDth:RESolution:SELect?",
+                "SENSe2:SEGMent6:SWEep:GENeration ANALog",
+                "SENSe2:SEGMent6:SWEep:GENeration STEPped",
+                ] == visa.cmd
+
+    segment_float_properties = [
+        ("dwell_time",  "SENSe2:SEGMent6:SWEep:DWELl",     "{:s} {:s}", "{:s}?"),
+        ("freq_start",  "SENSe2:SEGMent6:FREQuency:STARt", "{:s} {:s}", "{:s}?"),
+        ("freq_stop",   "SENSe2:SEGMent6:FREQuency:STOP",  "{:s} {:s}", "{:s}?"),
+        ("power_level", "SENSe2:SEGMent6:POWer",           "{:s} {:s}", "{:s}?"),
+        ("sweep_time",  "SENSe2:SEGMent6:SWEep:TIME",      "{:s} {:s}", "{:s}?"),
+    ]
+
+    @PropertyTester.prop_parametrize(segment_float_properties)
+    def test_segment_float_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, seg, visa):
+        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, seg, visa, float)
+
+    segment_int_properties = [
+        ("if_bandwidth",     "SENSe2:SEGMent6:BWIDth:RESolution", "{:s} {:s}", "{:s}?"),
+        ("number_of_points", "SENSe2:SEGMent6:SWEep:POINts",      "{:s} {:s}", "{:s}?"),
+    ]
+
+    @PropertyTester.prop_parametrize(segment_int_properties)
+    def test_segment_int_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, seg, visa):
+        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, seg, visa, int)
 
 
 def test_vna_port(dummy_vna, visa):
