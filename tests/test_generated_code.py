@@ -13,6 +13,9 @@ from .conftest import VISA  # noqa: F401
 from RSSscpi import ZNB
 from RSSscpi.SCPI_gen_support import SCPINodeBase
 
+from vna1 import VNA1
+from vna2 import VNA2
+
 
 def test_basic(dummy_vna, visa):
     """
@@ -72,3 +75,34 @@ def test_node_base(dummy_znb, visa):
 
     # Check that Instrument has _SCPI_class set correctly
     assert instr._SCPI_class.__module__ == instr.OPC.__class__.__module__
+
+
+def test_attributes(visa):
+    v1 = VNA1(visa)
+    v2 = VNA2(visa)
+
+    assert v1.bsub._SCPI_class == VNA1.A.B
+    assert v2.bsub._SCPI_class != v1.bsub._SCPI_class
+    assert v2.A.__class__.__module__ == VNA2.__module__
+    assert v2.A._SCPI_class == VNA2.A
+    assert v2.bsub._SCPI_class == VNA2.A.B
+
+
+def test_relink_to_ancestor(visa):
+    instr = VNA2(visa)
+    a = instr.A(2)
+    d = VNA1.A.B.Ca.D.relink_to_ancestor(a)
+    assert d.build_cmd() == "A2:B:Ca:D"
+
+    aa = instr.Aa(1)
+    with pytest.raises(AttributeError) as err:
+        VNA1.A.B.Ca.D.relink_to_ancestor(aa)
+    assert str(err).endswith("AttributeError: The given ancestor was not found in the command tree.")
+
+    with pytest.raises(AttributeError) as err:
+        VNA1.A.B.Cb.D.relink_to_ancestor(a)
+    assert str(err).endswith("AttributeError: 'B' object has no attribute 'Cb' -- A2:B:Cb:D")
+
+    with pytest.raises(AttributeError) as err:
+        VNA1.A.B.Ca.D.E.relink_to_ancestor(d)
+    assert str(err).endswith("AttributeError: 'D' object has no attribute 'E' -- A2:B:Ca:D:E")

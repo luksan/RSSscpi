@@ -6,6 +6,8 @@ Created on Thu Feb 11 11:30:33 2016
 """
 from __future__ import print_function
 
+import itertools
+
 
 class SCPINodeBase(object):
     _cmd = "SCPINodeBase"
@@ -50,6 +52,12 @@ class SCPINodeBase(object):
     #         return x(parent=self)
     #     return x
 
+    @classmethod
+    def _parent_iterator(cls):
+        while cls:
+            yield cls
+            cls = cls._parent_class
+
     def build_cmd(self):
         x = self._build_cmd_r()
         return x[1:]  # Remove leading colon. This assumes that the top node is the empty string
@@ -73,36 +81,31 @@ class SCPINodeBase(object):
         """
         Create a new instance with the parent chain linking to ancestor.
 
-        :param ancestor: The SCPINodeBase instance to link to
-        :type ancestor: SCPINodeBase
+        :param SCPINodeBase ancestor: The SCPINodeBase instance to link to
         :rtype: SCPINodeBase
         """
         assert isinstance(ancestor, SCPINodeBase)
-        x = [cls]
-        while x[-1] is not None:
-            # We can't use isinstance(), since ZVA is subclassed from ZNB
-            a = ancestor.__class__
-            b = x[-1]._parent_class  # type: SCPINodeBase
-            if a._cmd == b._cmd:
-                # Check that we found the correct ancestor node
-                while a is not None:
-                    if b is None or a._cmd != b._cmd:
-                        break
-                    a = a._parent_class  # type: SCPINodeBase
-                    b = b._parent_class  # type: SCPINodeBase
-                else:
+        intermediates = []
+        for i in cls._parent_iterator():
+            # Stop adding parents to the list when we find `ancestor`
+            # We can't use isinstance(), since ZVA is subclassed from ZNB, instead we compare
+            # the _cmd attribute and check that the trees have the same length and command nodes
+            for a, b in itertools.izip_longest(ancestor._parent_iterator(), i._parent_iterator()):
+                if a is None or b is None or a._cmd != b._cmd:
                     break
-            x.append(x[-1]._parent_class)
+            else:
+                break
+            intermediates.append(i.__name__)
         else:
-            raise ValueError("The given ancestor was not found in the command tree.")
+            raise AttributeError("The given ancestor was not found in the command tree.")
 
         leaf = ancestor
-        for c in reversed(x):
-            # We use getattr(..) instead of direct instantiation, since ZVA is subclassed from ZNB
+        for c in reversed(intermediates):
             try:
-                leaf = getattr(leaf, c.__name__)
+                # We use getattr(..) instead of direct instantiation, since ZVA is subclassed from ZNB
+                leaf = getattr(leaf, c)
             except AttributeError as e:  # Apparently the subclassing was incorrect
-                raise AttributeError(str(e) + " -- " + ancestor.build_cmd() + ":" + ":".join(map(lambda x: x._cmd, reversed(x))))
+                raise AttributeError(str(e) + " -- " + ancestor.build_cmd() + ":" + ":".join(reversed(intermediates)))
         return leaf  # Return the instantiated leaf node, properly linked to the root node
 
 
