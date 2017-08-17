@@ -328,6 +328,7 @@ class ClassCodeGen(object):
             self._out("class " + name + "(" + base_class + "):")
             self._indent += 1
             self._make_docstr(cmd, parents + [cmd_str])
+            self._out("__slots__ = ()")
             self._out('_cmd = "' + cmd_str + '"')
             if cmd.args:
                 self._out('args = ["' + '", "'.join(cmd.args) + '"]')

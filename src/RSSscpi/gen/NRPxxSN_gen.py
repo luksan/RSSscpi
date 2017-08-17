@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from NRPxxSN_syntax.txt on 2017-08-17 11:20
+# Generated from NRPxxSN_syntax.txt on 2017-08-17 15:15
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -11,6 +11,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*CLS"
         args = []
 
@@ -27,6 +28,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*ESE"
         args = ["1"]
 
@@ -43,6 +45,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*ESR"
         args = []
 
@@ -59,6 +62,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*IDN"
         args = []
 
@@ -75,6 +79,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*IST"
         args = []
 
@@ -91,6 +96,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*OPC"
         args = []
 
@@ -107,6 +113,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*OPT"
         args = []
 
@@ -123,6 +130,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*PRE"
         args = ["1"]
 
@@ -139,6 +147,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*RCL"
         args = ["1"]
 
@@ -155,6 +164,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*RST"
         args = []
 
@@ -171,6 +181,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*SAV"
         args = ["1"]
 
@@ -187,6 +198,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*SRE"
         args = ["1"]
 
@@ -203,6 +215,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*STB"
         args = []
 
@@ -219,6 +232,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*TRG"
         args = []
 
@@ -235,6 +249,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*TST"
         args = []
 
@@ -251,6 +266,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*WAI"
         args = []
 
@@ -267,6 +283,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ABORt"
         args = []
 
@@ -283,6 +300,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "CALCulate"
         args = []
 
@@ -292,6 +310,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "FEED"
             args = ["'string'"]
 
@@ -315,6 +334,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "CALibration"
         args = []
 
@@ -324,6 +344,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: <block_data>
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = ["<block_data>"]
 
@@ -333,6 +354,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LENGth"
                 args = []
 
@@ -356,6 +378,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "USER"
             args = []
 
@@ -365,6 +388,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: <block_data>
                 """
+                __slots__ = ()
                 _cmd = "DATA"
                 args = ["<block_data>"]
 
@@ -374,6 +398,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LENGth"
                     args = []
 
@@ -404,6 +429,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ZERO"
             args = []
 
@@ -413,6 +439,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: ONCE
                 """
+                __slots__ = ()
                 _cmd = "AUTO"
                 args = ["ONCE"]
 
@@ -443,6 +470,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "FETCh"
         args = []
 
@@ -452,6 +480,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ARRay"
             args = []
 
@@ -461,6 +490,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = []
 
@@ -470,6 +500,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "AVG"
                     args = []
 
@@ -500,6 +531,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SCALar"
             args = []
 
@@ -509,6 +541,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = []
 
@@ -518,6 +551,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "AVG"
                     args = []
 
@@ -534,6 +568,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BURSt"
                     args = []
 
@@ -550,6 +585,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TSLot"
                     args = []
 
@@ -587,6 +623,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "FORMat"
         args = []
 
@@ -596,6 +633,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: NORMal, SWAPped
             """
+            __slots__ = ()
             _cmd = "BORDer"
             args = ["NORMal", "SWAPped"]
 
@@ -612,6 +650,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: ASCii, REAL
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = ["ASCii", "REAL"]
 
@@ -628,6 +667,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: ASCii, BINary, HEXadecimal, OCTal
             """
+            __slots__ = ()
             _cmd = "SREGister"
             args = ["ASCii", "BINary", "HEXadecimal", "OCTal"]
 
@@ -651,6 +691,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "INITiate"
         args = []
 
@@ -660,6 +701,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ALL"
             args = []
 
@@ -676,6 +718,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "CONTinuous"
             args = ["1", "ON", "OFF"]
 
@@ -692,6 +735,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IMMediate"
             args = []
 
@@ -715,6 +759,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "READ"
         args = []
 
@@ -724,6 +769,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ARRay"
             args = []
 
@@ -733,6 +779,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = []
 
@@ -742,6 +789,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "AVG"
                     args = []
 
@@ -772,6 +820,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SCALar"
             args = []
 
@@ -781,6 +830,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = []
 
@@ -790,6 +840,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "AVG"
                     args = []
 
@@ -806,6 +857,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BURSt"
                     args = []
 
@@ -822,6 +874,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TSLot"
                     args = []
 
@@ -852,6 +905,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "XTIMe"
             args = []
 
@@ -861,6 +915,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = []
 
@@ -891,6 +946,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SENSe"
         args = []
 
@@ -900,6 +956,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: MINMax, NONE, RNDMax
             """
+            __slots__ = ()
             _cmd = "AUXiliary"
             args = ["MINMax", "NONE", "RNDMax"]
 
@@ -916,6 +973,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "AVERage"
             args = []
 
@@ -925,6 +983,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = ["1"]
 
@@ -934,6 +993,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: <boolean>, ONCE
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["<boolean>", "ONCE"]
 
@@ -943,6 +1003,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "MTIMe"
                         args = ["1"]
 
@@ -959,6 +1020,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "NSRatio"
                         args = ["1"]
 
@@ -975,6 +1037,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "RESolution"
                         args = ["1"]
 
@@ -991,6 +1054,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "SLOT"
                         args = ["1"]
 
@@ -1007,6 +1071,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: NSRatio, RESolution
                         """
+                        __slots__ = ()
                         _cmd = "TYPE"
                         args = ["NSRatio", "RESolution"]
 
@@ -1037,6 +1102,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RESet"
                 args = []
 
@@ -1053,6 +1119,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -1069,6 +1136,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: MOVing, REPeat
                 """
+                __slots__ = ()
                 _cmd = "TCONtrol"
                 args = ["MOVing", "REPeat"]
 
@@ -1092,6 +1160,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CORRection"
             args = []
 
@@ -1101,6 +1170,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DCYCle"
                 args = ["1"]
 
@@ -1110,6 +1180,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -1133,6 +1204,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "OFFSet"
                 args = ["1"]
 
@@ -1142,6 +1214,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -1165,6 +1238,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SPDevice"
                 args = []
 
@@ -1174,6 +1248,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LIST"
                     args = []
 
@@ -1190,6 +1265,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["1"]
 
@@ -1206,6 +1282,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -1236,6 +1313,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = ["1"]
 
@@ -1252,6 +1330,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "FUNCtion"
             args = ["'string'"]
 
@@ -1268,6 +1347,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "POWer"
             args = []
 
@@ -1277,6 +1357,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AVG"
                 args = []
 
@@ -1286,6 +1367,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "APERture"
                     args = ["1"]
 
@@ -1302,6 +1384,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BUFFer"
                     args = []
 
@@ -1311,6 +1394,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CLEar"
                         args = []
 
@@ -1327,6 +1411,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -1343,6 +1428,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DATA"
                         args = []
 
@@ -1359,6 +1445,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "INFO"
                         args = ["'string'"]
 
@@ -1375,6 +1462,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "SIZE"
                         args = ["1"]
 
@@ -1391,6 +1479,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -1414,6 +1503,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "FAST"
                     args = ["1", "ON", "OFF"]
 
@@ -1430,6 +1520,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SMOothing"
                     args = []
 
@@ -1439,6 +1530,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -1469,6 +1561,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BURSt"
                 args = []
 
@@ -1478,6 +1571,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DTOLerance"
                     args = ["1"]
 
@@ -1494,6 +1588,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LENGth"
                     args = []
 
@@ -1517,6 +1612,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TSLot"
                 args = []
 
@@ -1526,6 +1622,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "AVG"
                     args = []
 
@@ -1535,6 +1632,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = ["1"]
 
@@ -1551,6 +1649,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EXCLude"
                         args = []
 
@@ -1560,6 +1659,7 @@ class NRPxxSN_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "MID"
                             args = []
 
@@ -1569,6 +1669,7 @@ class NRPxxSN_gen(Instrument):
 
                                 Arguments:
                                 """
+                                __slots__ = ()
                                 _cmd = "OFFSet"
                                 args = []
 
@@ -1578,6 +1679,7 @@ class NRPxxSN_gen(Instrument):
 
                                     Arguments: 1
                                     """
+                                    __slots__ = ()
                                     _cmd = "TIME"
                                     args = ["1"]
 
@@ -1601,6 +1703,7 @@ class NRPxxSN_gen(Instrument):
 
                                 Arguments: 1, ON, OFF
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "ON", "OFF"]
 
@@ -1617,6 +1720,7 @@ class NRPxxSN_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "TIME"
                                 args = ["1"]
 
@@ -1647,6 +1751,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "WIDTh"
                         args = ["1"]
 
@@ -1684,6 +1789,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 0, 1, 2
             """
+            __slots__ = ()
             _cmd = "RANGe"
             args = ["0", "1", "2"]
 
@@ -1693,6 +1799,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "AUTO"
                 args = ["1", "ON", "OFF"]
 
@@ -1709,6 +1816,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "CLEVel"
                 args = ["1"]
 
@@ -1732,6 +1840,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: FREQ1
             """
+            __slots__ = ()
             _cmd = "SAMPling"
             args = ["FREQ1"]
 
@@ -1748,6 +1857,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SGAMma"
             args = []
 
@@ -1757,6 +1867,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CORRection"
                 args = []
 
@@ -1766,6 +1877,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -1789,6 +1901,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "MAGNitude"
                 args = ["1"]
 
@@ -1805,6 +1918,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PHASe"
                 args = ["1"]
 
@@ -1828,6 +1942,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TIMing"
             args = []
 
@@ -1837,6 +1952,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXCLude"
                 args = []
 
@@ -1846,6 +1962,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "STARt"
                     args = ["1"]
 
@@ -1862,6 +1979,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "STOP"
                     args = ["1"]
 
@@ -1892,6 +2010,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TRACe"
             args = []
 
@@ -1901,6 +2020,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AVERage"
                 args = []
 
@@ -1910,6 +2030,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "COUNt"
                     args = ["1"]
 
@@ -1926,6 +2047,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -1942,6 +2064,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: MOVing, REPeat
                     """
+                    __slots__ = ()
                     _cmd = "TCONtrol"
                     args = ["MOVing", "REPeat"]
 
@@ -1965,6 +2088,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DATA"
                 args = []
 
@@ -1981,6 +2105,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MPWidth"
                 args = []
 
@@ -1997,6 +2122,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "OFFSet"
                 args = []
 
@@ -2006,6 +2132,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "TIME"
                     args = ["1"]
 
@@ -2029,6 +2156,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "POINts"
                 args = ["1"]
 
@@ -2045,6 +2173,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "REALtime"
                 args = ["1", "ON", "OFF"]
 
@@ -2061,6 +2190,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = ["1"]
 
@@ -2091,6 +2221,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "STATus"
         args = []
 
@@ -2100,6 +2231,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DEVice"
             args = []
 
@@ -2109,6 +2241,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONDition"
                 args = []
 
@@ -2125,6 +2258,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = ["1"]
 
@@ -2141,6 +2275,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EVENt"
                 args = []
 
@@ -2157,6 +2292,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "NTRansition"
                 args = ["1"]
 
@@ -2173,6 +2309,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PTRansition"
                 args = ["1"]
 
@@ -2196,6 +2333,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "OPERation"
             args = []
 
@@ -2205,6 +2343,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CALibrating"
                 args = []
 
@@ -2214,6 +2353,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -2230,6 +2370,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -2246,6 +2387,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -2262,6 +2404,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -2278,6 +2421,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SUMMary"
                     args = []
 
@@ -2287,6 +2431,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -2317,6 +2462,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONDition"
                 args = []
 
@@ -2333,6 +2479,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = ["1"]
 
@@ -2349,6 +2496,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EVENt"
                 args = []
 
@@ -2365,6 +2513,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LLFail"
                 args = []
 
@@ -2374,6 +2523,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -2390,6 +2540,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -2406,6 +2557,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -2422,6 +2574,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -2438,6 +2591,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SUMMary"
                     args = []
 
@@ -2447,6 +2601,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -2477,6 +2632,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASuring"
                 args = []
 
@@ -2486,6 +2642,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -2502,6 +2659,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -2518,6 +2676,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -2534,6 +2693,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -2550,6 +2710,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SUMMary"
                     args = []
 
@@ -2559,6 +2720,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -2589,6 +2751,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "NTRansition"
                 args = ["1"]
 
@@ -2605,6 +2768,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PTRansition"
                 args = ["1"]
 
@@ -2621,6 +2785,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SENSe"
                 args = []
 
@@ -2630,6 +2795,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -2646,6 +2812,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -2662,6 +2829,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -2678,6 +2846,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -2694,6 +2863,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SUMMary"
                     args = []
 
@@ -2703,6 +2873,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -2733,6 +2904,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRIGger"
                 args = []
 
@@ -2742,6 +2914,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -2758,6 +2931,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -2774,6 +2948,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -2790,6 +2965,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -2806,6 +2982,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SUMMary"
                     args = []
 
@@ -2815,6 +2992,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -2845,6 +3023,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ULFail"
                 args = []
 
@@ -2854,6 +3033,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -2870,6 +3050,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -2886,6 +3067,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -2902,6 +3084,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -2918,6 +3101,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SUMMary"
                     args = []
 
@@ -2927,6 +3111,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -2964,6 +3149,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PRESet"
             args = []
 
@@ -2980,6 +3166,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "QUEStionable"
             args = []
 
@@ -2989,6 +3176,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CALibration"
                 args = []
 
@@ -2998,6 +3186,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -3014,6 +3203,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -3030,6 +3220,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -3046,6 +3237,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -3062,6 +3254,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SUMMary"
                     args = []
 
@@ -3071,6 +3264,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -3101,6 +3295,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONDition"
                 args = []
 
@@ -3117,6 +3312,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = ["1"]
 
@@ -3133,6 +3329,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EVENt"
                 args = []
 
@@ -3149,6 +3346,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "NTRansition"
                 args = ["1"]
 
@@ -3165,6 +3363,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = []
 
@@ -3174,6 +3373,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -3190,6 +3390,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -3206,6 +3407,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -3222,6 +3424,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -3238,6 +3441,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SUMMary"
                     args = []
 
@@ -3247,6 +3451,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -3277,6 +3482,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PTRansition"
                 args = ["1"]
 
@@ -3293,6 +3499,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "WINDow"
                 args = []
 
@@ -3302,6 +3509,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -3318,6 +3526,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -3334,6 +3543,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -3350,6 +3560,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -3366,6 +3577,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SUMMary"
                     args = []
 
@@ -3375,6 +3587,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -3412,6 +3625,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "QUEue"
             args = []
 
@@ -3421,6 +3635,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NEXT"
                 args = []
 
@@ -3451,6 +3666,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SYSTem"
         args = []
 
@@ -3460,6 +3676,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CLOCk"
             args = []
 
@@ -3469,6 +3686,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: EXTernal, INTernal
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXTernal", "INTernal"]
 
@@ -3492,6 +3710,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "COMMunicate"
             args = []
 
@@ -3501,6 +3720,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NETWork"
                 args = []
 
@@ -3510,6 +3730,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COMMon"
                     args = []
 
@@ -3519,6 +3740,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DOMain"
                         args = ["'string'"]
 
@@ -3535,6 +3757,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "HOSTname"
                         args = ["'string'"]
 
@@ -3558,6 +3781,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "IPADdress"
                     args = ["'string'"]
 
@@ -3567,6 +3791,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "GATeway"
                         args = ["'string'"]
 
@@ -3583,6 +3808,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "INFO"
                         args = []
 
@@ -3599,6 +3825,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments: AUTO, STATic
                         """
+                        __slots__ = ()
                         _cmd = "MODE"
                         args = ["AUTO", "STATic"]
 
@@ -3615,6 +3842,7 @@ class NRPxxSN_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SUBNet"
                         args = []
 
@@ -3624,6 +3852,7 @@ class NRPxxSN_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "MASK"
                             args = ["'string'"]
 
@@ -3654,6 +3883,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RESTart"
                     args = []
 
@@ -3670,6 +3900,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RESet"
                     args = []
 
@@ -3686,6 +3917,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STATus"
                     args = []
 
@@ -3716,6 +3948,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DFPRint"
             args = []
 
@@ -3732,6 +3965,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ERRor"
             args = []
 
@@ -3741,6 +3975,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = []
 
@@ -3757,6 +3992,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CODE"
                 args = []
 
@@ -3766,6 +4002,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -3782,6 +4019,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "NEXT"
                     args = []
 
@@ -3805,6 +4043,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = []
 
@@ -3821,6 +4060,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NEXT"
                 args = []
 
@@ -3844,6 +4084,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "FEATures"
             args = ["1"]
 
@@ -3860,6 +4101,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: <block_data>
             """
+            __slots__ = ()
             _cmd = "FWUPdate"
             args = ["<block_data>"]
 
@@ -3869,6 +4111,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STATus"
                 args = []
 
@@ -3892,6 +4135,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "HELP"
             args = []
 
@@ -3901,6 +4145,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "HEADers"
                 args = []
 
@@ -3917,6 +4162,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SYNTax"
                 args = ["'string'"]
 
@@ -3926,6 +4172,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -3956,6 +4203,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "INFO"
             args = ["'string'"]
 
@@ -3972,6 +4220,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "INITialize"
             args = []
 
@@ -3988,6 +4237,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: SCPI
             """
+            __slots__ = ()
             _cmd = "LANGuage"
             args = ["SCPI"]
 
@@ -4004,6 +4254,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LED"
             args = []
 
@@ -4013,6 +4264,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "COLor"
                 args = ["1"]
 
@@ -4029,6 +4281,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: SENSor, USER
                 """
+                __slots__ = ()
                 _cmd = "MODE"
                 args = ["SENSor", "USER"]
 
@@ -4052,6 +4305,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "LIMits"
             args = ["1"]
 
@@ -4068,6 +4322,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MINPower"
             args = []
 
@@ -4084,6 +4339,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PRESet"
             args = []
 
@@ -4100,6 +4356,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "REBoot"
             args = []
 
@@ -4116,6 +4373,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "RUTime"
             args = ["1"]
 
@@ -4132,6 +4390,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SENSor"
             args = []
 
@@ -4141,6 +4400,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -4164,6 +4424,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SERRor"
             args = []
 
@@ -4173,6 +4434,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LIST"
                 args = []
 
@@ -4182,6 +4444,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -4198,6 +4461,7 @@ class NRPxxSN_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "NEXT"
                     args = []
 
@@ -4228,6 +4492,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "SUTime"
             args = ["1"]
 
@@ -4244,6 +4509,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TLEVels"
             args = []
 
@@ -4260,6 +4526,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TRANsaction"
             args = []
 
@@ -4269,6 +4536,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BEGin"
                 args = []
 
@@ -4285,6 +4553,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "END"
                 args = []
 
@@ -4308,6 +4577,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "VERSion"
             args = []
 
@@ -4331,6 +4601,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "TEST"
         args = []
 
@@ -4340,6 +4611,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "SENSor"
             args = ["'string'"]
 
@@ -4363,6 +4635,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "TRIGger"
         args = []
 
@@ -4372,6 +4645,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ATRigger"
             args = []
 
@@ -4381,6 +4655,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DELay"
                 args = ["1"]
 
@@ -4397,6 +4672,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXECuted"
                 args = []
 
@@ -4413,6 +4689,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -4436,6 +4713,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "COUNt"
             args = ["1"]
 
@@ -4452,6 +4730,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "DELay"
             args = ["1"]
 
@@ -4461,6 +4740,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "AUTO"
                 args = ["1", "ON", "OFF"]
 
@@ -4484,6 +4764,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "DTIMe"
             args = ["1"]
 
@@ -4500,6 +4781,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "EXTernal"
             args = []
 
@@ -4509,6 +4791,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: HIGH, LOW
                 """
+                __slots__ = ()
                 _cmd = "IMPedance"
                 args = ["HIGH", "LOW"]
 
@@ -4532,6 +4815,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "HOLDoff"
             args = ["1"]
 
@@ -4548,6 +4832,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "HYSTeresis"
             args = ["1"]
 
@@ -4564,6 +4849,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IMMediate"
             args = []
 
@@ -4580,6 +4866,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "LEVel"
             args = ["1"]
 
@@ -4596,6 +4883,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MASTer"
             args = []
 
@@ -4605,6 +4893,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: EXT1, EXT2, EXTernal1, EXTernal2
                 """
+                __slots__ = ()
                 _cmd = "PORT"
                 args = ["EXT1", "EXT2", "EXTernal1", "EXTernal2"]
 
@@ -4621,6 +4910,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -4644,6 +4934,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: NEGative, POSitive
             """
+            __slots__ = ()
             _cmd = "SLOPe"
             args = ["NEGative", "POSitive"]
 
@@ -4660,6 +4951,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: BUS, EXT1, EXT2, EXTernal, EXTernal1, EXTernal2, HOLD, IMMediate, INTernal
             """
+            __slots__ = ()
             _cmd = "SOURce"
             args = ["BUS", "EXT1", "EXT2", "EXTernal", "EXTernal1", "EXTernal2", "HOLD", "IMMediate", "INTernal"]
 
@@ -4676,6 +4968,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SYNC"
             args = []
 
@@ -4685,6 +4978,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: EXT1, EXT2, EXTernal1, EXTernal2
                 """
+                __slots__ = ()
                 _cmd = "PORT"
                 args = ["EXT1", "EXT2", "EXTernal1", "EXTernal2"]
 
@@ -4701,6 +4995,7 @@ class NRPxxSN_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -4731,6 +5026,7 @@ class NRPxxSN_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "UNIT"
         args = []
 
@@ -4740,6 +5036,7 @@ class NRPxxSN_gen(Instrument):
 
             Arguments: DBM, DBUV, W
             """
+            __slots__ = ()
             _cmd = "POWer"
             args = ["DBM", "DBUV", "W"]
 

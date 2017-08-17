@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from ZVA_commands.inp on 2017-08-17 11:20
+# Generated from ZVA_commands.inp on 2017-08-17 15:15
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -12,6 +12,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*CAL"
         args = []
 
@@ -30,6 +31,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*CLS"
         args = []
 
@@ -48,6 +50,7 @@ class ZVA_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*ESE"
         args = ["1"]
 
@@ -66,6 +69,7 @@ class ZVA_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*ESR"
         args = ["1"]
 
@@ -84,6 +88,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*IDN"
         args = []
 
@@ -102,6 +107,7 @@ class ZVA_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*IST"
         args = ["1"]
 
@@ -120,6 +126,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*OPC"
         args = []
 
@@ -138,6 +145,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*OPT"
         args = []
 
@@ -156,6 +164,7 @@ class ZVA_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*PCB"
         args = ["1"]
 
@@ -174,6 +183,7 @@ class ZVA_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*PRE"
         args = ["1"]
 
@@ -192,6 +202,7 @@ class ZVA_gen(Instrument):
 
         Arguments: 1, OFF, ON
         """
+        __slots__ = ()
         _cmd = "*PSC"
         args = ["1", "OFF", "ON"]
 
@@ -210,6 +221,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*RST"
         args = []
 
@@ -228,6 +240,7 @@ class ZVA_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*SRE"
         args = ["1"]
 
@@ -246,6 +259,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*STB"
         args = []
 
@@ -264,6 +278,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*TRG"
         args = []
 
@@ -282,6 +297,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*TST"
         args = []
 
@@ -300,6 +316,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*WAI"
         args = []
 
@@ -318,6 +335,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "@DCL"
         args = []
 
@@ -336,6 +354,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "@GET"
         args = []
 
@@ -354,6 +373,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "@LOC"
         args = []
 
@@ -372,6 +392,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "@REM"
         args = []
 
@@ -390,6 +411,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ABORt"
         args = []
 
@@ -407,6 +429,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "CALCulate"
         args = []
 
@@ -416,6 +439,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CLIMits"
             args = []
 
@@ -426,6 +450,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FAIL"
                 args = []
 
@@ -451,6 +476,7 @@ class ZVA_gen(Instrument):
 
             Arguments: FDATa, MDATa, SCORr1, SCORr10, SCORr11, SCORr12, SCORr13, SCORr14, SCORr15, SCORr16, SCORr17, SCORr18, SCORr19, SCORr2, SCORr20, SCORr21, SCORr22, SCORr23, SCORr24, SCORr25, SCORr26, SCORr27, SCORr3, SCORr4, SCORr5, SCORr6, SCORr7, SCORr8, SCORr9, SDATa, TSData
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = ["FDATa", "MDATa", "SCORr1", "SCORr10", "SCORr11", "SCORr12", "SCORr13", "SCORr14", "SCORr15", "SCORr16", "SCORr17", "SCORr18", "SCORr19", "SCORr2", "SCORr20", "SCORr21", "SCORr22", "SCORr23", "SCORr24", "SCORr25", "SCORr26", "SCORr27", "SCORr3", "SCORr4", "SCORr5", "SCORr6", "SCORr7", "SCORr8", "SCORr9", "SDATa", "TSData"]
 
@@ -461,6 +487,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: FDATa, MDATa, SDATa
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = ["FDATa", "MDATa", "SDATa"]
 
@@ -479,6 +506,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: FDATa, MDATa, SDATa
                 """
+                __slots__ = ()
                 _cmd = "CALL"
                 args = ["FDATa", "MDATa", "SDATa"]
 
@@ -489,6 +517,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CATalog"
                     args = []
 
@@ -515,6 +544,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: FDATa, MDATa, SDATa
                 """
+                __slots__ = ()
                 _cmd = "DALL"
                 args = ["FDATa", "MDATa", "SDATa"]
 
@@ -532,6 +562,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: SDATa
                 """
+                __slots__ = ()
                 _cmd = "NSWeep"
                 args = ["SDATa"]
 
@@ -542,6 +573,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COUNt"
                     args = []
 
@@ -560,6 +592,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: SDATa
                     """
+                    __slots__ = ()
                     _cmd = "FIRSt"
                     args = ["SDATa"]
 
@@ -578,6 +611,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: SDATa
                     """
+                    __slots__ = ()
                     _cmd = "LAST"
                     args = ["SDATa"]
 
@@ -603,6 +637,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: FDATa, MDATa, SDATa
                 """
+                __slots__ = ()
                 _cmd = "SGRoup"
                 args = ["FDATa", "MDATa", "SDATa"]
 
@@ -621,6 +656,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STIMulus"
                 args = []
 
@@ -647,6 +683,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "DLINe"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -657,6 +694,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -682,6 +720,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FILTer"
             args = []
 
@@ -691,6 +730,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "GATE"
                 args = []
 
@@ -700,6 +740,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: BPASs, NOTCh
                     """
+                    __slots__ = ()
                     _cmd = "TIME"
                     args = ["BPASs", "NOTCh"]
 
@@ -710,6 +751,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "CENTer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -728,6 +770,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "DCHebyshev"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -746,6 +789,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: MAXimum, MINimum, NORMal, WIDE
                         """
+                        __slots__ = ()
                         _cmd = "SHAPe"
                         args = ["MAXimum", "MINimum", "NORMal", "WIDE"]
 
@@ -764,6 +808,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "SHOW"
                         args = ["1", "OFF", "ON"]
 
@@ -782,6 +827,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "SPAN"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -800,6 +846,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -818,6 +865,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -836,6 +884,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -854,6 +903,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: BPASs, NOTCh
                         """
+                        __slots__ = ()
                         _cmd = "TYPE"
                         args = ["BPASs", "NOTCh"]
 
@@ -872,6 +922,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: BOHMan, DCHebyshev, HAMMing, HANNing, RECT
                         """
+                        __slots__ = ()
                         _cmd = "WINDow"
                         args = ["BOHMan", "DCHebyshev", "HAMMing", "HANNing", "RECT"]
 
@@ -910,6 +961,7 @@ class ZVA_gen(Instrument):
 
             Arguments: COMPlex, GDELay, IMAGinary, ISMith, MAGNitude, MLINear, MLOGarithmic, PHASe, POLar, REAL, SMITh, SWR, UPHase
             """
+            __slots__ = ()
             _cmd = "FORMat"
             args = ["COMPlex", "GDELay", "IMAGinary", "ISMith", "MAGNitude", "MLINear", "MLOGarithmic", "PHASe", "POLar", "REAL", "SMITh", "SWR", "UPHase"]
 
@@ -920,6 +972,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: POWer, VOLTage
                 """
+                __slots__ = ()
                 _cmd = "WQUType"
                 args = ["POWer", "VOLTage"]
 
@@ -944,6 +997,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FSIMulator"
             args = []
 
@@ -953,6 +1007,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BALun"
                 args = []
 
@@ -962,6 +1017,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: SBALanced
                     """
+                    __slots__ = ()
                     _cmd = "DEVice"
                     args = ["SBALanced"]
 
@@ -978,6 +1034,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DMCircuit"
                     args = []
 
@@ -987,6 +1044,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "BPORt"
                         args = []
 
@@ -996,6 +1054,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -1005,6 +1064,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1021,6 +1081,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1058,6 +1119,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DZConversion"
                     args = []
 
@@ -1067,6 +1129,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "BPORt"
                         args = []
 
@@ -1076,6 +1139,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "ZCOMmon"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1085,6 +1149,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1108,6 +1173,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "ZDIFferent"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1117,6 +1183,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1161,6 +1228,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -1184,6 +1252,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "GDAPerture"
             args = []
 
@@ -1194,6 +1263,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SCOunt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1218,6 +1288,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LDEViation"
             args = []
 
@@ -1228,6 +1299,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ONCE
                 """
+                __slots__ = ()
                 _cmd = "AUTO"
                 args = ["ONCE"]
 
@@ -1246,6 +1318,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CONStant"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1264,6 +1337,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ELENgth"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1282,6 +1356,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: OFF, ON, TRACking
                 """
+                __slots__ = ()
                 _cmd = "MODE"
                 args = ["OFF", "ON", "TRACking"]
 
@@ -1300,6 +1375,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SLOPe"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1324,6 +1400,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LIMit"
             args = []
 
@@ -1333,6 +1410,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CONTrol"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1343,6 +1421,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1361,6 +1440,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: FLIN, FLOG, FSEG, FSINgle, PLIN, PLOG, PSINgle, TLIN, TLOG
                     """
+                    __slots__ = ()
                     _cmd = "DOMain"
                     args = ["FLIN", "FLOG", "FSEG", "FSINgle", "PLIN", "PLOG", "PSINgle", "TLIN", "TLOG"]
 
@@ -1379,6 +1459,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1404,6 +1485,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "DATA"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1421,6 +1503,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DELete"
                 args = []
 
@@ -1431,6 +1514,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -1455,6 +1539,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "DISPlay"
                 args = ["1", "OFF", "ON"]
 
@@ -1465,6 +1550,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -1490,6 +1576,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FAIL"
                 args = []
 
@@ -1507,6 +1594,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "LOWer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1517,6 +1605,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1535,6 +1624,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "FEED"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1553,6 +1643,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1571,6 +1662,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -1595,6 +1687,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RDOMain"
                 args = []
 
@@ -1605,6 +1698,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: S, SINV, Y, YREL, Z, ZREL
                     """
+                    __slots__ = ()
                     _cmd = "COMPlex"
                     args = ["S", "SINV", "Y", "YREL", "Z", "ZREL"]
 
@@ -1623,6 +1717,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: C, COMPlex, GDELay, IMAGinary, L, MAGNitude, PHASe, REAL, SWR
                     """
+                    __slots__ = ()
                     _cmd = "FORMat"
                     args = ["C", "COMPlex", "GDELay", "IMAGinary", "L", "MAGNitude", "PHASe", "REAL", "SWR"]
 
@@ -1641,6 +1736,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: DB, LINear, LOGarithmic, SIC
                     """
+                    __slots__ = ()
                     _cmd = "SPACing"
                     args = ["DB", "LINear", "LOGarithmic", "SIC"]
 
@@ -1665,6 +1761,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SEGMent"
                 args = []
 
@@ -1674,6 +1771,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "AMPLitude"
                     args = []
 
@@ -1684,6 +1782,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1702,6 +1801,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1727,6 +1827,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COUNt"
                     args = []
 
@@ -1744,6 +1845,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STIMulus"
                     args = []
 
@@ -1754,6 +1856,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1772,6 +1875,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1797,6 +1901,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: LMAX, LMIN, OFF
                     """
+                    __slots__ = ()
                     _cmd = "TYPE"
                     args = ["LMAX", "LMIN", "OFF"]
 
@@ -1821,6 +1926,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SOUNd"
                 args = ["1", "OFF", "ON"]
 
@@ -1831,6 +1937,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -1856,6 +1963,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -1873,6 +1981,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "TTLout"
                 args = ["1", "OFF", "ON"]
 
@@ -1883,6 +1992,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -1907,6 +2017,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "UPPer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1917,6 +2028,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1935,6 +2047,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "FEED"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1953,6 +2066,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1971,6 +2085,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -2002,6 +2117,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "MARKer"
             args = ["1", "OFF", "ON"]
 
@@ -2012,6 +2128,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AOFF"
                 args = []
 
@@ -2029,6 +2146,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "BWIDth"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2045,6 +2163,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "COUPled"
                 args = ["1", "OFF", "ON"]
 
@@ -2055,6 +2174,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -2079,6 +2199,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "DELTa"
                 args = ["1", "OFF", "ON"]
 
@@ -2089,6 +2210,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -2114,6 +2236,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ADMittance, COMPlex, DEFault, GDELay, IMAGinary, IMPedance, LINPhase, LOGPhase, MDB, MDPHase, MLINear, MLOGarithmic, MLPHase, PHASe, POLar, REAL, SWR
                 """
+                __slots__ = ()
                 _cmd = "FORMat"
                 args = ["ADMittance", "COMPlex", "DEFault", "GDELay", "IMAGinary", "IMPedance", "LINPhase", "LOGPhase", "MDB", "MDPHase", "MLINear", "MLOGarithmic", "MLPHase", "PHASe", "POLar", "REAL", "SWR"]
 
@@ -2131,6 +2254,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: BFILter, LPEak, LTARget, MAXimum, MINimum, NPEak, RPEak, RTARget, SPRogress, TARGet
                 """
+                __slots__ = ()
                 _cmd = "FUNCtion"
                 args = ["BFILter", "LPEak", "LTARget", "MAXimum", "MINimum", "NPEak", "RPEak", "RTARget", "SPRogress", "TARGet"]
 
@@ -2140,6 +2264,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "APEak"
                     args = []
 
@@ -2150,6 +2275,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "EXCursion"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2168,6 +2294,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "THReshold"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2193,6 +2320,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "BWIDth"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2203,6 +2331,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "GMCenter"
                         args = ["1", "OFF", "ON"]
 
@@ -2221,6 +2350,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: BPABsolute, BPASs, BPRMarker, BSABsolute, BSRMarker, BSTop
                         """
+                        __slots__ = ()
                         _cmd = "MODE"
                         args = ["BPABsolute", "BPASs", "BPRMarker", "BSABsolute", "BSRMarker", "BSTop"]
 
@@ -2247,6 +2377,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CENTer"
                     args = []
 
@@ -2264,6 +2395,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DELTa"
                     args = []
 
@@ -2274,6 +2406,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -2298,6 +2431,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DOMain"
                     args = []
 
@@ -2308,6 +2442,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "USER"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2318,6 +2453,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "SHOW"
                             args = ["1", "OFF", "ON"]
 
@@ -2336,6 +2472,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "STARt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2354,6 +2491,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "STOP"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2387,6 +2525,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: BFILter, LPEak, LTARget, MAXimum, MINimum, NPEak, RPEak, RTARget, SPRogress, TARGet
                     """
+                    __slots__ = ()
                     _cmd = "EXECute"
                     args = ["BFILter", "LPEak", "LTARget", "MAXimum", "MINimum", "NPEak", "RPEak", "RTARget", "SPRogress", "TARGet"]
 
@@ -2405,6 +2544,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RESult"
                     args = []
 
@@ -2423,6 +2563,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: BFILter, LPEak, LTARget, MAXimum, MINimum, NPEak, RPEak, RTARget, SPRogress, TARGet
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["BFILter", "LPEak", "LTARget", "MAXimum", "MINimum", "NPEak", "RPEak", "RTARget", "SPRogress", "TARGet"]
 
@@ -2441,6 +2582,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STARt"
                     args = []
 
@@ -2459,6 +2601,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STOP"
                     args = []
 
@@ -2477,6 +2620,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TARGet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2502,6 +2646,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MAXimum"
                 args = []
 
@@ -2520,6 +2665,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MINimum"
                 args = []
 
@@ -2538,6 +2684,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: CONTinuous, DISCrete
                 """
+                __slots__ = ()
                 _cmd = "MODE"
                 args = ["CONTinuous", "DISCrete"]
 
@@ -2556,6 +2703,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -2573,6 +2721,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "REFerence"
                 args = ["1", "OFF", "ON"]
 
@@ -2583,6 +2732,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: CONTinuous, DISCrete
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["CONTinuous", "DISCrete"]
 
@@ -2601,6 +2751,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "NAME"
                     args = ["'string'"]
 
@@ -2619,6 +2770,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -2637,6 +2789,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: FIXed, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "TYPE"
                     args = ["FIXed", "NORMal"]
 
@@ -2655,6 +2808,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "X"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2673,6 +2827,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "Y"
                     args = []
 
@@ -2697,6 +2852,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SEARch"
                 args = []
 
@@ -2706,6 +2862,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BFILter"
                     args = []
 
@@ -2715,6 +2872,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "RESult"
                         args = ["1", "OFF", "ON"]
 
@@ -2725,6 +2883,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -2757,6 +2916,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "IMMediate"
                     args = []
 
@@ -2775,6 +2935,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LEFT"
                     args = []
 
@@ -2793,6 +2954,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "NEXT"
                     args = []
 
@@ -2811,6 +2973,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RIGHt"
                     args = []
 
@@ -2829,6 +2992,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "TRACking"
                     args = ["1", "OFF", "ON"]
 
@@ -2854,6 +3018,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -2871,6 +3036,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "TARGet"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2888,6 +3054,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: FIXed, NORMal
                 """
+                __slots__ = ()
                 _cmd = "TYPE"
                 args = ["FIXed", "NORMal"]
 
@@ -2906,6 +3073,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "X"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2924,6 +3092,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "Y"
                 args = []
 
@@ -2948,6 +3117,7 @@ class ZVA_gen(Instrument):
 
             Arguments: (expression)
             """
+            __slots__ = ()
             _cmd = "MATH"
             args = ["(expression)"]
 
@@ -2957,6 +3127,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: (expression)
                 """
+                __slots__ = ()
                 _cmd = "EXPRession"
                 args = ["(expression)"]
 
@@ -2967,6 +3138,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: (expression)
                     """
+                    __slots__ = ()
                     _cmd = "DEFine"
                     args = ["(expression)"]
 
@@ -2985,6 +3157,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SDEFine"
                     args = ["'string'"]
 
@@ -3010,6 +3183,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ADD, DIVide, MULTiply, NORMal, SUBTract
                 """
+                __slots__ = ()
                 _cmd = "FUNCtion"
                 args = ["ADD", "DIVide", "MULTiply", "NORMal", "SUBTract"]
 
@@ -3028,6 +3202,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEMorize"
                 args = []
 
@@ -3046,6 +3221,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -3063,6 +3239,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "WUNit"
                 args = ["1", "OFF", "ON"]
 
@@ -3073,6 +3250,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3104,6 +3282,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PARameter"
             args = []
 
@@ -3114,6 +3293,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -3132,6 +3312,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "DEFine"
                 args = ["'string'"]
 
@@ -3142,6 +3323,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SGRoup"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3168,6 +3350,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "DELete"
                 args = ["'string'"]
 
@@ -3178,6 +3361,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -3196,6 +3380,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CALL"
                     args = []
 
@@ -3214,6 +3399,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SGRoup"
                     args = []
 
@@ -3240,6 +3426,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = ["'string'"]
 
@@ -3257,6 +3444,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NFIGure"
                 args = []
 
@@ -3267,6 +3455,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "CSETtings"
                     args = ["'string'"]
 
@@ -3292,6 +3481,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SDEFine"
                 args = ["'string'"]
 
@@ -3310,6 +3500,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SELect"
                 args = ["'string'"]
 
@@ -3335,6 +3526,7 @@ class ZVA_gen(Instrument):
 
             Arguments: MAX, MIN, OFF
             """
+            __slots__ = ()
             _cmd = "PHOLd"
             args = ["MAX", "MIN", "OFF"]
 
@@ -3352,6 +3544,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "RIPPle"
             args = []
 
@@ -3361,6 +3554,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONTrol"
                 args = []
 
@@ -3371,6 +3565,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: FLIN, FLOG, FSEG, FSINgle, PLIN, PLOG, PSINgle, TLIN, TLOG
                     """
+                    __slots__ = ()
                     _cmd = "DOMain"
                     args = ["FLIN", "FLOG", "FSEG", "FSINgle", "PLIN", "PLOG", "PSINgle", "TLIN", "TLOG"]
 
@@ -3396,6 +3591,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "DATA"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3413,6 +3609,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DELete"
                 args = []
 
@@ -3423,6 +3620,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -3447,6 +3645,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "DISPlay"
                 args = ["1", "OFF", "ON"]
 
@@ -3457,6 +3656,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3482,6 +3682,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FAIL"
                 args = []
 
@@ -3499,6 +3700,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RDOMain"
                 args = []
 
@@ -3509,6 +3711,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: C, COMPlex, GDELay, IMAGinary, L, MAGNitude, PHASe, REAL, SWR
                     """
+                    __slots__ = ()
                     _cmd = "FORMat"
                     args = ["C", "COMPlex", "GDELay", "IMAGinary", "L", "MAGNitude", "PHASe", "REAL", "SWR"]
 
@@ -3533,6 +3736,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SEGMent"
                 args = ["1", "OFF", "ON"]
 
@@ -3543,6 +3747,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COUNt"
                     args = []
 
@@ -3561,6 +3766,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "LIMit"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3579,6 +3785,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RESult"
                     args = []
 
@@ -3597,6 +3804,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3614,6 +3822,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STIMulus"
                     args = []
 
@@ -3624,6 +3833,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3642,6 +3852,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3673,6 +3884,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SOUNd"
                 args = ["1", "OFF", "ON"]
 
@@ -3683,6 +3895,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3708,6 +3921,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -3732,6 +3946,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "SMOothing"
             args = ["1", "OFF", "ON"]
 
@@ -3742,6 +3957,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "APERture"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3760,6 +3976,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -3784,6 +4001,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "STATistics"
             args = ["1", "OFF", "ON"]
 
@@ -3793,6 +4011,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DOMain"
                 args = []
 
@@ -3803,6 +4022,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "USER"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3813,6 +4033,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "SHOW"
                         args = ["1", "OFF", "ON"]
 
@@ -3831,6 +4052,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3849,6 +4071,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3881,6 +4104,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "EPDelay"
                 args = ["1", "OFF", "ON"]
 
@@ -3891,6 +4115,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3915,6 +4140,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "MMPTpeak"
                 args = ["1", "OFF", "ON"]
 
@@ -3925,6 +4151,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3949,6 +4176,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "MSTDdev"
                 args = ["1", "OFF", "ON"]
 
@@ -3958,6 +4186,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3981,6 +4210,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NLINear"
                 args = []
 
@@ -3990,6 +4220,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "COMP"
                     args = ["1", "OFF", "ON"]
 
@@ -4000,6 +4231,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "LEVel"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4018,6 +4250,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "RESult"
                         args = []
 
@@ -4036,6 +4269,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -4068,6 +4302,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ALL, ELENgth, FLATness, GAIN, MAX, MEAN, MIN, PDELay, PEAK2p, PTPeak, RMS, SLOPe, STDDev
                 """
+                __slots__ = ()
                 _cmd = "RESult"
                 args = ["ALL", "ELENgth", "FLATness", "GAIN", "MAX", "MEAN", "MIN", "PDELay", "PEAK2p", "PTPeak", "RMS", "SLOPe", "STDDev"]
 
@@ -4085,6 +4320,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "RMS"
                 args = ["1", "OFF", "ON"]
 
@@ -4095,6 +4331,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -4119,6 +4356,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SFLatness"
                 args = ["1", "OFF", "ON"]
 
@@ -4129,6 +4367,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -4154,6 +4393,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -4178,6 +4418,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TDIF"
             args = []
 
@@ -4187,6 +4428,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMBalance"
                 args = []
 
@@ -4196,6 +4438,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "COMPensation"
                     args = ["1", "OFF", "ON"]
 
@@ -4206,6 +4449,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -4244,6 +4488,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TRANsform"
             args = []
 
@@ -4254,6 +4499,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: S, Y, Z
                 """
+                __slots__ = ()
                 _cmd = "COMPlex"
                 args = ["S", "Y", "Z"]
 
@@ -4271,6 +4517,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMPedance"
                 args = []
 
@@ -4281,6 +4528,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: PWAVes, TWAVes
                     """
+                    __slots__ = ()
                     _cmd = "RNORmal"
                     args = ["PWAVes", "TWAVes"]
 
@@ -4305,6 +4553,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: BPASs, LPASs
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = ["BPASs", "LPASs"]
 
@@ -4315,6 +4564,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "CENTer"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4333,6 +4583,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DCHebyshev"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4351,6 +4602,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: KDFRequency, KFSTop, KSDFrequency
                     """
+                    __slots__ = ()
                     _cmd = "LPASs"
                     args = ["KDFRequency", "KFSTop", "KSDFrequency"]
 
@@ -4361,6 +4613,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "DCSParam"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4371,6 +4624,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "CONTinuous"
                             args = ["1", "OFF", "ON"]
 
@@ -4389,6 +4643,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "EXTRapolate"
                             args = []
 
@@ -4423,6 +4678,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LPFRequency"
                     args = []
 
@@ -4440,6 +4696,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: CHIRp
                     """
+                    __slots__ = ()
                     _cmd = "METHod"
                     args = ["CHIRp"]
 
@@ -4456,6 +4713,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RESolution"
                     args = []
 
@@ -4466,6 +4724,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "EFACtor"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4491,6 +4750,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SPAN"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4509,6 +4769,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "STARt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4527,6 +4788,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -4545,6 +4807,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: IMPulse, STEP
                     """
+                    __slots__ = ()
                     _cmd = "STIMulus"
                     args = ["IMPulse", "STEP"]
 
@@ -4563,6 +4826,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "STOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4581,6 +4845,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: BPASs, LPASs
                     """
+                    __slots__ = ()
                     _cmd = "TYPE"
                     args = ["BPASs", "LPASs"]
 
@@ -4599,6 +4864,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: BOHMan, DCHebyshev, HAMMing, HANNing, RECT
                     """
+                    __slots__ = ()
                     _cmd = "WINDow"
                     args = ["BOHMan", "DCHebyshev", "HAMMing", "HANNing", "RECT"]
 
@@ -4617,6 +4883,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: DISTance, TIME
                     """
+                    __slots__ = ()
                     _cmd = "XAXis"
                     args = ["DISTance", "TIME"]
 
@@ -4641,6 +4908,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "VNETworks"
                 args = []
 
@@ -4650,6 +4918,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BALanced"
                     args = []
 
@@ -4659,6 +4928,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["1", "OFF", "ON"]
 
@@ -4668,6 +4938,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -4678,6 +4949,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, LSSC, SCCS, SCLS, SCST, SLCS, STSC
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "LSSC", "SCCS", "SCLS", "SCST", "SLCS", "STSC"]
 
@@ -4696,6 +4968,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSL, LSSC, LSSL, SCLS, SLCS, SLLS, SLST, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSSL", "LSSC", "LSSL", "SCLS", "SLCS", "SLLS", "SLST", "STSL"]
 
@@ -4714,6 +4987,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -4739,6 +5013,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -4757,6 +5032,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: CSSC, CSSL, FIMPort, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -4781,6 +5057,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["1", "OFF", "ON"]
 
@@ -4790,6 +5067,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -4800,6 +5078,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, LSSC, SCCS, SCLS, SCST, SLCS, STSC
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "LSSC", "SCCS", "SCLS", "SCST", "SLCS", "STSC"]
 
@@ -4818,6 +5097,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSL, LSSC, LSSL, SCLS, SLCS, SLLS, SLST, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSSL", "LSSC", "LSSL", "SCLS", "SLCS", "SLLS", "SLST", "STSL"]
 
@@ -4836,6 +5116,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -4861,6 +5142,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -4879,6 +5161,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: CSSC, CSSL, FIMPort, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -4910,6 +5193,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "GLOop"
                     args = []
 
@@ -4919,6 +5203,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["1", "OFF", "ON"]
 
@@ -4928,6 +5213,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -4938,6 +5224,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: SC
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["SC"]
 
@@ -4956,6 +5243,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: SL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["SL"]
 
@@ -4974,6 +5262,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: SC, SL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["SC", "SL"]
 
@@ -4999,6 +5288,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -5017,6 +5307,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: FIMPort, SC, SL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["FIMPort", "SC", "SL"]
 
@@ -5041,6 +5332,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["1", "OFF", "ON"]
 
@@ -5050,6 +5342,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -5060,6 +5353,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: SC
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["SC"]
 
@@ -5078,6 +5372,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: SL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["SL"]
 
@@ -5096,6 +5391,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: SC, SL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["SC", "SL"]
 
@@ -5121,6 +5417,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -5138,6 +5435,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: FIMPort, SC, SL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["FIMPort", "SC", "SL"]
 
@@ -5168,6 +5466,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PPAir"
                     args = []
 
@@ -5177,6 +5476,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["1", "OFF", "ON"]
 
@@ -5187,6 +5487,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -5205,6 +5506,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DELete"
                             args = []
 
@@ -5222,6 +5524,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -5232,6 +5535,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, LSSC, SCCS, SCLS, SCST, SLCS, STSC
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "LSSC", "SCCS", "SCLS", "SCST", "SLCS", "STSC"]
 
@@ -5250,6 +5554,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSL, LSSC, LSSL, SCLS, SLCS, SLLS, SLST, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSSL", "LSSC", "LSSL", "SCLS", "SLCS", "SLLS", "SLST", "STSL"]
 
@@ -5268,6 +5573,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -5293,6 +5599,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -5311,6 +5618,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: CSSC, CSSL, FIMPort, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -5335,6 +5643,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["1", "OFF", "ON"]
 
@@ -5345,6 +5654,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -5363,6 +5673,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DELete"
                             args = []
 
@@ -5380,6 +5691,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -5390,6 +5702,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, LSSC, SCCS, SCLS, SCST, SLCS, STSC
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "LSSC", "SCCS", "SCLS", "SCST", "SLCS", "STSC"]
 
@@ -5408,6 +5721,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSL, LSSC, LSSL, SCLS, SLCS, SLLS, SLST, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSSL", "LSSC", "LSSL", "SCLS", "SLCS", "SLLS", "SLST", "STSL"]
 
@@ -5426,6 +5740,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -5451,6 +5766,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -5469,6 +5785,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: CSSC, CSSL, FIMPort, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -5500,6 +5817,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SENDed"
                     args = []
 
@@ -5509,6 +5827,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["1", "OFF", "ON"]
 
@@ -5518,6 +5837,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -5528,6 +5848,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSC, CSL, LSC, SCC, SCL, SLC
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSC", "CSL", "LSC", "SCC", "SCL", "SLC"]
 
@@ -5546,6 +5867,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSL, LSC, LSL, SCL, SLC, SLL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSL", "LSC", "LSL", "SCL", "SLC", "SLL"]
 
@@ -5564,6 +5886,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSC, CSL, LSC, LSL, SCC, SCL, SLC, SLL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSC", "CSL", "LSC", "LSL", "SCC", "SCL", "SLC", "SLL"]
 
@@ -5589,6 +5912,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -5607,6 +5931,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: CSC, CSL, FIMPort, LSC, LSL, SCC, SCL, SLC, SLL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSC", "CSL", "FIMPort", "LSC", "LSL", "SCC", "SCL", "SLC", "SLL"]
 
@@ -5631,6 +5956,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["1", "OFF", "ON"]
 
@@ -5640,6 +5966,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -5650,6 +5977,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSC, CSL, LSC, SCC, SCL, SLC
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSC", "CSL", "LSC", "SCC", "SCL", "SLC"]
 
@@ -5668,6 +5996,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSL, LSC, LSL, SCL, SLC, SLL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSL", "LSC", "LSL", "SCL", "SLC", "SLL"]
 
@@ -5686,6 +6015,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: CSC, CSL, LSC, LSL, SCC, SCL, SLC, SLL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSC", "CSL", "LSC", "LSL", "SCC", "SCL", "SLC", "SLL"]
 
@@ -5711,6 +6041,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -5729,6 +6060,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: CSC, CSL, FIMPort, LSC, LSL, SCC, SCL, SLC, SLL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSC", "CSL", "FIMPort", "LSC", "LSL", "SCC", "SCL", "SLC", "SLL"]
 
@@ -5781,6 +6113,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "CONFigure"
         args = []
 
@@ -5790,6 +6123,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "CHANnel"
             args = ["1", "OFF", "ON"]
 
@@ -5800,6 +6134,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -5818,6 +6153,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -5828,6 +6164,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "ID"
                     args = ["'string'"]
 
@@ -5854,6 +6191,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -5871,6 +6209,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = []
 
@@ -5881,6 +6220,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "REName"
                     args = ["'string'"]
 
@@ -5912,6 +6252,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TRACe"
             args = []
 
@@ -5922,6 +6263,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -5939,6 +6281,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CHANnel"
                 args = []
 
@@ -5949,6 +6292,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "NAME"
                     args = ["'string'"]
 
@@ -5959,6 +6303,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "ID"
                         args = ["'string'"]
 
@@ -5992,6 +6337,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -6002,6 +6348,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "ID"
                     args = ["'string'"]
 
@@ -6028,6 +6375,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "REName"
                 args = ["'string'"]
 
@@ -6059,6 +6407,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "CONTrol"
         args = []
 
@@ -6068,6 +6417,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "AUXiliary"
             args = []
 
@@ -6077,6 +6427,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "A"
                 args = ["1"]
 
@@ -6087,6 +6438,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -6111,6 +6463,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "B"
                 args = ["1"]
 
@@ -6121,6 +6474,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -6145,6 +6499,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "C"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6155,6 +6510,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6186,6 +6542,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "HANDler"
             args = []
 
@@ -6195,6 +6552,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "A"
                 args = ["1"]
 
@@ -6205,6 +6563,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -6223,6 +6582,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: INPut, OUTPut
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
@@ -6247,6 +6607,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "B"
                 args = ["1"]
 
@@ -6257,6 +6618,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -6275,6 +6637,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: INPut, OUTPut
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
@@ -6299,6 +6662,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "C"
                 args = ["1"]
 
@@ -6309,6 +6673,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -6327,6 +6692,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: INPut, OUTPut
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
@@ -6351,6 +6717,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "D"
                 args = ["1"]
 
@@ -6361,6 +6728,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -6379,6 +6747,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: INPut, OUTPut
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
@@ -6403,6 +6772,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "E"
                 args = ["1"]
 
@@ -6413,6 +6783,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -6437,6 +6808,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXTension"
                 args = []
 
@@ -6446,6 +6818,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "INDex"
                     args = []
 
@@ -6456,6 +6829,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -6480,6 +6854,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RTRigger"
                     args = []
 
@@ -6490,6 +6865,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -6521,6 +6897,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "F"
                 args = ["1"]
 
@@ -6531,6 +6908,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -6555,6 +6933,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "OUTPut"
                 args = ["1"]
 
@@ -6565,6 +6944,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -6583,6 +6963,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "USER"
                     args = ["1"]
 
@@ -6608,6 +6989,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RESet"
                 args = []
 
@@ -6639,6 +7021,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "DIAGnostic"
         args = []
 
@@ -6648,6 +7031,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ALC"
             args = []
 
@@ -6658,6 +7042,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "AUBW"
                 args = ["1", "OFF", "ON"]
 
@@ -6676,6 +7061,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "BW"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6694,6 +7080,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "CLAMp"
                 args = ["1", "OFF", "ON"]
 
@@ -6711,6 +7098,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DMODe"
                 args = []
 
@@ -6720,6 +7108,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "MSTimulus"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6736,6 +7125,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "POINts"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6752,6 +7142,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RTIMe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6776,6 +7167,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: AUTO, MANual
                 """
+                __slots__ = ()
                 _cmd = "PIParameter"
                 args = ["AUTO", "MANual"]
 
@@ -6786,6 +7178,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "GAIN"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6804,6 +7197,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "ITIMe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6830,6 +7224,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "POFFset"
                 args = ["1", "OFF", "ON"]
 
@@ -6848,6 +7243,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "RANGe"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6865,6 +7261,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SETTings"
                 args = ["1", "OFF", "ON"]
 
@@ -6874,6 +7271,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: FSETtling, LOVershoot
                     """
+                    __slots__ = ()
                     _cmd = "CMODe"
                     args = ["FSETtling", "LOVershoot"]
 
@@ -6891,6 +7289,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -6916,6 +7315,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SOFFset"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6934,6 +7334,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: HIGH, NORMal, WIDE
                 """
+                __slots__ = ()
                 _cmd = "STOLerance"
                 args = ["HIGH", "NORMal", "WIDE"]
 
@@ -6958,6 +7359,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DEVice"
             args = []
 
@@ -6968,6 +7370,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["'string'"]
 
@@ -6992,6 +7395,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PRODuct"
             args = []
 
@@ -7001,6 +7405,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -7017,6 +7422,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DESCription"
                 args = []
 
@@ -7033,6 +7439,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ID"
                 args = []
 
@@ -7049,6 +7456,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MACaddress"
                 args = []
 
@@ -7065,6 +7473,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "OPTion"
                 args = []
 
@@ -7074,6 +7483,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LICence"
                     args = []
 
@@ -7083,6 +7493,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "CHECk"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -7099,6 +7510,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "UNLock"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -7122,6 +7534,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LIST"
                     args = []
 
@@ -7138,6 +7551,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: #<block, 'string'
                     """
+                    __slots__ = ()
                     _cmd = "STATus"
                     args = ["#<block", "'string'"]
 
@@ -7161,6 +7575,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SELect"
                 args = ["'string'"]
 
@@ -7177,6 +7592,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = []
 
@@ -7186,6 +7602,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "OPERating"
                     args = []
 
@@ -7216,6 +7633,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SERVice"
             args = []
 
@@ -7226,6 +7644,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "FUNCtion"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -7244,6 +7663,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "RFPower"
                 args = ["1", "OFF", "ON"]
 
@@ -7262,6 +7682,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SFUNction"
                 args = ["'string'"]
 
@@ -7286,6 +7707,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "UPDate"
             args = []
 
@@ -7295,6 +7717,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BOOT"
                 args = []
 
@@ -7311,6 +7734,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -7327,6 +7751,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CHAP"
                 args = []
 
@@ -7336,6 +7761,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CHALlenge"
                     args = []
 
@@ -7352,6 +7778,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PRESet"
                     args = []
 
@@ -7368,6 +7795,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: #<block
                     """
+                    __slots__ = ()
                     _cmd = "RESPonse"
                     args = ["#<block"]
 
@@ -7391,6 +7819,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: NOWait, OVERlay, WAIT
                 """
+                __slots__ = ()
                 _cmd = "EXECute"
                 args = ["NOWait", "OVERlay", "WAIT"]
 
@@ -7407,6 +7836,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "INSTall"
                 args = ["'string'"]
 
@@ -7416,6 +7846,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BEGin"
                     args = []
 
@@ -7432,6 +7863,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "END"
                     args = []
 
@@ -7448,6 +7880,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STATus"
                     args = []
 
@@ -7471,6 +7904,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "PROGress"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -7487,6 +7921,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRANsfer"
                 args = []
 
@@ -7496,6 +7931,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CLOSe"
                     args = []
 
@@ -7512,6 +7948,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -7528,6 +7965,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: DATA, DESCr
                     """
+                    __slots__ = ()
                     _cmd = "OPEN"
                     args = ["DATA", "DESCr"]
 
@@ -7544,6 +7982,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "VERSion"
                     args = []
 
@@ -7581,6 +8020,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "DISPlay"
         args = []
 
@@ -7590,6 +8030,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ANNotation"
             args = []
 
@@ -7599,6 +8040,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "CHANnel"
                 args = ["1", "OFF", "ON"]
 
@@ -7609,6 +8051,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -7633,6 +8076,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = ["1", "OFF", "ON"]
 
@@ -7643,6 +8087,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -7674,6 +8119,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CMAP"
             args = []
 
@@ -7683,6 +8129,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "MARKer"
                 args = ["1", "OFF", "ON"]
 
@@ -7693,6 +8140,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -7718,6 +8166,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "RGB"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -7735,6 +8184,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = []
 
@@ -7744,6 +8194,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "COLor"
                     args = ["1", "OFF", "ON"]
 
@@ -7754,6 +8205,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -7779,6 +8231,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "RGB"
                     args = ["'string'"]
 
@@ -7810,6 +8263,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MENU"
             args = []
 
@@ -7819,6 +8273,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "KEY"
                 args = []
 
@@ -7829,6 +8284,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "EXECute"
                     args = ["'string'"]
 
@@ -7847,6 +8303,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["'string'"]
 
@@ -7879,6 +8336,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "RFSize"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -7896,6 +8354,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "WINDow"
             args = []
 
@@ -7906,6 +8365,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -7924,6 +8384,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "MAXimize"
                 args = ["1", "OFF", "ON"]
 
@@ -7942,6 +8403,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -7960,6 +8422,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -7977,6 +8440,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "TITLe"
                 args = ["1", "OFF", "ON"]
 
@@ -7987,6 +8451,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["'string'"]
 
@@ -8005,6 +8470,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -8029,6 +8495,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = []
 
@@ -8039,6 +8506,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CATalog"
                     args = []
 
@@ -8057,6 +8525,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DELete"
                     args = []
 
@@ -8075,6 +8544,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "EFEed"
                     args = ["'string'"]
 
@@ -8093,6 +8563,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FEED"
                     args = ["'string'"]
 
@@ -8111,6 +8582,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: DALL, MALL, 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SHOW"
                     args = ["DALL", "MALL", "'string'"]
 
@@ -8128,6 +8600,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "X"
                     args = []
 
@@ -8138,6 +8611,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8162,6 +8636,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "Y"
                     args = []
 
@@ -8172,6 +8647,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8189,6 +8665,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SCALe"
                         args = []
 
@@ -8199,6 +8676,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: ONCE
                             """
+                            __slots__ = ()
                             _cmd = "AUTO"
                             args = ["ONCE"]
 
@@ -8217,6 +8695,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "BOTTom"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8235,6 +8714,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "PDIVision"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8253,6 +8733,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "RLEVel"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8271,6 +8752,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "RPOSition"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8289,6 +8771,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "TOP"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8341,6 +8824,7 @@ class ZVA_gen(Instrument):
 
         Arguments: ASCii, REAL
         """
+        __slots__ = ()
         _cmd = "FORMat"
         args = ["ASCii", "REAL"]
 
@@ -8351,6 +8835,7 @@ class ZVA_gen(Instrument):
 
             Arguments: NORMal, SWAPped
             """
+            __slots__ = ()
             _cmd = "BORDer"
             args = ["NORMal", "SWAPped"]
 
@@ -8369,6 +8854,7 @@ class ZVA_gen(Instrument):
 
             Arguments: ASCii, REAL
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = ["ASCii", "REAL"]
 
@@ -8386,6 +8872,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DEXPort"
             args = []
 
@@ -8396,6 +8883,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: FDATa, MDATa, SDATa
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["FDATa", "MDATa", "SDATa"]
 
@@ -8427,6 +8915,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "HCOPy"
         args = []
 
@@ -8437,6 +8926,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DESTination"
             args = ["'string'"]
 
@@ -8454,6 +8944,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DEVice"
             args = []
 
@@ -8464,6 +8955,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: BMP, EMF, EWMF, JPG, PNG, WMF
                 """
+                __slots__ = ()
                 _cmd = "LANGuage"
                 args = ["BMP", "EMF", "EWMF", "JPG", "PNG", "WMF"]
 
@@ -8489,6 +8981,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IMMediate"
             args = []
 
@@ -8506,6 +8999,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ITEM"
             args = []
 
@@ -8516,6 +9010,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = []
 
@@ -8533,6 +9028,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "LOGO"
                 args = ["1", "OFF", "ON"]
 
@@ -8543,6 +9039,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -8567,6 +9064,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "MLISt"
                 args = ["1", "OFF", "ON"]
 
@@ -8576,6 +9074,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -8599,6 +9098,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = ["1", "OFF", "ON"]
 
@@ -8609,6 +9109,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -8640,6 +9141,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MITem"
             args = []
 
@@ -8649,6 +9151,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "LOGO"
                 args = ["1", "OFF", "ON"]
 
@@ -8659,6 +9162,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -8683,6 +9187,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = ["1", "OFF", "ON"]
 
@@ -8693,6 +9198,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -8724,6 +9230,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MPAGe"
             args = []
 
@@ -8734,6 +9241,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ACTive, ALL, MARKer
                 """
+                __slots__ = ()
                 _cmd = "WINDow"
                 args = ["ACTive", "ALL", "MARKer"]
 
@@ -8758,6 +9266,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PAGE"
             args = []
 
@@ -8767,6 +9276,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MARGin"
                 args = []
 
@@ -8777,6 +9287,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "BOTTom"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8795,6 +9306,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "LEFT"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8813,6 +9325,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RIGHt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8831,6 +9344,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8856,6 +9370,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: LANDscape, PORTrait
                 """
+                __slots__ = ()
                 _cmd = "ORIentation"
                 args = ["LANDscape", "PORTrait"]
 
@@ -8874,6 +9389,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ACTive, ALL, SINGle
                 """
+                __slots__ = ()
                 _cmd = "WINDow"
                 args = ["ACTive", "ALL", "SINGle"]
 
@@ -8905,6 +9421,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "INITiate"
         args = []
 
@@ -8915,6 +9432,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "CONTinuous"
             args = ["1", "OFF", "ON"]
 
@@ -8933,6 +9451,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IMMediate"
             args = []
 
@@ -8942,6 +9461,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DUMMy"
                 args = []
 
@@ -8959,6 +9479,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ALL, SINGle
                 """
+                __slots__ = ()
                 _cmd = "SCOPe"
                 args = ["ALL", "SINGle"]
 
@@ -8991,6 +9512,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "INPut"
         args = []
 
@@ -9001,6 +9523,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "ATTenuation"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9025,6 +9548,7 @@ class ZVA_gen(Instrument):
 
         Arguments: CHANnel1, CHANnel2, CHANnel3, CHANnel4
         """
+        __slots__ = ()
         _cmd = "INSTrument"
         args = ["CHANnel1", "CHANnel2", "CHANnel3", "CHANnel4"]
 
@@ -9035,6 +9559,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "NSELect"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9052,6 +9577,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PORT"
             args = []
 
@@ -9062,6 +9588,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = []
 
@@ -9087,6 +9614,7 @@ class ZVA_gen(Instrument):
 
             Arguments: CHANnel1, CHANnel2, CHANnel3, CHANnel4
             """
+            __slots__ = ()
             _cmd = "SELect"
             args = ["CHANnel1", "CHANnel2", "CHANnel3", "CHANnel4"]
 
@@ -9111,6 +9639,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MEMory"
         args = []
 
@@ -9121,6 +9650,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CATalog"
             args = []
 
@@ -9139,6 +9669,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DEFine"
             args = ["'string'"]
 
@@ -9156,6 +9687,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DELete"
             args = ["'string'"]
 
@@ -9166,6 +9698,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = []
 
@@ -9184,6 +9717,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -9209,6 +9743,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "SELect"
             args = ["'string'"]
 
@@ -9233,6 +9768,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MMEMory"
         args = []
 
@@ -9242,6 +9778,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "AKAL"
             args = []
 
@@ -9251,6 +9788,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FACTory"
                 args = []
 
@@ -9261,6 +9799,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "CONVersion"
                     args = ["'string'"]
 
@@ -9285,6 +9824,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "USER"
                 args = []
 
@@ -9295,6 +9835,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "CONVersion"
                     args = ["'string'"]
 
@@ -9327,6 +9868,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "CATalog"
             args = ["'string'"]
 
@@ -9337,6 +9879,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = ["'string'"]
 
@@ -9363,6 +9906,7 @@ class ZVA_gen(Instrument):
 
             Arguments: DEFault, 'string'
             """
+            __slots__ = ()
             _cmd = "CDIRectory"
             args = ["DEFault", "'string'"]
 
@@ -9381,6 +9925,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "COPY"
             args = ["'string'"]
 
@@ -9399,6 +9944,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = ["'string'"]
 
@@ -9417,6 +9963,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DELete"
             args = ["'string'"]
 
@@ -9427,6 +9974,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CORRection"
                 args = ["'string'"]
 
@@ -9452,6 +10000,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "LOAD"
             args = ["'string'"]
 
@@ -9462,6 +10011,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CKIT"
                 args = ["'string'"]
 
@@ -9472,6 +10022,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SDATa"
                     args = ["'string'"]
 
@@ -9490,6 +10041,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "UDIRectory"
                     args = ["'string'"]
 
@@ -9516,6 +10068,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CMAP"
                 args = ["'string'"]
 
@@ -9534,6 +10087,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CORRection"
                 args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9544,6 +10098,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "MERGe"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9562,6 +10117,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RESolve"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9580,6 +10136,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "TCOefficient"
                     args = ["'string'"]
 
@@ -9606,6 +10163,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "LIMit"
                 args = ["'string'"]
 
@@ -9624,6 +10182,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "MDAData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9642,6 +10201,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "MDCData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9660,6 +10220,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "PTRain"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9678,6 +10239,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "RIPPle"
                 args = ["'string'"]
 
@@ -9696,6 +10258,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SEGMent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9714,6 +10277,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1"]
 
@@ -9732,6 +10296,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = ["'string'"]
 
@@ -9749,6 +10314,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "VNETworks"
                 args = []
 
@@ -9758,6 +10324,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BALanced"
                     args = []
 
@@ -9768,6 +10335,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
@@ -9786,6 +10354,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
@@ -9810,6 +10379,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "GLOop"
                     args = []
 
@@ -9820,6 +10390,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
@@ -9838,6 +10409,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
@@ -9862,6 +10434,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PPAir"
                     args = []
 
@@ -9872,6 +10445,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
@@ -9890,6 +10464,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
@@ -9914,6 +10489,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SENDed"
                     args = []
 
@@ -9924,6 +10500,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
@@ -9942,6 +10519,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
@@ -9981,6 +10559,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "MDIRectory"
             args = ["'string'"]
 
@@ -9999,6 +10578,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "MOVE"
             args = ["'string'"]
 
@@ -10017,6 +10597,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "MSIS"
             args = ["'string'"]
 
@@ -10035,6 +10616,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "NAME"
             args = ["'string'"]
 
@@ -10053,6 +10635,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "RDIRectory"
             args = ["'string'"]
 
@@ -10070,6 +10653,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SETTings"
             args = []
 
@@ -10079,6 +10663,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RENorm"
                 args = []
 
@@ -10089,6 +10674,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: AUTO, EXPLicit
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["AUTO", "EXPLicit"]
 
@@ -10107,6 +10693,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RIMPedance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10125,6 +10712,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -10156,6 +10744,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "STORe"
             args = []
 
@@ -10166,6 +10755,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CKIT"
                 args = ["'string'"]
 
@@ -10176,6 +10766,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "WLABel"
                     args = ["'string'"]
 
@@ -10202,6 +10793,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CMAP"
                 args = ["'string'"]
 
@@ -10220,6 +10812,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CORRection"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10230,6 +10823,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "TCOefficient"
                     args = ["'string'"]
 
@@ -10256,6 +10850,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "LIMit"
                 args = ["'string'"]
 
@@ -10274,6 +10869,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "MARKer"
                 args = ["'string'"]
 
@@ -10292,6 +10888,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "MDCData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10310,6 +10907,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "PTRain"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10328,6 +10926,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "RIPPle"
                 args = ["'string'"]
 
@@ -10346,6 +10945,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SEGMent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10364,6 +10964,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1"]
 
@@ -10382,6 +10983,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = ["'string'"]
 
@@ -10392,6 +10994,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "CHANnel"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10410,6 +11013,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "PORTs"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10420,6 +11024,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "INComplete"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10467,6 +11072,7 @@ class ZVA_gen(Instrument):
 
         Arguments: 1, OFF, ON
         """
+        __slots__ = ()
         _cmd = "OUTPut"
         args = ["1", "OFF", "ON"]
 
@@ -10477,6 +11083,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "ATTenuation"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10495,6 +11102,7 @@ class ZVA_gen(Instrument):
 
             Arguments: PORT1, PORT2, PORT3, PORT4
             """
+            __slots__ = ()
             _cmd = "DPORt"
             args = ["PORT1", "PORT2", "PORT3", "PORT4"]
 
@@ -10513,6 +11121,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = ["1", "OFF", "ON"]
 
@@ -10523,6 +11132,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: FAST, LBNoise
                 """
+                __slots__ = ()
                 _cmd = "TYPE"
                 args = ["FAST", "LBNoise"]
 
@@ -10548,6 +11158,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "UPORt"
             args = []
 
@@ -10557,6 +11168,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BUSY"
                 args = []
 
@@ -10567,6 +11179,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: AUTO, POINt, PPOint, SEGMent, SWEep
                     """
+                    __slots__ = ()
                     _cmd = "LINK"
                     args = ["AUTO", "POINt", "PPOint", "SEGMent", "SWEep"]
 
@@ -10592,6 +11205,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "ECBits"
                 args = ["1", "OFF", "ON"]
 
@@ -10609,6 +11223,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SEGMent"
                 args = []
 
@@ -10619,6 +11234,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -10637,6 +11253,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "VALue"
                     args = []
 
@@ -10662,6 +11279,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = []
 
@@ -10693,6 +11311,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "PROGram"
         args = []
 
@@ -10702,6 +11321,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SELected"
             args = []
 
@@ -10712,6 +11332,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "EXECute"
                 args = ["'string'"]
 
@@ -10730,6 +11351,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "INIMessage"
                 args = ["'string'"]
 
@@ -10748,6 +11370,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "INIParameter"
                 args = ["'string'"]
 
@@ -10766,6 +11389,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: PROG
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["PROG"]
 
@@ -10784,6 +11408,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RETVal"
                 args = []
 
@@ -10801,6 +11426,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "STRing"
                 args = ["'string'"]
 
@@ -10818,6 +11444,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "WAIT"
                 args = []
 
@@ -10849,6 +11476,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ROUTe"
         args = []
 
@@ -10859,6 +11487,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "CFILe"
             args = ["1", "OFF", "ON"]
 
@@ -10877,6 +11506,7 @@ class ZVA_gen(Instrument):
 
             Arguments: A, B, C, D
             """
+            __slots__ = ()
             _cmd = "PORTs"
             args = ["A", "B", "C", "D"]
 
@@ -10901,6 +11531,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SENSe"
         args = []
 
@@ -10911,6 +11542,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "AVERage"
             args = ["1", "OFF", "ON"]
 
@@ -10921,6 +11553,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = []
 
@@ -10939,6 +11572,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10948,6 +11582,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "ACTual"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10965,6 +11600,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "CURRent"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10991,6 +11627,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -11016,6 +11653,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "BANDwidth"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11025,6 +11663,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "RESolution"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11034,6 +11673,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "DREDuction"
                     args = ["1", "OFF", "ON"]
 
@@ -11050,6 +11690,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "GENerator"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11066,6 +11707,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: PALL, PSPecific
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["PALL", "PSPecific"]
 
@@ -11082,6 +11724,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "PORT"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11098,6 +11741,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: HIGH, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["HIGH", "NORMal"]
 
@@ -11128,6 +11772,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "BWIDth"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11137,6 +11782,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "RESolution"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11146,6 +11792,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "DREDuction"
                     args = ["1", "OFF", "ON"]
 
@@ -11162,6 +11809,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "GENerator"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11178,6 +11826,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: PALL, PSPecific
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["PALL", "PSPecific"]
 
@@ -11194,6 +11843,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "PORT"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11210,6 +11860,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: HIGH, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["HIGH", "NORMal"]
 
@@ -11240,6 +11891,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CONVerter"
             args = []
 
@@ -11250,6 +11902,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "AMODel"
                 args = ["1", "OFF", "ON"]
 
@@ -11268,6 +11921,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "ASSign"
                 args = ["'string'"]
 
@@ -11286,6 +11940,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: DSET, ELECtronic, LAPProx, NONE
                 """
+                __slots__ = ()
                 _cmd = "DESCription"
                 args = ["DSET", "ELECtronic", "LAPProx", "NONE"]
 
@@ -11304,6 +11959,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "PATH"
                 args = ["'string'"]
 
@@ -11328,6 +11984,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "CORRection"
             args = ["1", "OFF", "ON"]
 
@@ -11337,6 +11994,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "CBFReq"
                 args = ["1", "OFF", "ON"]
 
@@ -11347,6 +12005,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -11372,6 +12031,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CDATa"
                 args = ["'string'"]
 
@@ -11389,6 +12049,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CKIT"
                 args = []
 
@@ -11399,6 +12060,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "CATalog"
                     args = ["'string'"]
 
@@ -11417,6 +12079,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DELete"
                     args = ["'string'"]
 
@@ -11434,6 +12097,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FFATten"
                     args = ["'string'"]
 
@@ -11443,6 +12107,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11466,6 +12131,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FFLine"
                     args = ["'string'"]
 
@@ -11475,6 +12141,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11498,6 +12165,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FFSNetwork"
                     args = ["'string'"]
 
@@ -11507,6 +12175,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11530,6 +12199,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FFTHrough"
                     args = ["'string'"]
 
@@ -11539,6 +12209,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11562,6 +12233,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FMTCh"
                     args = ["'string'"]
 
@@ -11571,6 +12243,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11594,6 +12267,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FOPen"
                     args = ["'string'"]
 
@@ -11603,6 +12277,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11626,6 +12301,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FOSHort"
                     args = ["'string'"]
 
@@ -11635,6 +12311,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11658,6 +12335,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FREFlect"
                     args = ["'string'"]
 
@@ -11667,6 +12345,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11690,6 +12369,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FSHort"
                     args = ["'string'"]
 
@@ -11699,6 +12379,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11722,6 +12403,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FSMatch"
                     args = ["'string'"]
 
@@ -11731,6 +12413,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11755,6 +12438,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "INSTall"
                     args = ["'string'"]
 
@@ -11773,6 +12457,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "LABel"
                     args = ["'string'"]
 
@@ -11791,6 +12476,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "LCATalog"
                     args = ["'string'"]
 
@@ -11809,6 +12495,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "LDELete"
                     args = ["'string'"]
 
@@ -11827,6 +12514,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "LLABel"
                     args = ["'string'"]
 
@@ -11845,6 +12533,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "LSELect"
                     args = ["'string'"]
 
@@ -11863,6 +12552,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MDATe"
                     args = ["'string'"]
 
@@ -11880,6 +12570,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MFATten"
                     args = ["'string'"]
 
@@ -11889,6 +12580,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11912,6 +12604,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MFLine"
                     args = ["'string'"]
 
@@ -11921,6 +12614,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11944,6 +12638,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MFSNetwork"
                     args = ["'string'"]
 
@@ -11953,6 +12648,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -11976,6 +12672,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MFTHrough"
                     args = ["'string'"]
 
@@ -11985,6 +12682,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12008,6 +12706,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MMATten"
                     args = ["'string'"]
 
@@ -12017,6 +12716,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12040,6 +12740,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MMLine"
                     args = ["'string'"]
 
@@ -12049,6 +12750,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12072,6 +12774,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MMSNetwork"
                     args = ["'string'"]
 
@@ -12081,6 +12784,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12104,6 +12808,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MMTCh"
                     args = ["'string'"]
 
@@ -12113,6 +12818,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12136,6 +12842,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MMTHrough"
                     args = ["'string'"]
 
@@ -12145,6 +12852,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12168,6 +12876,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MOPen"
                     args = ["'string'"]
 
@@ -12177,6 +12886,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12200,6 +12910,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MOSHort"
                     args = ["'string'"]
 
@@ -12209,6 +12920,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12232,6 +12944,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MREFlect"
                     args = ["'string'"]
 
@@ -12241,6 +12954,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12264,6 +12978,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MSHort"
                     args = ["'string'"]
 
@@ -12273,6 +12988,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12296,6 +13012,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MSMatch"
                     args = ["'string'"]
 
@@ -12305,6 +13022,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12328,6 +13046,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "N"
                     args = []
 
@@ -12337,6 +13056,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFATten"
                         args = ["'string'"]
 
@@ -12353,6 +13073,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFLine"
                         args = ["'string'"]
 
@@ -12369,6 +13090,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
@@ -12385,6 +13107,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
@@ -12401,6 +13124,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
@@ -12417,6 +13141,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FOPen"
                         args = ["'string'"]
 
@@ -12433,6 +13158,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
@@ -12449,6 +13175,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSHort"
                         args = ["'string'"]
 
@@ -12465,6 +13192,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
@@ -12481,6 +13209,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "LSELect"
                         args = ["'string'"]
 
@@ -12497,6 +13226,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFATten"
                         args = ["'string'"]
 
@@ -12513,6 +13243,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFLine"
                         args = ["'string'"]
 
@@ -12529,6 +13260,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
@@ -12545,6 +13277,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
@@ -12561,6 +13294,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMATten"
                         args = ["'string'"]
 
@@ -12577,6 +13311,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMLine"
                         args = ["'string'"]
 
@@ -12593,6 +13328,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
@@ -12609,6 +13345,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
@@ -12625,6 +13362,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
@@ -12641,6 +13379,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MOPen"
                         args = ["'string'"]
 
@@ -12657,6 +13396,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
@@ -12673,6 +13413,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSHort"
                         args = ["'string'"]
 
@@ -12689,6 +13430,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
@@ -12705,6 +13447,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "SELect"
                         args = ["'string'"]
 
@@ -12728,6 +13471,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "OSHort"
                     args = ["'string'"]
 
@@ -12737,6 +13481,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -12760,6 +13505,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PC"
                     args = []
 
@@ -12769,6 +13515,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFATten"
                         args = ["'string'"]
 
@@ -12785,6 +13532,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFLine"
                         args = ["'string'"]
 
@@ -12801,6 +13549,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
@@ -12817,6 +13566,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
@@ -12833,6 +13583,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
@@ -12849,6 +13600,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FOPen"
                         args = ["'string'"]
 
@@ -12865,6 +13617,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
@@ -12881,6 +13634,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSHort"
                         args = ["'string'"]
 
@@ -12897,6 +13651,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
@@ -12913,6 +13668,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "LSELect"
                         args = ["'string'"]
 
@@ -12929,6 +13685,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFATten"
                         args = ["'string'"]
 
@@ -12945,6 +13702,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFLine"
                         args = ["'string'"]
 
@@ -12961,6 +13719,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
@@ -12977,6 +13736,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
@@ -12993,6 +13753,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMATten"
                         args = ["'string'"]
 
@@ -13009,6 +13770,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMLine"
                         args = ["'string'"]
 
@@ -13025,6 +13787,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
@@ -13041,6 +13804,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
@@ -13057,6 +13821,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
@@ -13073,6 +13838,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MOPen"
                         args = ["'string'"]
 
@@ -13089,6 +13855,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
@@ -13105,6 +13872,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSHort"
                         args = ["'string'"]
 
@@ -13121,6 +13889,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
@@ -13137,6 +13906,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "SELect"
                         args = ["'string'"]
 
@@ -13161,6 +13931,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["'string'"]
 
@@ -13178,6 +13949,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SMA"
                     args = []
 
@@ -13187,6 +13959,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFATten"
                         args = ["'string'"]
 
@@ -13203,6 +13976,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFLine"
                         args = ["'string'"]
 
@@ -13219,6 +13993,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
@@ -13235,6 +14010,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
@@ -13251,6 +14027,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
@@ -13267,6 +14044,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FOPen"
                         args = ["'string'"]
 
@@ -13283,6 +14061,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
@@ -13299,6 +14078,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSHort"
                         args = ["'string'"]
 
@@ -13315,6 +14095,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
@@ -13331,6 +14112,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "LSELect"
                         args = ["'string'"]
 
@@ -13347,6 +14129,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFATten"
                         args = ["'string'"]
 
@@ -13363,6 +14146,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFLine"
                         args = ["'string'"]
 
@@ -13379,6 +14163,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
@@ -13395,6 +14180,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
@@ -13411,6 +14197,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMATten"
                         args = ["'string'"]
 
@@ -13427,6 +14214,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMLine"
                         args = ["'string'"]
 
@@ -13443,6 +14231,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
@@ -13459,6 +14248,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
@@ -13475,6 +14265,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
@@ -13491,6 +14282,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MOPen"
                         args = ["'string'"]
 
@@ -13507,6 +14299,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
@@ -13523,6 +14316,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSHort"
                         args = ["'string'"]
 
@@ -13539,6 +14333,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
@@ -13555,6 +14350,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "SELect"
                         args = ["'string'"]
 
@@ -13578,6 +14374,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STANdard"
                     args = []
 
@@ -13588,6 +14385,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = ["'string'"]
 
@@ -13606,6 +14404,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "LCATalog"
                         args = ["'string'"]
 
@@ -13630,6 +14429,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "USER"
                     args = []
 
@@ -13639,6 +14439,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFATten"
                         args = ["'string'"]
 
@@ -13655,6 +14456,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFLine"
                         args = ["'string'"]
 
@@ -13671,6 +14473,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
@@ -13687,6 +14490,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
@@ -13703,6 +14507,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
@@ -13719,6 +14524,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FOPen"
                         args = ["'string'"]
 
@@ -13735,6 +14541,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FOSHort"
                         args = ["'string'"]
 
@@ -13751,6 +14558,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
@@ -13767,6 +14575,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSHort"
                         args = ["'string'"]
 
@@ -13783,6 +14592,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
@@ -13799,6 +14609,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFATten"
                         args = ["'string'"]
 
@@ -13815,6 +14626,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFLine"
                         args = ["'string'"]
 
@@ -13831,6 +14643,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
@@ -13847,6 +14660,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
@@ -13863,6 +14677,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMATten"
                         args = ["'string'"]
 
@@ -13879,6 +14694,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMLine"
                         args = ["'string'"]
 
@@ -13895,6 +14711,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
@@ -13911,6 +14728,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
@@ -13927,6 +14745,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
@@ -13943,6 +14762,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MOPen"
                         args = ["'string'"]
 
@@ -13959,6 +14779,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MOSHort"
                         args = ["'string'"]
 
@@ -13975,6 +14796,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
@@ -13991,6 +14813,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSHort"
                         args = ["'string'"]
 
@@ -14007,6 +14830,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
@@ -14023,6 +14847,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "OSHort"
                         args = ["'string'"]
 
@@ -14039,6 +14864,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "SELect"
                         args = ["'string'"]
 
@@ -14069,6 +14895,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ATT, IMATch12, ISOLation, LINE1, LINE2, LINE3, M1O2, M1S2, MATCh1, MATCh12, MATCh2, NET, O1M2, OPEN1, OPEN12, OPEN2, OSHort1, OSHORT11, OSHORT12, OSHORT13, OSHort2, OSHORT21, OSHORT22, OSHORT23, REFL1, REFL2, S1M2, SHORt1, SHORt12, SHORt2, SLIDe1, SLIDe12, SLIDe2, THRough, UTHRough
                 """
+                __slots__ = ()
                 _cmd = "COLLect"
                 args = ["ATT", "IMATch12", "ISOLation", "LINE1", "LINE2", "LINE3", "M1O2", "M1S2", "MATCh1", "MATCh12", "MATCh2", "NET", "O1M2", "OPEN1", "OPEN12", "OPEN2", "OSHort1", "OSHORT11", "OSHORT12", "OSHORT13", "OSHort2", "OSHORT21", "OSHORT22", "OSHORT23", "REFL1", "REFL2", "S1M2", "SHORt1", "SHORt12", "SHORt2", "SLIDe1", "SLIDe12", "SLIDe2", "THRough", "UTHRough"]
 
@@ -14078,6 +14905,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: ATT, IMATch12, ISOLation, LINE1, LINE2, LINE3, M1O2, M1S2, MATCh1, MATCh12, MATCh2, NET, O1M2, OPEN1, OPEN12, OPEN2, OSHort1, OSHORT11, OSHORT12, OSHORT13, OSHort2, OSHORT21, OSHORT22, OSHORT23, REFL1, REFL2, S1M2, SHORt1, SHORt12, SHORt2, SLIDe1, SLIDe12, SLIDe2, THRough, UTHRough
                     """
+                    __slots__ = ()
                     _cmd = "ACQuire"
                     args = ["ATT", "IMATch12", "ISOLation", "LINE1", "LINE2", "LINE3", "M1O2", "M1S2", "MATCh1", "MATCh12", "MATCh2", "NET", "O1M2", "OPEN1", "OPEN12", "OPEN2", "OSHort1", "OSHORT11", "OSHORT12", "OSHORT13", "OSHort2", "OSHORT21", "OSHORT22", "OSHORT23", "REFL1", "REFL2", "S1M2", "SHORt1", "SHORt12", "SHORt2", "SLIDe1", "SLIDe12", "SLIDe2", "THRough", "UTHRough"]
 
@@ -14088,6 +14916,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "RSAVe"
                         args = ["1", "OFF", "ON"]
 
@@ -14098,6 +14927,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "DEFault"
                             args = ["1", "OFF", "ON"]
 
@@ -14123,6 +14953,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: ATT, ISOLation, LINE, LINE1, LINE2, LINE3, LINEN, MATCh, NET, OPEN, OSHort, OSHORT1, OSHORT2, OSHORT3, REFL, SHORt, SLIDe, THRough, UTHRough
                         """
+                        __slots__ = ()
                         _cmd = "SELected"
                         args = ["ATT", "ISOLation", "LINE", "LINE1", "LINE2", "LINE3", "LINEN", "MATCh", "NET", "OPEN", "OSHort", "OSHORT1", "OSHORT2", "OSHORT3", "REFL", "SHORt", "SLIDe", "THRough", "UTHRough"]
 
@@ -14147,6 +14978,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["'string'"]
 
@@ -14156,6 +14988,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ASSignment"
                         args = []
 
@@ -14166,6 +14999,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -14184,6 +15018,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -14201,6 +15036,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DELete"
                             args = []
 
@@ -14211,6 +15047,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments:
                                 """
+                                __slots__ = ()
                                 _cmd = "ALL"
                                 args = []
 
@@ -14243,6 +15080,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "CKIT"
                         args = ["'string'"]
 
@@ -14253,6 +15091,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "PORTs"
                             args = ["'string'"]
 
@@ -14279,6 +15118,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: FNPort, FOPort, FRTRans, FTRans, OPTPort, RTRans, SFTPort
                         """
+                        __slots__ = ()
                         _cmd = "CONFigure"
                         args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "RTRans", "SFTPort"]
 
@@ -14297,6 +15137,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "PORTs"
                         args = ["'string'"]
 
@@ -14307,6 +15148,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "CONNection"
                             args = []
 
@@ -14325,6 +15167,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: FNPort, FOPort, FRTRans, FTRans, OPTPort, RTRans, SFTPort
                             """
+                            __slots__ = ()
                             _cmd = "TYPE"
                             args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "RTRans", "SFTPort"]
 
@@ -14351,6 +15194,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "RPGRoup"
                         args = ["1", "OFF", "ON"]
 
@@ -14369,6 +15213,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SAVE"
                         args = []
 
@@ -14387,6 +15232,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: FNPort, FOPort, FRTRans, FTRans, OPTPort, RTRans, SFTPort
                         """
+                        __slots__ = ()
                         _cmd = "TYPE"
                         args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "RTRans", "SFTPort"]
 
@@ -14404,6 +15250,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "VMIXer"
                         args = []
 
@@ -14414,6 +15261,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: BASE, MIXer
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = ["BASE", "MIXer"]
 
@@ -14447,6 +15295,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: N50Female, N50Male, N75Female, N75Male, PC185Female, PC185Male, PC1Female, PC1Male, PC24Female, PC24Male, PC292female, PC292male, PC35female, PC35male, PC7, SMAFemale, SMAMale, UFEMale1, UFEMale2, UMALe1, UMALe2
                     """
+                    __slots__ = ()
                     _cmd = "CONNection"
                     args = ["N50Female", "N50Male", "N75Female", "N75Male", "PC185Female", "PC185Male", "PC1Female", "PC1Male", "PC24Female", "PC24Male", "PC292female", "PC292male", "PC35female", "PC35male", "PC7", "SMAFemale", "SMAMale", "UFEMale1", "UFEMale2", "UMALe1", "UMALe2"]
 
@@ -14457,6 +15306,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: ALL, SINGle
                         """
+                        __slots__ = ()
                         _cmd = "GENDers"
                         args = ["ALL", "SINGle"]
 
@@ -14475,6 +15325,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: ALL, SINGle
                         """
+                        __slots__ = ()
                         _cmd = "PORTs"
                         args = ["ALL", "SINGle"]
 
@@ -14501,6 +15352,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "CSETup"
                     args = ["1", "OFF", "ON"]
 
@@ -14519,6 +15371,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: ALL, 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DELete"
                     args = ["ALL", "'string'"]
 
@@ -14537,6 +15390,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: AVERage, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "DETector"
                     args = ["AVERage", "NORMal"]
 
@@ -14554,6 +15408,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: OPEN, SHORt
                     """
+                    __slots__ = ()
                     _cmd = "FIXTure"
                     args = ["OPEN", "SHORt"]
 
@@ -14564,6 +15419,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: OPEN, SHORt
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = ["OPEN", "SHORt"]
 
@@ -14581,6 +15437,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "LMParameter"
                         args = ["1", "OFF", "ON"]
 
@@ -14590,6 +15447,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "LOSS"
                             args = ["1", "OFF", "ON"]
 
@@ -14600,6 +15458,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, OFF, ON
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
@@ -14625,6 +15484,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -14650,6 +15510,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SAVE"
                         args = []
 
@@ -14668,6 +15529,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = []
 
@@ -14692,6 +15554,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "IMODulation"
                     args = ["1", "OFF", "ON"]
 
@@ -14702,6 +15565,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -14727,6 +15591,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: ETOM, ETSM, FOPort1, FOPort12, FOPort2, FOPTport, FRTRans, FTRans, REFL1, REFL12, REFL2, ROPTport, RTRans, TNA, TOM, TOSM, TPORt, TRL, TRM, UOSM
                     """
+                    __slots__ = ()
                     _cmd = "METHod"
                     args = ["ETOM", "ETSM", "FOPort1", "FOPort12", "FOPort2", "FOPTport", "FRTRans", "FTRans", "REFL1", "REFL12", "REFL2", "ROPTport", "RTRans", "TNA", "TOM", "TOSM", "TPORt", "TRL", "TRM", "UOSM"]
 
@@ -14737,6 +15602,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEFine"
                         args = ["'string'"]
 
@@ -14762,6 +15628,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: ATTenuator, RECeiver, SOURce
                     """
+                    __slots__ = ()
                     _cmd = "NFIGure"
                     args = ["ATTenuator", "RECeiver", "SOURce"]
 
@@ -14772,6 +15639,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: ATTenuator, RECeiver, SOURce
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = ["ATTenuator", "RECeiver", "SOURce"]
 
@@ -14790,6 +15658,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "END"
                         args = []
 
@@ -14808,6 +15677,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SAVE"
                         args = []
 
@@ -14826,6 +15696,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -14851,6 +15722,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, 'string', UP
                     """
+                    __slots__ = ()
                     _cmd = "RPSHift"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "'string'", "UP"]
 
@@ -14869,6 +15741,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SAVE"
                     args = []
 
@@ -14879,6 +15752,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DEFault"
                         args = []
 
@@ -14896,6 +15770,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DUMMy"
                         args = []
 
@@ -14913,6 +15788,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SELected"
                         args = []
 
@@ -14923,6 +15799,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DEFault"
                             args = []
 
@@ -14940,6 +15817,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DUMMy"
                             args = []
 
@@ -14973,6 +15851,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SCONnection"
                     args = ["'string'"]
 
@@ -14998,6 +15877,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CONNection"
                 args = ["'string'"]
 
@@ -15008,6 +15888,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CATalog"
                     args = []
 
@@ -15026,6 +15907,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DELete"
                     args = ["'string'"]
 
@@ -15051,6 +15933,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CSET"
                 args = []
 
@@ -15060,6 +15943,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DESCription"
                     args = ["'string'"]
 
@@ -15083,6 +15967,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "DATA"
                 args = ["'string'"]
 
@@ -15093,6 +15978,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: BANDwidth, PDLY, POINts, PORTs, RATTenuation, RPSHift, SPOWer, STARt, STOP, STYPe, THRoughs, TSTamp, TYPE
                     """
+                    __slots__ = ()
                     _cmd = "PARameter"
                     args = ["BANDwidth", "PDLY", "POINts", "PORTs", "RATTenuation", "RPSHift", "SPOWer", "STARt", "STOP", "STYPe", "THRoughs", "TSTamp", "TYPE"]
 
@@ -15103,6 +15989,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -15136,6 +16023,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DATE"
                 args = []
 
@@ -15153,6 +16041,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "EDELay"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15163,6 +16052,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: ONCE
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["ONCE"]
 
@@ -15181,6 +16071,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DIELectric"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15199,6 +16090,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DISTance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15217,6 +16109,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "ELENgth"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15235,6 +16128,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15259,6 +16153,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "EWAVe"
                 args = ["1", "OFF", "ON"]
 
@@ -15269,6 +16164,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -15293,6 +16189,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "FACTory"
                 args = ["1", "OFF", "ON"]
 
@@ -15303,6 +16200,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -15328,6 +16226,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "LOSS"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15338,6 +16237,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: ONCE
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["ONCE"]
 
@@ -15356,6 +16256,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15374,6 +16275,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "OFFSet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15399,6 +16301,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "NFIGure"
                 args = ["1", "OFF", "ON"]
 
@@ -15409,6 +16312,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -15433,6 +16337,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NSTate"
                 args = []
 
@@ -15449,6 +16354,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "OFFSet"
                 args = ["1", "OFF", "ON"]
 
@@ -15458,6 +16364,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "DFComp"
                     args = ["1", "OFF", "ON"]
 
@@ -15468,6 +16375,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -15493,6 +16401,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "MAGNitude"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15511,6 +16420,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -15535,6 +16445,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = ["1", "OFF", "ON"]
 
@@ -15545,6 +16456,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: AWAVe, B1, B2, B3, B4, BWAVe
                     """
+                    __slots__ = ()
                     _cmd = "ACQuire"
                     args = ["AWAVe", "B1", "B2", "B3", "B4", "BWAVe"]
 
@@ -15562,6 +16474,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "AWAVe"
                     args = ["1", "OFF", "ON"]
 
@@ -15571,6 +16484,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "IPMMatch"
                         args = ["1", "OFF", "ON"]
 
@@ -15581,6 +16495,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -15606,6 +16521,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -15631,6 +16547,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["'string'"]
 
@@ -15648,6 +16565,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HARMonic"
                     args = []
 
@@ -15658,6 +16576,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = []
 
@@ -15682,6 +16601,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "IMODulation"
                     args = []
 
@@ -15692,6 +16612,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = []
 
@@ -15709,6 +16630,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "RPORt"
                         args = []
 
@@ -15719,6 +16641,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -15750,6 +16673,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MIXer"
                     args = []
 
@@ -15759,6 +16683,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "IF"
                         args = []
 
@@ -15769,6 +16694,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -15786,6 +16712,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "NFIGure"
                             args = []
 
@@ -15796,6 +16723,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments:
                                 """
+                                __slots__ = ()
                                 _cmd = "ACQuire"
                                 args = []
 
@@ -15835,6 +16763,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -15860,6 +16789,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PSTate"
                 args = []
 
@@ -15878,6 +16808,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SSTate"
                 args = []
 
@@ -15896,6 +16827,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -15914,6 +16846,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STIMulus"
                 args = []
 
@@ -15939,6 +16872,7 @@ class ZVA_gen(Instrument):
 
             Arguments: ALL, NONE
             """
+            __slots__ = ()
             _cmd = "COUPle"
             args = ["ALL", "NONE"]
 
@@ -15956,6 +16890,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "EUNit"
             args = []
 
@@ -15965,6 +16900,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "COMBiner"
                 args = ["1", "OFF", "ON"]
 
@@ -15975,6 +16911,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -15999,6 +16936,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "HFILter"
                 args = ["1", "OFF", "ON"]
 
@@ -16009,6 +16947,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -16033,6 +16972,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "LNAMplifier"
                 args = ["1", "OFF", "ON"]
 
@@ -16043,6 +16983,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -16067,6 +17008,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PGENerator"
                 args = []
 
@@ -16077,6 +17019,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: G1M2, G1M3, G1Mall, G2Mall
                     """
+                    __slots__ = ()
                     _cmd = "ASSignment"
                     args = ["G1M2", "G1M3", "G1Mall", "G2Mall"]
 
@@ -16094,6 +17037,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "INPut"
                     args = []
 
@@ -16104,6 +17048,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EXTernal"
                         args = ["1", "OFF", "ON"]
 
@@ -16128,6 +17073,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "OUTPut"
                     args = []
 
@@ -16138,6 +17084,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EXTernal"
                         args = ["1", "OFF", "ON"]
 
@@ -16169,6 +17116,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "PMODulator"
                 args = ["1", "OFF", "ON"]
 
@@ -16179,6 +17127,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -16210,6 +17159,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16220,6 +17170,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CENTer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16238,6 +17189,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ARBitrary, FUNDamental, HARMonic, MIXer, SHARmonic, THARmonic, VMIXer
                 """
+                __slots__ = ()
                 _cmd = "CONVersion"
                 args = ["ARBitrary", "FUNDamental", "HARMonic", "MIXer", "SHARmonic", "THARmonic", "VMIXer"]
 
@@ -16248,6 +17200,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "ARBitrary"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16258,6 +17211,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PMETer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16283,6 +17237,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "AWReceiver"
                     args = ["1", "OFF", "ON"]
 
@@ -16293,6 +17248,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -16317,6 +17273,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DEVice"
                     args = []
 
@@ -16327,6 +17284,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: RELE, RILE, RILI, RILI4, RILI56
                         """
+                        __slots__ = ()
                         _cmd = "MODE"
                         args = ["RELE", "RILE", "RILI", "RILI4", "RILI56"]
 
@@ -16345,6 +17303,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "NAME"
                         args = ["'string'"]
 
@@ -16363,6 +17322,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PCOefficient"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16373,6 +17333,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "DEFault"
                             args = ["1", "OFF", "ON"]
 
@@ -16405,6 +17366,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "GAIN"
                     args = []
 
@@ -16415,6 +17377,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "LMCorrection"
                         args = ["1", "OFF", "ON"]
 
@@ -16439,6 +17402,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HARMonic"
                     args = []
 
@@ -16449,6 +17413,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "ORDer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16467,6 +17432,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "RELative"
                         args = ["1", "OFF", "ON"]
 
@@ -16485,6 +17451,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16503,6 +17470,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "SPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16527,6 +17495,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MIXer"
                     args = []
 
@@ -16537,6 +17506,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, NONE, UP
                         """
+                        __slots__ = ()
                         _cmd = "AEXTernal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "UP"]
 
@@ -16555,6 +17525,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, NONE, UP
                         """
+                        __slots__ = ()
                         _cmd = "AINTernal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "UP"]
 
@@ -16573,6 +17544,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "APORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16591,6 +17563,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "FFIXed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16609,6 +17582,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: IF, LO, LO1, LO2, RF
                         """
+                        __slots__ = ()
                         _cmd = "FIXed"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
@@ -16627,6 +17601,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: IF, LO, LO1, LO2, RF
                         """
+                        __slots__ = ()
                         _cmd = "FUNDamental"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
@@ -16645,6 +17620,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "HACCuracy"
                         args = ["1", "OFF", "ON"]
 
@@ -16663,6 +17639,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "IFFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16681,6 +17658,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "IFPort"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16699,6 +17677,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, NONE, SOURCE1, SOURCE2, UP
                         """
+                        __slots__ = ()
                         _cmd = "LOEXternal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "SOURCE1", "SOURCE2", "UP"]
 
@@ -16717,6 +17696,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "LOFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16735,6 +17715,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, NONE, UP
                         """
+                        __slots__ = ()
                         _cmd = "LOINternal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "UP"]
 
@@ -16753,6 +17734,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "LOMultiplier"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16771,6 +17753,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: EMBedded, GENerator, NONE, PORT
                         """
+                        __slots__ = ()
                         _cmd = "LOPort"
                         args = ["EMBedded", "GENerator", "NONE", "PORT"]
 
@@ -16789,6 +17772,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: IF, LO, LO1, LO2, RF
                         """
+                        __slots__ = ()
                         _cmd = "MFFixed"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
@@ -16807,6 +17791,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "PRFimage"
                         args = ["1", "OFF", "ON"]
 
@@ -16825,6 +17810,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RFFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16843,6 +17829,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RFMultiplier"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16861,6 +17848,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RFPort"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16879,6 +17867,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STAGes"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16897,6 +17886,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: BAND1, BAND2, DCLower, DCUPper, UCONversion
                         """
+                        __slots__ = ()
                         _cmd = "TFRequency"
                         args = ["BAND1", "BAND2", "DCLower", "DCUPper", "UCONversion"]
 
@@ -16930,6 +17920,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CW"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16948,6 +17939,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "FIXed"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -16965,6 +17957,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMODulation"
                 args = []
 
@@ -16974,6 +17967,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "COMBiner"
                     args = ["1", "OFF", "ON"]
 
@@ -16984,6 +17978,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -17009,6 +18004,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: OFF
                     """
+                    __slots__ = ()
                     _cmd = "CONVersion"
                     args = ["OFF"]
 
@@ -17027,6 +18023,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: GENerator, NONE, PORT
                     """
+                    __slots__ = ()
                     _cmd = "LTONe"
                     args = ["GENerator", "NONE", "PORT"]
 
@@ -17044,6 +18041,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "ORDer"
                     args = ["1", "OFF", "ON"]
 
@@ -17054,6 +18052,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -17078,6 +18077,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "PEWCorr"
                     args = ["1", "OFF", "ON"]
 
@@ -17088,6 +18088,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -17113,6 +18114,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RECeiver"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17130,6 +18132,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "SPECtrum"
                     args = ["1", "OFF", "ON"]
 
@@ -17140,6 +18143,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "MORDer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17158,6 +18162,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -17183,6 +18188,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TDIStance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17201,6 +18207,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: EDEVice, PORT
                     """
+                    __slots__ = ()
                     _cmd = "TTOutput"
                     args = ["EDEVice", "PORT"]
 
@@ -17219,6 +18226,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: GENerator, NONE, PORT
                     """
+                    __slots__ = ()
                     _cmd = "UTONe"
                     args = ["GENerator", "NONE", "PORT"]
 
@@ -17244,6 +18252,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "LPNoise"
                 args = ["1", "OFF", "ON"]
 
@@ -17261,6 +18270,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MDELay"
                 args = []
 
@@ -17271,6 +18281,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ACQuire"
                     args = []
 
@@ -17289,6 +18300,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "APERture"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17307,6 +18319,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "CDELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17325,6 +18338,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "CDMode"
                     args = ["1", "OFF", "ON"]
 
@@ -17342,6 +18356,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "COMBiner"
                     args = ["1", "OFF", "ON"]
 
@@ -17352,6 +18367,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -17377,6 +18393,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: OFF
                     """
+                    __slots__ = ()
                     _cmd = "CONVersion"
                     args = ["OFF"]
 
@@ -17394,6 +18411,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "CORRection"
                     args = ["1", "OFF", "ON"]
 
@@ -17404,6 +18422,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -17429,6 +18448,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "DIVide"
                     args = ["1", "OFF", "ON"]
 
@@ -17447,6 +18467,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: EXTernal, INTernal
                     """
+                    __slots__ = ()
                     _cmd = "RECeiver"
                     args = ["EXTernal", "INTernal"]
 
@@ -17457,6 +18478,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: LAN1, LAN2
                         """
+                        __slots__ = ()
                         _cmd = "USE"
                         args = ["LAN1", "LAN2"]
 
@@ -17483,6 +18505,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: GENerator, NONE, PORT
                     """
+                    __slots__ = ()
                     _cmd = "UTONe"
                     args = ["GENerator", "NONE", "PORT"]
 
@@ -17508,6 +18531,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: CW, FIXed, SEGMent, SWEEp
                 """
+                __slots__ = ()
                 _cmd = "MODE"
                 args = ["CW", "FIXed", "SEGMent", "SWEEp"]
 
@@ -17525,6 +18549,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "OFFSet"
                 args = []
 
@@ -17535,6 +18560,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "PWAVes"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17553,6 +18579,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "WAVes"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17578,6 +18605,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: AUTO, NEGative, POSitive
                 """
+                __slots__ = ()
                 _cmd = "SBANd"
                 args = ["AUTO", "NEGative", "POSitive"]
 
@@ -17596,6 +18624,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SPAN"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17614,6 +18643,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17632,6 +18662,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "STOP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17656,6 +18687,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "FUNCtion"
             args = ["'string'"]
 
@@ -17666,6 +18698,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'XFRequency:POWer:A1', 'XFRequency:POWer:B1', 'XFRequency:POWer:KFACtor', 'XFRequency:POWer:MUFactor1', 'XFRequency:POWer:RATio', 'XFRequency:POWer:S1', 'XFRequency:POWer:S1:DUMMy', 'XFRequency:POWer:Y1', 'XFRequency:POWer:Z1', 'XFRequency:VOLTage', 'XFRequency:VOLTage:DC', 'XPOWer:POWer:A1', 'XPOWer:POWer:B1', 'XPOWer:POWer:RATio', 'XPOWer:POWer:S1', 'XPOWer:POWer:S1:DUMMy', 'XPOWer:POWer:Y1', 'XPOWer:POWer:Z1', 'XPOWer:VOLTage', 'XPOWer:VOLTage:DC', 'XTIMe:POWer:A1', 'XTIMe:POWer:B1', 'XTIMe:POWer:KFACtor', 'XTIMe:POWer:MUFactor1', 'XTIMe:POWer:RATio', 'XTIMe:POWer:S1', 'XTIMe:POWer:S1:DUMMy', 'XTIMe:POWer:Y1', 'XTIMe:POWer:Z1', 'XTIMe:VOLTage', 'XTIMe:VOLTage:DC'
                 """
+                __slots__ = ()
                 _cmd = "ON"
                 args = ["'XFRequency:POWer:A1'", "'XFRequency:POWer:B1'", "'XFRequency:POWer:KFACtor'", "'XFRequency:POWer:MUFactor1'", "'XFRequency:POWer:RATio'", "'XFRequency:POWer:S1'", "'XFRequency:POWer:S1:DUMMy'", "'XFRequency:POWer:Y1'", "'XFRequency:POWer:Z1'", "'XFRequency:VOLTage'", "'XFRequency:VOLTage:DC'", "'XPOWer:POWer:A1'", "'XPOWer:POWer:B1'", "'XPOWer:POWer:RATio'", "'XPOWer:POWer:S1'", "'XPOWer:POWer:S1:DUMMy'", "'XPOWer:POWer:Y1'", "'XPOWer:POWer:Z1'", "'XPOWer:VOLTage'", "'XPOWer:VOLTage:DC'", "'XTIMe:POWer:A1'", "'XTIMe:POWer:B1'", "'XTIMe:POWer:KFACtor'", "'XTIMe:POWer:MUFactor1'", "'XTIMe:POWer:RATio'", "'XTIMe:POWer:S1'", "'XTIMe:POWer:S1:DUMMy'", "'XTIMe:POWer:Y1'", "'XTIMe:POWer:Z1'", "'XTIMe:VOLTage'", "'XTIMe:VOLTage:DC'"]
 
@@ -17690,6 +18723,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IFRequency"
             args = []
 
@@ -17699,6 +18733,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONVersion"
                 args = []
 
@@ -17708,6 +18743,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "ARBitrary"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17738,6 +18774,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "LOMeasure"
             args = ["1", "OFF", "ON"]
 
@@ -17748,6 +18785,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -17772,6 +18810,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "LOReference"
             args = ["1", "OFF", "ON"]
 
@@ -17782,6 +18821,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -17806,6 +18846,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LPORt"
             args = []
 
@@ -17816,6 +18857,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ZCOMmon"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17834,6 +18876,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ZDIFferent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17858,6 +18901,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "NFIGure"
             args = []
 
@@ -17868,6 +18912,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "ISNoise"
                 args = ["1", "OFF", "ON"]
 
@@ -17886,6 +18931,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "NDUT"
                 args = ["1", "OFF", "ON"]
 
@@ -17904,6 +18950,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "RFICorr"
                 args = ["1", "OFF", "ON"]
 
@@ -17922,6 +18969,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SEQuential"
                 args = ["1", "OFF", "ON"]
 
@@ -17946,6 +18994,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PAE"
             args = []
 
@@ -17956,6 +19005,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "C"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -17974,6 +19024,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: C1, C10, CK11, K101
                 """
+                __slots__ = ()
                 _cmd = "EXPRession"
                 args = ["C1", "C10", "CK11", "K101"]
 
@@ -17992,6 +19043,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "K"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18017,6 +19069,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "PMMO"
             args = ["1", "OFF", "ON"]
 
@@ -18034,6 +19087,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PORT"
             args = []
 
@@ -18044,6 +19098,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ZREFerence"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18068,6 +19123,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "POWer"
             args = []
 
@@ -18078,6 +19134,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, ARECeiver, BRECeiver, CRECeiver, DEFault, DOWN, DRECeiver, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ATTenuation"
                 args = ["1", "ARECeiver", "BRECeiver", "CRECeiver", "DEFault", "DOWN", "DRECeiver", "MAXimum", "MINimum", "UP"]
 
@@ -18095,6 +19152,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IFGain"
                 args = []
 
@@ -18105,6 +19163,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: AUTO, LDIStortion, LNOise
                     """
+                    __slots__ = ()
                     _cmd = "MEASure"
                     args = ["AUTO", "LDIStortion", "LNOise"]
 
@@ -18123,6 +19182,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: AUTO, LDIStortion, LNOise
                     """
+                    __slots__ = ()
                     _cmd = "REFerence"
                     args = ["AUTO", "LDIStortion", "LNOise"]
 
@@ -18154,6 +19214,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PULSe"
             args = []
 
@@ -18163,6 +19224,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "COUPled"
                 args = ["1", "OFF", "ON"]
 
@@ -18173,6 +19235,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -18197,6 +19260,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "GENerator"
                 args = ["1", "OFF", "ON"]
 
@@ -18207,6 +19271,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "CPPRofile"
                     args = ["1", "OFF", "ON"]
 
@@ -18225,6 +19290,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18243,6 +19309,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DINCrement"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18261,6 +19328,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "MCHannel"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18279,6 +19347,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: CONTinuous, CSPecific
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["CONTinuous", "CSPecific"]
 
@@ -18297,6 +19366,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "PERiod"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18315,6 +19385,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: INVerted, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "POLarity"
                     args = ["INVerted", "NORMal"]
 
@@ -18333,6 +19404,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -18350,6 +19422,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TRAin"
                     args = []
 
@@ -18360,6 +19433,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "DATA"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18377,6 +19451,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DELete"
                         args = []
 
@@ -18387,6 +19462,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ALL"
                             args = []
 
@@ -18412,6 +19488,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PERiod"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18429,6 +19506,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "SEGMent"
                         args = ["1", "OFF", "ON"]
 
@@ -18439,6 +19517,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "COUNt"
                             args = []
 
@@ -18457,6 +19536,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "STARt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18475,6 +19555,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -18493,6 +19574,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "STOP"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18525,6 +19607,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: CHIGh, CLOW, SINGle, TRAin
                     """
+                    __slots__ = ()
                     _cmd = "TYPE"
                     args = ["CHIGh", "CLOW", "SINGle", "TRAin"]
 
@@ -18543,6 +19626,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "WIDTh"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18567,6 +19651,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RECeiver"
                 args = []
 
@@ -18576,6 +19661,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "A"
                     args = []
 
@@ -18585,6 +19671,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "GENerator"
                         args = []
 
@@ -18594,6 +19681,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "EVALuation"
                             args = []
 
@@ -18604,6 +19692,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: MEAN, NORMal
                                 """
+                                __slots__ = ()
                                 _cmd = "MODE"
                                 args = ["MEAN", "NORMal"]
 
@@ -18622,6 +19711,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "STARt"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18640,6 +19730,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "STOP"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18664,6 +19755,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "LINes"
                             args = ["1", "OFF", "ON"]
 
@@ -18674,6 +19766,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, OFF, ON
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
@@ -18698,6 +19791,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "TRIGger"
                             args = []
 
@@ -18708,6 +19802,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "DELay"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18739,6 +19834,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SRCPort"
                         args = []
 
@@ -18748,6 +19844,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "EVALuation"
                             args = []
 
@@ -18758,6 +19855,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: MEAN, NORMal
                                 """
+                                __slots__ = ()
                                 _cmd = "MODE"
                                 args = ["MEAN", "NORMal"]
 
@@ -18776,6 +19874,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "STARt"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18794,6 +19893,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "STOP"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18818,6 +19918,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "LINes"
                             args = ["1", "OFF", "ON"]
 
@@ -18828,6 +19929,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, OFF, ON
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
@@ -18852,6 +19954,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "TRIGger"
                             args = []
 
@@ -18862,6 +19965,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "DELay"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18900,6 +20004,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "B"
                     args = []
 
@@ -18909,6 +20014,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "GENerator"
                         args = []
 
@@ -18918,6 +20024,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "EVALuation"
                             args = []
 
@@ -18928,6 +20035,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: MEAN, NORMal
                                 """
+                                __slots__ = ()
                                 _cmd = "MODE"
                                 args = ["MEAN", "NORMal"]
 
@@ -18946,6 +20054,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "STARt"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18964,6 +20073,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "STOP"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18988,6 +20098,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "LINes"
                             args = ["1", "OFF", "ON"]
 
@@ -18998,6 +20109,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, OFF, ON
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
@@ -19022,6 +20134,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "TRIGger"
                             args = []
 
@@ -19032,6 +20145,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "DELay"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19063,6 +20177,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SRCPort"
                         args = []
 
@@ -19072,6 +20187,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "EVALuation"
                             args = []
 
@@ -19082,6 +20198,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: MEAN, NORMal
                                 """
+                                __slots__ = ()
                                 _cmd = "MODE"
                                 args = ["MEAN", "NORMal"]
 
@@ -19100,6 +20217,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "STARt"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19118,6 +20236,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "STOP"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19142,6 +20261,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "LINes"
                             args = ["1", "OFF", "ON"]
 
@@ -19152,6 +20272,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, OFF, ON
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
@@ -19176,6 +20297,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "TRIGger"
                             args = []
 
@@ -19186,6 +20308,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "DELay"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19231,6 +20354,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = []
 
@@ -19240,6 +20364,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "BWIDth"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19250,6 +20375,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RESolution"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19275,6 +20401,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "STARt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19293,6 +20420,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "STOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19324,6 +20452,7 @@ class ZVA_gen(Instrument):
 
             Arguments: EXTernal, INTernal
             """
+            __slots__ = ()
             _cmd = "ROSCillator"
             args = ["EXTernal", "INTernal"]
 
@@ -19333,6 +20462,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXTernal"
                 args = []
 
@@ -19343,6 +20473,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19368,6 +20499,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: EXTernal, INTernal
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXTernal", "INTernal"]
 
@@ -19392,6 +20524,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "SEGMent"
             args = ["1", "OFF", "ON"]
 
@@ -19402,6 +20535,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ADD"
                 args = []
 
@@ -19419,6 +20553,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "BWIDth"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19429,6 +20564,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RESolution"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19439,6 +20575,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
@@ -19457,6 +20594,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: HIGH, NORMal
                         """
+                        __slots__ = ()
                         _cmd = "SELect"
                         args = ["HIGH", "NORMal"]
 
@@ -19467,6 +20605,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "CONTrol"
                             args = ["1", "OFF", "ON"]
 
@@ -19508,6 +20647,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = []
 
@@ -19526,6 +20666,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = []
 
@@ -19544,6 +20685,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "DEFine"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19554,6 +20696,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: DWELl, SWTime
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["DWELl", "SWTime"]
 
@@ -19580,6 +20723,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DELete"
                 args = []
 
@@ -19590,6 +20734,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -19607,6 +20752,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DUMMy"
                     args = []
 
@@ -19631,6 +20777,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = []
 
@@ -19641,6 +20788,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "CENTer"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19659,6 +20807,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SPAN"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19677,6 +20826,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "STARt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19695,6 +20845,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "STOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19720,6 +20871,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "INSert"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19730,6 +20882,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: DWELl, SWTime
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["DWELl", "SWTime"]
 
@@ -19756,6 +20909,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -19774,6 +20928,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "OVERlap"
                 args = ["1", "OFF", "ON"]
 
@@ -19791,6 +20946,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19801,6 +20957,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "LEVel"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19811,6 +20968,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
@@ -19844,6 +21002,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: AUTO, NEGative, POSitive
                 """
+                __slots__ = ()
                 _cmd = "SBANd"
                 args = ["AUTO", "NEGative", "POSitive"]
 
@@ -19854,6 +21013,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "CONTrol"
                     args = ["1", "OFF", "ON"]
 
@@ -19880,6 +21040,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -19897,6 +21058,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SWEep"
                 args = []
 
@@ -19907,6 +21069,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DWELl"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19917,6 +21080,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
@@ -19943,6 +21107,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "POINts"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19961,6 +21126,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19971,6 +21137,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
@@ -19989,6 +21156,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SUM"
                         args = []
 
@@ -20021,6 +21189,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "TRIGger"
                 args = ["1", "OFF", "ON"]
 
@@ -20031,6 +21200,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "CONTrol"
                     args = ["1", "OFF", "ON"]
 
@@ -20049,6 +21219,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -20080,6 +21251,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SWEep"
             args = []
 
@@ -20089,6 +21261,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AXIS"
                 args = []
 
@@ -20099,6 +21272,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["'string'"]
 
@@ -20117,6 +21291,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "POWer"
                     args = ["'string'"]
 
@@ -20141,6 +21316,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20157,6 +21333,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DETector"
                 args = []
 
@@ -20167,6 +21344,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20192,6 +21370,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "DWELl"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20209,6 +21388,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ANALog, STEPped
                 """
+                __slots__ = ()
                 _cmd = "GENeration"
                 args = ["ANALog", "STEPped"]
 
@@ -20225,6 +21405,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: CONTinuous, HOLD
                 """
+                __slots__ = ()
                 _cmd = "MODE"
                 args = ["CONTinuous", "HOLD"]
 
@@ -20242,6 +21423,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "POINts"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20260,6 +21442,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: LINear, LOGarithmic
                 """
+                __slots__ = ()
                 _cmd = "SPACing"
                 args = ["LINear", "LOGarithmic"]
 
@@ -20278,6 +21461,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SRCPort"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20296,6 +21480,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20314,6 +21499,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20324,6 +21510,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["1", "OFF", "ON"]
 
@@ -20350,6 +21537,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: CW, IAMPlitude, IPHase, LINear, LOGarithmic, POINt, POWer, PULSe, SEGMent
                 """
+                __slots__ = ()
                 _cmd = "TYPE"
                 args = ["CW", "IAMPlitude", "IPHase", "LINear", "LOGarithmic", "POINt", "POWer", "PULSe", "SEGMent"]
 
@@ -20374,6 +21562,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TEUNit"
             args = []
 
@@ -20384,6 +21573,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: COMBiner, OUTPut, PMODulator
                 """
+                __slots__ = ()
                 _cmd = "AMONitor"
                 args = ["COMBiner", "OUTPut", "PMODulator"]
 
@@ -20401,6 +21591,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "COMBiner"
                 args = ["1", "OFF", "ON"]
 
@@ -20411,6 +21602,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -20435,6 +21627,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "LNAMplifier"
                 args = ["1", "OFF", "ON"]
 
@@ -20445,6 +21638,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -20469,6 +21663,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "PAMPlifier"
                 args = ["1", "OFF", "ON"]
 
@@ -20479,6 +21674,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -20503,6 +21699,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "PMODulator"
                 args = ["1", "OFF", "ON"]
 
@@ -20513,6 +21710,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "INVert"
                     args = ["1", "OFF", "ON"]
 
@@ -20531,6 +21729,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: G1EXt, G1INt, G2EXt, G2INt, OFF
                     """
+                    __slots__ = ()
                     _cmd = "SOURce"
                     args = ["G1EXt", "G1INt", "G2EXt", "G2INt", "OFF"]
 
@@ -20549,6 +21748,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -20573,6 +21773,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "REAR"
                 args = []
 
@@ -20583,6 +21784,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "INVert"
                     args = ["1", "OFF", "ON"]
 
@@ -20601,6 +21803,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: G1EXt, G1INt, G2EXt, G2INt, OFF
                     """
+                    __slots__ = ()
                     _cmd = "SOURce"
                     args = ["G1EXt", "G1INt", "G2EXt", "G2INt", "OFF"]
 
@@ -20625,6 +21828,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "UMEas"
                 args = ["1", "OFF", "ON"]
 
@@ -20635,6 +21839,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -20659,6 +21864,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "USOurce"
                 args = ["1", "OFF", "ON"]
 
@@ -20669,6 +21875,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -20700,6 +21907,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "UDSParams"
             args = []
 
@@ -20710,6 +21918,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "ACTive"
                 args = ["1", "OFF", "ON"]
 
@@ -20728,6 +21937,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "PARam"
                 args = ["'string'"]
 
@@ -20759,6 +21969,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SOURce"
         args = []
 
@@ -20768,6 +21979,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CMODe"
             args = []
 
@@ -20777,6 +21989,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "PORT"
                 args = ["1", "OFF", "ON"]
 
@@ -20786,6 +21999,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "AMPLitude"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20803,6 +22017,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "PHASe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20821,6 +22036,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -20846,6 +22062,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "RPORt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20863,6 +22080,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TOLerance"
                 args = []
 
@@ -20872,6 +22090,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "AMPLitude"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20889,6 +22108,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "PHASe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20920,6 +22140,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20929,6 +22150,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONVersion"
                 args = []
 
@@ -20938,6 +22160,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ARBitrary"
                     args = []
 
@@ -20948,6 +22171,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "CFRequency"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20966,6 +22190,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EFRequency"
                         args = ["1", "OFF", "ON"]
 
@@ -20984,6 +22209,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "IFRequency"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21008,6 +22234,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MIXer"
                     args = []
 
@@ -21018,6 +22245,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: LO, RF
                         """
+                        __slots__ = ()
                         _cmd = "FUNDamental"
                         args = ["LO", "RF"]
 
@@ -21036,6 +22264,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PAFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21054,6 +22283,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PFIXed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21072,6 +22302,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: AUXLO, IF, LO, LO1, LO2, RF
                         """
+                        __slots__ = ()
                         _cmd = "PMFixed"
                         args = ["AUXLO", "IF", "LO", "LO1", "LO2", "RF"]
 
@@ -21090,6 +22321,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: AUXLO, IF, LO, LO1, LO2, RF
                         """
+                        __slots__ = ()
                         _cmd = "PMODe"
                         args = ["AUXLO", "IF", "LO", "LO1", "LO2", "RF"]
 
@@ -21121,6 +22353,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CW"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21137,6 +22370,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "FIXed"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21161,6 +22395,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "GROup"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21171,6 +22406,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ALL
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = ["ALL"]
 
@@ -21189,6 +22425,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = []
 
@@ -21207,6 +22444,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "PORTs"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21224,6 +22462,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SIMultaneous"
                 args = ["1", "OFF", "ON"]
 
@@ -21233,6 +22472,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "FOFFset"
                     args = ["1", "OFF", "ON"]
 
@@ -21243,6 +22483,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONDition"
                         args = []
 
@@ -21260,6 +22501,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "MOFFset"
                         args = []
 
@@ -21270,6 +22512,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "BWFactor"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21288,6 +22531,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "DVALue"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21306,6 +22550,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: BANDWIDTH, DIRECT
                             """
+                            __slots__ = ()
                             _cmd = "MODE"
                             args = ["BANDWIDTH", "DIRECT"]
 
@@ -21331,6 +22576,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -21356,6 +22602,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -21389,6 +22636,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "LPORt"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21399,6 +22647,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ALL
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = ["ALL"]
 
@@ -21424,6 +22673,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "POWer"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21433,6 +22683,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "ALC"
                 args = ["1", "OFF", "ON"]
 
@@ -21443,6 +22694,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "AUBW"
                     args = ["1", "OFF", "ON"]
 
@@ -21461,6 +22713,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "BANDwidth"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21479,6 +22732,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "CLAMp"
                     args = ["1", "OFF", "ON"]
 
@@ -21497,6 +22751,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "CONTrol"
                     args = ["1", "OFF", "ON"]
 
@@ -21515,6 +22770,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "COUPle"
                     args = ["1", "OFF", "ON"]
 
@@ -21533,6 +22789,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "CSTate"
                     args = ["1", "OFF", "ON"]
 
@@ -21551,6 +22808,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "LPNoise"
                     args = ["1", "OFF", "ON"]
 
@@ -21569,6 +22827,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: AUTO, MANual
                     """
+                    __slots__ = ()
                     _cmd = "PIParameter"
                     args = ["AUTO", "MANual"]
 
@@ -21579,6 +22838,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "GAIN"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21597,6 +22857,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "ITIMe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21623,6 +22884,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "POFFset"
                     args = ["1", "OFF", "ON"]
 
@@ -21641,6 +22903,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RANGe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21659,6 +22922,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SOFFset"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21677,6 +22941,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -21695,6 +22960,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "STOLerance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21720,6 +22986,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ATTenuation"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21730,6 +22997,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["1", "OFF", "ON"]
 
@@ -21740,6 +23008,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "VALue"
                         args = []
 
@@ -21766,6 +23035,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: AUTO, LNOise, MANual
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["AUTO", "LNOise", "MANual"]
 
@@ -21791,6 +23061,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "COMBiner"
                 args = ["1", "OFF", "ON"]
 
@@ -21807,6 +23078,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONVerter"
                 args = []
 
@@ -21817,6 +23089,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "OFFSet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21834,6 +23107,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TRANsfer"
                     args = []
 
@@ -21844,6 +23118,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "AMODel"
                         args = ["1", "OFF", "ON"]
 
@@ -21862,6 +23137,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: ELECtronic, MECHanical
                         """
+                        __slots__ = ()
                         _cmd = "ATTenuator"
                         args = ["ELECtronic", "MECHanical"]
 
@@ -21880,6 +23156,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: DSET, ELECtronic, LAPProx, NONE
                         """
+                        __slots__ = ()
                         _cmd = "DESCription"
                         args = ["DSET", "ELECtronic", "LAPProx", "NONE"]
 
@@ -21898,6 +23175,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: FACTory, USER
                         """
+                        __slots__ = ()
                         _cmd = "DSET"
                         args = ["FACTory", "USER"]
 
@@ -21915,6 +23193,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ELECtronic"
                         args = []
 
@@ -21925,6 +23204,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "LIMit"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21943,6 +23223,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "MATTenuation"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21961,6 +23242,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "REDuction"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21985,6 +23267,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "MECHanical"
                         args = []
 
@@ -21995,6 +23278,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "ATTenuation"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22020,6 +23304,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22038,6 +23323,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "PATH"
                         args = ["'string'"]
 
@@ -22056,6 +23342,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "SLOPe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22087,6 +23374,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: A1, A2, A3, A4, CONVerter, ESRC1, ESRC2, GENerator, PORT
                 """
+                __slots__ = ()
                 _cmd = "CORRection"
                 args = ["A1", "A2", "A3", "A4", "CONVerter", "ESRC1", "ESRC2", "GENerator", "PORT"]
 
@@ -22097,6 +23385,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: A1, A2, A3, A4, CONVerter, ESRC1, ESRC2, GENerator, PORT
                     """
+                    __slots__ = ()
                     _cmd = "ACQuire"
                     args = ["A1", "A2", "A3", "A4", "CONVerter", "ESRC1", "ESRC2", "GENerator", "PORT"]
 
@@ -22106,6 +23395,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "VERification"
                         args = []
 
@@ -22116,6 +23406,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "RESult"
                             args = []
 
@@ -22148,6 +23439,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: ASENsor, BSENsor
                     """
+                    __slots__ = ()
                     _cmd = "COLLect"
                     args = ["ASENsor", "BSENsor"]
 
@@ -22158,6 +23450,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: ASENsor, BSENsor
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = ["ASENsor", "BSENsor"]
 
@@ -22167,6 +23460,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "VERification"
                             args = ["1", "OFF", "ON"]
 
@@ -22177,6 +23471,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, OFF, ON
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
@@ -22209,6 +23504,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "AVERage"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22219,6 +23515,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "COUNt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22237,6 +23534,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "NTOLerance"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22262,6 +23560,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "CFACtor"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22280,6 +23579,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "FLATness"
                         args = ["1", "OFF", "ON"]
 
@@ -22298,6 +23598,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: PMONly, RRAFter, RRONly
                         """
+                        __slots__ = ()
                         _cmd = "METHod"
                         args = ["PMONly", "RRAFter", "RRONly"]
 
@@ -22316,6 +23617,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PMReadings"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22334,6 +23636,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "RRECeiver"
                         args = ["1", "OFF", "ON"]
 
@@ -22358,6 +23661,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "CONVerter"
                     args = ["1", "OFF", "ON"]
 
@@ -22367,6 +23671,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "LEVel"
                         args = []
 
@@ -22377,6 +23682,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "OFFSet"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22402,6 +23708,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -22427,6 +23734,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["'string'"]
 
@@ -22437,6 +23745,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: ATTenuation, CFRequency, CPOWer, POINts, STARt, STOP, STYPe, TSTamp, WAVE
                         """
+                        __slots__ = ()
                         _cmd = "PARameter"
                         args = ["ATTenuation", "CFRequency", "CPOWer", "POINts", "STARt", "STOP", "STYPe", "TSTamp", "WAVE"]
 
@@ -22447,6 +23756,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "COUNt"
                             args = []
 
@@ -22481,6 +23791,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "DEFault"
                     args = ["1", "OFF", "ON"]
 
@@ -22499,6 +23810,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "FAST"
                     args = ["1", "OFF", "ON"]
 
@@ -22516,6 +23828,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "GENerator"
                     args = ["1", "OFF", "ON"]
 
@@ -22525,6 +23838,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "LEVel"
                         args = []
 
@@ -22535,6 +23849,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "OFFSet"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22560,6 +23875,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -22584,6 +23900,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HARMonic"
                     args = []
 
@@ -22594,6 +23911,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = []
 
@@ -22618,6 +23936,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "IMODulation"
                     args = []
 
@@ -22627,6 +23946,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "LTONe"
                         args = []
 
@@ -22637,6 +23957,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -22661,6 +23982,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "RPORt"
                         args = []
 
@@ -22671,6 +23993,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -22695,6 +24018,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SPORts"
                         args = []
 
@@ -22705,6 +24029,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -22729,6 +24054,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "UTONe"
                         args = []
 
@@ -22739,6 +24065,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -22770,6 +24097,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LEVel"
                     args = []
 
@@ -22780,6 +24108,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22804,6 +24133,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MIXer"
                     args = []
 
@@ -22813,6 +24143,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "IF"
                         args = []
 
@@ -22823,6 +24154,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -22847,6 +24179,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "LO"
                         args = []
 
@@ -22857,6 +24190,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -22881,6 +24215,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "RF"
                         args = []
 
@@ -22891,6 +24226,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -22908,6 +24244,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "NFIGure"
                             args = []
 
@@ -22918,6 +24255,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments:
                                 """
+                                __slots__ = ()
                                 _cmd = "ACQuire"
                                 args = []
 
@@ -22957,6 +24295,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "NREadings"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22974,6 +24313,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "OSOurces"
                     args = ["1", "OFF", "ON"]
 
@@ -22984,6 +24324,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -23008,6 +24349,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PMETer"
                     args = []
 
@@ -23018,6 +24360,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "ID"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23043,6 +24386,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -23060,6 +24404,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "TCOefficient"
                     args = ["1", "OFF", "ON"]
 
@@ -23070,6 +24415,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "CALibration"
                         args = ["1", "OFF", "ON"]
 
@@ -23088,6 +24434,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -23106,6 +24453,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "DEFine"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23123,6 +24471,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DELete"
                         args = []
 
@@ -23133,6 +24482,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ALL"
                             args = []
 
@@ -23151,6 +24501,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DUMMy"
                             args = []
 
@@ -23176,6 +24527,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FEED"
                         args = ["'string'"]
 
@@ -23194,6 +24546,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "INSert"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23212,6 +24565,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -23243,6 +24597,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "COUPle"
                 args = ["1", "OFF", "ON"]
 
@@ -23259,6 +24614,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "GENerator"
                 args = []
 
@@ -23268,6 +24624,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "LLIMit"
                     args = ["1", "OFF", "ON"]
 
@@ -23278,6 +24635,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -23296,6 +24654,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "VALue"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23321,6 +24680,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "OFFSet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23338,6 +24698,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "PERManent"
                     args = ["1", "OFF", "ON"]
 
@@ -23348,6 +24709,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -23373,6 +24735,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -23397,6 +24760,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "LEVel"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23406,6 +24770,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "IMMediate"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23416,6 +24781,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "AMPLitude"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23433,6 +24799,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "LLIMit"
                         args = ["1", "OFF", "ON"]
 
@@ -23443,6 +24810,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "DGRaccess"
                             args = ["1", "OFF", "ON"]
 
@@ -23461,6 +24829,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -23479,6 +24848,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "VALue"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23504,6 +24874,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23522,6 +24893,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PHASe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23540,6 +24912,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "SLOPe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23549,6 +24922,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -23587,6 +24961,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "PERManent"
                 args = ["1", "OFF", "ON"]
 
@@ -23597,6 +24972,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -23622,6 +24998,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "REDuce"
                 args = ["1", "OFF", "ON"]
 
@@ -23640,6 +25017,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23658,6 +25036,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -23676,6 +25055,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "STOP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23700,6 +25080,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "TDIF"
             args = ["1", "OFF", "ON"]
 
@@ -23710,6 +25091,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CRFRequency"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23727,6 +25109,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMBalance"
                 args = []
 
@@ -23736,6 +25119,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "AMPLitude"
                     args = []
 
@@ -23746,6 +25130,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "LPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23764,6 +25149,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23782,6 +25168,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23806,6 +25193,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PHASe"
                     args = []
 
@@ -23816,6 +25204,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "LPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23834,6 +25223,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23852,6 +25242,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23884,6 +25275,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -23901,6 +25293,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TOLerance"
                 args = []
 
@@ -23910,6 +25303,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "AMPLitude"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23927,6 +25321,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "PHASe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23952,6 +25347,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: DCMode, SENDed
                 """
+                __slots__ = ()
                 _cmd = "WAVes"
                 args = ["DCMode", "SENDed"]
 
@@ -23984,6 +25380,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "STATus"
         args = []
 
@@ -23993,6 +25390,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "OPERation"
             args = []
 
@@ -24002,6 +25400,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONDition"
                 args = []
 
@@ -24018,6 +25417,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = ["1"]
 
@@ -24034,6 +25434,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EVENt"
                 args = []
 
@@ -24050,6 +25451,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "NTRansition"
                 args = ["1"]
 
@@ -24066,6 +25468,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PTRansition"
                 args = ["1"]
 
@@ -24090,6 +25493,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PRESet"
             args = []
 
@@ -24107,6 +25511,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "QUEStionable"
             args = []
 
@@ -24117,6 +25522,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONDition"
                 args = []
 
@@ -24135,6 +25541,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = ["1"]
 
@@ -24153,6 +25560,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EVENt"
                 args = []
 
@@ -24170,6 +25578,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INTegrity"
                 args = []
 
@@ -24180,6 +25589,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -24198,6 +25608,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -24216,6 +25627,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -24233,6 +25645,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HARDware"
                     args = []
 
@@ -24243,6 +25656,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONDition"
                         args = []
 
@@ -24261,6 +25675,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ENABle"
                         args = ["1"]
 
@@ -24279,6 +25694,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -24297,6 +25713,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "NTRansition"
                         args = ["1"]
 
@@ -24315,6 +25732,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "PTRansition"
                         args = ["1"]
 
@@ -24340,6 +25758,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -24358,6 +25777,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -24382,6 +25802,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LIMit"
                 args = []
 
@@ -24391,6 +25812,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -24407,6 +25829,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -24423,6 +25846,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -24439,6 +25863,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -24455,6 +25880,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -24479,6 +25905,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "NTRansition"
                 args = ["1"]
 
@@ -24497,6 +25924,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PTRansition"
                 args = ["1"]
 
@@ -24521,6 +25949,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "QUEue"
             args = []
 
@@ -24531,6 +25960,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NEXT"
                 args = []
 
@@ -24563,6 +25993,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SYSTem"
         args = []
 
@@ -24572,6 +26003,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "COMMunicate"
             args = []
 
@@ -24581,6 +26013,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AKAL"
                 args = []
 
@@ -24591,6 +26024,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: MATCh, OPEN, SHORt, THRough
                     """
+                    __slots__ = ()
                     _cmd = "CONNection"
                     args = ["MATCh", "OPEN", "SHORt", "THRough"]
 
@@ -24608,6 +26042,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "MMEMory"
                     args = ["1", "OFF", "ON"]
 
@@ -24618,6 +26053,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -24649,6 +26085,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "GPIB"
                 args = []
 
@@ -24658,6 +26095,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SELF"
                     args = []
 
@@ -24668,6 +26106,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ADDRess"
                         args = ["1"]
 
@@ -24686,6 +26125,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: EOI, LFEOi
                         """
+                        __slots__ = ()
                         _cmd = "RTERminator"
                         args = ["EOI", "LFEOi"]
 
@@ -24717,6 +26157,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INTernal"
                 args = []
 
@@ -24726,6 +26167,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COMMand"
                     args = []
 
@@ -24735,6 +26177,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "TABLes"
                         args = ["'string'"]
 
@@ -24758,6 +26201,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "REMote"
                     args = ["1", "OFF", "ON"]
 
@@ -24781,6 +26225,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NET"
                 args = []
 
@@ -24791,6 +26236,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "HOSTname"
                     args = ["'string'"]
 
@@ -24815,6 +26261,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RDEVice"
                 args = []
 
@@ -24824,6 +26271,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "AKAL"
                     args = []
 
@@ -24834,6 +26282,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "ADDRess"
                         args = ["'string'"]
 
@@ -24844,6 +26293,7 @@ class ZVA_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ALL"
                             args = []
 
@@ -24869,6 +26319,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "PREDuction"
                         args = ["1", "OFF", "ON"]
 
@@ -24879,6 +26330,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -24904,6 +26356,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SANitize"
                         args = []
 
@@ -24928,6 +26381,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EUNit"
                     args = []
 
@@ -24938,6 +26392,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "IDN"
                         args = []
 
@@ -24956,6 +26411,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "OPT"
                         args = []
 
@@ -24980,6 +26436,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "GENerator"
                     args = []
 
@@ -24990,6 +26447,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = []
 
@@ -25008,6 +26466,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -25026,6 +26485,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEFine"
                         args = ["'string'"]
 
@@ -25044,6 +26504,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DELete"
                         args = []
 
@@ -25068,6 +26529,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PMETer"
                     args = []
 
@@ -25078,6 +26540,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "AZERo"
                         args = []
 
@@ -25096,6 +26559,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = []
 
@@ -25113,6 +26577,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONFigure"
                         args = []
 
@@ -25123,6 +26588,7 @@ class ZVA_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "AUTO"
                             args = ["1", "OFF", "ON"]
 
@@ -25132,6 +26598,7 @@ class ZVA_gen(Instrument):
 
                                 Arguments: 1, OFF, ON
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
@@ -25164,6 +26631,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -25182,6 +26650,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEFine"
                         args = ["'string'"]
 
@@ -25200,6 +26669,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DELete"
                         args = []
 
@@ -25224,6 +26694,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RECeiver"
                     args = []
 
@@ -25234,6 +26705,7 @@ class ZVA_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEFine"
                         args = ["'string'"]
 
@@ -25252,6 +26724,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DELete"
                         args = []
 
@@ -25276,6 +26749,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TEUNit"
                     args = []
 
@@ -25286,6 +26760,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -25304,6 +26779,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "IDN"
                         args = []
 
@@ -25322,6 +26798,7 @@ class ZVA_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "OPT"
                         args = []
 
@@ -25353,6 +26830,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TCPip"
                 args = []
 
@@ -25362,6 +26840,7 @@ class ZVA_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONTrol"
                     args = []
 
@@ -25392,6 +26871,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CORRection"
             args = []
 
@@ -25401,6 +26881,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "FMPort"
                 args = ["1", "OFF", "ON"]
 
@@ -25411,6 +26892,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -25442,6 +26924,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = []
 
@@ -25452,6 +26935,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ALL, AUTO
                 """
+                __slots__ = ()
                 _cmd = "SIZE"
                 args = ["ALL", "AUTO"]
 
@@ -25477,6 +26961,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "DATE"
             args = ["1"]
 
@@ -25494,6 +26979,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DISPlay"
             args = []
 
@@ -25504,6 +26990,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: BWLStyles, BWSolid, DBACkground, LBACkground
                 """
+                __slots__ = ()
                 _cmd = "COLor"
                 args = ["BWLStyles", "BWSolid", "DBACkground", "LBACkground"]
 
@@ -25522,6 +27009,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, FREeze, OFF, ON, ONCE
                 """
+                __slots__ = ()
                 _cmd = "UPDate"
                 args = ["1", "FREeze", "OFF", "ON", "ONCE"]
 
@@ -25546,6 +27034,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ERRor"
             args = []
 
@@ -25556,6 +27045,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = []
 
@@ -25574,6 +27064,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "DISPlay"
                 args = ["1", "OFF", "ON"]
 
@@ -25592,6 +27083,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NEXT"
                 args = []
 
@@ -25616,6 +27108,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FIRMware"
             args = []
 
@@ -25626,6 +27119,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "UPDate"
                 args = ["'string'"]
 
@@ -25651,6 +27145,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FPReset"
             args = []
 
@@ -25669,6 +27164,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25686,6 +27182,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IDENtify"
             args = []
 
@@ -25696,6 +27193,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FACTory"
                 args = []
 
@@ -25714,6 +27212,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "STRing"
                 args = ["'string'"]
 
@@ -25739,6 +27238,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "KLOCk"
             args = ["1", "OFF", "ON"]
 
@@ -25757,6 +27257,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "LANGuage"
             args = ["'string'"]
 
@@ -25774,6 +27275,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LOGGing"
             args = []
 
@@ -25783,6 +27285,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "REMote"
                 args = ["1", "OFF", "ON"]
 
@@ -25792,6 +27295,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -25822,6 +27326,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "NOPeration"
             args = []
 
@@ -25838,6 +27343,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "PASSword"
             args = ["'string'"]
 
@@ -25848,6 +27354,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CENable"
                 args = ["'string'"]
 
@@ -25873,6 +27380,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PRESet"
             args = []
 
@@ -25882,6 +27390,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DUMMy"
                 args = []
 
@@ -25898,6 +27407,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "REMote"
                 args = ["1", "OFF", "ON"]
 
@@ -25908,6 +27418,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -25933,6 +27444,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ALL, SINGle
                 """
+                __slots__ = ()
                 _cmd = "SCOPe"
                 args = ["ALL", "SINGle"]
 
@@ -25950,6 +27462,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "USER"
                 args = ["1", "OFF", "ON"]
 
@@ -25960,6 +27473,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "NAME"
                     args = ["'string'"]
 
@@ -25978,6 +27492,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -26011,6 +27526,7 @@ class ZVA_gen(Instrument):
 
             Arguments: ANORmal, HIGH, NORMal
             """
+            __slots__ = ()
             _cmd = "PRIority"
             args = ["ANORmal", "HIGH", "NORMal"]
 
@@ -26028,6 +27544,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SETTings"
             args = []
 
@@ -26037,6 +27554,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: ONCE
                 """
+                __slots__ = ()
                 _cmd = "UPDate"
                 args = ["ONCE"]
 
@@ -26061,6 +27579,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SHUTdown"
             args = []
 
@@ -26078,6 +27597,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SOUNd"
             args = []
 
@@ -26087,6 +27607,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "ALARm"
                 args = ["1", "OFF", "ON"]
 
@@ -26097,6 +27618,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -26121,6 +27643,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATus"
                 args = ["1", "OFF", "ON"]
 
@@ -26131,6 +27654,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -26163,6 +27687,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "TIME"
             args = ["1"]
 
@@ -26180,6 +27705,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "TRESet"
             args = ["1", "OFF", "ON"]
 
@@ -26190,6 +27716,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -26214,6 +27741,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "USER"
             args = []
 
@@ -26223,6 +27751,7 @@ class ZVA_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DISPlay"
                 args = []
 
@@ -26233,6 +27762,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "TITLe"
                     args = ["'string'"]
 
@@ -26257,6 +27787,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "FKEY"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -26274,6 +27805,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "KEY"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -26284,6 +27816,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "FUNCtion"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -26317,6 +27850,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "VERSion"
             args = []
 
@@ -26334,6 +27868,7 @@ class ZVA_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "WAIT"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -26357,6 +27892,7 @@ class ZVA_gen(Instrument):
 
         Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
         """
+        __slots__ = ()
         _cmd = "TRACe"
         args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -26367,6 +27903,7 @@ class ZVA_gen(Instrument):
 
             Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
             """
+            __slots__ = ()
             _cmd = "CLEar"
             args = ["MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -26385,6 +27922,7 @@ class ZVA_gen(Instrument):
 
             Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8, 'string'
             """
+            __slots__ = ()
             _cmd = "COPY"
             args = ["MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8", "'string'"]
 
@@ -26395,6 +27933,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8, 'string'
                 """
+                __slots__ = ()
                 _cmd = "MATH"
                 args = ["MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8", "'string'"]
 
@@ -26420,6 +27959,7 @@ class ZVA_gen(Instrument):
 
             Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -26429,6 +27969,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                 """
+                __slots__ = ()
                 _cmd = "RESPonse"
                 args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -26439,6 +27980,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -26463,6 +28005,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                 """
+                __slots__ = ()
                 _cmd = "STIMulus"
                 args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -26473,6 +28016,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -26511,6 +28055,7 @@ class ZVA_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "TRIGger"
         args = []
 
@@ -26520,6 +28065,7 @@ class ZVA_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SEQuence"
             args = []
 
@@ -26530,6 +28076,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "HOLDoff"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -26540,6 +28087,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "GENerator"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -26558,6 +28106,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: PALL, PSPecific
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["PALL", "PSPecific"]
 
@@ -26576,6 +28125,7 @@ class ZVA_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "PORT"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -26602,6 +28152,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 'POINt', 'PPOint', 'SEGMent', 'SWEep'
                 """
+                __slots__ = ()
                 _cmd = "LINK"
                 args = ["'POINt'", "'PPOint'", "'SEGMent'", "'SWEep'"]
 
@@ -26620,6 +28171,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: FEPulse, FESYnc, REPulse, RESYnc
                 """
+                __slots__ = ()
                 _cmd = "PULSe"
                 args = ["FEPulse", "FESYnc", "REPulse", "RESYnc"]
 
@@ -26638,6 +28190,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: NEGative, POSitive
                 """
+                __slots__ = ()
                 _cmd = "SLOPe"
                 args = ["NEGative", "POSitive"]
 
@@ -26656,6 +28209,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: EXTernal, IMMediate, MANual, PGENerator, RFPower, TIMer
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXTernal", "IMMediate", "MANual", "PGENerator", "RFPower", "TIMer"]
 
@@ -26674,6 +28228,7 @@ class ZVA_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "TIMer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 

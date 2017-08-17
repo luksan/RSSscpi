@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from ZNB_commands.inp on 2017-08-17 11:20
+# Generated from ZNB_commands.inp on 2017-08-17 15:15
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -12,6 +12,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*CAL"
         args = []
 
@@ -30,6 +31,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*CLS"
         args = []
 
@@ -48,6 +50,7 @@ class ZNB_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*ESE"
         args = ["1"]
 
@@ -66,6 +69,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*ESR"
         args = []
 
@@ -84,6 +88,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*IDN"
         args = []
 
@@ -102,6 +107,7 @@ class ZNB_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*IST"
         args = ["1"]
 
@@ -120,6 +126,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*OPC"
         args = []
 
@@ -138,6 +145,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*OPT"
         args = []
 
@@ -156,6 +164,7 @@ class ZNB_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*PCB"
         args = ["1"]
 
@@ -174,6 +183,7 @@ class ZNB_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*PRE"
         args = ["1"]
 
@@ -192,6 +202,7 @@ class ZNB_gen(Instrument):
 
         Arguments: 1, OFF, ON
         """
+        __slots__ = ()
         _cmd = "*PSC"
         args = ["1", "OFF", "ON"]
 
@@ -210,6 +221,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*RST"
         args = []
 
@@ -228,6 +240,7 @@ class ZNB_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*SRE"
         args = ["1"]
 
@@ -246,6 +259,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*STB"
         args = []
 
@@ -264,6 +278,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*TRG"
         args = []
 
@@ -282,6 +297,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*TST"
         args = []
 
@@ -300,6 +316,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*WAI"
         args = []
 
@@ -318,6 +335,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "@DCL"
         args = []
 
@@ -336,6 +354,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "@GET"
         args = []
 
@@ -354,6 +373,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "@LOC"
         args = []
 
@@ -372,6 +392,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "@REM"
         args = []
 
@@ -390,6 +411,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ABORt"
         args = []
 
@@ -407,6 +429,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "CALCulate"
         args = []
 
@@ -416,6 +439,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CLIMits"
             args = []
 
@@ -426,6 +450,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FAIL"
                 args = []
 
@@ -451,6 +476,7 @@ class ZNB_gen(Instrument):
 
             Arguments: FDATa, MDATa, NCData, SCORr1, SCORr10, SCORr11, SCORr12, SCORr13, SCORr14, SCORr15, SCORr16, SCORr17, SCORr18, SCORr19, SCORr2, SCORr20, SCORr21, SCORr22, SCORr23, SCORr24, SCORr25, SCORr26, SCORr27, SCORr3, SCORr4, SCORr5, SCORr6, SCORr7, SCORr8, SCORr9, SDATa, TSData, UCData
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = ["FDATa", "MDATa", "NCData", "SCORr1", "SCORr10", "SCORr11", "SCORr12", "SCORr13", "SCORr14", "SCORr15", "SCORr16", "SCORr17", "SCORr18", "SCORr19", "SCORr2", "SCORr20", "SCORr21", "SCORr22", "SCORr23", "SCORr24", "SCORr25", "SCORr26", "SCORr27", "SCORr3", "SCORr4", "SCORr5", "SCORr6", "SCORr7", "SCORr8", "SCORr9", "SDATa", "TSData", "UCData"]
 
@@ -461,6 +487,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: FDATa, MDATa, SDATa
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = ["FDATa", "MDATa", "SDATa"]
 
@@ -479,6 +506,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: FSIData, SDATa
                 """
+                __slots__ = ()
                 _cmd = "CALL"
                 args = ["FSIData", "SDATa"]
 
@@ -489,6 +517,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CATalog"
                     args = []
 
@@ -514,6 +543,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CHANnel"
                 args = []
 
@@ -524,6 +554,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: FDATa, MDATa, SDATa
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = ["FDATa", "MDATa", "SDATa"]
 
@@ -542,6 +573,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: FDATa, MDATa, SDATa
                     """
+                    __slots__ = ()
                     _cmd = "DALL"
                     args = ["FDATa", "MDATa", "SDATa"]
 
@@ -567,6 +599,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: FDATa, MDATa, SDATa
                 """
+                __slots__ = ()
                 _cmd = "DALL"
                 args = ["FDATa", "MDATa", "SDATa"]
 
@@ -584,6 +617,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: SDATa
                 """
+                __slots__ = ()
                 _cmd = "NSWeep"
                 args = ["SDATa"]
 
@@ -594,6 +628,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COUNt"
                     args = []
 
@@ -612,6 +647,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: SDATa
                     """
+                    __slots__ = ()
                     _cmd = "FIRSt"
                     args = ["SDATa"]
 
@@ -630,6 +666,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: SDATa
                     """
+                    __slots__ = ()
                     _cmd = "LAST"
                     args = ["SDATa"]
 
@@ -655,6 +692,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: FDATa, MDATa, SDATa
                 """
+                __slots__ = ()
                 _cmd = "SGRoup"
                 args = ["FDATa", "MDATa", "SDATa"]
 
@@ -673,6 +711,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STIMulus"
                 args = []
 
@@ -691,6 +730,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = ["'string'"]
 
@@ -717,6 +757,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "DLINe"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -727,6 +768,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -752,6 +794,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DTIMe"
             args = []
 
@@ -762,6 +805,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ALL
                 """
+                __slots__ = ()
                 _cmd = "DATA"
                 args = ["ALL"]
 
@@ -779,6 +823,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LIMit"
                 args = []
 
@@ -789,6 +834,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "FAIL"
                     args = []
 
@@ -799,6 +845,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "BEEP"
                         args = ["1", "OFF", "ON"]
 
@@ -825,6 +872,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "LIMit"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -843,6 +891,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -868,6 +917,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "POSition"
                 args = ["1"]
 
@@ -886,6 +936,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -904,6 +955,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "TARGet"
                 args = ["'string'"]
 
@@ -928,6 +980,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "EYE"
             args = []
 
@@ -937,6 +990,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DUT"
                 args = []
 
@@ -947,6 +1001,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: IDEal, MEASured
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["IDEal", "MEASured"]
 
@@ -971,6 +1026,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EMPHasis"
                 args = []
 
@@ -980,6 +1036,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CURSor"
                     args = []
 
@@ -989,6 +1046,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "POST"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1006,6 +1064,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PRE"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1031,6 +1090,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -1055,6 +1115,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EQUalization"
                 args = []
 
@@ -1064,6 +1125,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CTLE"
                     args = []
 
@@ -1074,6 +1136,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "DC"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1091,6 +1154,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "POLE"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1108,6 +1172,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "ZERO"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1133,6 +1198,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -1157,6 +1223,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INPut"
                 args = []
 
@@ -1166,6 +1233,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BPATtern"
                     args = []
 
@@ -1176,6 +1244,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: PRBS, USER
                         """
+                        __slots__ = ()
                         _cmd = "TYPE"
                         args = ["PRBS", "USER"]
 
@@ -1201,6 +1270,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DRATe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1218,6 +1288,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LENGth"
                     args = []
 
@@ -1228,6 +1299,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "BITS"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1246,6 +1318,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: L10, L11, L13, L15, L5, L7, L9
                         """
+                        __slots__ = ()
                         _cmd = "PRBS"
                         args = ["L10", "L11", "L13", "L15", "L5", "L7", "L9"]
 
@@ -1271,6 +1344,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "OLEVel"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1288,6 +1362,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RTIMe"
                     args = []
 
@@ -1298,6 +1373,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "DATA"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1316,6 +1392,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: T1_9, T2_8
                         """
+                        __slots__ = ()
                         _cmd = "THReshold"
                         args = ["T1_9", "T2_8"]
 
@@ -1341,6 +1418,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "ZLEVel"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1365,6 +1443,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "JITTer"
                 args = []
 
@@ -1374,6 +1453,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DIRac"
                     args = []
 
@@ -1384,6 +1464,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "DELTa"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1402,6 +1483,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PROBability"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1426,6 +1508,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PERiodic"
                     args = []
 
@@ -1436,6 +1519,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "FREQuency"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1454,6 +1538,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "MAGNitude"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1472,6 +1557,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PHASe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1496,6 +1582,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RANDom"
                     args = []
 
@@ -1506,6 +1593,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STDDeviation"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1531,6 +1619,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -1548,6 +1637,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TYPE"
                     args = []
 
@@ -1558,6 +1648,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "DIRac"
                         args = ["1", "OFF", "ON"]
 
@@ -1576,6 +1667,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "PERiodic"
                         args = ["1", "OFF", "ON"]
 
@@ -1594,6 +1686,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "RANDom"
                         args = ["1", "OFF", "ON"]
 
@@ -1612,6 +1705,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "USER"
                         args = ["1", "OFF", "ON"]
 
@@ -1643,6 +1737,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: AUTO
                 """
+                __slots__ = ()
                 _cmd = "MASK"
                 args = ["AUTO"]
 
@@ -1652,6 +1747,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CENTer"
                     args = []
 
@@ -1662,6 +1758,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "HORizontal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1680,6 +1777,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "VERTical"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1705,6 +1803,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = []
 
@@ -1723,6 +1822,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "FAIL"
                     args = []
 
@@ -1733,6 +1833,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "BEEP"
                         args = ["1", "OFF", "ON"]
 
@@ -1751,6 +1852,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: RATE, SAMPles
                         """
+                        __slots__ = ()
                         _cmd = "CONDition"
                         args = ["RATE", "SAMPles"]
 
@@ -1776,6 +1878,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SHAPe"
                     args = []
 
@@ -1785,6 +1888,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "BOTTom"
                         args = []
 
@@ -1795,6 +1899,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "HORizontal"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1813,6 +1918,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -1831,6 +1937,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "VERTical"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1855,6 +1962,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "POLYgon"
                         args = []
 
@@ -1865,6 +1973,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "HORizontal"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1883,6 +1992,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -1901,6 +2011,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: HEXagon, OCTogon, RECTangle
                             """
+                            __slots__ = ()
                             _cmd = "TYPE"
                             args = ["HEXagon", "OCTogon", "RECTangle"]
 
@@ -1919,6 +2030,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "VERTical"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1943,6 +2055,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "TOP"
                         args = []
 
@@ -1953,6 +2066,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "HORizontal"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -1971,6 +2085,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -1989,6 +2104,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "VERTical"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2021,6 +2137,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "SHOW"
                     args = ["1", "OFF", "ON"]
 
@@ -2039,6 +2156,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -2056,6 +2174,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "VIOLation"
                     args = []
 
@@ -2066,6 +2185,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RATE"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2084,6 +2204,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "TOLerance"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2115,6 +2236,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASurement"
                 args = []
 
@@ -2125,6 +2247,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = []
 
@@ -2143,6 +2266,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -2167,6 +2291,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NOISe"
                 args = []
 
@@ -2177,6 +2302,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RMS"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2195,6 +2321,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -2220,6 +2347,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -2237,6 +2365,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STIMulus"
                 args = []
 
@@ -2247,6 +2376,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "ENCoder"
                     args = ["1", "OFF", "ON"]
 
@@ -2265,6 +2395,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "LOWPass"
                     args = ["1", "OFF", "ON"]
 
@@ -2283,6 +2414,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "SCRambler"
                     args = ["1", "OFF", "ON"]
 
@@ -2308,6 +2440,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: DUT, EMPHasis, EQUalization, JITTer, NOISe, STIMulus
                 """
+                __slots__ = ()
                 _cmd = "VIEW"
                 args = ["DUT", "EMPHasis", "EQUalization", "JITTer", "NOISe", "STIMulus"]
 
@@ -2332,6 +2465,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FILTer"
             args = []
 
@@ -2341,6 +2475,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "GATE"
                 args = []
 
@@ -2350,6 +2485,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: BPASs, NOTCh
                     """
+                    __slots__ = ()
                     _cmd = "TIME"
                     args = ["BPASs", "NOTCh"]
 
@@ -2360,6 +2496,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "AOFFset"
                         args = ["1", "OFF", "ON"]
 
@@ -2378,6 +2515,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "CENTer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2396,6 +2534,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "DCHebyshev"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2414,6 +2553,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: MAXimum, MINimum, NORMal, WIDE
                         """
+                        __slots__ = ()
                         _cmd = "SHAPe"
                         args = ["MAXimum", "MINimum", "NORMal", "WIDE"]
 
@@ -2432,6 +2572,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "SHOW"
                         args = ["1", "OFF", "ON"]
 
@@ -2450,6 +2591,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "SPAN"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2468,6 +2610,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2486,6 +2629,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -2504,6 +2648,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2522,6 +2667,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: BPASs, NOTCh
                         """
+                        __slots__ = ()
                         _cmd = "TYPE"
                         args = ["BPASs", "NOTCh"]
 
@@ -2540,6 +2686,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: BOHMan, DCHebyshev, HAMMing, HANNing, RECT
                         """
+                        __slots__ = ()
                         _cmd = "WINDow"
                         args = ["BOHMan", "DCHebyshev", "HAMMing", "HANNing", "RECT"]
 
@@ -2579,6 +2726,7 @@ class ZNB_gen(Instrument):
 
             Arguments: COMPlex, GDELay, IMAGinary, ISMith, MAGNitude, MLINear, MLOGarithmic, PHASe, POLar, REAL, SMITh, SWR, UPHase
             """
+            __slots__ = ()
             _cmd = "FORMat"
             args = ["COMPlex", "GDELay", "IMAGinary", "ISMith", "MAGNitude", "MLINear", "MLOGarithmic", "PHASe", "POLar", "REAL", "SMITh", "SWR", "UPHase"]
 
@@ -2589,6 +2737,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: POWer, VOLTage
                 """
+                __slots__ = ()
                 _cmd = "WQUType"
                 args = ["POWer", "VOLTage"]
 
@@ -2614,6 +2763,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "GDAPerture"
             args = []
 
@@ -2624,6 +2774,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SCOunt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2648,6 +2799,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LDEViation"
             args = []
 
@@ -2657,6 +2809,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ONCE
                 """
+                __slots__ = ()
                 _cmd = "AUTO"
                 args = ["ONCE"]
 
@@ -2673,6 +2826,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CONStant"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2689,6 +2843,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ELENgth"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2705,6 +2860,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: OFF, ON, TRACking
                 """
+                __slots__ = ()
                 _cmd = "MODE"
                 args = ["OFF", "ON", "TRACking"]
 
@@ -2721,6 +2877,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SLOPe"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2744,6 +2901,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LIMit"
             args = []
 
@@ -2753,6 +2911,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "CIRCle"
                 args = ["1", "OFF", "ON"]
 
@@ -2763,6 +2922,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CLEar"
                     args = []
 
@@ -2781,6 +2941,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2798,6 +2959,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "DISPlay"
                     args = ["1", "OFF", "ON"]
 
@@ -2808,6 +2970,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -2833,6 +2996,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "FAIL"
                     args = []
 
@@ -2843,6 +3007,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "ALL"
                         args = ["'string'"]
 
@@ -2868,6 +3033,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "SOUNd"
                     args = ["1", "OFF", "ON"]
 
@@ -2878,6 +3044,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -2903,6 +3070,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -2928,6 +3096,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = []
 
@@ -2945,6 +3114,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CONTrol"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2955,6 +3125,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -2973,6 +3144,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: FLIN, FLOG, FSEG, FSINgle, PLIN, PLOG, PSINgle, TLIN, TLOG
                     """
+                    __slots__ = ()
                     _cmd = "DOMain"
                     args = ["FLIN", "FLOG", "FSEG", "FSINgle", "PLIN", "PLOG", "PSINgle", "TLIN", "TLOG"]
 
@@ -2991,6 +3163,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3016,6 +3189,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "DATA"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3033,6 +3207,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "DCIRcle"
                 args = ["1", "OFF", "ON"]
 
@@ -3043,6 +3218,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CLEar"
                     args = []
 
@@ -3061,6 +3237,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3078,6 +3255,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "DISPlay"
                     args = ["1", "OFF", "ON"]
 
@@ -3088,6 +3266,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -3113,6 +3292,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3137,6 +3317,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DELete"
                 args = []
 
@@ -3147,6 +3328,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -3171,6 +3353,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "DISPlay"
                 args = ["1", "OFF", "ON"]
 
@@ -3181,6 +3364,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3206,6 +3390,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FAIL"
                 args = []
 
@@ -3216,6 +3401,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = ["'string'"]
 
@@ -3241,6 +3427,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "LOWer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3251,6 +3438,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3269,6 +3457,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "FEED"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3287,6 +3476,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3305,6 +3495,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3329,6 +3520,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RDOMain"
                 args = []
 
@@ -3339,6 +3531,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: S, SINV, Y, YREL, Z, ZREL
                     """
+                    __slots__ = ()
                     _cmd = "COMPlex"
                     args = ["S", "SINV", "Y", "YREL", "Z", "ZREL"]
 
@@ -3357,6 +3550,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: C, COMPlex, GDELay, IMAGinary, L, MAGNitude, PHASe, REAL, SWR
                     """
+                    __slots__ = ()
                     _cmd = "FORMat"
                     args = ["C", "COMPlex", "GDELay", "IMAGinary", "L", "MAGNitude", "PHASe", "REAL", "SWR"]
 
@@ -3375,6 +3569,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: DB, LINear, LOGarithmic, SIC
                     """
+                    __slots__ = ()
                     _cmd = "SPACing"
                     args = ["DB", "LINear", "LOGarithmic", "SIC"]
 
@@ -3399,6 +3594,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SEGMent"
                 args = []
 
@@ -3408,6 +3604,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "AMPLitude"
                     args = []
 
@@ -3418,6 +3615,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3436,6 +3634,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3461,6 +3660,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COUNt"
                     args = []
 
@@ -3478,6 +3678,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STIMulus"
                     args = []
 
@@ -3488,6 +3689,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3506,6 +3708,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3531,6 +3734,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: LMAX, LMIN, OFF
                     """
+                    __slots__ = ()
                     _cmd = "TYPE"
                     args = ["LMAX", "LMIN", "OFF"]
 
@@ -3555,6 +3759,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SOUNd"
                 args = ["1", "OFF", "ON"]
 
@@ -3565,6 +3770,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3590,6 +3796,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -3600,6 +3807,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: LEFT, MID, RIGHt
                     """
+                    __slots__ = ()
                     _cmd = "AREA"
                     args = ["LEFT", "MID", "RIGHt"]
 
@@ -3625,6 +3833,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "TTLout"
                 args = ["1", "OFF", "ON"]
 
@@ -3635,6 +3844,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3659,6 +3869,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "UPPer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3669,6 +3880,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3687,6 +3899,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "FEED"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3705,6 +3918,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3723,6 +3937,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3754,6 +3969,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "MARKer"
             args = ["1", "OFF", "ON"]
 
@@ -3764,6 +3980,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AOFF"
                 args = []
 
@@ -3782,6 +3999,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "BWIDth"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3799,6 +4017,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "COUPled"
                 args = ["1", "OFF", "ON"]
 
@@ -3809,6 +4028,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3833,6 +4053,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DEFault"
                 args = []
 
@@ -3843,6 +4064,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ADMittance, COMPlex, DEFault, GDELay, IMAGinary, IMPedance, LINPhase, LOGPhase, MDB, MDPHase, MIMPedance, MLINear, MLOGarithmic, MLPHase, PHASe, POLar, REAL, SWR
                     """
+                    __slots__ = ()
                     _cmd = "FORMat"
                     args = ["ADMittance", "COMPlex", "DEFault", "GDELay", "IMAGinary", "IMPedance", "LINPhase", "LOGPhase", "MDB", "MDPHase", "MIMPedance", "MLINear", "MLOGarithmic", "MLPHase", "PHASe", "POLar", "REAL", "SWR"]
 
@@ -3867,6 +4089,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "DELTa"
                 args = ["1", "OFF", "ON"]
 
@@ -3877,6 +4100,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -3902,6 +4126,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ADMittance, COMPlex, DEFault, GDELay, IMAGinary, IMPedance, LINPhase, LOGPhase, MDB, MDPHase, MIMPedance, MLINear, MLOGarithmic, MLPHase, PHASe, POLar, REAL, SWR
                 """
+                __slots__ = ()
                 _cmd = "FORMat"
                 args = ["ADMittance", "COMPlex", "DEFault", "GDELay", "IMAGinary", "IMPedance", "LINPhase", "LOGPhase", "MDB", "MDPHase", "MIMPedance", "MLINear", "MLOGarithmic", "MLPHase", "PHASe", "POLar", "REAL", "SWR"]
 
@@ -3919,6 +4144,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: BFILter, LPEak, LTARget, MAXimum, MINimum, MMAXimum, MMINimum, NPEak, RPEak, RTARget, TARGet
                 """
+                __slots__ = ()
                 _cmd = "FUNCtion"
                 args = ["BFILter", "LPEak", "LTARget", "MAXimum", "MINimum", "MMAXimum", "MMINimum", "NPEak", "RPEak", "RTARget", "TARGet"]
 
@@ -3929,6 +4155,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "BWIDth"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -3939,6 +4166,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "GMCenter"
                         args = ["1", "OFF", "ON"]
 
@@ -3957,6 +4185,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: BPABsolute, BPASs, BPRMarker, BSABsolute, BSRMarker, BSTop, NONE
                         """
+                        __slots__ = ()
                         _cmd = "MODE"
                         args = ["BPABsolute", "BPASs", "BPRMarker", "BSABsolute", "BSRMarker", "BSTop", "NONE"]
 
@@ -3983,6 +4212,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CENTer"
                     args = []
 
@@ -4000,6 +4230,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DELTa"
                     args = []
 
@@ -4010,6 +4241,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -4034,6 +4266,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DOMain"
                     args = []
 
@@ -4043,6 +4276,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "USER"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4053,6 +4287,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "RANGe"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4071,6 +4306,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "SHOW"
                             args = ["1", "OFF", "ON"]
 
@@ -4089,6 +4325,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "STARt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4107,6 +4344,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "STOP"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4139,6 +4377,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: BFILter, LPEak, LTARget, MAXimum, MINimum, MMAXimum, MMINimum, NPEak, RPEak, RTARget, TARGet
                     """
+                    __slots__ = ()
                     _cmd = "EXECute"
                     args = ["BFILter", "LPEak", "LTARget", "MAXimum", "MINimum", "MMAXimum", "MMINimum", "NPEak", "RPEak", "RTARget", "TARGet"]
 
@@ -4157,6 +4396,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RESult"
                     args = []
 
@@ -4175,6 +4415,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: BFILter, LPEak, LTARget, MAXimum, MINimum, MMAXimum, MMINimum, NPEak, RPEak, RTARget, TARGet
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["BFILter", "LPEak", "LTARget", "MAXimum", "MINimum", "MMAXimum", "MMINimum", "NPEak", "RPEak", "RTARget", "TARGet"]
 
@@ -4193,6 +4434,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SPAN"
                     args = []
 
@@ -4211,6 +4453,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STARt"
                     args = []
 
@@ -4229,6 +4472,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STOP"
                     args = []
 
@@ -4247,6 +4491,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TARGet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4272,6 +4517,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MAXimum"
                 args = []
 
@@ -4290,6 +4536,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MINimum"
                 args = []
 
@@ -4308,6 +4555,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: CONTinuous, DISCrete
                 """
+                __slots__ = ()
                 _cmd = "MODE"
                 args = ["CONTinuous", "DISCrete"]
 
@@ -4326,6 +4574,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -4343,6 +4592,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "REFerence"
                 args = ["1", "OFF", "ON"]
 
@@ -4353,6 +4603,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: CONTinuous, DISCrete
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["CONTinuous", "DISCrete"]
 
@@ -4371,6 +4622,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "NAME"
                     args = ["'string'"]
 
@@ -4389,6 +4641,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -4407,6 +4660,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ARBitrary, FIXed, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "TYPE"
                     args = ["ARBitrary", "FIXed", "NORMal"]
 
@@ -4425,6 +4679,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "X"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4443,6 +4698,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "Y"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4467,6 +4723,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SEARch"
                 args = []
 
@@ -4476,6 +4733,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BFILter"
                     args = []
 
@@ -4485,6 +4743,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "RESult"
                         args = ["1", "OFF", "ON"]
 
@@ -4495,6 +4754,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -4505,6 +4765,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: LEFT, MID, RIGHt
                                 """
+                                __slots__ = ()
                                 _cmd = "AREA"
                                 args = ["LEFT", "MID", "RIGHt"]
 
@@ -4545,6 +4806,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: DEFault, IMAGinary, MLINear, MLOGarithmic, PHASe, REAL, SWR, UPHase
                     """
+                    __slots__ = ()
                     _cmd = "FORMat"
                     args = ["DEFault", "IMAGinary", "MLINear", "MLOGarithmic", "PHASe", "REAL", "SWR", "UPHase"]
 
@@ -4563,6 +4825,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "IMMediate"
                     args = []
 
@@ -4581,6 +4844,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LEFT"
                     args = []
 
@@ -4599,6 +4863,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "NEXT"
                     args = []
 
@@ -4617,6 +4882,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RIGHt"
                     args = []
 
@@ -4635,6 +4901,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "TRACking"
                     args = ["1", "OFF", "ON"]
 
@@ -4660,6 +4927,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -4670,6 +4938,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: LEFT, MID, RIGHt
                     """
+                    __slots__ = ()
                     _cmd = "AREA"
                     args = ["LEFT", "MID", "RIGHt"]
 
@@ -4696,6 +4965,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "TARGet"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4714,6 +4984,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ARBitrary, FIXed, NORMal
                 """
+                __slots__ = ()
                 _cmd = "TYPE"
                 args = ["ARBitrary", "FIXed", "NORMal"]
 
@@ -4732,6 +5003,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "X"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4750,6 +5022,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "Y"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -4774,6 +5047,7 @@ class ZNB_gen(Instrument):
 
             Arguments: (expression)
             """
+            __slots__ = ()
             _cmd = "MATH"
             args = ["(expression)"]
 
@@ -4783,6 +5057,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: (expression)
                 """
+                __slots__ = ()
                 _cmd = "EXPRession"
                 args = ["(expression)"]
 
@@ -4793,6 +5068,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: (expression)
                     """
+                    __slots__ = ()
                     _cmd = "DEFine"
                     args = ["(expression)"]
 
@@ -4811,6 +5087,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SDEFine"
                     args = ["'string'"]
 
@@ -4836,6 +5113,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ADD, DIVide, MULTiply, NORMal, SUBTract
                 """
+                __slots__ = ()
                 _cmd = "FUNCtion"
                 args = ["ADD", "DIVide", "MULTiply", "NORMal", "SUBTract"]
 
@@ -4854,6 +5132,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEMorize"
                 args = []
 
@@ -4872,6 +5151,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -4889,6 +5169,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "WUNit"
                 args = ["1", "OFF", "ON"]
 
@@ -4899,6 +5180,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -4930,6 +5212,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PARameter"
             args = []
 
@@ -4940,6 +5223,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -4950,6 +5234,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SENDed"
                     args = []
 
@@ -4976,6 +5261,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "DEFine"
                 args = ["'string'"]
 
@@ -4985,6 +5271,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "EXTended"
                     args = ["'string'"]
 
@@ -5002,6 +5289,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SGRoup"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -5028,6 +5316,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "DELete"
                 args = ["'string'"]
 
@@ -5038,6 +5327,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -5056,6 +5346,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CALL"
                     args = []
 
@@ -5074,6 +5365,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CMEMory"
                     args = []
 
@@ -5092,6 +5384,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MEMory"
                     args = []
 
@@ -5110,6 +5403,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SGRoup"
                     args = []
 
@@ -5136,6 +5430,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = ["'string'"]
 
@@ -5146,6 +5441,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SENDed"
                     args = ["'string'"]
 
@@ -5171,6 +5467,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NFIGure"
                 args = []
 
@@ -5180,6 +5477,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "CSETtings"
                     args = ["'string'"]
 
@@ -5204,6 +5502,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SDEFine"
                 args = ["'string'"]
 
@@ -5214,6 +5513,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SENDed"
                     args = ["'string'"]
 
@@ -5240,6 +5540,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SELect"
                 args = ["'string'"]
 
@@ -5265,6 +5566,7 @@ class ZNB_gen(Instrument):
 
             Arguments: MAX, MIN, OFF
             """
+            __slots__ = ()
             _cmd = "PHOLd"
             args = ["MAX", "MIN", "OFF"]
 
@@ -5282,6 +5584,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "RIPPle"
             args = []
 
@@ -5292,6 +5595,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = []
 
@@ -5309,6 +5613,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONTrol"
                 args = []
 
@@ -5319,6 +5624,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: FLIN, FLOG, FSEG, FSINgle, PLIN, PLOG, PSINgle, TLIN, TLOG
                     """
+                    __slots__ = ()
                     _cmd = "DOMain"
                     args = ["FLIN", "FLOG", "FSEG", "FSINgle", "PLIN", "PLOG", "PSINgle", "TLIN", "TLOG"]
 
@@ -5344,6 +5650,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "DATA"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -5361,6 +5668,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DELete"
                 args = []
 
@@ -5371,6 +5679,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -5395,6 +5704,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "DISPlay"
                 args = ["1", "OFF", "ON"]
 
@@ -5404,6 +5714,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RESult"
                     args = []
 
@@ -5413,6 +5724,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "ALL"
                         args = ["1", "OFF", "ON"]
 
@@ -5423,6 +5735,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -5455,6 +5768,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -5480,6 +5794,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FAIL"
                 args = []
 
@@ -5490,6 +5805,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = ["'string'"]
 
@@ -5515,6 +5831,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RDOMain"
                 args = []
 
@@ -5525,6 +5842,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: C, COMPlex, GDELay, IMAGinary, L, MAGNitude, PHASe, REAL, SWR
                     """
+                    __slots__ = ()
                     _cmd = "FORMat"
                     args = ["C", "COMPlex", "GDELay", "IMAGinary", "L", "MAGNitude", "PHASe", "REAL", "SWR"]
 
@@ -5549,6 +5867,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SEGMent"
                 args = ["1", "OFF", "ON"]
 
@@ -5559,6 +5878,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COUNt"
                     args = []
 
@@ -5577,6 +5897,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "LIMit"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -5595,6 +5916,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RESult"
                     args = []
 
@@ -5613,6 +5935,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -5630,6 +5953,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STIMulus"
                     args = []
 
@@ -5640,6 +5964,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -5658,6 +5983,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -5689,6 +6015,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SOUNd"
                 args = ["1", "OFF", "ON"]
 
@@ -5699,6 +6026,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -5724,6 +6052,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -5734,6 +6063,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: LEFT, MID, RIGHt
                     """
+                    __slots__ = ()
                     _cmd = "AREA"
                     args = ["LEFT", "MID", "RIGHt"]
 
@@ -5766,6 +6096,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "SMOothing"
             args = ["1", "OFF", "ON"]
 
@@ -5776,6 +6107,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "APERture"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -5794,6 +6126,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -5818,6 +6151,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "STATistics"
             args = ["1", "OFF", "ON"]
 
@@ -5827,6 +6161,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DOMain"
                 args = []
 
@@ -5837,6 +6172,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "USER"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -5847,6 +6183,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "SHOW"
                         args = ["1", "OFF", "ON"]
 
@@ -5865,6 +6202,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -5883,6 +6221,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -5915,6 +6254,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "EPDelay"
                 args = ["1", "OFF", "ON"]
 
@@ -5925,6 +6265,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -5950,6 +6291,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ADMittance, IMPedance, ZVAB
                 """
+                __slots__ = ()
                 _cmd = "FORMat"
                 args = ["ADMittance", "IMPedance", "ZVAB"]
 
@@ -5967,6 +6309,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "MMPTpeak"
                 args = ["1", "OFF", "ON"]
 
@@ -5977,6 +6320,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -6001,6 +6345,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "MSTDdev"
                 args = ["1", "OFF", "ON"]
 
@@ -6011,6 +6356,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -6035,6 +6381,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NLINear"
                 args = []
 
@@ -6044,6 +6391,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "COMP"
                     args = ["1", "OFF", "ON"]
 
@@ -6054,6 +6402,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "LEVel"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6072,6 +6421,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "RESult"
                         args = []
 
@@ -6090,6 +6440,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -6122,6 +6473,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ALL, ELENgth, FLATness, GAIN, MAX, MEAN, MIN, PDELay, PEAK2p, PTPeak, RMS, SLOPe, STDDev
                 """
+                __slots__ = ()
                 _cmd = "RESult"
                 args = ["ALL", "ELENgth", "FLATness", "GAIN", "MAX", "MEAN", "MIN", "PDELay", "PEAK2p", "PTPeak", "RMS", "SLOPe", "STDDev"]
 
@@ -6139,6 +6491,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "RMS"
                 args = ["1", "OFF", "ON"]
 
@@ -6149,6 +6502,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -6173,6 +6527,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SFLatness"
                 args = ["1", "OFF", "ON"]
 
@@ -6183,6 +6538,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -6208,6 +6564,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -6218,6 +6575,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: LEFT, MID, RIGHt
                     """
+                    __slots__ = ()
                     _cmd = "AREA"
                     args = ["LEFT", "MID", "RIGHt"]
 
@@ -6250,6 +6608,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TRANsform"
             args = []
 
@@ -6260,6 +6619,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: S, Y, Z
                 """
+                __slots__ = ()
                 _cmd = "COMPlex"
                 args = ["S", "Y", "Z"]
 
@@ -6277,6 +6637,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMPedance"
                 args = []
 
@@ -6287,6 +6648,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: PWAVes, TWAVes
                     """
+                    __slots__ = ()
                     _cmd = "RNORmal"
                     args = ["PWAVes", "TWAVes"]
 
@@ -6311,6 +6673,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: BPASs, LPASs
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = ["BPASs", "LPASs"]
 
@@ -6321,6 +6684,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "CENTer"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6339,6 +6703,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DCHebyshev"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6357,6 +6722,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: KDFRequency, KFSTop, KSDFrequency
                     """
+                    __slots__ = ()
                     _cmd = "LPASs"
                     args = ["KDFRequency", "KFSTop", "KSDFrequency"]
 
@@ -6367,6 +6733,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "DCSParam"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6377,6 +6744,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "CONTinuous"
                             args = ["1", "OFF", "ON"]
 
@@ -6395,6 +6763,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "EXTRapolate"
                             args = []
 
@@ -6429,6 +6798,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LPFRequency"
                     args = []
 
@@ -6446,6 +6816,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: CHIRp
                     """
+                    __slots__ = ()
                     _cmd = "METHod"
                     args = ["CHIRp"]
 
@@ -6462,6 +6833,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RESolution"
                     args = []
 
@@ -6472,6 +6844,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "EFACtor"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6497,6 +6870,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SPAN"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6515,6 +6889,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "STARt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6533,6 +6908,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -6551,6 +6927,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: IMPulse, STEP
                     """
+                    __slots__ = ()
                     _cmd = "STIMulus"
                     args = ["IMPulse", "STEP"]
 
@@ -6569,6 +6946,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "STOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -6587,6 +6965,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: BPASs, LPASs
                     """
+                    __slots__ = ()
                     _cmd = "TYPE"
                     args = ["BPASs", "LPASs"]
 
@@ -6605,6 +6984,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: BOHMan, DCHebyshev, HAMMing, HANNing, RECT
                     """
+                    __slots__ = ()
                     _cmd = "WINDow"
                     args = ["BOHMan", "DCHebyshev", "HAMMing", "HANNing", "RECT"]
 
@@ -6623,6 +7003,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: DISTance, TIME
                     """
+                    __slots__ = ()
                     _cmd = "XAXis"
                     args = ["DISTance", "TIME"]
 
@@ -6647,6 +7028,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "VNETworks"
                 args = []
 
@@ -6656,6 +7038,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BALanced"
                     args = []
 
@@ -6665,6 +7048,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["1", "OFF", "ON"]
 
@@ -6674,6 +7058,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -6684,6 +7069,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, GSSG, GSSL, LSSC, LSSG, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, STSC, STSG
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "GSSG", "GSSL", "LSSC", "LSSG", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "STSC", "STSG"]
 
@@ -6702,6 +7088,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: FPORts, IPORts
                                 """
+                                __slots__ = ()
                                 _cmd = "DATA"
                                 args = ["FPORts", "IPORts"]
 
@@ -6720,6 +7107,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: GSSG, GSSL, LSSG, SGGS, SGLS, SGST, SLGS, STSG
                                 """
+                                __slots__ = ()
                                 _cmd = "G"
                                 args = ["GSSG", "GSSL", "LSSG", "SGGS", "SGLS", "SGST", "SLGS", "STSG"]
 
@@ -6738,6 +7126,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSL, GSSL, LSSC, LSSG, LSSL, SCLS, SGLS, SLCS, SLGS, SLLS, SLST, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCLS", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSL"]
 
@@ -6756,6 +7145,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGLS, SLCS, SLGS, SLLS, SLST, STSC, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -6781,6 +7171,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -6799,6 +7190,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: CSSC, CSSL, FIMPort, GSSG, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, SLLS, SLST, STSC, STSG, STSL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "GSSG", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSG", "STSL"]
 
@@ -6823,6 +7215,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["1", "OFF", "ON"]
 
@@ -6832,6 +7225,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -6842,6 +7236,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, GSSG, GSSL, LSSC, LSSG, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, STSC, STSG
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "GSSG", "GSSL", "LSSC", "LSSG", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "STSC", "STSG"]
 
@@ -6860,6 +7255,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: FPORts, IPORts
                                 """
+                                __slots__ = ()
                                 _cmd = "DATA"
                                 args = ["FPORts", "IPORts"]
 
@@ -6878,6 +7274,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: GSSG, GSSL, LSSG, SGGS, SGLS, SGST, SLGS, STSG
                                 """
+                                __slots__ = ()
                                 _cmd = "G"
                                 args = ["GSSG", "GSSL", "LSSG", "SGGS", "SGLS", "SGST", "SLGS", "STSG"]
 
@@ -6896,6 +7293,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSL, GSSL, LSSC, LSSG, LSSL, SCLS, SGLS, SLCS, SLGS, SLLS, SLST, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCLS", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSL"]
 
@@ -6914,6 +7312,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGLS, SLCS, SLGS, SLLS, SLST, STSC, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -6939,6 +7338,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -6957,6 +7357,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: CSSC, CSSL, FIMPort, GSSG, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, SLLS, SLST, STSC, STSG, STSL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "GSSG", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSG", "STSL"]
 
@@ -6988,6 +7389,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DIFFerential"
                     args = []
 
@@ -6997,6 +7399,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["1", "OFF", "ON"]
 
@@ -7006,6 +7409,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -7016,6 +7420,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SHLC
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["SHLC"]
 
@@ -7034,6 +7439,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: FPORts, IPORts
                                 """
+                                __slots__ = ()
                                 _cmd = "DATA"
                                 args = ["FPORts", "IPORts"]
 
@@ -7052,6 +7458,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SHLC
                                 """
+                                __slots__ = ()
                                 _cmd = "G"
                                 args = ["SHLC"]
 
@@ -7070,6 +7477,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SHLC
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["SHLC"]
 
@@ -7088,6 +7496,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SHLC
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["SHLC"]
 
@@ -7113,6 +7522,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -7131,6 +7541,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: FIMPort, SHLC
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["FIMPort", "SHLC"]
 
@@ -7162,6 +7573,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "FSIMulator"
                     args = ["1", "OFF", "ON"]
 
@@ -7172,6 +7584,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -7196,6 +7609,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "GLOop"
                     args = []
 
@@ -7205,6 +7619,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["1", "OFF", "ON"]
 
@@ -7214,6 +7629,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -7224,6 +7640,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SC, SG
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["SC", "SG"]
 
@@ -7242,6 +7659,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SG
                                 """
+                                __slots__ = ()
                                 _cmd = "G"
                                 args = ["SG"]
 
@@ -7260,6 +7678,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["SL"]
 
@@ -7278,6 +7697,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SC, SL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["SC", "SL"]
 
@@ -7303,6 +7723,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -7321,6 +7742,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: FIMPort, SC, SG, SL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["FIMPort", "SC", "SG", "SL"]
 
@@ -7345,6 +7767,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["1", "OFF", "ON"]
 
@@ -7354,6 +7777,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -7364,6 +7788,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SC, SG
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["SC", "SG"]
 
@@ -7382,6 +7807,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SG
                                 """
+                                __slots__ = ()
                                 _cmd = "G"
                                 args = ["SG"]
 
@@ -7400,6 +7826,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["SL"]
 
@@ -7418,6 +7845,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: SC, SL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["SC", "SL"]
 
@@ -7443,6 +7871,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -7461,6 +7890,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: FIMPort, SC, SG, SL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["FIMPort", "SC", "SG", "SL"]
 
@@ -7492,6 +7922,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PPAir"
                     args = []
 
@@ -7501,6 +7932,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["1", "OFF", "ON"]
 
@@ -7511,6 +7943,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -7529,6 +7962,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DELete"
                             args = []
 
@@ -7546,6 +7980,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -7555,6 +7990,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, GSSG, GSSL, LSSC, LSSG, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, STSC, STSG
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "GSSG", "GSSL", "LSSC", "LSSG", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "STSC", "STSG"]
 
@@ -7571,6 +8007,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: GSSG, GSSL, LSSG, SGGS, SGLS, SGST, SLGS, STSG
                                 """
+                                __slots__ = ()
                                 _cmd = "G"
                                 args = ["GSSG", "GSSL", "LSSG", "SGGS", "SGLS", "SGST", "SLGS", "STSG"]
 
@@ -7587,6 +8024,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSL, GSSL, LSSC, LSSG, LSSL, SCLS, SGLS, SLCS, SLGS, SLLS, SLST, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCLS", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSL"]
 
@@ -7603,6 +8041,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGLS, SLCS, SLGS, SLLS, SLST, STSC, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -7627,6 +8066,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -7645,6 +8085,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: CSSC, CSSL, FIMPort, GSSG, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, SLLS, SLST, STSC, STSG, STSL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "GSSG", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSG", "STSL"]
 
@@ -7669,6 +8110,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["1", "OFF", "ON"]
 
@@ -7679,6 +8121,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -7697,6 +8140,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DELete"
                             args = []
 
@@ -7714,6 +8158,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -7723,6 +8168,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, GSSG, GSSL, LSSC, LSSG, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, STSC, STSG
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "GSSG", "GSSL", "LSSC", "LSSG", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "STSC", "STSG"]
 
@@ -7739,6 +8185,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: GSSG, GSSL, LSSG, SGGS, SGLS, SGST, SLGS, STSG
                                 """
+                                __slots__ = ()
                                 _cmd = "G"
                                 args = ["GSSG", "GSSL", "LSSG", "SGGS", "SGLS", "SGST", "SLGS", "STSG"]
 
@@ -7755,6 +8202,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSL, GSSL, LSSC, LSSG, LSSL, SCLS, SGLS, SLCS, SLGS, SLLS, SLST, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCLS", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSL"]
 
@@ -7771,6 +8219,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSSC, CSSL, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGLS, SLCS, SLGS, SLLS, SLST, STSC, STSL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSL"]
 
@@ -7795,6 +8244,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -7813,6 +8263,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: CSSC, CSSL, FIMPort, GSSG, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, SLLS, SLST, STSC, STSG, STSL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "GSSG", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSG", "STSL"]
 
@@ -7844,6 +8295,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PSET"
                     args = []
 
@@ -7853,6 +8305,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = []
 
@@ -7863,6 +8316,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -7887,6 +8341,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = []
 
@@ -7897,6 +8352,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -7928,6 +8384,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SENDed"
                     args = []
 
@@ -7937,6 +8394,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["1", "OFF", "ON"]
 
@@ -7946,6 +8404,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -7956,6 +8415,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSC, CSL, GSG, GSL, LSC, LSG, SCC, SCL, SGG, SGL, SHLC, SLC, SLG
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSC", "CSL", "GSG", "GSL", "LSC", "LSG", "SCC", "SCL", "SGG", "SGL", "SHLC", "SLC", "SLG"]
 
@@ -7974,6 +8434,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: FPORts, IPORts
                                 """
+                                __slots__ = ()
                                 _cmd = "DATA"
                                 args = ["FPORts", "IPORts"]
 
@@ -7992,6 +8453,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: GSG, GSL, LSG, SGG, SGL, SHLC, SLG
                                 """
+                                __slots__ = ()
                                 _cmd = "G"
                                 args = ["GSG", "GSL", "LSG", "SGG", "SGL", "SHLC", "SLG"]
 
@@ -8010,6 +8472,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSL, GSL, LSC, LSG, LSL, SCL, SGL, SHLC, SLC, SLG, SLL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSL", "GSL", "LSC", "LSG", "LSL", "SCL", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
@@ -8028,6 +8491,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSC, CSL, GSL, LSC, LSG, LSL, SCC, SCL, SGL, SHLC, SLC, SLG, SLL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSC", "CSL", "GSL", "LSC", "LSG", "LSL", "SCC", "SCL", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
@@ -8053,6 +8517,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -8071,6 +8536,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: CSC, CSL, FIMPort, GSG, GSL, LSC, LSG, LSL, SCC, SCL, SGG, SGL, SHLC, SLC, SLG, SLL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSC", "CSL", "FIMPort", "GSG", "GSL", "LSC", "LSG", "LSL", "SCC", "SCL", "SGG", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
@@ -8095,6 +8561,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["1", "OFF", "ON"]
 
@@ -8104,6 +8571,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PARameters"
                             args = []
 
@@ -8114,6 +8582,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSC, CSL, GSG, GSL, LSC, LSG, SCC, SCL, SGG, SGL, SHLC, SLC, SLG
                                 """
+                                __slots__ = ()
                                 _cmd = "C"
                                 args = ["CSC", "CSL", "GSG", "GSL", "LSC", "LSG", "SCC", "SCL", "SGG", "SGL", "SHLC", "SLC", "SLG"]
 
@@ -8132,6 +8601,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: FPORts, IPORts
                                 """
+                                __slots__ = ()
                                 _cmd = "DATA"
                                 args = ["FPORts", "IPORts"]
 
@@ -8150,6 +8620,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: GSG, GSL, LSG, SGG, SGL, SHLC, SLG
                                 """
+                                __slots__ = ()
                                 _cmd = "G"
                                 args = ["GSG", "GSL", "LSG", "SGG", "SGL", "SHLC", "SLG"]
 
@@ -8168,6 +8639,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSL, GSL, LSC, LSG, LSL, SCL, SGL, SHLC, SLC, SLG, SLL
                                 """
+                                __slots__ = ()
                                 _cmd = "L"
                                 args = ["CSL", "GSL", "LSC", "LSG", "LSL", "SCL", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
@@ -8186,6 +8658,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: CSC, CSL, GSL, LSC, LSG, LSL, SCC, SCL, SGL, SHLC, SLC, SLG, SLL
                                 """
+                                __slots__ = ()
                                 _cmd = "R"
                                 args = ["CSC", "CSL", "GSL", "LSC", "LSG", "LSL", "SCC", "SCL", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
@@ -8211,6 +8684,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -8229,6 +8703,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: CSC, CSL, FIMPort, GSG, GSL, LSC, LSG, LSL, SCC, SCL, SGG, SGL, SHLC, SLC, SLG, SLL
                             """
+                            __slots__ = ()
                             _cmd = "TNDefinition"
                             args = ["CSC", "CSL", "FIMPort", "GSG", "GSL", "LSC", "LSG", "LSL", "SCC", "SCL", "SGG", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
@@ -8274,6 +8749,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TTIMe"
             args = []
 
@@ -8284,6 +8760,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ALL
                 """
+                __slots__ = ()
                 _cmd = "DATA"
                 args = ["ALL"]
 
@@ -8302,6 +8779,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -8320,6 +8798,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, T1_9, T2_8
                 """
+                __slots__ = ()
                 _cmd = "THReshold"
                 args = ["1", "T1_9", "T2_8"]
 
@@ -8351,6 +8830,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "CONFigure"
         args = []
 
@@ -8360,6 +8840,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "CHANnel"
             args = ["1", "OFF", "ON"]
 
@@ -8370,6 +8851,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -8387,6 +8869,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = ["1", "OFF", "ON"]
 
@@ -8396,6 +8879,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = ["1", "OFF", "ON"]
 
@@ -8406,6 +8890,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -8431,6 +8916,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -8456,6 +8942,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -8466,6 +8953,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "ID"
                     args = ["'string'"]
 
@@ -8492,6 +8980,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -8509,6 +8998,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = []
 
@@ -8519,6 +9009,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CATalog"
                     args = []
 
@@ -8537,6 +9028,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "REName"
                     args = ["'string'"]
 
@@ -8568,6 +9060,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TRACe"
             args = []
 
@@ -8578,6 +9071,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -8595,6 +9089,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CHANnel"
                 args = []
 
@@ -8605,6 +9100,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "NAME"
                     args = ["'string'"]
 
@@ -8615,6 +9111,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "ID"
                         args = ["'string'"]
 
@@ -8648,6 +9145,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -8658,6 +9156,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "ID"
                     args = ["'string'"]
 
@@ -8684,6 +9183,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "REName"
                 args = ["'string'"]
 
@@ -8702,6 +9202,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "WINDow"
                 args = ["'string'"]
 
@@ -8712,6 +9213,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "TRACe"
                     args = ["'string'"]
 
@@ -8751,6 +9253,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "CONTrol"
         args = []
 
@@ -8760,6 +9263,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "AUXiliary"
             args = []
 
@@ -8769,6 +9273,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "C"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8779,6 +9284,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8810,6 +9316,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "GPIO"
             args = ["1", "OFF", "ON"]
 
@@ -8820,6 +9327,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "RANGe"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8837,6 +9345,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SENSe"
                 args = []
 
@@ -8847,6 +9356,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ALL
                     """
+                    __slots__ = ()
                     _cmd = "CURRent"
                     args = ["ALL"]
 
@@ -8865,6 +9375,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "SUMCurrent"
                     args = ["1"]
 
@@ -8883,6 +9394,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TRIGger"
                     args = []
 
@@ -8901,6 +9413,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ALL
                     """
+                    __slots__ = ()
                     _cmd = "VOLTage"
                     args = ["ALL"]
 
@@ -8926,6 +9439,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SHUNt"
                 args = []
 
@@ -8944,6 +9458,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -8962,6 +9477,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8979,6 +9495,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "VOLTage"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -8989,6 +9506,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DEFault"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9007,6 +9525,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "OUTPut"
                     args = []
 
@@ -9038,6 +9557,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "HANDler"
             args = []
 
@@ -9047,6 +9567,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "A"
                 args = ["1"]
 
@@ -9057,6 +9578,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -9075,6 +9597,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: INPut, OUTPut
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
@@ -9099,6 +9622,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "B"
                 args = ["1"]
 
@@ -9109,6 +9633,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -9127,6 +9652,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: INPut, OUTPut
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
@@ -9151,6 +9677,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "C"
                 args = ["1"]
 
@@ -9161,6 +9688,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -9179,6 +9707,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: INPut, OUTPut
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
@@ -9203,6 +9732,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "D"
                 args = ["1"]
 
@@ -9213,6 +9743,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -9231,6 +9762,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: INPut, OUTPut
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
@@ -9255,6 +9787,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "E"
                 args = ["1"]
 
@@ -9265,6 +9798,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -9289,6 +9823,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXTension"
                 args = []
 
@@ -9298,6 +9833,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "INDex"
                     args = []
 
@@ -9308,6 +9844,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -9332,6 +9869,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RTRigger"
                     args = []
 
@@ -9342,6 +9880,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -9373,6 +9912,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "F"
                 args = ["1"]
 
@@ -9383,6 +9923,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -9407,6 +9948,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "G"
                 args = ["1"]
 
@@ -9417,6 +9959,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -9441,6 +9984,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "H"
                 args = ["1"]
 
@@ -9451,6 +9995,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1"]
 
@@ -9476,6 +10021,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INPut"
                 args = []
 
@@ -9494,6 +10040,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: NEGative, POSitive
                 """
+                __slots__ = ()
                 _cmd = "LOGic"
                 args = ["NEGative", "POSitive"]
 
@@ -9511,6 +10058,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "OUTPut"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9521,6 +10069,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9539,6 +10088,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "USER"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9563,6 +10113,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PASSfail"
                 args = []
 
@@ -9573,6 +10124,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: NEGative, POSitive
                     """
+                    __slots__ = ()
                     _cmd = "LOGic"
                     args = ["NEGative", "POSitive"]
 
@@ -9591,6 +10143,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: FAIL, NOWait, PASS
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["FAIL", "NOWait", "PASS"]
 
@@ -9609,6 +10162,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ALLMeas, ALLTests
                     """
+                    __slots__ = ()
                     _cmd = "POLicy"
                     args = ["ALLMeas", "ALLTests"]
 
@@ -9627,6 +10181,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: CHANnel, GLOBal
                     """
+                    __slots__ = ()
                     _cmd = "SCOPe"
                     args = ["CHANnel", "GLOBal"]
 
@@ -9645,6 +10200,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STATus"
                     args = []
 
@@ -9670,6 +10226,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RESet"
                 args = []
 
@@ -9688,6 +10245,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: CHANnel, GLOBal, SWEep
                 """
+                __slots__ = ()
                 _cmd = "SWEepend"
                 args = ["CHANnel", "GLOBal", "SWEep"]
 
@@ -9712,6 +10270,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "RFFE"
             args = []
 
@@ -9721,6 +10280,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COMMand"
                 args = []
 
@@ -9731,6 +10291,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["'string'"]
 
@@ -9749,6 +10310,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "SEND"
                     args = ["1"]
 
@@ -9773,6 +10335,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SETTings"
                 args = ["1", "OFF", "ON"]
 
@@ -9783,6 +10346,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9801,6 +10365,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -9818,6 +10383,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "VOLTage"
                     args = []
 
@@ -9828,6 +10394,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "HIGH"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9846,6 +10413,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "IO"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9864,6 +10432,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "LOW"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9895,6 +10464,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TEST"
                 args = []
 
@@ -9905,6 +10475,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "CLOCk"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9915,6 +10486,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CURRent"
                         args = []
 
@@ -9933,6 +10505,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RANGe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -9951,6 +10524,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SHUNt"
                         args = []
 
@@ -9969,6 +10543,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "VOLTage"
                         args = []
 
@@ -9995,6 +10570,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10005,6 +10581,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CURRent"
                         args = []
 
@@ -10023,6 +10600,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RANGe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10041,6 +10619,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SHUNt"
                         args = []
 
@@ -10059,6 +10638,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "VOLTage"
                         args = []
 
@@ -10085,6 +10665,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "OUTPut"
                     args = []
 
@@ -10102,6 +10683,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SENSe"
                     args = []
 
@@ -10112,6 +10694,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "TRIGger"
                         args = []
 
@@ -10137,6 +10720,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10155,6 +10739,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "VIO"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10165,6 +10750,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CURRent"
                         args = []
 
@@ -10183,6 +10769,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RANGe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10201,6 +10788,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SHUNt"
                         args = []
 
@@ -10219,6 +10807,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "VOLTage"
                         args = []
 
@@ -10258,6 +10847,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SEGMent"
             args = []
 
@@ -10267,6 +10857,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SEQuence"
                 args = []
 
@@ -10276,6 +10867,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CLEar"
                     args = []
 
@@ -10286,6 +10878,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ALL"
                         args = []
 
@@ -10311,6 +10904,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COUNt"
                     args = []
 
@@ -10329,6 +10923,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10346,6 +10941,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "GPIO"
                     args = []
 
@@ -10356,6 +10952,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "VOLTage"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10380,6 +10977,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RFFE"
                     args = []
 
@@ -10389,6 +10987,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COMMand"
                         args = []
 
@@ -10399,6 +10998,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "DATA"
                             args = ["'string'"]
 
@@ -10444,6 +11044,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SEQuence"
             args = []
 
@@ -10453,6 +11054,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = []
 
@@ -10463,6 +11065,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -10488,6 +11091,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = []
 
@@ -10506,6 +11110,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "DELay"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10523,6 +11128,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "GPIO"
                 args = []
 
@@ -10533,6 +11139,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "VOLTage"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10557,6 +11164,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RFFE"
                 args = []
 
@@ -10566,6 +11174,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COMMand"
                     args = []
 
@@ -10576,6 +11185,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DATA"
                         args = ["'string'"]
 
@@ -10614,6 +11224,7 @@ class ZNB_gen(Instrument):
 
             Arguments: BNC1, BNC2
             """
+            __slots__ = ()
             _cmd = "SIGNal"
             args = ["BNC1", "BNC2"]
 
@@ -10637,6 +11248,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "DIAGnostic"
         args = []
 
@@ -10646,6 +11258,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ALC"
             args = []
 
@@ -10655,6 +11268,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SETTings"
                 args = ["1", "OFF", "ON"]
 
@@ -10664,6 +11278,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -10694,6 +11309,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DEFault"
             args = []
 
@@ -10710,6 +11326,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DEVice"
             args = []
 
@@ -10720,6 +11337,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["'string'"]
 
@@ -10744,6 +11362,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DUMP"
             args = []
 
@@ -10754,6 +11373,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: FULL, LARGe, MINI, NONE, NORMal
                 """
+                __slots__ = ()
                 _cmd = "SIZE"
                 args = ["FULL", "LARGe", "MINI", "NONE", "NORMal"]
 
@@ -10778,6 +11398,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PARSer"
             args = []
 
@@ -10794,6 +11415,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PRODuct"
             args = []
 
@@ -10803,6 +11425,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -10819,6 +11442,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DESCription"
                 args = []
 
@@ -10835,6 +11459,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ID"
                 args = []
 
@@ -10851,6 +11476,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MACaddress"
                 args = []
 
@@ -10867,6 +11493,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "OPTion"
                 args = []
 
@@ -10876,6 +11503,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "FACTory"
                     args = []
 
@@ -10885,6 +11513,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CLEar"
                         args = []
 
@@ -10909,6 +11538,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "INFO"
                     args = ["'string'"]
 
@@ -10926,6 +11556,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LICence"
                     args = []
 
@@ -10935,6 +11566,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "CHECk"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10951,6 +11583,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "UNLock"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -10974,6 +11607,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LIST"
                     args = []
 
@@ -10990,6 +11624,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: #<block, 'string'
                     """
+                    __slots__ = ()
                     _cmd = "STATus"
                     args = ["#<block", "'string'"]
 
@@ -11013,6 +11648,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SELect"
                 args = ["'string'"]
 
@@ -11029,6 +11665,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = []
 
@@ -11038,6 +11675,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "OPERating"
                     args = []
 
@@ -11068,6 +11706,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SERVice"
             args = []
 
@@ -11078,6 +11717,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "FUNCtion"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11096,6 +11736,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "RFPower"
                 args = ["1", "OFF", "ON"]
 
@@ -11114,6 +11755,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SFUNction"
                 args = ["'string'"]
 
@@ -11138,6 +11780,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "UPDate"
             args = []
 
@@ -11147,6 +11790,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BOOT"
                 args = []
 
@@ -11163,6 +11807,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -11179,6 +11824,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CHAP"
                 args = []
 
@@ -11188,6 +11834,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CHALlenge"
                     args = []
 
@@ -11204,6 +11851,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PRESet"
                     args = []
 
@@ -11220,6 +11868,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: #<block
                     """
+                    __slots__ = ()
                     _cmd = "RESPonse"
                     args = ["#<block"]
 
@@ -11243,6 +11892,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: NOWait, OVERlay, WAIT
                 """
+                __slots__ = ()
                 _cmd = "EXECute"
                 args = ["NOWait", "OVERlay", "WAIT"]
 
@@ -11259,6 +11909,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "INSTall"
                 args = ["'string'"]
 
@@ -11268,6 +11919,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BEGin"
                     args = []
 
@@ -11284,6 +11936,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "END"
                     args = []
 
@@ -11300,6 +11953,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STATus"
                     args = []
 
@@ -11323,6 +11977,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "PROGress"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11339,6 +11994,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRANsfer"
                 args = []
 
@@ -11348,6 +12004,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CLOSe"
                     args = []
 
@@ -11364,6 +12021,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11380,6 +12038,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: DATA, DESCr
                     """
+                    __slots__ = ()
                     _cmd = "OPEN"
                     args = ["DATA", "DESCr"]
 
@@ -11396,6 +12055,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "VERSion"
                     args = []
 
@@ -11433,6 +12093,7 @@ class ZNB_gen(Instrument):
 
         Arguments: 1, OFF, ON
         """
+        __slots__ = ()
         _cmd = "DISPlay"
         args = ["1", "OFF", "ON"]
 
@@ -11442,6 +12103,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ANNotation"
             args = []
 
@@ -11451,6 +12113,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "CHANnel"
                 args = ["1", "OFF", "ON"]
 
@@ -11461,6 +12124,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -11485,6 +12149,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = ["1", "OFF", "ON"]
 
@@ -11495,6 +12160,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -11519,6 +12185,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = ["1", "OFF", "ON"]
 
@@ -11529,6 +12196,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -11560,6 +12228,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CMAP"
             args = []
 
@@ -11569,6 +12238,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "LIMit"
                 args = ["1", "OFF", "ON"]
 
@@ -11578,6 +12248,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "FCOLorize"
                     args = ["1", "OFF", "ON"]
 
@@ -11588,6 +12259,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -11612,6 +12284,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "FSYMbol"
                     args = ["1", "OFF", "ON"]
 
@@ -11622,6 +12295,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -11647,6 +12321,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -11671,6 +12346,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "MARKer"
                 args = ["1", "OFF", "ON"]
 
@@ -11681,6 +12357,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -11706,6 +12383,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "RGB"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11723,6 +12401,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = []
 
@@ -11732,6 +12411,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "COLor"
                     args = ["1", "OFF", "ON"]
 
@@ -11742,6 +12422,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -11767,6 +12448,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "RGB"
                     args = ["'string'"]
 
@@ -11799,6 +12481,7 @@ class ZNB_gen(Instrument):
 
             Arguments: GRID, HORizontal, LINeup, STACk, VERTical
             """
+            __slots__ = ()
             _cmd = "LAYout"
             args = ["GRID", "HORizontal", "LINeup", "STACk", "VERTical"]
 
@@ -11809,6 +12492,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "APPLy"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11827,6 +12511,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "DEFine"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11845,6 +12530,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "EXECute"
                 args = ["'string'"]
 
@@ -11863,6 +12549,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "GRID"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11881,6 +12568,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "JOIN"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -11906,6 +12594,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MENU"
             args = []
 
@@ -11915,6 +12604,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "KEY"
                 args = []
 
@@ -11924,6 +12614,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ACTion"
                     args = []
 
@@ -11934,6 +12625,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = []
 
@@ -11959,6 +12651,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "EXECute"
                     args = ["'string'"]
 
@@ -11977,6 +12670,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["'string'"]
 
@@ -11994,6 +12688,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TOOL"
                     args = []
 
@@ -12004,6 +12699,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = []
 
@@ -12043,6 +12739,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "RFSize"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12060,6 +12757,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "WINDow"
             args = ["1", "OFF", "ON"]
 
@@ -12070,6 +12768,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -12088,6 +12787,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "MAXimize"
                 args = ["1", "OFF", "ON"]
 
@@ -12106,6 +12806,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -12123,6 +12824,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "OVERview"
                 args = ["1", "OFF", "ON"]
 
@@ -12133,6 +12835,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -12158,6 +12861,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -12175,6 +12879,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "TITLe"
                 args = ["1", "OFF", "ON"]
 
@@ -12185,6 +12890,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["'string'"]
 
@@ -12203,6 +12909,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -12227,6 +12934,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = []
 
@@ -12237,6 +12945,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CATalog"
                     args = []
 
@@ -12255,6 +12964,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DELete"
                     args = []
 
@@ -12273,6 +12983,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "EFEed"
                     args = ["'string'"]
 
@@ -12291,6 +13002,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FEED"
                     args = ["'string'"]
 
@@ -12309,6 +13021,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: DALL, MALL, 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SHOW"
                     args = ["DALL", "MALL", "'string'"]
 
@@ -12326,6 +13039,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "X"
                     args = []
 
@@ -12336,6 +13050,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12360,6 +13075,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "Y"
                     args = []
 
@@ -12370,6 +13086,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12387,6 +13104,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SCALe"
                         args = []
 
@@ -12397,6 +13115,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: ONCE
                             """
+                            __slots__ = ()
                             _cmd = "AUTO"
                             args = ["ONCE"]
 
@@ -12415,6 +13134,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "BOTTom"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12433,6 +13153,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "PDIVision"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12451,6 +13172,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "RLEVel"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12469,6 +13191,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "RPOSition"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12487,6 +13210,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "TOP"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12518,6 +13242,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "ZOOM"
                     args = ["1", "OFF", "ON"]
 
@@ -12528,6 +13253,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "BOTTom"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12546,6 +13272,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12564,6 +13291,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -12582,6 +13310,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12600,6 +13329,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "TOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -12645,6 +13375,7 @@ class ZNB_gen(Instrument):
 
         Arguments: ASCii, REAL
         """
+        __slots__ = ()
         _cmd = "FORMat"
         args = ["ASCii", "REAL"]
 
@@ -12655,6 +13386,7 @@ class ZNB_gen(Instrument):
 
             Arguments: NORMal, SWAPped
             """
+            __slots__ = ()
             _cmd = "BORDer"
             args = ["NORMal", "SWAPped"]
 
@@ -12673,6 +13405,7 @@ class ZNB_gen(Instrument):
 
             Arguments: ASCii, REAL
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = ["ASCii", "REAL"]
 
@@ -12690,6 +13423,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DEXPort"
             args = []
 
@@ -12700,6 +13434,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: FDATa, MDATa, SDATa
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["FDATa", "MDATa", "SDATa"]
 
@@ -12731,6 +13466,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "HCOPy"
         args = []
 
@@ -12741,6 +13477,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DESTination"
             args = ["'string'"]
 
@@ -12758,6 +13495,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DEVice"
             args = []
 
@@ -12768,6 +13506,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: BMP, EMF, EWMF, JPG, PDF, PNG, SVG, WMF
                 """
+                __slots__ = ()
                 _cmd = "LANGuage"
                 args = ["BMP", "EMF", "EWMF", "JPG", "PDF", "PNG", "SVG", "WMF"]
 
@@ -12793,6 +13532,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IMMediate"
             args = []
 
@@ -12810,6 +13550,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ITEM"
             args = []
 
@@ -12820,6 +13561,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = []
 
@@ -12837,6 +13579,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "LOGO"
                 args = ["1", "OFF", "ON"]
 
@@ -12847,6 +13590,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -12871,6 +13615,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "MLISt"
                 args = ["1", "OFF", "ON"]
 
@@ -12881,6 +13626,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -12905,6 +13651,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = ["1", "OFF", "ON"]
 
@@ -12915,6 +13662,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -12946,6 +13694,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PAGE"
             args = []
 
@@ -12956,6 +13705,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "COLor"
                 args = ["1", "OFF", "ON"]
 
@@ -12973,6 +13723,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MARGin"
                 args = []
 
@@ -12983,6 +13734,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "BOTTom"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -13001,6 +13753,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "LEFT"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -13019,6 +13772,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RIGHt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -13037,6 +13791,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -13062,6 +13817,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: LANDscape, PORTrait
                 """
+                __slots__ = ()
                 _cmd = "ORIentation"
                 args = ["LANDscape", "PORTrait"]
 
@@ -13080,6 +13836,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ACTive, ALL, HARDcopy, NONE, SINGle
                 """
+                __slots__ = ()
                 _cmd = "WINDow"
                 args = ["ACTive", "ALL", "HARDcopy", "NONE", "SINGle"]
 
@@ -13111,6 +13868,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "INITiate"
         args = []
 
@@ -13121,6 +13879,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "CONTinuous"
             args = ["1", "OFF", "ON"]
 
@@ -13131,6 +13890,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = ["1", "OFF", "ON"]
 
@@ -13156,6 +13916,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IMMediate"
             args = []
 
@@ -13166,6 +13927,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = []
 
@@ -13184,6 +13946,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DUMMy"
                 args = []
 
@@ -13202,6 +13965,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ALL, SINGle
                 """
+                __slots__ = ()
                 _cmd = "SCOPe"
                 args = ["ALL", "SINGle"]
 
@@ -13233,6 +13997,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "INPut"
         args = []
 
@@ -13243,6 +14008,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "ATTenuation"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -13267,6 +14033,7 @@ class ZNB_gen(Instrument):
 
         Arguments: CHANnel1, CHANnel2, CHANnel3, CHANnel4
         """
+        __slots__ = ()
         _cmd = "INSTrument"
         args = ["CHANnel1", "CHANnel2", "CHANnel3", "CHANnel4"]
 
@@ -13277,6 +14044,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "NSELect"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -13294,6 +14062,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PORT"
             args = []
 
@@ -13304,6 +14073,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = []
 
@@ -13329,6 +14099,7 @@ class ZNB_gen(Instrument):
 
             Arguments: CHANnel1, CHANnel2, CHANnel3, CHANnel4
             """
+            __slots__ = ()
             _cmd = "SELect"
             args = ["CHANnel1", "CHANnel2", "CHANnel3", "CHANnel4"]
 
@@ -13347,6 +14118,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "SMATrix"
             args = ["1", "OFF", "ON"]
 
@@ -13364,6 +14136,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TPORt"
             args = []
 
@@ -13374,6 +14147,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = []
 
@@ -13405,6 +14179,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MEMory"
         args = []
 
@@ -13415,6 +14190,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CATalog"
             args = []
 
@@ -13425,6 +14201,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = []
 
@@ -13451,6 +14228,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DEFine"
             args = ["'string'"]
 
@@ -13468,6 +14246,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DELete"
             args = ["'string'"]
 
@@ -13478,6 +14257,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = []
 
@@ -13496,6 +14276,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -13521,6 +14302,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "SELect"
             args = ["'string'"]
 
@@ -13545,6 +14327,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MMEMory"
         args = []
 
@@ -13554,6 +14337,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "AKAL"
             args = []
 
@@ -13563,6 +14347,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FACTory"
                 args = []
 
@@ -13573,6 +14358,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "CONVersion"
                     args = ["'string'"]
 
@@ -13597,6 +14383,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "USER"
                 args = []
 
@@ -13607,6 +14394,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "CONVersion"
                     args = ["'string'"]
 
@@ -13639,6 +14427,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "CATalog"
             args = ["'string'"]
 
@@ -13649,6 +14438,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = ["'string'"]
 
@@ -13675,6 +14465,7 @@ class ZNB_gen(Instrument):
 
             Arguments: DEFault, 'string'
             """
+            __slots__ = ()
             _cmd = "CDIRectory"
             args = ["DEFault", "'string'"]
 
@@ -13692,6 +14483,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CKIT"
             args = []
 
@@ -13702,6 +14494,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "INFO"
                 args = ["'string'"]
 
@@ -13727,6 +14520,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "COPY"
             args = ["'string'"]
 
@@ -13745,6 +14539,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = ["'string'"]
 
@@ -13763,6 +14558,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DELete"
             args = ["'string'"]
 
@@ -13773,6 +14569,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CORRection"
                 args = ["'string'"]
 
@@ -13799,6 +14596,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "FAVorite"
             args = ["'string'"]
 
@@ -13816,6 +14614,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "LOAD"
             args = ["'string'"]
 
@@ -13826,6 +14625,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CKIT"
                 args = ["'string'"]
 
@@ -13836,6 +14636,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SDATa"
                     args = ["'string'"]
 
@@ -13846,6 +14647,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -13872,6 +14674,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "UDIRectory"
                     args = ["'string'"]
 
@@ -13898,6 +14701,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CMAP"
                 args = ["'string'"]
 
@@ -13916,6 +14720,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CORRection"
                 args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -13926,6 +14731,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "MERGe"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -13944,6 +14750,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RESolve"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -13962,6 +14769,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "TCOefficient"
                     args = ["'string'"]
 
@@ -13987,6 +14795,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EYE"
                 args = []
 
@@ -13997,6 +14806,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "BPATtern"
                     args = ["'string'"]
 
@@ -14015,6 +14825,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "JITTer"
                     args = ["'string'"]
 
@@ -14033,6 +14844,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MASK"
                     args = ["'string'"]
 
@@ -14058,6 +14870,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "LIMit"
                 args = ["'string'"]
 
@@ -14075,6 +14888,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "MDAData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -14091,6 +14905,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "MDCData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -14108,6 +14923,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "RIPPle"
                 args = ["'string'"]
 
@@ -14126,6 +14942,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SEGMent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -14144,6 +14961,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1"]
 
@@ -14162,6 +14980,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = ["'string'"]
 
@@ -14172,6 +14991,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["'string'"]
 
@@ -14197,6 +15017,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "VNETworks"
                 args = []
 
@@ -14206,6 +15027,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BALanced"
                     args = []
 
@@ -14216,6 +15038,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
@@ -14234,6 +15057,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
@@ -14258,6 +15082,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DIFFerential"
                     args = []
 
@@ -14267,6 +15092,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
@@ -14290,6 +15116,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "GLOop"
                     args = []
 
@@ -14300,6 +15127,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
@@ -14318,6 +15146,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
@@ -14342,6 +15171,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PPAir"
                     args = []
 
@@ -14352,6 +15182,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
@@ -14370,6 +15201,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
@@ -14394,6 +15226,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SENDed"
                     args = []
 
@@ -14404,6 +15237,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
@@ -14422,6 +15256,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
@@ -14461,6 +15296,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "MDIRectory"
             args = ["'string'"]
 
@@ -14479,6 +15315,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "MOVE"
             args = ["'string'"]
 
@@ -14496,6 +15333,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "MSIS"
             args = ["'string'"]
 
@@ -14513,6 +15351,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "NAME"
             args = ["'string'"]
 
@@ -14531,6 +15370,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "RDIRectory"
             args = ["'string'"]
 
@@ -14548,6 +15388,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "STORe"
             args = []
 
@@ -14558,6 +15399,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CKIT"
                 args = ["'string'"]
 
@@ -14568,6 +15410,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "WLABel"
                     args = ["'string'"]
 
@@ -14594,6 +15437,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CMAP"
                 args = ["'string'"]
 
@@ -14612,6 +15456,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CORRection"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -14622,6 +15467,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "TCOefficient"
                     args = ["'string'"]
 
@@ -14647,6 +15493,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EYE"
                 args = []
 
@@ -14657,6 +15504,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MASK"
                     args = ["'string'"]
 
@@ -14667,6 +15515,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "RESults"
                         args = ["'string'"]
 
@@ -14693,6 +15542,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MEASurements"
                     args = ["'string'"]
 
@@ -14718,6 +15568,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "LIMit"
                 args = ["'string'"]
 
@@ -14736,6 +15587,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "MARKer"
                 args = ["'string'"]
 
@@ -14753,6 +15605,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "MDCData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -14770,6 +15623,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "RIPPle"
                 args = ["'string'"]
 
@@ -14788,6 +15642,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SEGMent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -14806,6 +15661,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1"]
 
@@ -14824,6 +15680,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "TRACe"
                 args = ["'string'"]
 
@@ -14834,6 +15691,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, ALL, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "CHANnel"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -14851,6 +15709,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "OPTion"
                     args = []
 
@@ -14861,6 +15720,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: PLUS, SPACe, VOID
                         """
+                        __slots__ = ()
                         _cmd = "PLUS"
                         args = ["PLUS", "SPACe", "VOID"]
 
@@ -14879,6 +15739,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "SSEParator"
                         args = ["1", "OFF", "ON"]
 
@@ -14897,6 +15758,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "TABS"
                         args = ["1", "OFF", "ON"]
 
@@ -14915,6 +15777,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "TRIM"
                         args = ["1", "OFF", "ON"]
 
@@ -14940,6 +15803,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, 'string', COMPlex, LINPhase, LOGPhase, CIMPedance, PIMPedance
                     """
+                    __slots__ = ()
                     _cmd = "PORTs"
                     args = ["1", "'string'", "COMPlex", "LINPhase", "LOGPhase", "CIMPedance", "PIMPedance"]
 
@@ -14979,6 +15843,7 @@ class ZNB_gen(Instrument):
 
         Arguments: 1, OFF, ON
         """
+        __slots__ = ()
         _cmd = "OUTPut"
         args = ["1", "OFF", "ON"]
 
@@ -14989,6 +15854,7 @@ class ZNB_gen(Instrument):
 
             Arguments: PORT1, PORT2, PORT3, PORT4
             """
+            __slots__ = ()
             _cmd = "DPORt"
             args = ["PORT1", "PORT2", "PORT3", "PORT4"]
 
@@ -15007,6 +15873,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = ["1", "OFF", "ON"]
 
@@ -15024,6 +15891,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "UPORt"
             args = []
 
@@ -15034,6 +15902,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "ECBits"
                 args = ["1", "OFF", "ON"]
 
@@ -15051,6 +15920,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SEGMent"
                 args = []
 
@@ -15060,6 +15930,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -15076,6 +15947,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "VALue"
                     args = []
 
@@ -15100,6 +15972,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = []
 
@@ -15131,6 +16004,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "PROGram"
         args = []
 
@@ -15140,6 +16014,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SELected"
             args = []
 
@@ -15150,6 +16025,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "EXECute"
                 args = ["'string'"]
 
@@ -15168,6 +16044,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "INIMessage"
                 args = ["'string'"]
 
@@ -15186,6 +16063,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "INIParameter"
                 args = ["'string'"]
 
@@ -15204,6 +16082,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: PROG
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["PROG"]
 
@@ -15222,6 +16101,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RETVal"
                 args = []
 
@@ -15240,6 +16120,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "WAIT"
                 args = []
 
@@ -15271,6 +16152,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SENSe"
         args = []
 
@@ -15280,6 +16162,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "AVERage"
             args = ["1", "OFF", "ON"]
 
@@ -15290,6 +16173,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = []
 
@@ -15308,6 +16192,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15326,6 +16211,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: AUTO, FLATten, MOVing, REDuce
                 """
+                __slots__ = ()
                 _cmd = "MODE"
                 args = ["AUTO", "FLATten", "MOVing", "REDuce"]
 
@@ -15344,6 +16230,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -15368,6 +16255,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "BANDwidth"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15378,6 +16266,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "RESolution"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15388,6 +16277,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: HIGH, MEDium, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["HIGH", "MEDium", "NORMal"]
 
@@ -15420,6 +16310,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "BWIDth"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15430,6 +16321,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "RESolution"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15440,6 +16332,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: HIGH, MEDium, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["HIGH", "MEDium", "NORMal"]
 
@@ -15472,6 +16365,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "CORRection"
             args = ["1", "OFF", "ON"]
 
@@ -15482,6 +16376,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, 'string'
                 """
+                __slots__ = ()
                 _cmd = "CDATa"
                 args = ["1", "'string'"]
 
@@ -15491,6 +16386,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "CATalog"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15508,6 +16404,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "PORT"
                     args = ["'string'"]
 
@@ -15517,6 +16414,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -15549,6 +16447,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CKIT"
                 args = []
 
@@ -15559,6 +16458,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "CATalog"
                     args = ["'string'"]
 
@@ -15577,6 +16477,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DELete"
                     args = ["'string'"]
 
@@ -15595,6 +16496,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DMODe"
                     args = ["'string'"]
 
@@ -15612,6 +16514,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FFATten"
                     args = ["'string'"]
 
@@ -15621,6 +16524,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -15630,6 +16534,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -15660,6 +16565,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FFLine"
                     args = ["'string'"]
 
@@ -15669,6 +16575,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -15678,6 +16585,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -15708,6 +16616,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FFSNetwork"
                     args = ["'string'"]
 
@@ -15717,6 +16626,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -15726,6 +16636,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -15756,6 +16667,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FFTHrough"
                     args = ["'string'"]
 
@@ -15765,6 +16677,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -15774,6 +16687,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -15804,6 +16718,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FMTCh"
                     args = ["'string'"]
 
@@ -15813,6 +16728,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -15822,6 +16738,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -15852,6 +16769,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FOPen"
                     args = ["'string'"]
 
@@ -15861,6 +16779,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -15870,6 +16789,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -15900,6 +16820,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FOSHort"
                     args = ["'string'"]
 
@@ -15909,6 +16830,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -15918,6 +16840,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -15948,6 +16871,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FREFlect"
                     args = ["'string'"]
 
@@ -15957,6 +16881,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -15966,6 +16891,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -15996,6 +16922,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FSHort"
                     args = ["'string'"]
 
@@ -16005,6 +16932,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16014,6 +16942,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16044,6 +16973,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FSMatch"
                     args = ["'string'"]
 
@@ -16053,6 +16983,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16062,6 +16993,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16093,6 +17025,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "INSTall"
                     args = ["'string'"]
 
@@ -16111,6 +17044,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "LABel"
                     args = ["'string'"]
 
@@ -16129,6 +17063,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "LCATalog"
                     args = ["'string'"]
 
@@ -16147,6 +17082,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "LDELete"
                     args = ["'string'"]
 
@@ -16165,6 +17101,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "LLABel"
                     args = ["'string'"]
 
@@ -16183,6 +17120,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "LSELect"
                     args = ["'string'"]
 
@@ -16200,6 +17138,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MFATten"
                     args = ["'string'"]
 
@@ -16209,6 +17148,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16218,6 +17158,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16248,6 +17189,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MFLine"
                     args = ["'string'"]
 
@@ -16257,6 +17199,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16266,6 +17209,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16296,6 +17240,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MFSNetwork"
                     args = ["'string'"]
 
@@ -16305,6 +17250,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16314,6 +17260,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16344,6 +17291,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MFTHrough"
                     args = ["'string'"]
 
@@ -16353,6 +17301,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16362,6 +17311,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16392,6 +17342,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MMATten"
                     args = ["'string'"]
 
@@ -16401,6 +17352,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16410,6 +17362,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16440,6 +17393,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MMLine"
                     args = ["'string'"]
 
@@ -16449,6 +17403,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16458,6 +17413,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16488,6 +17444,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MMSNetwork"
                     args = ["'string'"]
 
@@ -16497,6 +17454,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16506,6 +17464,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16536,6 +17495,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MMTCh"
                     args = ["'string'"]
 
@@ -16545,6 +17505,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16554,6 +17515,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16584,6 +17546,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MMTHrough"
                     args = ["'string'"]
 
@@ -16593,6 +17556,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16602,6 +17566,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16632,6 +17597,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MOPen"
                     args = ["'string'"]
 
@@ -16641,6 +17607,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16650,6 +17617,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16680,6 +17648,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MOSHort"
                     args = ["'string'"]
 
@@ -16689,6 +17658,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16698,6 +17668,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16728,6 +17699,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MREFlect"
                     args = ["'string'"]
 
@@ -16737,6 +17709,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16746,6 +17719,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16776,6 +17750,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MSHort"
                     args = ["'string'"]
 
@@ -16785,6 +17760,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16794,6 +17770,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16824,6 +17801,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "MSMatch"
                     args = ["'string'"]
 
@@ -16833,6 +17811,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -16842,6 +17821,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -16872,6 +17852,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "N"
                     args = []
 
@@ -16881,6 +17862,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFATten"
                         args = ["'string'"]
 
@@ -16897,6 +17879,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFLine"
                         args = ["'string'"]
 
@@ -16913,6 +17896,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
@@ -16929,6 +17913,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
@@ -16945,6 +17930,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
@@ -16961,6 +17947,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FOPen"
                         args = ["'string'"]
 
@@ -16977,6 +17964,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
@@ -16993,6 +17981,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSHort"
                         args = ["'string'"]
 
@@ -17009,6 +17998,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
@@ -17025,6 +18015,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "LSELect"
                         args = ["'string'"]
 
@@ -17041,6 +18032,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFATten"
                         args = ["'string'"]
 
@@ -17057,6 +18049,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFLine"
                         args = ["'string'"]
 
@@ -17073,6 +18066,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
@@ -17089,6 +18083,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
@@ -17105,6 +18100,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMATten"
                         args = ["'string'"]
 
@@ -17121,6 +18117,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMLine"
                         args = ["'string'"]
 
@@ -17137,6 +18134,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
@@ -17153,6 +18151,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
@@ -17169,6 +18168,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
@@ -17185,6 +18185,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MOPen"
                         args = ["'string'"]
 
@@ -17201,6 +18202,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
@@ -17217,6 +18219,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSHort"
                         args = ["'string'"]
 
@@ -17233,6 +18236,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
@@ -17249,6 +18253,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "SELect"
                         args = ["'string'"]
 
@@ -17272,6 +18277,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "OSHort"
                     args = ["'string'"]
 
@@ -17281,6 +18287,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "WLABel"
                         args = ["'string'"]
 
@@ -17290,6 +18297,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "SDATa"
                             args = ["'string'"]
 
@@ -17320,6 +18328,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PC"
                     args = []
 
@@ -17329,6 +18338,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFATten"
                         args = ["'string'"]
 
@@ -17345,6 +18355,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFLine"
                         args = ["'string'"]
 
@@ -17361,6 +18372,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
@@ -17377,6 +18389,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
@@ -17393,6 +18406,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
@@ -17409,6 +18423,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FOPen"
                         args = ["'string'"]
 
@@ -17425,6 +18440,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
@@ -17441,6 +18457,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSHort"
                         args = ["'string'"]
 
@@ -17457,6 +18474,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
@@ -17473,6 +18491,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "LSELect"
                         args = ["'string'"]
 
@@ -17489,6 +18508,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFATten"
                         args = ["'string'"]
 
@@ -17505,6 +18525,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFLine"
                         args = ["'string'"]
 
@@ -17521,6 +18542,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
@@ -17537,6 +18559,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
@@ -17553,6 +18576,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMATten"
                         args = ["'string'"]
 
@@ -17569,6 +18593,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMLine"
                         args = ["'string'"]
 
@@ -17585,6 +18610,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
@@ -17601,6 +18627,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
@@ -17617,6 +18644,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
@@ -17633,6 +18661,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MOPen"
                         args = ["'string'"]
 
@@ -17649,6 +18678,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
@@ -17665,6 +18695,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSHort"
                         args = ["'string'"]
 
@@ -17681,6 +18712,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
@@ -17697,6 +18729,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "SELect"
                         args = ["'string'"]
 
@@ -17721,6 +18754,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["'string'"]
 
@@ -17738,6 +18772,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SMA"
                     args = []
 
@@ -17747,6 +18782,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFATten"
                         args = ["'string'"]
 
@@ -17763,6 +18799,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFLine"
                         args = ["'string'"]
 
@@ -17779,6 +18816,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
@@ -17795,6 +18833,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
@@ -17811,6 +18850,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
@@ -17827,6 +18867,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FOPen"
                         args = ["'string'"]
 
@@ -17843,6 +18884,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
@@ -17859,6 +18901,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSHort"
                         args = ["'string'"]
 
@@ -17875,6 +18918,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
@@ -17891,6 +18935,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "LSELect"
                         args = ["'string'"]
 
@@ -17907,6 +18952,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFATten"
                         args = ["'string'"]
 
@@ -17923,6 +18969,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFLine"
                         args = ["'string'"]
 
@@ -17939,6 +18986,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
@@ -17955,6 +19003,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
@@ -17971,6 +19020,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMATten"
                         args = ["'string'"]
 
@@ -17987,6 +19037,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMLine"
                         args = ["'string'"]
 
@@ -18003,6 +19054,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
@@ -18019,6 +19071,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
@@ -18035,6 +19088,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
@@ -18051,6 +19105,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MOPen"
                         args = ["'string'"]
 
@@ -18067,6 +19122,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
@@ -18083,6 +19139,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSHort"
                         args = ["'string'"]
 
@@ -18099,6 +19156,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
@@ -18115,6 +19173,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "SELect"
                         args = ["'string'"]
 
@@ -18138,6 +19197,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STANdard"
                     args = []
 
@@ -18148,6 +19208,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = ["'string'"]
 
@@ -18166,6 +19227,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DATA"
                         args = ["'string'"]
 
@@ -18184,6 +19246,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "LCATalog"
                         args = ["'string'"]
 
@@ -18208,6 +19271,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "USER"
                     args = []
 
@@ -18217,6 +19281,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFATten"
                         args = ["'string'"]
 
@@ -18233,6 +19298,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFLine"
                         args = ["'string'"]
 
@@ -18249,6 +19315,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
@@ -18265,6 +19332,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
@@ -18281,6 +19349,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
@@ -18297,6 +19366,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FOPen"
                         args = ["'string'"]
 
@@ -18313,6 +19383,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FOSHort"
                         args = ["'string'"]
 
@@ -18329,6 +19400,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
@@ -18345,6 +19417,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSHort"
                         args = ["'string'"]
 
@@ -18361,6 +19434,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
@@ -18377,6 +19451,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "LSELect"
                         args = ["'string'"]
 
@@ -18393,6 +19468,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFATten"
                         args = ["'string'"]
 
@@ -18409,6 +19485,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFLine"
                         args = ["'string'"]
 
@@ -18425,6 +19502,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
@@ -18441,6 +19519,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
@@ -18457,6 +19536,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMATten"
                         args = ["'string'"]
 
@@ -18473,6 +19553,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMLine"
                         args = ["'string'"]
 
@@ -18489,6 +19570,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
@@ -18505,6 +19587,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
@@ -18521,6 +19604,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
@@ -18537,6 +19621,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MOPen"
                         args = ["'string'"]
 
@@ -18553,6 +19638,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MOSHort"
                         args = ["'string'"]
 
@@ -18569,6 +19655,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
@@ -18585,6 +19672,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSHort"
                         args = ["'string'"]
 
@@ -18601,6 +19689,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
@@ -18617,6 +19706,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "OSHort"
                         args = ["'string'"]
 
@@ -18633,6 +19723,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "SELect"
                         args = ["'string'"]
 
@@ -18663,6 +19754,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ATT, IMATch12, LINe1, LINe2, LINe3, M1O2, M1S2, MATCh1, MATCh12, MATCh2, NET, O1M2, OPEN1, OPEN12, OPEN2, OSHort1, OSHort11, OSHort12, OSHort13, OSHort2, OSHort21, OSHort22, OSHort23, REFL1, REFL2, S1M2, SHORt1, SHORt12, SHORt2, SLIDe1, SLIDe12, SLIDe2, THRough, UTHRough
                 """
+                __slots__ = ()
                 _cmd = "COLLect"
                 args = ["ATT", "IMATch12", "LINe1", "LINe2", "LINe3", "M1O2", "M1S2", "MATCh1", "MATCh12", "MATCh2", "NET", "O1M2", "OPEN1", "OPEN12", "OPEN2", "OSHort1", "OSHort11", "OSHort12", "OSHort13", "OSHort2", "OSHort21", "OSHort22", "OSHort23", "REFL1", "REFL2", "S1M2", "SHORt1", "SHORt12", "SHORt2", "SLIDe1", "SLIDe12", "SLIDe2", "THRough", "UTHRough"]
 
@@ -18673,6 +19765,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ATT, IMATch12, LINe1, LINe2, LINe3, M1O2, M1S2, MATCh1, MATCh12, MATCh2, NET, O1M2, OPEN1, OPEN12, OPEN2, OSHort1, OSHort11, OSHort12, OSHort13, OSHort2, OSHort21, OSHort22, OSHort23, REFL1, REFL2, S1M2, SHORt1, SHORt12, SHORt2, SLIDe1, SLIDe12, SLIDe2, THRough, UTHRough
                     """
+                    __slots__ = ()
                     _cmd = "ACQuire"
                     args = ["ATT", "IMATch12", "LINe1", "LINe2", "LINe3", "M1O2", "M1S2", "MATCh1", "MATCh12", "MATCh2", "NET", "O1M2", "OPEN1", "OPEN12", "OPEN2", "OSHort1", "OSHort11", "OSHort12", "OSHort13", "OSHort2", "OSHort21", "OSHort22", "OSHort23", "REFL1", "REFL2", "S1M2", "SHORt1", "SHORt12", "SHORt2", "SLIDe1", "SLIDe12", "SLIDe2", "THRough", "UTHRough"]
 
@@ -18682,6 +19775,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "RSAVe"
                         args = ["1", "OFF", "ON"]
 
@@ -18691,6 +19785,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "DEFault"
                             args = ["1", "OFF", "ON"]
 
@@ -18715,6 +19810,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: ATT, ISOLation, LINE, LINe1, LINe2, LINe3, MATCh, NET, OPEN, OSHort, OSHort1, OSHort2, OSHort3, POWer, REFL, SHORt, SLIDe, THRough, UTHRough
                         """
+                        __slots__ = ()
                         _cmd = "SELected"
                         args = ["ATT", "ISOLation", "LINE", "LINe1", "LINe2", "LINe3", "MATCh", "NET", "OPEN", "OSHort", "OSHort1", "OSHort2", "OSHort3", "POWer", "REFL", "SHORt", "SLIDe", "THRough", "UTHRough"]
 
@@ -18741,6 +19837,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["'string'"]
 
@@ -18750,6 +19847,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ASSignment"
                         args = []
 
@@ -18760,6 +19858,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -18777,6 +19876,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ALL"
                             args = []
 
@@ -18787,6 +19887,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments:
                                 """
+                                __slots__ = ()
                                 _cmd = "COUNt"
                                 args = []
 
@@ -18812,6 +19913,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "COUNt"
                             args = []
 
@@ -18830,6 +19932,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18840,6 +19943,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "DEFault"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18858,6 +19962,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
+                                __slots__ = ()
                                 _cmd = "TPORt"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18868,6 +19973,7 @@ class ZNB_gen(Instrument):
 
                                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                     """
+                                    __slots__ = ()
                                     _cmd = "DEFault"
                                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -18901,6 +20007,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DELete"
                             args = []
 
@@ -18911,6 +20018,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments:
                                 """
+                                __slots__ = ()
                                 _cmd = "ALL"
                                 args = []
 
@@ -18943,6 +20051,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "CKIT"
                         args = ["'string'"]
 
@@ -18953,6 +20062,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "PASSword"
                             args = ["'string'"]
 
@@ -18971,6 +20081,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "PORTs"
                             args = ["'string'"]
 
@@ -18981,6 +20092,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: 'string'
                                 """
+                                __slots__ = ()
                                 _cmd = "ADD"
                                 args = ["'string'"]
 
@@ -19015,6 +20127,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: FNPort, FOPort, FRTRans, FTRans, OPTPort, PFNPort, REFL, RSHort, RTRans, UTRans
                         """
+                        __slots__ = ()
                         _cmd = "CONFigure"
                         args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "PFNPort", "REFL", "RSHort", "RTRans", "UTRans"]
 
@@ -19033,6 +20146,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "PORTs"
                         args = ["'string'"]
 
@@ -19043,6 +20157,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "CONNection"
                             args = []
 
@@ -19061,6 +20176,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: FNPort, FOPort, FRTRans, FTRans, OPTPort, PFNPort, REFL, RSHort, RTRans, UTRans
                             """
+                            __slots__ = ()
                             _cmd = "TYPE"
                             args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "PFNPort", "REFL", "RSHort", "RTRans", "UTRans"]
 
@@ -19087,6 +20203,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "POWer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19105,6 +20222,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SAVE"
                         args = []
 
@@ -19123,6 +20241,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: FNPort, FOPort, FRTRans, FTRans, OPTPort, PFNPort, REFL, RSHort, RTRans, UTRans
                         """
+                        __slots__ = ()
                         _cmd = "TYPE"
                         args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "PFNPort", "REFL", "RSHort", "RTRans", "UTRans"]
 
@@ -19149,6 +20268,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: AUTO, MANual
                     """
+                    __slots__ = ()
                     _cmd = "AVERage"
                     args = ["AUTO", "MANual"]
 
@@ -19166,6 +20286,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CHANnels"
                     args = []
 
@@ -19176,6 +20297,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "ALL"
                         args = ["1", "OFF", "ON"]
 
@@ -19194,6 +20316,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "MCTYpes"
                         args = ["1", "OFF", "ON"]
 
@@ -19218,6 +20341,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CKIT"
                     args = []
 
@@ -19228,6 +20352,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "INSTall"
                         args = ["'string'"]
 
@@ -19246,6 +20371,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "LOAD"
                         args = ["'string'"]
 
@@ -19264,6 +20390,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: CONNector, GENDer, LABel, NAME
                         """
+                        __slots__ = ()
                         _cmd = "PORT"
                         args = ["CONNector", "GENDer", "LABel", "NAME"]
 
@@ -19289,6 +20416,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: BNC50female, BNC50male, BNC75female, BNC75male, N50Female, N50Male, N75Female, N75Male, PC292female, PC292male, PC35female, PC35male, PC7, SMAFemale, SMAMale, UFEMale1, UFEMale2, UMALe1, UMALe2
                     """
+                    __slots__ = ()
                     _cmd = "CONNection"
                     args = ["BNC50female", "BNC50male", "BNC75female", "BNC75male", "N50Female", "N50Male", "N75Female", "N75Male", "PC292female", "PC292male", "PC35female", "PC35male", "PC7", "SMAFemale", "SMAMale", "UFEMale1", "UFEMale2", "UMALe1", "UMALe2"]
 
@@ -19299,6 +20427,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: ALL, SINGle
                         """
+                        __slots__ = ()
                         _cmd = "GENDers"
                         args = ["ALL", "SINGle"]
 
@@ -19317,6 +20446,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: ALL, SINGle
                         """
+                        __slots__ = ()
                         _cmd = "PORTs"
                         args = ["ALL", "SINGle"]
 
@@ -19343,6 +20473,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ALL, 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DELete"
                     args = ["ALL", "'string'"]
 
@@ -19360,6 +20491,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ERRor"
                     args = []
 
@@ -19376,6 +20508,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: OPEN, SHORt
                     """
+                    __slots__ = ()
                     _cmd = "FIXTure"
                     args = ["OPEN", "SHORt"]
 
@@ -19386,6 +20519,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: OPEN, SHORt
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = ["OPEN", "SHORt"]
 
@@ -19404,6 +20538,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "EXPort"
                         args = ["'string'"]
 
@@ -19422,6 +20557,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "IMPort"
                         args = ["'string'"]
 
@@ -19439,6 +20575,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "LMParameter"
                         args = ["1", "OFF", "ON"]
 
@@ -19448,6 +20585,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "LOSS"
                             args = ["1", "OFF", "ON"]
 
@@ -19458,6 +20596,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: 1, OFF, ON
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
@@ -19483,6 +20622,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -19508,6 +20648,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SAVE"
                         args = []
 
@@ -19526,6 +20667,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = []
 
@@ -19550,6 +20692,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LOAD"
                     args = []
 
@@ -19560,6 +20703,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "SELected"
                         args = ["'string'"]
 
@@ -19585,6 +20729,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ETOM, ETSM, FOPort1, FOPort12, FOPort2, FOPTport, FRTRans, FTRans, REFL1, REFL12, REFL2, ROPTport, RTRans, TNA, TOM, TOSM, TPORt, TRL, TRM, TSM, UOSM
                     """
+                    __slots__ = ()
                     _cmd = "METHod"
                     args = ["ETOM", "ETSM", "FOPort1", "FOPort12", "FOPort2", "FOPTport", "FRTRans", "FTRans", "REFL1", "REFL12", "REFL2", "ROPTport", "RTRans", "TNA", "TOM", "TOSM", "TPORt", "TRL", "TRM", "TSM", "UOSM"]
 
@@ -19595,6 +20740,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, 'string', ETOM, ETSM, FOPort1, FOPort12, FOPort2, FOPTport, FRTRans, FTRans, REFL1, REFL12, REFL2, ROPTport, RTRans, TNA, TOM, TOSM, TPORt, TRL, TRM, TSM, UOSM
                         """
+                        __slots__ = ()
                         _cmd = "DEFine"
                         args = ["1", "'string'", "ETOM", "ETSM", "FOPort1", "FOPort12", "FOPort2", "FOPTport", "FRTRans", "FTRans", "REFL1", "REFL12", "REFL2", "ROPTport", "RTRans", "TNA", "TOM", "TOSM", "TPORt", "TRL", "TRM", "TSM", "UOSM"]
 
@@ -19620,6 +20766,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ATTenuator, RECeiver, SOURce
                     """
+                    __slots__ = ()
                     _cmd = "NFIGure"
                     args = ["ATTenuator", "RECeiver", "SOURce"]
 
@@ -19629,6 +20776,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: ATTenuator, RECeiver, SOURce
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = ["ATTenuator", "RECeiver", "SOURce"]
 
@@ -19645,6 +20793,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "END"
                         args = []
 
@@ -19661,6 +20810,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SAVE"
                         args = []
 
@@ -19677,6 +20827,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19700,6 +20851,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PMETer"
                     args = []
 
@@ -19710,6 +20862,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "ID"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -19734,6 +20887,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SAVE"
                     args = []
 
@@ -19744,6 +20898,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DEFault"
                         args = []
 
@@ -19762,6 +20917,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DUMMy"
                         args = []
 
@@ -19779,6 +20935,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SELected"
                         args = []
 
@@ -19789,6 +20946,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DEFault"
                             args = []
 
@@ -19807,6 +20965,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DUMMy"
                             args = []
 
@@ -19839,6 +20998,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SCONnection"
                     args = ["'string'"]
 
@@ -19864,6 +21024,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CONNection"
                 args = ["'string'"]
 
@@ -19874,6 +21035,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CATalog"
                     args = []
 
@@ -19892,6 +21054,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DELete"
                     args = ["'string'"]
 
@@ -19917,6 +21080,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CSET"
                 args = []
 
@@ -19926,6 +21090,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "ACTivate"
                     args = ["'string'"]
 
@@ -19942,6 +21107,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DESCription"
                     args = ["'string'"]
 
@@ -19966,6 +21132,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "DATA"
                 args = ["'string'"]
 
@@ -19976,6 +21143,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ACAL, BANDwidth, CKIT, FSMode, LTSTamp, MTESt, MVNA, PDLY, POINts, PORTs, RATTenuation, SPORt, SPOWer, STARt, STOP, STYPe, THRoughs, TSTamp, TVNA, TYPE
                     """
+                    __slots__ = ()
                     _cmd = "PARameter"
                     args = ["ACAL", "BANDwidth", "CKIT", "FSMode", "LTSTamp", "MTESt", "MVNA", "PDLY", "POINts", "PORTs", "RATTenuation", "SPORt", "SPOWer", "STARt", "STOP", "STYPe", "THRoughs", "TSTamp", "TVNA", "TYPE"]
 
@@ -19986,6 +21154,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -20004,6 +21173,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: ACAL, BANDwidth, CKIT, FSMode, LTSTamp, MTESt, MVNA, PDLY, POINts, PORTs, RATTenuation, SPORt, SPOWer, STARt, STOP, STYPe, THRoughs, TSTamp, TVNA, TYPE
                         """
+                        __slots__ = ()
                         _cmd = "PORT"
                         args = ["ACAL", "BANDwidth", "CKIT", "FSMode", "LTSTamp", "MTESt", "MVNA", "PDLY", "POINts", "PORTs", "RATTenuation", "SPORt", "SPOWer", "STARt", "STOP", "STYPe", "THRoughs", "TSTamp", "TVNA", "TYPE"]
 
@@ -20038,6 +21208,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DATE"
                 args = []
 
@@ -20055,6 +21226,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DSTate"
                 args = []
 
@@ -20071,6 +21243,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "EDELay"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20081,6 +21254,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ONCE
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["ONCE"]
 
@@ -20099,6 +21273,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DIELectric"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20117,6 +21292,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DISTance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20135,6 +21311,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "ELENgth"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20153,6 +21330,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20178,6 +21356,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "LOSS"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20188,6 +21367,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ONCE
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["ONCE"]
 
@@ -20206,6 +21386,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20224,6 +21405,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "OFFSet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20249,6 +21431,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "NFIGure"
                 args = ["1", "OFF", "ON"]
 
@@ -20258,6 +21441,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -20281,6 +21465,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "OFFSet"
                 args = ["1", "OFF", "ON"]
 
@@ -20290,6 +21475,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "COMPensation"
                     args = ["1", "OFF", "ON"]
 
@@ -20300,6 +21486,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -20324,6 +21511,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DFComp"
                     args = []
 
@@ -20334,6 +21522,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = []
 
@@ -20359,6 +21548,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "MAGNitude"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20377,6 +21567,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -20402,6 +21593,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ALL, NONE
                 """
+                __slots__ = ()
                 _cmd = "PCAL"
                 args = ["ALL", "NONE"]
 
@@ -20419,6 +21611,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = ["1", "OFF", "ON"]
 
@@ -20429,6 +21622,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: AWAVe, B1, B2, B3, B4, BWAVe
                     """
+                    __slots__ = ()
                     _cmd = "ACQuire"
                     args = ["AWAVe", "B1", "B2", "B3", "B4", "BWAVe"]
 
@@ -20446,6 +21640,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "AWAVe"
                     args = ["1", "OFF", "ON"]
 
@@ -20456,6 +21651,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -20481,6 +21677,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["'string'"]
 
@@ -20491,6 +21688,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "PORT"
                         args = ["'string'"]
 
@@ -20516,6 +21714,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HARMonic"
                     args = []
 
@@ -20525,6 +21724,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = []
 
@@ -20548,6 +21748,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "IMODulation"
                     args = []
 
@@ -20558,6 +21759,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = []
 
@@ -20582,6 +21784,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MIXer"
                     args = []
 
@@ -20591,6 +21794,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "IF"
                         args = []
 
@@ -20600,6 +21804,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -20631,6 +21836,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -20656,6 +21862,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PSTate"
                 args = []
 
@@ -20673,6 +21880,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SMATrix"
                 args = []
 
@@ -20683,6 +21891,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "CDATa"
                     args = ["'string'"]
 
@@ -20692,6 +21901,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20709,6 +21919,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "PORT"
                         args = ["'string'"]
 
@@ -20718,6 +21929,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "CATalog"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20758,6 +21970,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SSTate"
                 args = []
 
@@ -20776,6 +21989,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -20794,6 +22008,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STIMulus"
                 args = []
 
@@ -20804,6 +22019,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PORT"
                     args = []
 
@@ -20837,6 +22053,7 @@ class ZNB_gen(Instrument):
 
             Arguments: ALL, AUTO, NONE
             """
+            __slots__ = ()
             _cmd = "COUPle"
             args = ["ALL", "AUTO", "NONE"]
 
@@ -20854,6 +22071,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DC"
             args = []
 
@@ -20864,6 +22082,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "RANGe"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20888,6 +22107,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20898,6 +22118,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CENTer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20916,6 +22137,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ARBitrary, FUNDamental, HARMonic, MIXer, SHARmonic, THARmonic
                 """
+                __slots__ = ()
                 _cmd = "CONVersion"
                 args = ["ARBitrary", "FUNDamental", "HARMonic", "MIXer", "SHARmonic", "THARmonic"]
 
@@ -20926,6 +22148,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ARBitrary"
                     args = []
 
@@ -20936,6 +22159,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PMETer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -20961,6 +22185,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "GAIN"
                     args = []
 
@@ -20971,6 +22196,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "LMCorrection"
                         args = ["1", "OFF", "ON"]
 
@@ -20995,6 +22221,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HARMonic"
                     args = []
 
@@ -21004,6 +22231,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "ORDer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21020,6 +22248,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "RELative"
                         args = ["1", "OFF", "ON"]
 
@@ -21036,6 +22265,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21052,6 +22282,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "SPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21075,6 +22306,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MIXer"
                     args = []
 
@@ -21084,6 +22316,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "FFIXed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21101,6 +22334,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: IF, LO, LO1, LO2, RF
                         """
+                        __slots__ = ()
                         _cmd = "FIXed"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
@@ -21119,6 +22353,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: IF, LO, LO1, LO2, RF
                         """
+                        __slots__ = ()
                         _cmd = "FUNDamental"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
@@ -21136,6 +22371,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "IFFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21153,6 +22389,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "IFPort"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21170,6 +22407,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, NONE, SOURCE1, SOURCE2, UP
                         """
+                        __slots__ = ()
                         _cmd = "LOEXternal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "SOURCE1", "SOURCE2", "UP"]
 
@@ -21186,6 +22424,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "LOFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21202,6 +22441,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, NONE, UP
                         """
+                        __slots__ = ()
                         _cmd = "LOINternal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "UP"]
 
@@ -21219,6 +22459,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "LOMultiplier"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21237,6 +22478,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: GENerator, NONE, PORT
                         """
+                        __slots__ = ()
                         _cmd = "LOPort"
                         args = ["GENerator", "NONE", "PORT"]
 
@@ -21255,6 +22497,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: IF, LO, LO1, LO2, RF
                         """
+                        __slots__ = ()
                         _cmd = "MFFixed"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
@@ -21272,6 +22515,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RFFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21289,6 +22533,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RFMultiplier"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21307,6 +22552,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "RFPort"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21325,6 +22571,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "STAGes"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21343,6 +22590,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: BAND1, BAND2, DCLower, DCUPper, UCONversion
                         """
+                        __slots__ = ()
                         _cmd = "TFRequency"
                         args = ["BAND1", "BAND2", "DCLower", "DCUPper", "UCONversion"]
 
@@ -21376,6 +22624,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CW"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21394,6 +22643,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "FIXed"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21411,6 +22661,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "IFConst"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21420,6 +22671,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -21443,6 +22695,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMODulation"
                 args = []
 
@@ -21453,6 +22706,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: OFF
                     """
+                    __slots__ = ()
                     _cmd = "CONVersion"
                     args = ["OFF"]
 
@@ -21471,6 +22725,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: GENerator, NONE, PORT
                     """
+                    __slots__ = ()
                     _cmd = "LTONe"
                     args = ["GENerator", "NONE", "PORT"]
 
@@ -21488,6 +22743,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "ORDer"
                     args = ["1", "OFF", "ON"]
 
@@ -21498,6 +22754,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -21523,6 +22780,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RECeiver"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21540,6 +22798,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "SPECtrum"
                     args = ["1", "OFF", "ON"]
 
@@ -21550,6 +22809,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "MORDer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21568,6 +22828,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -21593,6 +22854,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TDIStance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21610,6 +22872,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: EDEVice, PORT
                     """
+                    __slots__ = ()
                     _cmd = "TTOutput"
                     args = ["EDEVice", "PORT"]
 
@@ -21627,6 +22890,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: GENerator, NONE, PORT
                     """
+                    __slots__ = ()
                     _cmd = "UTONe"
                     args = ["GENerator", "NONE", "PORT"]
 
@@ -21652,6 +22916,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: CW, FIXed, SEGMent, SWEep
                 """
+                __slots__ = ()
                 _cmd = "MODE"
                 args = ["CW", "FIXed", "SEGMent", "SWEep"]
 
@@ -21670,6 +22935,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: AUTO, NEGative, POSitive
                 """
+                __slots__ = ()
                 _cmd = "SBANd"
                 args = ["AUTO", "NEGative", "POSitive"]
 
@@ -21687,6 +22953,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SEGMent"
                 args = []
 
@@ -21697,6 +22964,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: FREQuency, POINt
                     """
+                    __slots__ = ()
                     _cmd = "AXIS"
                     args = ["FREQuency", "POINt"]
 
@@ -21722,6 +22990,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SPAN"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21740,6 +23009,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21758,6 +23028,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "STOP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21782,6 +23053,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "FUNCtion"
             args = ["'string'"]
 
@@ -21792,6 +23064,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "ON"
                 args = ["'string'"]
 
@@ -21817,6 +23090,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "HARMonic"
             args = []
 
@@ -21827,6 +23101,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "AUTO"
                 args = ["1", "OFF", "ON"]
 
@@ -21844,6 +23119,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DLENgth"
                 args = []
 
@@ -21854,6 +23130,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21878,6 +23155,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ELENgth"
                 args = []
 
@@ -21888,6 +23166,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21912,6 +23191,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MLENgth"
                 args = []
 
@@ -21922,6 +23202,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21946,6 +23227,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PERMittivity"
                 args = []
 
@@ -21956,6 +23238,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -21980,6 +23263,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RTIMe"
                 args = []
 
@@ -21990,6 +23274,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22008,6 +23293,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: T1_9, T2_8
                     """
+                    __slots__ = ()
                     _cmd = "THReshold"
                     args = ["T1_9", "T2_8"]
 
@@ -22032,6 +23318,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "VELocity"
                 args = []
 
@@ -22042,6 +23329,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22074,6 +23362,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LPORt"
             args = []
 
@@ -22084,6 +23373,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ZCOMmon"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22101,6 +23391,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "ZDEFault"
                 args = ["1", "OFF", "ON"]
 
@@ -22111,6 +23402,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -22136,6 +23428,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ZDIFferent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22160,6 +23453,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "NFIGure"
             args = []
 
@@ -22169,6 +23463,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "ISNoise"
                 args = ["1", "OFF", "ON"]
 
@@ -22185,6 +23480,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "NDUT"
                 args = ["1", "OFF", "ON"]
 
@@ -22201,6 +23497,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "RFICorr"
                 args = ["1", "OFF", "ON"]
 
@@ -22217,6 +23514,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "SEQuential"
                 args = ["1", "OFF", "ON"]
 
@@ -22240,6 +23538,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PAE"
             args = []
 
@@ -22249,6 +23548,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DCINput"
                 args = []
 
@@ -22259,6 +23559,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: DC1, DC2, DC3, DC4
                     """
+                    __slots__ = ()
                     _cmd = "MAIN"
                     args = ["DC1", "DC2", "DC3", "DC4"]
 
@@ -22277,6 +23578,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: DC1, DC2, DC3, DC4
                     """
+                    __slots__ = ()
                     _cmd = "SECondary"
                     args = ["DC1", "DC2", "DC3", "DC4"]
 
@@ -22301,6 +23603,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PARameters"
                 args = []
 
@@ -22311,6 +23614,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "I"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22329,6 +23633,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "R"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22347,6 +23652,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "U"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22372,6 +23678,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: CURRent, VCURrent, VOLTage
                 """
+                __slots__ = ()
                 _cmd = "TYPE"
                 args = ["CURRent", "VCURrent", "VOLTage"]
 
@@ -22396,6 +23703,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PORT"
             args = []
 
@@ -22406,6 +23714,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ZREFerence"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22430,6 +23739,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "POWer"
             args = []
 
@@ -22439,6 +23749,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AGCMode"
                 args = []
 
@@ -22449,6 +23760,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ACQuire"
                     args = []
 
@@ -22467,6 +23779,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: AUTO, LDIStortion, LNOise
                     """
+                    __slots__ = ()
                     _cmd = "MEASure"
                     args = ["AUTO", "LDIStortion", "LNOise"]
 
@@ -22485,6 +23798,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SAVE"
                     args = []
 
@@ -22510,6 +23824,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, ARECeiver, BRECeiver, CRECeiver, DEFault, DOWN, DRECeiver, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ATTenuation"
                 args = ["1", "ARECeiver", "BRECeiver", "CRECeiver", "DEFault", "DOWN", "DRECeiver", "MAXimum", "MINimum", "UP"]
 
@@ -22528,6 +23843,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "GAINcontrol"
                 args = ["'string'"]
 
@@ -22538,6 +23854,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: AUTO, LDIStortion, LNOise
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = ["AUTO", "LDIStortion", "LNOise"]
 
@@ -22556,6 +23873,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: AUTO, LDIStortion, LNOise, MANual
                     """
+                    __slots__ = ()
                     _cmd = "GLOBal"
                     args = ["AUTO", "LDIStortion", "LNOise", "MANual"]
 
@@ -22581,6 +23899,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IFGain"
                 args = []
 
@@ -22591,6 +23910,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: AUTO, LDIStortion, LNOise
                     """
+                    __slots__ = ()
                     _cmd = "MEASure"
                     args = ["AUTO", "LDIStortion", "LNOise"]
 
@@ -22622,6 +23942,7 @@ class ZNB_gen(Instrument):
 
             Arguments: EXTernal, INTernal
             """
+            __slots__ = ()
             _cmd = "ROSCillator"
             args = ["EXTernal", "INTernal"]
 
@@ -22631,6 +23952,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXTernal"
                 args = []
 
@@ -22641,6 +23963,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22666,6 +23989,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: EXTernal, INTernal
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXTernal", "INTernal"]
 
@@ -22690,6 +24014,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "SEGMent"
             args = ["1", "OFF", "ON"]
 
@@ -22700,6 +24025,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ADD"
                 args = []
 
@@ -22717,6 +24043,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "BWIDth"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22727,6 +24054,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "RESolution"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22737,6 +24065,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
@@ -22755,6 +24084,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: HIGH, MEDium, NORMal
                         """
+                        __slots__ = ()
                         _cmd = "SELect"
                         args = ["HIGH", "MEDium", "NORMal"]
 
@@ -22765,6 +24095,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "CONTrol"
                             args = ["1", "OFF", "ON"]
 
@@ -22806,6 +24137,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = []
 
@@ -22824,6 +24156,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = []
 
@@ -22842,6 +24175,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "DEFine"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22852,6 +24186,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: DWELl, SWTime
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["DWELl", "SWTime"]
 
@@ -22877,6 +24212,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DELete"
                 args = []
 
@@ -22887,6 +24223,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -22905,6 +24242,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DUMMy"
                     args = []
 
@@ -22929,6 +24267,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = []
 
@@ -22939,6 +24278,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CENTer"
                     args = []
 
@@ -22957,6 +24297,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SPAN"
                     args = []
 
@@ -22975,6 +24316,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "STARt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -22993,6 +24335,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "STOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23018,6 +24361,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "INSert"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23028,6 +24372,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: DWELl, SWTime
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["DWELl", "SWTime"]
 
@@ -23054,6 +24399,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "OVERlap"
                 args = ["1", "OFF", "ON"]
 
@@ -23071,6 +24417,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23081,6 +24428,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "GAINcontrol"
                     args = ["'string'"]
 
@@ -23091,6 +24439,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: AUTO, LDIStortion, LNOise
                         """
+                        __slots__ = ()
                         _cmd = "ALL"
                         args = ["AUTO", "LDIStortion", "LNOise"]
 
@@ -23109,6 +24458,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
@@ -23135,6 +24485,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "LEVel"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23145,6 +24496,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
@@ -23178,6 +24530,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -23195,6 +24548,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SWEep"
                 args = []
 
@@ -23205,6 +24559,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DWELl"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23215,6 +24570,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
@@ -23241,6 +24597,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ANALog, STEPped
                     """
+                    __slots__ = ()
                     _cmd = "GENeration"
                     args = ["ANALog", "STEPped"]
 
@@ -23259,6 +24616,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "POINts"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23277,6 +24635,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23287,6 +24646,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
@@ -23305,6 +24665,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SUM"
                         args = []
 
@@ -23344,6 +24705,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SWEep"
             args = []
 
@@ -23353,6 +24715,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AXIS"
                 args = []
 
@@ -23363,6 +24726,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["'string'"]
 
@@ -23381,6 +24745,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "POWer"
                     args = ["'string'"]
 
@@ -23406,6 +24771,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23416,6 +24782,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23441,6 +24808,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DETector"
                 args = []
 
@@ -23451,6 +24819,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23476,6 +24845,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "DWELl"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23486,6 +24856,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ALL, FIRSt
                     """
+                    __slots__ = ()
                     _cmd = "IPOint"
                     args = ["ALL", "FIRSt"]
 
@@ -23512,6 +24883,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ANALog, STEPped
                 """
+                __slots__ = ()
                 _cmd = "GENeration"
                 args = ["ANALog", "STEPped"]
 
@@ -23521,6 +24893,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ANALog"
                     args = []
 
@@ -23531,6 +24904,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONDition"
                         args = []
 
@@ -23563,6 +24937,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: CONTinuous, HOLD
                 """
+                __slots__ = ()
                 _cmd = "MODE"
                 args = ["CONTinuous", "HOLD"]
 
@@ -23580,6 +24955,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "POINts"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23598,6 +24974,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: LINear, LOGarithmic
                 """
+                __slots__ = ()
                 _cmd = "SPACing"
                 args = ["LINear", "LOGarithmic"]
 
@@ -23616,6 +24993,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "SRCPort"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23634,6 +25012,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23652,6 +25031,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23662,6 +25042,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["1", "OFF", "ON"]
 
@@ -23687,6 +25068,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRIGger"
                 args = []
 
@@ -23696,6 +25078,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23712,6 +25095,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: CHANnel, POINt, SWEep, TRACe
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["CHANnel", "POINt", "SWEep", "TRACe"]
 
@@ -23736,6 +25120,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: CW, LINear, LOGarithmic, POINt, POWer, SEGMent
                 """
+                __slots__ = ()
                 _cmd = "TYPE"
                 args = ["CW", "LINear", "LOGarithmic", "POINt", "POWer", "SEGMent"]
 
@@ -23760,6 +25145,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "UDSParams"
             args = []
 
@@ -23770,6 +25156,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "ACTive"
                 args = ["1", "OFF", "ON"]
 
@@ -23788,6 +25175,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "PARam"
                 args = ["'string'"]
 
@@ -23819,6 +25207,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SOURce"
         args = []
 
@@ -23828,6 +25217,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23837,6 +25227,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONVersion"
                 args = []
 
@@ -23846,6 +25237,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ARBitrary"
                     args = []
 
@@ -23856,6 +25248,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "EFRequency"
                         args = ["1", "OFF", "ON"]
 
@@ -23874,6 +25267,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "IFRequency"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23898,6 +25292,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MIXer"
                     args = []
 
@@ -23907,6 +25302,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: LO, RF
                         """
+                        __slots__ = ()
                         _cmd = "FUNDamental"
                         args = ["LO", "RF"]
 
@@ -23923,6 +25319,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PFIXed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -23940,6 +25337,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: IF, LO, LO1, LO2, RF
                         """
+                        __slots__ = ()
                         _cmd = "PMFixed"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
@@ -23958,6 +25356,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: IF, LO, LO1, LO2, RF
                         """
+                        __slots__ = ()
                         _cmd = "PMODe"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
@@ -23990,6 +25389,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "CW"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24008,6 +25408,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "FIXed"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24033,6 +25434,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "GROup"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24043,6 +25445,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ALL
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = ["ALL"]
 
@@ -24061,6 +25464,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = []
 
@@ -24078,6 +25482,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DPORt"
                 args = []
 
@@ -24088,6 +25493,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "COUNt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24113,6 +25519,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = ["'string'"]
 
@@ -24131,6 +25538,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "PORDer"
                 args = ["'string'"]
 
@@ -24149,6 +25557,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "PORTs"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24166,6 +25575,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PPORt"
                 args = []
 
@@ -24176,6 +25586,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DPORt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24201,6 +25612,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "PPORts"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24218,6 +25630,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SIMultaneous"
                 args = []
 
@@ -24227,6 +25640,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "FOFFset"
                     args = []
 
@@ -24237,6 +25651,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONDition"
                         args = []
 
@@ -24254,6 +25669,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "MOFFset"
                         args = []
 
@@ -24264,6 +25680,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "BWFactor"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24282,6 +25699,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "DVALue"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24300,6 +25718,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: BANDwidth, DIRect
                             """
+                            __slots__ = ()
                             _cmd = "MODE"
                             args = ["BANDwidth", "DIRect"]
 
@@ -24325,6 +25744,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -24365,6 +25785,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "LPORt"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24375,6 +25796,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ALL
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = ["ALL"]
 
@@ -24400,6 +25822,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "POWer"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24409,6 +25832,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALC"
                 args = []
 
@@ -24418,6 +25842,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: AUTO, BBANd, OFF, SBANd
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["AUTO", "BBANd", "OFF", "SBANd"]
 
@@ -24434,6 +25859,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: AWAVe, BWAVe, SFK
                     """
+                    __slots__ = ()
                     _cmd = "SVARiable"
                     args = ["AWAVe", "BWAVe", "SFK"]
 
@@ -24457,6 +25883,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "ATTenuation"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24466,6 +25893,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "AUTO"
                     args = ["1", "OFF", "ON"]
 
@@ -24489,6 +25917,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: A1, A2, A3, A4, CONVerter, ESRC1, ESRC2, GENerator, PORT
                 """
+                __slots__ = ()
                 _cmd = "CORRection"
                 args = ["A1", "A2", "A3", "A4", "CONVerter", "ESRC1", "ESRC2", "GENerator", "PORT"]
 
@@ -24499,6 +25928,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: A1, A2, A3, A4, CONVerter, ESRC1, ESRC2, GENerator, PORT
                     """
+                    __slots__ = ()
                     _cmd = "ACQuire"
                     args = ["A1", "A2", "A3", "A4", "CONVerter", "ESRC1", "ESRC2", "GENerator", "PORT"]
 
@@ -24508,6 +25938,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "VERification"
                         args = []
 
@@ -24518,6 +25949,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "RESult"
                             args = []
 
@@ -24550,6 +25982,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: ASENsor, BSENsor
                     """
+                    __slots__ = ()
                     _cmd = "COLLect"
                     args = ["ASENsor", "BSENsor"]
 
@@ -24560,6 +25993,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: ASENsor, BSENsor
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = ["ASENsor", "BSENsor"]
 
@@ -24569,6 +26003,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "VERification"
                             args = ["1", "OFF", "ON"]
 
@@ -24578,6 +26013,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: 1, OFF, ON
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
@@ -24609,6 +26045,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "AVERage"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24619,6 +26056,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "COUNt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24637,6 +26075,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "NTOLerance"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24662,6 +26101,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "CFACtor"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24679,6 +26119,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "FLATness"
                         args = ["1", "OFF", "ON"]
 
@@ -24695,6 +26136,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: PMONly, RRAFter, RRONly
                         """
+                        __slots__ = ()
                         _cmd = "METHod"
                         args = ["PMONly", "RRAFter", "RRONly"]
 
@@ -24712,6 +26154,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "PMReadings"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24729,6 +26172,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "RRECeiver"
                         args = ["1", "OFF", "ON"]
 
@@ -24753,6 +26197,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = ["'string'"]
 
@@ -24763,6 +26208,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: ATTenuation, CFRequency, CPOWer, FSMode, LTSTamp, MTESt, MVNA, POINts, STARt, STOP, STYPe, TSTamp, TVNA, WAVE
                         """
+                        __slots__ = ()
                         _cmd = "PARameter"
                         args = ["ATTenuation", "CFRequency", "CPOWer", "FSMode", "LTSTamp", "MTESt", "MVNA", "POINts", "STARt", "STOP", "STYPe", "TSTamp", "TVNA", "WAVE"]
 
@@ -24773,6 +26219,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "COUNt"
                             args = []
 
@@ -24799,6 +26246,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "PORT"
                         args = ["'string'"]
 
@@ -24824,6 +26272,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "DEFault"
                     args = ["1", "OFF", "ON"]
 
@@ -24840,6 +26289,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "FAST"
                     args = ["1", "OFF", "ON"]
 
@@ -24856,6 +26306,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "GENerator"
                     args = ["1", "OFF", "ON"]
 
@@ -24865,6 +26316,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "LEVel"
                         args = []
 
@@ -24875,6 +26327,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "OFFSet"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -24900,6 +26353,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -24924,6 +26378,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HARMonic"
                     args = []
 
@@ -24933,6 +26388,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ACQuire"
                         args = []
 
@@ -24956,6 +26412,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "IMODulation"
                     args = []
 
@@ -24965,6 +26422,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "LTONe"
                         args = []
 
@@ -24975,6 +26433,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -25000,6 +26459,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "PORT"
                         args = ["'string'"]
 
@@ -25017,6 +26477,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "UTONe"
                         args = []
 
@@ -25027,6 +26488,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -25058,6 +26520,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LEVel"
                     args = []
 
@@ -25068,6 +26531,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25092,6 +26556,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MIXer"
                     args = []
 
@@ -25101,6 +26566,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "IF"
                         args = []
 
@@ -25110,6 +26576,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -25133,6 +26600,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "LO"
                         args = []
 
@@ -25142,6 +26610,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -25165,6 +26634,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "RF"
                         args = []
 
@@ -25174,6 +26644,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ACQuire"
                             args = []
 
@@ -25205,6 +26676,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "NREadings"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25222,6 +26694,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "OSOurces"
                     args = ["1", "OFF", "ON"]
 
@@ -25232,6 +26705,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -25256,6 +26730,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PMETer"
                     args = []
 
@@ -25266,6 +26741,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "ID"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25291,6 +26767,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "PPOWer"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25309,6 +26786,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: CPOWer, PPOWer
                     """
+                    __slots__ = ()
                     _cmd = "PSELect"
                     args = ["CPOWer", "PPOWer"]
 
@@ -25327,6 +26805,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -25344,6 +26823,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "TCOefficient"
                     args = ["1", "OFF", "ON"]
 
@@ -25354,6 +26834,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "CALibration"
                         args = ["1", "OFF", "ON"]
 
@@ -25372,6 +26853,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -25390,6 +26872,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "DEFine"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25407,6 +26890,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DELete"
                         args = []
 
@@ -25417,6 +26901,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ALL"
                             args = []
 
@@ -25435,6 +26920,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "DUMMy"
                             args = []
 
@@ -25460,6 +26946,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FEED"
                         args = ["'string'"]
 
@@ -25478,6 +26965,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "INSert"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25496,6 +26984,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -25527,6 +27016,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "COUPle"
                 args = ["1", "OFF", "ON"]
 
@@ -25543,6 +27033,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "GENerator"
                 args = []
 
@@ -25552,6 +27043,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "LLIMit"
                     args = ["1", "OFF", "ON"]
 
@@ -25561,6 +27053,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -25577,6 +27070,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "VALue"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25601,6 +27095,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "OFFSet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25618,6 +27113,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "PERManent"
                     args = ["1", "OFF", "ON"]
 
@@ -25628,6 +27124,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -25653,6 +27150,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -25677,6 +27175,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "LEVel"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25686,6 +27185,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "IMMediate"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25696,6 +27196,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "AMPLitude"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25713,6 +27214,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "LLIMit"
                         args = ["1", "OFF", "ON"]
 
@@ -25722,6 +27224,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "DGRaccess"
                             args = ["1", "OFF", "ON"]
 
@@ -25738,6 +27241,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -25754,6 +27258,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "VALue"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25778,6 +27283,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25796,6 +27302,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "SLOPe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25805,6 +27312,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -25843,6 +27351,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "PERManent"
                 args = ["1", "OFF", "ON"]
 
@@ -25853,6 +27362,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -25877,6 +27387,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "REDuce"
                 args = ["1", "OFF", "ON"]
 
@@ -25887,6 +27398,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SDELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25905,6 +27417,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -25930,6 +27443,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25948,6 +27462,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
@@ -25966,6 +27481,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "STOP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -25983,6 +27499,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SWEepend"
                 args = []
 
@@ -25993,6 +27510,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: AUTO, KEEP, REDuce
                     """
+                    __slots__ = ()
                     _cmd = "MODE"
                     args = ["AUTO", "KEEP", "REDuce"]
 
@@ -26011,6 +27529,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "SDELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -26042,6 +27561,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TDIF"
             args = []
 
@@ -26051,6 +27571,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: DCMode, SENDed
                 """
+                __slots__ = ()
                 _cmd = "WAVes"
                 args = ["DCMode", "SENDed"]
 
@@ -26081,6 +27602,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "STATus"
         args = []
 
@@ -26090,6 +27612,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "OPERation"
             args = []
 
@@ -26099,6 +27622,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONDition"
                 args = []
 
@@ -26115,6 +27639,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = ["1"]
 
@@ -26131,6 +27656,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EVENt"
                 args = []
 
@@ -26147,6 +27673,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "NTRansition"
                 args = ["1"]
 
@@ -26163,6 +27690,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PTRansition"
                 args = ["1"]
 
@@ -26187,6 +27715,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PRESet"
             args = []
 
@@ -26204,6 +27733,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "QUEStionable"
             args = []
 
@@ -26214,6 +27744,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONDition"
                 args = []
 
@@ -26232,6 +27763,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = ["1"]
 
@@ -26250,6 +27782,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EVENt"
                 args = []
 
@@ -26267,6 +27800,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INTegrity"
                 args = []
 
@@ -26277,6 +27811,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -26295,6 +27830,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -26313,6 +27849,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -26330,6 +27867,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HARDware"
                     args = []
 
@@ -26340,6 +27878,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONDition"
                         args = []
 
@@ -26358,6 +27897,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ENABle"
                         args = ["1"]
 
@@ -26376,6 +27916,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -26394,6 +27935,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "NTRansition"
                         args = ["1"]
 
@@ -26412,6 +27954,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "PTRansition"
                         args = ["1"]
 
@@ -26437,6 +27980,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -26455,6 +27999,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -26479,6 +28024,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LIMit"
                 args = []
 
@@ -26489,6 +28035,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -26507,6 +28054,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -26525,6 +28073,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -26543,6 +28092,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -26561,6 +28111,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -26586,6 +28137,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "NTRansition"
                 args = ["1"]
 
@@ -26604,6 +28156,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PTRansition"
                 args = ["1"]
 
@@ -26628,6 +28181,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "QUEue"
             args = []
 
@@ -26638,6 +28192,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NEXT"
                 args = []
 
@@ -26669,6 +28224,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SYSTem"
         args = []
 
@@ -26678,6 +28234,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "COMMunicate"
             args = []
 
@@ -26687,6 +28244,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AKAL"
                 args = []
 
@@ -26697,6 +28255,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: MATCh, OPEN, SHORt, THRough
                     """
+                    __slots__ = ()
                     _cmd = "CONNection"
                     args = ["MATCh", "OPEN", "SHORt", "THRough"]
 
@@ -26714,6 +28273,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "MMEMory"
                     args = ["1", "OFF", "ON"]
 
@@ -26724,6 +28284,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -26756,6 +28317,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ASCii, SJIS, UTF8
                 """
+                __slots__ = ()
                 _cmd = "CODec"
                 args = ["ASCii", "SJIS", "UTF8"]
 
@@ -26773,6 +28335,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "GPIB"
                 args = []
 
@@ -26782,6 +28345,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SELF"
                     args = []
 
@@ -26792,6 +28356,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ADDRess"
                         args = ["1"]
 
@@ -26809,6 +28374,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DCLear"
                         args = []
 
@@ -26819,6 +28385,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "SUPPress"
                             args = ["1", "OFF", "ON"]
 
@@ -26843,6 +28410,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "INIT"
                         args = []
 
@@ -26853,6 +28421,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "WAIT"
                             args = ["1", "OFF", "ON"]
 
@@ -26877,6 +28446,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "LPORt"
                         args = []
 
@@ -26887,6 +28457,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "ALIGn"
                             args = ["1", "OFF", "ON"]
 
@@ -26912,6 +28483,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: EOI, LFEoi
                         """
+                        __slots__ = ()
                         _cmd = "RTERminator"
                         args = ["EOI", "LFEoi"]
 
@@ -26943,6 +28515,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INTernal"
                 args = []
 
@@ -26952,6 +28525,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COMMand"
                     args = []
 
@@ -26961,6 +28535,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "TABLes"
                         args = ["'string'"]
 
@@ -26984,6 +28559,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "REMote"
                     args = ["1", "OFF", "ON"]
 
@@ -27007,6 +28583,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NET"
                 args = []
 
@@ -27017,6 +28594,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "HOSTname"
                     args = ["'string'"]
 
@@ -27041,6 +28619,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RDEVice"
                 args = []
 
@@ -27050,6 +28629,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "AKAL"
                     args = []
 
@@ -27060,6 +28640,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "ADDRess"
                         args = ["'string'"]
 
@@ -27070,6 +28651,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ALL"
                             args = []
 
@@ -27095,6 +28677,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = []
 
@@ -27111,6 +28694,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CKIT"
                         args = []
 
@@ -27121,6 +28705,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "CATalog"
                             args = []
 
@@ -27138,6 +28723,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "STANdard"
                             args = []
 
@@ -27148,6 +28734,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: 'string'
                                 """
+                                __slots__ = ()
                                 _cmd = "CATalog"
                                 args = ["'string'"]
 
@@ -27179,6 +28766,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONFigure"
                         args = []
 
@@ -27188,6 +28776,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "AUTO"
                             args = ["1", "OFF", "ON"]
 
@@ -27197,6 +28786,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: 1, OFF, ON
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
@@ -27227,6 +28817,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -27244,6 +28835,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DATE"
                         args = ["'string'"]
 
@@ -27261,6 +28853,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEFine"
                         args = ["'string'"]
 
@@ -27277,6 +28870,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DELete"
                         args = []
 
@@ -27294,6 +28888,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "FRANge"
                         args = ["'string'"]
 
@@ -27312,6 +28907,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "PORTs"
                         args = ["'string'"]
 
@@ -27329,6 +28925,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "PREDuction"
                         args = ["1", "OFF", "ON"]
 
@@ -27339,6 +28936,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -27364,6 +28962,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "SDATa"
                         args = ["'string'"]
 
@@ -27381,6 +28980,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "WARMup"
                         args = []
 
@@ -27391,6 +28991,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = []
 
@@ -27422,6 +29023,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "GENerator"
                     args = []
 
@@ -27432,6 +29034,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = []
 
@@ -27450,6 +29053,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -27468,6 +29072,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEFine"
                         args = ["'string'"]
 
@@ -27486,6 +29091,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DELete"
                         args = []
 
@@ -27504,6 +29110,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: KEEP, LOW, OFF, USER
                         """
+                        __slots__ = ()
                         _cmd = "SEPMode"
                         args = ["KEEP", "LOW", "OFF", "USER"]
 
@@ -27522,6 +29129,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
+                        __slots__ = ()
                         _cmd = "SEPower"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -27546,6 +29154,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PMETer"
                     args = []
 
@@ -27556,6 +29165,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "AZERo"
                         args = []
 
@@ -27574,6 +29184,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = []
 
@@ -27591,6 +29202,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONFigure"
                         args = []
 
@@ -27600,6 +29212,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "AUTO"
                             args = ["1", "OFF", "ON"]
 
@@ -27610,6 +29223,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments: 1, OFF, ON
                                 """
+                                __slots__ = ()
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
@@ -27642,6 +29256,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -27660,6 +29275,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEFine"
                         args = ["'string'"]
 
@@ -27678,6 +29294,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DELete"
                         args = []
 
@@ -27695,6 +29312,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "SPCorrection"
                         args = ["1", "OFF", "ON"]
 
@@ -27705,6 +29323,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -27736,6 +29355,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SMATrix"
                     args = []
 
@@ -27746,6 +29366,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = []
 
@@ -27763,6 +29384,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "COMMand"
                         args = ["'string'"]
 
@@ -27779,6 +29401,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONFigure"
                         args = []
 
@@ -27789,6 +29412,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "ABORt"
                             args = []
 
@@ -27807,6 +29431,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "END"
                             args = []
 
@@ -27825,6 +29450,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "MLTest"
                             args = ["'string'"]
 
@@ -27843,6 +29469,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "MLVNa"
                             args = ["'string'"]
 
@@ -27861,6 +29488,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "MTESt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -27879,6 +29507,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "MVNA"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -27897,6 +29526,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "STARt"
                             args = []
 
@@ -27915,6 +29545,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
+                            __slots__ = ()
                             _cmd = "TVNA"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -27940,6 +29571,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "COUNt"
                         args = []
 
@@ -27958,6 +29590,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "DEFine"
                         args = ["'string'"]
 
@@ -27976,6 +29609,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DELete"
                         args = []
 
@@ -27993,6 +29627,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "RELays"
                         args = []
 
@@ -28002,6 +29637,7 @@ class ZNB_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "SWITch"
                             args = []
 
@@ -28012,6 +29648,7 @@ class ZNB_gen(Instrument):
 
                                 Arguments:
                                 """
+                                __slots__ = ()
                                 _cmd = "COUNt"
                                 args = []
 
@@ -28044,6 +29681,7 @@ class ZNB_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SCAN"
                         args = []
 
@@ -28075,6 +29713,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TCPip"
                 args = []
 
@@ -28084,6 +29723,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONTrol"
                     args = []
 
@@ -28114,6 +29754,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CORRection"
             args = []
 
@@ -28123,6 +29764,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "FMPort"
                 args = ["1", "OFF", "ON"]
 
@@ -28132,6 +29774,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -28155,6 +29798,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: CKIT, MAIN
                 """
+                __slots__ = ()
                 _cmd = "WIZard"
                 args = ["CKIT", "MAIN"]
 
@@ -28165,6 +29809,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: CKIT, MAIN
                     """
+                    __slots__ = ()
                     _cmd = "IMMediate"
                     args = ["CKIT", "MAIN"]
 
@@ -28197,6 +29842,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "DATE"
             args = ["1"]
 
@@ -28215,6 +29861,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DFPRint"
             args = []
 
@@ -28232,6 +29879,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DISPlay"
             args = []
 
@@ -28241,6 +29889,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BAR"
                 args = []
 
@@ -28250,6 +29899,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "HKEY"
                     args = ["1", "OFF", "ON"]
 
@@ -28260,6 +29910,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -28284,6 +29935,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "MENU"
                     args = ["1", "OFF", "ON"]
 
@@ -28294,6 +29946,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -28318,6 +29971,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATus"
                     args = ["1", "OFF", "ON"]
 
@@ -28328,6 +29982,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -28352,6 +30007,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STOols"
                     args = ["1", "OFF", "ON"]
 
@@ -28362,6 +30018,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -28386,6 +30043,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "TITLe"
                     args = ["1", "OFF", "ON"]
 
@@ -28396,6 +30054,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -28420,6 +30079,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "TOOLs"
                     args = ["1", "OFF", "ON"]
 
@@ -28430,6 +30090,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
@@ -28462,6 +30123,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: BWLStyles, BWSolid, DBACkground, LBACkground
                 """
+                __slots__ = ()
                 _cmd = "COLor"
                 args = ["BWLStyles", "BWSolid", "DBACkground", "LBACkground"]
 
@@ -28480,6 +30142,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "CONDuctances"
                 args = ["1", "OFF", "ON"]
 
@@ -28497,6 +30160,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DIALogs"
                 args = []
 
@@ -28506,6 +30170,7 @@ class ZNB_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SETup"
                     args = []
 
@@ -28515,6 +30180,7 @@ class ZNB_gen(Instrument):
 
                         Arguments: 1, OFF, ON
                         """
+                        __slots__ = ()
                         _cmd = "MCAL"
                         args = ["1", "OFF", "ON"]
 
@@ -28525,6 +30191,7 @@ class ZNB_gen(Instrument):
 
                             Arguments: 1, OFF, ON
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
@@ -28564,6 +30231,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON, ONCE
                 """
+                __slots__ = ()
                 _cmd = "UPDate"
                 args = ["1", "OFF", "ON", "ONCE"]
 
@@ -28588,6 +30256,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ERRor"
             args = []
 
@@ -28598,6 +30267,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = []
 
@@ -28615,6 +30285,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "DISPlay"
                 args = ["1", "OFF", "ON"]
 
@@ -28625,6 +30296,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "ERRor"
                     args = ["1", "OFF", "ON"]
 
@@ -28643,6 +30315,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "INFO"
                     args = ["1", "OFF", "ON"]
 
@@ -28661,6 +30334,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "REMote"
                     args = ["1", "OFF", "ON"]
 
@@ -28679,6 +30353,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -28697,6 +30372,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "WARNings"
                     args = ["1", "OFF", "ON"]
 
@@ -28722,6 +30398,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NEXT"
                 args = []
 
@@ -28746,6 +30423,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FIRMware"
             args = []
 
@@ -28756,6 +30434,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "UPDate"
                 args = ["'string'"]
 
@@ -28781,6 +30460,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FPReset"
             args = []
 
@@ -28799,6 +30479,7 @@ class ZNB_gen(Instrument):
 
             Arguments: MAXimum, MINimum
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = ["MAXimum", "MINimum"]
 
@@ -28816,6 +30497,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "IDENtify"
             args = ["'string'"]
 
@@ -28826,6 +30508,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FACTory"
                 args = []
 
@@ -28844,6 +30527,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "STRing"
                 args = ["'string'"]
 
@@ -28868,6 +30552,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "INFO"
             args = []
 
@@ -28878,6 +30563,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "CONTrast"
                 args = ["1"]
 
@@ -28903,6 +30589,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, OFF, ON
             """
+            __slots__ = ()
             _cmd = "KLOCk"
             args = ["1", "OFF", "ON"]
 
@@ -28921,6 +30608,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "LANGuage"
             args = ["'string'"]
 
@@ -28938,6 +30626,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LOGGing"
             args = []
 
@@ -28947,6 +30636,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "REMote"
                 args = ["1", "OFF", "ON"]
 
@@ -28957,6 +30647,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -28988,6 +30679,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "NOPeration"
             args = []
 
@@ -29004,6 +30696,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "OPTions"
             args = ["'string'"]
 
@@ -29013,6 +30706,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "DISable"
                 args = ["'string'"]
 
@@ -29030,6 +30724,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FACTory"
                 args = []
 
@@ -29048,6 +30743,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "STRing"
                 args = ["'string'"]
 
@@ -29072,6 +30768,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "PASSword"
             args = ["'string'"]
 
@@ -29082,6 +30779,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CENable"
                 args = ["'string'"]
 
@@ -29106,6 +30804,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PRESet"
             args = []
 
@@ -29116,6 +30815,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DUMMy"
                 args = []
 
@@ -29133,6 +30833,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "REMote"
                 args = ["1", "OFF", "ON"]
 
@@ -29143,6 +30844,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -29168,6 +30870,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ALL, SINGle
                 """
+                __slots__ = ()
                 _cmd = "SCOPe"
                 args = ["ALL", "SINGle"]
 
@@ -29185,6 +30888,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "USER"
                 args = ["1", "OFF", "ON"]
 
@@ -29195,6 +30899,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "CAL"
                     args = ["'string'"]
 
@@ -29213,6 +30918,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "NAME"
                     args = ["'string'"]
 
@@ -29231,6 +30937,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -29262,6 +30969,7 @@ class ZNB_gen(Instrument):
 
             Arguments: ANORmal, HIGH, NORMal
             """
+            __slots__ = ()
             _cmd = "PRIority"
             args = ["ANORmal", "HIGH", "NORMal"]
 
@@ -29278,6 +30986,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SETTings"
             args = []
 
@@ -29288,6 +30997,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ONCE
                 """
+                __slots__ = ()
                 _cmd = "UPDate"
                 args = ["ONCE"]
 
@@ -29313,6 +31023,7 @@ class ZNB_gen(Instrument):
 
             Arguments: ABORt, CLOSe, HALT, REBoot, RESTart
             """
+            __slots__ = ()
             _cmd = "SHUTdown"
             args = ["ABORt", "CLOSe", "HALT", "REBoot", "RESTart"]
 
@@ -29330,6 +31041,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SMATrix"
             args = []
 
@@ -29340,6 +31052,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: PRECision, SPEed
                 """
+                __slots__ = ()
                 _cmd = "OPTimization"
                 args = ["PRECision", "SPEed"]
 
@@ -29364,6 +31077,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SOUNd"
             args = []
 
@@ -29373,6 +31087,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "ALARm"
                 args = ["1", "OFF", "ON"]
 
@@ -29383,6 +31098,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -29407,6 +31123,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "STATus"
                 args = ["1", "OFF", "ON"]
 
@@ -29417,6 +31134,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
@@ -29449,6 +31167,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "TIME"
             args = ["1"]
 
@@ -29458,6 +31177,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INTermediate"
                 args = []
 
@@ -29474,6 +31194,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = []
 
@@ -29490,6 +31211,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STOP"
                 args = []
 
@@ -29506,6 +31228,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SYNC"
                 args = []
 
@@ -29531,6 +31254,7 @@ class ZNB_gen(Instrument):
 
             Arguments: DIAGrams, OFF, SCReen
             """
+            __slots__ = ()
             _cmd = "TSLock"
             args = ["DIAGrams", "OFF", "SCReen"]
 
@@ -29548,6 +31272,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "USER"
             args = []
 
@@ -29557,6 +31282,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DISPlay"
                 args = []
 
@@ -29566,6 +31292,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "TITLe"
                     args = ["'string'"]
 
@@ -29589,6 +31316,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "FKEY"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -29606,6 +31334,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "KEY"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -29615,6 +31344,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "FUNCtion"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -29647,6 +31377,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "VERSion"
             args = []
 
@@ -29664,6 +31395,7 @@ class ZNB_gen(Instrument):
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
+            __slots__ = ()
             _cmd = "WAIT"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -29687,6 +31419,7 @@ class ZNB_gen(Instrument):
 
         Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
         """
+        __slots__ = ()
         _cmd = "TRACe"
         args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -29697,6 +31430,7 @@ class ZNB_gen(Instrument):
 
             Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
             """
+            __slots__ = ()
             _cmd = "CLEar"
             args = ["MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -29715,6 +31449,7 @@ class ZNB_gen(Instrument):
 
             Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8, 'string'
             """
+            __slots__ = ()
             _cmd = "COPY"
             args = ["MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8", "'string'"]
 
@@ -29725,6 +31460,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8, 'string'
                 """
+                __slots__ = ()
                 _cmd = "MATH"
                 args = ["MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8", "'string'"]
 
@@ -29750,6 +31486,7 @@ class ZNB_gen(Instrument):
 
             Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -29759,6 +31496,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                 """
+                __slots__ = ()
                 _cmd = "RESPonse"
                 args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -29769,6 +31507,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -29793,6 +31532,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                 """
+                __slots__ = ()
                 _cmd = "STIMulus"
                 args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -29803,6 +31543,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
@@ -29841,6 +31582,7 @@ class ZNB_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "TRIGger"
         args = []
 
@@ -29850,6 +31592,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CHANnel"
             args = []
 
@@ -29859,6 +31602,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, OFF, ON
                 """
+                __slots__ = ()
                 _cmd = "AUXiliary"
                 args = ["1", "OFF", "ON"]
 
@@ -29869,6 +31613,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
+                    __slots__ = ()
                     _cmd = "DURation"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -29887,6 +31632,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: 1, OFF, ON
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1", "OFF", "ON"]
 
@@ -29905,6 +31651,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: POINt, SWEep
                     """
+                    __slots__ = ()
                     _cmd = "INTerval"
                     args = ["POINt", "SWEep"]
 
@@ -29923,6 +31670,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: NEGative, POSitive
                     """
+                    __slots__ = ()
                     _cmd = "OPOLarity"
                     args = ["NEGative", "POSitive"]
 
@@ -29941,6 +31689,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: AFTer, BEFore
                     """
+                    __slots__ = ()
                     _cmd = "POSition"
                     args = ["AFTer", "BEFore"]
 
@@ -29972,6 +31721,7 @@ class ZNB_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SEQuence"
             args = []
 
@@ -29982,6 +31732,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
+                __slots__ = ()
                 _cmd = "HOLDoff"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -30000,6 +31751,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "LINK"
                 args = ["'string'"]
 
@@ -30017,6 +31769,7 @@ class ZNB_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MULTiple"
                 args = []
 
@@ -30027,6 +31780,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: POINt, PPOint, SEGMent, SWEep
                     """
+                    __slots__ = ()
                     _cmd = "HOLDoff"
                     args = ["POINt", "PPOint", "SEGMent", "SWEep"]
 
@@ -30045,6 +31799,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: POINt, PPOint, SEGMent, SWEep
                     """
+                    __slots__ = ()
                     _cmd = "SLOPe"
                     args = ["POINt", "PPOint", "SEGMent", "SWEep"]
 
@@ -30063,6 +31818,7 @@ class ZNB_gen(Instrument):
 
                     Arguments: POINt, PPOint, SEGMent, SWEep
                     """
+                    __slots__ = ()
                     _cmd = "SOURce"
                     args = ["POINt", "PPOint", "SEGMent", "SWEep"]
 
@@ -30087,6 +31843,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: ALL, CURRent
                 """
+                __slots__ = ()
                 _cmd = "SCOPe"
                 args = ["ALL", "CURRent"]
 
@@ -30104,6 +31861,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: HIGH, LOW, NEGative, POSitive
                 """
+                __slots__ = ()
                 _cmd = "SLOPe"
                 args = ["HIGH", "LOW", "NEGative", "POSitive"]
 
@@ -30122,6 +31880,7 @@ class ZNB_gen(Instrument):
 
                 Arguments: EXTernal, IMMediate, MANual, MULTiple
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXTernal", "IMMediate", "MANual", "MULTiple"]
 

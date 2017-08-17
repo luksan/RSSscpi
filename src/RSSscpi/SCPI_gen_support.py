@@ -21,6 +21,8 @@ class SCPINodeBase(object):
     The arguments available for the SCPI node, as reported by GPIB Explorer.
     """
 
+    __slots__ = ("_parent", )
+
     def __init__(self, parent=None):
         """
         :param parent: The command node level above this node.
@@ -112,6 +114,8 @@ class SCPINodeBase(object):
 class SCPINode(SCPINodeBase):
     _cmd = "SCPINode"
 
+    __slots__ = ()
+
     def __call__(self, *args):
         if len(args):
             raise TypeError(self.build_cmd() + "(XX) <- invalid index operation, SCPI node does not support indexing.")
@@ -121,9 +125,14 @@ class SCPINode(SCPINodeBase):
 class SCPINodeN(SCPINodeBase):
     _cmd = "SPCINodeN"
 
+    __slots__ = ("_n", )
+
     def __init__(self, parent=None):
         super(SCPINodeN, self).__init__(parent=parent)
-        self._n = None
+        self._n = ""
+
+    def __str__(self):
+        return self._cmd + self._n
 
     @property
     def n(self):
@@ -132,7 +141,7 @@ class SCPINodeN(SCPINodeBase):
 
         :rtype: int
         """
-        return self._n
+        return int(self._n)
 
     @n.setter
     def n(self, n):
@@ -140,11 +149,9 @@ class SCPINodeN(SCPINodeBase):
             n = str(n)
             if not n.isdigit():
                 raise ValueError(self.build_cmd() + "(%s) <- Node index must be integer, or None." % n)
-            self._n = int(n)
-            self._cmd = self.__class__._cmd + str(n)
+            self._n = n
         else:
-            self._n = None
-            self._cmd = self.__class__._cmd
+            self._n = ""
 
     def __call__(self, n=None):
         """
@@ -158,10 +165,12 @@ class SCPINodeN(SCPINodeBase):
 
 
 class SCPICmd(SCPINodeBase):
-    pass
+    __slots__ = ()
 
 
 class SCPIQuery(SCPICmd):
+    __slots__ = ()
+
     def q(self, *args, **kwargs):
         """
         Execeute a SCPI query.
@@ -173,6 +182,8 @@ class SCPIQuery(SCPICmd):
 
 
 class SCPISet(SCPICmd):
+    __slots__ = ()
+
     def w(self, *args, **kwargs):
         """
         Send a string to the VISA resource, without reading the response.
@@ -183,6 +194,8 @@ class SCPISet(SCPICmd):
 
 
 class SCPIBool(SCPIQuery, SCPISet):
+    __slots__ = ()
+
     def _mk_arg(self, x):
         if str(x) in self.args:  # Allow extensions, such as ONCE to SYSTem:DISPlay:UPDate
             return str(x)
