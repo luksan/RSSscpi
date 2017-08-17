@@ -5,7 +5,7 @@
 """
 from __future__ import division, print_function
 
-from vna1 import VNA1, Bsub1, SCPINodeN
+from .vna1 import VNA1, Bsub1, SCPINodeN
 
 
 def node(name, *args):

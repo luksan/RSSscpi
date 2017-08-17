@@ -13,8 +13,8 @@ from .conftest import VISA  # noqa: F401
 from RSSscpi import ZNB
 from RSSscpi.SCPI_gen_support import SCPINodeBase
 
-from vna1 import VNA1
-from vna2 import VNA2
+from .vna1 import VNA1
+from .vna2 import VNA2
 
 
 def test_basic(dummy_vna, visa):

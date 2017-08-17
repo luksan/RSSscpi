@@ -6,7 +6,10 @@ Created on Thu Feb 11 11:30:33 2016
 """
 from __future__ import print_function
 
-import itertools
+try:
+    from itertools import zip_longest  # Python 3
+except ImportError:
+    from itertools import izip_longest as zip_longest  # Python 2
 
 
 class SCPINodeBase(object):
@@ -87,7 +90,7 @@ class SCPINodeBase(object):
             # Stop adding parents to the list when we find `ancestor`
             # We can't use isinstance(), since ZVA is subclassed from ZNB, instead we compare
             # the _cmd attribute and check that the trees have the same length and command nodes
-            for a, b in itertools.izip_longest(ancestor._parent_class_iter(), i._parent_class_iter()):
+            for a, b in zip_longest(ancestor._parent_class_iter(), i._parent_class_iter()):
                 if a is None or b is None or a._cmd != b._cmd:
                     break
             else:
