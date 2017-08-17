@@ -260,11 +260,13 @@ class ClassCodeGen(object):
         self._out("")
         self._out("")
         self._out("class " + self.class_name + "(Instrument):")
-        self._indent += 1
-        
+
     def gen(self):
         self._preamble()
+        self._indent += 1
         self._gen(self.cmd_tree, [])
+        self._indent -= 1
+        self._out("%s._SCPI_class = %s" % (self.class_name, self.class_name))
         self._out("# END OF " + self.class_name)
         c1 = self._cmd_cnt
         c2 = self._cmd_help_cnt
@@ -378,5 +380,11 @@ if __name__ == '__main__':
 
     import nrp
     nrp.generate()
+
+    # import sma100b
+    # sma100b.generate()
+
+    # import smb100a
+    # smb100a.generate()
 
     logging.info("All good :)")

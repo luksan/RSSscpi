@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from ZVA_commands.inp on 2017-08-08 16:37
+# Generated from ZVA_commands.inp on 2017-08-17 11:20
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -26699,4 +26699,5 @@ class ZVA_gen(Instrument):
     Arguments:
     """
 
-    # END OF ZVA_gen
+ZVA_gen._SCPI_class = ZVA_gen
+# END OF ZVA_gen

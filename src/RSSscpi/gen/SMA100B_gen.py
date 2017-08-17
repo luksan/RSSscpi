@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from SMA100B_syntax.txt on 2017-08-08 18:48
+# Generated from SMA100B_syntax.txt on 2017-08-17 11:20
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -2573,4 +2573,5 @@ class SMA100B_gen(Instrument):
     Arguments:
     """
 
-    # END OF SMA100B_gen
+SMA100B_gen._SCPI_class = SMA100B_gen
+# END OF SMA100B_gen

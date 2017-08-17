@@ -63,7 +63,12 @@ def test_basic(dummy_vna, visa):
 def test_node_base(dummy_znb, visa):
     # type: (ZNB, VISA) -> None
 
+    instr = dummy_znb
+
     # Verify that assignment to the SPCINodes is prevented
-    assert hasattr(dummy_znb, "OPC")
+    assert hasattr(instr, "OPC")
     with pytest.raises(AttributeError):
-        dummy_znb.OPC = ""
+        instr.OPC = ""
+
+    # Check that Instrument has _SCPI_class set correctly
+    assert instr._SCPI_class.__module__ == instr.OPC.__class__.__module__

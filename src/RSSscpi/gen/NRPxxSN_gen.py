@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from NRPxxSN_syntax.txt on 2017-07-29 18:55
+# Generated from NRPxxSN_syntax.txt on 2017-08-17 11:20
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -4757,4 +4757,5 @@ class NRPxxSN_gen(Instrument):
     Arguments:
     """
 
-    # END OF NRPxxSN_gen
+NRPxxSN_gen._SCPI_class = NRPxxSN_gen
+# END OF NRPxxSN_gen

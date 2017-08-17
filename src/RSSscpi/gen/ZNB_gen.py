@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from ZNB_commands.inp on 2017-08-08 16:38
+# Generated from ZNB_commands.inp on 2017-08-17 11:20
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -30147,4 +30147,5 @@ class ZNB_gen(Instrument):
     Arguments:
     """
 
-    # END OF ZNB_gen
+ZNB_gen._SCPI_class = ZNB_gen
+# END OF ZNB_gen

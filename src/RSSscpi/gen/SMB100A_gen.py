@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from SMB100A_syntax.txt on 2017-08-09 11:01
+# Generated from SMB100A_syntax.txt on 2017-08-17 11:20
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -26735,4 +26735,5 @@ class SMB100A_gen(Instrument):
     Arguments: SAWTooth, SINE, SQUare, TRIangle, WGNoise
     """
 
-    # END OF SMB100A_gen
+SMB100A_gen._SCPI_class = SMB100A_gen
+# END OF SMB100A_gen
