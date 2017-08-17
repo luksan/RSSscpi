@@ -51,19 +51,18 @@ class SCPINodeBase(object):
         return x
 
     @classmethod
-    def _parent_iterator(cls):
+    def _parent_class_iter(cls):
         while cls:
             yield cls
             cls = cls._parent_class
 
-    def build_cmd(self):
-        x = self._build_cmd_r()
-        return x[1:]  # Remove leading colon. This assumes that the top node is the empty string
+    def _parent_instance_iter(self):
+        while self:
+            yield self
+            self = self._parent
 
-    def _build_cmd_r(self):
-        if not self._parent:
-            return self._cmd  # If self._parent == None, then self._cmd == ""
-        return self._parent._build_cmd_r() + ":" + self._cmd
+    def build_cmd(self):
+        return ":".join(reversed([str(x) for x in self._parent_instance_iter() if str(x)]))
 
     def _get_root(self):
         """
@@ -84,11 +83,11 @@ class SCPINodeBase(object):
         """
         assert isinstance(ancestor, SCPINodeBase)
         intermediates = []
-        for i in cls._parent_iterator():
+        for i in cls._parent_class_iter():
             # Stop adding parents to the list when we find `ancestor`
             # We can't use isinstance(), since ZVA is subclassed from ZNB, instead we compare
             # the _cmd attribute and check that the trees have the same length and command nodes
-            for a, b in itertools.izip_longest(ancestor._parent_iterator(), i._parent_iterator()):
+            for a, b in itertools.izip_longest(ancestor._parent_class_iter(), i._parent_class_iter()):
                 if a is None or b is None or a._cmd != b._cmd:
                     break
             else:
