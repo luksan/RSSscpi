@@ -32,12 +32,10 @@ class SCPINodeBase(object):
 
     def __get__(self, instance, owner):
         # type: (SCPINodeBase, SCPINodeBase) -> SCPINodeBase
-        # Since the class definitions are nested we have to resolve the parent at runtime
+        # Since the class definitions are nested we have to resolve the parent class at runtime
         if self.__class__._parent_class is None:
-            if owner._SCPI_class is not None:
-                self.__class__._parent_class = owner._SCPI_class  # TODO: introspection to check for subclassing?
-            else:
-                self.__class__._parent_class = owner
+            assert owner._SCPI_class is not None
+            self.__class__._parent_class = owner._SCPI_class
         if not instance:
             return self.__class__
         return self.__class__(parent=instance)
@@ -45,12 +43,12 @@ class SCPINodeBase(object):
     def __set__(self, instance, value):
         raise AttributeError("You probably don't want to do this assignment. Use .w() instead.")
 
-    # def __getattribute__(self, name):
-    #     x = object.__getattribute__(self, name)
-    #     if inspect.isclass(x) and issubclass(x, SCPINodeBase) and name == x.__name__:
-    #         # Automatic instantiation of SCPINodeBase class accesses
-    #         return x(parent=self)
-    #     return x
+    def __getattribute__(self, name):
+        x = object.__getattribute__(self, name)
+        cls = x.__class__
+        if issubclass(cls, SCPINodeBase) and cls._SCPI_class.__module__ != self._SCPI_class.__module__:
+            raise AttributeError("Refusing access to a SCPINode from another module. %s !-> %s" % (self._SCPI_class, cls))
+        return x
 
     @classmethod
     def _parent_iterator(cls):

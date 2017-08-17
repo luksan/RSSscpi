@@ -106,3 +106,8 @@ def test_relink_to_ancestor(visa):
     with pytest.raises(AttributeError) as err:
         VNA1.A.B.Ca.D.E.relink_to_ancestor(d)
     assert str(err).endswith("AttributeError: 'D' object has no attribute 'E' -- A2:B:Ca:D:E")
+
+    with pytest.raises(AttributeError) as err:
+        VNA1.A.B.Cb.relink_to_ancestor(instr.bsub)
+    assert str(err).endswith("AttributeError: Refusing access to a SCPINode from another module. "
+                             "<class 'tests.vna2.B'> !-> <class 'tests.vna1.Cb'> -- A:B:Cb")
