@@ -10,7 +10,7 @@ import inspect
 
 from .conftest import VISA  # noqa: F401
 
-from RSSscpi import ZNB
+from RSSscpi.znb import ZNB
 from RSSscpi.SCPI_gen_support import SCPINodeBase
 
 from .vna1 import VNA1

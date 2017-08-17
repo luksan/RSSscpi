@@ -7,7 +7,8 @@
 import pytest
 from .conftest import VISA  # noqa: F401
 
-from RSSscpi import ZVA, ZNB  # noqa: F401
+from RSSscpi.zva import ZVA  # noqa: F401
+from RSSscpi.znb import ZNB  # noqa: F401
 from RSSscpi.Instrument import InstrumentError
 
 

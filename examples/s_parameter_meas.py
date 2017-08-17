@@ -8,27 +8,19 @@ from __future__ import print_function
 import Queue
 import logging
 
-from RSSscpi import ZNB
-# from RSSscpi.SCPI_gen_support import DummyVisa
-# from RSSscpi import SocketInterface
-# logging.basicConfig(level=logging.WARN, filename=__file__[:-3]+"_log.txt", filemode="w")
-logging.basicConfig(level=logging.WARN)
+import RSSscpi.znb
 
-import visa
-rm = visa.ResourceManager()
+logging.basicConfig(level=logging.WARN)
+# logging.basicConfig(level=logging.WARN, filename=__file__[:-3]+"_log.txt", filemode="w")
+
 
 #znb_ip = "10.188.178.47"
 znb_ip = "192.168.56.101"
-#znb_ip = "10.188.178.63"
-
-visa_res = rm.open_resource('TCPIP::' + znb_ip + '::INSTR')
-#visa_res = SocketInterface(znb_ip)
-#visa_res = DummyVisa("hej")
 
 # VISA command logging
 # Error checking / handling
 
-znb = ZNB(visa_res)
+znb = RSSscpi.znb.connect_ethernet(znb_ip)
 
 znb.visa_logger.setLevel(logging.DEBUG)
 znb.visa_logger.addHandler(logging.FileHandler(filename=__file__[:-3]+"_visa_log.txt", mode="wb"))

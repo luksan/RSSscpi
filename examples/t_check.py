@@ -4,8 +4,7 @@
 @author: Lukas Sandström
 """
 
-from RSSscpi import ZNB
-import visa
+import RSSscpi.znb
 
 import logging
 
@@ -25,16 +24,12 @@ logging.basicConfig()
 logger = logging.getLogger()
 logger.handlers[0].addFilter(VISAFilter())  # don't print VISA INFO logging to the console
 
-rm = visa.ResourceManager()
-
 znb_ip = "192.168.56.101"
-
-visa_res = rm.open_resource('TCPIP::' + znb_ip + '::INSTR')
 
 # VISA command logging
 # Error checking / handling
 
-znb = ZNB(visa_res)
+znb = RSSscpi.znb.connect_ethernet(znb_ip)
 
 znb.visa_logger.setLevel(logging.DEBUG)
 znb.visa_logger.addHandler(logging.FileHandler(filename=__file__[:-3]+"_visa_log.txt", mode="wb"))

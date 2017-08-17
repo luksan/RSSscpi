@@ -8,8 +8,8 @@ from __future__ import absolute_import, division, print_function
 import pytest
 from .conftest import VISA  # noqa: F401
 
-from RSSscpi import ZNB  # noqa: F401
 from RSSscpi import znb  # noqa: F401
+from RSSscpi.znb import ZNB  # noqa: F401
 from RSSscpi.SCPI_property import SCPIPropertyMinMax
 
 

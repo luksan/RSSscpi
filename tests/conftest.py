@@ -11,7 +11,8 @@ import collections
 
 import pytest
 
-from RSSscpi import ZVA, ZNB
+from RSSscpi.zva import ZVA
+from RSSscpi.znb import ZNB
 import RSSscpi.nrp
 
 logging.basicConfig(stream=open(os.devnull, "w"))
