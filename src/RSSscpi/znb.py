@@ -490,7 +490,9 @@ class SweepSegments(object):
 
 
 class Sweep(ZNB_gen.SENSe.SWEep):
-    LIN = "LIN"  # FIXME: use enum instead
+
+    # Using an Enum for the variuos sweep types only causes complications, with no clear benefit
+    LIN = "LIN"
     LOG = "LOG"
     POWER = "POW"
     CW = "CW"
