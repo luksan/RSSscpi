@@ -36,68 +36,68 @@ class PropertyTester(object):
             assert [scpi_write.format(scpi_cmd, scpi_values[1])] == visa.cmd
 
 
-def test_init(dummy_znb, visa):
-    # type: (ZNB, VISA) -> None
-    dummy_znb.init()
-    assert ["*CLS;*ESE 127;*SRE 36",
-            "SYSTem:COMMunicate:CODec UTF8",
-            "SYSTem:LANGuage?",
-            "SYSTem:LANGuage 'SCPI'",
-            ] == visa.cmd
+class TestZNB(object):
+    def test_init(self, dummy_znb, visa):
+        # type: (ZNB, VISA) -> None
+        dummy_znb.init()
+        assert ["*CLS;*ESE 127;*SRE 36",
+                "SYSTem:COMMunicate:CODec UTF8",
+                "SYSTem:LANGuage?",
+                "SYSTem:LANGuage 'SCPI'",
+                ] == visa.cmd
 
+    def test_reset_remote_emulation(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        visa.ret = "SCPI"
+        assert dummy_vna.reset_remote_emulation() == "SCPI"
+        assert ["SYSTem:LANGuage?"] == visa.cmd
+        visa.ret = "ZVR"
+        assert dummy_vna.reset_remote_emulation() == "ZVR"
+        assert ["SYSTem:LANGuage?",
+                "SYSTem:LANGuage 'SCPI'",
+                ] == visa.cmd
 
-def test_active_channel(dummy_vna, visa):
-    """
-    :param ZNB dummy_vna:
-    :param VISA visa:
-    """
-    vna = dummy_vna
-    x = vna.active_channel
-    assert x.n == 1
-    vna.active_channel = 3
-    vna.active_channel = "2"
-    vna.active_channel = x
-    assert ["INSTrument:NSELect?",
-            "INSTrument:NSELect 3",
-            "INSTrument:NSELect 2",
-            "INSTrument:NSELect 1",
-            ] == visa.cmd
+    def test_active_channel(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        vna = dummy_vna
+        x = vna.active_channel
+        assert x.n == 1
+        vna.active_channel = 3
+        vna.active_channel = "2"
+        vna.active_channel = x
+        assert ["INSTrument:NSELect?",
+                "INSTrument:NSELect 3",
+                "INSTrument:NSELect 2",
+                "INSTrument:NSELect 1",
+                ] == visa.cmd
 
+    def test_query_port_count(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        vna = dummy_vna
+        visa.ret = "4"
+        x = vna.query_number_of_ports()
+        assert x == 4
+        assert ["INSTrument:PORT:COUNt?",
+                ] == visa.cmd
+        visa.ret = "1"
+        x = vna.query_number_of_ports()  # The number of ports on the instrument should be cached
+        assert x == 4
+        assert [] == visa.cmd
 
-def test_query_port_count(dummy_vna, visa):
-    """
-    :param ZNB dummy_vna:
-    :param VISA visa:
-    """
-    vna = dummy_vna
-    visa.ret = "4"
-    x = vna.query_number_of_ports()
-    assert x == 4
-    assert ["INSTrument:PORT:COUNt?",
-            ] == visa.cmd
-    visa.ret = "1"
-    x = vna.query_number_of_ports()  # The number of ports on the instrument should be cached
-    assert x == 4
-    assert [] == visa.cmd
-
-
-def test_znb_screenshot(dummy_vna, visa):
-    """
-    :param ZNB dummy_vna:
-    :param VISA visa:
-    """
-    vna = dummy_vna
-    scr = vna.save_screenshot("scr.png")
-    assert scr.filename == "scr.png"
-    assert ["MMEMory:NAME 'scr.png'",
-            "HCOPy:DESTination 'MMEM'",
-            "HCOPy:DEVice:LANGuage PNG",
-            "HCOPy:PAGE:WINDow HARDcopy",
-            "HCOPy:IMMediate",
-            "MMEMory:CDIRectory?",
-            ] == visa.cmd
-    pytest.raises(ValueError, 'vna.save_screenshot("scr.docx")')
-    assert visa.cmd == []
+    def test_znb_screenshot(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        vna = dummy_vna
+        scr = vna.save_screenshot("scr.png")
+        assert scr.filename == "scr.png"
+        assert ["MMEMory:NAME 'scr.png'",
+                "HCOPy:DESTination 'MMEM'",
+                "HCOPy:DEVice:LANGuage PNG",
+                "HCOPy:PAGE:WINDow HARDcopy",
+                "HCOPy:IMMediate",
+                "MMEMory:CDIRectory?",
+                ] == visa.cmd
+        pytest.raises(ValueError, 'vna.save_screenshot("scr.docx")')
+        assert visa.cmd == []
 
 
 class TestChannel(object):

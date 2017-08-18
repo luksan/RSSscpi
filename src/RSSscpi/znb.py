@@ -77,31 +77,35 @@ class ZNB(ZNB_gen):
 
     def init(self):
         super(ZNB, self).init()
-        try:
-            self.SYSTem.COMMunicate.CODec().w("UTF8")  # Set the character encoding
-        except AttributeError:
-            # FIXME: subclass this properly
-            pass  # This command isn't available on ZVA
+
+        self._set_codec()
+        self.reset_remote_emulation()
+
+    def _set_codec(self):
+        self.SYSTem.COMMunicate.CODec().w("UTF8")  # Set the character encoding
+
+    def reset_remote_emulation(self):
+        # type: () -> str
+        """
+        Restores the SYSTem:LANGuage setting to SCPI, disabling emulation of other VNA types.
+
+        :return: The original SYSTem:LANGuage setting
+        """
         orig_lang = str(self.SYSTem.LANGuage().q())
         if orig_lang != "SCPI":
             self.visa_logger.warning("Changing remote language from '%s' to 'SCPI' (default)", orig_lang)
             self.SYSTem.LANGuage().w("SCPI")
+        return orig_lang
 
     @property
     def active_channel(self):
         """
-        Get/set the active channel, INSTrument:NSELect? \n
-        :return: ZNB.Channel
+        Get/set the active channel, INSTrument:NSELect?
         """
         return self.get_channel(int(self.INSTrument.NSELect().q()))
 
     @active_channel.setter
     def active_channel(self, n):
-        """
-        Set the active channel, INSTrument:NSELect n \n
-        :param n: (int, str, Channel)
-        :return: None
-        """
         if hasattr(n, "n"):
             n = n.n
         self.INSTrument.NSELect().w(n)

@@ -61,6 +61,10 @@ class ZVA(ZVA_gen, znb.ZNB):
     #def init(self):
         # SYSTem:DATA:SIZE ALL | AUTO
 
+    def _set_codec(self):
+        # There is no functionality for this on the ZVA
+        assert not hasattr(self.SYSTem.COMMunicate, "CODec")
+
     def get_channel(self, n):
         # type: (int) -> Channel
         return Channel(n, self)
