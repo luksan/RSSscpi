@@ -36,6 +36,7 @@ before_install:
   - lsb_release -a
 install:
   - pip install tox
+  - pip install 'setuptools>=20.8.1'
   - virtualenv --version
   - easy_install --version
   - pip --version
