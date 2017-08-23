@@ -47,6 +47,15 @@ class SCPIResponse(object):
         x = str(self).split()[0]  # Remove the unit string
         return float(x)
 
+    def __eq__(self, other):
+        return str(self) == other
+
+    def __ne__(self, other):
+        return not self == other
+
+    def __hash__(self):
+        return hash(str(self))
+
     def comma_list_pairs(self):
         """
         Split the comma separated response into a list of tuples,

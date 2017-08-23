@@ -62,3 +62,27 @@ def test_block_data():
     assert SCPIResponse("#210" + "A" * 10).block_data() == "A" * 10
 
     assert format_SCPI_block_data("A"*10) == "#210" + "A" * 10
+
+
+@pytest.mark.parametrize("data, expect", [
+    ("", ""),
+    ("A", "A"),
+    ("  1234\r\n", "1234"),
+    ("-2.2 dBm ", "-2.2 dBm"),
+    ("LIN\r\n", "LIN"),
+    ("'LIN'\r\n", "LIN"),
+])
+def test_str_equals(data, expect):
+    assert SCPIResponse(data) == expect
+    assert not SCPIResponse(data) != expect
+    assert hash(SCPIResponse(data)) == hash(expect)
+
+
+@pytest.mark.parametrize("data, expect", [
+    ('"LIN"\r\n', "LIN"),
+    ("LINear", "LIN"),
+])
+def test_str_not_equals(data, expect):
+    assert SCPIResponse(data) != expect
+    assert not SCPIResponse(data) == expect
+    assert hash(SCPIResponse(data)) != hash(expect)
