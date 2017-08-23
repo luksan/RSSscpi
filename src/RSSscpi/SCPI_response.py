@@ -66,15 +66,17 @@ class SCPIResponse(object):
         x = self.split_comma()
         return list(zip(*[iter(x)] * 2))
 
-    def split_comma(self):
+    def split_comma(self, convert=lambda x: x):
         """
-        Split the response into a list, separated by commas.
-        Each list element is stripped of leading and trailing whitespace and quotes.
+        Split the response at commas, and return the result as a list.
 
-        :return: a string list
-        :rtype: list of str
+        Each list element is stripped of leading and trailing whitespace and quotes,
+        and passed to the callable `convert`.
+
+        :param convert: A callable that will be applied to each element in the list
+        :return: [ convert(x) for x in self.split(",") ]
         """
-        return [x.strip(" '\n") for x in self.raw.split(",")]
+        return [convert(x.strip(" '\n")) for x in self.raw.split(",")]
 
     def numpy_array(self, dtype=numpy.float64):
         return numpy.fromstring(self.raw, sep=",", dtype=dtype)

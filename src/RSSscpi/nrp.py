@@ -95,8 +95,7 @@ class NRPxxSN(NRPxxSN_gen):
 
         :return: A list of floats
         """
-        x = self.FETCh.q()
-        return list(map(float, x.split_comma()))  # TODO: add this as a method to SCPIResponse
+        return self.FETCh.q().split_comma(convert=float)
 
     def fetch_numpy(self):
         """

@@ -53,6 +53,8 @@ def test_comma_list_pairs():
 def test_split_comma():
     n = "'1, ASD, 2, K,3,t,4,f'"
     assert SCPIResponse(n).split_comma() == list(map(lambda x: x.strip(" '"), n.split(",")))
+    n = ",".join(map(str, range(10)))
+    assert SCPIResponse(n).split_comma(convert=int) == list(range(10))
 
 
 def test_block_data():
