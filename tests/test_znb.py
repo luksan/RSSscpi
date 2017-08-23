@@ -288,9 +288,20 @@ class TestSweep(object):
     def test_int_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, sw, visa):
         PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, sw, visa, int)
 
-    def test_segmented_sweep(self, sw, visa):
+
+class TestSweepSegments(object):
+    @pytest.fixture
+    def sw(self, dummy_vna):
+        return dummy_vna.get_channel(2).sweep
+
+    @pytest.fixture
+    def seg(self, sw):
+        return sw.segments[5]
+
+    def test_segments_properties(self, sw, visa):
         # type: (znb.Sweep, VISA) -> None
         sw.TYPE.w(sw.SEGMENT)
+
         sw.analog_sweep_is_enabled = True
         sw.analog_sweep_is_enabled = False
         sw.use_auto_time = True
@@ -300,12 +311,8 @@ class TestSweep(object):
                 "SENSe2:SWEep:TIME:AUTO ON",
                 ] == visa.cmd
 
-        sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3)
-        sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3, analog_sweep=True)
-        assert ["SENSe2:SEGMent4:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, STEPped",
-                "SENSe2:SEGMent4:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, ANALog",
-                ] == visa.cmd
-
+    def test_segmented_sweep(self, sw, visa):
+        # type: (znb.Sweep, VISA) -> None
         visa.ret = "5"
         assert len(sw.segments) == 5
         assert sw.segments[0].n == 1
@@ -314,10 +321,16 @@ class TestSweep(object):
                 "SENSe2:SEGMent:COUNt?",
                 ] == visa.cmd
 
+        sw.segments.query_total_sweep_time()
+        assert ["SENSe2:SEGMent:SWEep:TIME:SUM?"] == visa.cmd
+
         for (seg, n) in zip(iter(sw.segments), range(5)):
             assert seg.n == n + 1
         visa.clear_cmd()
 
+    def test_delete(self, sw, visa):
+        # type: (znb.Sweep, VISA) -> None
+        visa.ret = "5"
         del sw.segments[2]
         del sw.segments[0:5:2]
         assert ["SENSe2:SEGMent3:DELete",
@@ -327,32 +340,47 @@ class TestSweep(object):
                 "SENSe2:SEGMent1:DELete",
                 ] == visa.cmd
 
-        sw.segments.remove_all_segments()
-        sw.segments.remove_segment(2)
-        sw.segments.disable_per_segment_dwell_time()
-        sw.segments.disable_per_segment_if_selectivity()
-        sw.segments.disable_per_segment_power()
-        sw.segments.disable_per_segment_sweep_time()
-        sw.segments.query_total_sweep_time()
+        sw.segments.delete_all_segments()
+        sw.segments.delete_segment(3)
         assert ["SENSe2:SEGMent:DELete:ALL",
                 "SENSe2:SEGMent3:DELete",
-                "SENSe2:SEGMent:SWEep:DWELl:CONTrol OFF",
-                "SENSe2:SEGMent:BWIDth:RESolution:SELect:CONTrol OFF",
-                "SENSe2:SEGMent:POWer:LEVel:CONTrol OFF",
-                "SENSe2:SEGMent:SWEep:TIME:CONTrol OFF",
-                "SENSe2:SEGMent:SWEep:TIME:SUM?",
                 ] == visa.cmd
 
         seg = sw.segments[5]
         seg.delete()
-        visa.ret = "0"
-        assert seg.is_enabled is False
-        assert seg.if_selectivity == "0"
-        del seg  # This shouldn't delete the segment
-        assert ["SENSe2:SEGMent6:DELete",
-                "SENSe2:SEGMent6:STATe?",
-                "SENSe2:SEGMent6:BWIDth:RESolution:SELect?",
+        assert ["SENSe2:SEGMent6:DELete"] == visa.cmd
+
+    def test_disable_methods(self, sw, visa):
+        sw.segments.disable_per_segment_dwell_time()
+        sw.segments.disable_per_segment_if_selectivity()
+        sw.segments.disable_per_segment_power()
+        sw.segments.disable_per_segment_sweep_time()
+        assert ["SENSe2:SEGMent:SWEep:DWELl:CONTrol OFF",
+                "SENSe2:SEGMent:BWIDth:RESolution:SELect:CONTrol OFF",
+                "SENSe2:SEGMent:POWer:LEVel:CONTrol OFF",
+                "SENSe2:SEGMent:SWEep:TIME:CONTrol OFF",
                 ] == visa.cmd
+
+    def test_insert_segment(self, dummy_znb, visa):
+        # type: (ZNB, VISA) -> None
+        """ANALog sweeps are only supported on the ZNB"""
+        sw = dummy_znb.get_channel(2).sweep
+        x = sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3)
+        assert x.n == 3
+        sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3, analog_sweep=True)
+        assert ["SENSe2:SEGMent3:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, STEPped",
+                "SENSe2:SEGMent3:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, ANALog",
+                ] == visa.cmd
+
+
+class TestSweepSegment(object):
+    @pytest.fixture
+    def sw(self, dummy_vna):
+        return dummy_vna.get_channel(2).sweep
+
+    @pytest.fixture
+    def seg(self, sw):
+        return sw.segments[5]
 
     def test_segment_analog_sweep(self, dummy_znb, visa):
         # type: (ZNB, VISA) -> None
@@ -384,6 +412,14 @@ class TestSweep(object):
     @PropertyTester.prop_parametrize(segment_int_properties)
     def test_segment_int_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, seg, visa):
         PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, seg, visa, int)
+
+    def test_properties(self, seg, visa):
+        visa.ret = "0"
+        assert seg.is_enabled is False
+        assert seg.if_selectivity == "0"
+        assert ["SENSe2:SEGMent6:STATe?",
+                "SENSe2:SEGMent6:BWIDth:RESolution:SELect?",
+                ] == visa.cmd
 
 
 def test_vna_port(dummy_vna, visa):

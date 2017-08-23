@@ -440,7 +440,7 @@ class SweepSegments(object):
         return self._sweep.get_segment(n)
 
     def insert_segment(self, start_freq, stop_freq, points, ifbw, power, time="AUTO",
-                       lo_sideband="AUTO", if_selectivity="NORMal", analog_sweep=False, position=0):
+                       lo_sideband="AUTO", if_selectivity="NORMal", analog_sweep=False, position=1):
         """
 
         :param float start_freq: Segment start frequency in Hz
@@ -452,25 +452,26 @@ class SweepSegments(object):
         :param str lo_sideband: "POSitive" | "NEGative" | "AUTO" (default)
         :param str if_selectivity: "NORMal" (default) | "MEDium" | "HIGH"
         :param bool analog_sweep: Sets the generator sweep type for the segment, "STEPped" (False) or "ANALog" (True)
-        :param int position: The position in the segment list which the created segment will be inserted at. Default is 0 (top).
-        :return:
+        :param int position: The position in the segment list which the created segment will be inserted at. Default is 1 (top).
+        :return: The newly created segment
+        :rtype: SweepSegment
         """
         if analog_sweep:
             sweep_mode = "ANALog"
         else:
             sweep_mode = "STEPped"
-        self._SEG(position + 1).INSert().w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity, sweep_mode)
+        self._SEG(position).INSert().w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity, sweep_mode)
         return self.get_segment(position)
 
-    def remove_segment(self, n):
+    def delete_segment(self, n):
         """
-        Remove segment number <n> from the segment list. The same as del Segments[n]
+        Delete segment number `n` from the segment list.
 
-        :param n: Segment index or slice, [0, len(segments))
+        :param int n: Segment index
         """
-        del self[n]
+        self.get_segment(n).delete()
 
-    def remove_all_segments(self):
+    def delete_all_segments(self):
         self._SEG.DELete.ALL().w()
 
     def disable_per_segment_dwell_time(self):

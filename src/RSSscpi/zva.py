@@ -125,6 +125,9 @@ class ChannelVNAPort(ZVA_gen.SOURce.POWer, znb.ChannelVNAPort):
 
 
 class Sweep(ZVA_gen.SENSe.SWEep, znb.Sweep):
+    def __init__(self, channel):
+        super(Sweep, self).__init__(channel=channel)
+        self.segments = SweepSegments(self)
 
     @property
     def dwell_on_each_partial_measurement(self):
@@ -144,6 +147,29 @@ class SweepSegment(ZVA_gen.SENSe.SEGMent, znb.SweepSegment):
     def analog_sweep_is_enabled(self):
         """The ZVA does not support ANALog sweeps"""
         return False
+
+
+class SweepSegments(znb.SweepSegments):
+    def insert_segment(self, start_freq, stop_freq, points, ifbw, power, time="AUTO", lo_sideband="AUTO",
+                       if_selectivity="NORMal", analog_sweep=False, position=1):
+        """
+        :param float start_freq: Segment start frequency in Hz
+        :param float stop_freq: Segment stop frequency in Hz
+        :param int points: Number of sweep points in the segment
+        :param float ifbw: IF bandwidth
+        :param float power: Segment source power in dBm
+        :param float time: Segment sweep time or segment dwell time in seconds
+        :param str lo_sideband: "POSitive" | "NEGative" | "AUTO" (default)
+        :param str if_selectivity: "NORMal" (default) | "MEDium" | "HIGH"
+        :param bool analog_sweep: For code compatibility with ZNB. Must be set to False.
+        :param int position: The position in the segment list which the created segment will be inserted at. Default is 1 (top).
+        :return: The newly created segment
+        :rtype: SweepSegment
+        """
+        if analog_sweep:
+            raise ValueError("The ZVA does not support analog sweeps.")
+        self._SEG(position).INSert().w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity)
+        return self.get_segment(position)
 
 
 class Trace(znb.Trace):

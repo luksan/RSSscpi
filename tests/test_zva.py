@@ -63,7 +63,14 @@ def test_sweep_dwell(dummy_zva, visa):
 def test_sweep_segment(dummy_zva, visa):
     # type: (ZVA, VISA) -> None
     """ANALog sweeps are not supported on the ZVA"""
-    seg = dummy_zva.get_channel(2).sweep.segments[5]
+    sw = dummy_zva.get_channel(2).sweep
+    seg = sw.segments[5]
     assert seg.analog_sweep_is_enabled is False
     assert pytest.raises(AttributeError, "seg.analog_sweep_is_enabled = True")
     assert [] == visa.cmd
+
+    x = sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3)
+    assert x.n == 3
+    with pytest.raises(ValueError):
+        sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3, analog_sweep=True)
+    assert ["SENSe2:SEGMent3:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal"] == visa.cmd
