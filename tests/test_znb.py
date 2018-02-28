@@ -120,6 +120,7 @@ class TestChannel(object):
         assert tr.name == "Tr2"
         assert ["CALCulate3:PARameter:SDEFine 'Tr1', 'S11'",
                 "CALCulate3:PARameter:SDEFine 'Tr2', 'S22'",
+                "DISPlay:WINDow1:STATe ON",
                 "DISPlay:WINDow1:TRACe:EFEed 'Tr2'",
                 ] == visa.cmd
 
@@ -628,6 +629,14 @@ class TestTrace(object):
                 "CALCulate2:FORMat 2",
                 ] == visa.cmd
 
+    def test_assign_diagram(self, tr, visa):
+        # type: (znb.Trace, VISA) -> None
+        dia = tr.channel.instrument.get_diagram(2)
+        tr.assign_diagram(dia)
+        assert ["DISPlay:WINDow2:STATe ON",
+                "DISPlay:WINDow2:TRACe:EFEed 'Tr3'",
+                ] == visa.cmd
+
     def test_trace_copy(self, tr, visa):
         # type: (znb.Trace, VISA) -> None
         tr.copy_data_to_mem("Mem1")
@@ -641,6 +650,14 @@ class TestTrace(object):
         assert isinstance(tr_new, type(tr))
         assert ["CALCulate2:PARameter:MEASure? 'Tr3'",
                 "CALCulate2:PARameter:SDEFine 'NEW_TRACE', 'S11'",
+                ] == visa.cmd
+
+        dia = tr.channel.instrument.get_diagram(2)
+        tr.copy("Tr2", dia)
+        assert ["CALCulate2:PARameter:MEASure? 'Tr3'",
+                "CALCulate2:PARameter:SDEFine 'Tr2', 'S11'",
+                "DISPlay:WINDow2:STATe ON",
+                "DISPlay:WINDow2:TRACe:EFEed 'Tr2'",
                 ] == visa.cmd
 
     def test_trace_id(self, tr, visa):

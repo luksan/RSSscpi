@@ -739,6 +739,7 @@ class Trace(object):
         :param diagram: An existing Diagram area
         :type diagram: Diagram
         """
+        diagram.state = True
         diagram.TRACe.EFEed().w(self.name)
 
 
