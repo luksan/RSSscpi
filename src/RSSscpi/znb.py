@@ -17,6 +17,8 @@ import os.path
 import logging
 import re
 
+from memoized_property import memoized_property
+
 
 def connect_ethernet(ip_address):
     # type: ([str, unicode]) -> ZNB
@@ -70,10 +72,18 @@ def find_znb(max_time=2, max_devices=None):
 class ZNB(ZNB_gen):
     def __init__(self, visa_res):
         super(ZNB, self).__init__(visa_res)
-        self.filesystem = Filesystem(self)
         self.logger = logging.getLogger(__name__)
         self.visa_logger = self.logger.getChild("VISA")
         self._port_count = None
+
+    @memoized_property
+    def filesystem(self):
+        """
+        A Filsystem instance which enables filesystem operations on the instrument.
+
+        :rtype: RSSscpi.znb.Filesystem
+        """
+        return Filesystem(self)
 
     def init(self):
         super(ZNB, self).init()

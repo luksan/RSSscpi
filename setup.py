@@ -55,6 +55,7 @@ setup(name='RSSscpi',
       keywords='instrument control SCPI VISA VNA',
       install_requires=['PyVISA>=1.8',
                         'enum34;python_version<"3.4"',
+                        'memoized-property>=1.0.3',
                         'zeroconf>=0.19.1'],
       # List additional groups of dependencies here (e.g. development
       # dependencies). You can install these using the following syntax,

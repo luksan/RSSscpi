@@ -12,6 +12,8 @@ import RSSscpi.network as net
 
 import logging
 
+from memoized_property import memoized_property
+
 
 def connect_ethernet(ip_address):
     # type: ([str, unicode]) -> ZVA
@@ -54,12 +56,20 @@ def find_zva(max_time=2, max_devices=None):
 class ZVA(ZVA_gen, znb.ZNB):
     def __init__(self, visa_res):
         super(ZVA, self).__init__(visa_res=visa_res)
-        self.filesystem = Filesystem(self)
         self.logger = logging.getLogger(__name__)
         self.visa_logger = self.logger.getChild("VISA")
 
     #def init(self):
         # SYSTem:DATA:SIZE ALL | AUTO
+
+    @memoized_property
+    def filesystem(self):
+        """
+        A Filsystem instance which enables filesystem operations on the instrument.
+
+        :rtype: RSSscpi.zva.Filesystem
+        """
+        return Filesystem(self)
 
     def _set_codec(self):
         # There is no functionality for this on the ZVA
