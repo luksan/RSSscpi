@@ -28,6 +28,8 @@ class VISA(object):
         self.srq_callback = None
         self.stb = 0
 
+        self.ret_dict["MMEMory:CDIRectory?"] = 'C:\\Rohde & Schwarz\\Nwa'
+
     def install_handler(self, event_type, func, user_handle):
         self.srq_callback = func
 

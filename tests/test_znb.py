@@ -251,6 +251,55 @@ class TestChannel(object):
                 ] == visa.cmd
 
 
+class TestFilesystem(object):
+    import ntpath
+
+    def test_basic_ops(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        fs = dummy_vna.filesystem
+        assert fs == dummy_vna.filesystem  # Test that Filesystem instance is memoized
+        visa.ret = r"'C:\Users\Public\Documents\Rohde-Schwarz\'"
+
+        fs.getcwd()
+        fs.chdir(r"C:\Users\Public")
+        assert ["MMEMory:CDIRectory?",
+                "MMEMory:CDIRectory 'C:\Users\Public'",
+                ] == visa.cmd
+
+    def test_directory_defs(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        fs = dummy_vna.filesystem
+        visa.ret = self.ntpath.join("C:\\", "Rohde & Schwarz", "Nwa")
+        assert fs.default_dir == fs.default_dir
+        assert ["MMEMory:CDIRectory?",
+                "MMEMory:CDIRectory DEFault",
+                "MMEMory:CDIRectory?",
+                "MMEMory:CDIRectory 'C:\\Rohde & Schwarz\\Nwa'",
+                ] == visa.cmd
+
+        assert fs.calpool_dir == self.ntpath.join(fs.default_dir, "Calibration", "Data")
+        assert [] == visa.cmd
+
+    @pytest.mark.parametrize('dir_list',
+                             [('77668, 125731287040, cal1.cal,, 38834, cal2.cal,, 38834,',
+                               ("cal1.cal", "cal2.cal")),
+                              ('0, 125731287040, calibration, <DIR>,, colorschemes, <DIR>,, doc, <DIR>,,',
+                               ("calibration", "colorschemes", "doc")),
+                              ])
+    def test_listdir(self, dir_list, dummy_vna, visa):
+        # type: (str, ZNB, VISA) -> None
+        visa.ret = r"C:\R&S"
+        response, result = dir_list
+        visa.ret_dict["MMEMory:CATalog? 'C:\R&S'"] = response
+        x = dummy_vna.filesystem.listdir()
+        assert len(result) == len(x)
+        for a, b in zip(x, result):
+            assert a.filename == b
+        assert ["MMEMory:CDIRectory?",
+                "MMEMory:CATalog? 'C:\R&S'",
+                ] == visa.cmd
+
+
 class TestSweep(object):
     @pytest.fixture
     def sw(self, dummy_vna):

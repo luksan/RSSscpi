@@ -894,6 +894,18 @@ class Filesystem(ZNB_gen.MMEMory):
         """
         self.CDIRectory.w(path)
 
+    @memoized_property
+    def default_dir(self):
+        cdir = self.getcwd()
+        self.CDIRectory.w("DEFault")
+        def_dir = self.getcwd()
+        self.chdir(cdir)
+        return def_dir
+
+    @memoized_property
+    def calpool_dir(self):
+        return ntpath.join(self.default_dir, 'Calibration', 'Data')
+
     def file(self, filename, path=None):
         """
         Create a File instance
@@ -924,6 +936,9 @@ class Path(object):
     def __str__(self):
         return ntpath.join(self.path, self.filename)
 
+    def __repr__(self):
+        return str(self)
+
 
 class Directory(Path):
     def __init__(self, path, instrument):
@@ -941,13 +956,17 @@ class Directory(Path):
             if match.group(2) == "<DIR>":
                 return self.__class__(path=match.group(1), instrument=self.instrument)
             else:
-                return self.instrument.File(filename=match.group(1), path=self.path, instrument=self.instrument)
+                return self.instrument.filesystem.file(filename=match.group(1), path=self.path)
 
         import re
         x = self.instrument.MMEMory.CATalog.q(self.path)
-        used_size, free_disk, files = str(x).split(", ", 2)
+        # <used_size>,<free_disk_space> {,<file_name>,,<file_size>}
+        try:
+            used_size, free_disk, files = str(x).split(",", 2)
+        except ValueError:
+            raise RuntimeError("Bad instrument response from MMEM:CAT? %s -> %s" % (self.path, str(x)))
         # We can't split files on comma alone, since a comma might be contained in a filename
-        r = re.finditer('(.*?), (?:(<DIR>), |, (\d+)),', files)
+        r = re.finditer(' (.*?),(?:( <DIR>),|, (\d+)),', files)
         return list(map(mk_list, r))
 
     @staticmethod
