@@ -6,6 +6,7 @@ Created on 16 feb. 2016
 """
 from __future__ import absolute_import, division, print_function, unicode_literals
 
+import RSSscpi
 from RSSscpi.gen import ZNB_gen
 from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
 from RSSscpi.SCPI_response import format_SCPI_block_data
@@ -205,7 +206,6 @@ class Channel(object):
         self.SOURce = instrument.SOURce(n)
         self.TRIGger = instrument.TRIGger(n)  # type: ZNB_gen.TRIGger
 
-        self.sweep = self.get_sweep()
 
     name = SCPIProperty(ZNB_gen.CONFigure.CHANnel.NAME, str, get_root_node=lambda self: self.CONFch)
     """
@@ -220,7 +220,9 @@ class Channel(object):
         """
         return Trace(name=name, channel=self)
 
-    def get_sweep(self):
+    @property
+    def sweep(self):
+        # type: () -> RSSscpi.znb.Sweep
         return Sweep(self)
 
     def get_vna_port(self, port_no):

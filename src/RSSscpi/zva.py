@@ -5,6 +5,7 @@
 """
 from __future__ import absolute_import, division, print_function, unicode_literals
 
+import RSSscpi
 from RSSscpi.gen import ZVA_gen
 from RSSscpi.SCPI_property import SCPIProperty
 from RSSscpi import znb
@@ -91,8 +92,9 @@ class ZVA(ZVA_gen, znb.ZNB):
 
 class Channel(znb.Channel):
 
-    def get_sweep(self):
-        # type: () -> Sweep
+    @property
+    def sweep(self):
+        # type: () -> RSSscpi.zva.Sweep
         return Sweep(self)
 
     def get_trace(self, name):
