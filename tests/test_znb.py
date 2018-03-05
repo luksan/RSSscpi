@@ -239,6 +239,13 @@ class TestChannel(object):
                 "CONFigure:CHANnel1:NAME 'Ch2'",
                 ] == visa.cmd
 
+        visa.ret = "HIGH"
+        ch.if_selectivity = "NORM"
+        assert ch.if_selectivity == "HIGH"
+        assert ["SENSe1:BANDwidth:RESolution:SELect NORM",
+                "SENSe1:BANDwidth:RESolution:SELect?",
+                ] == visa.cmd
+
     def test_channel_cal(self, dummy_vna, visa):
         # type: (ZNB, VISA) -> None
         ch = dummy_vna.get_channel(2)

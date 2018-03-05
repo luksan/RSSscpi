@@ -303,6 +303,7 @@ class Channel(object):
 
     ifbw = SCPIProperty(ZNB_gen.SENSe.BANDwidth, int, get_root_node=lambda x: x.SENSe)
     ifbw_minmax = SCPIPropertyMinMax(ifbw)
+    if_selectivity = SCPIProperty(ZNB_gen.SENSe.BANDwidth.RESolution.SELect, str, get_root_node=lambda x: x.SENSe)
 
     def cal_auto(self, vna_ports, cal_unit_ports=None, cal_type="FNPort", cal_unit_characterization=""):
         if cal_unit_ports:
