@@ -128,6 +128,17 @@ class ZNB(ZNB_gen):
         """
         return Channel(n, self)
 
+    def query_channel_list(self):
+        """
+        Returns a list of tuples representing all the channels in the active recall set.
+        CONFigure:CHANnel:CATalog?
+
+        The first element of each tuple is a :class:`Channel` instance,
+        the second element is the name of the channel as a string.
+        """
+        x = self.CONFigure.CHANnel.CATalog.q().comma_list_pairs()
+        return [(self.get_channel(int(n)), str(name)) for n, name in x]
+
     def get_diagram(self, n):
         """
 

@@ -71,6 +71,17 @@ class TestZNB(object):
                 "INSTrument:NSELect 1",
                 ] == visa.cmd
 
+    def test_query_channel_list(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        visa.ret = "1,Ch1,3,Test_channel"
+        x = dummy_vna.query_channel_list()
+        assert len(x) == 2
+        assert isinstance(x[0][0], dummy_vna.get_channel(1).__class__)
+        assert x[0][0].n == 1 and x[0][1] == "Ch1"
+        assert x[1][0].n == 3 and x[1][1] == "Test_channel"
+        assert ["CONFigure:CHANnel:CATalog?",
+                ] == visa.cmd
+
     def test_query_port_count(self, dummy_vna, visa):
         # type: (ZNB, VISA) -> None
         vna = dummy_vna
