@@ -242,7 +242,7 @@ class Instrument(SCPINodeBase):
         cmd = arg.split()[0]
         self._cmd_debug[cmd] = traceback.extract_stack()[:-2]  # Store the current stack for later debugging
         start = timeit.default_timer()
-        err = None
+        ret = None
         try:
             ret = func(arg)
         except visa.Error as e:
@@ -252,7 +252,14 @@ class Instrument(SCPINodeBase):
         finally:
             self.last_cmd_time = timeit.default_timer()
             elapsed = (self.last_cmd_time - start) * 1e3
-            self.visa_logger.info("%.2f ms \t %s", elapsed, arg, extra={"duration": elapsed})
+            if isinstance(ret, str):
+                if len(ret) > 30:
+                    r = " -> %s..." % (ret.strip()[:30])
+                else:
+                    r = " -> %s" % (ret.strip())
+            else:
+                r = ""
+            self.visa_logger.info("%.2f ms \t %s%s", elapsed, arg, r, extra={"duration": elapsed, "response": ret})
         return ret
 
     def _build_arg_str(self, cmd, args, kwargs):
