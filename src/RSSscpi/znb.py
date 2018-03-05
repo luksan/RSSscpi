@@ -141,9 +141,10 @@ class ZNB(ZNB_gen):
 
     def get_diagram(self, n):
         """
+        Returns a :class:`RSSscpi.znb.Diagram` instance, linked to the instrument.
 
-        :param n: The diagram id, Wnd
-        :rtype: ZNB.Diagram
+        :param int n: The diagram id, Wnd
+        :rtype: RSSscpi.znb.Diagram
         """
         return Diagram(n, self)
 

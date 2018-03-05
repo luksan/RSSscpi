@@ -80,7 +80,12 @@ class ZVA(ZVA_gen, znb.ZNB):
         return Channel(n, self)
 
     def get_diagram(self, n):
-        # type: (int) -> Diagram
+        """
+        Returns a :class:`RSSscpi.zva.Diagram` instance, linked to the instrument.
+
+        :param int n: The diagram id, Wnd
+        :rtype: RSSscpi.zva.Diagram
+        """
         return Diagram(n, self)
 
 
