@@ -421,10 +421,12 @@ class TestSweepSegments(object):
 
     def test_disable_methods(self, sw, visa):
         sw.segments.disable_per_segment_dwell_time()
+        sw.segments.disable_per_segment_ifbw()
         sw.segments.disable_per_segment_if_selectivity()
         sw.segments.disable_per_segment_power()
         sw.segments.disable_per_segment_sweep_time()
         assert ["SENSe2:SEGMent:SWEep:DWELl:CONTrol OFF",
+                "SENSe2:SEGMent:BWIDth:RESolution:CONTrol OFF",
                 "SENSe2:SEGMent:BWIDth:RESolution:SELect:CONTrol OFF",
                 "SENSe2:SEGMent:POWer:LEVel:CONTrol OFF",
                 "SENSe2:SEGMent:SWEep:TIME:CONTrol OFF",

@@ -506,6 +506,9 @@ class SweepSegments(object):
     def disable_per_segment_dwell_time(self):
         self._SEG.SWEep.DWELl.CONTrol().w(False)
 
+    def disable_per_segment_ifbw(self):
+        self._SEG.BWIDth.RESolution.CONTrol.w(False)
+
     def disable_per_segment_if_selectivity(self):
         self._SEG.BWIDth.RESolution.SELect.CONTrol().w(False)
 
