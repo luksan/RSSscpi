@@ -128,6 +128,13 @@ def scpi_int(request):
     x = request.param
     return x, str(x)
 
+
+@pytest.fixture(params=["ON", "OFF"])
+def scpi_bool(request):
+    x = request.param
+    return x != "OFF", x
+
+
 def pytest_exception_interact(node, call, report):
     # print the VISA command log on exception
     if hasattr(node, 'funcargs') and 'visa' in node.funcargs:

@@ -188,6 +188,14 @@ class TestChannel(object):
                 "SENSe3:BANDwidth 1000.0",
                 ] == visa.cmd
 
+    bool_properties = [
+        ("state", "CONFigure:CHANnel2:STATe", "{:s} {:s}", "{:s}?"),
+    ]
+
+    @PropertyTester.prop_parametrize(bool_properties)
+    def test_bool_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_bool, ch, visa):
+        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_bool, ch, visa, bool)
+
     float_properties = [
         ("freq_cw", "SENSe2:FREQuency:CW", "{:s} {:s}", "{:s}?"),
         ("freq_start", "SENSe2:FREQuency:STARt", "{:s} {:s}", "{:s}?"),
@@ -503,6 +511,13 @@ def test_diagram(dummy_vna, visa):
             "DISPlay:WINDow1:TITLe:DATA?",
             "DISPlay:WINDow1:TITLe:DATA 'Title2'",
             "DISPlay:WINDow1:TITLe:STATe?",
+            ] == visa.cmd
+    dia.state = True
+    dia.state = False
+    assert dia.state is True
+    assert ["DISPlay:WINDow1:STATe ON",
+            "DISPlay:WINDow1:STATe OFF",
+            "DISPlay:WINDow1:STATe?",
             ] == visa.cmd
 
 

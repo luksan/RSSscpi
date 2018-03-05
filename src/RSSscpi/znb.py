@@ -204,6 +204,11 @@ class Channel(object):
     def get_vna_port(self, port_no):
         return ChannelVNAPort(self, port_no)
 
+    state = SCPIProperty(ZNB_gen.CONFigure.CHANnel.STATe, bool, get_root_node=lambda self: self.CONFch)
+    """
+    Returns True if the channel is activated. Set to True to create the channel, and to False to delete it.
+    """
+
     def create_trace(self, name, parameter, diagram=None):
         """
         Create a new trace with a measurement parameter according to CALCulate<Ch>:PARameter:SDEFine
@@ -809,6 +814,13 @@ class Diagram(ZNB_gen.DISPlay.WINDow):
         self.is_maximized = self.is_maximized
 
     _WIN = ZNB_gen.DISPlay.WINDow
+
+    state = SCPIProperty(_WIN.STATe, bool)
+    """
+    Enable/disable the diagram.
+    Note that disabling the diagram will renumber all the remaining diagrams on the instrument,
+    and delete all traces that are assigned to the diagram.
+    """
 
     is_maximized = SCPIProperty(_WIN.MAXimize, bool)
     """
