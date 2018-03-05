@@ -582,8 +582,8 @@ class Sweep(ZNB_gen.SENSe.SWEep):
 
 class MeasParamBase(object):
     def __init__(self, dst_port, src_port, detector=""):
-        self.dst_port = dst_port
-        self.src_port = src_port
+        self.dst_port = int(dst_port)
+        self.src_port = int(src_port)
         self.detector = str(detector).upper()
 
 
@@ -598,10 +598,8 @@ class Trace(object):
                 return "S{:02d}{:02d}{!s}".format(self.dst_port, self.src_port, self.detector)
 
         class Wave(MeasParamBase):
-            def __init__(self, receiver, dst_port, src_port=None, detector=""):
+            def __init__(self, receiver, dst_port, src_port, detector=""):
                 super(Trace.MeasParam.Wave, self).__init__(dst_port, src_port, detector)
-                if src_port is None:
-                    self.src_port = self.dst_port
                 self.receiver = str(receiver).upper()
 
             def __str__(self):

@@ -819,3 +819,11 @@ class TestTrace(object):
                 ] == visa.cmd
         tr.measurement = tr.MeasParam.Wave("b", 1, src_port=1, detector="sam")
         assert ["CALCulate2:PARameter:MEASure 'Tr3', 'B01D01SAM'"] == visa.cmd
+
+    def test_meas_param(self, tr, visa):
+        # type: (znb.Trace, VISA) -> None
+        assert str(tr.MeasParam.S(2, 1)) == "S0201"
+        assert str(tr.MeasParam.S("2", 1, "RMS")) == "S0201RMS"
+        assert str(tr.MeasParam.Wave("A", 2, "2")) == "A02D02"
+        assert str(tr.MeasParam.Wave("B", 2, 1)) == "B02D01"
+        assert str(tr.MeasParam.Wave("B", 2, 2, detector="AVG")) == "B02D02AVG"
