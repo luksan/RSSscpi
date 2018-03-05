@@ -91,6 +91,33 @@ class ZVA(ZVA_gen, znb.ZNB):
 
 
 class Channel(znb.Channel):
+    """
+    This class maps to the concept of a channel on the ZVA.
+    """
+    @property
+    def CALC(self):
+        # type: () -> ZVA_gen.CALCulate
+        return self.instrument.CALCulate(self.n)
+
+    @property
+    def CONFch(self):
+        # type: () -> ZVA_gen.CONFigure.CHANnel
+        return self.instrument.CONFigure.CHANnel(self.n)
+
+    @property
+    def SENSe(self):
+        # type: () -> ZVA_gen.SENSe
+        return self.instrument.SENSe(self.n)
+
+    @property
+    def SOURce(self):
+        # type: () -> ZVA_gen.SOURce
+        return self.instrument.SOURce(self.n)
+
+    @property
+    def TRIGger(self):
+        # type: () -> ZVA_gen.TRIGger
+        return self.instrument.TRIGger(self.n)
 
     @property
     def sweep(self):

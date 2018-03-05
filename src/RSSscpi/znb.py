@@ -199,13 +199,31 @@ class Channel(object):
         """
         self.n = n
         self.instrument = instrument
-        self.CALC = instrument.CALCulate(n)  # type: ZNB_gen.CALCulate
-        self.CONFch = instrument.CONFigure.CHANnel(n)
-        self.SENSe = instrument.SENSe(n)
-        self.CORRection = instrument.SENSe(n).CORRection
-        self.SOURce = instrument.SOURce(n)
-        self.TRIGger = instrument.TRIGger(n)  # type: ZNB_gen.TRIGger
 
+    @property
+    def CALC(self):
+        # type: () -> ZNB_gen.CALCulate
+        return self.instrument.CALCulate(self.n)
+
+    @property
+    def CONFch(self):
+        # type: () -> ZNB_gen.CONFigure.CHANnel
+        return self.instrument.CONFigure.CHANnel(self.n)
+
+    @property
+    def SENSe(self):
+        # type: () -> ZNB_gen.SENSe
+        return self.instrument.SENSe(self.n)
+
+    @property
+    def SOURce(self):
+        # type: () -> ZNB_gen.SOURce
+        return self.instrument.SOURce(self.n)
+
+    @property
+    def TRIGger(self):
+        # type: () -> ZNB_gen.TRIGger
+        return self.instrument.TRIGger(self.n)
 
     name = SCPIProperty(ZNB_gen.CONFigure.CHANnel.NAME, str, get_root_node=lambda self: self.CONFch)
     """
@@ -289,11 +307,11 @@ class Channel(object):
     def cal_auto(self, vna_ports, cal_unit_ports=None, cal_type="FNPort", cal_unit_characterization=""):
         if cal_unit_ports:
             cmd_fmt = "{:s}, {:q}, {:d**}"
-            self.CORRection.COLLect.AUTO.PORTs.TYPE().w(
+            self.SENSe.CORRection.COLLect.AUTO.PORTs.TYPE().w(
                 cal_type, cal_unit_characterization, zip(vna_ports, cal_unit_ports), fmt=cmd_fmt)
         else:
             cmd_fmt = "{:s}, {:q}, {:d*}"
-            self.CORRection.COLLect.AUTO.TYPE().w(cal_type, cal_unit_characterization, vna_ports, fmt=cmd_fmt)
+            self.SENSe.CORRection.COLLect.AUTO.TYPE().w(cal_type, cal_unit_characterization, vna_ports, fmt=cmd_fmt)
 
     def configure_freq_sweep(self, start_freq, stop_freq, points=None, ifbw=None, power=None, log_sweep=False):
         """
@@ -603,7 +621,7 @@ class Trace(object):
         return self.channel.CALC
 
     def _corr_node(self):
-        return self.channel.CORRection
+        return self.channel.SENSe.CORRection
 
     def _sweep_node(self):
         return self.channel.SENSe.SWEep
