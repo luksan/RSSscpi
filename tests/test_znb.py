@@ -720,6 +720,22 @@ class TestTrace(object):
                 "DISPlay:WINDow2:TRACe:EFEed 'Tr2'",
                 ] == visa.cmd
 
+        tr.copy_assign_math("Math1", "Tr1/Tr2")
+        tr.copy_assign_math("Math1", "Tr3/Tr2", dia)
+        assert ["CALCulate2:PARameter:MEASure? 'Tr3'",
+                "CALCulate2:PARameter:SDEFine 'Math1', 'S11'",
+                "CALCulate2:PARameter:SELect 'Math1'",
+                "CALCulate2:MATH:EXPRession:SDEFine 'Tr1/Tr2'",
+                "CALCulate2:MATH:STATe ON",
+                "CALCulate2:PARameter:MEASure? 'Tr3'",
+                "CALCulate2:PARameter:SDEFine 'Math1', 'S11'",
+                "DISPlay:WINDow2:STATe ON",
+                "DISPlay:WINDow2:TRACe:EFEed 'Math1'",
+                "CALCulate2:PARameter:SELect 'Math1'",
+                "CALCulate2:MATH:EXPRession:SDEFine 'Tr3/Tr2'",
+                "CALCulate2:MATH:STATe ON",
+                ] == visa.cmd
+
     def test_trace_id(self, tr, visa):
         # type: (znb.Trace, VISA) -> None
         """Test that the trace id is cached, and can't be assigned"""

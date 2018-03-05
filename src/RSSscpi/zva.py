@@ -193,6 +193,14 @@ class Trace(znb.Trace):
     def get_marker(self, n):
         return Marker(n, self)
 
+    def copy(self, new_name, diagram=None):
+        # type: (str, Diagram) -> RSSscpi.zva.Trace
+        return super(Trace, self).copy(new_name, diagram)
+
+    def copy_assign_math(self, new_name, equation, diagram=None):
+        # type: (str, str, Diagram) -> RSSscpi.zva.Trace
+        return super(Trace, self).copy_assign_math(new_name, equation, diagram)
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)

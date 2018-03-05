@@ -630,17 +630,28 @@ class Trace(object):
         self.channel.instrument.TRACe.COPY.MATH().w(target_trace_name, self.name)
         return self.__class__(target_trace_name, self.channel)
 
-    def copy(self, new_name):
-        # type: ([str, unicode]) -> Trace
+    def copy(self, new_name, diagram=None):
+        # type: ([str, unicode], Diagram) -> Trace
         """
-        Create a copy of the trace. The trace is not assigned to a diagram area.
+        Create a copy of the trace. If the diagram parameter is provided the new trace will be assigned to
+        that diagram.
 
-        :param new_name: The name of the new trace
+        :param str new_name: The name of the new trace
+        :param diagram: (optional)
         :return: A new Trace instance
         """
         self.check_if_name_is_valid(new_name, raise_err=True)
         meas = self.measurement
-        return self.channel.create_trace(new_name, meas)
+        tr = self.channel.create_trace(new_name, meas)
+        if diagram:
+            tr.assign_diagram(diagram)
+        return tr
+
+    def copy_assign_math(self, new_name, equation, diagram=None):
+        tr = self.copy(new_name, diagram)
+        tr.math_equation = equation
+        tr.math_is_enabled = True
+        return tr
 
     def delete(self):
         """
