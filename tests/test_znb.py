@@ -118,7 +118,6 @@ class TestCalibrationManager(object):
         visa.ret = '77668, 125731287040, cal1.cal,, 38834, cal2.cal,, 38834,'
         visa._def_set = False
         x = c.query_calpool_list()
-        visa.print_cmd()
         assert ["cal1.cal", "cal2.cal"] == x
         c.delete_calgroup("test1.cal")
         assert ["MMEMory:CDIRectory?",
