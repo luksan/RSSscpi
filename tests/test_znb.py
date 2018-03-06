@@ -14,16 +14,39 @@ from RSSscpi.SCPI_property import SCPIPropertyMinMax
 
 
 class PropertyTester(object):
+    def pytest_generate_tests(self, metafunc):
+        if metafunc.function.__name__ == "test_bool_properties":
+            props = self.bool_properties
+        elif metafunc.function.__name__ == "test_float_properties":
+            props = self.float_properties
+        elif metafunc.function.__name__ == "test_int_properties":
+            props = self.int_properties
+        else:
+            return
+        metafunc.parametrize('prop_name, scpi_cmd, scpi_write, scpi_query',
+                             props, ids=[x[0] for x in props])
+
     @staticmethod
     def prop_parametrize(props):
         return pytest.mark.parametrize('prop_name, scpi_cmd, scpi_write, scpi_query', props, ids=[x[0] for x in props])
 
-    @staticmethod
-    def test_float_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, instance, visa):
-        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, instance, visa, float)
+    bool_properties = []
+
+    def test_bool_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_bool, prop_owner, visa):
+        self.prop_test(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_bool, prop_owner, visa, bool)
+
+    float_properties = []
+
+    def test_float_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, prop_owner, visa):
+        self.prop_test(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, prop_owner, visa, float)
+
+    int_properties = []
+
+    def test_int_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, prop_owner, visa):
+        self.prop_test(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, prop_owner, visa, int)
 
     @staticmethod
-    def test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_values, instance, visa, type_):
+    def prop_test(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_values, instance, visa, type_):
         visa.ret = scpi_values[1]  # the string representation of the value
         x = getattr(instance, prop_name)
         assert isinstance(x, type_) and x == scpi_values[0]
@@ -129,10 +152,14 @@ class TestCalibrationManager(object):
                 ] == visa.cmd
 
 
-class TestChannel(object):
+class TestChannel(PropertyTester):
     @pytest.fixture
     def ch(self, dummy_vna):
         return dummy_vna.get_channel(2)
+
+    @pytest.fixture
+    def prop_owner(self, ch):
+        return ch
 
     def test_channel(self, dummy_vna, visa):
         # type: (ZNB, VISA) -> None
@@ -222,10 +249,6 @@ class TestChannel(object):
         ("state", "CONFigure:CHANnel2:STATe", "{:s} {:s}", "{:s}?"),
     ]
 
-    @PropertyTester.prop_parametrize(bool_properties)
-    def test_bool_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_bool, ch, visa):
-        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_bool, ch, visa, bool)
-
     float_properties = [
         ("freq_cw", "SENSe2:FREQuency:CW", "{:s} {:s}", "{:s}?"),
         ("freq_start", "SENSe2:FREQuency:STARt", "{:s} {:s}", "{:s}?"),
@@ -235,17 +258,9 @@ class TestChannel(object):
         ("power_level", "SOURce2:POWer:LEVel:IMMediate:AMPLitude", "{:s} {:s}", "{:s}?"),
     ]
 
-    @PropertyTester.prop_parametrize(float_properties)
-    def test_float_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, ch, visa):
-        PropertyTester.test_float_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, ch, visa)
-
     int_properties = [
         ("ifbw", "SENSe2:BANDwidth", "{:s} {:s}", "{:s}?"),
     ]
-
-    @PropertyTester.prop_parametrize(int_properties)
-    def test_int_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, ch, visa):
-        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, ch, visa, int)
 
     def test_channel_properties(self, dummy_vna, visa):
         # type: (ZNB, VISA) -> None
@@ -367,7 +382,7 @@ class TestFilesystem(object):
                 ] == visa.cmd
 
 
-class TestSweep(object):
+class TestSweep(PropertyTester):
     @pytest.fixture
     def sw(self, dummy_vna):
         return dummy_vna.get_channel(2).sweep
@@ -375,6 +390,10 @@ class TestSweep(object):
     @pytest.fixture
     def seg(self, sw):
         return sw.segments[5]
+
+    @pytest.fixture
+    def prop_owner(self, sw):
+        return sw
 
     def test_sweep_dwell(self, dummy_znb, visa):
         # type: (ZNB, VISA) -> None
@@ -400,18 +419,10 @@ class TestSweep(object):
         ("step_size",  "SENSe2:SWEep:STEP",  "{:s} {:s}", "{:s}?"),
     ]
 
-    @PropertyTester.prop_parametrize(float_properties)
-    def test_float_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, sw, visa):
-        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, sw, visa, float)
-
     int_properties = [
         ("points", "SENSe2:SWEep:POINts", "{:s} {:s}", "{:s}?"),
         ("count", "SENSe2:SWEep:COUNt",   "{:s} {:s}", "{:s}?"),
     ]
-
-    @PropertyTester.prop_parametrize(int_properties)
-    def test_int_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, sw, visa):
-        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, sw, visa, int)
 
 
 class TestSweepSegments(object):
@@ -500,7 +511,7 @@ class TestSweepSegments(object):
                 ] == visa.cmd
 
 
-class TestSweepSegment(object):
+class TestSweepSegment(PropertyTester):
     @pytest.fixture
     def sw(self, dummy_vna):
         return dummy_vna.get_channel(2).sweep
@@ -508,6 +519,10 @@ class TestSweepSegment(object):
     @pytest.fixture
     def seg(self, sw):
         return sw.segments[5]
+
+    @pytest.fixture
+    def prop_owner(self, seg):
+        return seg
 
     def test_segment_analog_sweep(self, dummy_znb, visa):
         # type: (ZNB, VISA) -> None
@@ -519,7 +534,7 @@ class TestSweepSegment(object):
                 "SENSe2:SEGMent6:SWEep:GENeration STEPped",
                 ] == visa.cmd
 
-    segment_float_properties = [
+    float_properties = [
         ("dwell_time",  "SENSe2:SEGMent6:SWEep:DWELl",     "{:s} {:s}", "{:s}?"),
         ("freq_start",  "SENSe2:SEGMent6:FREQuency:STARt", "{:s} {:s}", "{:s}?"),
         ("freq_stop",   "SENSe2:SEGMent6:FREQuency:STOP",  "{:s} {:s}", "{:s}?"),
@@ -527,18 +542,10 @@ class TestSweepSegment(object):
         ("sweep_time",  "SENSe2:SEGMent6:SWEep:TIME",      "{:s} {:s}", "{:s}?"),
     ]
 
-    @PropertyTester.prop_parametrize(segment_float_properties)
-    def test_segment_float_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, seg, visa):
-        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, seg, visa, float)
-
-    segment_int_properties = [
+    int_properties = [
         ("if_bandwidth",     "SENSe2:SEGMent6:BWIDth:RESolution", "{:s} {:s}", "{:s}?"),
         ("number_of_points", "SENSe2:SEGMent6:SWEep:POINts",      "{:s} {:s}", "{:s}?"),
     ]
-
-    @PropertyTester.prop_parametrize(segment_int_properties)
-    def test_segment_int_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, seg, visa):
-        PropertyTester.test_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_int, seg, visa, int)
 
     def test_properties(self, seg, visa):
         visa.ret = "0"
@@ -720,10 +727,14 @@ def test_marker_y_set(dummy_znb, visa):
             ] == visa.cmd
 
 
-class TestTrace(object):
+class TestTrace(PropertyTester):
     @pytest.fixture
     def tr(self, dummy_vna):
         return dummy_vna.get_channel(2).get_trace("Tr3")
+
+    @pytest.fixture
+    def prop_owner(self, tr):
+        return tr
 
     float_properties = [
         ("scale_per_div",   "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision",   "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
@@ -732,10 +743,6 @@ class TestTrace(object):
         ("ref_level",       "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel",      "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
         ("ref_pos",         "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition",   "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
     ]
-
-    @PropertyTester.prop_parametrize(float_properties)
-    def test_float_properties(self, prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, tr, visa):
-        PropertyTester.test_float_properties(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_float, tr, visa)
 
     def test_trace_format(self, tr, visa):
         # type: (ZNB, VISA) -> None
