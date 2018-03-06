@@ -551,7 +551,7 @@ def test_diagram(dummy_vna, visa):
     """
     dia = dummy_vna.get_diagram(1)
     f = dia.save_screenshot("hej.png")
-    assert str(f) == "1\hej.png"
+    assert str(f) == "C:\\Rohde & Schwarz\\Nwa\\hej.png"
     assert ["MMEMory:NAME 'hej.png'",
             "HCOPy:DESTination 'MMEM'",
             "HCOPy:DEVice:LANGuage PNG",
