@@ -111,6 +111,25 @@ class TestZNB(object):
         assert visa.cmd == []
 
 
+class TestCalibrationManager(object):
+    def test_calpool_ops(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        c = dummy_vna.cal_manager
+        visa.ret = '77668, 125731287040, cal1.cal,, 38834, cal2.cal,, 38834,'
+        visa._def_set = False
+        x = c.query_calpool_list()
+        visa.print_cmd()
+        assert ["cal1.cal", "cal2.cal"] == x
+        c.delete_calgroup("test1.cal")
+        assert ["MMEMory:CDIRectory?",
+                "MMEMory:CDIRectory DEFault",
+                "MMEMory:CDIRectory?",
+                "MMEMory:CDIRectory 'C:\Rohde & Schwarz\Nwa'",
+                "MMEMory:CATalog? 'C:\Rohde & Schwarz\Nwa\Calibration\Data'",
+                "MMEMory:DELete:CORRection 'test1.cal'",
+                ] == visa.cmd
+
+
 class TestChannel(object):
     @pytest.fixture
     def ch(self, dummy_vna):
@@ -266,6 +285,37 @@ class TestChannel(object):
         assert f.filename == "file.s3p"
         assert ["MMEMory:STORe:TRACe:PORTs 2, 'file.s3p', LOGPhase, CIMPedance, 1, 2, 3",
                 "MMEMory:CDIRectory?",
+                ] == visa.cmd
+
+
+class TestChannelCal(object):
+    def test_calgroup(self, dummy_vna, visa):
+        # type: (ZNB, VISA) -> None
+        cal = dummy_vna.get_channel(1).calibration
+        visa.ret = '77668, 125731287040, cal1.cal,, 38834, cal2.cal,, 38834,'
+        visa._def_set = False
+        assert cal.query_calpool_list() == ['cal1.cal', 'cal2.cal']
+
+        visa.ret = ""
+        assert cal.query_calgroup() is None
+        visa.ret = "cal4.cal"
+        assert cal.query_calgroup() == "cal4.cal"
+
+        cal.resolve_calgroup_link()
+        assert ["MMEMory:CDIRectory?",
+                "MMEMory:CDIRectory DEFault",
+                "MMEMory:CDIRectory?",
+                "MMEMory:CDIRectory 'C:\Rohde & Schwarz\Nwa'",
+                "MMEMory:CATalog? 'C:\Rohde & Schwarz\Nwa\Calibration\Data'",
+                "MMEMory:LOAD:CORRection? 1",
+                "MMEMory:LOAD:CORRection? 1",
+                "MMEMory:LOAD:CORRection:RESolve 1",
+                ] == visa.cmd
+
+        cal.load_calibration("cal3.cal")
+        cal.store_calibration("cal2.cal")
+        assert ["MMEMory:LOAD:CORRection 1, 'cal3.cal'",
+                "MMEMory:STORe:CORRection 1, 'cal2.cal'",
                 ] == visa.cmd
 
 

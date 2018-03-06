@@ -86,6 +86,10 @@ class ZNB(ZNB_gen):
         """
         return Filesystem(self)
 
+    @property
+    def cal_manager(self):
+        return CalibrationManager(self)
+
     def init(self):
         super(ZNB, self).init()
 
@@ -190,6 +194,34 @@ class ZNB(ZNB_gen):
         return self.filesystem.file(filename)
 
 
+class CalibrationManager(object):
+    """
+    Methods for handling the calibration pool, calkits, etc.
+    """
+    def __init__(self, instrument):
+        """
+
+        :param RSSscpi.znb.ZNB instrument:
+        """
+        self.instrument = instrument
+
+    def query_calpool_list(self):
+        # type: () -> [str]
+        """
+        Returns a list of all the calgroups in the calpool
+        """
+        cal_files = self.instrument.filesystem.listdir(self.instrument.filesystem.calpool_dir)
+        return [c.filename for c in cal_files]
+
+    def delete_calgroup(self, name):
+        """
+        Remove a calgroup file from the calpool
+
+        :param name: The name of the calgroup to be removed
+        """
+        self.instrument.MMEMory.DELete.CORRection.w(name)
+
+
 class Channel(object):
     def __init__(self, n, instrument):
         """
@@ -242,6 +274,11 @@ class Channel(object):
     def sweep(self):
         # type: () -> RSSscpi.znb.Sweep
         return Sweep(self)
+
+    @property
+    def calibration(self):
+        # type () -> RSSscpi.znb.ChannelCal
+        return ChannelCal(self)
 
     def get_vna_port(self, port_no):
         return ChannelVNAPort(self, port_no)
@@ -425,6 +462,50 @@ class ChannelVNAPort(ZNB_gen.SOURce.POWer):
         else:
             x = 'ONLY'
         self.LEVel.IMMediate.OFFSet().w(power, x)
+
+
+class ChannelCal(object):
+    def __init__(self, channel):
+        """
+
+        :param RSSscpi.znb.Channel channel:
+        """
+        self.channel = channel
+
+    def query_calpool_list(self):
+        return self.channel.instrument.cal_manager.query_calpool_list()
+
+    def query_calgroup(self):
+        x = str(self.channel.instrument.MMEMory.LOAD.CORRection.q(self.channel.n))
+        if not x:
+            return None
+        return x
+
+    def resolve_calgroup_link(self):
+        """
+        Break the link between the channel calibration and the calpool file.
+        """
+        self.channel.instrument.MMEMory.LOAD.CORRection.RESolve.w(self.channel.n)
+
+    def load_calibration(self, filename):
+        """
+
+        :param str filename:
+        :return:
+        """
+        if filename[-4:] != ".cal":
+            filename += ".cal"
+        self.channel.instrument.MMEMory.LOAD.CORRection.w(self.channel.n, filename, fmt="{:d}, {:q}")
+
+    def store_calibration(self, filename):
+        """
+        Store the channel calibration data to disk at ..\\Calibration\\Data
+
+        :param str filename: The target filename
+        """
+        if filename[-4:] != ".cal":
+            filename += ".cal"
+        self.channel.instrument.MMEMory.STORe.CORRection.w(self.channel.n, filename, fmt="{:d}, {:q}")
 
 
 class SweepSegment(ZNB_gen.SENSe.SEGMent):
