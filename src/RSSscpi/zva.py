@@ -17,14 +17,14 @@ from memoized_property import memoized_property
 
 
 def connect_ethernet(ip_address):
-    # type: ([str, unicode]) -> ZVA
+    # type: ([str, unicode]) -> RSSscpi.zva.ZVA
     """
     Helper to connect to a ZVA VNA via Ethernet / TCPIP / VISA.
     Creates an ZVA instance and calls init() on it before returning.
 
     :param ip_address: The ip address in string format
     :return: An initialized ZVA instance.
-    :rtype: ZVA
+    :rtype: RSSscpi.zva.ZVA
     """
     return net.connect_ethernet(ZVA, ip_address)
 
@@ -77,7 +77,7 @@ class ZVA(ZVA_gen, znb.ZNB):
         assert not hasattr(self.SYSTem.COMMunicate, "CODec")
 
     def get_channel(self, n):
-        # type: (int) -> Channel
+        # type: (int) -> RSSscpi.zva.Channel
         return Channel(n, self)
 
     def get_diagram(self, n):
@@ -130,6 +130,10 @@ class Channel(znb.Channel):
 
     def get_vna_port(self, port_no):
         return ChannelVNAPort(self, port_no)
+
+    def create_trace(self, name, parameter, diagram=None):
+        # type: () -> RSSscpi.zva.Trace
+        return super(Channel, self).create_trace(name, parameter, diagram)
 
 
 class Diagram(ZVA_gen.DISPlay.WINDow, znb.Diagram):
