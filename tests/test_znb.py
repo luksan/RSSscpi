@@ -143,12 +143,12 @@ class TestCalibrationManager(object):
         x = c.query_calpool_list()
         assert ["cal1.cal", "cal2.cal"] == x
         c.delete_calgroup("test1.cal")
-        assert ["MMEMory:CDIRectory?",
-                "MMEMory:CDIRectory DEFault",
-                "MMEMory:CDIRectory?",
-                "MMEMory:CDIRectory 'C:\Rohde & Schwarz\Nwa'",
-                "MMEMory:CATalog? 'C:\Rohde & Schwarz\Nwa\Calibration\Data'",
-                "MMEMory:DELete:CORRection 'test1.cal'",
+        assert [r"MMEMory:CDIRectory?",
+                r"MMEMory:CDIRectory DEFault",
+                r"MMEMory:CDIRectory?",
+                r"MMEMory:CDIRectory 'C:\Rohde & Schwarz\Nwa'",
+                r"MMEMory:CATalog? 'C:\Rohde & Schwarz\Nwa\Calibration\Data'",
+                r"MMEMory:DELete:CORRection 'test1.cal'",
                 ] == visa.cmd
 
 
@@ -316,14 +316,14 @@ class TestChannelCal(object):
         assert cal.query_calgroup() == "cal4.cal"
 
         cal.resolve_calgroup_link()
-        assert ["MMEMory:CDIRectory?",
-                "MMEMory:CDIRectory DEFault",
-                "MMEMory:CDIRectory?",
-                "MMEMory:CDIRectory 'C:\Rohde & Schwarz\Nwa'",
-                "MMEMory:CATalog? 'C:\Rohde & Schwarz\Nwa\Calibration\Data'",
-                "MMEMory:LOAD:CORRection? 1",
-                "MMEMory:LOAD:CORRection? 1",
-                "MMEMory:LOAD:CORRection:RESolve 1",
+        assert [r"MMEMory:CDIRectory?",
+                r"MMEMory:CDIRectory DEFault",
+                r"MMEMory:CDIRectory?",
+                r"MMEMory:CDIRectory 'C:\Rohde & Schwarz\Nwa'",
+                r"MMEMory:CATalog? 'C:\Rohde & Schwarz\Nwa\Calibration\Data'",
+                r"MMEMory:LOAD:CORRection? 1",
+                r"MMEMory:LOAD:CORRection? 1",
+                r"MMEMory:LOAD:CORRection:RESolve 1",
                 ] == visa.cmd
 
         cal.load_calibration("cal3.cal")
@@ -344,8 +344,8 @@ class TestFilesystem(object):
 
         fs.getcwd()
         fs.chdir(r"C:\Users\Public")
-        assert ["MMEMory:CDIRectory?",
-                "MMEMory:CDIRectory 'C:\Users\Public'",
+        assert [r"MMEMory:CDIRectory?",
+                r"MMEMory:CDIRectory 'C:\Users\Public'",
                 ] == visa.cmd
 
     def test_directory_defs(self, dummy_vna, visa):
@@ -372,13 +372,13 @@ class TestFilesystem(object):
         # type: (str, ZNB, VISA) -> None
         visa.ret = r"C:\R&S"
         response, result = dir_list
-        visa.ret_dict["MMEMory:CATalog? 'C:\R&S'"] = response
+        visa.ret_dict[r"MMEMory:CATalog? 'C:\R&S'"] = response
         x = dummy_vna.filesystem.listdir()
         assert len(result) == len(x)
         for a, b in zip(x, result):
             assert a.filename == b
-        assert ["MMEMory:CDIRectory?",
-                "MMEMory:CATalog? 'C:\R&S'",
+        assert [r"MMEMory:CDIRectory?",
+                r"MMEMory:CATalog? 'C:\R&S'",
                 ] == visa.cmd
 
 
