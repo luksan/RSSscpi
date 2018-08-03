@@ -1,0 +1,26 @@
+table.cmd-table  {
+    width: 60em;
+}
+
+.cmd-table thead {
+    background: white;
+}
+
+.cmd-table thead tr {
+    border-color: white;
+}
+
+.cmd-table tbody {
+    font-family: monospace;
+    font-size: 11pt;
+}
+
+.cmd-table tbody tr td {
+    padding-bottom: 3px;
+    padding-top: 0px;
+}
+
+.cmd-table tbody tr.even {
+    background-color: lightcyan;
+}
+
