@@ -66,7 +66,8 @@ def test_sweep_segment(dummy_zva, visa):
     sw = dummy_zva.get_channel(2).sweep
     seg = sw.segments[5]
     assert seg.analog_sweep_is_enabled is False
-    assert pytest.raises(AttributeError, "seg.analog_sweep_is_enabled = True")
+    with pytest.raises(AttributeError):
+        seg.analog_sweep_is_enabled = True
     assert [] == visa.cmd
 
     x = sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3)

@@ -130,7 +130,8 @@ class TestZNB(object):
                 "HCOPy:IMMediate",
                 "MMEMory:CDIRectory?",
                 ] == visa.cmd
-        pytest.raises(ValueError, 'vna.save_screenshot("scr.docx")')
+        with pytest.raises(ValueError):
+            vna.save_screenshot("scr.docx")
         assert visa.cmd == []
 
 
@@ -853,12 +854,17 @@ class TestTrace(PropertyTester):
         "09a",  # Leading integer
     ])
     def test_trace_name_validation(self, name, tr, visa):
-            assert pytest.raises(ValueError, "tr.channel.get_trace(name)")
-            assert pytest.raises(ValueError, "tr.name = name")
-            assert pytest.raises(ValueError, "tr.copy(name)")
-            assert pytest.raises(ValueError, "tr.copy_data_to_mem(name)")
-            assert pytest.raises(ValueError, "tr.copy_math_to_mem(name)")
-            assert [] == visa.cmd
+        with pytest.raises(ValueError):
+            tr.channel.get_trace(name)
+        with pytest.raises(ValueError):
+            tr.name = name
+        with pytest.raises(ValueError):
+            tr.copy(name)
+        with pytest.raises(ValueError):
+            tr.copy_data_to_mem(name)
+        with pytest.raises(ValueError):
+            tr.copy_math_to_mem(name)
+        assert [] == visa.cmd
 
     def test_trace_scaling(self, tr, visa):
         # type: (znb.Trace, VISA) -> None

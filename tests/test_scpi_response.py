@@ -18,7 +18,8 @@ from RSSscpi.SCPI_response import format_SCPI_block_data, SCPIResponse  # noqa: 
 def test_bool(expected, txt):
     for x in txt:
         if expected is None:
-            assert pytest.raises(ValueError, "bool(SCPIResponse(x))")
+            with pytest.raises(ValueError):
+                bool(SCPIResponse(x))
         else:
             assert expected == bool(SCPIResponse(x))
 

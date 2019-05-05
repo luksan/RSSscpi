@@ -121,13 +121,19 @@ def test_prop(visa):
             ] == visa.cmd
     vna.map_prop = True
     vna.map_prop = False
-    pytest.raises(KeyError, "vna.map_prop = 9")
-    vna.map_prop = 0  # This works beacuse 0 and False hashes to same value
-    pytest.raises(KeyError, 'vna.map_prop = "OFF"')
-    pytest.raises(KeyError, 'vna.map_prop = "ON"')
-    pytest.raises(KeyError, 'vna.map_prop = "oops"')
-    pytest.raises(TypeError, 'vna.map_prop = [123, True, "asd"]')  # list() is not hashable, hence TypeError
-    pytest.raises(KeyError, 'x = vna.map_prop')
+    with pytest.raises(KeyError):
+        vna.map_prop = 9
+    vna.map_prop = 0  # This works because 0 and False hashes to same value
+    with pytest.raises(KeyError):
+        vna.map_prop = "OFF"
+    with pytest.raises(KeyError):
+        vna.map_prop = "ON"
+    with pytest.raises(KeyError):
+        vna.map_prop = "oops"
+    with pytest.raises(TypeError):
+        vna.map_prop = [123, True, "asd"]  # list() is not hashable, hence TypeError
+    with pytest.raises(KeyError):
+        x = vna.map_prop
     visa.ret = "ANALog"
     x = vna.map_prop
     assert x is True
