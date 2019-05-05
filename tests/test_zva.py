@@ -44,8 +44,9 @@ def test_marker_y_set(dummy_zva, visa):
     # type: (ZVA, VISA) -> None
     m4 = dummy_zva.get_channel(2).get_trace("Tr2").get_marker(4)
     assert [] == visa.cmd
-    with pytest.raises(AttributeError, message="Assignment to marker y value is not possible."):
+    with pytest.raises(AttributeError):
         m4.y = 2
+        pytest.fail("Assignment to marker y value should not be possible.")
 
 
 def test_sweep_dwell(dummy_zva, visa):
