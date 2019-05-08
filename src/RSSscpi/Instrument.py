@@ -122,6 +122,8 @@ class InstrumentError(BaseException):
 class Instrument(SCPINodeBase):
     _cmd = ""
 
+    MAX_RESPONSE_LOG_LENGTH = 50
+
     def __get__(self, instance, owner):
         # We can't delete __get__ from the class, so this overrides
         # the SCPINodeBase __get__ method, essentially making it a no-op.
@@ -252,11 +254,12 @@ class Instrument(SCPINodeBase):
         finally:
             self.last_cmd_time = timeit.default_timer()
             elapsed = (self.last_cmd_time - start) * 1e3
-            if isinstance(ret, str):
-                if len(ret) > 30:
-                    r = " -> %s..." % (ret.strip()[:30])
+            if hasattr(ret, "strip"):
+                logged_response = ret.strip()
+                if len(logged_response) > self.MAX_RESPONSE_LOG_LENGTH:  # Add "..." to show that the response is truncated
+                    r = " -> '%s'..." % (logged_response[:self.MAX_RESPONSE_LOG_LENGTH])
                 else:
-                    r = " -> %s" % (ret.strip())
+                    r = " -> '%s'" % (logged_response)
             else:
                 r = ""
             self.visa_logger.info("%.2f ms \t %s%s", elapsed, arg, r, extra={"duration": elapsed, "response": ret})
