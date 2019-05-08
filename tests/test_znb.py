@@ -23,6 +23,8 @@ class PropertyTester(object):
             props = self.int_properties
         else:
             return
+        if not props:
+            pytest.skip(metafunc.function.__name__ + ": No properties to test.")
         metafunc.parametrize('prop_name, scpi_cmd, scpi_write, scpi_query',
                              props, ids=[x[0] for x in props])
 
