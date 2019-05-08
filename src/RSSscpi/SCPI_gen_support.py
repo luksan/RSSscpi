@@ -49,7 +49,10 @@ class SCPINodeBase(object):
         raise AttributeError("You probably don't want to do this assignment. Use .w() instead.")
 
     def __getattribute__(self, name):
-        x = object.__getattribute__(self, name)
+        try:
+            x = object.__getattribute__(self, name)
+        except AttributeError:
+            raise AttributeError("'%s' has no attribute '%s'" % (self.build_cmd(), name))
         cls = x.__class__
         if issubclass(cls, SCPINodeBase) and cls._SCPI_class.__module__ != self._SCPI_class.__module__:
             raise AttributeError("Refusing access to a SCPINode from another module. %s !-> %s" % (self._SCPI_class, cls))
@@ -72,7 +75,7 @@ class SCPINodeBase(object):
     def _get_root(self):
         """
         :return: Returns the root node of the command tree, an Instrument.
-        :rtype: RSSscpi.gen.Instrument.Instrument
+        :rtype: RSSscpi.Instrument.Instrument
         """
         if not self._parent:
             return self

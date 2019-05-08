@@ -101,11 +101,11 @@ def test_relink_to_ancestor(visa):
 
     with pytest.raises(AttributeError) as err:
         VNA1.A.B.Cb.D.relink_to_ancestor(a)
-    assert str(err).endswith("AttributeError: 'B' object has no attribute 'Cb' -- A2:B:Cb:D")
+    assert str(err).endswith("AttributeError: 'A2:B' has no attribute 'Cb' -- A2:B:Cb:D")
 
     with pytest.raises(AttributeError) as err:
         VNA1.A.B.Ca.D.E.relink_to_ancestor(d)
-    assert str(err).endswith("AttributeError: 'D' object has no attribute 'E' -- A2:B:Ca:D:E")
+    assert str(err).endswith("AttributeError: 'A2:B:Ca:D' has no attribute 'E' -- A2:B:Ca:D:E")
 
     with pytest.raises(AttributeError) as err:
         VNA1.A.B.Cb.relink_to_ancestor(instr.bsub)
