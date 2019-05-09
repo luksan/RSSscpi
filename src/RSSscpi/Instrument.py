@@ -13,6 +13,7 @@ import visa
 
 from RSSscpi.SCPI_gen_support import SCPINodeBase
 from RSSscpi.SCPI_response import SCPIResponse
+from RSSscpi.scpi_registers import StatusByteRegister, EventStatusRegister
 
 try:
     import Queue  # Use Queue.Queue, not multiprocessing.Queue, to avoid unnecessary pickling
@@ -133,7 +134,7 @@ class Instrument(SCPINodeBase):
 
     def __init__(self, visa_res):
         """
-        :type visa_res: pyvisa.resources.tcpip.TCPIPInstrument
+        :type visa_res: pyvisa.resources.messagebased.MessageBasedResource
         :param visa_res:
         """
 
@@ -201,15 +202,18 @@ class Instrument(SCPINodeBase):
         self.visa_logger.debug("Handling service request")
         with self._visa_lock:
             with self._in_callback:
-                stb = self._visa_res.read_stb()  # Read out the SRQ status byte
-                if stb & 32:
-                    esr = self._call_visa(self._visa_res.query, "*ESR?")  # read and reset the event status register
-                else:
-                    esr = 0
-                self.visa_logger.info("VISA event: STB: {:08b}, ESR: {:08b}, duration {:.2f} ms".format(stb, int(esr), duration * 1e3))
+                stb = StatusByteRegister(self._visa_res.read_stb())  # Read out the SRQ status byte
+                esr = None
+                if stb.event_status_summary:
+                    # read and reset the event status register
+                    esr = StatusByteRegister(int(self._call_visa(self._visa_res.query, "*ESR?")))
+                self.visa_logger.info("VISA event: STB: {:}, ESR: {:}, duration {:.2f} ms"
+                                      .format(stb.short_status(),
+                                              esr.short_status() if esr is not None else "-",
+                                              duration * 1e3))
                 self.event_queue.put_nowait(VISAEvent(duration, stb, esr))
 
-                if stb & (1 << 2):  # Error queue not empty bit
+                if stb.error_queue_not_empty:
                     self._get_error_queue()
         return visa.constants.VI_SUCCESS
 
