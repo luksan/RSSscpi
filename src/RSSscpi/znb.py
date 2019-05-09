@@ -203,7 +203,12 @@ class CalibrationManager(object):
 
         :param RSSscpi.znb.ZNB instrument:
         """
-        self.instrument = instrument
+        self._instr = instrument
+
+    @property
+    def instrument(self):
+        # type: () -> ZNB
+        return self._instr
 
     def query_calpool_list(self):
         # type: () -> [str]
