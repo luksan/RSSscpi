@@ -103,14 +103,20 @@ class SCPIResponse(object):
             raise ValueError("Invalid block data header: '%s'" % str(self.raw[0:5]))
 
 
-def format_SCPI_block_data(data):
+def make_ieee_data_block(data):
     """
     Adds a SCPI block data header to the input string.
 
-    :param string data:
-    :return: The input string with a SCPI block data header prepended
+    :param bytes data: Binary data
+    :return: The input data with a SCPI block data header prepended
+    :rtype: bytes
     """
-    l = str(len(data))
-    return "#" + str(len(l)) + l + data
+
+    if not isinstance(data, bytes):
+        raise ValueError("data argument must be a bytes instance")
+    data_len = str(len(data))
+    hdr_len = str(len(data_len))
+    hdr = bytes("#" + hdr_len + data_len, 'ascii')
+    return hdr + data
 
 

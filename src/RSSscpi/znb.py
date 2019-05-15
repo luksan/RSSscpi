@@ -9,7 +9,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 import RSSscpi
 from RSSscpi.gen import ZNB_gen
 from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
-from RSSscpi.SCPI_response import format_SCPI_block_data
+from RSSscpi.SCPI_response import make_ieee_data_block
 import RSSscpi.network as net
 
 import ntpath
@@ -1143,7 +1143,7 @@ class File(Path):
 
     def write(self, data):
         # FIXME: rename to reflect that the method overwrites the existing file
-        self.instrument.MMEMory.DATA().w(self.full_path, format_SCPI_block_data(data))
+        self.instrument.MMEMory.DATA().w(self.full_path, make_ieee_data_block(data))
 
     def get(self, local_target):
         """

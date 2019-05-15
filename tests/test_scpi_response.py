@@ -7,7 +7,7 @@
 import pytest
 from .conftest import VISA  # noqa: F401
 
-from RSSscpi.SCPI_response import format_SCPI_block_data, SCPIResponse  # noqa: F401
+from RSSscpi.SCPI_response import make_ieee_data_block, SCPIResponse  # noqa: F401
 
 
 @pytest.mark.parametrize('expected, txt', [
@@ -58,13 +58,17 @@ def test_split_comma():
     assert SCPIResponse(n).split_comma(convert=int) == list(range(10))
 
 
-def test_block_data():
+def test_block_data_reponse():
     with pytest.raises(ValueError):
         SCPIResponse("1").block_data()
     assert SCPIResponse("#11A").block_data() == "A"
     assert SCPIResponse("#210" + "A" * 10).block_data() == "A" * 10
 
-    assert format_SCPI_block_data("A"*10) == "#210" + "A" * 10
+def test_block_data_formatting():
+    with pytest.raises(ValueError):
+        make_ieee_data_block("string")
+
+    assert make_ieee_data_block(b"A" * 10) == b"#210" + b"A" * 10
 
 
 @pytest.mark.parametrize("data, expect", [
