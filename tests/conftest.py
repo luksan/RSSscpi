@@ -19,6 +19,11 @@ logging.basicConfig(stream=open(os.devnull, "w"))
 logging.captureWarnings(True)
 
 
+def pytest_ignore_collect(path, config):
+    if path.basename == "live":
+        print("Skipping collection of live tests")
+        return True
+
 class VISA(object):
     def __init__(self):
         self._cmd = []
