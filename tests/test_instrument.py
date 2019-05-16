@@ -3,6 +3,7 @@
 
 @author: Lukas Sandström
 """
+import logging
 
 import pytest
 from .conftest import VISA  # noqa: F401
@@ -93,3 +94,23 @@ def test_error_handling(dummy_zva, visa):
     with pytest.raises(InstrumentError) as excinfo:
         zva.query_OPC()
     assert excinfo.value.stack is not None
+
+
+def test_logging(dummy_zva, visa, caplog):
+    zva = dummy_zva
+    caplog.set_level(logging.INFO)
+
+    def check_log(msg):
+        if isinstance(msg, str):
+            msg = (msg, )
+        for m, rec in zip(msg, caplog.records):
+            time, _, data = rec.getMessage().partition("\t")
+            assert data == m
+        caplog.clear()
+
+    zva.OPC.w()
+    check_log("*OPC")
+    zva.OPC.q()
+    check_log("*OPC? -> '1'")
+    zva.OPC.q(fmt="x"*200)
+    check_log("*OPC? " + "x" * zva.MAX_RESPONSE_LOG_LENGTH + " -> '1'")

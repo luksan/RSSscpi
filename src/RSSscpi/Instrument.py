@@ -241,36 +241,55 @@ class Instrument(SCPINodeBase):
             # TODO: raise with original stack trace instead?
             raise self.error_queue.get(block=False)
 
-    def _call_visa(self, func, arg):
+    def _begin_visa_call(self, data):
+        if isinstance(data, bytes):
+            node_bytes, _, args = data.partition(b" ")
+            node_str = node_bytes.decode(self._visa_res.encoding)
+            args = args[:self.MAX_RESPONSE_LOG_LENGTH]
+            try:
+                args_str = " " + args.decode(self._visa_res.encoding) if args else ""
+            except UnicodeDecodeError:
+                args_str = repr(args[:int(len(args) / 3)])
+        else:
+            node_str, _, args_str = data.partition(" ")
+            args_str = args_str[:self.MAX_RESPONSE_LOG_LENGTH]
+        node_str = node_str.strip()
+
+        self.check_error_queue()
+        self.command_cnt += 1
+        self._cmd_debug[node_str] = traceback.extract_stack()[:-2]  # Store the current stack for later debugging
+        self._call_time_start = timeit.default_timer()
+        return node_str + args_str
+
+    def _call_visa(self, func, *args, **kwargs):
         self.check_error_queue()
 
-        self.command_cnt += 1
-        if isinstance(arg, bytes):
-            cmd = arg[:arg.find(b" ")].decode(self._visa_res.encoding)
-        else:
-            cmd = arg[:arg.find(" ")]
-        self._cmd_debug[cmd] = traceback.extract_stack()[:-2]  # Store the current stack for later debugging
-        start = timeit.default_timer()
-        ret = None
         try:
-            ret = func(arg)
+            ret = func(*args, **kwargs)
         except visa.Error as e:
-            err = "Resource error: " + str(e) + ", " + arg
+            err = "Resource error: " + str(e) + ", " + func.__name__
             self.visa_logger.exception(err)
             raise
-        finally:
-            self.last_cmd_time = timeit.default_timer()
-            elapsed = (self.last_cmd_time - start) * 1e3
-            if hasattr(ret, "strip"):
-                logged_response = ret.strip()
-                if len(logged_response) > self.MAX_RESPONSE_LOG_LENGTH:  # Add "..." to show that the response is truncated
-                    r = " -> '%s'..." % (logged_response[:self.MAX_RESPONSE_LOG_LENGTH])
-                else:
-                    r = " -> '%s'" % (logged_response)
-            else:
-                r = ""
-            self.visa_logger.info("%.2f ms \t %s%s", elapsed, arg, r, extra={"duration": elapsed, "response": ret})
         return ret
+
+    def _end_visa_call(self, cmd_str, response):
+        self.last_cmd_time = timeit.default_timer()
+        elapsed = (self.last_cmd_time - self._call_time_start) * 1e3
+
+        if hasattr(response, "strip"):
+            if isinstance(response, bytes):
+                try:
+                    response = response.decode(self._visa_res.encoding)
+                except UnicodeDecodeError:
+                    response = repr(response)
+            logged_response = response.strip()
+            if len(logged_response) > self.MAX_RESPONSE_LOG_LENGTH:  # Add "..." to show that the response is truncated
+                r = " -> '%s'..." % (logged_response[:self.MAX_RESPONSE_LOG_LENGTH])
+            else:
+                r = " -> '%s'" % (logged_response)
+        else:
+            r = ""
+        self.visa_logger.info("%.2f ms\t%s%s", elapsed, cmd_str, r, extra={"duration": elapsed, "response": response})
 
     def _build_arg_str(self, cmd, args, kwargs, query):
         """
@@ -316,10 +335,18 @@ class Instrument(SCPINodeBase):
         return b"".join(ret)
 
     def _write(self, cmd_str):
-        self._call_visa(self._visa_res.write, cmd_str)
+        c = self._begin_visa_call(cmd_str)
+        try:
+            self._call_visa(self._visa_res.write, cmd_str)
+        finally:
+            self._end_visa_call(c, None)
 
-    def _write_raw(self, bytes_):
-        self._call_visa(self._visa_res.write_raw, bytes_)
+    def _write_raw(self, data):
+        cmd_str = self._begin_visa_call(data)
+        try:
+            self._call_visa(self._visa_res.write_raw, data)
+        finally:
+            self._end_visa_call(cmd_str, None)
 
     def write(self, cmd, *args, **kwargs):
         """
@@ -335,13 +362,23 @@ class Instrument(SCPINodeBase):
             self._write_raw(x)
 
     def _query(self, cmd_str):
-        return SCPIResponse(self._call_visa(self._visa_res.query, cmd_str))
+        c = self._begin_visa_call(cmd_str)
+        x = None
+        try:
+            x = self._call_visa(self._visa_res.query, cmd_str)
+            return SCPIResponse(x)
+        finally:
+            self._end_visa_call(c, x)
 
-    def _query_raw(self, bytes_):
-        self._write_raw(bytes_)
-        # FIXME: add response to VISA log
-        x = self._visa_res.read_raw()
-        return SCPIResponse(x, encoding=self._visa_res.encoding)
+    def _query_raw(self, data):
+        cmd_str = self._begin_visa_call(data)
+        x = None
+        try:
+            self._call_visa(self._visa_res.write_raw, data)
+            x = self._call_visa(self._visa_res.read_raw)
+            return SCPIResponse(x, encoding=self._visa_res.encoding)
+        finally:
+            self._end_visa_call(cmd_str, x)
 
     def query(self, cmd, *args, **kwargs):
         """
