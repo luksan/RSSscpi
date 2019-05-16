@@ -4,7 +4,6 @@
 @author: Lukas Sandström
 """
 
-import logging
 import warnings
 
 try:
@@ -20,8 +19,11 @@ class SCPIResponse(object):
     """
     Class used for containing and parsing responses from SCPI queries.
     """
-    def __init__(self, res):
+    def __init__(self, res, encoding='ascii'):
+        if isinstance(res, str):
+            res = res.encode(encoding)
         self.raw = res
+        self.encoding = encoding
 
     def __nonzero__(self):
         """
@@ -36,7 +38,7 @@ class SCPIResponse(object):
     __bool__ = __nonzero__
 
     def __str__(self):
-        x = self.raw.replace("\r", "\n")
+        x = self.raw.decode(self.encoding).replace("\r", "\n")
         return x.strip().strip("'")
 
     def __int__(self):
@@ -76,10 +78,10 @@ class SCPIResponse(object):
         :param convert: A callable that will be applied to each element in the list
         :return: [ convert(x) for x in self.split(",") ]
         """
-        return [convert(x.strip(" '\n")) for x in self.raw.split(",")]
+        return [convert(x.decode(self.encoding).strip(" '\n\r")) for x in self.raw.split(b",")]
 
     def numpy_array(self, dtype=numpy.float64):
-        return numpy.fromstring(self.raw, sep=",", dtype=dtype)
+        return numpy.fromstring(str(self), sep=",", dtype=dtype)
 
     def numpy_complex(self):
         x = self.numpy_array(dtype=numpy.float64)
@@ -94,13 +96,16 @@ class SCPIResponse(object):
         :return: the data from the block transfer
         """
         try:
-            if self.raw[0] != "#":
-                logging.getLogger(__name__).error("Invalid block data header: '%s'", str(self.raw[0:5]))
-            n = int(self.raw[1])  # The number of digits in the data length specifier
-            l = int(self.raw[2:n + 2])  # data length
-            return self.raw[n + 2:l + n + 2]
-        except:
-            raise ValueError("Invalid block data header: '%s'" % str(self.raw[0:5]))
+            if self.raw[0:1] != b"#":
+                raise ValueError("Missing # at start of data block.")
+            hdr_len = int(self.raw[1:2].decode('ascii'))  # The number of digits in the data length specifier
+            data_len = int(self.raw[2:2+hdr_len].decode('ascii'))  # data length
+            data = self.raw[2+hdr_len:2+hdr_len+data_len]
+            if len(data) != data_len:
+                raise ValueError("Not enugh data in IEEE data block.")
+            return data
+        except Exception as e:
+            raise ValueError("Invalid block data header: '%s'. %s" % (str(self.raw[0:5]), str(e)))
 
 
 def make_ieee_data_block(data):

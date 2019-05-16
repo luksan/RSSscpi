@@ -340,8 +340,8 @@ class Instrument(SCPINodeBase):
     def _query_raw(self, bytes_):
         self._write_raw(bytes_)
         # FIXME: add response to VISA log
-        x = self._visa_res.read()
-        return SCPIResponse(x)
+        x = self._visa_res.read_raw()
+        return SCPIResponse(x, encoding=self._visa_res.encoding)
 
     def query(self, cmd, *args, **kwargs):
         """

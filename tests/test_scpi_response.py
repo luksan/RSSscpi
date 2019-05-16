@@ -59,10 +59,16 @@ def test_split_comma():
 
 
 def test_block_data_reponse():
-    with pytest.raises(ValueError):
-        SCPIResponse("1").block_data()
-    assert SCPIResponse("#11A").block_data() == "A"
-    assert SCPIResponse("#210" + "A" * 10).block_data() == "A" * 10
+    with pytest.raises(ValueError):  # Incorrect data
+        SCPIResponse(b"1").block_data()
+    with pytest.raises(ValueError):  # Missing '#' at start of header
+        SCPIResponse(b"11A").block_data()
+    with pytest.raises(ValueError):  # '-' instead of '#' at start of header
+        SCPIResponse(b"-11A").block_data()
+    with pytest.raises(ValueError):  # Not enugh data
+        SCPIResponse(b"#19" + b"A"*8).block_data()
+    assert SCPIResponse(b"#11\x01").block_data() == b"\x01"
+    assert SCPIResponse(b"#210" + b"A" * 10).block_data() == b"A" * 10
 
 def test_block_data_formatting():
     with pytest.raises(ValueError):
