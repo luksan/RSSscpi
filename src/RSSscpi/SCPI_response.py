@@ -58,15 +58,16 @@ class SCPIResponse(object):
     def __hash__(self):
         return hash(str(self))
 
-    def comma_list_pairs(self):
+    def comma_list_pairs(self, convert=lambda x: x):
         """
         Split the comma separated response into a list of tuples,
         with each tuple containing two consecutive response elements.
 
+        :param convert: A callable that takes two-tuple as input and returns a converted two-tuple
         :return: [ (str1, str2), ..]
         """
         x = self.split_comma()
-        return list(zip(*[iter(x)] * 2))
+        return list(convert(t) for t in zip(*[iter(x)]*2))
 
     def split_comma(self, convert=lambda x: x):
         """
