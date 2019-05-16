@@ -32,8 +32,17 @@ class VISA(object):
         self.ret_dict = collections.defaultdict(lambda: self._def_ret)
         self.srq_callback = None
         self.stb = 0
+        self.encoding = "ascii"
+        self.write_termination = "\r\n"
 
         self.ret_dict["MMEMory:CDIRectory?"] = 'C:\\Rohde & Schwarz\\Nwa'
+
+    def _get_response(self):
+        q = self._cmd[-1]
+        if self._def_set:  # If the default was changed we overwrite any existing value for the following query
+            self.ret_dict[q] = self._def_ret
+            self._def_set = False
+        return self.ret_dict[q]
 
     def install_handler(self, event_type, func, user_handle):
         self.srq_callback = func
@@ -65,13 +74,30 @@ class VISA(object):
         assert isinstance(w, str) or isinstance(w, type(u""))
         self._cmd.append(w)
 
+    def write_raw(self, bytes_):
+        assert isinstance(bytes_, bytes)
+        str_ = bytes_.decode(self.encoding)[:-len(self.write_termination)]
+        self._cmd.append(str_)  # Add the command to the log as a string, so the testsuite doesn't break
+
+    def read(self):
+        ret = self._get_response()
+        if isinstance(ret, bytes):
+            ret = ret.decode(self.encoding)
+        return ret
+
+    def read_raw(self):
+        ret = self._get_response()
+        if isinstance(ret, str):
+            ret = ret.encode(self.encoding)
+        return ret
+
     def query(self, q):
         assert isinstance(q, str) or isinstance(q, type(u""))
         self._cmd.append(q)
-        if self._def_set:  # If the default was changed we overwrite any existing value for the following query
-            self.ret_dict[q] = self._def_ret
-            self._def_set = False
-        return self.ret_dict[q]
+        ret = self._get_response()
+        if isinstance(ret, bytes):
+            ret = ret.decode(self.encoding)
+        return ret
 
     def clear_cmd(self):
         self._cmd = []

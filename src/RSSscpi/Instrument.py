@@ -245,7 +245,10 @@ class Instrument(SCPINodeBase):
         self.check_error_queue()
 
         self.command_cnt += 1
-        cmd = arg.split()[0]
+        if isinstance(arg, bytes):
+            cmd = arg[:arg.find(b" ")].decode(self._visa_res.encoding)
+        else:
+            cmd = arg[:arg.find(" ")]
         self._cmd_debug[cmd] = traceback.extract_stack()[:-2]  # Store the current stack for later debugging
         start = timeit.default_timer()
         ret = None
@@ -269,7 +272,7 @@ class Instrument(SCPINodeBase):
             self.visa_logger.info("%.2f ms \t %s%s", elapsed, arg, r, extra={"duration": elapsed, "response": ret})
         return ret
 
-    def _build_arg_str(self, cmd, args, kwargs):
+    def _build_arg_str(self, cmd, args, kwargs, query):
         """
 
         :param SCPINode cmd: The SCPINode which the arguments belong to
@@ -277,9 +280,16 @@ class Instrument(SCPINodeBase):
         :param dict kwargs: **kwargs from query()/write()
         :return: The formatted command arguments
         """
+        encoding = self._visa_res.encoding
+        termination = self._visa_res.write_termination
+
+        ret = [ bytes(cmd.build_cmd(), encoding=encoding) ]
+        if query:
+            ret.append(b"?")
+
         fmt = kwargs.get("fmt", "")
         assert isinstance(fmt, str) or isinstance(fmt, type(u""))
-        if "fmt" not in kwargs and args:
+        if args and "fmt" not in kwargs:  # No format string specified, so try to guess something reasonable
             if "quote" in kwargs:
                 if kwargs["quote"]:
                     fmt = "{:q*}"
@@ -296,10 +306,20 @@ class Instrument(SCPINodeBase):
             args = (args, )  # Assume that all positional arguments are to be sent comma separated, with the same formatting.
             if not cmd.args:
                 warnings.warn("Command %s does not specify any arguments. Supply fmt= kwarg to suppress this warning." % cmd.build_cmd())
-        return SCPICmdFormatter().vformat(fmt, args, kwargs)
+        str_args = SCPICmdFormatter().vformat(fmt, args, kwargs)
+        if str_args:
+            ret.append(b" ")  # Separator between command and arguments
+            ret.append(str_args.encode(encoding))
+
+        if termination:
+            ret.append(termination.encode(encoding))
+        return b"".join(ret)
 
     def _write(self, cmd_str):
         self._call_visa(self._visa_res.write, cmd_str)
+
+    def _write_raw(self, bytes_):
+        self._call_visa(self._visa_res.write_raw, bytes_)
 
     def write(self, cmd, *args, **kwargs):
         """
@@ -310,12 +330,18 @@ class Instrument(SCPINodeBase):
         :param args: Any number of arguments for the command, will be converted with str()
         :rtype: None
         """
-        x = cmd.build_cmd() + " " + self._build_arg_str(cmd, args, kwargs)
+        x = self._build_arg_str(cmd, args, kwargs, query=False)
         with self._visa_lock:
-            self._write(x.strip())
+            self._write_raw(x)
 
     def _query(self, cmd_str):
         return SCPIResponse(self._call_visa(self._visa_res.query, cmd_str))
+
+    def _query_raw(self, bytes_):
+        self._write_raw(bytes_)
+        # FIXME: add response to VISA log
+        x = self._visa_res.read()
+        return SCPIResponse(x)
 
     def query(self, cmd, *args, **kwargs):
         """
@@ -328,10 +354,10 @@ class Instrument(SCPINodeBase):
         :rtype: SCPIResponse
         """
         # TODO: add function to read back result later
-        x = cmd.build_cmd() + "? " + self._build_arg_str(cmd, args, kwargs)
+        x = self._build_arg_str(cmd, args, kwargs, query=True)
         try:
             with self._visa_lock:
-                return self._query(x.strip())
+                return self._query_raw(x)
         except visa.VisaIOError as e:
             if e.error_code == visa.constants.VI_ERROR_TMO:  # timeout
                 if self.exception_on_error:
