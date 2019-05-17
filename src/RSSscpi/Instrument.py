@@ -12,7 +12,7 @@ import traceback
 import visa
 
 from RSSscpi.SCPI_gen_support import SCPINodeBase
-from RSSscpi.SCPI_response import SCPIResponse
+from RSSscpi.SCPI_response import SCPIResponse, make_ieee_data_block
 from RSSscpi.scpi_registers import StatusByteRegister, EventStatusRegister
 
 try:
@@ -306,9 +306,18 @@ class Instrument(SCPINodeBase):
         if query:
             ret.append(b"?")
 
-        fmt = kwargs.get("fmt", "")
-        assert isinstance(fmt, str) or isinstance(fmt, type(u""))
-        if args and "fmt" not in kwargs:  # No format string specified, so try to guess something reasonable
+        arg_bytes = None
+
+        if "fmt" in kwargs and "param_enc" in kwargs:
+            raise ValueError("fmt and param_enc cannot be used at the same time")
+
+        if "param_enc" in kwargs:
+            arg_bytes = self._build_arg_str_enc(*args, **kwargs)
+        elif "fmt" in kwargs:
+            arg_bytes = self._build_arg_str_fmt(*args, **kwargs)
+        elif args:
+            # No format string specified, so try to guess something reasonable
+            # Assume that all positional arguments are to be sent comma separated, with the same formatting.
             if "quote" in kwargs:
                 if kwargs["quote"]:
                     fmt = "{:q*}"
@@ -322,17 +331,38 @@ class Instrument(SCPINodeBase):
                 fmt = "{:q*}"
             else:
                 fmt = "{:s*}"
-            args = (args, )  # Assume that all positional arguments are to be sent comma separated, with the same formatting.
             if not cmd.args:
                 warnings.warn("Command %s does not specify any arguments. Supply fmt= kwarg to suppress this warning." % cmd.build_cmd())
-        str_args = SCPICmdFormatter().vformat(fmt, args, kwargs)
-        if str_args:
+            arg_bytes = self._build_arg_str_fmt(args, fmt=fmt, **kwargs)
+
+        if arg_bytes:
             ret.append(b" ")  # Separator between command and arguments
-            ret.append(str_args.encode(encoding))
+            ret.append(arg_bytes)
 
         if termination:
             ret.append(termination.encode(encoding))
         return b"".join(ret)
+
+    def _build_arg_str_fmt(self, *args, fmt, **kwargs):
+        assert isinstance(fmt, str)
+
+        str_args = SCPICmdFormatter().vformat(fmt, args, kwargs)
+        return str_args.encode(self._visa_res.encoding)
+
+    def _build_arg_str_enc(self, *args, param_enc, **kwargs):
+        if isinstance(param_enc, str):
+            param_enc = (param_enc, )
+        assert len(args) == len(param_enc)
+
+        arg_list = []
+        for param, param_fmt in zip(args, param_enc):
+            if param_fmt == "b":
+                arg_list.append(param)
+            elif param_fmt == "ieee":
+                arg_list.append(make_ieee_data_block(param))
+            else:
+                arg_list.append(SCPICmdFormatter().format("{:%s}" % param_fmt, param).encode(self._visa_res.encoding))
+        return b", ".join(arg_list)
 
     def _write(self, cmd_str):
         c = self._begin_visa_call(cmd_str)

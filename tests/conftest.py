@@ -76,8 +76,11 @@ class VISA(object):
 
     def write_raw(self, bytes_):
         assert isinstance(bytes_, bytes)
-        str_ = bytes_.decode(self.encoding)[:-len(self.write_termination)]
-        self._cmd.append(str_)  # Add the command to the log as a string, so the testsuite doesn't break
+        try:
+            str_ = bytes_.decode(self.encoding)[:-len(self.write_termination)]
+            self._cmd.append(str_)  # Add the command to the log as a string, so the testsuite doesn't break
+        except UnicodeDecodeError:
+            self._cmd.append(bytes_[:-len(self.write_termination)])
 
     def read(self):
         ret = self._get_response()
@@ -115,10 +118,14 @@ class VISA(object):
         """
         Print the command list in a format suitable for copy-paste.
         """
-        print("assert [", end="")
+        end = "\n" if len(self._cmd) > 1 else ""
+        print("assert visa.cmd == [", end=end)
         for x in self._cmd:
-            print('"%s",' % (x))
-        print("] == visa.cmd")
+            if isinstance(x, bytes):
+                print('%s,' % x, end=end)
+            else:
+                print('"%s",' % x, end=end)
+        print("]")
 
 
 @pytest.fixture

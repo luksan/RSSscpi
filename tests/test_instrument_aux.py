@@ -62,6 +62,41 @@ def test_cmd_formatting(dummy_zva, visa):
             ] == visa.cmd
 
 
+def test_cmd_formatting_with_param_enc(dummy_zva, visa):
+    w = dummy_zva.OPC.w
+
+    w(param_enc=())
+    assert visa.cmd == ["*OPC"]
+    w(b'ABC', param_enc="b")
+    assert visa.cmd == ["*OPC ABC"]
+
+    bin_data = b"\x00\x01\x10\xFF"
+    w(bin_data, param_enc="b")
+    w(bin_data, param_enc="ieee")
+    w(bin_data, bin_data, param_enc=("ieee", "b"))
+    w(bin_data, range(10), bin_data, param_enc=("ieee", "d*", "b"))
+    assert visa.cmd == [
+        b'*OPC \x00\x01\x10\xff',
+        b'*OPC #14\x00\x01\x10\xff',
+        b'*OPC #14\x00\x01\x10\xff, \x00\x01\x10\xff',
+        b'*OPC #14\x00\x01\x10\xff, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, \x00\x01\x10\xff',
+    ]
+
+    with pytest.raises(ValueError):  # Cannot use fmt and param_enc at the same time
+        w(b'\x00\xff', fmt="{:s}", param_enc="b")
+    with pytest.raises(AssertionError):  # Not enough elements in param_enc
+        w(1, 2, 3, param_enc=("b", "b"))
+    with pytest.raises(AssertionError):  # Too many elements in param_enc
+        w(1, param_enc=("b", "b"))
+
+def test_unicode_cmds(dummy_zva, visa, caplog):
+    zva = dummy_zva
+    visa.encoding = "utf8"
+    visa.ret = "åäö"
+    assert zva.OPC.q("åäö", fmt="{:s}") == "åäö"
+    assert visa.cmd == ["*OPC? åäö" ]
+
+
 def test_LimitedCapacityDict():
     d = LimitedCapacityDict()
     assert d.max_len is None
