@@ -33,7 +33,7 @@ class SMB100ATreePatcher(SystHelpTreePatcher):
     def __call__(self, cmd_tree):
         # type: (CmdNode) -> None
         # Remove all short, undocumented, commands from the command tree
-        for cmd in cmd_tree.keys():
+        for cmd in list(cmd_tree.keys()):
             if cmd[0].isalpha() and cmd[-1].isupper() or len(cmd) <= 3:
                 del cmd_tree[cmd]
 
@@ -54,21 +54,22 @@ def upate_syntax_definition(smb):
 
     :param smb100a.SMB100A smb:
     """
-    x = smb.SYSTem.HELP.SYNTax.ALL.q().block_data()
+    x = smb.SYSTem.HELP.SYNTax.ALL.q().block_data().decode(encoding="utf-8")
     info = smb.IDN.q().split_comma()
-    with open(os.path.join(cmd_list_dir, syntax_file), "wb") as fd:
+    with open(os.path.join(cmd_list_dir, syntax_file), "w", newline="\n", encoding="utf-8") as fd:
         fd.write("// Generated from %s, fw: %s\n" % (info[1], info[3]))
         fd.write(x.lstrip())
 
 
-def generate():
+def generate(download_webhelp=False):
     generate_SCPI_class(SMB100ACmdListParser(syntax_file), "SMB100A_gen",
                         tree_patcher=SMB100ATreePatcher(),
-                        webhelp=SMB100AWebhelp(download))
+                        webhelp=SMB100AWebhelp(download_webhelp=download_webhelp))
+
 
 if __name__ == "__main__":
     import logging
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.DEBUG)
     upate_syntax_definition(smb100a.connect_ethernet(smb100a.find_smb100a(max_devices=1)[0].ip_address))
     download = True
-    generate()
+    generate(download)

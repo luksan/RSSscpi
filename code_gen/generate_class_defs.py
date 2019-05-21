@@ -120,7 +120,7 @@ class ModernRohdeWebhelp(Webhelp):
     """The filename for caching the table of contents."""
 
     cmd_list_file = None
-    """The filename for caching the commad list."""
+    """The filename for caching the command list."""
 
     def __init__(self, download_webhelp=False):
         self.toc_file = os.path.join(cmd_list_dir, self.toc_file)
@@ -142,16 +142,15 @@ class ModernRohdeWebhelp(Webhelp):
     def download_cmd_list(self):
         toc_url = self._base_url.format("/Data/Toc.xml")
         toc = BeautifulSoup(urlopen(toc_url), "html.parser")
-        with open(self.toc_file, "w") as f:
-            f.write(toc.prettify("utf-8"))
+        with open(self.toc_file, "w", encoding="utf-8") as f:
+            f.write(toc.prettify())
         logging.debug("TOC downloaded from %s" % toc_url)
 
         cmd_list_url = toc.find(title="List of Commands")["link"]
         cmd_list = BeautifulSoup(urlopen(self._base_url.format(cmd_list_url)), "html.parser")
-        with open(self.cmd_list_file, "w") as f:
-            f.write(cmd_list.prettify("utf-8"))
-
         logging.debug("Command list downloaded from %s" % self._base_url.format(cmd_list_url))
+        with open(self.cmd_list_file, "w", encoding="utf-8") as f:
+            f.write(cmd_list.prettify())
 
     def parse_toc(self):
         """
@@ -165,7 +164,7 @@ class ModernRohdeWebhelp(Webhelp):
         for u in d("a"):
             cmd = u.string.strip()
             url = u['href']
-            cmd_key = str(cmd).translate(None, "[]?")  # Remove all brackets and question marks
+            cmd_key = str(cmd).translate(str.maketrans("", "", "[]?"))  # Remove all brackets and question marks
             cmd_key = re.sub(r"([^:])<\w+?>", r"\1", cmd_key)  # Convert "SENSE<Ch>" to "SENSE"
             cmd_key = cmd_key.lstrip(":")  # Remove leading colon from key
             self._urls[cmd_key] = (cmd, url)
@@ -357,7 +356,7 @@ def generate_SCPI_class(parser, module_name, webhelp=Webhelp(), tree_patcher=Non
         tree_patcher(parser.cmd_tree)
 
     path = os.path.join(output_dir, module_name + ".py")
-    with open(path, 'wb') as fd:
+    with open(path, 'w', encoding='utf-8', newline='\n') as fd:
         g = ClassCodeGen(module_name, parser.cmd_tree, fd, source=parser.filename, webhelp=webhelp)
         g.gen()
 
@@ -374,18 +373,18 @@ if __name__ == '__main__':
     download = False
 
     import zva
-    zva.generate()
+    zva.generate(download)
 
     import znb
-    znb.generate()
+    znb.generate(download)
 
     import nrp
-    nrp.generate()
+    nrp.generate(download)
 
     # import sma100b
-    # sma100b.generate()
+    # sma100b.generate(download)
 
     # import smb100a
-    # smb100a.generate()
+    # smb100a.generate(download)
 
     logging.info("All good :)")

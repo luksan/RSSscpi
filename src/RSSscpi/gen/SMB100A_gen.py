@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Generated from SMB100A_syntax.txt on 2017-08-17 11:20
+# Generated from SMB100A_syntax.txt on 2019-05-21 16:02
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -11,6 +11,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&ABO"
         args = []
 
@@ -27,6 +28,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&BRK"
         args = []
 
@@ -43,6 +45,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&DCL"
         args = []
 
@@ -59,6 +62,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&DFC"
         args = []
 
@@ -75,6 +79,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&GET"
         args = []
 
@@ -91,6 +96,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&GTL"
         args = []
 
@@ -107,6 +113,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&GTM"
         args = []
 
@@ -123,6 +130,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&GTR"
         args = []
 
@@ -139,6 +147,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&HFC"
         args = []
 
@@ -155,6 +164,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&NREN"
         args = []
 
@@ -171,6 +181,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&POL"
         args = []
 
@@ -187,6 +198,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&RLSD"
         args = []
 
@@ -203,6 +215,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "&SFC"
         args = []
 
@@ -219,6 +232,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*CLS"
         args = []
 
@@ -235,6 +249,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*DEV"
         args = ["1"]
 
@@ -251,6 +266,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: <string>,<string>
         """
+        __slots__ = ()
         _cmd = "*DMC"
         args = ["<string>,<string>"]
 
@@ -267,6 +283,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1, ON, OFF
         """
+        __slots__ = ()
         _cmd = "*EMC"
         args = ["1", "ON", "OFF"]
 
@@ -283,6 +300,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*ESE"
         args = ["1"]
 
@@ -299,6 +317,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*ESR"
         args = []
 
@@ -315,6 +334,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*GCLS"
         args = []
 
@@ -331,6 +351,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 'string'
         """
+        __slots__ = ()
         _cmd = "*GMC"
         args = ["'string'"]
 
@@ -347,6 +368,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*GOPC"
         args = []
 
@@ -363,6 +385,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*GWAI"
         args = []
 
@@ -379,6 +402,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*IDN"
         args = []
 
@@ -395,6 +419,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*IST"
         args = []
 
@@ -411,6 +436,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*LMC"
         args = []
 
@@ -427,6 +453,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*LRN"
         args = []
 
@@ -443,6 +470,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*OPC"
         args = []
 
@@ -459,6 +487,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*OPT"
         args = []
 
@@ -475,6 +504,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*PMC"
         args = []
 
@@ -491,6 +521,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*PRE"
         args = ["1"]
 
@@ -507,6 +538,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1, ON, OFF
         """
+        __slots__ = ()
         _cmd = "*PSC"
         args = ["1", "ON", "OFF"]
 
@@ -523,6 +555,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*RCL"
         args = ["1"]
 
@@ -539,6 +572,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 'string'
         """
+        __slots__ = ()
         _cmd = "*RMC"
         args = ["'string'"]
 
@@ -555,6 +589,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*RST"
         args = []
 
@@ -571,6 +606,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*SAV"
         args = ["1"]
 
@@ -587,6 +623,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "*SRE"
         args = ["1"]
 
@@ -603,6 +640,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: <integer>, DOWN, MAXimum, MINimum, UP
         """
+        __slots__ = ()
         _cmd = "*SRQ"
         args = ["<integer>", "DOWN", "MAXimum", "MINimum", "UP"]
 
@@ -619,6 +657,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*STB"
         args = []
 
@@ -635,6 +674,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*TRG"
         args = []
 
@@ -651,6 +691,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*TST"
         args = []
 
@@ -667,6 +708,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*WAI"
         args = []
 
@@ -683,6 +725,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: <expression>
         """
+        __slots__ = ()
         _cmd = "*XESE"
         args = ["<expression>"]
 
@@ -699,6 +742,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*XESR"
         args = []
 
@@ -715,6 +759,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: <expression>
         """
+        __slots__ = ()
         _cmd = "*XPRE"
         args = ["<expression>"]
 
@@ -731,6 +776,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: <expression>
         """
+        __slots__ = ()
         _cmd = "*XSRE"
         args = ["<expression>"]
 
@@ -747,6 +793,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "*XSTB"
         args = []
 
@@ -763,6 +810,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "@LLO"
         args = []
 
@@ -779,6 +827,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "@LOC"
         args = []
 
@@ -795,6 +844,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ABORt"
         args = []
 
@@ -804,6 +854,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MSEQuence"
             args = []
 
@@ -820,6 +871,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SWEep"
             args = []
 
@@ -843,6 +895,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "AMPLitude"
         args = []
 
@@ -852,6 +905,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "OUT"
             args = []
 
@@ -861,6 +915,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALC"
                 args = []
 
@@ -870,6 +925,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BANDwidth"
                     args = []
 
@@ -893,6 +949,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ATTenuation"
                 args = ["1"]
 
@@ -902,6 +959,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -911,6 +969,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -941,6 +1000,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "LEVel"
                 args = ["1"]
 
@@ -950,6 +1010,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -959,6 +1020,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -989,6 +1051,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "MUTing"
                 args = ["1", "ON", "OFF"]
 
@@ -1005,6 +1068,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -1021,6 +1085,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ULIMit"
                 args = ["1"]
 
@@ -1044,6 +1109,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SOURce"
             args = []
 
@@ -1053,6 +1119,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALC"
                 args = []
 
@@ -1062,6 +1129,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BANDwidth"
                     args = []
 
@@ -1085,6 +1153,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ATTenuation"
                 args = ["1"]
 
@@ -1094,6 +1163,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -1103,6 +1173,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -1133,6 +1204,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "LEVel"
                 args = ["1"]
 
@@ -1142,6 +1214,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -1151,6 +1224,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -1181,6 +1255,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "MUTing"
                 args = ["1", "ON", "OFF"]
 
@@ -1197,6 +1272,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -1213,6 +1289,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ULIMit"
                 args = ["1"]
 
@@ -1243,6 +1320,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ATT0"
         args = []
 
@@ -1259,6 +1337,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ATT1"
         args = []
 
@@ -1275,6 +1354,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ATTen"
         args = []
 
@@ -1284,6 +1364,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "UNLock"
             args = []
 
@@ -1307,6 +1388,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ATtenuator"
         args = []
 
@@ -1316,6 +1398,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Cont"
             args = []
 
@@ -1332,6 +1415,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Fixed"
             args = []
 
@@ -1348,6 +1432,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Normal"
             args = []
 
@@ -1371,6 +1456,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "BLANk"
         args = ["1"]
 
@@ -1387,6 +1473,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "Blank"
         args = []
 
@@ -1396,6 +1483,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Inverted"
             args = []
 
@@ -1412,6 +1500,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Normal"
             args = []
 
@@ -1435,6 +1524,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "CALibration"
         args = []
 
@@ -1444,6 +1534,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "AMPLitude"
             args = []
 
@@ -1453,6 +1544,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -1476,6 +1568,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ATTenuator"
             args = []
 
@@ -1485,6 +1578,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -1508,6 +1602,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FM"
             args = []
 
@@ -1517,6 +1612,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = []
 
@@ -1533,6 +1629,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "OFFSet"
                 args = []
 
@@ -1556,23 +1653,25 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FMOFfset"
             args = []
 
             class MEASure(SCPINode, SCPIQuery):
                 """
                 `CALibration:FMOFfset:MEASure
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/11b75bf573884132.htm#ID_b719b8434e4cb5ae0a00206a008f2019-9245ed064e4cb5ae0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/11b75bf573884132.htm#ID_b719b8434e4cb5ae0a00206a008f2019-9245ed064e4cb5ae0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = []
 
             MEASure = MEASure()
             """
             `CALibration:FMOFfset:MEASure
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/11b75bf573884132.htm#ID_b719b8434e4cb5ae0a00206a008f2019-9245ed064e4cb5ae0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/11b75bf573884132.htm#ID_b719b8434e4cb5ae0a00206a008f2019-9245ed064e4cb5ae0a00206a0024546d-en-US>`_
 
             Arguments:
             """
@@ -1590,6 +1689,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "HARMfilter"
             args = []
 
@@ -1599,6 +1699,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = []
 
@@ -1622,6 +1723,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IFFilter"
             args = []
 
@@ -1631,6 +1733,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = []
 
@@ -1654,6 +1757,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IQ"
             args = []
 
@@ -1663,6 +1767,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DEFault"
                 args = []
 
@@ -1679,6 +1784,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1"]
 
@@ -1702,6 +1808,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LEVel"
             args = []
 
@@ -1711,6 +1818,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: MIXer, NORMal
                 """
+                __slots__ = ()
                 _cmd = "FRANge"
                 args = ["MIXer", "NORMal"]
 
@@ -1727,6 +1835,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "PMODulator"
                 args = ["1", "ON", "OFF"]
 
@@ -1743,6 +1852,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -1766,6 +1876,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LFGenlevel"
             args = []
 
@@ -1775,6 +1886,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = []
 
@@ -1798,6 +1910,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LFReset"
             args = []
 
@@ -1807,6 +1920,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = []
 
@@ -1830,6 +1944,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MAINloop"
             args = []
 
@@ -1839,6 +1954,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = []
 
@@ -1862,6 +1978,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MULTfilter"
             args = []
 
@@ -1871,6 +1988,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = []
 
@@ -1894,6 +2012,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PULSe"
             args = []
 
@@ -1903,6 +2022,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = []
 
@@ -1926,6 +2046,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "QPSK"
             args = []
 
@@ -1935,6 +2056,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STORe"
                 args = []
 
@@ -1958,6 +2080,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ROSCillator"
             args = []
 
@@ -1967,6 +2090,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STORe"
                 args = []
 
@@ -1990,6 +2114,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "VMODulation"
             args = []
 
@@ -1999,6 +2124,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: ONCE
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = ["ONCE"]
 
@@ -2022,6 +2148,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "VSUMmation"
             args = []
 
@@ -2031,6 +2158,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = []
 
@@ -2047,6 +2175,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "OFFSet"
                 args = []
 
@@ -2070,6 +2199,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "VSYNthesis"
             args = []
 
@@ -2079,6 +2209,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MEASure"
                 args = []
 
@@ -2109,6 +2240,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "CAlibration"
         args = []
 
@@ -2125,6 +2257,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "CONTrast"
         args = ["1"]
 
@@ -2141,6 +2274,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "CONTrol"
         args = []
 
@@ -2150,6 +2284,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "BLANking"
             args = []
 
@@ -2159,6 +2294,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerted, NORMal
                 """
+                __slots__ = ()
                 _cmd = "POLarity"
                 args = ["INVerted", "NORMal"]
 
@@ -2182,6 +2318,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PENLift"
             args = []
 
@@ -2191,6 +2328,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerted, NORMal
                 """
+                __slots__ = ()
                 _cmd = "POLarity"
                 args = ["INVerted", "NORMal"]
 
@@ -2214,6 +2352,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "RAMP"
             args = []
 
@@ -2223,6 +2362,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -2253,6 +2393,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "DCFMnl"
         args = []
 
@@ -2269,6 +2410,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: FLSWp, SEQT, SSSWp, VOID
         """
+        __slots__ = ()
         _cmd = "DEVTrg"
         args = ["FLSWp", "SEQT", "SSSWp", "VOID"]
 
@@ -2285,6 +2427,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "DEcrement"
         args = []
 
@@ -2294,6 +2437,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PHAse"
             args = []
 
@@ -2310,6 +2454,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Swp"
             args = []
 
@@ -2333,6 +2478,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "DIAGnostic"
         args = []
 
@@ -2342,6 +2488,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CPU"
             args = []
 
@@ -2351,6 +2498,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INFormation"
                 args = []
 
@@ -2360,6 +2508,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BOARds"
                     args = []
 
@@ -2376,6 +2525,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CCOunt"
                     args = []
 
@@ -2385,6 +2535,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ATTenuator"
                         args = []
 
@@ -2401,6 +2552,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "PROTection"
                         args = []
 
@@ -2424,6 +2576,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DISPlay"
                     args = []
 
@@ -2433,6 +2586,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "OTIMe"
                         args = []
 
@@ -2456,6 +2610,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LICense"
                     args = []
 
@@ -2465,6 +2620,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "AUXiliary"
                         args = []
 
@@ -2481,6 +2637,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "WAVeform"
                         args = []
 
@@ -2504,6 +2661,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "OPTions"
                     args = []
 
@@ -2513,6 +2671,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "DETail"
                         args = []
 
@@ -2536,6 +2695,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "OTIMe"
                     args = []
 
@@ -2552,6 +2712,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "REVision"
                     args = []
 
@@ -2568,6 +2729,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SDATe"
                     args = []
 
@@ -2584,6 +2746,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "WLICence"
                     args = []
 
@@ -2593,6 +2756,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "VALue"
                         args = ["1"]
 
@@ -2630,6 +2794,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "INFO"
             args = []
 
@@ -2639,6 +2804,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CCOunt"
                 args = []
 
@@ -2648,6 +2814,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ATTenuator"
                     args = []
 
@@ -2664,6 +2831,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "POWer"
                     args = []
 
@@ -2687,6 +2855,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MODules"
                 args = []
 
@@ -2700,17 +2869,18 @@ class SMB100A_gen(Instrument):
             class OTIMe(SCPINode, SCPIQuery):
                 """
                 `DIAGnostic:INFO:OTIMe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e90e50c315c247d4.htm#ID_f15aa7634e8152f70a00206a00abf390-2654fb124e8152f70a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e90e50c315c247d4.htm#ID_f15aa7634e8152f70a00206a00abf390-2654fb124e8152f70a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "OTIMe"
                 args = []
 
             OTIMe = OTIMe()
             """
             `DIAGnostic:INFO:OTIMe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e90e50c315c247d4.htm#ID_f15aa7634e8152f70a00206a00abf390-2654fb124e8152f70a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e90e50c315c247d4.htm#ID_f15aa7634e8152f70a00206a00abf390-2654fb124e8152f70a00206a0024546d-en-US>`_
 
             Arguments:
             """
@@ -2721,6 +2891,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SDATe"
                 args = []
 
@@ -2737,6 +2908,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SERialno"
                 args = []
 
@@ -2753,6 +2925,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SVERsion"
                 args = []
 
@@ -2776,6 +2949,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MEASure"
             args = []
 
@@ -2785,6 +2959,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "POINt"
                 args = ["1"]
 
@@ -2808,6 +2983,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "XMEM"
             args = []
 
@@ -2817,6 +2993,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CHECksum"
                 args = []
 
@@ -2826,6 +3003,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ATTenuate"
                     args = []
 
@@ -2842,6 +3020,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BURSt"
                     args = []
 
@@ -2858,6 +3037,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CALCulate"
                     args = []
 
@@ -2874,6 +3054,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TOTal"
                     args = []
 
@@ -2911,6 +3092,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "DIGital"
         args = []
 
@@ -2920,6 +3102,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CONFig"
             args = []
 
@@ -2929,6 +3112,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: EXTernal, INTernal
                 """
+                __slots__ = ()
                 _cmd = "MIXer"
                 args = ["EXTernal", "INTernal"]
 
@@ -2945,6 +3129,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: DISabled, ENABled
                 """
+                __slots__ = ()
                 _cmd = "PULSe"
                 args = ["DISabled", "ENABled"]
 
@@ -2968,6 +3153,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ERRor"
             args = []
 
@@ -2977,6 +3163,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DISable"
                 args = []
 
@@ -2993,6 +3180,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = []
 
@@ -3016,6 +3204,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "EXT_par"
             args = []
 
@@ -3025,6 +3214,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerse, NORMal
                 """
+                __slots__ = ()
                 _cmd = "DATapol"
                 args = ["INVerse", "NORMal"]
 
@@ -3041,6 +3231,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NEG_edge, POS_edge
                 """
+                __slots__ = ()
                 _cmd = "SYMPol"
                 args = ["NEG_edge", "POS_edge"]
 
@@ -3057,6 +3248,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: EXTernal, INTernal
                 """
+                __slots__ = ()
                 _cmd = "SYMStat"
                 args = ["EXTernal", "INTernal"]
 
@@ -3080,6 +3272,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "EXT_ser"
             args = []
 
@@ -3089,6 +3282,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NEG_edge, POS_edge
                 """
+                __slots__ = ()
                 _cmd = "BITPol"
                 args = ["NEG_edge", "POS_edge"]
 
@@ -3105,6 +3299,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: EXTernal, INTernal
                 """
+                __slots__ = ()
                 _cmd = "BITStat"
                 args = ["EXTernal", "INTernal"]
 
@@ -3121,6 +3316,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerse, NORMal
                 """
+                __slots__ = ()
                 _cmd = "DATapol"
                 args = ["INVerse", "NORMal"]
 
@@ -3137,6 +3333,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NEG_edge, POS_edge
                 """
+                __slots__ = ()
                 _cmd = "SYMPol"
                 args = ["NEG_edge", "POS_edge"]
 
@@ -3153,6 +3350,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: EXTernal, INTernal
                 """
+                __slots__ = ()
                 _cmd = "SYMStat"
                 args = ["EXTernal", "INTernal"]
 
@@ -3176,6 +3374,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FADing"
             args = []
 
@@ -3185,6 +3384,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DIR_dopp"
                 args = ["1"]
 
@@ -3201,6 +3401,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "RATio"
                 args = ["1"]
 
@@ -3217,6 +3418,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "SPEed"
                 args = ["1"]
 
@@ -3240,6 +3442,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "GAIN"
             args = []
 
@@ -3249,6 +3452,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = ["1"]
 
@@ -3272,6 +3476,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "INT_0s"
             args = []
 
@@ -3281,6 +3486,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: EXT_bit, EXT_sym, INT_sym
                 """
+                __slots__ = ()
                 _cmd = "CLOCk"
                 args = ["EXT_bit", "EXT_sym", "INT_sym"]
 
@@ -3297,6 +3503,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NEG_edge, POS_edge
                 """
+                __slots__ = ()
                 _cmd = "CLOCkpol"
                 args = ["NEG_edge", "POS_edge"]
 
@@ -3313,6 +3520,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerse, NORMal
                 """
+                __slots__ = ()
                 _cmd = "DATapol"
                 args = ["INVerse", "NORMal"]
 
@@ -3336,6 +3544,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "INT_1s"
             args = []
 
@@ -3345,6 +3554,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: EXT_bit, EXT_sym, INT_sym
                 """
+                __slots__ = ()
                 _cmd = "CLOCk"
                 args = ["EXT_bit", "EXT_sym", "INT_sym"]
 
@@ -3361,6 +3571,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NEG_edge, POS_edge
                 """
+                __slots__ = ()
                 _cmd = "CLOCkpol"
                 args = ["NEG_edge", "POS_edge"]
 
@@ -3377,6 +3588,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerse, NORMal
                 """
+                __slots__ = ()
                 _cmd = "DATapol"
                 args = ["INVerse", "NORMal"]
 
@@ -3400,6 +3612,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LEAK"
             args = []
 
@@ -3409,6 +3622,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = ["1"]
 
@@ -3432,6 +3646,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MODopt"
             args = []
 
@@ -3441,6 +3656,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: DISabled, ENABled
                 """
+                __slots__ = ()
                 _cmd = "ENVelope"
                 args = ["DISabled", "ENABled"]
 
@@ -3457,6 +3673,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerse, NORMal
                 """
+                __slots__ = ()
                 _cmd = "MODPol"
                 args = ["INVerse", "NORMal"]
 
@@ -3473,6 +3690,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: AUTO, LOWer, UPPer
                 """
+                __slots__ = ()
                 _cmd = "SBANd"
                 args = ["AUTO", "LOWer", "UPPer"]
 
@@ -3496,6 +3714,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PRBS"
             args = []
 
@@ -3505,6 +3724,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: EXT_bit, EXT_sym, INT_sym
                 """
+                __slots__ = ()
                 _cmd = "CLOCk"
                 args = ["EXT_bit", "EXT_sym", "INT_sym"]
 
@@ -3521,6 +3741,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NEG_edge, POS_edge
                 """
+                __slots__ = ()
                 _cmd = "CLOCkpol"
                 args = ["NEG_edge", "POS_edge"]
 
@@ -3537,6 +3758,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerse, NORMal
                 """
+                __slots__ = ()
                 _cmd = "DATapol"
                 args = ["INVerse", "NORMal"]
 
@@ -3553,6 +3775,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = ["1"]
 
@@ -3576,6 +3799,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SKEW"
             args = []
 
@@ -3585,6 +3809,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = ["1"]
 
@@ -3608,6 +3833,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SYSTem"
             args = []
 
@@ -3617,6 +3843,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ALPHa"
                 args = ["1"]
 
@@ -3633,6 +3860,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: GAUSs, R_Cos, R_R_cos
                 """
+                __slots__ = ()
                 _cmd = "FILTer"
                 args = ["GAUSs", "R_Cos", "R_R_cos"]
 
@@ -3649,6 +3877,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: BPSK, D_BPsk, D_PSk8, D_QPsk, FSK2, FSK4, GMSK, O_BPsk, O_PSk8, O_QPsk, PSK8, QAM16, QAM256, QAM4, QAM64, QPSK, TOQPsk, T_Tones
                 """
+                __slots__ = ()
                 _cmd = "FORMat"
                 args = ["BPSK", "D_BPsk", "D_PSk8", "D_QPsk", "FSK2", "FSK4", "GMSK", "O_BPsk", "O_PSk8", "O_QPsk", "PSK8", "QAM16", "QAM256", "QAM4", "QAM64", "QPSK", "TOQPsk", "T_Tones"]
 
@@ -3665,6 +3894,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: CDPD, CITY1200, CITY2400, CITY4800, CITY512, DSRR16, DSRR4, ERMes, GSM, INMar_m, MC9, MD100w, MD120w, MD160n, MD192w, MD24n, MD24w, MD36n, MD36w, MD48n, MD48w, MD80n, MD80w, MD96n, MD96w, MOBitex, NADC, PDC, POC1200, POC2400, POC4800, POC512, Q_APco25, TETRa, TFTS, USER1, USER2, USER3, USER4, USER5, VDR
                 """
+                __slots__ = ()
                 _cmd = "SELect"
                 args = ["CDPD", "CITY1200", "CITY2400", "CITY4800", "CITY512", "DSRR16", "DSRR4", "ERMes", "GSM", "INMar_m", "MC9", "MD100w", "MD120w", "MD160n", "MD192w", "MD24n", "MD24w", "MD36n", "MD36w", "MD48n", "MD48w", "MD80n", "MD80w", "MD96n", "MD96w", "MOBitex", "NADC", "PDC", "POC1200", "POC2400", "POC4800", "POC512", "Q_APco25", "TETRa", "TFTS", "USER1", "USER2", "USER3", "USER4", "USER5", "VDR"]
 
@@ -3681,6 +3911,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "SYM_rate"
                 args = ["1"]
 
@@ -3697,6 +3928,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "THRee_db"
                 args = ["1"]
 
@@ -3720,6 +3952,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "T_Tones"
             args = []
 
@@ -3729,6 +3962,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ANGLe"
                 args = ["1"]
 
@@ -3745,6 +3979,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "I_AMp"
                 args = ["1"]
 
@@ -3761,6 +3996,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "Q_AMp"
                 args = ["1"]
 
@@ -3791,6 +4027,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: <block_data>
         """
+        __slots__ = ()
         _cmd = "DIRect"
         args = ["<block_data>"]
 
@@ -3807,6 +4044,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "DISPlay"
         args = []
 
@@ -3816,16 +4054,18 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ANNotation"
             args = []
 
             class AMPLitude(SCPINode, SCPIBool):
                 """
                 `DISPlay:ANNotation:AMPLitude
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7164bc3c1b68452b.htm#ID_49b6f4592f69259f0a00206a0029f4d5-67bb427e2f691da00a00206a00636f5b-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7164bc3c1b68452b.htm#ID_49b6f4592f69259f0a00206a0029f4d5-67bb427e2f691da00a00206a00636f5b-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "AMPLitude"
                 args = ["1", "ON", "OFF"]
 
@@ -3835,6 +4075,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -3848,7 +4089,7 @@ class SMB100A_gen(Instrument):
             AMPLitude = AMPLitude()
             """
             `DISPlay:ANNotation:AMPLitude
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7164bc3c1b68452b.htm#ID_49b6f4592f69259f0a00206a0029f4d5-67bb427e2f691da00a00206a00636f5b-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7164bc3c1b68452b.htm#ID_49b6f4592f69259f0a00206a0029f4d5-67bb427e2f691da00a00206a00636f5b-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -3859,6 +4100,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CLOCk"
                 args = []
 
@@ -3868,6 +4110,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DATE"
                     args = []
 
@@ -3877,6 +4120,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: DMY, MDY
                         """
+                        __slots__ = ()
                         _cmd = "FORMat"
                         args = ["DMY", "MDY"]
 
@@ -3900,6 +4144,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -3920,10 +4165,11 @@ class SMB100A_gen(Instrument):
             class FREQuency(SCPINode, SCPIBool):
                 """
                 `DISPlay:ANNotation:FREQuency
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2e5fcccef60940f9.htm#ID_8b6c05102f691b2f0a00206a011c3f7c-b45c82122f6912650a00206a00636f5b-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2e5fcccef60940f9.htm#ID_8b6c05102f691b2f0a00206a011c3f7c-b45c82122f6912650a00206a00636f5b-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = ["1", "ON", "OFF"]
 
@@ -3933,6 +4179,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -3946,7 +4193,7 @@ class SMB100A_gen(Instrument):
             FREQuency = FREQuency()
             """
             `DISPlay:ANNotation:FREQuency
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2e5fcccef60940f9.htm#ID_8b6c05102f691b2f0a00206a011c3f7c-b45c82122f6912650a00206a00636f5b-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2e5fcccef60940f9.htm#ID_8b6c05102f691b2f0a00206a011c3f7c-b45c82122f6912650a00206a00636f5b-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -3957,6 +4204,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "LFSource"
                 args = ["1", "ON", "OFF"]
 
@@ -3973,6 +4221,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "MODulation"
                 args = ["1", "ON", "OFF"]
 
@@ -3996,6 +4245,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "BRIGhtness"
             args = ["1"]
 
@@ -4012,6 +4262,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CAPTure"
             args = []
 
@@ -4028,6 +4279,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "CONTrast"
             args = ["1"]
 
@@ -4044,6 +4296,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "INVerse"
             args = ["1", "ON", "OFF"]
 
@@ -4060,6 +4313,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: EURopean, US
             """
+            __slots__ = ()
             _cmd = "RADix"
             args = ["EURopean", "US"]
 
@@ -4076,6 +4330,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "REMote"
             args = ["1", "ON", "OFF"]
 
@@ -4092,6 +4347,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
@@ -4108,6 +4364,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "WINDow"
             args = []
 
@@ -4117,6 +4374,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -4133,6 +4391,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TEXT"
                 args = []
 
@@ -4142,6 +4401,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -4179,6 +4439,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "DISplay"
         args = []
 
@@ -4195,6 +4456,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ELAPsed"
         args = []
 
@@ -4204,6 +4466,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "RESet"
             args = []
 
@@ -4227,6 +4490,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ERASe"
         args = []
 
@@ -4236,6 +4500,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SWEep"
             args = []
 
@@ -4259,6 +4524,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ERRor"
         args = []
 
@@ -4275,6 +4541,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ERrors"
         args = []
 
@@ -4291,6 +4558,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: FLSWp, MEMDn, MEMup, SEQT, SSSWp, VOID
         """
+        __slots__ = ()
         _cmd = "EXTTrg"
         args = ["FLSWp", "MEMDn", "MEMup", "SEQT", "SSSWp", "VOID"]
 
@@ -4307,6 +4575,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "EXecution_mode"
         args = []
 
@@ -4316,6 +4585,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Normal"
             args = []
 
@@ -4332,6 +4602,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Triggered"
             args = []
 
@@ -4355,23 +4626,25 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "FORMat"
         args = []
 
         class BORDer(SCPINode, SCPIQuery, SCPISet):
             """
             `FORMat:BORDer
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/59b73d990b8d4acf.htm#ID_729c2ba54e7ed3070a00206a001affe3-8402e7834e7ed3070a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/59b73d990b8d4acf.htm#ID_729c2ba54e7ed3070a00206a001affe3-8402e7834e7ed3070a00206a0024546d-en-US>`_
 
             Arguments: NORMal, SWAPped
             """
+            __slots__ = ()
             _cmd = "BORDer"
             args = ["NORMal", "SWAPped"]
 
         BORDer = BORDer()
         """
         `FORMat:BORDer
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/59b73d990b8d4acf.htm#ID_729c2ba54e7ed3070a00206a001affe3-8402e7834e7ed3070a00206a0024546d-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/59b73d990b8d4acf.htm#ID_729c2ba54e7ed3070a00206a001affe3-8402e7834e7ed3070a00206a0024546d-en-US>`_
 
         Arguments: NORMal, SWAPped
         """
@@ -4389,6 +4662,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "FREQuency"
         args = []
 
@@ -4398,6 +4672,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "CENTer"
             args = ["1"]
 
@@ -4407,6 +4682,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -4416,6 +4692,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -4446,6 +4723,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CW"
             args = []
 
@@ -4455,6 +4733,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -4464,6 +4743,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -4494,6 +4774,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "INSTantaneous"
             args = []
 
@@ -4510,6 +4791,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "MANual"
             args = ["1"]
 
@@ -4526,6 +4808,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "MULTiplier"
             args = ["1"]
 
@@ -4542,6 +4825,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "OFFSet"
             args = ["1"]
 
@@ -4558,6 +4842,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SPAN"
             args = []
 
@@ -4567,6 +4852,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -4576,6 +4862,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -4606,6 +4893,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "STARt"
             args = ["1"]
 
@@ -4615,6 +4903,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -4624,6 +4913,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -4654,6 +4944,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "STOP"
             args = []
 
@@ -4663,6 +4954,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -4672,6 +4964,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -4702,6 +4995,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "SYNThesis"
             args = ["1"]
 
@@ -4725,6 +5019,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "HEAder"
         args = []
 
@@ -4741,6 +5036,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "HET_band"
         args = []
 
@@ -4750,6 +5046,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "High"
             args = []
 
@@ -4766,6 +5063,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Low"
             args = []
 
@@ -4789,6 +5087,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: <numeric_value>,<numeric_value>
         """
+        __slots__ = ()
         _cmd = "HOPSeq"
         args = ["<numeric_value>,<numeric_value>"]
 
@@ -4805,6 +5104,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: NORMal, SWEeper
         """
+        __slots__ = ()
         _cmd = "IMODe"
         args = ["NORMal", "SWEeper"]
 
@@ -4821,6 +5121,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: Z50R, Z75R
         """
+        __slots__ = ()
         _cmd = "IMPedance"
         args = ["Z50R", "Z75R"]
 
@@ -4837,6 +5138,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "INITialize"
         args = []
 
@@ -4846,6 +5148,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ABORt"
             args = []
 
@@ -4862,6 +5165,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "CONTinuous"
             args = ["1", "ON", "OFF"]
 
@@ -4878,6 +5182,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IMMediate"
             args = []
 
@@ -4894,6 +5199,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: PAUSe, RUN
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = ["PAUSe", "RUN"]
 
@@ -4917,6 +5223,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "INITiate"
         args = []
 
@@ -4926,6 +5233,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "CONTinuous"
             args = ["1", "ON", "OFF"]
 
@@ -4942,6 +5250,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IMMediate"
             args = []
 
@@ -4965,6 +5274,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "INPut"
         args = []
 
@@ -4974,6 +5284,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IF"
             args = []
 
@@ -4983,6 +5294,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -5006,6 +5318,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: INVerted, NORMal
             """
+            __slots__ = ()
             _cmd = "POLarity"
             args = ["INVerted", "NORMal"]
 
@@ -5029,6 +5342,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "Increment"
         args = []
 
@@ -5038,6 +5352,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PHAse"
             args = []
 
@@ -5054,6 +5369,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Swp"
             args = []
 
@@ -5077,6 +5393,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "KLOCk"
         args = []
 
@@ -5093,6 +5410,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "KUNLock"
         args = []
 
@@ -5109,6 +5427,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "LFSource"
         args = []
 
@@ -5118,6 +5437,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "AM"
             args = []
 
@@ -5127,6 +5447,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DEPTh"
                 args = ["1"]
 
@@ -5136,6 +5457,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -5145,6 +5467,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -5175,6 +5498,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = ["1"]
 
@@ -5184,6 +5508,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -5193,6 +5518,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -5223,6 +5549,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PHASe"
                 args = []
 
@@ -5232,6 +5559,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ADJust"
                     args = ["1"]
 
@@ -5241,6 +5569,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -5250,6 +5579,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -5287,6 +5617,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -5303,6 +5634,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: SAWTooth, SINE, SQUare, TRIangle, WGNoise
                 """
+                __slots__ = ()
                 _cmd = "WAVeform"
                 args = ["SAWTooth", "SINE", "SQUare", "TRIangle", "WGNoise"]
 
@@ -5326,6 +5658,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "AVIonics"
             args = []
 
@@ -5335,6 +5668,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SETup"
                 args = []
 
@@ -5344,6 +5678,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "GSLope"
                     args = []
 
@@ -5360,6 +5695,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "IMBeacon"
                     args = []
 
@@ -5376,6 +5712,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LOCalizer"
                     args = []
 
@@ -5392,6 +5729,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MMBeacon"
                     args = []
 
@@ -5408,6 +5746,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "OMBeacon"
                     args = []
 
@@ -5438,6 +5777,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FM"
             args = []
 
@@ -5447,6 +5787,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DEViation"
                 args = ["1"]
 
@@ -5456,6 +5797,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -5465,6 +5807,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -5495,6 +5838,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = ["1"]
 
@@ -5504,6 +5848,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -5513,6 +5858,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -5543,6 +5889,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PHASe"
                 args = []
 
@@ -5552,6 +5899,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ADJust"
                     args = ["1"]
 
@@ -5561,6 +5909,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -5570,6 +5919,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -5607,6 +5957,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -5623,6 +5974,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: SAWTooth, SINE, SQUare, TRIangle, WGNoise
                 """
+                __slots__ = ()
                 _cmd = "WAVeform"
                 args = ["SAWTooth", "SINE", "SQUare", "TRIangle", "WGNoise"]
 
@@ -5646,6 +5998,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = ["1"]
 
@@ -5655,6 +6008,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -5664,6 +6018,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -5694,6 +6049,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "LEVel"
             args = ["1"]
 
@@ -5703,6 +6059,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -5712,6 +6069,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -5742,6 +6100,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PHASe"
             args = []
 
@@ -5751,6 +6110,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ADJust"
                 args = ["1"]
 
@@ -5760,6 +6120,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -5769,6 +6130,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -5806,6 +6168,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PM"
             args = []
 
@@ -5815,6 +6178,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DEViation"
                 args = ["1"]
 
@@ -5824,6 +6188,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -5833,6 +6198,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -5863,6 +6229,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = ["1"]
 
@@ -5872,6 +6239,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -5881,6 +6249,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -5911,6 +6280,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PHASe"
                 args = []
 
@@ -5920,6 +6290,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ADJust"
                     args = ["1"]
 
@@ -5929,6 +6300,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -5938,6 +6310,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -5975,6 +6348,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -5991,6 +6365,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: SAWTooth, SINE, SQUare, TRIangle, WGNoise
                 """
+                __slots__ = ()
                 _cmd = "WAVeform"
                 args = ["SAWTooth", "SINE", "SQUare", "TRIangle", "WGNoise"]
 
@@ -6014,6 +6389,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PULSe"
             args = []
 
@@ -6023,6 +6399,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = ["1"]
 
@@ -6032,6 +6409,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -6041,6 +6419,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -6071,6 +6450,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PHASe"
                 args = []
 
@@ -6080,6 +6460,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ADJust"
                     args = ["1"]
 
@@ -6089,6 +6470,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -6098,6 +6480,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -6135,6 +6518,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -6158,6 +6542,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
@@ -6174,6 +6559,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TRIGger"
             args = []
 
@@ -6183,6 +6569,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMMediate"
                 args = []
 
@@ -6199,6 +6586,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: CONTinuous, EXTernal
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["CONTinuous", "EXTernal"]
 
@@ -6222,6 +6610,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: SAWTooth, SINE, SQUare, TRIangle, WGNoise
             """
+            __slots__ = ()
             _cmd = "WAVeform"
             args = ["SAWTooth", "SINE", "SQUare", "TRIangle", "WGNoise"]
 
@@ -6245,6 +6634,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "Level"
         args = []
 
@@ -6254,6 +6644,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "AF"
             args = []
 
@@ -6263,6 +6654,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "Var_step"
                 args = ["1"]
 
@@ -6286,6 +6678,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "RF"
             args = []
 
@@ -6295,6 +6688,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONtrol"
                 args = []
 
@@ -6304,6 +6698,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "Calibration"
                     args = []
 
@@ -6320,6 +6715,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "Lookup"
                     args = []
 
@@ -6343,6 +6739,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "CORRECT_Index"
                 args = ["1"]
 
@@ -6359,6 +6756,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "Emf"
                 args = ["1"]
 
@@ -6375,6 +6773,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "Marker"
                 args = ["1"]
 
@@ -6391,6 +6790,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "OFFSet"
                 args = ["1"]
 
@@ -6407,6 +6807,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STArt"
                 args = ["1"]
 
@@ -6423,6 +6824,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STEp"
                 args = ["1"]
 
@@ -6439,6 +6841,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STOp"
                 args = ["1"]
 
@@ -6455,6 +6858,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "Var_step"
                 args = ["1"]
 
@@ -6485,6 +6889,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MARKer"
         args = []
 
@@ -6494,6 +6899,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = ["1"]
 
@@ -6503,6 +6909,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -6512,6 +6919,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -6542,6 +6950,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
@@ -6565,6 +6974,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MEMory"
         args = []
 
@@ -6574,6 +6984,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CATalog"
             args = []
 
@@ -6583,6 +6994,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BINary"
                 args = []
 
@@ -6599,6 +7011,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DWCDma"
                 args = []
 
@@ -6615,6 +7028,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FCDMa"
                 args = []
 
@@ -6631,6 +7045,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MCDMa"
                 args = []
 
@@ -6647,6 +7062,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MDMod"
                 args = []
 
@@ -6663,6 +7079,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MDWCdma"
                 args = []
 
@@ -6679,6 +7096,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MFCDma"
                 args = []
 
@@ -6695,6 +7113,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MTONe"
                 args = []
 
@@ -6711,6 +7130,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RCDMa"
                 args = []
 
@@ -6727,6 +7147,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SHAPe"
                 args = []
 
@@ -6743,6 +7164,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = []
 
@@ -6759,6 +7181,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TABLe"
                 args = []
 
@@ -6775,6 +7198,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "UWCDma"
                 args = []
 
@@ -6798,6 +7222,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DATA"
             args = []
 
@@ -6807,6 +7232,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <string>,<block_data>
                 """
+                __slots__ = ()
                 _cmd = "APPend"
                 args = ["<string>,<block_data>"]
 
@@ -6823,6 +7249,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PRAM"
                 args = []
 
@@ -6832,6 +7259,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "FILE"
                     args = []
 
@@ -6841,6 +7269,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: <string>,<block_data>
                         """
+                        __slots__ = ()
                         _cmd = "BLOCk"
                         args = ["<string>,<block_data>"]
 
@@ -6871,6 +7300,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <string>,<numeric_value>,<numeric_value>
                 """
+                __slots__ = ()
                 _cmd = "SHAPe"
                 args = ["<string>,<numeric_value>,<numeric_value>"]
 
@@ -6887,6 +7317,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <string>,<block_data>
                 """
+                __slots__ = ()
                 _cmd = "UNPRotected"
                 args = ["<string>,<block_data>"]
 
@@ -6910,6 +7341,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DELete"
             args = []
 
@@ -6919,6 +7351,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BINary"
                 args = []
 
@@ -6935,6 +7368,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DWCDma"
                 args = []
 
@@ -6951,6 +7385,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FCDMa"
                 args = []
 
@@ -6967,6 +7402,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MCDMa"
                 args = []
 
@@ -6983,6 +7419,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MDMod"
                 args = []
 
@@ -6999,6 +7436,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MDWCdma"
                 args = []
 
@@ -7015,6 +7453,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MFCDma"
                 args = []
 
@@ -7031,6 +7470,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MTONe"
                 args = []
 
@@ -7047,6 +7487,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RCDMa"
                 args = []
 
@@ -7063,6 +7504,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SHAPe"
                 args = []
 
@@ -7079,6 +7521,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = []
 
@@ -7095,6 +7538,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "UWCDma"
                 args = []
 
@@ -7118,6 +7562,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FREE"
             args = []
 
@@ -7127,6 +7572,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MACRo"
                 args = []
 
@@ -7150,6 +7596,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "NSTates"
             args = []
 
@@ -7166,6 +7613,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = []
 
@@ -7175,6 +7623,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <numeric_value>,<numeric_value>,<string>
                 """
+                __slots__ = ()
                 _cmd = "COMMent"
                 args = ["<numeric_value>,<numeric_value>,<string>"]
 
@@ -7198,6 +7647,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "STORe"
             args = []
 
@@ -7214,6 +7664,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TABLe"
             args = []
 
@@ -7223,6 +7674,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <numeric_value>[AHZ, FHZ, PHZ, NHZ, UHZ, HZ, KHZ, MHZ, GHZ, THZ, PEHZ, EXHZ],<numeric_value>
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = ["<numeric_value>[AHZ", "FHZ", "PHZ", "NHZ", "UHZ", "HZ", "KHZ", "MHZ", "GHZ", "THZ", "PEHZ", "EXHZ],<numeric_value>"]
 
@@ -7232,6 +7684,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "POINts"
                     args = ["1"]
 
@@ -7255,6 +7708,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LOSS"
                 args = []
 
@@ -7264,6 +7718,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: <numeric_value>[DB],<numeric_value>
                     """
+                    __slots__ = ()
                     _cmd = "MAGNitude"
                     args = ["<numeric_value>[DB],<numeric_value>"]
 
@@ -7273,6 +7728,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "POINts"
                         args = ["1"]
 
@@ -7303,6 +7759,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: FDAT1, FDAT2, FDAT3, FDAT4
                 """
+                __slots__ = ()
                 _cmd = "SELect"
                 args = ["FDAT1", "FDAT2", "FDAT3", "FDAT4"]
 
@@ -7333,6 +7790,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MEmory"
         args = []
 
@@ -7342,6 +7800,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Fast"
             args = []
 
@@ -7351,6 +7810,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STArt"
                 args = ["1"]
 
@@ -7367,6 +7827,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STOp"
                 args = ["1"]
 
@@ -7390,6 +7851,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "STArt"
             args = ["1"]
 
@@ -7406,6 +7868,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "STOp"
             args = ["1"]
 
@@ -7429,6 +7892,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MMEMory"
         args = []
 
@@ -7438,6 +7902,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ALIases"
             args = []
 
@@ -7454,6 +7919,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: <string>,<string>
             """
+            __slots__ = ()
             _cmd = "ATTRibute"
             args = ["<string>,<string>"]
 
@@ -7467,27 +7933,29 @@ class SMB100A_gen(Instrument):
         class CATalog(SCPINode, SCPIQuery):
             """
             `MMEMory:CATalog
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/81fb5b7cd1124455.htm#ID_d86b0432900f3f010a00206a015692f4-808cf704900f3f010a00206a01eae7a4-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/81fb5b7cd1124455.htm#ID_d86b0432900f3f010a00206a015692f4-808cf704900f3f010a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "CATalog"
             args = ["'string'"]
 
             class LENGth(SCPINode, SCPIQuery):
                 """
                 `MMEMory:CATalog:LENGth
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f52dbc720a0a48f9.htm#ID_de3b183c900f4f0f0a00206a0011b22f-adb17661900f4f0f0a00206a01eae7a4-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f52dbc720a0a48f9.htm#ID_de3b183c900f4f0f0a00206a0011b22f-adb17661900f4f0f0a00206a01eae7a4-en-US>`_
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "LENGth"
                 args = ["'string'"]
 
             LENGth = LENGth()
             """
             `MMEMory:CATalog:LENGth
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f52dbc720a0a48f9.htm#ID_de3b183c900f4f0f0a00206a0011b22f-adb17661900f4f0f0a00206a01eae7a4-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f52dbc720a0a48f9.htm#ID_de3b183c900f4f0f0a00206a0011b22f-adb17661900f4f0f0a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
@@ -7495,7 +7963,7 @@ class SMB100A_gen(Instrument):
         CATalog = CATalog()
         """
         `MMEMory:CATalog
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/81fb5b7cd1124455.htm#ID_d86b0432900f3f010a00206a015692f4-808cf704900f3f010a00206a01eae7a4-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/81fb5b7cd1124455.htm#ID_d86b0432900f3f010a00206a015692f4-808cf704900f3f010a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -7503,17 +7971,18 @@ class SMB100A_gen(Instrument):
         class CDIRectory(SCPINode, SCPIQuery, SCPISet):
             """
             `MMEMory:CDIRectory
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/884f6bb587664b1f.htm#ID_1b7d70d1900f44510a00206a01aa7e4f-154c448f900f44510a00206a01eae7a4-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/884f6bb587664b1f.htm#ID_1b7d70d1900f44510a00206a01aa7e4f-154c448f900f44510a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "CDIRectory"
             args = ["'string'"]
 
         CDIRectory = CDIRectory()
         """
         `MMEMory:CDIRectory
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/884f6bb587664b1f.htm#ID_1b7d70d1900f44510a00206a01aa7e4f-154c448f900f44510a00206a01eae7a4-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/884f6bb587664b1f.htm#ID_1b7d70d1900f44510a00206a01aa7e4f-154c448f900f44510a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -7521,27 +7990,29 @@ class SMB100A_gen(Instrument):
         class DCATalog(SCPINode, SCPIQuery):
             """
             `MMEMory:DCATalog
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9143817b0b724e69.htm#ID_a8aa6937900ef1cc0a00206a010ba9d5-cf37708c900ef1cc0a00206a01eae7a4-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9143817b0b724e69.htm#ID_a8aa6937900ef1cc0a00206a010ba9d5-cf37708c900ef1cc0a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DCATalog"
             args = ["'string'"]
 
             class LENGth(SCPINode, SCPIQuery):
                 """
                 `MMEMory:DCATalog:LENGth
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a083db692d2a43f1.htm#ID_4e070651900ef70b0a00206a016f7a85-a0f33d76900ef70b0a00206a01eae7a4-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a083db692d2a43f1.htm#ID_4e070651900ef70b0a00206a016f7a85-a0f33d76900ef70b0a00206a01eae7a4-en-US>`_
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "LENGth"
                 args = ["'string'"]
 
             LENGth = LENGth()
             """
             `MMEMory:DCATalog:LENGth
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a083db692d2a43f1.htm#ID_4e070651900ef70b0a00206a016f7a85-a0f33d76900ef70b0a00206a01eae7a4-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a083db692d2a43f1.htm#ID_4e070651900ef70b0a00206a016f7a85-a0f33d76900ef70b0a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
@@ -7549,7 +8020,7 @@ class SMB100A_gen(Instrument):
         DCATalog = DCATalog()
         """
         `MMEMory:DCATalog
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9143817b0b724e69.htm#ID_a8aa6937900ef1cc0a00206a010ba9d5-cf37708c900ef1cc0a00206a01eae7a4-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9143817b0b724e69.htm#ID_a8aa6937900ef1cc0a00206a010ba9d5-cf37708c900ef1cc0a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -7557,10 +8028,11 @@ class SMB100A_gen(Instrument):
         class DELete(SCPINode, SCPISet):
             """
             `MMEMory:DELete
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/04c3a6e184634827.htm#ID_48ccd5f3900eec4d0a00206a007d4e66-412debbb900eec4d0a00206a01eae7a4-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/04c3a6e184634827.htm#ID_48ccd5f3900eec4d0a00206a007d4e66-412debbb900eec4d0a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DELete"
             args = ["'string'"]
 
@@ -7570,6 +8042,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NVWFm"
                 args = []
 
@@ -7586,6 +8059,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "WFM"
                 args = []
 
@@ -7599,7 +8073,7 @@ class SMB100A_gen(Instrument):
         DELete = DELete()
         """
         `MMEMory:DELete
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/04c3a6e184634827.htm#ID_48ccd5f3900eec4d0a00206a007d4e66-412debbb900eec4d0a00206a01eae7a4-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/04c3a6e184634827.htm#ID_48ccd5f3900eec4d0a00206a007d4e66-412debbb900eec4d0a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -7610,6 +8084,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DRIVes"
             args = []
 
@@ -7626,6 +8101,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "HEADer"
             args = []
 
@@ -7635,6 +8111,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = ["'string'"]
 
@@ -7651,6 +8128,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <string>,<string>
                 """
+                __slots__ = ()
                 _cmd = "DESCription"
                 args = ["<string>,<string>"]
 
@@ -7674,6 +8152,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LOAD"
             args = []
 
@@ -7683,6 +8162,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <string>,<string>,<string>
                 """
+                __slots__ = ()
                 _cmd = "MACRo"
                 args = ["<string>,<string>,<string>"]
 
@@ -7696,17 +8176,18 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPISet):
                 """
                 `MMEMory:LOAD:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9de91cebcfaf4dfb.htm#ID_e4b148b6b16d7e450a00206a00d7d85c-f2c489ebb16d7e450a00206a002cfbf4-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9de91cebcfaf4dfb.htm#ID_e4b148b6b16d7e450a00206a00d7d85c-f2c489ebb16d7e450a00206a002cfbf4-en-US>`_
 
                 Arguments: <numeric_value>,<string>,<string>
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["<numeric_value>,<string>,<string>"]
 
             STATe = STATe()
             """
             `MMEMory:LOAD:STATe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9de91cebcfaf4dfb.htm#ID_e4b148b6b16d7e450a00206a00d7d85c-f2c489ebb16d7e450a00206a002cfbf4-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9de91cebcfaf4dfb.htm#ID_e4b148b6b16d7e450a00206a00d7d85c-f2c489ebb16d7e450a00206a002cfbf4-en-US>`_
 
             Arguments: <numeric_value>,<string>,<string>
             """
@@ -7721,17 +8202,18 @@ class SMB100A_gen(Instrument):
         class MDIRectory(SCPINode, SCPISet):
             """
             `MMEMory:MDIRectory
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/78d90e9c1a164918.htm#ID_28e36f85900ad56d0a00206a01580c40-8ea01a92900ad56d0a00206a01eae7a4-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/78d90e9c1a164918.htm#ID_28e36f85900ad56d0a00206a01580c40-8ea01a92900ad56d0a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "MDIRectory"
             args = ["'string'"]
 
         MDIRectory = MDIRectory()
         """
         `MMEMory:MDIRectory
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/78d90e9c1a164918.htm#ID_28e36f85900ad56d0a00206a01580c40-8ea01a92900ad56d0a00206a01eae7a4-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/78d90e9c1a164918.htm#ID_28e36f85900ad56d0a00206a01580c40-8ea01a92900ad56d0a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -7739,17 +8221,18 @@ class SMB100A_gen(Instrument):
         class RDIRectory(SCPINode, SCPISet):
             """
             `MMEMory:RDIRectory
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0605b8a725804d3f.htm#ID_845b819f9007a0b00a00206a00db9c2f-f178d5259007a0b00a00206a01eae7a4-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0605b8a725804d3f.htm#ID_845b819f9007a0b00a00206a00db9c2f-f178d5259007a0b00a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "RDIRectory"
             args = ["'string'"]
 
         RDIRectory = RDIRectory()
         """
         `MMEMory:RDIRectory
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0605b8a725804d3f.htm#ID_845b819f9007a0b00a00206a00db9c2f-f178d5259007a0b00a00206a01eae7a4-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0605b8a725804d3f.htm#ID_845b819f9007a0b00a00206a00db9c2f-f178d5259007a0b00a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -7760,6 +8243,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "STORe"
             args = []
 
@@ -7769,6 +8253,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <string>,<string>,<string>
                 """
+                __slots__ = ()
                 _cmd = "MACRo"
                 args = ["<string>,<string>,<string>"]
 
@@ -7782,17 +8267,18 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPISet):
                 """
                 `MMEMory:STORe:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5614cb446644ab0.htm#ID_45c41292b170604d0a00206a0129c63d-053ce38db170604d0a00206a01567e4b-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5614cb446644ab0.htm#ID_45c41292b170604d0a00206a0129c63d-053ce38db170604d0a00206a01567e4b-en-US>`_
 
                 Arguments: <integer>,<string>,<string>
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["<integer>,<string>,<string>"]
 
             STATe = STATe()
             """
             `MMEMory:STORe:STATe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5614cb446644ab0.htm#ID_45c41292b170604d0a00206a0129c63d-053ce38db170604d0a00206a01567e4b-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5614cb446644ab0.htm#ID_45c41292b170604d0a00206a0129c63d-053ce38db170604d0a00206a01567e4b-en-US>`_
 
             Arguments: <integer>,<string>,<string>
             """
@@ -7817,6 +8303,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MODulation"
         args = []
 
@@ -7826,6 +8313,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
@@ -7849,6 +8337,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MOdulation"
         args = []
 
@@ -7858,6 +8347,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Normal"
             args = []
 
@@ -7874,6 +8364,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Reduced"
             args = []
 
@@ -7897,6 +8388,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MPRot"
         args = []
 
@@ -7906,6 +8398,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "STARt"
             args = ["1"]
 
@@ -7929,6 +8422,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "MTRig"
         args = []
 
@@ -7945,6 +8439,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "OUTPut"
         args = []
 
@@ -7954,6 +8449,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "AFIXed"
             args = []
 
@@ -7963,23 +8459,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RANGe"
                 args = []
 
                 class LOWer(SCPINode, SCPIQuery):
                     """
                     `OUTPut:AFIXed:RANGe:LOWer
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/357ac8f3e4244a47.htm#ID_e38f0e814e64057e0a00206a0013b470-127480ee4e64057e0a00206a0024546d-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/357ac8f3e4244a47.htm#ID_e38f0e814e64057e0a00206a0013b470-127480ee4e64057e0a00206a0024546d-en-US>`_
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LOWer"
                     args = []
 
                 LOWer = LOWer()
                 """
                 `OUTPut:AFIXed:RANGe:LOWer
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/357ac8f3e4244a47.htm#ID_e38f0e814e64057e0a00206a0013b470-127480ee4e64057e0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/357ac8f3e4244a47.htm#ID_e38f0e814e64057e0a00206a0013b470-127480ee4e64057e0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
@@ -7987,17 +8485,18 @@ class SMB100A_gen(Instrument):
                 class UPPer(SCPINode, SCPIQuery):
                     """
                     `OUTPut:AFIXed:RANGe:UPPer
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/41e4a70f35a54cde.htm#ID_a55c89064e640b1d0a00206a01925c56-3ee9d9c74e640b1d0a00206a0024546d-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/41e4a70f35a54cde.htm#ID_a55c89064e640b1d0a00206a01925c56-3ee9d9c74e640b1d0a00206a0024546d-en-US>`_
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "UPPer"
                     args = []
 
                 UPPer = UPPer()
                 """
                 `OUTPut:AFIXed:RANGe:UPPer
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/41e4a70f35a54cde.htm#ID_a55c89064e640b1d0a00206a01925c56-3ee9d9c74e640b1d0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/41e4a70f35a54cde.htm#ID_a55c89064e640b1d0a00206a01925c56-3ee9d9c74e640b1d0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
@@ -8019,17 +8518,18 @@ class SMB100A_gen(Instrument):
         class AMODe(SCPINode, SCPIQuery, SCPISet):
             """
             `OUTPut:AMODe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a7cb436862264377.htm#ID_4c9f7d824e63ffff0a00206a00be3d6b-f716d1094e63ffff0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a7cb436862264377.htm#ID_4c9f7d824e63ffff0a00206a00be3d6b-f716d1094e63ffff0a00206a0024546d-en-US>`_
 
             Arguments: AUTO, FIXed
             """
+            __slots__ = ()
             _cmd = "AMODe"
             args = ["AUTO", "FIXed"]
 
         AMODe = AMODe()
         """
         `OUTPut:AMODe
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a7cb436862264377.htm#ID_4c9f7d824e63ffff0a00206a00be3d6b-f716d1094e63ffff0a00206a0024546d-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a7cb436862264377.htm#ID_4c9f7d824e63ffff0a00206a00be3d6b-f716d1094e63ffff0a00206a0024546d-en-US>`_
 
         Arguments: AUTO, FIXed
         """
@@ -8040,6 +8540,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "ATTenuation"
             args = ["1"]
 
@@ -8056,6 +8557,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "BLANk"
             args = []
 
@@ -8065,6 +8567,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerted, NORMal
                 """
+                __slots__ = ()
                 _cmd = "POLarity"
                 args = ["INVerted", "NORMal"]
 
@@ -8088,6 +8591,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "BLANking"
             args = []
 
@@ -8097,6 +8601,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -8120,6 +8625,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DISable"
             args = []
 
@@ -8136,6 +8642,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ENABle"
             args = []
 
@@ -8149,17 +8656,18 @@ class SMB100A_gen(Instrument):
         class IMPedance(SCPINode, SCPIQuery):
             """
             `OUTPut:IMPedance
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a47f0290b4ca4b68.htm#ID_8baa6a394e641baa0a00206a00f78a8f-2e642ae14e641baa0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a47f0290b4ca4b68.htm#ID_8baa6a394e641baa0a00206a00f78a8f-2e642ae14e641baa0a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "IMPedance"
             args = ["1"]
 
         IMPedance = IMPedance()
         """
         `OUTPut:IMPedance
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a47f0290b4ca4b68.htm#ID_8baa6a394e641baa0a00206a00f78a8f-2e642ae14e641baa0a00206a0024546d-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a47f0290b4ca4b68.htm#ID_8baa6a394e641baa0a00206a00f78a8f-2e642ae14e641baa0a00206a0024546d-en-US>`_
 
         Arguments: 1
         """
@@ -8170,6 +8678,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: NORMal, OFF
             """
+            __slots__ = ()
             _cmd = "LIBLanking"
             args = ["NORMal", "OFF"]
 
@@ -8186,6 +8695,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MODulation"
             args = []
 
@@ -8195,6 +8705,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -8218,6 +8729,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "POLarity"
             args = []
 
@@ -8227,6 +8739,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerted, NORMal
                 """
+                __slots__ = ()
                 _cmd = "PULSe"
                 args = ["INVerted", "NORMal"]
 
@@ -8250,23 +8763,25 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "PROTection"
             args = ["1", "ON", "OFF"]
 
             class CLEar(SCPINode, SCPISet):
                 """
                 `OUTPut:PROTection:CLEar
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/312a93269b474916.htm#ID_ff19e8ab4e64109c0a00206a01e0ace3-ddc4d9a54e64109c0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/312a93269b474916.htm#ID_ff19e8ab4e64109c0a00206a01e0ace3-ddc4d9a54e64109c0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = []
 
             CLEar = CLEar()
             """
             `OUTPut:PROTection:CLEar
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/312a93269b474916.htm#ID_ff19e8ab4e64109c0a00206a01e0ace3-ddc4d9a54e64109c0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/312a93269b474916.htm#ID_ff19e8ab4e64109c0a00206a01e0ace3-ddc4d9a54e64109c0a00206a0024546d-en-US>`_
 
             Arguments:
             """
@@ -8277,6 +8792,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "RETRace"
                 args = ["1", "ON", "OFF"]
 
@@ -8293,6 +8809,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -8306,17 +8823,18 @@ class SMB100A_gen(Instrument):
             class TRIPped(SCPINode, SCPIQuery):
                 """
                 `OUTPut:PROTection:TRIPped
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8c639762430041c7.htm#ID_37db314d4e64161b0a00206a005d0255-2d47945b4e64161b0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8c639762430041c7.htm#ID_37db314d4e64161b0a00206a005d0255-2d47945b4e64161b0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRIPped"
                 args = []
 
             TRIPped = TRIPped()
             """
             `OUTPut:PROTection:TRIPped
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8c639762430041c7.htm#ID_37db314d4e64161b0a00206a005d0255-2d47945b4e64161b0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8c639762430041c7.htm#ID_37db314d4e64161b0a00206a005d0255-2d47945b4e64161b0a00206a0024546d-en-US>`_
 
             Arguments:
             """
@@ -8334,6 +8852,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: <boolean>, AUTO
             """
+            __slots__ = ()
             _cmd = "RFBLanking"
             args = ["<boolean>", "AUTO"]
 
@@ -8350,6 +8869,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "SCALe"
             args = ["1"]
 
@@ -8366,6 +8886,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "SOURce"
             args = ["1"]
 
@@ -8375,6 +8896,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: MPX, PILot
                 """
+                __slots__ = ()
                 _cmd = "STEReo"
                 args = ["MPX", "PILot"]
 
@@ -8398,6 +8920,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "STANdby"
             args = []
 
@@ -8407,6 +8930,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -8427,10 +8951,11 @@ class SMB100A_gen(Instrument):
         class STATe(SCPINode, SCPIBool):
             """
             `OUTPut:STATe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d68157f6ecaf46b2.htm#ID_2943fc164e63f4f10a00206a00231222-a9036df24e63f4f10a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d68157f6ecaf46b2.htm#ID_2943fc164e63f4f10a00206a00231222-a9036df24e63f4f10a00206a0024546d-en-US>`_
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
@@ -8440,6 +8965,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "BACKup"
                 args = ["1", "ON", "OFF"]
 
@@ -8453,7 +8979,7 @@ class SMB100A_gen(Instrument):
         STATe = STATe()
         """
         `OUTPut:STATe
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d68157f6ecaf46b2.htm#ID_2943fc164e63f4f10a00206a00231222-a9036df24e63f4f10a00206a0024546d-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d68157f6ecaf46b2.htm#ID_2943fc164e63f4f10a00206a00231222-a9036df24e63f4f10a00206a0024546d-en-US>`_
 
         Arguments: 1, ON, OFF
         """
@@ -8464,6 +8990,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "VOLTage"
             args = ["1"]
 
@@ -8487,6 +9014,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "PHASe"
         args = []
 
@@ -8496,6 +9024,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "ADJust"
             args = ["1"]
 
@@ -8505,6 +9034,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -8514,6 +9044,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -8544,6 +9075,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "REFerence"
             args = []
 
@@ -8567,6 +9099,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "PHAse"
         args = ["1"]
 
@@ -8576,6 +9109,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "Internal"
             args = ["1"]
 
@@ -8592,6 +9126,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "Var_step"
             args = ["1"]
 
@@ -8615,6 +9150,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "PMETer"
         args = []
 
@@ -8624,6 +9160,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "POWer"
             args = ["1"]
 
@@ -8647,6 +9184,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "POWer"
         args = []
 
@@ -8656,6 +9194,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "OUT"
             args = []
 
@@ -8665,6 +9204,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALC"
                 args = []
 
@@ -8674,6 +9214,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BANDwidth"
                     args = []
 
@@ -8697,6 +9238,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ATTenuation"
                 args = ["1"]
 
@@ -8706,6 +9248,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -8715,6 +9258,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -8745,6 +9289,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "LEVel"
                 args = ["1"]
 
@@ -8754,6 +9299,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -8763,6 +9309,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -8793,6 +9340,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "MUTing"
                 args = ["1", "ON", "OFF"]
 
@@ -8809,6 +9357,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -8825,6 +9374,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ULIMit"
                 args = ["1"]
 
@@ -8848,6 +9398,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SOURce"
             args = []
 
@@ -8857,6 +9408,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALC"
                 args = []
 
@@ -8866,6 +9418,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BANDwidth"
                     args = []
 
@@ -8889,6 +9442,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ATTenuation"
                 args = ["1"]
 
@@ -8898,6 +9452,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -8907,6 +9462,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -8937,6 +9493,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "LEVel"
                 args = ["1"]
 
@@ -8946,6 +9503,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -8955,6 +9513,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -8985,6 +9544,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "MUTing"
                 args = ["1", "ON", "OFF"]
 
@@ -9001,6 +9561,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -9017,6 +9578,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ULIMit"
                 args = ["1"]
 
@@ -9047,6 +9609,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "POWup"
         args = []
 
@@ -9063,6 +9626,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "PReset"
         args = []
 
@@ -9079,6 +9643,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "PULSe"
         args = []
 
@@ -9088,6 +9653,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CAL"
             args = []
 
@@ -9097,6 +9663,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DISable"
                 args = []
 
@@ -9113,6 +9680,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = []
 
@@ -9136,6 +9704,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "CONDitioning"
             args = ["1", "ON", "OFF"]
 
@@ -9152,6 +9721,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "DELay"
             args = ["1"]
 
@@ -9161,6 +9731,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -9170,6 +9741,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -9200,6 +9772,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = ["1"]
 
@@ -9209,6 +9782,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -9218,6 +9792,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -9248,6 +9823,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "IMPedance"
             args = ["1"]
 
@@ -9264,6 +9840,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MODF"
             args = []
 
@@ -9273,6 +9850,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = ["1"]
 
@@ -9296,6 +9874,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: BOTH, NEGative, POSitive
             """
+            __slots__ = ()
             _cmd = "SLOPe"
             args = ["BOTH", "NEGative", "POSitive"]
 
@@ -9312,6 +9891,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: EXTernal, INTernal,EXTernal, INTernal
             """
+            __slots__ = ()
             _cmd = "SOURce"
             args = ["EXTernal", "INTernal,EXTernal", "INTernal"]
 
@@ -9328,6 +9908,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
@@ -9344,6 +9925,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "WIDTh"
             args = ["1"]
 
@@ -9353,6 +9935,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -9362,6 +9945,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -9399,6 +9983,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "PUlse"
         args = []
 
@@ -9408,6 +9993,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Inverted"
             args = []
 
@@ -9424,6 +10010,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Normal"
             args = []
 
@@ -9447,6 +10034,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "REFerence_oscil"
         args = []
 
@@ -9456,6 +10044,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "CORrection"
             args = ["1"]
 
@@ -9465,6 +10054,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STOre"
                 args = []
 
@@ -9488,6 +10078,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "External"
             args = []
 
@@ -9504,6 +10095,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "High"
             args = []
 
@@ -9520,6 +10112,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Internal"
             args = []
 
@@ -9536,6 +10129,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Low"
             args = []
 
@@ -9559,6 +10153,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "REcall"
         args = ["1"]
 
@@ -9575,6 +10170,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "ROSCillator"
         args = []
 
@@ -9584,6 +10180,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "CALibration"
             args = ["1"]
 
@@ -9593,6 +10190,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
@@ -9602,6 +10200,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -9632,6 +10231,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: EXTernal, INTernal
             """
+            __slots__ = ()
             _cmd = "SOURce"
             args = ["EXTernal", "INTernal"]
 
@@ -9655,6 +10255,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SEQuence"
         args = []
 
@@ -9664,6 +10265,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IMMediate"
             args = []
 
@@ -9680,6 +10282,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: <numeric_value>,<numeric_value>
             """
+            __slots__ = ()
             _cmd = "REGister"
             args = ["<numeric_value>,<numeric_value>"]
 
@@ -9696,6 +10299,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
@@ -9719,6 +10323,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SERVice"
         args = []
 
@@ -9728,6 +10333,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DIRect"
             args = []
 
@@ -9737,6 +10343,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "COMMand"
                 args = ["'string'"]
 
@@ -9760,6 +10367,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "HCOPy"
             args = []
 
@@ -9769,6 +10377,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXECute"
                 args = []
 
@@ -9785,6 +10394,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMAGe"
                 args = []
 
@@ -9794,6 +10404,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: BMP, JPG, PNG, XPM
                     """
+                    __slots__ = ()
                     _cmd = "FORMat"
                     args = ["BMP", "JPG", "PNG", "XPM"]
 
@@ -9824,6 +10435,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SEQuence"
             args = []
 
@@ -9840,6 +10452,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SPECial"
             args = []
 
@@ -9849,6 +10462,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: AA, AB, AM, AP, FA, FB, FM, FR, MF, ML, NONE, PL, PM, ST
                 """
+                __slots__ = ()
                 _cmd = "FUNCtion"
                 args = ["AA", "AB", "AM", "AP", "FA", "FB", "FM", "FR", "MF", "ML", "NONE", "PL", "PM", "ST"]
 
@@ -9865,6 +10479,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NONE, S1, S2, S3
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["NONE", "S1", "S2", "S3"]
 
@@ -9888,6 +10503,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TALKer"
             args = []
 
@@ -9911,6 +10527,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SEquence"
         args = []
 
@@ -9927,6 +10544,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SHA2"
         args = []
 
@@ -9943,6 +10561,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SHS1"
         args = []
 
@@ -9959,6 +10578,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SHT2"
         args = []
 
@@ -9975,6 +10595,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SOURce"
         args = []
 
@@ -9984,6 +10605,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "AM"
             args = []
 
@@ -9993,23 +10615,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DEPTh"
                 args = ["1"]
 
                 class EXPonential(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:AM:DEPTh:EXPonential
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/39eff2936fd04783.htm#ID_856cf6c5fb4c2e620a00206a0128eeb6-0735468cfb4c20f50a00206a002979ad-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/39eff2936fd04783.htm#ID_856cf6c5fb4c2e620a00206a0128eeb6-0735468cfb4c20f50a00206a002979ad-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "EXPonential"
                     args = ["1"]
 
                 EXPonential = EXPonential()
                 """
                 `SOURce:AM:DEPTh:EXPonential
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/39eff2936fd04783.htm#ID_856cf6c5fb4c2e620a00206a0128eeb6-0735468cfb4c20f50a00206a002979ad-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/39eff2936fd04783.htm#ID_856cf6c5fb4c2e620a00206a0128eeb6-0735468cfb4c20f50a00206a002979ad-en-US>`_
 
                 Arguments: 1
                 """
@@ -10017,10 +10641,11 @@ class SMB100A_gen(Instrument):
                 class LINear(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:AM:DEPTh:LINear
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8067ab8f7396447a.htm#ID_7adfcbcefb4c1bd40a00206a001d9c20-808a5aebfb4c0cb10a00206a002979ad-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8067ab8f7396447a.htm#ID_7adfcbcefb4c1bd40a00206a001d9c20-808a5aebfb4c0cb10a00206a002979ad-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "LINear"
                     args = ["1"]
 
@@ -10030,6 +10655,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "TRACk"
                         args = ["1", "ON", "OFF"]
 
@@ -10043,7 +10669,7 @@ class SMB100A_gen(Instrument):
                 LINear = LINear()
                 """
                 `SOURce:AM:DEPTh:LINear
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8067ab8f7396447a.htm#ID_7adfcbcefb4c1bd40a00206a001d9c20-808a5aebfb4c0cb10a00206a002979ad-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8067ab8f7396447a.htm#ID_7adfcbcefb4c1bd40a00206a001d9c20-808a5aebfb4c0cb10a00206a002979ad-en-US>`_
 
                 Arguments: 1
                 """
@@ -10054,6 +10680,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -10063,6 +10690,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -10093,23 +10721,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXTernal"
                 args = []
 
                 class COUPling(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:AM:EXTernal:COUPling
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c57efbe68294ef5.htm#ID_5bcc30cf4d678f970a00206a00fe69d4-c60d3ff74d678f970a00206a0024546d-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c57efbe68294ef5.htm#ID_5bcc30cf4d678f970a00206a00fe69d4-c60d3ff74d678f970a00206a0024546d-en-US>`_
 
                     Arguments: AC, DC
                     """
+                    __slots__ = ()
                     _cmd = "COUPling"
                     args = ["AC", "DC"]
 
                 COUPling = COUPling()
                 """
                 `SOURce:AM:EXTernal:COUPling
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c57efbe68294ef5.htm#ID_5bcc30cf4d678f970a00206a00fe69d4-c60d3ff74d678f970a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c57efbe68294ef5.htm#ID_5bcc30cf4d678f970a00206a00fe69d4-c60d3ff74d678f970a00206a0024546d-en-US>`_
 
                 Arguments: AC, DC
                 """
@@ -10120,6 +10750,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "IMPedance"
                     args = ["1"]
 
@@ -10143,6 +10774,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INTernal"
                 args = []
 
@@ -10152,6 +10784,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -10161,6 +10794,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ALTernate"
                         args = ["1"]
 
@@ -10170,6 +10804,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "AMPLitude"
                             args = []
 
@@ -10179,6 +10814,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "PERCent"
                                 args = ["1"]
 
@@ -10209,6 +10845,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -10218,6 +10855,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -10248,6 +10886,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: GAUSsian, NOISe, RAMP, SINusoid, SQUare, TRIangle, UNIForm
                     """
+                    __slots__ = ()
                     _cmd = "FUNCtion"
                     args = ["GAUSsian", "NOISe", "RAMP", "SINusoid", "SQUare", "TRIangle", "UNIForm"]
 
@@ -10257,6 +10896,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: GAUSsian, UNIForm
                         """
+                        __slots__ = ()
                         _cmd = "NOISe"
                         args = ["GAUSsian", "UNIForm"]
 
@@ -10273,6 +10913,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: SINE, SQUare
                         """
+                        __slots__ = ()
                         _cmd = "SHAPe"
                         args = ["SINE", "SQUare"]
 
@@ -10296,6 +10937,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SWEep"
                     args = []
 
@@ -10305,6 +10947,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: BUS, EXTernal, IMMediate, KEY
                         """
+                        __slots__ = ()
                         _cmd = "TRIGger"
                         args = ["BUS", "EXTernal", "IMMediate", "KEY"]
 
@@ -10335,6 +10978,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerted, NORMal
                 """
+                __slots__ = ()
                 _cmd = "POLarity"
                 args = ["INVerted", "NORMal"]
 
@@ -10351,6 +10995,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SCAN"
                 args = []
 
@@ -10360,6 +11005,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "SENSitivity"
                     args = ["1"]
 
@@ -10376,6 +11022,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -10396,17 +11043,18 @@ class SMB100A_gen(Instrument):
             class SENSitivity(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:AM:SENSitivity
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6c5790605c444e81.htm#ID_49b9748f4d6795350a00206a01bcd5ca-0c8a2fb54d6795350a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6c5790605c444e81.htm#ID_49b9748f4d6795350a00206a01bcd5ca-0c8a2fb54d6795350a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "SENSitivity"
                 args = ["1"]
 
             SENSitivity = SENSitivity()
             """
             `SOURce:AM:SENSitivity
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6c5790605c444e81.htm#ID_49b9748f4d6795350a00206a01bcd5ca-0c8a2fb54d6795350a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6c5790605c444e81.htm#ID_49b9748f4d6795350a00206a01bcd5ca-0c8a2fb54d6795350a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -10414,17 +11062,18 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:AM:SOURce
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03d65f627a674214.htm#ID_e27ef81b4d679aa50a00206a007718e3-f6f38bbf4d679aa50a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03d65f627a674214.htm#ID_e27ef81b4d679aa50a00206a007718e3-f6f38bbf4d679aa50a00206a0024546d-en-US>`_
 
                 Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXTernal", "INT1", "INT2", "INTernal", "INTernal1", "INTernal2,EXTernal", "INT1", "INTernal", "INTernal1"]
 
             SOURce = SOURce()
             """
             `SOURce:AM:SOURce
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03d65f627a674214.htm#ID_e27ef81b4d679aa50a00206a007718e3-f6f38bbf4d679aa50a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03d65f627a674214.htm#ID_e27ef81b4d679aa50a00206a007718e3-f6f38bbf4d679aa50a00206a0024546d-en-US>`_
 
             Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
             """
@@ -10432,10 +11081,11 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:AM:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03a638cb0e924f7c.htm#ID_26d49ccd4d679ff50a00206a0016778c-d761ca934d679ff50a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03a638cb0e924f7c.htm#ID_26d49ccd4d679ff50a00206a0016778c-d761ca934d679ff50a00206a0024546d-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -10445,6 +11095,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "EMULation"
                     args = ["1", "ON", "OFF"]
 
@@ -10458,7 +11109,7 @@ class SMB100A_gen(Instrument):
             STATe = STATe()
             """
             `SOURce:AM:STATe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03a638cb0e924f7c.htm#ID_26d49ccd4d679ff50a00206a0016778c-d761ca934d679ff50a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03a638cb0e924f7c.htm#ID_26d49ccd4d679ff50a00206a0016778c-d761ca934d679ff50a00206a0024546d-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -10469,6 +11120,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "WIDeband"
                 args = []
 
@@ -10478,6 +11130,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "SENSitivity"
                     args = ["1"]
 
@@ -10494,6 +11147,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -10524,6 +11178,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "BURSt"
             args = []
 
@@ -10533,6 +11188,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: EXTernal, EXTernal1, INTernal, INTernal1
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXTernal", "EXTernal1", "INTernal", "INTernal1"]
 
@@ -10549,6 +11205,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -10572,6 +11229,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CORRection"
             args = []
 
@@ -10581,23 +11239,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CSET"
                 args = []
 
                 class CATalog(SCPINode, SCPIQuery):
                     """
                     `SOURce:CORRection:CSET:CATalog
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/12dc5f6ae5524347.htm#ID_689cd4137c48ac3e0a00206a018986af-f5c35cc47c48ac3e0a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/12dc5f6ae5524347.htm#ID_689cd4137c48ac3e0a00206a018986af-f5c35cc47c48ac3e0a00206a012bc823-en-US>`_
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CATalog"
                     args = []
 
                 CATalog = CATalog()
                 """
                 `SOURce:CORRection:CSET:CATalog
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/12dc5f6ae5524347.htm#ID_689cd4137c48ac3e0a00206a018986af-f5c35cc47c48ac3e0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/12dc5f6ae5524347.htm#ID_689cd4137c48ac3e0a00206a018986af-f5c35cc47c48ac3e0a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -10608,33 +11268,36 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DATA"
                     args = []
 
                     class FREQuency(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:CORRection:CSET:DATA:FREQuency
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2dda9edb61694671.htm#ID_86873f407c48b1ac0a00206a004443cb-400402547c48b1bc0a00206a012bc823-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2dda9edb61694671.htm#ID_86873f407c48b1ac0a00206a004443cb-400402547c48b1bc0a00206a012bc823-en-US>`_
 
                         Arguments: <numeric_value>[HZ, KHZ, MHZ, GHZ],<numeric_value>
                         """
+                        __slots__ = ()
                         _cmd = "FREQuency"
                         args = ["<numeric_value>[HZ", "KHZ", "MHZ", "GHZ],<numeric_value>"]
 
                         class POINts(SCPINode, SCPIQuery):
                             """
                             `SOURce:CORRection:CSET:DATA:FREQuency:POINts
-                            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4370c89124cc46f2.htm#ID_c0348a7c7c48b72b0a00206a014355d0-7dcc67e17c48b72b0a00206a012bc823-en-US>`_
+                            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4370c89124cc46f2.htm#ID_c0348a7c7c48b72b0a00206a014355d0-7dcc67e17c48b72b0a00206a012bc823-en-US>`_
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "POINts"
                             args = []
 
                         POINts = POINts()
                         """
                         `SOURce:CORRection:CSET:DATA:FREQuency:POINts
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4370c89124cc46f2.htm#ID_c0348a7c7c48b72b0a00206a014355d0-7dcc67e17c48b72b0a00206a012bc823-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4370c89124cc46f2.htm#ID_c0348a7c7c48b72b0a00206a014355d0-7dcc67e17c48b72b0a00206a012bc823-en-US>`_
 
                         Arguments:
                         """
@@ -10642,7 +11305,7 @@ class SMB100A_gen(Instrument):
                     FREQuency = FREQuency()
                     """
                     `SOURce:CORRection:CSET:DATA:FREQuency
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2dda9edb61694671.htm#ID_86873f407c48b1ac0a00206a004443cb-400402547c48b1bc0a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2dda9edb61694671.htm#ID_86873f407c48b1ac0a00206a004443cb-400402547c48b1bc0a00206a012bc823-en-US>`_
 
                     Arguments: <numeric_value>[HZ, KHZ, MHZ, GHZ],<numeric_value>
                     """
@@ -10650,27 +11313,29 @@ class SMB100A_gen(Instrument):
                     class POWer(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:CORRection:CSET:DATA:POWer
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a6ceacf6151845d4.htm#ID_ff0722e77c48bc990a00206a002f7094-dc7cab557c48bc990a00206a012bc823-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a6ceacf6151845d4.htm#ID_ff0722e77c48bc990a00206a002f7094-dc7cab557c48bc990a00206a012bc823-en-US>`_
 
                         Arguments: <numeric_value>[DB],<numeric_value>
                         """
+                        __slots__ = ()
                         _cmd = "POWer"
                         args = ["<numeric_value>[DB],<numeric_value>"]
 
                         class POINts(SCPINode, SCPIQuery):
                             """
                             `SOURce:CORRection:CSET:DATA:POWer:POINts
-                            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3f3849f7fd204e75.htm#ID_2516a43f7c48e2ce0a00206a00fc3ca9-c939d22e7c48e2ce0a00206a012bc823-en-US>`_
+                            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3f3849f7fd204e75.htm#ID_2516a43f7c48e2ce0a00206a00fc3ca9-c939d22e7c48e2ce0a00206a012bc823-en-US>`_
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "POINts"
                             args = []
 
                         POINts = POINts()
                         """
                         `SOURce:CORRection:CSET:DATA:POWer:POINts
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3f3849f7fd204e75.htm#ID_2516a43f7c48e2ce0a00206a00fc3ca9-c939d22e7c48e2ce0a00206a012bc823-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3f3849f7fd204e75.htm#ID_2516a43f7c48e2ce0a00206a00fc3ca9-c939d22e7c48e2ce0a00206a012bc823-en-US>`_
 
                         Arguments:
                         """
@@ -10678,7 +11343,7 @@ class SMB100A_gen(Instrument):
                     POWer = POWer()
                     """
                     `SOURce:CORRection:CSET:DATA:POWer
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a6ceacf6151845d4.htm#ID_ff0722e77c48bc990a00206a002f7094-dc7cab557c48bc990a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a6ceacf6151845d4.htm#ID_ff0722e77c48bc990a00206a002f7094-dc7cab557c48bc990a00206a012bc823-en-US>`_
 
                     Arguments: <numeric_value>[DB],<numeric_value>
                     """
@@ -10693,17 +11358,18 @@ class SMB100A_gen(Instrument):
                 class DELete(SCPINode, SCPISet):
                     """
                     `SOURce:CORRection:CSET:DELete
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8a1cfd4921054bf3.htm#ID_9095a51e7c48f4240a00206a018c3141-1e9571927c48f4240a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8a1cfd4921054bf3.htm#ID_9095a51e7c48f4240a00206a018c3141-1e9571927c48f4240a00206a012bc823-en-US>`_
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DELete"
                     args = ["'string'"]
 
                 DELete = DELete()
                 """
                 `SOURce:CORRection:CSET:DELete
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8a1cfd4921054bf3.htm#ID_9095a51e7c48f4240a00206a018c3141-1e9571927c48f4240a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8a1cfd4921054bf3.htm#ID_9095a51e7c48f4240a00206a018c3141-1e9571927c48f4240a00206a012bc823-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -10711,17 +11377,18 @@ class SMB100A_gen(Instrument):
                 class SELect(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:CORRection:CSET:SELect
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0c7e2d4956e34eb6.htm#ID_e15ed3447c488b480a00206a002fedba-f8db389d7c488b480a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0c7e2d4956e34eb6.htm#ID_e15ed3447c488b480a00206a002fedba-f8db389d7c488b480a00206a012bc823-en-US>`_
 
                     Arguments: NONE, USER1, USER2, USER3, USER4, USER5
                     """
+                    __slots__ = ()
                     _cmd = "SELect"
                     args = ["NONE", "USER1", "USER2", "USER3", "USER4", "USER5"]
 
                 SELect = SELect()
                 """
                 `SOURce:CORRection:CSET:SELect
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0c7e2d4956e34eb6.htm#ID_e15ed3447c488b480a00206a002fedba-f8db389d7c488b480a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0c7e2d4956e34eb6.htm#ID_e15ed3447c488b480a00206a002fedba-f8db389d7c488b480a00206a012bc823-en-US>`_
 
                 Arguments: NONE, USER1, USER2, USER3, USER4, USER5
                 """
@@ -10732,6 +11399,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -10755,6 +11423,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FLATness"
                 args = []
 
@@ -10764,6 +11433,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "POINts"
                     args = ["1"]
 
@@ -10780,6 +11450,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PRESet"
                     args = []
 
@@ -10796,6 +11467,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "STORe"
                     args = ["'string'"]
 
@@ -10819,6 +11491,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: ARRay, FLATness
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["ARRay", "FLATness"]
 
@@ -10832,17 +11505,18 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:CORRection:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f493e8cd5b304030.htm#ID_bfaa6443312d91020a00206a014d3fc5-07f8da5e312d91020a00206a00c4603c-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f493e8cd5b304030.htm#ID_bfaa6443312d91020a00206a014d3fc5-07f8da5e312d91020a00206a00c4603c-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
             STATe = STATe()
             """
             `SOURce:CORRection:STATe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f493e8cd5b304030.htm#ID_bfaa6443312d91020a00206a014d3fc5-07f8da5e312d91020a00206a00c4603c-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f493e8cd5b304030.htm#ID_bfaa6443312d91020a00206a014d3fc5-07f8da5e312d91020a00206a00c4603c-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -10860,6 +11534,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DM"
             args = []
 
@@ -10869,6 +11544,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ASK"
                 args = []
 
@@ -10878,6 +11554,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DEPTh"
                     args = ["1"]
 
@@ -10894,6 +11571,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: INVerted, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "POLarity"
                     args = ["INVerted", "NORMal"]
 
@@ -10917,6 +11595,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "BBFilter"
                 args = ["1"]
 
@@ -10933,6 +11612,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXTernal"
                 args = []
 
@@ -10942,6 +11622,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALC"
                     args = []
 
@@ -10951,6 +11632,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: <numeric_value>, NARRow, NORMal
                         """
+                        __slots__ = ()
                         _cmd = "BANDwidth"
                         args = ["<numeric_value>", "NARRow", "NORMal"]
 
@@ -10967,6 +11649,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: <numeric_value>, NARRow, NORMal
                         """
+                        __slots__ = ()
                         _cmd = "BWIDth"
                         args = ["<numeric_value>", "NARRow", "NORMal"]
 
@@ -10990,6 +11673,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FILTer"
                     args = ["1"]
 
@@ -11006,6 +11690,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HCRest"
                     args = []
 
@@ -11015,6 +11700,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -11038,6 +11724,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HICRest"
                     args = []
 
@@ -11047,6 +11734,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -11070,6 +11758,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "IMPedance"
                     args = ["1"]
 
@@ -11086,6 +11775,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: INVert, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "POLarity"
                     args = ["INVert", "NORMal"]
 
@@ -11102,6 +11792,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: BBG1, EXT600, EXTernal, INTernal, OFF, SUM
                     """
+                    __slots__ = ()
                     _cmd = "SOURce"
                     args = ["BBG1", "EXT600", "EXTernal", "INTernal", "OFF", "SUM"]
 
@@ -11125,6 +11816,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FSK"
                 args = []
 
@@ -11134,6 +11826,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DEViation"
                     args = ["1"]
 
@@ -11150,6 +11843,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: INVerted, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "POLarity"
                     args = ["INVerted", "NORMal"]
 
@@ -11173,6 +11867,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMPairment"
                 args = []
 
@@ -11182,6 +11877,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -11205,6 +11901,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IQ"
                 args = []
 
@@ -11214,6 +11911,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "CREStfactor"
                     args = ["1"]
 
@@ -11230,6 +11928,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -11253,6 +11952,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IQADjustment"
                 args = []
 
@@ -11262,6 +11962,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "BBG"
                     args = []
 
@@ -11271,6 +11972,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "QSKew"
                         args = ["1"]
 
@@ -11294,6 +11996,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DELay"
                     args = ["1"]
 
@@ -11310,6 +12013,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EXTernal"
                     args = []
 
@@ -11319,6 +12023,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "COFFset"
                         args = ["1"]
 
@@ -11335,6 +12040,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "DIOFfset"
                         args = ["1"]
 
@@ -11351,6 +12057,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "DQOFfset"
                         args = ["1"]
 
@@ -11367,6 +12074,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "IOFFset"
                         args = ["1"]
 
@@ -11383,6 +12091,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "IQATten"
                         args = ["1"]
 
@@ -11399,6 +12108,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "QOFFset"
                         args = ["1"]
 
@@ -11422,6 +12132,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "IOFFset"
                     args = ["1"]
 
@@ -11438,6 +12149,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "QOFFset"
                     args = ["1"]
 
@@ -11454,6 +12166,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "QSKew"
                     args = ["1"]
 
@@ -11470,6 +12183,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SKEW"
                     args = []
 
@@ -11479,6 +12193,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "DELay"
                         args = ["1"]
 
@@ -11502,6 +12217,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -11525,6 +12241,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IQRatio"
                 args = []
 
@@ -11534,6 +12251,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "MAGNitude"
                     args = ["1"]
 
@@ -11557,6 +12275,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IQSWap"
                 args = []
 
@@ -11566,6 +12285,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -11589,6 +12309,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LEAKage"
                 args = []
 
@@ -11598,6 +12319,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "MAGNitude"
                     args = ["1"]
 
@@ -11621,6 +12343,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MODulation"
                 args = []
 
@@ -11630,6 +12353,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ATTen"
                     args = ["1"]
 
@@ -11646,6 +12370,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FILTer"
                     args = ["1"]
 
@@ -11669,6 +12394,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "QUADrature"
                 args = []
 
@@ -11678,6 +12404,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ANGLe"
                     args = ["1"]
 
@@ -11701,6 +12428,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SKEW"
                 args = []
 
@@ -11710,6 +12438,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -11733,6 +12462,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: EXTernal, INTernal, SUM
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXTernal", "INTernal", "SUM"]
 
@@ -11749,6 +12479,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "SRATio"
                 args = ["1"]
 
@@ -11765,6 +12496,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -11788,6 +12520,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FM"
             args = []
 
@@ -11797,6 +12530,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: STANdard, WIDE
                 """
+                __slots__ = ()
                 _cmd = "BANDwidth"
                 args = ["STANdard", "WIDE"]
 
@@ -11813,6 +12547,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: AC, DC
                 """
+                __slots__ = ()
                 _cmd = "COUPling"
                 args = ["AC", "DC"]
 
@@ -11826,10 +12561,11 @@ class SMB100A_gen(Instrument):
             class DEViation(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FM:DEViation
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17615211bdc2474d.htm#ID_4adf1663ed64b2010a00201901e52a86-bfbdd369ed64afa00a00201900ba4ad4-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17615211bdc2474d.htm#ID_4adf1663ed64b2010a00201901e52a86-bfbdd369ed64afa00a00201900ba4ad4-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DEViation"
                 args = ["1"]
 
@@ -11839,6 +12575,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -11848,6 +12585,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -11871,6 +12609,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "TRACk"
                     args = ["1", "ON", "OFF"]
 
@@ -11884,7 +12623,7 @@ class SMB100A_gen(Instrument):
             DEViation = DEViation()
             """
             `SOURce:FM:DEViation
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17615211bdc2474d.htm#ID_4adf1663ed64b2010a00201901e52a86-bfbdd369ed64afa00a00201900ba4ad4-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17615211bdc2474d.htm#ID_4adf1663ed64b2010a00201901e52a86-bfbdd369ed64afa00a00201900ba4ad4-en-US>`_
 
             Arguments: 1
             """
@@ -11895,23 +12634,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXTernal"
                 args = []
 
                 class COUPling(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:FM:EXTernal:COUPling
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/713237eac8644509.htm#ID_4fe894544d707f4e0a00206a01cec433-d1c7c3df4d707f4e0a00206a0024546d-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/713237eac8644509.htm#ID_4fe894544d707f4e0a00206a01cec433-d1c7c3df4d707f4e0a00206a0024546d-en-US>`_
 
                     Arguments: AC, DC
                     """
+                    __slots__ = ()
                     _cmd = "COUPling"
                     args = ["AC", "DC"]
 
                 COUPling = COUPling()
                 """
                 `SOURce:FM:EXTernal:COUPling
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/713237eac8644509.htm#ID_4fe894544d707f4e0a00206a01cec433-d1c7c3df4d707f4e0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/713237eac8644509.htm#ID_4fe894544d707f4e0a00206a01cec433-d1c7c3df4d707f4e0a00206a0024546d-en-US>`_
 
                 Arguments: AC, DC
                 """
@@ -11922,6 +12663,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "IMPedance"
                     args = ["1"]
 
@@ -11945,6 +12687,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FILTer"
                 args = []
 
@@ -11954,6 +12697,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "HPASs"
                     args = ["1"]
 
@@ -11977,6 +12721,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INTernal"
                 args = []
 
@@ -11986,6 +12731,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -11995,6 +12741,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ALTernate"
                         args = ["1"]
 
@@ -12004,6 +12751,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "AMPLitude"
                             args = []
 
@@ -12013,6 +12761,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "PERCent"
                                 args = ["1"]
 
@@ -12043,6 +12792,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -12052,6 +12802,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -12082,6 +12833,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: GAUSsian, NOISe, RAMP, SINusoid, SQUare, TRIangle, UNIForm
                     """
+                    __slots__ = ()
                     _cmd = "FUNCtion"
                     args = ["GAUSsian", "NOISe", "RAMP", "SINusoid", "SQUare", "TRIangle", "UNIForm"]
 
@@ -12091,6 +12843,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: GAUSsian, UNIForm
                         """
+                        __slots__ = ()
                         _cmd = "NOISe"
                         args = ["GAUSsian", "UNIForm"]
 
@@ -12107,6 +12860,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: SINE, SQUare
                         """
+                        __slots__ = ()
                         _cmd = "SHAPe"
                         args = ["SINE", "SQUare"]
 
@@ -12130,6 +12884,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SWEep"
                     args = []
 
@@ -12139,6 +12894,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: BUS, EXTernal, IMMediate, KEY
                         """
+                        __slots__ = ()
                         _cmd = "TRIGger"
                         args = ["BUS", "EXTernal", "IMMediate", "KEY"]
 
@@ -12169,6 +12925,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PREemphasis"
                 args = ["1"]
 
@@ -12182,17 +12939,18 @@ class SMB100A_gen(Instrument):
             class SENSitivity(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FM:SENSitivity
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d6f8c97d066e4010.htm#ID_3d6e84804d70782a0a00206a0179e300-35b70df44d70782a0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d6f8c97d066e4010.htm#ID_3d6e84804d70782a0a00206a0179e300-35b70df44d70782a0a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "SENSitivity"
                 args = ["1"]
 
             SENSitivity = SENSitivity()
             """
             `SOURce:FM:SENSitivity
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d6f8c97d066e4010.htm#ID_3d6e84804d70782a0a00206a0179e300-35b70df44d70782a0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d6f8c97d066e4010.htm#ID_3d6e84804d70782a0a00206a0179e300-35b70df44d70782a0a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -12200,17 +12958,18 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FM:SOURce
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ddeceb86743c4342.htm#ID_7ce7c1e54d7085a70a00206a0035ad95-7c998c484d7085a70a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ddeceb86743c4342.htm#ID_7ce7c1e54d7085a70a00206a0035ad95-7c998c484d7085a70a00206a0024546d-en-US>`_
 
                 Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXTernal", "INT1", "INT2", "INTernal", "INTernal1", "INTernal2,EXTernal", "INT1", "INTernal", "INTernal1"]
 
             SOURce = SOURce()
             """
             `SOURce:FM:SOURce
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ddeceb86743c4342.htm#ID_7ce7c1e54d7085a70a00206a0035ad95-7c998c484d7085a70a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ddeceb86743c4342.htm#ID_7ce7c1e54d7085a70a00206a0035ad95-7c998c484d7085a70a00206a0024546d-en-US>`_
 
             Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
             """
@@ -12218,10 +12977,11 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:FM:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bfc4735fb97e4afb.htm#ID_56f39a7a4d708c000a00206a00870c91-8d7d16d14d708c000a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bfc4735fb97e4afb.htm#ID_56f39a7a4d708c000a00206a00870c91-8d7d16d14d708c000a00206a0024546d-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -12231,6 +12991,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "EMULation"
                     args = ["1", "ON", "OFF"]
 
@@ -12244,7 +13005,7 @@ class SMB100A_gen(Instrument):
             STATe = STATe()
             """
             `SOURce:FM:STATe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bfc4735fb97e4afb.htm#ID_56f39a7a4d708c000a00206a00870c91-8d7d16d14d708c000a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bfc4735fb97e4afb.htm#ID_56f39a7a4d708c000a00206a00870c91-8d7d16d14d708c000a00206a0024546d-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -12262,16 +13023,18 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = []
 
             class CENTer(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:CENTer
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2cf6c143b3cf4c4b.htm#ID_94b28e8271966ef30a00206a004b06bb-b020ee7271966ef30a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2cf6c143b3cf4c4b.htm#ID_94b28e8271966ef30a00206a004b06bb-b020ee7271966ef30a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "CENTer"
                 args = ["1"]
 
@@ -12281,6 +13044,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -12290,6 +13054,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -12310,7 +13075,7 @@ class SMB100A_gen(Instrument):
             CENTer = CENTer()
             """
             `SOURce:FREQuency:CENTer
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2cf6c143b3cf4c4b.htm#ID_94b28e8271966ef30a00206a004b06bb-b020ee7271966ef30a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2cf6c143b3cf4c4b.htm#ID_94b28e8271966ef30a00206a004b06bb-b020ee7271966ef30a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -12321,6 +13086,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CHANnels"
                 args = []
 
@@ -12330,6 +13096,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NUMBer"
                     args = ["1"]
 
@@ -12346,6 +13113,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -12369,6 +13137,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CW"
                 args = []
 
@@ -12378,6 +13147,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "BACKup"
                     args = ["1"]
 
@@ -12394,6 +13164,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -12403,6 +13174,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -12433,6 +13205,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "ERANge"
                 args = ["1", "ON", "OFF"]
 
@@ -12449,6 +13222,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "FIXed"
                 args = ["1"]
 
@@ -12458,6 +13232,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "BACKup"
                     args = ["1"]
 
@@ -12474,6 +13249,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -12483,6 +13259,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -12510,17 +13287,18 @@ class SMB100A_gen(Instrument):
             class MANual(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:MANual
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b256342b64e54406.htm#ID_c7717ccc71967af90a00206a0175c71f-fcb82bd071967af90a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b256342b64e54406.htm#ID_c7717ccc71967af90a00206a0175c71f-fcb82bd071967af90a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "MANual"
                 args = ["1"]
 
             MANual = MANual()
             """
             `SOURce:FREQuency:MANual
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b256342b64e54406.htm#ID_c7717ccc71967af90a00206a0175c71f-fcb82bd071967af90a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b256342b64e54406.htm#ID_c7717ccc71967af90a00206a0175c71f-fcb82bd071967af90a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -12528,10 +13306,11 @@ class SMB100A_gen(Instrument):
             class MULTiplier(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:MULTiplier
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a9bd609236c14729.htm#ID_3351c13f7196e80a0a00206a0041112e-e73472347196e80a0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a9bd609236c14729.htm#ID_3351c13f7196e80a0a00206a0041112e-e73472347196e80a0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "MULTiplier"
                 args = ["1"]
 
@@ -12541,6 +13320,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -12557,6 +13337,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -12566,6 +13347,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -12586,7 +13368,7 @@ class SMB100A_gen(Instrument):
             MULTiplier = MULTiplier()
             """
             `SOURce:FREQuency:MULTiplier
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a9bd609236c14729.htm#ID_3351c13f7196e80a0a00206a0041112e-e73472347196e80a0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a9bd609236c14729.htm#ID_3351c13f7196e80a0a00206a0041112e-e73472347196e80a0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -12594,10 +13376,11 @@ class SMB100A_gen(Instrument):
             class OFFSet(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:OFFSet
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cb510032520641ae.htm#ID_af38e01f71962fc70a00206a0025f2de-cb72d0b271962fc70a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cb510032520641ae.htm#ID_af38e01f71962fc70a00206a0025f2de-cb72d0b271962fc70a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "OFFSet"
                 args = ["1"]
 
@@ -12607,6 +13390,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -12620,7 +13404,7 @@ class SMB100A_gen(Instrument):
             OFFSet = OFFSet()
             """
             `SOURce:FREQuency:OFFSet
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cb510032520641ae.htm#ID_af38e01f71962fc70a00206a0025f2de-cb72d0b271962fc70a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cb510032520641ae.htm#ID_af38e01f71962fc70a00206a0025f2de-cb72d0b271962fc70a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -12631,6 +13415,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PHASe"
                 args = []
 
@@ -12640,6 +13425,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONTinuous"
                     args = []
 
@@ -12649,6 +13435,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -12679,6 +13466,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "REFerence"
                 args = ["1"]
 
@@ -12688,6 +13476,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -12708,10 +13497,11 @@ class SMB100A_gen(Instrument):
             class SPAN(SCPINodeN, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:SPAN
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/918726699f9a436a.htm#ID_877b9a2d71969db30a00206a01270bed-91afc66471969db30a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/918726699f9a436a.htm#ID_877b9a2d71969db30a00206a01270bed-91afc66471969db30a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "SPAN"
                 args = ["1"]
 
@@ -12721,6 +13511,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -12730,6 +13521,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -12750,7 +13542,7 @@ class SMB100A_gen(Instrument):
             SPAN = SPAN()
             """
             `SOURce:FREQuency:SPAN
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/918726699f9a436a.htm#ID_877b9a2d71969db30a00206a01270bed-91afc66471969db30a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/918726699f9a436a.htm#ID_877b9a2d71969db30a00206a01270bed-91afc66471969db30a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -12758,10 +13550,11 @@ class SMB100A_gen(Instrument):
             class STARt(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:STARt
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0f57f1e62e22466d.htm#ID_d6ff21d9719686b10a00206a016817d0-3e9f661a719686b10a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0f57f1e62e22466d.htm#ID_d6ff21d9719686b10a00206a016817d0-3e9f661a719686b10a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1"]
 
@@ -12771,6 +13564,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -12780,6 +13574,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -12800,7 +13595,7 @@ class SMB100A_gen(Instrument):
             STARt = STARt()
             """
             `SOURce:FREQuency:STARt
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0f57f1e62e22466d.htm#ID_d6ff21d9719686b10a00206a016817d0-3e9f661a719686b10a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0f57f1e62e22466d.htm#ID_d6ff21d9719686b10a00206a016817d0-3e9f661a719686b10a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -12811,23 +13606,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:FREQuency:STEP:INCRement
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/86e6c5f55e234c7f.htm#ID_89eaa7f5719647a40a00206a01cdb994-b088125d719647a40a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/86e6c5f55e234c7f.htm#ID_89eaa7f5719647a40a00206a01cdb994-b088125d719647a40a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
                 INCRement = INCRement()
                 """
                 `SOURce:FREQuency:STEP:INCRement
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/86e6c5f55e234c7f.htm#ID_89eaa7f5719647a40a00206a01cdb994-b088125d719647a40a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/86e6c5f55e234c7f.htm#ID_89eaa7f5719647a40a00206a01cdb994-b088125d719647a40a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -12842,10 +13639,11 @@ class SMB100A_gen(Instrument):
             class STOP(SCPINodeN, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:STOP
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0affa845d399442b.htm#ID_af855a1c7196919e0a00206a00d3c228-eea6068f7196919e0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0affa845d399442b.htm#ID_af855a1c7196919e0a00206a00d3c228-eea6068f7196919e0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STOP"
                 args = ["1"]
 
@@ -12855,6 +13653,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -12864,6 +13663,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -12884,7 +13684,7 @@ class SMB100A_gen(Instrument):
             STOP = STOP()
             """
             `SOURce:FREQuency:STOP
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0affa845d399442b.htm#ID_af855a1c7196919e0a00206a00d3c228-eea6068f7196919e0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0affa845d399442b.htm#ID_af855a1c7196919e0a00206a00d3c228-eea6068f7196919e0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -12895,6 +13695,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "SYNThesis"
                 args = ["1"]
 
@@ -12918,6 +13719,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FUNCtion"
             args = []
 
@@ -12927,6 +13729,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: PRNoise, SAWTooth, SINusoid, SQUare, TRIangle
                 """
+                __slots__ = ()
                 _cmd = "SHAPe"
                 args = ["PRNoise", "SAWTooth", "SINusoid", "SQUare", "TRIangle"]
 
@@ -12950,6 +13753,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ILS"
             args = []
 
@@ -12959,6 +13763,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "GS"
                 args = []
 
@@ -12968,6 +13773,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COMid"
                     args = []
 
@@ -12977,6 +13783,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "DEPTh"
                         args = ["1"]
 
@@ -12993,6 +13800,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "FREQuency"
                         args = ["1"]
 
@@ -13009,6 +13817,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -13032,6 +13841,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DDM"
                     args = []
 
@@ -13041,6 +13851,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "CURRent"
                         args = ["1"]
 
@@ -13057,6 +13868,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "DEPTh"
                         args = ["1"]
 
@@ -13073,6 +13885,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: DOWN, UP
                         """
+                        __slots__ = ()
                         _cmd = "DIRection"
                         args = ["DOWN", "UP"]
 
@@ -13089,6 +13902,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
@@ -13112,6 +13926,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LLOBe"
                     args = []
 
@@ -13121,6 +13936,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "FREQuency"
                         args = ["1"]
 
@@ -13144,6 +13960,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PHASe"
                     args = ["1"]
 
@@ -13160,6 +13977,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PRESet"
                     args = []
 
@@ -13176,6 +13994,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "SODepth"
                     args = ["1"]
 
@@ -13192,6 +14011,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ULOBe"
                     args = []
 
@@ -13201,6 +14021,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "FREQuency"
                         args = ["1"]
 
@@ -13231,6 +14052,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "GSLope"
                 args = []
 
@@ -13240,6 +14062,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COMid"
                     args = []
 
@@ -13249,6 +14072,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "DEPTh"
                         args = ["1"]
 
@@ -13265,6 +14089,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "FREQuency"
                         args = ["1"]
 
@@ -13281,6 +14106,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -13304,6 +14130,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DDM"
                     args = []
 
@@ -13313,6 +14140,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "CURRent"
                         args = ["1"]
 
@@ -13329,6 +14157,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "DEPTh"
                         args = ["1"]
 
@@ -13345,6 +14174,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: DOWN, UP
                         """
+                        __slots__ = ()
                         _cmd = "DIRection"
                         args = ["DOWN", "UP"]
 
@@ -13361,6 +14191,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
@@ -13384,6 +14215,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LLOBe"
                     args = []
 
@@ -13393,6 +14225,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "FREQuency"
                         args = ["1"]
 
@@ -13416,6 +14249,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PHASe"
                     args = ["1"]
 
@@ -13432,6 +14266,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PRESet"
                     args = []
 
@@ -13448,6 +14283,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "SODepth"
                     args = ["1"]
 
@@ -13464,6 +14300,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ULOBe"
                     args = []
 
@@ -13473,6 +14310,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "FREQuency"
                         args = ["1"]
 
@@ -13503,6 +14341,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LOCalizer"
                 args = []
 
@@ -13512,6 +14351,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COMid"
                     args = []
 
@@ -13521,6 +14361,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "DEPTh"
                         args = ["1"]
 
@@ -13537,6 +14378,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "FREQuency"
                         args = ["1"]
 
@@ -13553,6 +14395,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -13576,6 +14419,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DDM"
                     args = []
 
@@ -13585,6 +14429,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "CURRent"
                         args = ["1"]
 
@@ -13601,6 +14446,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "DEPTh"
                         args = ["1"]
 
@@ -13617,6 +14463,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: LEFT, RIGHt
                         """
+                        __slots__ = ()
                         _cmd = "DIRection"
                         args = ["LEFT", "RIGHt"]
 
@@ -13633,6 +14480,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
@@ -13656,6 +14504,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LLOBe"
                     args = []
 
@@ -13665,6 +14514,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "FREQuency"
                         args = ["1"]
 
@@ -13688,6 +14538,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PHASe"
                     args = ["1"]
 
@@ -13704,6 +14555,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PRESet"
                     args = []
 
@@ -13720,6 +14572,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RLOBe"
                     args = []
 
@@ -13729,6 +14582,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "FREQuency"
                         args = ["1"]
 
@@ -13752,6 +14606,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "SODepth"
                     args = ["1"]
 
@@ -13775,6 +14630,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INT2, INTernal2,EXTernal
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["INT2", "INTernal2,EXTernal"]
 
@@ -13791,6 +14647,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -13814,6 +14671,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LFOutput"
             args = []
 
@@ -13823,6 +14681,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "AMPLitude"
                 args = ["1"]
 
@@ -13836,17 +14695,18 @@ class SMB100A_gen(Instrument):
             class FREQuency(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LFOutput:FREQuency
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1f6b2dfd7502424e.htm#ID_e2eac03371a347130a00206a013a8948-b48d9b7871a347130a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1f6b2dfd7502424e.htm#ID_e2eac03371a347130a00206a013a8948-b48d9b7871a347130a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = ["1"]
 
             FREQuency = FREQuency()
             """
             `SOURce:LFOutput:FREQuency
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1f6b2dfd7502424e.htm#ID_e2eac03371a347130a00206a013a8948-b48d9b7871a347130a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1f6b2dfd7502424e.htm#ID_e2eac03371a347130a00206a013a8948-b48d9b7871a347130a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -13857,6 +14717,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FUNCtion"
                 args = []
 
@@ -13866,6 +14727,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -13875,6 +14737,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ALTernate"
                         args = ["1"]
 
@@ -13884,6 +14747,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "AMPLitude"
                             args = []
 
@@ -13893,6 +14757,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "PERCent"
                                 args = ["1"]
 
@@ -13923,6 +14788,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -13932,6 +14798,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -13962,6 +14829,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PERiod"
                     args = ["1"]
 
@@ -13971,6 +14839,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -13980,6 +14849,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -14010,6 +14880,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PWIDth"
                     args = ["1"]
 
@@ -14019,6 +14890,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -14028,6 +14900,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -14058,6 +14931,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: DUALsine, NOISe, RAMP, SINE, SQUare, SWEPtsine, TRIangle
                     """
+                    __slots__ = ()
                     _cmd = "SHAPe"
                     args = ["DUALsine", "NOISe", "RAMP", "SINE", "SQUare", "SWEPtsine", "TRIangle"]
 
@@ -14067,6 +14941,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: GAUSsian, UNIForm
                         """
+                        __slots__ = ()
                         _cmd = "NOISe"
                         args = ["GAUSsian", "UNIForm"]
 
@@ -14090,6 +14965,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SWEep"
                     args = []
 
@@ -14099,6 +14975,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: BUS, EXTernal, IMMediate, KEY
                         """
+                        __slots__ = ()
                         _cmd = "TRIGger"
                         args = ["BUS", "EXTernal", "IMMediate", "KEY"]
 
@@ -14129,6 +15006,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: FUNC1, FUNC2, FUNCtion1, FUNCtion2, INT1, INT2, INTernal, INTernal1, INTernal2
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["FUNC1", "FUNC2", "FUNCtion1", "FUNCtion2", "INT1", "INT2", "INTernal", "INTernal1", "INTernal2"]
 
@@ -14142,17 +15020,18 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:LFOutput:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9aa195c42bb647c7.htm#ID_5a5d63ab71a330bc0a00206a000cda4d-1617947971a330bc0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9aa195c42bb647c7.htm#ID_5a5d63ab71a330bc0a00206a000cda4d-1617947971a330bc0a00206a012bc823-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
             STATe = STATe()
             """
             `SOURce:LFOutput:STATe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9aa195c42bb647c7.htm#ID_5a5d63ab71a330bc0a00206a000cda4d-1617947971a330bc0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9aa195c42bb647c7.htm#ID_5a5d63ab71a330bc0a00206a000cda4d-1617947971a330bc0a00206a012bc823-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -14160,17 +15039,18 @@ class SMB100A_gen(Instrument):
             class VOLTage(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LFOutput:VOLTage
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/30f4a928cfb244ff.htm#ID_0aac7ff171a373a10a00206a0151df63-2edc927371a373a10a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/30f4a928cfb244ff.htm#ID_0aac7ff171a373a10a00206a0151df63-2edc927371a373a10a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "VOLTage"
                 args = ["1"]
 
             VOLTage = VOLTage()
             """
             `SOURce:LFOutput:VOLTage
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/30f4a928cfb244ff.htm#ID_0aac7ff171a373a10a00206a0151df63-2edc927371a373a10a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/30f4a928cfb244ff.htm#ID_0aac7ff171a373a10a00206a0151df63-2edc927371a373a10a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -14188,6 +15068,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LIST"
             args = []
 
@@ -14197,6 +15078,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CALCulate"
                 args = []
 
@@ -14210,17 +15092,18 @@ class SMB100A_gen(Instrument):
             class CATalog(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:CATalog
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/16c72e3030b147e1.htm#ID_3069dbd57ba2f03b0a00206a00039550-48dc81507ba2f03b0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/16c72e3030b147e1.htm#ID_3069dbd57ba2f03b0a00206a00039550-48dc81507ba2f03b0a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
             CATalog = CATalog()
             """
             `SOURce:LIST:CATalog
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/16c72e3030b147e1.htm#ID_3069dbd57ba2f03b0a00206a00039550-48dc81507ba2f03b0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/16c72e3030b147e1.htm#ID_3069dbd57ba2f03b0a00206a00039550-48dc81507ba2f03b0a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -14231,6 +15114,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CPOint"
                 args = []
 
@@ -14244,17 +15128,18 @@ class SMB100A_gen(Instrument):
             class DELete(SCPINode, SCPISet):
                 """
                 `SOURce:LIST:DELete
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/478634d2f1c14f74.htm#ID_624d744a7ba2f6c20a00206a00fc6ced-3ec734647ba2f6c20a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/478634d2f1c14f74.htm#ID_624d744a7ba2f6c20a00206a00fc6ced-3ec734647ba2f6c20a00206a012bc823-en-US>`_
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "DELete"
                 args = ["'string'"]
 
             DELete = DELete()
             """
             `SOURce:LIST:DELete
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/478634d2f1c14f74.htm#ID_624d744a7ba2f6c20a00206a00fc6ced-3ec734647ba2f6c20a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/478634d2f1c14f74.htm#ID_624d744a7ba2f6c20a00206a00fc6ced-3ec734647ba2f6c20a00206a012bc823-en-US>`_
 
             Arguments: 'string'
             """
@@ -14265,6 +15150,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: DOWN, UP
                 """
+                __slots__ = ()
                 _cmd = "DIRection"
                 args = ["DOWN", "UP"]
 
@@ -14278,10 +15164,11 @@ class SMB100A_gen(Instrument):
             class DWELl(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:DWELl
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/22311a6bdb404393.htm#ID_517045367ba322280a00206a0147be12-14458ec47ba322280a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/22311a6bdb404393.htm#ID_517045367ba322280a00206a0147be12-14458ec47ba322280a00206a012bc823-en-US>`_
 
                 Arguments: <numeric_value>[S, MS, US, NS],<numeric_value>
                 """
+                __slots__ = ()
                 _cmd = "DWELl"
                 args = ["<numeric_value>[S", "MS", "US", "NS],<numeric_value>"]
 
@@ -14291,6 +15178,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "POINts"
                     args = []
 
@@ -14304,7 +15192,7 @@ class SMB100A_gen(Instrument):
             DWELl = DWELl()
             """
             `SOURce:LIST:DWELl
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/22311a6bdb404393.htm#ID_517045367ba322280a00206a0147be12-14458ec47ba322280a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/22311a6bdb404393.htm#ID_517045367ba322280a00206a0147be12-14458ec47ba322280a00206a012bc823-en-US>`_
 
             Arguments: <numeric_value>[S, MS, US, NS],<numeric_value>
             """
@@ -14312,27 +15200,29 @@ class SMB100A_gen(Instrument):
             class FREQuency(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:FREQuency
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f90eaa236ece4248.htm#ID_c9bf26237ba301cf0a00206a00e0ce9e-37a02b557ba301cf0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f90eaa236ece4248.htm#ID_c9bf26237ba301cf0a00206a00e0ce9e-37a02b557ba301cf0a00206a012bc823-en-US>`_
 
                 Arguments: <numeric_value>[HZ, KHZ, MHZ, GHZ],<numeric_value>
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = ["<numeric_value>[HZ", "KHZ", "MHZ", "GHZ],<numeric_value>"]
 
                 class POINts(SCPINode, SCPIQuery):
                     """
                     `SOURce:LIST:FREQuency:POINts
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7d65b1dd057049b7.htm#ID_b69a536c7ba3073d0a00206a000d2789-99c66bd67ba3073d0a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7d65b1dd057049b7.htm#ID_b69a536c7ba3073d0a00206a000d2789-99c66bd67ba3073d0a00206a012bc823-en-US>`_
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "POINts"
                     args = []
 
                 POINts = POINts()
                 """
                 `SOURce:LIST:FREQuency:POINts
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7d65b1dd057049b7.htm#ID_b69a536c7ba3073d0a00206a000d2789-99c66bd67ba3073d0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7d65b1dd057049b7.htm#ID_b69a536c7ba3073d0a00206a000d2789-99c66bd67ba3073d0a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -14340,7 +15230,7 @@ class SMB100A_gen(Instrument):
             FREQuency = FREQuency()
             """
             `SOURce:LIST:FREQuency
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f90eaa236ece4248.htm#ID_c9bf26237ba301cf0a00206a00e0ce9e-37a02b557ba301cf0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f90eaa236ece4248.htm#ID_c9bf26237ba301cf0a00206a00e0ce9e-37a02b557ba301cf0a00206a012bc823-en-US>`_
 
             Arguments: <numeric_value>[HZ, KHZ, MHZ, GHZ],<numeric_value>
             """
@@ -14348,17 +15238,18 @@ class SMB100A_gen(Instrument):
             class INDex(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:INDex
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/868b396a40754ba2.htm#ID_067dfbf58c3062130a00206a00010bd5-6df2da598c3062130a00206a00aff702-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/868b396a40754ba2.htm#ID_067dfbf58c3062130a00206a00010bd5-6df2da598c3062130a00206a00aff702-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "INDex"
                 args = ["1"]
 
             INDex = INDex()
             """
             `SOURce:LIST:INDex
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/868b396a40754ba2.htm#ID_067dfbf58c3062130a00206a00010bd5-6df2da598c3062130a00206a00aff702-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/868b396a40754ba2.htm#ID_067dfbf58c3062130a00206a00010bd5-6df2da598c3062130a00206a00aff702-en-US>`_
 
             Arguments: 1
             """
@@ -14366,17 +15257,18 @@ class SMB100A_gen(Instrument):
             class LEARn(SCPINode, SCPISet):
                 """
                 `SOURce:LIST:LEARn
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/df51bebecca046fc.htm#ID_7e28763e7ba327a60a00206a019a9399-eebba4977ba327a60a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/df51bebecca046fc.htm#ID_7e28763e7ba327a60a00206a019a9399-eebba4977ba327a60a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LEARn"
                 args = []
 
             LEARn = LEARn()
             """
             `SOURce:LIST:LEARn
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/df51bebecca046fc.htm#ID_7e28763e7ba327a60a00206a019a9399-eebba4977ba327a60a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/df51bebecca046fc.htm#ID_7e28763e7ba327a60a00206a019a9399-eebba4977ba327a60a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -14387,6 +15279,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "MANual"
                 args = ["1"]
 
@@ -14400,10 +15293,11 @@ class SMB100A_gen(Instrument):
             class POWer(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:POWer
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0fb4c8f885b74436.htm#ID_f9c5b80f7ba311fb0a00206a00e2155d-e913c2b67ba311fb0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0fb4c8f885b74436.htm#ID_f9c5b80f7ba311fb0a00206a00e2155d-e913c2b67ba311fb0a00206a012bc823-en-US>`_
 
                 Arguments: <numeric_value>[DB],<numeric_value>
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = ["<numeric_value>[DB],<numeric_value>"]
 
@@ -14413,6 +15307,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: <numeric_value>[DB],<numeric_value>
                     """
+                    __slots__ = ()
                     _cmd = "CORRection"
                     args = ["<numeric_value>[DB],<numeric_value>"]
 
@@ -14422,6 +15317,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "POINts"
                         args = []
 
@@ -14442,17 +15338,18 @@ class SMB100A_gen(Instrument):
                 class POINts(SCPINode, SCPIQuery):
                     """
                     `SOURce:LIST:POWer:POINts
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f55e6d6622054b99.htm#ID_0ad5bbbe7ba30c8d0a00206a002bb3bd-db2157e07ba30c8d0a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f55e6d6622054b99.htm#ID_0ad5bbbe7ba30c8d0a00206a002bb3bd-db2157e07ba30c8d0a00206a012bc823-en-US>`_
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "POINts"
                     args = []
 
                 POINts = POINts()
                 """
                 `SOURce:LIST:POWer:POINts
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f55e6d6622054b99.htm#ID_0ad5bbbe7ba30c8d0a00206a002bb3bd-db2157e07ba30c8d0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f55e6d6622054b99.htm#ID_0ad5bbbe7ba30c8d0a00206a002bb3bd-db2157e07ba30c8d0a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -14460,7 +15357,7 @@ class SMB100A_gen(Instrument):
             POWer = POWer()
             """
             `SOURce:LIST:POWer
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0fb4c8f885b74436.htm#ID_f9c5b80f7ba311fb0a00206a00e2155d-e913c2b67ba311fb0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0fb4c8f885b74436.htm#ID_f9c5b80f7ba311fb0a00206a00e2155d-e913c2b67ba311fb0a00206a012bc823-en-US>`_
 
             Arguments: <numeric_value>[DB],<numeric_value>
             """
@@ -14471,6 +15368,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "RETRace"
                 args = ["1", "ON", "OFF"]
 
@@ -14484,17 +15382,18 @@ class SMB100A_gen(Instrument):
             class SELect(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:SELect
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb14b349e79e40dc.htm#ID_e5b35aa57ba31ca90a00206a01b8b53b-2962634e7ba31ca90a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb14b349e79e40dc.htm#ID_e5b35aa57ba31ca90a00206a01b8b53b-2962634e7ba31ca90a00206a012bc823-en-US>`_
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SELect"
                 args = ["'string'"]
 
             SELect = SELect()
             """
             `SOURce:LIST:SELect
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb14b349e79e40dc.htm#ID_e5b35aa57ba31ca90a00206a01b8b53b-2962634e7ba31ca90a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb14b349e79e40dc.htm#ID_e5b35aa57ba31ca90a00206a01b8b53b-2962634e7ba31ca90a00206a012bc823-en-US>`_
 
             Arguments: 'string'
             """
@@ -14505,6 +15404,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1"]
 
@@ -14521,23 +15421,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRIGger"
                 args = []
 
                 class SOURce(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:LIST:TRIGger:SOURce
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c1a4677a84944212.htm#ID_e26ff7bb7ba338dc0a00206a01f83843-c7753eb97ba338dc0a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c1a4677a84944212.htm#ID_e26ff7bb7ba338dc0a00206a01f83843-c7753eb97ba338dc0a00206a012bc823-en-US>`_
 
                     Arguments: BUS, EXTernal, IMMediate, KEY
                     """
+                    __slots__ = ()
                     _cmd = "SOURce"
                     args = ["BUS", "EXTernal", "IMMediate", "KEY"]
 
                 SOURce = SOURce()
                 """
                 `SOURce:LIST:TRIGger:SOURce
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c1a4677a84944212.htm#ID_e26ff7bb7ba338dc0a00206a01f83843-c7753eb97ba338dc0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c1a4677a84944212.htm#ID_e26ff7bb7ba338dc0a00206a01f83843-c7753eb97ba338dc0a00206a012bc823-en-US>`_
 
                 Arguments: BUS, EXTernal, IMMediate, KEY
                 """
@@ -14555,6 +15457,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TYPE"
                 args = []
 
@@ -14564,6 +15467,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "LIST"
                     args = []
 
@@ -14573,6 +15477,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "INITialize"
                         args = []
 
@@ -14582,6 +15487,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "FSTep"
                             args = []
 
@@ -14598,6 +15504,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "PRESet"
                             args = []
 
@@ -14642,6 +15549,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MARKer"
             args = []
 
@@ -14651,6 +15559,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AMPLitude"
                 args = []
 
@@ -14660,6 +15569,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -14676,6 +15586,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "VALue"
                     args = ["1"]
 
@@ -14699,6 +15610,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <numeric_value>,<numeric_value>
                 """
+                __slots__ = ()
                 _cmd = "DELTa"
                 args = ["<numeric_value>,<numeric_value>"]
 
@@ -14715,6 +15627,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = ["1"]
 
@@ -14724,6 +15637,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -14733,6 +15647,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -14763,6 +15678,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FSWeep"
                 args = []
 
@@ -14772,6 +15688,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "AMPLitude"
                     args = ["1", "ON", "OFF"]
 
@@ -14788,6 +15705,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -14804,6 +15722,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -14827,6 +15746,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NEGative, POSitive
                 """
+                __slots__ = ()
                 _cmd = "POLarity"
                 args = ["NEGative", "POSitive"]
 
@@ -14843,6 +15763,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PSWeep"
                 args = []
 
@@ -14852,6 +15773,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "POWer"
                     args = ["1"]
 
@@ -14868,6 +15790,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -14891,6 +15814,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "REFerence"
                 args = ["1"]
 
@@ -14907,6 +15831,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -14923,6 +15848,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "VIDeo"
                 args = ["1", "ON", "OFF"]
 
@@ -14946,6 +15872,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MBEacon"
             args = []
 
@@ -14955,6 +15882,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COMid"
                 args = []
 
@@ -14964,6 +15892,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DEPTh"
                     args = ["1"]
 
@@ -14980,6 +15909,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -14996,6 +15926,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -15019,6 +15950,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MARKer"
                 args = []
 
@@ -15028,6 +15960,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DEPTh"
                     args = ["1"]
 
@@ -15044,6 +15977,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -15067,6 +16001,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -15090,6 +16025,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MODulation"
             args = []
 
@@ -15099,23 +16035,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALL"
                 args = []
 
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:MODulation:ALL:STATe
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7b63a3602aec41cd.htm#ID_318e32e54e9063210a00206a019f179a-19a855954e9063210a00206a0024546d-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7b63a3602aec41cd.htm#ID_318e32e54e9063210a00206a019f179a-19a855954e9063210a00206a0024546d-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
                 STATe = STATe()
                 """
                 `SOURce:MODulation:ALL:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7b63a3602aec41cd.htm#ID_318e32e54e9063210a00206a019f179a-19a855954e9063210a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7b63a3602aec41cd.htm#ID_318e32e54e9063210a00206a019f179a-19a855954e9063210a00206a0024546d-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -15133,6 +16071,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "OUTPut"
                 args = []
 
@@ -15142,6 +16081,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: AM, FM, OFF
                     """
+                    __slots__ = ()
                     _cmd = "SOURce"
                     args = ["AM", "FM", "OFF"]
 
@@ -15158,6 +16098,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -15181,6 +16122,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -15201,10 +16143,11 @@ class SMB100A_gen(Instrument):
         class PHASe(SCPINode, SCPIQuery, SCPISet):
             """
             `SOURce:PHASe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7dee4f9b28a5436d.htm#ID_f61f12ac56ece11f0a00206a00640933-b66d0ab556ece11f0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7dee4f9b28a5436d.htm#ID_f61f12ac56ece11f0a00206a00640933-b66d0ab556ece11f0a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "PHASe"
             args = ["1"]
 
@@ -15214,6 +16157,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ADJust"
                 args = ["1"]
 
@@ -15227,17 +16171,18 @@ class SMB100A_gen(Instrument):
             class REFerence(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PHASe:REFerence
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c795407019e4fda.htm#ID_1292e34256ece6dc0a00206a016031df-85318c6056ece6dc0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c795407019e4fda.htm#ID_1292e34256ece6dc0a00206a016031df-85318c6056ece6dc0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "REFerence"
                 args = []
 
             REFerence = REFerence()
             """
             `SOURce:PHASe:REFerence
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c795407019e4fda.htm#ID_1292e34256ece6dc0a00206a016031df-85318c6056ece6dc0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c795407019e4fda.htm#ID_1292e34256ece6dc0a00206a016031df-85318c6056ece6dc0a00206a0024546d-en-US>`_
 
             Arguments:
             """
@@ -15248,6 +16193,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -15261,7 +16207,7 @@ class SMB100A_gen(Instrument):
         PHASe = PHASe()
         """
         `SOURce:PHASe
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7dee4f9b28a5436d.htm#ID_f61f12ac56ece11f0a00206a00640933-b66d0ab556ece11f0a00206a0024546d-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7dee4f9b28a5436d.htm#ID_f61f12ac56ece11f0a00206a00640933-b66d0ab556ece11f0a00206a0024546d-en-US>`_
 
         Arguments: 1
         """
@@ -15272,6 +16218,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PM"
             args = []
 
@@ -15281,6 +16228,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: HIGH, NORMal
                 """
+                __slots__ = ()
                 _cmd = "BANDwidth"
                 args = ["HIGH", "NORMal"]
 
@@ -15297,6 +16245,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: HIGH, NORMal
                 """
+                __slots__ = ()
                 _cmd = "BWIDth"
                 args = ["HIGH", "NORMal"]
 
@@ -15313,6 +16262,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: AC, DC
                 """
+                __slots__ = ()
                 _cmd = "COUPling"
                 args = ["AC", "DC"]
 
@@ -15326,10 +16276,11 @@ class SMB100A_gen(Instrument):
             class DEViation(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PM:DEViation
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b1129cdf10fc4d18.htm#ID_aac994794dfe968f0a00206a003ca3de-036e27e84dfe968f0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b1129cdf10fc4d18.htm#ID_aac994794dfe968f0a00206a003ca3de-036e27e84dfe968f0a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DEViation"
                 args = ["1"]
 
@@ -15339,6 +16290,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -15348,6 +16300,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -15371,6 +16324,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "TRACk"
                     args = ["1", "ON", "OFF"]
 
@@ -15384,7 +16338,7 @@ class SMB100A_gen(Instrument):
             DEViation = DEViation()
             """
             `SOURce:PM:DEViation
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b1129cdf10fc4d18.htm#ID_aac994794dfe968f0a00206a003ca3de-036e27e84dfe968f0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b1129cdf10fc4d18.htm#ID_aac994794dfe968f0a00206a003ca3de-036e27e84dfe968f0a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -15395,23 +16349,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXTernal"
                 args = []
 
                 class COUPling(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:PM:EXTernal:COUPling
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/106b9eba3c704c91.htm#ID_2eca06d94dff07b70a00206a00e7db83-29ccec014dff07b70a00206a0024546d-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/106b9eba3c704c91.htm#ID_2eca06d94dff07b70a00206a00e7db83-29ccec014dff07b70a00206a0024546d-en-US>`_
 
                     Arguments: AC, DC
                     """
+                    __slots__ = ()
                     _cmd = "COUPling"
                     args = ["AC", "DC"]
 
                 COUPling = COUPling()
                 """
                 `SOURce:PM:EXTernal:COUPling
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/106b9eba3c704c91.htm#ID_2eca06d94dff07b70a00206a00e7db83-29ccec014dff07b70a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/106b9eba3c704c91.htm#ID_2eca06d94dff07b70a00206a00e7db83-29ccec014dff07b70a00206a0024546d-en-US>`_
 
                 Arguments: AC, DC
                 """
@@ -15422,6 +16378,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "IMPedance"
                     args = ["1"]
 
@@ -15445,6 +16402,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INTernal"
                 args = []
 
@@ -15454,6 +16412,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -15463,6 +16422,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ALTernate"
                         args = ["1"]
 
@@ -15472,6 +16432,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "AMPLitude"
                             args = []
 
@@ -15481,6 +16442,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "PERCent"
                                 args = ["1"]
 
@@ -15511,6 +16473,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -15520,6 +16483,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -15550,6 +16514,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: GAUSsian, NOISe, RAMP, SINusoid, SQUare, TRIangle, UNIForm
                     """
+                    __slots__ = ()
                     _cmd = "FUNCtion"
                     args = ["GAUSsian", "NOISe", "RAMP", "SINusoid", "SQUare", "TRIangle", "UNIForm"]
 
@@ -15559,6 +16524,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: GAUSsian, UNIForm
                         """
+                        __slots__ = ()
                         _cmd = "NOISe"
                         args = ["GAUSsian", "UNIForm"]
 
@@ -15575,6 +16541,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: SINE, SQUare
                         """
+                        __slots__ = ()
                         _cmd = "SHAPe"
                         args = ["SINE", "SQUare"]
 
@@ -15598,6 +16565,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SWEep"
                     args = []
 
@@ -15607,6 +16575,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: BUS, EXTernal, IMMediate, KEY
                         """
+                        __slots__ = ()
                         _cmd = "TRIGger"
                         args = ["BUS", "EXTernal", "IMMediate", "KEY"]
 
@@ -15637,6 +16606,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: AUTO, HIGH, LOW
                 """
+                __slots__ = ()
                 _cmd = "RANGe"
                 args = ["AUTO", "HIGH", "LOW"]
 
@@ -15650,17 +16620,18 @@ class SMB100A_gen(Instrument):
             class SENSitivity(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PM:SENSitivity
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5836d526cac145e7.htm#ID_27fa42664dfef8a40a00206a01c64dd3-a9c7bda04dfef8a40a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5836d526cac145e7.htm#ID_27fa42664dfef8a40a00206a01c64dd3-a9c7bda04dfef8a40a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "SENSitivity"
                 args = ["1"]
 
             SENSitivity = SENSitivity()
             """
             `SOURce:PM:SENSitivity
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5836d526cac145e7.htm#ID_27fa42664dfef8a40a00206a01c64dd3-a9c7bda04dfef8a40a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5836d526cac145e7.htm#ID_27fa42664dfef8a40a00206a01c64dd3-a9c7bda04dfef8a40a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -15668,17 +16639,18 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PM:SOURce
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5eea8bb9ea4432a.htm#ID_a38f265d4dff00540a00206a0075b5cb-63121be24dff00540a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5eea8bb9ea4432a.htm#ID_a38f265d4dff00540a00206a0075b5cb-63121be24dff00540a00206a0024546d-en-US>`_
 
                 Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXTernal", "INT1", "INT2", "INTernal", "INTernal1", "INTernal2,EXTernal", "INT1", "INTernal", "INTernal1"]
 
             SOURce = SOURce()
             """
             `SOURce:PM:SOURce
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5eea8bb9ea4432a.htm#ID_a38f265d4dff00540a00206a0075b5cb-63121be24dff00540a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5eea8bb9ea4432a.htm#ID_a38f265d4dff00540a00206a0075b5cb-63121be24dff00540a00206a0024546d-en-US>`_
 
             Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
             """
@@ -15686,17 +16658,18 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:PM:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ae557ed7d4cc4881.htm#ID_26e0edd44dff16ba0a00206a009af85a-2b5c07604dff16ba0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ae557ed7d4cc4881.htm#ID_26e0edd44dff16ba0a00206a009af85a-2b5c07604dff16ba0a00206a0024546d-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
             STATe = STATe()
             """
             `SOURce:PM:STATe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ae557ed7d4cc4881.htm#ID_26e0edd44dff16ba0a00206a009af85a-2b5c07604dff16ba0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ae557ed7d4cc4881.htm#ID_26e0edd44dff16ba0a00206a009af85a-2b5c07604dff16ba0a00206a0024546d-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -15714,6 +16687,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "POWer"
             args = []
 
@@ -15723,6 +16697,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALC"
                 args = []
 
@@ -15732,6 +16707,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "BANDwidth"
                     args = ["1"]
 
@@ -15748,6 +16724,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "BWIDth"
                     args = ["1"]
 
@@ -15764,6 +16741,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "CFACtor"
                     args = ["1"]
 
@@ -15780,6 +16758,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "LEVel"
                     args = ["1"]
 
@@ -15796,6 +16775,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PMETer"
                     args = []
 
@@ -15805,6 +16785,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "LEVel"
                         args = []
 
@@ -15814,6 +16795,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "AMPLitude"
                             args = ["1"]
 
@@ -15830,6 +16812,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "STEP"
                             args = []
 
@@ -15839,6 +16822,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "INCRement"
                                 args = ["1"]
 
@@ -15876,6 +16860,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "REFerence"
                     args = ["1"]
 
@@ -15892,6 +16877,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: <boolean>, ONCE
                     """
+                    __slots__ = ()
                     _cmd = "SEARch"
                     args = ["<boolean>", "ONCE"]
 
@@ -15901,6 +16887,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: FIXed, MODulated
                         """
+                        __slots__ = ()
                         _cmd = "REFerence"
                         args = ["FIXed", "MODulated"]
 
@@ -15917,6 +16904,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SPAN"
                         args = []
 
@@ -15926,6 +16914,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "STARt"
                             args = ["1"]
 
@@ -15942,6 +16931,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1, ON, OFF
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "ON", "OFF"]
 
@@ -15972,6 +16962,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: FAST, MEDium, SLOW
                     """
+                    __slots__ = ()
                     _cmd = "SLOPe"
                     args = ["FAST", "MEDium", "SLOW"]
 
@@ -15988,6 +16979,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: DIOD1, DIOD2, DIODe, DIODe1, DIODe2, FIXed, INTernal, PMET1, PMET2, PMETer, PMETer1, PMETer2
                     """
+                    __slots__ = ()
                     _cmd = "SOURce"
                     args = ["DIOD1", "DIOD2", "DIODe", "DIODe1", "DIODe2", "FIXed", "INTernal", "PMET1", "PMET2", "PMETer", "PMETer1", "PMETer2"]
 
@@ -15997,6 +16989,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EXTernal"
                         args = []
 
@@ -16006,6 +16999,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "COUPling"
                             args = ["1"]
 
@@ -16029,6 +17023,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: HP436a, RS_Nrvs
                         """
+                        __slots__ = ()
                         _cmd = "PMETer"
                         args = ["HP436a", "RS_Nrvs"]
 
@@ -16049,17 +17044,18 @@ class SMB100A_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:POWer:ALC:STATe
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/318c26be4c5141e7.htm#ID_42c28bb071aa81480a00206a0127eb9d-881ee75671aa81480a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/318c26be4c5141e7.htm#ID_42c28bb071aa81480a00206a0127eb9d-881ee75671aa81480a00206a012bc823-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
                 STATe = STATe()
                 """
                 `SOURce:POWer:ALC:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/318c26be4c5141e7.htm#ID_42c28bb071aa81480a00206a0127eb9d-881ee75671aa81480a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/318c26be4c5141e7.htm#ID_42c28bb071aa81480a00206a0127eb9d-881ee75671aa81480a00206a012bc823-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -16077,6 +17073,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ALTernate"
                 args = []
 
@@ -16086,6 +17083,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "AMPLitude"
                     args = ["1"]
 
@@ -16102,6 +17100,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: DELTa, MAIN
                     """
+                    __slots__ = ()
                     _cmd = "MANual"
                     args = ["DELTa", "MAIN"]
 
@@ -16118,6 +17117,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -16134,6 +17134,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TRIGger"
                     args = []
 
@@ -16143,6 +17144,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: EXTernal, INTernal, MANual
                         """
+                        __slots__ = ()
                         _cmd = "SOURce"
                         args = ["EXTernal", "INTernal", "MANual"]
 
@@ -16173,6 +17175,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ATTenuation"
                 args = ["1"]
 
@@ -16182,6 +17185,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -16191,6 +17195,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -16221,6 +17226,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "CENTer"
                 args = ["1"]
 
@@ -16230,6 +17236,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -16239,6 +17246,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -16269,6 +17277,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DISPlay"
                 args = []
 
@@ -16278,6 +17287,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "OFFSet"
                     args = ["1"]
 
@@ -16287,6 +17297,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -16317,23 +17328,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EMF"
                 args = []
 
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:POWer:EMF:STATe
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f72d48c013e4e46.htm#ID_6119d3272c6943f20a001ae750554416-95cda6a92c6941fe0a001ae76b46bcda-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f72d48c013e4e46.htm#ID_6119d3272c6943f20a001ae750554416-95cda6a92c6941fe0a001ae76b46bcda-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
                 STATe = STATe()
                 """
                 `SOURce:POWer:EMF:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f72d48c013e4e46.htm#ID_6119d3272c6943f20a001ae750554416-95cda6a92c6941fe0a001ae76b46bcda-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f72d48c013e4e46.htm#ID_6119d3272c6943f20a001ae750554416-95cda6a92c6941fe0a001ae76b46bcda-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -16351,6 +17364,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LEVel"
                 args = []
 
@@ -16360,6 +17374,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ALTernate"
                     args = ["1"]
 
@@ -16376,16 +17391,18 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "IMMediate"
                     args = []
 
                     class AMPLitude(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:POWer:LEVel:IMMediate:AMPLitude
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb5bb606cd4d4681.htm#ID_d70bf25871aa63310a00206a00bc8d87-d732685371aa63310a00206a012bc823-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb5bb606cd4d4681.htm#ID_d70bf25871aa63310a00206a00bc8d87-d732685371aa63310a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "AMPLitude"
                         args = ["1"]
 
@@ -16395,6 +17412,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "BACKup"
                             args = ["1"]
 
@@ -16411,6 +17429,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "STEP"
                             args = []
 
@@ -16420,6 +17439,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "INCRement"
                                 args = ["1"]
 
@@ -16440,7 +17460,7 @@ class SMB100A_gen(Instrument):
                     AMPLitude = AMPLitude()
                     """
                     `SOURce:POWer:LEVel:IMMediate:AMPLitude
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb5bb606cd4d4681.htm#ID_d70bf25871aa63310a00206a00bc8d87-d732685371aa63310a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb5bb606cd4d4681.htm#ID_d70bf25871aa63310a00206a00bc8d87-d732685371aa63310a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -16448,10 +17468,11 @@ class SMB100A_gen(Instrument):
                     class OFFSet(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:POWer:LEVel:IMMediate:OFFSet
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/906418e7a7b84f3c.htm#ID_c493de1471aa6af10a00206a00d83907-a6ae5f2a71aa6af10a00206a012bc823-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/906418e7a7b84f3c.htm#ID_c493de1471aa6af10a00206a00d83907-a6ae5f2a71aa6af10a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "OFFSet"
                         args = ["1"]
 
@@ -16461,6 +17482,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "LINear"
                             args = ["1"]
 
@@ -16477,6 +17499,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "LOGarithmic"
                             args = ["1"]
 
@@ -16490,7 +17513,7 @@ class SMB100A_gen(Instrument):
                     OFFSet = OFFSet()
                     """
                     `SOURce:POWer:LEVel:IMMediate:OFFSet
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/906418e7a7b84f3c.htm#ID_c493de1471aa6af10a00206a00d83907-a6ae5f2a71aa6af10a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/906418e7a7b84f3c.htm#ID_c493de1471aa6af10a00206a00d83907-a6ae5f2a71aa6af10a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -16515,23 +17538,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LIMit"
                 args = []
 
                 class AMPLitude(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:POWer:LIMit:AMPLitude
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/de410925c5dd477b.htm#ID_f38a02d771aa72930a00206a017c0246-a1f79d3e71aa72930a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/de410925c5dd477b.htm#ID_f38a02d771aa72930a00206a017c0246-a1f79d3e71aa72930a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "AMPLitude"
                     args = ["1"]
 
                 AMPLitude = AMPLitude()
                 """
                 `SOURce:POWer:LIMit:AMPLitude
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/de410925c5dd477b.htm#ID_f38a02d771aa72930a00206a017c0246-a1f79d3e71aa72930a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/de410925c5dd477b.htm#ID_f38a02d771aa72930a00206a017c0246-a1f79d3e71aa72930a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -16546,17 +17571,18 @@ class SMB100A_gen(Instrument):
             class MANual(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:POWer:MANual
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b16e4a79adfa47ad.htm#ID_786f132571aaa75e0a00206a003b0637-68a04f6e71aaa75e0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b16e4a79adfa47ad.htm#ID_786f132571aaa75e0a00206a003b0637-68a04f6e71aaa75e0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "MANual"
                 args = ["1"]
 
             MANual = MANual()
             """
             `SOURce:POWer:MANual
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b16e4a79adfa47ad.htm#ID_786f132571aaa75e0a00206a003b0637-68a04f6e71aaa75e0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b16e4a79adfa47ad.htm#ID_786f132571aaa75e0a00206a003b0637-68a04f6e71aaa75e0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -16567,6 +17593,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "OFFSet"
                 args = ["1"]
 
@@ -16576,6 +17603,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -16599,6 +17627,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "PROTection"
                 args = ["1", "ON", "OFF"]
 
@@ -16608,6 +17637,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -16631,6 +17661,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "RANGe"
                 args = ["1"]
 
@@ -16647,6 +17678,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "REFerence"
                 args = ["1"]
 
@@ -16656,6 +17688,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -16679,6 +17712,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <boolean>, ONCE
                 """
+                __slots__ = ()
                 _cmd = "SEARch"
                 args = ["<boolean>", "ONCE"]
 
@@ -16695,6 +17729,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "SLOPe"
                 args = ["1"]
 
@@ -16704,6 +17739,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PIVot"
                     args = ["1"]
 
@@ -16720,6 +17756,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -16736,6 +17773,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -16745,6 +17783,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -16775,6 +17814,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SPAN"
                 args = []
 
@@ -16784,6 +17824,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -16793,6 +17834,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -16820,10 +17862,11 @@ class SMB100A_gen(Instrument):
             class STARt(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:POWer:STARt
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/75df17de88344e45.htm#ID_bfd022ec71aaaeff0a00206a01dfb254-b40f922e71aaaeff0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/75df17de88344e45.htm#ID_bfd022ec71aaaeff0a00206a01dfb254-b40f922e71aaaeff0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1"]
 
@@ -16833,6 +17876,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -16842,6 +17886,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -16862,7 +17907,7 @@ class SMB100A_gen(Instrument):
             STARt = STARt()
             """
             `SOURce:POWer:STARt
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/75df17de88344e45.htm#ID_bfd022ec71aaaeff0a00206a01dfb254-b40f922e71aaaeff0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/75df17de88344e45.htm#ID_bfd022ec71aaaeff0a00206a01dfb254-b40f922e71aaaeff0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -16873,6 +17918,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -16889,16 +17935,18 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STEP"
                 args = []
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:POWer:STEP:INCRement
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3a5b9c83f91a4347.htm#ID_78f8a91f71aa79c60a00206a01d797f3-dccd25e471aa79c60a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3a5b9c83f91a4347.htm#ID_78f8a91f71aa79c60a00206a01d797f3-dccd25e471aa79c60a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "INCRement"
                     args = ["1"]
 
@@ -16908,6 +17956,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "LINear"
                         args = ["1"]
 
@@ -16924,6 +17973,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
@@ -16937,7 +17987,7 @@ class SMB100A_gen(Instrument):
                 INCRement = INCRement()
                 """
                 `SOURce:POWer:STEP:INCRement
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3a5b9c83f91a4347.htm#ID_78f8a91f71aa79c60a00206a01d797f3-dccd25e471aa79c60a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3a5b9c83f91a4347.htm#ID_78f8a91f71aa79c60a00206a01d797f3-dccd25e471aa79c60a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -16952,10 +18002,11 @@ class SMB100A_gen(Instrument):
             class STOP(SCPINode):
                 """
                 `SOURce:POWer:STOP
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3e7c17ad63134242.htm#ID_0b3f20dd71aab6620a00206a0036ddee-9ea7ec1a71aab6620a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3e7c17ad63134242.htm#ID_0b3f20dd71aab6620a00206a0036ddee-9ea7ec1a71aab6620a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STOP"
                 args = []
 
@@ -16965,6 +18016,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -16974,6 +18026,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -16994,7 +18047,7 @@ class SMB100A_gen(Instrument):
             STOP = STOP()
             """
             `SOURce:POWer:STOP
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3e7c17ad63134242.htm#ID_0b3f20dd71aab6620a00206a0036ddee-9ea7ec1a71aab6620a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3e7c17ad63134242.htm#ID_0b3f20dd71aab6620a00206a0036ddee-9ea7ec1a71aab6620a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -17005,6 +18058,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "USER"
                 args = []
 
@@ -17014,6 +18068,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1", "ON", "OFF"]
 
@@ -17030,6 +18085,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "MAXimum"
                     args = ["1"]
 
@@ -17060,6 +18116,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PULM"
             args = []
 
@@ -17069,6 +18126,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXTernal"
                 args = []
 
@@ -17078,6 +18136,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DELay"
                     args = ["1"]
 
@@ -17087,6 +18146,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -17096,6 +18156,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -17126,6 +18187,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "IMPedance"
                     args = ["1"]
 
@@ -17142,6 +18204,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: INVerted, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "POLarity"
                     args = ["INVerted", "NORMal"]
 
@@ -17165,6 +18228,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INTernal"
                 args = []
 
@@ -17174,6 +18238,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DELay"
                     args = ["1"]
 
@@ -17183,6 +18248,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -17192,6 +18258,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -17222,6 +18289,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -17231,6 +18299,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -17240,6 +18309,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -17270,6 +18340,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "FUNCtion"
                     args = []
 
@@ -17279,6 +18350,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: PULSe, SQUare
                         """
+                        __slots__ = ()
                         _cmd = "SHAPe"
                         args = ["PULSe", "SQUare"]
 
@@ -17302,6 +18374,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PERiod"
                     args = ["1"]
 
@@ -17311,6 +18384,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -17320,6 +18394,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -17350,6 +18425,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PWIDth"
                     args = ["1"]
 
@@ -17359,6 +18435,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -17368,6 +18445,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -17398,6 +18476,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TRIGger"
                     args = []
 
@@ -17407,6 +18486,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: EXTernal, INTernal
                         """
+                        __slots__ = ()
                         _cmd = "SOURce"
                         args = ["EXTernal", "INTernal"]
 
@@ -17430,6 +18510,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "VIDeo"
                     args = []
 
@@ -17439,6 +18520,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: INVerted, NORMal
                         """
+                        __slots__ = ()
                         _cmd = "POLarity"
                         args = ["INVerted", "NORMal"]
 
@@ -17462,6 +18544,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "WIDTh"
                     args = ["1"]
 
@@ -17471,6 +18554,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -17480,6 +18564,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -17514,17 +18599,18 @@ class SMB100A_gen(Instrument):
             class PERiod(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PULM:PERiod
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f8fc39f1ea9c40a3.htm#ID_ebe92a974e3555850a00206a0199777d-bd4d581f4e3555850a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f8fc39f1ea9c40a3.htm#ID_ebe92a974e3555850a00206a0199777d-bd4d581f4e3555850a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PERiod"
                 args = ["1"]
 
             PERiod = PERiod()
             """
             `SOURce:PULM:PERiod
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f8fc39f1ea9c40a3.htm#ID_ebe92a974e3555850a00206a0199777d-bd4d581f4e3555850a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f8fc39f1ea9c40a3.htm#ID_ebe92a974e3555850a00206a0199777d-bd4d581f4e3555850a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -17532,17 +18618,18 @@ class SMB100A_gen(Instrument):
             class POLarity(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PULM:POLarity
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cd47c0071bb149e5.htm#ID_3497059d4e353d690a00206a01ed3f2d-d8fa28904e353d690a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cd47c0071bb149e5.htm#ID_3497059d4e353d690a00206a01ed3f2d-d8fa28904e353d690a00206a0024546d-en-US>`_
 
                 Arguments: INVerted, NORMal
                 """
+                __slots__ = ()
                 _cmd = "POLarity"
                 args = ["INVerted", "NORMal"]
 
             POLarity = POLarity()
             """
             `SOURce:PULM:POLarity
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cd47c0071bb149e5.htm#ID_3497059d4e353d690a00206a01ed3f2d-d8fa28904e353d690a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cd47c0071bb149e5.htm#ID_3497059d4e353d690a00206a01ed3f2d-d8fa28904e353d690a00206a0024546d-en-US>`_
 
             Arguments: INVerted, NORMal
             """
@@ -17550,10 +18637,11 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PULM:SOURce
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d01a62da234944cd.htm#ID_c1f0481e4e3545970a00206a00087ee2-5edf7c2c4e3545970a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d01a62da234944cd.htm#ID_c1f0481e4e3545970a00206a00087ee2-5edf7c2c4e3545970a00206a0024546d-en-US>`_
 
                 Arguments: EXT1, EXT2, EXTernal, EXTernal1, EXTernal2, INTernal
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXT1", "EXT2", "EXTernal", "EXTernal1", "EXTernal2", "INTernal"]
 
@@ -17563,6 +18651,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: ADOublet, DOUBlet, FRUN, GATed, SQUare, TRIGgered
                     """
+                    __slots__ = ()
                     _cmd = "INTernal"
                     args = ["ADOublet", "DOUBlet", "FRUN", "GATed", "SQUare", "TRIGgered"]
 
@@ -17576,7 +18665,7 @@ class SMB100A_gen(Instrument):
             SOURce = SOURce()
             """
             `SOURce:PULM:SOURce
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d01a62da234944cd.htm#ID_c1f0481e4e3545970a00206a00087ee2-5edf7c2c4e3545970a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d01a62da234944cd.htm#ID_c1f0481e4e3545970a00206a00087ee2-5edf7c2c4e3545970a00206a0024546d-en-US>`_
 
             Arguments: EXT1, EXT2, EXTernal, EXTernal1, EXTernal2, INTernal
             """
@@ -17584,17 +18673,18 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:PULM:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08c1f6939a514b85.htm#ID_ee977e2b4e352d8b0a00206a018c0222-5a28bd874e352d8b0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08c1f6939a514b85.htm#ID_ee977e2b4e352d8b0a00206a018c0222-5a28bd874e352d8b0a00206a0024546d-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
             STATe = STATe()
             """
             `SOURce:PULM:STATe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08c1f6939a514b85.htm#ID_ee977e2b4e352d8b0a00206a018c0222-5a28bd874e352d8b0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08c1f6939a514b85.htm#ID_ee977e2b4e352d8b0a00206a018c0222-5a28bd874e352d8b0a00206a0024546d-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -17602,17 +18692,18 @@ class SMB100A_gen(Instrument):
             class WIDTh(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PULM:WIDTh
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/737870cd065d45b3.htm#ID_b29b3cb94e355edb0a00206a016f086a-cfb305434e355edb0a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/737870cd065d45b3.htm#ID_b29b3cb94e355edb0a00206a016f086a-cfb305434e355edb0a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "WIDTh"
                 args = ["1"]
 
             WIDTh = WIDTh()
             """
             `SOURce:PULM:WIDTh
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/737870cd065d45b3.htm#ID_b29b3cb94e355edb0a00206a016f086a-cfb305434e355edb0a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/737870cd065d45b3.htm#ID_b29b3cb94e355edb0a00206a016f086a-cfb305434e355edb0a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -17630,6 +18721,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PULSe"
             args = []
 
@@ -17639,6 +18731,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DELay"
                 args = ["1"]
 
@@ -17648,6 +18741,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -17657,6 +18751,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -17687,6 +18782,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DOUBle"
                 args = []
 
@@ -17696,6 +18792,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DELay"
                     args = ["1"]
 
@@ -17712,6 +18809,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -17735,6 +18833,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INTernal"
                 args = []
 
@@ -17744,6 +18843,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -17753,6 +18853,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "STEP"
                         args = []
 
@@ -17762,6 +18863,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "INCRement"
                             args = ["1"]
 
@@ -17799,6 +18901,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PERiod"
                 args = ["1"]
 
@@ -17808,6 +18911,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -17817,6 +18921,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -17847,6 +18952,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: EXTernal, INTernal, SCALar
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["EXTernal", "INTernal", "SCALar"]
 
@@ -17863,6 +18969,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -17879,6 +18986,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRANsition"
                 args = []
 
@@ -17888,6 +18996,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: FAST, MEDium, SLOW
                     """
+                    __slots__ = ()
                     _cmd = "LEADing"
                     args = ["FAST", "MEDium", "SLOW"]
 
@@ -17904,6 +19013,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -17920,6 +19030,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: FAST, MEDium, SLOW
                     """
+                    __slots__ = ()
                     _cmd = "TRAiling"
                     args = ["FAST", "MEDium", "SLOW"]
 
@@ -17943,6 +19054,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "WIDTh"
                 args = ["1"]
 
@@ -17952,6 +19064,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -17961,6 +19074,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -17998,6 +19112,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "RADio"
             args = []
 
@@ -18007,6 +19122,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ARB"
                 args = []
 
@@ -18016,6 +19132,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: <string>,IJQ, IORQ,<numeric_value>,<numeric_value>
                     """
+                    __slots__ = ()
                     _cmd = "CLIPping"
                     args = ["<string>,IJQ", "IORQ,<numeric_value>,<numeric_value>"]
 
@@ -18032,6 +19149,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CLOCk"
                     args = []
 
@@ -18041,6 +19159,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "REFerence"
                         args = []
 
@@ -18050,6 +19169,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "EXTernal"
                             args = []
 
@@ -18059,6 +19179,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "FREQuency"
                                 args = ["1"]
 
@@ -18082,6 +19203,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: EXTernal, INTernal
                             """
+                            __slots__ = ()
                             _cmd = "SOURce"
                             args = ["EXTernal", "INTernal"]
 
@@ -18105,6 +19227,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "SRATe"
                         args = ["1"]
 
@@ -18128,6 +19251,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DACS"
                     args = []
 
@@ -18137,6 +19261,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ALIGn"
                         args = []
 
@@ -18160,6 +19285,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "GENerate"
                     args = []
 
@@ -18176,6 +19302,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HEADer"
                     args = []
 
@@ -18185,6 +19312,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CLEar"
                         args = []
 
@@ -18208,6 +19336,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "IQ"
                     args = []
 
@@ -18217,6 +19346,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EXTernal"
                         args = []
 
@@ -18226,6 +19356,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "FILTer"
                             args = ["1"]
 
@@ -18249,6 +19380,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "MODulation"
                         args = []
 
@@ -18258,6 +19390,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "ATTen"
                             args = ["1"]
 
@@ -18274,6 +19407,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "FILTer"
                             args = ["1"]
 
@@ -18304,6 +19438,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MARKer"
                     args = []
 
@@ -18313,6 +19448,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: <string>,<numeric_value>,<numeric_value>,<numeric_value>
                         """
+                        __slots__ = ()
                         _cmd = "CLEar"
                         args = ["<string>,<numeric_value>,<numeric_value>,<numeric_value>"]
 
@@ -18329,6 +19465,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: <string>,<numeric_value>
                         """
+                        __slots__ = ()
                         _cmd = "ROTate"
                         args = ["<string>,<numeric_value>"]
 
@@ -18352,6 +19489,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MDEStination"
                     args = []
 
@@ -18361,6 +19499,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: M1, M2, M3, M4, NONE
                         """
+                        __slots__ = ()
                         _cmd = "AAMPlitude"
                         args = ["M1", "M2", "M3", "M4", "NONE"]
 
@@ -18377,6 +19516,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: M1, M2, M3, M4, NONE
                         """
+                        __slots__ = ()
                         _cmd = "ALCHold"
                         args = ["M1", "M2", "M3", "M4", "NONE"]
 
@@ -18393,6 +19533,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: M1, M2, M3, M4, NONE
                         """
+                        __slots__ = ()
                         _cmd = "PULSe"
                         args = ["M1", "M2", "M3", "M4", "NONE"]
 
@@ -18416,6 +19557,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MPOLarity"
                     args = []
 
@@ -18425,6 +19567,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: NEGative, POSitive
                         """
+                        __slots__ = ()
                         _cmd = "MARKer"
                         args = ["NEGative", "POSitive"]
 
@@ -18448,6 +19591,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "NOISe"
                     args = []
 
@@ -18457,6 +19601,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "BFACtor"
                         args = ["1"]
 
@@ -18473,6 +19618,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "CBWidth"
                         args = ["1"]
 
@@ -18489,6 +19635,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -18512,6 +19659,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "REFerence"
                     args = []
 
@@ -18521,6 +19669,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EXTernal"
                         args = []
 
@@ -18530,6 +19679,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "FREQuency"
                             args = ["1"]
 
@@ -18553,6 +19703,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: EXTernal, INTernal
                         """
+                        __slots__ = ()
                         _cmd = "SOURce"
                         args = ["EXTernal", "INTernal"]
 
@@ -18576,6 +19727,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: <boolean>, IMMediate
                     """
+                    __slots__ = ()
                     _cmd = "RETRigger"
                     args = ["<boolean>", "IMMediate"]
 
@@ -18592,6 +19744,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "RFILter"
                     args = ["1"]
 
@@ -18608,6 +19761,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "RSCaling"
                     args = ["1"]
 
@@ -18624,6 +19778,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: <string>,<numeric_value>
                     """
+                    __slots__ = ()
                     _cmd = "SCALing"
                     args = ["<string>,<numeric_value>"]
 
@@ -18640,6 +19795,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SCLock"
                     args = []
 
@@ -18656,6 +19812,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SEQuence"
                     args = ["'string'"]
 
@@ -18672,6 +19829,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -18688,6 +19846,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TRIGger"
                     args = []
 
@@ -18697,6 +19856,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: BUS, EXTernal, KEY
                         """
+                        __slots__ = ()
                         _cmd = "SOURce"
                         args = ["BUS", "EXTernal", "KEY"]
 
@@ -18706,6 +19866,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "EXTernal"
                             args = []
 
@@ -18715,6 +19876,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments:
                                 """
+                                __slots__ = ()
                                 _cmd = "DELay"
                                 args = []
 
@@ -18724,6 +19886,7 @@ class SMB100A_gen(Instrument):
 
                                     Arguments: 1
                                     """
+                                    __slots__ = ()
                                     _cmd = "SAMPles"
                                     args = ["1"]
 
@@ -18740,6 +19903,7 @@ class SMB100A_gen(Instrument):
 
                                     Arguments: 1, ON, OFF
                                     """
+                                    __slots__ = ()
                                     _cmd = "STATe"
                                     args = ["1", "ON", "OFF"]
 
@@ -18763,6 +19927,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: NEGative, POSitive
                                 """
+                                __slots__ = ()
                                 _cmd = "SLOPe"
                                 args = ["NEGative", "POSitive"]
 
@@ -18779,6 +19944,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: EPT1, EPT2, EPTRigger1, EPTRigger2
                                 """
+                                __slots__ = ()
                                 _cmd = "SOURce"
                                 args = ["EPT1", "EPT2", "EPTRigger1", "EPTRigger2"]
 
@@ -18809,6 +19975,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "TYPE"
                         args = []
 
@@ -18818,6 +19985,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "GATE"
                             args = []
 
@@ -18827,6 +19995,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: HIGH, LOW
                                 """
+                                __slots__ = ()
                                 _cmd = "ACTive"
                                 args = ["HIGH", "LOW"]
 
@@ -18864,6 +20033,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "VCO"
                     args = []
 
@@ -18873,6 +20043,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: EXTernal, INTernal
                         """
+                        __slots__ = ()
                         _cmd = "CLOCk"
                         args = ["EXTernal", "INTernal"]
 
@@ -18896,6 +20067,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "WAVeform"
                     args = ["'string'"]
 
@@ -18905,6 +20077,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "NHEaders"
                         args = ["'string'"]
 
@@ -18935,6 +20108,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AWGN"
                 args = []
 
@@ -18944,6 +20118,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ARB"
                     args = []
 
@@ -18953,6 +20128,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "BWIDth"
                         args = ["1"]
 
@@ -18969,6 +20145,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "HEADer"
                         args = []
 
@@ -18978,6 +20155,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "CLEar"
                             args = []
 
@@ -19001,6 +20179,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "IQ"
                         args = []
 
@@ -19010,6 +20189,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "EXTernal"
                             args = []
 
@@ -19019,6 +20199,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: <numeric_value>, THRough
                                 """
+                                __slots__ = ()
                                 _cmd = "FILTer"
                                 args = ["<numeric_value>", "THRough"]
 
@@ -19042,6 +20223,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "MODulation"
                             args = []
 
@@ -19051,6 +20233,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "ATTenuation"
                                 args = ["1"]
 
@@ -19067,6 +20250,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: <numeric_value>, THRough
                                 """
+                                __slots__ = ()
                                 _cmd = "FILTer"
                                 args = ["<numeric_value>", "THRough"]
 
@@ -19097,6 +20281,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "LENGth"
                         args = []
 
@@ -19113,6 +20298,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "MDEStination"
                         args = []
 
@@ -19122,6 +20308,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: M1, M2, M3, M4, NONE
                             """
+                            __slots__ = ()
                             _cmd = "AAMPlitude"
                             args = ["M1", "M2", "M3", "M4", "NONE"]
 
@@ -19138,6 +20325,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: M1, M2, M3, M4, NONE
                             """
+                            __slots__ = ()
                             _cmd = "ALCHold"
                             args = ["M1", "M2", "M3", "M4", "NONE"]
 
@@ -19154,6 +20342,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: M1, M2, M3, M4, NONE
                             """
+                            __slots__ = ()
                             _cmd = "PULSe"
                             args = ["M1", "M2", "M3", "M4", "NONE"]
 
@@ -19177,6 +20366,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "MPOLartity"
                         args = []
 
@@ -19186,6 +20376,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: NEGative, POSitive
                             """
+                            __slots__ = ()
                             _cmd = "MARKer"
                             args = ["NEGative", "POSitive"]
 
@@ -19209,6 +20400,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "REFerence"
                         args = []
 
@@ -19218,6 +20410,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "EXTernal"
                             args = []
 
@@ -19227,6 +20420,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "FREQuency"
                                 args = ["1"]
 
@@ -19250,6 +20444,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: EXTernal, INTernal
                             """
+                            __slots__ = ()
                             _cmd = "SOURce"
                             args = ["EXTernal", "INTernal"]
 
@@ -19273,6 +20468,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SCLock"
                         args = []
 
@@ -19289,6 +20485,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -19312,6 +20509,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RT"
                     args = []
 
@@ -19321,6 +20519,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "BWIDth"
                         args = ["1"]
 
@@ -19337,6 +20536,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "IQ"
                         args = []
 
@@ -19346,6 +20546,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 1
                             """
+                            __slots__ = ()
                             _cmd = "ATTenuation"
                             args = ["1"]
 
@@ -19369,6 +20570,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -19399,6 +20601,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MTONe"
                 args = []
 
@@ -19408,6 +20611,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ARB"
                     args = []
 
@@ -19417,6 +20621,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "REFerence"
                         args = []
 
@@ -19426,6 +20631,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments:
                             """
+                            __slots__ = ()
                             _cmd = "EXTernal"
                             args = []
 
@@ -19435,6 +20641,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "FREQuency"
                                 args = ["1"]
 
@@ -19458,6 +20665,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: EXTernal, INTernal
                             """
+                            __slots__ = ()
                             _cmd = "SOURce"
                             args = ["EXTernal", "INTernal"]
 
@@ -19481,6 +20689,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "SCLock"
                         args = []
 
@@ -19497,6 +20706,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 'string'
                         """
+                        __slots__ = ()
                         _cmd = "SETup"
                         args = ["'string'"]
 
@@ -19506,6 +20716,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: 'string'
                             """
+                            __slots__ = ()
                             _cmd = "STORe"
                             args = ["'string'"]
 
@@ -19522,6 +20733,7 @@ class SMB100A_gen(Instrument):
 
                             Arguments: <numeric_value>,<numeric_value>,FIXed, RANDom,<boolean>
                             """
+                            __slots__ = ()
                             _cmd = "TABLe"
                             args = ["<numeric_value>,<numeric_value>,FIXed", "RANDom,<boolean>"]
 
@@ -19531,6 +20743,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "FSPacing"
                                 args = ["1"]
 
@@ -19547,6 +20760,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments: 1
                                 """
+                                __slots__ = ()
                                 _cmd = "NTONes"
                                 args = ["1"]
 
@@ -19563,6 +20777,7 @@ class SMB100A_gen(Instrument):
 
                                 Arguments:
                                 """
+                                __slots__ = ()
                                 _cmd = "PHASe"
                                 args = []
 
@@ -19572,6 +20787,7 @@ class SMB100A_gen(Instrument):
 
                                     Arguments: FIXed, RANDom
                                     """
+                                    __slots__ = ()
                                     _cmd = "INITialize"
                                     args = ["FIXed", "RANDom"]
 
@@ -19609,6 +20825,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
@@ -19646,6 +20863,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ROSCillator"
             args = []
 
@@ -19655,23 +20873,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXTernal"
                 args = []
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:ROSCillator:EXTernal:FREQuency
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17d3920a3880443f.htm#ID_4f9594624e4ad9290a00206a017105ad-77092b4a4e4acb8d0a00206a00a0c7ed-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17d3920a3880443f.htm#ID_4f9594624e4ad9290a00206a017105ad-77092b4a4e4acb8d0a00206a00a0c7ed-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
                 FREQuency = FREQuency()
                 """
                 `SOURce:ROSCillator:EXTernal:FREQuency
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17d3920a3880443f.htm#ID_4f9594624e4ad9290a00206a017105ad-77092b4a4e4acb8d0a00206a00a0c7ed-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17d3920a3880443f.htm#ID_4f9594624e4ad9290a00206a017105ad-77092b4a4e4acb8d0a00206a00a0c7ed-en-US>`_
 
                 Arguments: 1
                 """
@@ -19689,6 +20909,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = []
 
@@ -19698,6 +20919,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "EXTernal"
                     args = ["1"]
 
@@ -19721,6 +20943,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "INTernal"
                 args = []
 
@@ -19730,23 +20953,25 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ADJust"
                     args = []
 
                     class STATe(SCPINode, SCPIBool):
                         """
                         `SOURce:ROSCillator:INTernal:ADJust:STATe
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b90515af7a4f4c94.htm#ID_d64368ec5700fce10a00206a014cb621-3792892e5700fce10a00206a0024546d-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b90515af7a4f4c94.htm#ID_d64368ec5700fce10a00206a014cb621-3792892e5700fce10a00206a0024546d-en-US>`_
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
                     STATe = STATe()
                     """
                     `SOURce:ROSCillator:INTernal:ADJust:STATe
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b90515af7a4f4c94.htm#ID_d64368ec5700fce10a00206a014cb621-3792892e5700fce10a00206a0024546d-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b90515af7a4f4c94.htm#ID_d64368ec5700fce10a00206a014cb621-3792892e5700fce10a00206a0024546d-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
@@ -19754,17 +20979,18 @@ class SMB100A_gen(Instrument):
                     class VALue(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:ROSCillator:INTernal:ADJust:VALue
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77691a4f94ac4ffc.htm#ID_a0023e065701029d0a00206a00d2b42c-b2019cd95701029d0a00206a0024546d-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77691a4f94ac4ffc.htm#ID_a0023e065701029d0a00206a00d2b42c-b2019cd95701029d0a00206a0024546d-en-US>`_
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "VALue"
                         args = ["1"]
 
                     VALue = VALue()
                     """
                     `SOURce:ROSCillator:INTernal:ADJust:VALue
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77691a4f94ac4ffc.htm#ID_a0023e065701029d0a00206a00d2b42c-b2019cd95701029d0a00206a0024546d-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77691a4f94ac4ffc.htm#ID_a0023e065701029d0a00206a00d2b42c-b2019cd95701029d0a00206a0024546d-en-US>`_
 
                     Arguments: 1
                     """
@@ -19782,6 +21008,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: NARRow, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "RLOop"
                     args = ["NARRow", "NORMal"]
 
@@ -19802,17 +21029,18 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:ROSCillator:SOURce
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7e935bcba7104491.htm#ID_f861c84a5700f7140a00206a01a37e10-f799abd25700f7140a00206a0024546d-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7e935bcba7104491.htm#ID_f861c84a5700f7140a00206a01a37e10-f799abd25700f7140a00206a0024546d-en-US>`_
 
                 Arguments: <numeric_value>,EXTernal
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["<numeric_value>,EXTernal"]
 
             SOURce = SOURce()
             """
             `SOURce:ROSCillator:SOURce
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7e935bcba7104491.htm#ID_f861c84a5700f7140a00206a01a37e10-f799abd25700f7140a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7e935bcba7104491.htm#ID_f861c84a5700f7140a00206a01a37e10-f799abd25700f7140a00206a0024546d-en-US>`_
 
             Arguments: <numeric_value>,EXTernal
             """
@@ -19830,6 +21058,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "STEReo"
             args = []
 
@@ -19839,23 +21068,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ARI"
                 args = []
 
                 class DEViation(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:ARI:DEViation
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/282a6e62f9164949.htm#ID_67dca7c4dc5bae370a00206a01e854e0-3da4a2e5dc5ba6c50a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/282a6e62f9164949.htm#ID_67dca7c4dc5bae370a00206a01e854e0-3da4a2e5dc5ba6c50a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DEViation"
                     args = ["1"]
 
                 DEViation = DEViation()
                 """
                 `SOURce:STEReo:ARI:DEViation
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/282a6e62f9164949.htm#ID_67dca7c4dc5bae370a00206a01e854e0-3da4a2e5dc5ba6c50a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/282a6e62f9164949.htm#ID_67dca7c4dc5bae370a00206a01e854e0-3da4a2e5dc5ba6c50a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -19863,17 +21094,18 @@ class SMB100A_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:STEReo:ARI:STATe
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/998508dfe46e41f8.htm#ID_b2a4f8bedc5bbe640a00206a0027a4ab-9631aac2dc5bb8970a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/998508dfe46e41f8.htm#ID_b2a4f8bedc5bbe640a00206a0027a4ab-9631aac2dc5bb8970a00206a01e40e15-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
                 STATe = STATe()
                 """
                 `SOURce:STEReo:ARI:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/998508dfe46e41f8.htm#ID_b2a4f8bedc5bbe640a00206a0027a4ab-9631aac2dc5bb8970a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/998508dfe46e41f8.htm#ID_b2a4f8bedc5bbe640a00206a0027a4ab-9631aac2dc5bb8970a00206a01e40e15-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -19881,27 +21113,29 @@ class SMB100A_gen(Instrument):
                 class TYPE(SCPINode):
                     """
                     `SOURce:STEReo:ARI:TYPE
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f0c571ed0204179.htm#ID_37f62275dc5bb6840a00206a00c7669c-3f459759dc5bb0a80a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f0c571ed0204179.htm#ID_37f62275dc5bb6840a00206a00c7669c-3f459759dc5bb0a80a00206a01e40e15-en-US>`_
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TYPE"
                     args = []
 
                     class STATe(SCPINode, SCPIBool):
                         """
                         `SOURce:STEReo:ARI:TYPE:STATe
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/756911e513c34c67.htm#ID_c14f788bdc5c68bd0a00206a01bbc148-6c884fb2dc5c61d70a00206a01e40e15-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/756911e513c34c67.htm#ID_c14f788bdc5c68bd0a00206a01bbc148-6c884fb2dc5c61d70a00206a01e40e15-en-US>`_
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
                     STATe = STATe()
                     """
                     `SOURce:STEReo:ARI:TYPE:STATe
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/756911e513c34c67.htm#ID_c14f788bdc5c68bd0a00206a01bbc148-6c884fb2dc5c61d70a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/756911e513c34c67.htm#ID_c14f788bdc5c68bd0a00206a01bbc148-6c884fb2dc5c61d70a00206a01e40e15-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
@@ -19909,7 +21143,7 @@ class SMB100A_gen(Instrument):
                 TYPE = TYPE()
                 """
                 `SOURce:STEReo:ARI:TYPE
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f0c571ed0204179.htm#ID_37f62275dc5bb6840a00206a00c7669c-3f459759dc5bb0a80a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f0c571ed0204179.htm#ID_37f62275dc5bb6840a00206a00c7669c-3f459759dc5bb0a80a00206a01e40e15-en-US>`_
 
                 Arguments:
                 """
@@ -19927,23 +21161,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "AUDio"
                 args = []
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:AUDio:FREQuency
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b27b0233d15c4e70.htm#ID_7cfbf44adc5bdd070a00206a00bdbc74-df188684dc5bd76a0a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b27b0233d15c4e70.htm#ID_7cfbf44adc5bdd070a00206a00bdbc74-df188684dc5bd76a0a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
                 FREQuency = FREQuency()
                 """
                 `SOURce:STEReo:AUDio:FREQuency
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b27b0233d15c4e70.htm#ID_7cfbf44adc5bdd070a00206a00bdbc74-df188684dc5bd76a0a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b27b0233d15c4e70.htm#ID_7cfbf44adc5bdd070a00206a00bdbc74-df188684dc5bd76a0a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -19951,27 +21187,29 @@ class SMB100A_gen(Instrument):
                 class PREemphasis(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:AUDio:PREemphasis
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/652eea05e2f24016.htm#ID_5566f910dc5c399e0a00206a00781b8b-d08a4926dc5c33c20a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/652eea05e2f24016.htm#ID_5566f910dc5c399e0a00206a00781b8b-d08a4926dc5c33c20a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PREemphasis"
                     args = ["1"]
 
                     class STATe(SCPINode, SCPIBool):
                         """
                         `SOURce:STEReo:AUDio:PREemphasis:STATe
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cc35ff90b52c4122.htm#ID_de10a50cdc5c02ee0a00206a0029bde5-ece51530dc5bfd510a00206a01e40e15-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cc35ff90b52c4122.htm#ID_de10a50cdc5c02ee0a00206a0029bde5-ece51530dc5bfd510a00206a01e40e15-en-US>`_
 
                         Arguments: 1, ON, OFF
                         """
+                        __slots__ = ()
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
                     STATe = STATe()
                     """
                     `SOURce:STEReo:AUDio:PREemphasis:STATe
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cc35ff90b52c4122.htm#ID_de10a50cdc5c02ee0a00206a0029bde5-ece51530dc5bfd510a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cc35ff90b52c4122.htm#ID_de10a50cdc5c02ee0a00206a0029bde5-ece51530dc5bfd510a00206a01e40e15-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
@@ -19979,7 +21217,7 @@ class SMB100A_gen(Instrument):
                 PREemphasis = PREemphasis()
                 """
                 `SOURce:STEReo:AUDio:PREemphasis
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/652eea05e2f24016.htm#ID_5566f910dc5c399e0a00206a00781b8b-d08a4926dc5c33c20a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/652eea05e2f24016.htm#ID_5566f910dc5c399e0a00206a00781b8b-d08a4926dc5c33c20a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -19994,17 +21232,18 @@ class SMB100A_gen(Instrument):
             class DEViation(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:STEReo:DEViation
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77bf3680cacd45eb.htm#ID_cc254567dc5bcdd50a00206a00015f03-191cccafdc5bc8470a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77bf3680cacd45eb.htm#ID_cc254567dc5bcdd50a00206a00015f03-191cccafdc5bc8470a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DEViation"
                 args = ["1"]
 
             DEViation = DEViation()
             """
             `SOURce:STEReo:DEViation
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77bf3680cacd45eb.htm#ID_cc254567dc5bcdd50a00206a00015f03-191cccafdc5bc8470a00206a01e40e15-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77bf3680cacd45eb.htm#ID_cc254567dc5bcdd50a00206a00015f03-191cccafdc5bc8470a00206a01e40e15-en-US>`_
 
             Arguments: 1
             """
@@ -20012,17 +21251,18 @@ class SMB100A_gen(Instrument):
             class DIRect(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:STEReo:DIRect
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8b97704e30ca4cf8.htm#ID_6bdc62a3dc5c50530a00206a007b4a30-09b6e1c4dc5c4a860a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8b97704e30ca4cf8.htm#ID_6bdc62a3dc5c50530a00206a007b4a30-09b6e1c4dc5c4a860a00206a01e40e15-en-US>`_
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "DIRect"
                 args = ["'string'"]
 
             DIRect = DIRect()
             """
             `SOURce:STEReo:DIRect
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8b97704e30ca4cf8.htm#ID_6bdc62a3dc5c50530a00206a007b4a30-09b6e1c4dc5c4a860a00206a01e40e15-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8b97704e30ca4cf8.htm#ID_6bdc62a3dc5c50530a00206a007b4a30-09b6e1c4dc5c4a860a00206a01e40e15-en-US>`_
 
             Arguments: 'string'
             """
@@ -20033,23 +21273,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXTernal"
                 args = []
 
                 class IMPedance(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:EXTernal:IMPedance
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bf3bd3cb1b6149d7.htm#ID_ed166f71dc5bd5470a00206a00084298-5934d87ddc5bcfc90a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bf3bd3cb1b6149d7.htm#ID_ed166f71dc5bd5470a00206a00084298-5934d87ddc5bcfc90a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "IMPedance"
                     args = ["1"]
 
                 IMPedance = IMPedance()
                 """
                 `SOURce:STEReo:EXTernal:IMPedance
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bf3bd3cb1b6149d7.htm#ID_ed166f71dc5bd5470a00206a00084298-5934d87ddc5bcfc90a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bf3bd3cb1b6149d7.htm#ID_ed166f71dc5bd5470a00206a00084298-5934d87ddc5bcfc90a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -20067,23 +21309,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PILot"
                 args = []
 
                 class DEViation(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:PILot:DEViation
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9109ab9c9a614b96.htm#ID_a3761f9bdc5bec4a0a00206a00716dbf-840e2c0cdc5be6ac0a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9109ab9c9a614b96.htm#ID_a3761f9bdc5bec4a0a00206a00716dbf-840e2c0cdc5be6ac0a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DEViation"
                     args = ["1"]
 
                 DEViation = DEViation()
                 """
                 `SOURce:STEReo:PILot:DEViation
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9109ab9c9a614b96.htm#ID_a3761f9bdc5bec4a0a00206a00716dbf-840e2c0cdc5be6ac0a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9109ab9c9a614b96.htm#ID_a3761f9bdc5bec4a0a00206a00716dbf-840e2c0cdc5be6ac0a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -20091,17 +21335,18 @@ class SMB100A_gen(Instrument):
                 class PHASe(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:PILot:PHASe
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/10f108b19f624a5e.htm#ID_86f8bd04dc5bf3cb0a00206a017fdfc9-c5314867dc5bee1e0a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/10f108b19f624a5e.htm#ID_86f8bd04dc5bf3cb0a00206a017fdfc9-c5314867dc5bee1e0a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PHASe"
                     args = ["1"]
 
                 PHASe = PHASe()
                 """
                 `SOURce:STEReo:PILot:PHASe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/10f108b19f624a5e.htm#ID_86f8bd04dc5bf3cb0a00206a017fdfc9-c5314867dc5bee1e0a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/10f108b19f624a5e.htm#ID_86f8bd04dc5bf3cb0a00206a017fdfc9-c5314867dc5bee1e0a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -20109,17 +21354,18 @@ class SMB100A_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:STEReo:PILot:STATe
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/068535fbf91146eb.htm#ID_31ee9df8dc5bfb7c0a00206a0160f2b2-1b5f0342dc5bf5cf0a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/068535fbf91146eb.htm#ID_31ee9df8dc5bfb7c0a00206a0160f2b2-1b5f0342dc5bf5cf0a00206a01e40e15-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
                 STATe = STATe()
                 """
                 `SOURce:STEReo:PILot:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/068535fbf91146eb.htm#ID_31ee9df8dc5bfb7c0a00206a0160f2b2-1b5f0342dc5bf5cf0a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/068535fbf91146eb.htm#ID_31ee9df8dc5bfb7c0a00206a0160f2b2-1b5f0342dc5bf5cf0a00206a01e40e15-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -20137,23 +21383,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RDS"
                 args = []
 
                 class DATaset(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:RDS:DATaset
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b0c13bb102454957.htm#ID_fd8383cedc5c0a700a00206a01b75b79-fe5583efdc5c04f20a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b0c13bb102454957.htm#ID_fd8383cedc5c0a700a00206a01b75b79-fe5583efdc5c04f20a00206a01e40e15-en-US>`_
 
                     Arguments: DS1, DS2, DS3, DS4, DS5
                     """
+                    __slots__ = ()
                     _cmd = "DATaset"
                     args = ["DS1", "DS2", "DS3", "DS4", "DS5"]
 
                 DATaset = DATaset()
                 """
                 `SOURce:STEReo:RDS:DATaset
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b0c13bb102454957.htm#ID_fd8383cedc5c0a700a00206a01b75b79-fe5583efdc5c04f20a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b0c13bb102454957.htm#ID_fd8383cedc5c0a700a00206a01b75b79-fe5583efdc5c04f20a00206a01e40e15-en-US>`_
 
                 Arguments: DS1, DS2, DS3, DS4, DS5
                 """
@@ -20161,17 +21409,18 @@ class SMB100A_gen(Instrument):
                 class DEViation(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:RDS:DEViation
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2bf5650ffdc14b35.htm#ID_2974ecc1dc5c11d30a00206a003a95cb-e42b5a1cdc5c0c550a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2bf5650ffdc14b35.htm#ID_2974ecc1dc5c11d30a00206a003a95cb-e42b5a1cdc5c0c550a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DEViation"
                     args = ["1"]
 
                 DEViation = DEViation()
                 """
                 `SOURce:STEReo:RDS:DEViation
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2bf5650ffdc14b35.htm#ID_2974ecc1dc5c11d30a00206a003a95cb-e42b5a1cdc5c0c550a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2bf5650ffdc14b35.htm#ID_2974ecc1dc5c11d30a00206a003a95cb-e42b5a1cdc5c0c550a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -20179,17 +21428,18 @@ class SMB100A_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:STEReo:RDS:STATe
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1d512496e30b4ccd.htm#ID_558b5e83dc5c19640a00206a01d4d2e2-38f90b46dc5c13c70a00206a01e40e15-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1d512496e30b4ccd.htm#ID_558b5e83dc5c19640a00206a01d4d2e2-38f90b46dc5c13c70a00206a01e40e15-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
                 STATe = STATe()
                 """
                 `SOURce:STEReo:RDS:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1d512496e30b4ccd.htm#ID_558b5e83dc5c19640a00206a01d4d2e2-38f90b46dc5c13c70a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1d512496e30b4ccd.htm#ID_558b5e83dc5c19640a00206a01d4d2e2-38f90b46dc5c13c70a00206a01e40e15-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -20200,6 +21450,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "TRAFfic"
                     args = []
 
@@ -20209,23 +21460,25 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "ANNouncement"
                         args = []
 
                         class STATe(SCPINode, SCPIBool):
                             """
                             `SOURce:STEReo:RDS:TRAFfic:ANNouncement:STATe
-                            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f5a48f2b2e614615.htm#ID_c2dea175dc5c29df0a00206a002c754e-e0bb6433dc5c24030a00206a01e40e15-en-US>`_
+                            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f5a48f2b2e614615.htm#ID_c2dea175dc5c29df0a00206a002c754e-e0bb6433dc5c24030a00206a01e40e15-en-US>`_
 
                             Arguments: 1, ON, OFF
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "ON", "OFF"]
 
                         STATe = STATe()
                         """
                         `SOURce:STEReo:RDS:TRAFfic:ANNouncement:STATe
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f5a48f2b2e614615.htm#ID_c2dea175dc5c29df0a00206a002c754e-e0bb6433dc5c24030a00206a01e40e15-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f5a48f2b2e614615.htm#ID_c2dea175dc5c29df0a00206a002c754e-e0bb6433dc5c24030a00206a01e40e15-en-US>`_
 
                         Arguments: 1, ON, OFF
                         """
@@ -20243,23 +21496,25 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "PROGram"
                         args = []
 
                         class STATe(SCPINode, SCPIBool):
                             """
                             `SOURce:STEReo:RDS:TRAFfic:PROGram:STATe
-                            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6ba7f2ecc27b414b.htm#ID_2d18a912dc5c20d70a00206a00bd6c38-6bbab9b0dc5c1b580a00206a01e40e15-en-US>`_
+                            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6ba7f2ecc27b414b.htm#ID_2d18a912dc5c20d70a00206a00bd6c38-6bbab9b0dc5c1b580a00206a01e40e15-en-US>`_
 
                             Arguments: 1, ON, OFF
                             """
+                            __slots__ = ()
                             _cmd = "STATe"
                             args = ["1", "ON", "OFF"]
 
                         STATe = STATe()
                         """
                         `SOURce:STEReo:RDS:TRAFfic:PROGram:STATe
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6ba7f2ecc27b414b.htm#ID_2d18a912dc5c20d70a00206a00bd6c38-6bbab9b0dc5c1b580a00206a01e40e15-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6ba7f2ecc27b414b.htm#ID_2d18a912dc5c20d70a00206a00bd6c38-6bbab9b0dc5c1b580a00206a01e40e15-en-US>`_
 
                         Arguments: 1, ON, OFF
                         """
@@ -20291,6 +21546,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: ARI, AUDio
                 """
+                __slots__ = ()
                 _cmd = "SIGNal"
                 args = ["ARI", "AUDio"]
 
@@ -20304,17 +21560,18 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:STEReo:SOURce
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/69d8d93fd9a343d4.htm#ID_e61a5b08dc5c31900a00206a01f29de2-10435111dc5c2bf20a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/69d8d93fd9a343d4.htm#ID_e61a5b08dc5c31900a00206a01f29de2-10435111dc5c2bf20a00206a01e40e15-en-US>`_
 
                 Arguments: LFGen, LREXt, SPEXt
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["LFGen", "LREXt", "SPEXt"]
 
             SOURce = SOURce()
             """
             `SOURce:STEReo:SOURce
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/69d8d93fd9a343d4.htm#ID_e61a5b08dc5c31900a00206a01f29de2-10435111dc5c2bf20a00206a01e40e15-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/69d8d93fd9a343d4.htm#ID_e61a5b08dc5c31900a00206a01f29de2-10435111dc5c2bf20a00206a01e40e15-en-US>`_
 
             Arguments: LFGen, LREXt, SPEXt
             """
@@ -20322,17 +21579,18 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:STEReo:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1e7f50df80754d97.htm#ID_755ff102dc5c48920a00206a00d7b608-7df2c8b4dc5c42f50a00206a01e40e15-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1e7f50df80754d97.htm#ID_755ff102dc5c48920a00206a00d7b608-7df2c8b4dc5c42f50a00206a01e40e15-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
             STATe = STATe()
             """
             `SOURce:STEReo:STATe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1e7f50df80754d97.htm#ID_755ff102dc5c48920a00206a00d7b608-7df2c8b4dc5c42f50a00206a01e40e15-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1e7f50df80754d97.htm#ID_755ff102dc5c48920a00206a00d7b608-7df2c8b4dc5c42f50a00206a01e40e15-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -20350,6 +21608,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SWEep"
             args = []
 
@@ -20359,6 +21618,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: LONG, NORMal
                 """
+                __slots__ = ()
                 _cmd = "BTIMe"
                 args = ["LONG", "NORMal"]
 
@@ -20375,6 +21635,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONTrol"
                 args = []
 
@@ -20384,6 +21645,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -20407,6 +21669,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CPOint"
                 args = []
 
@@ -20423,6 +21686,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: DOWN, UP
                 """
+                __slots__ = ()
                 _cmd = "DIRection"
                 args = ["DOWN", "UP"]
 
@@ -20439,6 +21703,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DWELl"
                 args = ["1"]
 
@@ -20455,23 +21720,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = []
 
                 class DWELl(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:SWEep:FREQuency:DWELl
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/422723d8553c40b3.htm#ID_22f1352871b719430a00206a01ebbac9-df858e4171b719430a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/422723d8553c40b3.htm#ID_22f1352871b719430a00206a01ebbac9-df858e4171b719430a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DWELl"
                     args = ["1"]
 
                 DWELl = DWELl()
                 """
                 `SOURce:SWEep:FREQuency:DWELl
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/422723d8553c40b3.htm#ID_22f1352871b719430a00206a01ebbac9-df858e4171b719430a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/422723d8553c40b3.htm#ID_22f1352871b719430a00206a01ebbac9-df858e4171b719430a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -20479,17 +21746,18 @@ class SMB100A_gen(Instrument):
                 class POINts(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:SWEep:FREQuency:POINts
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5c7c5b5057a640f2.htm#ID_c2b0cb6871b70bc50a00206a0181b01c-efb3999b71b70bd50a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5c7c5b5057a640f2.htm#ID_c2b0cb6871b70bc50a00206a0181b01c-efb3999b71b70bd50a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "POINts"
                     args = ["1"]
 
                 POINts = POINts()
                 """
                 `SOURce:SWEep:FREQuency:POINts
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5c7c5b5057a640f2.htm#ID_c2b0cb6871b70bc50a00206a0181b01c-efb3999b71b70bd50a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5c7c5b5057a640f2.htm#ID_c2b0cb6871b70bc50a00206a0181b01c-efb3999b71b70bd50a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -20497,17 +21765,18 @@ class SMB100A_gen(Instrument):
                 class RUNNing(SCPINode, SCPIQuery):
                     """
                     `SOURce:SWEep:FREQuency:RUNNing
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03da63933dbb4b18.htm#ID_0b005d4bed649e6a0a002019017c48d8-40c7ed4fed649aef0a00201900ba4ad4-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03da63933dbb4b18.htm#ID_0b005d4bed649e6a0a002019017c48d8-40c7ed4fed649aef0a00201900ba4ad4-en-US>`_
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RUNNing"
                     args = []
 
                 RUNNing = RUNNing()
                 """
                 `SOURce:SWEep:FREQuency:RUNNing
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03da63933dbb4b18.htm#ID_0b005d4bed649e6a0a002019017c48d8-40c7ed4fed649aef0a00201900ba4ad4-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03da63933dbb4b18.htm#ID_0b005d4bed649e6a0a002019017c48d8-40c7ed4fed649aef0a00201900ba4ad4-en-US>`_
 
                 Arguments:
                 """
@@ -20515,17 +21784,18 @@ class SMB100A_gen(Instrument):
                 class SPACing(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:SWEep:FREQuency:SPACing
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4cac97cd94264483.htm#ID_8d191a9771b7127c0a00206a01d897a9-0439662f71b7127c0a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4cac97cd94264483.htm#ID_8d191a9771b7127c0a00206a01d897a9-0439662f71b7127c0a00206a012bc823-en-US>`_
 
                     Arguments: LINear, LOGarithmic
                     """
+                    __slots__ = ()
                     _cmd = "SPACing"
                     args = ["LINear", "LOGarithmic"]
 
                 SPACing = SPACing()
                 """
                 `SOURce:SWEep:FREQuency:SPACing
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4cac97cd94264483.htm#ID_8d191a9771b7127c0a00206a01d897a9-0439662f71b7127c0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4cac97cd94264483.htm#ID_8d191a9771b7127c0a00206a01d897a9-0439662f71b7127c0a00206a012bc823-en-US>`_
 
                 Arguments: LINear, LOGarithmic
                 """
@@ -20536,23 +21806,25 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
                     class LINear(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:SWEep:FREQuency:STEP:LINear
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6eeae32a24f148ac.htm#ID_019e085071b6fe580a00206a0078468a-5813ce6a71b6fe580a00206a012bc823-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6eeae32a24f148ac.htm#ID_019e085071b6fe580a00206a0078468a-5813ce6a71b6fe580a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "LINear"
                         args = ["1"]
 
                     LINear = LINear()
                     """
                     `SOURce:SWEep:FREQuency:STEP:LINear
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6eeae32a24f148ac.htm#ID_019e085071b6fe580a00206a0078468a-5813ce6a71b6fe580a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6eeae32a24f148ac.htm#ID_019e085071b6fe580a00206a0078468a-5813ce6a71b6fe580a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -20560,17 +21832,18 @@ class SMB100A_gen(Instrument):
                     class LOGarithmic(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:SWEep:FREQuency:STEP:LOGarithmic
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ccbae2d831df45b5.htm#ID_b055cff771b704e00a00206a0023865a-f2478ac071b704e00a00206a012bc823-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ccbae2d831df45b5.htm#ID_b055cff771b704e00a00206a0023865a-f2478ac071b704e00a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
                     LOGarithmic = LOGarithmic()
                     """
                     `SOURce:SWEep:FREQuency:STEP:LOGarithmic
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ccbae2d831df45b5.htm#ID_b055cff771b704e00a00206a0023865a-f2478ac071b704e00a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ccbae2d831df45b5.htm#ID_b055cff771b704e00a00206a0023865a-f2478ac071b704e00a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -20595,6 +21868,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: ANALog, STEPped
                 """
+                __slots__ = ()
                 _cmd = "GENeration"
                 args = ["ANALog", "STEPped"]
 
@@ -20611,6 +21885,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MANual"
                 args = []
 
@@ -20620,6 +21895,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "POINt"
                     args = ["1"]
 
@@ -20636,6 +21912,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "RELative"
                     args = ["1"]
 
@@ -20659,6 +21936,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MARKer"
                 args = []
 
@@ -20668,6 +21946,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -20691,6 +21970,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "POINts"
                 args = ["1"]
 
@@ -20707,23 +21987,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = []
 
                 class DWELl(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:SWEep:POWer:DWELl
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e0f78d0fb5574909.htm#ID_551ad14d71b750700a00206a0188e9b1-eacf1f4671b750700a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e0f78d0fb5574909.htm#ID_551ad14d71b750700a00206a0188e9b1-eacf1f4671b750700a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DWELl"
                     args = ["1"]
 
                 DWELl = DWELl()
                 """
                 `SOURce:SWEep:POWer:DWELl
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e0f78d0fb5574909.htm#ID_551ad14d71b750700a00206a0188e9b1-eacf1f4671b750700a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e0f78d0fb5574909.htm#ID_551ad14d71b750700a00206a0188e9b1-eacf1f4671b750700a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -20731,17 +22013,18 @@ class SMB100A_gen(Instrument):
                 class POINts(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:SWEep:POWer:POINts
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/dded827b58e54ae7.htm#ID_eeb8ce0071b7498a0a00206a019e8b48-f33619a371b7498a0a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/dded827b58e54ae7.htm#ID_eeb8ce0071b7498a0a00206a019e8b48-f33619a371b7498a0a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "POINts"
                     args = ["1"]
 
                 POINts = POINts()
                 """
                 `SOURce:SWEep:POWer:POINts
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/dded827b58e54ae7.htm#ID_eeb8ce0071b7498a0a00206a019e8b48-f33619a371b7498a0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/dded827b58e54ae7.htm#ID_eeb8ce0071b7498a0a00206a019e8b48-f33619a371b7498a0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -20749,17 +22032,18 @@ class SMB100A_gen(Instrument):
                 class RUNNing(SCPINode, SCPIQuery):
                     """
                     `SOURce:SWEep:POWer:RUNNing
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/09b06d6b82a34974.htm#ID_6d0752bced643a300a002019019e51e3-74da00c4ed64381d0a00201900ba4ad4-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/09b06d6b82a34974.htm#ID_6d0752bced643a300a002019019e51e3-74da00c4ed64381d0a00201900ba4ad4-en-US>`_
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RUNNing"
                     args = []
 
                 RUNNing = RUNNing()
                 """
                 `SOURce:SWEep:POWer:RUNNing
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/09b06d6b82a34974.htm#ID_6d0752bced643a300a002019019e51e3-74da00c4ed64381d0a00201900ba4ad4-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/09b06d6b82a34974.htm#ID_6d0752bced643a300a002019019e51e3-74da00c4ed64381d0a00201900ba4ad4-en-US>`_
 
                 Arguments:
                 """
@@ -20770,6 +22054,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: LOGarithmic
                     """
+                    __slots__ = ()
                     _cmd = "SPACing"
                     args = ["LOGarithmic"]
 
@@ -20786,23 +22071,25 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
                     class LOGarithmic(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:SWEep:POWer:STEP:LOGarithmic
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7a028d77a0e64432.htm#ID_42b6782c71b757170a00206a01b31ca4-4dd4e73f71b757170a00206a012bc823-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7a028d77a0e64432.htm#ID_42b6782c71b757170a00206a01b31ca4-4dd4e73f71b757170a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
                     LOGarithmic = LOGarithmic()
                     """
                     `SOURce:SWEep:POWer:STEP:LOGarithmic
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7a028d77a0e64432.htm#ID_42b6782c71b757170a00206a01b31ca4-4dd4e73f71b757170a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7a028d77a0e64432.htm#ID_42b6782c71b757170a00206a01b31ca4-4dd4e73f71b757170a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -20827,6 +22114,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: LINear, LOGarithmic
                 """
+                __slots__ = ()
                 _cmd = "SPACing"
                 args = ["LINear", "LOGarithmic"]
 
@@ -20843,6 +22131,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = []
 
@@ -20852,6 +22141,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "LLIMit"
                     args = ["1"]
 
@@ -20875,6 +22165,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TRIGger"
                 args = []
 
@@ -20884,6 +22175,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: BUS, EXTernal, IMMediate
                     """
+                    __slots__ = ()
                     _cmd = "SOURce"
                     args = ["BUS", "EXTernal", "IMMediate"]
 
@@ -20914,6 +22206,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TSWeep"
             args = []
 
@@ -20930,6 +22223,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "VOR"
             args = []
 
@@ -20939,6 +22233,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "BANGle"
                 args = ["1"]
 
@@ -20948,6 +22243,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: FROM, TO
                     """
+                    __slots__ = ()
                     _cmd = "DIRection"
                     args = ["FROM", "TO"]
 
@@ -20971,6 +22267,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COMid"
                 args = []
 
@@ -20980,6 +22277,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DEPTh"
                     args = ["1"]
 
@@ -20996,6 +22294,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -21012,6 +22311,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -21035,6 +22335,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PRESet"
                 args = []
 
@@ -21051,6 +22352,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "REFerence"
                 args = []
 
@@ -21060,6 +22362,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DEViation"
                     args = ["1"]
 
@@ -21083,6 +22386,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INT2, INTernal2,EXTernal
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["INT2", "INTernal2,EXTernal"]
 
@@ -21099,6 +22403,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -21115,6 +22420,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SUBCarrier"
                 args = []
 
@@ -21124,6 +22430,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DEPTh"
                     args = ["1"]
 
@@ -21140,6 +22447,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -21163,6 +22471,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "VAR"
                 args = []
 
@@ -21172,6 +22481,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "DEPTh"
                     args = ["1"]
 
@@ -21188,6 +22498,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = ["1"]
 
@@ -21225,6 +22536,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: <numeric_value>,<numeric_value>
         """
+        __slots__ = ()
         _cmd = "SPecial_functio"
         args = ["<numeric_value>,<numeric_value>"]
 
@@ -21241,6 +22553,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "STATus"
         args = []
 
@@ -21250,6 +22563,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DEVice"
             args = []
 
@@ -21259,6 +22573,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CONDition"
                 args = []
 
@@ -21275,6 +22590,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DQUestionable"
                 args = []
 
@@ -21284,6 +22600,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -21300,6 +22617,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -21316,6 +22634,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -21332,6 +22651,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = []
 
@@ -21348,6 +22668,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = []
 
@@ -21371,6 +22692,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = ["1"]
 
@@ -21387,6 +22709,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EVENt"
                 args = []
 
@@ -21403,6 +22726,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NTRansition"
                 args = []
 
@@ -21419,6 +22743,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PTRansition"
                 args = []
 
@@ -21435,6 +22760,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SINTegrity"
                 args = []
 
@@ -21444,6 +22770,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "AMPLitude"
                     args = []
 
@@ -21453,6 +22780,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONDition"
                         args = []
 
@@ -21469,6 +22797,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ENABle"
                         args = ["1"]
 
@@ -21485,6 +22814,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -21501,6 +22831,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "NTRansition"
                         args = []
 
@@ -21517,6 +22848,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "PTRansition"
                         args = []
 
@@ -21540,6 +22872,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -21556,6 +22889,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -21572,6 +22906,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -21588,6 +22923,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "FREQuency"
                     args = []
 
@@ -21597,6 +22933,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONDition"
                         args = []
 
@@ -21613,6 +22950,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ENABle"
                         args = ["1"]
 
@@ -21629,6 +22967,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -21645,6 +22984,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "NTRansition"
                         args = []
 
@@ -21661,6 +23001,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "PTRansition"
                         args = []
 
@@ -21684,6 +23025,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "HARDware"
                     args = []
 
@@ -21693,6 +23035,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONDition"
                         args = []
 
@@ -21709,6 +23052,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ENABle"
                         args = ["1"]
 
@@ -21725,6 +23069,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -21741,6 +23086,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "NTRansition"
                         args = []
 
@@ -21757,6 +23103,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "PTRansition"
                         args = []
 
@@ -21780,6 +23127,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "MODulation"
                     args = []
 
@@ -21789,6 +23137,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONDition"
                         args = []
 
@@ -21805,6 +23154,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ENABle"
                         args = ["1"]
 
@@ -21821,6 +23171,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -21837,6 +23188,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "NTRansition"
                         args = []
 
@@ -21853,6 +23205,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "PTRansition"
                         args = []
 
@@ -21876,6 +23229,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = []
 
@@ -21892,6 +23246,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = []
 
@@ -21908,6 +23263,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "REFerence"
                     args = []
 
@@ -21917,6 +23273,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CONDition"
                         args = []
 
@@ -21933,6 +23290,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ENABle"
                         args = ["1"]
 
@@ -21949,6 +23307,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "EVENt"
                         args = []
 
@@ -21965,6 +23324,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "NTRansition"
                         args = []
 
@@ -21981,6 +23341,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "PTRansition"
                         args = []
 
@@ -22018,6 +23379,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "OPERation"
             args = []
 
@@ -22027,6 +23389,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BASeband"
                 args = []
 
@@ -22036,6 +23399,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -22052,6 +23416,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -22068,6 +23433,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -22084,6 +23450,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -22100,6 +23467,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -22123,6 +23491,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BIT"
                 args = []
 
@@ -22132,6 +23501,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -22148,6 +23518,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -22164,6 +23535,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -22180,6 +23552,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1", "ON", "OFF"]
 
@@ -22196,6 +23569,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1", "ON", "OFF"]
 
@@ -22216,17 +23590,18 @@ class SMB100A_gen(Instrument):
             class CONDition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:OPERation:CONDition
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/eb9e616c44d34723.htm#ID_4d81c86771e8195f0a00206a0077942b-79a3ea6771e8195f0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/eb9e616c44d34723.htm#ID_4d81c86771e8195f0a00206a0077942b-79a3ea6771e8195f0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "CONDition"
                 args = ["1"]
 
             CONDition = CONDition()
             """
             `STATus:OPERation:CONDition
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/eb9e616c44d34723.htm#ID_4d81c86771e8195f0a00206a0077942b-79a3ea6771e8195f0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/eb9e616c44d34723.htm#ID_4d81c86771e8195f0a00206a0077942b-79a3ea6771e8195f0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -22234,17 +23609,18 @@ class SMB100A_gen(Instrument):
             class ENABle(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:OPERation:ENABle
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/98bc7031b17e43d1.htm#ID_8a49b59171e820350a00206a00df2aff-e8cb628971e820350a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/98bc7031b17e43d1.htm#ID_8a49b59171e820350a00206a00df2aff-e8cb628971e820350a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = ["1"]
 
             ENABle = ENABle()
             """
             `STATus:OPERation:ENABle
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/98bc7031b17e43d1.htm#ID_8a49b59171e820350a00206a00df2aff-e8cb628971e820350a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/98bc7031b17e43d1.htm#ID_8a49b59171e820350a00206a00df2aff-e8cb628971e820350a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -22252,17 +23628,18 @@ class SMB100A_gen(Instrument):
             class EVENt(SCPINode, SCPIQuery):
                 """
                 `STATus:OPERation:EVENt
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6adf4ecb81884cba.htm#ID_4526902e71e80ba30a00206a0056f13c-3203e98571e80bb30a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6adf4ecb81884cba.htm#ID_4526902e71e80ba30a00206a0056f13c-3203e98571e80bb30a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EVENt"
                 args = []
 
             EVENt = EVENt()
             """
             `STATus:OPERation:EVENt
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6adf4ecb81884cba.htm#ID_4526902e71e80ba30a00206a0056f13c-3203e98571e80bb30a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6adf4ecb81884cba.htm#ID_4526902e71e80ba30a00206a0056f13c-3203e98571e80bb30a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -22270,17 +23647,18 @@ class SMB100A_gen(Instrument):
             class NTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:OPERation:NTRansition
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7972c214b7914431.htm#ID_c40b400271e8268e0a00206a01d0b5f6-bab207fb71e8268e0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7972c214b7914431.htm#ID_c40b400271e8268e0a00206a01d0b5f6-bab207fb71e8268e0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "NTRansition"
                 args = ["1"]
 
             NTRansition = NTRansition()
             """
             `STATus:OPERation:NTRansition
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7972c214b7914431.htm#ID_c40b400271e8268e0a00206a01d0b5f6-bab207fb71e8268e0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7972c214b7914431.htm#ID_c40b400271e8268e0a00206a01d0b5f6-bab207fb71e8268e0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -22291,6 +23669,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "NTRanstition"
                 args = ["1"]
 
@@ -22304,17 +23683,18 @@ class SMB100A_gen(Instrument):
             class PTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:OPERation:PTRansition
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/19ddd521fccc4c10.htm#ID_7baf119671e812690a00206a0185198a-e4673fbb71e812690a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/19ddd521fccc4c10.htm#ID_7baf119671e812690a00206a0185198a-e4673fbb71e812690a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PTRansition"
                 args = ["1"]
 
             PTRansition = PTRansition()
             """
             `STATus:OPERation:PTRansition
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/19ddd521fccc4c10.htm#ID_7baf119671e812690a00206a0185198a-e4673fbb71e812690a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/19ddd521fccc4c10.htm#ID_7baf119671e812690a00206a0185198a-e4673fbb71e812690a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -22325,6 +23705,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PTRanstition"
                 args = ["1"]
 
@@ -22345,17 +23726,18 @@ class SMB100A_gen(Instrument):
         class PRESet(SCPINode, SCPISet):
             """
             `STATus:PRESet
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/790fdbfc3c41487f.htm#ID_e484e63b71e7fde70a00206a00a80b3f-98d3fe7771e7fde70a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/790fdbfc3c41487f.htm#ID_e484e63b71e7fde70a00206a00a80b3f-98d3fe7771e7fde70a00206a012bc823-en-US>`_
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PRESet"
             args = []
 
         PRESet = PRESet()
         """
         `STATus:PRESet
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/790fdbfc3c41487f.htm#ID_e484e63b71e7fde70a00206a00a80b3f-98d3fe7771e7fde70a00206a012bc823-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/790fdbfc3c41487f.htm#ID_e484e63b71e7fde70a00206a00a80b3f-98d3fe7771e7fde70a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -22366,6 +23748,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "QUEStionable"
             args = []
 
@@ -22375,6 +23758,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BERT"
                 args = []
 
@@ -22384,6 +23768,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -22400,6 +23785,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -22416,6 +23802,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -22432,6 +23819,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -22448,6 +23836,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -22471,6 +23860,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "BIT"
                 args = []
 
@@ -22480,6 +23870,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -22496,6 +23887,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1", "ON", "OFF"]
 
@@ -22512,6 +23904,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -22528,6 +23921,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1", "ON", "OFF"]
 
@@ -22544,6 +23938,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1", "ON", "OFF"]
 
@@ -22567,6 +23962,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CALibration"
                 args = []
 
@@ -22576,6 +23972,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -22592,6 +23989,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -22608,6 +24006,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -22624,6 +24023,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -22640,6 +24040,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -22660,17 +24061,18 @@ class SMB100A_gen(Instrument):
             class CONDition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:QUEStionable:CONDition
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f08a3423b9ea496f.htm#ID_e3fc15a371e842430a00206a009728a6-98e12c6f71e842430a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f08a3423b9ea496f.htm#ID_e3fc15a371e842430a00206a009728a6-98e12c6f71e842430a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "CONDition"
                 args = ["1"]
 
             CONDition = CONDition()
             """
             `STATus:QUEStionable:CONDition
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f08a3423b9ea496f.htm#ID_e3fc15a371e842430a00206a009728a6-98e12c6f71e842430a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f08a3423b9ea496f.htm#ID_e3fc15a371e842430a00206a009728a6-98e12c6f71e842430a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -22678,17 +24080,18 @@ class SMB100A_gen(Instrument):
             class ENABle(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:QUEStionable:ENABle
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08e648cd32434240.htm#ID_d432e5c771e849670a00206a00cb59b5-0bf1cb4571e849670a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08e648cd32434240.htm#ID_d432e5c771e849670a00206a00cb59b5-0bf1cb4571e849670a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = ["1"]
 
             ENABle = ENABle()
             """
             `STATus:QUEStionable:ENABle
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08e648cd32434240.htm#ID_d432e5c771e849670a00206a00cb59b5-0bf1cb4571e849670a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08e648cd32434240.htm#ID_d432e5c771e849670a00206a00cb59b5-0bf1cb4571e849670a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -22696,17 +24099,18 @@ class SMB100A_gen(Instrument):
             class EVENt(SCPINode, SCPIQuery):
                 """
                 `STATus:QUEStionable:EVENt
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/baaaa61d6eeb4c8f.htm#ID_8f72e6de71e834880a00206a01c75738-c55f605671e834880a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/baaaa61d6eeb4c8f.htm#ID_8f72e6de71e834880a00206a01c75738-c55f605671e834880a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EVENt"
                 args = []
 
             EVENt = EVENt()
             """
             `STATus:QUEStionable:EVENt
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/baaaa61d6eeb4c8f.htm#ID_8f72e6de71e834880a00206a01c75738-c55f605671e834880a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/baaaa61d6eeb4c8f.htm#ID_8f72e6de71e834880a00206a01c75738-c55f605671e834880a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -22717,6 +24121,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "FREQuency"
                 args = []
 
@@ -22726,6 +24131,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -22742,6 +24148,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -22758,6 +24165,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -22774,6 +24182,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -22790,6 +24199,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -22813,6 +24223,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MODulation"
                 args = []
 
@@ -22822,6 +24233,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -22838,6 +24250,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -22854,6 +24267,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -22870,6 +24284,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -22886,6 +24301,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -22906,17 +24322,18 @@ class SMB100A_gen(Instrument):
             class NTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:QUEStionable:NTRansition
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/792d9ce3f9bf4fdd.htm#ID_3172142271e8509b0a00206a01b3f2a1-b4d8282f71e8509b0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/792d9ce3f9bf4fdd.htm#ID_3172142271e8509b0a00206a01b3f2a1-b4d8282f71e8509b0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "NTRansition"
                 args = ["1"]
 
             NTRansition = NTRansition()
             """
             `STATus:QUEStionable:NTRansition
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/792d9ce3f9bf4fdd.htm#ID_3172142271e8509b0a00206a01b3f2a1-b4d8282f71e8509b0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/792d9ce3f9bf4fdd.htm#ID_3172142271e8509b0a00206a01b3f2a1-b4d8282f71e8509b0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -22927,6 +24344,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "NTRanstition"
                 args = ["1"]
 
@@ -22943,6 +24361,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PAGing"
                 args = []
 
@@ -22952,6 +24371,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -22968,6 +24388,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -22984,6 +24405,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -23000,6 +24422,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -23016,6 +24439,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -23039,6 +24463,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "POWer"
                 args = []
 
@@ -23048,6 +24473,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "CONDition"
                     args = []
 
@@ -23064,6 +24490,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENABle"
                     args = ["1"]
 
@@ -23080,6 +24507,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "EVENt"
                     args = []
 
@@ -23096,6 +24524,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "NTRansition"
                     args = ["1"]
 
@@ -23112,6 +24541,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "PTRansition"
                     args = ["1"]
 
@@ -23132,17 +24562,18 @@ class SMB100A_gen(Instrument):
             class PTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:QUEStionable:PTRansition
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/13c14e2f83164444.htm#ID_4ed8eafd71e83b5e0a00206a01c2fbb1-c632286d71e83b5e0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/13c14e2f83164444.htm#ID_4ed8eafd71e83b5e0a00206a01c2fbb1-c632286d71e83b5e0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PTRansition"
                 args = ["1"]
 
             PTRansition = PTRansition()
             """
             `STATus:QUEStionable:PTRansition
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/13c14e2f83164444.htm#ID_4ed8eafd71e83b5e0a00206a01c2fbb1-c632286d71e83b5e0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/13c14e2f83164444.htm#ID_4ed8eafd71e83b5e0a00206a01c2fbb1-c632286d71e83b5e0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -23153,6 +24584,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "PTRanstition"
                 args = ["1"]
 
@@ -23183,6 +24615,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: 1
         """
+        __slots__ = ()
         _cmd = "STore"
         args = ["1"]
 
@@ -23192,6 +24625,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "Fast"
             args = ["1"]
 
@@ -23215,6 +24649,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SWEep"
         args = []
 
@@ -23224,6 +24659,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CFRQ"
             args = []
 
@@ -23233,6 +24669,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "LOGinc"
                 args = ["1"]
 
@@ -23249,6 +24686,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "MKRNum"
                 args = ["1"]
 
@@ -23265,6 +24703,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MKRoff"
                 args = []
 
@@ -23281,6 +24720,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MKRon"
                 args = []
 
@@ -23297,6 +24737,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1"]
 
@@ -23313,6 +24754,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = ["1"]
 
@@ -23336,6 +24778,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FREQuency"
             args = []
 
@@ -23345,6 +24788,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: ANALog, STEPped
                 """
+                __slots__ = ()
                 _cmd = "GENeration"
                 args = ["ANALog", "STEPped"]
 
@@ -23361,6 +24805,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: LINear, LOGarithmic
                 """
+                __slots__ = ()
                 _cmd = "SPACing"
                 args = ["LINear", "LOGarithmic"]
 
@@ -23377,6 +24822,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "TIME"
                 args = []
 
@@ -23386,6 +24832,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STEP"
                     args = []
 
@@ -23395,6 +24842,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "INCRement"
                         args = ["1"]
 
@@ -23432,6 +24880,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "INTF"
             args = []
 
@@ -23441,6 +24890,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "MKRNum"
                 args = ["1"]
 
@@ -23457,6 +24907,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MKRoff"
                 args = []
 
@@ -23473,6 +24924,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MKRon"
                 args = []
 
@@ -23489,6 +24941,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1"]
 
@@ -23505,6 +24958,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = ["1"]
 
@@ -23528,6 +24982,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LFGF"
             args = []
 
@@ -23537,6 +24992,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "MKRNum"
                 args = ["1"]
 
@@ -23553,6 +25009,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MKRoff"
                 args = []
 
@@ -23569,6 +25026,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MKRon"
                 args = []
 
@@ -23585,6 +25043,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1"]
 
@@ -23601,6 +25060,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = ["1"]
 
@@ -23624,6 +25084,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LFGL"
             args = []
 
@@ -23633,6 +25094,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "MKRNum"
                 args = ["1"]
 
@@ -23649,6 +25111,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MKRoff"
                 args = []
 
@@ -23665,6 +25128,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MKRon"
                 args = []
 
@@ -23681,6 +25145,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1"]
 
@@ -23697,6 +25162,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = ["1"]
 
@@ -23720,6 +25186,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MKRoff"
             args = []
 
@@ -23736,6 +25203,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MKRon"
             args = []
 
@@ -23752,6 +25220,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "RESet"
             args = []
 
@@ -23768,6 +25237,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "RFLV"
             args = []
 
@@ -23777,6 +25247,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "MKRNum"
                 args = ["1"]
 
@@ -23793,6 +25264,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MKRoff"
                 args = []
 
@@ -23809,6 +25281,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "MKRon"
                 args = []
 
@@ -23825,6 +25298,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "STARt"
                 args = ["1"]
 
@@ -23841,6 +25315,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "VALue"
                 args = ["1"]
 
@@ -23871,6 +25346,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "SYSTem"
         args = []
 
@@ -23880,6 +25356,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "ALTernate"
             args = []
 
@@ -23889,6 +25366,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -23912,6 +25390,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "BEEPer"
             args = []
 
@@ -23921,6 +25400,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -23944,6 +25424,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CAPability"
             args = []
 
@@ -23960,6 +25441,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "COMMunicate"
             args = []
 
@@ -23969,6 +25451,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "GPIB"
                 args = []
 
@@ -23978,6 +25461,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ADDRess"
                     args = ["1"]
 
@@ -23994,23 +25478,25 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "SELF"
                     args = []
 
                     class ADDRess(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SYSTem:COMMunicate:GPIB:SELF:ADDRess
-                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2c2c393234144769.htm#ID_048f099271caf99b0a00206a00d986d1-b9d7e0eb71caf99b0a00206a012bc823-en-US>`_
+                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2c2c393234144769.htm#ID_048f099271caf99b0a00206a00d986d1-b9d7e0eb71caf99b0a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
+                        __slots__ = ()
                         _cmd = "ADDRess"
                         args = ["1"]
 
                     ADDRess = ADDRess()
                     """
                     `SYSTem:COMMunicate:GPIB:SELF:ADDRess
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2c2c393234144769.htm#ID_048f099271caf99b0a00206a00d986d1-b9d7e0eb71caf99b0a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2c2c393234144769.htm#ID_048f099271caf99b0a00206a00d986d1-b9d7e0eb71caf99b0a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -24035,6 +25521,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "GTLocal"
                 args = []
 
@@ -24051,6 +25538,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "LAN"
                 args = []
 
@@ -24060,6 +25548,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: AIP, AUTO, DHCP, MANual
                     """
+                    __slots__ = ()
                     _cmd = "CONFig"
                     args = ["AIP", "AUTO", "DHCP", "MANual"]
 
@@ -24076,6 +25565,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DEFaults"
                     args = []
 
@@ -24092,6 +25582,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "DOMain"
                     args = ["'string'"]
 
@@ -24108,6 +25599,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "GATeway"
                     args = ["'string'"]
 
@@ -24124,6 +25616,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "HOSTname"
                     args = ["'string'"]
 
@@ -24140,6 +25633,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RESTart"
                     args = []
 
@@ -24156,6 +25650,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 'string'
                     """
+                    __slots__ = ()
                     _cmd = "SUBNet"
                     args = ["'string'"]
 
@@ -24179,6 +25674,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PMETer"
                 args = []
 
@@ -24188,6 +25684,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ADDRess"
                     args = ["1"]
 
@@ -24204,6 +25701,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: A, B
                     """
+                    __slots__ = ()
                     _cmd = "CHANnel"
                     args = ["A", "B"]
 
@@ -24220,6 +25718,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "TIMeout"
                     args = ["1"]
 
@@ -24243,23 +25742,25 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SERial"
                 args = []
 
                 class PARity(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SYSTem:COMMunicate:SERial:PARity
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/007a87c5bc084b7e.htm#ID_ed84c7fa71cc127d0a00206a0162bb19-92f11b0771cc127d0a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/007a87c5bc084b7e.htm#ID_ed84c7fa71cc127d0a00206a0162bb19-92f11b0771cc127d0a00206a012bc823-en-US>`_
 
                     Arguments: EVEN, NONE, ODD, ONE, ZERO
                     """
+                    __slots__ = ()
                     _cmd = "PARity"
                     args = ["EVEN", "NONE", "ODD", "ONE", "ZERO"]
 
                 PARity = PARity()
                 """
                 `SYSTem:COMMunicate:SERial:PARity
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/007a87c5bc084b7e.htm#ID_ed84c7fa71cc127d0a00206a0162bb19-92f11b0771cc127d0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/007a87c5bc084b7e.htm#ID_ed84c7fa71cc127d0a00206a0162bb19-92f11b0771cc127d0a00206a012bc823-en-US>`_
 
                 Arguments: EVEN, NONE, ODD, ONE, ZERO
                 """
@@ -24270,6 +25771,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RESet"
                     args = []
 
@@ -24283,17 +25785,18 @@ class SMB100A_gen(Instrument):
                 class SBITs(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SYSTem:COMMunicate:SERial:SBITs
-                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6a3b756c8454b50.htm#ID_48a728cc71cc19b10a00206a014314e1-a83e843471cc19b10a00206a012bc823-en-US>`_
+                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6a3b756c8454b50.htm#ID_48a728cc71cc19b10a00206a014314e1-a83e843471cc19b10a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "SBITs"
                     args = ["1"]
 
                 SBITs = SBITs()
                 """
                 `SYSTem:COMMunicate:SERial:SBITs
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6a3b756c8454b50.htm#ID_48a728cc71cc19b10a00206a014314e1-a83e843471cc19b10a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6a3b756c8454b50.htm#ID_48a728cc71cc19b10a00206a014314e1-a83e843471cc19b10a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -24315,10 +25818,11 @@ class SMB100A_gen(Instrument):
         class DATE(SCPINode):
             """
             `SYSTem:DATE
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c85e1a39bfd346a5.htm#ID_4045f3d171cb96480a00206a0187c2e2-1c42171d71cb96480a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c85e1a39bfd346a5.htm#ID_4045f3d171cb96480a00206a0187c2e2-1c42171d71cb96480a00206a012bc823-en-US>`_
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DATE"
             args = []
 
@@ -24328,6 +25832,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <integer>,<integer>,<integer>
                 """
+                __slots__ = ()
                 _cmd = "LOCal"
                 args = ["<integer>,<integer>,<integer>"]
 
@@ -24341,7 +25846,7 @@ class SMB100A_gen(Instrument):
         DATE = DATE()
         """
         `SYSTem:DATE
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c85e1a39bfd346a5.htm#ID_4045f3d171cb96480a00206a0187c2e2-1c42171d71cb96480a00206a012bc823-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c85e1a39bfd346a5.htm#ID_4045f3d171cb96480a00206a0187c2e2-1c42171d71cb96480a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -24352,6 +25857,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "DFPRint"
             args = ["'string'"]
 
@@ -24361,6 +25867,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "HISTory"
                 args = []
 
@@ -24370,6 +25877,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "COUNt"
                     args = []
 
@@ -24386,6 +25894,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ENTRy"
                     args = ["1"]
 
@@ -24416,16 +25925,18 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DISPlay"
             args = []
 
             class UPDate(SCPINode, SCPIBool):
                 """
                 `SYSTem:DISPlay:UPDate
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f101e4cb6c3f422c.htm#ID_dc6f502b71cb0e3c0a00206a0114ff35-1059cab671cb0e3c0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f101e4cb6c3f422c.htm#ID_dc6f502b71cb0e3c0a00206a0114ff35-1059cab671cb0e3c0a00206a012bc823-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "UPDate"
                 args = ["1", "ON", "OFF"]
 
@@ -24435,6 +25946,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -24448,7 +25960,7 @@ class SMB100A_gen(Instrument):
             UPDate = UPDate()
             """
             `SYSTem:DISPlay:UPDate
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f101e4cb6c3f422c.htm#ID_dc6f502b71cb0e3c0a00206a0114ff35-1059cab671cb0e3c0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f101e4cb6c3f422c.htm#ID_dc6f502b71cb0e3c0a00206a0114ff35-1059cab671cb0e3c0a00206a012bc823-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -24466,6 +25978,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DUMP"
             args = []
 
@@ -24475,6 +25988,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ERRor"
                 args = []
 
@@ -24491,6 +26005,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PRINter"
                 args = []
 
@@ -24514,23 +26029,25 @@ class SMB100A_gen(Instrument):
 
             Arguments: NUMeric, STRing
             """
+            __slots__ = ()
             _cmd = "ERRor"
             args = ["NUMeric", "STRing"]
 
             class COUNt(SCPINode, SCPIQuery):
                 """
                 `SYSTem:ERRor:COUNt
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ba0d0e59bbb0493c.htm#ID_00c603b971d1daa50a00206a0178d1e6-77aa4c6371d1daa50a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ba0d0e59bbb0493c.htm#ID_00c603b971d1daa50a00206a0178d1e6-77aa4c6371d1daa50a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = []
 
             COUNt = COUNt()
             """
             `SYSTem:ERRor:COUNt
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ba0d0e59bbb0493c.htm#ID_00c603b971d1daa50a00206a0178d1e6-77aa4c6371d1daa50a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ba0d0e59bbb0493c.htm#ID_00c603b971d1daa50a00206a0178d1e6-77aa4c6371d1daa50a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -24541,6 +26058,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SCPI"
                 args = []
 
@@ -24550,6 +26068,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "SYNTax"
                     args = ["1", "ON", "OFF"]
 
@@ -24580,6 +26099,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FILesystem"
             args = []
 
@@ -24589,6 +26109,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "SAFemode"
                 args = ["1", "ON", "OFF"]
 
@@ -24609,17 +26130,18 @@ class SMB100A_gen(Instrument):
         class FPReset(SCPINode, SCPISet):
             """
             `SYSTem:FPReset
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a8969674f533414b.htm#ID_7d183de071cbe2940a00206a00c529ef-cb25f8cf71cbe2940a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a8969674f533414b.htm#ID_7d183de071cbe2940a00206a00c529ef-cb25f8cf71cbe2940a00206a012bc823-en-US>`_
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FPReset"
             args = []
 
         FPReset = FPReset()
         """
         `SYSTem:FPReset
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a8969674f533414b.htm#ID_7d183de071cbe2940a00206a00c529ef-cb25f8cf71cbe2940a00206a012bc823-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a8969674f533414b.htm#ID_7d183de071cbe2940a00206a00c529ef-cb25f8cf71cbe2940a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -24630,6 +26152,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "HELP"
             args = []
 
@@ -24639,6 +26162,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "HEADers"
                 args = ["'string'"]
 
@@ -24655,6 +26179,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SYNTax"
                 args = ["'string'"]
 
@@ -24664,6 +26189,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "ALL"
                     args = []
 
@@ -24694,6 +26220,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "KEY"
             args = []
 
@@ -24703,6 +26230,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "ASSign"
                 args = ["1"]
 
@@ -24719,6 +26247,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "CLEar"
                 args = ["1"]
 
@@ -24735,6 +26264,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: SAVE
                 """
+                __slots__ = ()
                 _cmd = "DISable"
                 args = ["SAVE"]
 
@@ -24751,6 +26281,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: SAVE
                 """
+                __slots__ = ()
                 _cmd = "ENABle"
                 args = ["SAVE"]
 
@@ -24771,17 +26302,18 @@ class SMB100A_gen(Instrument):
         class KLOCk(SCPINode, SCPIBool):
             """
             `SYSTem:KLOCk
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e57ad6f63f694963.htm#ID_1c2c1ab671cae4100a00206a013aa55f-c059ec8271cae4100a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e57ad6f63f694963.htm#ID_1c2c1ab671cae4100a00206a013aa55f-c059ec8271cae4100a00206a012bc823-en-US>`_
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "KLOCk"
             args = ["1", "ON", "OFF"]
 
         KLOCk = KLOCk()
         """
         `SYSTem:KLOCk
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e57ad6f63f694963.htm#ID_1c2c1ab671cae4100a00206a013aa55f-c059ec8271cae4100a00206a012bc823-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e57ad6f63f694963.htm#ID_1c2c1ab671cae4100a00206a013aa55f-c059ec8271cae4100a00206a012bc823-en-US>`_
 
         Arguments: 1, ON, OFF
         """
@@ -24789,17 +26321,18 @@ class SMB100A_gen(Instrument):
         class LANGuage(SCPINode, SCPIQuery, SCPISet):
             """
             `SYSTem:LANGuage
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6915ffdd7e64075.htm#ID_1282e19171cbeff10a00206a01b52e61-a5ace65d71cbeff10a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6915ffdd7e64075.htm#ID_1282e19171cbeff10a00206a01b52e61-a5ace65d71cbeff10a00206a012bc823-en-US>`_
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "LANGuage"
             args = ["'string'"]
 
         LANGuage = LANGuage()
         """
         `SYSTem:LANGuage
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6915ffdd7e64075.htm#ID_1282e19171cbeff10a00206a01b52e61-a5ace65d71cbeff10a00206a012bc823-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6915ffdd7e64075.htm#ID_1282e19171cbeff10a00206a01b52e61-a5ace65d71cbeff10a00206a012bc823-en-US>`_
 
         Arguments: 'string'
         """
@@ -24810,6 +26343,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LOCK"
             args = []
 
@@ -24819,6 +26353,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "NAME"
                 args = []
 
@@ -24828,6 +26363,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DETailed"
                     args = []
 
@@ -24851,6 +26387,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "OWNer"
                 args = []
 
@@ -24860,6 +26397,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "DETailed"
                     args = []
 
@@ -24883,6 +26421,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RELease"
                 args = []
 
@@ -24899,6 +26438,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "REQuest"
                 args = []
 
@@ -24908,6 +26448,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: <integer>, INFinite
                     """
+                    __slots__ = ()
                     _cmd = "EXCLusive"
                     args = ["<integer>", "INFinite"]
 
@@ -24924,6 +26465,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: <string>,<integer>, INFinite
                     """
+                    __slots__ = ()
                     _cmd = "SHARed"
                     args = ["<string>,<integer>", "INFinite"]
 
@@ -24947,6 +26489,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SHARed"
                 args = []
 
@@ -24956,6 +26499,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "STRing"
                     args = []
 
@@ -24979,6 +26523,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <integer>, INFinite
                 """
+                __slots__ = ()
                 _cmd = "TIMeout"
                 args = ["<integer>", "INFinite"]
 
@@ -25002,6 +26547,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MMHead"
             args = []
 
@@ -25011,6 +26557,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: FRONt, NONE, REAR
                 """
+                __slots__ = ()
                 _cmd = "SELect"
                 args = ["FRONt", "NONE", "REAR"]
 
@@ -25034,6 +26581,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MSEQuence"
             args = []
 
@@ -25043,6 +26591,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "CATalog"
                 args = []
 
@@ -25059,6 +26608,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "DELete"
                 args = ["'string'"]
 
@@ -25075,6 +26625,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DWELl"
                 args = ["1"]
 
@@ -25091,6 +26642,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "RCL"
                 args = []
 
@@ -25100,6 +26652,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "POINts"
                     args = []
 
@@ -25123,6 +26676,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "SELect"
                 args = ["'string'"]
 
@@ -25146,6 +26700,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PDOWn"
             args = []
 
@@ -25159,10 +26714,11 @@ class SMB100A_gen(Instrument):
         class PRESet(SCPINode, SCPISet):
             """
             `SYSTem:PRESet
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/fea01e424ecf4cc4.htm#ID_a64c6dbf4ecf62470a00206a0141ec63-ed39c76a4ecf62470a00206a0024546d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/fea01e424ecf4cc4.htm#ID_a64c6dbf4ecf62470a00206a0141ec63-ed39c76a4ecf62470a00206a0024546d-en-US>`_
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "PRESet"
             args = ["'string'"]
 
@@ -25172,6 +26728,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EXECute"
                 args = []
 
@@ -25188,6 +26745,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 'string'
                 """
+                __slots__ = ()
                 _cmd = "LANGuage"
                 args = ["'string'"]
 
@@ -25204,6 +26762,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "PERSistent"
                 args = []
 
@@ -25220,6 +26779,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NORMal, QUICk
                 """
+                __slots__ = ()
                 _cmd = "PN"
                 args = ["NORMal", "QUICk"]
 
@@ -25233,7 +26793,7 @@ class SMB100A_gen(Instrument):
         PRESet = PRESet()
         """
         `SYSTem:PRESet
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/fea01e424ecf4cc4.htm#ID_a64c6dbf4ecf62470a00206a0141ec63-ed39c76a4ecf62470a00206a0024546d-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/fea01e424ecf4cc4.htm#ID_a64c6dbf4ecf62470a00206a0141ec63-ed39c76a4ecf62470a00206a0024546d-en-US>`_
 
         Arguments: 'string'
         """
@@ -25244,23 +26804,25 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PROTect"
             args = []
 
             class STATe(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SYSTem:PROTect:STATe
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2be619d631aa413c.htm#ID_8573e93571caebb10a00206a0185361b-8394d8f471caebb10a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2be619d631aa413c.htm#ID_8573e93571caebb10a00206a0185361b-8394d8f471caebb10a00206a012bc823-en-US>`_
 
                 Arguments: <boolean>,<numeric_value>
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["<boolean>,<numeric_value>"]
 
             STATe = STATe()
             """
             `SYSTem:PROTect:STATe
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2be619d631aa413c.htm#ID_8573e93571caebb10a00206a0185361b-8394d8f471caebb10a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2be619d631aa413c.htm#ID_8573e93571caebb10a00206a0185361b-8394d8f471caebb10a00206a012bc823-en-US>`_
 
             Arguments: <boolean>,<numeric_value>
             """
@@ -25278,6 +26840,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 'string'
             """
+            __slots__ = ()
             _cmd = "RESet"
             args = ["'string'"]
 
@@ -25294,6 +26857,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1, ON, OFF
             """
+            __slots__ = ()
             _cmd = "SECurity"
             args = ["1", "ON", "OFF"]
 
@@ -25303,6 +26867,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "COUNt"
                 args = ["1"]
 
@@ -25319,6 +26884,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "DISPlay"
                 args = ["1", "ON", "OFF"]
 
@@ -25335,6 +26901,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "ERASeall"
                 args = []
 
@@ -25351,6 +26918,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: ERASe, NONE, OVERwrite, SANitize
                 """
+                __slots__ = ()
                 _cmd = "LEVel"
                 args = ["ERASe", "NONE", "OVERwrite", "SANitize"]
 
@@ -25360,6 +26928,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1, ON, OFF
                     """
+                    __slots__ = ()
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
@@ -25383,6 +26952,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "OVERwrite"
                 args = []
 
@@ -25399,6 +26969,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "SANitize"
                 args = []
 
@@ -25415,6 +26986,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -25435,17 +27007,18 @@ class SMB100A_gen(Instrument):
         class SERRor(SCPINode, SCPIQuery):
             """
             `SYSTem:SERRor
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5399f400e2034c4e.htm#ID_6fc0f364cdeb59d40a00201901c90f84-6ec4330acdeb589c0a00201901e67c3d-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5399f400e2034c4e.htm#ID_6fc0f364cdeb59d40a00201901c90f84-6ec4330acdeb589c0a00201901e67c3d-en-US>`_
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SERRor"
             args = []
 
         SERRor = SERRor()
         """
         `SYSTem:SERRor
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5399f400e2034c4e.htm#ID_6fc0f364cdeb59d40a00201901c90f84-6ec4330acdeb589c0a00201901e67c3d-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5399f400e2034c4e.htm#ID_6fc0f364cdeb59d40a00201901c90f84-6ec4330acdeb589c0a00201901e67c3d-en-US>`_
 
         Arguments:
         """
@@ -25456,6 +27029,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SSAVer"
             args = []
 
@@ -25465,6 +27039,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DELay"
                 args = ["1"]
 
@@ -25481,6 +27056,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1, ON, OFF
                 """
+                __slots__ = ()
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
@@ -25504,6 +27080,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "STATe"
             args = []
 
@@ -25517,10 +27094,11 @@ class SMB100A_gen(Instrument):
         class TIME(SCPINode):
             """
             `SYSTem:TIME
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0ad7e322edac4195.htm#ID_dbb4b4c671cb9ca10a00206a00ebeda8-374d740171cb9ca10a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0ad7e322edac4195.htm#ID_dbb4b4c671cb9ca10a00206a00ebeda8-374d740171cb9ca10a00206a012bc823-en-US>`_
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "TIME"
             args = []
 
@@ -25530,6 +27108,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "DSTime"
                 args = []
 
@@ -25539,6 +27118,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments:
                     """
+                    __slots__ = ()
                     _cmd = "RULE"
                     args = []
 
@@ -25548,6 +27128,7 @@ class SMB100A_gen(Instrument):
 
                         Arguments:
                         """
+                        __slots__ = ()
                         _cmd = "CATalog"
                         args = []
 
@@ -25578,6 +27159,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "HRTimer"
                 args = []
 
@@ -25587,6 +27169,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "ABSolute"
                     args = ["1"]
 
@@ -25603,6 +27186,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: 1
                     """
+                    __slots__ = ()
                     _cmd = "RELative"
                     args = ["1"]
 
@@ -25626,6 +27210,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: <integer>,<integer>,<integer>
                 """
+                __slots__ = ()
                 _cmd = "LOCal"
                 args = ["<integer>,<integer>,<integer>"]
 
@@ -25639,7 +27224,7 @@ class SMB100A_gen(Instrument):
         TIME = TIME()
         """
         `SYSTem:TIME
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0ad7e322edac4195.htm#ID_dbb4b4c671cb9ca10a00206a00ebeda8-374d740171cb9ca10a00206a012bc823-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0ad7e322edac4195.htm#ID_dbb4b4c671cb9ca10a00206a00ebeda8-374d740171cb9ca10a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -25650,6 +27235,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: <numeric_value>,<numeric_value>
             """
+            __slots__ = ()
             _cmd = "TZONe"
             args = ["<numeric_value>,<numeric_value>"]
 
@@ -25663,17 +27249,18 @@ class SMB100A_gen(Instrument):
         class VERSion(SCPINode, SCPIQuery):
             """
             `SYSTem:VERSion
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1687c21d3b684121.htm#ID_83b8bf4871d1f0010a00206a01566d1c-c7a8cef471d1f0010a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1687c21d3b684121.htm#ID_83b8bf4871d1f0010a00206a01566d1c-c7a8cef471d1f0010a00206a012bc823-en-US>`_
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "VERSion"
             args = []
 
         VERSion = VERSion()
         """
         `SYSTem:VERSion
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1687c21d3b684121.htm#ID_83b8bf4871d1f0010a00206a01566d1c-c7a8cef471d1f0010a00206a012bc823-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1687c21d3b684121.htm#ID_83b8bf4871d1f0010a00206a01566d1c-c7a8cef471d1f0010a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -25691,6 +27278,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "TAlk_terminator"
         args = []
 
@@ -25700,6 +27288,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Cr_nl_end"
             args = []
 
@@ -25716,6 +27305,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Nl_end"
             args = []
 
@@ -25739,6 +27329,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "TEst"
         args = []
 
@@ -25748,6 +27339,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "Point"
             args = ["1"]
 
@@ -25764,6 +27356,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "Voltage"
             args = []
 
@@ -25787,6 +27380,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "TIme"
         args = []
 
@@ -25796,6 +27390,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "AF_swp"
             args = ["1"]
 
@@ -25812,6 +27407,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "CF_swp"
             args = ["1"]
 
@@ -25828,6 +27424,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "MEmory_swp"
             args = ["1"]
 
@@ -25837,6 +27434,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "Fast"
                 args = ["1"]
 
@@ -25860,6 +27458,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "RF_swp"
             args = ["1"]
 
@@ -25883,6 +27482,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "TRIGger"
         args = []
 
@@ -25892,6 +27492,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "DM"
             args = []
 
@@ -25901,6 +27502,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMMediate"
                 args = []
 
@@ -25917,6 +27519,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: AUTO, EXTernal, SINGle
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
@@ -25940,23 +27543,25 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FSWeep"
             args = []
 
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `TRIGger:FSWeep:SOURce
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/673177c779ae404e.htm#ID_06cb678671bda0350a00206a01b91256-cb80732271bda0350a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/673177c779ae404e.htm#ID_06cb678671bda0350a00206a01b91256-cb80732271bda0350a00206a012bc823-en-US>`_
 
                 Arguments: AUTO, EXTernal, SINGle
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
             SOURce = SOURce()
             """
             `TRIGger:FSWeep:SOURce
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/673177c779ae404e.htm#ID_06cb678671bda0350a00206a01b91256-cb80732271bda0350a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/673177c779ae404e.htm#ID_06cb678671bda0350a00206a01b91256-cb80732271bda0350a00206a012bc823-en-US>`_
 
             Arguments: AUTO, EXTernal, SINGle
             """
@@ -25971,17 +27576,18 @@ class SMB100A_gen(Instrument):
         class IMMediate(SCPINode, SCPISet):
             """
             `TRIGger:IMMediate
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d4ef093297e1451c.htm#ID_4d0a658571bdb5730a00206a006f27c0-2860086d71bdb5730a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d4ef093297e1451c.htm#ID_4d0a658571bdb5730a00206a006f27c0-2860086d71bdb5730a00206a012bc823-en-US>`_
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "IMMediate"
             args = []
 
         IMMediate = IMMediate()
         """
         `TRIGger:IMMediate
-        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d4ef093297e1451c.htm#ID_4d0a658571bdb5730a00206a006f27c0-2860086d71bdb5730a00206a012bc823-en-US>`_
+        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d4ef093297e1451c.htm#ID_4d0a658571bdb5730a00206a006f27c0-2860086d71bdb5730a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -25992,6 +27598,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "LIST"
             args = []
 
@@ -26001,6 +27608,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMMediate"
                 args = []
 
@@ -26017,6 +27625,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: AUTO, EXTernal, SINGle
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
@@ -26040,6 +27649,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MSEQuence"
             args = []
 
@@ -26049,6 +27659,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMMediate"
                 args = []
 
@@ -26065,6 +27676,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: AUTO, EXTernal, SINGle
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
@@ -26088,6 +27700,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "ODELay"
             args = ["1"]
 
@@ -26104,6 +27717,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "OUTPut"
             args = []
 
@@ -26113,6 +27727,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NEGative, POSitive
                 """
+                __slots__ = ()
                 _cmd = "POLarity"
                 args = ["NEGative", "POSitive"]
 
@@ -26136,23 +27751,25 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PSWeep"
             args = []
 
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `TRIGger:PSWeep:SOURce
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3bdb2b0d8df44740.htm#ID_77ad610d71bda6ec0a00206a018a2840-7d255c2071bda6ec0a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3bdb2b0d8df44740.htm#ID_77ad610d71bda6ec0a00206a018a2840-7d255c2071bda6ec0a00206a012bc823-en-US>`_
 
                 Arguments: AUTO, EXTernal, SINGle
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
             SOURce = SOURce()
             """
             `TRIGger:PSWeep:SOURce
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3bdb2b0d8df44740.htm#ID_77ad610d71bda6ec0a00206a018a2840-7d255c2071bda6ec0a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3bdb2b0d8df44740.htm#ID_77ad610d71bda6ec0a00206a018a2840-7d255c2071bda6ec0a00206a012bc823-en-US>`_
 
             Arguments: AUTO, EXTernal, SINGle
             """
@@ -26170,6 +27787,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "PULSe"
             args = []
 
@@ -26179,6 +27797,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "EGATed"
                 args = []
 
@@ -26188,6 +27807,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: INVerted, NORMal
                     """
+                    __slots__ = ()
                     _cmd = "POLarity"
                     args = ["INVerted", "NORMal"]
 
@@ -26211,6 +27831,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMMediate"
                 args = []
 
@@ -26227,6 +27848,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: TTL, V05, VM25
                 """
+                __slots__ = ()
                 _cmd = "LEVel"
                 args = ["TTL", "V05", "VM25"]
 
@@ -26243,6 +27865,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NEGative, POSitive
                 """
+                __slots__ = ()
                 _cmd = "SLOPe"
                 args = ["NEGative", "POSitive"]
 
@@ -26259,6 +27882,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: AUTO, EGATed, EXT_gated, EXTern, EXTernal, SINGle
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["AUTO", "EGATed", "EXT_gated", "EXTern", "EXTernal", "SINGle"]
 
@@ -26282,6 +27906,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SEQuence"
             args = []
 
@@ -26291,6 +27916,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMMediate"
                 args = []
 
@@ -26307,6 +27933,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: NEGative, POSitive
                 """
+                __slots__ = ()
                 _cmd = "SLOPe"
                 args = ["NEGative", "POSitive"]
 
@@ -26323,6 +27950,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: BUS, EXTernal, HOLD, IMMediate
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["BUS", "EXTernal", "HOLD", "IMMediate"]
 
@@ -26339,6 +27967,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "STOP"
                 args = []
 
@@ -26348,6 +27977,7 @@ class SMB100A_gen(Instrument):
 
                     Arguments: EXTernal, IMMediate
                     """
+                    __slots__ = ()
                     _cmd = "SOURce"
                     args = ["EXTernal", "IMMediate"]
 
@@ -26378,6 +28008,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: EITHer, NEGative, POSitive
             """
+            __slots__ = ()
             _cmd = "SLOPe"
             args = ["EITHer", "NEGative", "POSitive"]
 
@@ -26394,6 +28025,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "STARt"
             args = []
 
@@ -26403,6 +28035,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMMediate"
                 args = []
 
@@ -26419,6 +28052,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: BUS, EXTernal, HOLD, IMMediate
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["BUS", "EXTernal", "HOLD", "IMMediate"]
 
@@ -26442,23 +28076,25 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "SWEep"
             args = []
 
             class IMMediate(SCPINode, SCPISet):
                 """
                 `TRIGger:SWEep:IMMediate
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/20e5ba8fcf2b4332.htm#ID_88ce59a571bdae100a00206a008814e4-d4d3ebe871bdae100a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/20e5ba8fcf2b4332.htm#ID_88ce59a571bdae100a00206a008814e4-d4d3ebe871bdae100a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
+                __slots__ = ()
                 _cmd = "IMMediate"
                 args = []
 
             IMMediate = IMMediate()
             """
             `TRIGger:SWEep:IMMediate
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/20e5ba8fcf2b4332.htm#ID_88ce59a571bdae100a00206a008814e4-d4d3ebe871bdae100a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/20e5ba8fcf2b4332.htm#ID_88ce59a571bdae100a00206a008814e4-d4d3ebe871bdae100a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -26466,17 +28102,18 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `TRIGger:SWEep:SOURce
-                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e40fc9dd64154e1e.htm#ID_2d45b80571bd99020a00206a015e8a83-7005204271bd99020a00206a012bc823-en-US>`_
+                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e40fc9dd64154e1e.htm#ID_2d45b80571bd99020a00206a015e8a83-7005204271bd99020a00206a012bc823-en-US>`_
 
                 Arguments: AUTO, EXTernal, SINGle
                 """
+                __slots__ = ()
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
             SOURce = SOURce()
             """
             `TRIGger:SWEep:SOURce
-            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e40fc9dd64154e1e.htm#ID_2d45b80571bd99020a00206a015e8a83-7005204271bd99020a00206a012bc823-en-US>`_
+            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e40fc9dd64154e1e.htm#ID_2d45b80571bd99020a00206a015e8a83-7005204271bd99020a00206a012bc823-en-US>`_
 
             Arguments: AUTO, EXTernal, SINGle
             """
@@ -26501,6 +28138,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "TSWeep"
         args = []
 
@@ -26517,6 +28155,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "VECTor"
         args = []
 
@@ -26526,6 +28165,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "CONFig"
             args = []
 
@@ -26535,6 +28175,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: EXTernal, INTernal
                 """
+                __slots__ = ()
                 _cmd = "MIXer"
                 args = ["EXTernal", "INTernal"]
 
@@ -26551,6 +28192,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: DISabled, ENABled
                 """
+                __slots__ = ()
                 _cmd = "PULSe"
                 args = ["DISabled", "ENABled"]
 
@@ -26574,6 +28216,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "FADing"
             args = []
 
@@ -26583,6 +28226,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "DIR_dopp"
                 args = ["1"]
 
@@ -26599,6 +28243,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "RATio"
                 args = ["1"]
 
@@ -26615,6 +28260,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: 1
                 """
+                __slots__ = ()
                 _cmd = "SPEed"
                 args = ["1"]
 
@@ -26638,6 +28284,7 @@ class SMB100A_gen(Instrument):
 
             Arguments:
             """
+            __slots__ = ()
             _cmd = "MODopt"
             args = []
 
@@ -26647,6 +28294,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: DISabled, ENABled
                 """
+                __slots__ = ()
                 _cmd = "ENVelope"
                 args = ["DISabled", "ENABled"]
 
@@ -26663,6 +28311,7 @@ class SMB100A_gen(Instrument):
 
                 Arguments: INVerse, NORMal
                 """
+                __slots__ = ()
                 _cmd = "MODPol"
                 args = ["INVerse", "NORMal"]
 
@@ -26693,6 +28342,7 @@ class SMB100A_gen(Instrument):
 
         Arguments:
         """
+        __slots__ = ()
         _cmd = "VMETer"
         args = []
 
@@ -26702,6 +28352,7 @@ class SMB100A_gen(Instrument):
 
             Arguments: 1
             """
+            __slots__ = ()
             _cmd = "VOLTage"
             args = ["1"]
 
@@ -26725,6 +28376,7 @@ class SMB100A_gen(Instrument):
 
         Arguments: SAWTooth, SINE, SQUare, TRIangle, WGNoise
         """
+        __slots__ = ()
         _cmd = "WAVeform"
         args = ["SAWTooth", "SINE", "SQUare", "TRIangle", "WGNoise"]
 

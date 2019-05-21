@@ -18,7 +18,7 @@ class NRPCmdListParser(CmdListParser):
         has_write = cmd[-1] != '?'
 
         # GPIB explorer indicates an indexed node by appending "1" to the name
-        cmd = str(cmd).translate(None, "[]").rstrip("?").lstrip(":").replace("{1..*}", "1")
+        cmd = str(cmd).translate(str.maketrans("", "", "[]")).rstrip("?").lstrip(":").replace("{1..*}", "1")
 
         cmd = self._filter_cmd(cmd)
         if cmd is None:
@@ -56,14 +56,15 @@ def upate_syntax_definition(sensor):
     """
     x = sensor.SYSTem.HELP.SYNTax.ALL.q().block_data()
     info = sensor.query_system_info()
-    with open(os.path.join(cmd_list_dir, syntax_file), "wb") as fd:
+    with open(os.path.join(cmd_list_dir, syntax_file), "w", newline="\n", encoding="utf-8") as fd:
         fd.write("// Generated from %s, fw: %s\n" % (info["Type"], info["SW Build"]))
         fd.write(x.lstrip())
 
 
-def generate():
+def generate(download_webhelp=False):
     generate_SCPI_class(NRPCmdListParser(syntax_file), "NRPxxSN_gen", tree_patcher=NRPTreePatcher())
+
 
 if __name__ == "__main__":
     upate_syntax_definition(nrp.connect_ethernet(nrp.find_sensors(max_sensors=1)[0].ip_address))
-    generate()
+    generate(False)

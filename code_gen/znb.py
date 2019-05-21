@@ -12,7 +12,7 @@ import re
 
 
 class RohdeZNBWebhelp(ModernRohdeWebhelp):
-    _base_url = "http://www.rohde-schwarz.com/webhelp/znb_znbt_html_usermanual_en{0}"
+    _base_url = "http://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en{0}"
     toc_file = "ZNB_webhelp_toc.xml"
     cmd_list_file = "ZNB_webhelp_command_list.htm"
 
@@ -41,11 +41,12 @@ class ZNBTreePatcher(TreePatcher):
         self.fixit[("SENSe:CORRection:CDATa", "args")] = ["1", "'string'"]
 
 
-def generate():
-    generate_SCPI_class(CmdListParser("ZNB_commands.inp"), "ZNB_gen", RohdeZNBWebhelp(download_webhelp=download),
+def generate(download_webhelp=False):
+    generate_SCPI_class(CmdListParser("ZNB_commands.inp"), "ZNB_gen", RohdeZNBWebhelp(download_webhelp=download_webhelp),
                         tree_patcher=ZNBTreePatcher())
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     download = True
-    generate()
+    generate(download)

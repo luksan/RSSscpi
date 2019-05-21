@@ -13,7 +13,7 @@ import re
 
 class RohdeZVAWebhelp(Webhelp):
     def __init__(self, download_webhelp=False):
-        self._base_url = "http://www.rohde-schwarz.com/webhelp/webhelp_zva{0}"
+        self._base_url = "http://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en{0}"
 
         self.cmd_list_file = os.path.join(cmd_list_dir, "ZVA_help_index.xml")
 
@@ -27,7 +27,7 @@ class RohdeZVAWebhelp(Webhelp):
         self.load_urls()
 
     def download_cmd_list(self):
-        with open(self.cmd_list_file, "w") as cmd_list:
+        with open(self.cmd_list_file, "wb") as cmd_list:
             data_cnt = 0
             while True:
                 try:
@@ -35,7 +35,7 @@ class RohdeZVAWebhelp(Webhelp):
                 except HTTPError:
                     break
                 x = index.read()
-                cmd_list.write(x[x.find('"') + 1:x.rfind('"')])
+                cmd_list.write(x[x.find(b'"') + 1:x.rfind(b'"')])
                 data_cnt += 1
             logging.debug("Downloaded help index from %s",
                           self._base_url.format("/whxdata/whidata%i_xml.js" % (data_cnt - 1)))
@@ -56,10 +56,10 @@ class RohdeZVAWebhelp(Webhelp):
 
         for u in soup("key"):
             # TODO: The second item in the list can contain "(deprecated)". Use this info?
-            cmd = str(u['name'].split()[0]).translate(None, '"\\')  # Remove " and \ from the command
+            cmd = str(u['name'].split()[0]).translate(str.maketrans("", "", '"\\'))  # Remove " and \ from the command
             if not cmd[0:3].isupper():
                 continue  # All SCPI commands start with at least three capital letters
-            cmd_key = str(cmd).translate(None, '[]?')
+            cmd_key = str(cmd).translate(str.maketrans("", "", '[]?'))
             cmd_key = re.sub(r"([^:])<\w+?>", r"\1", cmd_key)
             url = "/" + u.topic['url'][2:-2]
             self._urls[cmd_key] = (cmd, url)
@@ -75,10 +75,11 @@ class RohdeZVAWebhelp(Webhelp):
             return None
 
 
-def generate():
-    generate_SCPI_class(CmdListParser("ZVA_commands.inp"), "ZVA_gen", RohdeZVAWebhelp(download_webhelp=download))
+def generate(download_webhelp=False):
+    generate_SCPI_class(CmdListParser("ZVA_commands.inp"), "ZVA_gen", RohdeZVAWebhelp(download_webhelp=download_webhelp))
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     download = True
-    generate()
+    generate(download)

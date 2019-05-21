@@ -16,6 +16,10 @@
   <topic name='\"SENSe:AVERage#Count_CURRent\"' url='\"scpi_reference/sense/sense_ch___average.htm#Count_CURRent\"'>
   </topic>
  </key>
+ <key name='\"[SENSe&lt;Ch&gt;:]AVERage:Mode\"'>
+  <topic name='\"SENSe:AVERage#Mode\"' url='\"scpi_reference/sense/sense_ch___average.htm#Mode\"'>
+  </topic>
+ </key>
  <key name='\"[SENSe&lt;Ch&gt;:]AVERage[:STATe]\"'>
   <topic name='\"SENSe_AVERage#State\"' url='\"scpi_reference/sense/sense_ch___average.htm#State\"'>
   </topic>
@@ -483,6 +487,10 @@
   <topic name='\"SENSe:FREQuency#CONVersion_AWReceiver__STATe\"' url='\"scpi_reference/sense/sense_frequency.htm#CONVersion_AWReceiver__STATe\"'>
   </topic>
  </key>
+ <key name='\"[SENSe&lt;Ch&gt;:]FREQuency:CONVersion:DEVice:CONFigure\"'>
+  <topic name='\"SENSe:FREQuency#CONVersion_DEVice_CONFigure\"' url='\"scpi_reference/sense/sense_frequency.htm#CONVersion_DEVice_CONFigure\"'>
+  </topic>
+ </key>
  <key name='\"[SENSe&lt;Ch&gt;:]FREQuency:CONVersion:DEVice:MODE\"'>
   <topic name='\"SENSe:FREQuency#CONVersion_DEVice_MODE\"' url='\"scpi_reference/sense/sense_frequency.htm#CONVersion_DEVice_MODE\"'>
   </topic>
@@ -675,13 +683,13 @@
   <topic name='\"SENSe:FREQuency:MDELay#COMBiner_STATe\"' url='\"scpi_reference/sense/sense_frequency_mdelay.htm#COMBiner_STATe\"'>
   </topic>
  </key>
+</indexdata>
+<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
  <key name='\"[SENSe&lt;Ch&gt;:]FREQuency:MDELay:CONVersion\"'>
   <topic name='\"SENSe:FREQuency:MDELay#CONVersion\"' url='\"scpi_reference/sense/sense_frequency_mdelay.htm#CONVersion\"'>
   </topic>
  </key>
-</indexdata>
-<?xml version='1.0' encoding='utf-8' ?>
-<indexdata>
  <key name='\"[SENSe&lt;Ch&gt;:]FREQuency:MDELay:CORRection[:STATe]\"'>
   <topic name='\"SENSe:FREQuency:MDELay#CORRection_STATe\"' url='\"scpi_reference/sense/sense_frequency_mdelay.htm#CORRection_STATe\"'>
   </topic>
@@ -1026,13 +1034,13 @@
   <topic name='\"SENSe_SEGMent#OVERlap\"' url='\"scpi_reference/sense/sense_segment.htm#OVERlap\"'>
   </topic>
  </key>
+</indexdata>
+<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
  <key name='\"[SENSe&lt;Ch&gt;:]SEGMent&lt;Seg&gt;:NAME\"'>
   <topic name='\"SENSe:SEGMent#NAME\"' url='\"scpi_reference/sense/sense_segment.htm#NAME\"'>
   </topic>
  </key>
-</indexdata>
-<?xml version='1.0' encoding='utf-8' ?>
-<indexdata>
  <key name='\"[SENSe&lt;Ch&gt;:]SEGMent&lt;Seg&gt;:OVERlap\"'>
   <topic name='\"SENSe_SEGMent#OVERlap\"' url='\"scpi_reference/sense/sense_segment.htm#OVERlap\"'>
   </topic>
@@ -1610,6 +1618,10 @@
   <topic average#average_factor\"="" bandwidth="" name='\"Power' url='\"mmi_reference/channel/power_bandwidth_average/power_bandwidth_average.htm#Average_Factor\"'>
   </topic>
  </key>
+ <key mode\"="" name='\"Average'>
+  <topic average#average_mode\"="" bandwidth="" name='\"Power' url='\"mmi_reference/channel/power_bandwidth_average/power_bandwidth_average.htm#Average_Mode\"'>
+  </topic>
+ </key>
  <key name='\"Average' on\"="">
   <topic average\"="" bandwidth="" name='\"Power' url='\"mmi_reference/channel/power_bandwidth_average/power_bandwidth_average.htm\"'>
   </topic>
@@ -1738,13 +1750,13 @@
   <topic name='\"About' reference#command_reference__\"="" scpi="" url='\"scpi_reference/about_this_chapter.htm#Command_Reference__\"'>
   </topic>
  </key>
+</indexdata>
+<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
  <key name='\"Buffer' recording="" time\"="">
   <topic measurements#define_pulse_profile\"="" name='\"Pulsed' url='\"mmi_reference/channel/sweep/pulsed_measurements.htm#Define_Pulse_Profile\"'>
   </topic>
  </key>
-</indexdata>
-<?xml version='1.0' encoding='utf-8' ?>
-<indexdata>
  <key name='\"Buffered' sweep\"="">
   <topic history\"="" name='\"Sweep' url='\"program_examples/condensed_program_examples/operations_on_traces/sweep_history.htm\"'>
   </topic>
@@ -2413,6 +2425,10 @@
  </key>
  <key name='\"CALCulate&lt;Chn&gt;:MARKer&lt;Mk&gt;[:STATe]\"'>
   <topic name='\"CALCulate_MARKer#STATe\"' url='\"scpi_reference/calculate/calculate_marker.htm#STATe\"'>
+  </topic>
+ </key>
+ <key name='\"CALCulate&lt;Chn&gt;:MATH:DISPlay:STATe\"'>
+  <topic name='\"CALCulate_MATH#DISPlay_STATe\"' url='\"scpi_reference/calculate/calculate_math.htm#DISPlay_STATe\"'>
   </topic>
  </key>
  <key name='\"CALCulate&lt;Chn&gt;:MATH:FUNCtion\"'>
@@ -3796,6 +3812,17 @@
   <topic name='\"DISPlay#BOTTom\"' url='\"scpi_reference/display/display.htm#BOTTom\"'>
   </topic>
  </key>
+ <key name='\"DISPlay[:WINDow&lt;Wnd&gt;]:TRACe&lt;WndTr&gt;:Y[:SCALe]:COUPle:ALL\"'>
+  <topic name='\"DISPlay#COUPle_ALL\"' url='\"scpi_reference/display/display.htm#COUPle_ALL\"'>
+  </topic>
+ </key>
+ <key name='\"DISPlay[:WINDow&lt;Wnd&gt;]:TRACe&lt;WndTr&gt;:Y[:SCALe]:COUPle[:STATe]\"'>
+  <topic name='\"DISPlay#COUPle\"' url='\"scpi_reference/display/display.htm#COUPle\"'>
+  </topic>
+ </key>
+</indexdata>
+<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
  <key name='\"DISPlay[:WINDow&lt;Wnd&gt;]:TRACe&lt;WndTr&gt;:Y[:SCALe]:PDIVision\"'>
   <topic name='\"DISPlay#PDIVision\"' url='\"scpi_reference/display/display.htm#PDIVision\"'>
   </topic>
@@ -3804,15 +3831,16 @@
   <topic name='\"DISPlay#RLEVel\"' url='\"scpi_reference/display/display.htm#RLEVel\"'>
   </topic>
  </key>
-</indexdata>
-<?xml version='1.0' encoding='utf-8' ?>
-<indexdata>
  <key name='\"DISPlay[:WINDow&lt;Wnd&gt;]:TRACe&lt;WndTr&gt;:Y[:SCALe]:RPOSition\"'>
   <topic name='\"DISPlay#RPOSition\"' url='\"scpi_reference/display/display.htm#RPOSition\"'>
   </topic>
  </key>
  <key name='\"DISPlay[:WINDow&lt;Wnd&gt;]:TRACe&lt;WndTr&gt;:Y[:SCALe]:TOP\"'>
   <topic name='\"DISPlay#TOP\"' url='\"scpi_reference/display/display.htm#TOP\"'>
+  </topic>
+ </key>
+ <key name='\"DISPlay[:WINDow&lt;Wnd&gt;]:Y[:SCALe]:AUTO\"'>
+  <topic name='\"DISPlay#AUTO_All\"' url='\"scpi_reference/display/display.htm#AUTO_All\"'>
   </topic>
  </key>
  <key columns\"="" name='\"Displayed'>
@@ -4141,13 +4169,13 @@
   <topic flatness\"="" name='\"Trace' slope="" statistics#gain="" url='\"mmi_reference/trace/trace_funct/trace_eval.htm#Gain_Slope_Flatness\"'>
   </topic>
  </key>
+</indexdata>
+<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
  <key cal\"="" name='\"Flatness'>
   <topic calibration#modify_power_cal_settings\"="" name='\"Power' url='\"mmi_reference/channel/calibration/power_calibration.htm#Modify_Power_Cal_Settings\"'>
   </topic>
  </key>
-</indexdata>
-<?xml version='1.0' encoding='utf-8' ?>
-<indexdata>
  <key name='\"Format\"'>
   <topic -="" format\"="" name='\"Trace' url='\"mmi_reference/trace/format/trace_format.htm\"'>
   </topic>
@@ -4516,13 +4544,13 @@
   <topic functions\"="" interface="" name='\"RSIB' url='\"annexes/hw_interfaces/lan_interfaces/rsib_interface_functions.htm\"'>
   </topic>
  </key>
+</indexdata>
+<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
  <key name='\"Iberr\"'>
   <topic functions\"="" interface="" name='\"RSIB' url='\"annexes/hw_interfaces/lan_interfaces/rsib_interface_functions.htm\"'>
   </topic>
  </key>
-</indexdata>
-<?xml version='1.0' encoding='utf-8' ?>
-<indexdata>
  <key name='\"Ibsta\"'>
   <topic functions\"="" interface="" name='\"RSIB' url='\"annexes/hw_interfaces/lan_interfaces/rsib_interface_functions.htm\"'>
   </topic>
@@ -4861,13 +4889,13 @@
   <topic and="" command="" name='\"SCPI' structure="" syntax#device_specific_commands\"="" url='\"remote_control/device_messages/scpi_command_structure_and_syntax.htm#Device_Specific_Commands\"'>
   </topic>
  </key>
+</indexdata>
+<?xml version='1.0' encoding='utf-8' ?>
+<indexdata>
  <key driver\"="" name='\"LabView'>
   <topic control#starting_remote_control_session\"="" name='\"Introduction' remote="" to="" url='\"remote_control/remote_control_operation/introduction.htm#Starting_Remote_Control_Session\"'>
   </topic>
  </key>
-</indexdata>
-<?xml version='1.0' encoding='utf-8' ?>
-<indexdata>
  <key driver\"="" name='\"LabWindows'>
   <topic control#starting_remote_control_session\"="" name='\"Introduction' remote="" to="" url='\"remote_control/remote_control_operation/introduction.htm#Starting_Remote_Control_Session\"'>
   </topic>
@@ -8887,6 +8915,10 @@
   <topic name='\"SYSTem#IDENtify_STRing\"' url='\"scpi_reference/system/system.htm#IDENtify_STRing\"'>
   </topic>
  </key>
+ <key name='\"SYSTem:INIT:WAIT\"'>
+  <topic name='\"SYSTem#INIT_WAIT\"' url='\"scpi_reference/system/system.htm#INIT_WAIT\"'>
+  </topic>
+ </key>
  <key name='\"SYSTem:KLOCk\"'>
   <topic name='\"SYSTem#KLOCk\"' url='\"scpi_reference/system/system.htm#KLOCk\"'>
   </topic>
@@ -8948,6 +8980,10 @@
  </key>
  <key name='\"SYSTem:TIME\"'>
   <topic name='\"SYSTem#TIME\"' url='\"scpi_reference/system/system.htm#TIME\"'>
+  </topic>
+ </key>
+ <key name='\"SYSTem:TIME:LOCal?\"'>
+  <topic name='\"SYSTem#TIME_LOCAL\"' url='\"scpi_reference/system/system.htm#TIME_LOCAL\"'>
   </topic>
  </key>
  <key name='\"SYSTem:TRESet[:STATe]\"'>

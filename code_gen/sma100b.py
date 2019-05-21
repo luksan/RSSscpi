@@ -31,20 +31,21 @@ def upate_syntax_definition(sma):
 
     :param sma100b.SMA100B sma:
     """
-    x = sma.SYSTem.HELP.SYNTax.ALL.q().block_data()
+    x = sma.SYSTem.HELP.SYNTax.ALL.q().block_data().decode(encoding="utf-8")
     info = sma.IDN.q().split_comma()
-    with open(os.path.join(cmd_list_dir, syntax_file), "wb") as fd:
+    with open(os.path.join(cmd_list_dir, syntax_file), "w", newline="\n", encoding="utf-8") as fd:
         fd.write("// Generated from %s, fw: %s\n" % (info[1], info[3]))
         fd.write(x.lstrip())
 
 
-def generate():
+def generate(download_webhelp=False):
     generate_SCPI_class(NRPCmdListParser(syntax_file), "SMA100B_gen",
                         tree_patcher=SMA100BTreePatcher(),
-                        webhelp=SMB100AWebhelp(download))
+                        webhelp=SMB100AWebhelp(download_webhelp))
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
     upate_syntax_definition(sma100b.connect_ethernet(sma100b.find_sma100b(max_devices=1)[0].ip_address))
     download = True
-    generate()
+    generate(download)
