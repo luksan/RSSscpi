@@ -99,6 +99,8 @@ class CmdListParser(object):
 
 
 class Webhelp(object):
+    instrument_name = None
+
     def get_help_url(self, cmd):
         """
         :param cmd: A SCPI command, ex. CALCULATE:MARKER, in the form of a string list with one element per node.
@@ -107,6 +109,40 @@ class Webhelp(object):
         :rtype: str or None
         """
         return None
+
+    def find_online_manual(self):
+        """
+        This function attempts to find the URL for the landing page of the
+        online version of the user manual for the instrument specified by the
+        instrument_name attribute.
+
+        :return: An URL or None
+        """
+        search_url = "http://www.rohde-schwarz.com/manual/%s/" % self.instrument_name
+        try:
+            bs = BeautifulSoup(urlopen(search_url), "html.parser")
+        except HTTPError:
+            logging.error("Failed to open manual search URL %s" % search_url)
+            return None
+
+        tag = bs.find("a", class_="file_link", href=re.compile(r"webhelp.*%s.*\.html?$" % self.instrument_name, re.IGNORECASE))
+        if tag:
+            logging.debug("Found user manual for %s: %s" % (self.instrument_name, tag["href"]))
+            return tag["href"]
+        logging.debug("No user manual for %s found" % self.instrument_name)
+
+    def find_base_url(self):
+        """
+        Returns the part to the left of the last / in the URL for the online manual.
+        Links in the manual are relative to this base URL.
+
+        :return: Base URL string or None.
+        """
+        url = self.find_online_manual()
+        if url:
+            return url.rpartition("/")[0]
+        else:
+            logging.warning("Couldn't find online user manual for instrument %s" % self.instrument_name)
 
 
 class ModernRohdeWebhelp(Webhelp):
@@ -131,6 +167,9 @@ class ModernRohdeWebhelp(Webhelp):
         self._interface_messages = None  # VXI-11 Interface messages, @LOC, @DCL, etc.
 
         if download_webhelp:
+            base_url = self.find_base_url()
+            if base_url:
+                self._base_url = base_url + "{0}"
             self.download_cmd_list()
 
         self._toc_soup = None
@@ -141,16 +180,25 @@ class ModernRohdeWebhelp(Webhelp):
 
     def download_cmd_list(self):
         toc_url = self._base_url.format("/Data/Toc.xml")
-        toc = BeautifulSoup(urlopen(toc_url), "html.parser")
+        try:
+            toc = BeautifulSoup(urlopen(toc_url), "html.parser")
+        except HTTPError:
+            logging.error("Download of TOC from %s failed." % toc_url)
+            return
         with open(self.toc_file, "w", encoding="utf-8") as f:
             f.write(toc.prettify())
         logging.debug("TOC downloaded from %s" % toc_url)
 
-        cmd_list_url = toc.find(title="List of Commands")["link"]
-        cmd_list = BeautifulSoup(urlopen(self._base_url.format(cmd_list_url)), "html.parser")
-        logging.debug("Command list downloaded from %s" % self._base_url.format(cmd_list_url))
+        cmd_list_rel_url = toc.find(title="List of Commands")["link"]
+        cmd_list_url = self._base_url.format(cmd_list_rel_url)
+        try:
+            cmd_list = BeautifulSoup(urlopen(cmd_list_url), "html.parser")
+        except HTTPError:
+            logging.error("Download of command list from %s failed." % cmd_list_url)
+            return
         with open(self.cmd_list_file, "w", encoding="utf-8") as f:
             f.write(cmd_list.prettify())
+        logging.debug("Command list downloaded from %s" % cmd_list_url)
 
     def parse_toc(self):
         """

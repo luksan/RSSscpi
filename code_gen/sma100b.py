@@ -13,6 +13,7 @@ syntax_file = "SMA100B_syntax.txt"
 
 
 class SMB100AWebhelp(ModernRohdeWebhelp):
+    instrument_name = "SMA100B"
     _base_url = "http://www.rohde-schwarz.com/webhelp/sma100b_html_usermanual_en{0}"
     toc_file = "SMA100B_webhelp_toc.xml"
     cmd_list_file = "SMA100B_webhelp_command_list.htm"

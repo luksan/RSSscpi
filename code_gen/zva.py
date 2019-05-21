@@ -12,12 +12,17 @@ import re
 
 
 class RohdeZVAWebhelp(Webhelp):
+    instrument_name = "ZVA"
+
     def __init__(self, download_webhelp=False):
         self._base_url = "http://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en{0}"
 
         self.cmd_list_file = os.path.join(cmd_list_dir, "ZVA_help_index.xml")
 
         if download_webhelp:
+            base_url = self.find_base_url()
+            if base_url:
+                self._base_url = base_url + "{0}"
             self.download_cmd_list()
 
         self._urls = dict()
@@ -30,13 +35,16 @@ class RohdeZVAWebhelp(Webhelp):
         with open(self.cmd_list_file, "wb") as cmd_list:
             data_cnt = 0
             while True:
+                url = self._base_url.format("/whxdata/whidata%i_xml.js" % data_cnt)
                 try:
-                    index = urlopen(self._base_url.format("/whxdata/whidata%i_xml.js" % data_cnt))
+                    index = urlopen(url)
                 except HTTPError:
-                    break
+                    break  # We keep incrementing the URL index until we get a 404
                 x = index.read()
                 cmd_list.write(x[x.find(b'"') + 1:x.rfind(b'"')])
                 data_cnt += 1
+            if data_cnt == 0:
+                raise RuntimeError("Download of command index from %s failed" % url)
             logging.debug("Downloaded help index from %s",
                           self._base_url.format("/whxdata/whidata%i_xml.js" % (data_cnt - 1)))
 

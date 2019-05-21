@@ -21,6 +21,7 @@ class SMB100ACmdListParser(NRPCmdListParser):
 
 
 class SMB100AWebhelp(ModernRohdeWebhelp):
+    instrument_name = "SMB100A"
     _base_url = "http://www.rohde-schwarz.com/webhelp/smb100a_webhelp{0}"
     toc_file = "SMB100A_webhelp_toc.xml"
     cmd_list_file = "SMB100A_webhelp_command_list.htm"

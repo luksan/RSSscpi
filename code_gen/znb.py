@@ -12,6 +12,7 @@ import re
 
 
 class RohdeZNBWebhelp(ModernRohdeWebhelp):
+    instrument_name = "ZNB"
     _base_url = "http://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en{0}"
     toc_file = "ZNB_webhelp_toc.xml"
     cmd_list_file = "ZNB_webhelp_command_list.htm"
