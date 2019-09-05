@@ -220,7 +220,7 @@ class Instrument(SCPINodeBase):
                 esr = None
                 if stb.event_status_summary:
                     # read and reset the event status register
-                    esr = StatusByteRegister(int(self._call_visa(self._visa_res.query, "*ESR?")))
+                    esr = EventStatusRegister(int(self._call_visa(self._visa_res.query, "*ESR?")))
                 self.visa_logger.info("{:5.1f} ms Callback VISA event: STB: {:}, ESR: {:}, duration {:.2f} ms"
                                       .format(self._log_time,
                                               stb.short_status(),
