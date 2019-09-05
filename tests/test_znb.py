@@ -416,6 +416,10 @@ class TestSweep(PropertyTester):
                 "SENSe2:SWEep:DWELl:IPOint?",
                 ] == visa.cmd
 
+    bool_properties = [
+        ("continuous_sweep", "INITiate:CONTinuous", "{:s} {:s}", "{:s}?"),
+    ]
+
     float_properties = [
         ("dwell_time", "SENSe2:SWEep:DWELl", "{:s} {:s}", "{:s}?"),
         ("time",       "SENSe2:SWEep:TIME",  "{:s} {:s}", "{:s}?"),

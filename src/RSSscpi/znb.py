@@ -650,6 +650,7 @@ class Sweep(ZNB_gen.SENSe.SWEep):
         # type: (int) -> SweepSegment
         return SweepSegment(n, self.channel)
 
+    continuous_sweep = SCPIProperty(ZNB_gen.INITiate.CONTinuous, bool, get_root_node=lambda sweep: sweep.channel.instrument)
     _SWE = ZNB_gen.SENSe.SWEep
 
     analog_sweep_is_enabled = SCPIPropertyMapping(_SWE.GENeration, str, {"ANALog": True, "STEPped": False})
