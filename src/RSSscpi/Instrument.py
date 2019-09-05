@@ -151,8 +151,13 @@ class Instrument(SCPINodeBase):
         A logging.Logger instance for all VISA interactions
         """
 
+        self._log_time_start = timeit.default_timer()
+        """
+        This is T0 for the log.
+        """
+
         self._service_request_callback_handle = None
-        self.last_cmd_time = 0
+        self._last_cmd_time = 0
 
         self._visa_lock = threading.Lock()
         self._in_callback = threading.Lock()
@@ -187,6 +192,15 @@ class Instrument(SCPINodeBase):
             visa.constants.EventType.service_request, self._service_request_handler, 0)
         self._visa_res.enable_event(visa.constants.EventType.service_request, visa.constants.VI_HNDLR)
 
+    @property
+    def _log_time(self):
+        return (timeit.default_timer() - self._log_time_start) * 1e3
+
+    def log_debug(self, fmt_string, *args, duration=None, **kwargs):
+        time = "%5.1f ms" % self._log_time
+        time += " %.2f ms\t" % duration if duration else "\t"
+        self.visa_logger.debug(time + fmt_string, *args, **kwargs)
+
     # noinspection PyUnusedLocal
     def _service_request_handler(self, session, event_type, context, user_handle):
         """
@@ -198,7 +212,7 @@ class Instrument(SCPINodeBase):
         :param user_handle:
         :return:
         """
-        duration = timeit.default_timer() - self.last_cmd_time
+        duration = timeit.default_timer() - self._last_cmd_time
         self.visa_logger.debug("Handling service request")
         with self._visa_lock:
             with self._in_callback:
@@ -207,8 +221,9 @@ class Instrument(SCPINodeBase):
                 if stb.event_status_summary:
                     # read and reset the event status register
                     esr = StatusByteRegister(int(self._call_visa(self._visa_res.query, "*ESR?")))
-                self.visa_logger.info("VISA event: STB: {:}, ESR: {:}, duration {:.2f} ms"
-                                      .format(stb.short_status(),
+                self.visa_logger.info("{:5.1f} ms Callback VISA event: STB: {:}, ESR: {:}, duration {:.2f} ms"
+                                      .format(self._log_time,
+                                              stb.short_status(),
                                               esr.short_status() if esr is not None else "-",
                                               duration * 1e3))
                 self.event_queue.put_nowait(VISAEvent(duration, stb, esr))
@@ -273,8 +288,9 @@ class Instrument(SCPINodeBase):
         return ret
 
     def _end_visa_call(self, cmd_str, response):
-        self.last_cmd_time = timeit.default_timer()
-        elapsed = (self.last_cmd_time - self._call_time_start) * 1e3
+        self._last_cmd_time = timeit.default_timer()
+        elapsed = (self._last_cmd_time - self._call_time_start) * 1e3
+        log_time = (self._last_cmd_time - self._log_time_start) * 1e3
 
         if hasattr(response, "strip"):
             if isinstance(response, bytes):
@@ -289,7 +305,9 @@ class Instrument(SCPINodeBase):
                 r = " -> '%s'" % (logged_response)
         else:
             r = ""
-        self.visa_logger.info("%.2f ms\t%s%s", elapsed, cmd_str, r, extra={"duration": elapsed, "response": response})
+        self.visa_logger.info("%5.1f ms %.2f ms\t%s%s",
+                              log_time, elapsed, cmd_str.strip(), r,
+                              extra={"duration": elapsed, "response": response})
 
     def _build_arg_str(self, cmd, args, kwargs, query):
         """
