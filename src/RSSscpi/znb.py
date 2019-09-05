@@ -298,9 +298,9 @@ class Channel(object):
         Create a new trace with a measurement parameter according to CALCulate<Ch>:PARameter:SDEFine
 
         :param name: The trace name
-        :param parameter: A string defining the measured quantity
-        :param diagram: An optional Diagram, which the trace will be assigned to
-        :type diagram: Diagram
+        :param parameter: A string defining the measured quantity.
+        :param Diagram diagram: An optional Diagram, which the trace will be assigned to.
+                        The trace will not be visible unless a Diagram is specified.
         :return: A reference to the new trace
         :rtype: Trace
         """
