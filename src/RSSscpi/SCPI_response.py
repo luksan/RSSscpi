@@ -95,13 +95,14 @@ class SCPIResponse(object):
         Interpret the response as a SCPI block data transfer
 
         :return: the data from the block transfer
+        :rtype: memoryview
         """
         try:
             if self.raw[0:1] != b"#":
                 raise ValueError("Missing # at start of data block.")
             hdr_len = int(self.raw[1:2].decode('ascii'))  # The number of digits in the data length specifier
             data_len = int(self.raw[2:2+hdr_len].decode('ascii'))  # data length
-            data = self.raw[2+hdr_len:2+hdr_len+data_len]
+            data = memoryview(self.raw)[2+hdr_len:2+hdr_len+data_len]
             if len(data) != data_len:
                 raise ValueError("Not enugh data in IEEE data block.")
             return data
