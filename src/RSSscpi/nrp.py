@@ -5,6 +5,8 @@
 """
 from __future__ import absolute_import, division, print_function, unicode_literals
 
+from typing import List, Dict
+
 from RSSscpi.gen.NRPxxSN_gen import NRPxxSN_gen
 from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax
 import RSSscpi.network as net
@@ -12,8 +14,7 @@ import RSSscpi.network as net
 import socket
 
 
-def connect_ethernet(ip_address):
-    # type: ([str, unicode]) -> NRPxxSN
+def connect_ethernet(ip_address: str) -> "NRPxxSN":
     """
     Helper to connect to a power sensor via Ethernet / TCPIP / VISA.
     Creates an NRPxxSN instance and calls init() on it before returning.
@@ -68,7 +69,7 @@ class NRPxxSN(NRPxxSN_gen):
         idn = self.IDN.q()
         self.visa_logger.info("NRP sensor initialized: %s", idn)
 
-    def query_system_info(self):
+    def query_system_info(self) -> Dict[str, str]:
         """
         Queries SYSTem:INFO? and returns the respons parsed in to a dict()
         """
@@ -88,8 +89,7 @@ class NRPxxSN(NRPxxSN_gen):
         """
         self.CALibration.ZERO.AUTO().w("ONCE")
 
-    def fetch_data(self):
-        # type: () -> [float]
+    def fetch_data(self) -> List[float]:
         """
         Get the data from the measurement buffer using FETCh?
 

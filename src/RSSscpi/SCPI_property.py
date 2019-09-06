@@ -4,27 +4,33 @@
 @author: Lukas Sandström
 """
 
+from typing import Any, Callable, Dict, Optional, Union
+
 from .SCPI_gen_support import SCPINodeBase, SCPIQuery, SCPISet
+from .SCPI_response import SCPIResponse
 
 
 class SCPIProperty(object):
     """
     Getter/setter class for turning SCPINodes to class properties
     """
-    def __init__(self, node, conv, callback=None, get_root_node=lambda x: x, docstr=None):
+    def __init__(self, node,
+                 conv: Callable[[SCPIResponse], Any],
+                 callback: Callable[..., Optional[Dict[str, Any]]] = None,
+                 get_root_node: Callable[[Any], SCPINodeBase] = lambda x: x,
+                 docstr: str = None):
         """
 
         :param SCPINodeBase node: A __class__ derived from SCPINodeBase, which q() and w() will be invoked on an instance of.
         :param conv: A function which converts a SCPIResponse object to the desired type of the property.
         :param callback: A function called before each write and query, returning either a dict or None. The dict will be used as parameters for write()/query()
         :param get_root_node: A function returning a SCPINodeBase instance, called with instance as only parameter. Nodes between root and <node> will be instantiated an linked to root
-        :type get_root_node: (T, ) -> SCPINodeBase
         :param str docstr: The property doctring
         """
         self._leaf_node = node
         self._conv = conv
-        self._callback = callback  # type: (*args, **kwargs) -> T
-        self._get_root_node = get_root_node  # type: (T, ) -> SCPINodeBase
+        self._callback = callback
+        self._get_root_node = get_root_node
         self._set_doc()
         if docstr:  # FIXME: remove the argument and assign self.__doc__ =  node.__doc__ unconditionally
             self.__doc__ = docstr
@@ -35,9 +41,8 @@ class SCPIProperty(object):
         doc.append("Conversion: `" + self._conv.__name__ + "`")
         self.__doc__ = "\n".join(doc)
 
-    def _get_leaf(self, instance):
-        # type: (T) -> SCPINodeBase
-        root = self._get_root_node(instance)  # type: SCPINodeBase
+    def _get_leaf(self, instance) -> Union[SCPINodeBase, SCPIQuery, SCPISet]:
+        root = self._get_root_node(instance)
         return self._leaf_node.relink_to_ancestor(root)
 
     def __get__(self, instance, owner=None):

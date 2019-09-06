@@ -12,8 +12,7 @@ import RSSscpi.network as net
 import socket
 
 
-def connect_ethernet(ip_address):
-    # type: ([str, unicode]) -> SMA100B
+def connect_ethernet(ip_address: str) -> "SMA100B":
     """
     Helper to connect to a SMA100B signal generator via Ethernet / TCPIP / VISA.
     Creates an SMA100B instance and calls init() on it before returning.

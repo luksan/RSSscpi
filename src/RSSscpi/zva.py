@@ -16,8 +16,7 @@ import logging
 from memoized_property import memoized_property
 
 
-def connect_ethernet(ip_address):
-    # type: ([str, unicode]) -> RSSscpi.zva.ZVA
+def connect_ethernet(ip_address: str) -> "ZVA":
     """
     Helper to connect to a ZVA VNA via Ethernet / TCPIP / VISA.
     Creates an ZVA instance and calls init() on it before returning.
@@ -76,8 +75,7 @@ class ZVA(ZVA_gen, znb.ZNB):
         # There is no functionality for this on the ZVA
         assert not hasattr(self.SYSTem.COMMunicate, "CODec")
 
-    def get_channel(self, n):
-        # type: (int) -> RSSscpi.zva.Channel
+    def get_channel(self, n: int) -> "Channel":
         return Channel(n, self)
 
     def get_diagram(self, n):
@@ -120,19 +118,16 @@ class Channel(znb.Channel):
         return self.instrument.TRIGger(self.n)
 
     @property
-    def sweep(self):
-        # type: () -> RSSscpi.zva.Sweep
+    def sweep(self) -> "Sweep":
         return Sweep(self)
 
-    def get_trace(self, name):
-        # type: ([str, unicode]) -> Trace
+    def get_trace(self, name: str) -> "Trace":
         return Trace(name=name, channel=self)
 
-    def get_vna_port(self, port_no):
+    def get_vna_port(self, port_no: int):
         return ChannelVNAPort(self, port_no)
 
-    def create_trace(self, name, parameter, diagram=None):
-        # type: () -> RSSscpi.zva.Trace
+    def create_trace(self, name: str, parameter: str, diagram=None) -> "Trace":
         return super(Channel, self).create_trace(name, parameter, diagram)
 
 
@@ -224,12 +219,10 @@ class Trace(znb.Trace):
     def get_marker(self, n):
         return Marker(n, self)
 
-    def copy(self, new_name, diagram=None):
-        # type: (str, Diagram) -> RSSscpi.zva.Trace
+    def copy(self, new_name: str, diagram=None) -> "Trace":
         return super(Trace, self).copy(new_name, diagram)
 
-    def copy_assign_math(self, new_name, equation, diagram=None):
-        # type: (str, str, Diagram) -> RSSscpi.zva.Trace
+    def copy_assign_math(self, new_name: str, equation: str, diagram=None)  -> "Trace":
         return super(Trace, self).copy_assign_math(new_name, equation, diagram)
 
 

@@ -21,8 +21,7 @@ import re
 from memoized_property import memoized_property
 
 
-def connect_ethernet(ip_address):
-    # type: ([str, unicode]) -> ZNB
+def connect_ethernet(ip_address: str) -> "ZNB":
     """
     Helper to connect to a ZNB VNA via Ethernet / TCPIP / VISA.
     Creates an ZNB instance and calls init() on it before returning.
@@ -270,8 +269,7 @@ class Channel(object):
     The channel name, CONFigure:CHANnel<Ch>:NAME
     """
 
-    def get_trace(self, name):
-        # type: ([unicode, str]) -> Trace
+    def get_trace(self, name: str) -> "Trace":
         """
         :param name: The name of the trace
         :return: A Trace object
@@ -279,8 +277,7 @@ class Channel(object):
         return Trace(name=name, channel=self)
 
     @property
-    def sweep(self):
-        # type: () -> RSSscpi.znb.Sweep
+    def sweep(self) -> "Sweep":
         return Sweep(self)
 
     @property
@@ -740,8 +737,7 @@ class Trace(object):
         self.channel.instrument.TRACe.COPY.MATH().w(target_trace_name, self.name)
         return self.__class__(target_trace_name, self.channel)
 
-    def copy(self, new_name, diagram=None):
-        # type: ([str, unicode], Diagram) -> Trace
+    def copy(self, new_name: str, diagram: "Diagram" = None) -> "Trace":
         """
         Create a copy of the trace. If the diagram parameter is provided the new trace will be assigned to
         that diagram.
@@ -786,11 +782,9 @@ class Trace(object):
         self.channel.CALC.PARameter.MEASure().w(self.name, str(param))
 
     @property
-    def name(self):
+    def name(self) -> str:
         """
         The trace name, must be unique in the recall set.
-
-        :rtype: str
         """
         return self._name
 
@@ -802,8 +796,7 @@ class Trace(object):
         self._name = name
 
     @staticmethod
-    def check_if_name_is_valid(name, raise_err=False):
-        # type: (str) -> bool
+    def check_if_name_is_valid(name: str, raise_err: bool = False) -> bool:
         """
         The first character of a trace name can be either one of the upper case letters A to Z, one of the lower case letters a to z, an underscore _ or a square bracket [ or ].
         For all other characters of a trace name, the numbers 0 to 9 can be used in addition.

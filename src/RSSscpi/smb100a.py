@@ -9,8 +9,7 @@ from RSSscpi.gen.SMB100A_gen import SMB100A_gen
 import RSSscpi.network as net
 
 
-def connect_ethernet(ip_address):
-    # type: ([str, unicode]) -> SMB100A
+def connect_ethernet(ip_address: str) -> "SMB100A":
     """
     Helper to connect to a SMB100A signal generator via Ethernet / TCPIP / VISA.
     Creates an SMB100A instance and calls init() on it before returning.
