@@ -24,9 +24,18 @@ class PropertyTester(object):
         else:
             return
         if not props:
-            pytest.skip(metafunc.function.__name__ + ": No properties to test.")
+            metafunc.parametrize('prop_name, scpi_cmd, scpi_write, scpi_query', ([None]*4, ))
+            return
         metafunc.parametrize('prop_name, scpi_cmd, scpi_write, scpi_query',
                              props, ids=[x[0] for x in props])
+
+    @pytest.fixture
+    def prop_owner(self):
+        """
+        This fixture should be overridden in subclasses. It should return an object on which the attributes to be
+        tested can be found.
+        """
+        raise NotImplementedError
 
     @staticmethod
     def prop_parametrize(props):
@@ -49,6 +58,20 @@ class PropertyTester(object):
 
     @staticmethod
     def prop_test(prop_name, scpi_cmd, scpi_write, scpi_query, scpi_values, instance, visa, type_):
+        """
+
+        :param prop_name: the name of the class attribute
+        :param scpi_cmd: the expected SCPI command
+        :param scpi_write: expected write
+        :param scpi_query: expected query
+        :param scpi_values: values to test with write
+        :param instance: The instance to which prop_name is attached
+        :param visa: the VISA mock
+        :param type_: the expected type of the value of the attribute
+        :return:
+        """
+        if prop_name is None:
+            return
         visa.ret = scpi_values[1]  # the string representation of the value
         x = getattr(instance, prop_name)
         assert isinstance(x, type_) and x == scpi_values[0]
