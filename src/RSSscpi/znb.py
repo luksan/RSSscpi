@@ -112,6 +112,8 @@ class ZNB(ZNB_gen):
             self.SYSTem.LANGuage().w("SCPI")
         return orig_lang
 
+    use_binary_data_transfer = SCPIPropertyMapping(ZNB_gen.FORMat.DATA, str, {"REAL": True, "ASCii": False})
+
     @property
     def active_channel(self):
         """

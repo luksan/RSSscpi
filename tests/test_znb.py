@@ -82,6 +82,21 @@ class TestZNB(object):
                 "SYSTem:LANGuage 'SCPI'",
                 ] == visa.cmd
 
+    def test_use_binary_transfer(self, dummy_vna: ZNB, visa: VISA):
+        znb = dummy_vna
+        visa.ret = "ASCii"
+        assert znb.use_binary_data_transfer == False
+        visa.ret = "REAL"
+        assert znb.use_binary_data_transfer == True
+        znb.use_binary_data_transfer = True
+        znb.use_binary_data_transfer = False
+        assert visa.cmd == [
+            "FORMat:DATA?",
+            "FORMat:DATA?",
+            "FORMat:DATA REAL",
+            "FORMat:DATA ASCii",
+        ]
+
     def test_active_channel(self, dummy_vna, visa):
         # type: (ZNB, VISA) -> None
         vna = dummy_vna
