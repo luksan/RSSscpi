@@ -214,8 +214,8 @@ class Instrument(SCPINodeBase):
         """
         duration = timeit.default_timer() - self._last_cmd_time
         self.visa_logger.debug("Handling service request")
-        with self._visa_lock:
-            with self._in_callback:
+        with self._in_callback:
+            with self._visa_lock:
                 stb = StatusByteRegister(self._visa_res.read_stb())  # Read out the SRQ status byte
                 esr = None
                 if stb.event_status_summary:
@@ -406,7 +406,10 @@ class Instrument(SCPINodeBase):
         :rtype: None
         """
         x = self._build_arg_str(cmd, args, kwargs, query=False)
+
+        self._in_callback.acquire()  # We wait on the callback lock so that the callback handler gets priority on the visa lock
         with self._visa_lock:
+            self._in_callback.release()
             self._write_raw(x)
 
     def _query(self, cmd_str):
@@ -441,7 +444,9 @@ class Instrument(SCPINodeBase):
         # TODO: add function to read back result later
         x = self._build_arg_str(cmd, args, kwargs, query=True)
         try:
+            self._in_callback.acquire()  # We wait on the callback lock so that the callback handler gets priority on the visa lock
             with self._visa_lock:
+                self._in_callback.release()
                 return self._query_raw(x)
         except visa.VisaIOError as e:
             if e.error_code == visa.constants.VI_ERROR_TMO:  # timeout
