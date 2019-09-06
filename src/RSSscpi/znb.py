@@ -97,6 +97,7 @@ class ZNB(ZNB_gen):
         self.reset_remote_emulation()
 
     def _set_codec(self):
+        self._visa_res.encoding = "utf-8"
         self.SYSTem.COMMunicate.CODec().w("UTF8")  # Set the character encoding
 
     def reset_remote_emulation(self):
