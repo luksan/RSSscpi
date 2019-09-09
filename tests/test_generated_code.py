@@ -97,17 +97,17 @@ def test_relink_to_ancestor(visa):
     aa = instr.Aa(1)
     with pytest.raises(AttributeError) as err:
         VNA1.A.B.Ca.D.relink_to_ancestor(aa)
-    assert str(err).endswith("AttributeError: The given ancestor was not found in the command tree.")
+        assert str(err).endswith("AttributeError: The given ancestor was not found in the command tree.")
 
     with pytest.raises(AttributeError) as err:
         VNA1.A.B.Cb.D.relink_to_ancestor(a)
-    assert str(err).endswith("AttributeError: 'A2:B' has no attribute 'Cb' -- A2:B:Cb:D")
+        assert str(err).endswith("AttributeError: 'A2:B' has no attribute 'Cb' -- A2:B:Cb:D")
 
     with pytest.raises(AttributeError) as err:
         VNA1.A.B.Ca.D.E.relink_to_ancestor(d)
-    assert str(err).endswith("AttributeError: 'A2:B:Ca:D' has no attribute 'E' -- A2:B:Ca:D:E")
+        assert str(err).endswith("AttributeError: 'A2:B:Ca:D' has no attribute 'E' -- A2:B:Ca:D:E")
 
     with pytest.raises(AttributeError) as err:
         VNA1.A.B.Cb.relink_to_ancestor(instr.bsub)
-    assert str(err).endswith("AttributeError: Refusing access to a SCPINode from another module. "
-                             "<class 'tests.vna2.B'> !-> <class 'tests.vna1.Cb'> -- A:B:Cb")
+        assert str(err).endswith("AttributeError: Refusing access to a SCPINode from another module. "
+                                 "<class 'tests.vna2.B'> !-> <class 'tests.vna1.Cb'> -- A:B:Cb")
