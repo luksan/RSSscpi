@@ -4,12 +4,9 @@ Created on Thu Feb 11 11:30:33 2016
 
 @author: Lukas Sandström
 """
-from __future__ import print_function
 
-try:
-    from itertools import zip_longest  # Python 3
-except ImportError:
-    from itertools import izip_longest as zip_longest  # Python 2
+from itertools import zip_longest
+from typing import Generator, Type, Union
 
 
 class SCPINodeBase(object):
@@ -23,20 +20,19 @@ class SCPINodeBase(object):
 
     __slots__ = ("_parent", )
 
-    def __init__(self, parent=None):
+    def __init__(self, parent: Union["SCPINodeBase", int] = None):
+        # The Union[..] above is a hack to work around a confused type inference tool.
         """
         :param parent: The command node level above this node.
-        :type parent: SCPINodeBase or None
         """
         self._parent = parent
         if self.__class__._SCPI_class is None:
             self.__class__._SCPI_class = self.__class__
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self._cmd
 
-    def __get__(self, instance, owner):
-        # type: (SCPINodeBase, SCPINodeBase) -> SCPINodeBase
+    def __get__(self, instance: "SCPINodeBase", owner: Type["SCPINodeBase"]) -> Union["SCPINodeBase", Type["SCPINodeBase"]]:
         # Since the class definitions are nested we have to resolve the parent class at runtime
         if self.__class__._parent_class is None:
             assert owner._SCPI_class is not None
@@ -48,7 +44,7 @@ class SCPINodeBase(object):
     def __set__(self, instance, value):
         raise AttributeError("You probably don't want to do this assignment. Use .w() instead.")
 
-    def __getattribute__(self, name):
+    def __getattribute__(self, name: str):
         try:
             x = object.__getattribute__(self, name)
         except AttributeError:
@@ -59,17 +55,17 @@ class SCPINodeBase(object):
         return x
 
     @classmethod
-    def _parent_class_iter(cls):
+    def _parent_class_iter(cls) -> Generator[Type["SCPINodeBase"], None, None]:
         while cls:
             yield cls
             cls = cls._parent_class
 
-    def _parent_instance_iter(self):
+    def _parent_instance_iter(self) -> Generator["SCPINodeBase", None, None]:
         while self:
             yield self
             self = self._parent
 
-    def build_cmd(self):
+    def build_cmd(self) -> str:
         return ":".join(reversed([str(x) for x in self._parent_instance_iter() if str(x)]))
 
     def _get_root(self):
@@ -78,11 +74,13 @@ class SCPINodeBase(object):
         :rtype: RSSscpi.Instrument.Instrument
         """
         if not self._parent:
+            from RSSscpi.Instrument import Instrument  # FIXME: restructure the code to avoid circular import
+            assert isinstance(self, Instrument)
             return self
         return self._parent._get_root()
 
     @classmethod
-    def relink_to_ancestor(cls, ancestor):
+    def relink_to_ancestor(cls, ancestor: "SCPINodeBase") -> "SCPINodeBase":
         """
         Create a new instance with the parent chain linking to ancestor.
 
@@ -95,7 +93,7 @@ class SCPINodeBase(object):
             # Stop adding parents to the list when we find `ancestor`
             # We can't use isinstance(), since ZVA is subclassed from ZNB, instead we compare
             # the _cmd attribute and check that the trees have the same length and command nodes
-            for a, b in zip_longest(ancestor._parent_class_iter(), i._parent_class_iter()):
+            for a, b in zip_longest(ancestor._parent_class_iter(), i._parent_class_iter()):  # type: (Type["SCPINodeBase"], Type["SCPINodeBase"])
                 if a is None or b is None or a._cmd != b._cmd:
                     break
             else:
@@ -147,7 +145,7 @@ class SCPINodeN(SCPINodeBase):
         return int(self._n)
 
     @n.setter
-    def n(self, n):
+    def n(self, n: int):
         if n is not None:
             n = str(n)
             if not n.isdigit():
@@ -156,10 +154,10 @@ class SCPINodeN(SCPINodeBase):
         else:
             self._n = ""
 
-    def __call__(self, n=None):
+    def __call__(self, n: int = None):
         """
         Returns a copy of self, with the node index set to n.
-        :param n: Integer index to be appended to the command node string.
+        :param int n: Integer index to be appended to the command node string.
         :return: *self*
         """
         cpy = self.__class__(parent=self._parent)
