@@ -6,7 +6,8 @@ Created on 16 feb. 2016
 """
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-import RSSscpi
+from typing import List
+
 from RSSscpi.gen import ZNB_gen
 from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
 from RSSscpi.SCPI_response import make_ieee_data_block
@@ -201,19 +202,13 @@ class CalibrationManager(object):
     Methods for handling the calibration pool, calkits, etc.
     """
     def __init__(self, instrument):
-        """
-
-        :param RSSscpi.znb.ZNB instrument:
-        """
         self._instr = instrument
 
     @property
-    def instrument(self):
-        # type: () -> ZNB
+    def instrument(self) -> ZNB:
         return self._instr
 
-    def query_calpool_list(self):
-        # type: () -> [str]
+    def query_calpool_list(self) -> List[str]:
         """
         Returns a list of all the calgroups in the calpool
         """
@@ -996,8 +991,8 @@ class Diagram(ZNB_gen.DISPlay.WINDow):
 
         :return: A generator returning Traces
         """
-        l = self.TRACe.CATalog().q()
-        for wnr, name in l.comma_list_pairs():
+        trace_list = self.TRACe.CATalog().q()
+        for trace_number, name in trace_list.comma_list_pairs():
             ch_no = self.instrument.CONFigure.TRACe.CHANnel.NAME.ID.q(name)
             ch = self.instrument.get_channel(ch_no)
             yield ch.get_trace(name=name)
@@ -1093,7 +1088,7 @@ class Directory(Path):
         except ValueError:
             raise RuntimeError("Bad instrument response from MMEM:CAT? %s -> %s" % (self.path, str(x)))
         # We can't split files on comma alone, since a comma might be contained in a filename
-        r = re.finditer(' (.*?),(?:( <DIR>),|, (\d+)),', files)
+        r = re.finditer(r' (.*?),(?:( <DIR>),|, (\d+)),', files)
         return list(map(mk_list, r))
 
     @staticmethod
