@@ -6,7 +6,9 @@ Created on Thu Feb 11 11:30:33 2016
 """
 
 from itertools import zip_longest
-from typing import Generator, Type, Union
+from typing import Generator, NoReturn, Type, Union
+
+from RSSscpi.SCPI_response import SCPIResponse
 
 
 class SCPINodeBase(object):
@@ -41,7 +43,7 @@ class SCPINodeBase(object):
             return self.__class__
         return self.__class__(parent=instance)
 
-    def __set__(self, instance, value):
+    def __set__(self, instance, value) -> NoReturn:
         raise AttributeError("You probably don't want to do this assignment. Use .w() instead.")
 
     def __getattribute__(self, name: str):
@@ -172,12 +174,11 @@ class SCPICmd(SCPINodeBase):
 class SCPIQuery(SCPICmd):
     __slots__ = ()
 
-    def q(self, *args, **kwargs):
+    def q(self, *args, **kwargs) -> SCPIResponse:
         """
         Execeute a SCPI query.
 
         :returns: a SCPIResponse instance
-        :rtype: RSSscpi.SCPI_response.SCPIResponse
         """
         return self._get_root().query(self, *args, **kwargs)
 
@@ -185,7 +186,7 @@ class SCPIQuery(SCPICmd):
 class SCPISet(SCPICmd):
     __slots__ = ()
 
-    def w(self, *args, **kwargs):
+    def w(self, *args, **kwargs) -> None:
         """
         Send a string to the VISA resource, without reading the response.
 
@@ -202,7 +203,10 @@ class SCPIBool(SCPIQuery, SCPISet):
             return str(x)
         return "OFF" if not x or x == "0" or str(x).upper() == "OFF" else "ON"
 
-    def q(self, *args, **kwargs):
+    def q(self, *args, **kwargs) -> bool:
+        """
+        Execute a query and convert the response to a bool, (0, OFF) -> False, etc.
+        """
         return bool(super(SCPIBool, self).q(*args, **kwargs))
 
     def w(self, x):

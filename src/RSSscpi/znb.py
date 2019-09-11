@@ -230,11 +230,10 @@ class CalibrationManager(object):
 
 
 class Channel(object):
-    def __init__(self, n, instrument):
+    def __init__(self, n: int, instrument: ZNB):
         """
         :param n: Channel number
         :param instrument: A SCPINode instance, linked to the instrument
-        :type instrument: ZNB
         """
         self.n = n
         self.instrument = instrument
