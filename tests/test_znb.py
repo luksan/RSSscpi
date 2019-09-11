@@ -106,13 +106,13 @@ class TestZNB(object):
                 ] == visa.cmd
 
     def test_use_binary_transfer(self, dummy_vna: ZNB, visa: VISA):
-        znb = dummy_vna
+        vna = dummy_vna
         visa.ret = "ASCii"
-        assert znb.use_binary_data_transfer == False
+        assert vna.use_binary_data_transfer is False
         visa.ret = "REAL"
-        assert znb.use_binary_data_transfer == True
-        znb.use_binary_data_transfer = True
-        znb.use_binary_data_transfer = False
+        assert vna.use_binary_data_transfer is True
+        vna.use_binary_data_transfer = True
+        vna.use_binary_data_transfer = False
         assert visa.cmd == [
             "FORMat:DATA?",
             "FORMat:DATA?",
@@ -853,6 +853,7 @@ class TestTrace(PropertyTester):
         assert tr.n == 1
         assert tr.n == 1
         with pytest.raises(AttributeError):
+            # noinspection PyPropertyAccess
             tr.n = 2
         assert ["CONFigure:TRACe:NAME:ID? 'Tr3'"] == visa.cmd
 
