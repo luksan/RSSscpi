@@ -5,7 +5,8 @@
 """
 
 import pytest
-from .conftest import VISA  # noqa: F401
+
+import struct
 
 from RSSscpi.SCPI_response import make_ieee_data_block, SCPIResponse  # noqa: F401
 
@@ -50,7 +51,7 @@ def test_comma_list_pairs():
     resp = SCPIResponse(",".join(s))
     assert resp.comma_list_pairs() == list(zip(s[0::2], s[1::2]))
     conv = resp.comma_list_pairs(convert=lambda x: (int(x[0]), int(x[1]+"0")))
-    assert all((a+1)*10 == b and isinstance(a, int) for a,b in conv)
+    assert all((a+1)*10 == b and isinstance(a, int) for a, b in conv)
 
 
 def test_split_comma():
@@ -58,6 +59,19 @@ def test_split_comma():
     assert SCPIResponse(n).split_comma() == list(map(lambda x: x.strip(" '"), n.split(",")))
     n = ",".join(map(str, range(10)))
     assert SCPIResponse(n).split_comma(convert=int) == list(range(10))
+
+
+def test_complex_list():
+    def cplx2bin(cplx: complex):
+        return struct.pack("f", cplx.real) + struct.pack("f", cplx.imag)
+
+    def cplx2str(cplx: complex):
+        return str(cplx.real) + "," + str(cplx.imag)
+
+    expect = list(map(complex, range(0, 100, 2), range(1, 101, 2)))
+    bin_data = make_ieee_data_block(b"".join(map(cplx2bin, expect)))
+    assert SCPIResponse(bin_data).complex_list(float_size=4) == expect
+    assert SCPIResponse(",".join(map(cplx2str, expect))).complex_list() == expect
 
 
 def test_block_data_reponse():
@@ -72,8 +86,10 @@ def test_block_data_reponse():
     assert SCPIResponse(b"#11\x01").block_data() == b"\x01"
     assert SCPIResponse(b"#210" + b"A" * 10).block_data() == b"A" * 10
 
+
 def test_block_data_formatting():
     with pytest.raises(ValueError):
+        # noinspection PyTypeChecker
         make_ieee_data_block("string")
 
     assert make_ieee_data_block(b"A" * 10) == b"#210" + b"A" * 10

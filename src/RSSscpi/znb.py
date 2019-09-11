@@ -231,7 +231,7 @@ class Channel(object):
         :param instrument: A SCPINode instance, linked to the instrument
         """
         self.n = n
-        self.instrument = instrument
+        self.instrument = instrument  # type: ZNB
 
     @property
     def CALC(self):
@@ -873,6 +873,32 @@ class Trace(object):
         """
         diagram.state = True
         diagram.TRACe.EFEed().w(self.name)
+
+    def query_multiple_sweep_data(self, first_sweep: int, last_sweep: int = None) -> List[List[complex]]:
+        """
+        This function is used to read back trace data when the instrument is setup to perform multiple
+        sweeps in single sweep mode.
+
+        It does not work if the instrument is in continiuous sweep mode, or if the sweep count is 1.
+
+        :param int first_sweep: The number of the first sweep to return, starting from 1
+        :param int last_sweep: The number of the last sweep, or None. If None, only one sweep is returned.
+        :return: A list of lists of complex trace data
+        """
+        assert first_sweep >= 1
+        if last_sweep is None:
+            last_sweep = first_sweep
+        sweep_cnt = last_sweep - first_sweep + 1
+        assert sweep_cnt >= 1
+
+        self._make_active_cb()
+        response = self.channel.CALC.DATA.NSWeep.FIRSt.q("SDATa", first_sweep, last_sweep)
+        # The response is a list of (real, imag) values, with all requested traces concatenated
+        cplx_list = response.complex_list(float_size=4)  # Assuming 32 bit float
+        sweep_pts = len(cplx_list) // sweep_cnt
+        if sweep_cnt * sweep_pts != len(cplx_list):
+            raise ValueError("Invalid number of sweep points from instrument")
+        return [cplx_list[n * sweep_pts:(n + 1) * sweep_pts] for n in range(sweep_cnt)]
 
 
 class Marker(ZNB_gen.CALCulate.MARKer):

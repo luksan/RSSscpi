@@ -4,6 +4,7 @@
 @author: Lukas Sandström
 """
 
+from typing import List
 import warnings
 
 try:
@@ -81,6 +82,37 @@ class SCPIResponse(object):
         """
         return [convert(x.decode(self.encoding).strip(" '\n\r")) for x in self.raw.split(b",")]
 
+    def complex_list(self, *, float_size: int = 4) -> List[complex]:
+        """
+        Interpret the response as a sequence of complex values.
+
+        If it is a binary response, float size defines the number of bytes per float, 4 or 8 is supported.
+
+        :param float_size: The size of a float
+        :return: A list of complex() values
+        """
+        if float_size == 4:
+            fmt = "f"
+        elif float_size == 8:
+            fmt = "d"
+        else:
+            raise ValueError("Invalid value for float_size. Only 4 and 8 bytes are supported.")
+
+        try:
+            data = self.block_data()
+        except ValueError:
+            pass  # This is probably ASCII
+        else:
+            data = data.cast(fmt)
+            real = data[::2]
+            imag = data[1::2]
+            if len(real) != len(imag):
+                raise ValueError("Invalid number of binary values")
+            return list(map(complex, real, imag))
+
+        data = self.split_comma(float)
+        return list(map(complex, *[iter(data)]*2))
+
     def numpy_array(self, dtype=numpy.float64):
         return numpy.fromstring(str(self), sep=",", dtype=dtype)
 
@@ -125,5 +157,3 @@ def make_ieee_data_block(data):
     hdr_len = str(len(data_len))
     hdr = bytes("#" + hdr_len + data_len, 'ascii')
     return hdr + data
-
-

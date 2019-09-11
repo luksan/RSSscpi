@@ -8,9 +8,12 @@ from __future__ import absolute_import, division, print_function
 import pytest
 from .conftest import VISA  # noqa: F401
 
+import struct
+
 from RSSscpi import znb  # noqa: F401
 from RSSscpi.znb import ZNB  # noqa: F401
 from RSSscpi.SCPI_property import SCPIPropertyMinMax
+from RSSscpi.SCPI_response import make_ieee_data_block
 
 
 class PropertyTester(object):
@@ -934,3 +937,40 @@ class TestTrace(PropertyTester):
         assert str(tr.MeasParam.Wave("A", 2, "2")) == "A02D02"
         assert str(tr.MeasParam.Wave("B", 2, 1)) == "B02D01"
         assert str(tr.MeasParam.Wave("B", 2, 2, detector="AVG")) == "B02D02AVG"
+
+    def test_query_multiple_sweep_data(self, tr: znb.Trace, visa: VISA):
+
+        def expect_complex(stop):
+            return map(complex, range(0, stop, 2), range(1, stop + 1, 2))
+
+        # Test ascii response
+        visa.ret = ",".join(map(str, range(24)))
+        data = tr.query_multiple_sweep_data(1,  3)
+        assert len(data) == 3
+        assert len(data[0]) == 4
+        assert isinstance(data[0][0], complex)
+        assert all(map(lambda a, b: a == b, data[0], expect_complex(8)))
+        assert visa.cmd == [
+            "CALCulate2:PARameter:SELect 'Tr3'",
+            "CALCulate2:DATA:NSWeep:FIRSt? SDATa, 1, 3",
+        ]
+
+        # Default last_trace
+        data = tr.query_multiple_sweep_data(2)
+        assert len(data) == 1
+        assert len(data[0]) == 12
+        assert visa.cmd == [
+            "CALCulate2:DATA:NSWeep:FIRSt? SDATa, 2, 2",
+        ]
+
+        # Test binary response
+        visa.ret = make_ieee_data_block(b"".join(map(lambda x: struct.pack("<f", float(x)), range(48))))
+        data = tr.query_multiple_sweep_data(3, 6)
+        assert len(data) == 4
+        assert len(data[3]) == 6
+        assert isinstance(data[0][0], complex)
+        assert all(map(lambda a, b: a == b, data[0], expect_complex(4)))
+        assert data[3][-1] == complex(46, 47)
+        assert visa.cmd == [
+            "CALCulate2:DATA:NSWeep:FIRSt? SDATa, 3, 6",
+        ]
