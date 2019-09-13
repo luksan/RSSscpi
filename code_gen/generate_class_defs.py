@@ -5,20 +5,13 @@
 @author: Lukas Sandström
 """
 
+from typing import Optional
+
 import os
 import sys
 
-try:
-    # For Python 3.0 and later
-    # noinspection PyCompatibility
-    from urllib.request import urlopen, urlretrieve
-    # noinspection PyCompatibility
-    from urllib.error import HTTPError
-except ImportError:
-    # Fall back to Python 2's urllib2
-    # noinspection PyCompatibility
-    from urllib2 import urlopen, HTTPError
-    from urllib import urlretrieve
+from urllib.request import urlopen, urlretrieve
+from urllib.error import HTTPError
 
 import logging
 from bs4 import BeautifulSoup
@@ -27,8 +20,6 @@ import re
 module_dir = os.path.abspath(os.path.dirname(__file__))
 cmd_list_dir = os.path.join(module_dir, "SCPI_cmd_lists")
 output_dir = os.path.join(module_dir, '..', 'src', 'RSSscpi', 'gen')
-
-download = False
 
 
 class CmdNode(dict):
@@ -99,9 +90,9 @@ class CmdListParser(object):
 
 
 class Webhelp(object):
-    instrument_name = None
+    instrument_name = None  # type: str
 
-    def get_help_url(self, cmd):
+    def get_help_url(self, cmd) -> Optional[str]:
         """
         :param cmd: A SCPI command, ex. CALCULATE:MARKER, in the form of a string list with one element per node.
         :type cmd: list of str
@@ -146,16 +137,16 @@ class Webhelp(object):
 
 
 class ModernRohdeWebhelp(Webhelp):
-    _base_url = None
+    _base_url = None  # type: str
     """The root of the online help URLs, without trailing slash.
 
     example: http://www.rohde-schwarz.com/webhelp/znb_znbt_webhelp_en{0}
     """
 
-    toc_file = None
+    toc_file = None  # type: str
     """The filename for caching the table of contents."""
 
-    cmd_list_file = None
+    cmd_list_file = None  # type: str
     """The filename for caching the command list."""
 
     def __init__(self, download_webhelp=False):
@@ -302,6 +293,7 @@ class ClassCodeGen(object):
         import time
         self._out("# -*- coding: utf-8 -*-")
         self._out("# Generated from " + self.source + " on " + time.strftime("%Y-%m-%d %H:%M"))
+        self._out("from typing import List\n")
         self._out("from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool")
         self._out("from RSSscpi.Instrument import Instrument")
         self._out("")
@@ -313,7 +305,7 @@ class ClassCodeGen(object):
         self._indent += 1
         self._gen(self.cmd_tree, [])
         self._indent -= 1
-        self._out("%s._SCPI_class = %s" % (self.class_name, self.class_name))
+        self._out("\n%s._SCPI_class = %s" % (self.class_name, self.class_name))
         self._out("# END OF " + self.class_name)
         c1 = self._cmd_cnt
         c2 = self._cmd_help_cnt
@@ -371,7 +363,7 @@ class ClassCodeGen(object):
 
             name = cmd_str
             if name[0] == '*' or name[0] == '@' or name[0] == '&':
-                name = name[1:]            
+                name = name[1:]
             self._out("class " + name + "(" + base_class + "):")
             self._indent += 1
             self._make_docstr(cmd, parents + [cmd_str])
@@ -380,12 +372,12 @@ class ClassCodeGen(object):
             if cmd.args:
                 self._out('args = ["' + '", "'.join(cmd.args) + '"]')
             else:
-                self._out('args = []')  # Don't emit the empty string if we don't have any arguments
+                self._out('args = []  # type: List[str]')  # Don't emit the empty string if we don't have any arguments
             self._out("")
             self._gen(cmd, parents + [cmd_str])
             self._indent -= 1
             # Uncomment below to generate attributes
-            self._out(name + " = " + name + "()")
+            self._out(name + " = " + name + "()  # type: ignore")
             self._make_docstr(cmd, parents + [cmd_str])
             self._out("")
 
@@ -415,8 +407,7 @@ def generate_SCPI_class(parser, module_name, webhelp=Webhelp(), tree_patcher=Non
 
     logging.info("Generated %s", path)
 
-
-if __name__ == '__main__':
+def main():
     logging.basicConfig(level=logging.INFO, stream=sys.stdout)
     download = False
 
@@ -429,10 +420,14 @@ if __name__ == '__main__':
     import nrp
     nrp.generate(download)
 
-    # import sma100b
-    # sma100b.generate(download)
+    import sma100b
+    sma100b.generate(download)
 
-    # import smb100a
-    # smb100a.generate(download)
+    import smb100a
+    smb100a.generate(download)
 
     logging.info("All good :)")
+
+
+if __name__ == '__main__':
+    main()

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-# Generated from ZVA_commands.inp on 2019-05-21 16:02
+# Generated from ZVA_commands.inp on 2019-09-13 11:59
+from typing import List
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -14,9 +15,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*CAL"
-        args = []
+        args = []  # type: List[str]
 
-    CAL = CAL()
+    CAL = CAL()  # type: ignore
     """
     `*CAL
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -33,9 +34,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*CLS"
-        args = []
+        args = []  # type: List[str]
 
-    CLS = CLS()
+    CLS = CLS()  # type: ignore
     """
     `*CLS
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -54,7 +55,7 @@ class ZVA_gen(Instrument):
         _cmd = "*ESE"
         args = ["1"]
 
-    ESE = ESE()
+    ESE = ESE()  # type: ignore
     """
     `*ESE
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -73,7 +74,7 @@ class ZVA_gen(Instrument):
         _cmd = "*ESR"
         args = ["1"]
 
-    ESR = ESR()
+    ESR = ESR()  # type: ignore
     """
     `*ESR
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -90,9 +91,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*IDN"
-        args = []
+        args = []  # type: List[str]
 
-    IDN = IDN()
+    IDN = IDN()  # type: ignore
     """
     `*IDN
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -111,7 +112,7 @@ class ZVA_gen(Instrument):
         _cmd = "*IST"
         args = ["1"]
 
-    IST = IST()
+    IST = IST()  # type: ignore
     """
     `*IST
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -128,9 +129,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*OPC"
-        args = []
+        args = []  # type: List[str]
 
-    OPC = OPC()
+    OPC = OPC()  # type: ignore
     """
     `*OPC
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -147,9 +148,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*OPT"
-        args = []
+        args = []  # type: List[str]
 
-    OPT = OPT()
+    OPT = OPT()  # type: ignore
     """
     `*OPT
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -168,7 +169,7 @@ class ZVA_gen(Instrument):
         _cmd = "*PCB"
         args = ["1"]
 
-    PCB = PCB()
+    PCB = PCB()  # type: ignore
     """
     `*PCB
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -187,7 +188,7 @@ class ZVA_gen(Instrument):
         _cmd = "*PRE"
         args = ["1"]
 
-    PRE = PRE()
+    PRE = PRE()  # type: ignore
     """
     `*PRE
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -206,7 +207,7 @@ class ZVA_gen(Instrument):
         _cmd = "*PSC"
         args = ["1", "OFF", "ON"]
 
-    PSC = PSC()
+    PSC = PSC()  # type: ignore
     """
     `*PSC
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -223,9 +224,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*RST"
-        args = []
+        args = []  # type: List[str]
 
-    RST = RST()
+    RST = RST()  # type: ignore
     """
     `*RST
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -244,7 +245,7 @@ class ZVA_gen(Instrument):
         _cmd = "*SRE"
         args = ["1"]
 
-    SRE = SRE()
+    SRE = SRE()  # type: ignore
     """
     `*SRE
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -261,9 +262,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*STB"
-        args = []
+        args = []  # type: List[str]
 
-    STB = STB()
+    STB = STB()  # type: ignore
     """
     `*STB
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -280,9 +281,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*TRG"
-        args = []
+        args = []  # type: List[str]
 
-    TRG = TRG()
+    TRG = TRG()  # type: ignore
     """
     `*TRG
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -299,9 +300,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*TST"
-        args = []
+        args = []  # type: List[str]
 
-    TST = TST()
+    TST = TST()  # type: ignore
     """
     `*TST
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -318,9 +319,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*WAI"
-        args = []
+        args = []  # type: List[str]
 
-    WAI = WAI()
+    WAI = WAI()  # type: ignore
     """
     `*WAI
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/common_commands.htm>`_
@@ -337,9 +338,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "@DCL"
-        args = []
+        args = []  # type: List[str]
 
-    DCL = DCL()
+    DCL = DCL()  # type: ignore
     """
     `@DCL
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
@@ -356,9 +357,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "@GET"
-        args = []
+        args = []  # type: List[str]
 
-    GET = GET()
+    GET = GET()  # type: ignore
     """
     `@GET
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
@@ -375,9 +376,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "@LOC"
-        args = []
+        args = []  # type: List[str]
 
-    LOC = LOC()
+    LOC = LOC()  # type: ignore
     """
     `@LOC
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
@@ -394,9 +395,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "@REM"
-        args = []
+        args = []  # type: List[str]
 
-    REM = REM()
+    REM = REM()  # type: ignore
     """
     `@REM
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/annexes/hw_interfaces/gpib_bus_interface.htm#Interface_Messages>`_
@@ -413,9 +414,9 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ABORt"
-        args = []
+        args = []  # type: List[str]
 
-    ABORt = ABORt()
+    ABORt = ABORt()  # type: ignore
     """
     `ABORt
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/abort/abort.htm#ABORt>`_
@@ -431,7 +432,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "CALCulate"
-        args = []
+        args = []  # type: List[str]
 
         class CLIMits(SCPINode):
             """
@@ -441,7 +442,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CLIMits"
-            args = []
+            args = []  # type: List[str]
 
             class FAIL(SCPINode, SCPIQuery):
                 """
@@ -452,9 +453,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FAIL"
-                args = []
+                args = []  # type: List[str]
 
-            FAIL = FAIL()
+            FAIL = FAIL()  # type: ignore
             """
             `CALCulate:CLIMits:FAIL
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_climits.htm#FAIL>`_
@@ -462,7 +463,7 @@ class ZVA_gen(Instrument):
             Arguments:
             """
 
-        CLIMits = CLIMits()
+        CLIMits = CLIMits()  # type: ignore
         """
         CALCulate:CLIMits
 
@@ -491,7 +492,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ALL"
                 args = ["FDATa", "MDATa", "SDATa"]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `CALCulate:DATA:ALL
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_data.htm#DATA_ALL>`_
@@ -519,9 +520,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CATalog"
-                    args = []
+                    args = []  # type: List[str]
 
-                CATalog = CATalog()
+                CATalog = CATalog()  # type: ignore
                 """
                 `CALCulate:DATA:CALL:CATalog
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_data.htm#DATA_CALL_CATalog>`_
@@ -529,7 +530,7 @@ class ZVA_gen(Instrument):
                 Arguments:
                 """
 
-            CALL = CALL()
+            CALL = CALL()  # type: ignore
             """
             `CALCulate:DATA:CALL
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_data.htm#DATA_CALL>`_
@@ -548,7 +549,7 @@ class ZVA_gen(Instrument):
                 _cmd = "DALL"
                 args = ["FDATa", "MDATa", "SDATa"]
 
-            DALL = DALL()
+            DALL = DALL()  # type: ignore
             """
             `CALCulate:DATA:DALL
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_data.htm#DATA_DALL>`_
@@ -575,9 +576,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COUNt"
-                    args = []
+                    args = []  # type: List[str]
 
-                COUNt = COUNt()
+                COUNt = COUNt()  # type: ignore
                 """
                 `CALCulate:DATA:NSWeep:COUNt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_data.htm#NSWeep_COUNt>`_
@@ -596,7 +597,7 @@ class ZVA_gen(Instrument):
                     _cmd = "FIRSt"
                     args = ["SDATa"]
 
-                FIRSt = FIRSt()
+                FIRSt = FIRSt()  # type: ignore
                 """
                 `CALCulate:DATA:NSWeep:FIRSt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_data.htm#NSWeep_FIRSt>`_
@@ -615,7 +616,7 @@ class ZVA_gen(Instrument):
                     _cmd = "LAST"
                     args = ["SDATa"]
 
-                LAST = LAST()
+                LAST = LAST()  # type: ignore
                 """
                 `CALCulate:DATA:NSWeep:LAST
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_data.htm#NSWeep>`_
@@ -623,7 +624,7 @@ class ZVA_gen(Instrument):
                 Arguments: SDATa
                 """
 
-            NSWeep = NSWeep()
+            NSWeep = NSWeep()  # type: ignore
             """
             CALCulate:DATA:NSWeep
 
@@ -641,7 +642,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SGRoup"
                 args = ["FDATa", "MDATa", "SDATa"]
 
-            SGRoup = SGRoup()
+            SGRoup = SGRoup()  # type: ignore
             """
             `CALCulate:DATA:SGRoup
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_data.htm#DATA_SGRoup>`_
@@ -658,9 +659,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STIMulus"
-                args = []
+                args = []  # type: List[str]
 
-            STIMulus = STIMulus()
+            STIMulus = STIMulus()  # type: ignore
             """
             `CALCulate:DATA:STIMulus
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_data.htm#STIMulus>`_
@@ -668,7 +669,7 @@ class ZVA_gen(Instrument):
             Arguments:
             """
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         `CALCulate:DATA
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_data.htm#DATA>`_
@@ -698,7 +699,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:DLINe:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_dline.htm#DLINe_STATe>`_
@@ -706,7 +707,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        DLINe = DLINe()
+        DLINe = DLINe()  # type: ignore
         """
         `CALCulate:DLINe
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_dline.htm#DLINe>`_
@@ -722,7 +723,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FILTer"
-            args = []
+            args = []  # type: List[str]
 
             class GATE(SCPINode):
                 """
@@ -732,7 +733,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "GATE"
-                args = []
+                args = []  # type: List[str]
 
                 class TIME(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -755,7 +756,7 @@ class ZVA_gen(Instrument):
                         _cmd = "CENTer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    CENTer = CENTer()
+                    CENTer = CENTer()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:CENTer
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_filter.htm#CENTer>`_
@@ -774,7 +775,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DCHebyshev"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    DCHebyshev = DCHebyshev()
+                    DCHebyshev = DCHebyshev()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:DCHebyshev
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_filter.htm#DCHebyshev>`_
@@ -793,7 +794,7 @@ class ZVA_gen(Instrument):
                         _cmd = "SHAPe"
                         args = ["MAXimum", "MINimum", "NORMal", "WIDE"]
 
-                    SHAPe = SHAPe()
+                    SHAPe = SHAPe()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:SHAPe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_filter.htm#SHAPe>`_
@@ -812,7 +813,7 @@ class ZVA_gen(Instrument):
                         _cmd = "SHOW"
                         args = ["1", "OFF", "ON"]
 
-                    SHOW = SHOW()
+                    SHOW = SHOW()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:SHOW
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_filter.htm#SHOW>`_
@@ -831,7 +832,7 @@ class ZVA_gen(Instrument):
                         _cmd = "SPAN"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    SPAN = SPAN()
+                    SPAN = SPAN()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:SPAN
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_filter.htm#SPAN>`_
@@ -850,7 +851,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:STARt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_filter.htm#STARt>`_
@@ -869,7 +870,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_filter.htm#STATe>`_
@@ -888,7 +889,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:STOP
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_filter.htm#STOP>`_
@@ -907,7 +908,7 @@ class ZVA_gen(Instrument):
                         _cmd = "TYPE"
                         args = ["BPASs", "NOTCh"]
 
-                    TYPE = TYPE()
+                    TYPE = TYPE()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:TYPE
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_filter.htm#TYPE>`_
@@ -926,7 +927,7 @@ class ZVA_gen(Instrument):
                         _cmd = "WINDow"
                         args = ["BOHMan", "DCHebyshev", "HAMMing", "HANNing", "RECT"]
 
-                    WINDow = WINDow()
+                    WINDow = WINDow()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:WINDow
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_filter.htm#WINDow>`_
@@ -934,21 +935,21 @@ class ZVA_gen(Instrument):
                     Arguments: BOHMan, DCHebyshev, HAMMing, HANNing, RECT
                     """
 
-                TIME = TIME()
+                TIME = TIME()  # type: ignore
                 """
                 CALCulate:FILTer:GATE:TIME
 
                 Arguments: BPASs, NOTCh
                 """
 
-            GATE = GATE()
+            GATE = GATE()  # type: ignore
             """
             CALCulate:FILTer:GATE
 
             Arguments:
             """
 
-        FILTer = FILTer()
+        FILTer = FILTer()  # type: ignore
         """
         CALCulate:FILTer
 
@@ -976,7 +977,7 @@ class ZVA_gen(Instrument):
                 _cmd = "WQUType"
                 args = ["POWer", "VOLTage"]
 
-            WQUType = WQUType()
+            WQUType = WQUType()  # type: ignore
             """
             `CALCulate:FORMat:WQUType
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_format.htm#FORMat_WQUType>`_
@@ -984,7 +985,7 @@ class ZVA_gen(Instrument):
             Arguments: POWer, VOLTage
             """
 
-        FORMat = FORMat()
+        FORMat = FORMat()  # type: ignore
         """
         CALCulate:FORMat
 
@@ -999,7 +1000,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FSIMulator"
-            args = []
+            args = []  # type: List[str]
 
             class BALun(SCPINode):
                 """
@@ -1009,7 +1010,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BALun"
-                args = []
+                args = []  # type: List[str]
 
                 class DEVice(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -1021,7 +1022,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DEVice"
                     args = ["SBALanced"]
 
-                DEVice = DEVice()
+                DEVice = DEVice()  # type: ignore
                 """
                 CALCulate:FSIMulator:BALun:DEVice
 
@@ -1036,7 +1037,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DMCircuit"
-                    args = []
+                    args = []  # type: List[str]
 
                     class BPORt(SCPINodeN):
                         """
@@ -1046,7 +1047,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "BPORt"
-                        args = []
+                        args = []  # type: List[str]
 
                         class PARameters(SCPINode):
                             """
@@ -1056,7 +1057,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -1068,7 +1069,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "C"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             CALCulate:FSIMulator:BALun:DMCircuit:BPORt:PARameters:C
 
@@ -1085,28 +1086,28 @@ class ZVA_gen(Instrument):
                                 _cmd = "L"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             CALCulate:FSIMulator:BALun:DMCircuit:BPORt:PARameters:L
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:FSIMulator:BALun:DMCircuit:BPORt:PARameters
 
                         Arguments:
                         """
 
-                    BPORt = BPORt()
+                    BPORt = BPORt()  # type: ignore
                     """
                     CALCulate:FSIMulator:BALun:DMCircuit:BPORt
 
                     Arguments:
                     """
 
-                DMCircuit = DMCircuit()
+                DMCircuit = DMCircuit()  # type: ignore
                 """
                 CALCulate:FSIMulator:BALun:DMCircuit
 
@@ -1121,7 +1122,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DZConversion"
-                    args = []
+                    args = []  # type: List[str]
 
                     class BPORt(SCPINodeN):
                         """
@@ -1131,7 +1132,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "BPORt"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ZCOMmon(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -1153,14 +1154,14 @@ class ZVA_gen(Instrument):
                                 _cmd = "R"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             CALCulate:FSIMulator:BALun:DZConversion:BPORt:ZCOMmon:R
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        ZCOMmon = ZCOMmon()
+                        ZCOMmon = ZCOMmon()  # type: ignore
                         """
                         CALCulate:FSIMulator:BALun:DZConversion:BPORt:ZCOMmon
 
@@ -1187,35 +1188,35 @@ class ZVA_gen(Instrument):
                                 _cmd = "R"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             CALCulate:FSIMulator:BALun:DZConversion:BPORt:ZDIFferent:R
 
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        ZDIFferent = ZDIFferent()
+                        ZDIFferent = ZDIFferent()  # type: ignore
                         """
                         CALCulate:FSIMulator:BALun:DZConversion:BPORt:ZDIFferent
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    BPORt = BPORt()
+                    BPORt = BPORt()  # type: ignore
                     """
                     CALCulate:FSIMulator:BALun:DZConversion:BPORt
 
                     Arguments:
                     """
 
-                DZConversion = DZConversion()
+                DZConversion = DZConversion()  # type: ignore
                 """
                 CALCulate:FSIMulator:BALun:DZConversion
 
                 Arguments:
                 """
 
-            BALun = BALun()
+            BALun = BALun()  # type: ignore
             """
             CALCulate:FSIMulator:BALun
 
@@ -1232,14 +1233,14 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             CALCulate:FSIMulator:STATe
 
             Arguments: 1, OFF, ON
             """
 
-        FSIMulator = FSIMulator()
+        FSIMulator = FSIMulator()  # type: ignore
         """
         CALCulate:FSIMulator
 
@@ -1254,7 +1255,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "GDAPerture"
-            args = []
+            args = []  # type: List[str]
 
             class SCOunt(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -1267,7 +1268,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SCOunt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SCOunt = SCOunt()
+            SCOunt = SCOunt()  # type: ignore
             """
             `CALCulate:GDAPerture:SCOunt
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_gdaperture.htm#SCOunt>`_
@@ -1275,7 +1276,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        GDAPerture = GDAPerture()
+        GDAPerture = GDAPerture()  # type: ignore
         """
         CALCulate:GDAPerture
 
@@ -1290,7 +1291,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LDEViation"
-            args = []
+            args = []  # type: List[str]
 
             class AUTO(SCPINode, SCPISet):
                 """
@@ -1303,7 +1304,7 @@ class ZVA_gen(Instrument):
                 _cmd = "AUTO"
                 args = ["ONCE"]
 
-            AUTO = AUTO()
+            AUTO = AUTO()  # type: ignore
             """
             `CALCulate:LDEViation:AUTO
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ldeviation.htm#AUTO>`_
@@ -1322,7 +1323,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CONStant"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            CONStant = CONStant()
+            CONStant = CONStant()  # type: ignore
             """
             `CALCulate:LDEViation:CONStant
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ldeviation.htm#CONStant>`_
@@ -1341,7 +1342,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ELENgth"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            ELENgth = ELENgth()
+            ELENgth = ELENgth()  # type: ignore
             """
             `CALCulate:LDEViation:ELENgth
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ldeviation.htm#ELENgth>`_
@@ -1360,7 +1361,7 @@ class ZVA_gen(Instrument):
                 _cmd = "MODE"
                 args = ["OFF", "ON", "TRACking"]
 
-            MODE = MODE()
+            MODE = MODE()  # type: ignore
             """
             `CALCulate:LDEViation:MODE
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ldeviation.htm#MODE>`_
@@ -1379,7 +1380,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SLOPe"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SLOPe = SLOPe()
+            SLOPe = SLOPe()  # type: ignore
             """
             `CALCulate:LDEViation:SLOPe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ldeviation.htm#SLOPe>`_
@@ -1387,7 +1388,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        LDEViation = LDEViation()
+        LDEViation = LDEViation()  # type: ignore
         """
         CALCulate:LDEViation
 
@@ -1402,7 +1403,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LIMit"
-            args = []
+            args = []  # type: List[str]
 
             class CONTrol(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -1425,7 +1426,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CALCulate:LIMit:CONTrol:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#CONTrol_DATA>`_
@@ -1444,7 +1445,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DOMain"
                     args = ["FLIN", "FLOG", "FSEG", "FSINgle", "PLIN", "PLOG", "PSINgle", "TLIN", "TLOG"]
 
-                DOMain = DOMain()
+                DOMain = DOMain()  # type: ignore
                 """
                 `CALCulate:LIMit:CONTrol:DOMain
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#CONTrol_Domain>`_
@@ -1463,7 +1464,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SHIFt = SHIFt()
+                SHIFt = SHIFt()  # type: ignore
                 """
                 `CALCulate:LIMit:CONTrol:SHIFt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#CONTrol_SHIFt>`_
@@ -1471,7 +1472,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            CONTrol = CONTrol()
+            CONTrol = CONTrol()  # type: ignore
             """
             CALCulate:LIMit:CONTrol
 
@@ -1489,7 +1490,7 @@ class ZVA_gen(Instrument):
                 _cmd = "DATA"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            DATA = DATA()
+            DATA = DATA()  # type: ignore
             """
             `CALCulate:LIMit:DATA
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#DATA>`_
@@ -1505,7 +1506,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DELete"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPISet):
                     """
@@ -1516,9 +1517,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `CALCulate:LIMit:DELete:ALL
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#DELete_ALL>`_
@@ -1526,7 +1527,7 @@ class ZVA_gen(Instrument):
                 Arguments:
                 """
 
-            DELete = DELete()
+            DELete = DELete()  # type: ignore
             """
             CALCulate:LIMit:DELete
 
@@ -1554,7 +1555,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:DISPlay:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#DISPlay_STATe>`_
@@ -1562,7 +1563,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            DISPlay = DISPlay()
+            DISPlay = DISPlay()  # type: ignore
             """
             CALCulate:LIMit:DISPlay
 
@@ -1578,9 +1579,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FAIL"
-                args = []
+                args = []  # type: List[str]
 
-            FAIL = FAIL()
+            FAIL = FAIL()  # type: ignore
             """
             `CALCulate:LIMit:FAIL
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#FAIL>`_
@@ -1609,7 +1610,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CALCulate:LIMit:LOWer:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#LOWer_DATA>`_
@@ -1628,7 +1629,7 @@ class ZVA_gen(Instrument):
                     _cmd = "FEED"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                FEED = FEED()
+                FEED = FEED()  # type: ignore
                 """
                 `CALCulate:LIMit:LOWer:FEED
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#LOWer_FEED>`_
@@ -1647,7 +1648,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SHIFt = SHIFt()
+                SHIFt = SHIFt()  # type: ignore
                 """
                 `CALCulate:LIMit:LOWer:SHIFt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#LOWer_SHIFt>`_
@@ -1666,7 +1667,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:LOWer:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#LOWer_STATe>`_
@@ -1674,7 +1675,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            LOWer = LOWer()
+            LOWer = LOWer()  # type: ignore
             """
             CALCulate:LIMit:LOWer
 
@@ -1689,7 +1690,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RDOMain"
-                args = []
+                args = []  # type: List[str]
 
                 class COMPlex(SCPINode, SCPISet):
                     """
@@ -1702,7 +1703,7 @@ class ZVA_gen(Instrument):
                     _cmd = "COMPlex"
                     args = ["S", "SINV", "Y", "YREL", "Z", "ZREL"]
 
-                COMPlex = COMPlex()
+                COMPlex = COMPlex()  # type: ignore
                 """
                 `CALCulate:LIMit:RDOMain:COMPlex
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#RDOMain_COMPlex>`_
@@ -1721,7 +1722,7 @@ class ZVA_gen(Instrument):
                     _cmd = "FORMat"
                     args = ["C", "COMPlex", "GDELay", "IMAGinary", "L", "MAGNitude", "PHASe", "REAL", "SWR"]
 
-                FORMat = FORMat()
+                FORMat = FORMat()  # type: ignore
                 """
                 `CALCulate:LIMit:RDOMain:FORMat
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#RDOMain_FORMat>`_
@@ -1740,7 +1741,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SPACing"
                     args = ["DB", "LINear", "LOGarithmic", "SIC"]
 
-                SPACing = SPACing()
+                SPACing = SPACing()  # type: ignore
                 """
                 `CALCulate:LIMit:RDOMain:SPACing
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#RDOMain_SPACing>`_
@@ -1748,7 +1749,7 @@ class ZVA_gen(Instrument):
                 Arguments: DB, LINear, LOGarithmic, SIC
                 """
 
-            RDOMain = RDOMain()
+            RDOMain = RDOMain()  # type: ignore
             """
             CALCulate:LIMit:RDOMain
 
@@ -1763,7 +1764,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SEGMent"
-                args = []
+                args = []  # type: List[str]
 
                 class AMPLitude(SCPINode):
                     """
@@ -1773,7 +1774,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "AMPLitude"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STARt(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1786,7 +1787,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `CALCulate:LIMit:SEGMent:AMPLitude:STARt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#SEG_AMPLITUDE_START>`_
@@ -1805,7 +1806,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `CALCulate:LIMit:SEGMent:AMPLitude:STOP
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#SEG_AMPLitude_STOP>`_
@@ -1813,7 +1814,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                AMPLitude = AMPLitude()
+                AMPLitude = AMPLitude()  # type: ignore
                 """
                 CALCulate:LIMit:SEGMent:AMPLitude
 
@@ -1829,9 +1830,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COUNt"
-                    args = []
+                    args = []  # type: List[str]
 
-                COUNt = COUNt()
+                COUNt = COUNt()  # type: ignore
                 """
                 `CALCulate:LIMit:SEGMent:COUNt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#SEG_COUNt>`_
@@ -1847,7 +1848,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STIMulus"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STARt(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1860,7 +1861,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `CALCulate:LIMit:SEGMent:STIMulus:STARt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#SEG_STIMulus_STARt>`_
@@ -1879,7 +1880,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `CALCulate:LIMit:SEGMent:STIMulus:STOP
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#SEG_STIMulus_STOP>`_
@@ -1887,7 +1888,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                STIMulus = STIMulus()
+                STIMulus = STIMulus()  # type: ignore
                 """
                 CALCulate:LIMit:SEGMent:STIMulus
 
@@ -1905,7 +1906,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TYPE"
                     args = ["LMAX", "LMIN", "OFF"]
 
-                TYPE = TYPE()
+                TYPE = TYPE()  # type: ignore
                 """
                 `CALCulate:LIMit:SEGMent:TYPE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#SEG_TYPE>`_
@@ -1913,7 +1914,7 @@ class ZVA_gen(Instrument):
                 Arguments: LMAX, LMIN, OFF
                 """
 
-            SEGMent = SEGMent()
+            SEGMent = SEGMent()  # type: ignore
             """
             CALCulate:LIMit:SEGMent
 
@@ -1941,7 +1942,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:SOUNd:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#SOUNd_STATe>`_
@@ -1949,7 +1950,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            SOUNd = SOUNd()
+            SOUNd = SOUNd()  # type: ignore
             """
             CALCulate:LIMit:SOUNd
 
@@ -1967,7 +1968,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:LIMit:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#STATe>`_
@@ -1996,7 +1997,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:TTLout:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#TTLout>`_
@@ -2004,7 +2005,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            TTLout = TTLout()
+            TTLout = TTLout()  # type: ignore
             """
             CALCulate:LIMit:TTLout
 
@@ -2032,7 +2033,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CALCulate:LIMit:UPPer:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#UPPer_DATA>`_
@@ -2051,7 +2052,7 @@ class ZVA_gen(Instrument):
                     _cmd = "FEED"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                FEED = FEED()
+                FEED = FEED()  # type: ignore
                 """
                 `CALCulate:LIMit:UPPer:FEED
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#UPPer_FEED>`_
@@ -2070,7 +2071,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SHIFt = SHIFt()
+                SHIFt = SHIFt()  # type: ignore
                 """
                 `CALCulate:LIMit:UPPer:SHIFt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#UPPer_SHIFt>`_
@@ -2089,7 +2090,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:UPPer:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_limit.htm#UPPer_STATe>`_
@@ -2097,14 +2098,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            UPPer = UPPer()
+            UPPer = UPPer()  # type: ignore
             """
             CALCulate:LIMit:UPPer
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        LIMit = LIMit()
+        LIMit = LIMit()  # type: ignore
         """
         CALCulate:LIMit
 
@@ -2130,9 +2131,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AOFF"
-                args = []
+                args = []  # type: List[str]
 
-            AOFF = AOFF()
+            AOFF = AOFF()  # type: ignore
             """
             `CALCulate:MARKer:AOFF
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#AOFF>`_
@@ -2150,7 +2151,7 @@ class ZVA_gen(Instrument):
                 _cmd = "BWIDth"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            BWIDth = BWIDth()
+            BWIDth = BWIDth()  # type: ignore
             """
             CALCulate:MARKer:BWIDth
 
@@ -2178,7 +2179,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:MARKer:COUPled:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#COUPled_STATe>`_
@@ -2186,7 +2187,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            COUPled = COUPled()
+            COUPled = COUPled()  # type: ignore
             """
             CALCulate:MARKer:COUPled
 
@@ -2214,7 +2215,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:MARKer:DELTa:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#DELTa_STATe>`_
@@ -2222,7 +2223,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            DELTa = DELTa()
+            DELTa = DELTa()  # type: ignore
             """
             CALCulate:MARKer:DELTa
 
@@ -2240,7 +2241,7 @@ class ZVA_gen(Instrument):
                 _cmd = "FORMat"
                 args = ["ADMittance", "COMPlex", "DEFault", "GDELay", "IMAGinary", "IMPedance", "LINPhase", "LOGPhase", "MDB", "MDPHase", "MLINear", "MLOGarithmic", "MLPHase", "PHASe", "POLar", "REAL", "SWR"]
 
-            FORMat = FORMat()
+            FORMat = FORMat()  # type: ignore
             """
             `CALCulate:MARKer:FORMat
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#FORMat>`_
@@ -2266,7 +2267,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "APEak"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EXCursion(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -2279,7 +2280,7 @@ class ZVA_gen(Instrument):
                         _cmd = "EXCursion"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    EXCursion = EXCursion()
+                    EXCursion = EXCursion()  # type: ignore
                     """
                     `CALCulate:MARKer:FUNCtion:APEak:EXCursion
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#EXCursion>`_
@@ -2298,7 +2299,7 @@ class ZVA_gen(Instrument):
                         _cmd = "THReshold"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    THReshold = THReshold()
+                    THReshold = THReshold()  # type: ignore
                     """
                     `CALCulate:MARKer:FUNCtion:APEak:THReshold
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#THReshold>`_
@@ -2306,7 +2307,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                APEak = APEak()
+                APEak = APEak()  # type: ignore
                 """
                 CALCulate:MARKer:FUNCtion:APEak
 
@@ -2335,7 +2336,7 @@ class ZVA_gen(Instrument):
                         _cmd = "GMCenter"
                         args = ["1", "OFF", "ON"]
 
-                    GMCenter = GMCenter()
+                    GMCenter = GMCenter()  # type: ignore
                     """
                     `CALCulate:MARKer:FUNCtion:BWIDth:GMCenter
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#BFILTer_GMCenter>`_
@@ -2354,7 +2355,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MODE"
                         args = ["BPABsolute", "BPASs", "BPRMarker", "BSABsolute", "BSRMarker", "BSTop"]
 
-                    MODE = MODE()
+                    MODE = MODE()  # type: ignore
                     """
                     `CALCulate:MARKer:FUNCtion:BWIDth:MODE
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#BFILTer_MODE>`_
@@ -2362,7 +2363,7 @@ class ZVA_gen(Instrument):
                     Arguments: BPABsolute, BPASs, BPRMarker, BSABsolute, BSRMarker, BSTop
                     """
 
-                BWIDth = BWIDth()
+                BWIDth = BWIDth()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:BWIDth
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#BFILter_BWIDth>`_
@@ -2379,9 +2380,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CENTer"
-                    args = []
+                    args = []  # type: List[str]
 
-                CENTer = CENTer()
+                CENTer = CENTer()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:CENTer
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#FUNCtion_CENTer>`_
@@ -2397,7 +2398,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DELTa"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
@@ -2410,7 +2411,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CALCulate:MARKer:FUNCtion:DELTa:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#DELTa_STATe_ZVR>`_
@@ -2418,7 +2419,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                DELTa = DELTa()
+                DELTa = DELTa()  # type: ignore
                 """
                 CALCulate:MARKer:FUNCtion:DELTa
 
@@ -2433,7 +2434,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DOMain"
-                    args = []
+                    args = []  # type: List[str]
 
                     class USER(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -2457,7 +2458,7 @@ class ZVA_gen(Instrument):
                             _cmd = "SHOW"
                             args = ["1", "OFF", "ON"]
 
-                        SHOW = SHOW()
+                        SHOW = SHOW()  # type: ignore
                         """
                         `CALCulate:MARKer:FUNCtion:DOMain:USER:SHOW
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#DOMain_USER_SHOW>`_
@@ -2476,7 +2477,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STARt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        STARt = STARt()
+                        STARt = STARt()  # type: ignore
                         """
                         `CALCulate:MARKer:FUNCtion:DOMain:USER:STARt
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#DOMain_USER_STARt>`_
@@ -2495,7 +2496,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STOP"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        STOP = STOP()
+                        STOP = STOP()  # type: ignore
                         """
                         `CALCulate:MARKer:FUNCtion:DOMain:USER:STOP
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#DOMain_USER_STOP>`_
@@ -2503,7 +2504,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    USER = USER()
+                    USER = USER()  # type: ignore
                     """
                     `CALCulate:MARKer:FUNCtion:DOMain:USER
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#DOMain_USER>`_
@@ -2511,7 +2512,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                DOMain = DOMain()
+                DOMain = DOMain()  # type: ignore
                 """
                 CALCulate:MARKer:FUNCtion:DOMain
 
@@ -2529,7 +2530,7 @@ class ZVA_gen(Instrument):
                     _cmd = "EXECute"
                     args = ["BFILter", "LPEak", "LTARget", "MAXimum", "MINimum", "NPEak", "RPEak", "RTARget", "SPRogress", "TARGet"]
 
-                EXECute = EXECute()
+                EXECute = EXECute()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:EXECute
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#EXECute>`_
@@ -2546,9 +2547,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RESult"
-                    args = []
+                    args = []  # type: List[str]
 
-                RESult = RESult()
+                RESult = RESult()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:RESult
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#RESult>`_
@@ -2567,7 +2568,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SELect"
                     args = ["BFILter", "LPEak", "LTARget", "MAXimum", "MINimum", "NPEak", "RPEak", "RTARget", "SPRogress", "TARGet"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:SELect
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#SELect>`_
@@ -2584,9 +2585,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STARt"
-                    args = []
+                    args = []  # type: List[str]
 
-                STARt = STARt()
+                STARt = STARt()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:STARt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#FUNCTion_STARt>`_
@@ -2603,9 +2604,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STOP"
-                    args = []
+                    args = []  # type: List[str]
 
-                STOP = STOP()
+                STOP = STOP()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:STOP
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#FUNCtion_STOP>`_
@@ -2624,7 +2625,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TARGet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                TARGet = TARGet()
+                TARGet = TARGet()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:TARGet
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#TARGet_ZVR>`_
@@ -2632,7 +2633,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            FUNCtion = FUNCtion()
+            FUNCtion = FUNCtion()  # type: ignore
             """
             CALCulate:MARKer:FUNCtion
 
@@ -2648,9 +2649,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MAXimum"
-                args = []
+                args = []  # type: List[str]
 
-            MAXimum = MAXimum()
+            MAXimum = MAXimum()  # type: ignore
             """
             `CALCulate:MARKer:MAXimum
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#MAXimum>`_
@@ -2667,9 +2668,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MINimum"
-                args = []
+                args = []  # type: List[str]
 
-            MINimum = MINimum()
+            MINimum = MINimum()  # type: ignore
             """
             `CALCulate:MARKer:MINimum
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#MINimum>`_
@@ -2688,7 +2689,7 @@ class ZVA_gen(Instrument):
                 _cmd = "MODE"
                 args = ["CONTinuous", "DISCrete"]
 
-            MODE = MODE()
+            MODE = MODE()  # type: ignore
             """
             `CALCulate:MARKer:MODE
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#MODE>`_
@@ -2707,7 +2708,7 @@ class ZVA_gen(Instrument):
                 _cmd = "NAME"
                 args = ["'string'"]
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `CALCulate:MARKer:NAME
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#NAME>`_
@@ -2736,7 +2737,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MODE"
                     args = ["CONTinuous", "DISCrete"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:MODE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#REFerence_MODE>`_
@@ -2755,7 +2756,7 @@ class ZVA_gen(Instrument):
                     _cmd = "NAME"
                     args = ["'string'"]
 
-                NAME = NAME()
+                NAME = NAME()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:NAME
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#REFerence_NAME>`_
@@ -2774,7 +2775,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#REFerence>`_
@@ -2793,7 +2794,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TYPE"
                     args = ["FIXed", "NORMal"]
 
-                TYPE = TYPE()
+                TYPE = TYPE()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:TYPE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#REFerence_TYPE>`_
@@ -2812,7 +2813,7 @@ class ZVA_gen(Instrument):
                     _cmd = "X"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                X = X()
+                X = X()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:X
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#REFerence_X>`_
@@ -2829,9 +2830,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "Y"
-                    args = []
+                    args = []  # type: List[str]
 
-                Y = Y()
+                Y = Y()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:Y
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#REFerence_Y>`_
@@ -2839,7 +2840,7 @@ class ZVA_gen(Instrument):
                 Arguments:
                 """
 
-            REFerence = REFerence()
+            REFerence = REFerence()  # type: ignore
             """
             CALCulate:MARKer:REFerence
 
@@ -2854,7 +2855,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SEARch"
-                args = []
+                args = []  # type: List[str]
 
                 class BFILter(SCPINode):
                     """
@@ -2864,7 +2865,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BFILter"
-                    args = []
+                    args = []  # type: List[str]
 
                     class RESult(SCPINode, SCPIBool):
                         """
@@ -2887,7 +2888,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:MARKer:SEARch:BFILter:RESult:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#SEARch_BFILter_RESult_STATe>`_
@@ -2895,14 +2896,14 @@ class ZVA_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    RESult = RESult()
+                    RESult = RESult()  # type: ignore
                     """
                     CALCulate:MARKer:SEARch:BFILter:RESult
 
                     Arguments: 1, OFF, ON
                     """
 
-                BFILter = BFILter()
+                BFILter = BFILter()  # type: ignore
                 """
                 CALCulate:MARKer:SEARch:BFILter
 
@@ -2918,9 +2919,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "IMMediate"
-                    args = []
+                    args = []  # type: List[str]
 
-                IMMediate = IMMediate()
+                IMMediate = IMMediate()  # type: ignore
                 """
                 `CALCulate:MARKer:SEARch:IMMediate
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#SEARch_IMMediate>`_
@@ -2937,9 +2938,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LEFT"
-                    args = []
+                    args = []  # type: List[str]
 
-                LEFT = LEFT()
+                LEFT = LEFT()  # type: ignore
                 """
                 `CALCulate:MARKer:SEARch:LEFT
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#SEARch_LEFT>`_
@@ -2956,9 +2957,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "NEXT"
-                    args = []
+                    args = []  # type: List[str]
 
-                NEXT = NEXT()
+                NEXT = NEXT()  # type: ignore
                 """
                 `CALCulate:MARKer:SEARch:NEXT
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#SEARch_NEXT>`_
@@ -2975,9 +2976,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RIGHt"
-                    args = []
+                    args = []  # type: List[str]
 
-                RIGHt = RIGHt()
+                RIGHt = RIGHt()  # type: ignore
                 """
                 `CALCulate:MARKer:SEARch:RIGHt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#SEARch_RIGHt>`_
@@ -2996,7 +2997,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TRACking"
                     args = ["1", "OFF", "ON"]
 
-                TRACking = TRACking()
+                TRACking = TRACking()  # type: ignore
                 """
                 `CALCulate:MARKer:SEARch:TRACking
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#SEARch_TRACking>`_
@@ -3004,7 +3005,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            SEARch = SEARch()
+            SEARch = SEARch()  # type: ignore
             """
             CALCulate:MARKer:SEARch
 
@@ -3022,7 +3023,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:MARKer:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#STATe>`_
@@ -3040,7 +3041,7 @@ class ZVA_gen(Instrument):
                 _cmd = "TARGet"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            TARGet = TARGet()
+            TARGet = TARGet()  # type: ignore
             """
             CALCulate:MARKer:TARGet
 
@@ -3058,7 +3059,7 @@ class ZVA_gen(Instrument):
                 _cmd = "TYPE"
                 args = ["FIXed", "NORMal"]
 
-            TYPE = TYPE()
+            TYPE = TYPE()  # type: ignore
             """
             `CALCulate:MARKer:TYPE
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#TYPE>`_
@@ -3077,7 +3078,7 @@ class ZVA_gen(Instrument):
                 _cmd = "X"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            X = X()
+            X = X()  # type: ignore
             """
             `CALCulate:MARKer:X
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#X>`_
@@ -3094,9 +3095,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "Y"
-                args = []
+                args = []  # type: List[str]
 
-            Y = Y()
+            Y = Y()  # type: ignore
             """
             `CALCulate:MARKer:Y
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#Y>`_
@@ -3104,7 +3105,7 @@ class ZVA_gen(Instrument):
             Arguments:
             """
 
-        MARKer = MARKer()
+        MARKer = MARKer()  # type: ignore
         """
         CALCulate:MARKer
 
@@ -3142,7 +3143,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DEFine"
                     args = ["(expression)"]
 
-                DEFine = DEFine()
+                DEFine = DEFine()  # type: ignore
                 """
                 `CALCulate:MATH:EXPRession:DEFine
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_math.htm#EXPRession_DEFine>`_
@@ -3161,7 +3162,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SDEFine"
                     args = ["'string'"]
 
-                SDEFine = SDEFine()
+                SDEFine = SDEFine()  # type: ignore
                 """
                 `CALCulate:MATH:EXPRession:SDEFine
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_math.htm#EXPRession_SDEFine>`_
@@ -3169,7 +3170,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            EXPRession = EXPRession()
+            EXPRession = EXPRession()  # type: ignore
             """
             CALCulate:MATH:EXPRession
 
@@ -3187,7 +3188,7 @@ class ZVA_gen(Instrument):
                 _cmd = "FUNCtion"
                 args = ["ADD", "DIVide", "MULTiply", "NORMal", "SUBTract"]
 
-            FUNCtion = FUNCtion()
+            FUNCtion = FUNCtion()  # type: ignore
             """
             `CALCulate:MATH:FUNCtion
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_math.htm#FUNCtion>`_
@@ -3204,9 +3205,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEMorize"
-                args = []
+                args = []  # type: List[str]
 
-            MEMorize = MEMorize()
+            MEMorize = MEMorize()  # type: ignore
             """
             `CALCulate:MATH:MEMorize
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_math.htm#MEMorize>`_
@@ -3225,7 +3226,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:MATH:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_math.htm#STATe>`_
@@ -3254,7 +3255,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:MATH:WUNit:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_math.htm#WUNit_STATe>`_
@@ -3262,14 +3263,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            WUNit = WUNit()
+            WUNit = WUNit()  # type: ignore
             """
             CALCulate:MATH:WUNit
 
             Arguments: 1, OFF, ON
             """
 
-        MATH = MATH()
+        MATH = MATH()  # type: ignore
         """
         CALCulate:MATH
 
@@ -3284,7 +3285,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PARameter"
-            args = []
+            args = []  # type: List[str]
 
             class CATalog(SCPINode, SCPIQuery):
                 """
@@ -3295,9 +3296,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             `CALCulate:PARameter:CATalog
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_parameter.htm#CATalog>`_
@@ -3327,7 +3328,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SGRoup"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SGRoup = SGRoup()
+                SGRoup = SGRoup()  # type: ignore
                 """
                 `CALCulate:PARameter:DEFine:SGRoup
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_parameter.htm#DEFine_SGRoup>`_
@@ -3335,7 +3336,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            DEFine = DEFine()
+            DEFine = DEFine()  # type: ignore
             """
             `CALCulate:PARameter:DEFine
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_parameter.htm#DEFine>`_
@@ -3363,9 +3364,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `CALCulate:PARameter:DELete:ALL
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_parameter.htm#DELete_ALL>`_
@@ -3382,9 +3383,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                CALL = CALL()
+                CALL = CALL()  # type: ignore
                 """
                 `CALCulate:PARameter:DELete:CALL
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_parameter.htm#DELete_CALL>`_
@@ -3401,9 +3402,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SGRoup"
-                    args = []
+                    args = []  # type: List[str]
 
-                SGRoup = SGRoup()
+                SGRoup = SGRoup()  # type: ignore
                 """
                 `CALCulate:PARameter:DELete:SGRoup
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_parameter.htm#DELete_SGRoup>`_
@@ -3411,7 +3412,7 @@ class ZVA_gen(Instrument):
                 Arguments:
                 """
 
-            DELete = DELete()
+            DELete = DELete()  # type: ignore
             """
             `CALCulate:PARameter:DELete
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_parameter.htm#DELete>`_
@@ -3430,7 +3431,7 @@ class ZVA_gen(Instrument):
                 _cmd = "MEASure"
                 args = ["'string'"]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             `CALCulate:PARameter:MEASure
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_parameter.htm#MEASure>`_
@@ -3446,7 +3447,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NFIGure"
-                args = []
+                args = []  # type: List[str]
 
                 class CSETtings(SCPINode, SCPISet):
                     """
@@ -3459,7 +3460,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CSETtings"
                     args = ["'string'"]
 
-                CSETtings = CSETtings()
+                CSETtings = CSETtings()  # type: ignore
                 """
                 `CALCulate:PARameter:NFIGure:CSETtings
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_parameter.htm#NFIGure_CSETtings>`_
@@ -3467,7 +3468,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            NFIGure = NFIGure()
+            NFIGure = NFIGure()  # type: ignore
             """
             CALCulate:PARameter:NFIGure
 
@@ -3485,7 +3486,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SDEFine"
                 args = ["'string'"]
 
-            SDEFine = SDEFine()
+            SDEFine = SDEFine()  # type: ignore
             """
             `CALCulate:PARameter:SDEFine
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_parameter.htm#SDEFine>`_
@@ -3504,7 +3505,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SELect"
                 args = ["'string'"]
 
-            SELect = SELect()
+            SELect = SELect()  # type: ignore
             """
             `CALCulate:PARameter:SELect
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_parameter.htm#SELect>`_
@@ -3512,7 +3513,7 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        PARameter = PARameter()
+        PARameter = PARameter()  # type: ignore
         """
         CALCulate:PARameter
 
@@ -3530,7 +3531,7 @@ class ZVA_gen(Instrument):
             _cmd = "PHOLd"
             args = ["MAX", "MIN", "OFF"]
 
-        PHOLd = PHOLd()
+        PHOLd = PHOLd()  # type: ignore
         """
         `CALCulate:PHOLd
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_phold.htm#PHOLd>`_
@@ -3546,7 +3547,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "RIPPle"
-            args = []
+            args = []  # type: List[str]
 
             class CONTrol(SCPINode):
                 """
@@ -3556,7 +3557,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONTrol"
-                args = []
+                args = []  # type: List[str]
 
                 class DOMain(SCPINode, SCPISet):
                     """
@@ -3569,7 +3570,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DOMain"
                     args = ["FLIN", "FLOG", "FSEG", "FSINgle", "PLIN", "PLOG", "PSINgle", "TLIN", "TLOG"]
 
-                DOMain = DOMain()
+                DOMain = DOMain()  # type: ignore
                 """
                 `CALCulate:RIPPle:CONTrol:DOMain
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#CONTrol_Domain>`_
@@ -3577,7 +3578,7 @@ class ZVA_gen(Instrument):
                 Arguments: FLIN, FLOG, FSEG, FSINgle, PLIN, PLOG, PSINgle, TLIN, TLOG
                 """
 
-            CONTrol = CONTrol()
+            CONTrol = CONTrol()  # type: ignore
             """
             CALCulate:RIPPle:CONTrol
 
@@ -3595,7 +3596,7 @@ class ZVA_gen(Instrument):
                 _cmd = "DATA"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            DATA = DATA()
+            DATA = DATA()  # type: ignore
             """
             `CALCulate:RIPPle:DATA
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#DATA>`_
@@ -3611,7 +3612,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DELete"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPISet):
                     """
@@ -3622,9 +3623,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `CALCulate:RIPPle:DELete:ALL
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#DELete_ALL>`_
@@ -3632,7 +3633,7 @@ class ZVA_gen(Instrument):
                 Arguments:
                 """
 
-            DELete = DELete()
+            DELete = DELete()  # type: ignore
             """
             CALCulate:RIPPle:DELete
 
@@ -3660,7 +3661,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:RIPPle:DISPlay:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#DISPlay_STATe>`_
@@ -3668,7 +3669,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            DISPlay = DISPlay()
+            DISPlay = DISPlay()  # type: ignore
             """
             CALCulate:RIPPle:DISPlay
 
@@ -3684,9 +3685,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FAIL"
-                args = []
+                args = []  # type: List[str]
 
-            FAIL = FAIL()
+            FAIL = FAIL()  # type: ignore
             """
             `CALCulate:RIPPle:FAIL
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#FAIL>`_
@@ -3702,7 +3703,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RDOMain"
-                args = []
+                args = []  # type: List[str]
 
                 class FORMat(SCPINode, SCPISet):
                     """
@@ -3715,7 +3716,7 @@ class ZVA_gen(Instrument):
                     _cmd = "FORMat"
                     args = ["C", "COMPlex", "GDELay", "IMAGinary", "L", "MAGNitude", "PHASe", "REAL", "SWR"]
 
-                FORMat = FORMat()
+                FORMat = FORMat()  # type: ignore
                 """
                 `CALCulate:RIPPle:RDOMain:FORMat
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#RDOMain_FORMat>`_
@@ -3723,7 +3724,7 @@ class ZVA_gen(Instrument):
                 Arguments: C, COMPlex, GDELay, IMAGinary, L, MAGNitude, PHASe, REAL, SWR
                 """
 
-            RDOMain = RDOMain()
+            RDOMain = RDOMain()  # type: ignore
             """
             CALCulate:RIPPle:RDOMain
 
@@ -3749,9 +3750,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COUNt"
-                    args = []
+                    args = []  # type: List[str]
 
-                COUNt = COUNt()
+                COUNt = COUNt()  # type: ignore
                 """
                 `CALCulate:RIPPle:SEGMent:COUNt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#SEG_COUNt>`_
@@ -3770,7 +3771,7 @@ class ZVA_gen(Instrument):
                     _cmd = "LIMit"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                LIMit = LIMit()
+                LIMit = LIMit()  # type: ignore
                 """
                 `CALCulate:RIPPle:SEGMent:LIMit
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#SEG_LIMit>`_
@@ -3787,9 +3788,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RESult"
-                    args = []
+                    args = []  # type: List[str]
 
-                RESult = RESult()
+                RESult = RESult()  # type: ignore
                 """
                 `CALCulate:RIPPle:SEGMent:RESult
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#SEG_RESult>`_
@@ -3808,7 +3809,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:RIPPle:SEGMent:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#SEG_STATe>`_
@@ -3824,7 +3825,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STIMulus"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STARt(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -3837,7 +3838,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `CALCulate:RIPPle:SEGMent:STIMulus:STARt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#SEG_STIMulus_STARt>`_
@@ -3856,7 +3857,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `CALCulate:RIPPle:SEGMent:STIMulus:STOP
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#SEG_STIMulus_STOP>`_
@@ -3864,14 +3865,14 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                STIMulus = STIMulus()
+                STIMulus = STIMulus()  # type: ignore
                 """
                 CALCulate:RIPPle:SEGMent:STIMulus
 
                 Arguments:
                 """
 
-            SEGMent = SEGMent()
+            SEGMent = SEGMent()  # type: ignore
             """
             CALCulate:RIPPle:SEGMent
 
@@ -3899,7 +3900,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:RIPPle:SOUNd:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#SOUNd_STATe>`_
@@ -3907,7 +3908,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            SOUNd = SOUNd()
+            SOUNd = SOUNd()  # type: ignore
             """
             CALCulate:RIPPle:SOUNd
 
@@ -3925,7 +3926,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:RIPPle:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_ripple.htm#STATe>`_
@@ -3933,7 +3934,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        RIPPle = RIPPle()
+        RIPPle = RIPPle()  # type: ignore
         """
         CALCulate:RIPPle
 
@@ -3961,7 +3962,7 @@ class ZVA_gen(Instrument):
                 _cmd = "APERture"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            APERture = APERture()
+            APERture = APERture()  # type: ignore
             """
             `CALCulate:SMOothing:APERture
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_smoothing.htm#APERture>`_
@@ -3980,7 +3981,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:SMOothing:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_smoothing.htm#STATe>`_
@@ -3988,7 +3989,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        SMOothing = SMOothing()
+        SMOothing = SMOothing()  # type: ignore
         """
         CALCulate:SMOothing
 
@@ -4013,7 +4014,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DOMain"
-                args = []
+                args = []  # type: List[str]
 
                 class USER(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -4037,7 +4038,7 @@ class ZVA_gen(Instrument):
                         _cmd = "SHOW"
                         args = ["1", "OFF", "ON"]
 
-                    SHOW = SHOW()
+                    SHOW = SHOW()  # type: ignore
                     """
                     `CALCulate:STATistics:DOMain:USER:SHOW
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#USER_SHOW>`_
@@ -4056,7 +4057,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `CALCulate:STATistics:DOMain:USER:STARt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#USER_STARt>`_
@@ -4075,7 +4076,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `CALCulate:STATistics:DOMain:USER:STOP
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#USER_STOP>`_
@@ -4083,7 +4084,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                USER = USER()
+                USER = USER()  # type: ignore
                 """
                 `CALCulate:STATistics:DOMain:USER
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#USER>`_
@@ -4091,7 +4092,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            DOMain = DOMain()
+            DOMain = DOMain()  # type: ignore
             """
             CALCulate:STATistics:DOMain
 
@@ -4119,7 +4120,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:STATistics:EPDelay:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#EPDelay_STATe>`_
@@ -4127,7 +4128,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            EPDelay = EPDelay()
+            EPDelay = EPDelay()  # type: ignore
             """
             CALCulate:STATistics:EPDelay
 
@@ -4155,7 +4156,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:STATistics:MMPTpeak:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#MMPTpeak_STATe>`_
@@ -4163,7 +4164,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            MMPTpeak = MMPTpeak()
+            MMPTpeak = MMPTpeak()  # type: ignore
             """
             CALCulate:STATistics:MMPTpeak
 
@@ -4190,14 +4191,14 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 CALCulate:STATistics:MSTDdev:STATe
 
                 Arguments: 1, OFF, ON
                 """
 
-            MSTDdev = MSTDdev()
+            MSTDdev = MSTDdev()  # type: ignore
             """
             CALCulate:STATistics:MSTDdev
 
@@ -4212,7 +4213,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NLINear"
-                args = []
+                args = []  # type: List[str]
 
                 class COMP(SCPINode, SCPIBool):
                     """
@@ -4235,7 +4236,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LEVel"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    LEVel = LEVel()
+                    LEVel = LEVel()  # type: ignore
                     """
                     `CALCulate:STATistics:NLINear:COMP:LEVel
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#COMP_LEVel>`_
@@ -4252,9 +4253,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "RESult"
-                        args = []
+                        args = []  # type: List[str]
 
-                    RESult = RESult()
+                    RESult = RESult()  # type: ignore
                     """
                     `CALCulate:STATistics:NLINear:COMP:RESult
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#COMP_RESult>`_
@@ -4273,7 +4274,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CALCulate:STATistics:NLINear:COMP:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#COMP_STATe>`_
@@ -4281,14 +4282,14 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                COMP = COMP()
+                COMP = COMP()  # type: ignore
                 """
                 CALCulate:STATistics:NLINear:COMP
 
                 Arguments: 1, OFF, ON
                 """
 
-            NLINear = NLINear()
+            NLINear = NLINear()  # type: ignore
             """
             CALCulate:STATistics:NLINear
 
@@ -4306,7 +4307,7 @@ class ZVA_gen(Instrument):
                 _cmd = "RESult"
                 args = ["ALL", "ELENgth", "FLATness", "GAIN", "MAX", "MEAN", "MIN", "PDELay", "PEAK2p", "PTPeak", "RMS", "SLOPe", "STDDev"]
 
-            RESult = RESult()
+            RESult = RESult()  # type: ignore
             """
             `CALCulate:STATistics:RESult
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#RESult>`_
@@ -4335,7 +4336,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:STATistics:RMS:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#RMS_STATe>`_
@@ -4343,7 +4344,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            RMS = RMS()
+            RMS = RMS()  # type: ignore
             """
             CALCulate:STATistics:RMS
 
@@ -4371,7 +4372,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:STATistics:SFLatness:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#SFLatness_STATe>`_
@@ -4379,7 +4380,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            SFLatness = SFLatness()
+            SFLatness = SFLatness()  # type: ignore
             """
             CALCulate:STATistics:SFLatness
 
@@ -4397,7 +4398,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:STATistics:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_statistics.htm#STATe>`_
@@ -4405,7 +4406,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        STATistics = STATistics()
+        STATistics = STATistics()  # type: ignore
         """
         CALCulate:STATistics
 
@@ -4420,7 +4421,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TDIF"
-            args = []
+            args = []  # type: List[str]
 
             class IMBalance(SCPINode):
                 """
@@ -4430,7 +4431,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMBalance"
-                args = []
+                args = []  # type: List[str]
 
                 class COMPensation(SCPINode, SCPIBool):
                     """
@@ -4453,7 +4454,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CALCulate:TDIF:IMBalance:COMPensation:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_tdif.htm#IMBalance_COMPensation>`_
@@ -4461,21 +4462,21 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                COMPensation = COMPensation()
+                COMPensation = COMPensation()  # type: ignore
                 """
                 CALCulate:TDIF:IMBalance:COMPensation
 
                 Arguments: 1, OFF, ON
                 """
 
-            IMBalance = IMBalance()
+            IMBalance = IMBalance()  # type: ignore
             """
             CALCulate:TDIF:IMBalance
 
             Arguments:
             """
 
-        TDIF = TDIF()
+        TDIF = TDIF()  # type: ignore
         """
         CALCulate:TDIF
 
@@ -4490,7 +4491,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TRANsform"
-            args = []
+            args = []  # type: List[str]
 
             class COMPlex(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -4503,7 +4504,7 @@ class ZVA_gen(Instrument):
                 _cmd = "COMPlex"
                 args = ["S", "Y", "Z"]
 
-            COMPlex = COMPlex()
+            COMPlex = COMPlex()  # type: ignore
             """
             `CALCulate:TRANsform:COMPlex
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#COMPlex>`_
@@ -4519,7 +4520,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMPedance"
-                args = []
+                args = []  # type: List[str]
 
                 class RNORmal(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -4532,7 +4533,7 @@ class ZVA_gen(Instrument):
                     _cmd = "RNORmal"
                     args = ["PWAVes", "TWAVes"]
 
-                RNORmal = RNORmal()
+                RNORmal = RNORmal()  # type: ignore
                 """
                 `CALCulate:TRANsform:IMPedance:RNORmal
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#IMPedance_RNORMal>`_
@@ -4540,7 +4541,7 @@ class ZVA_gen(Instrument):
                 Arguments: PWAVes, TWAVes
                 """
 
-            IMPedance = IMPedance()
+            IMPedance = IMPedance()  # type: ignore
             """
             CALCulate:TRANsform:IMPedance
 
@@ -4568,7 +4569,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CENTer"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                CENTer = CENTer()
+                CENTer = CENTer()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:CENTer
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#CENTer>`_
@@ -4587,7 +4588,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DCHebyshev"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DCHebyshev = DCHebyshev()
+                DCHebyshev = DCHebyshev()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:DCHebyshev
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#DCHebyshev>`_
@@ -4628,7 +4629,7 @@ class ZVA_gen(Instrument):
                             _cmd = "CONTinuous"
                             args = ["1", "OFF", "ON"]
 
-                        CONTinuous = CONTinuous()
+                        CONTinuous = CONTinuous()  # type: ignore
                         """
                         `CALCulate:TRANsform:TIME:LPASs:DCSParam:CONTinuous
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#LPASs_DCSParam_CONTinuous>`_
@@ -4645,9 +4646,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "EXTRapolate"
-                            args = []
+                            args = []  # type: List[str]
 
-                        EXTRapolate = EXTRapolate()
+                        EXTRapolate = EXTRapolate()  # type: ignore
                         """
                         `CALCulate:TRANsform:TIME:LPASs:DCSParam:EXTRapolate
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#LPASs_DSCParam_EXTRapolate>`_
@@ -4655,7 +4656,7 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    DCSParam = DCSParam()
+                    DCSParam = DCSParam()  # type: ignore
                     """
                     `CALCulate:TRANsform:TIME:LPASs:DCSParam
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#LPASs_DCSParam>`_
@@ -4663,7 +4664,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                LPASs = LPASs()
+                LPASs = LPASs()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:LPASs
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#LPASs>`_
@@ -4680,9 +4681,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LPFRequency"
-                    args = []
+                    args = []  # type: List[str]
 
-                LPFRequency = LPFRequency()
+                LPFRequency = LPFRequency()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:LPFRequency
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#LPFRequency>`_
@@ -4700,7 +4701,7 @@ class ZVA_gen(Instrument):
                     _cmd = "METHod"
                     args = ["CHIRp"]
 
-                METHod = METHod()
+                METHod = METHod()  # type: ignore
                 """
                 CALCulate:TRANsform:TIME:METHod
 
@@ -4715,7 +4716,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RESolution"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EFACtor(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -4728,7 +4729,7 @@ class ZVA_gen(Instrument):
                         _cmd = "EFACtor"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    EFACtor = EFACtor()
+                    EFACtor = EFACtor()  # type: ignore
                     """
                     `CALCulate:TRANsform:TIME:RESolution:EFACtor
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#RESolution_EFACtor>`_
@@ -4736,7 +4737,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                RESolution = RESolution()
+                RESolution = RESolution()  # type: ignore
                 """
                 CALCulate:TRANsform:TIME:RESolution
 
@@ -4754,7 +4755,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SPAN"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SPAN = SPAN()
+                SPAN = SPAN()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:SPAN
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#SPAN>`_
@@ -4773,7 +4774,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STARt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                STARt = STARt()
+                STARt = STARt()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:STARt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#STARt>`_
@@ -4792,7 +4793,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#STATe>`_
@@ -4811,7 +4812,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STIMulus"
                     args = ["IMPulse", "STEP"]
 
-                STIMulus = STIMulus()
+                STIMulus = STIMulus()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:STIMulus
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#STIMulus>`_
@@ -4830,7 +4831,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                STOP = STOP()
+                STOP = STOP()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:STOP
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#STOP>`_
@@ -4849,7 +4850,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TYPE"
                     args = ["BPASs", "LPASs"]
 
-                TYPE = TYPE()
+                TYPE = TYPE()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:TYPE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#TYPE>`_
@@ -4868,7 +4869,7 @@ class ZVA_gen(Instrument):
                     _cmd = "WINDow"
                     args = ["BOHMan", "DCHebyshev", "HAMMing", "HANNing", "RECT"]
 
-                WINDow = WINDow()
+                WINDow = WINDow()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:WINDow
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#WINDow>`_
@@ -4887,7 +4888,7 @@ class ZVA_gen(Instrument):
                     _cmd = "XAXis"
                     args = ["DISTance", "TIME"]
 
-                XAXis = XAXis()
+                XAXis = XAXis()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:XAXis
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform.htm#XAXis>`_
@@ -4895,7 +4896,7 @@ class ZVA_gen(Instrument):
                 Arguments: DISTance, TIME
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             CALCulate:TRANsform:TIME
 
@@ -4910,7 +4911,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "VNETworks"
-                args = []
+                args = []  # type: List[str]
 
                 class BALanced(SCPINode):
                     """
@@ -4920,7 +4921,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BALanced"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPIBool):
                         """
@@ -4940,7 +4941,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -4953,7 +4954,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "LSSC", "SCCS", "SCLS", "SCST", "SLCS", "STSC"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#BALanced_DEEMbedding_PARameters_C>`_
@@ -4972,7 +4973,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSSL", "LSSC", "LSSL", "SCLS", "SLCS", "SLLS", "SLST", "STSL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#BALanced_DEEMbedding_PARameters_L>`_
@@ -4991,7 +4992,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#BALanced_DEEMbedding_PARameters_R>`_
@@ -4999,7 +5000,7 @@ class ZVA_gen(Instrument):
                             Arguments: CSSC, CSSL, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters
 
@@ -5017,7 +5018,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#BALanced_DEEMbedding_STATe>`_
@@ -5036,7 +5037,7 @@ class ZVA_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#BALanced_DEEMbedding_TNDefinition>`_
@@ -5044,7 +5045,7 @@ class ZVA_gen(Instrument):
                         Arguments: CSSC, CSSL, FIMPort, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                         """
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding
 
@@ -5069,7 +5070,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -5082,7 +5083,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "LSSC", "SCCS", "SCLS", "SCST", "SLCS", "STSC"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#BALanced_EMBedding_PARameters_C>`_
@@ -5101,7 +5102,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSSL", "LSSC", "LSSL", "SCLS", "SLCS", "SLLS", "SLST", "STSL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#BALanced_EMBedding_PARameters_L>`_
@@ -5120,7 +5121,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#BALanced_EMBedding_PARameters_R>`_
@@ -5128,7 +5129,7 @@ class ZVA_gen(Instrument):
                             Arguments: CSSC, CSSL, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters
 
@@ -5146,7 +5147,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#BALanced_EMBedding_STATe>`_
@@ -5165,7 +5166,7 @@ class ZVA_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#BALanced_EMBedding_TNDefinition>`_
@@ -5173,14 +5174,14 @@ class ZVA_gen(Instrument):
                         Arguments: CSSC, CSSL, FIMPort, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                         """
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:BALanced:EMBedding
 
                     Arguments: 1, OFF, ON
                     """
 
-                BALanced = BALanced()
+                BALanced = BALanced()  # type: ignore
                 """
                 CALCulate:TRANsform:VNETworks:BALanced
 
@@ -5195,7 +5196,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "GLOop"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINode, SCPIBool):
                         """
@@ -5215,7 +5216,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -5228,7 +5229,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "C"
                                 args = ["SC"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#GLOop_DEEMbedding_PARameters_C>`_
@@ -5247,7 +5248,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "L"
                                 args = ["SL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#GLOop_DEEMbedding_PARameters_L>`_
@@ -5266,7 +5267,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "R"
                                 args = ["SC", "SL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#GLOop_DEEMbedding_PARameters_R>`_
@@ -5274,7 +5275,7 @@ class ZVA_gen(Instrument):
                             Arguments: SC, SL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:PARameters
 
@@ -5292,7 +5293,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#GLOop_DEEMbedding_STATe>`_
@@ -5311,7 +5312,7 @@ class ZVA_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["FIMPort", "SC", "SL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#GLOop_DEEMbedding_TNDefinition>`_
@@ -5319,7 +5320,7 @@ class ZVA_gen(Instrument):
                         Arguments: FIMPort, SC, SL
                         """
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding
 
@@ -5344,7 +5345,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -5357,7 +5358,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "C"
                                 args = ["SC"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:EMBedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#GLOop_EMBedding_PARameters_C>`_
@@ -5376,7 +5377,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "L"
                                 args = ["SL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:EMBedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#GLOop_EMBedding_PARameters_L>`_
@@ -5395,7 +5396,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "R"
                                 args = ["SC", "SL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:EMBedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#GLOop_EMBedding_PARameters_R>`_
@@ -5403,7 +5404,7 @@ class ZVA_gen(Instrument):
                             Arguments: SC, SL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:GLOop:EMBedding:PARameters
 
@@ -5421,7 +5422,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:GLOop:EMBedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#GLOop_EMBedding_STATe>`_
@@ -5439,21 +5440,21 @@ class ZVA_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["FIMPort", "SC", "SL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:GLOop:EMBedding:TNDefinition
 
                         Arguments: FIMPort, SC, SL
                         """
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:GLOop:EMBedding
 
                     Arguments: 1, OFF, ON
                     """
 
-                GLOop = GLOop()
+                GLOop = GLOop()  # type: ignore
                 """
                 CALCulate:TRANsform:VNETworks:GLOop
 
@@ -5468,7 +5469,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PPAir"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPIBool):
                         """
@@ -5491,7 +5492,7 @@ class ZVA_gen(Instrument):
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        DEFine = DEFine()
+                        DEFine = DEFine()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:DEFine
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_DEEMbedding_DEFine>`_
@@ -5508,9 +5509,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DELete"
-                            args = []
+                            args = []  # type: List[str]
 
-                        DELete = DELete()
+                        DELete = DELete()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:DELete
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_DEEMbedding_DELete>`_
@@ -5526,7 +5527,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -5539,7 +5540,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "LSSC", "SCCS", "SCLS", "SCST", "SLCS", "STSC"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_DEEMbedding_PARameters_C>`_
@@ -5558,7 +5559,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSSL", "LSSC", "LSSL", "SCLS", "SLCS", "SLLS", "SLST", "STSL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_DEEMbedding_PARameters_L>`_
@@ -5577,7 +5578,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_DEEMbedding_PARameters_R>`_
@@ -5585,7 +5586,7 @@ class ZVA_gen(Instrument):
                             Arguments: CSSC, CSSL, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:PARameters
 
@@ -5603,7 +5604,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_DEEMbedding_STATe>`_
@@ -5622,7 +5623,7 @@ class ZVA_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_DEEMbedding_TNDefinition>`_
@@ -5630,7 +5631,7 @@ class ZVA_gen(Instrument):
                         Arguments: CSSC, CSSL, FIMPort, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                         """
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding
 
@@ -5658,7 +5659,7 @@ class ZVA_gen(Instrument):
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        DEFine = DEFine()
+                        DEFine = DEFine()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:DEFine
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_EMBedding_DEFine>`_
@@ -5675,9 +5676,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DELete"
-                            args = []
+                            args = []  # type: List[str]
 
-                        DELete = DELete()
+                        DELete = DELete()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:DELete
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_EMBedding_DELete>`_
@@ -5693,7 +5694,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -5706,7 +5707,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "LSSC", "SCCS", "SCLS", "SCST", "SLCS", "STSC"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_EMBedding_PARameters_C>`_
@@ -5725,7 +5726,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSSL", "LSSC", "LSSL", "SCLS", "SLCS", "SLLS", "SLST", "STSL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_EMBedding_PARameters_L>`_
@@ -5744,7 +5745,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_EMBedding_PARameters_R>`_
@@ -5752,7 +5753,7 @@ class ZVA_gen(Instrument):
                             Arguments: CSSC, CSSL, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:PPAir:EMBedding:PARameters
 
@@ -5770,7 +5771,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_EMBedding_STATe>`_
@@ -5789,7 +5790,7 @@ class ZVA_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "LSSC", "LSSL", "SCCS", "SCLS", "SCST", "SLCS", "SLLS", "SLST", "STSC", "STSL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#PPAir_EMBedding_TNDefinition>`_
@@ -5797,14 +5798,14 @@ class ZVA_gen(Instrument):
                         Arguments: CSSC, CSSL, FIMPort, LSSC, LSSL, SCCS, SCLS, SCST, SLCS, SLLS, SLST, STSC, STSL
                         """
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:PPAir:EMBedding
 
                     Arguments: 1, OFF, ON
                     """
 
-                PPAir = PPAir()
+                PPAir = PPAir()  # type: ignore
                 """
                 CALCulate:TRANsform:VNETworks:PPAir
 
@@ -5819,7 +5820,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SENDed"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPIBool):
                         """
@@ -5839,7 +5840,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -5852,7 +5853,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSC", "CSL", "LSC", "SCC", "SCL", "SLC"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#SENDed_DEEMbedding_PARameters_C>`_
@@ -5871,7 +5872,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSL", "LSC", "LSL", "SCL", "SLC", "SLL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#SENDed_DEEMbedding_PARameters_L>`_
@@ -5890,7 +5891,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSC", "CSL", "LSC", "LSL", "SCC", "SCL", "SLC", "SLL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#SENDed_DEEMbedding_PARameters_R>`_
@@ -5898,7 +5899,7 @@ class ZVA_gen(Instrument):
                             Arguments: CSC, CSL, LSC, LSL, SCC, SCL, SLC, SLL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters
 
@@ -5916,7 +5917,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#SENDed_DEEMbedding_STATe>`_
@@ -5935,7 +5936,7 @@ class ZVA_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSC", "CSL", "FIMPort", "LSC", "LSL", "SCC", "SCL", "SLC", "SLL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#SENDed_DEEMbedding_TNDefinition>`_
@@ -5943,7 +5944,7 @@ class ZVA_gen(Instrument):
                         Arguments: CSC, CSL, FIMPort, LSC, LSL, SCC, SCL, SLC, SLL
                         """
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding
 
@@ -5968,7 +5969,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -5981,7 +5982,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSC", "CSL", "LSC", "SCC", "SCL", "SLC"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#SENDed_EMBedding_PARameters_C>`_
@@ -6000,7 +6001,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSL", "LSC", "LSL", "SCL", "SLC", "SLL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#SENDed_EMBedding_PARameters_L>`_
@@ -6019,7 +6020,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSC", "CSL", "LSC", "LSL", "SCC", "SCL", "SLC", "SLL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#SENDed_EMBedding_PARameters_R>`_
@@ -6027,7 +6028,7 @@ class ZVA_gen(Instrument):
                             Arguments: CSC, CSL, LSC, LSL, SCC, SCL, SLC, SLL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters
 
@@ -6045,7 +6046,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#SENDed_EMBedding_STATe>`_
@@ -6064,7 +6065,7 @@ class ZVA_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSC", "CSL", "FIMPort", "LSC", "LSL", "SCC", "SCL", "SLC", "SLL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_transform_vnetworks.htm#SENDed_EMBedding_TNDefinition>`_
@@ -6072,35 +6073,35 @@ class ZVA_gen(Instrument):
                         Arguments: CSC, CSL, FIMPort, LSC, LSL, SCC, SCL, SLC, SLL
                         """
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:SENDed:EMBedding
 
                     Arguments: 1, OFF, ON
                     """
 
-                SENDed = SENDed()
+                SENDed = SENDed()  # type: ignore
                 """
                 CALCulate:TRANsform:VNETworks:SENDed
 
                 Arguments:
                 """
 
-            VNETworks = VNETworks()
+            VNETworks = VNETworks()  # type: ignore
             """
             CALCulate:TRANsform:VNETworks
 
             Arguments:
             """
 
-        TRANsform = TRANsform()
+        TRANsform = TRANsform()  # type: ignore
         """
         CALCulate:TRANsform
 
         Arguments:
         """
 
-    CALCulate = CALCulate()
+    CALCulate = CALCulate()  # type: ignore
     """
     CALCulate
 
@@ -6115,7 +6116,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "CONFigure"
-        args = []
+        args = []  # type: List[str]
 
         class CHANnel(SCPINodeN, SCPIBool):
             """
@@ -6136,9 +6137,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             `CONFigure:CHANnel:CATalog
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/configure/configure.htm#CATalog>`_
@@ -6168,7 +6169,7 @@ class ZVA_gen(Instrument):
                     _cmd = "ID"
                     args = ["'string'"]
 
-                ID = ID()
+                ID = ID()  # type: ignore
                 """
                 `CONFigure:CHANnel:NAME:ID
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/configure/configure.htm#NAME_ID>`_
@@ -6176,7 +6177,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `CONFigure:CHANnel:NAME
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/configure/configure.htm#NAME>`_
@@ -6195,7 +6196,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CONFigure:CHANnel:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/configure/configure.htm#STATe>`_
@@ -6211,7 +6212,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRACe"
-                args = []
+                args = []  # type: List[str]
 
                 class REName(SCPINode, SCPISet):
                     """
@@ -6224,7 +6225,7 @@ class ZVA_gen(Instrument):
                     _cmd = "REName"
                     args = ["'string'"]
 
-                REName = REName()
+                REName = REName()  # type: ignore
                 """
                 `CONFigure:CHANnel:TRACe:REName
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/configure/configure.htm#Channel_Trace_Rename>`_
@@ -6232,14 +6233,14 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             CONFigure:CHANnel:TRACe
 
             Arguments:
             """
 
-        CHANnel = CHANnel()
+        CHANnel = CHANnel()  # type: ignore
         """
         CONFigure:CHANnel
 
@@ -6254,7 +6255,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TRACe"
-            args = []
+            args = []  # type: List[str]
 
             class CATalog(SCPINode, SCPIQuery):
                 """
@@ -6265,9 +6266,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             `CONFigure:TRACe:CATalog
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/configure/configure.htm#TRACe_CATalog_>`_
@@ -6283,7 +6284,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CHANnel"
-                args = []
+                args = []  # type: List[str]
 
                 class NAME(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -6307,7 +6308,7 @@ class ZVA_gen(Instrument):
                         _cmd = "ID"
                         args = ["'string'"]
 
-                    ID = ID()
+                    ID = ID()  # type: ignore
                     """
                     `CONFigure:TRACe:CHANnel:NAME:ID
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/configure/configure.htm#TRACe_CHANnel_ID>`_
@@ -6315,7 +6316,7 @@ class ZVA_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                NAME = NAME()
+                NAME = NAME()  # type: ignore
                 """
                 `CONFigure:TRACe:CHANnel:NAME
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/configure/configure.htm#TRACe_CHANnel_NAME>`_
@@ -6323,7 +6324,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CHANnel = CHANnel()
+            CHANnel = CHANnel()  # type: ignore
             """
             CONFigure:TRACe:CHANnel
 
@@ -6352,7 +6353,7 @@ class ZVA_gen(Instrument):
                     _cmd = "ID"
                     args = ["'string'"]
 
-                ID = ID()
+                ID = ID()  # type: ignore
                 """
                 `CONFigure:TRACe:NAME:ID
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/configure/configure.htm#TRACe_NAME_ID>`_
@@ -6360,7 +6361,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `CONFigure:TRACe:NAME
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/configure/configure.htm#TRACe_NAME>`_
@@ -6379,7 +6380,7 @@ class ZVA_gen(Instrument):
                 _cmd = "REName"
                 args = ["'string'"]
 
-            REName = REName()
+            REName = REName()  # type: ignore
             """
             `CONFigure:TRACe:REName
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/configure/configure.htm#TRACe_REName>`_
@@ -6387,14 +6388,14 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        TRACe = TRACe()
+        TRACe = TRACe()  # type: ignore
         """
         CONFigure:TRACe
 
         Arguments:
         """
 
-    CONFigure = CONFigure()
+    CONFigure = CONFigure()  # type: ignore
     """
     CONFigure
 
@@ -6409,7 +6410,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "CONTrol"
-        args = []
+        args = []  # type: List[str]
 
         class AUXiliary(SCPINode):
             """
@@ -6419,7 +6420,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "AUXiliary"
-            args = []
+            args = []  # type: List[str]
 
             class A(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -6442,7 +6443,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:AUXiliary:A:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control.htm#A_B_DATA>`_
@@ -6450,7 +6451,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1
                 """
 
-            A = A()
+            A = A()  # type: ignore
             """
             CONTrol:AUXiliary:A
 
@@ -6478,7 +6479,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:AUXiliary:B:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control.htm#A_B_DATA>`_
@@ -6486,7 +6487,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1
                 """
 
-            B = B()
+            B = B()  # type: ignore
             """
             CONTrol:AUXiliary:B
 
@@ -6514,7 +6515,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:AUXiliary:C:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control.htm#DATA>`_
@@ -6522,14 +6523,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            C = C()
+            C = C()  # type: ignore
             """
             CONTrol:AUXiliary:C
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        AUXiliary = AUXiliary()
+        AUXiliary = AUXiliary()  # type: ignore
         """
         CONTrol:AUXiliary
 
@@ -6544,7 +6545,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "HANDler"
-            args = []
+            args = []  # type: List[str]
 
             class A(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -6567,7 +6568,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:A:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#A_DATA>`_
@@ -6586,7 +6587,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CONTrol:HANDler:A:MODE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#A_MODE>`_
@@ -6594,7 +6595,7 @@ class ZVA_gen(Instrument):
                 Arguments: INPut, OUTPut
                 """
 
-            A = A()
+            A = A()  # type: ignore
             """
             CONTrol:HANDler:A
 
@@ -6622,7 +6623,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:B:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#A_DATA>`_
@@ -6641,7 +6642,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CONTrol:HANDler:B:MODE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#A_MODE>`_
@@ -6649,7 +6650,7 @@ class ZVA_gen(Instrument):
                 Arguments: INPut, OUTPut
                 """
 
-            B = B()
+            B = B()  # type: ignore
             """
             CONTrol:HANDler:B
 
@@ -6677,7 +6678,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:C:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#A_DATA>`_
@@ -6696,7 +6697,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CONTrol:HANDler:C:MODE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#A_MODE>`_
@@ -6704,7 +6705,7 @@ class ZVA_gen(Instrument):
                 Arguments: INPut, OUTPut
                 """
 
-            C = C()
+            C = C()  # type: ignore
             """
             CONTrol:HANDler:C
 
@@ -6732,7 +6733,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:D:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#A_DATA>`_
@@ -6751,7 +6752,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CONTrol:HANDler:D:MODE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#A_MODE>`_
@@ -6759,7 +6760,7 @@ class ZVA_gen(Instrument):
                 Arguments: INPut, OUTPut
                 """
 
-            D = D()
+            D = D()  # type: ignore
             """
             CONTrol:HANDler:D
 
@@ -6787,7 +6788,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:E:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#A_DATA>`_
@@ -6795,7 +6796,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1
                 """
 
-            E = E()
+            E = E()  # type: ignore
             """
             CONTrol:HANDler:E
 
@@ -6810,7 +6811,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXTension"
-                args = []
+                args = []  # type: List[str]
 
                 class INDex(SCPINode):
                     """
@@ -6820,7 +6821,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "INDex"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
@@ -6833,7 +6834,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CONTrol:HANDler:EXTension:INDex:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#EXTension_INDEX_STATe>`_
@@ -6841,7 +6842,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                INDex = INDex()
+                INDex = INDex()  # type: ignore
                 """
                 CONTrol:HANDler:EXTension:INDex
 
@@ -6856,7 +6857,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RTRigger"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
@@ -6869,7 +6870,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CONTrol:HANDler:EXTension:RTRigger:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#EXTension_RTRigger_STATe>`_
@@ -6877,14 +6878,14 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                RTRigger = RTRigger()
+                RTRigger = RTRigger()  # type: ignore
                 """
                 CONTrol:HANDler:EXTension:RTRigger
 
                 Arguments:
                 """
 
-            EXTension = EXTension()
+            EXTension = EXTension()  # type: ignore
             """
             CONTrol:HANDler:EXTension
 
@@ -6912,7 +6913,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:F:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#A_DATA>`_
@@ -6920,7 +6921,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1
                 """
 
-            F = F()
+            F = F()  # type: ignore
             """
             CONTrol:HANDler:F
 
@@ -6948,7 +6949,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:OUTPut:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#OUTPut_DATA>`_
@@ -6967,7 +6968,7 @@ class ZVA_gen(Instrument):
                     _cmd = "USER"
                     args = ["1"]
 
-                USER = USER()
+                USER = USER()  # type: ignore
                 """
                 `CONTrol:HANDler:OUTPut:USER
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#OUTPut_USER>`_
@@ -6975,7 +6976,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1
                 """
 
-            OUTPut = OUTPut()
+            OUTPut = OUTPut()  # type: ignore
             """
             CONTrol:HANDler:OUTPut
 
@@ -6991,9 +6992,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RESet"
-                args = []
+                args = []  # type: List[str]
 
-            RESet = RESet()
+            RESet = RESet()  # type: ignore
             """
             `CONTrol:HANDler:RESet
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/control/control_handler.htm#RESet>`_
@@ -7001,14 +7002,14 @@ class ZVA_gen(Instrument):
             Arguments:
             """
 
-        HANDler = HANDler()
+        HANDler = HANDler()  # type: ignore
         """
         CONTrol:HANDler
 
         Arguments:
         """
 
-    CONTrol = CONTrol()
+    CONTrol = CONTrol()  # type: ignore
     """
     CONTrol
 
@@ -7023,7 +7024,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "DIAGnostic"
-        args = []
+        args = []  # type: List[str]
 
         class ALC(SCPINode):
             """
@@ -7033,7 +7034,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ALC"
-            args = []
+            args = []  # type: List[str]
 
             class AUBW(SCPINode, SCPIBool):
                 """
@@ -7046,7 +7047,7 @@ class ZVA_gen(Instrument):
                 _cmd = "AUBW"
                 args = ["1", "OFF", "ON"]
 
-            AUBW = AUBW()
+            AUBW = AUBW()  # type: ignore
             """
             `DIAGnostic:ALC:AUBW
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#ALC_AUBW>`_
@@ -7065,7 +7066,7 @@ class ZVA_gen(Instrument):
                 _cmd = "BW"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            BW = BW()
+            BW = BW()  # type: ignore
             """
             `DIAGnostic:ALC:BW
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#ALC_BW>`_
@@ -7084,7 +7085,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CLAMp"
                 args = ["1", "OFF", "ON"]
 
-            CLAMp = CLAMp()
+            CLAMp = CLAMp()  # type: ignore
             """
             `DIAGnostic:ALC:CLAMp
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#ALC_CLAMp>`_
@@ -7100,7 +7101,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DMODe"
-                args = []
+                args = []  # type: List[str]
 
                 class MSTimulus(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -7112,7 +7113,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MSTimulus"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                MSTimulus = MSTimulus()
+                MSTimulus = MSTimulus()  # type: ignore
                 """
                 DIAGnostic:ALC:DMODe:MSTimulus
 
@@ -7129,7 +7130,7 @@ class ZVA_gen(Instrument):
                     _cmd = "POINts"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                POINts = POINts()
+                POINts = POINts()  # type: ignore
                 """
                 DIAGnostic:ALC:DMODe:POINts
 
@@ -7146,14 +7147,14 @@ class ZVA_gen(Instrument):
                     _cmd = "RTIMe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                RTIMe = RTIMe()
+                RTIMe = RTIMe()  # type: ignore
                 """
                 DIAGnostic:ALC:DMODe:RTIMe
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            DMODe = DMODe()
+            DMODe = DMODe()  # type: ignore
             """
             DIAGnostic:ALC:DMODe
 
@@ -7182,7 +7183,7 @@ class ZVA_gen(Instrument):
                     _cmd = "GAIN"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                GAIN = GAIN()
+                GAIN = GAIN()  # type: ignore
                 """
                 `DIAGnostic:ALC:PIParameter:GAIN
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#ALC_PIParameter_GAIN>`_
@@ -7201,7 +7202,7 @@ class ZVA_gen(Instrument):
                     _cmd = "ITIMe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                ITIMe = ITIMe()
+                ITIMe = ITIMe()  # type: ignore
                 """
                 `DIAGnostic:ALC:PIParameter:ITIMe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#ALC_PIParameter_ITIMe>`_
@@ -7209,7 +7210,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            PIParameter = PIParameter()
+            PIParameter = PIParameter()  # type: ignore
             """
             `DIAGnostic:ALC:PIParameter
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#ALC_PIParameter>`_
@@ -7228,7 +7229,7 @@ class ZVA_gen(Instrument):
                 _cmd = "POFFset"
                 args = ["1", "OFF", "ON"]
 
-            POFFset = POFFset()
+            POFFset = POFFset()  # type: ignore
             """
             `DIAGnostic:ALC:POFFset
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#ALC_POFFset>`_
@@ -7247,7 +7248,7 @@ class ZVA_gen(Instrument):
                 _cmd = "RANGe"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            RANGe = RANGe()
+            RANGe = RANGe()  # type: ignore
             """
             `DIAGnostic:ALC:RANGe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#ALC_RANGe>`_
@@ -7275,7 +7276,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CMODe"
                     args = ["FSETtling", "LOVershoot"]
 
-                CMODe = CMODe()
+                CMODe = CMODe()  # type: ignore
                 """
                 DIAGnostic:ALC:SETTings:CMODe
 
@@ -7293,7 +7294,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DIAGnostic:ALC:SETTings:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#ALC_SETTings>`_
@@ -7301,7 +7302,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            SETTings = SETTings()
+            SETTings = SETTings()  # type: ignore
             """
             DIAGnostic:ALC:SETTings
 
@@ -7319,7 +7320,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SOFFset"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SOFFset = SOFFset()
+            SOFFset = SOFFset()  # type: ignore
             """
             `DIAGnostic:ALC:SOFFset
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#ALC_SOFFset>`_
@@ -7338,7 +7339,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STOLerance"
                 args = ["HIGH", "NORMal", "WIDE"]
 
-            STOLerance = STOLerance()
+            STOLerance = STOLerance()  # type: ignore
             """
             `DIAGnostic:ALC:STOLerance
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#ALC_STOLerance>`_
@@ -7346,7 +7347,7 @@ class ZVA_gen(Instrument):
             Arguments: HIGH, NORMal, WIDE
             """
 
-        ALC = ALC()
+        ALC = ALC()  # type: ignore
         """
         DIAGnostic:ALC
 
@@ -7361,7 +7362,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DEVice"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPISet):
                 """
@@ -7374,7 +7375,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["'string'"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `DIAGnostic:DEVice:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#DEVice_STATe>`_
@@ -7382,7 +7383,7 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        DEVice = DEVice()
+        DEVice = DEVice()  # type: ignore
         """
         DIAGnostic:DEVice
 
@@ -7397,7 +7398,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PRODuct"
-            args = []
+            args = []  # type: List[str]
 
             class CATalog(SCPINode, SCPIQuery):
                 """
@@ -7407,9 +7408,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             DIAGnostic:PRODuct:CATalog
 
@@ -7424,9 +7425,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DESCription"
-                args = []
+                args = []  # type: List[str]
 
-            DESCription = DESCription()
+            DESCription = DESCription()  # type: ignore
             """
             DIAGnostic:PRODuct:DESCription
 
@@ -7441,9 +7442,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ID"
-                args = []
+                args = []  # type: List[str]
 
-            ID = ID()
+            ID = ID()  # type: ignore
             """
             DIAGnostic:PRODuct:ID
 
@@ -7458,9 +7459,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MACaddress"
-                args = []
+                args = []  # type: List[str]
 
-            MACaddress = MACaddress()
+            MACaddress = MACaddress()  # type: ignore
             """
             DIAGnostic:PRODuct:MACaddress
 
@@ -7475,7 +7476,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "OPTion"
-                args = []
+                args = []  # type: List[str]
 
                 class LICence(SCPINode):
                     """
@@ -7485,7 +7486,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LICence"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CHECk(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -7497,7 +7498,7 @@ class ZVA_gen(Instrument):
                         _cmd = "CHECk"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    CHECk = CHECk()
+                    CHECk = CHECk()  # type: ignore
                     """
                     DIAGnostic:PRODuct:OPTion:LICence:CHECk
 
@@ -7514,14 +7515,14 @@ class ZVA_gen(Instrument):
                         _cmd = "UNLock"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    UNLock = UNLock()
+                    UNLock = UNLock()  # type: ignore
                     """
                     DIAGnostic:PRODuct:OPTion:LICence:UNLock
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                LICence = LICence()
+                LICence = LICence()  # type: ignore
                 """
                 DIAGnostic:PRODuct:OPTion:LICence
 
@@ -7536,9 +7537,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LIST"
-                    args = []
+                    args = []  # type: List[str]
 
-                LIST = LIST()
+                LIST = LIST()  # type: ignore
                 """
                 DIAGnostic:PRODuct:OPTion:LIST
 
@@ -7555,14 +7556,14 @@ class ZVA_gen(Instrument):
                     _cmd = "STATus"
                     args = ["#<block", "'string'"]
 
-                STATus = STATus()
+                STATus = STATus()  # type: ignore
                 """
                 DIAGnostic:PRODuct:OPTion:STATus
 
                 Arguments: #<block, 'string'
                 """
 
-            OPTion = OPTion()
+            OPTion = OPTion()  # type: ignore
             """
             DIAGnostic:PRODuct:OPTion
 
@@ -7579,7 +7580,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SELect"
                 args = ["'string'"]
 
-            SELect = SELect()
+            SELect = SELect()  # type: ignore
             """
             DIAGnostic:PRODuct:SELect
 
@@ -7594,7 +7595,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TIME"
-                args = []
+                args = []  # type: List[str]
 
                 class OPERating(SCPINode, SCPIQuery):
                     """
@@ -7604,23 +7605,23 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "OPERating"
-                    args = []
+                    args = []  # type: List[str]
 
-                OPERating = OPERating()
+                OPERating = OPERating()  # type: ignore
                 """
                 DIAGnostic:PRODuct:TIME:OPERating
 
                 Arguments:
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             DIAGnostic:PRODuct:TIME
 
             Arguments:
             """
 
-        PRODuct = PRODuct()
+        PRODuct = PRODuct()  # type: ignore
         """
         DIAGnostic:PRODuct
 
@@ -7635,7 +7636,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SERVice"
-            args = []
+            args = []  # type: List[str]
 
             class FUNCtion(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -7648,7 +7649,7 @@ class ZVA_gen(Instrument):
                 _cmd = "FUNCtion"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            FUNCtion = FUNCtion()
+            FUNCtion = FUNCtion()  # type: ignore
             """
             `DIAGnostic:SERVice:FUNCtion
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#FUNCtion>`_
@@ -7667,7 +7668,7 @@ class ZVA_gen(Instrument):
                 _cmd = "RFPower"
                 args = ["1", "OFF", "ON"]
 
-            RFPower = RFPower()
+            RFPower = RFPower()  # type: ignore
             """
             `DIAGnostic:SERVice:RFPower
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#RFPower>`_
@@ -7686,7 +7687,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SFUNction"
                 args = ["'string'"]
 
-            SFUNction = SFUNction()
+            SFUNction = SFUNction()  # type: ignore
             """
             `DIAGnostic:SERVice:SFUNction
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/diagnostic/diagnostic.htm#SFUNction>`_
@@ -7694,7 +7695,7 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        SERVice = SERVice()
+        SERVice = SERVice()  # type: ignore
         """
         DIAGnostic:SERVice
 
@@ -7709,7 +7710,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "UPDate"
-            args = []
+            args = []  # type: List[str]
 
             class BOOT(SCPINode, SCPISet):
                 """
@@ -7719,9 +7720,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BOOT"
-                args = []
+                args = []  # type: List[str]
 
-            BOOT = BOOT()
+            BOOT = BOOT()  # type: ignore
             """
             DIAGnostic:UPDate:BOOT
 
@@ -7736,9 +7737,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             DIAGnostic:UPDate:CATalog
 
@@ -7753,7 +7754,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CHAP"
-                args = []
+                args = []  # type: List[str]
 
                 class CHALlenge(SCPINode, SCPIQuery):
                     """
@@ -7763,9 +7764,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CHALlenge"
-                    args = []
+                    args = []  # type: List[str]
 
-                CHALlenge = CHALlenge()
+                CHALlenge = CHALlenge()  # type: ignore
                 """
                 DIAGnostic:UPDate:CHAP:CHALlenge
 
@@ -7780,9 +7781,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PRESet"
-                    args = []
+                    args = []  # type: List[str]
 
-                PRESet = PRESet()
+                PRESet = PRESet()  # type: ignore
                 """
                 DIAGnostic:UPDate:CHAP:PRESet
 
@@ -7799,14 +7800,14 @@ class ZVA_gen(Instrument):
                     _cmd = "RESPonse"
                     args = ["#<block"]
 
-                RESPonse = RESPonse()
+                RESPonse = RESPonse()  # type: ignore
                 """
                 DIAGnostic:UPDate:CHAP:RESPonse
 
                 Arguments: #<block
                 """
 
-            CHAP = CHAP()
+            CHAP = CHAP()  # type: ignore
             """
             DIAGnostic:UPDate:CHAP
 
@@ -7823,7 +7824,7 @@ class ZVA_gen(Instrument):
                 _cmd = "EXECute"
                 args = ["NOWait", "OVERlay", "WAIT"]
 
-            EXECute = EXECute()
+            EXECute = EXECute()  # type: ignore
             """
             DIAGnostic:UPDate:EXECute
 
@@ -7848,9 +7849,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BEGin"
-                    args = []
+                    args = []  # type: List[str]
 
-                BEGin = BEGin()
+                BEGin = BEGin()  # type: ignore
                 """
                 DIAGnostic:UPDate:INSTall:BEGin
 
@@ -7865,9 +7866,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "END"
-                    args = []
+                    args = []  # type: List[str]
 
-                END = END()
+                END = END()  # type: ignore
                 """
                 DIAGnostic:UPDate:INSTall:END
 
@@ -7882,16 +7883,16 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STATus"
-                    args = []
+                    args = []  # type: List[str]
 
-                STATus = STATus()
+                STATus = STATus()  # type: ignore
                 """
                 DIAGnostic:UPDate:INSTall:STATus
 
                 Arguments:
                 """
 
-            INSTall = INSTall()
+            INSTall = INSTall()  # type: ignore
             """
             DIAGnostic:UPDate:INSTall
 
@@ -7908,7 +7909,7 @@ class ZVA_gen(Instrument):
                 _cmd = "PROGress"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            PROGress = PROGress()
+            PROGress = PROGress()  # type: ignore
             """
             DIAGnostic:UPDate:PROGress
 
@@ -7923,7 +7924,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRANsfer"
-                args = []
+                args = []  # type: List[str]
 
                 class CLOSe(SCPINode, SCPISet):
                     """
@@ -7933,9 +7934,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CLOSe"
-                    args = []
+                    args = []  # type: List[str]
 
-                CLOSe = CLOSe()
+                CLOSe = CLOSe()  # type: ignore
                 """
                 DIAGnostic:UPDate:TRANsfer:CLOSe
 
@@ -7952,7 +7953,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 DIAGnostic:UPDate:TRANsfer:DATA
 
@@ -7969,7 +7970,7 @@ class ZVA_gen(Instrument):
                     _cmd = "OPEN"
                     args = ["DATA", "DESCr"]
 
-                OPEN = OPEN()
+                OPEN = OPEN()  # type: ignore
                 """
                 DIAGnostic:UPDate:TRANsfer:OPEN
 
@@ -7984,30 +7985,30 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "VERSion"
-                    args = []
+                    args = []  # type: List[str]
 
-                VERSion = VERSion()
+                VERSion = VERSion()  # type: ignore
                 """
                 DIAGnostic:UPDate:TRANsfer:VERSion
 
                 Arguments:
                 """
 
-            TRANsfer = TRANsfer()
+            TRANsfer = TRANsfer()  # type: ignore
             """
             DIAGnostic:UPDate:TRANsfer
 
             Arguments:
             """
 
-        UPDate = UPDate()
+        UPDate = UPDate()  # type: ignore
         """
         DIAGnostic:UPDate
 
         Arguments:
         """
 
-    DIAGnostic = DIAGnostic()
+    DIAGnostic = DIAGnostic()  # type: ignore
     """
     DIAGnostic
 
@@ -8022,7 +8023,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "DISPlay"
-        args = []
+        args = []  # type: List[str]
 
         class ANNotation(SCPINode):
             """
@@ -8032,7 +8033,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ANNotation"
-            args = []
+            args = []  # type: List[str]
 
             class CHANnel(SCPINode, SCPIBool):
                 """
@@ -8055,7 +8056,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DISPlay:ANNotation:CHANnel:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#ANNotation_CHANnel>`_
@@ -8063,7 +8064,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            CHANnel = CHANnel()
+            CHANnel = CHANnel()  # type: ignore
             """
             DISPlay:ANNotation:CHANnel
 
@@ -8091,7 +8092,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DISPlay:ANNotation:FREQuency:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#ANNotation>`_
@@ -8099,14 +8100,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             DISPlay:ANNotation:FREQuency
 
             Arguments: 1, OFF, ON
             """
 
-        ANNotation = ANNotation()
+        ANNotation = ANNotation()  # type: ignore
         """
         DISPlay:ANNotation
 
@@ -8121,7 +8122,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CMAP"
-            args = []
+            args = []  # type: List[str]
 
             class MARKer(SCPINode, SCPIBool):
                 """
@@ -8144,7 +8145,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DISPlay:CMAP:MARKer:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm>`_
@@ -8152,7 +8153,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            MARKer = MARKer()
+            MARKer = MARKer()  # type: ignore
             """
             DISPlay:CMAP:MARKer
 
@@ -8170,7 +8171,7 @@ class ZVA_gen(Instrument):
                 _cmd = "RGB"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            RGB = RGB()
+            RGB = RGB()  # type: ignore
             """
             `DISPlay:CMAP:RGB
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm>`_
@@ -8186,7 +8187,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRACe"
-                args = []
+                args = []  # type: List[str]
 
                 class COLor(SCPINode, SCPIBool):
                     """
@@ -8209,7 +8210,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `DISPlay:CMAP:TRACe:COLor:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm>`_
@@ -8217,7 +8218,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                COLor = COLor()
+                COLor = COLor()  # type: ignore
                 """
                 DISPlay:CMAP:TRACe:COLor
 
@@ -8235,7 +8236,7 @@ class ZVA_gen(Instrument):
                     _cmd = "RGB"
                     args = ["'string'"]
 
-                RGB = RGB()
+                RGB = RGB()  # type: ignore
                 """
                 `DISPlay:CMAP:TRACe:RGB
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#CMAP_TRACe_RGB>`_
@@ -8243,14 +8244,14 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             DISPlay:CMAP:TRACe
 
             Arguments:
             """
 
-        CMAP = CMAP()
+        CMAP = CMAP()  # type: ignore
         """
         DISPlay:CMAP
 
@@ -8265,7 +8266,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MENU"
-            args = []
+            args = []  # type: List[str]
 
             class KEY(SCPINode):
                 """
@@ -8275,7 +8276,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "KEY"
-                args = []
+                args = []  # type: List[str]
 
                 class EXECute(SCPINode, SCPISet):
                     """
@@ -8288,7 +8289,7 @@ class ZVA_gen(Instrument):
                     _cmd = "EXECute"
                     args = ["'string'"]
 
-                EXECute = EXECute()
+                EXECute = EXECute()  # type: ignore
                 """
                 `DISPlay:MENU:KEY:EXECute
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#MENU_KEY_EXECute>`_
@@ -8307,7 +8308,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SELect"
                     args = ["'string'"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `DISPlay:MENU:KEY:SELect
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#MENU_KEY_SELect>`_
@@ -8315,14 +8316,14 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            KEY = KEY()
+            KEY = KEY()  # type: ignore
             """
             DISPlay:MENU:KEY
 
             Arguments:
             """
 
-        MENU = MENU()
+        MENU = MENU()  # type: ignore
         """
         DISPlay:MENU
 
@@ -8340,7 +8341,7 @@ class ZVA_gen(Instrument):
             _cmd = "RFSize"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-        RFSize = RFSize()
+        RFSize = RFSize()  # type: ignore
         """
         `DISPlay:RFSize
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#RFSize>`_
@@ -8356,7 +8357,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "WINDow"
-            args = []
+            args = []  # type: List[str]
 
             class CATalog(SCPINode, SCPIQuery):
                 """
@@ -8367,9 +8368,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             `DISPlay:WINDow:CATalog
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#WINDow_CATalog>`_
@@ -8388,7 +8389,7 @@ class ZVA_gen(Instrument):
                 _cmd = "MAXimize"
                 args = ["1", "OFF", "ON"]
 
-            MAXimize = MAXimize()
+            MAXimize = MAXimize()  # type: ignore
             """
             `DISPlay:WINDow:MAXimize
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#MAXimize>`_
@@ -8407,7 +8408,7 @@ class ZVA_gen(Instrument):
                 _cmd = "NAME"
                 args = ["'string'"]
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `DISPlay:WINDow:NAME
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#Diagram_NAME>`_
@@ -8426,7 +8427,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `DISPlay:WINDow:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#STATe>`_
@@ -8455,7 +8456,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["'string'"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `DISPlay:WINDow:TITLe:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#TITLe_DATA>`_
@@ -8474,7 +8475,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DISPlay:WINDow:TITLe:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#TITLe_STATe>`_
@@ -8482,7 +8483,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            TITLe = TITLe()
+            TITLe = TITLe()  # type: ignore
             """
             DISPlay:WINDow:TITLe
 
@@ -8497,7 +8498,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRACe"
-                args = []
+                args = []  # type: List[str]
 
                 class CATalog(SCPINode, SCPIQuery):
                     """
@@ -8508,9 +8509,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CATalog"
-                    args = []
+                    args = []  # type: List[str]
 
-                CATalog = CATalog()
+                CATalog = CATalog()  # type: ignore
                 """
                 `DISPlay:WINDow:TRACe:CATalog
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#WINDow_TRACe_CATalog>`_
@@ -8527,9 +8528,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DELete"
-                    args = []
+                    args = []  # type: List[str]
 
-                DELete = DELete()
+                DELete = DELete()  # type: ignore
                 """
                 `DISPlay:WINDow:TRACe:DELete
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#DELete>`_
@@ -8548,7 +8549,7 @@ class ZVA_gen(Instrument):
                     _cmd = "EFEed"
                     args = ["'string'"]
 
-                EFEed = EFEed()
+                EFEed = EFEed()  # type: ignore
                 """
                 `DISPlay:WINDow:TRACe:EFEed
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#EFEed>`_
@@ -8567,7 +8568,7 @@ class ZVA_gen(Instrument):
                     _cmd = "FEED"
                     args = ["'string'"]
 
-                FEED = FEED()
+                FEED = FEED()  # type: ignore
                 """
                 `DISPlay:WINDow:TRACe:FEED
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#FEED>`_
@@ -8586,7 +8587,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SHOW"
                     args = ["DALL", "MALL", "'string'"]
 
-                SHOW = SHOW()
+                SHOW = SHOW()  # type: ignore
                 """
                 `DISPlay:WINDow:TRACe:SHOW
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#SHOW>`_
@@ -8602,7 +8603,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "X"
-                    args = []
+                    args = []  # type: List[str]
 
                     class OFFSet(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -8615,7 +8616,7 @@ class ZVA_gen(Instrument):
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    OFFSet = OFFSet()
+                    OFFSet = OFFSet()  # type: ignore
                     """
                     `DISPlay:WINDow:TRACe:X:OFFSet
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#X_OFFSet>`_
@@ -8623,7 +8624,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                X = X()
+                X = X()  # type: ignore
                 """
                 DISPlay:WINDow:TRACe:X
 
@@ -8638,7 +8639,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "Y"
-                    args = []
+                    args = []  # type: List[str]
 
                     class OFFSet(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -8651,7 +8652,7 @@ class ZVA_gen(Instrument):
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    OFFSet = OFFSet()
+                    OFFSet = OFFSet()  # type: ignore
                     """
                     `DISPlay:WINDow:TRACe:Y:OFFSet
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#Y_OFFSet>`_
@@ -8667,7 +8668,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SCALe"
-                        args = []
+                        args = []  # type: List[str]
 
                         class AUTO(SCPINode, SCPISet):
                             """
@@ -8680,7 +8681,7 @@ class ZVA_gen(Instrument):
                             _cmd = "AUTO"
                             args = ["ONCE"]
 
-                        AUTO = AUTO()
+                        AUTO = AUTO()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:AUTO
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#AUTO>`_
@@ -8699,7 +8700,7 @@ class ZVA_gen(Instrument):
                             _cmd = "BOTTom"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        BOTTom = BOTTom()
+                        BOTTom = BOTTom()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:BOTTom
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#BOTTom>`_
@@ -8718,7 +8719,7 @@ class ZVA_gen(Instrument):
                             _cmd = "PDIVision"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        PDIVision = PDIVision()
+                        PDIVision = PDIVision()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:PDIVision
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#PDIVision>`_
@@ -8737,7 +8738,7 @@ class ZVA_gen(Instrument):
                             _cmd = "RLEVel"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        RLEVel = RLEVel()
+                        RLEVel = RLEVel()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:RLEVel
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#RLEVel>`_
@@ -8756,7 +8757,7 @@ class ZVA_gen(Instrument):
                             _cmd = "RPOSition"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        RPOSition = RPOSition()
+                        RPOSition = RPOSition()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:RPOSition
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#RPOSition>`_
@@ -8775,7 +8776,7 @@ class ZVA_gen(Instrument):
                             _cmd = "TOP"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        TOP = TOP()
+                        TOP = TOP()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:TOP
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/display/display.htm#TOP>`_
@@ -8783,35 +8784,35 @@ class ZVA_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    SCALe = SCALe()
+                    SCALe = SCALe()  # type: ignore
                     """
                     DISPlay:WINDow:TRACe:Y:SCALe
 
                     Arguments:
                     """
 
-                Y = Y()
+                Y = Y()  # type: ignore
                 """
                 DISPlay:WINDow:TRACe:Y
 
                 Arguments:
                 """
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             DISPlay:WINDow:TRACe
 
             Arguments:
             """
 
-        WINDow = WINDow()
+        WINDow = WINDow()  # type: ignore
         """
         DISPlay:WINDow
 
         Arguments:
         """
 
-    DISPlay = DISPlay()
+    DISPlay = DISPlay()  # type: ignore
     """
     DISPlay
 
@@ -8839,7 +8840,7 @@ class ZVA_gen(Instrument):
             _cmd = "BORDer"
             args = ["NORMal", "SWAPped"]
 
-        BORDer = BORDer()
+        BORDer = BORDer()  # type: ignore
         """
         `FORMat:BORDer
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/format/format.htm#BORDer>`_
@@ -8858,7 +8859,7 @@ class ZVA_gen(Instrument):
             _cmd = "DATA"
             args = ["ASCii", "REAL"]
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         `FORMat:DATA
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/format/format.htm#DATA>`_
@@ -8874,7 +8875,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DEXPort"
-            args = []
+            args = []  # type: List[str]
 
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -8887,7 +8888,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["FDATa", "MDATa", "SDATa"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `FORMat:DEXPort:SOURce
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/format/format.htm#DEXPort_SOURce>`_
@@ -8895,14 +8896,14 @@ class ZVA_gen(Instrument):
             Arguments: FDATa, MDATa, SDATa
             """
 
-        DEXPort = DEXPort()
+        DEXPort = DEXPort()  # type: ignore
         """
         FORMat:DEXPort
 
         Arguments:
         """
 
-    FORMat = FORMat()
+    FORMat = FORMat()  # type: ignore
     """
     FORMat
 
@@ -8917,7 +8918,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "HCOPy"
-        args = []
+        args = []  # type: List[str]
 
         class DESTination(SCPINode, SCPIQuery, SCPISet):
             """
@@ -8930,7 +8931,7 @@ class ZVA_gen(Instrument):
             _cmd = "DESTination"
             args = ["'string'"]
 
-        DESTination = DESTination()
+        DESTination = DESTination()  # type: ignore
         """
         `HCOPy:DESTination
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#DESTination>`_
@@ -8946,7 +8947,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DEVice"
-            args = []
+            args = []  # type: List[str]
 
             class LANGuage(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -8959,7 +8960,7 @@ class ZVA_gen(Instrument):
                 _cmd = "LANGuage"
                 args = ["BMP", "EMF", "EWMF", "JPG", "PNG", "WMF"]
 
-            LANGuage = LANGuage()
+            LANGuage = LANGuage()  # type: ignore
             """
             `HCOPy:DEVice:LANGuage
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#DEVice_LANGuage>`_
@@ -8967,7 +8968,7 @@ class ZVA_gen(Instrument):
             Arguments: BMP, EMF, EWMF, JPG, PNG, WMF
             """
 
-        DEVice = DEVice()
+        DEVice = DEVice()  # type: ignore
         """
         HCOPy:DEVice
 
@@ -8983,9 +8984,9 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IMMediate"
-            args = []
+            args = []  # type: List[str]
 
-        IMMediate = IMMediate()
+        IMMediate = IMMediate()  # type: ignore
         """
         `HCOPy:IMMediate
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#IMMediate>`_
@@ -9001,7 +9002,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ITEM"
-            args = []
+            args = []  # type: List[str]
 
             class ALL(SCPINode, SCPISet):
                 """
@@ -9012,9 +9013,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALL"
-                args = []
+                args = []  # type: List[str]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `HCOPy:ITEM:ALL
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#ITEM_ALL>`_
@@ -9043,7 +9044,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `HCOPy:ITEM:LOGO:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#LOGO>`_
@@ -9051,7 +9052,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            LOGO = LOGO()
+            LOGO = LOGO()  # type: ignore
             """
             HCOPy:ITEM:LOGO
 
@@ -9078,14 +9079,14 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 HCOPy:ITEM:MLISt:STATe
 
                 Arguments: 1, OFF, ON
                 """
 
-            MLISt = MLISt()
+            MLISt = MLISt()  # type: ignore
             """
             HCOPy:ITEM:MLISt
 
@@ -9113,7 +9114,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `HCOPy:ITEM:TIME:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#TIME>`_
@@ -9121,14 +9122,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             HCOPy:ITEM:TIME
 
             Arguments: 1, OFF, ON
             """
 
-        ITEM = ITEM()
+        ITEM = ITEM()  # type: ignore
         """
         HCOPy:ITEM
 
@@ -9143,7 +9144,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MITem"
-            args = []
+            args = []  # type: List[str]
 
             class LOGO(SCPINode, SCPIBool):
                 """
@@ -9166,7 +9167,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `HCOPy:MITem:LOGO:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#MITEM_LOGO>`_
@@ -9174,7 +9175,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            LOGO = LOGO()
+            LOGO = LOGO()  # type: ignore
             """
             HCOPy:MITem:LOGO
 
@@ -9202,7 +9203,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `HCOPy:MITem:TIME:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#MITEM_TIME>`_
@@ -9210,14 +9211,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             HCOPy:MITem:TIME
 
             Arguments: 1, OFF, ON
             """
 
-        MITem = MITem()
+        MITem = MITem()  # type: ignore
         """
         HCOPy:MITem
 
@@ -9232,7 +9233,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MPAGe"
-            args = []
+            args = []  # type: List[str]
 
             class WINDow(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -9245,7 +9246,7 @@ class ZVA_gen(Instrument):
                 _cmd = "WINDow"
                 args = ["ACTive", "ALL", "MARKer"]
 
-            WINDow = WINDow()
+            WINDow = WINDow()  # type: ignore
             """
             `HCOPy:MPAGe:WINDow
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#MPAGe_WINDow>`_
@@ -9253,7 +9254,7 @@ class ZVA_gen(Instrument):
             Arguments: ACTive, ALL, MARKer
             """
 
-        MPAGe = MPAGe()
+        MPAGe = MPAGe()  # type: ignore
         """
         HCOPy:MPAGe
 
@@ -9268,7 +9269,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PAGE"
-            args = []
+            args = []  # type: List[str]
 
             class MARGin(SCPINode):
                 """
@@ -9278,7 +9279,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MARGin"
-                args = []
+                args = []  # type: List[str]
 
                 class BOTTom(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -9291,7 +9292,7 @@ class ZVA_gen(Instrument):
                     _cmd = "BOTTom"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                BOTTom = BOTTom()
+                BOTTom = BOTTom()  # type: ignore
                 """
                 `HCOPy:PAGE:MARGin:BOTTom
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#BOTTom>`_
@@ -9310,7 +9311,7 @@ class ZVA_gen(Instrument):
                     _cmd = "LEFT"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                LEFT = LEFT()
+                LEFT = LEFT()  # type: ignore
                 """
                 `HCOPy:PAGE:MARGin:LEFT
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/calculate/calculate_marker.htm#SEARch_LEFT>`_
@@ -9329,7 +9330,7 @@ class ZVA_gen(Instrument):
                     _cmd = "RIGHt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                RIGHt = RIGHt()
+                RIGHt = RIGHt()  # type: ignore
                 """
                 `HCOPy:PAGE:MARGin:RIGHt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#RIGHt>`_
@@ -9348,7 +9349,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                TOP = TOP()
+                TOP = TOP()  # type: ignore
                 """
                 `HCOPy:PAGE:MARGin:TOP
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#TOP>`_
@@ -9356,7 +9357,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            MARGin = MARGin()
+            MARGin = MARGin()  # type: ignore
             """
             HCOPy:PAGE:MARGin
 
@@ -9374,7 +9375,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ORIentation"
                 args = ["LANDscape", "PORTrait"]
 
-            ORIentation = ORIentation()
+            ORIentation = ORIentation()  # type: ignore
             """
             `HCOPy:PAGE:ORIentation
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#ORIentation>`_
@@ -9393,7 +9394,7 @@ class ZVA_gen(Instrument):
                 _cmd = "WINDow"
                 args = ["ACTive", "ALL", "SINGle"]
 
-            WINDow = WINDow()
+            WINDow = WINDow()  # type: ignore
             """
             `HCOPy:PAGE:WINDow
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/hcopy/hcopy.htm#WINDow>`_
@@ -9401,14 +9402,14 @@ class ZVA_gen(Instrument):
             Arguments: ACTive, ALL, SINGle
             """
 
-        PAGE = PAGE()
+        PAGE = PAGE()  # type: ignore
         """
         HCOPy:PAGE
 
         Arguments:
         """
 
-    HCOPy = HCOPy()
+    HCOPy = HCOPy()  # type: ignore
     """
     HCOPy
 
@@ -9423,7 +9424,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "INITiate"
-        args = []
+        args = []  # type: List[str]
 
         class CONTinuous(SCPINode, SCPIBool):
             """
@@ -9436,7 +9437,7 @@ class ZVA_gen(Instrument):
             _cmd = "CONTinuous"
             args = ["1", "OFF", "ON"]
 
-        CONTinuous = CONTinuous()
+        CONTinuous = CONTinuous()  # type: ignore
         """
         `INITiate:CONTinuous
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/initiate/initiate.htm#CONTinuous>`_
@@ -9453,7 +9454,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IMMediate"
-            args = []
+            args = []  # type: List[str]
 
             class DUMMy(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -9463,9 +9464,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DUMMy"
-                args = []
+                args = []  # type: List[str]
 
-            DUMMy = DUMMy()
+            DUMMy = DUMMy()  # type: ignore
             """
             INITiate:IMMediate:DUMMy
 
@@ -9483,7 +9484,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SCOPe"
                 args = ["ALL", "SINGle"]
 
-            SCOPe = SCOPe()
+            SCOPe = SCOPe()  # type: ignore
             """
             `INITiate:IMMediate:SCOPe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/initiate/initiate.htm#SCOPe>`_
@@ -9491,7 +9492,7 @@ class ZVA_gen(Instrument):
             Arguments: ALL, SINGle
             """
 
-        IMMediate = IMMediate()
+        IMMediate = IMMediate()  # type: ignore
         """
         `INITiate:IMMediate
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/initiate/initiate.htm#IMMediate>`_
@@ -9499,7 +9500,7 @@ class ZVA_gen(Instrument):
         Arguments:
         """
 
-    INITiate = INITiate()
+    INITiate = INITiate()  # type: ignore
     """
     INITiate
 
@@ -9514,7 +9515,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "INPut"
-        args = []
+        args = []  # type: List[str]
 
         class ATTenuation(SCPINode, SCPIQuery, SCPISet):
             """
@@ -9527,7 +9528,7 @@ class ZVA_gen(Instrument):
             _cmd = "ATTenuation"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-        ATTenuation = ATTenuation()
+        ATTenuation = ATTenuation()  # type: ignore
         """
         `INPut:ATTenuation
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/input/input.htm#ATTenuation>`_
@@ -9535,7 +9536,7 @@ class ZVA_gen(Instrument):
         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
         """
 
-    INPut = INPut()
+    INPut = INPut()  # type: ignore
     """
     INPut
 
@@ -9563,7 +9564,7 @@ class ZVA_gen(Instrument):
             _cmd = "NSELect"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-        NSELect = NSELect()
+        NSELect = NSELect()  # type: ignore
         """
         `INSTrument:NSELect
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/instrument/instrument.htm#NSELect>`_
@@ -9579,7 +9580,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PORT"
-            args = []
+            args = []  # type: List[str]
 
             class COUNt(SCPINode, SCPIQuery):
                 """
@@ -9590,9 +9591,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COUNt"
-                args = []
+                args = []  # type: List[str]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `INSTrument:PORT:COUNt
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/instrument/instrument.htm#PORT_COUNt>`_
@@ -9600,7 +9601,7 @@ class ZVA_gen(Instrument):
             Arguments:
             """
 
-        PORT = PORT()
+        PORT = PORT()  # type: ignore
         """
         INSTrument:PORT
 
@@ -9618,7 +9619,7 @@ class ZVA_gen(Instrument):
             _cmd = "SELect"
             args = ["CHANnel1", "CHANnel2", "CHANnel3", "CHANnel4"]
 
-        SELect = SELect()
+        SELect = SELect()  # type: ignore
         """
         `INSTrument:SELect
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/instrument/instrument.htm#SELect>`_
@@ -9626,7 +9627,7 @@ class ZVA_gen(Instrument):
         Arguments: CHANnel1, CHANnel2, CHANnel3, CHANnel4
         """
 
-    INSTrument = INSTrument()
+    INSTrument = INSTrument()  # type: ignore
     """
     INSTrument
 
@@ -9641,7 +9642,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MEMory"
-        args = []
+        args = []  # type: List[str]
 
         class CATalog(SCPINode, SCPIQuery):
             """
@@ -9652,9 +9653,9 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CATalog"
-            args = []
+            args = []  # type: List[str]
 
-        CATalog = CATalog()
+        CATalog = CATalog()  # type: ignore
         """
         `MEMory:CATalog
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/memory/memory.htm#CATalog>`_
@@ -9673,7 +9674,7 @@ class ZVA_gen(Instrument):
             _cmd = "DEFine"
             args = ["'string'"]
 
-        DEFine = DEFine()
+        DEFine = DEFine()  # type: ignore
         """
         `MEMory:DEFine
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/memory/memory.htm#DEFine>`_
@@ -9700,9 +9701,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALL"
-                args = []
+                args = []  # type: List[str]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `MEMory:DELete:ALL
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/memory/memory.htm#DELete_ALL>`_
@@ -9721,7 +9722,7 @@ class ZVA_gen(Instrument):
                 _cmd = "NAME"
                 args = ["'string'"]
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `MEMory:DELete:NAME
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/memory/memory.htm#DELete_NAME>`_
@@ -9729,7 +9730,7 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        DELete = DELete()
+        DELete = DELete()  # type: ignore
         """
         MEMory:DELete
 
@@ -9747,7 +9748,7 @@ class ZVA_gen(Instrument):
             _cmd = "SELect"
             args = ["'string'"]
 
-        SELect = SELect()
+        SELect = SELect()  # type: ignore
         """
         `MEMory:SELect
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/memory/memory.htm#SELect>`_
@@ -9755,7 +9756,7 @@ class ZVA_gen(Instrument):
         Arguments: 'string'
         """
 
-    MEMory = MEMory()
+    MEMory = MEMory()  # type: ignore
     """
     MEMory
 
@@ -9770,7 +9771,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MMEMory"
-        args = []
+        args = []  # type: List[str]
 
         class AKAL(SCPINode):
             """
@@ -9780,7 +9781,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "AKAL"
-            args = []
+            args = []  # type: List[str]
 
             class FACTory(SCPINode):
                 """
@@ -9790,7 +9791,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FACTory"
-                args = []
+                args = []  # type: List[str]
 
                 class CONVersion(SCPINode, SCPISet):
                     """
@@ -9803,7 +9804,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CONVersion"
                     args = ["'string'"]
 
-                CONVersion = CONVersion()
+                CONVersion = CONVersion()  # type: ignore
                 """
                 `MMEMory:AKAL:FACTory:CONVersion
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#AKAL_FACTory_CONVersion>`_
@@ -9811,7 +9812,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            FACTory = FACTory()
+            FACTory = FACTory()  # type: ignore
             """
             MMEMory:AKAL:FACTory
 
@@ -9826,7 +9827,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "USER"
-                args = []
+                args = []  # type: List[str]
 
                 class CONVersion(SCPINode, SCPISet):
                     """
@@ -9839,7 +9840,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CONVersion"
                     args = ["'string'"]
 
-                CONVersion = CONVersion()
+                CONVersion = CONVersion()  # type: ignore
                 """
                 `MMEMory:AKAL:USER:CONVersion
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#AKAL_USER_CONVersion>`_
@@ -9847,14 +9848,14 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            USER = USER()
+            USER = USER()  # type: ignore
             """
             MMEMory:AKAL:USER
 
             Arguments:
             """
 
-        AKAL = AKAL()
+        AKAL = AKAL()  # type: ignore
         """
         MMEMory:AKAL
 
@@ -9883,7 +9884,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ALL"
                 args = ["'string'"]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `MMEMory:CATalog:ALL
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#CATalog_All>`_
@@ -9891,7 +9892,7 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        CATalog = CATalog()
+        CATalog = CATalog()  # type: ignore
         """
         `MMEMory:CATalog
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#CATalog>`_
@@ -9910,7 +9911,7 @@ class ZVA_gen(Instrument):
             _cmd = "CDIRectory"
             args = ["DEFault", "'string'"]
 
-        CDIRectory = CDIRectory()
+        CDIRectory = CDIRectory()  # type: ignore
         """
         `MMEMory:CDIRectory
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#CDIRecotry>`_
@@ -9929,7 +9930,7 @@ class ZVA_gen(Instrument):
             _cmd = "COPY"
             args = ["'string'"]
 
-        COPY = COPY()
+        COPY = COPY()  # type: ignore
         """
         `MMEMory:COPY
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#COPY>`_
@@ -9948,7 +9949,7 @@ class ZVA_gen(Instrument):
             _cmd = "DATA"
             args = ["'string'"]
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         `MMEMory:DATA
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#DATA>`_
@@ -9978,7 +9979,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CORRection"
                 args = ["'string'"]
 
-            CORRection = CORRection()
+            CORRection = CORRection()  # type: ignore
             """
             `MMEMory:DELete:CORRection
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#DELete_CORRection>`_
@@ -9986,7 +9987,7 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        DELete = DELete()
+        DELete = DELete()  # type: ignore
         """
         `MMEMory:DELete
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#DELete>`_
@@ -10026,7 +10027,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SDATa"
                     args = ["'string'"]
 
-                SDATa = SDATa()
+                SDATa = SDATa()  # type: ignore
                 """
                 `MMEMory:LOAD:CKIT:SDATa
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_CKIT:SDATa>`_
@@ -10045,7 +10046,7 @@ class ZVA_gen(Instrument):
                     _cmd = "UDIRectory"
                     args = ["'string'"]
 
-                UDIRectory = UDIRectory()
+                UDIRectory = UDIRectory()  # type: ignore
                 """
                 `MMEMory:LOAD:CKIT:UDIRectory
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_CKIT_UDIRectory>`_
@@ -10053,7 +10054,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CKIT = CKIT()
+            CKIT = CKIT()  # type: ignore
             """
             `MMEMory:LOAD:CKIT
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_CKIT>`_
@@ -10072,7 +10073,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CMAP"
                 args = ["'string'"]
 
-            CMAP = CMAP()
+            CMAP = CMAP()  # type: ignore
             """
             `MMEMory:LOAD:CMAP
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_CMAP>`_
@@ -10102,7 +10103,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MERGe"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                MERGe = MERGe()
+                MERGe = MERGe()  # type: ignore
                 """
                 `MMEMory:LOAD:CORRection:MERGe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_CORRection_MERGE>`_
@@ -10121,7 +10122,7 @@ class ZVA_gen(Instrument):
                     _cmd = "RESolve"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                RESolve = RESolve()
+                RESolve = RESolve()  # type: ignore
                 """
                 `MMEMory:LOAD:CORRection:RESolve
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_CORRection_RESolve>`_
@@ -10140,7 +10141,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TCOefficient"
                     args = ["'string'"]
 
-                TCOefficient = TCOefficient()
+                TCOefficient = TCOefficient()  # type: ignore
                 """
                 `MMEMory:LOAD:CORRection:TCOefficient
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_CORRection_TCOefficient>`_
@@ -10148,7 +10149,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CORRection = CORRection()
+            CORRection = CORRection()  # type: ignore
             """
             `MMEMory:LOAD:CORRection
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_CORRection>`_
@@ -10167,7 +10168,7 @@ class ZVA_gen(Instrument):
                 _cmd = "LIMit"
                 args = ["'string'"]
 
-            LIMit = LIMit()
+            LIMit = LIMit()  # type: ignore
             """
             `MMEMory:LOAD:LIMit
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_LIMit>`_
@@ -10186,7 +10187,7 @@ class ZVA_gen(Instrument):
                 _cmd = "MDAData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            MDAData = MDAData()
+            MDAData = MDAData()  # type: ignore
             """
             `MMEMory:LOAD:MDAData
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_MDAData>`_
@@ -10205,7 +10206,7 @@ class ZVA_gen(Instrument):
                 _cmd = "MDCData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            MDCData = MDCData()
+            MDCData = MDCData()  # type: ignore
             """
             `MMEMory:LOAD:MDCData
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_MDCData>`_
@@ -10224,7 +10225,7 @@ class ZVA_gen(Instrument):
                 _cmd = "PTRain"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            PTRain = PTRain()
+            PTRain = PTRain()  # type: ignore
             """
             `MMEMory:LOAD:PTRain
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_PTRain>`_
@@ -10243,7 +10244,7 @@ class ZVA_gen(Instrument):
                 _cmd = "RIPPle"
                 args = ["'string'"]
 
-            RIPPle = RIPPle()
+            RIPPle = RIPPle()  # type: ignore
             """
             `MMEMory:LOAD:RIPPle
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_RIPPle>`_
@@ -10262,7 +10263,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SEGMent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SEGMent = SEGMent()
+            SEGMent = SEGMent()  # type: ignore
             """
             `MMEMory:LOAD:SEGMent
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_SEGMent>`_
@@ -10281,7 +10282,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `MMEMory:LOAD:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_STATe>`_
@@ -10300,7 +10301,7 @@ class ZVA_gen(Instrument):
                 _cmd = "TRACe"
                 args = ["'string'"]
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             `MMEMory:LOAD:TRACe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_TRACE>`_
@@ -10316,7 +10317,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "VNETworks"
-                args = []
+                args = []  # type: List[str]
 
                 class BALanced(SCPINode):
                     """
@@ -10326,7 +10327,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BALanced"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPISet):
                         """
@@ -10339,7 +10340,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:BALanced:DEEMbedding
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_VNETworks_BALanced_DEEMbedding>`_
@@ -10358,7 +10359,7 @@ class ZVA_gen(Instrument):
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:BALanced:EMBedding
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_VNETworks_BALanced_EMBedding>`_
@@ -10366,7 +10367,7 @@ class ZVA_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                BALanced = BALanced()
+                BALanced = BALanced()  # type: ignore
                 """
                 MMEMory:LOAD:VNETworks:BALanced
 
@@ -10381,7 +10382,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "GLOop"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINode, SCPISet):
                         """
@@ -10394,7 +10395,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:GLOop:DEEMbedding
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_VNETworks_GLOop_DEEMbedding>`_
@@ -10413,7 +10414,7 @@ class ZVA_gen(Instrument):
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:GLOop:EMBedding
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_VNETworks_GLOop_EMBedding>`_
@@ -10421,7 +10422,7 @@ class ZVA_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                GLOop = GLOop()
+                GLOop = GLOop()  # type: ignore
                 """
                 MMEMory:LOAD:VNETworks:GLOop
 
@@ -10436,7 +10437,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PPAir"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPISet):
                         """
@@ -10449,7 +10450,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:PPAir:DEEMbedding
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_VNETworks_PPAir_DEEMbedding>`_
@@ -10468,7 +10469,7 @@ class ZVA_gen(Instrument):
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:PPAir:EMBedding
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_VNETworks_PPAir_EMBedding>`_
@@ -10476,7 +10477,7 @@ class ZVA_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                PPAir = PPAir()
+                PPAir = PPAir()  # type: ignore
                 """
                 MMEMory:LOAD:VNETworks:PPAir
 
@@ -10491,7 +10492,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SENDed"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPISet):
                         """
@@ -10504,7 +10505,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:SENDed:DEEMbedding
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_VNETworks_SENDed_DEEMbedding>`_
@@ -10523,7 +10524,7 @@ class ZVA_gen(Instrument):
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:SENDed:EMBedding
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#LOAD_VNETworks_SENDed_EMBedding>`_
@@ -10531,21 +10532,21 @@ class ZVA_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                SENDed = SENDed()
+                SENDed = SENDed()  # type: ignore
                 """
                 MMEMory:LOAD:VNETworks:SENDed
 
                 Arguments:
                 """
 
-            VNETworks = VNETworks()
+            VNETworks = VNETworks()  # type: ignore
             """
             MMEMory:LOAD:VNETworks
 
             Arguments:
             """
 
-        LOAD = LOAD()
+        LOAD = LOAD()  # type: ignore
         """
         MMEMory:LOAD
 
@@ -10563,7 +10564,7 @@ class ZVA_gen(Instrument):
             _cmd = "MDIRectory"
             args = ["'string'"]
 
-        MDIRectory = MDIRectory()
+        MDIRectory = MDIRectory()  # type: ignore
         """
         `MMEMory:MDIRectory
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#MDIRectory>`_
@@ -10582,7 +10583,7 @@ class ZVA_gen(Instrument):
             _cmd = "MOVE"
             args = ["'string'"]
 
-        MOVE = MOVE()
+        MOVE = MOVE()  # type: ignore
         """
         `MMEMory:MOVE
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#MOVE>`_
@@ -10601,7 +10602,7 @@ class ZVA_gen(Instrument):
             _cmd = "MSIS"
             args = ["'string'"]
 
-        MSIS = MSIS()
+        MSIS = MSIS()  # type: ignore
         """
         `MMEMory:MSIS
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#MSIS>`_
@@ -10620,7 +10621,7 @@ class ZVA_gen(Instrument):
             _cmd = "NAME"
             args = ["'string'"]
 
-        NAME = NAME()
+        NAME = NAME()  # type: ignore
         """
         `MMEMory:NAME
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#NAME>`_
@@ -10639,7 +10640,7 @@ class ZVA_gen(Instrument):
             _cmd = "RDIRectory"
             args = ["'string'"]
 
-        RDIRectory = RDIRectory()
+        RDIRectory = RDIRectory()  # type: ignore
         """
         `MMEMory:RDIRectory
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#RDIRectory>`_
@@ -10655,7 +10656,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SETTings"
-            args = []
+            args = []  # type: List[str]
 
             class RENorm(SCPINode):
                 """
@@ -10665,7 +10666,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RENorm"
-                args = []
+                args = []  # type: List[str]
 
                 class MODE(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -10678,7 +10679,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MODE"
                     args = ["AUTO", "EXPLicit"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `MMEMory:SETTings:RENorm:MODE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#SETTings_RENorm_MODE>`_
@@ -10697,7 +10698,7 @@ class ZVA_gen(Instrument):
                     _cmd = "RIMPedance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                RIMPedance = RIMPedance()
+                RIMPedance = RIMPedance()  # type: ignore
                 """
                 `MMEMory:SETTings:RENorm:RIMPedance
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#SETTings_RENorm_RIMPedance>`_
@@ -10716,7 +10717,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `MMEMory:SETTings:RENorm:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#SETTings_RENorm_STATe>`_
@@ -10724,14 +10725,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            RENorm = RENorm()
+            RENorm = RENorm()  # type: ignore
             """
             MMEMory:SETTings:RENorm
 
             Arguments:
             """
 
-        SETTings = SETTings()
+        SETTings = SETTings()  # type: ignore
         """
         MMEMory:SETTings
 
@@ -10746,7 +10747,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "STORe"
-            args = []
+            args = []  # type: List[str]
 
             class CKIT(SCPINode, SCPISet):
                 """
@@ -10770,7 +10771,7 @@ class ZVA_gen(Instrument):
                     _cmd = "WLABel"
                     args = ["'string'"]
 
-                WLABel = WLABel()
+                WLABel = WLABel()  # type: ignore
                 """
                 `MMEMory:STORe:CKIT:WLABel
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_CKIT_WLABel>`_
@@ -10778,7 +10779,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CKIT = CKIT()
+            CKIT = CKIT()  # type: ignore
             """
             `MMEMory:STORe:CKIT
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_CKIT>`_
@@ -10797,7 +10798,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CMAP"
                 args = ["'string'"]
 
-            CMAP = CMAP()
+            CMAP = CMAP()  # type: ignore
             """
             `MMEMory:STORe:CMAP
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_CMAP>`_
@@ -10827,7 +10828,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TCOefficient"
                     args = ["'string'"]
 
-                TCOefficient = TCOefficient()
+                TCOefficient = TCOefficient()  # type: ignore
                 """
                 `MMEMory:STORe:CORRection:TCOefficient
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_CORRection_TCOefficient>`_
@@ -10835,7 +10836,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CORRection = CORRection()
+            CORRection = CORRection()  # type: ignore
             """
             `MMEMory:STORe:CORRection
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_CORRection>`_
@@ -10854,7 +10855,7 @@ class ZVA_gen(Instrument):
                 _cmd = "LIMit"
                 args = ["'string'"]
 
-            LIMit = LIMit()
+            LIMit = LIMit()  # type: ignore
             """
             `MMEMory:STORe:LIMit
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_LIMit>`_
@@ -10873,7 +10874,7 @@ class ZVA_gen(Instrument):
                 _cmd = "MARKer"
                 args = ["'string'"]
 
-            MARKer = MARKer()
+            MARKer = MARKer()  # type: ignore
             """
             `MMEMory:STORe:MARKer
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_MARKer>`_
@@ -10892,7 +10893,7 @@ class ZVA_gen(Instrument):
                 _cmd = "MDCData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            MDCData = MDCData()
+            MDCData = MDCData()  # type: ignore
             """
             `MMEMory:STORe:MDCData
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_MDCData>`_
@@ -10911,7 +10912,7 @@ class ZVA_gen(Instrument):
                 _cmd = "PTRain"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            PTRain = PTRain()
+            PTRain = PTRain()  # type: ignore
             """
             `MMEMory:STORe:PTRain
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_PTRain>`_
@@ -10930,7 +10931,7 @@ class ZVA_gen(Instrument):
                 _cmd = "RIPPle"
                 args = ["'string'"]
 
-            RIPPle = RIPPle()
+            RIPPle = RIPPle()  # type: ignore
             """
             `MMEMory:STORe:RIPPle
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_RIPPle>`_
@@ -10949,7 +10950,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SEGMent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SEGMent = SEGMent()
+            SEGMent = SEGMent()  # type: ignore
             """
             `MMEMory:STORe:SEGMent
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_SEGMent>`_
@@ -10968,7 +10969,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `MMEMory:STORe:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_STATe>`_
@@ -10998,7 +10999,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CHANnel"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                CHANnel = CHANnel()
+                CHANnel = CHANnel()  # type: ignore
                 """
                 `MMEMory:STORe:TRACe:CHANnel
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_TRACE_CHANnel>`_
@@ -11028,7 +11029,7 @@ class ZVA_gen(Instrument):
                         _cmd = "INComplete"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    INComplete = INComplete()
+                    INComplete = INComplete()  # type: ignore
                     """
                     `MMEMory:STORe:TRACe:PORTs:INComplete
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_TRACE_PORTs_INComplete>`_
@@ -11036,7 +11037,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                PORTs = PORTs()
+                PORTs = PORTs()  # type: ignore
                 """
                 `MMEMory:STORe:TRACe:PORTs
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_TRACE_PORTs>`_
@@ -11044,7 +11045,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             `MMEMory:STORe:TRACe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/mmemory/mmemory.htm#STORe_TRACE>`_
@@ -11052,14 +11053,14 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        STORe = STORe()
+        STORe = STORe()  # type: ignore
         """
         MMEMory:STORe
 
         Arguments:
         """
 
-    MMEMory = MMEMory()
+    MMEMory = MMEMory()  # type: ignore
     """
     MMEMory
 
@@ -11087,7 +11088,7 @@ class ZVA_gen(Instrument):
             _cmd = "ATTenuation"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-        ATTenuation = ATTenuation()
+        ATTenuation = ATTenuation()  # type: ignore
         """
         `OUTPut:ATTenuation
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/output/output.htm#Attenuation>`_
@@ -11106,7 +11107,7 @@ class ZVA_gen(Instrument):
             _cmd = "DPORt"
             args = ["PORT1", "PORT2", "PORT3", "PORT4"]
 
-        DPORt = DPORt()
+        DPORt = DPORt()  # type: ignore
         """
         `OUTPut:DPORt
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/output/output.htm#DPORt>`_
@@ -11136,7 +11137,7 @@ class ZVA_gen(Instrument):
                 _cmd = "TYPE"
                 args = ["FAST", "LBNoise"]
 
-            TYPE = TYPE()
+            TYPE = TYPE()  # type: ignore
             """
             `OUTPut:STATe:TYPE
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/output/output.htm#STATe_TYPE>`_
@@ -11144,7 +11145,7 @@ class ZVA_gen(Instrument):
             Arguments: FAST, LBNoise
             """
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         `OUTPut:STATe
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/output/output.htm#DPORt>`_
@@ -11160,7 +11161,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "UPORt"
-            args = []
+            args = []  # type: List[str]
 
             class BUSY(SCPINode):
                 """
@@ -11170,7 +11171,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BUSY"
-                args = []
+                args = []  # type: List[str]
 
                 class LINK(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -11183,7 +11184,7 @@ class ZVA_gen(Instrument):
                     _cmd = "LINK"
                     args = ["AUTO", "POINt", "PPOint", "SEGMent", "SWEep"]
 
-                LINK = LINK()
+                LINK = LINK()  # type: ignore
                 """
                 `OUTPut:UPORt:BUSY:LINK
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/output/output.htm#UPORt_BUSY_LINK>`_
@@ -11191,7 +11192,7 @@ class ZVA_gen(Instrument):
                 Arguments: AUTO, POINt, PPOint, SEGMent, SWEep
                 """
 
-            BUSY = BUSY()
+            BUSY = BUSY()  # type: ignore
             """
             OUTPut:UPORt:BUSY
 
@@ -11209,7 +11210,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ECBits"
                 args = ["1", "OFF", "ON"]
 
-            ECBits = ECBits()
+            ECBits = ECBits()  # type: ignore
             """
             `OUTPut:UPORt:ECBits
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/output/output.htm#UPORt_ECBits>`_
@@ -11225,7 +11226,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SEGMent"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
@@ -11238,7 +11239,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `OUTPut:UPORt:SEGMent:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/output/output.htm#UPORt_SEGMent_STATe>`_
@@ -11255,9 +11256,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "VALue"
-                    args = []
+                    args = []  # type: List[str]
 
-                VALue = VALue()
+                VALue = VALue()  # type: ignore
                 """
                 `OUTPut:UPORt:SEGMent:VALue
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/output/output.htm#UPORt_SEGMent_VALue>`_
@@ -11265,7 +11266,7 @@ class ZVA_gen(Instrument):
                 Arguments:
                 """
 
-            SEGMent = SEGMent()
+            SEGMent = SEGMent()  # type: ignore
             """
             OUTPut:UPORt:SEGMent
 
@@ -11281,9 +11282,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "VALue"
-                args = []
+                args = []  # type: List[str]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             `OUTPut:UPORt:VALue
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/output/output.htm#UPORt_VALue>`_
@@ -11291,14 +11292,14 @@ class ZVA_gen(Instrument):
             Arguments:
             """
 
-        UPORt = UPORt()
+        UPORt = UPORt()  # type: ignore
         """
         OUTPut:UPORt
 
         Arguments:
         """
 
-    OUTPut = OUTPut()
+    OUTPut = OUTPut()  # type: ignore
     """
     OUTPut
 
@@ -11313,7 +11314,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "PROGram"
-        args = []
+        args = []  # type: List[str]
 
         class SELected(SCPINode):
             """
@@ -11323,7 +11324,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SELected"
-            args = []
+            args = []  # type: List[str]
 
             class EXECute(SCPINode, SCPISet):
                 """
@@ -11336,7 +11337,7 @@ class ZVA_gen(Instrument):
                 _cmd = "EXECute"
                 args = ["'string'"]
 
-            EXECute = EXECute()
+            EXECute = EXECute()  # type: ignore
             """
             `PROGram:SELected:EXECute
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/program/program.htm#EXECute>`_
@@ -11355,7 +11356,7 @@ class ZVA_gen(Instrument):
                 _cmd = "INIMessage"
                 args = ["'string'"]
 
-            INIMessage = INIMessage()
+            INIMessage = INIMessage()  # type: ignore
             """
             `PROGram:SELected:INIMessage
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/program/program.htm#INIMessage>`_
@@ -11374,7 +11375,7 @@ class ZVA_gen(Instrument):
                 _cmd = "INIParameter"
                 args = ["'string'"]
 
-            INIParameter = INIParameter()
+            INIParameter = INIParameter()  # type: ignore
             """
             `PROGram:SELected:INIParameter
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/program/program.htm#INIParameter>`_
@@ -11393,7 +11394,7 @@ class ZVA_gen(Instrument):
                 _cmd = "NAME"
                 args = ["PROG"]
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `PROGram:SELected:NAME
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/program/program.htm#NAME>`_
@@ -11410,9 +11411,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RETVal"
-                args = []
+                args = []  # type: List[str]
 
-            RETVal = RETVal()
+            RETVal = RETVal()  # type: ignore
             """
             `PROGram:SELected:RETVal
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/program/program.htm#RETVal>`_
@@ -11430,7 +11431,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STRing"
                 args = ["'string'"]
 
-            STRing = STRing()
+            STRing = STRing()  # type: ignore
             """
             PROGram:SELected:STRing
 
@@ -11446,9 +11447,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "WAIT"
-                args = []
+                args = []  # type: List[str]
 
-            WAIT = WAIT()
+            WAIT = WAIT()  # type: ignore
             """
             `PROGram:SELected:WAIT
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/program/program.htm#WAIT>`_
@@ -11456,14 +11457,14 @@ class ZVA_gen(Instrument):
             Arguments:
             """
 
-        SELected = SELected()
+        SELected = SELected()  # type: ignore
         """
         PROGram:SELected
 
         Arguments:
         """
 
-    PROGram = PROGram()
+    PROGram = PROGram()  # type: ignore
     """
     PROGram
 
@@ -11478,7 +11479,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ROUTe"
-        args = []
+        args = []  # type: List[str]
 
         class CFILe(SCPINode, SCPIBool):
             """
@@ -11491,7 +11492,7 @@ class ZVA_gen(Instrument):
             _cmd = "CFILe"
             args = ["1", "OFF", "ON"]
 
-        CFILe = CFILe()
+        CFILe = CFILe()  # type: ignore
         """
         `ROUTe:CFILe
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/route/route.htm#CFILe>`_
@@ -11510,7 +11511,7 @@ class ZVA_gen(Instrument):
             _cmd = "PORTs"
             args = ["A", "B", "C", "D"]
 
-        PORTs = PORTs()
+        PORTs = PORTs()  # type: ignore
         """
         `ROUTe:PORTs
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/route/route.htm#PORTs>`_
@@ -11518,7 +11519,7 @@ class ZVA_gen(Instrument):
         Arguments: A, B, C, D
         """
 
-    ROUTe = ROUTe()
+    ROUTe = ROUTe()  # type: ignore
     """
     ROUTe
 
@@ -11533,7 +11534,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SENSe"
-        args = []
+        args = []  # type: List[str]
 
         class AVERage(SCPINode, SCPIBool):
             """
@@ -11555,9 +11556,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CLEar"
-                args = []
+                args = []  # type: List[str]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             `SENSe:AVERage:CLEar
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___average.htm#CLEar>`_
@@ -11586,7 +11587,7 @@ class ZVA_gen(Instrument):
                     _cmd = "ACTual"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                ACTual = ACTual()
+                ACTual = ACTual()  # type: ignore
                 """
                 SENSe:AVERage:COUNt:ACTual
 
@@ -11604,7 +11605,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CURRent"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                CURRent = CURRent()
+                CURRent = CURRent()  # type: ignore
                 """
                 `SENSe:AVERage:COUNt:CURRent
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___average.htm#Count_CURRent>`_
@@ -11612,7 +11613,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `SENSe:AVERage:COUNt
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___average.htm#Count>`_
@@ -11631,7 +11632,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SENSe:AVERage:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___average.htm#State>`_
@@ -11639,7 +11640,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        AVERage = AVERage()
+        AVERage = AVERage()  # type: ignore
         """
         `SENSe:AVERage
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___average.htm>`_
@@ -11677,7 +11678,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DREDuction"
                     args = ["1", "OFF", "ON"]
 
-                DREDuction = DREDuction()
+                DREDuction = DREDuction()  # type: ignore
                 """
                 SENSe:BANDwidth:RESolution:DREDuction
 
@@ -11694,7 +11695,7 @@ class ZVA_gen(Instrument):
                     _cmd = "GENerator"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                GENerator = GENerator()
+                GENerator = GENerator()  # type: ignore
                 """
                 SENSe:BANDwidth:RESolution:GENerator
 
@@ -11711,7 +11712,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MODE"
                     args = ["PALL", "PSPecific"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 SENSe:BANDwidth:RESolution:MODE
 
@@ -11728,7 +11729,7 @@ class ZVA_gen(Instrument):
                     _cmd = "PORT"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                PORT = PORT()
+                PORT = PORT()  # type: ignore
                 """
                 SENSe:BANDwidth:RESolution:PORT
 
@@ -11745,21 +11746,21 @@ class ZVA_gen(Instrument):
                     _cmd = "SELect"
                     args = ["HIGH", "NORMal"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 SENSe:BANDwidth:RESolution:SELect
 
                 Arguments: HIGH, NORMal
                 """
 
-            RESolution = RESolution()
+            RESolution = RESolution()  # type: ignore
             """
             SENSe:BANDwidth:RESolution
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        BANDwidth = BANDwidth()
+        BANDwidth = BANDwidth()  # type: ignore
         """
         SENSe:BANDwidth
 
@@ -11796,7 +11797,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DREDuction"
                     args = ["1", "OFF", "ON"]
 
-                DREDuction = DREDuction()
+                DREDuction = DREDuction()  # type: ignore
                 """
                 SENSe:BWIDth:RESolution:DREDuction
 
@@ -11813,7 +11814,7 @@ class ZVA_gen(Instrument):
                     _cmd = "GENerator"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                GENerator = GENerator()
+                GENerator = GENerator()  # type: ignore
                 """
                 SENSe:BWIDth:RESolution:GENerator
 
@@ -11830,7 +11831,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MODE"
                     args = ["PALL", "PSPecific"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 SENSe:BWIDth:RESolution:MODE
 
@@ -11847,7 +11848,7 @@ class ZVA_gen(Instrument):
                     _cmd = "PORT"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                PORT = PORT()
+                PORT = PORT()  # type: ignore
                 """
                 SENSe:BWIDth:RESolution:PORT
 
@@ -11864,21 +11865,21 @@ class ZVA_gen(Instrument):
                     _cmd = "SELect"
                     args = ["HIGH", "NORMal"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 SENSe:BWIDth:RESolution:SELect
 
                 Arguments: HIGH, NORMal
                 """
 
-            RESolution = RESolution()
+            RESolution = RESolution()  # type: ignore
             """
             SENSe:BWIDth:RESolution
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        BWIDth = BWIDth()
+        BWIDth = BWIDth()  # type: ignore
         """
         SENSe:BWIDth
 
@@ -11893,7 +11894,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CONVerter"
-            args = []
+            args = []  # type: List[str]
 
             class AMODel(SCPINode, SCPIBool):
                 """
@@ -11906,7 +11907,7 @@ class ZVA_gen(Instrument):
                 _cmd = "AMODel"
                 args = ["1", "OFF", "ON"]
 
-            AMODel = AMODel()
+            AMODel = AMODel()  # type: ignore
             """
             `SENSe:CONVerter:AMODel
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_converter.htm#AMODel>`_
@@ -11925,7 +11926,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ASSign"
                 args = ["'string'"]
 
-            ASSign = ASSign()
+            ASSign = ASSign()  # type: ignore
             """
             `SENSe:CONVerter:ASSign
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_converter.htm#ASSign>`_
@@ -11944,7 +11945,7 @@ class ZVA_gen(Instrument):
                 _cmd = "DESCription"
                 args = ["DSET", "ELECtronic", "LAPProx", "NONE"]
 
-            DESCription = DESCription()
+            DESCription = DESCription()  # type: ignore
             """
             `SENSe:CONVerter:DESCription
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_converter.htm#DESCription>`_
@@ -11963,7 +11964,7 @@ class ZVA_gen(Instrument):
                 _cmd = "PATH"
                 args = ["'string'"]
 
-            PATH = PATH()
+            PATH = PATH()  # type: ignore
             """
             `SENSe:CONVerter:PATH
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_converter.htm#PATH>`_
@@ -11971,7 +11972,7 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        CONVerter = CONVerter()
+        CONVerter = CONVerter()  # type: ignore
         """
         SENSe:CONVerter
 
@@ -12009,7 +12010,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:CORRection:CBFReq:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction.htm#CBFReq>`_
@@ -12017,7 +12018,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            CBFReq = CBFReq()
+            CBFReq = CBFReq()  # type: ignore
             """
             SENSe:CORRection:CBFReq
 
@@ -12035,7 +12036,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CDATa"
                 args = ["'string'"]
 
-            CDATa = CDATa()
+            CDATa = CDATa()  # type: ignore
             """
             `SENSe:CORRection:CDATa
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction.htm#CDATa>`_
@@ -12051,7 +12052,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CKIT"
-                args = []
+                args = []  # type: List[str]
 
                 class CATalog(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -12064,7 +12065,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CATalog"
                     args = ["'string'"]
 
-                CATalog = CATalog()
+                CATalog = CATalog()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:CATalog
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit.htm#CATalog>`_
@@ -12083,7 +12084,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DELete"
                     args = ["'string'"]
 
-                DELete = DELete()
+                DELete = DELete()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:DELete
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit.htm#DELete>`_
@@ -12111,14 +12112,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FFATten:WLABel
 
                     Arguments: 'string'
                     """
 
-                FFATten = FFATten()
+                FFATten = FFATten()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FFATten
 
@@ -12145,14 +12146,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FFLine:WLABel
 
                     Arguments: 'string'
                     """
 
-                FFLine = FFLine()
+                FFLine = FFLine()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FFLine
 
@@ -12179,14 +12180,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FFSNetwork:WLABel
 
                     Arguments: 'string'
                     """
 
-                FFSNetwork = FFSNetwork()
+                FFSNetwork = FFSNetwork()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FFSNetwork
 
@@ -12213,14 +12214,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FFTHrough:WLABel
 
                     Arguments: 'string'
                     """
 
-                FFTHrough = FFTHrough()
+                FFTHrough = FFTHrough()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FFTHrough
 
@@ -12247,14 +12248,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FMTCh:WLABel
 
                     Arguments: 'string'
                     """
 
-                FMTCh = FMTCh()
+                FMTCh = FMTCh()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FMTCh
 
@@ -12281,14 +12282,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FOPen:WLABel
 
                     Arguments: 'string'
                     """
 
-                FOPen = FOPen()
+                FOPen = FOPen()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FOPen
 
@@ -12315,14 +12316,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FOSHort:WLABel
 
                     Arguments: 'string'
                     """
 
-                FOSHort = FOSHort()
+                FOSHort = FOSHort()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FOSHort
 
@@ -12349,14 +12350,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FREFlect:WLABel
 
                     Arguments: 'string'
                     """
 
-                FREFlect = FREFlect()
+                FREFlect = FREFlect()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FREFlect
 
@@ -12383,14 +12384,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FSHort:WLABel
 
                     Arguments: 'string'
                     """
 
-                FSHort = FSHort()
+                FSHort = FSHort()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FSHort
 
@@ -12417,14 +12418,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FSMatch:WLABel
 
                     Arguments: 'string'
                     """
 
-                FSMatch = FSMatch()
+                FSMatch = FSMatch()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FSMatch
 
@@ -12442,7 +12443,7 @@ class ZVA_gen(Instrument):
                     _cmd = "INSTall"
                     args = ["'string'"]
 
-                INSTall = INSTall()
+                INSTall = INSTall()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:INSTall
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit.htm#INSTall>`_
@@ -12461,7 +12462,7 @@ class ZVA_gen(Instrument):
                     _cmd = "LABel"
                     args = ["'string'"]
 
-                LABel = LABel()
+                LABel = LABel()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:LABel
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit.htm#LABel>`_
@@ -12480,7 +12481,7 @@ class ZVA_gen(Instrument):
                     _cmd = "LCATalog"
                     args = ["'string'"]
 
-                LCATalog = LCATalog()
+                LCATalog = LCATalog()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:LCATalog
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit_l(abel).htm#CATalog>`_
@@ -12499,7 +12500,7 @@ class ZVA_gen(Instrument):
                     _cmd = "LDELete"
                     args = ["'string'"]
 
-                LDELete = LDELete()
+                LDELete = LDELete()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:LDELete
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit_l(abel).htm#DELete>`_
@@ -12518,7 +12519,7 @@ class ZVA_gen(Instrument):
                     _cmd = "LLABel"
                     args = ["'string'"]
 
-                LLABel = LLABel()
+                LLABel = LLABel()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:LLABel
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit_l(abel).htm#LABel>`_
@@ -12537,7 +12538,7 @@ class ZVA_gen(Instrument):
                     _cmd = "LSELect"
                     args = ["'string'"]
 
-                LSELect = LSELect()
+                LSELect = LSELect()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:LSELect
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit_l(abel).htm#SELect_String>`_
@@ -12556,7 +12557,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MDATe"
                     args = ["'string'"]
 
-                MDATe = MDATe()
+                MDATe = MDATe()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:MDATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit.htm#MDATe>`_
@@ -12584,14 +12585,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MFATten:WLABel
 
                     Arguments: 'string'
                     """
 
-                MFATten = MFATten()
+                MFATten = MFATten()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MFATten
 
@@ -12618,14 +12619,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MFLine:WLABel
 
                     Arguments: 'string'
                     """
 
-                MFLine = MFLine()
+                MFLine = MFLine()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MFLine
 
@@ -12652,14 +12653,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MFSNetwork:WLABel
 
                     Arguments: 'string'
                     """
 
-                MFSNetwork = MFSNetwork()
+                MFSNetwork = MFSNetwork()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MFSNetwork
 
@@ -12686,14 +12687,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MFTHrough:WLABel
 
                     Arguments: 'string'
                     """
 
-                MFTHrough = MFTHrough()
+                MFTHrough = MFTHrough()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MFTHrough
 
@@ -12720,14 +12721,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MMATten:WLABel
 
                     Arguments: 'string'
                     """
 
-                MMATten = MMATten()
+                MMATten = MMATten()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MMATten
 
@@ -12754,14 +12755,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MMLine:WLABel
 
                     Arguments: 'string'
                     """
 
-                MMLine = MMLine()
+                MMLine = MMLine()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MMLine
 
@@ -12788,14 +12789,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MMSNetwork:WLABel
 
                     Arguments: 'string'
                     """
 
-                MMSNetwork = MMSNetwork()
+                MMSNetwork = MMSNetwork()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MMSNetwork
 
@@ -12822,14 +12823,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MMTCh:WLABel
 
                     Arguments: 'string'
                     """
 
-                MMTCh = MMTCh()
+                MMTCh = MMTCh()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MMTCh
 
@@ -12856,14 +12857,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MMTHrough:WLABel
 
                     Arguments: 'string'
                     """
 
-                MMTHrough = MMTHrough()
+                MMTHrough = MMTHrough()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MMTHrough
 
@@ -12890,14 +12891,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MOPen:WLABel
 
                     Arguments: 'string'
                     """
 
-                MOPen = MOPen()
+                MOPen = MOPen()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MOPen
 
@@ -12924,14 +12925,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MOSHort:WLABel
 
                     Arguments: 'string'
                     """
 
-                MOSHort = MOSHort()
+                MOSHort = MOSHort()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MOSHort
 
@@ -12958,14 +12959,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MREFlect:WLABel
 
                     Arguments: 'string'
                     """
 
-                MREFlect = MREFlect()
+                MREFlect = MREFlect()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MREFlect
 
@@ -12992,14 +12993,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MSHort:WLABel
 
                     Arguments: 'string'
                     """
 
-                MSHort = MSHort()
+                MSHort = MSHort()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MSHort
 
@@ -13026,14 +13027,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MSMatch:WLABel
 
                     Arguments: 'string'
                     """
 
-                MSMatch = MSMatch()
+                MSMatch = MSMatch()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MSMatch
 
@@ -13048,7 +13049,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "N"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FFATten(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13060,7 +13061,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFATten"
                         args = ["'string'"]
 
-                    FFATten = FFATten()
+                    FFATten = FFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FFATten
 
@@ -13077,7 +13078,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFLine"
                         args = ["'string'"]
 
-                    FFLine = FFLine()
+                    FFLine = FFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FFLine
 
@@ -13094,7 +13095,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
-                    FFSNetwork = FFSNetwork()
+                    FFSNetwork = FFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FFSNetwork
 
@@ -13111,7 +13112,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
-                    FFTHrough = FFTHrough()
+                    FFTHrough = FFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FFTHrough
 
@@ -13128,7 +13129,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
-                    FMTCh = FMTCh()
+                    FMTCh = FMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FMTCh
 
@@ -13145,7 +13146,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FOPen"
                         args = ["'string'"]
 
-                    FOPen = FOPen()
+                    FOPen = FOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FOPen
 
@@ -13162,7 +13163,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
-                    FREFlect = FREFlect()
+                    FREFlect = FREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FREFlect
 
@@ -13179,7 +13180,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FSHort"
                         args = ["'string'"]
 
-                    FSHort = FSHort()
+                    FSHort = FSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FSHort
 
@@ -13196,7 +13197,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
-                    FSMatch = FSMatch()
+                    FSMatch = FSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FSMatch
 
@@ -13213,7 +13214,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LSELect"
                         args = ["'string'"]
 
-                    LSELect = LSELect()
+                    LSELect = LSELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:LSELect
 
@@ -13230,7 +13231,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFATten"
                         args = ["'string'"]
 
-                    MFATten = MFATten()
+                    MFATten = MFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MFATten
 
@@ -13247,7 +13248,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFLine"
                         args = ["'string'"]
 
-                    MFLine = MFLine()
+                    MFLine = MFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MFLine
 
@@ -13264,7 +13265,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
-                    MFSNetwork = MFSNetwork()
+                    MFSNetwork = MFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MFSNetwork
 
@@ -13281,7 +13282,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
-                    MFTHrough = MFTHrough()
+                    MFTHrough = MFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MFTHrough
 
@@ -13298,7 +13299,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMATten"
                         args = ["'string'"]
 
-                    MMATten = MMATten()
+                    MMATten = MMATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MMATten
 
@@ -13315,7 +13316,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMLine"
                         args = ["'string'"]
 
-                    MMLine = MMLine()
+                    MMLine = MMLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MMLine
 
@@ -13332,7 +13333,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
-                    MMSNetwork = MMSNetwork()
+                    MMSNetwork = MMSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MMSNetwork
 
@@ -13349,7 +13350,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
-                    MMTCh = MMTCh()
+                    MMTCh = MMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MMTCh
 
@@ -13366,7 +13367,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
-                    MMTHrough = MMTHrough()
+                    MMTHrough = MMTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MMTHrough
 
@@ -13383,7 +13384,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MOPen"
                         args = ["'string'"]
 
-                    MOPen = MOPen()
+                    MOPen = MOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MOPen
 
@@ -13400,7 +13401,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
-                    MREFlect = MREFlect()
+                    MREFlect = MREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MREFlect
 
@@ -13417,7 +13418,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MSHort"
                         args = ["'string'"]
 
-                    MSHort = MSHort()
+                    MSHort = MSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MSHort
 
@@ -13434,7 +13435,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
-                    MSMatch = MSMatch()
+                    MSMatch = MSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MSMatch
 
@@ -13451,14 +13452,14 @@ class ZVA_gen(Instrument):
                         _cmd = "SELect"
                         args = ["'string'"]
 
-                    SELect = SELect()
+                    SELect = SELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:SELect
 
                     Arguments: 'string'
                     """
 
-                N = N()
+                N = N()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:N
 
@@ -13485,14 +13486,14 @@ class ZVA_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:OSHort:WLABel
 
                     Arguments: 'string'
                     """
 
-                OSHort = OSHort()
+                OSHort = OSHort()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:OSHort
 
@@ -13507,7 +13508,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PC"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FFATten(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13519,7 +13520,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFATten"
                         args = ["'string'"]
 
-                    FFATten = FFATten()
+                    FFATten = FFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FFATten
 
@@ -13536,7 +13537,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFLine"
                         args = ["'string'"]
 
-                    FFLine = FFLine()
+                    FFLine = FFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FFLine
 
@@ -13553,7 +13554,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
-                    FFSNetwork = FFSNetwork()
+                    FFSNetwork = FFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FFSNetwork
 
@@ -13570,7 +13571,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
-                    FFTHrough = FFTHrough()
+                    FFTHrough = FFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FFTHrough
 
@@ -13587,7 +13588,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
-                    FMTCh = FMTCh()
+                    FMTCh = FMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FMTCh
 
@@ -13604,7 +13605,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FOPen"
                         args = ["'string'"]
 
-                    FOPen = FOPen()
+                    FOPen = FOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FOPen
 
@@ -13621,7 +13622,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
-                    FREFlect = FREFlect()
+                    FREFlect = FREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FREFlect
 
@@ -13638,7 +13639,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FSHort"
                         args = ["'string'"]
 
-                    FSHort = FSHort()
+                    FSHort = FSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FSHort
 
@@ -13655,7 +13656,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
-                    FSMatch = FSMatch()
+                    FSMatch = FSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FSMatch
 
@@ -13672,7 +13673,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LSELect"
                         args = ["'string'"]
 
-                    LSELect = LSELect()
+                    LSELect = LSELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:LSELect
 
@@ -13689,7 +13690,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFATten"
                         args = ["'string'"]
 
-                    MFATten = MFATten()
+                    MFATten = MFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MFATten
 
@@ -13706,7 +13707,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFLine"
                         args = ["'string'"]
 
-                    MFLine = MFLine()
+                    MFLine = MFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MFLine
 
@@ -13723,7 +13724,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
-                    MFSNetwork = MFSNetwork()
+                    MFSNetwork = MFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MFSNetwork
 
@@ -13740,7 +13741,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
-                    MFTHrough = MFTHrough()
+                    MFTHrough = MFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MFTHrough
 
@@ -13757,7 +13758,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMATten"
                         args = ["'string'"]
 
-                    MMATten = MMATten()
+                    MMATten = MMATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MMATten
 
@@ -13774,7 +13775,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMLine"
                         args = ["'string'"]
 
-                    MMLine = MMLine()
+                    MMLine = MMLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MMLine
 
@@ -13791,7 +13792,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
-                    MMSNetwork = MMSNetwork()
+                    MMSNetwork = MMSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MMSNetwork
 
@@ -13808,7 +13809,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
-                    MMTCh = MMTCh()
+                    MMTCh = MMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MMTCh
 
@@ -13825,7 +13826,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
-                    MMTHrough = MMTHrough()
+                    MMTHrough = MMTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MMTHrough
 
@@ -13842,7 +13843,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MOPen"
                         args = ["'string'"]
 
-                    MOPen = MOPen()
+                    MOPen = MOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MOPen
 
@@ -13859,7 +13860,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
-                    MREFlect = MREFlect()
+                    MREFlect = MREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MREFlect
 
@@ -13876,7 +13877,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MSHort"
                         args = ["'string'"]
 
-                    MSHort = MSHort()
+                    MSHort = MSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MSHort
 
@@ -13893,7 +13894,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
-                    MSMatch = MSMatch()
+                    MSMatch = MSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MSMatch
 
@@ -13910,14 +13911,14 @@ class ZVA_gen(Instrument):
                         _cmd = "SELect"
                         args = ["'string'"]
 
-                    SELect = SELect()
+                    SELect = SELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:SELect
 
                     Arguments: 'string'
                     """
 
-                PC = PC()
+                PC = PC()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:PC
 
@@ -13935,7 +13936,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SELect"
                     args = ["'string'"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:SELect
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit.htm#SELect_String>`_
@@ -13951,7 +13952,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SMA"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FFATten(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13963,7 +13964,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFATten"
                         args = ["'string'"]
 
-                    FFATten = FFATten()
+                    FFATten = FFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FFATten
 
@@ -13980,7 +13981,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFLine"
                         args = ["'string'"]
 
-                    FFLine = FFLine()
+                    FFLine = FFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FFLine
 
@@ -13997,7 +13998,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
-                    FFSNetwork = FFSNetwork()
+                    FFSNetwork = FFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FFSNetwork
 
@@ -14014,7 +14015,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
-                    FFTHrough = FFTHrough()
+                    FFTHrough = FFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FFTHrough
 
@@ -14031,7 +14032,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
-                    FMTCh = FMTCh()
+                    FMTCh = FMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FMTCh
 
@@ -14048,7 +14049,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FOPen"
                         args = ["'string'"]
 
-                    FOPen = FOPen()
+                    FOPen = FOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FOPen
 
@@ -14065,7 +14066,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
-                    FREFlect = FREFlect()
+                    FREFlect = FREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FREFlect
 
@@ -14082,7 +14083,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FSHort"
                         args = ["'string'"]
 
-                    FSHort = FSHort()
+                    FSHort = FSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FSHort
 
@@ -14099,7 +14100,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
-                    FSMatch = FSMatch()
+                    FSMatch = FSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FSMatch
 
@@ -14116,7 +14117,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LSELect"
                         args = ["'string'"]
 
-                    LSELect = LSELect()
+                    LSELect = LSELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:LSELect
 
@@ -14133,7 +14134,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFATten"
                         args = ["'string'"]
 
-                    MFATten = MFATten()
+                    MFATten = MFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MFATten
 
@@ -14150,7 +14151,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFLine"
                         args = ["'string'"]
 
-                    MFLine = MFLine()
+                    MFLine = MFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MFLine
 
@@ -14167,7 +14168,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
-                    MFSNetwork = MFSNetwork()
+                    MFSNetwork = MFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MFSNetwork
 
@@ -14184,7 +14185,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
-                    MFTHrough = MFTHrough()
+                    MFTHrough = MFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MFTHrough
 
@@ -14201,7 +14202,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMATten"
                         args = ["'string'"]
 
-                    MMATten = MMATten()
+                    MMATten = MMATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MMATten
 
@@ -14218,7 +14219,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMLine"
                         args = ["'string'"]
 
-                    MMLine = MMLine()
+                    MMLine = MMLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MMLine
 
@@ -14235,7 +14236,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
-                    MMSNetwork = MMSNetwork()
+                    MMSNetwork = MMSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MMSNetwork
 
@@ -14252,7 +14253,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
-                    MMTCh = MMTCh()
+                    MMTCh = MMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MMTCh
 
@@ -14269,7 +14270,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
-                    MMTHrough = MMTHrough()
+                    MMTHrough = MMTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MMTHrough
 
@@ -14286,7 +14287,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MOPen"
                         args = ["'string'"]
 
-                    MOPen = MOPen()
+                    MOPen = MOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MOPen
 
@@ -14303,7 +14304,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
-                    MREFlect = MREFlect()
+                    MREFlect = MREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MREFlect
 
@@ -14320,7 +14321,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MSHort"
                         args = ["'string'"]
 
-                    MSHort = MSHort()
+                    MSHort = MSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MSHort
 
@@ -14337,7 +14338,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
-                    MSMatch = MSMatch()
+                    MSMatch = MSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MSMatch
 
@@ -14354,14 +14355,14 @@ class ZVA_gen(Instrument):
                         _cmd = "SELect"
                         args = ["'string'"]
 
-                    SELect = SELect()
+                    SELect = SELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:SELect
 
                     Arguments: 'string'
                     """
 
-                SMA = SMA()
+                SMA = SMA()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:SMA
 
@@ -14376,7 +14377,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STANdard"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CATalog(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14389,7 +14390,7 @@ class ZVA_gen(Instrument):
                         _cmd = "CATalog"
                         args = ["'string'"]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     `SENSe:CORRection:CKIT:STANdard:CATalog
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit.htm#STANdard_CATalog>`_
@@ -14408,7 +14409,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LCATalog"
                         args = ["'string'"]
 
-                    LCATalog = LCATalog()
+                    LCATalog = LCATalog()  # type: ignore
                     """
                     `SENSe:CORRection:CKIT:STANdard:LCATalog
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_ckit_l(abel).htm#STANdard_CATalog>`_
@@ -14416,7 +14417,7 @@ class ZVA_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                STANdard = STANdard()
+                STANdard = STANdard()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:STANdard
 
@@ -14431,7 +14432,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "USER"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FFATten(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14443,7 +14444,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFATten"
                         args = ["'string'"]
 
-                    FFATten = FFATten()
+                    FFATten = FFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FFATten
 
@@ -14460,7 +14461,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFLine"
                         args = ["'string'"]
 
-                    FFLine = FFLine()
+                    FFLine = FFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FFLine
 
@@ -14477,7 +14478,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
-                    FFSNetwork = FFSNetwork()
+                    FFSNetwork = FFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FFSNetwork
 
@@ -14494,7 +14495,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
-                    FFTHrough = FFTHrough()
+                    FFTHrough = FFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FFTHrough
 
@@ -14511,7 +14512,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
-                    FMTCh = FMTCh()
+                    FMTCh = FMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FMTCh
 
@@ -14528,7 +14529,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FOPen"
                         args = ["'string'"]
 
-                    FOPen = FOPen()
+                    FOPen = FOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FOPen
 
@@ -14545,7 +14546,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FOSHort"
                         args = ["'string'"]
 
-                    FOSHort = FOSHort()
+                    FOSHort = FOSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FOSHort
 
@@ -14562,7 +14563,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
-                    FREFlect = FREFlect()
+                    FREFlect = FREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FREFlect
 
@@ -14579,7 +14580,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FSHort"
                         args = ["'string'"]
 
-                    FSHort = FSHort()
+                    FSHort = FSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FSHort
 
@@ -14596,7 +14597,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
-                    FSMatch = FSMatch()
+                    FSMatch = FSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FSMatch
 
@@ -14613,7 +14614,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFATten"
                         args = ["'string'"]
 
-                    MFATten = MFATten()
+                    MFATten = MFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MFATten
 
@@ -14630,7 +14631,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFLine"
                         args = ["'string'"]
 
-                    MFLine = MFLine()
+                    MFLine = MFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MFLine
 
@@ -14647,7 +14648,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
-                    MFSNetwork = MFSNetwork()
+                    MFSNetwork = MFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MFSNetwork
 
@@ -14664,7 +14665,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
-                    MFTHrough = MFTHrough()
+                    MFTHrough = MFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MFTHrough
 
@@ -14681,7 +14682,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMATten"
                         args = ["'string'"]
 
-                    MMATten = MMATten()
+                    MMATten = MMATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MMATten
 
@@ -14698,7 +14699,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMLine"
                         args = ["'string'"]
 
-                    MMLine = MMLine()
+                    MMLine = MMLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MMLine
 
@@ -14715,7 +14716,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
-                    MMSNetwork = MMSNetwork()
+                    MMSNetwork = MMSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MMSNetwork
 
@@ -14732,7 +14733,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
-                    MMTCh = MMTCh()
+                    MMTCh = MMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MMTCh
 
@@ -14749,7 +14750,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
-                    MMTHrough = MMTHrough()
+                    MMTHrough = MMTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MMTHrough
 
@@ -14766,7 +14767,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MOPen"
                         args = ["'string'"]
 
-                    MOPen = MOPen()
+                    MOPen = MOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MOPen
 
@@ -14783,7 +14784,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MOSHort"
                         args = ["'string'"]
 
-                    MOSHort = MOSHort()
+                    MOSHort = MOSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MOSHort
 
@@ -14800,7 +14801,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
-                    MREFlect = MREFlect()
+                    MREFlect = MREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MREFlect
 
@@ -14817,7 +14818,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MSHort"
                         args = ["'string'"]
 
-                    MSHort = MSHort()
+                    MSHort = MSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MSHort
 
@@ -14834,7 +14835,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
-                    MSMatch = MSMatch()
+                    MSMatch = MSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MSMatch
 
@@ -14851,7 +14852,7 @@ class ZVA_gen(Instrument):
                         _cmd = "OSHort"
                         args = ["'string'"]
 
-                    OSHort = OSHort()
+                    OSHort = OSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:OSHort
 
@@ -14868,21 +14869,21 @@ class ZVA_gen(Instrument):
                         _cmd = "SELect"
                         args = ["'string'"]
 
-                    SELect = SELect()
+                    SELect = SELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:SELect
 
                     Arguments: 'string'
                     """
 
-                USER = USER()
+                USER = USER()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:USER
 
                 Arguments:
                 """
 
-            CKIT = CKIT()
+            CKIT = CKIT()  # type: ignore
             """
             SENSe:CORRection:CKIT
 
@@ -14931,7 +14932,7 @@ class ZVA_gen(Instrument):
                             _cmd = "DEFault"
                             args = ["1", "OFF", "ON"]
 
-                        DEFault = DEFault()
+                        DEFault = DEFault()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:ACQuire:RSAVe:DEFault
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AQUire_SAVE_DEFault>`_
@@ -14939,7 +14940,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    RSAVe = RSAVe()
+                    RSAVe = RSAVe()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:ACQuire:RSAVe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AQUire_SAVE>`_
@@ -14957,14 +14958,14 @@ class ZVA_gen(Instrument):
                         _cmd = "SELected"
                         args = ["ATT", "ISOLation", "LINE", "LINE1", "LINE2", "LINE3", "LINEN", "MATCh", "NET", "OPEN", "OSHort", "OSHORT1", "OSHORT2", "OSHORT3", "REFL", "SHORt", "SLIDe", "THRough", "UTHRough"]
 
-                    SELected = SELected()
+                    SELected = SELected()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:ACQuire:SELected
 
                     Arguments: ATT, ISOLation, LINE, LINE1, LINE2, LINE3, LINEN, MATCh, NET, OPEN, OSHort, OSHORT1, OSHORT2, OSHORT3, REFL, SHORt, SLIDe, THRough, UTHRough
                     """
 
-                ACQuire = ACQuire()
+                ACQuire = ACQuire()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:ACQuire
 
@@ -14990,7 +14991,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ASSignment"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -15001,9 +15002,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:ASSignment:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_ASSignment_ACQuire>`_
@@ -15022,7 +15023,7 @@ class ZVA_gen(Instrument):
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        DEFine = DEFine()
+                        DEFine = DEFine()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:ASSignment:DEFine
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_ASSignment_DEFine>`_
@@ -15038,7 +15039,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DELete"
-                            args = []
+                            args = []  # type: List[str]
 
                             class ALL(SCPINode, SCPISet):
                                 """
@@ -15049,9 +15050,9 @@ class ZVA_gen(Instrument):
                                 """
                                 __slots__ = ()
                                 _cmd = "ALL"
-                                args = []
+                                args = []  # type: List[str]
 
-                            ALL = ALL()
+                            ALL = ALL()  # type: ignore
                             """
                             `SENSe:CORRection:COLLect:AUTO:ASSignment:DELete:ALL
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_ASSignment_DELete>`_
@@ -15059,14 +15060,14 @@ class ZVA_gen(Instrument):
                             Arguments:
                             """
 
-                        DELete = DELete()
+                        DELete = DELete()  # type: ignore
                         """
                         SENSe:CORRection:COLLect:AUTO:ASSignment:DELete
 
                         Arguments:
                         """
 
-                    ASSignment = ASSignment()
+                    ASSignment = ASSignment()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:AUTO:ASSignment
 
@@ -15095,7 +15096,7 @@ class ZVA_gen(Instrument):
                             _cmd = "PORTs"
                             args = ["'string'"]
 
-                        PORTs = PORTs()
+                        PORTs = PORTs()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:CKIT:PORTs
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_CKIT_Ports>`_
@@ -15103,7 +15104,7 @@ class ZVA_gen(Instrument):
                         Arguments: 'string'
                         """
 
-                    CKIT = CKIT()
+                    CKIT = CKIT()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:CKIT
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_CKIT>`_
@@ -15122,7 +15123,7 @@ class ZVA_gen(Instrument):
                         _cmd = "CONFigure"
                         args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "RTRans", "SFTPort"]
 
-                    CONFigure = CONFigure()
+                    CONFigure = CONFigure()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:CONFigure
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_CONFigure>`_
@@ -15150,9 +15151,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "CONNection"
-                            args = []
+                            args = []  # type: List[str]
 
-                        CONNection = CONNection()
+                        CONNection = CONNection()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:PORTs:CONNection
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_PORTs_CONNection>`_
@@ -15171,7 +15172,7 @@ class ZVA_gen(Instrument):
                             _cmd = "TYPE"
                             args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "RTRans", "SFTPort"]
 
-                        TYPE = TYPE()
+                        TYPE = TYPE()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:PORTs:TYPE
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_PORTs_TYPE>`_
@@ -15179,7 +15180,7 @@ class ZVA_gen(Instrument):
                         Arguments: FNPort, FOPort, FRTRans, FTRans, OPTPort, RTRans, SFTPort
                         """
 
-                    PORTs = PORTs()
+                    PORTs = PORTs()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:PORTs
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_PORTs>`_
@@ -15198,7 +15199,7 @@ class ZVA_gen(Instrument):
                         _cmd = "RPGRoup"
                         args = ["1", "OFF", "ON"]
 
-                    RPGRoup = RPGRoup()
+                    RPGRoup = RPGRoup()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:RPGRoup
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_RPGRoup>`_
@@ -15215,9 +15216,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SAVE"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SAVE = SAVE()
+                    SAVE = SAVE()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:SAVE
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_SAVE>`_
@@ -15236,7 +15237,7 @@ class ZVA_gen(Instrument):
                         _cmd = "TYPE"
                         args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "RTRans", "SFTPort"]
 
-                    TYPE = TYPE()
+                    TYPE = TYPE()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:TYPE
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_TYPE>`_
@@ -15252,7 +15253,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "VMIXer"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -15265,7 +15266,7 @@ class ZVA_gen(Instrument):
                             _cmd = "ACQuire"
                             args = ["BASE", "MIXer"]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:VMIXer:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO_VMIXer>`_
@@ -15273,14 +15274,14 @@ class ZVA_gen(Instrument):
                         Arguments: BASE, MIXer
                         """
 
-                    VMIXer = VMIXer()
+                    VMIXer = VMIXer()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:AUTO:VMIXer
 
                     Arguments:
                     """
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:AUTO
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#AUTO>`_
@@ -15310,7 +15311,7 @@ class ZVA_gen(Instrument):
                         _cmd = "GENDers"
                         args = ["ALL", "SINGle"]
 
-                    GENDers = GENDers()
+                    GENDers = GENDers()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:CONNection:GENDers
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#CONNection_GENDers>`_
@@ -15329,7 +15330,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PORTs"
                         args = ["ALL", "SINGle"]
 
-                    PORTs = PORTs()
+                    PORTs = PORTs()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:CONNection:PORTs
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#CONNection_PORTs>`_
@@ -15337,7 +15338,7 @@ class ZVA_gen(Instrument):
                     Arguments: ALL, SINGle
                     """
 
-                CONNection = CONNection()
+                CONNection = CONNection()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:CONNection
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#CONNection>`_
@@ -15356,7 +15357,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CSETup"
                     args = ["1", "OFF", "ON"]
 
-                CSETup = CSETup()
+                CSETup = CSETup()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:CSETup
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#CSETup>`_
@@ -15375,7 +15376,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DELete"
                     args = ["ALL", "'string'"]
 
-                DELete = DELete()
+                DELete = DELete()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:DELete
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#DELete>`_
@@ -15394,7 +15395,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DETector"
                     args = ["AVERage", "NORMal"]
 
-                DETector = DETector()
+                DETector = DETector()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:DETector
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#DETector>`_
@@ -15423,7 +15424,7 @@ class ZVA_gen(Instrument):
                         _cmd = "ACQuire"
                         args = ["OPEN", "SHORt"]
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:FIXTure:ACQuire
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#FIXTure_AQUire>`_
@@ -15462,7 +15463,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             `SENSe:CORRection:COLLect:FIXTure:LMParameter:LOSS:STATe
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#FIXTure_LMParameter_LOSS>`_
@@ -15470,7 +15471,7 @@ class ZVA_gen(Instrument):
                             Arguments: 1, OFF, ON
                             """
 
-                        LOSS = LOSS()
+                        LOSS = LOSS()  # type: ignore
                         """
                         SENSe:CORRection:COLLect:FIXTure:LMParameter:LOSS
 
@@ -15488,7 +15489,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:FIXTure:LMParameter:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#FIXTure_LMParameter>`_
@@ -15496,7 +15497,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    LMParameter = LMParameter()
+                    LMParameter = LMParameter()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:FIXTure:LMParameter
 
@@ -15512,9 +15513,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SAVE"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SAVE = SAVE()
+                    SAVE = SAVE()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:FIXTure:SAVE
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#FIXTure_SAVE>`_
@@ -15531,9 +15532,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STARt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:FIXTure:STARt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#FIXTure_STARt>`_
@@ -15541,7 +15542,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                FIXTure = FIXTure()
+                FIXTure = FIXTure()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:FIXTure
 
@@ -15569,7 +15570,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:IMODulation:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#IMODulation>`_
@@ -15577,7 +15578,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                IMODulation = IMODulation()
+                IMODulation = IMODulation()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:IMODulation
 
@@ -15606,7 +15607,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DEFine"
                         args = ["'string'"]
 
-                    DEFine = DEFine()
+                    DEFine = DEFine()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:METHod:DEFine
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#METHod_DEFine>`_
@@ -15614,7 +15615,7 @@ class ZVA_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                METHod = METHod()
+                METHod = METHod()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:METHod
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#METHod>`_
@@ -15643,7 +15644,7 @@ class ZVA_gen(Instrument):
                         _cmd = "ACQuire"
                         args = ["ATTenuator", "RECeiver", "SOURce"]
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:NFIGure:ACQuire
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#NFIGure_STARt>`_
@@ -15660,9 +15661,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "END"
-                        args = []
+                        args = []  # type: List[str]
 
-                    END = END()
+                    END = END()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:NFIGure:END
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#NFIGure_END>`_
@@ -15679,9 +15680,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SAVE"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SAVE = SAVE()
+                    SAVE = SAVE()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:NFIGure:SAVE
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#NFIGure_AQUire>`_
@@ -15700,7 +15701,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:NFIGure:STARt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#NFIGure_SAVE>`_
@@ -15708,7 +15709,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                NFIGure = NFIGure()
+                NFIGure = NFIGure()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:NFIGure
 
@@ -15726,7 +15727,7 @@ class ZVA_gen(Instrument):
                     _cmd = "RPSHift"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "'string'", "UP"]
 
-                RPSHift = RPSHift()
+                RPSHift = RPSHift()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:RPSHift
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#RPSHift>`_
@@ -15743,7 +15744,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SAVE"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEFault(SCPINode, SCPISet):
                         """
@@ -15754,9 +15755,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DEFault"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DEFault = DEFault()
+                    DEFault = DEFault()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:SAVE:DEFault
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#SAVE_DEFault>`_
@@ -15772,9 +15773,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DUMMy"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DUMMy = DUMMy()
+                    DUMMy = DUMMy()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:SAVE:DUMMy
 
@@ -15790,7 +15791,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SELected"
-                        args = []
+                        args = []  # type: List[str]
 
                         class DEFault(SCPINode, SCPISet):
                             """
@@ -15801,9 +15802,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DEFault"
-                            args = []
+                            args = []  # type: List[str]
 
-                        DEFault = DEFault()
+                        DEFault = DEFault()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:SAVE:SELected:DEFault
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#SAVE_SELected_DEFault>`_
@@ -15819,16 +15820,16 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DUMMy"
-                            args = []
+                            args = []  # type: List[str]
 
-                        DUMMy = DUMMy()
+                        DUMMy = DUMMy()  # type: ignore
                         """
                         SENSe:CORRection:COLLect:SAVE:SELected:DUMMy
 
                         Arguments:
                         """
 
-                    SELected = SELected()
+                    SELected = SELected()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:SAVE:SELected
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#SAVE_SELected>`_
@@ -15836,7 +15837,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                SAVE = SAVE()
+                SAVE = SAVE()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:SAVE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#SAVE>`_
@@ -15855,7 +15856,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SCONnection"
                     args = ["'string'"]
 
-                SCONnection = SCONnection()
+                SCONnection = SCONnection()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:SCONnection
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_collect.htm#SCONnection>`_
@@ -15863,7 +15864,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            COLLect = COLLect()
+            COLLect = COLLect()  # type: ignore
             """
             SENSe:CORRection:COLLect
 
@@ -15890,9 +15891,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CATalog"
-                    args = []
+                    args = []  # type: List[str]
 
-                CATalog = CATalog()
+                CATalog = CATalog()  # type: ignore
                 """
                 `SENSe:CORRection:CONNection:CATalog
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#CONNection_CATalog>`_
@@ -15911,7 +15912,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DELete"
                     args = ["'string'"]
 
-                DELete = DELete()
+                DELete = DELete()  # type: ignore
                 """
                 `SENSe:CORRection:CONNection:DELete
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#CONNection_DELete>`_
@@ -15919,7 +15920,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CONNection = CONNection()
+            CONNection = CONNection()  # type: ignore
             """
             `SENSe:CORRection:CONNection
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#CONNection>`_
@@ -15935,7 +15936,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CSET"
-                args = []
+                args = []  # type: List[str]
 
                 class DESCription(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -15947,14 +15948,14 @@ class ZVA_gen(Instrument):
                     _cmd = "DESCription"
                     args = ["'string'"]
 
-                DESCription = DESCription()
+                DESCription = DESCription()  # type: ignore
                 """
                 SENSe:CORRection:CSET:DESCription
 
                 Arguments: 'string'
                 """
 
-            CSET = CSET()
+            CSET = CSET()  # type: ignore
             """
             SENSe:CORRection:CSET
 
@@ -15991,9 +15992,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     `SENSe:CORRection:DATA:PARameter:COUNt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#DATA_PARameter_COUNt>`_
@@ -16001,7 +16002,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                PARameter = PARameter()
+                PARameter = PARameter()  # type: ignore
                 """
                 `SENSe:CORRection:DATA:PARameter
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#DATA_PARameter_>`_
@@ -16009,7 +16010,7 @@ class ZVA_gen(Instrument):
                 Arguments: BANDwidth, PDLY, POINts, PORTs, RATTenuation, RPSHift, SPOWer, STARt, STOP, STYPe, THRoughs, TSTamp, TYPE
                 """
 
-            DATA = DATA()
+            DATA = DATA()  # type: ignore
             """
             SENSe:CORRection:DATA
 
@@ -16025,9 +16026,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DATE"
-                args = []
+                args = []  # type: List[str]
 
-            DATE = DATE()
+            DATE = DATE()  # type: ignore
             """
             `SENSe:CORRection:DATE
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#DATE>`_
@@ -16056,7 +16057,7 @@ class ZVA_gen(Instrument):
                     _cmd = "AUTO"
                     args = ["ONCE"]
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 `SENSe:CORRection:EDELay:AUTO
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#EDELay_AUTO>`_
@@ -16075,7 +16076,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DIELectric"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DIELectric = DIELectric()
+                DIELectric = DIELectric()  # type: ignore
                 """
                 `SENSe:CORRection:EDELay:DIELectric
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#EDELay_DIELectric>`_
@@ -16094,7 +16095,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DISTance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DISTance = DISTance()
+                DISTance = DISTance()  # type: ignore
                 """
                 `SENSe:CORRection:EDELay:DISTance
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#EDELay_DISTance>`_
@@ -16113,7 +16114,7 @@ class ZVA_gen(Instrument):
                     _cmd = "ELENgth"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                ELENgth = ELENgth()
+                ELENgth = ELENgth()  # type: ignore
                 """
                 `SENSe:CORRection:EDELay:ELENgth
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#EDELay_ELENgth>`_
@@ -16132,7 +16133,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                TIME = TIME()
+                TIME = TIME()  # type: ignore
                 """
                 `SENSe:CORRection:EDELay:TIME
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#EDELay_TIME>`_
@@ -16140,7 +16141,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            EDELay = EDELay()
+            EDELay = EDELay()  # type: ignore
             """
             SENSe:CORRection:EDELay
 
@@ -16168,7 +16169,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:CORRection:EWAVe:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#EWAVe>`_
@@ -16176,7 +16177,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            EWAVe = EWAVe()
+            EWAVe = EWAVe()  # type: ignore
             """
             SENSe:CORRection:EWAVe
 
@@ -16204,7 +16205,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:CORRection:FACTory:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#FACTory_STATe>`_
@@ -16212,7 +16213,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            FACTory = FACTory()
+            FACTory = FACTory()  # type: ignore
             """
             SENSe:CORRection:FACTory
 
@@ -16241,7 +16242,7 @@ class ZVA_gen(Instrument):
                     _cmd = "AUTO"
                     args = ["ONCE"]
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 `SENSe:CORRection:LOSS:AUTO
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#LOSS_AUTO>`_
@@ -16260,7 +16261,7 @@ class ZVA_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 `SENSe:CORRection:LOSS:FREQuency
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#LOSS_FREQuency>`_
@@ -16279,7 +16280,7 @@ class ZVA_gen(Instrument):
                     _cmd = "OFFSet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                OFFSet = OFFSet()
+                OFFSet = OFFSet()  # type: ignore
                 """
                 `SENSe:CORRection:LOSS:OFFSet
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#LOSS_OFFSet>`_
@@ -16287,7 +16288,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            LOSS = LOSS()
+            LOSS = LOSS()  # type: ignore
             """
             `SENSe:CORRection:LOSS
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#LOSS>`_
@@ -16316,7 +16317,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:CORRection:NFIGure:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#NFIGure_STATe>`_
@@ -16324,7 +16325,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            NFIGure = NFIGure()
+            NFIGure = NFIGure()  # type: ignore
             """
             SENSe:CORRection:NFIGure
 
@@ -16339,9 +16340,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NSTate"
-                args = []
+                args = []  # type: List[str]
 
-            NSTate = NSTate()
+            NSTate = NSTate()  # type: ignore
             """
             SENSe:CORRection:NSTate
 
@@ -16379,7 +16380,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:CORRection:OFFSet:DFComp:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#OFFset_DFComp_STATe>`_
@@ -16387,7 +16388,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                DFComp = DFComp()
+                DFComp = DFComp()  # type: ignore
                 """
                 SENSe:CORRection:OFFSet:DFComp
 
@@ -16405,7 +16406,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MAGNitude"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                MAGNitude = MAGNitude()
+                MAGNitude = MAGNitude()  # type: ignore
                 """
                 `SENSe:CORRection:OFFSet:MAGNitude
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#OFFSet_MAGNitude>`_
@@ -16424,7 +16425,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:CORRection:OFFSet:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_data.htm#OFFset_STATe>`_
@@ -16432,7 +16433,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            OFFSet = OFFSet()
+            OFFSet = OFFSet()  # type: ignore
             """
             SENSe:CORRection:OFFSet
 
@@ -16460,7 +16461,7 @@ class ZVA_gen(Instrument):
                     _cmd = "ACQuire"
                     args = ["AWAVe", "B1", "B2", "B3", "B4", "BWAVe"]
 
-                ACQuire = ACQuire()
+                ACQuire = ACQuire()  # type: ignore
                 """
                 `SENSe:CORRection:POWer:ACQuire
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#POWer_ACQuire>`_
@@ -16499,7 +16500,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SENSe:CORRection:POWer:AWAVe:IPMMatch:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#POWer_AWAVe_IPMMatch_STATe>`_
@@ -16507,7 +16508,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    IPMMatch = IPMMatch()
+                    IPMMatch = IPMMatch()  # type: ignore
                     """
                     SENSe:CORRection:POWer:AWAVe:IPMMatch
 
@@ -16525,7 +16526,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:CORRection:POWer:AWAVe:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#POWer_AWAVe_STATe>`_
@@ -16533,7 +16534,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                AWAVe = AWAVe()
+                AWAVe = AWAVe()  # type: ignore
                 """
                 SENSe:CORRection:POWer:AWAVe
 
@@ -16551,7 +16552,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DATA"
                     args = ["'string'"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `SENSe:CORRection:POWer:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#POWer_DATA>`_
@@ -16567,7 +16568,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HARMonic"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ACQuire(SCPINode, SCPISet):
                         """
@@ -16578,9 +16579,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ACQuire"
-                        args = []
+                        args = []  # type: List[str]
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     `SENSe:CORRection:POWer:HARMonic:ACQuire
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#HARMonic_ACQuire>`_
@@ -16588,7 +16589,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                HARMonic = HARMonic()
+                HARMonic = HARMonic()  # type: ignore
                 """
                 SENSe:CORRection:POWer:HARMonic
 
@@ -16603,7 +16604,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "IMODulation"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ACQuire(SCPINode, SCPISet):
                         """
@@ -16614,9 +16615,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ACQuire"
-                        args = []
+                        args = []  # type: List[str]
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     `SENSe:CORRection:POWer:IMODulation:ACQuire
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#IMODulation_ACQuire>`_
@@ -16632,7 +16633,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "RPORt"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -16643,9 +16644,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SENSe:CORRection:POWer:IMODulation:RPORt:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#IMODulation_RPORt_ACQuire>`_
@@ -16653,14 +16654,14 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    RPORt = RPORt()
+                    RPORt = RPORt()  # type: ignore
                     """
                     SENSe:CORRection:POWer:IMODulation:RPORt
 
                     Arguments:
                     """
 
-                IMODulation = IMODulation()
+                IMODulation = IMODulation()  # type: ignore
                 """
                 SENSe:CORRection:POWer:IMODulation
 
@@ -16675,7 +16676,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MIXer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class IF(SCPINode):
                         """
@@ -16685,7 +16686,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "IF"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -16696,9 +16697,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SENSe:CORRection:POWer:MIXer:IF:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#MIXer_IF_ACQuire>`_
@@ -16714,7 +16715,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "NFIGure"
-                            args = []
+                            args = []  # type: List[str]
 
                             class ACQuire(SCPINode, SCPISet):
                                 """
@@ -16725,9 +16726,9 @@ class ZVA_gen(Instrument):
                                 """
                                 __slots__ = ()
                                 _cmd = "ACQuire"
-                                args = []
+                                args = []  # type: List[str]
 
-                            ACQuire = ACQuire()
+                            ACQuire = ACQuire()  # type: ignore
                             """
                             `SENSe:CORRection:POWer:MIXer:IF:NFIGure:ACQuire
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#MIXer_IF_NFIGure_ACQuire>`_
@@ -16735,21 +16736,21 @@ class ZVA_gen(Instrument):
                             Arguments:
                             """
 
-                        NFIGure = NFIGure()
+                        NFIGure = NFIGure()  # type: ignore
                         """
                         SENSe:CORRection:POWer:MIXer:IF:NFIGure
 
                         Arguments:
                         """
 
-                    IF = IF()
+                    IF = IF()  # type: ignore
                     """
                     SENSe:CORRection:POWer:MIXer:IF
 
                     Arguments:
                     """
 
-                MIXer = MIXer()
+                MIXer = MIXer()  # type: ignore
                 """
                 SENSe:CORRection:POWer:MIXer
 
@@ -16767,7 +16768,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:CORRection:POWer:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#POWer_STATe>`_
@@ -16775,7 +16776,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             SENSe:CORRection:POWer
 
@@ -16791,9 +16792,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PSTate"
-                args = []
+                args = []  # type: List[str]
 
-            PSTate = PSTate()
+            PSTate = PSTate()  # type: ignore
             """
             `SENSe:CORRection:PSTate
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#PSTate>`_
@@ -16810,9 +16811,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SSTate"
-                args = []
+                args = []  # type: List[str]
 
-            SSTate = SSTate()
+            SSTate = SSTate()  # type: ignore
             """
             `SENSe:CORRection:SSTate
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#SSTate>`_
@@ -16831,7 +16832,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SENSe:CORRection:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#STATe>`_
@@ -16848,9 +16849,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STIMulus"
-                args = []
+                args = []  # type: List[str]
 
-            STIMulus = STIMulus()
+            STIMulus = STIMulus()  # type: ignore
             """
             `SENSe:CORRection:STIMulus
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_correction_power.htm#STIMulus>`_
@@ -16858,7 +16859,7 @@ class ZVA_gen(Instrument):
             Arguments:
             """
 
-        CORRection = CORRection()
+        CORRection = CORRection()  # type: ignore
         """
         SENSe:CORRection
 
@@ -16876,7 +16877,7 @@ class ZVA_gen(Instrument):
             _cmd = "COUPle"
             args = ["ALL", "NONE"]
 
-        COUPle = COUPle()
+        COUPle = COUPle()  # type: ignore
         """
         `SENSe:COUPle
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_cmode.htm#COUPle>`_
@@ -16892,7 +16893,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "EUNit"
-            args = []
+            args = []  # type: List[str]
 
             class COMBiner(SCPINodeN, SCPIBool):
                 """
@@ -16915,7 +16916,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:EUNit:COMBiner:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_eunit.htm#COMBiner_STATe>`_
@@ -16923,7 +16924,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            COMBiner = COMBiner()
+            COMBiner = COMBiner()  # type: ignore
             """
             SENSe:EUNit:COMBiner
 
@@ -16951,7 +16952,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:EUNit:HFILter:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_eunit.htm#HFILter_STATe>`_
@@ -16959,7 +16960,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            HFILter = HFILter()
+            HFILter = HFILter()  # type: ignore
             """
             SENSe:EUNit:HFILter
 
@@ -16987,7 +16988,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:EUNit:LNAMplifier:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_eunit.htm#LNAMplifier_STATe>`_
@@ -16995,7 +16996,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            LNAMplifier = LNAMplifier()
+            LNAMplifier = LNAMplifier()  # type: ignore
             """
             SENSe:EUNit:LNAMplifier
 
@@ -17010,7 +17011,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PGENerator"
-                args = []
+                args = []  # type: List[str]
 
                 class ASSignment(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -17023,7 +17024,7 @@ class ZVA_gen(Instrument):
                     _cmd = "ASSignment"
                     args = ["G1M2", "G1M3", "G1Mall", "G2Mall"]
 
-                ASSignment = ASSignment()
+                ASSignment = ASSignment()  # type: ignore
                 """
                 `SENSe:EUNit:PGENerator:ASSignment
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_eunit.htm#PGENerator_ASSignment>`_
@@ -17039,7 +17040,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "INPut"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EXTernal(SCPINode, SCPIBool):
                         """
@@ -17052,7 +17053,7 @@ class ZVA_gen(Instrument):
                         _cmd = "EXTernal"
                         args = ["1", "OFF", "ON"]
 
-                    EXTernal = EXTernal()
+                    EXTernal = EXTernal()  # type: ignore
                     """
                     `SENSe:EUNit:PGENerator:INPut:EXTernal
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_eunit.htm#PGENerator_INPut_EXTernal>`_
@@ -17060,7 +17061,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                INPut = INPut()
+                INPut = INPut()  # type: ignore
                 """
                 SENSe:EUNit:PGENerator:INPut
 
@@ -17075,7 +17076,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "OUTPut"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EXTernal(SCPINode, SCPIBool):
                         """
@@ -17088,7 +17089,7 @@ class ZVA_gen(Instrument):
                         _cmd = "EXTernal"
                         args = ["1", "OFF", "ON"]
 
-                    EXTernal = EXTernal()
+                    EXTernal = EXTernal()  # type: ignore
                     """
                     `SENSe:EUNit:PGENerator:OUTPut:EXTernal
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_eunit.htm#PGENerator_OUTPut_EXTernal>`_
@@ -17096,14 +17097,14 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                OUTPut = OUTPut()
+                OUTPut = OUTPut()  # type: ignore
                 """
                 SENSe:EUNit:PGENerator:OUTPut
 
                 Arguments:
                 """
 
-            PGENerator = PGENerator()
+            PGENerator = PGENerator()  # type: ignore
             """
             SENSe:EUNit:PGENerator
 
@@ -17131,7 +17132,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:EUNit:PMODulator:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_eunit.htm#PMODulator_STATe>`_
@@ -17139,14 +17140,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            PMODulator = PMODulator()
+            PMODulator = PMODulator()  # type: ignore
             """
             SENSe:EUNit:PMODulator
 
             Arguments: 1, OFF, ON
             """
 
-        EUNit = EUNit()
+        EUNit = EUNit()  # type: ignore
         """
         SENSe:EUNit
 
@@ -17174,7 +17175,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CENTer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            CENTer = CENTer()
+            CENTer = CENTer()  # type: ignore
             """
             `SENSe:FREQuency:CENTer
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CENTer>`_
@@ -17215,7 +17216,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PMETer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PMETer = PMETer()
+                    PMETer = PMETer()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:ARBitrary:PMETer
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_ARBitrary_PMETer>`_
@@ -17223,7 +17224,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                ARBitrary = ARBitrary()
+                ARBitrary = ARBitrary()  # type: ignore
                 """
                 `SENSe:FREQuency:CONVersion:ARBitrary
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_ARBitrary>`_
@@ -17252,7 +17253,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:AWReceiver:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_AWReceiver__STATe>`_
@@ -17260,7 +17261,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                AWReceiver = AWReceiver()
+                AWReceiver = AWReceiver()  # type: ignore
                 """
                 SENSe:FREQuency:CONVersion:AWReceiver
 
@@ -17275,7 +17276,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DEVice"
-                    args = []
+                    args = []  # type: List[str]
 
                     class MODE(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -17288,7 +17289,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MODE"
                         args = ["RELE", "RILE", "RILI", "RILI4", "RILI56"]
 
-                    MODE = MODE()
+                    MODE = MODE()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:DEVice:MODE
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_DEVice_MODE>`_
@@ -17307,7 +17308,7 @@ class ZVA_gen(Instrument):
                         _cmd = "NAME"
                         args = ["'string'"]
 
-                    NAME = NAME()
+                    NAME = NAME()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:DEVice:NAME
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_DEVice_NAME>`_
@@ -17337,7 +17338,7 @@ class ZVA_gen(Instrument):
                             _cmd = "DEFault"
                             args = ["1", "OFF", "ON"]
 
-                        DEFault = DEFault()
+                        DEFault = DEFault()  # type: ignore
                         """
                         `SENSe:FREQuency:CONVersion:DEVice:PCOefficient:DEFault
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_DEVice_PCOefficient_DEFault>`_
@@ -17345,7 +17346,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    PCOefficient = PCOefficient()
+                    PCOefficient = PCOefficient()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:DEVice:PCOefficient
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_DEVice_PCOefficient>`_
@@ -17353,7 +17354,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                DEVice = DEVice()
+                DEVice = DEVice()  # type: ignore
                 """
                 SENSe:FREQuency:CONVersion:DEVice
 
@@ -17368,7 +17369,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "GAIN"
-                    args = []
+                    args = []  # type: List[str]
 
                     class LMCorrection(SCPINode, SCPIBool):
                         """
@@ -17381,7 +17382,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LMCorrection"
                         args = ["1", "OFF", "ON"]
 
-                    LMCorrection = LMCorrection()
+                    LMCorrection = LMCorrection()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:GAIN:LMCorrection
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_GAIN_LMCorrection>`_
@@ -17389,7 +17390,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                GAIN = GAIN()
+                GAIN = GAIN()  # type: ignore
                 """
                 SENSe:FREQuency:CONVersion:GAIN
 
@@ -17404,7 +17405,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HARMonic"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ORDer(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -17417,7 +17418,7 @@ class ZVA_gen(Instrument):
                         _cmd = "ORDer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    ORDer = ORDer()
+                    ORDer = ORDer()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:HARMonic:ORDer
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_HARMonic_ORDer>`_
@@ -17436,7 +17437,7 @@ class ZVA_gen(Instrument):
                         _cmd = "RELative"
                         args = ["1", "OFF", "ON"]
 
-                    RELative = RELative()
+                    RELative = RELative()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:HARMonic:RELative
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_HARMonic_RELative>`_
@@ -17455,7 +17456,7 @@ class ZVA_gen(Instrument):
                         _cmd = "RPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RPORt = RPORt()
+                    RPORt = RPORt()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:HARMonic:RPORt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_HARMonic_RPORt>`_
@@ -17474,7 +17475,7 @@ class ZVA_gen(Instrument):
                         _cmd = "SPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    SPORt = SPORt()
+                    SPORt = SPORt()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:HARMonic:SPORt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion_HARMonic_SPORt>`_
@@ -17482,7 +17483,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                HARMonic = HARMonic()
+                HARMonic = HARMonic()  # type: ignore
                 """
                 SENSe:FREQuency:CONVersion:HARMonic
 
@@ -17497,7 +17498,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MIXer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class AEXTernal(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -17510,7 +17511,7 @@ class ZVA_gen(Instrument):
                         _cmd = "AEXTernal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "UP"]
 
-                    AEXTernal = AEXTernal()
+                    AEXTernal = AEXTernal()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:AEXTernal
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#AEXTernal>`_
@@ -17529,7 +17530,7 @@ class ZVA_gen(Instrument):
                         _cmd = "AINTernal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "UP"]
 
-                    AINTernal = AINTernal()
+                    AINTernal = AINTernal()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:AINTernal
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#AINTernal>`_
@@ -17548,7 +17549,7 @@ class ZVA_gen(Instrument):
                         _cmd = "APORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    APORt = APORt()
+                    APORt = APORt()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:APORt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#APORt>`_
@@ -17567,7 +17568,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FFIXed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    FFIXed = FFIXed()
+                    FFIXed = FFIXed()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:FFIXed
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#FFIXed>`_
@@ -17586,7 +17587,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FIXed"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
-                    FIXed = FIXed()
+                    FIXed = FIXed()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:FIXed
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#FIXed>`_
@@ -17605,7 +17606,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FUNDamental"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
-                    FUNDamental = FUNDamental()
+                    FUNDamental = FUNDamental()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:FUNDamental
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#FUNDamental>`_
@@ -17624,7 +17625,7 @@ class ZVA_gen(Instrument):
                         _cmd = "HACCuracy"
                         args = ["1", "OFF", "ON"]
 
-                    HACCuracy = HACCuracy()
+                    HACCuracy = HACCuracy()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:HACCuracy
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#HACCuracy>`_
@@ -17643,7 +17644,7 @@ class ZVA_gen(Instrument):
                         _cmd = "IFFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    IFFixed = IFFixed()
+                    IFFixed = IFFixed()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:IFFixed
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#IFFixed>`_
@@ -17662,7 +17663,7 @@ class ZVA_gen(Instrument):
                         _cmd = "IFPort"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    IFPort = IFPort()
+                    IFPort = IFPort()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:IFPort
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#IFSource>`_
@@ -17681,7 +17682,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LOEXternal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "SOURCE1", "SOURCE2", "UP"]
 
-                    LOEXternal = LOEXternal()
+                    LOEXternal = LOEXternal()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:LOEXternal
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#LOEXternal>`_
@@ -17700,7 +17701,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LOFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    LOFixed = LOFixed()
+                    LOFixed = LOFixed()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:LOFixed
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#LOFixed>`_
@@ -17719,7 +17720,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LOINternal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "UP"]
 
-                    LOINternal = LOINternal()
+                    LOINternal = LOINternal()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:LOINternal
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#LOINternal>`_
@@ -17738,7 +17739,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LOMultiplier"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    LOMultiplier = LOMultiplier()
+                    LOMultiplier = LOMultiplier()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:LOMultiplier
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#LOMultiplier>`_
@@ -17757,7 +17758,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LOPort"
                         args = ["EMBedded", "GENerator", "NONE", "PORT"]
 
-                    LOPort = LOPort()
+                    LOPort = LOPort()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:LOPort
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#LOPort>`_
@@ -17776,7 +17777,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MFFixed"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
-                    MFFixed = MFFixed()
+                    MFFixed = MFFixed()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:MFFixed
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#MFFixed>`_
@@ -17795,7 +17796,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PRFimage"
                         args = ["1", "OFF", "ON"]
 
-                    PRFimage = PRFimage()
+                    PRFimage = PRFimage()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:PRFimage
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#PRFimage>`_
@@ -17814,7 +17815,7 @@ class ZVA_gen(Instrument):
                         _cmd = "RFFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RFFixed = RFFixed()
+                    RFFixed = RFFixed()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:RFFixed
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#RFFixed>`_
@@ -17833,7 +17834,7 @@ class ZVA_gen(Instrument):
                         _cmd = "RFMultiplier"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RFMultiplier = RFMultiplier()
+                    RFMultiplier = RFMultiplier()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:RFMultiplier
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#RFMultiplier>`_
@@ -17852,7 +17853,7 @@ class ZVA_gen(Instrument):
                         _cmd = "RFPort"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RFPort = RFPort()
+                    RFPort = RFPort()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:RFPort
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#RFSource>`_
@@ -17871,7 +17872,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STAGes"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STAGes = STAGes()
+                    STAGes = STAGes()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:STAGes
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#STAGes>`_
@@ -17890,7 +17891,7 @@ class ZVA_gen(Instrument):
                         _cmd = "TFRequency"
                         args = ["BAND1", "BAND2", "DCLower", "DCUPper", "UCONversion"]
 
-                    TFRequency = TFRequency()
+                    TFRequency = TFRequency()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:TFRequency
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_conversion_mixer.htm#TFRequency>`_
@@ -17898,14 +17899,14 @@ class ZVA_gen(Instrument):
                     Arguments: BAND1, BAND2, DCLower, DCUPper, UCONversion
                     """
 
-                MIXer = MIXer()
+                MIXer = MIXer()  # type: ignore
                 """
                 SENSe:FREQuency:CONVersion:MIXer
 
                 Arguments:
                 """
 
-            CONVersion = CONVersion()
+            CONVersion = CONVersion()  # type: ignore
             """
             `SENSe:FREQuency:CONVersion
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency.htm#CONVersion>`_
@@ -17924,7 +17925,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CW"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            CW = CW()
+            CW = CW()  # type: ignore
             """
             `SENSe:FREQuency:CW
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_cw.htm#CW>`_
@@ -17943,7 +17944,7 @@ class ZVA_gen(Instrument):
                 _cmd = "FIXed"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            FIXed = FIXed()
+            FIXed = FIXed()  # type: ignore
             """
             `SENSe:FREQuency:FIXed
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_cw.htm#CW>`_
@@ -17959,7 +17960,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMODulation"
-                args = []
+                args = []  # type: List[str]
 
                 class COMBiner(SCPINode, SCPIBool):
                     """
@@ -17982,7 +17983,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:FREQuency:IMODulation:COMBiner:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_imodulation.htm#COMBiner_STATe>`_
@@ -17990,7 +17991,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                COMBiner = COMBiner()
+                COMBiner = COMBiner()  # type: ignore
                 """
                 SENSe:FREQuency:IMODulation:COMBiner
 
@@ -18008,7 +18009,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CONVersion"
                     args = ["OFF"]
 
-                CONVersion = CONVersion()
+                CONVersion = CONVersion()  # type: ignore
                 """
                 `SENSe:FREQuency:IMODulation:CONVersion
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_imodulation.htm#CONVersion>`_
@@ -18027,7 +18028,7 @@ class ZVA_gen(Instrument):
                     _cmd = "LTONe"
                     args = ["GENerator", "NONE", "PORT"]
 
-                LTONe = LTONe()
+                LTONe = LTONe()  # type: ignore
                 """
                 `SENSe:FREQuency:IMODulation:LTONe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_imodulation.htm#LTONe>`_
@@ -18056,7 +18057,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:FREQuency:IMODulation:ORDer:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_imodulation.htm#ORDer>`_
@@ -18064,7 +18065,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                ORDer = ORDer()
+                ORDer = ORDer()  # type: ignore
                 """
                 SENSe:FREQuency:IMODulation:ORDer
 
@@ -18092,7 +18093,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:FREQuency:IMODulation:PEWCorr:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_imodulation.htm#PEWCorr>`_
@@ -18100,7 +18101,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                PEWCorr = PEWCorr()
+                PEWCorr = PEWCorr()  # type: ignore
                 """
                 SENSe:FREQuency:IMODulation:PEWCorr
 
@@ -18118,7 +18119,7 @@ class ZVA_gen(Instrument):
                     _cmd = "RECeiver"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                RECeiver = RECeiver()
+                RECeiver = RECeiver()  # type: ignore
                 """
                 `SENSe:FREQuency:IMODulation:RECeiver
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_imodulation.htm#RECeiver>`_
@@ -18147,7 +18148,7 @@ class ZVA_gen(Instrument):
                         _cmd = "MORDer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    MORDer = MORDer()
+                    MORDer = MORDer()  # type: ignore
                     """
                     `SENSe:FREQuency:IMODulation:SPECtrum:MORDer
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_imodulation.htm#SPECtrum_MORDer>`_
@@ -18166,7 +18167,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:FREQuency:IMODulation:SPECtrum:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_imodulation.htm#SPECtrum_STATe>`_
@@ -18174,7 +18175,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                SPECtrum = SPECtrum()
+                SPECtrum = SPECtrum()  # type: ignore
                 """
                 SENSe:FREQuency:IMODulation:SPECtrum
 
@@ -18192,7 +18193,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TDIStance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                TDIStance = TDIStance()
+                TDIStance = TDIStance()  # type: ignore
                 """
                 `SENSe:FREQuency:IMODulation:TDIStance
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_imodulation.htm#TDISTance>`_
@@ -18211,7 +18212,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TTOutput"
                     args = ["EDEVice", "PORT"]
 
-                TTOutput = TTOutput()
+                TTOutput = TTOutput()  # type: ignore
                 """
                 `SENSe:FREQuency:IMODulation:TTOutput
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_imodulation.htm#TTOutput>`_
@@ -18230,7 +18231,7 @@ class ZVA_gen(Instrument):
                     _cmd = "UTONe"
                     args = ["GENerator", "NONE", "PORT"]
 
-                UTONe = UTONe()
+                UTONe = UTONe()  # type: ignore
                 """
                 `SENSe:FREQuency:IMODulation:UTONe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_imodulation.htm#UTONe>`_
@@ -18238,7 +18239,7 @@ class ZVA_gen(Instrument):
                 Arguments: GENerator, NONE, PORT
                 """
 
-            IMODulation = IMODulation()
+            IMODulation = IMODulation()  # type: ignore
             """
             SENSe:FREQuency:IMODulation
 
@@ -18256,7 +18257,7 @@ class ZVA_gen(Instrument):
                 _cmd = "LPNoise"
                 args = ["1", "OFF", "ON"]
 
-            LPNoise = LPNoise()
+            LPNoise = LPNoise()  # type: ignore
             """
             `SENSe:FREQuency:LPNoise
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_cw.htm#LPNoise>`_
@@ -18272,7 +18273,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MDELay"
-                args = []
+                args = []  # type: List[str]
 
                 class ACQuire(SCPINode, SCPISet):
                     """
@@ -18283,9 +18284,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ACQuire"
-                    args = []
+                    args = []  # type: List[str]
 
-                ACQuire = ACQuire()
+                ACQuire = ACQuire()  # type: ignore
                 """
                 `SENSe:FREQuency:MDELay:ACQuire
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_mdelay.htm#ACQuire>`_
@@ -18304,7 +18305,7 @@ class ZVA_gen(Instrument):
                     _cmd = "APERture"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                APERture = APERture()
+                APERture = APERture()  # type: ignore
                 """
                 `SENSe:FREQuency:MDELay:APERture
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_mdelay.htm#APERture>`_
@@ -18323,7 +18324,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CDELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                CDELay = CDELay()
+                CDELay = CDELay()  # type: ignore
                 """
                 `SENSe:FREQuency:MDELay:CDELay
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_mdelay.htm#CDELay>`_
@@ -18342,7 +18343,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CDMode"
                     args = ["1", "OFF", "ON"]
 
-                CDMode = CDMode()
+                CDMode = CDMode()  # type: ignore
                 """
                 `SENSe:FREQuency:MDELay:CDMode
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_mdelay.htm#CDMode>`_
@@ -18371,7 +18372,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:FREQuency:MDELay:COMBiner:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_mdelay.htm#COMBiner_STATe>`_
@@ -18379,7 +18380,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                COMBiner = COMBiner()
+                COMBiner = COMBiner()  # type: ignore
                 """
                 SENSe:FREQuency:MDELay:COMBiner
 
@@ -18397,7 +18398,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CONVersion"
                     args = ["OFF"]
 
-                CONVersion = CONVersion()
+                CONVersion = CONVersion()  # type: ignore
                 """
                 `SENSe:FREQuency:MDELay:CONVersion
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_mdelay.htm#CONVersion>`_
@@ -18426,7 +18427,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:FREQuency:MDELay:CORRection:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_mdelay.htm#CORRection_STATe>`_
@@ -18434,7 +18435,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                CORRection = CORRection()
+                CORRection = CORRection()  # type: ignore
                 """
                 SENSe:FREQuency:MDELay:CORRection
 
@@ -18452,7 +18453,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DIVide"
                     args = ["1", "OFF", "ON"]
 
-                DIVide = DIVide()
+                DIVide = DIVide()  # type: ignore
                 """
                 `SENSe:FREQuency:MDELay:DIVide
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_mdelay.htm#DIVide>`_
@@ -18482,7 +18483,7 @@ class ZVA_gen(Instrument):
                         _cmd = "USE"
                         args = ["LAN1", "LAN2"]
 
-                    USE = USE()
+                    USE = USE()  # type: ignore
                     """
                     `SENSe:FREQuency:MDELay:RECeiver:USE
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_mdelay.htm#RECeiver_USE>`_
@@ -18490,7 +18491,7 @@ class ZVA_gen(Instrument):
                     Arguments: LAN1, LAN2
                     """
 
-                RECeiver = RECeiver()
+                RECeiver = RECeiver()  # type: ignore
                 """
                 `SENSe:FREQuency:MDELay:RECeiver
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_mdelay.htm#RECeiver>`_
@@ -18509,7 +18510,7 @@ class ZVA_gen(Instrument):
                     _cmd = "UTONe"
                     args = ["GENerator", "NONE", "PORT"]
 
-                UTONe = UTONe()
+                UTONe = UTONe()  # type: ignore
                 """
                 `SENSe:FREQuency:MDELay:UTONe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_mdelay.htm#UTONe>`_
@@ -18517,7 +18518,7 @@ class ZVA_gen(Instrument):
                 Arguments: GENerator, NONE, PORT
                 """
 
-            MDELay = MDELay()
+            MDELay = MDELay()  # type: ignore
             """
             SENSe:FREQuency:MDELay
 
@@ -18535,7 +18536,7 @@ class ZVA_gen(Instrument):
                 _cmd = "MODE"
                 args = ["CW", "FIXed", "SEGMent", "SWEEp"]
 
-            MODE = MODE()
+            MODE = MODE()  # type: ignore
             """
             `SENSe:FREQuency:MODE
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_cw.htm#MODE>`_
@@ -18551,7 +18552,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "OFFSet"
-                args = []
+                args = []  # type: List[str]
 
                 class PWAVes(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -18564,7 +18565,7 @@ class ZVA_gen(Instrument):
                     _cmd = "PWAVes"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                PWAVes = PWAVes()
+                PWAVes = PWAVes()  # type: ignore
                 """
                 `SENSe:FREQuency:OFFSet:PWAVes
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_cw.htm#OFFSet_PWAVes>`_
@@ -18583,7 +18584,7 @@ class ZVA_gen(Instrument):
                     _cmd = "WAVes"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                WAVes = WAVes()
+                WAVes = WAVes()  # type: ignore
                 """
                 `SENSe:FREQuency:OFFSet:WAVes
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_cw.htm#OFFSet_WAVes>`_
@@ -18591,7 +18592,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            OFFSet = OFFSet()
+            OFFSet = OFFSet()  # type: ignore
             """
             SENSe:FREQuency:OFFSet
 
@@ -18609,7 +18610,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SBANd"
                 args = ["AUTO", "NEGative", "POSitive"]
 
-            SBANd = SBANd()
+            SBANd = SBANd()  # type: ignore
             """
             `SENSe:FREQuency:SBANd
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_cw.htm#SBANd>`_
@@ -18628,7 +18629,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SPAN"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SPAN = SPAN()
+            SPAN = SPAN()  # type: ignore
             """
             `SENSe:FREQuency:SPAN
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_cw.htm#SPAN>`_
@@ -18647,7 +18648,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STARt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             `SENSe:FREQuency:STARt
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_cw.htm#STARt>`_
@@ -18666,7 +18667,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STOP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            STOP = STOP()
+            STOP = STOP()  # type: ignore
             """
             `SENSe:FREQuency:STOP
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_frequency_cw.htm#STOP>`_
@@ -18674,7 +18675,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         SENSe:FREQuency
 
@@ -18702,7 +18703,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ON"
                 args = ["'XFRequency:POWer:A1'", "'XFRequency:POWer:B1'", "'XFRequency:POWer:KFACtor'", "'XFRequency:POWer:MUFactor1'", "'XFRequency:POWer:RATio'", "'XFRequency:POWer:S1'", "'XFRequency:POWer:S1:DUMMy'", "'XFRequency:POWer:Y1'", "'XFRequency:POWer:Z1'", "'XFRequency:VOLTage'", "'XFRequency:VOLTage:DC'", "'XPOWer:POWer:A1'", "'XPOWer:POWer:B1'", "'XPOWer:POWer:RATio'", "'XPOWer:POWer:S1'", "'XPOWer:POWer:S1:DUMMy'", "'XPOWer:POWer:Y1'", "'XPOWer:POWer:Z1'", "'XPOWer:VOLTage'", "'XPOWer:VOLTage:DC'", "'XTIMe:POWer:A1'", "'XTIMe:POWer:B1'", "'XTIMe:POWer:KFACtor'", "'XTIMe:POWer:MUFactor1'", "'XTIMe:POWer:RATio'", "'XTIMe:POWer:S1'", "'XTIMe:POWer:S1:DUMMy'", "'XTIMe:POWer:Y1'", "'XTIMe:POWer:Z1'", "'XTIMe:VOLTage'", "'XTIMe:VOLTage:DC'"]
 
-            ON = ON()
+            ON = ON()  # type: ignore
             """
             `SENSe:FUNCtion:ON
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_function.htm#FUNCtion>`_
@@ -18710,7 +18711,7 @@ class ZVA_gen(Instrument):
             Arguments: 'XFRequency:POWer:A1', 'XFRequency:POWer:B1', 'XFRequency:POWer:KFACtor', 'XFRequency:POWer:MUFactor1', 'XFRequency:POWer:RATio', 'XFRequency:POWer:S1', 'XFRequency:POWer:S1:DUMMy', 'XFRequency:POWer:Y1', 'XFRequency:POWer:Z1', 'XFRequency:VOLTage', 'XFRequency:VOLTage:DC', 'XPOWer:POWer:A1', 'XPOWer:POWer:B1', 'XPOWer:POWer:RATio', 'XPOWer:POWer:S1', 'XPOWer:POWer:S1:DUMMy', 'XPOWer:POWer:Y1', 'XPOWer:POWer:Z1', 'XPOWer:VOLTage', 'XPOWer:VOLTage:DC', 'XTIMe:POWer:A1', 'XTIMe:POWer:B1', 'XTIMe:POWer:KFACtor', 'XTIMe:POWer:MUFactor1', 'XTIMe:POWer:RATio', 'XTIMe:POWer:S1', 'XTIMe:POWer:S1:DUMMy', 'XTIMe:POWer:Y1', 'XTIMe:POWer:Z1', 'XTIMe:VOLTage', 'XTIMe:VOLTage:DC'
             """
 
-        FUNCtion = FUNCtion()
+        FUNCtion = FUNCtion()  # type: ignore
         """
         SENSe:FUNCtion
 
@@ -18725,7 +18726,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IFRequency"
-            args = []
+            args = []  # type: List[str]
 
             class CONVersion(SCPINode):
                 """
@@ -18735,7 +18736,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONVersion"
-                args = []
+                args = []  # type: List[str]
 
                 class ARBitrary(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -18747,21 +18748,21 @@ class ZVA_gen(Instrument):
                     _cmd = "ARBitrary"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                ARBitrary = ARBitrary()
+                ARBitrary = ARBitrary()  # type: ignore
                 """
                 SENSe:IFRequency:CONVersion:ARBitrary
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            CONVersion = CONVersion()
+            CONVersion = CONVersion()  # type: ignore
             """
             SENSe:IFRequency:CONVersion
 
             Arguments:
             """
 
-        IFRequency = IFRequency()
+        IFRequency = IFRequency()  # type: ignore
         """
         SENSe:IFRequency
 
@@ -18789,7 +18790,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SENSe:LOMeasure:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_lomeasure.htm#LOMeasure>`_
@@ -18797,7 +18798,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        LOMeasure = LOMeasure()
+        LOMeasure = LOMeasure()  # type: ignore
         """
         SENSe:LOMeasure
 
@@ -18825,7 +18826,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SENSe:LOReference:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_lomeasure.htm#LOReference>`_
@@ -18833,7 +18834,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        LOReference = LOReference()
+        LOReference = LOReference()  # type: ignore
         """
         SENSe:LOReference
 
@@ -18848,7 +18849,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LPORt"
-            args = []
+            args = []  # type: List[str]
 
             class ZCOMmon(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -18861,7 +18862,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ZCOMmon"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            ZCOMmon = ZCOMmon()
+            ZCOMmon = ZCOMmon()  # type: ignore
             """
             `SENSe:LPORt:ZCOMmon
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_lport.htm#ZCOMmon>`_
@@ -18880,7 +18881,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ZDIFferent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            ZDIFferent = ZDIFferent()
+            ZDIFferent = ZDIFferent()  # type: ignore
             """
             `SENSe:LPORt:ZDIFferent
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_lport.htm#ZDIFferent>`_
@@ -18888,7 +18889,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        LPORt = LPORt()
+        LPORt = LPORt()  # type: ignore
         """
         SENSe:LPORt
 
@@ -18903,7 +18904,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "NFIGure"
-            args = []
+            args = []  # type: List[str]
 
             class ISNoise(SCPINode, SCPIBool):
                 """
@@ -18916,7 +18917,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ISNoise"
                 args = ["1", "OFF", "ON"]
 
-            ISNoise = ISNoise()
+            ISNoise = ISNoise()  # type: ignore
             """
             `SENSe:NFIGure:ISNoise
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_nfigure.htm#ISNoise>`_
@@ -18935,7 +18936,7 @@ class ZVA_gen(Instrument):
                 _cmd = "NDUT"
                 args = ["1", "OFF", "ON"]
 
-            NDUT = NDUT()
+            NDUT = NDUT()  # type: ignore
             """
             `SENSe:NFIGure:NDUT
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_nfigure.htm#NDUT>`_
@@ -18954,7 +18955,7 @@ class ZVA_gen(Instrument):
                 _cmd = "RFICorr"
                 args = ["1", "OFF", "ON"]
 
-            RFICorr = RFICorr()
+            RFICorr = RFICorr()  # type: ignore
             """
             `SENSe:NFIGure:RFICorr
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_nfigure.htm#RFICorr>`_
@@ -18973,7 +18974,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SEQuential"
                 args = ["1", "OFF", "ON"]
 
-            SEQuential = SEQuential()
+            SEQuential = SEQuential()  # type: ignore
             """
             `SENSe:NFIGure:SEQuential
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_nfigure.htm#SEQuential>`_
@@ -18981,7 +18982,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        NFIGure = NFIGure()
+        NFIGure = NFIGure()  # type: ignore
         """
         SENSe:NFIGure
 
@@ -18996,7 +18997,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PAE"
-            args = []
+            args = []  # type: List[str]
 
             class C(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -19009,7 +19010,7 @@ class ZVA_gen(Instrument):
                 _cmd = "C"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            C = C()
+            C = C()  # type: ignore
             """
             `SENSe:PAE:C
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pae.htm#C>`_
@@ -19028,7 +19029,7 @@ class ZVA_gen(Instrument):
                 _cmd = "EXPRession"
                 args = ["C1", "C10", "CK11", "K101"]
 
-            EXPRession = EXPRession()
+            EXPRession = EXPRession()  # type: ignore
             """
             `SENSe:PAE:EXPRession
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pae.htm#EXPRession>`_
@@ -19047,7 +19048,7 @@ class ZVA_gen(Instrument):
                 _cmd = "K"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            K = K()
+            K = K()  # type: ignore
             """
             `SENSe:PAE:K
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pae.htm#K>`_
@@ -19055,7 +19056,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        PAE = PAE()
+        PAE = PAE()  # type: ignore
         """
         SENSe:PAE
 
@@ -19073,7 +19074,7 @@ class ZVA_gen(Instrument):
             _cmd = "PMMO"
             args = ["1", "OFF", "ON"]
 
-        PMMO = PMMO()
+        PMMO = PMMO()  # type: ignore
         """
         `SENSe:PMMO
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pmmo.htm#PMMO>`_
@@ -19089,7 +19090,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PORT"
-            args = []
+            args = []  # type: List[str]
 
             class ZREFerence(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -19102,7 +19103,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ZREFerence"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            ZREFerence = ZREFerence()
+            ZREFerence = ZREFerence()  # type: ignore
             """
             `SENSe:PORT:ZREFerence
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_port.htm#ZREFerence>`_
@@ -19110,7 +19111,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        PORT = PORT()
+        PORT = PORT()  # type: ignore
         """
         SENSe:PORT
 
@@ -19125,7 +19126,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "POWer"
-            args = []
+            args = []  # type: List[str]
 
             class ATTenuation(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -19138,7 +19139,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ATTenuation"
                 args = ["1", "ARECeiver", "BRECeiver", "CRECeiver", "DEFault", "DOWN", "DRECeiver", "MAXimum", "MINimum", "UP"]
 
-            ATTenuation = ATTenuation()
+            ATTenuation = ATTenuation()  # type: ignore
             """
             `SENSe:POWer:ATTenuation
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_power.htm#ATTenuation>`_
@@ -19154,7 +19155,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IFGain"
-                args = []
+                args = []  # type: List[str]
 
                 class MEASure(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -19167,7 +19168,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MEASure"
                     args = ["AUTO", "LDIStortion", "LNOise"]
 
-                MEASure = MEASure()
+                MEASure = MEASure()  # type: ignore
                 """
                 `SENSe:POWer:IFGain:MEASure
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_power.htm#IFGain_MEASure>`_
@@ -19186,7 +19187,7 @@ class ZVA_gen(Instrument):
                     _cmd = "REFerence"
                     args = ["AUTO", "LDIStortion", "LNOise"]
 
-                REFerence = REFerence()
+                REFerence = REFerence()  # type: ignore
                 """
                 `SENSe:POWer:IFGain:REFerence
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_power.htm#IFGain_REFerence>`_
@@ -19194,14 +19195,14 @@ class ZVA_gen(Instrument):
                 Arguments: AUTO, LDIStortion, LNOise
                 """
 
-            IFGain = IFGain()
+            IFGain = IFGain()  # type: ignore
             """
             SENSe:POWer:IFGain
 
             Arguments:
             """
 
-        POWer = POWer()
+        POWer = POWer()  # type: ignore
         """
         SENSe:POWer
 
@@ -19216,7 +19217,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PULSe"
-            args = []
+            args = []  # type: List[str]
 
             class COUPled(SCPINode, SCPIBool):
                 """
@@ -19239,7 +19240,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:PULSe:COUPled:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#COUPled_STATe>`_
@@ -19247,7 +19248,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            COUPled = COUPled()
+            COUPled = COUPled()  # type: ignore
             """
             SENSe:PULSe:COUPled
 
@@ -19275,7 +19276,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CPPRofile"
                     args = ["1", "OFF", "ON"]
 
-                CPPRofile = CPPRofile()
+                CPPRofile = CPPRofile()  # type: ignore
                 """
                 `SENSe:PULSe:GENerator:CPPRofile
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#CPPRofile>`_
@@ -19294,7 +19295,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DELay = DELay()
+                DELay = DELay()  # type: ignore
                 """
                 `SENSe:PULSe:GENerator:DELay
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#DELay>`_
@@ -19313,7 +19314,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DINCrement"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DINCrement = DINCrement()
+                DINCrement = DINCrement()  # type: ignore
                 """
                 `SENSe:PULSe:GENerator:DINCrement
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#DINCrement>`_
@@ -19332,7 +19333,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MCHannel"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                MCHannel = MCHannel()
+                MCHannel = MCHannel()  # type: ignore
                 """
                 `SENSe:PULSe:GENerator:MCHannel
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#MCHannel>`_
@@ -19351,7 +19352,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MODE"
                     args = ["CONTinuous", "CSPecific"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `SENSe:PULSe:GENerator:MODE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#MODE>`_
@@ -19370,7 +19371,7 @@ class ZVA_gen(Instrument):
                     _cmd = "PERiod"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                PERiod = PERiod()
+                PERiod = PERiod()  # type: ignore
                 """
                 `SENSe:PULSe:GENerator:PERiod
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#PERiod>`_
@@ -19389,7 +19390,7 @@ class ZVA_gen(Instrument):
                     _cmd = "POLarity"
                     args = ["INVerted", "NORMal"]
 
-                POLarity = POLarity()
+                POLarity = POLarity()  # type: ignore
                 """
                 `SENSe:PULSe:GENerator:POLarity
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#POLarity>`_
@@ -19408,7 +19409,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:PULSe:GENerator:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#STATe>`_
@@ -19424,7 +19425,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TRAin"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DATA(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -19437,7 +19438,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DATA"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    DATA = DATA()
+                    DATA = DATA()  # type: ignore
                     """
                     `SENSe:PULSe:GENerator:TRAin:DATA
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#TRAin_DATA>`_
@@ -19453,7 +19454,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DELete"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ALL(SCPINode, SCPISet):
                             """
@@ -19464,9 +19465,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ALL"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ALL = ALL()
+                        ALL = ALL()  # type: ignore
                         """
                         `SENSe:PULSe:GENerator:TRAin:DELete:ALL
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#TRAin_DELete_ALL>`_
@@ -19474,7 +19475,7 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    DELete = DELete()
+                    DELete = DELete()  # type: ignore
                     """
                     SENSe:PULSe:GENerator:TRAin:DELete
 
@@ -19492,7 +19493,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PERiod"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PERiod = PERiod()
+                    PERiod = PERiod()  # type: ignore
                     """
                     `SENSe:PULSe:GENerator:TRAin:PERiod
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#TRAIn_PERiod>`_
@@ -19519,9 +19520,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "COUNt"
-                            args = []
+                            args = []  # type: List[str]
 
-                        COUNt = COUNt()
+                        COUNt = COUNt()  # type: ignore
                         """
                         `SENSe:PULSe:GENerator:TRAin:SEGMent:COUNt
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#TRAin_SEGMent_COUNt>`_
@@ -19540,7 +19541,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STARt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        STARt = STARt()
+                        STARt = STARt()  # type: ignore
                         """
                         `SENSe:PULSe:GENerator:TRAin:SEGMent:STARt
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#TRAin_SEGment_STATe>`_
@@ -19559,7 +19560,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SENSe:PULSe:GENerator:TRAin:SEGMent:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#TRAin_SEGment_STIMulus_STOP>`_
@@ -19578,7 +19579,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STOP"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        STOP = STOP()
+                        STOP = STOP()  # type: ignore
                         """
                         `SENSe:PULSe:GENerator:TRAin:SEGMent:STOP
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#TRAin_SEGMent_STIMulus_STARt>`_
@@ -19586,14 +19587,14 @@ class ZVA_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    SEGMent = SEGMent()
+                    SEGMent = SEGMent()  # type: ignore
                     """
                     SENSe:PULSe:GENerator:TRAin:SEGMent
 
                     Arguments: 1, OFF, ON
                     """
 
-                TRAin = TRAin()
+                TRAin = TRAin()  # type: ignore
                 """
                 SENSe:PULSe:GENerator:TRAin
 
@@ -19611,7 +19612,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TYPE"
                     args = ["CHIGh", "CLOW", "SINGle", "TRAin"]
 
-                TYPE = TYPE()
+                TYPE = TYPE()  # type: ignore
                 """
                 `SENSe:PULSe:GENerator:TYPE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#TYPE>`_
@@ -19630,7 +19631,7 @@ class ZVA_gen(Instrument):
                     _cmd = "WIDTh"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                WIDTh = WIDTh()
+                WIDTh = WIDTh()  # type: ignore
                 """
                 `SENSe:PULSe:GENerator:WIDTh
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse_generator.htm#WIDTh>`_
@@ -19638,7 +19639,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            GENerator = GENerator()
+            GENerator = GENerator()  # type: ignore
             """
             SENSe:PULSe:GENerator
 
@@ -19653,7 +19654,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RECeiver"
-                args = []
+                args = []  # type: List[str]
 
                 class A(SCPINodeN):
                     """
@@ -19663,7 +19664,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "A"
-                    args = []
+                    args = []  # type: List[str]
 
                     class GENerator(SCPINodeN):
                         """
@@ -19673,7 +19674,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "GENerator"
-                        args = []
+                        args = []  # type: List[str]
 
                         class EVALuation(SCPINode):
                             """
@@ -19683,7 +19684,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "EVALuation"
-                            args = []
+                            args = []  # type: List[str]
 
                             class MODE(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -19696,7 +19697,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "MODE"
                                 args = ["MEAN", "NORMal"]
 
-                            MODE = MODE()
+                            MODE = MODE()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:A:GENerator:EVALuation:MODE
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_A_rec_no__GENerator_gen_no__EVALuation_MODE>`_
@@ -19715,7 +19716,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STARt"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            STARt = STARt()
+                            STARt = STARt()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:A:GENerator:EVALuation:STARt
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_A_rec_no__GENerator_gen_no__EVALuation_STARt>`_
@@ -19734,7 +19735,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STOP"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            STOP = STOP()
+                            STOP = STOP()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:A:GENerator:EVALuation:STOP
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_A_rec_no__GENerator_gen_no__EVALuation_STOP>`_
@@ -19742,7 +19743,7 @@ class ZVA_gen(Instrument):
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        EVALuation = EVALuation()
+                        EVALuation = EVALuation()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:A:GENerator:EVALuation
 
@@ -19770,7 +19771,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:A:GENerator:LINes:STATe
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_A_rec_no__GENerator_gen_no__LINEs_STATe>`_
@@ -19778,7 +19779,7 @@ class ZVA_gen(Instrument):
                             Arguments: 1, OFF, ON
                             """
 
-                        LINes = LINes()
+                        LINes = LINes()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:A:GENerator:LINes
 
@@ -19793,7 +19794,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "TRIGger"
-                            args = []
+                            args = []  # type: List[str]
 
                             class DELay(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -19806,7 +19807,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "DELay"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            DELay = DELay()
+                            DELay = DELay()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:A:GENerator:TRIGger:DELay
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_A_rec_no__GENerator_gen_no__TRIGger_DELay>`_
@@ -19814,14 +19815,14 @@ class ZVA_gen(Instrument):
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        TRIGger = TRIGger()
+                        TRIGger = TRIGger()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:A:GENerator:TRIGger
 
                         Arguments:
                         """
 
-                    GENerator = GENerator()
+                    GENerator = GENerator()  # type: ignore
                     """
                     SENSe:PULSe:RECeiver:A:GENerator
 
@@ -19836,7 +19837,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SRCPort"
-                        args = []
+                        args = []  # type: List[str]
 
                         class EVALuation(SCPINode):
                             """
@@ -19846,7 +19847,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "EVALuation"
-                            args = []
+                            args = []  # type: List[str]
 
                             class MODE(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -19859,7 +19860,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "MODE"
                                 args = ["MEAN", "NORMal"]
 
-                            MODE = MODE()
+                            MODE = MODE()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:A:SRCPort:EVALuation:MODE
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_A_rec_no__SRCPort_port_no__EVALuation_MODE>`_
@@ -19878,7 +19879,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STARt"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            STARt = STARt()
+                            STARt = STARt()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:A:SRCPort:EVALuation:STARt
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_A_rec_no__SRCPort_port_no__EVALuation_STARt>`_
@@ -19897,7 +19898,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STOP"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            STOP = STOP()
+                            STOP = STOP()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:A:SRCPort:EVALuation:STOP
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_A_rec_no__SRCPort_port_no__EVALuation_STOP>`_
@@ -19905,7 +19906,7 @@ class ZVA_gen(Instrument):
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        EVALuation = EVALuation()
+                        EVALuation = EVALuation()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:A:SRCPort:EVALuation
 
@@ -19933,7 +19934,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:A:SRCPort:LINes:STATe
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_A_rec_no__SRCPort_port_no__LINEs_STATe>`_
@@ -19941,7 +19942,7 @@ class ZVA_gen(Instrument):
                             Arguments: 1, OFF, ON
                             """
 
-                        LINes = LINes()
+                        LINes = LINes()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:A:SRCPort:LINes
 
@@ -19956,7 +19957,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "TRIGger"
-                            args = []
+                            args = []  # type: List[str]
 
                             class DELay(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -19969,7 +19970,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "DELay"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            DELay = DELay()
+                            DELay = DELay()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:A:SRCPort:TRIGger:DELay
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_A_rec_no__SRCPort_port_no__TRIGger_DELay>`_
@@ -19977,21 +19978,21 @@ class ZVA_gen(Instrument):
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        TRIGger = TRIGger()
+                        TRIGger = TRIGger()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:A:SRCPort:TRIGger
 
                         Arguments:
                         """
 
-                    SRCPort = SRCPort()
+                    SRCPort = SRCPort()  # type: ignore
                     """
                     SENSe:PULSe:RECeiver:A:SRCPort
 
                     Arguments:
                     """
 
-                A = A()
+                A = A()  # type: ignore
                 """
                 SENSe:PULSe:RECeiver:A
 
@@ -20006,7 +20007,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "B"
-                    args = []
+                    args = []  # type: List[str]
 
                     class GENerator(SCPINodeN):
                         """
@@ -20016,7 +20017,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "GENerator"
-                        args = []
+                        args = []  # type: List[str]
 
                         class EVALuation(SCPINode):
                             """
@@ -20026,7 +20027,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "EVALuation"
-                            args = []
+                            args = []  # type: List[str]
 
                             class MODE(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -20039,7 +20040,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "MODE"
                                 args = ["MEAN", "NORMal"]
 
-                            MODE = MODE()
+                            MODE = MODE()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:B:GENerator:EVALuation:MODE
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_B_rec_no__GENerator_gen_no__EVALuation_MODE>`_
@@ -20058,7 +20059,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STARt"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            STARt = STARt()
+                            STARt = STARt()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:B:GENerator:EVALuation:STARt
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_B_rec_no__GENerator_gen_no__EVALuation_STARt>`_
@@ -20077,7 +20078,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STOP"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            STOP = STOP()
+                            STOP = STOP()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:B:GENerator:EVALuation:STOP
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_B_rec_no__GENerator_gen_no__EVALuation_STOP>`_
@@ -20085,7 +20086,7 @@ class ZVA_gen(Instrument):
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        EVALuation = EVALuation()
+                        EVALuation = EVALuation()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:B:GENerator:EVALuation
 
@@ -20113,7 +20114,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:B:GENerator:LINes:STATe
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_B_rec_no__GENerator_gen_no__LINEs_STATe>`_
@@ -20121,7 +20122,7 @@ class ZVA_gen(Instrument):
                             Arguments: 1, OFF, ON
                             """
 
-                        LINes = LINes()
+                        LINes = LINes()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:B:GENerator:LINes
 
@@ -20136,7 +20137,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "TRIGger"
-                            args = []
+                            args = []  # type: List[str]
 
                             class DELay(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -20149,7 +20150,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "DELay"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            DELay = DELay()
+                            DELay = DELay()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:B:GENerator:TRIGger:DELay
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_B_rec_no__GENerator_gen_no__TRIGger_DELay>`_
@@ -20157,14 +20158,14 @@ class ZVA_gen(Instrument):
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        TRIGger = TRIGger()
+                        TRIGger = TRIGger()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:B:GENerator:TRIGger
 
                         Arguments:
                         """
 
-                    GENerator = GENerator()
+                    GENerator = GENerator()  # type: ignore
                     """
                     SENSe:PULSe:RECeiver:B:GENerator
 
@@ -20179,7 +20180,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SRCPort"
-                        args = []
+                        args = []  # type: List[str]
 
                         class EVALuation(SCPINode):
                             """
@@ -20189,7 +20190,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "EVALuation"
-                            args = []
+                            args = []  # type: List[str]
 
                             class MODE(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -20202,7 +20203,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "MODE"
                                 args = ["MEAN", "NORMal"]
 
-                            MODE = MODE()
+                            MODE = MODE()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:B:SRCPort:EVALuation:MODE
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_B_rec_no__SRCPort_port_no__EVALuation_MODE>`_
@@ -20221,7 +20222,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STARt"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            STARt = STARt()
+                            STARt = STARt()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:B:SRCPort:EVALuation:STARt
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_B_rec_no__SRCPort_port_no__EVALuation_STARt>`_
@@ -20240,7 +20241,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STOP"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            STOP = STOP()
+                            STOP = STOP()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:B:SRCPort:EVALuation:STOP
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_B_rec_no__SRCPort_port_no__EVALuation_STOP>`_
@@ -20248,7 +20249,7 @@ class ZVA_gen(Instrument):
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        EVALuation = EVALuation()
+                        EVALuation = EVALuation()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:B:SRCPort:EVALuation
 
@@ -20276,7 +20277,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:B:SRCPort:LINes:STATe
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_B_rec_no__SRCPort_port_no__LINEs_STATe>`_
@@ -20284,7 +20285,7 @@ class ZVA_gen(Instrument):
                             Arguments: 1, OFF, ON
                             """
 
-                        LINes = LINes()
+                        LINes = LINes()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:B:SRCPort:LINes
 
@@ -20299,7 +20300,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "TRIGger"
-                            args = []
+                            args = []  # type: List[str]
 
                             class DELay(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -20312,7 +20313,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "DELay"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            DELay = DELay()
+                            DELay = DELay()  # type: ignore
                             """
                             `SENSe:PULSe:RECeiver:B:SRCPort:TRIGger:DELay
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#RECeiver_B_rec_no__SRCPort_port_no__TRIGger_DELay>`_
@@ -20320,28 +20321,28 @@ class ZVA_gen(Instrument):
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        TRIGger = TRIGger()
+                        TRIGger = TRIGger()  # type: ignore
                         """
                         SENSe:PULSe:RECeiver:B:SRCPort:TRIGger
 
                         Arguments:
                         """
 
-                    SRCPort = SRCPort()
+                    SRCPort = SRCPort()  # type: ignore
                     """
                     SENSe:PULSe:RECeiver:B:SRCPort
 
                     Arguments:
                     """
 
-                B = B()
+                B = B()  # type: ignore
                 """
                 SENSe:PULSe:RECeiver:B
 
                 Arguments:
                 """
 
-            RECeiver = RECeiver()
+            RECeiver = RECeiver()  # type: ignore
             """
             SENSe:PULSe:RECeiver
 
@@ -20356,7 +20357,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TIME"
-                args = []
+                args = []  # type: List[str]
 
                 class BWIDth(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -20379,7 +20380,7 @@ class ZVA_gen(Instrument):
                         _cmd = "RESolution"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RESolution = RESolution()
+                    RESolution = RESolution()  # type: ignore
                     """
                     `SENSe:PULSe:TIME:BWIDth:RESolution
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#TIME_BWIDth>`_
@@ -20387,7 +20388,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                BWIDth = BWIDth()
+                BWIDth = BWIDth()  # type: ignore
                 """
                 SENSe:PULSe:TIME:BWIDth
 
@@ -20405,7 +20406,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STARt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                STARt = STARt()
+                STARt = STARt()  # type: ignore
                 """
                 `SENSe:PULSe:TIME:STARt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#TIME_STARt>`_
@@ -20424,7 +20425,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                STOP = STOP()
+                STOP = STOP()  # type: ignore
                 """
                 `SENSe:PULSe:TIME:STOP
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_pulse.htm#TIME_STOP>`_
@@ -20432,14 +20433,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             SENSe:PULSe:TIME
 
             Arguments:
             """
 
-        PULSe = PULSe()
+        PULSe = PULSe()  # type: ignore
         """
         SENSe:PULSe
 
@@ -20464,7 +20465,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -20477,7 +20478,7 @@ class ZVA_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 `SENSe:ROSCillator:EXTernal:FREQuency
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_roscillator.htm#EXTernal_FREQuency>`_
@@ -20485,7 +20486,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            EXTernal = EXTernal()
+            EXTernal = EXTernal()  # type: ignore
             """
             SENSe:ROSCillator:EXTernal
 
@@ -20503,7 +20504,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["EXTernal", "INTernal"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `SENSe:ROSCillator:SOURce
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_roscillator.htm#SOURce>`_
@@ -20511,7 +20512,7 @@ class ZVA_gen(Instrument):
             Arguments: EXTernal, INTernal
             """
 
-        ROSCillator = ROSCillator()
+        ROSCillator = ROSCillator()  # type: ignore
         """
         SENSe:ROSCillator
 
@@ -20537,9 +20538,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ADD"
-                args = []
+                args = []  # type: List[str]
 
-            ADD = ADD()
+            ADD = ADD()  # type: ignore
             """
             `SENSe:SEGMent:ADD
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#ADD>`_
@@ -20579,7 +20580,7 @@ class ZVA_gen(Instrument):
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
-                    CONTrol = CONTrol()
+                    CONTrol = CONTrol()  # type: ignore
                     """
                     `SENSe:SEGMent:BWIDth:RESolution:CONTrol
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#BWIDth_CONTrol>`_
@@ -20609,7 +20610,7 @@ class ZVA_gen(Instrument):
                             _cmd = "CONTrol"
                             args = ["1", "OFF", "ON"]
 
-                        CONTrol = CONTrol()
+                        CONTrol = CONTrol()  # type: ignore
                         """
                         `SENSe:SEGMent:BWIDth:RESolution:SELect:CONTrol
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#BWIDth_SELect_CONTrol>`_
@@ -20617,7 +20618,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    SELect = SELect()
+                    SELect = SELect()  # type: ignore
                     """
                     `SENSe:SEGMent:BWIDth:RESolution:SELect
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#BWIDth_SELect>`_
@@ -20625,7 +20626,7 @@ class ZVA_gen(Instrument):
                     Arguments: HIGH, NORMal
                     """
 
-                RESolution = RESolution()
+                RESolution = RESolution()  # type: ignore
                 """
                 `SENSe:SEGMent:BWIDth:RESolution
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#BWIDth>`_
@@ -20633,7 +20634,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            BWIDth = BWIDth()
+            BWIDth = BWIDth()  # type: ignore
             """
             SENSe:SEGMent:BWIDth
 
@@ -20649,9 +20650,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CLEar"
-                args = []
+                args = []  # type: List[str]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             `SENSe:SEGMent:CLEar
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#CLEAr>`_
@@ -20668,9 +20669,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COUNt"
-                args = []
+                args = []  # type: List[str]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `SENSe:SEGMent:COUNt
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#COUNt>`_
@@ -20700,7 +20701,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SELect"
                     args = ["DWELl", "SWTime"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `SENSe:SEGMent:DEFine:SELect
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#DEFine_SELect>`_
@@ -20708,7 +20709,7 @@ class ZVA_gen(Instrument):
                 Arguments: DWELl, SWTime
                 """
 
-            DEFine = DEFine()
+            DEFine = DEFine()  # type: ignore
             """
             `SENSe:SEGMent:DEFine
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#DEFine>`_
@@ -20725,7 +20726,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DELete"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPISet):
                     """
@@ -20736,9 +20737,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `SENSe:SEGMent:DELete:ALL
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#DELete_ALL>`_
@@ -20754,16 +20755,16 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DUMMy"
-                    args = []
+                    args = []  # type: List[str]
 
-                DUMMy = DUMMy()
+                DUMMy = DUMMy()  # type: ignore
                 """
                 SENSe:SEGMent:DELete:DUMMy
 
                 Arguments:
                 """
 
-            DELete = DELete()
+            DELete = DELete()  # type: ignore
             """
             `SENSe:SEGMent:DELete
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#DELete>`_
@@ -20779,7 +20780,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FREQuency"
-                args = []
+                args = []  # type: List[str]
 
                 class CENTer(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -20792,7 +20793,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CENTer"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                CENTer = CENTer()
+                CENTer = CENTer()  # type: ignore
                 """
                 `SENSe:SEGMent:FREQuency:CENTer
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#CENTer>`_
@@ -20811,7 +20812,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SPAN"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SPAN = SPAN()
+                SPAN = SPAN()  # type: ignore
                 """
                 `SENSe:SEGMent:FREQuency:SPAN
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#SPAN>`_
@@ -20830,7 +20831,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STARt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                STARt = STARt()
+                STARt = STARt()  # type: ignore
                 """
                 `SENSe:SEGMent:FREQuency:STARt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#STARt>`_
@@ -20849,7 +20850,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                STOP = STOP()
+                STOP = STOP()  # type: ignore
                 """
                 `SENSe:SEGMent:FREQuency:STOP
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#STOP>`_
@@ -20857,7 +20858,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             SENSe:SEGMent:FREQuency
 
@@ -20886,7 +20887,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SELect"
                     args = ["DWELl", "SWTime"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `SENSe:SEGMent:INSert:SELect
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#OVERlap>`_
@@ -20894,7 +20895,7 @@ class ZVA_gen(Instrument):
                 Arguments: DWELl, SWTime
                 """
 
-            INSert = INSert()
+            INSert = INSert()  # type: ignore
             """
             `SENSe:SEGMent:INSert
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#INSert>`_
@@ -20913,7 +20914,7 @@ class ZVA_gen(Instrument):
                 _cmd = "NAME"
                 args = ["'string'"]
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `SENSe:SEGMent:NAME
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#NAME>`_
@@ -20932,7 +20933,7 @@ class ZVA_gen(Instrument):
                 _cmd = "OVERlap"
                 args = ["1", "OFF", "ON"]
 
-            OVERlap = OVERlap()
+            OVERlap = OVERlap()  # type: ignore
             """
             `SENSe:SEGMent:OVERlap
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#OVERlap>`_
@@ -20972,7 +20973,7 @@ class ZVA_gen(Instrument):
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
-                    CONTrol = CONTrol()
+                    CONTrol = CONTrol()  # type: ignore
                     """
                     `SENSe:SEGMent:POWer:LEVel:CONTrol
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#POWer_CONTrol>`_
@@ -20980,7 +20981,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                LEVel = LEVel()
+                LEVel = LEVel()  # type: ignore
                 """
                 `SENSe:SEGMent:POWer:LEVel
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#POWer>`_
@@ -20988,7 +20989,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             SENSe:SEGMent:POWer
 
@@ -21017,7 +21018,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CONTrol"
                     args = ["1", "OFF", "ON"]
 
-                CONTrol = CONTrol()
+                CONTrol = CONTrol()  # type: ignore
                 """
                 `SENSe:SEGMent:SBANd:CONTrol
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#SBANd_CONTrol>`_
@@ -21025,7 +21026,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            SBANd = SBANd()
+            SBANd = SBANd()  # type: ignore
             """
             `SENSe:SEGMent:SBANd
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#SBANd>`_
@@ -21044,7 +21045,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SENSe:SEGMent:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#STATe>`_
@@ -21060,7 +21061,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SWEep"
-                args = []
+                args = []  # type: List[str]
 
                 class DWELl(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -21084,7 +21085,7 @@ class ZVA_gen(Instrument):
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
-                    CONTrol = CONTrol()
+                    CONTrol = CONTrol()  # type: ignore
                     """
                     `SENSe:SEGMent:SWEep:DWELl:CONTrol
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#DWELl_CONTrol>`_
@@ -21092,7 +21093,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                DWELl = DWELl()
+                DWELl = DWELl()  # type: ignore
                 """
                 `SENSe:SEGMent:SWEep:DWELl
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#DWELl>`_
@@ -21111,7 +21112,7 @@ class ZVA_gen(Instrument):
                     _cmd = "POINts"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                POINts = POINts()
+                POINts = POINts()  # type: ignore
                 """
                 `SENSe:SEGMent:SWEep:POINts
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#POINts>`_
@@ -21141,7 +21142,7 @@ class ZVA_gen(Instrument):
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
-                    CONTrol = CONTrol()
+                    CONTrol = CONTrol()  # type: ignore
                     """
                     `SENSe:SEGMent:SWEep:TIME:CONTrol
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#TIME_CONTrol>`_
@@ -21158,9 +21159,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SUM"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SUM = SUM()
+                    SUM = SUM()  # type: ignore
                     """
                     `SENSe:SEGMent:SWEep:TIME:SUM
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#TIME_SUM>`_
@@ -21168,7 +21169,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                TIME = TIME()
+                TIME = TIME()  # type: ignore
                 """
                 `SENSe:SEGMent:SWEep:TIME
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#TIME>`_
@@ -21176,7 +21177,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            SWEep = SWEep()
+            SWEep = SWEep()  # type: ignore
             """
             SENSe:SEGMent:SWEep
 
@@ -21204,7 +21205,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CONTrol"
                     args = ["1", "OFF", "ON"]
 
-                CONTrol = CONTrol()
+                CONTrol = CONTrol()  # type: ignore
                 """
                 `SENSe:SEGMent:TRIGger:CONTrol
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#TRIGger_CONTrol>`_
@@ -21223,7 +21224,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:SEGMent:TRIGger:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_segment.htm#TRIGger_STATe>`_
@@ -21231,14 +21232,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            TRIGger = TRIGger()
+            TRIGger = TRIGger()  # type: ignore
             """
             SENSe:SEGMent:TRIGger
 
             Arguments: 1, OFF, ON
             """
 
-        SEGMent = SEGMent()
+        SEGMent = SEGMent()  # type: ignore
         """
         SENSe:SEGMent
 
@@ -21253,7 +21254,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SWEep"
-            args = []
+            args = []  # type: List[str]
 
             class AXIS(SCPINode):
                 """
@@ -21263,7 +21264,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AXIS"
-                args = []
+                args = []  # type: List[str]
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -21276,7 +21277,7 @@ class ZVA_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["'string'"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 `SENSe:SWEep:AXIS:FREQuency
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___sweep.htm#AXIS_FREQuency>`_
@@ -21295,7 +21296,7 @@ class ZVA_gen(Instrument):
                     _cmd = "POWer"
                     args = ["'string'"]
 
-                POWer = POWer()
+                POWer = POWer()  # type: ignore
                 """
                 `SENSe:SWEep:AXIS:POWer
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___sweep.htm#AXIS_POWer>`_
@@ -21303,7 +21304,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            AXIS = AXIS()
+            AXIS = AXIS()  # type: ignore
             """
             SENSe:SWEep:AXIS
 
@@ -21320,7 +21321,7 @@ class ZVA_gen(Instrument):
                 _cmd = "COUNt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             SENSe:SWEep:COUNt
 
@@ -21335,7 +21336,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DETector"
-                args = []
+                args = []  # type: List[str]
 
                 class TIME(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -21348,7 +21349,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                TIME = TIME()
+                TIME = TIME()  # type: ignore
                 """
                 `SENSe:SWEep:DETector:TIME
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___sweep.htm#DETector_TIME>`_
@@ -21356,7 +21357,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            DETector = DETector()
+            DETector = DETector()  # type: ignore
             """
             SENSe:SWEep:DETector
 
@@ -21374,7 +21375,7 @@ class ZVA_gen(Instrument):
                 _cmd = "DWELl"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            DWELl = DWELl()
+            DWELl = DWELl()  # type: ignore
             """
             `SENSe:SWEep:DWELl
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___sweep.htm#Dwell>`_
@@ -21392,7 +21393,7 @@ class ZVA_gen(Instrument):
                 _cmd = "GENeration"
                 args = ["ANALog", "STEPped"]
 
-            GENeration = GENeration()
+            GENeration = GENeration()  # type: ignore
             """
             SENSe:SWEep:GENeration
 
@@ -21409,7 +21410,7 @@ class ZVA_gen(Instrument):
                 _cmd = "MODE"
                 args = ["CONTinuous", "HOLD"]
 
-            MODE = MODE()
+            MODE = MODE()  # type: ignore
             """
             SENSe:SWEep:MODE
 
@@ -21427,7 +21428,7 @@ class ZVA_gen(Instrument):
                 _cmd = "POINts"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            POINts = POINts()
+            POINts = POINts()  # type: ignore
             """
             `SENSe:SWEep:POINts
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___sweep.htm>`_
@@ -21446,7 +21447,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SPACing"
                 args = ["LINear", "LOGarithmic"]
 
-            SPACing = SPACing()
+            SPACing = SPACing()  # type: ignore
             """
             `SENSe:SWEep:SPACing
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___sweep.htm#SPACing>`_
@@ -21465,7 +21466,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SRCPort"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SRCPort = SRCPort()
+            SRCPort = SRCPort()  # type: ignore
             """
             `SENSe:SWEep:SRCPort
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___sweep.htm#SRCPort>`_
@@ -21484,7 +21485,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STEP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             `SENSe:SWEep:STEP
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___sweep.htm#STEP>`_
@@ -21514,7 +21515,7 @@ class ZVA_gen(Instrument):
                     _cmd = "AUTO"
                     args = ["1", "OFF", "ON"]
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 `SENSe:SWEep:TIME:AUTO
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___sweep.htm#TIME_Auto>`_
@@ -21522,7 +21523,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             `SENSe:SWEep:TIME
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___sweep.htm#Time>`_
@@ -21541,7 +21542,7 @@ class ZVA_gen(Instrument):
                 _cmd = "TYPE"
                 args = ["CW", "IAMPlitude", "IPHase", "LINear", "LOGarithmic", "POINt", "POWer", "PULSe", "SEGMent"]
 
-            TYPE = TYPE()
+            TYPE = TYPE()  # type: ignore
             """
             `SENSe:SWEep:TYPE
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_ch___sweep.htm#TYPE>`_
@@ -21549,7 +21550,7 @@ class ZVA_gen(Instrument):
             Arguments: CW, IAMPlitude, IPHase, LINear, LOGarithmic, POINt, POWer, PULSe, SEGMent
             """
 
-        SWEep = SWEep()
+        SWEep = SWEep()  # type: ignore
         """
         SENSe:SWEep
 
@@ -21564,7 +21565,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TEUNit"
-            args = []
+            args = []  # type: List[str]
 
             class AMONitor(SCPINodeN, SCPIQuery, SCPISet):
                 """
@@ -21577,7 +21578,7 @@ class ZVA_gen(Instrument):
                 _cmd = "AMONitor"
                 args = ["COMBiner", "OUTPut", "PMODulator"]
 
-            AMONitor = AMONitor()
+            AMONitor = AMONitor()  # type: ignore
             """
             `SENSe:TEUNit:AMONitor
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_teunit.htm#AMONitor>`_
@@ -21606,7 +21607,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:TEUNit:COMBiner:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_teunit.htm#COMBiner_STATe>`_
@@ -21614,7 +21615,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            COMBiner = COMBiner()
+            COMBiner = COMBiner()  # type: ignore
             """
             SENSe:TEUNit:COMBiner
 
@@ -21642,7 +21643,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:TEUNit:LNAMplifier:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_teunit.htm#LNAMplifier_STATe>`_
@@ -21650,7 +21651,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            LNAMplifier = LNAMplifier()
+            LNAMplifier = LNAMplifier()  # type: ignore
             """
             SENSe:TEUNit:LNAMplifier
 
@@ -21678,7 +21679,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:TEUNit:PAMPlifier:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_teunit.htm#PAMPlifier_STATe>`_
@@ -21686,7 +21687,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            PAMPlifier = PAMPlifier()
+            PAMPlifier = PAMPlifier()  # type: ignore
             """
             SENSe:TEUNit:PAMPlifier
 
@@ -21714,7 +21715,7 @@ class ZVA_gen(Instrument):
                     _cmd = "INVert"
                     args = ["1", "OFF", "ON"]
 
-                INVert = INVert()
+                INVert = INVert()  # type: ignore
                 """
                 `SENSe:TEUNit:PMODulator:INVert
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_teunit.htm#PMODulator_INVert>`_
@@ -21733,7 +21734,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SOURce"
                     args = ["G1EXt", "G1INt", "G2EXt", "G2INt", "OFF"]
 
-                SOURce = SOURce()
+                SOURce = SOURce()  # type: ignore
                 """
                 `SENSe:TEUNit:PMODulator:SOURce
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_teunit.htm#PMODulator_SOURce>`_
@@ -21752,7 +21753,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:TEUNit:PMODulator:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_teunit.htm#PMODulator_STATe>`_
@@ -21760,7 +21761,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            PMODulator = PMODulator()
+            PMODulator = PMODulator()  # type: ignore
             """
             SENSe:TEUNit:PMODulator
 
@@ -21775,7 +21776,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "REAR"
-                args = []
+                args = []  # type: List[str]
 
                 class INVert(SCPINode, SCPIBool):
                     """
@@ -21788,7 +21789,7 @@ class ZVA_gen(Instrument):
                     _cmd = "INVert"
                     args = ["1", "OFF", "ON"]
 
-                INVert = INVert()
+                INVert = INVert()  # type: ignore
                 """
                 `SENSe:TEUNit:REAR:INVert
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_teunit.htm#REAR_INVert>`_
@@ -21807,7 +21808,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SOURce"
                     args = ["G1EXt", "G1INt", "G2EXt", "G2INt", "OFF"]
 
-                SOURce = SOURce()
+                SOURce = SOURce()  # type: ignore
                 """
                 `SENSe:TEUNit:REAR:SOURce
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_teunit.htm#REAR_SOURce>`_
@@ -21815,7 +21816,7 @@ class ZVA_gen(Instrument):
                 Arguments: G1EXt, G1INt, G2EXt, G2INt, OFF
                 """
 
-            REAR = REAR()
+            REAR = REAR()  # type: ignore
             """
             SENSe:TEUNit:REAR
 
@@ -21843,7 +21844,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:TEUNit:UMEas:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_teunit.htm#UMEas_STATe>`_
@@ -21851,7 +21852,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            UMEas = UMEas()
+            UMEas = UMEas()  # type: ignore
             """
             SENSe:TEUNit:UMEas
 
@@ -21879,7 +21880,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:TEUNit:USOurce:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_teunit.htm#USOurce_STATe>`_
@@ -21887,14 +21888,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            USOurce = USOurce()
+            USOurce = USOurce()  # type: ignore
             """
             SENSe:TEUNit:USOurce
 
             Arguments: 1, OFF, ON
             """
 
-        TEUNit = TEUNit()
+        TEUNit = TEUNit()  # type: ignore
         """
         SENSe:TEUNit
 
@@ -21909,7 +21910,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "UDSParams"
-            args = []
+            args = []  # type: List[str]
 
             class ACTive(SCPINode, SCPIBool):
                 """
@@ -21922,7 +21923,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ACTive"
                 args = ["1", "OFF", "ON"]
 
-            ACTive = ACTive()
+            ACTive = ACTive()  # type: ignore
             """
             `SENSe:UDSParams:ACTive
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_udsparams.htm#ACTive>`_
@@ -21941,7 +21942,7 @@ class ZVA_gen(Instrument):
                 _cmd = "PARam"
                 args = ["'string'"]
 
-            PARam = PARam()
+            PARam = PARam()  # type: ignore
             """
             `SENSe:UDSParams:PARam
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/sense/sense_udsparams.htm#PARam>`_
@@ -21949,14 +21950,14 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        UDSParams = UDSParams()
+        UDSParams = UDSParams()  # type: ignore
         """
         SENSe:UDSParams
 
         Arguments:
         """
 
-    SENSe = SENSe()
+    SENSe = SENSe()  # type: ignore
     """
     SENSe
 
@@ -21971,7 +21972,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SOURce"
-        args = []
+        args = []  # type: List[str]
 
         class CMODe(SCPINode):
             """
@@ -21981,7 +21982,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CMODe"
-            args = []
+            args = []  # type: List[str]
 
             class PORT(SCPINodeN, SCPIBool):
                 """
@@ -22003,7 +22004,7 @@ class ZVA_gen(Instrument):
                     _cmd = "AMPLitude"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                AMPLitude = AMPLitude()
+                AMPLitude = AMPLitude()  # type: ignore
                 """
                 SOURce:CMODe:PORT:AMPLitude
 
@@ -22021,7 +22022,7 @@ class ZVA_gen(Instrument):
                     _cmd = "PHASe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                PHASe = PHASe()
+                PHASe = PHASe()  # type: ignore
                 """
                 `SOURce:CMODe:PORT:PHASe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_cmode.htm#PORT_PHASe>`_
@@ -22040,7 +22041,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:CMODe:PORT:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_cmode.htm#PORT_STATe>`_
@@ -22048,7 +22049,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            PORT = PORT()
+            PORT = PORT()  # type: ignore
             """
             SOURce:CMODe:PORT
 
@@ -22066,7 +22067,7 @@ class ZVA_gen(Instrument):
                 _cmd = "RPORt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            RPORt = RPORt()
+            RPORt = RPORt()  # type: ignore
             """
             `SOURce:CMODe:RPORt
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_cmode.htm#REFerence_PORT>`_
@@ -22082,7 +22083,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TOLerance"
-                args = []
+                args = []  # type: List[str]
 
                 class AMPLitude(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -22094,7 +22095,7 @@ class ZVA_gen(Instrument):
                     _cmd = "AMPLitude"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                AMPLitude = AMPLitude()
+                AMPLitude = AMPLitude()  # type: ignore
                 """
                 SOURce:CMODe:TOLerance:AMPLitude
 
@@ -22112,7 +22113,7 @@ class ZVA_gen(Instrument):
                     _cmd = "PHASe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                PHASe = PHASe()
+                PHASe = PHASe()  # type: ignore
                 """
                 `SOURce:CMODe:TOLerance:PHASe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__tdif.htm#TOLerance_PHASe>`_
@@ -22120,14 +22121,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            TOLerance = TOLerance()
+            TOLerance = TOLerance()  # type: ignore
             """
             SOURce:CMODe:TOLerance
 
             Arguments:
             """
 
-        CMODe = CMODe()
+        CMODe = CMODe()  # type: ignore
         """
         SOURce:CMODe
 
@@ -22152,7 +22153,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONVersion"
-                args = []
+                args = []  # type: List[str]
 
                 class ARBitrary(SCPINode):
                     """
@@ -22162,7 +22163,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ARBitrary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CFRequency(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -22175,7 +22176,7 @@ class ZVA_gen(Instrument):
                         _cmd = "CFRequency"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    CFRequency = CFRequency()
+                    CFRequency = CFRequency()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:ARBitrary:CFRequency
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#CONVersion_ARBitrary_CFRequency>`_
@@ -22194,7 +22195,7 @@ class ZVA_gen(Instrument):
                         _cmd = "EFRequency"
                         args = ["1", "OFF", "ON"]
 
-                    EFRequency = EFRequency()
+                    EFRequency = EFRequency()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:ARBitrary:EFRequency
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#CONVersion_ARBitrary_EFRequency>`_
@@ -22213,7 +22214,7 @@ class ZVA_gen(Instrument):
                         _cmd = "IFRequency"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    IFRequency = IFRequency()
+                    IFRequency = IFRequency()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:ARBitrary:IFRequency
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#CONVersion_ARBitrary_IFRequency>`_
@@ -22221,7 +22222,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                ARBitrary = ARBitrary()
+                ARBitrary = ARBitrary()  # type: ignore
                 """
                 SOURce:FREQuency:CONVersion:ARBitrary
 
@@ -22236,7 +22237,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MIXer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FUNDamental(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -22249,7 +22250,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FUNDamental"
                         args = ["LO", "RF"]
 
-                    FUNDamental = FUNDamental()
+                    FUNDamental = FUNDamental()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:MIXer:FUNDamental
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#FREQuency_CONVersion_MIXer_FUNDamental>`_
@@ -22268,7 +22269,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PAFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PAFixed = PAFixed()
+                    PAFixed = PAFixed()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:MIXer:PAFixed
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#FREQuency_CONVersion_MIXer_PAFIXed>`_
@@ -22287,7 +22288,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PFIXed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PFIXed = PFIXed()
+                    PFIXed = PFIXed()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:MIXer:PFIXed
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#FREQuency_CONVersion_MIXer_PFIXed>`_
@@ -22306,7 +22307,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PMFixed"
                         args = ["AUXLO", "IF", "LO", "LO1", "LO2", "RF"]
 
-                    PMFixed = PMFixed()
+                    PMFixed = PMFixed()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:MIXer:PMFixed
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#PMFixed>`_
@@ -22325,7 +22326,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PMODe"
                         args = ["AUXLO", "IF", "LO", "LO1", "LO2", "RF"]
 
-                    PMODe = PMODe()
+                    PMODe = PMODe()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:MIXer:PMODe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#PMODe>`_
@@ -22333,14 +22334,14 @@ class ZVA_gen(Instrument):
                     Arguments: AUXLO, IF, LO, LO1, LO2, RF
                     """
 
-                MIXer = MIXer()
+                MIXer = MIXer()  # type: ignore
                 """
                 SOURce:FREQuency:CONVersion:MIXer
 
                 Arguments:
                 """
 
-            CONVersion = CONVersion()
+            CONVersion = CONVersion()  # type: ignore
             """
             SOURce:FREQuency:CONVersion
 
@@ -22357,7 +22358,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CW"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            CW = CW()
+            CW = CW()  # type: ignore
             """
             SOURce:FREQuency:CW
 
@@ -22374,14 +22375,14 @@ class ZVA_gen(Instrument):
                 _cmd = "FIXed"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            FIXed = FIXed()
+            FIXed = FIXed()  # type: ignore
             """
             SOURce:FREQuency:FIXed
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         SOURce:FREQuency
 
@@ -22410,7 +22411,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CLEar"
                 args = ["ALL"]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             `SOURce:GROup:CLEar
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#GROup_CLEar>`_
@@ -22427,9 +22428,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COUNt"
-                args = []
+                args = []  # type: List[str]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `SOURce:GROup:COUNt
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#GROup_COUNt>`_
@@ -22448,7 +22449,7 @@ class ZVA_gen(Instrument):
                 _cmd = "PORTs"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            PORTs = PORTs()
+            PORTs = PORTs()  # type: ignore
             """
             `SOURce:GROup:PORTs
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#GROup_PORTs>`_
@@ -22485,9 +22486,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONDition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CONDition = CONDition()
+                    CONDition = CONDition()  # type: ignore
                     """
                     `SOURce:GROup:SIMultaneous:FOFFset:CONDition
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#GROup_SIMultaneous_FOFFset_CONDition>`_
@@ -22503,7 +22504,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "MOFFset"
-                        args = []
+                        args = []  # type: List[str]
 
                         class BWFactor(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -22516,7 +22517,7 @@ class ZVA_gen(Instrument):
                             _cmd = "BWFactor"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        BWFactor = BWFactor()
+                        BWFactor = BWFactor()  # type: ignore
                         """
                         `SOURce:GROup:SIMultaneous:FOFFset:MOFFset:BWFactor
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#GROup_SIMultaneous_FOFFset_MOFFset_BWFactor>`_
@@ -22535,7 +22536,7 @@ class ZVA_gen(Instrument):
                             _cmd = "DVALue"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        DVALue = DVALue()
+                        DVALue = DVALue()  # type: ignore
                         """
                         `SOURce:GROup:SIMultaneous:FOFFset:MOFFset:DVALue
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#GROup_SIMultaneous_FOFFset_MOFFset_DVALue>`_
@@ -22554,7 +22555,7 @@ class ZVA_gen(Instrument):
                             _cmd = "MODE"
                             args = ["BANDWIDTH", "DIRECT"]
 
-                        MODE = MODE()
+                        MODE = MODE()  # type: ignore
                         """
                         `SOURce:GROup:SIMultaneous:FOFFset:MOFFset:MODE
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#GROup_SIMultaneous_FOFFset_MOFFset_MODE>`_
@@ -22562,7 +22563,7 @@ class ZVA_gen(Instrument):
                         Arguments: BANDWIDTH, DIRECT
                         """
 
-                    MOFFset = MOFFset()
+                    MOFFset = MOFFset()  # type: ignore
                     """
                     SOURce:GROup:SIMultaneous:FOFFset:MOFFset
 
@@ -22580,7 +22581,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:GROup:SIMultaneous:FOFFset:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#GROup_SIMultaneous_FOFFset_STATe>`_
@@ -22588,7 +22589,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                FOFFset = FOFFset()
+                FOFFset = FOFFset()  # type: ignore
                 """
                 SOURce:GROup:SIMultaneous:FOFFset
 
@@ -22606,7 +22607,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:GROup:SIMultaneous:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#GROup_SIMultaneous_STATe>`_
@@ -22614,14 +22615,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            SIMultaneous = SIMultaneous()
+            SIMultaneous = SIMultaneous()  # type: ignore
             """
             SOURce:GROup:SIMultaneous
 
             Arguments: 1, OFF, ON
             """
 
-        GROup = GROup()
+        GROup = GROup()  # type: ignore
         """
         `SOURce:GROup
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#GROup>`_
@@ -22651,7 +22652,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CLEar"
                 args = ["ALL"]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             `SOURce:LPORt:CLEar
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#LPORt_CLEar>`_
@@ -22659,7 +22660,7 @@ class ZVA_gen(Instrument):
             Arguments: ALL
             """
 
-        LPORt = LPORt()
+        LPORt = LPORt()  # type: ignore
         """
         `SOURce:LPORt
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch.htm#LPORt>`_
@@ -22698,7 +22699,7 @@ class ZVA_gen(Instrument):
                     _cmd = "AUBW"
                     args = ["1", "OFF", "ON"]
 
-                AUBW = AUBW()
+                AUBW = AUBW()  # type: ignore
                 """
                 `SOURce:POWer:ALC:AUBW
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#AUBW>`_
@@ -22717,7 +22718,7 @@ class ZVA_gen(Instrument):
                     _cmd = "BANDwidth"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                BANDwidth = BANDwidth()
+                BANDwidth = BANDwidth()  # type: ignore
                 """
                 `SOURce:POWer:ALC:BANDwidth
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#BANDwidth>`_
@@ -22736,7 +22737,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CLAMp"
                     args = ["1", "OFF", "ON"]
 
-                CLAMp = CLAMp()
+                CLAMp = CLAMp()  # type: ignore
                 """
                 `SOURce:POWer:ALC:CLAMp
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#CLAMp>`_
@@ -22755,7 +22756,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CONTrol"
                     args = ["1", "OFF", "ON"]
 
-                CONTrol = CONTrol()
+                CONTrol = CONTrol()  # type: ignore
                 """
                 `SOURce:POWer:ALC:CONTrol
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#CONTrol>`_
@@ -22774,7 +22775,7 @@ class ZVA_gen(Instrument):
                     _cmd = "COUPle"
                     args = ["1", "OFF", "ON"]
 
-                COUPle = COUPle()
+                COUPle = COUPle()  # type: ignore
                 """
                 `SOURce:POWer:ALC:COUPle
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#COUPle>`_
@@ -22793,7 +22794,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CSTate"
                     args = ["1", "OFF", "ON"]
 
-                CSTate = CSTate()
+                CSTate = CSTate()  # type: ignore
                 """
                 `SOURce:POWer:ALC:CSTate
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#CSTate>`_
@@ -22812,7 +22813,7 @@ class ZVA_gen(Instrument):
                     _cmd = "LPNoise"
                     args = ["1", "OFF", "ON"]
 
-                LPNoise = LPNoise()
+                LPNoise = LPNoise()  # type: ignore
                 """
                 `SOURce:POWer:ALC:LPNoise
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#LPNoise>`_
@@ -22842,7 +22843,7 @@ class ZVA_gen(Instrument):
                         _cmd = "GAIN"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    GAIN = GAIN()
+                    GAIN = GAIN()  # type: ignore
                     """
                     `SOURce:POWer:ALC:PIParameter:GAIN
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#PIParameter_GAIN>`_
@@ -22861,7 +22862,7 @@ class ZVA_gen(Instrument):
                         _cmd = "ITIMe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    ITIMe = ITIMe()
+                    ITIMe = ITIMe()  # type: ignore
                     """
                     `SOURce:POWer:ALC:PIParameter:ITIMe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#PIParameter_ITIMe>`_
@@ -22869,7 +22870,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                PIParameter = PIParameter()
+                PIParameter = PIParameter()  # type: ignore
                 """
                 `SOURce:POWer:ALC:PIParameter
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#PIParameter>`_
@@ -22888,7 +22889,7 @@ class ZVA_gen(Instrument):
                     _cmd = "POFFset"
                     args = ["1", "OFF", "ON"]
 
-                POFFset = POFFset()
+                POFFset = POFFset()  # type: ignore
                 """
                 `SOURce:POWer:ALC:POFFset
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#POFFset>`_
@@ -22907,7 +22908,7 @@ class ZVA_gen(Instrument):
                     _cmd = "RANGe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                RANGe = RANGe()
+                RANGe = RANGe()  # type: ignore
                 """
                 `SOURce:POWer:ALC:RANGe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#RANGe>`_
@@ -22926,7 +22927,7 @@ class ZVA_gen(Instrument):
                     _cmd = "SOFFset"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SOFFset = SOFFset()
+                SOFFset = SOFFset()  # type: ignore
                 """
                 `SOURce:POWer:ALC:SOFFset
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#SOFFset>`_
@@ -22945,7 +22946,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:POWer:ALC:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#STATe>`_
@@ -22964,7 +22965,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STOLerance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                STOLerance = STOLerance()
+                STOLerance = STOLerance()  # type: ignore
                 """
                 `SOURce:POWer:ALC:STOLerance
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_alc.htm#STOLerance>`_
@@ -22972,7 +22973,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            ALC = ALC()
+            ALC = ALC()  # type: ignore
             """
             SOURce:POWer:ALC
 
@@ -23010,9 +23011,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "VALue"
-                        args = []
+                        args = []  # type: List[str]
 
-                    VALue = VALue()
+                    VALue = VALue()  # type: ignore
                     """
                     `SOURce:POWer:ATTenuation:AUTO:VALue
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#ATTenuation_AUTO_VALue>`_
@@ -23020,7 +23021,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 `SOURce:POWer:ATTenuation:AUTO
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#ATTenuation_AUTO>`_
@@ -23039,7 +23040,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MODE"
                     args = ["AUTO", "LNOise", "MANual"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `SOURce:POWer:ATTenuation:MODE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#ATTenuation_MODE>`_
@@ -23047,7 +23048,7 @@ class ZVA_gen(Instrument):
                 Arguments: AUTO, LNOise, MANual
                 """
 
-            ATTenuation = ATTenuation()
+            ATTenuation = ATTenuation()  # type: ignore
             """
             `SOURce:POWer:ATTenuation
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#ATTenuation>`_
@@ -23065,7 +23066,7 @@ class ZVA_gen(Instrument):
                 _cmd = "COMBiner"
                 args = ["1", "OFF", "ON"]
 
-            COMBiner = COMBiner()
+            COMBiner = COMBiner()  # type: ignore
             """
             SOURce:POWer:COMBiner
 
@@ -23080,7 +23081,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONVerter"
-                args = []
+                args = []  # type: List[str]
 
                 class OFFSet(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23093,7 +23094,7 @@ class ZVA_gen(Instrument):
                     _cmd = "OFFSet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                OFFSet = OFFSet()
+                OFFSet = OFFSet()  # type: ignore
                 """
                 `SOURce:POWer:CONVerter:OFFSet
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#OFFSet>`_
@@ -23109,7 +23110,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TRANsfer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class AMODel(SCPINode, SCPIBool):
                         """
@@ -23122,7 +23123,7 @@ class ZVA_gen(Instrument):
                         _cmd = "AMODel"
                         args = ["1", "OFF", "ON"]
 
-                    AMODel = AMODel()
+                    AMODel = AMODel()  # type: ignore
                     """
                     `SOURce:POWer:CONVerter:TRANsfer:AMODel
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#TRANsfer_AMODel>`_
@@ -23141,7 +23142,7 @@ class ZVA_gen(Instrument):
                         _cmd = "ATTenuator"
                         args = ["ELECtronic", "MECHanical"]
 
-                    ATTenuator = ATTenuator()
+                    ATTenuator = ATTenuator()  # type: ignore
                     """
                     `SOURce:POWer:CONVerter:TRANsfer:ATTenuator
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#TRANsfer_ATTenuator>`_
@@ -23160,7 +23161,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DESCription"
                         args = ["DSET", "ELECtronic", "LAPProx", "NONE"]
 
-                    DESCription = DESCription()
+                    DESCription = DESCription()  # type: ignore
                     """
                     `SOURce:POWer:CONVerter:TRANsfer:DESCription
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#TRANsfer_DESCription>`_
@@ -23179,7 +23180,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DSET"
                         args = ["FACTory", "USER"]
 
-                    DSET = DSET()
+                    DSET = DSET()  # type: ignore
                     """
                     `SOURce:POWer:CONVerter:TRANsfer:DSET
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#TRANsfer_DSET>`_
@@ -23195,7 +23196,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ELECtronic"
-                        args = []
+                        args = []  # type: List[str]
 
                         class LIMit(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -23208,7 +23209,7 @@ class ZVA_gen(Instrument):
                             _cmd = "LIMit"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        LIMit = LIMit()
+                        LIMit = LIMit()  # type: ignore
                         """
                         `SOURce:POWer:CONVerter:TRANsfer:ELECtronic:LIMit
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#TRANsfer_ELECtronic_LIMit>`_
@@ -23227,7 +23228,7 @@ class ZVA_gen(Instrument):
                             _cmd = "MATTenuation"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        MATTenuation = MATTenuation()
+                        MATTenuation = MATTenuation()  # type: ignore
                         """
                         `SOURce:POWer:CONVerter:TRANsfer:ELECtronic:MATTenuation
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#TRANsfer_ELECtronic_MATTenuation>`_
@@ -23246,7 +23247,7 @@ class ZVA_gen(Instrument):
                             _cmd = "REDuction"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        REDuction = REDuction()
+                        REDuction = REDuction()  # type: ignore
                         """
                         `SOURce:POWer:CONVerter:TRANsfer:ELECtronic:REDuction
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#TRANsfer_ELECtronic_REDuction>`_
@@ -23254,7 +23255,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    ELECtronic = ELECtronic()
+                    ELECtronic = ELECtronic()  # type: ignore
                     """
                     SOURce:POWer:CONVerter:TRANsfer:ELECtronic
 
@@ -23269,7 +23270,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "MECHanical"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ATTenuation(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -23282,7 +23283,7 @@ class ZVA_gen(Instrument):
                             _cmd = "ATTenuation"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        ATTenuation = ATTenuation()
+                        ATTenuation = ATTenuation()  # type: ignore
                         """
                         `SOURce:POWer:CONVerter:TRANsfer:MECHanical:ATTenuation
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#TRANsfer_MECHanical_ATTenuation>`_
@@ -23290,7 +23291,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    MECHanical = MECHanical()
+                    MECHanical = MECHanical()  # type: ignore
                     """
                     SOURce:POWer:CONVerter:TRANsfer:MECHanical
 
@@ -23308,7 +23309,7 @@ class ZVA_gen(Instrument):
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    OFFSet = OFFSet()
+                    OFFSet = OFFSet()  # type: ignore
                     """
                     `SOURce:POWer:CONVerter:TRANsfer:OFFSet
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#TRANsfer_OFFSet>`_
@@ -23327,7 +23328,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PATH"
                         args = ["'string'"]
 
-                    PATH = PATH()
+                    PATH = PATH()  # type: ignore
                     """
                     `SOURce:POWer:CONVerter:TRANsfer:PATH
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#TRANsfer_PATH>`_
@@ -23346,7 +23347,7 @@ class ZVA_gen(Instrument):
                         _cmd = "SLOPe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    SLOPe = SLOPe()
+                    SLOPe = SLOPe()  # type: ignore
                     """
                     `SOURce:POWer:CONVerter:TRANsfer:SLOPe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_power_converter.htm#TRANsfer_SLOPe>`_
@@ -23354,14 +23355,14 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                TRANsfer = TRANsfer()
+                TRANsfer = TRANsfer()  # type: ignore
                 """
                 SOURce:POWer:CONVerter:TRANsfer
 
                 Arguments:
                 """
 
-            CONVerter = CONVerter()
+            CONVerter = CONVerter()  # type: ignore
             """
             SOURce:POWer:CONVerter
 
@@ -23397,7 +23398,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "VERification"
-                        args = []
+                        args = []  # type: List[str]
 
                         class RESult(SCPINode, SCPIQuery):
                             """
@@ -23408,9 +23409,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "RESult"
-                            args = []
+                            args = []  # type: List[str]
 
-                        RESult = RESult()
+                        RESult = RESult()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:ACQuire:VERification:RESult
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#ACQuire_VERification_RESult>`_
@@ -23418,14 +23419,14 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    VERification = VERification()
+                    VERification = VERification()  # type: ignore
                     """
                     SOURce:POWer:CORRection:ACQuire:VERification
 
                     Arguments:
                     """
 
-                ACQuire = ACQuire()
+                ACQuire = ACQuire()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:ACQuire
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#ACQuire>`_
@@ -23475,7 +23476,7 @@ class ZVA_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             `SOURce:POWer:CORRection:COLLect:ACQuire:VERification:STATe
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#COLLect_ACQuire_VERification_STATe>`_
@@ -23483,14 +23484,14 @@ class ZVA_gen(Instrument):
                             Arguments: 1, OFF, ON
                             """
 
-                        VERification = VERification()
+                        VERification = VERification()  # type: ignore
                         """
                         SOURce:POWer:CORRection:COLLect:ACQuire:VERification
 
                         Arguments: 1, OFF, ON
                         """
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:COLLect:ACQuire
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#COLLect_ACQuire>`_
@@ -23519,7 +23520,7 @@ class ZVA_gen(Instrument):
                             _cmd = "COUNt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        COUNt = COUNt()
+                        COUNt = COUNt()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:COLLect:AVERage:COUNt
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#COLLect_AVERage_COUNt>`_
@@ -23538,7 +23539,7 @@ class ZVA_gen(Instrument):
                             _cmd = "NTOLerance"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        NTOLerance = NTOLerance()
+                        NTOLerance = NTOLerance()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:COLLect:AVERage:NTOLerance
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#COLLect_AVERage_NTOLerance>`_
@@ -23546,7 +23547,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    AVERage = AVERage()
+                    AVERage = AVERage()  # type: ignore
                     """
                     SOURce:POWer:CORRection:COLLect:AVERage
 
@@ -23564,7 +23565,7 @@ class ZVA_gen(Instrument):
                         _cmd = "CFACtor"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    CFACtor = CFACtor()
+                    CFACtor = CFACtor()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:COLLect:CFACtor
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#COLLect_CFACtor>`_
@@ -23583,7 +23584,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FLATness"
                         args = ["1", "OFF", "ON"]
 
-                    FLATness = FLATness()
+                    FLATness = FLATness()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:COLLect:FLATness
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#COLLect_ACQuire_VERification_STATe>`_
@@ -23602,7 +23603,7 @@ class ZVA_gen(Instrument):
                         _cmd = "METHod"
                         args = ["PMONly", "RRAFter", "RRONly"]
 
-                    METHod = METHod()
+                    METHod = METHod()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:COLLect:METHod
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#COLLect_METHod>`_
@@ -23621,7 +23622,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PMReadings"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PMReadings = PMReadings()
+                    PMReadings = PMReadings()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:COLLect:PMReadings
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#COLLect_PMReadings>`_
@@ -23640,7 +23641,7 @@ class ZVA_gen(Instrument):
                         _cmd = "RRECeiver"
                         args = ["1", "OFF", "ON"]
 
-                    RRECeiver = RRECeiver()
+                    RRECeiver = RRECeiver()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:COLLect:RRECeiver
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#COLLect_ACQuire_VERification_STATe>`_
@@ -23648,7 +23649,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                COLLect = COLLect()
+                COLLect = COLLect()  # type: ignore
                 """
                 SOURce:POWer:CORRection:COLLect
 
@@ -23673,7 +23674,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "LEVel"
-                        args = []
+                        args = []  # type: List[str]
 
                         class OFFSet(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -23686,7 +23687,7 @@ class ZVA_gen(Instrument):
                             _cmd = "OFFSet"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        OFFSet = OFFSet()
+                        OFFSet = OFFSet()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:CONVerter:LEVel:OFFSet
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#CONVerter_LEVel_OFFset>`_
@@ -23694,7 +23695,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    LEVel = LEVel()
+                    LEVel = LEVel()  # type: ignore
                     """
                     SOURce:POWer:CORRection:CONVerter:LEVel
 
@@ -23712,7 +23713,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:CONVerter:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#CONVerter_STATe>`_
@@ -23720,7 +23721,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                CONVerter = CONVerter()
+                CONVerter = CONVerter()  # type: ignore
                 """
                 SOURce:POWer:CORRection:CONVerter
 
@@ -23758,9 +23759,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "COUNt"
-                            args = []
+                            args = []  # type: List[str]
 
-                        COUNt = COUNt()
+                        COUNt = COUNt()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:DATA:PARameter:COUNt
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#DATA_PARameter_COUNt>`_
@@ -23768,7 +23769,7 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    PARameter = PARameter()
+                    PARameter = PARameter()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:DATA:PARameter
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#DATA_PARameter>`_
@@ -23776,7 +23777,7 @@ class ZVA_gen(Instrument):
                     Arguments: ATTenuation, CFRequency, CPOWer, POINts, STARt, STOP, STYPe, TSTamp, WAVE
                     """
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:DATA
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#DATA>`_
@@ -23795,7 +23796,7 @@ class ZVA_gen(Instrument):
                     _cmd = "DEFault"
                     args = ["1", "OFF", "ON"]
 
-                DEFault = DEFault()
+                DEFault = DEFault()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:DEFault
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#CORRection_DEFault>`_
@@ -23814,7 +23815,7 @@ class ZVA_gen(Instrument):
                     _cmd = "FAST"
                     args = ["1", "OFF", "ON"]
 
-                FAST = FAST()
+                FAST = FAST()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:FAST
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#FAST>`_
@@ -23840,7 +23841,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "LEVel"
-                        args = []
+                        args = []  # type: List[str]
 
                         class OFFSet(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -23853,7 +23854,7 @@ class ZVA_gen(Instrument):
                             _cmd = "OFFSet"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        OFFSet = OFFSet()
+                        OFFSet = OFFSet()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:GENerator:LEVel:OFFSet
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#GENerator_LEVel_OFFset>`_
@@ -23861,7 +23862,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    LEVel = LEVel()
+                    LEVel = LEVel()  # type: ignore
                     """
                     SOURce:POWer:CORRection:GENerator:LEVel
 
@@ -23879,7 +23880,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:GENerator:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#GENerator_STATe>`_
@@ -23887,7 +23888,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                GENerator = GENerator()
+                GENerator = GENerator()  # type: ignore
                 """
                 SOURce:POWer:CORRection:GENerator
 
@@ -23902,7 +23903,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HARMonic"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ACQuire(SCPINode, SCPISet):
                         """
@@ -23913,9 +23914,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ACQuire"
-                        args = []
+                        args = []  # type: List[str]
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:HARMonic:ACQuire
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#HARMonic_ACQuire>`_
@@ -23923,7 +23924,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                HARMonic = HARMonic()
+                HARMonic = HARMonic()  # type: ignore
                 """
                 SOURce:POWer:CORRection:HARMonic
 
@@ -23938,7 +23939,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "IMODulation"
-                    args = []
+                    args = []  # type: List[str]
 
                     class LTONe(SCPINode, SCPISet):
                         """
@@ -23948,7 +23949,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "LTONe"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -23959,9 +23960,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:IMODulation:LTONe:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#IMODulation_LOWer_ACQuire>`_
@@ -23969,7 +23970,7 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    LTONe = LTONe()
+                    LTONe = LTONe()  # type: ignore
                     """
                     SOURce:POWer:CORRection:IMODulation:LTONe
 
@@ -23984,7 +23985,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "RPORt"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -23995,9 +23996,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:IMODulation:RPORt:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#IMODulation_RPORt_ACQuire>`_
@@ -24005,7 +24006,7 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    RPORt = RPORt()
+                    RPORt = RPORt()  # type: ignore
                     """
                     SOURce:POWer:CORRection:IMODulation:RPORt
 
@@ -24020,7 +24021,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SPORts"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -24031,9 +24032,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:IMODulation:SPORts:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#IMODulation_SPORts_ACQuire>`_
@@ -24041,7 +24042,7 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    SPORts = SPORts()
+                    SPORts = SPORts()  # type: ignore
                     """
                     SOURce:POWer:CORRection:IMODulation:SPORts
 
@@ -24056,7 +24057,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "UTONe"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -24067,9 +24068,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:IMODulation:UTONe:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#IMODulation_UPPer_ACQuire>`_
@@ -24077,14 +24078,14 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    UTONe = UTONe()
+                    UTONe = UTONe()  # type: ignore
                     """
                     SOURce:POWer:CORRection:IMODulation:UTONe
 
                     Arguments:
                     """
 
-                IMODulation = IMODulation()
+                IMODulation = IMODulation()  # type: ignore
                 """
                 SOURce:POWer:CORRection:IMODulation
 
@@ -24099,7 +24100,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LEVel"
-                    args = []
+                    args = []  # type: List[str]
 
                     class OFFSet(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -24112,7 +24113,7 @@ class ZVA_gen(Instrument):
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    OFFSet = OFFSet()
+                    OFFSet = OFFSet()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:LEVel:OFFSet
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#LEVel_OFFset>`_
@@ -24120,7 +24121,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                LEVel = LEVel()
+                LEVel = LEVel()  # type: ignore
                 """
                 SOURce:POWer:CORRection:LEVel
 
@@ -24135,7 +24136,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MIXer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class IF(SCPINode, SCPISet):
                         """
@@ -24145,7 +24146,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "IF"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -24156,9 +24157,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:MIXer:IF:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#MIXer_IF_ACQuire>`_
@@ -24166,7 +24167,7 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    IF = IF()
+                    IF = IF()  # type: ignore
                     """
                     SOURce:POWer:CORRection:MIXer:IF
 
@@ -24181,7 +24182,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "LO"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -24192,9 +24193,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:MIXer:LO:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#MIXer_LO_ACQuire>`_
@@ -24202,7 +24203,7 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    LO = LO()
+                    LO = LO()  # type: ignore
                     """
                     SOURce:POWer:CORRection:MIXer:LO
 
@@ -24217,7 +24218,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "RF"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -24228,9 +24229,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:MIXer:RF:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#MIXer_RF_ACQuire>`_
@@ -24246,7 +24247,7 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "NFIGure"
-                            args = []
+                            args = []  # type: List[str]
 
                             class ACQuire(SCPINode, SCPISet):
                                 """
@@ -24257,9 +24258,9 @@ class ZVA_gen(Instrument):
                                 """
                                 __slots__ = ()
                                 _cmd = "ACQuire"
-                                args = []
+                                args = []  # type: List[str]
 
-                            ACQuire = ACQuire()
+                            ACQuire = ACQuire()  # type: ignore
                             """
                             `SOURce:POWer:CORRection:MIXer:RF:NFIGure:ACQuire
                             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#MIXer_RF_NFIGure_ACQuire>`_
@@ -24267,21 +24268,21 @@ class ZVA_gen(Instrument):
                             Arguments:
                             """
 
-                        NFIGure = NFIGure()
+                        NFIGure = NFIGure()  # type: ignore
                         """
                         SOURce:POWer:CORRection:MIXer:RF:NFIGure
 
                         Arguments:
                         """
 
-                    RF = RF()
+                    RF = RF()  # type: ignore
                     """
                     SOURce:POWer:CORRection:MIXer:RF
 
                     Arguments:
                     """
 
-                MIXer = MIXer()
+                MIXer = MIXer()  # type: ignore
                 """
                 SOURce:POWer:CORRection:MIXer
 
@@ -24299,7 +24300,7 @@ class ZVA_gen(Instrument):
                     _cmd = "NREadings"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                NREadings = NREadings()
+                NREadings = NREadings()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:NREadings
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#NREadings>`_
@@ -24328,7 +24329,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:OSOurces:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#OSOurces_STATe>`_
@@ -24336,7 +24337,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                OSOurces = OSOurces()
+                OSOurces = OSOurces()  # type: ignore
                 """
                 SOURce:POWer:CORRection:OSOurces
 
@@ -24351,7 +24352,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PMETer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ID(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -24364,7 +24365,7 @@ class ZVA_gen(Instrument):
                         _cmd = "ID"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    ID = ID()
+                    ID = ID()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:PMETer:ID
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#PMETer_ID>`_
@@ -24372,7 +24373,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                PMETer = PMETer()
+                PMETer = PMETer()  # type: ignore
                 """
                 SOURce:POWer:CORRection:PMETer
 
@@ -24390,7 +24391,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction.htm#STATe>`_
@@ -24419,7 +24420,7 @@ class ZVA_gen(Instrument):
                         _cmd = "CALibration"
                         args = ["1", "OFF", "ON"]
 
-                    CALibration = CALibration()
+                    CALibration = CALibration()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:CALibration
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#CALibration>`_
@@ -24436,9 +24437,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:COUNt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#COUNt>`_
@@ -24457,7 +24458,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DEFine"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    DEFine = DEFine()
+                    DEFine = DEFine()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:DEFine
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#DEFine>`_
@@ -24473,7 +24474,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DELete"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ALL(SCPINode, SCPISet):
                             """
@@ -24484,9 +24485,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ALL"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ALL = ALL()
+                        ALL = ALL()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:TCOefficient:DELete:ALL
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#DELete_ALL>`_
@@ -24503,9 +24504,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DUMMy"
-                            args = []
+                            args = []  # type: List[str]
 
-                        DUMMy = DUMMy()
+                        DUMMy = DUMMy()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:TCOefficient:DELete:DUMMy
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#DELete>`_
@@ -24513,7 +24514,7 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    DELete = DELete()
+                    DELete = DELete()  # type: ignore
                     """
                     SOURce:POWer:CORRection:TCOefficient:DELete
 
@@ -24531,7 +24532,7 @@ class ZVA_gen(Instrument):
                         _cmd = "FEED"
                         args = ["'string'"]
 
-                    FEED = FEED()
+                    FEED = FEED()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:FEED
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#FEED>`_
@@ -24550,7 +24551,7 @@ class ZVA_gen(Instrument):
                         _cmd = "INSert"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    INSert = INSert()
+                    INSert = INSert()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:INSert
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#INSert>`_
@@ -24569,7 +24570,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power_correction_tcoefficient.htm#STATe>`_
@@ -24577,14 +24578,14 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                TCOefficient = TCOefficient()
+                TCOefficient = TCOefficient()  # type: ignore
                 """
                 SOURce:POWer:CORRection:TCOefficient
 
                 Arguments: 1, OFF, ON
                 """
 
-            CORRection = CORRection()
+            CORRection = CORRection()  # type: ignore
             """
             SOURce:POWer:CORRection
 
@@ -24601,7 +24602,7 @@ class ZVA_gen(Instrument):
                 _cmd = "COUPle"
                 args = ["1", "OFF", "ON"]
 
-            COUPle = COUPle()
+            COUPle = COUPle()  # type: ignore
             """
             SOURce:POWer:COUPle
 
@@ -24616,7 +24617,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "GENerator"
-                args = []
+                args = []  # type: List[str]
 
                 class LLIMit(SCPINode, SCPIBool):
                     """
@@ -24639,7 +24640,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:POWer:GENerator:LLIMit:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#GENerator_LLIMit_Enable>`_
@@ -24658,7 +24659,7 @@ class ZVA_gen(Instrument):
                         _cmd = "VALue"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    VALue = VALue()
+                    VALue = VALue()  # type: ignore
                     """
                     `SOURce:POWer:GENerator:LLIMit:VALue
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#GENerator_LLIMit_VALue>`_
@@ -24666,7 +24667,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                LLIMit = LLIMit()
+                LLIMit = LLIMit()  # type: ignore
                 """
                 SOURce:POWer:GENerator:LLIMit
 
@@ -24684,7 +24685,7 @@ class ZVA_gen(Instrument):
                     _cmd = "OFFSet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                OFFSet = OFFSet()
+                OFFSet = OFFSet()  # type: ignore
                 """
                 `SOURce:POWer:GENerator:OFFSet
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_GENerator_OFFSet>`_
@@ -24713,7 +24714,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:POWer:GENerator:PERManent:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_GENerator_PERManent_STATe>`_
@@ -24721,7 +24722,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                PERManent = PERManent()
+                PERManent = PERManent()  # type: ignore
                 """
                 SOURce:POWer:GENerator:PERManent
 
@@ -24739,7 +24740,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:POWer:GENerator:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_GENerator_STATe>`_
@@ -24747,7 +24748,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            GENerator = GENerator()
+            GENerator = GENerator()  # type: ignore
             """
             SOURce:POWer:GENerator
 
@@ -24785,7 +24786,7 @@ class ZVA_gen(Instrument):
                         _cmd = "AMPLitude"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    AMPLitude = AMPLitude()
+                    AMPLitude = AMPLitude()  # type: ignore
                     """
                     `SOURce:POWer:LEVel:IMMediate:AMPLitude
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_LEVel>`_
@@ -24814,7 +24815,7 @@ class ZVA_gen(Instrument):
                             _cmd = "DGRaccess"
                             args = ["1", "OFF", "ON"]
 
-                        DGRaccess = DGRaccess()
+                        DGRaccess = DGRaccess()  # type: ignore
                         """
                         `SOURce:POWer:LEVel:IMMediate:LLIMit:DGRaccess
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_LLIMit_DGRaccess>`_
@@ -24833,7 +24834,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SOURce:POWer:LEVel:IMMediate:LLIMit:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_LLIMit_Enable>`_
@@ -24852,7 +24853,7 @@ class ZVA_gen(Instrument):
                             _cmd = "VALue"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        VALue = VALue()
+                        VALue = VALue()  # type: ignore
                         """
                         `SOURce:POWer:LEVel:IMMediate:LLIMit:VALue
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_LLIMit_VALue>`_
@@ -24860,7 +24861,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    LLIMit = LLIMit()
+                    LLIMit = LLIMit()  # type: ignore
                     """
                     SOURce:POWer:LEVel:IMMediate:LLIMit
 
@@ -24878,7 +24879,7 @@ class ZVA_gen(Instrument):
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    OFFSet = OFFSet()
+                    OFFSet = OFFSet()  # type: ignore
                     """
                     `SOURce:POWer:LEVel:IMMediate:OFFSet
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_OFFSet>`_
@@ -24897,7 +24898,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PHASe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PHASe = PHASe()
+                    PHASe = PHASe()  # type: ignore
                     """
                     `SOURce:POWer:LEVel:IMMediate:PHASe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_PHASe>`_
@@ -24926,14 +24927,14 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         SOURce:POWer:LEVel:IMMediate:SLOPe:STATe
 
                         Arguments: 1, OFF, ON
                         """
 
-                    SLOPe = SLOPe()
+                    SLOPe = SLOPe()  # type: ignore
                     """
                     `SOURce:POWer:LEVel:IMMediate:SLOPe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_SLOPe>`_
@@ -24941,14 +24942,14 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                IMMediate = IMMediate()
+                IMMediate = IMMediate()  # type: ignore
                 """
                 SOURce:POWer:LEVel:IMMediate
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            LEVel = LEVel()
+            LEVel = LEVel()  # type: ignore
             """
             SOURce:POWer:LEVel
 
@@ -24976,7 +24977,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:POWer:PERManent:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_PERManent_STATe>`_
@@ -24984,7 +24985,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            PERManent = PERManent()
+            PERManent = PERManent()  # type: ignore
             """
             SOURce:POWer:PERManent
 
@@ -25002,7 +25003,7 @@ class ZVA_gen(Instrument):
                 _cmd = "REDuce"
                 args = ["1", "OFF", "ON"]
 
-            REDuce = REDuce()
+            REDuce = REDuce()  # type: ignore
             """
             `SOURce:POWer:REDuce
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_REDuce>`_
@@ -25021,7 +25022,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STARt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             `SOURce:POWer:STARt
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_STARt>`_
@@ -25040,7 +25041,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SOURce:POWer:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_STATe>`_
@@ -25059,7 +25060,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STOP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            STOP = STOP()
+            STOP = STOP()  # type: ignore
             """
             `SOURce:POWer:STOP
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__power__level_.htm#POWer_STOP>`_
@@ -25067,7 +25068,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        POWer = POWer()
+        POWer = POWer()  # type: ignore
         """
         SOURce:POWer
 
@@ -25095,7 +25096,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CRFRequency"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            CRFRequency = CRFRequency()
+            CRFRequency = CRFRequency()  # type: ignore
             """
             `SOURce:TDIF:CRFRequency
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__tdif.htm#CRFRequency>`_
@@ -25111,7 +25112,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMBalance"
-                args = []
+                args = []  # type: List[str]
 
                 class AMPLitude(SCPINode):
                     """
@@ -25121,7 +25122,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "AMPLitude"
-                    args = []
+                    args = []  # type: List[str]
 
                     class LPORt(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -25134,7 +25135,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    LPORt = LPORt()
+                    LPORt = LPORt()  # type: ignore
                     """
                     `SOURce:TDIF:IMBalance:AMPLitude:LPORt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__tdif.htm#IMBalance_AMPlitude_LPORt>`_
@@ -25153,7 +25154,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `SOURce:TDIF:IMBalance:AMPLitude:STARt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__tdif.htm#IMBalance_AMPlitude_STARt>`_
@@ -25172,7 +25173,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `SOURce:TDIF:IMBalance:AMPLitude:STOP
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__tdif.htm#IMBalance_AMPlitude_STOP>`_
@@ -25180,7 +25181,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                AMPLitude = AMPLitude()
+                AMPLitude = AMPLitude()  # type: ignore
                 """
                 SOURce:TDIF:IMBalance:AMPLitude
 
@@ -25195,7 +25196,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PHASe"
-                    args = []
+                    args = []  # type: List[str]
 
                     class LPORt(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -25208,7 +25209,7 @@ class ZVA_gen(Instrument):
                         _cmd = "LPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    LPORt = LPORt()
+                    LPORt = LPORt()  # type: ignore
                     """
                     `SOURce:TDIF:IMBalance:PHASe:LPORt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__tdif.htm#IMBalance_PHASe_LPORt>`_
@@ -25227,7 +25228,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `SOURce:TDIF:IMBalance:PHASe:STARt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__tdif.htm#IMBalance_PHASe_STARt>`_
@@ -25246,7 +25247,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `SOURce:TDIF:IMBalance:PHASe:STOP
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__tdif.htm#IMBalance_PHASe_STOP>`_
@@ -25254,14 +25255,14 @@ class ZVA_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                PHASe = PHASe()
+                PHASe = PHASe()  # type: ignore
                 """
                 SOURce:TDIF:IMBalance:PHASe
 
                 Arguments:
                 """
 
-            IMBalance = IMBalance()
+            IMBalance = IMBalance()  # type: ignore
             """
             SOURce:TDIF:IMBalance
 
@@ -25279,7 +25280,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SOURce:TDIF:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__tdif.htm#TDIF_STATe>`_
@@ -25295,7 +25296,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TOLerance"
-                args = []
+                args = []  # type: List[str]
 
                 class AMPLitude(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -25307,7 +25308,7 @@ class ZVA_gen(Instrument):
                     _cmd = "AMPLitude"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                AMPLitude = AMPLitude()
+                AMPLitude = AMPLitude()  # type: ignore
                 """
                 SOURce:TDIF:TOLerance:AMPLitude
 
@@ -25325,7 +25326,7 @@ class ZVA_gen(Instrument):
                     _cmd = "PHASe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                PHASe = PHASe()
+                PHASe = PHASe()  # type: ignore
                 """
                 `SOURce:TDIF:TOLerance:PHASe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__tdif.htm#TOLerance_PHASe>`_
@@ -25333,7 +25334,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            TOLerance = TOLerance()
+            TOLerance = TOLerance()  # type: ignore
             """
             SOURce:TDIF:TOLerance
 
@@ -25351,7 +25352,7 @@ class ZVA_gen(Instrument):
                 _cmd = "WAVes"
                 args = ["DCMode", "SENDed"]
 
-            WAVes = WAVes()
+            WAVes = WAVes()  # type: ignore
             """
             `SOURce:TDIF:WAVes
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/source/source_ch__tdif.htm#TDIF_WAVes>`_
@@ -25359,14 +25360,14 @@ class ZVA_gen(Instrument):
             Arguments: DCMode, SENDed
             """
 
-        TDIF = TDIF()
+        TDIF = TDIF()  # type: ignore
         """
         SOURce:TDIF
 
         Arguments: 1, OFF, ON
         """
 
-    SOURce = SOURce()
+    SOURce = SOURce()  # type: ignore
     """
     SOURce
 
@@ -25382,7 +25383,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "STATus"
-        args = []
+        args = []  # type: List[str]
 
         class OPERation(SCPINode, SCPIQuery, SCPISet):
             """
@@ -25392,7 +25393,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "OPERation"
-            args = []
+            args = []  # type: List[str]
 
             class CONDition(SCPINode, SCPIQuery):
                 """
@@ -25402,9 +25403,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONDition"
-                args = []
+                args = []  # type: List[str]
 
-            CONDition = CONDition()
+            CONDition = CONDition()  # type: ignore
             """
             STATus:OPERation:CONDition
 
@@ -25421,7 +25422,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ENABle"
                 args = ["1"]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             STATus:OPERation:ENABle
 
@@ -25436,9 +25437,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EVENt"
-                args = []
+                args = []  # type: List[str]
 
-            EVENt = EVENt()
+            EVENt = EVENt()  # type: ignore
             """
             STATus:OPERation:EVENt
 
@@ -25455,7 +25456,7 @@ class ZVA_gen(Instrument):
                 _cmd = "NTRansition"
                 args = ["1"]
 
-            NTRansition = NTRansition()
+            NTRansition = NTRansition()  # type: ignore
             """
             STATus:OPERation:NTRansition
 
@@ -25472,14 +25473,14 @@ class ZVA_gen(Instrument):
                 _cmd = "PTRansition"
                 args = ["1"]
 
-            PTRansition = PTRansition()
+            PTRansition = PTRansition()  # type: ignore
             """
             STATus:OPERation:PTRansition
 
             Arguments: 1
             """
 
-        OPERation = OPERation()
+        OPERation = OPERation()  # type: ignore
         """
         STATus:OPERation
 
@@ -25495,9 +25496,9 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PRESet"
-            args = []
+            args = []  # type: List[str]
 
-        PRESet = PRESet()
+        PRESet = PRESet()  # type: ignore
         """
         `STATus:PRESet
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#PRESet>`_
@@ -25513,7 +25514,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "QUEStionable"
-            args = []
+            args = []  # type: List[str]
 
             class CONDition(SCPINode, SCPIQuery):
                 """
@@ -25524,9 +25525,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONDition"
-                args = []
+                args = []  # type: List[str]
 
-            CONDition = CONDition()
+            CONDition = CONDition()  # type: ignore
             """
             `STATus:QUEStionable:CONDition
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#QUES_CONDition>`_
@@ -25545,7 +25546,7 @@ class ZVA_gen(Instrument):
                 _cmd = "ENABle"
                 args = ["1"]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             `STATus:QUEStionable:ENABle
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#QUES_ENABle>`_
@@ -25562,9 +25563,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EVENt"
-                args = []
+                args = []  # type: List[str]
 
-            EVENt = EVENt()
+            EVENt = EVENt()  # type: ignore
             """
             `STATus:QUEStionable:EVENt
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#LIMit_EVENt>`_
@@ -25580,7 +25581,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INTegrity"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -25591,9 +25592,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 `STATus:QUEStionable:INTegrity:CONDition
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#INTegrity_CONDition>`_
@@ -25612,7 +25613,7 @@ class ZVA_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 `STATus:QUEStionable:INTegrity:ENABle
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#INTegrity_ENABle>`_
@@ -25629,9 +25630,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 `STATus:QUEStionable:INTegrity:EVENt
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#INTegrity_EVENt>`_
@@ -25647,7 +25648,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HARDware"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CONDition(SCPINode, SCPIQuery):
                         """
@@ -25658,9 +25659,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONDition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CONDition = CONDition()
+                    CONDition = CONDition()  # type: ignore
                     """
                     `STATus:QUEStionable:INTegrity:HARDware:CONDition
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#INTegrity_HARDware_CONDition>`_
@@ -25679,7 +25680,7 @@ class ZVA_gen(Instrument):
                         _cmd = "ENABle"
                         args = ["1"]
 
-                    ENABle = ENABle()
+                    ENABle = ENABle()  # type: ignore
                     """
                     `STATus:QUEStionable:INTegrity:HARDware:ENABle
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#INTegrity_HARDware_ENABle>`_
@@ -25696,9 +25697,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     `STATus:QUEStionable:INTegrity:HARDware:EVENt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#INTegrity_HARDware_EVENt>`_
@@ -25717,7 +25718,7 @@ class ZVA_gen(Instrument):
                         _cmd = "NTRansition"
                         args = ["1"]
 
-                    NTRansition = NTRansition()
+                    NTRansition = NTRansition()  # type: ignore
                     """
                     `STATus:QUEStionable:INTegrity:HARDware:NTRansition
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#INTegrity_HARDware_NTRansition>`_
@@ -25736,7 +25737,7 @@ class ZVA_gen(Instrument):
                         _cmd = "PTRansition"
                         args = ["1"]
 
-                    PTRansition = PTRansition()
+                    PTRansition = PTRansition()  # type: ignore
                     """
                     `STATus:QUEStionable:INTegrity:HARDware:PTRansition
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#INTegrity_HARDware_PTRansition>`_
@@ -25744,7 +25745,7 @@ class ZVA_gen(Instrument):
                     Arguments: 1
                     """
 
-                HARDware = HARDware()
+                HARDware = HARDware()  # type: ignore
                 """
                 STATus:QUEStionable:INTegrity:HARDware
 
@@ -25762,7 +25763,7 @@ class ZVA_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 `STATus:QUEStionable:INTegrity:NTRansition
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#INTegrity_NTRansition>`_
@@ -25781,7 +25782,7 @@ class ZVA_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 `STATus:QUEStionable:INTegrity:PTRansition
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#INTegrity_PTRansition>`_
@@ -25789,7 +25790,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1
                 """
 
-            INTegrity = INTegrity()
+            INTegrity = INTegrity()  # type: ignore
             """
             STATus:QUEStionable:INTegrity
 
@@ -25804,7 +25805,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LIMit"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -25814,9 +25815,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:QUEStionable:LIMit:CONDition
 
@@ -25833,7 +25834,7 @@ class ZVA_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:QUEStionable:LIMit:ENABle
 
@@ -25848,9 +25849,9 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:QUEStionable:LIMit:EVENt
 
@@ -25867,7 +25868,7 @@ class ZVA_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:LIMit:NTRansition
 
@@ -25884,14 +25885,14 @@ class ZVA_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:LIMit:PTRansition
 
                 Arguments: 1
                 """
 
-            LIMit = LIMit()
+            LIMit = LIMit()  # type: ignore
             """
             STATus:QUEStionable:LIMit
 
@@ -25909,7 +25910,7 @@ class ZVA_gen(Instrument):
                 _cmd = "NTRansition"
                 args = ["1"]
 
-            NTRansition = NTRansition()
+            NTRansition = NTRansition()  # type: ignore
             """
             `STATus:QUEStionable:NTRansition
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#QUES_NTRansition>`_
@@ -25928,7 +25929,7 @@ class ZVA_gen(Instrument):
                 _cmd = "PTRansition"
                 args = ["1"]
 
-            PTRansition = PTRansition()
+            PTRansition = PTRansition()  # type: ignore
             """
             `STATus:QUEStionable:PTRansition
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#QUES_PTRansition>`_
@@ -25936,7 +25937,7 @@ class ZVA_gen(Instrument):
             Arguments: 1
             """
 
-        QUEStionable = QUEStionable()
+        QUEStionable = QUEStionable()  # type: ignore
         """
         STATus:QUEStionable
 
@@ -25951,7 +25952,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "QUEue"
-            args = []
+            args = []  # type: List[str]
 
             class NEXT(SCPINode, SCPIQuery):
                 """
@@ -25962,9 +25963,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NEXT"
-                args = []
+                args = []  # type: List[str]
 
-            NEXT = NEXT()
+            NEXT = NEXT()  # type: ignore
             """
             `STATus:QUEue:NEXT
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/status/status.htm#QUEue>`_
@@ -25972,14 +25973,14 @@ class ZVA_gen(Instrument):
             Arguments:
             """
 
-        QUEue = QUEue()
+        QUEue = QUEue()  # type: ignore
         """
         STATus:QUEue
 
         Arguments:
         """
 
-    STATus = STATus()
+    STATus = STATus()  # type: ignore
     """
     `STATus
     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/remote_control/status_reporting_system/status_registers.htm#IX_Operation_Register>`_
@@ -25995,7 +25996,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SYSTem"
-        args = []
+        args = []  # type: List[str]
 
         class COMMunicate(SCPINode):
             """
@@ -26005,7 +26006,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "COMMunicate"
-            args = []
+            args = []  # type: List[str]
 
             class AKAL(SCPINode):
                 """
@@ -26015,7 +26016,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AKAL"
-                args = []
+                args = []  # type: List[str]
 
                 class CONNection(SCPINode, SCPISet):
                     """
@@ -26028,7 +26029,7 @@ class ZVA_gen(Instrument):
                     _cmd = "CONNection"
                     args = ["MATCh", "OPEN", "SHORt", "THRough"]
 
-                CONNection = CONNection()
+                CONNection = CONNection()  # type: ignore
                 """
                 `SYSTem:COMMunicate:AKAL:CONNection
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#AKAL_CONNection>`_
@@ -26057,7 +26058,7 @@ class ZVA_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SYSTem:COMMunicate:AKAL:MMEMory:STATe
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#AKAL_MMEMory__STATe_>`_
@@ -26065,14 +26066,14 @@ class ZVA_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                MMEMory = MMEMory()
+                MMEMory = MMEMory()  # type: ignore
                 """
                 SYSTem:COMMunicate:AKAL:MMEMory
 
                 Arguments: 1, OFF, ON
                 """
 
-            AKAL = AKAL()
+            AKAL = AKAL()  # type: ignore
             """
             SYSTem:COMMunicate:AKAL
 
@@ -26087,7 +26088,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "GPIB"
-                args = []
+                args = []  # type: List[str]
 
                 class SELF(SCPINode):
                     """
@@ -26097,7 +26098,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SELF"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ADDRess(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -26110,7 +26111,7 @@ class ZVA_gen(Instrument):
                         _cmd = "ADDRess"
                         args = ["1"]
 
-                    ADDRess = ADDRess()
+                    ADDRess = ADDRess()  # type: ignore
                     """
                     `SYSTem:COMMunicate:GPIB:SELF:ADDRess
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#ADDRess>`_
@@ -26129,7 +26130,7 @@ class ZVA_gen(Instrument):
                         _cmd = "RTERminator"
                         args = ["EOI", "LFEOi"]
 
-                    RTERminator = RTERminator()
+                    RTERminator = RTERminator()  # type: ignore
                     """
                     `SYSTem:COMMunicate:GPIB:SELF:RTERminator
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RTERminator>`_
@@ -26137,14 +26138,14 @@ class ZVA_gen(Instrument):
                     Arguments: EOI, LFEOi
                     """
 
-                SELF = SELF()
+                SELF = SELF()  # type: ignore
                 """
                 SYSTem:COMMunicate:GPIB:SELF
 
                 Arguments:
                 """
 
-            GPIB = GPIB()
+            GPIB = GPIB()  # type: ignore
             """
             SYSTem:COMMunicate:GPIB
 
@@ -26159,7 +26160,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class COMMand(SCPINode):
                     """
@@ -26169,7 +26170,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COMMand"
-                    args = []
+                    args = []  # type: List[str]
 
                     class TABLes(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -26181,14 +26182,14 @@ class ZVA_gen(Instrument):
                         _cmd = "TABLes"
                         args = ["'string'"]
 
-                    TABLes = TABLes()
+                    TABLes = TABLes()  # type: ignore
                     """
                     SYSTem:COMMunicate:INTernal:COMMand:TABLes
 
                     Arguments: 'string'
                     """
 
-                COMMand = COMMand()
+                COMMand = COMMand()  # type: ignore
                 """
                 SYSTem:COMMunicate:INTernal:COMMand
 
@@ -26205,14 +26206,14 @@ class ZVA_gen(Instrument):
                     _cmd = "REMote"
                     args = ["1", "OFF", "ON"]
 
-                REMote = REMote()
+                REMote = REMote()  # type: ignore
                 """
                 SYSTem:COMMunicate:INTernal:REMote
 
                 Arguments: 1, OFF, ON
                 """
 
-            INTernal = INTernal()
+            INTernal = INTernal()  # type: ignore
             """
             SYSTem:COMMunicate:INTernal
 
@@ -26227,7 +26228,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NET"
-                args = []
+                args = []  # type: List[str]
 
                 class HOSTname(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -26240,7 +26241,7 @@ class ZVA_gen(Instrument):
                     _cmd = "HOSTname"
                     args = ["'string'"]
 
-                HOSTname = HOSTname()
+                HOSTname = HOSTname()  # type: ignore
                 """
                 `SYSTem:COMMunicate:NET:HOSTname
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#NET_HOSTNAME>`_
@@ -26248,7 +26249,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            NET = NET()
+            NET = NET()  # type: ignore
             """
             SYSTem:COMMunicate:NET
 
@@ -26263,7 +26264,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RDEVice"
-                args = []
+                args = []  # type: List[str]
 
                 class AKAL(SCPINode):
                     """
@@ -26273,7 +26274,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "AKAL"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ADDRess(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -26295,9 +26296,9 @@ class ZVA_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ALL"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ALL = ALL()
+                        ALL = ALL()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:AKAL:ADDRess:ALL
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_AKAL_ADDRess_ALL>`_
@@ -26305,7 +26306,7 @@ class ZVA_gen(Instrument):
                         Arguments:
                         """
 
-                    ADDRess = ADDRess()
+                    ADDRess = ADDRess()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:AKAL:ADDRess
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_AKAL_ADDRess>`_
@@ -26334,7 +26335,7 @@ class ZVA_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:AKAL:PREDuction:STATe
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#AKAL_PREDuction__STATe>`_
@@ -26342,7 +26343,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    PREDuction = PREDuction()
+                    PREDuction = PREDuction()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:AKAL:PREDuction
 
@@ -26358,9 +26359,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SANitize"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SANitize = SANitize()
+                    SANitize = SANitize()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:AKAL:SANitize
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#AKAL_SANitize>`_
@@ -26368,7 +26369,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                AKAL = AKAL()
+                AKAL = AKAL()  # type: ignore
                 """
                 SYSTem:COMMunicate:RDEVice:AKAL
 
@@ -26383,7 +26384,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EUNit"
-                    args = []
+                    args = []  # type: List[str]
 
                     class IDN(SCPINode, SCPIQuery):
                         """
@@ -26394,9 +26395,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "IDN"
-                        args = []
+                        args = []  # type: List[str]
 
-                    IDN = IDN()
+                    IDN = IDN()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:EUNit:IDN
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_EUNit_IDN>`_
@@ -26413,9 +26414,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "OPT"
-                        args = []
+                        args = []  # type: List[str]
 
-                    OPT = OPT()
+                    OPT = OPT()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:EUNit:OPT
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_EUNit_OPT>`_
@@ -26423,7 +26424,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                EUNit = EUNit()
+                EUNit = EUNit()  # type: ignore
                 """
                 SYSTem:COMMunicate:RDEVice:EUNit
 
@@ -26438,7 +26439,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "GENerator"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CATalog(SCPINode, SCPIQuery):
                         """
@@ -26449,9 +26450,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CATalog"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:CATalog
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_GENerator_CATalog>`_
@@ -26468,9 +26469,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:COUNt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_GENerator_COUNt>`_
@@ -26489,7 +26490,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DEFine"
                         args = ["'string'"]
 
-                    DEFine = DEFine()
+                    DEFine = DEFine()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:DEFine
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_GENerator_DEFine>`_
@@ -26506,9 +26507,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DELete"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DELete = DELete()
+                    DELete = DELete()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:DELete
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_GENerator_DELete>`_
@@ -26516,7 +26517,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                GENerator = GENerator()
+                GENerator = GENerator()  # type: ignore
                 """
                 SYSTem:COMMunicate:RDEVice:GENerator
 
@@ -26531,7 +26532,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PMETer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class AZERo(SCPINode, SCPISet):
                         """
@@ -26542,9 +26543,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "AZERo"
-                        args = []
+                        args = []  # type: List[str]
 
-                    AZERo = AZERo()
+                    AZERo = AZERo()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:AZERo
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_PMETer_AZERo>`_
@@ -26561,9 +26562,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CATalog"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:CATalog
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_PMETer_CATalog>`_
@@ -26579,7 +26580,7 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONFigure"
-                        args = []
+                        args = []  # type: List[str]
 
                         class AUTO(SCPINode, SCPIBool):
                             """
@@ -26602,14 +26603,14 @@ class ZVA_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             SYSTem:COMMunicate:RDEVice:PMETer:CONFigure:AUTO:STATe
 
                             Arguments: 1, OFF, ON
                             """
 
-                        AUTO = AUTO()
+                        AUTO = AUTO()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:PMETer:CONFigure:AUTO
                         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_PMETer_CONFigure_AUTO>`_
@@ -26617,7 +26618,7 @@ class ZVA_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    CONFigure = CONFigure()
+                    CONFigure = CONFigure()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:PMETer:CONFigure
 
@@ -26633,9 +26634,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:COUNt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_PMETer_COUNt>`_
@@ -26654,7 +26655,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DEFine"
                         args = ["'string'"]
 
-                    DEFine = DEFine()
+                    DEFine = DEFine()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:DEFine
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_PMETer_DEFine>`_
@@ -26671,9 +26672,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DELete"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DELete = DELete()
+                    DELete = DELete()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:DELete
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_PMETer_DELete>`_
@@ -26681,7 +26682,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                PMETer = PMETer()
+                PMETer = PMETer()  # type: ignore
                 """
                 SYSTem:COMMunicate:RDEVice:PMETer
 
@@ -26696,7 +26697,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RECeiver"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEFine(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -26709,7 +26710,7 @@ class ZVA_gen(Instrument):
                         _cmd = "DEFine"
                         args = ["'string'"]
 
-                    DEFine = DEFine()
+                    DEFine = DEFine()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:RECeiver:DEFine
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_RECeiver_DEFine>`_
@@ -26726,9 +26727,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DELete"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DELete = DELete()
+                    DELete = DELete()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:RECeiver:DELete
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_RECeiver_DELete>`_
@@ -26736,7 +26737,7 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                RECeiver = RECeiver()
+                RECeiver = RECeiver()  # type: ignore
                 """
                 SYSTem:COMMunicate:RDEVice:RECeiver
 
@@ -26751,7 +26752,7 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TEUNit"
-                    args = []
+                    args = []  # type: List[str]
 
                     class COUNt(SCPINode, SCPIQuery):
                         """
@@ -26762,9 +26763,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:TEUNit:COUNt
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_TEUNit_COUNt>`_
@@ -26781,9 +26782,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "IDN"
-                        args = []
+                        args = []  # type: List[str]
 
-                    IDN = IDN()
+                    IDN = IDN()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:TEUNit:IDN
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_TEUNit_IDN>`_
@@ -26800,9 +26801,9 @@ class ZVA_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "OPT"
-                        args = []
+                        args = []  # type: List[str]
 
-                    OPT = OPT()
+                    OPT = OPT()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:TEUNit:OPT
                     <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#RDEVice_TEUNit_OPT>`_
@@ -26810,14 +26811,14 @@ class ZVA_gen(Instrument):
                     Arguments:
                     """
 
-                TEUNit = TEUNit()
+                TEUNit = TEUNit()  # type: ignore
                 """
                 SYSTem:COMMunicate:RDEVice:TEUNit
 
                 Arguments:
                 """
 
-            RDEVice = RDEVice()
+            RDEVice = RDEVice()  # type: ignore
             """
             SYSTem:COMMunicate:RDEVice
 
@@ -26832,7 +26833,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TCPip"
-                args = []
+                args = []  # type: List[str]
 
                 class CONTrol(SCPINode, SCPIQuery):
                     """
@@ -26842,23 +26843,23 @@ class ZVA_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONTrol"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONTrol = CONTrol()
+                CONTrol = CONTrol()  # type: ignore
                 """
                 SYSTem:COMMunicate:TCPip:CONTrol
 
                 Arguments:
                 """
 
-            TCPip = TCPip()
+            TCPip = TCPip()  # type: ignore
             """
             SYSTem:COMMunicate:TCPip
 
             Arguments:
             """
 
-        COMMunicate = COMMunicate()
+        COMMunicate = COMMunicate()  # type: ignore
         """
         SYSTem:COMMunicate
 
@@ -26873,7 +26874,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CORRection"
-            args = []
+            args = []  # type: List[str]
 
             class FMPort(SCPINode, SCPIBool):
                 """
@@ -26896,7 +26897,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SYSTem:CORRection:FMPort:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#CORRection_FMPort_STATe>`_
@@ -26904,14 +26905,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            FMPort = FMPort()
+            FMPort = FMPort()  # type: ignore
             """
             SYSTem:CORRection:FMPort
 
             Arguments: 1, OFF, ON
             """
 
-        CORRection = CORRection()
+        CORRection = CORRection()  # type: ignore
         """
         SYSTem:CORRection
 
@@ -26926,7 +26927,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DATA"
-            args = []
+            args = []  # type: List[str]
 
             class SIZE(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -26939,7 +26940,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SIZE"
                 args = ["ALL", "AUTO"]
 
-            SIZE = SIZE()
+            SIZE = SIZE()  # type: ignore
             """
             `SYSTem:DATA:SIZE
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#DATA_SIZE>`_
@@ -26947,7 +26948,7 @@ class ZVA_gen(Instrument):
             Arguments: ALL, AUTO
             """
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         SYSTem:DATA
 
@@ -26965,7 +26966,7 @@ class ZVA_gen(Instrument):
             _cmd = "DATE"
             args = ["1"]
 
-        DATE = DATE()
+        DATE = DATE()  # type: ignore
         """
         `SYSTem:DATE
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#DATE>`_
@@ -26981,7 +26982,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DISPlay"
-            args = []
+            args = []  # type: List[str]
 
             class COLor(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -26994,7 +26995,7 @@ class ZVA_gen(Instrument):
                 _cmd = "COLor"
                 args = ["BWLStyles", "BWSolid", "DBACkground", "LBACkground"]
 
-            COLor = COLor()
+            COLor = COLor()  # type: ignore
             """
             `SYSTem:DISPlay:COLor
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#DISPlay_COLor>`_
@@ -27013,7 +27014,7 @@ class ZVA_gen(Instrument):
                 _cmd = "UPDate"
                 args = ["1", "FREeze", "OFF", "ON", "ONCE"]
 
-            UPDate = UPDate()
+            UPDate = UPDate()  # type: ignore
             """
             `SYSTem:DISPlay:UPDate
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#DISPlay_UPDate>`_
@@ -27021,7 +27022,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, FREeze, OFF, ON, ONCE
             """
 
-        DISPlay = DISPlay()
+        DISPlay = DISPlay()  # type: ignore
         """
         SYSTem:DISPlay
 
@@ -27036,7 +27037,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ERRor"
-            args = []
+            args = []  # type: List[str]
 
             class ALL(SCPINode, SCPIQuery):
                 """
@@ -27047,9 +27048,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALL"
-                args = []
+                args = []  # type: List[str]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `SYSTem:ERRor:ALL
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#ERRor_ALL>`_
@@ -27068,7 +27069,7 @@ class ZVA_gen(Instrument):
                 _cmd = "DISPlay"
                 args = ["1", "OFF", "ON"]
 
-            DISPlay = DISPlay()
+            DISPlay = DISPlay()  # type: ignore
             """
             `SYSTem:ERRor:DISPlay
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#ERRor_DISPlay>`_
@@ -27085,9 +27086,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NEXT"
-                args = []
+                args = []  # type: List[str]
 
-            NEXT = NEXT()
+            NEXT = NEXT()  # type: ignore
             """
             `SYSTem:ERRor:NEXT
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#ERRor_NEXT>`_
@@ -27095,7 +27096,7 @@ class ZVA_gen(Instrument):
             Arguments:
             """
 
-        ERRor = ERRor()
+        ERRor = ERRor()  # type: ignore
         """
         SYSTem:ERRor
 
@@ -27110,7 +27111,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FIRMware"
-            args = []
+            args = []  # type: List[str]
 
             class UPDate(SCPINode, SCPISet):
                 """
@@ -27123,7 +27124,7 @@ class ZVA_gen(Instrument):
                 _cmd = "UPDate"
                 args = ["'string'"]
 
-            UPDate = UPDate()
+            UPDate = UPDate()  # type: ignore
             """
             `SYSTem:FIRMware:UPDate
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#FIRMware_UPDate>`_
@@ -27131,7 +27132,7 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        FIRMware = FIRMware()
+        FIRMware = FIRMware()  # type: ignore
         """
         SYSTem:FIRMware
 
@@ -27147,9 +27148,9 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FPReset"
-            args = []
+            args = []  # type: List[str]
 
-        FPReset = FPReset()
+        FPReset = FPReset()  # type: ignore
         """
         `SYSTem:FPReset
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#FPReset>`_
@@ -27168,7 +27169,7 @@ class ZVA_gen(Instrument):
             _cmd = "FREQuency"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         `SYSTem:FREQuency
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#FREQuency_>`_
@@ -27184,7 +27185,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IDENtify"
-            args = []
+            args = []  # type: List[str]
 
             class FACTory(SCPINode, SCPISet):
                 """
@@ -27195,9 +27196,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FACTory"
-                args = []
+                args = []  # type: List[str]
 
-            FACTory = FACTory()
+            FACTory = FACTory()  # type: ignore
             """
             `SYSTem:IDENtify:FACTory
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#IDENtify_FACTory>`_
@@ -27216,7 +27217,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STRing"
                 args = ["'string'"]
 
-            STRing = STRing()
+            STRing = STRing()  # type: ignore
             """
             `SYSTem:IDENtify:STRing
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#IDENtify_STRing>`_
@@ -27224,7 +27225,7 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        IDENtify = IDENtify()
+        IDENtify = IDENtify()  # type: ignore
         """
         SYSTem:IDENtify
 
@@ -27242,7 +27243,7 @@ class ZVA_gen(Instrument):
             _cmd = "KLOCk"
             args = ["1", "OFF", "ON"]
 
-        KLOCk = KLOCk()
+        KLOCk = KLOCk()  # type: ignore
         """
         `SYSTem:KLOCk
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#KLOCk>`_
@@ -27261,7 +27262,7 @@ class ZVA_gen(Instrument):
             _cmd = "LANGuage"
             args = ["'string'"]
 
-        LANGuage = LANGuage()
+        LANGuage = LANGuage()  # type: ignore
         """
         `SYSTem:LANGuage
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#LANGuage>`_
@@ -27277,7 +27278,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LOGGing"
-            args = []
+            args = []  # type: List[str]
 
             class REMote(SCPINode, SCPIBool):
                 """
@@ -27299,21 +27300,21 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SYSTem:LOGGing:REMote:STATe
 
                 Arguments: 1, OFF, ON
                 """
 
-            REMote = REMote()
+            REMote = REMote()  # type: ignore
             """
             SYSTem:LOGGing:REMote
 
             Arguments: 1, OFF, ON
             """
 
-        LOGGing = LOGGing()
+        LOGGing = LOGGing()  # type: ignore
         """
         SYSTem:LOGGing
 
@@ -27328,9 +27329,9 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "NOPeration"
-            args = []
+            args = []  # type: List[str]
 
-        NOPeration = NOPeration()
+        NOPeration = NOPeration()  # type: ignore
         """
         SYSTem:NOPeration
 
@@ -27358,7 +27359,7 @@ class ZVA_gen(Instrument):
                 _cmd = "CENable"
                 args = ["'string'"]
 
-            CENable = CENable()
+            CENable = CENable()  # type: ignore
             """
             `SYSTem:PASSword:CENable
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#PASSword_ENABle>`_
@@ -27366,7 +27367,7 @@ class ZVA_gen(Instrument):
             Arguments: 'string'
             """
 
-        PASSword = PASSword()
+        PASSword = PASSword()  # type: ignore
         """
         SYSTem:PASSword
 
@@ -27382,7 +27383,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PRESet"
-            args = []
+            args = []  # type: List[str]
 
             class DUMMy(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -27392,9 +27393,9 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DUMMy"
-                args = []
+                args = []  # type: List[str]
 
-            DUMMy = DUMMy()
+            DUMMy = DUMMy()  # type: ignore
             """
             SYSTem:PRESet:DUMMy
 
@@ -27422,7 +27423,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SYSTem:PRESet:REMote:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#PRESet_REMote_STATe>`_
@@ -27430,7 +27431,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            REMote = REMote()
+            REMote = REMote()  # type: ignore
             """
             SYSTem:PRESet:REMote
 
@@ -27448,7 +27449,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SCOPe"
                 args = ["ALL", "SINGle"]
 
-            SCOPe = SCOPe()
+            SCOPe = SCOPe()  # type: ignore
             """
             `SYSTem:PRESet:SCOPe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#PRESet_SCOPe>`_
@@ -27477,7 +27478,7 @@ class ZVA_gen(Instrument):
                     _cmd = "NAME"
                     args = ["'string'"]
 
-                NAME = NAME()
+                NAME = NAME()  # type: ignore
                 """
                 `SYSTem:PRESet:USER:NAME
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#PRESet_USER_NAME>`_
@@ -27496,7 +27497,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SYSTem:PRESet:USER:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#PRESet_USER>`_
@@ -27504,14 +27505,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            USER = USER()
+            USER = USER()  # type: ignore
             """
             SYSTem:PRESet:USER
 
             Arguments: 1, OFF, ON
             """
 
-        PRESet = PRESet()
+        PRESet = PRESet()  # type: ignore
         """
         `SYSTem:PRESet
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#PRESet>`_
@@ -27530,7 +27531,7 @@ class ZVA_gen(Instrument):
             _cmd = "PRIority"
             args = ["ANORmal", "HIGH", "NORMal"]
 
-        PRIority = PRIority()
+        PRIority = PRIority()  # type: ignore
         """
         `SYSTem:PRIority
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#PRIority>`_
@@ -27546,7 +27547,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SETTings"
-            args = []
+            args = []  # type: List[str]
 
             class UPDate(SCPINode, SCPISet):
                 """
@@ -27558,14 +27559,14 @@ class ZVA_gen(Instrument):
                 _cmd = "UPDate"
                 args = ["ONCE"]
 
-            UPDate = UPDate()
+            UPDate = UPDate()  # type: ignore
             """
             SYSTem:SETTings:UPDate
 
             Arguments: ONCE
             """
 
-        SETTings = SETTings()
+        SETTings = SETTings()  # type: ignore
         """
         SYSTem:SETTings
 
@@ -27581,9 +27582,9 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SHUTdown"
-            args = []
+            args = []  # type: List[str]
 
-        SHUTdown = SHUTdown()
+        SHUTdown = SHUTdown()  # type: ignore
         """
         `SYSTem:SHUTdown
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#SHUTdown>`_
@@ -27599,7 +27600,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SOUNd"
-            args = []
+            args = []  # type: List[str]
 
             class ALARm(SCPINode, SCPIBool):
                 """
@@ -27622,7 +27623,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SYSTem:SOUNd:ALARm:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#SOUNd_ALARm__STATe_>`_
@@ -27630,7 +27631,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            ALARm = ALARm()
+            ALARm = ALARm()  # type: ignore
             """
             SYSTem:SOUNd:ALARm
 
@@ -27658,7 +27659,7 @@ class ZVA_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SYSTem:SOUNd:STATus:STATe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#SOUNd_STATus__STATe_1>`_
@@ -27666,14 +27667,14 @@ class ZVA_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            STATus = STATus()
+            STATus = STATus()  # type: ignore
             """
             SYSTem:SOUNd:STATus
 
             Arguments: 1, OFF, ON
             """
 
-        SOUNd = SOUNd()
+        SOUNd = SOUNd()  # type: ignore
         """
         SYSTem:SOUNd
 
@@ -27691,7 +27692,7 @@ class ZVA_gen(Instrument):
             _cmd = "TIME"
             args = ["1"]
 
-        TIME = TIME()
+        TIME = TIME()  # type: ignore
         """
         `SYSTem:TIME
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#TIME>`_
@@ -27720,7 +27721,7 @@ class ZVA_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SYSTem:TRESet:STATe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#TRESet_STATe>`_
@@ -27728,7 +27729,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        TRESet = TRESet()
+        TRESet = TRESet()  # type: ignore
         """
         SYSTem:TRESet
 
@@ -27743,7 +27744,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "USER"
-            args = []
+            args = []  # type: List[str]
 
             class DISPlay(SCPINode):
                 """
@@ -27753,7 +27754,7 @@ class ZVA_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DISPlay"
-                args = []
+                args = []  # type: List[str]
 
                 class TITLe(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -27766,7 +27767,7 @@ class ZVA_gen(Instrument):
                     _cmd = "TITLe"
                     args = ["'string'"]
 
-                TITLe = TITLe()
+                TITLe = TITLe()  # type: ignore
                 """
                 `SYSTem:USER:DISPlay:TITLe
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#USER_DISPlay_TITle>`_
@@ -27774,7 +27775,7 @@ class ZVA_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            DISPlay = DISPlay()
+            DISPlay = DISPlay()  # type: ignore
             """
             SYSTem:USER:DISPlay
 
@@ -27791,7 +27792,7 @@ class ZVA_gen(Instrument):
                 _cmd = "FKEY"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            FKEY = FKEY()
+            FKEY = FKEY()  # type: ignore
             """
             SYSTem:USER:FKEY
 
@@ -27820,7 +27821,7 @@ class ZVA_gen(Instrument):
                     _cmd = "FUNCtion"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                FUNCtion = FUNCtion()
+                FUNCtion = FUNCtion()  # type: ignore
                 """
                 `SYSTem:USER:KEY:FUNCtion
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#USER_KEY_FUNCtion>`_
@@ -27828,7 +27829,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            KEY = KEY()
+            KEY = KEY()  # type: ignore
             """
             `SYSTem:USER:KEY
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#USER_KEY>`_
@@ -27836,7 +27837,7 @@ class ZVA_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        USER = USER()
+        USER = USER()  # type: ignore
         """
         SYSTem:USER
 
@@ -27852,9 +27853,9 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "VERSion"
-            args = []
+            args = []  # type: List[str]
 
-        VERSion = VERSion()
+        VERSion = VERSion()  # type: ignore
         """
         `SYSTem:VERSion
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/system/system.htm#VERSion_>`_
@@ -27872,14 +27873,14 @@ class ZVA_gen(Instrument):
             _cmd = "WAIT"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-        WAIT = WAIT()
+        WAIT = WAIT()  # type: ignore
         """
         SYSTem:WAIT
 
         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
         """
 
-    SYSTem = SYSTem()
+    SYSTem = SYSTem()  # type: ignore
     """
     SYSTem
 
@@ -27907,7 +27908,7 @@ class ZVA_gen(Instrument):
             _cmd = "CLEar"
             args = ["MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
-        CLEar = CLEar()
+        CLEar = CLEar()  # type: ignore
         """
         `TRACe:CLEar
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trace/trace.htm#CLEar>`_
@@ -27937,7 +27938,7 @@ class ZVA_gen(Instrument):
                 _cmd = "MATH"
                 args = ["MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8", "'string'"]
 
-            MATH = MATH()
+            MATH = MATH()  # type: ignore
             """
             `TRACe:COPY:MATH
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trace/trace.htm#COPY_MATH>`_
@@ -27945,7 +27946,7 @@ class ZVA_gen(Instrument):
             Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8, 'string'
             """
 
-        COPY = COPY()
+        COPY = COPY()  # type: ignore
         """
         `TRACe:COPY
         <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trace/trace.htm#COPY>`_
@@ -27984,7 +27985,7 @@ class ZVA_gen(Instrument):
                     _cmd = "ALL"
                     args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `TRACe:DATA:RESPonse:ALL
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trace/trace.htm#RESPonse>`_
@@ -27992,7 +27993,7 @@ class ZVA_gen(Instrument):
                 Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                 """
 
-            RESPonse = RESPonse()
+            RESPonse = RESPonse()  # type: ignore
             """
             TRACe:DATA:RESPonse
 
@@ -28020,7 +28021,7 @@ class ZVA_gen(Instrument):
                     _cmd = "ALL"
                     args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `TRACe:DATA:STIMulus:ALL
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trace/trace.htm#STIMulus>`_
@@ -28028,21 +28029,21 @@ class ZVA_gen(Instrument):
                 Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                 """
 
-            STIMulus = STIMulus()
+            STIMulus = STIMulus()  # type: ignore
             """
             TRACe:DATA:STIMulus
 
             Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
             """
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         TRACe:DATA
 
         Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
         """
 
-    TRACe = TRACe()
+    TRACe = TRACe()  # type: ignore
     """
     TRACe
 
@@ -28057,7 +28058,7 @@ class ZVA_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "TRIGger"
-        args = []
+        args = []  # type: List[str]
 
         class SEQuence(SCPINode):
             """
@@ -28067,7 +28068,7 @@ class ZVA_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SEQuence"
-            args = []
+            args = []  # type: List[str]
 
             class HOLDoff(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -28091,7 +28092,7 @@ class ZVA_gen(Instrument):
                     _cmd = "GENerator"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                GENerator = GENerator()
+                GENerator = GENerator()  # type: ignore
                 """
                 `TRIGger:SEQuence:HOLDoff:GENerator
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trigger/trigger.htm#HOLDoff_GENerator>`_
@@ -28110,7 +28111,7 @@ class ZVA_gen(Instrument):
                     _cmd = "MODE"
                     args = ["PALL", "PSPecific"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `TRIGger:SEQuence:HOLDoff:MODE
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trigger/trigger.htm#HOLDoff_MODE>`_
@@ -28129,7 +28130,7 @@ class ZVA_gen(Instrument):
                     _cmd = "PORT"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                PORT = PORT()
+                PORT = PORT()  # type: ignore
                 """
                 `TRIGger:SEQuence:HOLDoff:PORT
                 <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trigger/trigger.htm#HOLDoff_PORT>`_
@@ -28137,7 +28138,7 @@ class ZVA_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            HOLDoff = HOLDoff()
+            HOLDoff = HOLDoff()  # type: ignore
             """
             `TRIGger:SEQuence:HOLDoff
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trigger/trigger.htm#HOLDoff>`_
@@ -28156,7 +28157,7 @@ class ZVA_gen(Instrument):
                 _cmd = "LINK"
                 args = ["'POINt'", "'PPOint'", "'SEGMent'", "'SWEep'"]
 
-            LINK = LINK()
+            LINK = LINK()  # type: ignore
             """
             `TRIGger:SEQuence:LINK
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trigger/trigger.htm#LINK>`_
@@ -28175,7 +28176,7 @@ class ZVA_gen(Instrument):
                 _cmd = "PULSe"
                 args = ["FEPulse", "FESYnc", "REPulse", "RESYnc"]
 
-            PULSe = PULSe()
+            PULSe = PULSe()  # type: ignore
             """
             `TRIGger:SEQuence:PULSe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trigger/trigger.htm#PULSe>`_
@@ -28194,7 +28195,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SLOPe"
                 args = ["NEGative", "POSitive"]
 
-            SLOPe = SLOPe()
+            SLOPe = SLOPe()  # type: ignore
             """
             `TRIGger:SEQuence:SLOPe
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trigger/trigger.htm#SLOPe>`_
@@ -28213,7 +28214,7 @@ class ZVA_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["EXTernal", "IMMediate", "MANual", "PGENerator", "RFPower", "TIMer"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `TRIGger:SEQuence:SOURce
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trigger/trigger.htm#SOURce>`_
@@ -28232,7 +28233,7 @@ class ZVA_gen(Instrument):
                 _cmd = "TIMer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            TIMer = TIMer()
+            TIMer = TIMer()  # type: ignore
             """
             `TRIGger:SEQuence:TIMer
             <https://www.rohde-schwarz.com/webhelp/zva_html_usermanual_en/scpi_reference/trigger/trigger.htm#TIMer>`_
@@ -28240,19 +28241,20 @@ class ZVA_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        SEQuence = SEQuence()
+        SEQuence = SEQuence()  # type: ignore
         """
         TRIGger:SEQuence
 
         Arguments:
         """
 
-    TRIGger = TRIGger()
+    TRIGger = TRIGger()  # type: ignore
     """
     TRIGger
 
     Arguments:
     """
+
 
 ZVA_gen._SCPI_class = ZVA_gen
 # END OF ZVA_gen

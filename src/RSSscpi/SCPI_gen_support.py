@@ -17,7 +17,7 @@ class SCPINodeBase(object):
     _cmd = "SCPINodeBase"
     _parent_class = None  # The class of the parent of the command node
     _SCPI_class = None  # Identifies the original class type in cases of subclassing
-    args = []
+    args = []  # type: List[str]
     """
     The arguments available for the SCPI node, as reported by GPIB Explorer.
     """

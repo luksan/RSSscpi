@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-# Generated from NRPxxSN_syntax.txt on 2019-05-21 16:02
+# Generated from NRPxxSN_syntax.txt on 2019-09-13 11:59
+from typing import List
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -13,9 +14,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*CLS"
-        args = []
+        args = []  # type: List[str]
 
-    CLS = CLS()
+    CLS = CLS()  # type: ignore
     """
     *CLS
 
@@ -32,7 +33,7 @@ class NRPxxSN_gen(Instrument):
         _cmd = "*ESE"
         args = ["1"]
 
-    ESE = ESE()
+    ESE = ESE()  # type: ignore
     """
     *ESE
 
@@ -47,9 +48,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*ESR"
-        args = []
+        args = []  # type: List[str]
 
-    ESR = ESR()
+    ESR = ESR()  # type: ignore
     """
     *ESR
 
@@ -64,9 +65,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*IDN"
-        args = []
+        args = []  # type: List[str]
 
-    IDN = IDN()
+    IDN = IDN()  # type: ignore
     """
     *IDN
 
@@ -81,9 +82,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*IST"
-        args = []
+        args = []  # type: List[str]
 
-    IST = IST()
+    IST = IST()  # type: ignore
     """
     *IST
 
@@ -98,9 +99,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*OPC"
-        args = []
+        args = []  # type: List[str]
 
-    OPC = OPC()
+    OPC = OPC()  # type: ignore
     """
     *OPC
 
@@ -115,9 +116,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*OPT"
-        args = []
+        args = []  # type: List[str]
 
-    OPT = OPT()
+    OPT = OPT()  # type: ignore
     """
     *OPT
 
@@ -134,7 +135,7 @@ class NRPxxSN_gen(Instrument):
         _cmd = "*PRE"
         args = ["1"]
 
-    PRE = PRE()
+    PRE = PRE()  # type: ignore
     """
     *PRE
 
@@ -151,7 +152,7 @@ class NRPxxSN_gen(Instrument):
         _cmd = "*RCL"
         args = ["1"]
 
-    RCL = RCL()
+    RCL = RCL()  # type: ignore
     """
     *RCL
 
@@ -166,9 +167,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*RST"
-        args = []
+        args = []  # type: List[str]
 
-    RST = RST()
+    RST = RST()  # type: ignore
     """
     *RST
 
@@ -185,7 +186,7 @@ class NRPxxSN_gen(Instrument):
         _cmd = "*SAV"
         args = ["1"]
 
-    SAV = SAV()
+    SAV = SAV()  # type: ignore
     """
     *SAV
 
@@ -202,7 +203,7 @@ class NRPxxSN_gen(Instrument):
         _cmd = "*SRE"
         args = ["1"]
 
-    SRE = SRE()
+    SRE = SRE()  # type: ignore
     """
     *SRE
 
@@ -217,9 +218,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*STB"
-        args = []
+        args = []  # type: List[str]
 
-    STB = STB()
+    STB = STB()  # type: ignore
     """
     *STB
 
@@ -234,9 +235,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*TRG"
-        args = []
+        args = []  # type: List[str]
 
-    TRG = TRG()
+    TRG = TRG()  # type: ignore
     """
     *TRG
 
@@ -251,9 +252,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*TST"
-        args = []
+        args = []  # type: List[str]
 
-    TST = TST()
+    TST = TST()  # type: ignore
     """
     *TST
 
@@ -268,9 +269,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*WAI"
-        args = []
+        args = []  # type: List[str]
 
-    WAI = WAI()
+    WAI = WAI()  # type: ignore
     """
     *WAI
 
@@ -285,9 +286,9 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ABORt"
-        args = []
+        args = []  # type: List[str]
 
-    ABORt = ABORt()
+    ABORt = ABORt()  # type: ignore
     """
     ABORt
 
@@ -302,7 +303,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "CALCulate"
-        args = []
+        args = []  # type: List[str]
 
         class FEED(SCPINode, SCPIQuery, SCPISet):
             """
@@ -314,14 +315,14 @@ class NRPxxSN_gen(Instrument):
             _cmd = "FEED"
             args = ["'string'"]
 
-        FEED = FEED()
+        FEED = FEED()  # type: ignore
         """
         CALCulate:FEED
 
         Arguments: 'string'
         """
 
-    CALCulate = CALCulate()
+    CALCulate = CALCulate()  # type: ignore
     """
     CALCulate
 
@@ -336,7 +337,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "CALibration"
-        args = []
+        args = []  # type: List[str]
 
         class DATA(SCPINode, SCPIQuery, SCPISet):
             """
@@ -356,16 +357,16 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LENGth"
-                args = []
+                args = []  # type: List[str]
 
-            LENGth = LENGth()
+            LENGth = LENGth()  # type: ignore
             """
             CALibration:DATA:LENGth
 
             Arguments:
             """
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         CALibration:DATA
 
@@ -380,7 +381,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "USER"
-            args = []
+            args = []  # type: List[str]
 
             class DATA(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -400,23 +401,23 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LENGth"
-                    args = []
+                    args = []  # type: List[str]
 
-                LENGth = LENGth()
+                LENGth = LENGth()  # type: ignore
                 """
                 CALibration:USER:DATA:LENGth
 
                 Arguments:
                 """
 
-            DATA = DATA()
+            DATA = DATA()  # type: ignore
             """
             CALibration:USER:DATA
 
             Arguments: <block_data>
             """
 
-        USER = USER()
+        USER = USER()  # type: ignore
         """
         CALibration:USER
 
@@ -431,7 +432,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ZERO"
-            args = []
+            args = []  # type: List[str]
 
             class AUTO(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -443,21 +444,21 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "AUTO"
                 args = ["ONCE"]
 
-            AUTO = AUTO()
+            AUTO = AUTO()  # type: ignore
             """
             CALibration:ZERO:AUTO
 
             Arguments: ONCE
             """
 
-        ZERO = ZERO()
+        ZERO = ZERO()  # type: ignore
         """
         CALibration:ZERO
 
         Arguments:
         """
 
-    CALibration = CALibration()
+    CALibration = CALibration()  # type: ignore
     """
     CALibration
 
@@ -472,7 +473,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "FETCh"
-        args = []
+        args = []  # type: List[str]
 
         class ARRay(SCPINode):
             """
@@ -482,7 +483,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ARRay"
-            args = []
+            args = []  # type: List[str]
 
             class POWer(SCPINode):
                 """
@@ -492,7 +493,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "POWer"
-                args = []
+                args = []  # type: List[str]
 
                 class AVG(SCPINode, SCPIQuery):
                     """
@@ -502,23 +503,23 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "AVG"
-                    args = []
+                    args = []  # type: List[str]
 
-                AVG = AVG()
+                AVG = AVG()  # type: ignore
                 """
                 FETCh:ARRay:POWer:AVG
 
                 Arguments:
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             FETCh:ARRay:POWer
 
             Arguments:
             """
 
-        ARRay = ARRay()
+        ARRay = ARRay()  # type: ignore
         """
         FETCh:ARRay
 
@@ -533,7 +534,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SCALar"
-            args = []
+            args = []  # type: List[str]
 
             class POWer(SCPINode):
                 """
@@ -543,7 +544,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "POWer"
-                args = []
+                args = []  # type: List[str]
 
                 class AVG(SCPINode, SCPIQuery):
                     """
@@ -553,9 +554,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "AVG"
-                    args = []
+                    args = []  # type: List[str]
 
-                AVG = AVG()
+                AVG = AVG()  # type: ignore
                 """
                 FETCh:SCALar:POWer:AVG
 
@@ -570,9 +571,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BURSt"
-                    args = []
+                    args = []  # type: List[str]
 
-                BURSt = BURSt()
+                BURSt = BURSt()  # type: ignore
                 """
                 FETCh:SCALar:POWer:BURSt
 
@@ -587,30 +588,30 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TSLot"
-                    args = []
+                    args = []  # type: List[str]
 
-                TSLot = TSLot()
+                TSLot = TSLot()  # type: ignore
                 """
                 FETCh:SCALar:POWer:TSLot
 
                 Arguments:
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             FETCh:SCALar:POWer
 
             Arguments:
             """
 
-        SCALar = SCALar()
+        SCALar = SCALar()  # type: ignore
         """
         FETCh:SCALar
 
         Arguments:
         """
 
-    FETCh = FETCh()
+    FETCh = FETCh()  # type: ignore
     """
     FETCh
 
@@ -625,7 +626,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "FORMat"
-        args = []
+        args = []  # type: List[str]
 
         class BORDer(SCPINode, SCPIQuery, SCPISet):
             """
@@ -637,7 +638,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "BORDer"
             args = ["NORMal", "SWAPped"]
 
-        BORDer = BORDer()
+        BORDer = BORDer()  # type: ignore
         """
         FORMat:BORDer
 
@@ -654,7 +655,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "DATA"
             args = ["ASCii", "REAL"]
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         FORMat:DATA
 
@@ -671,14 +672,14 @@ class NRPxxSN_gen(Instrument):
             _cmd = "SREGister"
             args = ["ASCii", "BINary", "HEXadecimal", "OCTal"]
 
-        SREGister = SREGister()
+        SREGister = SREGister()  # type: ignore
         """
         FORMat:SREGister
 
         Arguments: ASCii, BINary, HEXadecimal, OCTal
         """
 
-    FORMat = FORMat()
+    FORMat = FORMat()  # type: ignore
     """
     FORMat
 
@@ -693,7 +694,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "INITiate"
-        args = []
+        args = []  # type: List[str]
 
         class ALL(SCPINode, SCPISet):
             """
@@ -703,9 +704,9 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ALL"
-            args = []
+            args = []  # type: List[str]
 
-        ALL = ALL()
+        ALL = ALL()  # type: ignore
         """
         INITiate:ALL
 
@@ -722,7 +723,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "CONTinuous"
             args = ["1", "ON", "OFF"]
 
-        CONTinuous = CONTinuous()
+        CONTinuous = CONTinuous()  # type: ignore
         """
         INITiate:CONTinuous
 
@@ -737,16 +738,16 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IMMediate"
-            args = []
+            args = []  # type: List[str]
 
-        IMMediate = IMMediate()
+        IMMediate = IMMediate()  # type: ignore
         """
         INITiate:IMMediate
 
         Arguments:
         """
 
-    INITiate = INITiate()
+    INITiate = INITiate()  # type: ignore
     """
     INITiate
 
@@ -761,7 +762,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "READ"
-        args = []
+        args = []  # type: List[str]
 
         class ARRay(SCPINode):
             """
@@ -771,7 +772,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ARRay"
-            args = []
+            args = []  # type: List[str]
 
             class POWer(SCPINode):
                 """
@@ -781,7 +782,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "POWer"
-                args = []
+                args = []  # type: List[str]
 
                 class AVG(SCPINode, SCPIQuery):
                     """
@@ -791,23 +792,23 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "AVG"
-                    args = []
+                    args = []  # type: List[str]
 
-                AVG = AVG()
+                AVG = AVG()  # type: ignore
                 """
                 READ:ARRay:POWer:AVG
 
                 Arguments:
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             READ:ARRay:POWer
 
             Arguments:
             """
 
-        ARRay = ARRay()
+        ARRay = ARRay()  # type: ignore
         """
         READ:ARRay
 
@@ -822,7 +823,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SCALar"
-            args = []
+            args = []  # type: List[str]
 
             class POWer(SCPINode):
                 """
@@ -832,7 +833,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "POWer"
-                args = []
+                args = []  # type: List[str]
 
                 class AVG(SCPINode, SCPIQuery):
                     """
@@ -842,9 +843,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "AVG"
-                    args = []
+                    args = []  # type: List[str]
 
-                AVG = AVG()
+                AVG = AVG()  # type: ignore
                 """
                 READ:SCALar:POWer:AVG
 
@@ -859,9 +860,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BURSt"
-                    args = []
+                    args = []  # type: List[str]
 
-                BURSt = BURSt()
+                BURSt = BURSt()  # type: ignore
                 """
                 READ:SCALar:POWer:BURSt
 
@@ -876,23 +877,23 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TSLot"
-                    args = []
+                    args = []  # type: List[str]
 
-                TSLot = TSLot()
+                TSLot = TSLot()  # type: ignore
                 """
                 READ:SCALar:POWer:TSLot
 
                 Arguments:
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             READ:SCALar:POWer
 
             Arguments:
             """
 
-        SCALar = SCALar()
+        SCALar = SCALar()  # type: ignore
         """
         READ:SCALar
 
@@ -907,7 +908,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "XTIMe"
-            args = []
+            args = []  # type: List[str]
 
             class POWer(SCPINode, SCPIQuery):
                 """
@@ -917,23 +918,23 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "POWer"
-                args = []
+                args = []  # type: List[str]
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             READ:XTIMe:POWer
 
             Arguments:
             """
 
-        XTIMe = XTIMe()
+        XTIMe = XTIMe()  # type: ignore
         """
         READ:XTIMe
 
         Arguments:
         """
 
-    READ = READ()
+    READ = READ()  # type: ignore
     """
     READ
 
@@ -948,7 +949,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SENSe"
-        args = []
+        args = []  # type: List[str]
 
         class AUXiliary(SCPINode, SCPIQuery, SCPISet):
             """
@@ -960,7 +961,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "AUXiliary"
             args = ["MINMax", "NONE", "RNDMax"]
 
-        AUXiliary = AUXiliary()
+        AUXiliary = AUXiliary()  # type: ignore
         """
         SENSe:AUXiliary
 
@@ -975,7 +976,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "AVERage"
-            args = []
+            args = []  # type: List[str]
 
             class COUNt(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -1007,7 +1008,7 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "MTIMe"
                         args = ["1"]
 
-                    MTIMe = MTIMe()
+                    MTIMe = MTIMe()  # type: ignore
                     """
                     SENSe:AVERage:COUNt:AUTO:MTIMe
 
@@ -1024,7 +1025,7 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "NSRatio"
                         args = ["1"]
 
-                    NSRatio = NSRatio()
+                    NSRatio = NSRatio()  # type: ignore
                     """
                     SENSe:AVERage:COUNt:AUTO:NSRatio
 
@@ -1041,7 +1042,7 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "RESolution"
                         args = ["1"]
 
-                    RESolution = RESolution()
+                    RESolution = RESolution()  # type: ignore
                     """
                     SENSe:AVERage:COUNt:AUTO:RESolution
 
@@ -1058,7 +1059,7 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "SLOT"
                         args = ["1"]
 
-                    SLOT = SLOT()
+                    SLOT = SLOT()  # type: ignore
                     """
                     SENSe:AVERage:COUNt:AUTO:SLOT
 
@@ -1075,21 +1076,21 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "TYPE"
                         args = ["NSRatio", "RESolution"]
 
-                    TYPE = TYPE()
+                    TYPE = TYPE()  # type: ignore
                     """
                     SENSe:AVERage:COUNt:AUTO:TYPE
 
                     Arguments: NSRatio, RESolution
                     """
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 SENSe:AVERage:COUNt:AUTO
 
                 Arguments: <boolean>, ONCE
                 """
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             SENSe:AVERage:COUNt
 
@@ -1104,9 +1105,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RESet"
-                args = []
+                args = []  # type: List[str]
 
-            RESet = RESet()
+            RESet = RESet()  # type: ignore
             """
             SENSe:AVERage:RESet
 
@@ -1123,7 +1124,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SENSe:AVERage:STATe
 
@@ -1140,14 +1141,14 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "TCONtrol"
                 args = ["MOVing", "REPeat"]
 
-            TCONtrol = TCONtrol()
+            TCONtrol = TCONtrol()  # type: ignore
             """
             SENSe:AVERage:TCONtrol
 
             Arguments: MOVing, REPeat
             """
 
-        AVERage = AVERage()
+        AVERage = AVERage()  # type: ignore
         """
         SENSe:AVERage
 
@@ -1162,7 +1163,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CORRection"
-            args = []
+            args = []  # type: List[str]
 
             class DCYCle(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -1184,14 +1185,14 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SENSe:CORRection:DCYCle:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            DCYCle = DCYCle()
+            DCYCle = DCYCle()  # type: ignore
             """
             SENSe:CORRection:DCYCle
 
@@ -1218,14 +1219,14 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SENSe:CORRection:OFFSet:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            OFFSet = OFFSet()
+            OFFSet = OFFSet()  # type: ignore
             """
             SENSe:CORRection:OFFSet
 
@@ -1240,7 +1241,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SPDevice"
-                args = []
+                args = []  # type: List[str]
 
                 class LIST(SCPINode, SCPIQuery):
                     """
@@ -1250,9 +1251,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LIST"
-                    args = []
+                    args = []  # type: List[str]
 
-                LIST = LIST()
+                LIST = LIST()  # type: ignore
                 """
                 SENSe:CORRection:SPDevice:LIST
 
@@ -1269,7 +1270,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "SELect"
                     args = ["1"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 SENSe:CORRection:SPDevice:SELect
 
@@ -1286,21 +1287,21 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SENSe:CORRection:SPDevice:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            SPDevice = SPDevice()
+            SPDevice = SPDevice()  # type: ignore
             """
             SENSe:CORRection:SPDevice
 
             Arguments:
             """
 
-        CORRection = CORRection()
+        CORRection = CORRection()  # type: ignore
         """
         SENSe:CORRection
 
@@ -1317,7 +1318,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "FREQuency"
             args = ["1"]
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         SENSe:FREQuency
 
@@ -1334,7 +1335,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "FUNCtion"
             args = ["'string'"]
 
-        FUNCtion = FUNCtion()
+        FUNCtion = FUNCtion()  # type: ignore
         """
         SENSe:FUNCtion
 
@@ -1349,7 +1350,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "POWer"
-            args = []
+            args = []  # type: List[str]
 
             class AVG(SCPINode):
                 """
@@ -1359,7 +1360,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AVG"
-                args = []
+                args = []  # type: List[str]
 
                 class APERture(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -1371,7 +1372,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "APERture"
                     args = ["1"]
 
-                APERture = APERture()
+                APERture = APERture()  # type: ignore
                 """
                 SENSe:POWer:AVG:APERture
 
@@ -1386,7 +1387,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BUFFer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CLEar(SCPINode, SCPISet):
                         """
@@ -1396,9 +1397,9 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CLEar"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CLEar = CLEar()
+                    CLEar = CLEar()  # type: ignore
                     """
                     SENSe:POWer:AVG:BUFFer:CLEar
 
@@ -1413,9 +1414,9 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     SENSe:POWer:AVG:BUFFer:COUNt
 
@@ -1430,9 +1431,9 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DATA"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DATA = DATA()
+                    DATA = DATA()  # type: ignore
                     """
                     SENSe:POWer:AVG:BUFFer:DATA
 
@@ -1449,7 +1450,7 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "INFO"
                         args = ["'string'"]
 
-                    INFO = INFO()
+                    INFO = INFO()  # type: ignore
                     """
                     SENSe:POWer:AVG:BUFFer:INFO
 
@@ -1466,7 +1467,7 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "SIZE"
                         args = ["1"]
 
-                    SIZE = SIZE()
+                    SIZE = SIZE()  # type: ignore
                     """
                     SENSe:POWer:AVG:BUFFer:SIZE
 
@@ -1483,14 +1484,14 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SENSe:POWer:AVG:BUFFer:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                BUFFer = BUFFer()
+                BUFFer = BUFFer()  # type: ignore
                 """
                 SENSe:POWer:AVG:BUFFer
 
@@ -1507,7 +1508,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "FAST"
                     args = ["1", "ON", "OFF"]
 
-                FAST = FAST()
+                FAST = FAST()  # type: ignore
                 """
                 SENSe:POWer:AVG:FAST
 
@@ -1522,7 +1523,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SMOothing"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
@@ -1534,21 +1535,21 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SENSe:POWer:AVG:SMOothing:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                SMOothing = SMOothing()
+                SMOothing = SMOothing()  # type: ignore
                 """
                 SENSe:POWer:AVG:SMOothing
 
                 Arguments:
                 """
 
-            AVG = AVG()
+            AVG = AVG()  # type: ignore
             """
             SENSe:POWer:AVG
 
@@ -1563,7 +1564,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BURSt"
-                args = []
+                args = []  # type: List[str]
 
                 class DTOLerance(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -1575,7 +1576,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "DTOLerance"
                     args = ["1"]
 
-                DTOLerance = DTOLerance()
+                DTOLerance = DTOLerance()  # type: ignore
                 """
                 SENSe:POWer:BURSt:DTOLerance
 
@@ -1590,16 +1591,16 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LENGth"
-                    args = []
+                    args = []  # type: List[str]
 
-                LENGth = LENGth()
+                LENGth = LENGth()  # type: ignore
                 """
                 SENSe:POWer:BURSt:LENGth
 
                 Arguments:
                 """
 
-            BURSt = BURSt()
+            BURSt = BURSt()  # type: ignore
             """
             SENSe:POWer:BURSt
 
@@ -1614,7 +1615,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TSLot"
-                args = []
+                args = []  # type: List[str]
 
                 class AVG(SCPINode):
                     """
@@ -1624,7 +1625,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "AVG"
-                    args = []
+                    args = []  # type: List[str]
 
                     class COUNt(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1636,7 +1637,7 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "COUNt"
                         args = ["1"]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     SENSe:POWer:TSLot:AVG:COUNt
 
@@ -1651,7 +1652,7 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EXCLude"
-                        args = []
+                        args = []  # type: List[str]
 
                         class MID(SCPINode):
                             """
@@ -1661,7 +1662,7 @@ class NRPxxSN_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "MID"
-                            args = []
+                            args = []  # type: List[str]
 
                             class OFFSet(SCPINode):
                                 """
@@ -1671,7 +1672,7 @@ class NRPxxSN_gen(Instrument):
                                 """
                                 __slots__ = ()
                                 _cmd = "OFFSet"
-                                args = []
+                                args = []  # type: List[str]
 
                                 class TIME(SCPINode, SCPIQuery, SCPISet):
                                     """
@@ -1683,14 +1684,14 @@ class NRPxxSN_gen(Instrument):
                                     _cmd = "TIME"
                                     args = ["1"]
 
-                                TIME = TIME()
+                                TIME = TIME()  # type: ignore
                                 """
                                 SENSe:POWer:TSLot:AVG:EXCLude:MID:OFFSet:TIME
 
                                 Arguments: 1
                                 """
 
-                            OFFSet = OFFSet()
+                            OFFSet = OFFSet()  # type: ignore
                             """
                             SENSe:POWer:TSLot:AVG:EXCLude:MID:OFFSet
 
@@ -1707,7 +1708,7 @@ class NRPxxSN_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "ON", "OFF"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             SENSe:POWer:TSLot:AVG:EXCLude:MID:STATe
 
@@ -1724,21 +1725,21 @@ class NRPxxSN_gen(Instrument):
                                 _cmd = "TIME"
                                 args = ["1"]
 
-                            TIME = TIME()
+                            TIME = TIME()  # type: ignore
                             """
                             SENSe:POWer:TSLot:AVG:EXCLude:MID:TIME
 
                             Arguments: 1
                             """
 
-                        MID = MID()
+                        MID = MID()  # type: ignore
                         """
                         SENSe:POWer:TSLot:AVG:EXCLude:MID
 
                         Arguments:
                         """
 
-                    EXCLude = EXCLude()
+                    EXCLude = EXCLude()  # type: ignore
                     """
                     SENSe:POWer:TSLot:AVG:EXCLude
 
@@ -1755,28 +1756,28 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "WIDTh"
                         args = ["1"]
 
-                    WIDTh = WIDTh()
+                    WIDTh = WIDTh()  # type: ignore
                     """
                     SENSe:POWer:TSLot:AVG:WIDTh
 
                     Arguments: 1
                     """
 
-                AVG = AVG()
+                AVG = AVG()  # type: ignore
                 """
                 SENSe:POWer:TSLot:AVG
 
                 Arguments:
                 """
 
-            TSLot = TSLot()
+            TSLot = TSLot()  # type: ignore
             """
             SENSe:POWer:TSLot
 
             Arguments:
             """
 
-        POWer = POWer()
+        POWer = POWer()  # type: ignore
         """
         SENSe:POWer
 
@@ -1803,7 +1804,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "AUTO"
                 args = ["1", "ON", "OFF"]
 
-            AUTO = AUTO()
+            AUTO = AUTO()  # type: ignore
             """
             SENSe:RANGe:AUTO
 
@@ -1820,14 +1821,14 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "CLEVel"
                 args = ["1"]
 
-            CLEVel = CLEVel()
+            CLEVel = CLEVel()  # type: ignore
             """
             SENSe:RANGe:CLEVel
 
             Arguments: 1
             """
 
-        RANGe = RANGe()
+        RANGe = RANGe()  # type: ignore
         """
         SENSe:RANGe
 
@@ -1844,7 +1845,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "SAMPling"
             args = ["FREQ1"]
 
-        SAMPling = SAMPling()
+        SAMPling = SAMPling()  # type: ignore
         """
         SENSe:SAMPling
 
@@ -1859,7 +1860,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SGAMma"
-            args = []
+            args = []  # type: List[str]
 
             class CORRection(SCPINode):
                 """
@@ -1869,7 +1870,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CORRection"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
@@ -1881,14 +1882,14 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SENSe:SGAMma:CORRection:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            CORRection = CORRection()
+            CORRection = CORRection()  # type: ignore
             """
             SENSe:SGAMma:CORRection
 
@@ -1905,7 +1906,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "MAGNitude"
                 args = ["1"]
 
-            MAGNitude = MAGNitude()
+            MAGNitude = MAGNitude()  # type: ignore
             """
             SENSe:SGAMma:MAGNitude
 
@@ -1922,14 +1923,14 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "PHASe"
                 args = ["1"]
 
-            PHASe = PHASe()
+            PHASe = PHASe()  # type: ignore
             """
             SENSe:SGAMma:PHASe
 
             Arguments: 1
             """
 
-        SGAMma = SGAMma()
+        SGAMma = SGAMma()  # type: ignore
         """
         SENSe:SGAMma
 
@@ -1944,7 +1945,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TIMing"
-            args = []
+            args = []  # type: List[str]
 
             class EXCLude(SCPINode):
                 """
@@ -1954,7 +1955,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXCLude"
-                args = []
+                args = []  # type: List[str]
 
                 class STARt(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -1966,7 +1967,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "STARt"
                     args = ["1"]
 
-                STARt = STARt()
+                STARt = STARt()  # type: ignore
                 """
                 SENSe:TIMing:EXCLude:STARt
 
@@ -1983,21 +1984,21 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "STOP"
                     args = ["1"]
 
-                STOP = STOP()
+                STOP = STOP()  # type: ignore
                 """
                 SENSe:TIMing:EXCLude:STOP
 
                 Arguments: 1
                 """
 
-            EXCLude = EXCLude()
+            EXCLude = EXCLude()  # type: ignore
             """
             SENSe:TIMing:EXCLude
 
             Arguments:
             """
 
-        TIMing = TIMing()
+        TIMing = TIMing()  # type: ignore
         """
         SENSe:TIMing
 
@@ -2012,7 +2013,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TRACe"
-            args = []
+            args = []  # type: List[str]
 
             class AVERage(SCPINode):
                 """
@@ -2022,7 +2023,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AVERage"
-                args = []
+                args = []  # type: List[str]
 
                 class COUNt(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -2034,7 +2035,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "COUNt"
                     args = ["1"]
 
-                COUNt = COUNt()
+                COUNt = COUNt()  # type: ignore
                 """
                 SENSe:TRACe:AVERage:COUNt
 
@@ -2051,7 +2052,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SENSe:TRACe:AVERage:STATe
 
@@ -2068,14 +2069,14 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "TCONtrol"
                     args = ["MOVing", "REPeat"]
 
-                TCONtrol = TCONtrol()
+                TCONtrol = TCONtrol()  # type: ignore
                 """
                 SENSe:TRACe:AVERage:TCONtrol
 
                 Arguments: MOVing, REPeat
                 """
 
-            AVERage = AVERage()
+            AVERage = AVERage()  # type: ignore
             """
             SENSe:TRACe:AVERage
 
@@ -2090,9 +2091,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DATA"
-                args = []
+                args = []  # type: List[str]
 
-            DATA = DATA()
+            DATA = DATA()  # type: ignore
             """
             SENSe:TRACe:DATA
 
@@ -2107,9 +2108,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MPWidth"
-                args = []
+                args = []  # type: List[str]
 
-            MPWidth = MPWidth()
+            MPWidth = MPWidth()  # type: ignore
             """
             SENSe:TRACe:MPWidth
 
@@ -2124,7 +2125,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "OFFSet"
-                args = []
+                args = []  # type: List[str]
 
                 class TIME(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -2136,14 +2137,14 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "TIME"
                     args = ["1"]
 
-                TIME = TIME()
+                TIME = TIME()  # type: ignore
                 """
                 SENSe:TRACe:OFFSet:TIME
 
                 Arguments: 1
                 """
 
-            OFFSet = OFFSet()
+            OFFSet = OFFSet()  # type: ignore
             """
             SENSe:TRACe:OFFSet
 
@@ -2160,7 +2161,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "POINts"
                 args = ["1"]
 
-            POINts = POINts()
+            POINts = POINts()  # type: ignore
             """
             SENSe:TRACe:POINts
 
@@ -2177,7 +2178,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "REALtime"
                 args = ["1", "ON", "OFF"]
 
-            REALtime = REALtime()
+            REALtime = REALtime()  # type: ignore
             """
             SENSe:TRACe:REALtime
 
@@ -2194,21 +2195,21 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "TIME"
                 args = ["1"]
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             SENSe:TRACe:TIME
 
             Arguments: 1
             """
 
-        TRACe = TRACe()
+        TRACe = TRACe()  # type: ignore
         """
         SENSe:TRACe
 
         Arguments:
         """
 
-    SENSe = SENSe()
+    SENSe = SENSe()  # type: ignore
     """
     SENSe
 
@@ -2223,7 +2224,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "STATus"
-        args = []
+        args = []  # type: List[str]
 
         class DEVice(SCPINode):
             """
@@ -2233,7 +2234,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DEVice"
-            args = []
+            args = []  # type: List[str]
 
             class CONDition(SCPINode, SCPIQuery):
                 """
@@ -2243,9 +2244,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONDition"
-                args = []
+                args = []  # type: List[str]
 
-            CONDition = CONDition()
+            CONDition = CONDition()  # type: ignore
             """
             STATus:DEVice:CONDition
 
@@ -2262,7 +2263,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "ENABle"
                 args = ["1"]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             STATus:DEVice:ENABle
 
@@ -2277,9 +2278,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EVENt"
-                args = []
+                args = []  # type: List[str]
 
-            EVENt = EVENt()
+            EVENt = EVENt()  # type: ignore
             """
             STATus:DEVice:EVENt
 
@@ -2296,7 +2297,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "NTRansition"
                 args = ["1"]
 
-            NTRansition = NTRansition()
+            NTRansition = NTRansition()  # type: ignore
             """
             STATus:DEVice:NTRansition
 
@@ -2313,14 +2314,14 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "PTRansition"
                 args = ["1"]
 
-            PTRansition = PTRansition()
+            PTRansition = PTRansition()  # type: ignore
             """
             STATus:DEVice:PTRansition
 
             Arguments: 1
             """
 
-        DEVice = DEVice()
+        DEVice = DEVice()  # type: ignore
         """
         STATus:DEVice
 
@@ -2335,7 +2336,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "OPERation"
-            args = []
+            args = []  # type: List[str]
 
             class CALibrating(SCPINode):
                 """
@@ -2345,7 +2346,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CALibrating"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -2355,9 +2356,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:OPERation:CALibrating:CONDition
 
@@ -2374,7 +2375,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:OPERation:CALibrating:ENABle
 
@@ -2391,7 +2392,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:OPERation:CALibrating:NTRansition
 
@@ -2408,7 +2409,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:OPERation:CALibrating:PTRansition
 
@@ -2423,7 +2424,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SUMMary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EVENt(SCPINode, SCPIQuery):
                         """
@@ -2433,23 +2434,23 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:OPERation:CALibrating:SUMMary:EVENt
 
                     Arguments:
                     """
 
-                SUMMary = SUMMary()
+                SUMMary = SUMMary()  # type: ignore
                 """
                 STATus:OPERation:CALibrating:SUMMary
 
                 Arguments:
                 """
 
-            CALibrating = CALibrating()
+            CALibrating = CALibrating()  # type: ignore
             """
             STATus:OPERation:CALibrating
 
@@ -2464,9 +2465,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONDition"
-                args = []
+                args = []  # type: List[str]
 
-            CONDition = CONDition()
+            CONDition = CONDition()  # type: ignore
             """
             STATus:OPERation:CONDition
 
@@ -2483,7 +2484,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "ENABle"
                 args = ["1"]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             STATus:OPERation:ENABle
 
@@ -2498,9 +2499,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EVENt"
-                args = []
+                args = []  # type: List[str]
 
-            EVENt = EVENt()
+            EVENt = EVENt()  # type: ignore
             """
             STATus:OPERation:EVENt
 
@@ -2515,7 +2516,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LLFail"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -2525,9 +2526,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:OPERation:LLFail:CONDition
 
@@ -2544,7 +2545,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:OPERation:LLFail:ENABle
 
@@ -2561,7 +2562,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:OPERation:LLFail:NTRansition
 
@@ -2578,7 +2579,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:OPERation:LLFail:PTRansition
 
@@ -2593,7 +2594,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SUMMary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EVENt(SCPINode, SCPIQuery):
                         """
@@ -2603,23 +2604,23 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:OPERation:LLFail:SUMMary:EVENt
 
                     Arguments:
                     """
 
-                SUMMary = SUMMary()
+                SUMMary = SUMMary()  # type: ignore
                 """
                 STATus:OPERation:LLFail:SUMMary
 
                 Arguments:
                 """
 
-            LLFail = LLFail()
+            LLFail = LLFail()  # type: ignore
             """
             STATus:OPERation:LLFail
 
@@ -2634,7 +2635,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASuring"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -2644,9 +2645,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:OPERation:MEASuring:CONDition
 
@@ -2663,7 +2664,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:OPERation:MEASuring:ENABle
 
@@ -2680,7 +2681,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:OPERation:MEASuring:NTRansition
 
@@ -2697,7 +2698,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:OPERation:MEASuring:PTRansition
 
@@ -2712,7 +2713,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SUMMary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EVENt(SCPINode, SCPIQuery):
                         """
@@ -2722,23 +2723,23 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:OPERation:MEASuring:SUMMary:EVENt
 
                     Arguments:
                     """
 
-                SUMMary = SUMMary()
+                SUMMary = SUMMary()  # type: ignore
                 """
                 STATus:OPERation:MEASuring:SUMMary
 
                 Arguments:
                 """
 
-            MEASuring = MEASuring()
+            MEASuring = MEASuring()  # type: ignore
             """
             STATus:OPERation:MEASuring
 
@@ -2755,7 +2756,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "NTRansition"
                 args = ["1"]
 
-            NTRansition = NTRansition()
+            NTRansition = NTRansition()  # type: ignore
             """
             STATus:OPERation:NTRansition
 
@@ -2772,7 +2773,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "PTRansition"
                 args = ["1"]
 
-            PTRansition = PTRansition()
+            PTRansition = PTRansition()  # type: ignore
             """
             STATus:OPERation:PTRansition
 
@@ -2787,7 +2788,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SENSe"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -2797,9 +2798,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:OPERation:SENSe:CONDition
 
@@ -2816,7 +2817,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:OPERation:SENSe:ENABle
 
@@ -2833,7 +2834,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:OPERation:SENSe:NTRansition
 
@@ -2850,7 +2851,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:OPERation:SENSe:PTRansition
 
@@ -2865,7 +2866,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SUMMary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EVENt(SCPINode, SCPIQuery):
                         """
@@ -2875,23 +2876,23 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:OPERation:SENSe:SUMMary:EVENt
 
                     Arguments:
                     """
 
-                SUMMary = SUMMary()
+                SUMMary = SUMMary()  # type: ignore
                 """
                 STATus:OPERation:SENSe:SUMMary
 
                 Arguments:
                 """
 
-            SENSe = SENSe()
+            SENSe = SENSe()  # type: ignore
             """
             STATus:OPERation:SENSe
 
@@ -2906,7 +2907,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRIGger"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -2916,9 +2917,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:OPERation:TRIGger:CONDition
 
@@ -2935,7 +2936,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:OPERation:TRIGger:ENABle
 
@@ -2952,7 +2953,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:OPERation:TRIGger:NTRansition
 
@@ -2969,7 +2970,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:OPERation:TRIGger:PTRansition
 
@@ -2984,7 +2985,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SUMMary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EVENt(SCPINode, SCPIQuery):
                         """
@@ -2994,23 +2995,23 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:OPERation:TRIGger:SUMMary:EVENt
 
                     Arguments:
                     """
 
-                SUMMary = SUMMary()
+                SUMMary = SUMMary()  # type: ignore
                 """
                 STATus:OPERation:TRIGger:SUMMary
 
                 Arguments:
                 """
 
-            TRIGger = TRIGger()
+            TRIGger = TRIGger()  # type: ignore
             """
             STATus:OPERation:TRIGger
 
@@ -3025,7 +3026,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ULFail"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -3035,9 +3036,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:OPERation:ULFail:CONDition
 
@@ -3054,7 +3055,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:OPERation:ULFail:ENABle
 
@@ -3071,7 +3072,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:OPERation:ULFail:NTRansition
 
@@ -3088,7 +3089,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:OPERation:ULFail:PTRansition
 
@@ -3103,7 +3104,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SUMMary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EVENt(SCPINode, SCPIQuery):
                         """
@@ -3113,30 +3114,30 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:OPERation:ULFail:SUMMary:EVENt
 
                     Arguments:
                     """
 
-                SUMMary = SUMMary()
+                SUMMary = SUMMary()  # type: ignore
                 """
                 STATus:OPERation:ULFail:SUMMary
 
                 Arguments:
                 """
 
-            ULFail = ULFail()
+            ULFail = ULFail()  # type: ignore
             """
             STATus:OPERation:ULFail
 
             Arguments:
             """
 
-        OPERation = OPERation()
+        OPERation = OPERation()  # type: ignore
         """
         STATus:OPERation
 
@@ -3151,9 +3152,9 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PRESet"
-            args = []
+            args = []  # type: List[str]
 
-        PRESet = PRESet()
+        PRESet = PRESet()  # type: ignore
         """
         STATus:PRESet
 
@@ -3168,7 +3169,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "QUEStionable"
-            args = []
+            args = []  # type: List[str]
 
             class CALibration(SCPINode):
                 """
@@ -3178,7 +3179,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CALibration"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -3188,9 +3189,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:QUEStionable:CALibration:CONDition
 
@@ -3207,7 +3208,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:QUEStionable:CALibration:ENABle
 
@@ -3224,7 +3225,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:CALibration:NTRansition
 
@@ -3241,7 +3242,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:CALibration:PTRansition
 
@@ -3256,7 +3257,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SUMMary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EVENt(SCPINode, SCPIQuery):
                         """
@@ -3266,23 +3267,23 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:QUEStionable:CALibration:SUMMary:EVENt
 
                     Arguments:
                     """
 
-                SUMMary = SUMMary()
+                SUMMary = SUMMary()  # type: ignore
                 """
                 STATus:QUEStionable:CALibration:SUMMary
 
                 Arguments:
                 """
 
-            CALibration = CALibration()
+            CALibration = CALibration()  # type: ignore
             """
             STATus:QUEStionable:CALibration
 
@@ -3297,9 +3298,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONDition"
-                args = []
+                args = []  # type: List[str]
 
-            CONDition = CONDition()
+            CONDition = CONDition()  # type: ignore
             """
             STATus:QUEStionable:CONDition
 
@@ -3316,7 +3317,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "ENABle"
                 args = ["1"]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             STATus:QUEStionable:ENABle
 
@@ -3331,9 +3332,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EVENt"
-                args = []
+                args = []  # type: List[str]
 
-            EVENt = EVENt()
+            EVENt = EVENt()  # type: ignore
             """
             STATus:QUEStionable:EVENt
 
@@ -3350,7 +3351,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "NTRansition"
                 args = ["1"]
 
-            NTRansition = NTRansition()
+            NTRansition = NTRansition()  # type: ignore
             """
             STATus:QUEStionable:NTRansition
 
@@ -3365,7 +3366,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "POWer"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -3375,9 +3376,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:QUEStionable:POWer:CONDition
 
@@ -3394,7 +3395,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:QUEStionable:POWer:ENABle
 
@@ -3411,7 +3412,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:POWer:NTRansition
 
@@ -3428,7 +3429,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:POWer:PTRansition
 
@@ -3443,7 +3444,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SUMMary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EVENt(SCPINode, SCPIQuery):
                         """
@@ -3453,23 +3454,23 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:QUEStionable:POWer:SUMMary:EVENt
 
                     Arguments:
                     """
 
-                SUMMary = SUMMary()
+                SUMMary = SUMMary()  # type: ignore
                 """
                 STATus:QUEStionable:POWer:SUMMary
 
                 Arguments:
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             STATus:QUEStionable:POWer
 
@@ -3486,7 +3487,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "PTRansition"
                 args = ["1"]
 
-            PTRansition = PTRansition()
+            PTRansition = PTRansition()  # type: ignore
             """
             STATus:QUEStionable:PTRansition
 
@@ -3501,7 +3502,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "WINDow"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -3511,9 +3512,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:QUEStionable:WINDow:CONDition
 
@@ -3530,7 +3531,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:QUEStionable:WINDow:ENABle
 
@@ -3547,7 +3548,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:WINDow:NTRansition
 
@@ -3564,7 +3565,7 @@ class NRPxxSN_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:WINDow:PTRansition
 
@@ -3579,7 +3580,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SUMMary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EVENt(SCPINode, SCPIQuery):
                         """
@@ -3589,30 +3590,30 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:QUEStionable:WINDow:SUMMary:EVENt
 
                     Arguments:
                     """
 
-                SUMMary = SUMMary()
+                SUMMary = SUMMary()  # type: ignore
                 """
                 STATus:QUEStionable:WINDow:SUMMary
 
                 Arguments:
                 """
 
-            WINDow = WINDow()
+            WINDow = WINDow()  # type: ignore
             """
             STATus:QUEStionable:WINDow
 
             Arguments:
             """
 
-        QUEStionable = QUEStionable()
+        QUEStionable = QUEStionable()  # type: ignore
         """
         STATus:QUEStionable
 
@@ -3627,7 +3628,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "QUEue"
-            args = []
+            args = []  # type: List[str]
 
             class NEXT(SCPINode, SCPIQuery):
                 """
@@ -3637,23 +3638,23 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NEXT"
-                args = []
+                args = []  # type: List[str]
 
-            NEXT = NEXT()
+            NEXT = NEXT()  # type: ignore
             """
             STATus:QUEue:NEXT
 
             Arguments:
             """
 
-        QUEue = QUEue()
+        QUEue = QUEue()  # type: ignore
         """
         STATus:QUEue
 
         Arguments:
         """
 
-    STATus = STATus()
+    STATus = STATus()  # type: ignore
     """
     STATus
 
@@ -3668,7 +3669,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SYSTem"
-        args = []
+        args = []  # type: List[str]
 
         class CLOCk(SCPINode):
             """
@@ -3678,7 +3679,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CLOCk"
-            args = []
+            args = []  # type: List[str]
 
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -3690,14 +3691,14 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["EXTernal", "INTernal"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             SYSTem:CLOCk:SOURce
 
             Arguments: EXTernal, INTernal
             """
 
-        CLOCk = CLOCk()
+        CLOCk = CLOCk()  # type: ignore
         """
         SYSTem:CLOCk
 
@@ -3712,7 +3713,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "COMMunicate"
-            args = []
+            args = []  # type: List[str]
 
             class NETWork(SCPINode):
                 """
@@ -3722,7 +3723,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NETWork"
-                args = []
+                args = []  # type: List[str]
 
                 class COMMon(SCPINode):
                     """
@@ -3732,7 +3733,7 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COMMon"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DOMain(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -3744,7 +3745,7 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "DOMain"
                         args = ["'string'"]
 
-                    DOMain = DOMain()
+                    DOMain = DOMain()  # type: ignore
                     """
                     SYSTem:COMMunicate:NETWork:COMMon:DOMain
 
@@ -3761,14 +3762,14 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "HOSTname"
                         args = ["'string'"]
 
-                    HOSTname = HOSTname()
+                    HOSTname = HOSTname()  # type: ignore
                     """
                     SYSTem:COMMunicate:NETWork:COMMon:HOSTname
 
                     Arguments: 'string'
                     """
 
-                COMMon = COMMon()
+                COMMon = COMMon()  # type: ignore
                 """
                 SYSTem:COMMunicate:NETWork:COMMon
 
@@ -3795,7 +3796,7 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "GATeway"
                         args = ["'string'"]
 
-                    GATeway = GATeway()
+                    GATeway = GATeway()  # type: ignore
                     """
                     SYSTem:COMMunicate:NETWork:IPADdress:GATeway
 
@@ -3810,9 +3811,9 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "INFO"
-                        args = []
+                        args = []  # type: List[str]
 
-                    INFO = INFO()
+                    INFO = INFO()  # type: ignore
                     """
                     SYSTem:COMMunicate:NETWork:IPADdress:INFO
 
@@ -3829,7 +3830,7 @@ class NRPxxSN_gen(Instrument):
                         _cmd = "MODE"
                         args = ["AUTO", "STATic"]
 
-                    MODE = MODE()
+                    MODE = MODE()  # type: ignore
                     """
                     SYSTem:COMMunicate:NETWork:IPADdress:MODE
 
@@ -3844,7 +3845,7 @@ class NRPxxSN_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SUBNet"
-                        args = []
+                        args = []  # type: List[str]
 
                         class MASK(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -3856,21 +3857,21 @@ class NRPxxSN_gen(Instrument):
                             _cmd = "MASK"
                             args = ["'string'"]
 
-                        MASK = MASK()
+                        MASK = MASK()  # type: ignore
                         """
                         SYSTem:COMMunicate:NETWork:IPADdress:SUBNet:MASK
 
                         Arguments: 'string'
                         """
 
-                    SUBNet = SUBNet()
+                    SUBNet = SUBNet()  # type: ignore
                     """
                     SYSTem:COMMunicate:NETWork:IPADdress:SUBNet
 
                     Arguments:
                     """
 
-                IPADdress = IPADdress()
+                IPADdress = IPADdress()  # type: ignore
                 """
                 SYSTem:COMMunicate:NETWork:IPADdress
 
@@ -3885,9 +3886,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RESTart"
-                    args = []
+                    args = []  # type: List[str]
 
-                RESTart = RESTart()
+                RESTart = RESTart()  # type: ignore
                 """
                 SYSTem:COMMunicate:NETWork:RESTart
 
@@ -3902,9 +3903,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RESet"
-                    args = []
+                    args = []  # type: List[str]
 
-                RESet = RESet()
+                RESet = RESet()  # type: ignore
                 """
                 SYSTem:COMMunicate:NETWork:RESet
 
@@ -3919,23 +3920,23 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STATus"
-                    args = []
+                    args = []  # type: List[str]
 
-                STATus = STATus()
+                STATus = STATus()  # type: ignore
                 """
                 SYSTem:COMMunicate:NETWork:STATus
 
                 Arguments:
                 """
 
-            NETWork = NETWork()
+            NETWork = NETWork()  # type: ignore
             """
             SYSTem:COMMunicate:NETWork
 
             Arguments:
             """
 
-        COMMunicate = COMMunicate()
+        COMMunicate = COMMunicate()  # type: ignore
         """
         SYSTem:COMMunicate
 
@@ -3950,9 +3951,9 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DFPRint"
-            args = []
+            args = []  # type: List[str]
 
-        DFPRint = DFPRint()
+        DFPRint = DFPRint()  # type: ignore
         """
         SYSTem:DFPRint
 
@@ -3967,7 +3968,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ERRor"
-            args = []
+            args = []  # type: List[str]
 
             class ALL(SCPINode, SCPIQuery):
                 """
@@ -3977,9 +3978,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALL"
-                args = []
+                args = []  # type: List[str]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             SYSTem:ERRor:ALL
 
@@ -3994,7 +3995,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CODE"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPIQuery):
                     """
@@ -4004,9 +4005,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 SYSTem:ERRor:CODE:ALL
 
@@ -4021,16 +4022,16 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "NEXT"
-                    args = []
+                    args = []  # type: List[str]
 
-                NEXT = NEXT()
+                NEXT = NEXT()  # type: ignore
                 """
                 SYSTem:ERRor:CODE:NEXT
 
                 Arguments:
                 """
 
-            CODE = CODE()
+            CODE = CODE()  # type: ignore
             """
             SYSTem:ERRor:CODE
 
@@ -4045,9 +4046,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COUNt"
-                args = []
+                args = []  # type: List[str]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             SYSTem:ERRor:COUNt
 
@@ -4062,16 +4063,16 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NEXT"
-                args = []
+                args = []  # type: List[str]
 
-            NEXT = NEXT()
+            NEXT = NEXT()  # type: ignore
             """
             SYSTem:ERRor:NEXT
 
             Arguments:
             """
 
-        ERRor = ERRor()
+        ERRor = ERRor()  # type: ignore
         """
         SYSTem:ERRor
 
@@ -4088,7 +4089,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "FEATures"
             args = ["1"]
 
-        FEATures = FEATures()
+        FEATures = FEATures()  # type: ignore
         """
         SYSTem:FEATures
 
@@ -4113,16 +4114,16 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STATus"
-                args = []
+                args = []  # type: List[str]
 
-            STATus = STATus()
+            STATus = STATus()  # type: ignore
             """
             SYSTem:FWUPdate:STATus
 
             Arguments:
             """
 
-        FWUPdate = FWUPdate()
+        FWUPdate = FWUPdate()  # type: ignore
         """
         SYSTem:FWUPdate
 
@@ -4137,7 +4138,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "HELP"
-            args = []
+            args = []  # type: List[str]
 
             class HEADers(SCPINode, SCPIQuery):
                 """
@@ -4147,9 +4148,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "HEADers"
-                args = []
+                args = []  # type: List[str]
 
-            HEADers = HEADers()
+            HEADers = HEADers()  # type: ignore
             """
             SYSTem:HELP:HEADers
 
@@ -4174,23 +4175,23 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 SYSTem:HELP:SYNTax:ALL
 
                 Arguments:
                 """
 
-            SYNTax = SYNTax()
+            SYNTax = SYNTax()  # type: ignore
             """
             SYSTem:HELP:SYNTax
 
             Arguments: 'string'
             """
 
-        HELP = HELP()
+        HELP = HELP()  # type: ignore
         """
         SYSTem:HELP
 
@@ -4207,7 +4208,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "INFO"
             args = ["'string'"]
 
-        INFO = INFO()
+        INFO = INFO()  # type: ignore
         """
         SYSTem:INFO
 
@@ -4222,9 +4223,9 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "INITialize"
-            args = []
+            args = []  # type: List[str]
 
-        INITialize = INITialize()
+        INITialize = INITialize()  # type: ignore
         """
         SYSTem:INITialize
 
@@ -4241,7 +4242,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "LANGuage"
             args = ["SCPI"]
 
-        LANGuage = LANGuage()
+        LANGuage = LANGuage()  # type: ignore
         """
         SYSTem:LANGuage
 
@@ -4256,7 +4257,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LED"
-            args = []
+            args = []  # type: List[str]
 
             class COLor(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -4268,7 +4269,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "COLor"
                 args = ["1"]
 
-            COLor = COLor()
+            COLor = COLor()  # type: ignore
             """
             SYSTem:LED:COLor
 
@@ -4285,14 +4286,14 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "MODE"
                 args = ["SENSor", "USER"]
 
-            MODE = MODE()
+            MODE = MODE()  # type: ignore
             """
             SYSTem:LED:MODE
 
             Arguments: SENSor, USER
             """
 
-        LED = LED()
+        LED = LED()  # type: ignore
         """
         SYSTem:LED
 
@@ -4309,7 +4310,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "LIMits"
             args = ["1"]
 
-        LIMits = LIMits()
+        LIMits = LIMits()  # type: ignore
         """
         SYSTem:LIMits
 
@@ -4324,9 +4325,9 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MINPower"
-            args = []
+            args = []  # type: List[str]
 
-        MINPower = MINPower()
+        MINPower = MINPower()  # type: ignore
         """
         SYSTem:MINPower
 
@@ -4341,9 +4342,9 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PRESet"
-            args = []
+            args = []  # type: List[str]
 
-        PRESet = PRESet()
+        PRESet = PRESet()  # type: ignore
         """
         SYSTem:PRESet
 
@@ -4358,9 +4359,9 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "REBoot"
-            args = []
+            args = []  # type: List[str]
 
-        REBoot = REBoot()
+        REBoot = REBoot()  # type: ignore
         """
         SYSTem:REBoot
 
@@ -4377,7 +4378,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "RUTime"
             args = ["1"]
 
-        RUTime = RUTime()
+        RUTime = RUTime()  # type: ignore
         """
         SYSTem:RUTime
 
@@ -4392,7 +4393,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SENSor"
-            args = []
+            args = []  # type: List[str]
 
             class NAME(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -4404,14 +4405,14 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "NAME"
                 args = ["'string'"]
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             SYSTem:SENSor:NAME
 
             Arguments: 'string'
             """
 
-        SENSor = SENSor()
+        SENSor = SENSor()  # type: ignore
         """
         SYSTem:SENSor
 
@@ -4426,7 +4427,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SERRor"
-            args = []
+            args = []  # type: List[str]
 
             class LIST(SCPINode):
                 """
@@ -4436,7 +4437,7 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LIST"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPIQuery):
                     """
@@ -4446,9 +4447,9 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 SYSTem:SERRor:LIST:ALL
 
@@ -4463,23 +4464,23 @@ class NRPxxSN_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "NEXT"
-                    args = []
+                    args = []  # type: List[str]
 
-                NEXT = NEXT()
+                NEXT = NEXT()  # type: ignore
                 """
                 SYSTem:SERRor:LIST:NEXT
 
                 Arguments:
                 """
 
-            LIST = LIST()
+            LIST = LIST()  # type: ignore
             """
             SYSTem:SERRor:LIST
 
             Arguments:
             """
 
-        SERRor = SERRor()
+        SERRor = SERRor()  # type: ignore
         """
         SYSTem:SERRor
 
@@ -4496,7 +4497,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "SUTime"
             args = ["1"]
 
-        SUTime = SUTime()
+        SUTime = SUTime()  # type: ignore
         """
         SYSTem:SUTime
 
@@ -4511,9 +4512,9 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TLEVels"
-            args = []
+            args = []  # type: List[str]
 
-        TLEVels = TLEVels()
+        TLEVels = TLEVels()  # type: ignore
         """
         SYSTem:TLEVels
 
@@ -4528,7 +4529,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TRANsaction"
-            args = []
+            args = []  # type: List[str]
 
             class BEGin(SCPINode, SCPISet):
                 """
@@ -4538,9 +4539,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BEGin"
-                args = []
+                args = []  # type: List[str]
 
-            BEGin = BEGin()
+            BEGin = BEGin()  # type: ignore
             """
             SYSTem:TRANsaction:BEGin
 
@@ -4555,16 +4556,16 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "END"
-                args = []
+                args = []  # type: List[str]
 
-            END = END()
+            END = END()  # type: ignore
             """
             SYSTem:TRANsaction:END
 
             Arguments:
             """
 
-        TRANsaction = TRANsaction()
+        TRANsaction = TRANsaction()  # type: ignore
         """
         SYSTem:TRANsaction
 
@@ -4579,16 +4580,16 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "VERSion"
-            args = []
+            args = []  # type: List[str]
 
-        VERSion = VERSion()
+        VERSion = VERSion()  # type: ignore
         """
         SYSTem:VERSion
 
         Arguments:
         """
 
-    SYSTem = SYSTem()
+    SYSTem = SYSTem()  # type: ignore
     """
     SYSTem
 
@@ -4603,7 +4604,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "TEST"
-        args = []
+        args = []  # type: List[str]
 
         class SENSor(SCPINode, SCPIQuery):
             """
@@ -4615,14 +4616,14 @@ class NRPxxSN_gen(Instrument):
             _cmd = "SENSor"
             args = ["'string'"]
 
-        SENSor = SENSor()
+        SENSor = SENSor()  # type: ignore
         """
         TEST:SENSor
 
         Arguments: 'string'
         """
 
-    TEST = TEST()
+    TEST = TEST()  # type: ignore
     """
     TEST
 
@@ -4637,7 +4638,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "TRIGger"
-        args = []
+        args = []  # type: List[str]
 
         class ATRigger(SCPINode):
             """
@@ -4647,7 +4648,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ATRigger"
-            args = []
+            args = []  # type: List[str]
 
             class DELay(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -4659,7 +4660,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "DELay"
                 args = ["1"]
 
-            DELay = DELay()
+            DELay = DELay()  # type: ignore
             """
             TRIGger:ATRigger:DELay
 
@@ -4674,9 +4675,9 @@ class NRPxxSN_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXECuted"
-                args = []
+                args = []  # type: List[str]
 
-            EXECuted = EXECuted()
+            EXECuted = EXECuted()  # type: ignore
             """
             TRIGger:ATRigger:EXECuted
 
@@ -4693,14 +4694,14 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             TRIGger:ATRigger:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        ATRigger = ATRigger()
+        ATRigger = ATRigger()  # type: ignore
         """
         TRIGger:ATRigger
 
@@ -4717,7 +4718,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "COUNt"
             args = ["1"]
 
-        COUNt = COUNt()
+        COUNt = COUNt()  # type: ignore
         """
         TRIGger:COUNt
 
@@ -4744,14 +4745,14 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "AUTO"
                 args = ["1", "ON", "OFF"]
 
-            AUTO = AUTO()
+            AUTO = AUTO()  # type: ignore
             """
             TRIGger:DELay:AUTO
 
             Arguments: 1, ON, OFF
             """
 
-        DELay = DELay()
+        DELay = DELay()  # type: ignore
         """
         TRIGger:DELay
 
@@ -4768,7 +4769,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "DTIMe"
             args = ["1"]
 
-        DTIMe = DTIMe()
+        DTIMe = DTIMe()  # type: ignore
         """
         TRIGger:DTIMe
 
@@ -4783,7 +4784,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "EXTernal"
-            args = []
+            args = []  # type: List[str]
 
             class IMPedance(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -4795,14 +4796,14 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "IMPedance"
                 args = ["HIGH", "LOW"]
 
-            IMPedance = IMPedance()
+            IMPedance = IMPedance()  # type: ignore
             """
             TRIGger:EXTernal:IMPedance
 
             Arguments: HIGH, LOW
             """
 
-        EXTernal = EXTernal()
+        EXTernal = EXTernal()  # type: ignore
         """
         TRIGger:EXTernal
 
@@ -4819,7 +4820,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "HOLDoff"
             args = ["1"]
 
-        HOLDoff = HOLDoff()
+        HOLDoff = HOLDoff()  # type: ignore
         """
         TRIGger:HOLDoff
 
@@ -4836,7 +4837,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "HYSTeresis"
             args = ["1"]
 
-        HYSTeresis = HYSTeresis()
+        HYSTeresis = HYSTeresis()  # type: ignore
         """
         TRIGger:HYSTeresis
 
@@ -4851,9 +4852,9 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IMMediate"
-            args = []
+            args = []  # type: List[str]
 
-        IMMediate = IMMediate()
+        IMMediate = IMMediate()  # type: ignore
         """
         TRIGger:IMMediate
 
@@ -4870,7 +4871,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "LEVel"
             args = ["1"]
 
-        LEVel = LEVel()
+        LEVel = LEVel()  # type: ignore
         """
         TRIGger:LEVel
 
@@ -4885,7 +4886,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MASTer"
-            args = []
+            args = []  # type: List[str]
 
             class PORT(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -4897,7 +4898,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "PORT"
                 args = ["EXT1", "EXT2", "EXTernal1", "EXTernal2"]
 
-            PORT = PORT()
+            PORT = PORT()  # type: ignore
             """
             TRIGger:MASTer:PORT
 
@@ -4914,14 +4915,14 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             TRIGger:MASTer:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        MASTer = MASTer()
+        MASTer = MASTer()  # type: ignore
         """
         TRIGger:MASTer
 
@@ -4938,7 +4939,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "SLOPe"
             args = ["NEGative", "POSitive"]
 
-        SLOPe = SLOPe()
+        SLOPe = SLOPe()  # type: ignore
         """
         TRIGger:SLOPe
 
@@ -4955,7 +4956,7 @@ class NRPxxSN_gen(Instrument):
             _cmd = "SOURce"
             args = ["BUS", "EXT1", "EXT2", "EXTernal", "EXTernal1", "EXTernal2", "HOLD", "IMMediate", "INTernal"]
 
-        SOURce = SOURce()
+        SOURce = SOURce()  # type: ignore
         """
         TRIGger:SOURce
 
@@ -4970,7 +4971,7 @@ class NRPxxSN_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SYNC"
-            args = []
+            args = []  # type: List[str]
 
             class PORT(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -4982,7 +4983,7 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "PORT"
                 args = ["EXT1", "EXT2", "EXTernal1", "EXTernal2"]
 
-            PORT = PORT()
+            PORT = PORT()  # type: ignore
             """
             TRIGger:SYNC:PORT
 
@@ -4999,21 +5000,21 @@ class NRPxxSN_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             TRIGger:SYNC:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        SYNC = SYNC()
+        SYNC = SYNC()  # type: ignore
         """
         TRIGger:SYNC
 
         Arguments:
         """
 
-    TRIGger = TRIGger()
+    TRIGger = TRIGger()  # type: ignore
     """
     TRIGger
 
@@ -5028,7 +5029,7 @@ class NRPxxSN_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "UNIT"
-        args = []
+        args = []  # type: List[str]
 
         class POWer(SCPINode, SCPIQuery, SCPISet):
             """
@@ -5040,19 +5041,20 @@ class NRPxxSN_gen(Instrument):
             _cmd = "POWer"
             args = ["DBM", "DBUV", "W"]
 
-        POWer = POWer()
+        POWer = POWer()  # type: ignore
         """
         UNIT:POWer
 
         Arguments: DBM, DBUV, W
         """
 
-    UNIT = UNIT()
+    UNIT = UNIT()  # type: ignore
     """
     UNIT
 
     Arguments:
     """
+
 
 NRPxxSN_gen._SCPI_class = NRPxxSN_gen
 # END OF NRPxxSN_gen

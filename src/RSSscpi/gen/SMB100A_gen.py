@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-# Generated from SMB100A_syntax.txt on 2019-05-21 16:02
+# Generated from SMB100A_syntax.txt on 2019-09-13 11:59
+from typing import List
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -13,9 +14,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&ABO"
-        args = []
+        args = []  # type: List[str]
 
-    ABO = ABO()
+    ABO = ABO()  # type: ignore
     """
     &ABO
 
@@ -30,9 +31,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&BRK"
-        args = []
+        args = []  # type: List[str]
 
-    BRK = BRK()
+    BRK = BRK()  # type: ignore
     """
     &BRK
 
@@ -47,9 +48,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&DCL"
-        args = []
+        args = []  # type: List[str]
 
-    DCL = DCL()
+    DCL = DCL()  # type: ignore
     """
     &DCL
 
@@ -64,9 +65,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&DFC"
-        args = []
+        args = []  # type: List[str]
 
-    DFC = DFC()
+    DFC = DFC()  # type: ignore
     """
     &DFC
 
@@ -81,9 +82,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&GET"
-        args = []
+        args = []  # type: List[str]
 
-    GET = GET()
+    GET = GET()  # type: ignore
     """
     &GET
 
@@ -98,9 +99,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&GTL"
-        args = []
+        args = []  # type: List[str]
 
-    GTL = GTL()
+    GTL = GTL()  # type: ignore
     """
     &GTL
 
@@ -115,9 +116,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&GTM"
-        args = []
+        args = []  # type: List[str]
 
-    GTM = GTM()
+    GTM = GTM()  # type: ignore
     """
     &GTM
 
@@ -132,9 +133,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&GTR"
-        args = []
+        args = []  # type: List[str]
 
-    GTR = GTR()
+    GTR = GTR()  # type: ignore
     """
     &GTR
 
@@ -149,9 +150,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&HFC"
-        args = []
+        args = []  # type: List[str]
 
-    HFC = HFC()
+    HFC = HFC()  # type: ignore
     """
     &HFC
 
@@ -166,9 +167,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&NREN"
-        args = []
+        args = []  # type: List[str]
 
-    NREN = NREN()
+    NREN = NREN()  # type: ignore
     """
     &NREN
 
@@ -183,9 +184,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&POL"
-        args = []
+        args = []  # type: List[str]
 
-    POL = POL()
+    POL = POL()  # type: ignore
     """
     &POL
 
@@ -200,9 +201,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&RLSD"
-        args = []
+        args = []  # type: List[str]
 
-    RLSD = RLSD()
+    RLSD = RLSD()  # type: ignore
     """
     &RLSD
 
@@ -217,9 +218,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "&SFC"
-        args = []
+        args = []  # type: List[str]
 
-    SFC = SFC()
+    SFC = SFC()  # type: ignore
     """
     &SFC
 
@@ -234,9 +235,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*CLS"
-        args = []
+        args = []  # type: List[str]
 
-    CLS = CLS()
+    CLS = CLS()  # type: ignore
     """
     *CLS
 
@@ -253,7 +254,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*DEV"
         args = ["1"]
 
-    DEV = DEV()
+    DEV = DEV()  # type: ignore
     """
     *DEV
 
@@ -270,7 +271,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*DMC"
         args = ["<string>,<string>"]
 
-    DMC = DMC()
+    DMC = DMC()  # type: ignore
     """
     *DMC
 
@@ -287,7 +288,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*EMC"
         args = ["1", "ON", "OFF"]
 
-    EMC = EMC()
+    EMC = EMC()  # type: ignore
     """
     *EMC
 
@@ -304,7 +305,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*ESE"
         args = ["1"]
 
-    ESE = ESE()
+    ESE = ESE()  # type: ignore
     """
     *ESE
 
@@ -319,9 +320,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*ESR"
-        args = []
+        args = []  # type: List[str]
 
-    ESR = ESR()
+    ESR = ESR()  # type: ignore
     """
     *ESR
 
@@ -336,9 +337,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*GCLS"
-        args = []
+        args = []  # type: List[str]
 
-    GCLS = GCLS()
+    GCLS = GCLS()  # type: ignore
     """
     *GCLS
 
@@ -355,7 +356,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*GMC"
         args = ["'string'"]
 
-    GMC = GMC()
+    GMC = GMC()  # type: ignore
     """
     *GMC
 
@@ -370,9 +371,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*GOPC"
-        args = []
+        args = []  # type: List[str]
 
-    GOPC = GOPC()
+    GOPC = GOPC()  # type: ignore
     """
     *GOPC
 
@@ -387,9 +388,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*GWAI"
-        args = []
+        args = []  # type: List[str]
 
-    GWAI = GWAI()
+    GWAI = GWAI()  # type: ignore
     """
     *GWAI
 
@@ -404,9 +405,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*IDN"
-        args = []
+        args = []  # type: List[str]
 
-    IDN = IDN()
+    IDN = IDN()  # type: ignore
     """
     *IDN
 
@@ -421,9 +422,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*IST"
-        args = []
+        args = []  # type: List[str]
 
-    IST = IST()
+    IST = IST()  # type: ignore
     """
     *IST
 
@@ -438,9 +439,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*LMC"
-        args = []
+        args = []  # type: List[str]
 
-    LMC = LMC()
+    LMC = LMC()  # type: ignore
     """
     *LMC
 
@@ -455,9 +456,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*LRN"
-        args = []
+        args = []  # type: List[str]
 
-    LRN = LRN()
+    LRN = LRN()  # type: ignore
     """
     *LRN
 
@@ -472,9 +473,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*OPC"
-        args = []
+        args = []  # type: List[str]
 
-    OPC = OPC()
+    OPC = OPC()  # type: ignore
     """
     *OPC
 
@@ -489,9 +490,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*OPT"
-        args = []
+        args = []  # type: List[str]
 
-    OPT = OPT()
+    OPT = OPT()  # type: ignore
     """
     *OPT
 
@@ -506,9 +507,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*PMC"
-        args = []
+        args = []  # type: List[str]
 
-    PMC = PMC()
+    PMC = PMC()  # type: ignore
     """
     *PMC
 
@@ -525,7 +526,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*PRE"
         args = ["1"]
 
-    PRE = PRE()
+    PRE = PRE()  # type: ignore
     """
     *PRE
 
@@ -542,7 +543,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*PSC"
         args = ["1", "ON", "OFF"]
 
-    PSC = PSC()
+    PSC = PSC()  # type: ignore
     """
     *PSC
 
@@ -559,7 +560,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*RCL"
         args = ["1"]
 
-    RCL = RCL()
+    RCL = RCL()  # type: ignore
     """
     *RCL
 
@@ -576,7 +577,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*RMC"
         args = ["'string'"]
 
-    RMC = RMC()
+    RMC = RMC()  # type: ignore
     """
     *RMC
 
@@ -591,9 +592,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*RST"
-        args = []
+        args = []  # type: List[str]
 
-    RST = RST()
+    RST = RST()  # type: ignore
     """
     *RST
 
@@ -610,7 +611,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*SAV"
         args = ["1"]
 
-    SAV = SAV()
+    SAV = SAV()  # type: ignore
     """
     *SAV
 
@@ -627,7 +628,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*SRE"
         args = ["1"]
 
-    SRE = SRE()
+    SRE = SRE()  # type: ignore
     """
     *SRE
 
@@ -644,7 +645,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*SRQ"
         args = ["<integer>", "DOWN", "MAXimum", "MINimum", "UP"]
 
-    SRQ = SRQ()
+    SRQ = SRQ()  # type: ignore
     """
     *SRQ
 
@@ -659,9 +660,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*STB"
-        args = []
+        args = []  # type: List[str]
 
-    STB = STB()
+    STB = STB()  # type: ignore
     """
     *STB
 
@@ -676,9 +677,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*TRG"
-        args = []
+        args = []  # type: List[str]
 
-    TRG = TRG()
+    TRG = TRG()  # type: ignore
     """
     *TRG
 
@@ -693,9 +694,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*TST"
-        args = []
+        args = []  # type: List[str]
 
-    TST = TST()
+    TST = TST()  # type: ignore
     """
     *TST
 
@@ -710,9 +711,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*WAI"
-        args = []
+        args = []  # type: List[str]
 
-    WAI = WAI()
+    WAI = WAI()  # type: ignore
     """
     *WAI
 
@@ -729,7 +730,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*XESE"
         args = ["<expression>"]
 
-    XESE = XESE()
+    XESE = XESE()  # type: ignore
     """
     *XESE
 
@@ -744,9 +745,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*XESR"
-        args = []
+        args = []  # type: List[str]
 
-    XESR = XESR()
+    XESR = XESR()  # type: ignore
     """
     *XESR
 
@@ -763,7 +764,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*XPRE"
         args = ["<expression>"]
 
-    XPRE = XPRE()
+    XPRE = XPRE()  # type: ignore
     """
     *XPRE
 
@@ -780,7 +781,7 @@ class SMB100A_gen(Instrument):
         _cmd = "*XSRE"
         args = ["<expression>"]
 
-    XSRE = XSRE()
+    XSRE = XSRE()  # type: ignore
     """
     *XSRE
 
@@ -795,9 +796,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*XSTB"
-        args = []
+        args = []  # type: List[str]
 
-    XSTB = XSTB()
+    XSTB = XSTB()  # type: ignore
     """
     *XSTB
 
@@ -812,9 +813,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "@LLO"
-        args = []
+        args = []  # type: List[str]
 
-    LLO = LLO()
+    LLO = LLO()  # type: ignore
     """
     @LLO
 
@@ -829,9 +830,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "@LOC"
-        args = []
+        args = []  # type: List[str]
 
-    LOC = LOC()
+    LOC = LOC()  # type: ignore
     """
     @LOC
 
@@ -846,7 +847,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ABORt"
-        args = []
+        args = []  # type: List[str]
 
         class MSEQuence(SCPINode, SCPISet):
             """
@@ -856,9 +857,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MSEQuence"
-            args = []
+            args = []  # type: List[str]
 
-        MSEQuence = MSEQuence()
+        MSEQuence = MSEQuence()  # type: ignore
         """
         ABORt:MSEQuence
 
@@ -873,16 +874,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SWEep"
-            args = []
+            args = []  # type: List[str]
 
-        SWEep = SWEep()
+        SWEep = SWEep()  # type: ignore
         """
         ABORt:SWEep
 
         Arguments:
         """
 
-    ABORt = ABORt()
+    ABORt = ABORt()  # type: ignore
     """
     ABORt
 
@@ -897,7 +898,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "AMPLitude"
-        args = []
+        args = []  # type: List[str]
 
         class OUT(SCPINode):
             """
@@ -907,7 +908,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "OUT"
-            args = []
+            args = []  # type: List[str]
 
             class ALC(SCPINode):
                 """
@@ -917,7 +918,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALC"
-                args = []
+                args = []  # type: List[str]
 
                 class BANDwidth(SCPINode, SCPISet):
                     """
@@ -927,16 +928,16 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BANDwidth"
-                    args = []
+                    args = []  # type: List[str]
 
-                BANDwidth = BANDwidth()
+                BANDwidth = BANDwidth()  # type: ignore
                 """
                 AMPLitude:OUT:ALC:BANDwidth
 
                 Arguments:
                 """
 
-            ALC = ALC()
+            ALC = ALC()  # type: ignore
             """
             AMPLitude:OUT:ALC
 
@@ -961,7 +962,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -973,21 +974,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     AMPLitude:OUT:ATTenuation:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 AMPLitude:OUT:ATTenuation:STEP
 
                 Arguments:
                 """
 
-            ATTenuation = ATTenuation()
+            ATTenuation = ATTenuation()  # type: ignore
             """
             AMPLitude:OUT:ATTenuation
 
@@ -1012,7 +1013,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1024,21 +1025,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     AMPLitude:OUT:LEVel:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 AMPLitude:OUT:LEVel:STEP
 
                 Arguments:
                 """
 
-            LEVel = LEVel()
+            LEVel = LEVel()  # type: ignore
             """
             AMPLitude:OUT:LEVel
 
@@ -1055,7 +1056,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MUTing"
                 args = ["1", "ON", "OFF"]
 
-            MUTing = MUTing()
+            MUTing = MUTing()  # type: ignore
             """
             AMPLitude:OUT:MUTing
 
@@ -1072,7 +1073,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             AMPLitude:OUT:STATe
 
@@ -1089,14 +1090,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "ULIMit"
                 args = ["1"]
 
-            ULIMit = ULIMit()
+            ULIMit = ULIMit()  # type: ignore
             """
             AMPLitude:OUT:ULIMit
 
             Arguments: 1
             """
 
-        OUT = OUT()
+        OUT = OUT()  # type: ignore
         """
         AMPLitude:OUT
 
@@ -1111,7 +1112,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SOURce"
-            args = []
+            args = []  # type: List[str]
 
             class ALC(SCPINode):
                 """
@@ -1121,7 +1122,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALC"
-                args = []
+                args = []  # type: List[str]
 
                 class BANDwidth(SCPINode, SCPISet):
                     """
@@ -1131,16 +1132,16 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BANDwidth"
-                    args = []
+                    args = []  # type: List[str]
 
-                BANDwidth = BANDwidth()
+                BANDwidth = BANDwidth()  # type: ignore
                 """
                 AMPLitude:SOURce:ALC:BANDwidth
 
                 Arguments:
                 """
 
-            ALC = ALC()
+            ALC = ALC()  # type: ignore
             """
             AMPLitude:SOURce:ALC
 
@@ -1165,7 +1166,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1177,21 +1178,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     AMPLitude:SOURce:ATTenuation:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 AMPLitude:SOURce:ATTenuation:STEP
 
                 Arguments:
                 """
 
-            ATTenuation = ATTenuation()
+            ATTenuation = ATTenuation()  # type: ignore
             """
             AMPLitude:SOURce:ATTenuation
 
@@ -1216,7 +1217,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1228,21 +1229,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     AMPLitude:SOURce:LEVel:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 AMPLitude:SOURce:LEVel:STEP
 
                 Arguments:
                 """
 
-            LEVel = LEVel()
+            LEVel = LEVel()  # type: ignore
             """
             AMPLitude:SOURce:LEVel
 
@@ -1259,7 +1260,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MUTing"
                 args = ["1", "ON", "OFF"]
 
-            MUTing = MUTing()
+            MUTing = MUTing()  # type: ignore
             """
             AMPLitude:SOURce:MUTing
 
@@ -1276,7 +1277,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             AMPLitude:SOURce:STATe
 
@@ -1293,21 +1294,21 @@ class SMB100A_gen(Instrument):
                 _cmd = "ULIMit"
                 args = ["1"]
 
-            ULIMit = ULIMit()
+            ULIMit = ULIMit()  # type: ignore
             """
             AMPLitude:SOURce:ULIMit
 
             Arguments: 1
             """
 
-        SOURce = SOURce()
+        SOURce = SOURce()  # type: ignore
         """
         AMPLitude:SOURce
 
         Arguments:
         """
 
-    AMPLitude = AMPLitude()
+    AMPLitude = AMPLitude()  # type: ignore
     """
     AMPLitude
 
@@ -1322,9 +1323,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ATT0"
-        args = []
+        args = []  # type: List[str]
 
-    ATT0 = ATT0()
+    ATT0 = ATT0()  # type: ignore
     """
     ATT0
 
@@ -1339,9 +1340,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ATT1"
-        args = []
+        args = []  # type: List[str]
 
-    ATT1 = ATT1()
+    ATT1 = ATT1()  # type: ignore
     """
     ATT1
 
@@ -1356,7 +1357,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ATTen"
-        args = []
+        args = []  # type: List[str]
 
         class UNLock(SCPINode, SCPISet):
             """
@@ -1366,16 +1367,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "UNLock"
-            args = []
+            args = []  # type: List[str]
 
-        UNLock = UNLock()
+        UNLock = UNLock()  # type: ignore
         """
         ATTen:UNLock
 
         Arguments:
         """
 
-    ATTen = ATTen()
+    ATTen = ATTen()  # type: ignore
     """
     ATTen
 
@@ -1390,7 +1391,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ATtenuator"
-        args = []
+        args = []  # type: List[str]
 
         class Cont(SCPINode, SCPIQuery):
             """
@@ -1400,9 +1401,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Cont"
-            args = []
+            args = []  # type: List[str]
 
-        Cont = Cont()
+        Cont = Cont()  # type: ignore
         """
         ATtenuator:Cont
 
@@ -1417,9 +1418,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Fixed"
-            args = []
+            args = []  # type: List[str]
 
-        Fixed = Fixed()
+        Fixed = Fixed()  # type: ignore
         """
         ATtenuator:Fixed
 
@@ -1434,16 +1435,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Normal"
-            args = []
+            args = []  # type: List[str]
 
-        Normal = Normal()
+        Normal = Normal()  # type: ignore
         """
         ATtenuator:Normal
 
         Arguments:
         """
 
-    ATtenuator = ATtenuator()
+    ATtenuator = ATtenuator()  # type: ignore
     """
     ATtenuator
 
@@ -1460,7 +1461,7 @@ class SMB100A_gen(Instrument):
         _cmd = "BLANk"
         args = ["1"]
 
-    BLANk = BLANk()
+    BLANk = BLANk()  # type: ignore
     """
     BLANk
 
@@ -1475,7 +1476,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "Blank"
-        args = []
+        args = []  # type: List[str]
 
         class Inverted(SCPINode, SCPISet):
             """
@@ -1485,9 +1486,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Inverted"
-            args = []
+            args = []  # type: List[str]
 
-        Inverted = Inverted()
+        Inverted = Inverted()  # type: ignore
         """
         Blank:Inverted
 
@@ -1502,16 +1503,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Normal"
-            args = []
+            args = []  # type: List[str]
 
-        Normal = Normal()
+        Normal = Normal()  # type: ignore
         """
         Blank:Normal
 
         Arguments:
         """
 
-    Blank = Blank()
+    Blank = Blank()  # type: ignore
     """
     Blank
 
@@ -1526,7 +1527,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "CALibration"
-        args = []
+        args = []  # type: List[str]
 
         class AMPLitude(SCPINode, SCPISet):
             """
@@ -1536,7 +1537,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "AMPLitude"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPIBool):
                 """
@@ -1548,14 +1549,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             CALibration:AMPLitude:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        AMPLitude = AMPLitude()
+        AMPLitude = AMPLitude()  # type: ignore
         """
         CALibration:AMPLitude
 
@@ -1570,7 +1571,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ATTenuator"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPIBool):
                 """
@@ -1582,14 +1583,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             CALibration:ATTenuator:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        ATTenuator = ATTenuator()
+        ATTenuator = ATTenuator()  # type: ignore
         """
         CALibration:ATTenuator
 
@@ -1604,7 +1605,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FM"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
@@ -1614,9 +1615,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASure"
-                args = []
+                args = []  # type: List[str]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CALibration:FM:MEASure
 
@@ -1631,16 +1632,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "OFFSet"
-                args = []
+                args = []  # type: List[str]
 
-            OFFSet = OFFSet()
+            OFFSet = OFFSet()  # type: ignore
             """
             CALibration:FM:OFFSet
 
             Arguments:
             """
 
-        FM = FM()
+        FM = FM()  # type: ignore
         """
         CALibration:FM
 
@@ -1655,28 +1656,28 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FMOFfset"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
                 `CALibration:FMOFfset:MEASure
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/11b75bf573884132.htm#ID_b719b8434e4cb5ae0a00206a008f2019-9245ed064e4cb5ae0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/11b75bf573884132.htm#ID_b719b8434e4cb5ae0a00206a008f2019-9245ed064e4cb5ae0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "MEASure"
-                args = []
+                args = []  # type: List[str]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             `CALibration:FMOFfset:MEASure
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/11b75bf573884132.htm#ID_b719b8434e4cb5ae0a00206a008f2019-9245ed064e4cb5ae0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/11b75bf573884132.htm#ID_b719b8434e4cb5ae0a00206a008f2019-9245ed064e4cb5ae0a00206a0024546d-en-US>`_
 
             Arguments:
             """
 
-        FMOFfset = FMOFfset()
+        FMOFfset = FMOFfset()  # type: ignore
         """
         CALibration:FMOFfset
 
@@ -1691,7 +1692,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "HARMfilter"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
@@ -1701,16 +1702,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASure"
-                args = []
+                args = []  # type: List[str]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CALibration:HARMfilter:MEASure
 
             Arguments:
             """
 
-        HARMfilter = HARMfilter()
+        HARMfilter = HARMfilter()  # type: ignore
         """
         CALibration:HARMfilter
 
@@ -1725,7 +1726,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IFFilter"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
@@ -1735,16 +1736,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASure"
-                args = []
+                args = []  # type: List[str]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CALibration:IFFilter:MEASure
 
             Arguments:
             """
 
-        IFFilter = IFFilter()
+        IFFilter = IFFilter()  # type: ignore
         """
         CALibration:IFFilter
 
@@ -1759,7 +1760,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IQ"
-            args = []
+            args = []  # type: List[str]
 
             class DEFault(SCPINode, SCPISet):
                 """
@@ -1769,9 +1770,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DEFault"
-                args = []
+                args = []  # type: List[str]
 
-            DEFault = DEFault()
+            DEFault = DEFault()  # type: ignore
             """
             CALibration:IQ:DEFault
 
@@ -1788,14 +1789,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STARt"
                 args = ["1"]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             CALibration:IQ:STARt
 
             Arguments: 1
             """
 
-        IQ = IQ()
+        IQ = IQ()  # type: ignore
         """
         CALibration:IQ
 
@@ -1810,7 +1811,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LEVel"
-            args = []
+            args = []  # type: List[str]
 
             class FRANge(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -1822,7 +1823,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "FRANge"
                 args = ["MIXer", "NORMal"]
 
-            FRANge = FRANge()
+            FRANge = FRANge()  # type: ignore
             """
             CALibration:LEVel:FRANge
 
@@ -1839,7 +1840,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "PMODulator"
                 args = ["1", "ON", "OFF"]
 
-            PMODulator = PMODulator()
+            PMODulator = PMODulator()  # type: ignore
             """
             CALibration:LEVel:PMODulator
 
@@ -1856,14 +1857,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             CALibration:LEVel:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        LEVel = LEVel()
+        LEVel = LEVel()  # type: ignore
         """
         CALibration:LEVel
 
@@ -1878,7 +1879,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LFGenlevel"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
@@ -1888,16 +1889,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASure"
-                args = []
+                args = []  # type: List[str]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CALibration:LFGenlevel:MEASure
 
             Arguments:
             """
 
-        LFGenlevel = LFGenlevel()
+        LFGenlevel = LFGenlevel()  # type: ignore
         """
         CALibration:LFGenlevel
 
@@ -1912,7 +1913,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LFReset"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
@@ -1922,16 +1923,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASure"
-                args = []
+                args = []  # type: List[str]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CALibration:LFReset:MEASure
 
             Arguments:
             """
 
-        LFReset = LFReset()
+        LFReset = LFReset()  # type: ignore
         """
         CALibration:LFReset
 
@@ -1946,7 +1947,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MAINloop"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
@@ -1956,16 +1957,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASure"
-                args = []
+                args = []  # type: List[str]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CALibration:MAINloop:MEASure
 
             Arguments:
             """
 
-        MAINloop = MAINloop()
+        MAINloop = MAINloop()  # type: ignore
         """
         CALibration:MAINloop
 
@@ -1980,7 +1981,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MULTfilter"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
@@ -1990,16 +1991,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASure"
-                args = []
+                args = []  # type: List[str]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CALibration:MULTfilter:MEASure
 
             Arguments:
             """
 
-        MULTfilter = MULTfilter()
+        MULTfilter = MULTfilter()  # type: ignore
         """
         CALibration:MULTfilter
 
@@ -2014,7 +2015,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PULSe"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
@@ -2024,16 +2025,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASure"
-                args = []
+                args = []  # type: List[str]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CALibration:PULSe:MEASure
 
             Arguments:
             """
 
-        PULSe = PULSe()
+        PULSe = PULSe()  # type: ignore
         """
         CALibration:PULSe
 
@@ -2048,7 +2049,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "QPSK"
-            args = []
+            args = []  # type: List[str]
 
             class STORe(SCPINode, SCPISet):
                 """
@@ -2058,16 +2059,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STORe"
-                args = []
+                args = []  # type: List[str]
 
-            STORe = STORe()
+            STORe = STORe()  # type: ignore
             """
             CALibration:QPSK:STORe
 
             Arguments:
             """
 
-        QPSK = QPSK()
+        QPSK = QPSK()  # type: ignore
         """
         CALibration:QPSK
 
@@ -2082,7 +2083,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ROSCillator"
-            args = []
+            args = []  # type: List[str]
 
             class STORe(SCPINode, SCPISet):
                 """
@@ -2092,16 +2093,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STORe"
-                args = []
+                args = []  # type: List[str]
 
-            STORe = STORe()
+            STORe = STORe()  # type: ignore
             """
             CALibration:ROSCillator:STORe
 
             Arguments:
             """
 
-        ROSCillator = ROSCillator()
+        ROSCillator = ROSCillator()  # type: ignore
         """
         CALibration:ROSCillator
 
@@ -2116,7 +2117,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "VMODulation"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
@@ -2128,14 +2129,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "MEASure"
                 args = ["ONCE"]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CALibration:VMODulation:MEASure
 
             Arguments: ONCE
             """
 
-        VMODulation = VMODulation()
+        VMODulation = VMODulation()  # type: ignore
         """
         CALibration:VMODulation
 
@@ -2150,7 +2151,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "VSUMmation"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
@@ -2160,9 +2161,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASure"
-                args = []
+                args = []  # type: List[str]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CALibration:VSUMmation:MEASure
 
@@ -2177,16 +2178,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "OFFSet"
-                args = []
+                args = []  # type: List[str]
 
-            OFFSet = OFFSet()
+            OFFSet = OFFSet()  # type: ignore
             """
             CALibration:VSUMmation:OFFSet
 
             Arguments:
             """
 
-        VSUMmation = VSUMmation()
+        VSUMmation = VSUMmation()  # type: ignore
         """
         CALibration:VSUMmation
 
@@ -2201,7 +2202,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "VSYNthesis"
-            args = []
+            args = []  # type: List[str]
 
             class MEASure(SCPINode, SCPIQuery):
                 """
@@ -2211,23 +2212,23 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASure"
-                args = []
+                args = []  # type: List[str]
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CALibration:VSYNthesis:MEASure
 
             Arguments:
             """
 
-        VSYNthesis = VSYNthesis()
+        VSYNthesis = VSYNthesis()  # type: ignore
         """
         CALibration:VSYNthesis
 
         Arguments:
         """
 
-    CALibration = CALibration()
+    CALibration = CALibration()  # type: ignore
     """
     CALibration
 
@@ -2242,9 +2243,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "CAlibration"
-        args = []
+        args = []  # type: List[str]
 
-    CAlibration = CAlibration()
+    CAlibration = CAlibration()  # type: ignore
     """
     CAlibration
 
@@ -2261,7 +2262,7 @@ class SMB100A_gen(Instrument):
         _cmd = "CONTrast"
         args = ["1"]
 
-    CONTrast = CONTrast()
+    CONTrast = CONTrast()  # type: ignore
     """
     CONTrast
 
@@ -2276,7 +2277,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "CONTrol"
-        args = []
+        args = []  # type: List[str]
 
         class BLANking(SCPINode, SCPISet):
             """
@@ -2286,7 +2287,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "BLANking"
-            args = []
+            args = []  # type: List[str]
 
             class POLarity(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -2298,14 +2299,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "POLarity"
                 args = ["INVerted", "NORMal"]
 
-            POLarity = POLarity()
+            POLarity = POLarity()  # type: ignore
             """
             CONTrol:BLANking:POLarity
 
             Arguments: INVerted, NORMal
             """
 
-        BLANking = BLANking()
+        BLANking = BLANking()  # type: ignore
         """
         CONTrol:BLANking
 
@@ -2320,7 +2321,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PENLift"
-            args = []
+            args = []  # type: List[str]
 
             class POLarity(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -2332,14 +2333,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "POLarity"
                 args = ["INVerted", "NORMal"]
 
-            POLarity = POLarity()
+            POLarity = POLarity()  # type: ignore
             """
             CONTrol:PENLift:POLarity
 
             Arguments: INVerted, NORMal
             """
 
-        PENLift = PENLift()
+        PENLift = PENLift()  # type: ignore
         """
         CONTrol:PENLift
 
@@ -2354,7 +2355,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "RAMP"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPIBool):
                 """
@@ -2366,21 +2367,21 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             CONTrol:RAMP:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        RAMP = RAMP()
+        RAMP = RAMP()  # type: ignore
         """
         CONTrol:RAMP
 
         Arguments:
         """
 
-    CONTrol = CONTrol()
+    CONTrol = CONTrol()  # type: ignore
     """
     CONTrol
 
@@ -2395,9 +2396,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "DCFMnl"
-        args = []
+        args = []  # type: List[str]
 
-    DCFMnl = DCFMnl()
+    DCFMnl = DCFMnl()  # type: ignore
     """
     DCFMnl
 
@@ -2414,7 +2415,7 @@ class SMB100A_gen(Instrument):
         _cmd = "DEVTrg"
         args = ["FLSWp", "SEQT", "SSSWp", "VOID"]
 
-    DEVTrg = DEVTrg()
+    DEVTrg = DEVTrg()  # type: ignore
     """
     DEVTrg
 
@@ -2429,7 +2430,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "DEcrement"
-        args = []
+        args = []  # type: List[str]
 
         class PHAse(SCPINode, SCPISet):
             """
@@ -2439,9 +2440,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PHAse"
-            args = []
+            args = []  # type: List[str]
 
-        PHAse = PHAse()
+        PHAse = PHAse()  # type: ignore
         """
         DEcrement:PHAse
 
@@ -2456,16 +2457,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Swp"
-            args = []
+            args = []  # type: List[str]
 
-        Swp = Swp()
+        Swp = Swp()  # type: ignore
         """
         DEcrement:Swp
 
         Arguments:
         """
 
-    DEcrement = DEcrement()
+    DEcrement = DEcrement()  # type: ignore
     """
     DEcrement
 
@@ -2480,7 +2481,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "DIAGnostic"
-        args = []
+        args = []  # type: List[str]
 
         class CPU(SCPINode):
             """
@@ -2490,7 +2491,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CPU"
-            args = []
+            args = []  # type: List[str]
 
             class INFormation(SCPINode, SCPISet):
                 """
@@ -2500,7 +2501,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INFormation"
-                args = []
+                args = []  # type: List[str]
 
                 class BOARds(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -2510,9 +2511,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BOARds"
-                    args = []
+                    args = []  # type: List[str]
 
-                BOARds = BOARds()
+                BOARds = BOARds()  # type: ignore
                 """
                 DIAGnostic:CPU:INFormation:BOARds
 
@@ -2527,7 +2528,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CCOunt"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ATTenuator(SCPINode, SCPIQuery):
                         """
@@ -2537,9 +2538,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ATTenuator"
-                        args = []
+                        args = []  # type: List[str]
 
-                    ATTenuator = ATTenuator()
+                    ATTenuator = ATTenuator()  # type: ignore
                     """
                     DIAGnostic:CPU:INFormation:CCOunt:ATTenuator
 
@@ -2554,16 +2555,16 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "PROTection"
-                        args = []
+                        args = []  # type: List[str]
 
-                    PROTection = PROTection()
+                    PROTection = PROTection()  # type: ignore
                     """
                     DIAGnostic:CPU:INFormation:CCOunt:PROTection
 
                     Arguments:
                     """
 
-                CCOunt = CCOunt()
+                CCOunt = CCOunt()  # type: ignore
                 """
                 DIAGnostic:CPU:INFormation:CCOunt
 
@@ -2578,7 +2579,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DISPlay"
-                    args = []
+                    args = []  # type: List[str]
 
                     class OTIMe(SCPINode, SCPIQuery):
                         """
@@ -2588,16 +2589,16 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "OTIMe"
-                        args = []
+                        args = []  # type: List[str]
 
-                    OTIMe = OTIMe()
+                    OTIMe = OTIMe()  # type: ignore
                     """
                     DIAGnostic:CPU:INFormation:DISPlay:OTIMe
 
                     Arguments:
                     """
 
-                DISPlay = DISPlay()
+                DISPlay = DISPlay()  # type: ignore
                 """
                 DIAGnostic:CPU:INFormation:DISPlay
 
@@ -2612,7 +2613,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LICense"
-                    args = []
+                    args = []  # type: List[str]
 
                     class AUXiliary(SCPINode, SCPIQuery):
                         """
@@ -2622,9 +2623,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "AUXiliary"
-                        args = []
+                        args = []  # type: List[str]
 
-                    AUXiliary = AUXiliary()
+                    AUXiliary = AUXiliary()  # type: ignore
                     """
                     DIAGnostic:CPU:INFormation:LICense:AUXiliary
 
@@ -2639,16 +2640,16 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "WAVeform"
-                        args = []
+                        args = []  # type: List[str]
 
-                    WAVeform = WAVeform()
+                    WAVeform = WAVeform()  # type: ignore
                     """
                     DIAGnostic:CPU:INFormation:LICense:WAVeform
 
                     Arguments:
                     """
 
-                LICense = LICense()
+                LICense = LICense()  # type: ignore
                 """
                 DIAGnostic:CPU:INFormation:LICense
 
@@ -2663,7 +2664,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "OPTions"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DETail(SCPINode, SCPIQuery):
                         """
@@ -2673,16 +2674,16 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DETail"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DETail = DETail()
+                    DETail = DETail()  # type: ignore
                     """
                     DIAGnostic:CPU:INFormation:OPTions:DETail
 
                     Arguments:
                     """
 
-                OPTions = OPTions()
+                OPTions = OPTions()  # type: ignore
                 """
                 DIAGnostic:CPU:INFormation:OPTions
 
@@ -2697,9 +2698,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "OTIMe"
-                    args = []
+                    args = []  # type: List[str]
 
-                OTIMe = OTIMe()
+                OTIMe = OTIMe()  # type: ignore
                 """
                 DIAGnostic:CPU:INFormation:OTIMe
 
@@ -2714,9 +2715,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "REVision"
-                    args = []
+                    args = []  # type: List[str]
 
-                REVision = REVision()
+                REVision = REVision()  # type: ignore
                 """
                 DIAGnostic:CPU:INFormation:REVision
 
@@ -2731,9 +2732,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SDATe"
-                    args = []
+                    args = []  # type: List[str]
 
-                SDATe = SDATe()
+                SDATe = SDATe()  # type: ignore
                 """
                 DIAGnostic:CPU:INFormation:SDATe
 
@@ -2748,7 +2749,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "WLICence"
-                    args = []
+                    args = []  # type: List[str]
 
                     class VALue(SCPINode, SCPIQuery):
                         """
@@ -2760,28 +2761,28 @@ class SMB100A_gen(Instrument):
                         _cmd = "VALue"
                         args = ["1"]
 
-                    VALue = VALue()
+                    VALue = VALue()  # type: ignore
                     """
                     DIAGnostic:CPU:INFormation:WLICence:VALue
 
                     Arguments: 1
                     """
 
-                WLICence = WLICence()
+                WLICence = WLICence()  # type: ignore
                 """
                 DIAGnostic:CPU:INFormation:WLICence
 
                 Arguments:
                 """
 
-            INFormation = INFormation()
+            INFormation = INFormation()  # type: ignore
             """
             DIAGnostic:CPU:INFormation
 
             Arguments:
             """
 
-        CPU = CPU()
+        CPU = CPU()  # type: ignore
         """
         DIAGnostic:CPU
 
@@ -2796,7 +2797,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "INFO"
-            args = []
+            args = []  # type: List[str]
 
             class CCOunt(SCPINode):
                 """
@@ -2806,7 +2807,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CCOunt"
-                args = []
+                args = []  # type: List[str]
 
                 class ATTenuator(SCPINodeN, SCPIQuery):
                     """
@@ -2816,9 +2817,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ATTenuator"
-                    args = []
+                    args = []  # type: List[str]
 
-                ATTenuator = ATTenuator()
+                ATTenuator = ATTenuator()  # type: ignore
                 """
                 DIAGnostic:INFO:CCOunt:ATTenuator
 
@@ -2833,16 +2834,16 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "POWer"
-                    args = []
+                    args = []  # type: List[str]
 
-                POWer = POWer()
+                POWer = POWer()  # type: ignore
                 """
                 DIAGnostic:INFO:CCOunt:POWer
 
                 Arguments:
                 """
 
-            CCOunt = CCOunt()
+            CCOunt = CCOunt()  # type: ignore
             """
             DIAGnostic:INFO:CCOunt
 
@@ -2857,9 +2858,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MODules"
-                args = []
+                args = []  # type: List[str]
 
-            MODules = MODules()
+            MODules = MODules()  # type: ignore
             """
             DIAGnostic:INFO:MODules
 
@@ -2869,18 +2870,18 @@ class SMB100A_gen(Instrument):
             class OTIMe(SCPINode, SCPIQuery):
                 """
                 `DIAGnostic:INFO:OTIMe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e90e50c315c247d4.htm#ID_f15aa7634e8152f70a00206a00abf390-2654fb124e8152f70a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e90e50c315c247d4.htm#ID_f15aa7634e8152f70a00206a00abf390-2654fb124e8152f70a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "OTIMe"
-                args = []
+                args = []  # type: List[str]
 
-            OTIMe = OTIMe()
+            OTIMe = OTIMe()  # type: ignore
             """
             `DIAGnostic:INFO:OTIMe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e90e50c315c247d4.htm#ID_f15aa7634e8152f70a00206a00abf390-2654fb124e8152f70a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e90e50c315c247d4.htm#ID_f15aa7634e8152f70a00206a00abf390-2654fb124e8152f70a00206a0024546d-en-US>`_
 
             Arguments:
             """
@@ -2893,9 +2894,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SDATe"
-                args = []
+                args = []  # type: List[str]
 
-            SDATe = SDATe()
+            SDATe = SDATe()  # type: ignore
             """
             DIAGnostic:INFO:SDATe
 
@@ -2910,9 +2911,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SERialno"
-                args = []
+                args = []  # type: List[str]
 
-            SERialno = SERialno()
+            SERialno = SERialno()  # type: ignore
             """
             DIAGnostic:INFO:SERialno
 
@@ -2927,16 +2928,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SVERsion"
-                args = []
+                args = []  # type: List[str]
 
-            SVERsion = SVERsion()
+            SVERsion = SVERsion()  # type: ignore
             """
             DIAGnostic:INFO:SVERsion
 
             Arguments:
             """
 
-        INFO = INFO()
+        INFO = INFO()  # type: ignore
         """
         DIAGnostic:INFO
 
@@ -2951,7 +2952,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MEASure"
-            args = []
+            args = []  # type: List[str]
 
             class POINt(SCPINode, SCPIQuery):
                 """
@@ -2963,14 +2964,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "POINt"
                 args = ["1"]
 
-            POINt = POINt()
+            POINt = POINt()  # type: ignore
             """
             DIAGnostic:MEASure:POINt
 
             Arguments: 1
             """
 
-        MEASure = MEASure()
+        MEASure = MEASure()  # type: ignore
         """
         DIAGnostic:MEASure
 
@@ -2985,7 +2986,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "XMEM"
-            args = []
+            args = []  # type: List[str]
 
             class CHECksum(SCPINode):
                 """
@@ -2995,7 +2996,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CHECksum"
-                args = []
+                args = []  # type: List[str]
 
                 class ATTenuate(SCPINode, SCPIQuery):
                     """
@@ -3005,9 +3006,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ATTenuate"
-                    args = []
+                    args = []  # type: List[str]
 
-                ATTenuate = ATTenuate()
+                ATTenuate = ATTenuate()  # type: ignore
                 """
                 DIAGnostic:XMEM:CHECksum:ATTenuate
 
@@ -3022,9 +3023,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BURSt"
-                    args = []
+                    args = []  # type: List[str]
 
-                BURSt = BURSt()
+                BURSt = BURSt()  # type: ignore
                 """
                 DIAGnostic:XMEM:CHECksum:BURSt
 
@@ -3039,9 +3040,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CALCulate"
-                    args = []
+                    args = []  # type: List[str]
 
-                CALCulate = CALCulate()
+                CALCulate = CALCulate()  # type: ignore
                 """
                 DIAGnostic:XMEM:CHECksum:CALCulate
 
@@ -3056,30 +3057,30 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TOTal"
-                    args = []
+                    args = []  # type: List[str]
 
-                TOTal = TOTal()
+                TOTal = TOTal()  # type: ignore
                 """
                 DIAGnostic:XMEM:CHECksum:TOTal
 
                 Arguments:
                 """
 
-            CHECksum = CHECksum()
+            CHECksum = CHECksum()  # type: ignore
             """
             DIAGnostic:XMEM:CHECksum
 
             Arguments:
             """
 
-        XMEM = XMEM()
+        XMEM = XMEM()  # type: ignore
         """
         DIAGnostic:XMEM
 
         Arguments:
         """
 
-    DIAGnostic = DIAGnostic()
+    DIAGnostic = DIAGnostic()  # type: ignore
     """
     DIAGnostic
 
@@ -3094,7 +3095,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "DIGital"
-        args = []
+        args = []  # type: List[str]
 
         class CONFig(SCPINode, SCPIQuery):
             """
@@ -3104,7 +3105,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CONFig"
-            args = []
+            args = []  # type: List[str]
 
             class MIXer(SCPINode, SCPISet):
                 """
@@ -3116,7 +3117,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MIXer"
                 args = ["EXTernal", "INTernal"]
 
-            MIXer = MIXer()
+            MIXer = MIXer()  # type: ignore
             """
             DIGital:CONFig:MIXer
 
@@ -3133,14 +3134,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "PULSe"
                 args = ["DISabled", "ENABled"]
 
-            PULSe = PULSe()
+            PULSe = PULSe()  # type: ignore
             """
             DIGital:CONFig:PULSe
 
             Arguments: DISabled, ENABled
             """
 
-        CONFig = CONFig()
+        CONFig = CONFig()  # type: ignore
         """
         DIGital:CONFig
 
@@ -3155,7 +3156,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ERRor"
-            args = []
+            args = []  # type: List[str]
 
             class DISable(SCPINode, SCPISet):
                 """
@@ -3165,9 +3166,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DISable"
-                args = []
+                args = []  # type: List[str]
 
-            DISable = DISable()
+            DISable = DISable()  # type: ignore
             """
             DIGital:ERRor:DISable
 
@@ -3182,16 +3183,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ENABle"
-                args = []
+                args = []  # type: List[str]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             DIGital:ERRor:ENABle
 
             Arguments:
             """
 
-        ERRor = ERRor()
+        ERRor = ERRor()  # type: ignore
         """
         DIGital:ERRor
 
@@ -3206,7 +3207,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "EXT_par"
-            args = []
+            args = []  # type: List[str]
 
             class DATapol(SCPINode, SCPISet):
                 """
@@ -3218,7 +3219,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DATapol"
                 args = ["INVerse", "NORMal"]
 
-            DATapol = DATapol()
+            DATapol = DATapol()  # type: ignore
             """
             DIGital:EXT_par:DATapol
 
@@ -3235,7 +3236,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SYMPol"
                 args = ["NEG_edge", "POS_edge"]
 
-            SYMPol = SYMPol()
+            SYMPol = SYMPol()  # type: ignore
             """
             DIGital:EXT_par:SYMPol
 
@@ -3252,14 +3253,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SYMStat"
                 args = ["EXTernal", "INTernal"]
 
-            SYMStat = SYMStat()
+            SYMStat = SYMStat()  # type: ignore
             """
             DIGital:EXT_par:SYMStat
 
             Arguments: EXTernal, INTernal
             """
 
-        EXT_par = EXT_par()
+        EXT_par = EXT_par()  # type: ignore
         """
         DIGital:EXT_par
 
@@ -3274,7 +3275,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "EXT_ser"
-            args = []
+            args = []  # type: List[str]
 
             class BITPol(SCPINode, SCPISet):
                 """
@@ -3286,7 +3287,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "BITPol"
                 args = ["NEG_edge", "POS_edge"]
 
-            BITPol = BITPol()
+            BITPol = BITPol()  # type: ignore
             """
             DIGital:EXT_ser:BITPol
 
@@ -3303,7 +3304,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "BITStat"
                 args = ["EXTernal", "INTernal"]
 
-            BITStat = BITStat()
+            BITStat = BITStat()  # type: ignore
             """
             DIGital:EXT_ser:BITStat
 
@@ -3320,7 +3321,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DATapol"
                 args = ["INVerse", "NORMal"]
 
-            DATapol = DATapol()
+            DATapol = DATapol()  # type: ignore
             """
             DIGital:EXT_ser:DATapol
 
@@ -3337,7 +3338,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SYMPol"
                 args = ["NEG_edge", "POS_edge"]
 
-            SYMPol = SYMPol()
+            SYMPol = SYMPol()  # type: ignore
             """
             DIGital:EXT_ser:SYMPol
 
@@ -3354,14 +3355,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SYMStat"
                 args = ["EXTernal", "INTernal"]
 
-            SYMStat = SYMStat()
+            SYMStat = SYMStat()  # type: ignore
             """
             DIGital:EXT_ser:SYMStat
 
             Arguments: EXTernal, INTernal
             """
 
-        EXT_ser = EXT_ser()
+        EXT_ser = EXT_ser()  # type: ignore
         """
         DIGital:EXT_ser
 
@@ -3376,7 +3377,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FADing"
-            args = []
+            args = []  # type: List[str]
 
             class DIR_dopp(SCPINode, SCPISet):
                 """
@@ -3388,7 +3389,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DIR_dopp"
                 args = ["1"]
 
-            DIR_dopp = DIR_dopp()
+            DIR_dopp = DIR_dopp()  # type: ignore
             """
             DIGital:FADing:DIR_dopp
 
@@ -3405,7 +3406,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "RATio"
                 args = ["1"]
 
-            RATio = RATio()
+            RATio = RATio()  # type: ignore
             """
             DIGital:FADing:RATio
 
@@ -3422,14 +3423,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SPEed"
                 args = ["1"]
 
-            SPEed = SPEed()
+            SPEed = SPEed()  # type: ignore
             """
             DIGital:FADing:SPEed
 
             Arguments: 1
             """
 
-        FADing = FADing()
+        FADing = FADing()  # type: ignore
         """
         DIGital:FADing
 
@@ -3444,7 +3445,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "GAIN"
-            args = []
+            args = []  # type: List[str]
 
             class VALue(SCPINode, SCPISet):
                 """
@@ -3456,14 +3457,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "VALue"
                 args = ["1"]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             DIGital:GAIN:VALue
 
             Arguments: 1
             """
 
-        GAIN = GAIN()
+        GAIN = GAIN()  # type: ignore
         """
         DIGital:GAIN
 
@@ -3478,7 +3479,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "INT_0s"
-            args = []
+            args = []  # type: List[str]
 
             class CLOCk(SCPINode, SCPISet):
                 """
@@ -3490,7 +3491,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "CLOCk"
                 args = ["EXT_bit", "EXT_sym", "INT_sym"]
 
-            CLOCk = CLOCk()
+            CLOCk = CLOCk()  # type: ignore
             """
             DIGital:INT_0s:CLOCk
 
@@ -3507,7 +3508,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "CLOCkpol"
                 args = ["NEG_edge", "POS_edge"]
 
-            CLOCkpol = CLOCkpol()
+            CLOCkpol = CLOCkpol()  # type: ignore
             """
             DIGital:INT_0s:CLOCkpol
 
@@ -3524,14 +3525,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "DATapol"
                 args = ["INVerse", "NORMal"]
 
-            DATapol = DATapol()
+            DATapol = DATapol()  # type: ignore
             """
             DIGital:INT_0s:DATapol
 
             Arguments: INVerse, NORMal
             """
 
-        INT_0s = INT_0s()
+        INT_0s = INT_0s()  # type: ignore
         """
         DIGital:INT_0s
 
@@ -3546,7 +3547,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "INT_1s"
-            args = []
+            args = []  # type: List[str]
 
             class CLOCk(SCPINode, SCPISet):
                 """
@@ -3558,7 +3559,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "CLOCk"
                 args = ["EXT_bit", "EXT_sym", "INT_sym"]
 
-            CLOCk = CLOCk()
+            CLOCk = CLOCk()  # type: ignore
             """
             DIGital:INT_1s:CLOCk
 
@@ -3575,7 +3576,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "CLOCkpol"
                 args = ["NEG_edge", "POS_edge"]
 
-            CLOCkpol = CLOCkpol()
+            CLOCkpol = CLOCkpol()  # type: ignore
             """
             DIGital:INT_1s:CLOCkpol
 
@@ -3592,14 +3593,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "DATapol"
                 args = ["INVerse", "NORMal"]
 
-            DATapol = DATapol()
+            DATapol = DATapol()  # type: ignore
             """
             DIGital:INT_1s:DATapol
 
             Arguments: INVerse, NORMal
             """
 
-        INT_1s = INT_1s()
+        INT_1s = INT_1s()  # type: ignore
         """
         DIGital:INT_1s
 
@@ -3614,7 +3615,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LEAK"
-            args = []
+            args = []  # type: List[str]
 
             class VALue(SCPINode, SCPISet):
                 """
@@ -3626,14 +3627,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "VALue"
                 args = ["1"]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             DIGital:LEAK:VALue
 
             Arguments: 1
             """
 
-        LEAK = LEAK()
+        LEAK = LEAK()  # type: ignore
         """
         DIGital:LEAK
 
@@ -3648,7 +3649,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MODopt"
-            args = []
+            args = []  # type: List[str]
 
             class ENVelope(SCPINode, SCPISet):
                 """
@@ -3660,7 +3661,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "ENVelope"
                 args = ["DISabled", "ENABled"]
 
-            ENVelope = ENVelope()
+            ENVelope = ENVelope()  # type: ignore
             """
             DIGital:MODopt:ENVelope
 
@@ -3677,7 +3678,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MODPol"
                 args = ["INVerse", "NORMal"]
 
-            MODPol = MODPol()
+            MODPol = MODPol()  # type: ignore
             """
             DIGital:MODopt:MODPol
 
@@ -3694,14 +3695,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SBANd"
                 args = ["AUTO", "LOWer", "UPPer"]
 
-            SBANd = SBANd()
+            SBANd = SBANd()  # type: ignore
             """
             DIGital:MODopt:SBANd
 
             Arguments: AUTO, LOWer, UPPer
             """
 
-        MODopt = MODopt()
+        MODopt = MODopt()  # type: ignore
         """
         DIGital:MODopt
 
@@ -3716,7 +3717,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PRBS"
-            args = []
+            args = []  # type: List[str]
 
             class CLOCk(SCPINode, SCPISet):
                 """
@@ -3728,7 +3729,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "CLOCk"
                 args = ["EXT_bit", "EXT_sym", "INT_sym"]
 
-            CLOCk = CLOCk()
+            CLOCk = CLOCk()  # type: ignore
             """
             DIGital:PRBS:CLOCk
 
@@ -3745,7 +3746,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "CLOCkpol"
                 args = ["NEG_edge", "POS_edge"]
 
-            CLOCkpol = CLOCkpol()
+            CLOCkpol = CLOCkpol()  # type: ignore
             """
             DIGital:PRBS:CLOCkpol
 
@@ -3762,7 +3763,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DATapol"
                 args = ["INVerse", "NORMal"]
 
-            DATapol = DATapol()
+            DATapol = DATapol()  # type: ignore
             """
             DIGital:PRBS:DATapol
 
@@ -3779,14 +3780,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "VALue"
                 args = ["1"]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             DIGital:PRBS:VALue
 
             Arguments: 1
             """
 
-        PRBS = PRBS()
+        PRBS = PRBS()  # type: ignore
         """
         DIGital:PRBS
 
@@ -3801,7 +3802,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SKEW"
-            args = []
+            args = []  # type: List[str]
 
             class VALue(SCPINode, SCPISet):
                 """
@@ -3813,14 +3814,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "VALue"
                 args = ["1"]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             DIGital:SKEW:VALue
 
             Arguments: 1
             """
 
-        SKEW = SKEW()
+        SKEW = SKEW()  # type: ignore
         """
         DIGital:SKEW
 
@@ -3835,7 +3836,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SYSTem"
-            args = []
+            args = []  # type: List[str]
 
             class ALPHa(SCPINode, SCPISet):
                 """
@@ -3847,7 +3848,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "ALPHa"
                 args = ["1"]
 
-            ALPHa = ALPHa()
+            ALPHa = ALPHa()  # type: ignore
             """
             DIGital:SYSTem:ALPHa
 
@@ -3864,7 +3865,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "FILTer"
                 args = ["GAUSs", "R_Cos", "R_R_cos"]
 
-            FILTer = FILTer()
+            FILTer = FILTer()  # type: ignore
             """
             DIGital:SYSTem:FILTer
 
@@ -3881,7 +3882,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "FORMat"
                 args = ["BPSK", "D_BPsk", "D_PSk8", "D_QPsk", "FSK2", "FSK4", "GMSK", "O_BPsk", "O_PSk8", "O_QPsk", "PSK8", "QAM16", "QAM256", "QAM4", "QAM64", "QPSK", "TOQPsk", "T_Tones"]
 
-            FORMat = FORMat()
+            FORMat = FORMat()  # type: ignore
             """
             DIGital:SYSTem:FORMat
 
@@ -3898,7 +3899,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SELect"
                 args = ["CDPD", "CITY1200", "CITY2400", "CITY4800", "CITY512", "DSRR16", "DSRR4", "ERMes", "GSM", "INMar_m", "MC9", "MD100w", "MD120w", "MD160n", "MD192w", "MD24n", "MD24w", "MD36n", "MD36w", "MD48n", "MD48w", "MD80n", "MD80w", "MD96n", "MD96w", "MOBitex", "NADC", "PDC", "POC1200", "POC2400", "POC4800", "POC512", "Q_APco25", "TETRa", "TFTS", "USER1", "USER2", "USER3", "USER4", "USER5", "VDR"]
 
-            SELect = SELect()
+            SELect = SELect()  # type: ignore
             """
             DIGital:SYSTem:SELect
 
@@ -3915,7 +3916,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SYM_rate"
                 args = ["1"]
 
-            SYM_rate = SYM_rate()
+            SYM_rate = SYM_rate()  # type: ignore
             """
             DIGital:SYSTem:SYM_rate
 
@@ -3932,14 +3933,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "THRee_db"
                 args = ["1"]
 
-            THRee_db = THRee_db()
+            THRee_db = THRee_db()  # type: ignore
             """
             DIGital:SYSTem:THRee_db
 
             Arguments: 1
             """
 
-        SYSTem = SYSTem()
+        SYSTem = SYSTem()  # type: ignore
         """
         DIGital:SYSTem
 
@@ -3954,7 +3955,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "T_Tones"
-            args = []
+            args = []  # type: List[str]
 
             class ANGLe(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -3966,7 +3967,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "ANGLe"
                 args = ["1"]
 
-            ANGLe = ANGLe()
+            ANGLe = ANGLe()  # type: ignore
             """
             DIGital:T_Tones:ANGLe
 
@@ -3983,7 +3984,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "I_AMp"
                 args = ["1"]
 
-            I_AMp = I_AMp()
+            I_AMp = I_AMp()  # type: ignore
             """
             DIGital:T_Tones:I_AMp
 
@@ -4000,21 +4001,21 @@ class SMB100A_gen(Instrument):
                 _cmd = "Q_AMp"
                 args = ["1"]
 
-            Q_AMp = Q_AMp()
+            Q_AMp = Q_AMp()  # type: ignore
             """
             DIGital:T_Tones:Q_AMp
 
             Arguments: 1
             """
 
-        T_Tones = T_Tones()
+        T_Tones = T_Tones()  # type: ignore
         """
         DIGital:T_Tones
 
         Arguments:
         """
 
-    DIGital = DIGital()
+    DIGital = DIGital()  # type: ignore
     """
     DIGital
 
@@ -4031,7 +4032,7 @@ class SMB100A_gen(Instrument):
         _cmd = "DIRect"
         args = ["<block_data>"]
 
-    DIRect = DIRect()
+    DIRect = DIRect()  # type: ignore
     """
     DIRect
 
@@ -4046,7 +4047,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "DISPlay"
-        args = []
+        args = []  # type: List[str]
 
         class ANNotation(SCPINode, SCPISet):
             """
@@ -4056,12 +4057,12 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ANNotation"
-            args = []
+            args = []  # type: List[str]
 
             class AMPLitude(SCPINode, SCPIBool):
                 """
                 `DISPlay:ANNotation:AMPLitude
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7164bc3c1b68452b.htm#ID_49b6f4592f69259f0a00206a0029f4d5-67bb427e2f691da00a00206a00636f5b-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7164bc3c1b68452b.htm#ID_49b6f4592f69259f0a00206a0029f4d5-67bb427e2f691da00a00206a00636f5b-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -4079,17 +4080,17 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 DISPlay:ANNotation:AMPLitude:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            AMPLitude = AMPLitude()
+            AMPLitude = AMPLitude()  # type: ignore
             """
             `DISPlay:ANNotation:AMPLitude
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7164bc3c1b68452b.htm#ID_49b6f4592f69259f0a00206a0029f4d5-67bb427e2f691da00a00206a00636f5b-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7164bc3c1b68452b.htm#ID_49b6f4592f69259f0a00206a0029f4d5-67bb427e2f691da00a00206a00636f5b-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -4102,7 +4103,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CLOCk"
-                args = []
+                args = []  # type: List[str]
 
                 class DATE(SCPINode):
                     """
@@ -4112,7 +4113,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DATE"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FORMat(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -4124,14 +4125,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "FORMat"
                         args = ["DMY", "MDY"]
 
-                    FORMat = FORMat()
+                    FORMat = FORMat()  # type: ignore
                     """
                     DISPlay:ANNotation:CLOCk:DATE:FORMat
 
                     Arguments: DMY, MDY
                     """
 
-                DATE = DATE()
+                DATE = DATE()  # type: ignore
                 """
                 DISPlay:ANNotation:CLOCk:DATE
 
@@ -4148,14 +4149,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 DISPlay:ANNotation:CLOCk:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            CLOCk = CLOCk()
+            CLOCk = CLOCk()  # type: ignore
             """
             DISPlay:ANNotation:CLOCk
 
@@ -4165,7 +4166,7 @@ class SMB100A_gen(Instrument):
             class FREQuency(SCPINode, SCPIBool):
                 """
                 `DISPlay:ANNotation:FREQuency
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2e5fcccef60940f9.htm#ID_8b6c05102f691b2f0a00206a011c3f7c-b45c82122f6912650a00206a00636f5b-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2e5fcccef60940f9.htm#ID_8b6c05102f691b2f0a00206a011c3f7c-b45c82122f6912650a00206a00636f5b-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -4183,17 +4184,17 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 DISPlay:ANNotation:FREQuency:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             `DISPlay:ANNotation:FREQuency
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2e5fcccef60940f9.htm#ID_8b6c05102f691b2f0a00206a011c3f7c-b45c82122f6912650a00206a00636f5b-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2e5fcccef60940f9.htm#ID_8b6c05102f691b2f0a00206a011c3f7c-b45c82122f6912650a00206a00636f5b-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -4208,7 +4209,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "LFSource"
                 args = ["1", "ON", "OFF"]
 
-            LFSource = LFSource()
+            LFSource = LFSource()  # type: ignore
             """
             DISPlay:ANNotation:LFSource
 
@@ -4225,14 +4226,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "MODulation"
                 args = ["1", "ON", "OFF"]
 
-            MODulation = MODulation()
+            MODulation = MODulation()  # type: ignore
             """
             DISPlay:ANNotation:MODulation
 
             Arguments: 1, ON, OFF
             """
 
-        ANNotation = ANNotation()
+        ANNotation = ANNotation()  # type: ignore
         """
         DISPlay:ANNotation
 
@@ -4249,7 +4250,7 @@ class SMB100A_gen(Instrument):
             _cmd = "BRIGhtness"
             args = ["1"]
 
-        BRIGhtness = BRIGhtness()
+        BRIGhtness = BRIGhtness()  # type: ignore
         """
         DISPlay:BRIGhtness
 
@@ -4264,9 +4265,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CAPTure"
-            args = []
+            args = []  # type: List[str]
 
-        CAPTure = CAPTure()
+        CAPTure = CAPTure()  # type: ignore
         """
         DISPlay:CAPTure
 
@@ -4283,7 +4284,7 @@ class SMB100A_gen(Instrument):
             _cmd = "CONTrast"
             args = ["1"]
 
-        CONTrast = CONTrast()
+        CONTrast = CONTrast()  # type: ignore
         """
         DISPlay:CONTrast
 
@@ -4300,7 +4301,7 @@ class SMB100A_gen(Instrument):
             _cmd = "INVerse"
             args = ["1", "ON", "OFF"]
 
-        INVerse = INVerse()
+        INVerse = INVerse()  # type: ignore
         """
         DISPlay:INVerse
 
@@ -4317,7 +4318,7 @@ class SMB100A_gen(Instrument):
             _cmd = "RADix"
             args = ["EURopean", "US"]
 
-        RADix = RADix()
+        RADix = RADix()  # type: ignore
         """
         DISPlay:RADix
 
@@ -4334,7 +4335,7 @@ class SMB100A_gen(Instrument):
             _cmd = "REMote"
             args = ["1", "ON", "OFF"]
 
-        REMote = REMote()
+        REMote = REMote()  # type: ignore
         """
         DISPlay:REMote
 
@@ -4351,7 +4352,7 @@ class SMB100A_gen(Instrument):
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         DISPlay:STATe
 
@@ -4366,7 +4367,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "WINDow"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPIBool):
                 """
@@ -4378,7 +4379,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             DISPlay:WINDow:STATe
 
@@ -4393,7 +4394,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TEXT"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
@@ -4405,28 +4406,28 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 DISPlay:WINDow:TEXT:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            TEXT = TEXT()
+            TEXT = TEXT()  # type: ignore
             """
             DISPlay:WINDow:TEXT
 
             Arguments:
             """
 
-        WINDow = WINDow()
+        WINDow = WINDow()  # type: ignore
         """
         DISPlay:WINDow
 
         Arguments:
         """
 
-    DISPlay = DISPlay()
+    DISPlay = DISPlay()  # type: ignore
     """
     DISPlay
 
@@ -4441,9 +4442,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "DISplay"
-        args = []
+        args = []  # type: List[str]
 
-    DISplay = DISplay()
+    DISplay = DISplay()  # type: ignore
     """
     DISplay
 
@@ -4458,7 +4459,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ELAPsed"
-        args = []
+        args = []  # type: List[str]
 
         class RESet(SCPINode, SCPISet):
             """
@@ -4468,16 +4469,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "RESet"
-            args = []
+            args = []  # type: List[str]
 
-        RESet = RESet()
+        RESet = RESet()  # type: ignore
         """
         ELAPsed:RESet
 
         Arguments:
         """
 
-    ELAPsed = ELAPsed()
+    ELAPsed = ELAPsed()  # type: ignore
     """
     ELAPsed
 
@@ -4492,7 +4493,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ERASe"
-        args = []
+        args = []  # type: List[str]
 
         class SWEep(SCPINode, SCPISet):
             """
@@ -4502,16 +4503,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SWEep"
-            args = []
+            args = []  # type: List[str]
 
-        SWEep = SWEep()
+        SWEep = SWEep()  # type: ignore
         """
         ERASe:SWEep
 
         Arguments:
         """
 
-    ERASe = ERASe()
+    ERASe = ERASe()  # type: ignore
     """
     ERASe
 
@@ -4526,9 +4527,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ERRor"
-        args = []
+        args = []  # type: List[str]
 
-    ERRor = ERRor()
+    ERRor = ERRor()  # type: ignore
     """
     ERRor
 
@@ -4543,9 +4544,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ERrors"
-        args = []
+        args = []  # type: List[str]
 
-    ERrors = ERrors()
+    ERrors = ERrors()  # type: ignore
     """
     ERrors
 
@@ -4562,7 +4563,7 @@ class SMB100A_gen(Instrument):
         _cmd = "EXTTrg"
         args = ["FLSWp", "MEMDn", "MEMup", "SEQT", "SSSWp", "VOID"]
 
-    EXTTrg = EXTTrg()
+    EXTTrg = EXTTrg()  # type: ignore
     """
     EXTTrg
 
@@ -4577,7 +4578,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "EXecution_mode"
-        args = []
+        args = []  # type: List[str]
 
         class Normal(SCPINode, SCPISet):
             """
@@ -4587,9 +4588,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Normal"
-            args = []
+            args = []  # type: List[str]
 
-        Normal = Normal()
+        Normal = Normal()  # type: ignore
         """
         EXecution_mode:Normal
 
@@ -4604,16 +4605,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Triggered"
-            args = []
+            args = []  # type: List[str]
 
-        Triggered = Triggered()
+        Triggered = Triggered()  # type: ignore
         """
         EXecution_mode:Triggered
 
         Arguments:
         """
 
-    EXecution_mode = EXecution_mode()
+    EXecution_mode = EXecution_mode()  # type: ignore
     """
     EXecution_mode
 
@@ -4628,12 +4629,12 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "FORMat"
-        args = []
+        args = []  # type: List[str]
 
         class BORDer(SCPINode, SCPIQuery, SCPISet):
             """
             `FORMat:BORDer
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/59b73d990b8d4acf.htm#ID_729c2ba54e7ed3070a00206a001affe3-8402e7834e7ed3070a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/59b73d990b8d4acf.htm#ID_729c2ba54e7ed3070a00206a001affe3-8402e7834e7ed3070a00206a0024546d-en-US>`_
 
             Arguments: NORMal, SWAPped
             """
@@ -4641,15 +4642,15 @@ class SMB100A_gen(Instrument):
             _cmd = "BORDer"
             args = ["NORMal", "SWAPped"]
 
-        BORDer = BORDer()
+        BORDer = BORDer()  # type: ignore
         """
         `FORMat:BORDer
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/59b73d990b8d4acf.htm#ID_729c2ba54e7ed3070a00206a001affe3-8402e7834e7ed3070a00206a0024546d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/59b73d990b8d4acf.htm#ID_729c2ba54e7ed3070a00206a001affe3-8402e7834e7ed3070a00206a0024546d-en-US>`_
 
         Arguments: NORMal, SWAPped
         """
 
-    FORMat = FORMat()
+    FORMat = FORMat()  # type: ignore
     """
     FORMat
 
@@ -4664,7 +4665,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "FREQuency"
-        args = []
+        args = []  # type: List[str]
 
         class CENTer(SCPINode, SCPIQuery, SCPISet):
             """
@@ -4684,7 +4685,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -4696,21 +4697,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 FREQuency:CENTer:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             FREQuency:CENTer:STEP
 
             Arguments:
             """
 
-        CENTer = CENTer()
+        CENTer = CENTer()  # type: ignore
         """
         FREQuency:CENTer
 
@@ -4725,7 +4726,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CW"
-            args = []
+            args = []  # type: List[str]
 
             class STEP(SCPINode):
                 """
@@ -4735,7 +4736,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -4747,21 +4748,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 FREQuency:CW:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             FREQuency:CW:STEP
 
             Arguments:
             """
 
-        CW = CW()
+        CW = CW()  # type: ignore
         """
         FREQuency:CW
 
@@ -4776,9 +4777,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "INSTantaneous"
-            args = []
+            args = []  # type: List[str]
 
-        INSTantaneous = INSTantaneous()
+        INSTantaneous = INSTantaneous()  # type: ignore
         """
         FREQuency:INSTantaneous
 
@@ -4795,7 +4796,7 @@ class SMB100A_gen(Instrument):
             _cmd = "MANual"
             args = ["1"]
 
-        MANual = MANual()
+        MANual = MANual()  # type: ignore
         """
         FREQuency:MANual
 
@@ -4812,7 +4813,7 @@ class SMB100A_gen(Instrument):
             _cmd = "MULTiplier"
             args = ["1"]
 
-        MULTiplier = MULTiplier()
+        MULTiplier = MULTiplier()  # type: ignore
         """
         FREQuency:MULTiplier
 
@@ -4829,7 +4830,7 @@ class SMB100A_gen(Instrument):
             _cmd = "OFFSet"
             args = ["1"]
 
-        OFFSet = OFFSet()
+        OFFSet = OFFSet()  # type: ignore
         """
         FREQuency:OFFSet
 
@@ -4844,7 +4845,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SPAN"
-            args = []
+            args = []  # type: List[str]
 
             class STEP(SCPINode):
                 """
@@ -4854,7 +4855,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -4866,21 +4867,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 FREQuency:SPAN:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             FREQuency:SPAN:STEP
 
             Arguments:
             """
 
-        SPAN = SPAN()
+        SPAN = SPAN()  # type: ignore
         """
         FREQuency:SPAN
 
@@ -4905,7 +4906,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -4917,21 +4918,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 FREQuency:STARt:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             FREQuency:STARt:STEP
 
             Arguments:
             """
 
-        STARt = STARt()
+        STARt = STARt()  # type: ignore
         """
         FREQuency:STARt
 
@@ -4946,7 +4947,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "STOP"
-            args = []
+            args = []  # type: List[str]
 
             class STEP(SCPINode):
                 """
@@ -4956,7 +4957,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -4968,21 +4969,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 FREQuency:STOP:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             FREQuency:STOP:STEP
 
             Arguments:
             """
 
-        STOP = STOP()
+        STOP = STOP()  # type: ignore
         """
         FREQuency:STOP
 
@@ -4999,14 +5000,14 @@ class SMB100A_gen(Instrument):
             _cmd = "SYNThesis"
             args = ["1"]
 
-        SYNThesis = SYNThesis()
+        SYNThesis = SYNThesis()  # type: ignore
         """
         FREQuency:SYNThesis
 
         Arguments: 1
         """
 
-    FREQuency = FREQuency()
+    FREQuency = FREQuency()  # type: ignore
     """
     FREQuency
 
@@ -5021,9 +5022,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "HEAder"
-        args = []
+        args = []  # type: List[str]
 
-    HEAder = HEAder()
+    HEAder = HEAder()  # type: ignore
     """
     HEAder
 
@@ -5038,7 +5039,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "HET_band"
-        args = []
+        args = []  # type: List[str]
 
         class High(SCPINode, SCPISet):
             """
@@ -5048,9 +5049,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "High"
-            args = []
+            args = []  # type: List[str]
 
-        High = High()
+        High = High()  # type: ignore
         """
         HET_band:High
 
@@ -5065,16 +5066,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Low"
-            args = []
+            args = []  # type: List[str]
 
-        Low = Low()
+        Low = Low()  # type: ignore
         """
         HET_band:Low
 
         Arguments:
         """
 
-    HET_band = HET_band()
+    HET_band = HET_band()  # type: ignore
     """
     HET_band
 
@@ -5091,7 +5092,7 @@ class SMB100A_gen(Instrument):
         _cmd = "HOPSeq"
         args = ["<numeric_value>,<numeric_value>"]
 
-    HOPSeq = HOPSeq()
+    HOPSeq = HOPSeq()  # type: ignore
     """
     HOPSeq
 
@@ -5108,7 +5109,7 @@ class SMB100A_gen(Instrument):
         _cmd = "IMODe"
         args = ["NORMal", "SWEeper"]
 
-    IMODe = IMODe()
+    IMODe = IMODe()  # type: ignore
     """
     IMODe
 
@@ -5125,7 +5126,7 @@ class SMB100A_gen(Instrument):
         _cmd = "IMPedance"
         args = ["Z50R", "Z75R"]
 
-    IMPedance = IMPedance()
+    IMPedance = IMPedance()  # type: ignore
     """
     IMPedance
 
@@ -5140,7 +5141,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "INITialize"
-        args = []
+        args = []  # type: List[str]
 
         class ABORt(SCPINode, SCPISet):
             """
@@ -5150,9 +5151,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ABORt"
-            args = []
+            args = []  # type: List[str]
 
-        ABORt = ABORt()
+        ABORt = ABORt()  # type: ignore
         """
         INITialize:ABORt
 
@@ -5169,7 +5170,7 @@ class SMB100A_gen(Instrument):
             _cmd = "CONTinuous"
             args = ["1", "ON", "OFF"]
 
-        CONTinuous = CONTinuous()
+        CONTinuous = CONTinuous()  # type: ignore
         """
         INITialize:CONTinuous
 
@@ -5184,9 +5185,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IMMediate"
-            args = []
+            args = []  # type: List[str]
 
-        IMMediate = IMMediate()
+        IMMediate = IMMediate()  # type: ignore
         """
         INITialize:IMMediate
 
@@ -5203,14 +5204,14 @@ class SMB100A_gen(Instrument):
             _cmd = "STATe"
             args = ["PAUSe", "RUN"]
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         INITialize:STATe
 
         Arguments: PAUSe, RUN
         """
 
-    INITialize = INITialize()
+    INITialize = INITialize()  # type: ignore
     """
     INITialize
 
@@ -5225,7 +5226,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "INITiate"
-        args = []
+        args = []  # type: List[str]
 
         class CONTinuous(SCPINode, SCPIBool):
             """
@@ -5237,7 +5238,7 @@ class SMB100A_gen(Instrument):
             _cmd = "CONTinuous"
             args = ["1", "ON", "OFF"]
 
-        CONTinuous = CONTinuous()
+        CONTinuous = CONTinuous()  # type: ignore
         """
         INITiate:CONTinuous
 
@@ -5252,16 +5253,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IMMediate"
-            args = []
+            args = []  # type: List[str]
 
-        IMMediate = IMMediate()
+        IMMediate = IMMediate()  # type: ignore
         """
         INITiate:IMMediate
 
         Arguments:
         """
 
-    INITiate = INITiate()
+    INITiate = INITiate()  # type: ignore
     """
     INITiate
 
@@ -5276,7 +5277,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "INPut"
-        args = []
+        args = []  # type: List[str]
 
         class IF(SCPINode):
             """
@@ -5286,7 +5287,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IF"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPIBool):
                 """
@@ -5298,14 +5299,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             INPut:IF:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        IF = IF()
+        IF = IF()  # type: ignore
         """
         INPut:IF
 
@@ -5322,14 +5323,14 @@ class SMB100A_gen(Instrument):
             _cmd = "POLarity"
             args = ["INVerted", "NORMal"]
 
-        POLarity = POLarity()
+        POLarity = POLarity()  # type: ignore
         """
         INPut:POLarity
 
         Arguments: INVerted, NORMal
         """
 
-    INPut = INPut()
+    INPut = INPut()  # type: ignore
     """
     INPut
 
@@ -5344,7 +5345,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "Increment"
-        args = []
+        args = []  # type: List[str]
 
         class PHAse(SCPINode, SCPISet):
             """
@@ -5354,9 +5355,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PHAse"
-            args = []
+            args = []  # type: List[str]
 
-        PHAse = PHAse()
+        PHAse = PHAse()  # type: ignore
         """
         Increment:PHAse
 
@@ -5371,16 +5372,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Swp"
-            args = []
+            args = []  # type: List[str]
 
-        Swp = Swp()
+        Swp = Swp()  # type: ignore
         """
         Increment:Swp
 
         Arguments:
         """
 
-    Increment = Increment()
+    Increment = Increment()  # type: ignore
     """
     Increment
 
@@ -5395,9 +5396,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "KLOCk"
-        args = []
+        args = []  # type: List[str]
 
-    KLOCk = KLOCk()
+    KLOCk = KLOCk()  # type: ignore
     """
     KLOCk
 
@@ -5412,9 +5413,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "KUNLock"
-        args = []
+        args = []  # type: List[str]
 
-    KUNLock = KUNLock()
+    KUNLock = KUNLock()  # type: ignore
     """
     KUNLock
 
@@ -5429,7 +5430,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "LFSource"
-        args = []
+        args = []  # type: List[str]
 
         class AM(SCPINode):
             """
@@ -5439,7 +5440,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "AM"
-            args = []
+            args = []  # type: List[str]
 
             class DEPTh(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -5459,7 +5460,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -5471,21 +5472,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     LFSource:AM:DEPTh:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 LFSource:AM:DEPTh:STEP
 
                 Arguments:
                 """
 
-            DEPTh = DEPTh()
+            DEPTh = DEPTh()  # type: ignore
             """
             LFSource:AM:DEPTh
 
@@ -5510,7 +5511,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -5522,21 +5523,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     LFSource:AM:FREQuency:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 LFSource:AM:FREQuency:STEP
 
                 Arguments:
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             LFSource:AM:FREQuency
 
@@ -5551,7 +5552,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PHASe"
-                args = []
+                args = []  # type: List[str]
 
                 class ADJust(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -5571,7 +5572,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -5583,28 +5584,28 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         LFSource:AM:PHASe:ADJust:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     LFSource:AM:PHASe:ADJust:STEP
 
                     Arguments:
                     """
 
-                ADJust = ADJust()
+                ADJust = ADJust()  # type: ignore
                 """
                 LFSource:AM:PHASe:ADJust
 
                 Arguments: 1
                 """
 
-            PHASe = PHASe()
+            PHASe = PHASe()  # type: ignore
             """
             LFSource:AM:PHASe
 
@@ -5621,7 +5622,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             LFSource:AM:STATe
 
@@ -5638,14 +5639,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "WAVeform"
                 args = ["SAWTooth", "SINE", "SQUare", "TRIangle", "WGNoise"]
 
-            WAVeform = WAVeform()
+            WAVeform = WAVeform()  # type: ignore
             """
             LFSource:AM:WAVeform
 
             Arguments: SAWTooth, SINE, SQUare, TRIangle, WGNoise
             """
 
-        AM = AM()
+        AM = AM()  # type: ignore
         """
         LFSource:AM
 
@@ -5660,7 +5661,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "AVIonics"
-            args = []
+            args = []  # type: List[str]
 
             class SETup(SCPINode):
                 """
@@ -5670,7 +5671,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SETup"
-                args = []
+                args = []  # type: List[str]
 
                 class GSLope(SCPINode, SCPISet):
                     """
@@ -5680,9 +5681,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "GSLope"
-                    args = []
+                    args = []  # type: List[str]
 
-                GSLope = GSLope()
+                GSLope = GSLope()  # type: ignore
                 """
                 LFSource:AVIonics:SETup:GSLope
 
@@ -5697,9 +5698,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "IMBeacon"
-                    args = []
+                    args = []  # type: List[str]
 
-                IMBeacon = IMBeacon()
+                IMBeacon = IMBeacon()  # type: ignore
                 """
                 LFSource:AVIonics:SETup:IMBeacon
 
@@ -5714,9 +5715,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LOCalizer"
-                    args = []
+                    args = []  # type: List[str]
 
-                LOCalizer = LOCalizer()
+                LOCalizer = LOCalizer()  # type: ignore
                 """
                 LFSource:AVIonics:SETup:LOCalizer
 
@@ -5731,9 +5732,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MMBeacon"
-                    args = []
+                    args = []  # type: List[str]
 
-                MMBeacon = MMBeacon()
+                MMBeacon = MMBeacon()  # type: ignore
                 """
                 LFSource:AVIonics:SETup:MMBeacon
 
@@ -5748,23 +5749,23 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "OMBeacon"
-                    args = []
+                    args = []  # type: List[str]
 
-                OMBeacon = OMBeacon()
+                OMBeacon = OMBeacon()  # type: ignore
                 """
                 LFSource:AVIonics:SETup:OMBeacon
 
                 Arguments:
                 """
 
-            SETup = SETup()
+            SETup = SETup()  # type: ignore
             """
             LFSource:AVIonics:SETup
 
             Arguments:
             """
 
-        AVIonics = AVIonics()
+        AVIonics = AVIonics()  # type: ignore
         """
         LFSource:AVIonics
 
@@ -5779,7 +5780,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FM"
-            args = []
+            args = []  # type: List[str]
 
             class DEViation(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -5799,7 +5800,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -5811,21 +5812,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     LFSource:FM:DEViation:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 LFSource:FM:DEViation:STEP
 
                 Arguments:
                 """
 
-            DEViation = DEViation()
+            DEViation = DEViation()  # type: ignore
             """
             LFSource:FM:DEViation
 
@@ -5850,7 +5851,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -5862,21 +5863,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     LFSource:FM:FREQuency:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 LFSource:FM:FREQuency:STEP
 
                 Arguments:
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             LFSource:FM:FREQuency
 
@@ -5891,7 +5892,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PHASe"
-                args = []
+                args = []  # type: List[str]
 
                 class ADJust(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -5911,7 +5912,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -5923,28 +5924,28 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         LFSource:FM:PHASe:ADJust:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     LFSource:FM:PHASe:ADJust:STEP
 
                     Arguments:
                     """
 
-                ADJust = ADJust()
+                ADJust = ADJust()  # type: ignore
                 """
                 LFSource:FM:PHASe:ADJust
 
                 Arguments: 1
                 """
 
-            PHASe = PHASe()
+            PHASe = PHASe()  # type: ignore
             """
             LFSource:FM:PHASe
 
@@ -5961,7 +5962,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             LFSource:FM:STATe
 
@@ -5978,14 +5979,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "WAVeform"
                 args = ["SAWTooth", "SINE", "SQUare", "TRIangle", "WGNoise"]
 
-            WAVeform = WAVeform()
+            WAVeform = WAVeform()  # type: ignore
             """
             LFSource:FM:WAVeform
 
             Arguments: SAWTooth, SINE, SQUare, TRIangle, WGNoise
             """
 
-        FM = FM()
+        FM = FM()  # type: ignore
         """
         LFSource:FM
 
@@ -6010,7 +6011,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -6022,21 +6023,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 LFSource:FREQuency:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             LFSource:FREQuency:STEP
 
             Arguments:
             """
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         LFSource:FREQuency
 
@@ -6061,7 +6062,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -6073,21 +6074,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 LFSource:LEVel:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             LFSource:LEVel:STEP
 
             Arguments:
             """
 
-        LEVel = LEVel()
+        LEVel = LEVel()  # type: ignore
         """
         LFSource:LEVel
 
@@ -6102,7 +6103,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PHASe"
-            args = []
+            args = []  # type: List[str]
 
             class ADJust(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -6122,7 +6123,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -6134,28 +6135,28 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     LFSource:PHASe:ADJust:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 LFSource:PHASe:ADJust:STEP
 
                 Arguments:
                 """
 
-            ADJust = ADJust()
+            ADJust = ADJust()  # type: ignore
             """
             LFSource:PHASe:ADJust
 
             Arguments: 1
             """
 
-        PHASe = PHASe()
+        PHASe = PHASe()  # type: ignore
         """
         LFSource:PHASe
 
@@ -6170,7 +6171,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PM"
-            args = []
+            args = []  # type: List[str]
 
             class DEViation(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -6190,7 +6191,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -6202,21 +6203,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     LFSource:PM:DEViation:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 LFSource:PM:DEViation:STEP
 
                 Arguments:
                 """
 
-            DEViation = DEViation()
+            DEViation = DEViation()  # type: ignore
             """
             LFSource:PM:DEViation
 
@@ -6241,7 +6242,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -6253,21 +6254,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     LFSource:PM:FREQuency:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 LFSource:PM:FREQuency:STEP
 
                 Arguments:
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             LFSource:PM:FREQuency
 
@@ -6282,7 +6283,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PHASe"
-                args = []
+                args = []  # type: List[str]
 
                 class ADJust(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -6302,7 +6303,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -6314,28 +6315,28 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         LFSource:PM:PHASe:ADJust:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     LFSource:PM:PHASe:ADJust:STEP
 
                     Arguments:
                     """
 
-                ADJust = ADJust()
+                ADJust = ADJust()  # type: ignore
                 """
                 LFSource:PM:PHASe:ADJust
 
                 Arguments: 1
                 """
 
-            PHASe = PHASe()
+            PHASe = PHASe()  # type: ignore
             """
             LFSource:PM:PHASe
 
@@ -6352,7 +6353,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             LFSource:PM:STATe
 
@@ -6369,14 +6370,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "WAVeform"
                 args = ["SAWTooth", "SINE", "SQUare", "TRIangle", "WGNoise"]
 
-            WAVeform = WAVeform()
+            WAVeform = WAVeform()  # type: ignore
             """
             LFSource:PM:WAVeform
 
             Arguments: SAWTooth, SINE, SQUare, TRIangle, WGNoise
             """
 
-        PM = PM()
+        PM = PM()  # type: ignore
         """
         LFSource:PM
 
@@ -6391,7 +6392,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PULSe"
-            args = []
+            args = []  # type: List[str]
 
             class FREQuency(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -6411,7 +6412,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -6423,21 +6424,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     LFSource:PULSe:FREQuency:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 LFSource:PULSe:FREQuency:STEP
 
                 Arguments:
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             LFSource:PULSe:FREQuency
 
@@ -6452,7 +6453,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PHASe"
-                args = []
+                args = []  # type: List[str]
 
                 class ADJust(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -6472,7 +6473,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -6484,28 +6485,28 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         LFSource:PULSe:PHASe:ADJust:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     LFSource:PULSe:PHASe:ADJust:STEP
 
                     Arguments:
                     """
 
-                ADJust = ADJust()
+                ADJust = ADJust()  # type: ignore
                 """
                 LFSource:PULSe:PHASe:ADJust
 
                 Arguments: 1
                 """
 
-            PHASe = PHASe()
+            PHASe = PHASe()  # type: ignore
             """
             LFSource:PULSe:PHASe
 
@@ -6522,14 +6523,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             LFSource:PULSe:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        PULSe = PULSe()
+        PULSe = PULSe()  # type: ignore
         """
         LFSource:PULSe
 
@@ -6546,7 +6547,7 @@ class SMB100A_gen(Instrument):
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         LFSource:STATe
 
@@ -6561,7 +6562,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TRIGger"
-            args = []
+            args = []  # type: List[str]
 
             class IMMediate(SCPINode, SCPISet):
                 """
@@ -6571,9 +6572,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMMediate"
-                args = []
+                args = []  # type: List[str]
 
-            IMMediate = IMMediate()
+            IMMediate = IMMediate()  # type: ignore
             """
             LFSource:TRIGger:IMMediate
 
@@ -6590,14 +6591,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["CONTinuous", "EXTernal"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             LFSource:TRIGger:SOURce
 
             Arguments: CONTinuous, EXTernal
             """
 
-        TRIGger = TRIGger()
+        TRIGger = TRIGger()  # type: ignore
         """
         LFSource:TRIGger
 
@@ -6614,14 +6615,14 @@ class SMB100A_gen(Instrument):
             _cmd = "WAVeform"
             args = ["SAWTooth", "SINE", "SQUare", "TRIangle", "WGNoise"]
 
-        WAVeform = WAVeform()
+        WAVeform = WAVeform()  # type: ignore
         """
         LFSource:WAVeform
 
         Arguments: SAWTooth, SINE, SQUare, TRIangle, WGNoise
         """
 
-    LFSource = LFSource()
+    LFSource = LFSource()  # type: ignore
     """
     LFSource
 
@@ -6636,7 +6637,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "Level"
-        args = []
+        args = []  # type: List[str]
 
         class AF(SCPINode):
             """
@@ -6646,7 +6647,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "AF"
-            args = []
+            args = []  # type: List[str]
 
             class Var_step(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -6658,14 +6659,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "Var_step"
                 args = ["1"]
 
-            Var_step = Var_step()
+            Var_step = Var_step()  # type: ignore
             """
             Level:AF:Var_step
 
             Arguments: 1
             """
 
-        AF = AF()
+        AF = AF()  # type: ignore
         """
         Level:AF
 
@@ -6680,7 +6681,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "RF"
-            args = []
+            args = []  # type: List[str]
 
             class CONtrol(SCPINode, SCPISet):
                 """
@@ -6690,7 +6691,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONtrol"
-                args = []
+                args = []  # type: List[str]
 
                 class Calibration(SCPINode, SCPISet):
                     """
@@ -6700,9 +6701,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "Calibration"
-                    args = []
+                    args = []  # type: List[str]
 
-                Calibration = Calibration()
+                Calibration = Calibration()  # type: ignore
                 """
                 Level:RF:CONtrol:Calibration
 
@@ -6717,16 +6718,16 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "Lookup"
-                    args = []
+                    args = []  # type: List[str]
 
-                Lookup = Lookup()
+                Lookup = Lookup()  # type: ignore
                 """
                 Level:RF:CONtrol:Lookup
 
                 Arguments:
                 """
 
-            CONtrol = CONtrol()
+            CONtrol = CONtrol()  # type: ignore
             """
             Level:RF:CONtrol
 
@@ -6743,7 +6744,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "CORRECT_Index"
                 args = ["1"]
 
-            CORRECT_Index = CORRECT_Index()
+            CORRECT_Index = CORRECT_Index()  # type: ignore
             """
             Level:RF:CORRECT_Index
 
@@ -6760,7 +6761,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "Emf"
                 args = ["1"]
 
-            Emf = Emf()
+            Emf = Emf()  # type: ignore
             """
             Level:RF:Emf
 
@@ -6777,7 +6778,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "Marker"
                 args = ["1"]
 
-            Marker = Marker()
+            Marker = Marker()  # type: ignore
             """
             Level:RF:Marker
 
@@ -6794,7 +6795,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "OFFSet"
                 args = ["1"]
 
-            OFFSet = OFFSet()
+            OFFSet = OFFSet()  # type: ignore
             """
             Level:RF:OFFSet
 
@@ -6811,7 +6812,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STArt"
                 args = ["1"]
 
-            STArt = STArt()
+            STArt = STArt()  # type: ignore
             """
             Level:RF:STArt
 
@@ -6828,7 +6829,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STEp"
                 args = ["1"]
 
-            STEp = STEp()
+            STEp = STEp()  # type: ignore
             """
             Level:RF:STEp
 
@@ -6845,7 +6846,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STOp"
                 args = ["1"]
 
-            STOp = STOp()
+            STOp = STOp()  # type: ignore
             """
             Level:RF:STOp
 
@@ -6862,21 +6863,21 @@ class SMB100A_gen(Instrument):
                 _cmd = "Var_step"
                 args = ["1"]
 
-            Var_step = Var_step()
+            Var_step = Var_step()  # type: ignore
             """
             Level:RF:Var_step
 
             Arguments: 1
             """
 
-        RF = RF()
+        RF = RF()  # type: ignore
         """
         Level:RF
 
         Arguments:
         """
 
-    Level = Level()
+    Level = Level()  # type: ignore
     """
     Level
 
@@ -6891,7 +6892,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MARKer"
-        args = []
+        args = []  # type: List[str]
 
         class FREQuency(SCPINode, SCPIQuery, SCPISet):
             """
@@ -6911,7 +6912,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -6923,21 +6924,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 MARKer:FREQuency:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             MARKer:FREQuency:STEP
 
             Arguments:
             """
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         MARKer:FREQuency
 
@@ -6954,14 +6955,14 @@ class SMB100A_gen(Instrument):
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         MARKer:STATe
 
         Arguments: 1, ON, OFF
         """
 
-    MARKer = MARKer()
+    MARKer = MARKer()  # type: ignore
     """
     MARKer
 
@@ -6976,7 +6977,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MEMory"
-        args = []
+        args = []  # type: List[str]
 
         class CATalog(SCPINode):
             """
@@ -6986,7 +6987,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CATalog"
-            args = []
+            args = []  # type: List[str]
 
             class BINary(SCPINode, SCPIQuery):
                 """
@@ -6996,9 +6997,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BINary"
-                args = []
+                args = []  # type: List[str]
 
-            BINary = BINary()
+            BINary = BINary()  # type: ignore
             """
             MEMory:CATalog:BINary
 
@@ -7013,9 +7014,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DWCDma"
-                args = []
+                args = []  # type: List[str]
 
-            DWCDma = DWCDma()
+            DWCDma = DWCDma()  # type: ignore
             """
             MEMory:CATalog:DWCDma
 
@@ -7030,9 +7031,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FCDMa"
-                args = []
+                args = []  # type: List[str]
 
-            FCDMa = FCDMa()
+            FCDMa = FCDMa()  # type: ignore
             """
             MEMory:CATalog:FCDMa
 
@@ -7047,9 +7048,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MCDMa"
-                args = []
+                args = []  # type: List[str]
 
-            MCDMa = MCDMa()
+            MCDMa = MCDMa()  # type: ignore
             """
             MEMory:CATalog:MCDMa
 
@@ -7064,9 +7065,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MDMod"
-                args = []
+                args = []  # type: List[str]
 
-            MDMod = MDMod()
+            MDMod = MDMod()  # type: ignore
             """
             MEMory:CATalog:MDMod
 
@@ -7081,9 +7082,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MDWCdma"
-                args = []
+                args = []  # type: List[str]
 
-            MDWCdma = MDWCdma()
+            MDWCdma = MDWCdma()  # type: ignore
             """
             MEMory:CATalog:MDWCdma
 
@@ -7098,9 +7099,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MFCDma"
-                args = []
+                args = []  # type: List[str]
 
-            MFCDma = MFCDma()
+            MFCDma = MFCDma()  # type: ignore
             """
             MEMory:CATalog:MFCDma
 
@@ -7115,9 +7116,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MTONe"
-                args = []
+                args = []  # type: List[str]
 
-            MTONe = MTONe()
+            MTONe = MTONe()  # type: ignore
             """
             MEMory:CATalog:MTONe
 
@@ -7132,9 +7133,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RCDMa"
-                args = []
+                args = []  # type: List[str]
 
-            RCDMa = RCDMa()
+            RCDMa = RCDMa()  # type: ignore
             """
             MEMory:CATalog:RCDMa
 
@@ -7149,9 +7150,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SHAPe"
-                args = []
+                args = []  # type: List[str]
 
-            SHAPe = SHAPe()
+            SHAPe = SHAPe()  # type: ignore
             """
             MEMory:CATalog:SHAPe
 
@@ -7166,9 +7167,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STATe"
-                args = []
+                args = []  # type: List[str]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             MEMory:CATalog:STATe
 
@@ -7183,9 +7184,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TABLe"
-                args = []
+                args = []  # type: List[str]
 
-            TABLe = TABLe()
+            TABLe = TABLe()  # type: ignore
             """
             MEMory:CATalog:TABLe
 
@@ -7200,16 +7201,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "UWCDma"
-                args = []
+                args = []  # type: List[str]
 
-            UWCDma = UWCDma()
+            UWCDma = UWCDma()  # type: ignore
             """
             MEMory:CATalog:UWCDma
 
             Arguments:
             """
 
-        CATalog = CATalog()
+        CATalog = CATalog()  # type: ignore
         """
         MEMory:CATalog
 
@@ -7224,7 +7225,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DATA"
-            args = []
+            args = []  # type: List[str]
 
             class APPend(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -7236,7 +7237,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "APPend"
                 args = ["<string>,<block_data>"]
 
-            APPend = APPend()
+            APPend = APPend()  # type: ignore
             """
             MEMory:DATA:APPend
 
@@ -7251,7 +7252,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PRAM"
-                args = []
+                args = []  # type: List[str]
 
                 class FILE(SCPINode):
                     """
@@ -7261,7 +7262,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "FILE"
-                    args = []
+                    args = []  # type: List[str]
 
                     class BLOCk(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -7273,21 +7274,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "BLOCk"
                         args = ["<string>,<block_data>"]
 
-                    BLOCk = BLOCk()
+                    BLOCk = BLOCk()  # type: ignore
                     """
                     MEMory:DATA:PRAM:FILE:BLOCk
 
                     Arguments: <string>,<block_data>
                     """
 
-                FILE = FILE()
+                FILE = FILE()  # type: ignore
                 """
                 MEMory:DATA:PRAM:FILE
 
                 Arguments:
                 """
 
-            PRAM = PRAM()
+            PRAM = PRAM()  # type: ignore
             """
             MEMory:DATA:PRAM
 
@@ -7304,7 +7305,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SHAPe"
                 args = ["<string>,<numeric_value>,<numeric_value>"]
 
-            SHAPe = SHAPe()
+            SHAPe = SHAPe()  # type: ignore
             """
             MEMory:DATA:SHAPe
 
@@ -7321,14 +7322,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "UNPRotected"
                 args = ["<string>,<block_data>"]
 
-            UNPRotected = UNPRotected()
+            UNPRotected = UNPRotected()  # type: ignore
             """
             MEMory:DATA:UNPRotected
 
             Arguments: <string>,<block_data>
             """
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         MEMory:DATA
 
@@ -7343,7 +7344,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DELete"
-            args = []
+            args = []  # type: List[str]
 
             class BINary(SCPINode, SCPISet):
                 """
@@ -7353,9 +7354,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BINary"
-                args = []
+                args = []  # type: List[str]
 
-            BINary = BINary()
+            BINary = BINary()  # type: ignore
             """
             MEMory:DELete:BINary
 
@@ -7370,9 +7371,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DWCDma"
-                args = []
+                args = []  # type: List[str]
 
-            DWCDma = DWCDma()
+            DWCDma = DWCDma()  # type: ignore
             """
             MEMory:DELete:DWCDma
 
@@ -7387,9 +7388,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FCDMa"
-                args = []
+                args = []  # type: List[str]
 
-            FCDMa = FCDMa()
+            FCDMa = FCDMa()  # type: ignore
             """
             MEMory:DELete:FCDMa
 
@@ -7404,9 +7405,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MCDMa"
-                args = []
+                args = []  # type: List[str]
 
-            MCDMa = MCDMa()
+            MCDMa = MCDMa()  # type: ignore
             """
             MEMory:DELete:MCDMa
 
@@ -7421,9 +7422,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MDMod"
-                args = []
+                args = []  # type: List[str]
 
-            MDMod = MDMod()
+            MDMod = MDMod()  # type: ignore
             """
             MEMory:DELete:MDMod
 
@@ -7438,9 +7439,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MDWCdma"
-                args = []
+                args = []  # type: List[str]
 
-            MDWCdma = MDWCdma()
+            MDWCdma = MDWCdma()  # type: ignore
             """
             MEMory:DELete:MDWCdma
 
@@ -7455,9 +7456,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MFCDma"
-                args = []
+                args = []  # type: List[str]
 
-            MFCDma = MFCDma()
+            MFCDma = MFCDma()  # type: ignore
             """
             MEMory:DELete:MFCDma
 
@@ -7472,9 +7473,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MTONe"
-                args = []
+                args = []  # type: List[str]
 
-            MTONe = MTONe()
+            MTONe = MTONe()  # type: ignore
             """
             MEMory:DELete:MTONe
 
@@ -7489,9 +7490,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RCDMa"
-                args = []
+                args = []  # type: List[str]
 
-            RCDMa = RCDMa()
+            RCDMa = RCDMa()  # type: ignore
             """
             MEMory:DELete:RCDMa
 
@@ -7506,9 +7507,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SHAPe"
-                args = []
+                args = []  # type: List[str]
 
-            SHAPe = SHAPe()
+            SHAPe = SHAPe()  # type: ignore
             """
             MEMory:DELete:SHAPe
 
@@ -7523,9 +7524,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STATe"
-                args = []
+                args = []  # type: List[str]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             MEMory:DELete:STATe
 
@@ -7540,16 +7541,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "UWCDma"
-                args = []
+                args = []  # type: List[str]
 
-            UWCDma = UWCDma()
+            UWCDma = UWCDma()  # type: ignore
             """
             MEMory:DELete:UWCDma
 
             Arguments:
             """
 
-        DELete = DELete()
+        DELete = DELete()  # type: ignore
         """
         MEMory:DELete
 
@@ -7564,7 +7565,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FREE"
-            args = []
+            args = []  # type: List[str]
 
             class MACRo(SCPINode, SCPIQuery):
                 """
@@ -7574,16 +7575,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MACRo"
-                args = []
+                args = []  # type: List[str]
 
-            MACRo = MACRo()
+            MACRo = MACRo()  # type: ignore
             """
             MEMory:FREE:MACRo
 
             Arguments:
             """
 
-        FREE = FREE()
+        FREE = FREE()  # type: ignore
         """
         MEMory:FREE
 
@@ -7598,9 +7599,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "NSTates"
-            args = []
+            args = []  # type: List[str]
 
-        NSTates = NSTates()
+        NSTates = NSTates()  # type: ignore
         """
         MEMory:NSTates
 
@@ -7615,7 +7616,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "STATe"
-            args = []
+            args = []  # type: List[str]
 
             class COMMent(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -7627,14 +7628,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "COMMent"
                 args = ["<numeric_value>,<numeric_value>,<string>"]
 
-            COMMent = COMMent()
+            COMMent = COMMent()  # type: ignore
             """
             MEMory:STATe:COMMent
 
             Arguments: <numeric_value>,<numeric_value>,<string>
             """
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         MEMory:STATe
 
@@ -7649,9 +7650,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "STORe"
-            args = []
+            args = []  # type: List[str]
 
-        STORe = STORe()
+        STORe = STORe()  # type: ignore
         """
         MEMory:STORe
 
@@ -7666,7 +7667,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TABLe"
-            args = []
+            args = []  # type: List[str]
 
             class FREQuency(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -7688,14 +7689,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "POINts"
                     args = ["1"]
 
-                POINts = POINts()
+                POINts = POINts()  # type: ignore
                 """
                 MEMory:TABLe:FREQuency:POINts
 
                 Arguments: 1
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             MEMory:TABLe:FREQuency
 
@@ -7710,7 +7711,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LOSS"
-                args = []
+                args = []  # type: List[str]
 
                 class MAGNitude(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -7732,21 +7733,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "POINts"
                         args = ["1"]
 
-                    POINts = POINts()
+                    POINts = POINts()  # type: ignore
                     """
                     MEMory:TABLe:LOSS:MAGNitude:POINts
 
                     Arguments: 1
                     """
 
-                MAGNitude = MAGNitude()
+                MAGNitude = MAGNitude()  # type: ignore
                 """
                 MEMory:TABLe:LOSS:MAGNitude
 
                 Arguments: <numeric_value>[DB],<numeric_value>
                 """
 
-            LOSS = LOSS()
+            LOSS = LOSS()  # type: ignore
             """
             MEMory:TABLe:LOSS
 
@@ -7763,21 +7764,21 @@ class SMB100A_gen(Instrument):
                 _cmd = "SELect"
                 args = ["FDAT1", "FDAT2", "FDAT3", "FDAT4"]
 
-            SELect = SELect()
+            SELect = SELect()  # type: ignore
             """
             MEMory:TABLe:SELect
 
             Arguments: FDAT1, FDAT2, FDAT3, FDAT4
             """
 
-        TABLe = TABLe()
+        TABLe = TABLe()  # type: ignore
         """
         MEMory:TABLe
 
         Arguments:
         """
 
-    MEMory = MEMory()
+    MEMory = MEMory()  # type: ignore
     """
     MEMory
 
@@ -7792,7 +7793,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MEmory"
-        args = []
+        args = []  # type: List[str]
 
         class Fast(SCPINode, SCPISet):
             """
@@ -7802,7 +7803,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Fast"
-            args = []
+            args = []  # type: List[str]
 
             class STArt(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -7814,7 +7815,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STArt"
                 args = ["1"]
 
-            STArt = STArt()
+            STArt = STArt()  # type: ignore
             """
             MEmory:Fast:STArt
 
@@ -7831,14 +7832,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STOp"
                 args = ["1"]
 
-            STOp = STOp()
+            STOp = STOp()  # type: ignore
             """
             MEmory:Fast:STOp
 
             Arguments: 1
             """
 
-        Fast = Fast()
+        Fast = Fast()  # type: ignore
         """
         MEmory:Fast
 
@@ -7855,7 +7856,7 @@ class SMB100A_gen(Instrument):
             _cmd = "STArt"
             args = ["1"]
 
-        STArt = STArt()
+        STArt = STArt()  # type: ignore
         """
         MEmory:STArt
 
@@ -7872,14 +7873,14 @@ class SMB100A_gen(Instrument):
             _cmd = "STOp"
             args = ["1"]
 
-        STOp = STOp()
+        STOp = STOp()  # type: ignore
         """
         MEmory:STOp
 
         Arguments: 1
         """
 
-    MEmory = MEmory()
+    MEmory = MEmory()  # type: ignore
     """
     MEmory
 
@@ -7894,7 +7895,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MMEMory"
-        args = []
+        args = []  # type: List[str]
 
         class ALIases(SCPINode, SCPIQuery):
             """
@@ -7904,9 +7905,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ALIases"
-            args = []
+            args = []  # type: List[str]
 
-        ALIases = ALIases()
+        ALIases = ALIases()  # type: ignore
         """
         MMEMory:ALIases
 
@@ -7923,7 +7924,7 @@ class SMB100A_gen(Instrument):
             _cmd = "ATTRibute"
             args = ["<string>,<string>"]
 
-        ATTRibute = ATTRibute()
+        ATTRibute = ATTRibute()  # type: ignore
         """
         MMEMory:ATTRibute
 
@@ -7933,7 +7934,7 @@ class SMB100A_gen(Instrument):
         class CATalog(SCPINode, SCPIQuery):
             """
             `MMEMory:CATalog
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/81fb5b7cd1124455.htm#ID_d86b0432900f3f010a00206a015692f4-808cf704900f3f010a00206a01eae7a4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/81fb5b7cd1124455.htm#ID_d86b0432900f3f010a00206a015692f4-808cf704900f3f010a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
@@ -7944,7 +7945,7 @@ class SMB100A_gen(Instrument):
             class LENGth(SCPINode, SCPIQuery):
                 """
                 `MMEMory:CATalog:LENGth
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f52dbc720a0a48f9.htm#ID_de3b183c900f4f0f0a00206a0011b22f-adb17661900f4f0f0a00206a01eae7a4-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f52dbc720a0a48f9.htm#ID_de3b183c900f4f0f0a00206a0011b22f-adb17661900f4f0f0a00206a01eae7a4-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -7952,18 +7953,18 @@ class SMB100A_gen(Instrument):
                 _cmd = "LENGth"
                 args = ["'string'"]
 
-            LENGth = LENGth()
+            LENGth = LENGth()  # type: ignore
             """
             `MMEMory:CATalog:LENGth
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f52dbc720a0a48f9.htm#ID_de3b183c900f4f0f0a00206a0011b22f-adb17661900f4f0f0a00206a01eae7a4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f52dbc720a0a48f9.htm#ID_de3b183c900f4f0f0a00206a0011b22f-adb17661900f4f0f0a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
 
-        CATalog = CATalog()
+        CATalog = CATalog()  # type: ignore
         """
         `MMEMory:CATalog
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/81fb5b7cd1124455.htm#ID_d86b0432900f3f010a00206a015692f4-808cf704900f3f010a00206a01eae7a4-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/81fb5b7cd1124455.htm#ID_d86b0432900f3f010a00206a015692f4-808cf704900f3f010a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -7971,7 +7972,7 @@ class SMB100A_gen(Instrument):
         class CDIRectory(SCPINode, SCPIQuery, SCPISet):
             """
             `MMEMory:CDIRectory
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/884f6bb587664b1f.htm#ID_1b7d70d1900f44510a00206a01aa7e4f-154c448f900f44510a00206a01eae7a4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/884f6bb587664b1f.htm#ID_1b7d70d1900f44510a00206a01aa7e4f-154c448f900f44510a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
@@ -7979,10 +7980,10 @@ class SMB100A_gen(Instrument):
             _cmd = "CDIRectory"
             args = ["'string'"]
 
-        CDIRectory = CDIRectory()
+        CDIRectory = CDIRectory()  # type: ignore
         """
         `MMEMory:CDIRectory
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/884f6bb587664b1f.htm#ID_1b7d70d1900f44510a00206a01aa7e4f-154c448f900f44510a00206a01eae7a4-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/884f6bb587664b1f.htm#ID_1b7d70d1900f44510a00206a01aa7e4f-154c448f900f44510a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -7990,7 +7991,7 @@ class SMB100A_gen(Instrument):
         class DCATalog(SCPINode, SCPIQuery):
             """
             `MMEMory:DCATalog
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9143817b0b724e69.htm#ID_a8aa6937900ef1cc0a00206a010ba9d5-cf37708c900ef1cc0a00206a01eae7a4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9143817b0b724e69.htm#ID_a8aa6937900ef1cc0a00206a010ba9d5-cf37708c900ef1cc0a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
@@ -8001,7 +8002,7 @@ class SMB100A_gen(Instrument):
             class LENGth(SCPINode, SCPIQuery):
                 """
                 `MMEMory:DCATalog:LENGth
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a083db692d2a43f1.htm#ID_4e070651900ef70b0a00206a016f7a85-a0f33d76900ef70b0a00206a01eae7a4-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a083db692d2a43f1.htm#ID_4e070651900ef70b0a00206a016f7a85-a0f33d76900ef70b0a00206a01eae7a4-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -8009,18 +8010,18 @@ class SMB100A_gen(Instrument):
                 _cmd = "LENGth"
                 args = ["'string'"]
 
-            LENGth = LENGth()
+            LENGth = LENGth()  # type: ignore
             """
             `MMEMory:DCATalog:LENGth
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a083db692d2a43f1.htm#ID_4e070651900ef70b0a00206a016f7a85-a0f33d76900ef70b0a00206a01eae7a4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a083db692d2a43f1.htm#ID_4e070651900ef70b0a00206a016f7a85-a0f33d76900ef70b0a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
 
-        DCATalog = DCATalog()
+        DCATalog = DCATalog()  # type: ignore
         """
         `MMEMory:DCATalog
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9143817b0b724e69.htm#ID_a8aa6937900ef1cc0a00206a010ba9d5-cf37708c900ef1cc0a00206a01eae7a4-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9143817b0b724e69.htm#ID_a8aa6937900ef1cc0a00206a010ba9d5-cf37708c900ef1cc0a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -8028,7 +8029,7 @@ class SMB100A_gen(Instrument):
         class DELete(SCPINode, SCPISet):
             """
             `MMEMory:DELete
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/04c3a6e184634827.htm#ID_48ccd5f3900eec4d0a00206a007d4e66-412debbb900eec4d0a00206a01eae7a4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/04c3a6e184634827.htm#ID_48ccd5f3900eec4d0a00206a007d4e66-412debbb900eec4d0a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
@@ -8044,9 +8045,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NVWFm"
-                args = []
+                args = []  # type: List[str]
 
-            NVWFm = NVWFm()
+            NVWFm = NVWFm()  # type: ignore
             """
             MMEMory:DELete:NVWFm
 
@@ -8061,19 +8062,19 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "WFM"
-                args = []
+                args = []  # type: List[str]
 
-            WFM = WFM()
+            WFM = WFM()  # type: ignore
             """
             MMEMory:DELete:WFM
 
             Arguments:
             """
 
-        DELete = DELete()
+        DELete = DELete()  # type: ignore
         """
         `MMEMory:DELete
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/04c3a6e184634827.htm#ID_48ccd5f3900eec4d0a00206a007d4e66-412debbb900eec4d0a00206a01eae7a4-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/04c3a6e184634827.htm#ID_48ccd5f3900eec4d0a00206a007d4e66-412debbb900eec4d0a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -8086,9 +8087,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DRIVes"
-            args = []
+            args = []  # type: List[str]
 
-        DRIVes = DRIVes()
+        DRIVes = DRIVes()  # type: ignore
         """
         MMEMory:DRIVes
 
@@ -8103,7 +8104,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "HEADer"
-            args = []
+            args = []  # type: List[str]
 
             class CLEar(SCPINode, SCPISet):
                 """
@@ -8115,7 +8116,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "CLEar"
                 args = ["'string'"]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             MMEMory:HEADer:CLEar
 
@@ -8132,14 +8133,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "DESCription"
                 args = ["<string>,<string>"]
 
-            DESCription = DESCription()
+            DESCription = DESCription()  # type: ignore
             """
             MMEMory:HEADer:DESCription
 
             Arguments: <string>,<string>
             """
 
-        HEADer = HEADer()
+        HEADer = HEADer()  # type: ignore
         """
         MMEMory:HEADer
 
@@ -8154,7 +8155,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LOAD"
-            args = []
+            args = []  # type: List[str]
 
             class MACRo(SCPINode, SCPISet):
                 """
@@ -8166,7 +8167,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MACRo"
                 args = ["<string>,<string>,<string>"]
 
-            MACRo = MACRo()
+            MACRo = MACRo()  # type: ignore
             """
             MMEMory:LOAD:MACRo
 
@@ -8176,7 +8177,7 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPISet):
                 """
                 `MMEMory:LOAD:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9de91cebcfaf4dfb.htm#ID_e4b148b6b16d7e450a00206a00d7d85c-f2c489ebb16d7e450a00206a002cfbf4-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9de91cebcfaf4dfb.htm#ID_e4b148b6b16d7e450a00206a00d7d85c-f2c489ebb16d7e450a00206a002cfbf4-en-US>`_
 
                 Arguments: <numeric_value>,<string>,<string>
                 """
@@ -8184,15 +8185,15 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["<numeric_value>,<string>,<string>"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `MMEMory:LOAD:STATe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9de91cebcfaf4dfb.htm#ID_e4b148b6b16d7e450a00206a00d7d85c-f2c489ebb16d7e450a00206a002cfbf4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9de91cebcfaf4dfb.htm#ID_e4b148b6b16d7e450a00206a00d7d85c-f2c489ebb16d7e450a00206a002cfbf4-en-US>`_
 
             Arguments: <numeric_value>,<string>,<string>
             """
 
-        LOAD = LOAD()
+        LOAD = LOAD()  # type: ignore
         """
         MMEMory:LOAD
 
@@ -8202,7 +8203,7 @@ class SMB100A_gen(Instrument):
         class MDIRectory(SCPINode, SCPISet):
             """
             `MMEMory:MDIRectory
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/78d90e9c1a164918.htm#ID_28e36f85900ad56d0a00206a01580c40-8ea01a92900ad56d0a00206a01eae7a4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/78d90e9c1a164918.htm#ID_28e36f85900ad56d0a00206a01580c40-8ea01a92900ad56d0a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
@@ -8210,10 +8211,10 @@ class SMB100A_gen(Instrument):
             _cmd = "MDIRectory"
             args = ["'string'"]
 
-        MDIRectory = MDIRectory()
+        MDIRectory = MDIRectory()  # type: ignore
         """
         `MMEMory:MDIRectory
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/78d90e9c1a164918.htm#ID_28e36f85900ad56d0a00206a01580c40-8ea01a92900ad56d0a00206a01eae7a4-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/78d90e9c1a164918.htm#ID_28e36f85900ad56d0a00206a01580c40-8ea01a92900ad56d0a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -8221,7 +8222,7 @@ class SMB100A_gen(Instrument):
         class RDIRectory(SCPINode, SCPISet):
             """
             `MMEMory:RDIRectory
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0605b8a725804d3f.htm#ID_845b819f9007a0b00a00206a00db9c2f-f178d5259007a0b00a00206a01eae7a4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0605b8a725804d3f.htm#ID_845b819f9007a0b00a00206a00db9c2f-f178d5259007a0b00a00206a01eae7a4-en-US>`_
 
             Arguments: 'string'
             """
@@ -8229,10 +8230,10 @@ class SMB100A_gen(Instrument):
             _cmd = "RDIRectory"
             args = ["'string'"]
 
-        RDIRectory = RDIRectory()
+        RDIRectory = RDIRectory()  # type: ignore
         """
         `MMEMory:RDIRectory
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0605b8a725804d3f.htm#ID_845b819f9007a0b00a00206a00db9c2f-f178d5259007a0b00a00206a01eae7a4-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0605b8a725804d3f.htm#ID_845b819f9007a0b00a00206a00db9c2f-f178d5259007a0b00a00206a01eae7a4-en-US>`_
 
         Arguments: 'string'
         """
@@ -8245,7 +8246,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "STORe"
-            args = []
+            args = []  # type: List[str]
 
             class MACRo(SCPINode, SCPISet):
                 """
@@ -8257,7 +8258,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MACRo"
                 args = ["<string>,<string>,<string>"]
 
-            MACRo = MACRo()
+            MACRo = MACRo()  # type: ignore
             """
             MMEMory:STORe:MACRo
 
@@ -8267,7 +8268,7 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPISet):
                 """
                 `MMEMory:STORe:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5614cb446644ab0.htm#ID_45c41292b170604d0a00206a0129c63d-053ce38db170604d0a00206a01567e4b-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5614cb446644ab0.htm#ID_45c41292b170604d0a00206a0129c63d-053ce38db170604d0a00206a01567e4b-en-US>`_
 
                 Arguments: <integer>,<string>,<string>
                 """
@@ -8275,22 +8276,22 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["<integer>,<string>,<string>"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `MMEMory:STORe:STATe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5614cb446644ab0.htm#ID_45c41292b170604d0a00206a0129c63d-053ce38db170604d0a00206a01567e4b-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5614cb446644ab0.htm#ID_45c41292b170604d0a00206a0129c63d-053ce38db170604d0a00206a01567e4b-en-US>`_
 
             Arguments: <integer>,<string>,<string>
             """
 
-        STORe = STORe()
+        STORe = STORe()  # type: ignore
         """
         MMEMory:STORe
 
         Arguments:
         """
 
-    MMEMory = MMEMory()
+    MMEMory = MMEMory()  # type: ignore
     """
     MMEMory
 
@@ -8305,7 +8306,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MODulation"
-        args = []
+        args = []  # type: List[str]
 
         class STATe(SCPINode, SCPIBool):
             """
@@ -8317,14 +8318,14 @@ class SMB100A_gen(Instrument):
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         MODulation:STATe
 
         Arguments: 1, ON, OFF
         """
 
-    MODulation = MODulation()
+    MODulation = MODulation()  # type: ignore
     """
     MODulation
 
@@ -8339,7 +8340,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MOdulation"
-        args = []
+        args = []  # type: List[str]
 
         class Normal(SCPINode, SCPISet):
             """
@@ -8349,9 +8350,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Normal"
-            args = []
+            args = []  # type: List[str]
 
-        Normal = Normal()
+        Normal = Normal()  # type: ignore
         """
         MOdulation:Normal
 
@@ -8366,16 +8367,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Reduced"
-            args = []
+            args = []  # type: List[str]
 
-        Reduced = Reduced()
+        Reduced = Reduced()  # type: ignore
         """
         MOdulation:Reduced
 
         Arguments:
         """
 
-    MOdulation = MOdulation()
+    MOdulation = MOdulation()  # type: ignore
     """
     MOdulation
 
@@ -8390,7 +8391,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MPRot"
-        args = []
+        args = []  # type: List[str]
 
         class STARt(SCPINode, SCPISet):
             """
@@ -8402,14 +8403,14 @@ class SMB100A_gen(Instrument):
             _cmd = "STARt"
             args = ["1"]
 
-        STARt = STARt()
+        STARt = STARt()  # type: ignore
         """
         MPRot:STARt
 
         Arguments: 1
         """
 
-    MPRot = MPRot()
+    MPRot = MPRot()  # type: ignore
     """
     MPRot
 
@@ -8424,9 +8425,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MTRig"
-        args = []
+        args = []  # type: List[str]
 
-    MTRig = MTRig()
+    MTRig = MTRig()  # type: ignore
     """
     MTRig
 
@@ -8441,7 +8442,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "OUTPut"
-        args = []
+        args = []  # type: List[str]
 
         class AFIXed(SCPINode):
             """
@@ -8451,7 +8452,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "AFIXed"
-            args = []
+            args = []  # type: List[str]
 
             class RANGe(SCPINode):
                 """
@@ -8461,23 +8462,23 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RANGe"
-                args = []
+                args = []  # type: List[str]
 
                 class LOWer(SCPINode, SCPIQuery):
                     """
                     `OUTPut:AFIXed:RANGe:LOWer
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/357ac8f3e4244a47.htm#ID_e38f0e814e64057e0a00206a0013b470-127480ee4e64057e0a00206a0024546d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/357ac8f3e4244a47.htm#ID_e38f0e814e64057e0a00206a0013b470-127480ee4e64057e0a00206a0024546d-en-US>`_
 
                     Arguments:
                     """
                     __slots__ = ()
                     _cmd = "LOWer"
-                    args = []
+                    args = []  # type: List[str]
 
-                LOWer = LOWer()
+                LOWer = LOWer()  # type: ignore
                 """
                 `OUTPut:AFIXed:RANGe:LOWer
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/357ac8f3e4244a47.htm#ID_e38f0e814e64057e0a00206a0013b470-127480ee4e64057e0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/357ac8f3e4244a47.htm#ID_e38f0e814e64057e0a00206a0013b470-127480ee4e64057e0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
@@ -8485,30 +8486,30 @@ class SMB100A_gen(Instrument):
                 class UPPer(SCPINode, SCPIQuery):
                     """
                     `OUTPut:AFIXed:RANGe:UPPer
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/41e4a70f35a54cde.htm#ID_a55c89064e640b1d0a00206a01925c56-3ee9d9c74e640b1d0a00206a0024546d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/41e4a70f35a54cde.htm#ID_a55c89064e640b1d0a00206a01925c56-3ee9d9c74e640b1d0a00206a0024546d-en-US>`_
 
                     Arguments:
                     """
                     __slots__ = ()
                     _cmd = "UPPer"
-                    args = []
+                    args = []  # type: List[str]
 
-                UPPer = UPPer()
+                UPPer = UPPer()  # type: ignore
                 """
                 `OUTPut:AFIXed:RANGe:UPPer
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/41e4a70f35a54cde.htm#ID_a55c89064e640b1d0a00206a01925c56-3ee9d9c74e640b1d0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/41e4a70f35a54cde.htm#ID_a55c89064e640b1d0a00206a01925c56-3ee9d9c74e640b1d0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
 
-            RANGe = RANGe()
+            RANGe = RANGe()  # type: ignore
             """
             OUTPut:AFIXed:RANGe
 
             Arguments:
             """
 
-        AFIXed = AFIXed()
+        AFIXed = AFIXed()  # type: ignore
         """
         OUTPut:AFIXed
 
@@ -8518,7 +8519,7 @@ class SMB100A_gen(Instrument):
         class AMODe(SCPINode, SCPIQuery, SCPISet):
             """
             `OUTPut:AMODe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a7cb436862264377.htm#ID_4c9f7d824e63ffff0a00206a00be3d6b-f716d1094e63ffff0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a7cb436862264377.htm#ID_4c9f7d824e63ffff0a00206a00be3d6b-f716d1094e63ffff0a00206a0024546d-en-US>`_
 
             Arguments: AUTO, FIXed
             """
@@ -8526,10 +8527,10 @@ class SMB100A_gen(Instrument):
             _cmd = "AMODe"
             args = ["AUTO", "FIXed"]
 
-        AMODe = AMODe()
+        AMODe = AMODe()  # type: ignore
         """
         `OUTPut:AMODe
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a7cb436862264377.htm#ID_4c9f7d824e63ffff0a00206a00be3d6b-f716d1094e63ffff0a00206a0024546d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a7cb436862264377.htm#ID_4c9f7d824e63ffff0a00206a00be3d6b-f716d1094e63ffff0a00206a0024546d-en-US>`_
 
         Arguments: AUTO, FIXed
         """
@@ -8544,7 +8545,7 @@ class SMB100A_gen(Instrument):
             _cmd = "ATTenuation"
             args = ["1"]
 
-        ATTenuation = ATTenuation()
+        ATTenuation = ATTenuation()  # type: ignore
         """
         OUTPut:ATTenuation
 
@@ -8559,7 +8560,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "BLANk"
-            args = []
+            args = []  # type: List[str]
 
             class POLarity(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -8571,14 +8572,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "POLarity"
                 args = ["INVerted", "NORMal"]
 
-            POLarity = POLarity()
+            POLarity = POLarity()  # type: ignore
             """
             OUTPut:BLANk:POLarity
 
             Arguments: INVerted, NORMal
             """
 
-        BLANk = BLANk()
+        BLANk = BLANk()  # type: ignore
         """
         OUTPut:BLANk
 
@@ -8593,7 +8594,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "BLANking"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPIBool):
                 """
@@ -8605,14 +8606,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             OUTPut:BLANking:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        BLANking = BLANking()
+        BLANking = BLANking()  # type: ignore
         """
         OUTPut:BLANking
 
@@ -8627,9 +8628,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DISable"
-            args = []
+            args = []  # type: List[str]
 
-        DISable = DISable()
+        DISable = DISable()  # type: ignore
         """
         OUTPut:DISable
 
@@ -8644,9 +8645,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ENABle"
-            args = []
+            args = []  # type: List[str]
 
-        ENABle = ENABle()
+        ENABle = ENABle()  # type: ignore
         """
         OUTPut:ENABle
 
@@ -8656,7 +8657,7 @@ class SMB100A_gen(Instrument):
         class IMPedance(SCPINode, SCPIQuery):
             """
             `OUTPut:IMPedance
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a47f0290b4ca4b68.htm#ID_8baa6a394e641baa0a00206a00f78a8f-2e642ae14e641baa0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a47f0290b4ca4b68.htm#ID_8baa6a394e641baa0a00206a00f78a8f-2e642ae14e641baa0a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -8664,10 +8665,10 @@ class SMB100A_gen(Instrument):
             _cmd = "IMPedance"
             args = ["1"]
 
-        IMPedance = IMPedance()
+        IMPedance = IMPedance()  # type: ignore
         """
         `OUTPut:IMPedance
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a47f0290b4ca4b68.htm#ID_8baa6a394e641baa0a00206a00f78a8f-2e642ae14e641baa0a00206a0024546d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a47f0290b4ca4b68.htm#ID_8baa6a394e641baa0a00206a00f78a8f-2e642ae14e641baa0a00206a0024546d-en-US>`_
 
         Arguments: 1
         """
@@ -8682,7 +8683,7 @@ class SMB100A_gen(Instrument):
             _cmd = "LIBLanking"
             args = ["NORMal", "OFF"]
 
-        LIBLanking = LIBLanking()
+        LIBLanking = LIBLanking()  # type: ignore
         """
         OUTPut:LIBLanking
 
@@ -8697,7 +8698,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MODulation"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPIBool):
                 """
@@ -8709,14 +8710,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             OUTPut:MODulation:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        MODulation = MODulation()
+        MODulation = MODulation()  # type: ignore
         """
         OUTPut:MODulation
 
@@ -8731,7 +8732,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "POLarity"
-            args = []
+            args = []  # type: List[str]
 
             class PULSe(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -8743,14 +8744,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "PULSe"
                 args = ["INVerted", "NORMal"]
 
-            PULSe = PULSe()
+            PULSe = PULSe()  # type: ignore
             """
             OUTPut:POLarity:PULSe
 
             Arguments: INVerted, NORMal
             """
 
-        POLarity = POLarity()
+        POLarity = POLarity()  # type: ignore
         """
         OUTPut:POLarity
 
@@ -8770,18 +8771,18 @@ class SMB100A_gen(Instrument):
             class CLEar(SCPINode, SCPISet):
                 """
                 `OUTPut:PROTection:CLEar
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/312a93269b474916.htm#ID_ff19e8ab4e64109c0a00206a01e0ace3-ddc4d9a54e64109c0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/312a93269b474916.htm#ID_ff19e8ab4e64109c0a00206a01e0ace3-ddc4d9a54e64109c0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "CLEar"
-                args = []
+                args = []  # type: List[str]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             `OUTPut:PROTection:CLEar
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/312a93269b474916.htm#ID_ff19e8ab4e64109c0a00206a01e0ace3-ddc4d9a54e64109c0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/312a93269b474916.htm#ID_ff19e8ab4e64109c0a00206a01e0ace3-ddc4d9a54e64109c0a00206a0024546d-en-US>`_
 
             Arguments:
             """
@@ -8796,7 +8797,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "RETRace"
                 args = ["1", "ON", "OFF"]
 
-            RETRace = RETRace()
+            RETRace = RETRace()  # type: ignore
             """
             OUTPut:PROTection:RETRace
 
@@ -8813,7 +8814,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             OUTPut:PROTection:STATe
 
@@ -8823,23 +8824,23 @@ class SMB100A_gen(Instrument):
             class TRIPped(SCPINode, SCPIQuery):
                 """
                 `OUTPut:PROTection:TRIPped
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8c639762430041c7.htm#ID_37db314d4e64161b0a00206a005d0255-2d47945b4e64161b0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8c639762430041c7.htm#ID_37db314d4e64161b0a00206a005d0255-2d47945b4e64161b0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "TRIPped"
-                args = []
+                args = []  # type: List[str]
 
-            TRIPped = TRIPped()
+            TRIPped = TRIPped()  # type: ignore
             """
             `OUTPut:PROTection:TRIPped
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8c639762430041c7.htm#ID_37db314d4e64161b0a00206a005d0255-2d47945b4e64161b0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8c639762430041c7.htm#ID_37db314d4e64161b0a00206a005d0255-2d47945b4e64161b0a00206a0024546d-en-US>`_
 
             Arguments:
             """
 
-        PROTection = PROTection()
+        PROTection = PROTection()  # type: ignore
         """
         OUTPut:PROTection
 
@@ -8856,7 +8857,7 @@ class SMB100A_gen(Instrument):
             _cmd = "RFBLanking"
             args = ["<boolean>", "AUTO"]
 
-        RFBLanking = RFBLanking()
+        RFBLanking = RFBLanking()  # type: ignore
         """
         OUTPut:RFBLanking
 
@@ -8873,7 +8874,7 @@ class SMB100A_gen(Instrument):
             _cmd = "SCALe"
             args = ["1"]
 
-        SCALe = SCALe()
+        SCALe = SCALe()  # type: ignore
         """
         OUTPut:SCALe
 
@@ -8900,14 +8901,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STEReo"
                 args = ["MPX", "PILot"]
 
-            STEReo = STEReo()
+            STEReo = STEReo()  # type: ignore
             """
             OUTPut:SOURce:STEReo
 
             Arguments: MPX, PILot
             """
 
-        SOURce = SOURce()
+        SOURce = SOURce()  # type: ignore
         """
         OUTPut:SOURce
 
@@ -8922,7 +8923,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "STANdby"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPIBool):
                 """
@@ -8934,14 +8935,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             OUTPut:STANdby:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        STANdby = STANdby()
+        STANdby = STANdby()  # type: ignore
         """
         OUTPut:STANdby
 
@@ -8951,7 +8952,7 @@ class SMB100A_gen(Instrument):
         class STATe(SCPINode, SCPIBool):
             """
             `OUTPut:STATe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d68157f6ecaf46b2.htm#ID_2943fc164e63f4f10a00206a00231222-a9036df24e63f4f10a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d68157f6ecaf46b2.htm#ID_2943fc164e63f4f10a00206a00231222-a9036df24e63f4f10a00206a0024546d-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -8969,17 +8970,17 @@ class SMB100A_gen(Instrument):
                 _cmd = "BACKup"
                 args = ["1", "ON", "OFF"]
 
-            BACKup = BACKup()
+            BACKup = BACKup()  # type: ignore
             """
             OUTPut:STATe:BACKup
 
             Arguments: 1, ON, OFF
             """
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         `OUTPut:STATe
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d68157f6ecaf46b2.htm#ID_2943fc164e63f4f10a00206a00231222-a9036df24e63f4f10a00206a0024546d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d68157f6ecaf46b2.htm#ID_2943fc164e63f4f10a00206a00231222-a9036df24e63f4f10a00206a0024546d-en-US>`_
 
         Arguments: 1, ON, OFF
         """
@@ -8994,14 +8995,14 @@ class SMB100A_gen(Instrument):
             _cmd = "VOLTage"
             args = ["1"]
 
-        VOLTage = VOLTage()
+        VOLTage = VOLTage()  # type: ignore
         """
         OUTPut:VOLTage
 
         Arguments: 1
         """
 
-    OUTPut = OUTPut()
+    OUTPut = OUTPut()  # type: ignore
     """
     OUTPut
 
@@ -9016,7 +9017,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "PHASe"
-        args = []
+        args = []  # type: List[str]
 
         class ADJust(SCPINode, SCPIQuery, SCPISet):
             """
@@ -9036,7 +9037,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -9048,21 +9049,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 PHASe:ADJust:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             PHASe:ADJust:STEP
 
             Arguments:
             """
 
-        ADJust = ADJust()
+        ADJust = ADJust()  # type: ignore
         """
         PHASe:ADJust
 
@@ -9077,16 +9078,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "REFerence"
-            args = []
+            args = []  # type: List[str]
 
-        REFerence = REFerence()
+        REFerence = REFerence()  # type: ignore
         """
         PHASe:REFerence
 
         Arguments:
         """
 
-    PHASe = PHASe()
+    PHASe = PHASe()  # type: ignore
     """
     PHASe
 
@@ -9113,7 +9114,7 @@ class SMB100A_gen(Instrument):
             _cmd = "Internal"
             args = ["1"]
 
-        Internal = Internal()
+        Internal = Internal()  # type: ignore
         """
         PHAse:Internal
 
@@ -9130,14 +9131,14 @@ class SMB100A_gen(Instrument):
             _cmd = "Var_step"
             args = ["1"]
 
-        Var_step = Var_step()
+        Var_step = Var_step()  # type: ignore
         """
         PHAse:Var_step
 
         Arguments: 1
         """
 
-    PHAse = PHAse()
+    PHAse = PHAse()  # type: ignore
     """
     PHAse
 
@@ -9152,7 +9153,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "PMETer"
-        args = []
+        args = []  # type: List[str]
 
         class POWer(SCPINode, SCPIQuery):
             """
@@ -9164,14 +9165,14 @@ class SMB100A_gen(Instrument):
             _cmd = "POWer"
             args = ["1"]
 
-        POWer = POWer()
+        POWer = POWer()  # type: ignore
         """
         PMETer:POWer
 
         Arguments: 1
         """
 
-    PMETer = PMETer()
+    PMETer = PMETer()  # type: ignore
     """
     PMETer
 
@@ -9186,7 +9187,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "POWer"
-        args = []
+        args = []  # type: List[str]
 
         class OUT(SCPINode):
             """
@@ -9196,7 +9197,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "OUT"
-            args = []
+            args = []  # type: List[str]
 
             class ALC(SCPINode):
                 """
@@ -9206,7 +9207,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALC"
-                args = []
+                args = []  # type: List[str]
 
                 class BANDwidth(SCPINode, SCPISet):
                     """
@@ -9216,16 +9217,16 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BANDwidth"
-                    args = []
+                    args = []  # type: List[str]
 
-                BANDwidth = BANDwidth()
+                BANDwidth = BANDwidth()  # type: ignore
                 """
                 POWer:OUT:ALC:BANDwidth
 
                 Arguments:
                 """
 
-            ALC = ALC()
+            ALC = ALC()  # type: ignore
             """
             POWer:OUT:ALC
 
@@ -9250,7 +9251,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -9262,21 +9263,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     POWer:OUT:ATTenuation:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 POWer:OUT:ATTenuation:STEP
 
                 Arguments:
                 """
 
-            ATTenuation = ATTenuation()
+            ATTenuation = ATTenuation()  # type: ignore
             """
             POWer:OUT:ATTenuation
 
@@ -9301,7 +9302,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -9313,21 +9314,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     POWer:OUT:LEVel:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 POWer:OUT:LEVel:STEP
 
                 Arguments:
                 """
 
-            LEVel = LEVel()
+            LEVel = LEVel()  # type: ignore
             """
             POWer:OUT:LEVel
 
@@ -9344,7 +9345,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MUTing"
                 args = ["1", "ON", "OFF"]
 
-            MUTing = MUTing()
+            MUTing = MUTing()  # type: ignore
             """
             POWer:OUT:MUTing
 
@@ -9361,7 +9362,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             POWer:OUT:STATe
 
@@ -9378,14 +9379,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "ULIMit"
                 args = ["1"]
 
-            ULIMit = ULIMit()
+            ULIMit = ULIMit()  # type: ignore
             """
             POWer:OUT:ULIMit
 
             Arguments: 1
             """
 
-        OUT = OUT()
+        OUT = OUT()  # type: ignore
         """
         POWer:OUT
 
@@ -9400,7 +9401,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SOURce"
-            args = []
+            args = []  # type: List[str]
 
             class ALC(SCPINode):
                 """
@@ -9410,7 +9411,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALC"
-                args = []
+                args = []  # type: List[str]
 
                 class BANDwidth(SCPINode, SCPISet):
                     """
@@ -9420,16 +9421,16 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BANDwidth"
-                    args = []
+                    args = []  # type: List[str]
 
-                BANDwidth = BANDwidth()
+                BANDwidth = BANDwidth()  # type: ignore
                 """
                 POWer:SOURce:ALC:BANDwidth
 
                 Arguments:
                 """
 
-            ALC = ALC()
+            ALC = ALC()  # type: ignore
             """
             POWer:SOURce:ALC
 
@@ -9454,7 +9455,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -9466,21 +9467,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     POWer:SOURce:ATTenuation:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 POWer:SOURce:ATTenuation:STEP
 
                 Arguments:
                 """
 
-            ATTenuation = ATTenuation()
+            ATTenuation = ATTenuation()  # type: ignore
             """
             POWer:SOURce:ATTenuation
 
@@ -9505,7 +9506,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -9517,21 +9518,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     POWer:SOURce:LEVel:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 POWer:SOURce:LEVel:STEP
 
                 Arguments:
                 """
 
-            LEVel = LEVel()
+            LEVel = LEVel()  # type: ignore
             """
             POWer:SOURce:LEVel
 
@@ -9548,7 +9549,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MUTing"
                 args = ["1", "ON", "OFF"]
 
-            MUTing = MUTing()
+            MUTing = MUTing()  # type: ignore
             """
             POWer:SOURce:MUTing
 
@@ -9565,7 +9566,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             POWer:SOURce:STATe
 
@@ -9582,21 +9583,21 @@ class SMB100A_gen(Instrument):
                 _cmd = "ULIMit"
                 args = ["1"]
 
-            ULIMit = ULIMit()
+            ULIMit = ULIMit()  # type: ignore
             """
             POWer:SOURce:ULIMit
 
             Arguments: 1
             """
 
-        SOURce = SOURce()
+        SOURce = SOURce()  # type: ignore
         """
         POWer:SOURce
 
         Arguments:
         """
 
-    POWer = POWer()
+    POWer = POWer()  # type: ignore
     """
     POWer
 
@@ -9611,9 +9612,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "POWup"
-        args = []
+        args = []  # type: List[str]
 
-    POWup = POWup()
+    POWup = POWup()  # type: ignore
     """
     POWup
 
@@ -9628,9 +9629,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "PReset"
-        args = []
+        args = []  # type: List[str]
 
-    PReset = PReset()
+    PReset = PReset()  # type: ignore
     """
     PReset
 
@@ -9645,7 +9646,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "PULSe"
-        args = []
+        args = []  # type: List[str]
 
         class CAL(SCPINode):
             """
@@ -9655,7 +9656,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CAL"
-            args = []
+            args = []  # type: List[str]
 
             class DISable(SCPINode, SCPISet):
                 """
@@ -9665,9 +9666,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DISable"
-                args = []
+                args = []  # type: List[str]
 
-            DISable = DISable()
+            DISable = DISable()  # type: ignore
             """
             PULSe:CAL:DISable
 
@@ -9682,16 +9683,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ENABle"
-                args = []
+                args = []  # type: List[str]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             PULSe:CAL:ENABle
 
             Arguments:
             """
 
-        CAL = CAL()
+        CAL = CAL()  # type: ignore
         """
         PULSe:CAL
 
@@ -9708,7 +9709,7 @@ class SMB100A_gen(Instrument):
             _cmd = "CONDitioning"
             args = ["1", "ON", "OFF"]
 
-        CONDitioning = CONDitioning()
+        CONDitioning = CONDitioning()  # type: ignore
         """
         PULSe:CONDitioning
 
@@ -9733,7 +9734,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -9745,21 +9746,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 PULSe:DELay:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             PULSe:DELay:STEP
 
             Arguments:
             """
 
-        DELay = DELay()
+        DELay = DELay()  # type: ignore
         """
         PULSe:DELay
 
@@ -9784,7 +9785,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -9796,21 +9797,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 PULSe:FREQuency:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             PULSe:FREQuency:STEP
 
             Arguments:
             """
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         PULSe:FREQuency
 
@@ -9827,7 +9828,7 @@ class SMB100A_gen(Instrument):
             _cmd = "IMPedance"
             args = ["1"]
 
-        IMPedance = IMPedance()
+        IMPedance = IMPedance()  # type: ignore
         """
         PULSe:IMPedance
 
@@ -9842,7 +9843,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MODF"
-            args = []
+            args = []  # type: List[str]
 
             class VALue(SCPINode, SCPISet):
                 """
@@ -9854,14 +9855,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "VALue"
                 args = ["1"]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             PULSe:MODF:VALue
 
             Arguments: 1
             """
 
-        MODF = MODF()
+        MODF = MODF()  # type: ignore
         """
         PULSe:MODF
 
@@ -9878,7 +9879,7 @@ class SMB100A_gen(Instrument):
             _cmd = "SLOPe"
             args = ["BOTH", "NEGative", "POSitive"]
 
-        SLOPe = SLOPe()
+        SLOPe = SLOPe()  # type: ignore
         """
         PULSe:SLOPe
 
@@ -9895,7 +9896,7 @@ class SMB100A_gen(Instrument):
             _cmd = "SOURce"
             args = ["EXTernal", "INTernal,EXTernal", "INTernal"]
 
-        SOURce = SOURce()
+        SOURce = SOURce()  # type: ignore
         """
         PULSe:SOURce
 
@@ -9912,7 +9913,7 @@ class SMB100A_gen(Instrument):
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         PULSe:STATe
 
@@ -9937,7 +9938,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -9949,28 +9950,28 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 PULSe:WIDTh:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             PULSe:WIDTh:STEP
 
             Arguments:
             """
 
-        WIDTh = WIDTh()
+        WIDTh = WIDTh()  # type: ignore
         """
         PULSe:WIDTh
 
         Arguments: 1
         """
 
-    PULSe = PULSe()
+    PULSe = PULSe()  # type: ignore
     """
     PULSe
 
@@ -9985,7 +9986,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "PUlse"
-        args = []
+        args = []  # type: List[str]
 
         class Inverted(SCPINode, SCPISet):
             """
@@ -9995,9 +9996,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Inverted"
-            args = []
+            args = []  # type: List[str]
 
-        Inverted = Inverted()
+        Inverted = Inverted()  # type: ignore
         """
         PUlse:Inverted
 
@@ -10012,16 +10013,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Normal"
-            args = []
+            args = []  # type: List[str]
 
-        Normal = Normal()
+        Normal = Normal()  # type: ignore
         """
         PUlse:Normal
 
         Arguments:
         """
 
-    PUlse = PUlse()
+    PUlse = PUlse()  # type: ignore
     """
     PUlse
 
@@ -10036,7 +10037,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "REFerence_oscil"
-        args = []
+        args = []  # type: List[str]
 
         class CORrection(SCPINode, SCPISet):
             """
@@ -10056,16 +10057,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STOre"
-                args = []
+                args = []  # type: List[str]
 
-            STOre = STOre()
+            STOre = STOre()  # type: ignore
             """
             REFerence_oscil:CORrection:STOre
 
             Arguments:
             """
 
-        CORrection = CORrection()
+        CORrection = CORrection()  # type: ignore
         """
         REFerence_oscil:CORrection
 
@@ -10080,9 +10081,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "External"
-            args = []
+            args = []  # type: List[str]
 
-        External = External()
+        External = External()  # type: ignore
         """
         REFerence_oscil:External
 
@@ -10097,9 +10098,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "High"
-            args = []
+            args = []  # type: List[str]
 
-        High = High()
+        High = High()  # type: ignore
         """
         REFerence_oscil:High
 
@@ -10114,9 +10115,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Internal"
-            args = []
+            args = []  # type: List[str]
 
-        Internal = Internal()
+        Internal = Internal()  # type: ignore
         """
         REFerence_oscil:Internal
 
@@ -10131,16 +10132,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Low"
-            args = []
+            args = []  # type: List[str]
 
-        Low = Low()
+        Low = Low()  # type: ignore
         """
         REFerence_oscil:Low
 
         Arguments:
         """
 
-    REFerence_oscil = REFerence_oscil()
+    REFerence_oscil = REFerence_oscil()  # type: ignore
     """
     REFerence_oscil
 
@@ -10157,7 +10158,7 @@ class SMB100A_gen(Instrument):
         _cmd = "REcall"
         args = ["1"]
 
-    REcall = REcall()
+    REcall = REcall()  # type: ignore
     """
     REcall
 
@@ -10172,7 +10173,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ROSCillator"
-        args = []
+        args = []  # type: List[str]
 
         class CALibration(SCPINode, SCPIQuery, SCPISet):
             """
@@ -10192,7 +10193,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery):
                     """
@@ -10204,21 +10205,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 ROSCillator:CALibration:STEP:INCRement
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             ROSCillator:CALibration:STEP
 
             Arguments:
             """
 
-        CALibration = CALibration()
+        CALibration = CALibration()  # type: ignore
         """
         ROSCillator:CALibration
 
@@ -10235,14 +10236,14 @@ class SMB100A_gen(Instrument):
             _cmd = "SOURce"
             args = ["EXTernal", "INTernal"]
 
-        SOURce = SOURce()
+        SOURce = SOURce()  # type: ignore
         """
         ROSCillator:SOURce
 
         Arguments: EXTernal, INTernal
         """
 
-    ROSCillator = ROSCillator()
+    ROSCillator = ROSCillator()  # type: ignore
     """
     ROSCillator
 
@@ -10257,7 +10258,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SEQuence"
-        args = []
+        args = []  # type: List[str]
 
         class IMMediate(SCPINode, SCPISet):
             """
@@ -10267,9 +10268,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IMMediate"
-            args = []
+            args = []  # type: List[str]
 
-        IMMediate = IMMediate()
+        IMMediate = IMMediate()  # type: ignore
         """
         SEQuence:IMMediate
 
@@ -10286,7 +10287,7 @@ class SMB100A_gen(Instrument):
             _cmd = "REGister"
             args = ["<numeric_value>,<numeric_value>"]
 
-        REGister = REGister()
+        REGister = REGister()  # type: ignore
         """
         SEQuence:REGister
 
@@ -10303,14 +10304,14 @@ class SMB100A_gen(Instrument):
             _cmd = "STATe"
             args = ["1", "ON", "OFF"]
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         SEQuence:STATe
 
         Arguments: 1, ON, OFF
         """
 
-    SEQuence = SEQuence()
+    SEQuence = SEQuence()  # type: ignore
     """
     SEQuence
 
@@ -10325,7 +10326,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SERVice"
-        args = []
+        args = []  # type: List[str]
 
         class DIRect(SCPINode, SCPISet):
             """
@@ -10335,7 +10336,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DIRect"
-            args = []
+            args = []  # type: List[str]
 
             class COMMand(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -10347,14 +10348,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "COMMand"
                 args = ["'string'"]
 
-            COMMand = COMMand()
+            COMMand = COMMand()  # type: ignore
             """
             SERVice:DIRect:COMMand
 
             Arguments: 'string'
             """
 
-        DIRect = DIRect()
+        DIRect = DIRect()  # type: ignore
         """
         SERVice:DIRect
 
@@ -10369,7 +10370,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "HCOPy"
-            args = []
+            args = []  # type: List[str]
 
             class EXECute(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -10379,9 +10380,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXECute"
-                args = []
+                args = []  # type: List[str]
 
-            EXECute = EXECute()
+            EXECute = EXECute()  # type: ignore
             """
             SERVice:HCOPy:EXECute
 
@@ -10396,7 +10397,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMAGe"
-                args = []
+                args = []  # type: List[str]
 
                 class FORMat(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -10408,21 +10409,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "FORMat"
                     args = ["BMP", "JPG", "PNG", "XPM"]
 
-                FORMat = FORMat()
+                FORMat = FORMat()  # type: ignore
                 """
                 SERVice:HCOPy:IMAGe:FORMat
 
                 Arguments: BMP, JPG, PNG, XPM
                 """
 
-            IMAGe = IMAGe()
+            IMAGe = IMAGe()  # type: ignore
             """
             SERVice:HCOPy:IMAGe
 
             Arguments:
             """
 
-        HCOPy = HCOPy()
+        HCOPy = HCOPy()  # type: ignore
         """
         SERVice:HCOPy
 
@@ -10437,9 +10438,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SEQuence"
-            args = []
+            args = []  # type: List[str]
 
-        SEQuence = SEQuence()
+        SEQuence = SEQuence()  # type: ignore
         """
         SERVice:SEQuence
 
@@ -10454,7 +10455,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SPECial"
-            args = []
+            args = []  # type: List[str]
 
             class FUNCtion(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -10466,7 +10467,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "FUNCtion"
                 args = ["AA", "AB", "AM", "AP", "FA", "FB", "FM", "FR", "MF", "ML", "NONE", "PL", "PM", "ST"]
 
-            FUNCtion = FUNCtion()
+            FUNCtion = FUNCtion()  # type: ignore
             """
             SERVice:SPECial:FUNCtion
 
@@ -10483,14 +10484,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["NONE", "S1", "S2", "S3"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             SERVice:SPECial:SOURce
 
             Arguments: NONE, S1, S2, S3
             """
 
-        SPECial = SPECial()
+        SPECial = SPECial()  # type: ignore
         """
         SERVice:SPECial
 
@@ -10505,16 +10506,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TALKer"
-            args = []
+            args = []  # type: List[str]
 
-        TALKer = TALKer()
+        TALKer = TALKer()  # type: ignore
         """
         SERVice:TALKer
 
         Arguments:
         """
 
-    SERVice = SERVice()
+    SERVice = SERVice()  # type: ignore
     """
     SERVice
 
@@ -10529,9 +10530,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SEquence"
-        args = []
+        args = []  # type: List[str]
 
-    SEquence = SEquence()
+    SEquence = SEquence()  # type: ignore
     """
     SEquence
 
@@ -10546,9 +10547,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SHA2"
-        args = []
+        args = []  # type: List[str]
 
-    SHA2 = SHA2()
+    SHA2 = SHA2()  # type: ignore
     """
     SHA2
 
@@ -10563,9 +10564,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SHS1"
-        args = []
+        args = []  # type: List[str]
 
-    SHS1 = SHS1()
+    SHS1 = SHS1()  # type: ignore
     """
     SHS1
 
@@ -10580,9 +10581,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SHT2"
-        args = []
+        args = []  # type: List[str]
 
-    SHT2 = SHT2()
+    SHT2 = SHT2()  # type: ignore
     """
     SHT2
 
@@ -10597,7 +10598,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SOURce"
-        args = []
+        args = []  # type: List[str]
 
         class AM(SCPINode):
             """
@@ -10607,7 +10608,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "AM"
-            args = []
+            args = []  # type: List[str]
 
             class DEPTh(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -10622,7 +10623,7 @@ class SMB100A_gen(Instrument):
                 class EXPonential(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:AM:DEPTh:EXPonential
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/39eff2936fd04783.htm#ID_856cf6c5fb4c2e620a00206a0128eeb6-0735468cfb4c20f50a00206a002979ad-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/39eff2936fd04783.htm#ID_856cf6c5fb4c2e620a00206a0128eeb6-0735468cfb4c20f50a00206a002979ad-en-US>`_
 
                     Arguments: 1
                     """
@@ -10630,10 +10631,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "EXPonential"
                     args = ["1"]
 
-                EXPonential = EXPonential()
+                EXPonential = EXPonential()  # type: ignore
                 """
                 `SOURce:AM:DEPTh:EXPonential
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/39eff2936fd04783.htm#ID_856cf6c5fb4c2e620a00206a0128eeb6-0735468cfb4c20f50a00206a002979ad-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/39eff2936fd04783.htm#ID_856cf6c5fb4c2e620a00206a0128eeb6-0735468cfb4c20f50a00206a002979ad-en-US>`_
 
                 Arguments: 1
                 """
@@ -10641,7 +10642,7 @@ class SMB100A_gen(Instrument):
                 class LINear(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:AM:DEPTh:LINear
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8067ab8f7396447a.htm#ID_7adfcbcefb4c1bd40a00206a001d9c20-808a5aebfb4c0cb10a00206a002979ad-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8067ab8f7396447a.htm#ID_7adfcbcefb4c1bd40a00206a001d9c20-808a5aebfb4c0cb10a00206a002979ad-en-US>`_
 
                     Arguments: 1
                     """
@@ -10659,17 +10660,17 @@ class SMB100A_gen(Instrument):
                         _cmd = "TRACk"
                         args = ["1", "ON", "OFF"]
 
-                    TRACk = TRACk()
+                    TRACk = TRACk()  # type: ignore
                     """
                     SOURce:AM:DEPTh:LINear:TRACk
 
                     Arguments: 1, ON, OFF
                     """
 
-                LINear = LINear()
+                LINear = LINear()  # type: ignore
                 """
                 `SOURce:AM:DEPTh:LINear
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8067ab8f7396447a.htm#ID_7adfcbcefb4c1bd40a00206a001d9c20-808a5aebfb4c0cb10a00206a002979ad-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8067ab8f7396447a.htm#ID_7adfcbcefb4c1bd40a00206a001d9c20-808a5aebfb4c0cb10a00206a002979ad-en-US>`_
 
                 Arguments: 1
                 """
@@ -10682,7 +10683,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -10694,21 +10695,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:AM:DEPTh:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:AM:DEPTh:STEP
 
                 Arguments:
                 """
 
-            DEPTh = DEPTh()
+            DEPTh = DEPTh()  # type: ignore
             """
             SOURce:AM:DEPTh
 
@@ -10723,12 +10724,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class COUPling(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:AM:EXTernal:COUPling
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c57efbe68294ef5.htm#ID_5bcc30cf4d678f970a00206a00fe69d4-c60d3ff74d678f970a00206a0024546d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c57efbe68294ef5.htm#ID_5bcc30cf4d678f970a00206a00fe69d4-c60d3ff74d678f970a00206a0024546d-en-US>`_
 
                     Arguments: AC, DC
                     """
@@ -10736,10 +10737,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "COUPling"
                     args = ["AC", "DC"]
 
-                COUPling = COUPling()
+                COUPling = COUPling()  # type: ignore
                 """
                 `SOURce:AM:EXTernal:COUPling
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c57efbe68294ef5.htm#ID_5bcc30cf4d678f970a00206a00fe69d4-c60d3ff74d678f970a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c57efbe68294ef5.htm#ID_5bcc30cf4d678f970a00206a00fe69d4-c60d3ff74d678f970a00206a0024546d-en-US>`_
 
                 Arguments: AC, DC
                 """
@@ -10754,14 +10755,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "IMPedance"
                     args = ["1"]
 
-                IMPedance = IMPedance()
+                IMPedance = IMPedance()  # type: ignore
                 """
                 SOURce:AM:EXTernal:IMPedance
 
                 Arguments: 1
                 """
 
-            EXTernal = EXTernal()
+            EXTernal = EXTernal()  # type: ignore
             """
             SOURce:AM:EXTernal
 
@@ -10776,7 +10777,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -10806,7 +10807,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "AMPLitude"
-                            args = []
+                            args = []  # type: List[str]
 
                             class PERCent(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -10818,21 +10819,21 @@ class SMB100A_gen(Instrument):
                                 _cmd = "PERCent"
                                 args = ["1"]
 
-                            PERCent = PERCent()
+                            PERCent = PERCent()  # type: ignore
                             """
                             SOURce:AM:INTernal:FREQuency:ALTernate:AMPLitude:PERCent
 
                             Arguments: 1
                             """
 
-                        AMPLitude = AMPLitude()
+                        AMPLitude = AMPLitude()  # type: ignore
                         """
                         SOURce:AM:INTernal:FREQuency:ALTernate:AMPLitude
 
                         Arguments:
                         """
 
-                    ALTernate = ALTernate()
+                    ALTernate = ALTernate()  # type: ignore
                     """
                     SOURce:AM:INTernal:FREQuency:ALTernate
 
@@ -10847,7 +10848,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -10859,21 +10860,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:AM:INTernal:FREQuency:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:AM:INTernal:FREQuency:STEP
 
                     Arguments:
                     """
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:AM:INTernal:FREQuency
 
@@ -10900,7 +10901,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "NOISe"
                         args = ["GAUSsian", "UNIForm"]
 
-                    NOISe = NOISe()
+                    NOISe = NOISe()  # type: ignore
                     """
                     SOURce:AM:INTernal:FUNCtion:NOISe
 
@@ -10917,14 +10918,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "SHAPe"
                         args = ["SINE", "SQUare"]
 
-                    SHAPe = SHAPe()
+                    SHAPe = SHAPe()  # type: ignore
                     """
                     SOURce:AM:INTernal:FUNCtion:SHAPe
 
                     Arguments: SINE, SQUare
                     """
 
-                FUNCtion = FUNCtion()
+                FUNCtion = FUNCtion()  # type: ignore
                 """
                 SOURce:AM:INTernal:FUNCtion
 
@@ -10939,7 +10940,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SWEep"
-                    args = []
+                    args = []  # type: List[str]
 
                     class TRIGger(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -10951,21 +10952,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "TRIGger"
                         args = ["BUS", "EXTernal", "IMMediate", "KEY"]
 
-                    TRIGger = TRIGger()
+                    TRIGger = TRIGger()  # type: ignore
                     """
                     SOURce:AM:INTernal:SWEep:TRIGger
 
                     Arguments: BUS, EXTernal, IMMediate, KEY
                     """
 
-                SWEep = SWEep()
+                SWEep = SWEep()  # type: ignore
                 """
                 SOURce:AM:INTernal:SWEep
 
                 Arguments:
                 """
 
-            INTernal = INTernal()
+            INTernal = INTernal()  # type: ignore
             """
             SOURce:AM:INTernal
 
@@ -10982,7 +10983,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "POLarity"
                 args = ["INVerted", "NORMal"]
 
-            POLarity = POLarity()
+            POLarity = POLarity()  # type: ignore
             """
             SOURce:AM:POLarity
 
@@ -10997,7 +10998,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SCAN"
-                args = []
+                args = []  # type: List[str]
 
                 class SENSitivity(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -11009,7 +11010,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "SENSitivity"
                     args = ["1"]
 
-                SENSitivity = SENSitivity()
+                SENSitivity = SENSitivity()  # type: ignore
                 """
                 SOURce:AM:SCAN:SENSitivity
 
@@ -11026,14 +11027,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:AM:SCAN:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            SCAN = SCAN()
+            SCAN = SCAN()  # type: ignore
             """
             SOURce:AM:SCAN
 
@@ -11043,7 +11044,7 @@ class SMB100A_gen(Instrument):
             class SENSitivity(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:AM:SENSitivity
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6c5790605c444e81.htm#ID_49b9748f4d6795350a00206a01bcd5ca-0c8a2fb54d6795350a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6c5790605c444e81.htm#ID_49b9748f4d6795350a00206a01bcd5ca-0c8a2fb54d6795350a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
@@ -11051,10 +11052,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "SENSitivity"
                 args = ["1"]
 
-            SENSitivity = SENSitivity()
+            SENSitivity = SENSitivity()  # type: ignore
             """
             `SOURce:AM:SENSitivity
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6c5790605c444e81.htm#ID_49b9748f4d6795350a00206a01bcd5ca-0c8a2fb54d6795350a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6c5790605c444e81.htm#ID_49b9748f4d6795350a00206a01bcd5ca-0c8a2fb54d6795350a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -11062,7 +11063,7 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:AM:SOURce
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03d65f627a674214.htm#ID_e27ef81b4d679aa50a00206a007718e3-f6f38bbf4d679aa50a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03d65f627a674214.htm#ID_e27ef81b4d679aa50a00206a007718e3-f6f38bbf4d679aa50a00206a0024546d-en-US>`_
 
                 Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
                 """
@@ -11070,10 +11071,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["EXTernal", "INT1", "INT2", "INTernal", "INTernal1", "INTernal2,EXTernal", "INT1", "INTernal", "INTernal1"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `SOURce:AM:SOURce
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03d65f627a674214.htm#ID_e27ef81b4d679aa50a00206a007718e3-f6f38bbf4d679aa50a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03d65f627a674214.htm#ID_e27ef81b4d679aa50a00206a007718e3-f6f38bbf4d679aa50a00206a0024546d-en-US>`_
 
             Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
             """
@@ -11081,7 +11082,7 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:AM:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03a638cb0e924f7c.htm#ID_26d49ccd4d679ff50a00206a0016778c-d761ca934d679ff50a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03a638cb0e924f7c.htm#ID_26d49ccd4d679ff50a00206a0016778c-d761ca934d679ff50a00206a0024546d-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -11099,17 +11100,17 @@ class SMB100A_gen(Instrument):
                     _cmd = "EMULation"
                     args = ["1", "ON", "OFF"]
 
-                EMULation = EMULation()
+                EMULation = EMULation()  # type: ignore
                 """
                 SOURce:AM:STATe:EMULation
 
                 Arguments: 1, ON, OFF
                 """
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SOURce:AM:STATe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03a638cb0e924f7c.htm#ID_26d49ccd4d679ff50a00206a0016778c-d761ca934d679ff50a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03a638cb0e924f7c.htm#ID_26d49ccd4d679ff50a00206a0016778c-d761ca934d679ff50a00206a0024546d-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -11122,7 +11123,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "WIDeband"
-                args = []
+                args = []  # type: List[str]
 
                 class SENSitivity(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -11134,7 +11135,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "SENSitivity"
                     args = ["1"]
 
-                SENSitivity = SENSitivity()
+                SENSitivity = SENSitivity()  # type: ignore
                 """
                 SOURce:AM:WIDeband:SENSitivity
 
@@ -11151,21 +11152,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:AM:WIDeband:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            WIDeband = WIDeband()
+            WIDeband = WIDeband()  # type: ignore
             """
             SOURce:AM:WIDeband
 
             Arguments:
             """
 
-        AM = AM()
+        AM = AM()  # type: ignore
         """
         SOURce:AM
 
@@ -11180,7 +11181,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "BURSt"
-            args = []
+            args = []  # type: List[str]
 
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -11192,7 +11193,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["EXTernal", "EXTernal1", "INTernal", "INTernal1"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             SOURce:BURSt:SOURce
 
@@ -11209,14 +11210,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SOURce:BURSt:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        BURSt = BURSt()
+        BURSt = BURSt()  # type: ignore
         """
         SOURce:BURSt
 
@@ -11231,7 +11232,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CORRection"
-            args = []
+            args = []  # type: List[str]
 
             class CSET(SCPINode):
                 """
@@ -11241,23 +11242,23 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CSET"
-                args = []
+                args = []  # type: List[str]
 
                 class CATalog(SCPINode, SCPIQuery):
                     """
                     `SOURce:CORRection:CSET:CATalog
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/12dc5f6ae5524347.htm#ID_689cd4137c48ac3e0a00206a018986af-f5c35cc47c48ac3e0a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/12dc5f6ae5524347.htm#ID_689cd4137c48ac3e0a00206a018986af-f5c35cc47c48ac3e0a00206a012bc823-en-US>`_
 
                     Arguments:
                     """
                     __slots__ = ()
                     _cmd = "CATalog"
-                    args = []
+                    args = []  # type: List[str]
 
-                CATalog = CATalog()
+                CATalog = CATalog()  # type: ignore
                 """
                 `SOURce:CORRection:CSET:CATalog
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/12dc5f6ae5524347.htm#ID_689cd4137c48ac3e0a00206a018986af-f5c35cc47c48ac3e0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/12dc5f6ae5524347.htm#ID_689cd4137c48ac3e0a00206a018986af-f5c35cc47c48ac3e0a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
@@ -11270,12 +11271,12 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DATA"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FREQuency(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:CORRection:CSET:DATA:FREQuency
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2dda9edb61694671.htm#ID_86873f407c48b1ac0a00206a004443cb-400402547c48b1bc0a00206a012bc823-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2dda9edb61694671.htm#ID_86873f407c48b1ac0a00206a004443cb-400402547c48b1bc0a00206a012bc823-en-US>`_
 
                         Arguments: <numeric_value>[HZ, KHZ, MHZ, GHZ],<numeric_value>
                         """
@@ -11286,26 +11287,26 @@ class SMB100A_gen(Instrument):
                         class POINts(SCPINode, SCPIQuery):
                             """
                             `SOURce:CORRection:CSET:DATA:FREQuency:POINts
-                            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4370c89124cc46f2.htm#ID_c0348a7c7c48b72b0a00206a014355d0-7dcc67e17c48b72b0a00206a012bc823-en-US>`_
+                            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4370c89124cc46f2.htm#ID_c0348a7c7c48b72b0a00206a014355d0-7dcc67e17c48b72b0a00206a012bc823-en-US>`_
 
                             Arguments:
                             """
                             __slots__ = ()
                             _cmd = "POINts"
-                            args = []
+                            args = []  # type: List[str]
 
-                        POINts = POINts()
+                        POINts = POINts()  # type: ignore
                         """
                         `SOURce:CORRection:CSET:DATA:FREQuency:POINts
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4370c89124cc46f2.htm#ID_c0348a7c7c48b72b0a00206a014355d0-7dcc67e17c48b72b0a00206a012bc823-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4370c89124cc46f2.htm#ID_c0348a7c7c48b72b0a00206a014355d0-7dcc67e17c48b72b0a00206a012bc823-en-US>`_
 
                         Arguments:
                         """
 
-                    FREQuency = FREQuency()
+                    FREQuency = FREQuency()  # type: ignore
                     """
                     `SOURce:CORRection:CSET:DATA:FREQuency
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2dda9edb61694671.htm#ID_86873f407c48b1ac0a00206a004443cb-400402547c48b1bc0a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2dda9edb61694671.htm#ID_86873f407c48b1ac0a00206a004443cb-400402547c48b1bc0a00206a012bc823-en-US>`_
 
                     Arguments: <numeric_value>[HZ, KHZ, MHZ, GHZ],<numeric_value>
                     """
@@ -11313,7 +11314,7 @@ class SMB100A_gen(Instrument):
                     class POWer(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:CORRection:CSET:DATA:POWer
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a6ceacf6151845d4.htm#ID_ff0722e77c48bc990a00206a002f7094-dc7cab557c48bc990a00206a012bc823-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a6ceacf6151845d4.htm#ID_ff0722e77c48bc990a00206a002f7094-dc7cab557c48bc990a00206a012bc823-en-US>`_
 
                         Arguments: <numeric_value>[DB],<numeric_value>
                         """
@@ -11324,31 +11325,31 @@ class SMB100A_gen(Instrument):
                         class POINts(SCPINode, SCPIQuery):
                             """
                             `SOURce:CORRection:CSET:DATA:POWer:POINts
-                            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3f3849f7fd204e75.htm#ID_2516a43f7c48e2ce0a00206a00fc3ca9-c939d22e7c48e2ce0a00206a012bc823-en-US>`_
+                            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3f3849f7fd204e75.htm#ID_2516a43f7c48e2ce0a00206a00fc3ca9-c939d22e7c48e2ce0a00206a012bc823-en-US>`_
 
                             Arguments:
                             """
                             __slots__ = ()
                             _cmd = "POINts"
-                            args = []
+                            args = []  # type: List[str]
 
-                        POINts = POINts()
+                        POINts = POINts()  # type: ignore
                         """
                         `SOURce:CORRection:CSET:DATA:POWer:POINts
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3f3849f7fd204e75.htm#ID_2516a43f7c48e2ce0a00206a00fc3ca9-c939d22e7c48e2ce0a00206a012bc823-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3f3849f7fd204e75.htm#ID_2516a43f7c48e2ce0a00206a00fc3ca9-c939d22e7c48e2ce0a00206a012bc823-en-US>`_
 
                         Arguments:
                         """
 
-                    POWer = POWer()
+                    POWer = POWer()  # type: ignore
                     """
                     `SOURce:CORRection:CSET:DATA:POWer
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a6ceacf6151845d4.htm#ID_ff0722e77c48bc990a00206a002f7094-dc7cab557c48bc990a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a6ceacf6151845d4.htm#ID_ff0722e77c48bc990a00206a002f7094-dc7cab557c48bc990a00206a012bc823-en-US>`_
 
                     Arguments: <numeric_value>[DB],<numeric_value>
                     """
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 SOURce:CORRection:CSET:DATA
 
@@ -11358,7 +11359,7 @@ class SMB100A_gen(Instrument):
                 class DELete(SCPINode, SCPISet):
                     """
                     `SOURce:CORRection:CSET:DELete
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8a1cfd4921054bf3.htm#ID_9095a51e7c48f4240a00206a018c3141-1e9571927c48f4240a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8a1cfd4921054bf3.htm#ID_9095a51e7c48f4240a00206a018c3141-1e9571927c48f4240a00206a012bc823-en-US>`_
 
                     Arguments: 'string'
                     """
@@ -11366,10 +11367,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "DELete"
                     args = ["'string'"]
 
-                DELete = DELete()
+                DELete = DELete()  # type: ignore
                 """
                 `SOURce:CORRection:CSET:DELete
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8a1cfd4921054bf3.htm#ID_9095a51e7c48f4240a00206a018c3141-1e9571927c48f4240a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8a1cfd4921054bf3.htm#ID_9095a51e7c48f4240a00206a018c3141-1e9571927c48f4240a00206a012bc823-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -11377,7 +11378,7 @@ class SMB100A_gen(Instrument):
                 class SELect(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:CORRection:CSET:SELect
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0c7e2d4956e34eb6.htm#ID_e15ed3447c488b480a00206a002fedba-f8db389d7c488b480a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0c7e2d4956e34eb6.htm#ID_e15ed3447c488b480a00206a002fedba-f8db389d7c488b480a00206a012bc823-en-US>`_
 
                     Arguments: NONE, USER1, USER2, USER3, USER4, USER5
                     """
@@ -11385,10 +11386,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "SELect"
                     args = ["NONE", "USER1", "USER2", "USER3", "USER4", "USER5"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `SOURce:CORRection:CSET:SELect
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0c7e2d4956e34eb6.htm#ID_e15ed3447c488b480a00206a002fedba-f8db389d7c488b480a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0c7e2d4956e34eb6.htm#ID_e15ed3447c488b480a00206a002fedba-f8db389d7c488b480a00206a012bc823-en-US>`_
 
                 Arguments: NONE, USER1, USER2, USER3, USER4, USER5
                 """
@@ -11403,14 +11404,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:CORRection:CSET:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            CSET = CSET()
+            CSET = CSET()  # type: ignore
             """
             SOURce:CORRection:CSET
 
@@ -11425,7 +11426,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FLATness"
-                args = []
+                args = []  # type: List[str]
 
                 class POINts(SCPINode, SCPIQuery):
                     """
@@ -11437,7 +11438,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "POINts"
                     args = ["1"]
 
-                POINts = POINts()
+                POINts = POINts()  # type: ignore
                 """
                 SOURce:CORRection:FLATness:POINts
 
@@ -11452,9 +11453,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PRESet"
-                    args = []
+                    args = []  # type: List[str]
 
-                PRESet = PRESet()
+                PRESet = PRESet()  # type: ignore
                 """
                 SOURce:CORRection:FLATness:PRESet
 
@@ -11471,14 +11472,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STORe"
                     args = ["'string'"]
 
-                STORe = STORe()
+                STORe = STORe()  # type: ignore
                 """
                 SOURce:CORRection:FLATness:STORe
 
                 Arguments: 'string'
                 """
 
-            FLATness = FLATness()
+            FLATness = FLATness()  # type: ignore
             """
             SOURce:CORRection:FLATness
 
@@ -11495,7 +11496,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["ARRay", "FLATness"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             SOURce:CORRection:SOURce
 
@@ -11505,7 +11506,7 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:CORRection:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f493e8cd5b304030.htm#ID_bfaa6443312d91020a00206a014d3fc5-07f8da5e312d91020a00206a00c4603c-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f493e8cd5b304030.htm#ID_bfaa6443312d91020a00206a014d3fc5-07f8da5e312d91020a00206a00c4603c-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -11513,15 +11514,15 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SOURce:CORRection:STATe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f493e8cd5b304030.htm#ID_bfaa6443312d91020a00206a014d3fc5-07f8da5e312d91020a00206a00c4603c-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f493e8cd5b304030.htm#ID_bfaa6443312d91020a00206a014d3fc5-07f8da5e312d91020a00206a00c4603c-en-US>`_
 
             Arguments: 1, ON, OFF
             """
 
-        CORRection = CORRection()
+        CORRection = CORRection()  # type: ignore
         """
         SOURce:CORRection
 
@@ -11536,7 +11537,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DM"
-            args = []
+            args = []  # type: List[str]
 
             class ASK(SCPINode):
                 """
@@ -11546,7 +11547,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ASK"
-                args = []
+                args = []  # type: List[str]
 
                 class DEPTh(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -11558,7 +11559,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "DEPTh"
                     args = ["1"]
 
-                DEPTh = DEPTh()
+                DEPTh = DEPTh()  # type: ignore
                 """
                 SOURce:DM:ASK:DEPTh
 
@@ -11575,14 +11576,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "POLarity"
                     args = ["INVerted", "NORMal"]
 
-                POLarity = POLarity()
+                POLarity = POLarity()  # type: ignore
                 """
                 SOURce:DM:ASK:POLarity
 
                 Arguments: INVerted, NORMal
                 """
 
-            ASK = ASK()
+            ASK = ASK()  # type: ignore
             """
             SOURce:DM:ASK
 
@@ -11599,7 +11600,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "BBFilter"
                 args = ["1"]
 
-            BBFilter = BBFilter()
+            BBFilter = BBFilter()  # type: ignore
             """
             SOURce:DM:BBFilter
 
@@ -11614,7 +11615,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class ALC(SCPINode):
                     """
@@ -11624,7 +11625,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALC"
-                    args = []
+                    args = []  # type: List[str]
 
                     class BANDwidth(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -11636,7 +11637,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "BANDwidth"
                         args = ["<numeric_value>", "NARRow", "NORMal"]
 
-                    BANDwidth = BANDwidth()
+                    BANDwidth = BANDwidth()  # type: ignore
                     """
                     SOURce:DM:EXTernal:ALC:BANDwidth
 
@@ -11653,14 +11654,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "BWIDth"
                         args = ["<numeric_value>", "NARRow", "NORMal"]
 
-                    BWIDth = BWIDth()
+                    BWIDth = BWIDth()  # type: ignore
                     """
                     SOURce:DM:EXTernal:ALC:BWIDth
 
                     Arguments: <numeric_value>, NARRow, NORMal
                     """
 
-                ALC = ALC()
+                ALC = ALC()  # type: ignore
                 """
                 SOURce:DM:EXTernal:ALC
 
@@ -11677,7 +11678,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "FILTer"
                     args = ["1"]
 
-                FILTer = FILTer()
+                FILTer = FILTer()  # type: ignore
                 """
                 SOURce:DM:EXTernal:FILTer
 
@@ -11692,7 +11693,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HCRest"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
@@ -11704,14 +11705,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:DM:EXTernal:HCRest:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                HCRest = HCRest()
+                HCRest = HCRest()  # type: ignore
                 """
                 SOURce:DM:EXTernal:HCRest
 
@@ -11726,7 +11727,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HICRest"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
@@ -11738,14 +11739,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:DM:EXTernal:HICRest:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                HICRest = HICRest()
+                HICRest = HICRest()  # type: ignore
                 """
                 SOURce:DM:EXTernal:HICRest
 
@@ -11762,7 +11763,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "IMPedance"
                     args = ["1"]
 
-                IMPedance = IMPedance()
+                IMPedance = IMPedance()  # type: ignore
                 """
                 SOURce:DM:EXTernal:IMPedance
 
@@ -11779,7 +11780,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "POLarity"
                     args = ["INVert", "NORMal"]
 
-                POLarity = POLarity()
+                POLarity = POLarity()  # type: ignore
                 """
                 SOURce:DM:EXTernal:POLarity
 
@@ -11796,14 +11797,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "SOURce"
                     args = ["BBG1", "EXT600", "EXTernal", "INTernal", "OFF", "SUM"]
 
-                SOURce = SOURce()
+                SOURce = SOURce()  # type: ignore
                 """
                 SOURce:DM:EXTernal:SOURce
 
                 Arguments: BBG1, EXT600, EXTernal, INTernal, OFF, SUM
                 """
 
-            EXTernal = EXTernal()
+            EXTernal = EXTernal()  # type: ignore
             """
             SOURce:DM:EXTernal
 
@@ -11818,7 +11819,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FSK"
-                args = []
+                args = []  # type: List[str]
 
                 class DEViation(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -11830,7 +11831,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "DEViation"
                     args = ["1"]
 
-                DEViation = DEViation()
+                DEViation = DEViation()  # type: ignore
                 """
                 SOURce:DM:FSK:DEViation
 
@@ -11847,14 +11848,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "POLarity"
                     args = ["INVerted", "NORMal"]
 
-                POLarity = POLarity()
+                POLarity = POLarity()  # type: ignore
                 """
                 SOURce:DM:FSK:POLarity
 
                 Arguments: INVerted, NORMal
                 """
 
-            FSK = FSK()
+            FSK = FSK()  # type: ignore
             """
             SOURce:DM:FSK
 
@@ -11869,7 +11870,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMPairment"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
@@ -11881,14 +11882,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:DM:IMPairment:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            IMPairment = IMPairment()
+            IMPairment = IMPairment()  # type: ignore
             """
             SOURce:DM:IMPairment
 
@@ -11903,7 +11904,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IQ"
-                args = []
+                args = []  # type: List[str]
 
                 class CREStfactor(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -11915,7 +11916,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "CREStfactor"
                     args = ["1"]
 
-                CREStfactor = CREStfactor()
+                CREStfactor = CREStfactor()  # type: ignore
                 """
                 SOURce:DM:IQ:CREStfactor
 
@@ -11932,14 +11933,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:DM:IQ:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            IQ = IQ()
+            IQ = IQ()  # type: ignore
             """
             SOURce:DM:IQ
 
@@ -11954,7 +11955,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IQADjustment"
-                args = []
+                args = []  # type: List[str]
 
                 class BBG(SCPINode):
                     """
@@ -11964,7 +11965,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BBG"
-                    args = []
+                    args = []  # type: List[str]
 
                     class QSKew(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -11976,14 +11977,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "QSKew"
                         args = ["1"]
 
-                    QSKew = QSKew()
+                    QSKew = QSKew()  # type: ignore
                     """
                     SOURce:DM:IQADjustment:BBG:QSKew
 
                     Arguments: 1
                     """
 
-                BBG = BBG()
+                BBG = BBG()  # type: ignore
                 """
                 SOURce:DM:IQADjustment:BBG
 
@@ -12000,7 +12001,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "DELay"
                     args = ["1"]
 
-                DELay = DELay()
+                DELay = DELay()  # type: ignore
                 """
                 SOURce:DM:IQADjustment:DELay
 
@@ -12015,7 +12016,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EXTernal"
-                    args = []
+                    args = []  # type: List[str]
 
                     class COFFset(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -12027,7 +12028,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "COFFset"
                         args = ["1"]
 
-                    COFFset = COFFset()
+                    COFFset = COFFset()  # type: ignore
                     """
                     SOURce:DM:IQADjustment:EXTernal:COFFset
 
@@ -12044,7 +12045,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "DIOFfset"
                         args = ["1"]
 
-                    DIOFfset = DIOFfset()
+                    DIOFfset = DIOFfset()  # type: ignore
                     """
                     SOURce:DM:IQADjustment:EXTernal:DIOFfset
 
@@ -12061,7 +12062,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "DQOFfset"
                         args = ["1"]
 
-                    DQOFfset = DQOFfset()
+                    DQOFfset = DQOFfset()  # type: ignore
                     """
                     SOURce:DM:IQADjustment:EXTernal:DQOFfset
 
@@ -12078,7 +12079,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "IOFFset"
                         args = ["1"]
 
-                    IOFFset = IOFFset()
+                    IOFFset = IOFFset()  # type: ignore
                     """
                     SOURce:DM:IQADjustment:EXTernal:IOFFset
 
@@ -12095,7 +12096,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "IQATten"
                         args = ["1"]
 
-                    IQATten = IQATten()
+                    IQATten = IQATten()  # type: ignore
                     """
                     SOURce:DM:IQADjustment:EXTernal:IQATten
 
@@ -12112,14 +12113,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "QOFFset"
                         args = ["1"]
 
-                    QOFFset = QOFFset()
+                    QOFFset = QOFFset()  # type: ignore
                     """
                     SOURce:DM:IQADjustment:EXTernal:QOFFset
 
                     Arguments: 1
                     """
 
-                EXTernal = EXTernal()
+                EXTernal = EXTernal()  # type: ignore
                 """
                 SOURce:DM:IQADjustment:EXTernal
 
@@ -12136,7 +12137,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "IOFFset"
                     args = ["1"]
 
-                IOFFset = IOFFset()
+                IOFFset = IOFFset()  # type: ignore
                 """
                 SOURce:DM:IQADjustment:IOFFset
 
@@ -12153,7 +12154,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "QOFFset"
                     args = ["1"]
 
-                QOFFset = QOFFset()
+                QOFFset = QOFFset()  # type: ignore
                 """
                 SOURce:DM:IQADjustment:QOFFset
 
@@ -12170,7 +12171,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "QSKew"
                     args = ["1"]
 
-                QSKew = QSKew()
+                QSKew = QSKew()  # type: ignore
                 """
                 SOURce:DM:IQADjustment:QSKew
 
@@ -12185,7 +12186,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SKEW"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DELay(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -12197,14 +12198,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "DELay"
                         args = ["1"]
 
-                    DELay = DELay()
+                    DELay = DELay()  # type: ignore
                     """
                     SOURce:DM:IQADjustment:SKEW:DELay
 
                     Arguments: 1
                     """
 
-                SKEW = SKEW()
+                SKEW = SKEW()  # type: ignore
                 """
                 SOURce:DM:IQADjustment:SKEW
 
@@ -12221,14 +12222,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:DM:IQADjustment:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            IQADjustment = IQADjustment()
+            IQADjustment = IQADjustment()  # type: ignore
             """
             SOURce:DM:IQADjustment
 
@@ -12243,7 +12244,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IQRatio"
-                args = []
+                args = []  # type: List[str]
 
                 class MAGNitude(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -12255,14 +12256,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "MAGNitude"
                     args = ["1"]
 
-                MAGNitude = MAGNitude()
+                MAGNitude = MAGNitude()  # type: ignore
                 """
                 SOURce:DM:IQRatio:MAGNitude
 
                 Arguments: 1
                 """
 
-            IQRatio = IQRatio()
+            IQRatio = IQRatio()  # type: ignore
             """
             SOURce:DM:IQRatio
 
@@ -12277,7 +12278,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IQSWap"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
@@ -12289,14 +12290,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:DM:IQSWap:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            IQSWap = IQSWap()
+            IQSWap = IQSWap()  # type: ignore
             """
             SOURce:DM:IQSWap
 
@@ -12311,7 +12312,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LEAKage"
-                args = []
+                args = []  # type: List[str]
 
                 class MAGNitude(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -12323,14 +12324,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "MAGNitude"
                     args = ["1"]
 
-                MAGNitude = MAGNitude()
+                MAGNitude = MAGNitude()  # type: ignore
                 """
                 SOURce:DM:LEAKage:MAGNitude
 
                 Arguments: 1
                 """
 
-            LEAKage = LEAKage()
+            LEAKage = LEAKage()  # type: ignore
             """
             SOURce:DM:LEAKage
 
@@ -12345,7 +12346,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MODulation"
-                args = []
+                args = []  # type: List[str]
 
                 class ATTen(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -12357,7 +12358,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ATTen"
                     args = ["1"]
 
-                ATTen = ATTen()
+                ATTen = ATTen()  # type: ignore
                 """
                 SOURce:DM:MODulation:ATTen
 
@@ -12374,14 +12375,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "FILTer"
                     args = ["1"]
 
-                FILTer = FILTer()
+                FILTer = FILTer()  # type: ignore
                 """
                 SOURce:DM:MODulation:FILTer
 
                 Arguments: 1
                 """
 
-            MODulation = MODulation()
+            MODulation = MODulation()  # type: ignore
             """
             SOURce:DM:MODulation
 
@@ -12396,7 +12397,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "QUADrature"
-                args = []
+                args = []  # type: List[str]
 
                 class ANGLe(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -12408,14 +12409,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "ANGLe"
                     args = ["1"]
 
-                ANGLe = ANGLe()
+                ANGLe = ANGLe()  # type: ignore
                 """
                 SOURce:DM:QUADrature:ANGLe
 
                 Arguments: 1
                 """
 
-            QUADrature = QUADrature()
+            QUADrature = QUADrature()  # type: ignore
             """
             SOURce:DM:QUADrature
 
@@ -12430,7 +12431,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SKEW"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
@@ -12442,14 +12443,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:DM:SKEW:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            SKEW = SKEW()
+            SKEW = SKEW()  # type: ignore
             """
             SOURce:DM:SKEW
 
@@ -12466,7 +12467,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["EXTernal", "INTernal", "SUM"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             SOURce:DM:SOURce
 
@@ -12483,7 +12484,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SRATio"
                 args = ["1"]
 
-            SRATio = SRATio()
+            SRATio = SRATio()  # type: ignore
             """
             SOURce:DM:SRATio
 
@@ -12500,14 +12501,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SOURce:DM:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        DM = DM()
+        DM = DM()  # type: ignore
         """
         SOURce:DM
 
@@ -12522,7 +12523,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FM"
-            args = []
+            args = []  # type: List[str]
 
             class BANDwidth(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -12534,7 +12535,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "BANDwidth"
                 args = ["STANdard", "WIDE"]
 
-            BANDwidth = BANDwidth()
+            BANDwidth = BANDwidth()  # type: ignore
             """
             SOURce:FM:BANDwidth
 
@@ -12551,7 +12552,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "COUPling"
                 args = ["AC", "DC"]
 
-            COUPling = COUPling()
+            COUPling = COUPling()  # type: ignore
             """
             SOURce:FM:COUPling
 
@@ -12561,7 +12562,7 @@ class SMB100A_gen(Instrument):
             class DEViation(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FM:DEViation
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17615211bdc2474d.htm#ID_4adf1663ed64b2010a00201901e52a86-bfbdd369ed64afa00a00201900ba4ad4-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17615211bdc2474d.htm#ID_4adf1663ed64b2010a00201901e52a86-bfbdd369ed64afa00a00201900ba4ad4-en-US>`_
 
                 Arguments: 1
                 """
@@ -12577,7 +12578,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -12589,14 +12590,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:FM:DEViation:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:FM:DEViation:STEP
 
@@ -12613,17 +12614,17 @@ class SMB100A_gen(Instrument):
                     _cmd = "TRACk"
                     args = ["1", "ON", "OFF"]
 
-                TRACk = TRACk()
+                TRACk = TRACk()  # type: ignore
                 """
                 SOURce:FM:DEViation:TRACk
 
                 Arguments: 1, ON, OFF
                 """
 
-            DEViation = DEViation()
+            DEViation = DEViation()  # type: ignore
             """
             `SOURce:FM:DEViation
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17615211bdc2474d.htm#ID_4adf1663ed64b2010a00201901e52a86-bfbdd369ed64afa00a00201900ba4ad4-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17615211bdc2474d.htm#ID_4adf1663ed64b2010a00201901e52a86-bfbdd369ed64afa00a00201900ba4ad4-en-US>`_
 
             Arguments: 1
             """
@@ -12636,12 +12637,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class COUPling(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:FM:EXTernal:COUPling
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/713237eac8644509.htm#ID_4fe894544d707f4e0a00206a01cec433-d1c7c3df4d707f4e0a00206a0024546d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/713237eac8644509.htm#ID_4fe894544d707f4e0a00206a01cec433-d1c7c3df4d707f4e0a00206a0024546d-en-US>`_
 
                     Arguments: AC, DC
                     """
@@ -12649,10 +12650,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "COUPling"
                     args = ["AC", "DC"]
 
-                COUPling = COUPling()
+                COUPling = COUPling()  # type: ignore
                 """
                 `SOURce:FM:EXTernal:COUPling
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/713237eac8644509.htm#ID_4fe894544d707f4e0a00206a01cec433-d1c7c3df4d707f4e0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/713237eac8644509.htm#ID_4fe894544d707f4e0a00206a01cec433-d1c7c3df4d707f4e0a00206a0024546d-en-US>`_
 
                 Arguments: AC, DC
                 """
@@ -12667,14 +12668,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "IMPedance"
                     args = ["1"]
 
-                IMPedance = IMPedance()
+                IMPedance = IMPedance()  # type: ignore
                 """
                 SOURce:FM:EXTernal:IMPedance
 
                 Arguments: 1
                 """
 
-            EXTernal = EXTernal()
+            EXTernal = EXTernal()  # type: ignore
             """
             SOURce:FM:EXTernal
 
@@ -12689,7 +12690,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FILTer"
-                args = []
+                args = []  # type: List[str]
 
                 class HPASs(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -12701,14 +12702,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "HPASs"
                     args = ["1"]
 
-                HPASs = HPASs()
+                HPASs = HPASs()  # type: ignore
                 """
                 SOURce:FM:FILTer:HPASs
 
                 Arguments: 1
                 """
 
-            FILTer = FILTer()
+            FILTer = FILTer()  # type: ignore
             """
             SOURce:FM:FILTer
 
@@ -12723,7 +12724,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -12753,7 +12754,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "AMPLitude"
-                            args = []
+                            args = []  # type: List[str]
 
                             class PERCent(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -12765,21 +12766,21 @@ class SMB100A_gen(Instrument):
                                 _cmd = "PERCent"
                                 args = ["1"]
 
-                            PERCent = PERCent()
+                            PERCent = PERCent()  # type: ignore
                             """
                             SOURce:FM:INTernal:FREQuency:ALTernate:AMPLitude:PERCent
 
                             Arguments: 1
                             """
 
-                        AMPLitude = AMPLitude()
+                        AMPLitude = AMPLitude()  # type: ignore
                         """
                         SOURce:FM:INTernal:FREQuency:ALTernate:AMPLitude
 
                         Arguments:
                         """
 
-                    ALTernate = ALTernate()
+                    ALTernate = ALTernate()  # type: ignore
                     """
                     SOURce:FM:INTernal:FREQuency:ALTernate
 
@@ -12794,7 +12795,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -12806,21 +12807,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:FM:INTernal:FREQuency:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:FM:INTernal:FREQuency:STEP
 
                     Arguments:
                     """
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:FM:INTernal:FREQuency
 
@@ -12847,7 +12848,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "NOISe"
                         args = ["GAUSsian", "UNIForm"]
 
-                    NOISe = NOISe()
+                    NOISe = NOISe()  # type: ignore
                     """
                     SOURce:FM:INTernal:FUNCtion:NOISe
 
@@ -12864,14 +12865,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "SHAPe"
                         args = ["SINE", "SQUare"]
 
-                    SHAPe = SHAPe()
+                    SHAPe = SHAPe()  # type: ignore
                     """
                     SOURce:FM:INTernal:FUNCtion:SHAPe
 
                     Arguments: SINE, SQUare
                     """
 
-                FUNCtion = FUNCtion()
+                FUNCtion = FUNCtion()  # type: ignore
                 """
                 SOURce:FM:INTernal:FUNCtion
 
@@ -12886,7 +12887,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SWEep"
-                    args = []
+                    args = []  # type: List[str]
 
                     class TRIGger(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -12898,21 +12899,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "TRIGger"
                         args = ["BUS", "EXTernal", "IMMediate", "KEY"]
 
-                    TRIGger = TRIGger()
+                    TRIGger = TRIGger()  # type: ignore
                     """
                     SOURce:FM:INTernal:SWEep:TRIGger
 
                     Arguments: BUS, EXTernal, IMMediate, KEY
                     """
 
-                SWEep = SWEep()
+                SWEep = SWEep()  # type: ignore
                 """
                 SOURce:FM:INTernal:SWEep
 
                 Arguments:
                 """
 
-            INTernal = INTernal()
+            INTernal = INTernal()  # type: ignore
             """
             SOURce:FM:INTernal
 
@@ -12929,7 +12930,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "PREemphasis"
                 args = ["1"]
 
-            PREemphasis = PREemphasis()
+            PREemphasis = PREemphasis()  # type: ignore
             """
             SOURce:FM:PREemphasis
 
@@ -12939,7 +12940,7 @@ class SMB100A_gen(Instrument):
             class SENSitivity(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FM:SENSitivity
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d6f8c97d066e4010.htm#ID_3d6e84804d70782a0a00206a0179e300-35b70df44d70782a0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d6f8c97d066e4010.htm#ID_3d6e84804d70782a0a00206a0179e300-35b70df44d70782a0a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
@@ -12947,10 +12948,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "SENSitivity"
                 args = ["1"]
 
-            SENSitivity = SENSitivity()
+            SENSitivity = SENSitivity()  # type: ignore
             """
             `SOURce:FM:SENSitivity
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d6f8c97d066e4010.htm#ID_3d6e84804d70782a0a00206a0179e300-35b70df44d70782a0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d6f8c97d066e4010.htm#ID_3d6e84804d70782a0a00206a0179e300-35b70df44d70782a0a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -12958,7 +12959,7 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FM:SOURce
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ddeceb86743c4342.htm#ID_7ce7c1e54d7085a70a00206a0035ad95-7c998c484d7085a70a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ddeceb86743c4342.htm#ID_7ce7c1e54d7085a70a00206a0035ad95-7c998c484d7085a70a00206a0024546d-en-US>`_
 
                 Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
                 """
@@ -12966,10 +12967,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["EXTernal", "INT1", "INT2", "INTernal", "INTernal1", "INTernal2,EXTernal", "INT1", "INTernal", "INTernal1"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `SOURce:FM:SOURce
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ddeceb86743c4342.htm#ID_7ce7c1e54d7085a70a00206a0035ad95-7c998c484d7085a70a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ddeceb86743c4342.htm#ID_7ce7c1e54d7085a70a00206a0035ad95-7c998c484d7085a70a00206a0024546d-en-US>`_
 
             Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
             """
@@ -12977,7 +12978,7 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:FM:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bfc4735fb97e4afb.htm#ID_56f39a7a4d708c000a00206a00870c91-8d7d16d14d708c000a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bfc4735fb97e4afb.htm#ID_56f39a7a4d708c000a00206a00870c91-8d7d16d14d708c000a00206a0024546d-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -12995,22 +12996,22 @@ class SMB100A_gen(Instrument):
                     _cmd = "EMULation"
                     args = ["1", "ON", "OFF"]
 
-                EMULation = EMULation()
+                EMULation = EMULation()  # type: ignore
                 """
                 SOURce:FM:STATe:EMULation
 
                 Arguments: 1, ON, OFF
                 """
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SOURce:FM:STATe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bfc4735fb97e4afb.htm#ID_56f39a7a4d708c000a00206a00870c91-8d7d16d14d708c000a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bfc4735fb97e4afb.htm#ID_56f39a7a4d708c000a00206a00870c91-8d7d16d14d708c000a00206a0024546d-en-US>`_
 
             Arguments: 1, ON, OFF
             """
 
-        FM = FM()
+        FM = FM()  # type: ignore
         """
         SOURce:FM
 
@@ -13025,12 +13026,12 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FREQuency"
-            args = []
+            args = []  # type: List[str]
 
             class CENTer(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:CENTer
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2cf6c143b3cf4c4b.htm#ID_94b28e8271966ef30a00206a004b06bb-b020ee7271966ef30a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2cf6c143b3cf4c4b.htm#ID_94b28e8271966ef30a00206a004b06bb-b020ee7271966ef30a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -13046,7 +13047,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13058,24 +13059,24 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:FREQuency:CENTer:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:FREQuency:CENTer:STEP
 
                 Arguments:
                 """
 
-            CENTer = CENTer()
+            CENTer = CENTer()  # type: ignore
             """
             `SOURce:FREQuency:CENTer
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2cf6c143b3cf4c4b.htm#ID_94b28e8271966ef30a00206a004b06bb-b020ee7271966ef30a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2cf6c143b3cf4c4b.htm#ID_94b28e8271966ef30a00206a004b06bb-b020ee7271966ef30a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -13088,7 +13089,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CHANnels"
-                args = []
+                args = []  # type: List[str]
 
                 class NUMBer(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -13100,7 +13101,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "NUMBer"
                     args = ["1"]
 
-                NUMBer = NUMBer()
+                NUMBer = NUMBer()  # type: ignore
                 """
                 SOURce:FREQuency:CHANnels:NUMBer
 
@@ -13117,14 +13118,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:FREQuency:CHANnels:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            CHANnels = CHANnels()
+            CHANnels = CHANnels()  # type: ignore
             """
             SOURce:FREQuency:CHANnels
 
@@ -13139,7 +13140,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CW"
-                args = []
+                args = []  # type: List[str]
 
                 class BACKup(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -13151,7 +13152,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "BACKup"
                     args = ["1"]
 
-                BACKup = BACKup()
+                BACKup = BACKup()  # type: ignore
                 """
                 SOURce:FREQuency:CW:BACKup
 
@@ -13166,7 +13167,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13178,21 +13179,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:FREQuency:CW:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:FREQuency:CW:STEP
 
                 Arguments:
                 """
 
-            CW = CW()
+            CW = CW()  # type: ignore
             """
             SOURce:FREQuency:CW
 
@@ -13209,7 +13210,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "ERANge"
                 args = ["1", "ON", "OFF"]
 
-            ERANge = ERANge()
+            ERANge = ERANge()  # type: ignore
             """
             SOURce:FREQuency:ERANge
 
@@ -13236,7 +13237,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "BACKup"
                     args = ["1"]
 
-                BACKup = BACKup()
+                BACKup = BACKup()  # type: ignore
                 """
                 SOURce:FREQuency:FIXed:BACKup
 
@@ -13251,7 +13252,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13263,21 +13264,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:FREQuency:FIXed:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:FREQuency:FIXed:STEP
 
                 Arguments:
                 """
 
-            FIXed = FIXed()
+            FIXed = FIXed()  # type: ignore
             """
             SOURce:FREQuency:FIXed
 
@@ -13287,7 +13288,7 @@ class SMB100A_gen(Instrument):
             class MANual(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:MANual
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b256342b64e54406.htm#ID_c7717ccc71967af90a00206a0175c71f-fcb82bd071967af90a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b256342b64e54406.htm#ID_c7717ccc71967af90a00206a0175c71f-fcb82bd071967af90a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -13295,10 +13296,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "MANual"
                 args = ["1"]
 
-            MANual = MANual()
+            MANual = MANual()  # type: ignore
             """
             `SOURce:FREQuency:MANual
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b256342b64e54406.htm#ID_c7717ccc71967af90a00206a0175c71f-fcb82bd071967af90a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b256342b64e54406.htm#ID_c7717ccc71967af90a00206a0175c71f-fcb82bd071967af90a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -13306,7 +13307,7 @@ class SMB100A_gen(Instrument):
             class MULTiplier(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:MULTiplier
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a9bd609236c14729.htm#ID_3351c13f7196e80a0a00206a0041112e-e73472347196e80a0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a9bd609236c14729.htm#ID_3351c13f7196e80a0a00206a0041112e-e73472347196e80a0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -13324,7 +13325,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:FREQuency:MULTiplier:STATe
 
@@ -13339,7 +13340,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13351,24 +13352,24 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:FREQuency:MULTiplier:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:FREQuency:MULTiplier:STEP
 
                 Arguments:
                 """
 
-            MULTiplier = MULTiplier()
+            MULTiplier = MULTiplier()  # type: ignore
             """
             `SOURce:FREQuency:MULTiplier
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a9bd609236c14729.htm#ID_3351c13f7196e80a0a00206a0041112e-e73472347196e80a0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a9bd609236c14729.htm#ID_3351c13f7196e80a0a00206a0041112e-e73472347196e80a0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -13376,7 +13377,7 @@ class SMB100A_gen(Instrument):
             class OFFSet(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:OFFSet
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cb510032520641ae.htm#ID_af38e01f71962fc70a00206a0025f2de-cb72d0b271962fc70a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cb510032520641ae.htm#ID_af38e01f71962fc70a00206a0025f2de-cb72d0b271962fc70a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -13394,17 +13395,17 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:FREQuency:OFFSet:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            OFFSet = OFFSet()
+            OFFSet = OFFSet()  # type: ignore
             """
             `SOURce:FREQuency:OFFSet
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cb510032520641ae.htm#ID_af38e01f71962fc70a00206a0025f2de-cb72d0b271962fc70a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cb510032520641ae.htm#ID_af38e01f71962fc70a00206a0025f2de-cb72d0b271962fc70a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -13417,7 +13418,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PHASe"
-                args = []
+                args = []  # type: List[str]
 
                 class CONTinuous(SCPINode, SCPISet):
                     """
@@ -13427,7 +13428,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONTinuous"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
@@ -13439,21 +13440,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:FREQuency:PHASe:CONTinuous:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                CONTinuous = CONTinuous()
+                CONTinuous = CONTinuous()  # type: ignore
                 """
                 SOURce:FREQuency:PHASe:CONTinuous
 
                 Arguments:
                 """
 
-            PHASe = PHASe()
+            PHASe = PHASe()  # type: ignore
             """
             SOURce:FREQuency:PHASe
 
@@ -13480,14 +13481,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:FREQuency:REFerence:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            REFerence = REFerence()
+            REFerence = REFerence()  # type: ignore
             """
             SOURce:FREQuency:REFerence
 
@@ -13497,7 +13498,7 @@ class SMB100A_gen(Instrument):
             class SPAN(SCPINodeN, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:SPAN
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/918726699f9a436a.htm#ID_877b9a2d71969db30a00206a01270bed-91afc66471969db30a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/918726699f9a436a.htm#ID_877b9a2d71969db30a00206a01270bed-91afc66471969db30a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -13513,7 +13514,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13525,24 +13526,24 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:FREQuency:SPAN:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:FREQuency:SPAN:STEP
 
                 Arguments:
                 """
 
-            SPAN = SPAN()
+            SPAN = SPAN()  # type: ignore
             """
             `SOURce:FREQuency:SPAN
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/918726699f9a436a.htm#ID_877b9a2d71969db30a00206a01270bed-91afc66471969db30a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/918726699f9a436a.htm#ID_877b9a2d71969db30a00206a01270bed-91afc66471969db30a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -13550,7 +13551,7 @@ class SMB100A_gen(Instrument):
             class STARt(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:STARt
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0f57f1e62e22466d.htm#ID_d6ff21d9719686b10a00206a016817d0-3e9f661a719686b10a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0f57f1e62e22466d.htm#ID_d6ff21d9719686b10a00206a016817d0-3e9f661a719686b10a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -13566,7 +13567,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13578,24 +13579,24 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:FREQuency:STARt:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:FREQuency:STARt:STEP
 
                 Arguments:
                 """
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             `SOURce:FREQuency:STARt
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0f57f1e62e22466d.htm#ID_d6ff21d9719686b10a00206a016817d0-3e9f661a719686b10a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0f57f1e62e22466d.htm#ID_d6ff21d9719686b10a00206a016817d0-3e9f661a719686b10a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -13608,12 +13609,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:FREQuency:STEP:INCRement
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/86e6c5f55e234c7f.htm#ID_89eaa7f5719647a40a00206a01cdb994-b088125d719647a40a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/86e6c5f55e234c7f.htm#ID_89eaa7f5719647a40a00206a01cdb994-b088125d719647a40a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -13621,15 +13622,15 @@ class SMB100A_gen(Instrument):
                     _cmd = "INCRement"
                     args = ["1"]
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 `SOURce:FREQuency:STEP:INCRement
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/86e6c5f55e234c7f.htm#ID_89eaa7f5719647a40a00206a01cdb994-b088125d719647a40a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/86e6c5f55e234c7f.htm#ID_89eaa7f5719647a40a00206a01cdb994-b088125d719647a40a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             SOURce:FREQuency:STEP
 
@@ -13639,7 +13640,7 @@ class SMB100A_gen(Instrument):
             class STOP(SCPINodeN, SCPIQuery, SCPISet):
                 """
                 `SOURce:FREQuency:STOP
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0affa845d399442b.htm#ID_af855a1c7196919e0a00206a00d3c228-eea6068f7196919e0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0affa845d399442b.htm#ID_af855a1c7196919e0a00206a00d3c228-eea6068f7196919e0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -13655,7 +13656,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13667,24 +13668,24 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:FREQuency:STOP:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:FREQuency:STOP:STEP
 
                 Arguments:
                 """
 
-            STOP = STOP()
+            STOP = STOP()  # type: ignore
             """
             `SOURce:FREQuency:STOP
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0affa845d399442b.htm#ID_af855a1c7196919e0a00206a00d3c228-eea6068f7196919e0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0affa845d399442b.htm#ID_af855a1c7196919e0a00206a00d3c228-eea6068f7196919e0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -13699,14 +13700,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SYNThesis"
                 args = ["1"]
 
-            SYNThesis = SYNThesis()
+            SYNThesis = SYNThesis()  # type: ignore
             """
             SOURce:FREQuency:SYNThesis
 
             Arguments: 1
             """
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         SOURce:FREQuency
 
@@ -13721,7 +13722,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FUNCtion"
-            args = []
+            args = []  # type: List[str]
 
             class SHAPe(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -13733,14 +13734,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SHAPe"
                 args = ["PRNoise", "SAWTooth", "SINusoid", "SQUare", "TRIangle"]
 
-            SHAPe = SHAPe()
+            SHAPe = SHAPe()  # type: ignore
             """
             SOURce:FUNCtion:SHAPe
 
             Arguments: PRNoise, SAWTooth, SINusoid, SQUare, TRIangle
             """
 
-        FUNCtion = FUNCtion()
+        FUNCtion = FUNCtion()  # type: ignore
         """
         SOURce:FUNCtion
 
@@ -13755,7 +13756,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ILS"
-            args = []
+            args = []  # type: List[str]
 
             class GS(SCPINode):
                 """
@@ -13765,7 +13766,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "GS"
-                args = []
+                args = []  # type: List[str]
 
                 class COMid(SCPINode):
                     """
@@ -13775,7 +13776,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COMid"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEPTh(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13787,7 +13788,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "DEPTh"
                         args = ["1"]
 
-                    DEPTh = DEPTh()
+                    DEPTh = DEPTh()  # type: ignore
                     """
                     SOURce:ILS:GS:COMid:DEPTh
 
@@ -13804,7 +13805,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "FREQuency"
                         args = ["1"]
 
-                    FREQuency = FREQuency()
+                    FREQuency = FREQuency()  # type: ignore
                     """
                     SOURce:ILS:GS:COMid:FREQuency
 
@@ -13821,14 +13822,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:ILS:GS:COMid:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                COMid = COMid()
+                COMid = COMid()  # type: ignore
                 """
                 SOURce:ILS:GS:COMid
 
@@ -13843,7 +13844,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DDM"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CURRent(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13855,7 +13856,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "CURRent"
                         args = ["1"]
 
-                    CURRent = CURRent()
+                    CURRent = CURRent()  # type: ignore
                     """
                     SOURce:ILS:GS:DDM:CURRent
 
@@ -13872,7 +13873,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "DEPTh"
                         args = ["1"]
 
-                    DEPTh = DEPTh()
+                    DEPTh = DEPTh()  # type: ignore
                     """
                     SOURce:ILS:GS:DDM:DEPTh
 
@@ -13889,7 +13890,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "DIRection"
                         args = ["DOWN", "UP"]
 
-                    DIRection = DIRection()
+                    DIRection = DIRection()  # type: ignore
                     """
                     SOURce:ILS:GS:DDM:DIRection
 
@@ -13906,14 +13907,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
-                    LOGarithmic = LOGarithmic()
+                    LOGarithmic = LOGarithmic()  # type: ignore
                     """
                     SOURce:ILS:GS:DDM:LOGarithmic
 
                     Arguments: 1
                     """
 
-                DDM = DDM()
+                DDM = DDM()  # type: ignore
                 """
                 SOURce:ILS:GS:DDM
 
@@ -13928,7 +13929,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LLOBe"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FREQuency(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13940,14 +13941,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "FREQuency"
                         args = ["1"]
 
-                    FREQuency = FREQuency()
+                    FREQuency = FREQuency()  # type: ignore
                     """
                     SOURce:ILS:GS:LLOBe:FREQuency
 
                     Arguments: 1
                     """
 
-                LLOBe = LLOBe()
+                LLOBe = LLOBe()  # type: ignore
                 """
                 SOURce:ILS:GS:LLOBe
 
@@ -13964,7 +13965,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "PHASe"
                     args = ["1"]
 
-                PHASe = PHASe()
+                PHASe = PHASe()  # type: ignore
                 """
                 SOURce:ILS:GS:PHASe
 
@@ -13979,9 +13980,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PRESet"
-                    args = []
+                    args = []  # type: List[str]
 
-                PRESet = PRESet()
+                PRESet = PRESet()  # type: ignore
                 """
                 SOURce:ILS:GS:PRESet
 
@@ -13998,7 +13999,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "SODepth"
                     args = ["1"]
 
-                SODepth = SODepth()
+                SODepth = SODepth()  # type: ignore
                 """
                 SOURce:ILS:GS:SODepth
 
@@ -14013,7 +14014,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ULOBe"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FREQuency(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14025,21 +14026,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "FREQuency"
                         args = ["1"]
 
-                    FREQuency = FREQuency()
+                    FREQuency = FREQuency()  # type: ignore
                     """
                     SOURce:ILS:GS:ULOBe:FREQuency
 
                     Arguments: 1
                     """
 
-                ULOBe = ULOBe()
+                ULOBe = ULOBe()  # type: ignore
                 """
                 SOURce:ILS:GS:ULOBe
 
                 Arguments:
                 """
 
-            GS = GS()
+            GS = GS()  # type: ignore
             """
             SOURce:ILS:GS
 
@@ -14054,7 +14055,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "GSLope"
-                args = []
+                args = []  # type: List[str]
 
                 class COMid(SCPINode):
                     """
@@ -14064,7 +14065,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COMid"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEPTh(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14076,7 +14077,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "DEPTh"
                         args = ["1"]
 
-                    DEPTh = DEPTh()
+                    DEPTh = DEPTh()  # type: ignore
                     """
                     SOURce:ILS:GSLope:COMid:DEPTh
 
@@ -14093,7 +14094,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "FREQuency"
                         args = ["1"]
 
-                    FREQuency = FREQuency()
+                    FREQuency = FREQuency()  # type: ignore
                     """
                     SOURce:ILS:GSLope:COMid:FREQuency
 
@@ -14110,14 +14111,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:ILS:GSLope:COMid:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                COMid = COMid()
+                COMid = COMid()  # type: ignore
                 """
                 SOURce:ILS:GSLope:COMid
 
@@ -14132,7 +14133,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DDM"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CURRent(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14144,7 +14145,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "CURRent"
                         args = ["1"]
 
-                    CURRent = CURRent()
+                    CURRent = CURRent()  # type: ignore
                     """
                     SOURce:ILS:GSLope:DDM:CURRent
 
@@ -14161,7 +14162,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "DEPTh"
                         args = ["1"]
 
-                    DEPTh = DEPTh()
+                    DEPTh = DEPTh()  # type: ignore
                     """
                     SOURce:ILS:GSLope:DDM:DEPTh
 
@@ -14178,7 +14179,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "DIRection"
                         args = ["DOWN", "UP"]
 
-                    DIRection = DIRection()
+                    DIRection = DIRection()  # type: ignore
                     """
                     SOURce:ILS:GSLope:DDM:DIRection
 
@@ -14195,14 +14196,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
-                    LOGarithmic = LOGarithmic()
+                    LOGarithmic = LOGarithmic()  # type: ignore
                     """
                     SOURce:ILS:GSLope:DDM:LOGarithmic
 
                     Arguments: 1
                     """
 
-                DDM = DDM()
+                DDM = DDM()  # type: ignore
                 """
                 SOURce:ILS:GSLope:DDM
 
@@ -14217,7 +14218,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LLOBe"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FREQuency(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14229,14 +14230,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "FREQuency"
                         args = ["1"]
 
-                    FREQuency = FREQuency()
+                    FREQuency = FREQuency()  # type: ignore
                     """
                     SOURce:ILS:GSLope:LLOBe:FREQuency
 
                     Arguments: 1
                     """
 
-                LLOBe = LLOBe()
+                LLOBe = LLOBe()  # type: ignore
                 """
                 SOURce:ILS:GSLope:LLOBe
 
@@ -14253,7 +14254,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "PHASe"
                     args = ["1"]
 
-                PHASe = PHASe()
+                PHASe = PHASe()  # type: ignore
                 """
                 SOURce:ILS:GSLope:PHASe
 
@@ -14268,9 +14269,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PRESet"
-                    args = []
+                    args = []  # type: List[str]
 
-                PRESet = PRESet()
+                PRESet = PRESet()  # type: ignore
                 """
                 SOURce:ILS:GSLope:PRESet
 
@@ -14287,7 +14288,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "SODepth"
                     args = ["1"]
 
-                SODepth = SODepth()
+                SODepth = SODepth()  # type: ignore
                 """
                 SOURce:ILS:GSLope:SODepth
 
@@ -14302,7 +14303,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ULOBe"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FREQuency(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14314,21 +14315,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "FREQuency"
                         args = ["1"]
 
-                    FREQuency = FREQuency()
+                    FREQuency = FREQuency()  # type: ignore
                     """
                     SOURce:ILS:GSLope:ULOBe:FREQuency
 
                     Arguments: 1
                     """
 
-                ULOBe = ULOBe()
+                ULOBe = ULOBe()  # type: ignore
                 """
                 SOURce:ILS:GSLope:ULOBe
 
                 Arguments:
                 """
 
-            GSLope = GSLope()
+            GSLope = GSLope()  # type: ignore
             """
             SOURce:ILS:GSLope
 
@@ -14343,7 +14344,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LOCalizer"
-                args = []
+                args = []  # type: List[str]
 
                 class COMid(SCPINode):
                     """
@@ -14353,7 +14354,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COMid"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEPTh(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14365,7 +14366,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "DEPTh"
                         args = ["1"]
 
-                    DEPTh = DEPTh()
+                    DEPTh = DEPTh()  # type: ignore
                     """
                     SOURce:ILS:LOCalizer:COMid:DEPTh
 
@@ -14382,7 +14383,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "FREQuency"
                         args = ["1"]
 
-                    FREQuency = FREQuency()
+                    FREQuency = FREQuency()  # type: ignore
                     """
                     SOURce:ILS:LOCalizer:COMid:FREQuency
 
@@ -14399,14 +14400,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:ILS:LOCalizer:COMid:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                COMid = COMid()
+                COMid = COMid()  # type: ignore
                 """
                 SOURce:ILS:LOCalizer:COMid
 
@@ -14421,7 +14422,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DDM"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CURRent(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14433,7 +14434,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "CURRent"
                         args = ["1"]
 
-                    CURRent = CURRent()
+                    CURRent = CURRent()  # type: ignore
                     """
                     SOURce:ILS:LOCalizer:DDM:CURRent
 
@@ -14450,7 +14451,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "DEPTh"
                         args = ["1"]
 
-                    DEPTh = DEPTh()
+                    DEPTh = DEPTh()  # type: ignore
                     """
                     SOURce:ILS:LOCalizer:DDM:DEPTh
 
@@ -14467,7 +14468,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "DIRection"
                         args = ["LEFT", "RIGHt"]
 
-                    DIRection = DIRection()
+                    DIRection = DIRection()  # type: ignore
                     """
                     SOURce:ILS:LOCalizer:DDM:DIRection
 
@@ -14484,14 +14485,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
-                    LOGarithmic = LOGarithmic()
+                    LOGarithmic = LOGarithmic()  # type: ignore
                     """
                     SOURce:ILS:LOCalizer:DDM:LOGarithmic
 
                     Arguments: 1
                     """
 
-                DDM = DDM()
+                DDM = DDM()  # type: ignore
                 """
                 SOURce:ILS:LOCalizer:DDM
 
@@ -14506,7 +14507,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LLOBe"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FREQuency(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14518,14 +14519,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "FREQuency"
                         args = ["1"]
 
-                    FREQuency = FREQuency()
+                    FREQuency = FREQuency()  # type: ignore
                     """
                     SOURce:ILS:LOCalizer:LLOBe:FREQuency
 
                     Arguments: 1
                     """
 
-                LLOBe = LLOBe()
+                LLOBe = LLOBe()  # type: ignore
                 """
                 SOURce:ILS:LOCalizer:LLOBe
 
@@ -14542,7 +14543,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "PHASe"
                     args = ["1"]
 
-                PHASe = PHASe()
+                PHASe = PHASe()  # type: ignore
                 """
                 SOURce:ILS:LOCalizer:PHASe
 
@@ -14557,9 +14558,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PRESet"
-                    args = []
+                    args = []  # type: List[str]
 
-                PRESet = PRESet()
+                PRESet = PRESet()  # type: ignore
                 """
                 SOURce:ILS:LOCalizer:PRESet
 
@@ -14574,7 +14575,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RLOBe"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FREQuency(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14586,14 +14587,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "FREQuency"
                         args = ["1"]
 
-                    FREQuency = FREQuency()
+                    FREQuency = FREQuency()  # type: ignore
                     """
                     SOURce:ILS:LOCalizer:RLOBe:FREQuency
 
                     Arguments: 1
                     """
 
-                RLOBe = RLOBe()
+                RLOBe = RLOBe()  # type: ignore
                 """
                 SOURce:ILS:LOCalizer:RLOBe
 
@@ -14610,14 +14611,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "SODepth"
                     args = ["1"]
 
-                SODepth = SODepth()
+                SODepth = SODepth()  # type: ignore
                 """
                 SOURce:ILS:LOCalizer:SODepth
 
                 Arguments: 1
                 """
 
-            LOCalizer = LOCalizer()
+            LOCalizer = LOCalizer()  # type: ignore
             """
             SOURce:ILS:LOCalizer
 
@@ -14634,7 +14635,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["INT2", "INTernal2,EXTernal"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             SOURce:ILS:SOURce
 
@@ -14651,14 +14652,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SOURce:ILS:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        ILS = ILS()
+        ILS = ILS()  # type: ignore
         """
         SOURce:ILS
 
@@ -14673,7 +14674,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LFOutput"
-            args = []
+            args = []  # type: List[str]
 
             class AMPLitude(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -14685,7 +14686,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "AMPLitude"
                 args = ["1"]
 
-            AMPLitude = AMPLitude()
+            AMPLitude = AMPLitude()  # type: ignore
             """
             SOURce:LFOutput:AMPLitude
 
@@ -14695,7 +14696,7 @@ class SMB100A_gen(Instrument):
             class FREQuency(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LFOutput:FREQuency
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1f6b2dfd7502424e.htm#ID_e2eac03371a347130a00206a013a8948-b48d9b7871a347130a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1f6b2dfd7502424e.htm#ID_e2eac03371a347130a00206a013a8948-b48d9b7871a347130a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -14703,10 +14704,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "FREQuency"
                 args = ["1"]
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             `SOURce:LFOutput:FREQuency
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1f6b2dfd7502424e.htm#ID_e2eac03371a347130a00206a013a8948-b48d9b7871a347130a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1f6b2dfd7502424e.htm#ID_e2eac03371a347130a00206a013a8948-b48d9b7871a347130a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -14719,7 +14720,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FUNCtion"
-                args = []
+                args = []  # type: List[str]
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -14749,7 +14750,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "AMPLitude"
-                            args = []
+                            args = []  # type: List[str]
 
                             class PERCent(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -14761,21 +14762,21 @@ class SMB100A_gen(Instrument):
                                 _cmd = "PERCent"
                                 args = ["1"]
 
-                            PERCent = PERCent()
+                            PERCent = PERCent()  # type: ignore
                             """
                             SOURce:LFOutput:FUNCtion:FREQuency:ALTernate:AMPLitude:PERCent
 
                             Arguments: 1
                             """
 
-                        AMPLitude = AMPLitude()
+                        AMPLitude = AMPLitude()  # type: ignore
                         """
                         SOURce:LFOutput:FUNCtion:FREQuency:ALTernate:AMPLitude
 
                         Arguments:
                         """
 
-                    ALTernate = ALTernate()
+                    ALTernate = ALTernate()  # type: ignore
                     """
                     SOURce:LFOutput:FUNCtion:FREQuency:ALTernate
 
@@ -14790,7 +14791,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -14802,21 +14803,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:LFOutput:FUNCtion:FREQuency:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:LFOutput:FUNCtion:FREQuency:STEP
 
                     Arguments:
                     """
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:LFOutput:FUNCtion:FREQuency
 
@@ -14841,7 +14842,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -14853,21 +14854,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:LFOutput:FUNCtion:PERiod:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:LFOutput:FUNCtion:PERiod:STEP
 
                     Arguments:
                     """
 
-                PERiod = PERiod()
+                PERiod = PERiod()  # type: ignore
                 """
                 SOURce:LFOutput:FUNCtion:PERiod
 
@@ -14892,7 +14893,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -14904,21 +14905,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:LFOutput:FUNCtion:PWIDth:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:LFOutput:FUNCtion:PWIDth:STEP
 
                     Arguments:
                     """
 
-                PWIDth = PWIDth()
+                PWIDth = PWIDth()  # type: ignore
                 """
                 SOURce:LFOutput:FUNCtion:PWIDth
 
@@ -14945,14 +14946,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "NOISe"
                         args = ["GAUSsian", "UNIForm"]
 
-                    NOISe = NOISe()
+                    NOISe = NOISe()  # type: ignore
                     """
                     SOURce:LFOutput:FUNCtion:SHAPe:NOISe
 
                     Arguments: GAUSsian, UNIForm
                     """
 
-                SHAPe = SHAPe()
+                SHAPe = SHAPe()  # type: ignore
                 """
                 SOURce:LFOutput:FUNCtion:SHAPe
 
@@ -14967,7 +14968,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SWEep"
-                    args = []
+                    args = []  # type: List[str]
 
                     class TRIGger(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -14979,21 +14980,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "TRIGger"
                         args = ["BUS", "EXTernal", "IMMediate", "KEY"]
 
-                    TRIGger = TRIGger()
+                    TRIGger = TRIGger()  # type: ignore
                     """
                     SOURce:LFOutput:FUNCtion:SWEep:TRIGger
 
                     Arguments: BUS, EXTernal, IMMediate, KEY
                     """
 
-                SWEep = SWEep()
+                SWEep = SWEep()  # type: ignore
                 """
                 SOURce:LFOutput:FUNCtion:SWEep
 
                 Arguments:
                 """
 
-            FUNCtion = FUNCtion()
+            FUNCtion = FUNCtion()  # type: ignore
             """
             SOURce:LFOutput:FUNCtion
 
@@ -15010,7 +15011,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["FUNC1", "FUNC2", "FUNCtion1", "FUNCtion2", "INT1", "INT2", "INTernal", "INTernal1", "INTernal2"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             SOURce:LFOutput:SOURce
 
@@ -15020,7 +15021,7 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:LFOutput:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9aa195c42bb647c7.htm#ID_5a5d63ab71a330bc0a00206a000cda4d-1617947971a330bc0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9aa195c42bb647c7.htm#ID_5a5d63ab71a330bc0a00206a000cda4d-1617947971a330bc0a00206a012bc823-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -15028,10 +15029,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SOURce:LFOutput:STATe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9aa195c42bb647c7.htm#ID_5a5d63ab71a330bc0a00206a000cda4d-1617947971a330bc0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9aa195c42bb647c7.htm#ID_5a5d63ab71a330bc0a00206a000cda4d-1617947971a330bc0a00206a012bc823-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -15039,7 +15040,7 @@ class SMB100A_gen(Instrument):
             class VOLTage(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LFOutput:VOLTage
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/30f4a928cfb244ff.htm#ID_0aac7ff171a373a10a00206a0151df63-2edc927371a373a10a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/30f4a928cfb244ff.htm#ID_0aac7ff171a373a10a00206a0151df63-2edc927371a373a10a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -15047,15 +15048,15 @@ class SMB100A_gen(Instrument):
                 _cmd = "VOLTage"
                 args = ["1"]
 
-            VOLTage = VOLTage()
+            VOLTage = VOLTage()  # type: ignore
             """
             `SOURce:LFOutput:VOLTage
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/30f4a928cfb244ff.htm#ID_0aac7ff171a373a10a00206a0151df63-2edc927371a373a10a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/30f4a928cfb244ff.htm#ID_0aac7ff171a373a10a00206a0151df63-2edc927371a373a10a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
 
-        LFOutput = LFOutput()
+        LFOutput = LFOutput()  # type: ignore
         """
         SOURce:LFOutput
 
@@ -15070,7 +15071,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LIST"
-            args = []
+            args = []  # type: List[str]
 
             class CALCulate(SCPINode, SCPISet):
                 """
@@ -15080,9 +15081,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CALCulate"
-                args = []
+                args = []  # type: List[str]
 
-            CALCulate = CALCulate()
+            CALCulate = CALCulate()  # type: ignore
             """
             SOURce:LIST:CALCulate
 
@@ -15092,18 +15093,18 @@ class SMB100A_gen(Instrument):
             class CATalog(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:CATalog
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/16c72e3030b147e1.htm#ID_3069dbd57ba2f03b0a00206a00039550-48dc81507ba2f03b0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/16c72e3030b147e1.htm#ID_3069dbd57ba2f03b0a00206a00039550-48dc81507ba2f03b0a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             `SOURce:LIST:CATalog
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/16c72e3030b147e1.htm#ID_3069dbd57ba2f03b0a00206a00039550-48dc81507ba2f03b0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/16c72e3030b147e1.htm#ID_3069dbd57ba2f03b0a00206a00039550-48dc81507ba2f03b0a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -15116,9 +15117,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CPOint"
-                args = []
+                args = []  # type: List[str]
 
-            CPOint = CPOint()
+            CPOint = CPOint()  # type: ignore
             """
             SOURce:LIST:CPOint
 
@@ -15128,7 +15129,7 @@ class SMB100A_gen(Instrument):
             class DELete(SCPINode, SCPISet):
                 """
                 `SOURce:LIST:DELete
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/478634d2f1c14f74.htm#ID_624d744a7ba2f6c20a00206a00fc6ced-3ec734647ba2f6c20a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/478634d2f1c14f74.htm#ID_624d744a7ba2f6c20a00206a00fc6ced-3ec734647ba2f6c20a00206a012bc823-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -15136,10 +15137,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "DELete"
                 args = ["'string'"]
 
-            DELete = DELete()
+            DELete = DELete()  # type: ignore
             """
             `SOURce:LIST:DELete
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/478634d2f1c14f74.htm#ID_624d744a7ba2f6c20a00206a00fc6ced-3ec734647ba2f6c20a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/478634d2f1c14f74.htm#ID_624d744a7ba2f6c20a00206a00fc6ced-3ec734647ba2f6c20a00206a012bc823-en-US>`_
 
             Arguments: 'string'
             """
@@ -15154,7 +15155,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DIRection"
                 args = ["DOWN", "UP"]
 
-            DIRection = DIRection()
+            DIRection = DIRection()  # type: ignore
             """
             SOURce:LIST:DIRection
 
@@ -15164,7 +15165,7 @@ class SMB100A_gen(Instrument):
             class DWELl(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:DWELl
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/22311a6bdb404393.htm#ID_517045367ba322280a00206a0147be12-14458ec47ba322280a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/22311a6bdb404393.htm#ID_517045367ba322280a00206a0147be12-14458ec47ba322280a00206a012bc823-en-US>`_
 
                 Arguments: <numeric_value>[S, MS, US, NS],<numeric_value>
                 """
@@ -15180,19 +15181,19 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "POINts"
-                    args = []
+                    args = []  # type: List[str]
 
-                POINts = POINts()
+                POINts = POINts()  # type: ignore
                 """
                 SOURce:LIST:DWELl:POINts
 
                 Arguments:
                 """
 
-            DWELl = DWELl()
+            DWELl = DWELl()  # type: ignore
             """
             `SOURce:LIST:DWELl
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/22311a6bdb404393.htm#ID_517045367ba322280a00206a0147be12-14458ec47ba322280a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/22311a6bdb404393.htm#ID_517045367ba322280a00206a0147be12-14458ec47ba322280a00206a012bc823-en-US>`_
 
             Arguments: <numeric_value>[S, MS, US, NS],<numeric_value>
             """
@@ -15200,7 +15201,7 @@ class SMB100A_gen(Instrument):
             class FREQuency(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:FREQuency
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f90eaa236ece4248.htm#ID_c9bf26237ba301cf0a00206a00e0ce9e-37a02b557ba301cf0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f90eaa236ece4248.htm#ID_c9bf26237ba301cf0a00206a00e0ce9e-37a02b557ba301cf0a00206a012bc823-en-US>`_
 
                 Arguments: <numeric_value>[HZ, KHZ, MHZ, GHZ],<numeric_value>
                 """
@@ -15211,26 +15212,26 @@ class SMB100A_gen(Instrument):
                 class POINts(SCPINode, SCPIQuery):
                     """
                     `SOURce:LIST:FREQuency:POINts
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7d65b1dd057049b7.htm#ID_b69a536c7ba3073d0a00206a000d2789-99c66bd67ba3073d0a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7d65b1dd057049b7.htm#ID_b69a536c7ba3073d0a00206a000d2789-99c66bd67ba3073d0a00206a012bc823-en-US>`_
 
                     Arguments:
                     """
                     __slots__ = ()
                     _cmd = "POINts"
-                    args = []
+                    args = []  # type: List[str]
 
-                POINts = POINts()
+                POINts = POINts()  # type: ignore
                 """
                 `SOURce:LIST:FREQuency:POINts
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7d65b1dd057049b7.htm#ID_b69a536c7ba3073d0a00206a000d2789-99c66bd67ba3073d0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7d65b1dd057049b7.htm#ID_b69a536c7ba3073d0a00206a000d2789-99c66bd67ba3073d0a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             `SOURce:LIST:FREQuency
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f90eaa236ece4248.htm#ID_c9bf26237ba301cf0a00206a00e0ce9e-37a02b557ba301cf0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f90eaa236ece4248.htm#ID_c9bf26237ba301cf0a00206a00e0ce9e-37a02b557ba301cf0a00206a012bc823-en-US>`_
 
             Arguments: <numeric_value>[HZ, KHZ, MHZ, GHZ],<numeric_value>
             """
@@ -15238,7 +15239,7 @@ class SMB100A_gen(Instrument):
             class INDex(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:INDex
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/868b396a40754ba2.htm#ID_067dfbf58c3062130a00206a00010bd5-6df2da598c3062130a00206a00aff702-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/868b396a40754ba2.htm#ID_067dfbf58c3062130a00206a00010bd5-6df2da598c3062130a00206a00aff702-en-US>`_
 
                 Arguments: 1
                 """
@@ -15246,10 +15247,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "INDex"
                 args = ["1"]
 
-            INDex = INDex()
+            INDex = INDex()  # type: ignore
             """
             `SOURce:LIST:INDex
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/868b396a40754ba2.htm#ID_067dfbf58c3062130a00206a00010bd5-6df2da598c3062130a00206a00aff702-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/868b396a40754ba2.htm#ID_067dfbf58c3062130a00206a00010bd5-6df2da598c3062130a00206a00aff702-en-US>`_
 
             Arguments: 1
             """
@@ -15257,18 +15258,18 @@ class SMB100A_gen(Instrument):
             class LEARn(SCPINode, SCPISet):
                 """
                 `SOURce:LIST:LEARn
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/df51bebecca046fc.htm#ID_7e28763e7ba327a60a00206a019a9399-eebba4977ba327a60a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/df51bebecca046fc.htm#ID_7e28763e7ba327a60a00206a019a9399-eebba4977ba327a60a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "LEARn"
-                args = []
+                args = []  # type: List[str]
 
-            LEARn = LEARn()
+            LEARn = LEARn()  # type: ignore
             """
             `SOURce:LIST:LEARn
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/df51bebecca046fc.htm#ID_7e28763e7ba327a60a00206a019a9399-eebba4977ba327a60a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/df51bebecca046fc.htm#ID_7e28763e7ba327a60a00206a019a9399-eebba4977ba327a60a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -15283,7 +15284,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MANual"
                 args = ["1"]
 
-            MANual = MANual()
+            MANual = MANual()  # type: ignore
             """
             SOURce:LIST:MANual
 
@@ -15293,7 +15294,7 @@ class SMB100A_gen(Instrument):
             class POWer(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:POWer
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0fb4c8f885b74436.htm#ID_f9c5b80f7ba311fb0a00206a00e2155d-e913c2b67ba311fb0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0fb4c8f885b74436.htm#ID_f9c5b80f7ba311fb0a00206a00e2155d-e913c2b67ba311fb0a00206a012bc823-en-US>`_
 
                 Arguments: <numeric_value>[DB],<numeric_value>
                 """
@@ -15319,16 +15320,16 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "POINts"
-                        args = []
+                        args = []  # type: List[str]
 
-                    POINts = POINts()
+                    POINts = POINts()  # type: ignore
                     """
                     SOURce:LIST:POWer:CORRection:POINts
 
                     Arguments:
                     """
 
-                CORRection = CORRection()
+                CORRection = CORRection()  # type: ignore
                 """
                 SOURce:LIST:POWer:CORRection
 
@@ -15338,26 +15339,26 @@ class SMB100A_gen(Instrument):
                 class POINts(SCPINode, SCPIQuery):
                     """
                     `SOURce:LIST:POWer:POINts
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f55e6d6622054b99.htm#ID_0ad5bbbe7ba30c8d0a00206a002bb3bd-db2157e07ba30c8d0a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f55e6d6622054b99.htm#ID_0ad5bbbe7ba30c8d0a00206a002bb3bd-db2157e07ba30c8d0a00206a012bc823-en-US>`_
 
                     Arguments:
                     """
                     __slots__ = ()
                     _cmd = "POINts"
-                    args = []
+                    args = []  # type: List[str]
 
-                POINts = POINts()
+                POINts = POINts()  # type: ignore
                 """
                 `SOURce:LIST:POWer:POINts
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f55e6d6622054b99.htm#ID_0ad5bbbe7ba30c8d0a00206a002bb3bd-db2157e07ba30c8d0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f55e6d6622054b99.htm#ID_0ad5bbbe7ba30c8d0a00206a002bb3bd-db2157e07ba30c8d0a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             `SOURce:LIST:POWer
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0fb4c8f885b74436.htm#ID_f9c5b80f7ba311fb0a00206a00e2155d-e913c2b67ba311fb0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0fb4c8f885b74436.htm#ID_f9c5b80f7ba311fb0a00206a00e2155d-e913c2b67ba311fb0a00206a012bc823-en-US>`_
 
             Arguments: <numeric_value>[DB],<numeric_value>
             """
@@ -15372,7 +15373,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "RETRace"
                 args = ["1", "ON", "OFF"]
 
-            RETRace = RETRace()
+            RETRace = RETRace()  # type: ignore
             """
             SOURce:LIST:RETRace
 
@@ -15382,7 +15383,7 @@ class SMB100A_gen(Instrument):
             class SELect(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:LIST:SELect
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb14b349e79e40dc.htm#ID_e5b35aa57ba31ca90a00206a01b8b53b-2962634e7ba31ca90a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb14b349e79e40dc.htm#ID_e5b35aa57ba31ca90a00206a01b8b53b-2962634e7ba31ca90a00206a012bc823-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -15390,10 +15391,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "SELect"
                 args = ["'string'"]
 
-            SELect = SELect()
+            SELect = SELect()  # type: ignore
             """
             `SOURce:LIST:SELect
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb14b349e79e40dc.htm#ID_e5b35aa57ba31ca90a00206a01b8b53b-2962634e7ba31ca90a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb14b349e79e40dc.htm#ID_e5b35aa57ba31ca90a00206a01b8b53b-2962634e7ba31ca90a00206a012bc823-en-US>`_
 
             Arguments: 'string'
             """
@@ -15408,7 +15409,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STARt"
                 args = ["1"]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             SOURce:LIST:STARt
 
@@ -15423,12 +15424,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRIGger"
-                args = []
+                args = []  # type: List[str]
 
                 class SOURce(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:LIST:TRIGger:SOURce
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c1a4677a84944212.htm#ID_e26ff7bb7ba338dc0a00206a01f83843-c7753eb97ba338dc0a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c1a4677a84944212.htm#ID_e26ff7bb7ba338dc0a00206a01f83843-c7753eb97ba338dc0a00206a012bc823-en-US>`_
 
                     Arguments: BUS, EXTernal, IMMediate, KEY
                     """
@@ -15436,15 +15437,15 @@ class SMB100A_gen(Instrument):
                     _cmd = "SOURce"
                     args = ["BUS", "EXTernal", "IMMediate", "KEY"]
 
-                SOURce = SOURce()
+                SOURce = SOURce()  # type: ignore
                 """
                 `SOURce:LIST:TRIGger:SOURce
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c1a4677a84944212.htm#ID_e26ff7bb7ba338dc0a00206a01f83843-c7753eb97ba338dc0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c1a4677a84944212.htm#ID_e26ff7bb7ba338dc0a00206a01f83843-c7753eb97ba338dc0a00206a012bc823-en-US>`_
 
                 Arguments: BUS, EXTernal, IMMediate, KEY
                 """
 
-            TRIGger = TRIGger()
+            TRIGger = TRIGger()  # type: ignore
             """
             SOURce:LIST:TRIGger
 
@@ -15459,7 +15460,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TYPE"
-                args = []
+                args = []  # type: List[str]
 
                 class LIST(SCPINode):
                     """
@@ -15469,7 +15470,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LIST"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INITialize(SCPINode, SCPISet):
                         """
@@ -15479,7 +15480,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "INITialize"
-                        args = []
+                        args = []  # type: List[str]
 
                         class FSTep(SCPINode, SCPISet):
                             """
@@ -15489,9 +15490,9 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "FSTep"
-                            args = []
+                            args = []  # type: List[str]
 
-                        FSTep = FSTep()
+                        FSTep = FSTep()  # type: ignore
                         """
                         SOURce:LIST:TYPE:LIST:INITialize:FSTep
 
@@ -15506,37 +15507,37 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PRESet"
-                            args = []
+                            args = []  # type: List[str]
 
-                        PRESet = PRESet()
+                        PRESet = PRESet()  # type: ignore
                         """
                         SOURce:LIST:TYPE:LIST:INITialize:PRESet
 
                         Arguments:
                         """
 
-                    INITialize = INITialize()
+                    INITialize = INITialize()  # type: ignore
                     """
                     SOURce:LIST:TYPE:LIST:INITialize
 
                     Arguments:
                     """
 
-                LIST = LIST()
+                LIST = LIST()  # type: ignore
                 """
                 SOURce:LIST:TYPE:LIST
 
                 Arguments:
                 """
 
-            TYPE = TYPE()
+            TYPE = TYPE()  # type: ignore
             """
             SOURce:LIST:TYPE
 
             Arguments:
             """
 
-        LIST = LIST()
+        LIST = LIST()  # type: ignore
         """
         SOURce:LIST
 
@@ -15551,7 +15552,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MARKer"
-            args = []
+            args = []  # type: List[str]
 
             class AMPLitude(SCPINode):
                 """
@@ -15561,7 +15562,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AMPLitude"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
@@ -15573,7 +15574,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:MARKer:AMPLitude:STATe
 
@@ -15590,14 +15591,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "VALue"
                     args = ["1"]
 
-                VALue = VALue()
+                VALue = VALue()  # type: ignore
                 """
                 SOURce:MARKer:AMPLitude:VALue
 
                 Arguments: 1
                 """
 
-            AMPLitude = AMPLitude()
+            AMPLitude = AMPLitude()  # type: ignore
             """
             SOURce:MARKer:AMPLitude
 
@@ -15614,7 +15615,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DELTa"
                 args = ["<numeric_value>,<numeric_value>"]
 
-            DELTa = DELTa()
+            DELTa = DELTa()  # type: ignore
             """
             SOURce:MARKer:DELTa
 
@@ -15639,7 +15640,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -15651,21 +15652,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:MARKer:FREQuency:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:MARKer:FREQuency:STEP
 
                 Arguments:
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             SOURce:MARKer:FREQuency
 
@@ -15680,7 +15681,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FSWeep"
-                args = []
+                args = []  # type: List[str]
 
                 class AMPLitude(SCPINode, SCPIBool):
                     """
@@ -15692,7 +15693,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "AMPLitude"
                     args = ["1", "ON", "OFF"]
 
-                AMPLitude = AMPLitude()
+                AMPLitude = AMPLitude()  # type: ignore
                 """
                 SOURce:MARKer:FSWeep:AMPLitude
 
@@ -15709,7 +15710,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:MARKer:FSWeep:FREQuency
 
@@ -15726,14 +15727,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:MARKer:FSWeep:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            FSWeep = FSWeep()
+            FSWeep = FSWeep()  # type: ignore
             """
             SOURce:MARKer:FSWeep
 
@@ -15750,7 +15751,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "POLarity"
                 args = ["NEGative", "POSitive"]
 
-            POLarity = POLarity()
+            POLarity = POLarity()  # type: ignore
             """
             SOURce:MARKer:POLarity
 
@@ -15765,7 +15766,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PSWeep"
-                args = []
+                args = []  # type: List[str]
 
                 class POWer(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -15777,7 +15778,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "POWer"
                     args = ["1"]
 
-                POWer = POWer()
+                POWer = POWer()  # type: ignore
                 """
                 SOURce:MARKer:PSWeep:POWer
 
@@ -15794,14 +15795,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:MARKer:PSWeep:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            PSWeep = PSWeep()
+            PSWeep = PSWeep()  # type: ignore
             """
             SOURce:MARKer:PSWeep
 
@@ -15818,7 +15819,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "REFerence"
                 args = ["1"]
 
-            REFerence = REFerence()
+            REFerence = REFerence()  # type: ignore
             """
             SOURce:MARKer:REFerence
 
@@ -15835,7 +15836,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SOURce:MARKer:STATe
 
@@ -15852,14 +15853,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "VIDeo"
                 args = ["1", "ON", "OFF"]
 
-            VIDeo = VIDeo()
+            VIDeo = VIDeo()  # type: ignore
             """
             SOURce:MARKer:VIDeo
 
             Arguments: 1, ON, OFF
             """
 
-        MARKer = MARKer()
+        MARKer = MARKer()  # type: ignore
         """
         SOURce:MARKer
 
@@ -15874,7 +15875,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MBEacon"
-            args = []
+            args = []  # type: List[str]
 
             class COMid(SCPINode):
                 """
@@ -15884,7 +15885,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COMid"
-                args = []
+                args = []  # type: List[str]
 
                 class DEPTh(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -15896,7 +15897,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "DEPTh"
                     args = ["1"]
 
-                DEPTh = DEPTh()
+                DEPTh = DEPTh()  # type: ignore
                 """
                 SOURce:MBEacon:COMid:DEPTh
 
@@ -15913,7 +15914,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:MBEacon:COMid:FREQuency
 
@@ -15930,14 +15931,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:MBEacon:COMid:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            COMid = COMid()
+            COMid = COMid()  # type: ignore
             """
             SOURce:MBEacon:COMid
 
@@ -15952,7 +15953,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MARKer"
-                args = []
+                args = []  # type: List[str]
 
                 class DEPTh(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -15964,7 +15965,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "DEPTh"
                     args = ["1"]
 
-                DEPTh = DEPTh()
+                DEPTh = DEPTh()  # type: ignore
                 """
                 SOURce:MBEacon:MARKer:DEPTh
 
@@ -15981,14 +15982,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:MBEacon:MARKer:FREQuency
 
                 Arguments: 1
                 """
 
-            MARKer = MARKer()
+            MARKer = MARKer()  # type: ignore
             """
             SOURce:MBEacon:MARKer
 
@@ -16005,14 +16006,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SOURce:MBEacon:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        MBEacon = MBEacon()
+        MBEacon = MBEacon()  # type: ignore
         """
         SOURce:MBEacon
 
@@ -16027,7 +16028,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MODulation"
-            args = []
+            args = []  # type: List[str]
 
             class ALL(SCPINode):
                 """
@@ -16037,12 +16038,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALL"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:MODulation:ALL:STATe
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7b63a3602aec41cd.htm#ID_318e32e54e9063210a00206a019f179a-19a855954e9063210a00206a0024546d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7b63a3602aec41cd.htm#ID_318e32e54e9063210a00206a019f179a-19a855954e9063210a00206a0024546d-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
@@ -16050,15 +16051,15 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:MODulation:ALL:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7b63a3602aec41cd.htm#ID_318e32e54e9063210a00206a019f179a-19a855954e9063210a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7b63a3602aec41cd.htm#ID_318e32e54e9063210a00206a019f179a-19a855954e9063210a00206a0024546d-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             SOURce:MODulation:ALL
 
@@ -16073,7 +16074,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "OUTPut"
-                args = []
+                args = []  # type: List[str]
 
                 class SOURce(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -16085,7 +16086,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "SOURce"
                     args = ["AM", "FM", "OFF"]
 
-                SOURce = SOURce()
+                SOURce = SOURce()  # type: ignore
                 """
                 SOURce:MODulation:OUTPut:SOURce
 
@@ -16102,14 +16103,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:MODulation:OUTPut:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            OUTPut = OUTPut()
+            OUTPut = OUTPut()  # type: ignore
             """
             SOURce:MODulation:OUTPut
 
@@ -16126,14 +16127,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SOURce:MODulation:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        MODulation = MODulation()
+        MODulation = MODulation()  # type: ignore
         """
         SOURce:MODulation
 
@@ -16143,7 +16144,7 @@ class SMB100A_gen(Instrument):
         class PHASe(SCPINode, SCPIQuery, SCPISet):
             """
             `SOURce:PHASe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7dee4f9b28a5436d.htm#ID_f61f12ac56ece11f0a00206a00640933-b66d0ab556ece11f0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7dee4f9b28a5436d.htm#ID_f61f12ac56ece11f0a00206a00640933-b66d0ab556ece11f0a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -16161,7 +16162,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "ADJust"
                 args = ["1"]
 
-            ADJust = ADJust()
+            ADJust = ADJust()  # type: ignore
             """
             SOURce:PHASe:ADJust
 
@@ -16171,18 +16172,18 @@ class SMB100A_gen(Instrument):
             class REFerence(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PHASe:REFerence
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c795407019e4fda.htm#ID_1292e34256ece6dc0a00206a016031df-85318c6056ece6dc0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c795407019e4fda.htm#ID_1292e34256ece6dc0a00206a016031df-85318c6056ece6dc0a00206a0024546d-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "REFerence"
-                args = []
+                args = []  # type: List[str]
 
-            REFerence = REFerence()
+            REFerence = REFerence()  # type: ignore
             """
             `SOURce:PHASe:REFerence
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c795407019e4fda.htm#ID_1292e34256ece6dc0a00206a016031df-85318c6056ece6dc0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7c795407019e4fda.htm#ID_1292e34256ece6dc0a00206a016031df-85318c6056ece6dc0a00206a0024546d-en-US>`_
 
             Arguments:
             """
@@ -16197,17 +16198,17 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SOURce:PHASe:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        PHASe = PHASe()
+        PHASe = PHASe()  # type: ignore
         """
         `SOURce:PHASe
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7dee4f9b28a5436d.htm#ID_f61f12ac56ece11f0a00206a00640933-b66d0ab556ece11f0a00206a0024546d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7dee4f9b28a5436d.htm#ID_f61f12ac56ece11f0a00206a00640933-b66d0ab556ece11f0a00206a0024546d-en-US>`_
 
         Arguments: 1
         """
@@ -16220,7 +16221,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PM"
-            args = []
+            args = []  # type: List[str]
 
             class BANDwidth(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -16232,7 +16233,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "BANDwidth"
                 args = ["HIGH", "NORMal"]
 
-            BANDwidth = BANDwidth()
+            BANDwidth = BANDwidth()  # type: ignore
             """
             SOURce:PM:BANDwidth
 
@@ -16249,7 +16250,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "BWIDth"
                 args = ["HIGH", "NORMal"]
 
-            BWIDth = BWIDth()
+            BWIDth = BWIDth()  # type: ignore
             """
             SOURce:PM:BWIDth
 
@@ -16266,7 +16267,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "COUPling"
                 args = ["AC", "DC"]
 
-            COUPling = COUPling()
+            COUPling = COUPling()  # type: ignore
             """
             SOURce:PM:COUPling
 
@@ -16276,7 +16277,7 @@ class SMB100A_gen(Instrument):
             class DEViation(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PM:DEViation
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b1129cdf10fc4d18.htm#ID_aac994794dfe968f0a00206a003ca3de-036e27e84dfe968f0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b1129cdf10fc4d18.htm#ID_aac994794dfe968f0a00206a003ca3de-036e27e84dfe968f0a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
@@ -16292,7 +16293,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -16304,14 +16305,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:PM:DEViation:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:PM:DEViation:STEP
 
@@ -16328,17 +16329,17 @@ class SMB100A_gen(Instrument):
                     _cmd = "TRACk"
                     args = ["1", "ON", "OFF"]
 
-                TRACk = TRACk()
+                TRACk = TRACk()  # type: ignore
                 """
                 SOURce:PM:DEViation:TRACk
 
                 Arguments: 1, ON, OFF
                 """
 
-            DEViation = DEViation()
+            DEViation = DEViation()  # type: ignore
             """
             `SOURce:PM:DEViation
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b1129cdf10fc4d18.htm#ID_aac994794dfe968f0a00206a003ca3de-036e27e84dfe968f0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b1129cdf10fc4d18.htm#ID_aac994794dfe968f0a00206a003ca3de-036e27e84dfe968f0a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -16351,12 +16352,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class COUPling(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:PM:EXTernal:COUPling
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/106b9eba3c704c91.htm#ID_2eca06d94dff07b70a00206a00e7db83-29ccec014dff07b70a00206a0024546d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/106b9eba3c704c91.htm#ID_2eca06d94dff07b70a00206a00e7db83-29ccec014dff07b70a00206a0024546d-en-US>`_
 
                     Arguments: AC, DC
                     """
@@ -16364,10 +16365,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "COUPling"
                     args = ["AC", "DC"]
 
-                COUPling = COUPling()
+                COUPling = COUPling()  # type: ignore
                 """
                 `SOURce:PM:EXTernal:COUPling
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/106b9eba3c704c91.htm#ID_2eca06d94dff07b70a00206a00e7db83-29ccec014dff07b70a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/106b9eba3c704c91.htm#ID_2eca06d94dff07b70a00206a00e7db83-29ccec014dff07b70a00206a0024546d-en-US>`_
 
                 Arguments: AC, DC
                 """
@@ -16382,14 +16383,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "IMPedance"
                     args = ["1"]
 
-                IMPedance = IMPedance()
+                IMPedance = IMPedance()  # type: ignore
                 """
                 SOURce:PM:EXTernal:IMPedance
 
                 Arguments: 1
                 """
 
-            EXTernal = EXTernal()
+            EXTernal = EXTernal()  # type: ignore
             """
             SOURce:PM:EXTernal
 
@@ -16404,7 +16405,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -16434,7 +16435,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "AMPLitude"
-                            args = []
+                            args = []  # type: List[str]
 
                             class PERCent(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -16446,21 +16447,21 @@ class SMB100A_gen(Instrument):
                                 _cmd = "PERCent"
                                 args = ["1"]
 
-                            PERCent = PERCent()
+                            PERCent = PERCent()  # type: ignore
                             """
                             SOURce:PM:INTernal:FREQuency:ALTernate:AMPLitude:PERCent
 
                             Arguments: 1
                             """
 
-                        AMPLitude = AMPLitude()
+                        AMPLitude = AMPLitude()  # type: ignore
                         """
                         SOURce:PM:INTernal:FREQuency:ALTernate:AMPLitude
 
                         Arguments:
                         """
 
-                    ALTernate = ALTernate()
+                    ALTernate = ALTernate()  # type: ignore
                     """
                     SOURce:PM:INTernal:FREQuency:ALTernate
 
@@ -16475,7 +16476,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -16487,21 +16488,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:PM:INTernal:FREQuency:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:PM:INTernal:FREQuency:STEP
 
                     Arguments:
                     """
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:PM:INTernal:FREQuency
 
@@ -16528,7 +16529,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "NOISe"
                         args = ["GAUSsian", "UNIForm"]
 
-                    NOISe = NOISe()
+                    NOISe = NOISe()  # type: ignore
                     """
                     SOURce:PM:INTernal:FUNCtion:NOISe
 
@@ -16545,14 +16546,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "SHAPe"
                         args = ["SINE", "SQUare"]
 
-                    SHAPe = SHAPe()
+                    SHAPe = SHAPe()  # type: ignore
                     """
                     SOURce:PM:INTernal:FUNCtion:SHAPe
 
                     Arguments: SINE, SQUare
                     """
 
-                FUNCtion = FUNCtion()
+                FUNCtion = FUNCtion()  # type: ignore
                 """
                 SOURce:PM:INTernal:FUNCtion
 
@@ -16567,7 +16568,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SWEep"
-                    args = []
+                    args = []  # type: List[str]
 
                     class TRIGger(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -16579,21 +16580,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "TRIGger"
                         args = ["BUS", "EXTernal", "IMMediate", "KEY"]
 
-                    TRIGger = TRIGger()
+                    TRIGger = TRIGger()  # type: ignore
                     """
                     SOURce:PM:INTernal:SWEep:TRIGger
 
                     Arguments: BUS, EXTernal, IMMediate, KEY
                     """
 
-                SWEep = SWEep()
+                SWEep = SWEep()  # type: ignore
                 """
                 SOURce:PM:INTernal:SWEep
 
                 Arguments:
                 """
 
-            INTernal = INTernal()
+            INTernal = INTernal()  # type: ignore
             """
             SOURce:PM:INTernal
 
@@ -16610,7 +16611,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "RANGe"
                 args = ["AUTO", "HIGH", "LOW"]
 
-            RANGe = RANGe()
+            RANGe = RANGe()  # type: ignore
             """
             SOURce:PM:RANGe
 
@@ -16620,7 +16621,7 @@ class SMB100A_gen(Instrument):
             class SENSitivity(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PM:SENSitivity
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5836d526cac145e7.htm#ID_27fa42664dfef8a40a00206a01c64dd3-a9c7bda04dfef8a40a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5836d526cac145e7.htm#ID_27fa42664dfef8a40a00206a01c64dd3-a9c7bda04dfef8a40a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
@@ -16628,10 +16629,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "SENSitivity"
                 args = ["1"]
 
-            SENSitivity = SENSitivity()
+            SENSitivity = SENSitivity()  # type: ignore
             """
             `SOURce:PM:SENSitivity
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5836d526cac145e7.htm#ID_27fa42664dfef8a40a00206a01c64dd3-a9c7bda04dfef8a40a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5836d526cac145e7.htm#ID_27fa42664dfef8a40a00206a01c64dd3-a9c7bda04dfef8a40a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -16639,7 +16640,7 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PM:SOURce
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5eea8bb9ea4432a.htm#ID_a38f265d4dff00540a00206a0075b5cb-63121be24dff00540a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5eea8bb9ea4432a.htm#ID_a38f265d4dff00540a00206a0075b5cb-63121be24dff00540a00206a0024546d-en-US>`_
 
                 Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
                 """
@@ -16647,10 +16648,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["EXTernal", "INT1", "INT2", "INTernal", "INTernal1", "INTernal2,EXTernal", "INT1", "INTernal", "INTernal1"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `SOURce:PM:SOURce
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5eea8bb9ea4432a.htm#ID_a38f265d4dff00540a00206a0075b5cb-63121be24dff00540a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a5eea8bb9ea4432a.htm#ID_a38f265d4dff00540a00206a0075b5cb-63121be24dff00540a00206a0024546d-en-US>`_
 
             Arguments: EXTernal, INT1, INT2, INTernal, INTernal1, INTernal2,EXTernal, INT1, INTernal, INTernal1
             """
@@ -16658,7 +16659,7 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:PM:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ae557ed7d4cc4881.htm#ID_26e0edd44dff16ba0a00206a009af85a-2b5c07604dff16ba0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ae557ed7d4cc4881.htm#ID_26e0edd44dff16ba0a00206a009af85a-2b5c07604dff16ba0a00206a0024546d-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -16666,15 +16667,15 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SOURce:PM:STATe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ae557ed7d4cc4881.htm#ID_26e0edd44dff16ba0a00206a009af85a-2b5c07604dff16ba0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ae557ed7d4cc4881.htm#ID_26e0edd44dff16ba0a00206a009af85a-2b5c07604dff16ba0a00206a0024546d-en-US>`_
 
             Arguments: 1, ON, OFF
             """
 
-        PM = PM()
+        PM = PM()  # type: ignore
         """
         SOURce:PM
 
@@ -16689,7 +16690,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "POWer"
-            args = []
+            args = []  # type: List[str]
 
             class ALC(SCPINode):
                 """
@@ -16699,7 +16700,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALC"
-                args = []
+                args = []  # type: List[str]
 
                 class BANDwidth(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -16711,7 +16712,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "BANDwidth"
                     args = ["1"]
 
-                BANDwidth = BANDwidth()
+                BANDwidth = BANDwidth()  # type: ignore
                 """
                 SOURce:POWer:ALC:BANDwidth
 
@@ -16728,7 +16729,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "BWIDth"
                     args = ["1"]
 
-                BWIDth = BWIDth()
+                BWIDth = BWIDth()  # type: ignore
                 """
                 SOURce:POWer:ALC:BWIDth
 
@@ -16745,7 +16746,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "CFACtor"
                     args = ["1"]
 
-                CFACtor = CFACtor()
+                CFACtor = CFACtor()  # type: ignore
                 """
                 SOURce:POWer:ALC:CFACtor
 
@@ -16762,7 +16763,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "LEVel"
                     args = ["1"]
 
-                LEVel = LEVel()
+                LEVel = LEVel()  # type: ignore
                 """
                 SOURce:POWer:ALC:LEVel
 
@@ -16777,7 +16778,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PMETer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class LEVel(SCPINode):
                         """
@@ -16787,7 +16788,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "LEVel"
-                        args = []
+                        args = []  # type: List[str]
 
                         class AMPLitude(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -16799,7 +16800,7 @@ class SMB100A_gen(Instrument):
                             _cmd = "AMPLitude"
                             args = ["1"]
 
-                        AMPLitude = AMPLitude()
+                        AMPLitude = AMPLitude()  # type: ignore
                         """
                         SOURce:POWer:ALC:PMETer:LEVel:AMPLitude
 
@@ -16814,7 +16815,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "STEP"
-                            args = []
+                            args = []  # type: List[str]
 
                             class INCRement(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -16826,28 +16827,28 @@ class SMB100A_gen(Instrument):
                                 _cmd = "INCRement"
                                 args = ["1"]
 
-                            INCRement = INCRement()
+                            INCRement = INCRement()  # type: ignore
                             """
                             SOURce:POWer:ALC:PMETer:LEVel:STEP:INCRement
 
                             Arguments: 1
                             """
 
-                        STEP = STEP()
+                        STEP = STEP()  # type: ignore
                         """
                         SOURce:POWer:ALC:PMETer:LEVel:STEP
 
                         Arguments:
                         """
 
-                    LEVel = LEVel()
+                    LEVel = LEVel()  # type: ignore
                     """
                     SOURce:POWer:ALC:PMETer:LEVel
 
                     Arguments:
                     """
 
-                PMETer = PMETer()
+                PMETer = PMETer()  # type: ignore
                 """
                 SOURce:POWer:ALC:PMETer
 
@@ -16864,7 +16865,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "REFerence"
                     args = ["1"]
 
-                REFerence = REFerence()
+                REFerence = REFerence()  # type: ignore
                 """
                 SOURce:POWer:ALC:REFerence
 
@@ -16891,7 +16892,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "REFerence"
                         args = ["FIXed", "MODulated"]
 
-                    REFerence = REFerence()
+                    REFerence = REFerence()  # type: ignore
                     """
                     SOURce:POWer:ALC:SEARch:REFerence
 
@@ -16906,7 +16907,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SPAN"
-                        args = []
+                        args = []  # type: List[str]
 
                         class STARt(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -16918,7 +16919,7 @@ class SMB100A_gen(Instrument):
                             _cmd = "STARt"
                             args = ["1"]
 
-                        STARt = STARt()
+                        STARt = STARt()  # type: ignore
                         """
                         SOURce:POWer:ALC:SEARch:SPAN:STARt
 
@@ -16935,21 +16936,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "ON", "OFF"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         SOURce:POWer:ALC:SEARch:SPAN:STATe
 
                         Arguments: 1, ON, OFF
                         """
 
-                    SPAN = SPAN()
+                    SPAN = SPAN()  # type: ignore
                     """
                     SOURce:POWer:ALC:SEARch:SPAN
 
                     Arguments:
                     """
 
-                SEARch = SEARch()
+                SEARch = SEARch()  # type: ignore
                 """
                 SOURce:POWer:ALC:SEARch
 
@@ -16966,7 +16967,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "SLOPe"
                     args = ["FAST", "MEDium", "SLOW"]
 
-                SLOPe = SLOPe()
+                SLOPe = SLOPe()  # type: ignore
                 """
                 SOURce:POWer:ALC:SLOPe
 
@@ -16991,7 +16992,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EXTernal"
-                        args = []
+                        args = []  # type: List[str]
 
                         class COUPling(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -17003,14 +17004,14 @@ class SMB100A_gen(Instrument):
                             _cmd = "COUPling"
                             args = ["1"]
 
-                        COUPling = COUPling()
+                        COUPling = COUPling()  # type: ignore
                         """
                         SOURce:POWer:ALC:SOURce:EXTernal:COUPling
 
                         Arguments: 1
                         """
 
-                    EXTernal = EXTernal()
+                    EXTernal = EXTernal()  # type: ignore
                     """
                     SOURce:POWer:ALC:SOURce:EXTernal
 
@@ -17027,14 +17028,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "PMETer"
                         args = ["HP436a", "RS_Nrvs"]
 
-                    PMETer = PMETer()
+                    PMETer = PMETer()  # type: ignore
                     """
                     SOURce:POWer:ALC:SOURce:PMETer
 
                     Arguments: HP436a, RS_Nrvs
                     """
 
-                SOURce = SOURce()
+                SOURce = SOURce()  # type: ignore
                 """
                 SOURce:POWer:ALC:SOURce
 
@@ -17044,7 +17045,7 @@ class SMB100A_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:POWer:ALC:STATe
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/318c26be4c5141e7.htm#ID_42c28bb071aa81480a00206a0127eb9d-881ee75671aa81480a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/318c26be4c5141e7.htm#ID_42c28bb071aa81480a00206a0127eb9d-881ee75671aa81480a00206a012bc823-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
@@ -17052,15 +17053,15 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:POWer:ALC:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/318c26be4c5141e7.htm#ID_42c28bb071aa81480a00206a0127eb9d-881ee75671aa81480a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/318c26be4c5141e7.htm#ID_42c28bb071aa81480a00206a0127eb9d-881ee75671aa81480a00206a012bc823-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
 
-            ALC = ALC()
+            ALC = ALC()  # type: ignore
             """
             SOURce:POWer:ALC
 
@@ -17075,7 +17076,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALTernate"
-                args = []
+                args = []  # type: List[str]
 
                 class AMPLitude(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -17087,7 +17088,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "AMPLitude"
                     args = ["1"]
 
-                AMPLitude = AMPLitude()
+                AMPLitude = AMPLitude()  # type: ignore
                 """
                 SOURce:POWer:ALTernate:AMPLitude
 
@@ -17104,7 +17105,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "MANual"
                     args = ["DELTa", "MAIN"]
 
-                MANual = MANual()
+                MANual = MANual()  # type: ignore
                 """
                 SOURce:POWer:ALTernate:MANual
 
@@ -17121,7 +17122,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:POWer:ALTernate:STATe
 
@@ -17136,7 +17137,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TRIGger"
-                    args = []
+                    args = []  # type: List[str]
 
                     class SOURce(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -17148,21 +17149,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "SOURce"
                         args = ["EXTernal", "INTernal", "MANual"]
 
-                    SOURce = SOURce()
+                    SOURce = SOURce()  # type: ignore
                     """
                     SOURce:POWer:ALTernate:TRIGger:SOURce
 
                     Arguments: EXTernal, INTernal, MANual
                     """
 
-                TRIGger = TRIGger()
+                TRIGger = TRIGger()  # type: ignore
                 """
                 SOURce:POWer:ALTernate:TRIGger
 
                 Arguments:
                 """
 
-            ALTernate = ALTernate()
+            ALTernate = ALTernate()  # type: ignore
             """
             SOURce:POWer:ALTernate
 
@@ -17187,7 +17188,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -17199,21 +17200,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:POWer:ATTenuation:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:POWer:ATTenuation:STEP
 
                 Arguments:
                 """
 
-            ATTenuation = ATTenuation()
+            ATTenuation = ATTenuation()  # type: ignore
             """
             SOURce:POWer:ATTenuation
 
@@ -17238,7 +17239,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -17250,21 +17251,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:POWer:CENTer:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:POWer:CENTer:STEP
 
                 Arguments:
                 """
 
-            CENTer = CENTer()
+            CENTer = CENTer()  # type: ignore
             """
             SOURce:POWer:CENTer
 
@@ -17279,7 +17280,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DISPlay"
-                args = []
+                args = []  # type: List[str]
 
                 class OFFSet(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -17301,21 +17302,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:POWer:DISPlay:OFFSet:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                OFFSet = OFFSet()
+                OFFSet = OFFSet()  # type: ignore
                 """
                 SOURce:POWer:DISPlay:OFFSet
 
                 Arguments: 1
                 """
 
-            DISPlay = DISPlay()
+            DISPlay = DISPlay()  # type: ignore
             """
             SOURce:POWer:DISPlay
 
@@ -17330,12 +17331,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EMF"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:POWer:EMF:STATe
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f72d48c013e4e46.htm#ID_6119d3272c6943f20a001ae750554416-95cda6a92c6941fe0a001ae76b46bcda-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f72d48c013e4e46.htm#ID_6119d3272c6943f20a001ae750554416-95cda6a92c6941fe0a001ae76b46bcda-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
@@ -17343,15 +17344,15 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:POWer:EMF:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f72d48c013e4e46.htm#ID_6119d3272c6943f20a001ae750554416-95cda6a92c6941fe0a001ae76b46bcda-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f72d48c013e4e46.htm#ID_6119d3272c6943f20a001ae750554416-95cda6a92c6941fe0a001ae76b46bcda-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
 
-            EMF = EMF()
+            EMF = EMF()  # type: ignore
             """
             SOURce:POWer:EMF
 
@@ -17366,7 +17367,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LEVel"
-                args = []
+                args = []  # type: List[str]
 
                 class ALTernate(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -17378,7 +17379,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ALTernate"
                     args = ["1"]
 
-                ALTernate = ALTernate()
+                ALTernate = ALTernate()  # type: ignore
                 """
                 SOURce:POWer:LEVel:ALTernate
 
@@ -17393,12 +17394,12 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "IMMediate"
-                    args = []
+                    args = []  # type: List[str]
 
                     class AMPLitude(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:POWer:LEVel:IMMediate:AMPLitude
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb5bb606cd4d4681.htm#ID_d70bf25871aa63310a00206a00bc8d87-d732685371aa63310a00206a012bc823-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb5bb606cd4d4681.htm#ID_d70bf25871aa63310a00206a00bc8d87-d732685371aa63310a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
@@ -17416,7 +17417,7 @@ class SMB100A_gen(Instrument):
                             _cmd = "BACKup"
                             args = ["1"]
 
-                        BACKup = BACKup()
+                        BACKup = BACKup()  # type: ignore
                         """
                         SOURce:POWer:LEVel:IMMediate:AMPLitude:BACKup
 
@@ -17431,7 +17432,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "STEP"
-                            args = []
+                            args = []  # type: List[str]
 
                             class INCRement(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -17443,24 +17444,24 @@ class SMB100A_gen(Instrument):
                                 _cmd = "INCRement"
                                 args = ["1"]
 
-                            INCRement = INCRement()
+                            INCRement = INCRement()  # type: ignore
                             """
                             SOURce:POWer:LEVel:IMMediate:AMPLitude:STEP:INCRement
 
                             Arguments: 1
                             """
 
-                        STEP = STEP()
+                        STEP = STEP()  # type: ignore
                         """
                         SOURce:POWer:LEVel:IMMediate:AMPLitude:STEP
 
                         Arguments:
                         """
 
-                    AMPLitude = AMPLitude()
+                    AMPLitude = AMPLitude()  # type: ignore
                     """
                     `SOURce:POWer:LEVel:IMMediate:AMPLitude
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb5bb606cd4d4681.htm#ID_d70bf25871aa63310a00206a00bc8d87-d732685371aa63310a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bb5bb606cd4d4681.htm#ID_d70bf25871aa63310a00206a00bc8d87-d732685371aa63310a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -17468,7 +17469,7 @@ class SMB100A_gen(Instrument):
                     class OFFSet(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:POWer:LEVel:IMMediate:OFFSet
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/906418e7a7b84f3c.htm#ID_c493de1471aa6af10a00206a00d83907-a6ae5f2a71aa6af10a00206a012bc823-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/906418e7a7b84f3c.htm#ID_c493de1471aa6af10a00206a00d83907-a6ae5f2a71aa6af10a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
@@ -17486,7 +17487,7 @@ class SMB100A_gen(Instrument):
                             _cmd = "LINear"
                             args = ["1"]
 
-                        LINear = LINear()
+                        LINear = LINear()  # type: ignore
                         """
                         SOURce:POWer:LEVel:IMMediate:OFFSet:LINear
 
@@ -17503,29 +17504,29 @@ class SMB100A_gen(Instrument):
                             _cmd = "LOGarithmic"
                             args = ["1"]
 
-                        LOGarithmic = LOGarithmic()
+                        LOGarithmic = LOGarithmic()  # type: ignore
                         """
                         SOURce:POWer:LEVel:IMMediate:OFFSet:LOGarithmic
 
                         Arguments: 1
                         """
 
-                    OFFSet = OFFSet()
+                    OFFSet = OFFSet()  # type: ignore
                     """
                     `SOURce:POWer:LEVel:IMMediate:OFFSet
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/906418e7a7b84f3c.htm#ID_c493de1471aa6af10a00206a00d83907-a6ae5f2a71aa6af10a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/906418e7a7b84f3c.htm#ID_c493de1471aa6af10a00206a00d83907-a6ae5f2a71aa6af10a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
 
-                IMMediate = IMMediate()
+                IMMediate = IMMediate()  # type: ignore
                 """
                 SOURce:POWer:LEVel:IMMediate
 
                 Arguments:
                 """
 
-            LEVel = LEVel()
+            LEVel = LEVel()  # type: ignore
             """
             SOURce:POWer:LEVel
 
@@ -17540,12 +17541,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LIMit"
-                args = []
+                args = []  # type: List[str]
 
                 class AMPLitude(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:POWer:LIMit:AMPLitude
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/de410925c5dd477b.htm#ID_f38a02d771aa72930a00206a017c0246-a1f79d3e71aa72930a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/de410925c5dd477b.htm#ID_f38a02d771aa72930a00206a017c0246-a1f79d3e71aa72930a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -17553,15 +17554,15 @@ class SMB100A_gen(Instrument):
                     _cmd = "AMPLitude"
                     args = ["1"]
 
-                AMPLitude = AMPLitude()
+                AMPLitude = AMPLitude()  # type: ignore
                 """
                 `SOURce:POWer:LIMit:AMPLitude
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/de410925c5dd477b.htm#ID_f38a02d771aa72930a00206a017c0246-a1f79d3e71aa72930a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/de410925c5dd477b.htm#ID_f38a02d771aa72930a00206a017c0246-a1f79d3e71aa72930a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
 
-            LIMit = LIMit()
+            LIMit = LIMit()  # type: ignore
             """
             SOURce:POWer:LIMit
 
@@ -17571,7 +17572,7 @@ class SMB100A_gen(Instrument):
             class MANual(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:POWer:MANual
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b16e4a79adfa47ad.htm#ID_786f132571aaa75e0a00206a003b0637-68a04f6e71aaa75e0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b16e4a79adfa47ad.htm#ID_786f132571aaa75e0a00206a003b0637-68a04f6e71aaa75e0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -17579,10 +17580,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "MANual"
                 args = ["1"]
 
-            MANual = MANual()
+            MANual = MANual()  # type: ignore
             """
             `SOURce:POWer:MANual
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b16e4a79adfa47ad.htm#ID_786f132571aaa75e0a00206a003b0637-68a04f6e71aaa75e0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b16e4a79adfa47ad.htm#ID_786f132571aaa75e0a00206a003b0637-68a04f6e71aaa75e0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -17607,14 +17608,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:POWer:OFFSet:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            OFFSet = OFFSet()
+            OFFSet = OFFSet()  # type: ignore
             """
             SOURce:POWer:OFFSet
 
@@ -17641,14 +17642,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:POWer:PROTection:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            PROTection = PROTection()
+            PROTection = PROTection()  # type: ignore
             """
             SOURce:POWer:PROTection
 
@@ -17665,7 +17666,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "RANGe"
                 args = ["1"]
 
-            RANGe = RANGe()
+            RANGe = RANGe()  # type: ignore
             """
             SOURce:POWer:RANGe
 
@@ -17692,14 +17693,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:POWer:REFerence:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            REFerence = REFerence()
+            REFerence = REFerence()  # type: ignore
             """
             SOURce:POWer:REFerence
 
@@ -17716,7 +17717,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SEARch"
                 args = ["<boolean>", "ONCE"]
 
-            SEARch = SEARch()
+            SEARch = SEARch()  # type: ignore
             """
             SOURce:POWer:SEARch
 
@@ -17743,7 +17744,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "PIVot"
                     args = ["1"]
 
-                PIVot = PIVot()
+                PIVot = PIVot()  # type: ignore
                 """
                 SOURce:POWer:SLOPe:PIVot
 
@@ -17760,7 +17761,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:POWer:SLOPe:STATe
 
@@ -17775,7 +17776,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -17787,21 +17788,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:POWer:SLOPe:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:POWer:SLOPe:STEP
 
                 Arguments:
                 """
 
-            SLOPe = SLOPe()
+            SLOPe = SLOPe()  # type: ignore
             """
             SOURce:POWer:SLOPe
 
@@ -17816,7 +17817,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SPAN"
-                args = []
+                args = []  # type: List[str]
 
                 class STEP(SCPINode):
                     """
@@ -17826,7 +17827,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -17838,21 +17839,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:POWer:SPAN:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:POWer:SPAN:STEP
 
                 Arguments:
                 """
 
-            SPAN = SPAN()
+            SPAN = SPAN()  # type: ignore
             """
             SOURce:POWer:SPAN
 
@@ -17862,7 +17863,7 @@ class SMB100A_gen(Instrument):
             class STARt(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:POWer:STARt
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/75df17de88344e45.htm#ID_bfd022ec71aaaeff0a00206a01dfb254-b40f922e71aaaeff0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/75df17de88344e45.htm#ID_bfd022ec71aaaeff0a00206a01dfb254-b40f922e71aaaeff0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -17878,7 +17879,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -17890,24 +17891,24 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:POWer:STARt:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:POWer:STARt:STEP
 
                 Arguments:
                 """
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             `SOURce:POWer:STARt
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/75df17de88344e45.htm#ID_bfd022ec71aaaeff0a00206a01dfb254-b40f922e71aaaeff0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/75df17de88344e45.htm#ID_bfd022ec71aaaeff0a00206a01dfb254-b40f922e71aaaeff0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -17922,7 +17923,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SOURce:POWer:STATe
 
@@ -17937,12 +17938,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STEP"
-                args = []
+                args = []  # type: List[str]
 
                 class INCRement(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:POWer:STEP:INCRement
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3a5b9c83f91a4347.htm#ID_78f8a91f71aa79c60a00206a01d797f3-dccd25e471aa79c60a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3a5b9c83f91a4347.htm#ID_78f8a91f71aa79c60a00206a01d797f3-dccd25e471aa79c60a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -17960,7 +17961,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "LINear"
                         args = ["1"]
 
-                    LINear = LINear()
+                    LINear = LINear()  # type: ignore
                     """
                     SOURce:POWer:STEP:INCRement:LINear
 
@@ -17977,22 +17978,22 @@ class SMB100A_gen(Instrument):
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
-                    LOGarithmic = LOGarithmic()
+                    LOGarithmic = LOGarithmic()  # type: ignore
                     """
                     SOURce:POWer:STEP:INCRement:LOGarithmic
 
                     Arguments: 1
                     """
 
-                INCRement = INCRement()
+                INCRement = INCRement()  # type: ignore
                 """
                 `SOURce:POWer:STEP:INCRement
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3a5b9c83f91a4347.htm#ID_78f8a91f71aa79c60a00206a01d797f3-dccd25e471aa79c60a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3a5b9c83f91a4347.htm#ID_78f8a91f71aa79c60a00206a01d797f3-dccd25e471aa79c60a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             SOURce:POWer:STEP
 
@@ -18002,13 +18003,13 @@ class SMB100A_gen(Instrument):
             class STOP(SCPINode):
                 """
                 `SOURce:POWer:STOP
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3e7c17ad63134242.htm#ID_0b3f20dd71aab6620a00206a0036ddee-9ea7ec1a71aab6620a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3e7c17ad63134242.htm#ID_0b3f20dd71aab6620a00206a0036ddee-9ea7ec1a71aab6620a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "STOP"
-                args = []
+                args = []  # type: List[str]
 
                 class STEP(SCPINode):
                     """
@@ -18018,7 +18019,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -18030,24 +18031,24 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:POWer:STOP:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:POWer:STOP:STEP
 
                 Arguments:
                 """
 
-            STOP = STOP()
+            STOP = STOP()  # type: ignore
             """
             `SOURce:POWer:STOP
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3e7c17ad63134242.htm#ID_0b3f20dd71aab6620a00206a0036ddee-9ea7ec1a71aab6620a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3e7c17ad63134242.htm#ID_0b3f20dd71aab6620a00206a0036ddee-9ea7ec1a71aab6620a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -18060,7 +18061,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "USER"
-                args = []
+                args = []  # type: List[str]
 
                 class ENABle(SCPINode, SCPIBool):
                     """
@@ -18072,7 +18073,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1", "ON", "OFF"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 SOURce:POWer:USER:ENABle
 
@@ -18089,21 +18090,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "MAXimum"
                     args = ["1"]
 
-                MAXimum = MAXimum()
+                MAXimum = MAXimum()  # type: ignore
                 """
                 SOURce:POWer:USER:MAXimum
 
                 Arguments: 1
                 """
 
-            USER = USER()
+            USER = USER()  # type: ignore
             """
             SOURce:POWer:USER
 
             Arguments:
             """
 
-        POWer = POWer()
+        POWer = POWer()  # type: ignore
         """
         SOURce:POWer
 
@@ -18118,7 +18119,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PULM"
-            args = []
+            args = []  # type: List[str]
 
             class EXTernal(SCPINode, SCPISet):
                 """
@@ -18128,7 +18129,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class DELay(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -18148,7 +18149,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -18160,21 +18161,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:PULM:EXTernal:DELay:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:PULM:EXTernal:DELay:STEP
 
                     Arguments:
                     """
 
-                DELay = DELay()
+                DELay = DELay()  # type: ignore
                 """
                 SOURce:PULM:EXTernal:DELay
 
@@ -18191,7 +18192,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "IMPedance"
                     args = ["1"]
 
-                IMPedance = IMPedance()
+                IMPedance = IMPedance()  # type: ignore
                 """
                 SOURce:PULM:EXTernal:IMPedance
 
@@ -18208,14 +18209,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "POLarity"
                     args = ["INVerted", "NORMal"]
 
-                POLarity = POLarity()
+                POLarity = POLarity()  # type: ignore
                 """
                 SOURce:PULM:EXTernal:POLarity
 
                 Arguments: INVerted, NORMal
                 """
 
-            EXTernal = EXTernal()
+            EXTernal = EXTernal()  # type: ignore
             """
             SOURce:PULM:EXTernal
 
@@ -18230,7 +18231,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class DELay(SCPINodeN, SCPIQuery, SCPISet):
                     """
@@ -18250,7 +18251,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -18262,21 +18263,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:PULM:INTernal:DELay:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:PULM:INTernal:DELay:STEP
 
                     Arguments:
                     """
 
-                DELay = DELay()
+                DELay = DELay()  # type: ignore
                 """
                 SOURce:PULM:INTernal:DELay
 
@@ -18301,7 +18302,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -18313,21 +18314,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:PULM:INTernal:FREQuency:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:PULM:INTernal:FREQuency:STEP
 
                     Arguments:
                     """
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:PULM:INTernal:FREQuency
 
@@ -18342,7 +18343,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "FUNCtion"
-                    args = []
+                    args = []  # type: List[str]
 
                     class SHAPe(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -18354,14 +18355,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "SHAPe"
                         args = ["PULSe", "SQUare"]
 
-                    SHAPe = SHAPe()
+                    SHAPe = SHAPe()  # type: ignore
                     """
                     SOURce:PULM:INTernal:FUNCtion:SHAPe
 
                     Arguments: PULSe, SQUare
                     """
 
-                FUNCtion = FUNCtion()
+                FUNCtion = FUNCtion()  # type: ignore
                 """
                 SOURce:PULM:INTernal:FUNCtion
 
@@ -18386,7 +18387,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -18398,21 +18399,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:PULM:INTernal:PERiod:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:PULM:INTernal:PERiod:STEP
 
                     Arguments:
                     """
 
-                PERiod = PERiod()
+                PERiod = PERiod()  # type: ignore
                 """
                 SOURce:PULM:INTernal:PERiod
 
@@ -18437,7 +18438,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -18449,21 +18450,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:PULM:INTernal:PWIDth:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:PULM:INTernal:PWIDth:STEP
 
                     Arguments:
                     """
 
-                PWIDth = PWIDth()
+                PWIDth = PWIDth()  # type: ignore
                 """
                 SOURce:PULM:INTernal:PWIDth
 
@@ -18478,7 +18479,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TRIGger"
-                    args = []
+                    args = []  # type: List[str]
 
                     class SOURce(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -18490,14 +18491,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "SOURce"
                         args = ["EXTernal", "INTernal"]
 
-                    SOURce = SOURce()
+                    SOURce = SOURce()  # type: ignore
                     """
                     SOURce:PULM:INTernal:TRIGger:SOURce
 
                     Arguments: EXTernal, INTernal
                     """
 
-                TRIGger = TRIGger()
+                TRIGger = TRIGger()  # type: ignore
                 """
                 SOURce:PULM:INTernal:TRIGger
 
@@ -18512,7 +18513,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "VIDeo"
-                    args = []
+                    args = []  # type: List[str]
 
                     class POLarity(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -18524,14 +18525,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "POLarity"
                         args = ["INVerted", "NORMal"]
 
-                    POLarity = POLarity()
+                    POLarity = POLarity()  # type: ignore
                     """
                     SOURce:PULM:INTernal:VIDeo:POLarity
 
                     Arguments: INVerted, NORMal
                     """
 
-                VIDeo = VIDeo()
+                VIDeo = VIDeo()  # type: ignore
                 """
                 SOURce:PULM:INTernal:VIDeo
 
@@ -18556,7 +18557,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -18568,28 +18569,28 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:PULM:INTernal:WIDTh:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:PULM:INTernal:WIDTh:STEP
 
                     Arguments:
                     """
 
-                WIDTh = WIDTh()
+                WIDTh = WIDTh()  # type: ignore
                 """
                 SOURce:PULM:INTernal:WIDTh
 
                 Arguments: 1
                 """
 
-            INTernal = INTernal()
+            INTernal = INTernal()  # type: ignore
             """
             SOURce:PULM:INTernal
 
@@ -18599,7 +18600,7 @@ class SMB100A_gen(Instrument):
             class PERiod(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PULM:PERiod
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f8fc39f1ea9c40a3.htm#ID_ebe92a974e3555850a00206a0199777d-bd4d581f4e3555850a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f8fc39f1ea9c40a3.htm#ID_ebe92a974e3555850a00206a0199777d-bd4d581f4e3555850a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
@@ -18607,10 +18608,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "PERiod"
                 args = ["1"]
 
-            PERiod = PERiod()
+            PERiod = PERiod()  # type: ignore
             """
             `SOURce:PULM:PERiod
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f8fc39f1ea9c40a3.htm#ID_ebe92a974e3555850a00206a0199777d-bd4d581f4e3555850a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f8fc39f1ea9c40a3.htm#ID_ebe92a974e3555850a00206a0199777d-bd4d581f4e3555850a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
@@ -18618,7 +18619,7 @@ class SMB100A_gen(Instrument):
             class POLarity(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PULM:POLarity
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cd47c0071bb149e5.htm#ID_3497059d4e353d690a00206a01ed3f2d-d8fa28904e353d690a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cd47c0071bb149e5.htm#ID_3497059d4e353d690a00206a01ed3f2d-d8fa28904e353d690a00206a0024546d-en-US>`_
 
                 Arguments: INVerted, NORMal
                 """
@@ -18626,10 +18627,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "POLarity"
                 args = ["INVerted", "NORMal"]
 
-            POLarity = POLarity()
+            POLarity = POLarity()  # type: ignore
             """
             `SOURce:PULM:POLarity
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cd47c0071bb149e5.htm#ID_3497059d4e353d690a00206a01ed3f2d-d8fa28904e353d690a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cd47c0071bb149e5.htm#ID_3497059d4e353d690a00206a01ed3f2d-d8fa28904e353d690a00206a0024546d-en-US>`_
 
             Arguments: INVerted, NORMal
             """
@@ -18637,7 +18638,7 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PULM:SOURce
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d01a62da234944cd.htm#ID_c1f0481e4e3545970a00206a00087ee2-5edf7c2c4e3545970a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d01a62da234944cd.htm#ID_c1f0481e4e3545970a00206a00087ee2-5edf7c2c4e3545970a00206a0024546d-en-US>`_
 
                 Arguments: EXT1, EXT2, EXTernal, EXTernal1, EXTernal2, INTernal
                 """
@@ -18655,17 +18656,17 @@ class SMB100A_gen(Instrument):
                     _cmd = "INTernal"
                     args = ["ADOublet", "DOUBlet", "FRUN", "GATed", "SQUare", "TRIGgered"]
 
-                INTernal = INTernal()
+                INTernal = INTernal()  # type: ignore
                 """
                 SOURce:PULM:SOURce:INTernal
 
                 Arguments: ADOublet, DOUBlet, FRUN, GATed, SQUare, TRIGgered
                 """
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `SOURce:PULM:SOURce
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d01a62da234944cd.htm#ID_c1f0481e4e3545970a00206a00087ee2-5edf7c2c4e3545970a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d01a62da234944cd.htm#ID_c1f0481e4e3545970a00206a00087ee2-5edf7c2c4e3545970a00206a0024546d-en-US>`_
 
             Arguments: EXT1, EXT2, EXTernal, EXTernal1, EXTernal2, INTernal
             """
@@ -18673,7 +18674,7 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:PULM:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08c1f6939a514b85.htm#ID_ee977e2b4e352d8b0a00206a018c0222-5a28bd874e352d8b0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08c1f6939a514b85.htm#ID_ee977e2b4e352d8b0a00206a018c0222-5a28bd874e352d8b0a00206a0024546d-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -18681,10 +18682,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SOURce:PULM:STATe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08c1f6939a514b85.htm#ID_ee977e2b4e352d8b0a00206a018c0222-5a28bd874e352d8b0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08c1f6939a514b85.htm#ID_ee977e2b4e352d8b0a00206a018c0222-5a28bd874e352d8b0a00206a0024546d-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -18692,7 +18693,7 @@ class SMB100A_gen(Instrument):
             class WIDTh(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:PULM:WIDTh
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/737870cd065d45b3.htm#ID_b29b3cb94e355edb0a00206a016f086a-cfb305434e355edb0a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/737870cd065d45b3.htm#ID_b29b3cb94e355edb0a00206a016f086a-cfb305434e355edb0a00206a0024546d-en-US>`_
 
                 Arguments: 1
                 """
@@ -18700,15 +18701,15 @@ class SMB100A_gen(Instrument):
                 _cmd = "WIDTh"
                 args = ["1"]
 
-            WIDTh = WIDTh()
+            WIDTh = WIDTh()  # type: ignore
             """
             `SOURce:PULM:WIDTh
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/737870cd065d45b3.htm#ID_b29b3cb94e355edb0a00206a016f086a-cfb305434e355edb0a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/737870cd065d45b3.htm#ID_b29b3cb94e355edb0a00206a016f086a-cfb305434e355edb0a00206a0024546d-en-US>`_
 
             Arguments: 1
             """
 
-        PULM = PULM()
+        PULM = PULM()  # type: ignore
         """
         SOURce:PULM
 
@@ -18723,7 +18724,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PULSe"
-            args = []
+            args = []  # type: List[str]
 
             class DELay(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -18743,7 +18744,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -18755,21 +18756,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:PULSe:DELay:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:PULSe:DELay:STEP
 
                 Arguments:
                 """
 
-            DELay = DELay()
+            DELay = DELay()  # type: ignore
             """
             SOURce:PULSe:DELay
 
@@ -18784,7 +18785,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DOUBle"
-                args = []
+                args = []  # type: List[str]
 
                 class DELay(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -18796,7 +18797,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "DELay"
                     args = ["1"]
 
-                DELay = DELay()
+                DELay = DELay()  # type: ignore
                 """
                 SOURce:PULSe:DOUBle:DELay
 
@@ -18813,14 +18814,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:PULSe:DOUBle:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            DOUBle = DOUBle()
+            DOUBle = DOUBle()  # type: ignore
             """
             SOURce:PULSe:DOUBle
 
@@ -18835,7 +18836,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -18855,7 +18856,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STEP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class INCRement(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -18867,28 +18868,28 @@ class SMB100A_gen(Instrument):
                             _cmd = "INCRement"
                             args = ["1"]
 
-                        INCRement = INCRement()
+                        INCRement = INCRement()  # type: ignore
                         """
                         SOURce:PULSe:INTernal:FREQuency:STEP:INCRement
 
                         Arguments: 1
                         """
 
-                    STEP = STEP()
+                    STEP = STEP()  # type: ignore
                     """
                     SOURce:PULSe:INTernal:FREQuency:STEP
 
                     Arguments:
                     """
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:PULSe:INTernal:FREQuency
 
                 Arguments: 1
                 """
 
-            INTernal = INTernal()
+            INTernal = INTernal()  # type: ignore
             """
             SOURce:PULSe:INTernal
 
@@ -18913,7 +18914,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -18925,21 +18926,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:PULSe:PERiod:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:PULSe:PERiod:STEP
 
                 Arguments:
                 """
 
-            PERiod = PERiod()
+            PERiod = PERiod()  # type: ignore
             """
             SOURce:PULSe:PERiod
 
@@ -18956,7 +18957,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["EXTernal", "INTernal", "SCALar"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             SOURce:PULSe:SOURce
 
@@ -18973,7 +18974,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SOURce:PULSe:STATe
 
@@ -18988,7 +18989,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRANsition"
-                args = []
+                args = []  # type: List[str]
 
                 class LEADing(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -19000,7 +19001,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "LEADing"
                     args = ["FAST", "MEDium", "SLOW"]
 
-                LEADing = LEADing()
+                LEADing = LEADing()  # type: ignore
                 """
                 SOURce:PULSe:TRANsition:LEADing
 
@@ -19017,7 +19018,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:PULSe:TRANsition:STATe
 
@@ -19034,14 +19035,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "TRAiling"
                     args = ["FAST", "MEDium", "SLOW"]
 
-                TRAiling = TRAiling()
+                TRAiling = TRAiling()  # type: ignore
                 """
                 SOURce:PULSe:TRANsition:TRAiling
 
                 Arguments: FAST, MEDium, SLOW
                 """
 
-            TRANsition = TRANsition()
+            TRANsition = TRANsition()  # type: ignore
             """
             SOURce:PULSe:TRANsition
 
@@ -19066,7 +19067,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -19078,28 +19079,28 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SOURce:PULSe:WIDTh:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:PULSe:WIDTh:STEP
 
                 Arguments:
                 """
 
-            WIDTh = WIDTh()
+            WIDTh = WIDTh()  # type: ignore
             """
             SOURce:PULSe:WIDTh
 
             Arguments: 1
             """
 
-        PULSe = PULSe()
+        PULSe = PULSe()  # type: ignore
         """
         SOURce:PULSe
 
@@ -19114,7 +19115,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "RADio"
-            args = []
+            args = []  # type: List[str]
 
             class ARB(SCPINode):
                 """
@@ -19124,7 +19125,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ARB"
-                args = []
+                args = []  # type: List[str]
 
                 class CLIPping(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -19136,7 +19137,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "CLIPping"
                     args = ["<string>,IJQ", "IORQ,<numeric_value>,<numeric_value>"]
 
-                CLIPping = CLIPping()
+                CLIPping = CLIPping()  # type: ignore
                 """
                 SOURce:RADio:ARB:CLIPping
 
@@ -19151,7 +19152,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CLOCk"
-                    args = []
+                    args = []  # type: List[str]
 
                     class REFerence(SCPINode):
                         """
@@ -19161,7 +19162,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "REFerence"
-                        args = []
+                        args = []  # type: List[str]
 
                         class EXTernal(SCPINode, SCPISet):
                             """
@@ -19171,7 +19172,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "EXTernal"
-                            args = []
+                            args = []  # type: List[str]
 
                             class FREQuency(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -19183,14 +19184,14 @@ class SMB100A_gen(Instrument):
                                 _cmd = "FREQuency"
                                 args = ["1"]
 
-                            FREQuency = FREQuency()
+                            FREQuency = FREQuency()  # type: ignore
                             """
                             SOURce:RADio:ARB:CLOCk:REFerence:EXTernal:FREQuency
 
                             Arguments: 1
                             """
 
-                        EXTernal = EXTernal()
+                        EXTernal = EXTernal()  # type: ignore
                         """
                         SOURce:RADio:ARB:CLOCk:REFerence:EXTernal
 
@@ -19207,14 +19208,14 @@ class SMB100A_gen(Instrument):
                             _cmd = "SOURce"
                             args = ["EXTernal", "INTernal"]
 
-                        SOURce = SOURce()
+                        SOURce = SOURce()  # type: ignore
                         """
                         SOURce:RADio:ARB:CLOCk:REFerence:SOURce
 
                         Arguments: EXTernal, INTernal
                         """
 
-                    REFerence = REFerence()
+                    REFerence = REFerence()  # type: ignore
                     """
                     SOURce:RADio:ARB:CLOCk:REFerence
 
@@ -19231,14 +19232,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "SRATe"
                         args = ["1"]
 
-                    SRATe = SRATe()
+                    SRATe = SRATe()  # type: ignore
                     """
                     SOURce:RADio:ARB:CLOCk:SRATe
 
                     Arguments: 1
                     """
 
-                CLOCk = CLOCk()
+                CLOCk = CLOCk()  # type: ignore
                 """
                 SOURce:RADio:ARB:CLOCk
 
@@ -19253,7 +19254,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DACS"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ALIGn(SCPINode, SCPISet):
                         """
@@ -19263,16 +19264,16 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ALIGn"
-                        args = []
+                        args = []  # type: List[str]
 
-                    ALIGn = ALIGn()
+                    ALIGn = ALIGn()  # type: ignore
                     """
                     SOURce:RADio:ARB:DACS:ALIGn
 
                     Arguments:
                     """
 
-                DACS = DACS()
+                DACS = DACS()  # type: ignore
                 """
                 SOURce:RADio:ARB:DACS
 
@@ -19287,9 +19288,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "GENerate"
-                    args = []
+                    args = []  # type: List[str]
 
-                GENerate = GENerate()
+                GENerate = GENerate()  # type: ignore
                 """
                 SOURce:RADio:ARB:GENerate
 
@@ -19304,7 +19305,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HEADer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CLEar(SCPINode, SCPISet):
                         """
@@ -19314,16 +19315,16 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CLEar"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CLEar = CLEar()
+                    CLEar = CLEar()  # type: ignore
                     """
                     SOURce:RADio:ARB:HEADer:CLEar
 
                     Arguments:
                     """
 
-                HEADer = HEADer()
+                HEADer = HEADer()  # type: ignore
                 """
                 SOURce:RADio:ARB:HEADer
 
@@ -19338,7 +19339,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "IQ"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EXTernal(SCPINode, SCPISet):
                         """
@@ -19348,7 +19349,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EXTernal"
-                        args = []
+                        args = []  # type: List[str]
 
                         class FILTer(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -19360,14 +19361,14 @@ class SMB100A_gen(Instrument):
                             _cmd = "FILTer"
                             args = ["1"]
 
-                        FILTer = FILTer()
+                        FILTer = FILTer()  # type: ignore
                         """
                         SOURce:RADio:ARB:IQ:EXTernal:FILTer
 
                         Arguments: 1
                         """
 
-                    EXTernal = EXTernal()
+                    EXTernal = EXTernal()  # type: ignore
                     """
                     SOURce:RADio:ARB:IQ:EXTernal
 
@@ -19382,7 +19383,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "MODulation"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ATTen(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -19394,7 +19395,7 @@ class SMB100A_gen(Instrument):
                             _cmd = "ATTen"
                             args = ["1"]
 
-                        ATTen = ATTen()
+                        ATTen = ATTen()  # type: ignore
                         """
                         SOURce:RADio:ARB:IQ:MODulation:ATTen
 
@@ -19411,21 +19412,21 @@ class SMB100A_gen(Instrument):
                             _cmd = "FILTer"
                             args = ["1"]
 
-                        FILTer = FILTer()
+                        FILTer = FILTer()  # type: ignore
                         """
                         SOURce:RADio:ARB:IQ:MODulation:FILTer
 
                         Arguments: 1
                         """
 
-                    MODulation = MODulation()
+                    MODulation = MODulation()  # type: ignore
                     """
                     SOURce:RADio:ARB:IQ:MODulation
 
                     Arguments:
                     """
 
-                IQ = IQ()
+                IQ = IQ()  # type: ignore
                 """
                 SOURce:RADio:ARB:IQ
 
@@ -19440,7 +19441,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MARKer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CLEar(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -19452,7 +19453,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "CLEar"
                         args = ["<string>,<numeric_value>,<numeric_value>,<numeric_value>"]
 
-                    CLEar = CLEar()
+                    CLEar = CLEar()  # type: ignore
                     """
                     SOURce:RADio:ARB:MARKer:CLEar
 
@@ -19469,14 +19470,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "ROTate"
                         args = ["<string>,<numeric_value>"]
 
-                    ROTate = ROTate()
+                    ROTate = ROTate()  # type: ignore
                     """
                     SOURce:RADio:ARB:MARKer:ROTate
 
                     Arguments: <string>,<numeric_value>
                     """
 
-                MARKer = MARKer()
+                MARKer = MARKer()  # type: ignore
                 """
                 SOURce:RADio:ARB:MARKer
 
@@ -19491,7 +19492,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MDEStination"
-                    args = []
+                    args = []  # type: List[str]
 
                     class AAMPlitude(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -19503,7 +19504,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "AAMPlitude"
                         args = ["M1", "M2", "M3", "M4", "NONE"]
 
-                    AAMPlitude = AAMPlitude()
+                    AAMPlitude = AAMPlitude()  # type: ignore
                     """
                     SOURce:RADio:ARB:MDEStination:AAMPlitude
 
@@ -19520,7 +19521,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "ALCHold"
                         args = ["M1", "M2", "M3", "M4", "NONE"]
 
-                    ALCHold = ALCHold()
+                    ALCHold = ALCHold()  # type: ignore
                     """
                     SOURce:RADio:ARB:MDEStination:ALCHold
 
@@ -19537,14 +19538,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "PULSe"
                         args = ["M1", "M2", "M3", "M4", "NONE"]
 
-                    PULSe = PULSe()
+                    PULSe = PULSe()  # type: ignore
                     """
                     SOURce:RADio:ARB:MDEStination:PULSe
 
                     Arguments: M1, M2, M3, M4, NONE
                     """
 
-                MDEStination = MDEStination()
+                MDEStination = MDEStination()  # type: ignore
                 """
                 SOURce:RADio:ARB:MDEStination
 
@@ -19559,7 +19560,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MPOLarity"
-                    args = []
+                    args = []  # type: List[str]
 
                     class MARKer(SCPINodeN, SCPIQuery, SCPISet):
                         """
@@ -19571,14 +19572,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "MARKer"
                         args = ["NEGative", "POSitive"]
 
-                    MARKer = MARKer()
+                    MARKer = MARKer()  # type: ignore
                     """
                     SOURce:RADio:ARB:MPOLarity:MARKer
 
                     Arguments: NEGative, POSitive
                     """
 
-                MPOLarity = MPOLarity()
+                MPOLarity = MPOLarity()  # type: ignore
                 """
                 SOURce:RADio:ARB:MPOLarity
 
@@ -19593,7 +19594,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "NOISe"
-                    args = []
+                    args = []  # type: List[str]
 
                     class BFACtor(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -19605,7 +19606,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "BFACtor"
                         args = ["1"]
 
-                    BFACtor = BFACtor()
+                    BFACtor = BFACtor()  # type: ignore
                     """
                     SOURce:RADio:ARB:NOISe:BFACtor
 
@@ -19622,7 +19623,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "CBWidth"
                         args = ["1"]
 
-                    CBWidth = CBWidth()
+                    CBWidth = CBWidth()  # type: ignore
                     """
                     SOURce:RADio:ARB:NOISe:CBWidth
 
@@ -19639,14 +19640,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:RADio:ARB:NOISe:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                NOISe = NOISe()
+                NOISe = NOISe()  # type: ignore
                 """
                 SOURce:RADio:ARB:NOISe
 
@@ -19661,7 +19662,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "REFerence"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EXTernal(SCPINode, SCPISet):
                         """
@@ -19671,7 +19672,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EXTernal"
-                        args = []
+                        args = []  # type: List[str]
 
                         class FREQuency(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -19683,14 +19684,14 @@ class SMB100A_gen(Instrument):
                             _cmd = "FREQuency"
                             args = ["1"]
 
-                        FREQuency = FREQuency()
+                        FREQuency = FREQuency()  # type: ignore
                         """
                         SOURce:RADio:ARB:REFerence:EXTernal:FREQuency
 
                         Arguments: 1
                         """
 
-                    EXTernal = EXTernal()
+                    EXTernal = EXTernal()  # type: ignore
                     """
                     SOURce:RADio:ARB:REFerence:EXTernal
 
@@ -19707,14 +19708,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "SOURce"
                         args = ["EXTernal", "INTernal"]
 
-                    SOURce = SOURce()
+                    SOURce = SOURce()  # type: ignore
                     """
                     SOURce:RADio:ARB:REFerence:SOURce
 
                     Arguments: EXTernal, INTernal
                     """
 
-                REFerence = REFerence()
+                REFerence = REFerence()  # type: ignore
                 """
                 SOURce:RADio:ARB:REFerence
 
@@ -19731,7 +19732,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "RETRigger"
                     args = ["<boolean>", "IMMediate"]
 
-                RETRigger = RETRigger()
+                RETRigger = RETRigger()  # type: ignore
                 """
                 SOURce:RADio:ARB:RETRigger
 
@@ -19748,7 +19749,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "RFILter"
                     args = ["1"]
 
-                RFILter = RFILter()
+                RFILter = RFILter()  # type: ignore
                 """
                 SOURce:RADio:ARB:RFILter
 
@@ -19765,7 +19766,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "RSCaling"
                     args = ["1"]
 
-                RSCaling = RSCaling()
+                RSCaling = RSCaling()  # type: ignore
                 """
                 SOURce:RADio:ARB:RSCaling
 
@@ -19782,7 +19783,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "SCALing"
                     args = ["<string>,<numeric_value>"]
 
-                SCALing = SCALing()
+                SCALing = SCALing()  # type: ignore
                 """
                 SOURce:RADio:ARB:SCALing
 
@@ -19797,9 +19798,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SCLock"
-                    args = []
+                    args = []  # type: List[str]
 
-                SCLock = SCLock()
+                SCLock = SCLock()  # type: ignore
                 """
                 SOURce:RADio:ARB:SCLock
 
@@ -19816,7 +19817,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "SEQuence"
                     args = ["'string'"]
 
-                SEQuence = SEQuence()
+                SEQuence = SEQuence()  # type: ignore
                 """
                 SOURce:RADio:ARB:SEQuence
 
@@ -19833,7 +19834,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:RADio:ARB:STATe
 
@@ -19848,7 +19849,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TRIGger"
-                    args = []
+                    args = []  # type: List[str]
 
                     class SOURce(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -19868,7 +19869,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "EXTernal"
-                            args = []
+                            args = []  # type: List[str]
 
                             class DELay(SCPINode):
                                 """
@@ -19878,7 +19879,7 @@ class SMB100A_gen(Instrument):
                                 """
                                 __slots__ = ()
                                 _cmd = "DELay"
-                                args = []
+                                args = []  # type: List[str]
 
                                 class SAMPles(SCPINode, SCPIQuery, SCPISet):
                                     """
@@ -19890,7 +19891,7 @@ class SMB100A_gen(Instrument):
                                     _cmd = "SAMPles"
                                     args = ["1"]
 
-                                SAMPles = SAMPles()
+                                SAMPles = SAMPles()  # type: ignore
                                 """
                                 SOURce:RADio:ARB:TRIGger:SOURce:EXTernal:DELay:SAMPles
 
@@ -19907,14 +19908,14 @@ class SMB100A_gen(Instrument):
                                     _cmd = "STATe"
                                     args = ["1", "ON", "OFF"]
 
-                                STATe = STATe()
+                                STATe = STATe()  # type: ignore
                                 """
                                 SOURce:RADio:ARB:TRIGger:SOURce:EXTernal:DELay:STATe
 
                                 Arguments: 1, ON, OFF
                                 """
 
-                            DELay = DELay()
+                            DELay = DELay()  # type: ignore
                             """
                             SOURce:RADio:ARB:TRIGger:SOURce:EXTernal:DELay
 
@@ -19931,7 +19932,7 @@ class SMB100A_gen(Instrument):
                                 _cmd = "SLOPe"
                                 args = ["NEGative", "POSitive"]
 
-                            SLOPe = SLOPe()
+                            SLOPe = SLOPe()  # type: ignore
                             """
                             SOURce:RADio:ARB:TRIGger:SOURce:EXTernal:SLOPe
 
@@ -19948,21 +19949,21 @@ class SMB100A_gen(Instrument):
                                 _cmd = "SOURce"
                                 args = ["EPT1", "EPT2", "EPTRigger1", "EPTRigger2"]
 
-                            SOURce = SOURce()
+                            SOURce = SOURce()  # type: ignore
                             """
                             SOURce:RADio:ARB:TRIGger:SOURce:EXTernal:SOURce
 
                             Arguments: EPT1, EPT2, EPTRigger1, EPTRigger2
                             """
 
-                        EXTernal = EXTernal()
+                        EXTernal = EXTernal()  # type: ignore
                         """
                         SOURce:RADio:ARB:TRIGger:SOURce:EXTernal
 
                         Arguments:
                         """
 
-                    SOURce = SOURce()
+                    SOURce = SOURce()  # type: ignore
                     """
                     SOURce:RADio:ARB:TRIGger:SOURce
 
@@ -19977,7 +19978,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "TYPE"
-                        args = []
+                        args = []  # type: List[str]
 
                         class GATE(SCPINode):
                             """
@@ -19987,7 +19988,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "GATE"
-                            args = []
+                            args = []  # type: List[str]
 
                             class ACTive(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -19999,28 +20000,28 @@ class SMB100A_gen(Instrument):
                                 _cmd = "ACTive"
                                 args = ["HIGH", "LOW"]
 
-                            ACTive = ACTive()
+                            ACTive = ACTive()  # type: ignore
                             """
                             SOURce:RADio:ARB:TRIGger:TYPE:GATE:ACTive
 
                             Arguments: HIGH, LOW
                             """
 
-                        GATE = GATE()
+                        GATE = GATE()  # type: ignore
                         """
                         SOURce:RADio:ARB:TRIGger:TYPE:GATE
 
                         Arguments:
                         """
 
-                    TYPE = TYPE()
+                    TYPE = TYPE()  # type: ignore
                     """
                     SOURce:RADio:ARB:TRIGger:TYPE
 
                     Arguments:
                     """
 
-                TRIGger = TRIGger()
+                TRIGger = TRIGger()  # type: ignore
                 """
                 SOURce:RADio:ARB:TRIGger
 
@@ -20035,7 +20036,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "VCO"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CLOCk(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -20047,14 +20048,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "CLOCk"
                         args = ["EXTernal", "INTernal"]
 
-                    CLOCk = CLOCk()
+                    CLOCk = CLOCk()  # type: ignore
                     """
                     SOURce:RADio:ARB:VCO:CLOCk
 
                     Arguments: EXTernal, INTernal
                     """
 
-                VCO = VCO()
+                VCO = VCO()  # type: ignore
                 """
                 SOURce:RADio:ARB:VCO
 
@@ -20081,21 +20082,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "NHEaders"
                         args = ["'string'"]
 
-                    NHEaders = NHEaders()
+                    NHEaders = NHEaders()  # type: ignore
                     """
                     SOURce:RADio:ARB:WAVeform:NHEaders
 
                     Arguments: 'string'
                     """
 
-                WAVeform = WAVeform()
+                WAVeform = WAVeform()  # type: ignore
                 """
                 SOURce:RADio:ARB:WAVeform
 
                 Arguments: 'string'
                 """
 
-            ARB = ARB()
+            ARB = ARB()  # type: ignore
             """
             SOURce:RADio:ARB
 
@@ -20110,7 +20111,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AWGN"
-                args = []
+                args = []  # type: List[str]
 
                 class ARB(SCPINode):
                     """
@@ -20120,7 +20121,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ARB"
-                    args = []
+                    args = []  # type: List[str]
 
                     class BWIDth(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -20132,7 +20133,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "BWIDth"
                         args = ["1"]
 
-                    BWIDth = BWIDth()
+                    BWIDth = BWIDth()  # type: ignore
                     """
                     SOURce:RADio:AWGN:ARB:BWIDth
 
@@ -20147,7 +20148,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "HEADer"
-                        args = []
+                        args = []  # type: List[str]
 
                         class CLEar(SCPINode, SCPISet):
                             """
@@ -20157,16 +20158,16 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "CLEar"
-                            args = []
+                            args = []  # type: List[str]
 
-                        CLEar = CLEar()
+                        CLEar = CLEar()  # type: ignore
                         """
                         SOURce:RADio:AWGN:ARB:HEADer:CLEar
 
                         Arguments:
                         """
 
-                    HEADer = HEADer()
+                    HEADer = HEADer()  # type: ignore
                     """
                     SOURce:RADio:AWGN:ARB:HEADer
 
@@ -20181,7 +20182,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "IQ"
-                        args = []
+                        args = []  # type: List[str]
 
                         class EXTernal(SCPINode, SCPISet):
                             """
@@ -20191,7 +20192,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "EXTernal"
-                            args = []
+                            args = []  # type: List[str]
 
                             class FILTer(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -20203,14 +20204,14 @@ class SMB100A_gen(Instrument):
                                 _cmd = "FILTer"
                                 args = ["<numeric_value>", "THRough"]
 
-                            FILTer = FILTer()
+                            FILTer = FILTer()  # type: ignore
                             """
                             SOURce:RADio:AWGN:ARB:IQ:EXTernal:FILTer
 
                             Arguments: <numeric_value>, THRough
                             """
 
-                        EXTernal = EXTernal()
+                        EXTernal = EXTernal()  # type: ignore
                         """
                         SOURce:RADio:AWGN:ARB:IQ:EXTernal
 
@@ -20225,7 +20226,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "MODulation"
-                            args = []
+                            args = []  # type: List[str]
 
                             class ATTenuation(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -20237,7 +20238,7 @@ class SMB100A_gen(Instrument):
                                 _cmd = "ATTenuation"
                                 args = ["1"]
 
-                            ATTenuation = ATTenuation()
+                            ATTenuation = ATTenuation()  # type: ignore
                             """
                             SOURce:RADio:AWGN:ARB:IQ:MODulation:ATTenuation
 
@@ -20254,21 +20255,21 @@ class SMB100A_gen(Instrument):
                                 _cmd = "FILTer"
                                 args = ["<numeric_value>", "THRough"]
 
-                            FILTer = FILTer()
+                            FILTer = FILTer()  # type: ignore
                             """
                             SOURce:RADio:AWGN:ARB:IQ:MODulation:FILTer
 
                             Arguments: <numeric_value>, THRough
                             """
 
-                        MODulation = MODulation()
+                        MODulation = MODulation()  # type: ignore
                         """
                         SOURce:RADio:AWGN:ARB:IQ:MODulation
 
                         Arguments:
                         """
 
-                    IQ = IQ()
+                    IQ = IQ()  # type: ignore
                     """
                     SOURce:RADio:AWGN:ARB:IQ
 
@@ -20283,9 +20284,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "LENGth"
-                        args = []
+                        args = []  # type: List[str]
 
-                    LENGth = LENGth()
+                    LENGth = LENGth()  # type: ignore
                     """
                     SOURce:RADio:AWGN:ARB:LENGth
 
@@ -20300,7 +20301,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "MDEStination"
-                        args = []
+                        args = []  # type: List[str]
 
                         class AAMPlitude(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -20312,7 +20313,7 @@ class SMB100A_gen(Instrument):
                             _cmd = "AAMPlitude"
                             args = ["M1", "M2", "M3", "M4", "NONE"]
 
-                        AAMPlitude = AAMPlitude()
+                        AAMPlitude = AAMPlitude()  # type: ignore
                         """
                         SOURce:RADio:AWGN:ARB:MDEStination:AAMPlitude
 
@@ -20329,7 +20330,7 @@ class SMB100A_gen(Instrument):
                             _cmd = "ALCHold"
                             args = ["M1", "M2", "M3", "M4", "NONE"]
 
-                        ALCHold = ALCHold()
+                        ALCHold = ALCHold()  # type: ignore
                         """
                         SOURce:RADio:AWGN:ARB:MDEStination:ALCHold
 
@@ -20346,14 +20347,14 @@ class SMB100A_gen(Instrument):
                             _cmd = "PULSe"
                             args = ["M1", "M2", "M3", "M4", "NONE"]
 
-                        PULSe = PULSe()
+                        PULSe = PULSe()  # type: ignore
                         """
                         SOURce:RADio:AWGN:ARB:MDEStination:PULSe
 
                         Arguments: M1, M2, M3, M4, NONE
                         """
 
-                    MDEStination = MDEStination()
+                    MDEStination = MDEStination()  # type: ignore
                     """
                     SOURce:RADio:AWGN:ARB:MDEStination
 
@@ -20368,7 +20369,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "MPOLartity"
-                        args = []
+                        args = []  # type: List[str]
 
                         class MARKer(SCPINodeN, SCPIQuery, SCPISet):
                             """
@@ -20380,14 +20381,14 @@ class SMB100A_gen(Instrument):
                             _cmd = "MARKer"
                             args = ["NEGative", "POSitive"]
 
-                        MARKer = MARKer()
+                        MARKer = MARKer()  # type: ignore
                         """
                         SOURce:RADio:AWGN:ARB:MPOLartity:MARKer
 
                         Arguments: NEGative, POSitive
                         """
 
-                    MPOLartity = MPOLartity()
+                    MPOLartity = MPOLartity()  # type: ignore
                     """
                     SOURce:RADio:AWGN:ARB:MPOLartity
 
@@ -20402,7 +20403,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "REFerence"
-                        args = []
+                        args = []  # type: List[str]
 
                         class EXTernal(SCPINode, SCPISet):
                             """
@@ -20412,7 +20413,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "EXTernal"
-                            args = []
+                            args = []  # type: List[str]
 
                             class FREQuency(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -20424,14 +20425,14 @@ class SMB100A_gen(Instrument):
                                 _cmd = "FREQuency"
                                 args = ["1"]
 
-                            FREQuency = FREQuency()
+                            FREQuency = FREQuency()  # type: ignore
                             """
                             SOURce:RADio:AWGN:ARB:REFerence:EXTernal:FREQuency
 
                             Arguments: 1
                             """
 
-                        EXTernal = EXTernal()
+                        EXTernal = EXTernal()  # type: ignore
                         """
                         SOURce:RADio:AWGN:ARB:REFerence:EXTernal
 
@@ -20448,14 +20449,14 @@ class SMB100A_gen(Instrument):
                             _cmd = "SOURce"
                             args = ["EXTernal", "INTernal"]
 
-                        SOURce = SOURce()
+                        SOURce = SOURce()  # type: ignore
                         """
                         SOURce:RADio:AWGN:ARB:REFerence:SOURce
 
                         Arguments: EXTernal, INTernal
                         """
 
-                    REFerence = REFerence()
+                    REFerence = REFerence()  # type: ignore
                     """
                     SOURce:RADio:AWGN:ARB:REFerence
 
@@ -20470,9 +20471,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SCLock"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SCLock = SCLock()
+                    SCLock = SCLock()  # type: ignore
                     """
                     SOURce:RADio:AWGN:ARB:SCLock
 
@@ -20489,14 +20490,14 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:RADio:AWGN:ARB:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                ARB = ARB()
+                ARB = ARB()  # type: ignore
                 """
                 SOURce:RADio:AWGN:ARB
 
@@ -20511,7 +20512,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RT"
-                    args = []
+                    args = []  # type: List[str]
 
                     class BWIDth(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -20523,7 +20524,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "BWIDth"
                         args = ["1"]
 
-                    BWIDth = BWIDth()
+                    BWIDth = BWIDth()  # type: ignore
                     """
                     SOURce:RADio:AWGN:RT:BWIDth
 
@@ -20538,7 +20539,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "IQ"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ATTenuation(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -20550,14 +20551,14 @@ class SMB100A_gen(Instrument):
                             _cmd = "ATTenuation"
                             args = ["1"]
 
-                        ATTenuation = ATTenuation()
+                        ATTenuation = ATTenuation()  # type: ignore
                         """
                         SOURce:RADio:AWGN:RT:IQ:ATTenuation
 
                         Arguments: 1
                         """
 
-                    IQ = IQ()
+                    IQ = IQ()  # type: ignore
                     """
                     SOURce:RADio:AWGN:RT:IQ
 
@@ -20574,21 +20575,21 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:RADio:AWGN:RT:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                RT = RT()
+                RT = RT()  # type: ignore
                 """
                 SOURce:RADio:AWGN:RT
 
                 Arguments:
                 """
 
-            AWGN = AWGN()
+            AWGN = AWGN()  # type: ignore
             """
             SOURce:RADio:AWGN
 
@@ -20603,7 +20604,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MTONe"
-                args = []
+                args = []  # type: List[str]
 
                 class ARB(SCPINode):
                     """
@@ -20613,7 +20614,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ARB"
-                    args = []
+                    args = []  # type: List[str]
 
                     class REFerence(SCPINode):
                         """
@@ -20623,7 +20624,7 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "REFerence"
-                        args = []
+                        args = []  # type: List[str]
 
                         class EXTernal(SCPINode, SCPISet):
                             """
@@ -20633,7 +20634,7 @@ class SMB100A_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "EXTernal"
-                            args = []
+                            args = []  # type: List[str]
 
                             class FREQuency(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -20645,14 +20646,14 @@ class SMB100A_gen(Instrument):
                                 _cmd = "FREQuency"
                                 args = ["1"]
 
-                            FREQuency = FREQuency()
+                            FREQuency = FREQuency()  # type: ignore
                             """
                             SOURce:RADio:MTONe:ARB:REFerence:EXTernal:FREQuency
 
                             Arguments: 1
                             """
 
-                        EXTernal = EXTernal()
+                        EXTernal = EXTernal()  # type: ignore
                         """
                         SOURce:RADio:MTONe:ARB:REFerence:EXTernal
 
@@ -20669,14 +20670,14 @@ class SMB100A_gen(Instrument):
                             _cmd = "SOURce"
                             args = ["EXTernal", "INTernal"]
 
-                        SOURce = SOURce()
+                        SOURce = SOURce()  # type: ignore
                         """
                         SOURce:RADio:MTONe:ARB:REFerence:SOURce
 
                         Arguments: EXTernal, INTernal
                         """
 
-                    REFerence = REFerence()
+                    REFerence = REFerence()  # type: ignore
                     """
                     SOURce:RADio:MTONe:ARB:REFerence
 
@@ -20691,9 +20692,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SCLock"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SCLock = SCLock()
+                    SCLock = SCLock()  # type: ignore
                     """
                     SOURce:RADio:MTONe:ARB:SCLock
 
@@ -20720,7 +20721,7 @@ class SMB100A_gen(Instrument):
                             _cmd = "STORe"
                             args = ["'string'"]
 
-                        STORe = STORe()
+                        STORe = STORe()  # type: ignore
                         """
                         SOURce:RADio:MTONe:ARB:SETup:STORe
 
@@ -20747,7 +20748,7 @@ class SMB100A_gen(Instrument):
                                 _cmd = "FSPacing"
                                 args = ["1"]
 
-                            FSPacing = FSPacing()
+                            FSPacing = FSPacing()  # type: ignore
                             """
                             SOURce:RADio:MTONe:ARB:SETup:TABLe:FSPacing
 
@@ -20764,7 +20765,7 @@ class SMB100A_gen(Instrument):
                                 _cmd = "NTONes"
                                 args = ["1"]
 
-                            NTONes = NTONes()
+                            NTONes = NTONes()  # type: ignore
                             """
                             SOURce:RADio:MTONe:ARB:SETup:TABLe:NTONes
 
@@ -20779,7 +20780,7 @@ class SMB100A_gen(Instrument):
                                 """
                                 __slots__ = ()
                                 _cmd = "PHASe"
-                                args = []
+                                args = []  # type: List[str]
 
                                 class INITialize(SCPINode, SCPIQuery, SCPISet):
                                     """
@@ -20791,28 +20792,28 @@ class SMB100A_gen(Instrument):
                                     _cmd = "INITialize"
                                     args = ["FIXed", "RANDom"]
 
-                                INITialize = INITialize()
+                                INITialize = INITialize()  # type: ignore
                                 """
                                 SOURce:RADio:MTONe:ARB:SETup:TABLe:PHASe:INITialize
 
                                 Arguments: FIXed, RANDom
                                 """
 
-                            PHASe = PHASe()
+                            PHASe = PHASe()  # type: ignore
                             """
                             SOURce:RADio:MTONe:ARB:SETup:TABLe:PHASe
 
                             Arguments:
                             """
 
-                        TABLe = TABLe()
+                        TABLe = TABLe()  # type: ignore
                         """
                         SOURce:RADio:MTONe:ARB:SETup:TABLe
 
                         Arguments: <numeric_value>,<numeric_value>,FIXed, RANDom,<boolean>
                         """
 
-                    SETup = SETup()
+                    SETup = SETup()  # type: ignore
                     """
                     SOURce:RADio:MTONe:ARB:SETup
 
@@ -20829,28 +20830,28 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:RADio:MTONe:ARB:STATe
 
                     Arguments: 1, ON, OFF
                     """
 
-                ARB = ARB()
+                ARB = ARB()  # type: ignore
                 """
                 SOURce:RADio:MTONe:ARB
 
                 Arguments:
                 """
 
-            MTONe = MTONe()
+            MTONe = MTONe()  # type: ignore
             """
             SOURce:RADio:MTONe
 
             Arguments:
             """
 
-        RADio = RADio()
+        RADio = RADio()  # type: ignore
         """
         SOURce:RADio
 
@@ -20865,7 +20866,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ROSCillator"
-            args = []
+            args = []  # type: List[str]
 
             class EXTernal(SCPINode):
                 """
@@ -20875,12 +20876,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:ROSCillator:EXTernal:FREQuency
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17d3920a3880443f.htm#ID_4f9594624e4ad9290a00206a017105ad-77092b4a4e4acb8d0a00206a00a0c7ed-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17d3920a3880443f.htm#ID_4f9594624e4ad9290a00206a017105ad-77092b4a4e4acb8d0a00206a00a0c7ed-en-US>`_
 
                     Arguments: 1
                     """
@@ -20888,15 +20889,15 @@ class SMB100A_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 `SOURce:ROSCillator:EXTernal:FREQuency
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17d3920a3880443f.htm#ID_4f9594624e4ad9290a00206a017105ad-77092b4a4e4acb8d0a00206a00a0c7ed-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/17d3920a3880443f.htm#ID_4f9594624e4ad9290a00206a017105ad-77092b4a4e4acb8d0a00206a00a0c7ed-en-US>`_
 
                 Arguments: 1
                 """
 
-            EXTernal = EXTernal()
+            EXTernal = EXTernal()  # type: ignore
             """
             SOURce:ROSCillator:EXTernal
 
@@ -20911,7 +20912,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FREQuency"
-                args = []
+                args = []  # type: List[str]
 
                 class EXTernal(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -20923,14 +20924,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "EXTernal"
                     args = ["1"]
 
-                EXTernal = EXTernal()
+                EXTernal = EXTernal()  # type: ignore
                 """
                 SOURce:ROSCillator:FREQuency:EXTernal
 
                 Arguments: 1
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             SOURce:ROSCillator:FREQuency
 
@@ -20945,7 +20946,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class ADJust(SCPINode):
                     """
@@ -20955,12 +20956,12 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ADJust"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
                         `SOURce:ROSCillator:INTernal:ADJust:STATe
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b90515af7a4f4c94.htm#ID_d64368ec5700fce10a00206a014cb621-3792892e5700fce10a00206a0024546d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b90515af7a4f4c94.htm#ID_d64368ec5700fce10a00206a014cb621-3792892e5700fce10a00206a0024546d-en-US>`_
 
                         Arguments: 1, ON, OFF
                         """
@@ -20968,10 +20969,10 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:ROSCillator:INTernal:ADJust:STATe
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b90515af7a4f4c94.htm#ID_d64368ec5700fce10a00206a014cb621-3792892e5700fce10a00206a0024546d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b90515af7a4f4c94.htm#ID_d64368ec5700fce10a00206a014cb621-3792892e5700fce10a00206a0024546d-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
@@ -20979,7 +20980,7 @@ class SMB100A_gen(Instrument):
                     class VALue(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:ROSCillator:INTernal:ADJust:VALue
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77691a4f94ac4ffc.htm#ID_a0023e065701029d0a00206a00d2b42c-b2019cd95701029d0a00206a0024546d-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77691a4f94ac4ffc.htm#ID_a0023e065701029d0a00206a00d2b42c-b2019cd95701029d0a00206a0024546d-en-US>`_
 
                         Arguments: 1
                         """
@@ -20987,15 +20988,15 @@ class SMB100A_gen(Instrument):
                         _cmd = "VALue"
                         args = ["1"]
 
-                    VALue = VALue()
+                    VALue = VALue()  # type: ignore
                     """
                     `SOURce:ROSCillator:INTernal:ADJust:VALue
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77691a4f94ac4ffc.htm#ID_a0023e065701029d0a00206a00d2b42c-b2019cd95701029d0a00206a0024546d-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77691a4f94ac4ffc.htm#ID_a0023e065701029d0a00206a00d2b42c-b2019cd95701029d0a00206a0024546d-en-US>`_
 
                     Arguments: 1
                     """
 
-                ADJust = ADJust()
+                ADJust = ADJust()  # type: ignore
                 """
                 SOURce:ROSCillator:INTernal:ADJust
 
@@ -21012,14 +21013,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "RLOop"
                     args = ["NARRow", "NORMal"]
 
-                RLOop = RLOop()
+                RLOop = RLOop()  # type: ignore
                 """
                 SOURce:ROSCillator:INTernal:RLOop
 
                 Arguments: NARRow, NORMal
                 """
 
-            INTernal = INTernal()
+            INTernal = INTernal()  # type: ignore
             """
             SOURce:ROSCillator:INTernal
 
@@ -21029,7 +21030,7 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:ROSCillator:SOURce
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7e935bcba7104491.htm#ID_f861c84a5700f7140a00206a01a37e10-f799abd25700f7140a00206a0024546d-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7e935bcba7104491.htm#ID_f861c84a5700f7140a00206a01a37e10-f799abd25700f7140a00206a0024546d-en-US>`_
 
                 Arguments: <numeric_value>,EXTernal
                 """
@@ -21037,15 +21038,15 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["<numeric_value>,EXTernal"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `SOURce:ROSCillator:SOURce
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7e935bcba7104491.htm#ID_f861c84a5700f7140a00206a01a37e10-f799abd25700f7140a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7e935bcba7104491.htm#ID_f861c84a5700f7140a00206a01a37e10-f799abd25700f7140a00206a0024546d-en-US>`_
 
             Arguments: <numeric_value>,EXTernal
             """
 
-        ROSCillator = ROSCillator()
+        ROSCillator = ROSCillator()  # type: ignore
         """
         SOURce:ROSCillator
 
@@ -21060,7 +21061,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "STEReo"
-            args = []
+            args = []  # type: List[str]
 
             class ARI(SCPINode):
                 """
@@ -21070,12 +21071,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ARI"
-                args = []
+                args = []  # type: List[str]
 
                 class DEViation(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:ARI:DEViation
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/282a6e62f9164949.htm#ID_67dca7c4dc5bae370a00206a01e854e0-3da4a2e5dc5ba6c50a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/282a6e62f9164949.htm#ID_67dca7c4dc5bae370a00206a01e854e0-3da4a2e5dc5ba6c50a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
@@ -21083,10 +21084,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "DEViation"
                     args = ["1"]
 
-                DEViation = DEViation()
+                DEViation = DEViation()  # type: ignore
                 """
                 `SOURce:STEReo:ARI:DEViation
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/282a6e62f9164949.htm#ID_67dca7c4dc5bae370a00206a01e854e0-3da4a2e5dc5ba6c50a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/282a6e62f9164949.htm#ID_67dca7c4dc5bae370a00206a01e854e0-3da4a2e5dc5ba6c50a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -21094,7 +21095,7 @@ class SMB100A_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:STEReo:ARI:STATe
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/998508dfe46e41f8.htm#ID_b2a4f8bedc5bbe640a00206a0027a4ab-9631aac2dc5bb8970a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/998508dfe46e41f8.htm#ID_b2a4f8bedc5bbe640a00206a0027a4ab-9631aac2dc5bb8970a00206a01e40e15-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
@@ -21102,10 +21103,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:STEReo:ARI:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/998508dfe46e41f8.htm#ID_b2a4f8bedc5bbe640a00206a0027a4ab-9631aac2dc5bb8970a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/998508dfe46e41f8.htm#ID_b2a4f8bedc5bbe640a00206a0027a4ab-9631aac2dc5bb8970a00206a01e40e15-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -21113,18 +21114,18 @@ class SMB100A_gen(Instrument):
                 class TYPE(SCPINode):
                     """
                     `SOURce:STEReo:ARI:TYPE
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f0c571ed0204179.htm#ID_37f62275dc5bb6840a00206a00c7669c-3f459759dc5bb0a80a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f0c571ed0204179.htm#ID_37f62275dc5bb6840a00206a00c7669c-3f459759dc5bb0a80a00206a01e40e15-en-US>`_
 
                     Arguments:
                     """
                     __slots__ = ()
                     _cmd = "TYPE"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
                         `SOURce:STEReo:ARI:TYPE:STATe
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/756911e513c34c67.htm#ID_c14f788bdc5c68bd0a00206a01bbc148-6c884fb2dc5c61d70a00206a01e40e15-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/756911e513c34c67.htm#ID_c14f788bdc5c68bd0a00206a01bbc148-6c884fb2dc5c61d70a00206a01e40e15-en-US>`_
 
                         Arguments: 1, ON, OFF
                         """
@@ -21132,23 +21133,23 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:STEReo:ARI:TYPE:STATe
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/756911e513c34c67.htm#ID_c14f788bdc5c68bd0a00206a01bbc148-6c884fb2dc5c61d70a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/756911e513c34c67.htm#ID_c14f788bdc5c68bd0a00206a01bbc148-6c884fb2dc5c61d70a00206a01e40e15-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
 
-                TYPE = TYPE()
+                TYPE = TYPE()  # type: ignore
                 """
                 `SOURce:STEReo:ARI:TYPE
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f0c571ed0204179.htm#ID_37f62275dc5bb6840a00206a00c7669c-3f459759dc5bb0a80a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5f0c571ed0204179.htm#ID_37f62275dc5bb6840a00206a00c7669c-3f459759dc5bb0a80a00206a01e40e15-en-US>`_
 
                 Arguments:
                 """
 
-            ARI = ARI()
+            ARI = ARI()  # type: ignore
             """
             SOURce:STEReo:ARI
 
@@ -21163,12 +21164,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AUDio"
-                args = []
+                args = []  # type: List[str]
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:AUDio:FREQuency
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b27b0233d15c4e70.htm#ID_7cfbf44adc5bdd070a00206a00bdbc74-df188684dc5bd76a0a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b27b0233d15c4e70.htm#ID_7cfbf44adc5bdd070a00206a00bdbc74-df188684dc5bd76a0a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
@@ -21176,10 +21177,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 `SOURce:STEReo:AUDio:FREQuency
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b27b0233d15c4e70.htm#ID_7cfbf44adc5bdd070a00206a00bdbc74-df188684dc5bd76a0a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b27b0233d15c4e70.htm#ID_7cfbf44adc5bdd070a00206a00bdbc74-df188684dc5bd76a0a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -21187,7 +21188,7 @@ class SMB100A_gen(Instrument):
                 class PREemphasis(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:AUDio:PREemphasis
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/652eea05e2f24016.htm#ID_5566f910dc5c399e0a00206a00781b8b-d08a4926dc5c33c20a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/652eea05e2f24016.htm#ID_5566f910dc5c399e0a00206a00781b8b-d08a4926dc5c33c20a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
@@ -21198,7 +21199,7 @@ class SMB100A_gen(Instrument):
                     class STATe(SCPINode, SCPIBool):
                         """
                         `SOURce:STEReo:AUDio:PREemphasis:STATe
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cc35ff90b52c4122.htm#ID_de10a50cdc5c02ee0a00206a0029bde5-ece51530dc5bfd510a00206a01e40e15-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cc35ff90b52c4122.htm#ID_de10a50cdc5c02ee0a00206a0029bde5-ece51530dc5bfd510a00206a01e40e15-en-US>`_
 
                         Arguments: 1, ON, OFF
                         """
@@ -21206,23 +21207,23 @@ class SMB100A_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "ON", "OFF"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:STEReo:AUDio:PREemphasis:STATe
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cc35ff90b52c4122.htm#ID_de10a50cdc5c02ee0a00206a0029bde5-ece51530dc5bfd510a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/cc35ff90b52c4122.htm#ID_de10a50cdc5c02ee0a00206a0029bde5-ece51530dc5bfd510a00206a01e40e15-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
 
-                PREemphasis = PREemphasis()
+                PREemphasis = PREemphasis()  # type: ignore
                 """
                 `SOURce:STEReo:AUDio:PREemphasis
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/652eea05e2f24016.htm#ID_5566f910dc5c399e0a00206a00781b8b-d08a4926dc5c33c20a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/652eea05e2f24016.htm#ID_5566f910dc5c399e0a00206a00781b8b-d08a4926dc5c33c20a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
 
-            AUDio = AUDio()
+            AUDio = AUDio()  # type: ignore
             """
             SOURce:STEReo:AUDio
 
@@ -21232,7 +21233,7 @@ class SMB100A_gen(Instrument):
             class DEViation(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:STEReo:DEViation
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77bf3680cacd45eb.htm#ID_cc254567dc5bcdd50a00206a00015f03-191cccafdc5bc8470a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77bf3680cacd45eb.htm#ID_cc254567dc5bcdd50a00206a00015f03-191cccafdc5bc8470a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -21240,10 +21241,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "DEViation"
                 args = ["1"]
 
-            DEViation = DEViation()
+            DEViation = DEViation()  # type: ignore
             """
             `SOURce:STEReo:DEViation
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77bf3680cacd45eb.htm#ID_cc254567dc5bcdd50a00206a00015f03-191cccafdc5bc8470a00206a01e40e15-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/77bf3680cacd45eb.htm#ID_cc254567dc5bcdd50a00206a00015f03-191cccafdc5bc8470a00206a01e40e15-en-US>`_
 
             Arguments: 1
             """
@@ -21251,7 +21252,7 @@ class SMB100A_gen(Instrument):
             class DIRect(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:STEReo:DIRect
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8b97704e30ca4cf8.htm#ID_6bdc62a3dc5c50530a00206a007b4a30-09b6e1c4dc5c4a860a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8b97704e30ca4cf8.htm#ID_6bdc62a3dc5c50530a00206a007b4a30-09b6e1c4dc5c4a860a00206a01e40e15-en-US>`_
 
                 Arguments: 'string'
                 """
@@ -21259,10 +21260,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "DIRect"
                 args = ["'string'"]
 
-            DIRect = DIRect()
+            DIRect = DIRect()  # type: ignore
             """
             `SOURce:STEReo:DIRect
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8b97704e30ca4cf8.htm#ID_6bdc62a3dc5c50530a00206a007b4a30-09b6e1c4dc5c4a860a00206a01e40e15-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/8b97704e30ca4cf8.htm#ID_6bdc62a3dc5c50530a00206a007b4a30-09b6e1c4dc5c4a860a00206a01e40e15-en-US>`_
 
             Arguments: 'string'
             """
@@ -21275,12 +21276,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class IMPedance(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:EXTernal:IMPedance
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bf3bd3cb1b6149d7.htm#ID_ed166f71dc5bd5470a00206a00084298-5934d87ddc5bcfc90a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bf3bd3cb1b6149d7.htm#ID_ed166f71dc5bd5470a00206a00084298-5934d87ddc5bcfc90a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
@@ -21288,15 +21289,15 @@ class SMB100A_gen(Instrument):
                     _cmd = "IMPedance"
                     args = ["1"]
 
-                IMPedance = IMPedance()
+                IMPedance = IMPedance()  # type: ignore
                 """
                 `SOURce:STEReo:EXTernal:IMPedance
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bf3bd3cb1b6149d7.htm#ID_ed166f71dc5bd5470a00206a00084298-5934d87ddc5bcfc90a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/bf3bd3cb1b6149d7.htm#ID_ed166f71dc5bd5470a00206a00084298-5934d87ddc5bcfc90a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
 
-            EXTernal = EXTernal()
+            EXTernal = EXTernal()  # type: ignore
             """
             SOURce:STEReo:EXTernal
 
@@ -21311,12 +21312,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PILot"
-                args = []
+                args = []  # type: List[str]
 
                 class DEViation(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:PILot:DEViation
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9109ab9c9a614b96.htm#ID_a3761f9bdc5bec4a0a00206a00716dbf-840e2c0cdc5be6ac0a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9109ab9c9a614b96.htm#ID_a3761f9bdc5bec4a0a00206a00716dbf-840e2c0cdc5be6ac0a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
@@ -21324,10 +21325,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "DEViation"
                     args = ["1"]
 
-                DEViation = DEViation()
+                DEViation = DEViation()  # type: ignore
                 """
                 `SOURce:STEReo:PILot:DEViation
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9109ab9c9a614b96.htm#ID_a3761f9bdc5bec4a0a00206a00716dbf-840e2c0cdc5be6ac0a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/9109ab9c9a614b96.htm#ID_a3761f9bdc5bec4a0a00206a00716dbf-840e2c0cdc5be6ac0a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -21335,7 +21336,7 @@ class SMB100A_gen(Instrument):
                 class PHASe(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:PILot:PHASe
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/10f108b19f624a5e.htm#ID_86f8bd04dc5bf3cb0a00206a017fdfc9-c5314867dc5bee1e0a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/10f108b19f624a5e.htm#ID_86f8bd04dc5bf3cb0a00206a017fdfc9-c5314867dc5bee1e0a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
@@ -21343,10 +21344,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "PHASe"
                     args = ["1"]
 
-                PHASe = PHASe()
+                PHASe = PHASe()  # type: ignore
                 """
                 `SOURce:STEReo:PILot:PHASe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/10f108b19f624a5e.htm#ID_86f8bd04dc5bf3cb0a00206a017fdfc9-c5314867dc5bee1e0a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/10f108b19f624a5e.htm#ID_86f8bd04dc5bf3cb0a00206a017fdfc9-c5314867dc5bee1e0a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -21354,7 +21355,7 @@ class SMB100A_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:STEReo:PILot:STATe
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/068535fbf91146eb.htm#ID_31ee9df8dc5bfb7c0a00206a0160f2b2-1b5f0342dc5bf5cf0a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/068535fbf91146eb.htm#ID_31ee9df8dc5bfb7c0a00206a0160f2b2-1b5f0342dc5bf5cf0a00206a01e40e15-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
@@ -21362,15 +21363,15 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:STEReo:PILot:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/068535fbf91146eb.htm#ID_31ee9df8dc5bfb7c0a00206a0160f2b2-1b5f0342dc5bf5cf0a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/068535fbf91146eb.htm#ID_31ee9df8dc5bfb7c0a00206a0160f2b2-1b5f0342dc5bf5cf0a00206a01e40e15-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
 
-            PILot = PILot()
+            PILot = PILot()  # type: ignore
             """
             SOURce:STEReo:PILot
 
@@ -21385,12 +21386,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RDS"
-                args = []
+                args = []  # type: List[str]
 
                 class DATaset(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:RDS:DATaset
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b0c13bb102454957.htm#ID_fd8383cedc5c0a700a00206a01b75b79-fe5583efdc5c04f20a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b0c13bb102454957.htm#ID_fd8383cedc5c0a700a00206a01b75b79-fe5583efdc5c04f20a00206a01e40e15-en-US>`_
 
                     Arguments: DS1, DS2, DS3, DS4, DS5
                     """
@@ -21398,10 +21399,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "DATaset"
                     args = ["DS1", "DS2", "DS3", "DS4", "DS5"]
 
-                DATaset = DATaset()
+                DATaset = DATaset()  # type: ignore
                 """
                 `SOURce:STEReo:RDS:DATaset
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b0c13bb102454957.htm#ID_fd8383cedc5c0a700a00206a01b75b79-fe5583efdc5c04f20a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/b0c13bb102454957.htm#ID_fd8383cedc5c0a700a00206a01b75b79-fe5583efdc5c04f20a00206a01e40e15-en-US>`_
 
                 Arguments: DS1, DS2, DS3, DS4, DS5
                 """
@@ -21409,7 +21410,7 @@ class SMB100A_gen(Instrument):
                 class DEViation(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:STEReo:RDS:DEViation
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2bf5650ffdc14b35.htm#ID_2974ecc1dc5c11d30a00206a003a95cb-e42b5a1cdc5c0c550a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2bf5650ffdc14b35.htm#ID_2974ecc1dc5c11d30a00206a003a95cb-e42b5a1cdc5c0c550a00206a01e40e15-en-US>`_
 
                     Arguments: 1
                     """
@@ -21417,10 +21418,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "DEViation"
                     args = ["1"]
 
-                DEViation = DEViation()
+                DEViation = DEViation()  # type: ignore
                 """
                 `SOURce:STEReo:RDS:DEViation
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2bf5650ffdc14b35.htm#ID_2974ecc1dc5c11d30a00206a003a95cb-e42b5a1cdc5c0c550a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2bf5650ffdc14b35.htm#ID_2974ecc1dc5c11d30a00206a003a95cb-e42b5a1cdc5c0c550a00206a01e40e15-en-US>`_
 
                 Arguments: 1
                 """
@@ -21428,7 +21429,7 @@ class SMB100A_gen(Instrument):
                 class STATe(SCPINode, SCPIBool):
                     """
                     `SOURce:STEReo:RDS:STATe
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1d512496e30b4ccd.htm#ID_558b5e83dc5c19640a00206a01d4d2e2-38f90b46dc5c13c70a00206a01e40e15-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1d512496e30b4ccd.htm#ID_558b5e83dc5c19640a00206a01d4d2e2-38f90b46dc5c13c70a00206a01e40e15-en-US>`_
 
                     Arguments: 1, ON, OFF
                     """
@@ -21436,10 +21437,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:STEReo:RDS:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1d512496e30b4ccd.htm#ID_558b5e83dc5c19640a00206a01d4d2e2-38f90b46dc5c13c70a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1d512496e30b4ccd.htm#ID_558b5e83dc5c19640a00206a01d4d2e2-38f90b46dc5c13c70a00206a01e40e15-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -21452,7 +21453,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TRAFfic"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ANNouncement(SCPINode):
                         """
@@ -21462,12 +21463,12 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ANNouncement"
-                        args = []
+                        args = []  # type: List[str]
 
                         class STATe(SCPINode, SCPIBool):
                             """
                             `SOURce:STEReo:RDS:TRAFfic:ANNouncement:STATe
-                            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f5a48f2b2e614615.htm#ID_c2dea175dc5c29df0a00206a002c754e-e0bb6433dc5c24030a00206a01e40e15-en-US>`_
+                            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f5a48f2b2e614615.htm#ID_c2dea175dc5c29df0a00206a002c754e-e0bb6433dc5c24030a00206a01e40e15-en-US>`_
 
                             Arguments: 1, ON, OFF
                             """
@@ -21475,15 +21476,15 @@ class SMB100A_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "ON", "OFF"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SOURce:STEReo:RDS:TRAFfic:ANNouncement:STATe
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f5a48f2b2e614615.htm#ID_c2dea175dc5c29df0a00206a002c754e-e0bb6433dc5c24030a00206a01e40e15-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f5a48f2b2e614615.htm#ID_c2dea175dc5c29df0a00206a002c754e-e0bb6433dc5c24030a00206a01e40e15-en-US>`_
 
                         Arguments: 1, ON, OFF
                         """
 
-                    ANNouncement = ANNouncement()
+                    ANNouncement = ANNouncement()  # type: ignore
                     """
                     SOURce:STEReo:RDS:TRAFfic:ANNouncement
 
@@ -21498,12 +21499,12 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "PROGram"
-                        args = []
+                        args = []  # type: List[str]
 
                         class STATe(SCPINode, SCPIBool):
                             """
                             `SOURce:STEReo:RDS:TRAFfic:PROGram:STATe
-                            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6ba7f2ecc27b414b.htm#ID_2d18a912dc5c20d70a00206a00bd6c38-6bbab9b0dc5c1b580a00206a01e40e15-en-US>`_
+                            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6ba7f2ecc27b414b.htm#ID_2d18a912dc5c20d70a00206a00bd6c38-6bbab9b0dc5c1b580a00206a01e40e15-en-US>`_
 
                             Arguments: 1, ON, OFF
                             """
@@ -21511,29 +21512,29 @@ class SMB100A_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "ON", "OFF"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SOURce:STEReo:RDS:TRAFfic:PROGram:STATe
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6ba7f2ecc27b414b.htm#ID_2d18a912dc5c20d70a00206a00bd6c38-6bbab9b0dc5c1b580a00206a01e40e15-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6ba7f2ecc27b414b.htm#ID_2d18a912dc5c20d70a00206a00bd6c38-6bbab9b0dc5c1b580a00206a01e40e15-en-US>`_
 
                         Arguments: 1, ON, OFF
                         """
 
-                    PROGram = PROGram()
+                    PROGram = PROGram()  # type: ignore
                     """
                     SOURce:STEReo:RDS:TRAFfic:PROGram
 
                     Arguments:
                     """
 
-                TRAFfic = TRAFfic()
+                TRAFfic = TRAFfic()  # type: ignore
                 """
                 SOURce:STEReo:RDS:TRAFfic
 
                 Arguments:
                 """
 
-            RDS = RDS()
+            RDS = RDS()  # type: ignore
             """
             SOURce:STEReo:RDS
 
@@ -21550,7 +21551,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SIGNal"
                 args = ["ARI", "AUDio"]
 
-            SIGNal = SIGNal()
+            SIGNal = SIGNal()  # type: ignore
             """
             SOURce:STEReo:SIGNal
 
@@ -21560,7 +21561,7 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SOURce:STEReo:SOURce
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/69d8d93fd9a343d4.htm#ID_e61a5b08dc5c31900a00206a01f29de2-10435111dc5c2bf20a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/69d8d93fd9a343d4.htm#ID_e61a5b08dc5c31900a00206a01f29de2-10435111dc5c2bf20a00206a01e40e15-en-US>`_
 
                 Arguments: LFGen, LREXt, SPEXt
                 """
@@ -21568,10 +21569,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["LFGen", "LREXt", "SPEXt"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `SOURce:STEReo:SOURce
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/69d8d93fd9a343d4.htm#ID_e61a5b08dc5c31900a00206a01f29de2-10435111dc5c2bf20a00206a01e40e15-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/69d8d93fd9a343d4.htm#ID_e61a5b08dc5c31900a00206a01f29de2-10435111dc5c2bf20a00206a01e40e15-en-US>`_
 
             Arguments: LFGen, LREXt, SPEXt
             """
@@ -21579,7 +21580,7 @@ class SMB100A_gen(Instrument):
             class STATe(SCPINode, SCPIBool):
                 """
                 `SOURce:STEReo:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1e7f50df80754d97.htm#ID_755ff102dc5c48920a00206a00d7b608-7df2c8b4dc5c42f50a00206a01e40e15-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1e7f50df80754d97.htm#ID_755ff102dc5c48920a00206a00d7b608-7df2c8b4dc5c42f50a00206a01e40e15-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -21587,15 +21588,15 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SOURce:STEReo:STATe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1e7f50df80754d97.htm#ID_755ff102dc5c48920a00206a00d7b608-7df2c8b4dc5c42f50a00206a01e40e15-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1e7f50df80754d97.htm#ID_755ff102dc5c48920a00206a00d7b608-7df2c8b4dc5c42f50a00206a01e40e15-en-US>`_
 
             Arguments: 1, ON, OFF
             """
 
-        STEReo = STEReo()
+        STEReo = STEReo()  # type: ignore
         """
         SOURce:STEReo
 
@@ -21610,7 +21611,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SWEep"
-            args = []
+            args = []  # type: List[str]
 
             class BTIMe(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -21622,7 +21623,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "BTIMe"
                 args = ["LONG", "NORMal"]
 
-            BTIMe = BTIMe()
+            BTIMe = BTIMe()  # type: ignore
             """
             SOURce:SWEep:BTIMe
 
@@ -21637,7 +21638,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONTrol"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
@@ -21649,14 +21650,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:SWEep:CONTrol:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            CONTrol = CONTrol()
+            CONTrol = CONTrol()  # type: ignore
             """
             SOURce:SWEep:CONTrol
 
@@ -21671,9 +21672,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CPOint"
-                args = []
+                args = []  # type: List[str]
 
-            CPOint = CPOint()
+            CPOint = CPOint()  # type: ignore
             """
             SOURce:SWEep:CPOint
 
@@ -21690,7 +21691,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DIRection"
                 args = ["DOWN", "UP"]
 
-            DIRection = DIRection()
+            DIRection = DIRection()  # type: ignore
             """
             SOURce:SWEep:DIRection
 
@@ -21707,7 +21708,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DWELl"
                 args = ["1"]
 
-            DWELl = DWELl()
+            DWELl = DWELl()  # type: ignore
             """
             SOURce:SWEep:DWELl
 
@@ -21722,12 +21723,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FREQuency"
-                args = []
+                args = []  # type: List[str]
 
                 class DWELl(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:SWEep:FREQuency:DWELl
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/422723d8553c40b3.htm#ID_22f1352871b719430a00206a01ebbac9-df858e4171b719430a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/422723d8553c40b3.htm#ID_22f1352871b719430a00206a01ebbac9-df858e4171b719430a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -21735,10 +21736,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "DWELl"
                     args = ["1"]
 
-                DWELl = DWELl()
+                DWELl = DWELl()  # type: ignore
                 """
                 `SOURce:SWEep:FREQuency:DWELl
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/422723d8553c40b3.htm#ID_22f1352871b719430a00206a01ebbac9-df858e4171b719430a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/422723d8553c40b3.htm#ID_22f1352871b719430a00206a01ebbac9-df858e4171b719430a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -21746,7 +21747,7 @@ class SMB100A_gen(Instrument):
                 class POINts(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:SWEep:FREQuency:POINts
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5c7c5b5057a640f2.htm#ID_c2b0cb6871b70bc50a00206a0181b01c-efb3999b71b70bd50a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5c7c5b5057a640f2.htm#ID_c2b0cb6871b70bc50a00206a0181b01c-efb3999b71b70bd50a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -21754,10 +21755,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "POINts"
                     args = ["1"]
 
-                POINts = POINts()
+                POINts = POINts()  # type: ignore
                 """
                 `SOURce:SWEep:FREQuency:POINts
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5c7c5b5057a640f2.htm#ID_c2b0cb6871b70bc50a00206a0181b01c-efb3999b71b70bd50a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5c7c5b5057a640f2.htm#ID_c2b0cb6871b70bc50a00206a0181b01c-efb3999b71b70bd50a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -21765,18 +21766,18 @@ class SMB100A_gen(Instrument):
                 class RUNNing(SCPINode, SCPIQuery):
                     """
                     `SOURce:SWEep:FREQuency:RUNNing
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03da63933dbb4b18.htm#ID_0b005d4bed649e6a0a002019017c48d8-40c7ed4fed649aef0a00201900ba4ad4-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03da63933dbb4b18.htm#ID_0b005d4bed649e6a0a002019017c48d8-40c7ed4fed649aef0a00201900ba4ad4-en-US>`_
 
                     Arguments:
                     """
                     __slots__ = ()
                     _cmd = "RUNNing"
-                    args = []
+                    args = []  # type: List[str]
 
-                RUNNing = RUNNing()
+                RUNNing = RUNNing()  # type: ignore
                 """
                 `SOURce:SWEep:FREQuency:RUNNing
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03da63933dbb4b18.htm#ID_0b005d4bed649e6a0a002019017c48d8-40c7ed4fed649aef0a00201900ba4ad4-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/03da63933dbb4b18.htm#ID_0b005d4bed649e6a0a002019017c48d8-40c7ed4fed649aef0a00201900ba4ad4-en-US>`_
 
                 Arguments:
                 """
@@ -21784,7 +21785,7 @@ class SMB100A_gen(Instrument):
                 class SPACing(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:SWEep:FREQuency:SPACing
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4cac97cd94264483.htm#ID_8d191a9771b7127c0a00206a01d897a9-0439662f71b7127c0a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4cac97cd94264483.htm#ID_8d191a9771b7127c0a00206a01d897a9-0439662f71b7127c0a00206a012bc823-en-US>`_
 
                     Arguments: LINear, LOGarithmic
                     """
@@ -21792,10 +21793,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "SPACing"
                     args = ["LINear", "LOGarithmic"]
 
-                SPACing = SPACing()
+                SPACing = SPACing()  # type: ignore
                 """
                 `SOURce:SWEep:FREQuency:SPACing
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4cac97cd94264483.htm#ID_8d191a9771b7127c0a00206a01d897a9-0439662f71b7127c0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/4cac97cd94264483.htm#ID_8d191a9771b7127c0a00206a01d897a9-0439662f71b7127c0a00206a012bc823-en-US>`_
 
                 Arguments: LINear, LOGarithmic
                 """
@@ -21808,12 +21809,12 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class LINear(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:SWEep:FREQuency:STEP:LINear
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6eeae32a24f148ac.htm#ID_019e085071b6fe580a00206a0078468a-5813ce6a71b6fe580a00206a012bc823-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6eeae32a24f148ac.htm#ID_019e085071b6fe580a00206a0078468a-5813ce6a71b6fe580a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
@@ -21821,10 +21822,10 @@ class SMB100A_gen(Instrument):
                         _cmd = "LINear"
                         args = ["1"]
 
-                    LINear = LINear()
+                    LINear = LINear()  # type: ignore
                     """
                     `SOURce:SWEep:FREQuency:STEP:LINear
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6eeae32a24f148ac.htm#ID_019e085071b6fe580a00206a0078468a-5813ce6a71b6fe580a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6eeae32a24f148ac.htm#ID_019e085071b6fe580a00206a0078468a-5813ce6a71b6fe580a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -21832,7 +21833,7 @@ class SMB100A_gen(Instrument):
                     class LOGarithmic(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:SWEep:FREQuency:STEP:LOGarithmic
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ccbae2d831df45b5.htm#ID_b055cff771b704e00a00206a0023865a-f2478ac071b704e00a00206a012bc823-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ccbae2d831df45b5.htm#ID_b055cff771b704e00a00206a0023865a-f2478ac071b704e00a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
@@ -21840,22 +21841,22 @@ class SMB100A_gen(Instrument):
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
-                    LOGarithmic = LOGarithmic()
+                    LOGarithmic = LOGarithmic()  # type: ignore
                     """
                     `SOURce:SWEep:FREQuency:STEP:LOGarithmic
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ccbae2d831df45b5.htm#ID_b055cff771b704e00a00206a0023865a-f2478ac071b704e00a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ccbae2d831df45b5.htm#ID_b055cff771b704e00a00206a0023865a-f2478ac071b704e00a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:SWEep:FREQuency:STEP
 
                 Arguments:
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             SOURce:SWEep:FREQuency
 
@@ -21872,7 +21873,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "GENeration"
                 args = ["ANALog", "STEPped"]
 
-            GENeration = GENeration()
+            GENeration = GENeration()  # type: ignore
             """
             SOURce:SWEep:GENeration
 
@@ -21887,7 +21888,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MANual"
-                args = []
+                args = []  # type: List[str]
 
                 class POINt(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -21899,7 +21900,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "POINt"
                     args = ["1"]
 
-                POINt = POINt()
+                POINt = POINt()  # type: ignore
                 """
                 SOURce:SWEep:MANual:POINt
 
@@ -21916,14 +21917,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "RELative"
                     args = ["1"]
 
-                RELative = RELative()
+                RELative = RELative()  # type: ignore
                 """
                 SOURce:SWEep:MANual:RELative
 
                 Arguments: 1
                 """
 
-            MANual = MANual()
+            MANual = MANual()  # type: ignore
             """
             SOURce:SWEep:MANual
 
@@ -21938,7 +21939,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MARKer"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
@@ -21950,14 +21951,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:SWEep:MARKer:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            MARKer = MARKer()
+            MARKer = MARKer()  # type: ignore
             """
             SOURce:SWEep:MARKer
 
@@ -21974,7 +21975,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "POINts"
                 args = ["1"]
 
-            POINts = POINts()
+            POINts = POINts()  # type: ignore
             """
             SOURce:SWEep:POINts
 
@@ -21989,12 +21990,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "POWer"
-                args = []
+                args = []  # type: List[str]
 
                 class DWELl(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:SWEep:POWer:DWELl
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e0f78d0fb5574909.htm#ID_551ad14d71b750700a00206a0188e9b1-eacf1f4671b750700a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e0f78d0fb5574909.htm#ID_551ad14d71b750700a00206a0188e9b1-eacf1f4671b750700a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -22002,10 +22003,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "DWELl"
                     args = ["1"]
 
-                DWELl = DWELl()
+                DWELl = DWELl()  # type: ignore
                 """
                 `SOURce:SWEep:POWer:DWELl
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e0f78d0fb5574909.htm#ID_551ad14d71b750700a00206a0188e9b1-eacf1f4671b750700a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e0f78d0fb5574909.htm#ID_551ad14d71b750700a00206a0188e9b1-eacf1f4671b750700a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -22013,7 +22014,7 @@ class SMB100A_gen(Instrument):
                 class POINts(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SOURce:SWEep:POWer:POINts
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/dded827b58e54ae7.htm#ID_eeb8ce0071b7498a0a00206a019e8b48-f33619a371b7498a0a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/dded827b58e54ae7.htm#ID_eeb8ce0071b7498a0a00206a019e8b48-f33619a371b7498a0a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -22021,10 +22022,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "POINts"
                     args = ["1"]
 
-                POINts = POINts()
+                POINts = POINts()  # type: ignore
                 """
                 `SOURce:SWEep:POWer:POINts
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/dded827b58e54ae7.htm#ID_eeb8ce0071b7498a0a00206a019e8b48-f33619a371b7498a0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/dded827b58e54ae7.htm#ID_eeb8ce0071b7498a0a00206a019e8b48-f33619a371b7498a0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -22032,18 +22033,18 @@ class SMB100A_gen(Instrument):
                 class RUNNing(SCPINode, SCPIQuery):
                     """
                     `SOURce:SWEep:POWer:RUNNing
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/09b06d6b82a34974.htm#ID_6d0752bced643a300a002019019e51e3-74da00c4ed64381d0a00201900ba4ad4-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/09b06d6b82a34974.htm#ID_6d0752bced643a300a002019019e51e3-74da00c4ed64381d0a00201900ba4ad4-en-US>`_
 
                     Arguments:
                     """
                     __slots__ = ()
                     _cmd = "RUNNing"
-                    args = []
+                    args = []  # type: List[str]
 
-                RUNNing = RUNNing()
+                RUNNing = RUNNing()  # type: ignore
                 """
                 `SOURce:SWEep:POWer:RUNNing
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/09b06d6b82a34974.htm#ID_6d0752bced643a300a002019019e51e3-74da00c4ed64381d0a00201900ba4ad4-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/09b06d6b82a34974.htm#ID_6d0752bced643a300a002019019e51e3-74da00c4ed64381d0a00201900ba4ad4-en-US>`_
 
                 Arguments:
                 """
@@ -22058,7 +22059,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "SPACing"
                     args = ["LOGarithmic"]
 
-                SPACing = SPACing()
+                SPACing = SPACing()  # type: ignore
                 """
                 SOURce:SWEep:POWer:SPACing
 
@@ -22073,12 +22074,12 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class LOGarithmic(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SOURce:SWEep:POWer:STEP:LOGarithmic
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7a028d77a0e64432.htm#ID_42b6782c71b757170a00206a01b31ca4-4dd4e73f71b757170a00206a012bc823-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7a028d77a0e64432.htm#ID_42b6782c71b757170a00206a01b31ca4-4dd4e73f71b757170a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
@@ -22086,22 +22087,22 @@ class SMB100A_gen(Instrument):
                         _cmd = "LOGarithmic"
                         args = ["1"]
 
-                    LOGarithmic = LOGarithmic()
+                    LOGarithmic = LOGarithmic()  # type: ignore
                     """
                     `SOURce:SWEep:POWer:STEP:LOGarithmic
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7a028d77a0e64432.htm#ID_42b6782c71b757170a00206a01b31ca4-4dd4e73f71b757170a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7a028d77a0e64432.htm#ID_42b6782c71b757170a00206a01b31ca4-4dd4e73f71b757170a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SOURce:SWEep:POWer:STEP
 
                 Arguments:
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             SOURce:SWEep:POWer
 
@@ -22118,7 +22119,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SPACing"
                 args = ["LINear", "LOGarithmic"]
 
-            SPACing = SPACing()
+            SPACing = SPACing()  # type: ignore
             """
             SOURce:SWEep:SPACing
 
@@ -22133,7 +22134,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TIME"
-                args = []
+                args = []  # type: List[str]
 
                 class LLIMit(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -22145,14 +22146,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "LLIMit"
                     args = ["1"]
 
-                LLIMit = LLIMit()
+                LLIMit = LLIMit()  # type: ignore
                 """
                 SOURce:SWEep:TIME:LLIMit
 
                 Arguments: 1
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             SOURce:SWEep:TIME
 
@@ -22167,7 +22168,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRIGger"
-                args = []
+                args = []  # type: List[str]
 
                 class SOURce(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -22179,21 +22180,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "SOURce"
                     args = ["BUS", "EXTernal", "IMMediate"]
 
-                SOURce = SOURce()
+                SOURce = SOURce()  # type: ignore
                 """
                 SOURce:SWEep:TRIGger:SOURce
 
                 Arguments: BUS, EXTernal, IMMediate
                 """
 
-            TRIGger = TRIGger()
+            TRIGger = TRIGger()  # type: ignore
             """
             SOURce:SWEep:TRIGger
 
             Arguments:
             """
 
-        SWEep = SWEep()
+        SWEep = SWEep()  # type: ignore
         """
         SOURce:SWEep
 
@@ -22208,9 +22209,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TSWeep"
-            args = []
+            args = []  # type: List[str]
 
-        TSWeep = TSWeep()
+        TSWeep = TSWeep()  # type: ignore
         """
         SOURce:TSWeep
 
@@ -22225,7 +22226,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "VOR"
-            args = []
+            args = []  # type: List[str]
 
             class BANGle(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -22247,14 +22248,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "DIRection"
                     args = ["FROM", "TO"]
 
-                DIRection = DIRection()
+                DIRection = DIRection()  # type: ignore
                 """
                 SOURce:VOR:BANGle:DIRection
 
                 Arguments: FROM, TO
                 """
 
-            BANGle = BANGle()
+            BANGle = BANGle()  # type: ignore
             """
             SOURce:VOR:BANGle
 
@@ -22269,7 +22270,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COMid"
-                args = []
+                args = []  # type: List[str]
 
                 class DEPTh(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -22281,7 +22282,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "DEPTh"
                     args = ["1"]
 
-                DEPTh = DEPTh()
+                DEPTh = DEPTh()  # type: ignore
                 """
                 SOURce:VOR:COMid:DEPTh
 
@@ -22298,7 +22299,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:VOR:COMid:FREQuency
 
@@ -22315,14 +22316,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SOURce:VOR:COMid:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            COMid = COMid()
+            COMid = COMid()  # type: ignore
             """
             SOURce:VOR:COMid
 
@@ -22337,9 +22338,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PRESet"
-                args = []
+                args = []  # type: List[str]
 
-            PRESet = PRESet()
+            PRESet = PRESet()  # type: ignore
             """
             SOURce:VOR:PRESet
 
@@ -22354,7 +22355,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "REFerence"
-                args = []
+                args = []  # type: List[str]
 
                 class DEViation(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -22366,14 +22367,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "DEViation"
                     args = ["1"]
 
-                DEViation = DEViation()
+                DEViation = DEViation()  # type: ignore
                 """
                 SOURce:VOR:REFerence:DEViation
 
                 Arguments: 1
                 """
 
-            REFerence = REFerence()
+            REFerence = REFerence()  # type: ignore
             """
             SOURce:VOR:REFerence
 
@@ -22390,7 +22391,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["INT2", "INTernal2,EXTernal"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             SOURce:VOR:SOURce
 
@@ -22407,7 +22408,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SOURce:VOR:STATe
 
@@ -22422,7 +22423,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SUBCarrier"
-                args = []
+                args = []  # type: List[str]
 
                 class DEPTh(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -22434,7 +22435,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "DEPTh"
                     args = ["1"]
 
-                DEPTh = DEPTh()
+                DEPTh = DEPTh()  # type: ignore
                 """
                 SOURce:VOR:SUBCarrier:DEPTh
 
@@ -22451,14 +22452,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:VOR:SUBCarrier:FREQuency
 
                 Arguments: 1
                 """
 
-            SUBCarrier = SUBCarrier()
+            SUBCarrier = SUBCarrier()  # type: ignore
             """
             SOURce:VOR:SUBCarrier
 
@@ -22473,7 +22474,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "VAR"
-                args = []
+                args = []  # type: List[str]
 
                 class DEPTh(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -22485,7 +22486,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "DEPTh"
                     args = ["1"]
 
-                DEPTh = DEPTh()
+                DEPTh = DEPTh()  # type: ignore
                 """
                 SOURce:VOR:VAR:DEPTh
 
@@ -22502,28 +22503,28 @@ class SMB100A_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 SOURce:VOR:VAR:FREQuency
 
                 Arguments: 1
                 """
 
-            VAR = VAR()
+            VAR = VAR()  # type: ignore
             """
             SOURce:VOR:VAR
 
             Arguments:
             """
 
-        VOR = VOR()
+        VOR = VOR()  # type: ignore
         """
         SOURce:VOR
 
         Arguments:
         """
 
-    SOURce = SOURce()
+    SOURce = SOURce()  # type: ignore
     """
     SOURce
 
@@ -22540,7 +22541,7 @@ class SMB100A_gen(Instrument):
         _cmd = "SPecial_functio"
         args = ["<numeric_value>,<numeric_value>"]
 
-    SPecial_functio = SPecial_functio()
+    SPecial_functio = SPecial_functio()  # type: ignore
     """
     SPecial_functio
 
@@ -22555,7 +22556,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "STATus"
-        args = []
+        args = []  # type: List[str]
 
         class DEVice(SCPINode):
             """
@@ -22565,7 +22566,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DEVice"
-            args = []
+            args = []  # type: List[str]
 
             class CONDition(SCPINode, SCPIQuery):
                 """
@@ -22575,9 +22576,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONDition"
-                args = []
+                args = []  # type: List[str]
 
-            CONDition = CONDition()
+            CONDition = CONDition()  # type: ignore
             """
             STATus:DEVice:CONDition
 
@@ -22592,7 +22593,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DQUestionable"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -22602,9 +22603,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:DEVice:DQUestionable:CONDition
 
@@ -22621,7 +22622,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:DEVice:DQUestionable:ENABle
 
@@ -22636,9 +22637,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:DEVice:DQUestionable:EVENt
 
@@ -22653,9 +22654,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "NTRansition"
-                    args = []
+                    args = []  # type: List[str]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:DEVice:DQUestionable:NTRansition
 
@@ -22670,16 +22671,16 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PTRansition"
-                    args = []
+                    args = []  # type: List[str]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:DEVice:DQUestionable:PTRansition
 
                 Arguments:
                 """
 
-            DQUestionable = DQUestionable()
+            DQUestionable = DQUestionable()  # type: ignore
             """
             STATus:DEVice:DQUestionable
 
@@ -22696,7 +22697,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "ENABle"
                 args = ["1"]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             STATus:DEVice:ENABle
 
@@ -22711,9 +22712,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EVENt"
-                args = []
+                args = []  # type: List[str]
 
-            EVENt = EVENt()
+            EVENt = EVENt()  # type: ignore
             """
             STATus:DEVice:EVENt
 
@@ -22728,9 +22729,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NTRansition"
-                args = []
+                args = []  # type: List[str]
 
-            NTRansition = NTRansition()
+            NTRansition = NTRansition()  # type: ignore
             """
             STATus:DEVice:NTRansition
 
@@ -22745,9 +22746,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PTRansition"
-                args = []
+                args = []  # type: List[str]
 
-            PTRansition = PTRansition()
+            PTRansition = PTRansition()  # type: ignore
             """
             STATus:DEVice:PTRansition
 
@@ -22762,7 +22763,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SINTegrity"
-                args = []
+                args = []  # type: List[str]
 
                 class AMPLitude(SCPINode):
                     """
@@ -22772,7 +22773,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "AMPLitude"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CONDition(SCPINode, SCPIQuery):
                         """
@@ -22782,9 +22783,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONDition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CONDition = CONDition()
+                    CONDition = CONDition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:AMPLitude:CONDition
 
@@ -22801,7 +22802,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "ENABle"
                         args = ["1"]
 
-                    ENABle = ENABle()
+                    ENABle = ENABle()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:AMPLitude:ENABle
 
@@ -22816,9 +22817,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:AMPLitude:EVENt
 
@@ -22833,9 +22834,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "NTRansition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    NTRansition = NTRansition()
+                    NTRansition = NTRansition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:AMPLitude:NTRansition
 
@@ -22850,16 +22851,16 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "PTRansition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    PTRansition = PTRansition()
+                    PTRansition = PTRansition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:AMPLitude:PTRansition
 
                     Arguments:
                     """
 
-                AMPLitude = AMPLitude()
+                AMPLitude = AMPLitude()  # type: ignore
                 """
                 STATus:DEVice:SINTegrity:AMPLitude
 
@@ -22874,9 +22875,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:DEVice:SINTegrity:CONDition
 
@@ -22893,7 +22894,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:DEVice:SINTegrity:ENABle
 
@@ -22908,9 +22909,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:DEVice:SINTegrity:EVENt
 
@@ -22925,7 +22926,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "FREQuency"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CONDition(SCPINode, SCPIQuery):
                         """
@@ -22935,9 +22936,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONDition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CONDition = CONDition()
+                    CONDition = CONDition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:FREQuency:CONDition
 
@@ -22954,7 +22955,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "ENABle"
                         args = ["1"]
 
-                    ENABle = ENABle()
+                    ENABle = ENABle()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:FREQuency:ENABle
 
@@ -22969,9 +22970,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:FREQuency:EVENt
 
@@ -22986,9 +22987,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "NTRansition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    NTRansition = NTRansition()
+                    NTRansition = NTRansition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:FREQuency:NTRansition
 
@@ -23003,16 +23004,16 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "PTRansition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    PTRansition = PTRansition()
+                    PTRansition = PTRansition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:FREQuency:PTRansition
 
                     Arguments:
                     """
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 STATus:DEVice:SINTegrity:FREQuency
 
@@ -23027,7 +23028,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HARDware"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CONDition(SCPINode, SCPIQuery):
                         """
@@ -23037,9 +23038,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONDition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CONDition = CONDition()
+                    CONDition = CONDition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:HARDware:CONDition
 
@@ -23056,7 +23057,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "ENABle"
                         args = ["1"]
 
-                    ENABle = ENABle()
+                    ENABle = ENABle()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:HARDware:ENABle
 
@@ -23071,9 +23072,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:HARDware:EVENt
 
@@ -23088,9 +23089,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "NTRansition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    NTRansition = NTRansition()
+                    NTRansition = NTRansition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:HARDware:NTRansition
 
@@ -23105,16 +23106,16 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "PTRansition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    PTRansition = PTRansition()
+                    PTRansition = PTRansition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:HARDware:PTRansition
 
                     Arguments:
                     """
 
-                HARDware = HARDware()
+                HARDware = HARDware()  # type: ignore
                 """
                 STATus:DEVice:SINTegrity:HARDware
 
@@ -23129,7 +23130,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MODulation"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CONDition(SCPINode, SCPIQuery):
                         """
@@ -23139,9 +23140,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONDition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CONDition = CONDition()
+                    CONDition = CONDition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:MODulation:CONDition
 
@@ -23158,7 +23159,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "ENABle"
                         args = ["1"]
 
-                    ENABle = ENABle()
+                    ENABle = ENABle()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:MODulation:ENABle
 
@@ -23173,9 +23174,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:MODulation:EVENt
 
@@ -23190,9 +23191,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "NTRansition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    NTRansition = NTRansition()
+                    NTRansition = NTRansition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:MODulation:NTRansition
 
@@ -23207,16 +23208,16 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "PTRansition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    PTRansition = PTRansition()
+                    PTRansition = PTRansition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:MODulation:PTRansition
 
                     Arguments:
                     """
 
-                MODulation = MODulation()
+                MODulation = MODulation()  # type: ignore
                 """
                 STATus:DEVice:SINTegrity:MODulation
 
@@ -23231,9 +23232,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "NTRansition"
-                    args = []
+                    args = []  # type: List[str]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:DEVice:SINTegrity:NTRansition
 
@@ -23248,9 +23249,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PTRansition"
-                    args = []
+                    args = []  # type: List[str]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:DEVice:SINTegrity:PTRansition
 
@@ -23265,7 +23266,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "REFerence"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CONDition(SCPINode, SCPIQuery):
                         """
@@ -23275,9 +23276,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONDition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CONDition = CONDition()
+                    CONDition = CONDition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:REFerence:CONDition
 
@@ -23294,7 +23295,7 @@ class SMB100A_gen(Instrument):
                         _cmd = "ENABle"
                         args = ["1"]
 
-                    ENABle = ENABle()
+                    ENABle = ENABle()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:REFerence:ENABle
 
@@ -23309,9 +23310,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:REFerence:EVENt
 
@@ -23326,9 +23327,9 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "NTRansition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    NTRansition = NTRansition()
+                    NTRansition = NTRansition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:REFerence:NTRansition
 
@@ -23343,30 +23344,30 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "PTRansition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    PTRansition = PTRansition()
+                    PTRansition = PTRansition()  # type: ignore
                     """
                     STATus:DEVice:SINTegrity:REFerence:PTRansition
 
                     Arguments:
                     """
 
-                REFerence = REFerence()
+                REFerence = REFerence()  # type: ignore
                 """
                 STATus:DEVice:SINTegrity:REFerence
 
                 Arguments:
                 """
 
-            SINTegrity = SINTegrity()
+            SINTegrity = SINTegrity()  # type: ignore
             """
             STATus:DEVice:SINTegrity
 
             Arguments:
             """
 
-        DEVice = DEVice()
+        DEVice = DEVice()  # type: ignore
         """
         STATus:DEVice
 
@@ -23381,7 +23382,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "OPERation"
-            args = []
+            args = []  # type: List[str]
 
             class BASeband(SCPINode):
                 """
@@ -23391,7 +23392,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BASeband"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23401,9 +23402,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:OPERation:BASeband:CONDition
 
@@ -23420,7 +23421,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:OPERation:BASeband:ENABle
 
@@ -23435,9 +23436,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:OPERation:BASeband:EVENt
 
@@ -23454,7 +23455,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:OPERation:BASeband:NTRansition
 
@@ -23471,14 +23472,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:OPERation:BASeband:PTRansition
 
                 Arguments: 1
                 """
 
-            BASeband = BASeband()
+            BASeband = BASeband()  # type: ignore
             """
             STATus:OPERation:BASeband
 
@@ -23493,7 +23494,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BIT"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -23503,9 +23504,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:OPERation:BIT:CONDition
 
@@ -23522,7 +23523,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:OPERation:BIT:ENABle
 
@@ -23537,9 +23538,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:OPERation:BIT:EVENt
 
@@ -23556,7 +23557,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1", "ON", "OFF"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:OPERation:BIT:NTRansition
 
@@ -23573,14 +23574,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1", "ON", "OFF"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:OPERation:BIT:PTRansition
 
                 Arguments: 1, ON, OFF
                 """
 
-            BIT = BIT()
+            BIT = BIT()  # type: ignore
             """
             STATus:OPERation:BIT
 
@@ -23590,7 +23591,7 @@ class SMB100A_gen(Instrument):
             class CONDition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:OPERation:CONDition
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/eb9e616c44d34723.htm#ID_4d81c86771e8195f0a00206a0077942b-79a3ea6771e8195f0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/eb9e616c44d34723.htm#ID_4d81c86771e8195f0a00206a0077942b-79a3ea6771e8195f0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -23598,10 +23599,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "CONDition"
                 args = ["1"]
 
-            CONDition = CONDition()
+            CONDition = CONDition()  # type: ignore
             """
             `STATus:OPERation:CONDition
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/eb9e616c44d34723.htm#ID_4d81c86771e8195f0a00206a0077942b-79a3ea6771e8195f0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/eb9e616c44d34723.htm#ID_4d81c86771e8195f0a00206a0077942b-79a3ea6771e8195f0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -23609,7 +23610,7 @@ class SMB100A_gen(Instrument):
             class ENABle(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:OPERation:ENABle
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/98bc7031b17e43d1.htm#ID_8a49b59171e820350a00206a00df2aff-e8cb628971e820350a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/98bc7031b17e43d1.htm#ID_8a49b59171e820350a00206a00df2aff-e8cb628971e820350a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -23617,10 +23618,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "ENABle"
                 args = ["1"]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             `STATus:OPERation:ENABle
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/98bc7031b17e43d1.htm#ID_8a49b59171e820350a00206a00df2aff-e8cb628971e820350a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/98bc7031b17e43d1.htm#ID_8a49b59171e820350a00206a00df2aff-e8cb628971e820350a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -23628,18 +23629,18 @@ class SMB100A_gen(Instrument):
             class EVENt(SCPINode, SCPIQuery):
                 """
                 `STATus:OPERation:EVENt
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6adf4ecb81884cba.htm#ID_4526902e71e80ba30a00206a0056f13c-3203e98571e80bb30a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6adf4ecb81884cba.htm#ID_4526902e71e80ba30a00206a0056f13c-3203e98571e80bb30a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "EVENt"
-                args = []
+                args = []  # type: List[str]
 
-            EVENt = EVENt()
+            EVENt = EVENt()  # type: ignore
             """
             `STATus:OPERation:EVENt
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6adf4ecb81884cba.htm#ID_4526902e71e80ba30a00206a0056f13c-3203e98571e80bb30a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/6adf4ecb81884cba.htm#ID_4526902e71e80ba30a00206a0056f13c-3203e98571e80bb30a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -23647,7 +23648,7 @@ class SMB100A_gen(Instrument):
             class NTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:OPERation:NTRansition
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7972c214b7914431.htm#ID_c40b400271e8268e0a00206a01d0b5f6-bab207fb71e8268e0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7972c214b7914431.htm#ID_c40b400271e8268e0a00206a01d0b5f6-bab207fb71e8268e0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -23655,10 +23656,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "NTRansition"
                 args = ["1"]
 
-            NTRansition = NTRansition()
+            NTRansition = NTRansition()  # type: ignore
             """
             `STATus:OPERation:NTRansition
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7972c214b7914431.htm#ID_c40b400271e8268e0a00206a01d0b5f6-bab207fb71e8268e0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/7972c214b7914431.htm#ID_c40b400271e8268e0a00206a01d0b5f6-bab207fb71e8268e0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -23673,7 +23674,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "NTRanstition"
                 args = ["1"]
 
-            NTRanstition = NTRanstition()
+            NTRanstition = NTRanstition()  # type: ignore
             """
             STATus:OPERation:NTRanstition
 
@@ -23683,7 +23684,7 @@ class SMB100A_gen(Instrument):
             class PTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:OPERation:PTRansition
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/19ddd521fccc4c10.htm#ID_7baf119671e812690a00206a0185198a-e4673fbb71e812690a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/19ddd521fccc4c10.htm#ID_7baf119671e812690a00206a0185198a-e4673fbb71e812690a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -23691,10 +23692,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "PTRansition"
                 args = ["1"]
 
-            PTRansition = PTRansition()
+            PTRansition = PTRansition()  # type: ignore
             """
             `STATus:OPERation:PTRansition
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/19ddd521fccc4c10.htm#ID_7baf119671e812690a00206a0185198a-e4673fbb71e812690a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/19ddd521fccc4c10.htm#ID_7baf119671e812690a00206a0185198a-e4673fbb71e812690a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -23709,14 +23710,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "PTRanstition"
                 args = ["1"]
 
-            PTRanstition = PTRanstition()
+            PTRanstition = PTRanstition()  # type: ignore
             """
             STATus:OPERation:PTRanstition
 
             Arguments: 1
             """
 
-        OPERation = OPERation()
+        OPERation = OPERation()  # type: ignore
         """
         STATus:OPERation
 
@@ -23726,18 +23727,18 @@ class SMB100A_gen(Instrument):
         class PRESet(SCPINode, SCPISet):
             """
             `STATus:PRESet
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/790fdbfc3c41487f.htm#ID_e484e63b71e7fde70a00206a00a80b3f-98d3fe7771e7fde70a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/790fdbfc3c41487f.htm#ID_e484e63b71e7fde70a00206a00a80b3f-98d3fe7771e7fde70a00206a012bc823-en-US>`_
 
             Arguments:
             """
             __slots__ = ()
             _cmd = "PRESet"
-            args = []
+            args = []  # type: List[str]
 
-        PRESet = PRESet()
+        PRESet = PRESet()  # type: ignore
         """
         `STATus:PRESet
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/790fdbfc3c41487f.htm#ID_e484e63b71e7fde70a00206a00a80b3f-98d3fe7771e7fde70a00206a012bc823-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/790fdbfc3c41487f.htm#ID_e484e63b71e7fde70a00206a00a80b3f-98d3fe7771e7fde70a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -23750,7 +23751,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "QUEStionable"
-            args = []
+            args = []  # type: List[str]
 
             class BERT(SCPINode):
                 """
@@ -23760,7 +23761,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BERT"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23770,9 +23771,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:QUEStionable:BERT:CONDition
 
@@ -23789,7 +23790,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:QUEStionable:BERT:ENABle
 
@@ -23804,9 +23805,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:QUEStionable:BERT:EVENt
 
@@ -23823,7 +23824,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:BERT:NTRansition
 
@@ -23840,14 +23841,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:BERT:PTRansition
 
                 Arguments: 1
                 """
 
-            BERT = BERT()
+            BERT = BERT()  # type: ignore
             """
             STATus:QUEStionable:BERT
 
@@ -23862,7 +23863,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BIT"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -23872,9 +23873,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:QUEStionable:BIT:CONDition
 
@@ -23891,7 +23892,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1", "ON", "OFF"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:QUEStionable:BIT:ENABle
 
@@ -23906,9 +23907,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:QUEStionable:BIT:EVENt
 
@@ -23925,7 +23926,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1", "ON", "OFF"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:BIT:NTRansition
 
@@ -23942,14 +23943,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1", "ON", "OFF"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:BIT:PTRansition
 
                 Arguments: 1, ON, OFF
                 """
 
-            BIT = BIT()
+            BIT = BIT()  # type: ignore
             """
             STATus:QUEStionable:BIT
 
@@ -23964,7 +23965,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CALibration"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23974,9 +23975,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:QUEStionable:CALibration:CONDition
 
@@ -23993,7 +23994,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:QUEStionable:CALibration:ENABle
 
@@ -24008,9 +24009,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:QUEStionable:CALibration:EVENt
 
@@ -24027,7 +24028,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:CALibration:NTRansition
 
@@ -24044,14 +24045,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:CALibration:PTRansition
 
                 Arguments: 1
                 """
 
-            CALibration = CALibration()
+            CALibration = CALibration()  # type: ignore
             """
             STATus:QUEStionable:CALibration
 
@@ -24061,7 +24062,7 @@ class SMB100A_gen(Instrument):
             class CONDition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:QUEStionable:CONDition
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f08a3423b9ea496f.htm#ID_e3fc15a371e842430a00206a009728a6-98e12c6f71e842430a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f08a3423b9ea496f.htm#ID_e3fc15a371e842430a00206a009728a6-98e12c6f71e842430a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -24069,10 +24070,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "CONDition"
                 args = ["1"]
 
-            CONDition = CONDition()
+            CONDition = CONDition()  # type: ignore
             """
             `STATus:QUEStionable:CONDition
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f08a3423b9ea496f.htm#ID_e3fc15a371e842430a00206a009728a6-98e12c6f71e842430a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f08a3423b9ea496f.htm#ID_e3fc15a371e842430a00206a009728a6-98e12c6f71e842430a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -24080,7 +24081,7 @@ class SMB100A_gen(Instrument):
             class ENABle(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:QUEStionable:ENABle
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08e648cd32434240.htm#ID_d432e5c771e849670a00206a00cb59b5-0bf1cb4571e849670a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08e648cd32434240.htm#ID_d432e5c771e849670a00206a00cb59b5-0bf1cb4571e849670a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -24088,10 +24089,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "ENABle"
                 args = ["1"]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             `STATus:QUEStionable:ENABle
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08e648cd32434240.htm#ID_d432e5c771e849670a00206a00cb59b5-0bf1cb4571e849670a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/08e648cd32434240.htm#ID_d432e5c771e849670a00206a00cb59b5-0bf1cb4571e849670a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -24099,18 +24100,18 @@ class SMB100A_gen(Instrument):
             class EVENt(SCPINode, SCPIQuery):
                 """
                 `STATus:QUEStionable:EVENt
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/baaaa61d6eeb4c8f.htm#ID_8f72e6de71e834880a00206a01c75738-c55f605671e834880a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/baaaa61d6eeb4c8f.htm#ID_8f72e6de71e834880a00206a01c75738-c55f605671e834880a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "EVENt"
-                args = []
+                args = []  # type: List[str]
 
-            EVENt = EVENt()
+            EVENt = EVENt()  # type: ignore
             """
             `STATus:QUEStionable:EVENt
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/baaaa61d6eeb4c8f.htm#ID_8f72e6de71e834880a00206a01c75738-c55f605671e834880a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/baaaa61d6eeb4c8f.htm#ID_8f72e6de71e834880a00206a01c75738-c55f605671e834880a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -24123,7 +24124,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FREQuency"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -24133,9 +24134,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:QUEStionable:FREQuency:CONDition
 
@@ -24152,7 +24153,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:QUEStionable:FREQuency:ENABle
 
@@ -24167,9 +24168,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:QUEStionable:FREQuency:EVENt
 
@@ -24186,7 +24187,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:FREQuency:NTRansition
 
@@ -24203,14 +24204,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:FREQuency:PTRansition
 
                 Arguments: 1
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             STATus:QUEStionable:FREQuency
 
@@ -24225,7 +24226,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MODulation"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -24235,9 +24236,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:QUEStionable:MODulation:CONDition
 
@@ -24254,7 +24255,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:QUEStionable:MODulation:ENABle
 
@@ -24269,9 +24270,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:QUEStionable:MODulation:EVENt
 
@@ -24288,7 +24289,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:MODulation:NTRansition
 
@@ -24305,14 +24306,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:MODulation:PTRansition
 
                 Arguments: 1
                 """
 
-            MODulation = MODulation()
+            MODulation = MODulation()  # type: ignore
             """
             STATus:QUEStionable:MODulation
 
@@ -24322,7 +24323,7 @@ class SMB100A_gen(Instrument):
             class NTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:QUEStionable:NTRansition
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/792d9ce3f9bf4fdd.htm#ID_3172142271e8509b0a00206a01b3f2a1-b4d8282f71e8509b0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/792d9ce3f9bf4fdd.htm#ID_3172142271e8509b0a00206a01b3f2a1-b4d8282f71e8509b0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -24330,10 +24331,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "NTRansition"
                 args = ["1"]
 
-            NTRansition = NTRansition()
+            NTRansition = NTRansition()  # type: ignore
             """
             `STATus:QUEStionable:NTRansition
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/792d9ce3f9bf4fdd.htm#ID_3172142271e8509b0a00206a01b3f2a1-b4d8282f71e8509b0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/792d9ce3f9bf4fdd.htm#ID_3172142271e8509b0a00206a01b3f2a1-b4d8282f71e8509b0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -24348,7 +24349,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "NTRanstition"
                 args = ["1"]
 
-            NTRanstition = NTRanstition()
+            NTRanstition = NTRanstition()  # type: ignore
             """
             STATus:QUEStionable:NTRanstition
 
@@ -24363,7 +24364,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PAGing"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -24373,9 +24374,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:QUEStionable:PAGing:CONDition
 
@@ -24392,7 +24393,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:QUEStionable:PAGing:ENABle
 
@@ -24407,9 +24408,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:QUEStionable:PAGing:EVENt
 
@@ -24426,7 +24427,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:PAGing:NTRansition
 
@@ -24443,14 +24444,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:PAGing:PTRansition
 
                 Arguments: 1
                 """
 
-            PAGing = PAGing()
+            PAGing = PAGing()  # type: ignore
             """
             STATus:QUEStionable:PAGing
 
@@ -24465,7 +24466,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "POWer"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -24475,9 +24476,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 STATus:QUEStionable:POWer:CONDition
 
@@ -24494,7 +24495,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 STATus:QUEStionable:POWer:ENABle
 
@@ -24509,9 +24510,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 STATus:QUEStionable:POWer:EVENt
 
@@ -24528,7 +24529,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:POWer:NTRansition
 
@@ -24545,14 +24546,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 STATus:QUEStionable:POWer:PTRansition
 
                 Arguments: 1
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             STATus:QUEStionable:POWer
 
@@ -24562,7 +24563,7 @@ class SMB100A_gen(Instrument):
             class PTRansition(SCPINode, SCPIQuery, SCPISet):
                 """
                 `STATus:QUEStionable:PTRansition
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/13c14e2f83164444.htm#ID_4ed8eafd71e83b5e0a00206a01c2fbb1-c632286d71e83b5e0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/13c14e2f83164444.htm#ID_4ed8eafd71e83b5e0a00206a01c2fbb1-c632286d71e83b5e0a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
@@ -24570,10 +24571,10 @@ class SMB100A_gen(Instrument):
                 _cmd = "PTRansition"
                 args = ["1"]
 
-            PTRansition = PTRansition()
+            PTRansition = PTRansition()  # type: ignore
             """
             `STATus:QUEStionable:PTRansition
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/13c14e2f83164444.htm#ID_4ed8eafd71e83b5e0a00206a01c2fbb1-c632286d71e83b5e0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/13c14e2f83164444.htm#ID_4ed8eafd71e83b5e0a00206a01c2fbb1-c632286d71e83b5e0a00206a012bc823-en-US>`_
 
             Arguments: 1
             """
@@ -24588,21 +24589,21 @@ class SMB100A_gen(Instrument):
                 _cmd = "PTRanstition"
                 args = ["1"]
 
-            PTRanstition = PTRanstition()
+            PTRanstition = PTRanstition()  # type: ignore
             """
             STATus:QUEStionable:PTRanstition
 
             Arguments: 1
             """
 
-        QUEStionable = QUEStionable()
+        QUEStionable = QUEStionable()  # type: ignore
         """
         STATus:QUEStionable
 
         Arguments:
         """
 
-    STATus = STATus()
+    STATus = STATus()  # type: ignore
     """
     STATus
 
@@ -24629,14 +24630,14 @@ class SMB100A_gen(Instrument):
             _cmd = "Fast"
             args = ["1"]
 
-        Fast = Fast()
+        Fast = Fast()  # type: ignore
         """
         STore:Fast
 
         Arguments: 1
         """
 
-    STore = STore()
+    STore = STore()  # type: ignore
     """
     STore
 
@@ -24651,7 +24652,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SWEep"
-        args = []
+        args = []  # type: List[str]
 
         class CFRQ(SCPINode):
             """
@@ -24661,7 +24662,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CFRQ"
-            args = []
+            args = []  # type: List[str]
 
             class LOGinc(SCPINode, SCPISet):
                 """
@@ -24673,7 +24674,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "LOGinc"
                 args = ["1"]
 
-            LOGinc = LOGinc()
+            LOGinc = LOGinc()  # type: ignore
             """
             SWEep:CFRQ:LOGinc
 
@@ -24690,7 +24691,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MKRNum"
                 args = ["1"]
 
-            MKRNum = MKRNum()
+            MKRNum = MKRNum()  # type: ignore
             """
             SWEep:CFRQ:MKRNum
 
@@ -24705,9 +24706,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MKRoff"
-                args = []
+                args = []  # type: List[str]
 
-            MKRoff = MKRoff()
+            MKRoff = MKRoff()  # type: ignore
             """
             SWEep:CFRQ:MKRoff
 
@@ -24722,9 +24723,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MKRon"
-                args = []
+                args = []  # type: List[str]
 
-            MKRon = MKRon()
+            MKRon = MKRon()  # type: ignore
             """
             SWEep:CFRQ:MKRon
 
@@ -24741,7 +24742,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STARt"
                 args = ["1"]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             SWEep:CFRQ:STARt
 
@@ -24758,14 +24759,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "VALue"
                 args = ["1"]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             SWEep:CFRQ:VALue
 
             Arguments: 1
             """
 
-        CFRQ = CFRQ()
+        CFRQ = CFRQ()  # type: ignore
         """
         SWEep:CFRQ
 
@@ -24780,7 +24781,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FREQuency"
-            args = []
+            args = []  # type: List[str]
 
             class GENeration(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -24792,7 +24793,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "GENeration"
                 args = ["ANALog", "STEPped"]
 
-            GENeration = GENeration()
+            GENeration = GENeration()  # type: ignore
             """
             SWEep:FREQuency:GENeration
 
@@ -24809,7 +24810,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SPACing"
                 args = ["LINear", "LOGarithmic"]
 
-            SPACing = SPACing()
+            SPACing = SPACing()  # type: ignore
             """
             SWEep:FREQuency:SPACing
 
@@ -24824,7 +24825,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TIME"
-                args = []
+                args = []  # type: List[str]
 
                 class STEP(SCPINode):
                     """
@@ -24834,7 +24835,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STEP"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INCRement(SCPINode, SCPIQuery):
                         """
@@ -24846,28 +24847,28 @@ class SMB100A_gen(Instrument):
                         _cmd = "INCRement"
                         args = ["1"]
 
-                    INCRement = INCRement()
+                    INCRement = INCRement()  # type: ignore
                     """
                     SWEep:FREQuency:TIME:STEP:INCRement
 
                     Arguments: 1
                     """
 
-                STEP = STEP()
+                STEP = STEP()  # type: ignore
                 """
                 SWEep:FREQuency:TIME:STEP
 
                 Arguments:
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             SWEep:FREQuency:TIME
 
             Arguments:
             """
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         SWEep:FREQuency
 
@@ -24882,7 +24883,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "INTF"
-            args = []
+            args = []  # type: List[str]
 
             class MKRNum(SCPINode, SCPISet):
                 """
@@ -24894,7 +24895,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MKRNum"
                 args = ["1"]
 
-            MKRNum = MKRNum()
+            MKRNum = MKRNum()  # type: ignore
             """
             SWEep:INTF:MKRNum
 
@@ -24909,9 +24910,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MKRoff"
-                args = []
+                args = []  # type: List[str]
 
-            MKRoff = MKRoff()
+            MKRoff = MKRoff()  # type: ignore
             """
             SWEep:INTF:MKRoff
 
@@ -24926,9 +24927,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MKRon"
-                args = []
+                args = []  # type: List[str]
 
-            MKRon = MKRon()
+            MKRon = MKRon()  # type: ignore
             """
             SWEep:INTF:MKRon
 
@@ -24945,7 +24946,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STARt"
                 args = ["1"]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             SWEep:INTF:STARt
 
@@ -24962,14 +24963,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "VALue"
                 args = ["1"]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             SWEep:INTF:VALue
 
             Arguments: 1
             """
 
-        INTF = INTF()
+        INTF = INTF()  # type: ignore
         """
         SWEep:INTF
 
@@ -24984,7 +24985,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LFGF"
-            args = []
+            args = []  # type: List[str]
 
             class MKRNum(SCPINode, SCPISet):
                 """
@@ -24996,7 +24997,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MKRNum"
                 args = ["1"]
 
-            MKRNum = MKRNum()
+            MKRNum = MKRNum()  # type: ignore
             """
             SWEep:LFGF:MKRNum
 
@@ -25011,9 +25012,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MKRoff"
-                args = []
+                args = []  # type: List[str]
 
-            MKRoff = MKRoff()
+            MKRoff = MKRoff()  # type: ignore
             """
             SWEep:LFGF:MKRoff
 
@@ -25028,9 +25029,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MKRon"
-                args = []
+                args = []  # type: List[str]
 
-            MKRon = MKRon()
+            MKRon = MKRon()  # type: ignore
             """
             SWEep:LFGF:MKRon
 
@@ -25047,7 +25048,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STARt"
                 args = ["1"]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             SWEep:LFGF:STARt
 
@@ -25064,14 +25065,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "VALue"
                 args = ["1"]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             SWEep:LFGF:VALue
 
             Arguments: 1
             """
 
-        LFGF = LFGF()
+        LFGF = LFGF()  # type: ignore
         """
         SWEep:LFGF
 
@@ -25086,7 +25087,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LFGL"
-            args = []
+            args = []  # type: List[str]
 
             class MKRNum(SCPINode, SCPISet):
                 """
@@ -25098,7 +25099,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MKRNum"
                 args = ["1"]
 
-            MKRNum = MKRNum()
+            MKRNum = MKRNum()  # type: ignore
             """
             SWEep:LFGL:MKRNum
 
@@ -25113,9 +25114,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MKRoff"
-                args = []
+                args = []  # type: List[str]
 
-            MKRoff = MKRoff()
+            MKRoff = MKRoff()  # type: ignore
             """
             SWEep:LFGL:MKRoff
 
@@ -25130,9 +25131,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MKRon"
-                args = []
+                args = []  # type: List[str]
 
-            MKRon = MKRon()
+            MKRon = MKRon()  # type: ignore
             """
             SWEep:LFGL:MKRon
 
@@ -25149,7 +25150,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STARt"
                 args = ["1"]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             SWEep:LFGL:STARt
 
@@ -25166,14 +25167,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "VALue"
                 args = ["1"]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             SWEep:LFGL:VALue
 
             Arguments: 1
             """
 
-        LFGL = LFGL()
+        LFGL = LFGL()  # type: ignore
         """
         SWEep:LFGL
 
@@ -25188,9 +25189,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MKRoff"
-            args = []
+            args = []  # type: List[str]
 
-        MKRoff = MKRoff()
+        MKRoff = MKRoff()  # type: ignore
         """
         SWEep:MKRoff
 
@@ -25205,9 +25206,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MKRon"
-            args = []
+            args = []  # type: List[str]
 
-        MKRon = MKRon()
+        MKRon = MKRon()  # type: ignore
         """
         SWEep:MKRon
 
@@ -25222,9 +25223,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "RESet"
-            args = []
+            args = []  # type: List[str]
 
-        RESet = RESet()
+        RESet = RESet()  # type: ignore
         """
         SWEep:RESet
 
@@ -25239,7 +25240,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "RFLV"
-            args = []
+            args = []  # type: List[str]
 
             class MKRNum(SCPINode, SCPISet):
                 """
@@ -25251,7 +25252,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MKRNum"
                 args = ["1"]
 
-            MKRNum = MKRNum()
+            MKRNum = MKRNum()  # type: ignore
             """
             SWEep:RFLV:MKRNum
 
@@ -25266,9 +25267,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MKRoff"
-                args = []
+                args = []  # type: List[str]
 
-            MKRoff = MKRoff()
+            MKRoff = MKRoff()  # type: ignore
             """
             SWEep:RFLV:MKRoff
 
@@ -25283,9 +25284,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MKRon"
-                args = []
+                args = []  # type: List[str]
 
-            MKRon = MKRon()
+            MKRon = MKRon()  # type: ignore
             """
             SWEep:RFLV:MKRon
 
@@ -25302,7 +25303,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "STARt"
                 args = ["1"]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             SWEep:RFLV:STARt
 
@@ -25319,21 +25320,21 @@ class SMB100A_gen(Instrument):
                 _cmd = "VALue"
                 args = ["1"]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             SWEep:RFLV:VALue
 
             Arguments: 1
             """
 
-        RFLV = RFLV()
+        RFLV = RFLV()  # type: ignore
         """
         SWEep:RFLV
 
         Arguments:
         """
 
-    SWEep = SWEep()
+    SWEep = SWEep()  # type: ignore
     """
     SWEep
 
@@ -25348,7 +25349,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SYSTem"
-        args = []
+        args = []  # type: List[str]
 
         class ALTernate(SCPINode):
             """
@@ -25358,7 +25359,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ALTernate"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPIBool):
                 """
@@ -25370,14 +25371,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SYSTem:ALTernate:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        ALTernate = ALTernate()
+        ALTernate = ALTernate()  # type: ignore
         """
         SYSTem:ALTernate
 
@@ -25392,7 +25393,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "BEEPer"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPIBool):
                 """
@@ -25404,14 +25405,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SYSTem:BEEPer:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        BEEPer = BEEPer()
+        BEEPer = BEEPer()  # type: ignore
         """
         SYSTem:BEEPer
 
@@ -25426,9 +25427,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CAPability"
-            args = []
+            args = []  # type: List[str]
 
-        CAPability = CAPability()
+        CAPability = CAPability()  # type: ignore
         """
         SYSTem:CAPability
 
@@ -25443,7 +25444,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "COMMunicate"
-            args = []
+            args = []  # type: List[str]
 
             class GPIB(SCPINode):
                 """
@@ -25453,7 +25454,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "GPIB"
-                args = []
+                args = []  # type: List[str]
 
                 class ADDRess(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -25465,7 +25466,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ADDRess"
                     args = ["1"]
 
-                ADDRess = ADDRess()
+                ADDRess = ADDRess()  # type: ignore
                 """
                 SYSTem:COMMunicate:GPIB:ADDRess
 
@@ -25480,12 +25481,12 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SELF"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ADDRess(SCPINode, SCPIQuery, SCPISet):
                         """
                         `SYSTem:COMMunicate:GPIB:SELF:ADDRess
-                        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2c2c393234144769.htm#ID_048f099271caf99b0a00206a00d986d1-b9d7e0eb71caf99b0a00206a012bc823-en-US>`_
+                        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2c2c393234144769.htm#ID_048f099271caf99b0a00206a00d986d1-b9d7e0eb71caf99b0a00206a012bc823-en-US>`_
 
                         Arguments: 1
                         """
@@ -25493,22 +25494,22 @@ class SMB100A_gen(Instrument):
                         _cmd = "ADDRess"
                         args = ["1"]
 
-                    ADDRess = ADDRess()
+                    ADDRess = ADDRess()  # type: ignore
                     """
                     `SYSTem:COMMunicate:GPIB:SELF:ADDRess
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2c2c393234144769.htm#ID_048f099271caf99b0a00206a00d986d1-b9d7e0eb71caf99b0a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2c2c393234144769.htm#ID_048f099271caf99b0a00206a00d986d1-b9d7e0eb71caf99b0a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
 
-                SELF = SELF()
+                SELF = SELF()  # type: ignore
                 """
                 SYSTem:COMMunicate:GPIB:SELF
 
                 Arguments:
                 """
 
-            GPIB = GPIB()
+            GPIB = GPIB()  # type: ignore
             """
             SYSTem:COMMunicate:GPIB
 
@@ -25523,9 +25524,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "GTLocal"
-                args = []
+                args = []  # type: List[str]
 
-            GTLocal = GTLocal()
+            GTLocal = GTLocal()  # type: ignore
             """
             SYSTem:COMMunicate:GTLocal
 
@@ -25540,7 +25541,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LAN"
-                args = []
+                args = []  # type: List[str]
 
                 class CONFig(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -25552,7 +25553,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "CONFig"
                     args = ["AIP", "AUTO", "DHCP", "MANual"]
 
-                CONFig = CONFig()
+                CONFig = CONFig()  # type: ignore
                 """
                 SYSTem:COMMunicate:LAN:CONFig
 
@@ -25567,9 +25568,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DEFaults"
-                    args = []
+                    args = []  # type: List[str]
 
-                DEFaults = DEFaults()
+                DEFaults = DEFaults()  # type: ignore
                 """
                 SYSTem:COMMunicate:LAN:DEFaults
 
@@ -25586,7 +25587,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "DOMain"
                     args = ["'string'"]
 
-                DOMain = DOMain()
+                DOMain = DOMain()  # type: ignore
                 """
                 SYSTem:COMMunicate:LAN:DOMain
 
@@ -25603,7 +25604,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "GATeway"
                     args = ["'string'"]
 
-                GATeway = GATeway()
+                GATeway = GATeway()  # type: ignore
                 """
                 SYSTem:COMMunicate:LAN:GATeway
 
@@ -25620,7 +25621,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "HOSTname"
                     args = ["'string'"]
 
-                HOSTname = HOSTname()
+                HOSTname = HOSTname()  # type: ignore
                 """
                 SYSTem:COMMunicate:LAN:HOSTname
 
@@ -25635,9 +25636,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RESTart"
-                    args = []
+                    args = []  # type: List[str]
 
-                RESTart = RESTart()
+                RESTart = RESTart()  # type: ignore
                 """
                 SYSTem:COMMunicate:LAN:RESTart
 
@@ -25654,14 +25655,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "SUBNet"
                     args = ["'string'"]
 
-                SUBNet = SUBNet()
+                SUBNet = SUBNet()  # type: ignore
                 """
                 SYSTem:COMMunicate:LAN:SUBNet
 
                 Arguments: 'string'
                 """
 
-            LAN = LAN()
+            LAN = LAN()  # type: ignore
             """
             SYSTem:COMMunicate:LAN
 
@@ -25676,7 +25677,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PMETer"
-                args = []
+                args = []  # type: List[str]
 
                 class ADDRess(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -25688,7 +25689,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ADDRess"
                     args = ["1"]
 
-                ADDRess = ADDRess()
+                ADDRess = ADDRess()  # type: ignore
                 """
                 SYSTem:COMMunicate:PMETer:ADDRess
 
@@ -25705,7 +25706,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "CHANnel"
                     args = ["A", "B"]
 
-                CHANnel = CHANnel()
+                CHANnel = CHANnel()  # type: ignore
                 """
                 SYSTem:COMMunicate:PMETer:CHANnel
 
@@ -25722,14 +25723,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "TIMeout"
                     args = ["1"]
 
-                TIMeout = TIMeout()
+                TIMeout = TIMeout()  # type: ignore
                 """
                 SYSTem:COMMunicate:PMETer:TIMeout
 
                 Arguments: 1
                 """
 
-            PMETer = PMETer()
+            PMETer = PMETer()  # type: ignore
             """
             SYSTem:COMMunicate:PMETer
 
@@ -25744,12 +25745,12 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SERial"
-                args = []
+                args = []  # type: List[str]
 
                 class PARity(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SYSTem:COMMunicate:SERial:PARity
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/007a87c5bc084b7e.htm#ID_ed84c7fa71cc127d0a00206a0162bb19-92f11b0771cc127d0a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/007a87c5bc084b7e.htm#ID_ed84c7fa71cc127d0a00206a0162bb19-92f11b0771cc127d0a00206a012bc823-en-US>`_
 
                     Arguments: EVEN, NONE, ODD, ONE, ZERO
                     """
@@ -25757,10 +25758,10 @@ class SMB100A_gen(Instrument):
                     _cmd = "PARity"
                     args = ["EVEN", "NONE", "ODD", "ONE", "ZERO"]
 
-                PARity = PARity()
+                PARity = PARity()  # type: ignore
                 """
                 `SYSTem:COMMunicate:SERial:PARity
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/007a87c5bc084b7e.htm#ID_ed84c7fa71cc127d0a00206a0162bb19-92f11b0771cc127d0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/007a87c5bc084b7e.htm#ID_ed84c7fa71cc127d0a00206a0162bb19-92f11b0771cc127d0a00206a012bc823-en-US>`_
 
                 Arguments: EVEN, NONE, ODD, ONE, ZERO
                 """
@@ -25773,9 +25774,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RESet"
-                    args = []
+                    args = []  # type: List[str]
 
-                RESet = RESet()
+                RESet = RESet()  # type: ignore
                 """
                 SYSTem:COMMunicate:SERial:RESet
 
@@ -25785,7 +25786,7 @@ class SMB100A_gen(Instrument):
                 class SBITs(SCPINode, SCPIQuery, SCPISet):
                     """
                     `SYSTem:COMMunicate:SERial:SBITs
-                    <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6a3b756c8454b50.htm#ID_48a728cc71cc19b10a00206a014314e1-a83e843471cc19b10a00206a012bc823-en-US>`_
+                    <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6a3b756c8454b50.htm#ID_48a728cc71cc19b10a00206a014314e1-a83e843471cc19b10a00206a012bc823-en-US>`_
 
                     Arguments: 1
                     """
@@ -25793,22 +25794,22 @@ class SMB100A_gen(Instrument):
                     _cmd = "SBITs"
                     args = ["1"]
 
-                SBITs = SBITs()
+                SBITs = SBITs()  # type: ignore
                 """
                 `SYSTem:COMMunicate:SERial:SBITs
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6a3b756c8454b50.htm#ID_48a728cc71cc19b10a00206a014314e1-a83e843471cc19b10a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6a3b756c8454b50.htm#ID_48a728cc71cc19b10a00206a014314e1-a83e843471cc19b10a00206a012bc823-en-US>`_
 
                 Arguments: 1
                 """
 
-            SERial = SERial()
+            SERial = SERial()  # type: ignore
             """
             SYSTem:COMMunicate:SERial
 
             Arguments:
             """
 
-        COMMunicate = COMMunicate()
+        COMMunicate = COMMunicate()  # type: ignore
         """
         SYSTem:COMMunicate
 
@@ -25818,13 +25819,13 @@ class SMB100A_gen(Instrument):
         class DATE(SCPINode):
             """
             `SYSTem:DATE
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c85e1a39bfd346a5.htm#ID_4045f3d171cb96480a00206a0187c2e2-1c42171d71cb96480a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c85e1a39bfd346a5.htm#ID_4045f3d171cb96480a00206a0187c2e2-1c42171d71cb96480a00206a012bc823-en-US>`_
 
             Arguments:
             """
             __slots__ = ()
             _cmd = "DATE"
-            args = []
+            args = []  # type: List[str]
 
             class LOCal(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -25836,17 +25837,17 @@ class SMB100A_gen(Instrument):
                 _cmd = "LOCal"
                 args = ["<integer>,<integer>,<integer>"]
 
-            LOCal = LOCal()
+            LOCal = LOCal()  # type: ignore
             """
             SYSTem:DATE:LOCal
 
             Arguments: <integer>,<integer>,<integer>
             """
 
-        DATE = DATE()
+        DATE = DATE()  # type: ignore
         """
         `SYSTem:DATE
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c85e1a39bfd346a5.htm#ID_4045f3d171cb96480a00206a0187c2e2-1c42171d71cb96480a00206a012bc823-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/c85e1a39bfd346a5.htm#ID_4045f3d171cb96480a00206a0187c2e2-1c42171d71cb96480a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -25869,7 +25870,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "HISTory"
-                args = []
+                args = []  # type: List[str]
 
                 class COUNt(SCPINode, SCPIQuery):
                     """
@@ -25879,9 +25880,9 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COUNt"
-                    args = []
+                    args = []  # type: List[str]
 
-                COUNt = COUNt()
+                COUNt = COUNt()  # type: ignore
                 """
                 SYSTem:DFPRint:HISTory:COUNt
 
@@ -25898,21 +25899,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "ENTRy"
                     args = ["1"]
 
-                ENTRy = ENTRy()
+                ENTRy = ENTRy()  # type: ignore
                 """
                 SYSTem:DFPRint:HISTory:ENTRy
 
                 Arguments: 1
                 """
 
-            HISTory = HISTory()
+            HISTory = HISTory()  # type: ignore
             """
             SYSTem:DFPRint:HISTory
 
             Arguments:
             """
 
-        DFPRint = DFPRint()
+        DFPRint = DFPRint()  # type: ignore
         """
         SYSTem:DFPRint
 
@@ -25927,12 +25928,12 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DISPlay"
-            args = []
+            args = []  # type: List[str]
 
             class UPDate(SCPINode, SCPIBool):
                 """
                 `SYSTem:DISPlay:UPDate
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f101e4cb6c3f422c.htm#ID_dc6f502b71cb0e3c0a00206a0114ff35-1059cab671cb0e3c0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f101e4cb6c3f422c.htm#ID_dc6f502b71cb0e3c0a00206a0114ff35-1059cab671cb0e3c0a00206a012bc823-en-US>`_
 
                 Arguments: 1, ON, OFF
                 """
@@ -25950,22 +25951,22 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SYSTem:DISPlay:UPDate:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            UPDate = UPDate()
+            UPDate = UPDate()  # type: ignore
             """
             `SYSTem:DISPlay:UPDate
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f101e4cb6c3f422c.htm#ID_dc6f502b71cb0e3c0a00206a0114ff35-1059cab671cb0e3c0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/f101e4cb6c3f422c.htm#ID_dc6f502b71cb0e3c0a00206a0114ff35-1059cab671cb0e3c0a00206a012bc823-en-US>`_
 
             Arguments: 1, ON, OFF
             """
 
-        DISPlay = DISPlay()
+        DISPlay = DISPlay()  # type: ignore
         """
         SYSTem:DISPlay
 
@@ -25980,7 +25981,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DUMP"
-            args = []
+            args = []  # type: List[str]
 
             class ERRor(SCPINode, SCPIQuery):
                 """
@@ -25990,9 +25991,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ERRor"
-                args = []
+                args = []  # type: List[str]
 
-            ERRor = ERRor()
+            ERRor = ERRor()  # type: ignore
             """
             SYSTem:DUMP:ERRor
 
@@ -26007,16 +26008,16 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PRINter"
-                args = []
+                args = []  # type: List[str]
 
-            PRINter = PRINter()
+            PRINter = PRINter()  # type: ignore
             """
             SYSTem:DUMP:PRINter
 
             Arguments:
             """
 
-        DUMP = DUMP()
+        DUMP = DUMP()  # type: ignore
         """
         SYSTem:DUMP
 
@@ -26036,18 +26037,18 @@ class SMB100A_gen(Instrument):
             class COUNt(SCPINode, SCPIQuery):
                 """
                 `SYSTem:ERRor:COUNt
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ba0d0e59bbb0493c.htm#ID_00c603b971d1daa50a00206a0178d1e6-77aa4c6371d1daa50a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ba0d0e59bbb0493c.htm#ID_00c603b971d1daa50a00206a0178d1e6-77aa4c6371d1daa50a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "COUNt"
-                args = []
+                args = []  # type: List[str]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `SYSTem:ERRor:COUNt
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ba0d0e59bbb0493c.htm#ID_00c603b971d1daa50a00206a0178d1e6-77aa4c6371d1daa50a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/ba0d0e59bbb0493c.htm#ID_00c603b971d1daa50a00206a0178d1e6-77aa4c6371d1daa50a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -26060,7 +26061,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SCPI"
-                args = []
+                args = []  # type: List[str]
 
                 class SYNTax(SCPINode, SCPIBool):
                     """
@@ -26072,21 +26073,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "SYNTax"
                     args = ["1", "ON", "OFF"]
 
-                SYNTax = SYNTax()
+                SYNTax = SYNTax()  # type: ignore
                 """
                 SYSTem:ERRor:SCPI:SYNTax
 
                 Arguments: 1, ON, OFF
                 """
 
-            SCPI = SCPI()
+            SCPI = SCPI()  # type: ignore
             """
             SYSTem:ERRor:SCPI
 
             Arguments:
             """
 
-        ERRor = ERRor()
+        ERRor = ERRor()  # type: ignore
         """
         SYSTem:ERRor
 
@@ -26101,7 +26102,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FILesystem"
-            args = []
+            args = []  # type: List[str]
 
             class SAFemode(SCPINode, SCPIBool):
                 """
@@ -26113,14 +26114,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SAFemode"
                 args = ["1", "ON", "OFF"]
 
-            SAFemode = SAFemode()
+            SAFemode = SAFemode()  # type: ignore
             """
             SYSTem:FILesystem:SAFemode
 
             Arguments: 1, ON, OFF
             """
 
-        FILesystem = FILesystem()
+        FILesystem = FILesystem()  # type: ignore
         """
         SYSTem:FILesystem
 
@@ -26130,18 +26131,18 @@ class SMB100A_gen(Instrument):
         class FPReset(SCPINode, SCPISet):
             """
             `SYSTem:FPReset
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a8969674f533414b.htm#ID_7d183de071cbe2940a00206a00c529ef-cb25f8cf71cbe2940a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a8969674f533414b.htm#ID_7d183de071cbe2940a00206a00c529ef-cb25f8cf71cbe2940a00206a012bc823-en-US>`_
 
             Arguments:
             """
             __slots__ = ()
             _cmd = "FPReset"
-            args = []
+            args = []  # type: List[str]
 
-        FPReset = FPReset()
+        FPReset = FPReset()  # type: ignore
         """
         `SYSTem:FPReset
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a8969674f533414b.htm#ID_7d183de071cbe2940a00206a00c529ef-cb25f8cf71cbe2940a00206a012bc823-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/a8969674f533414b.htm#ID_7d183de071cbe2940a00206a00c529ef-cb25f8cf71cbe2940a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -26154,7 +26155,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "HELP"
-            args = []
+            args = []  # type: List[str]
 
             class HEADers(SCPINode, SCPIQuery):
                 """
@@ -26166,7 +26167,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "HEADers"
                 args = ["'string'"]
 
-            HEADers = HEADers()
+            HEADers = HEADers()  # type: ignore
             """
             SYSTem:HELP:HEADers
 
@@ -26191,23 +26192,23 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 SYSTem:HELP:SYNTax:ALL
 
                 Arguments:
                 """
 
-            SYNTax = SYNTax()
+            SYNTax = SYNTax()  # type: ignore
             """
             SYSTem:HELP:SYNTax
 
             Arguments: 'string'
             """
 
-        HELP = HELP()
+        HELP = HELP()  # type: ignore
         """
         SYSTem:HELP
 
@@ -26222,7 +26223,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "KEY"
-            args = []
+            args = []  # type: List[str]
 
             class ASSign(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -26234,7 +26235,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "ASSign"
                 args = ["1"]
 
-            ASSign = ASSign()
+            ASSign = ASSign()  # type: ignore
             """
             SYSTem:KEY:ASSign
 
@@ -26251,7 +26252,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "CLEar"
                 args = ["1"]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             SYSTem:KEY:CLEar
 
@@ -26268,7 +26269,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DISable"
                 args = ["SAVE"]
 
-            DISable = DISable()
+            DISable = DISable()  # type: ignore
             """
             SYSTem:KEY:DISable
 
@@ -26285,14 +26286,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "ENABle"
                 args = ["SAVE"]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             SYSTem:KEY:ENABle
 
             Arguments: SAVE
             """
 
-        KEY = KEY()
+        KEY = KEY()  # type: ignore
         """
         SYSTem:KEY
 
@@ -26302,7 +26303,7 @@ class SMB100A_gen(Instrument):
         class KLOCk(SCPINode, SCPIBool):
             """
             `SYSTem:KLOCk
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e57ad6f63f694963.htm#ID_1c2c1ab671cae4100a00206a013aa55f-c059ec8271cae4100a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e57ad6f63f694963.htm#ID_1c2c1ab671cae4100a00206a013aa55f-c059ec8271cae4100a00206a012bc823-en-US>`_
 
             Arguments: 1, ON, OFF
             """
@@ -26310,10 +26311,10 @@ class SMB100A_gen(Instrument):
             _cmd = "KLOCk"
             args = ["1", "ON", "OFF"]
 
-        KLOCk = KLOCk()
+        KLOCk = KLOCk()  # type: ignore
         """
         `SYSTem:KLOCk
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e57ad6f63f694963.htm#ID_1c2c1ab671cae4100a00206a013aa55f-c059ec8271cae4100a00206a012bc823-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e57ad6f63f694963.htm#ID_1c2c1ab671cae4100a00206a013aa55f-c059ec8271cae4100a00206a012bc823-en-US>`_
 
         Arguments: 1, ON, OFF
         """
@@ -26321,7 +26322,7 @@ class SMB100A_gen(Instrument):
         class LANGuage(SCPINode, SCPIQuery, SCPISet):
             """
             `SYSTem:LANGuage
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6915ffdd7e64075.htm#ID_1282e19171cbeff10a00206a01b52e61-a5ace65d71cbeff10a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6915ffdd7e64075.htm#ID_1282e19171cbeff10a00206a01b52e61-a5ace65d71cbeff10a00206a012bc823-en-US>`_
 
             Arguments: 'string'
             """
@@ -26329,10 +26330,10 @@ class SMB100A_gen(Instrument):
             _cmd = "LANGuage"
             args = ["'string'"]
 
-        LANGuage = LANGuage()
+        LANGuage = LANGuage()  # type: ignore
         """
         `SYSTem:LANGuage
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6915ffdd7e64075.htm#ID_1282e19171cbeff10a00206a01b52e61-a5ace65d71cbeff10a00206a012bc823-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e6915ffdd7e64075.htm#ID_1282e19171cbeff10a00206a01b52e61-a5ace65d71cbeff10a00206a012bc823-en-US>`_
 
         Arguments: 'string'
         """
@@ -26345,7 +26346,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LOCK"
-            args = []
+            args = []  # type: List[str]
 
             class NAME(SCPINode):
                 """
@@ -26355,7 +26356,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NAME"
-                args = []
+                args = []  # type: List[str]
 
                 class DETailed(SCPINode, SCPIQuery):
                     """
@@ -26365,16 +26366,16 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DETailed"
-                    args = []
+                    args = []  # type: List[str]
 
-                DETailed = DETailed()
+                DETailed = DETailed()  # type: ignore
                 """
                 SYSTem:LOCK:NAME:DETailed
 
                 Arguments:
                 """
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             SYSTem:LOCK:NAME
 
@@ -26389,7 +26390,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "OWNer"
-                args = []
+                args = []  # type: List[str]
 
                 class DETailed(SCPINode, SCPIQuery):
                     """
@@ -26399,16 +26400,16 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DETailed"
-                    args = []
+                    args = []  # type: List[str]
 
-                DETailed = DETailed()
+                DETailed = DETailed()  # type: ignore
                 """
                 SYSTem:LOCK:OWNer:DETailed
 
                 Arguments:
                 """
 
-            OWNer = OWNer()
+            OWNer = OWNer()  # type: ignore
             """
             SYSTem:LOCK:OWNer
 
@@ -26423,9 +26424,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RELease"
-                args = []
+                args = []  # type: List[str]
 
-            RELease = RELease()
+            RELease = RELease()  # type: ignore
             """
             SYSTem:LOCK:RELease
 
@@ -26440,7 +26441,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "REQuest"
-                args = []
+                args = []  # type: List[str]
 
                 class EXCLusive(SCPINode, SCPIQuery):
                     """
@@ -26452,7 +26453,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "EXCLusive"
                     args = ["<integer>", "INFinite"]
 
-                EXCLusive = EXCLusive()
+                EXCLusive = EXCLusive()  # type: ignore
                 """
                 SYSTem:LOCK:REQuest:EXCLusive
 
@@ -26469,14 +26470,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "SHARed"
                     args = ["<string>,<integer>", "INFinite"]
 
-                SHARed = SHARed()
+                SHARed = SHARed()  # type: ignore
                 """
                 SYSTem:LOCK:REQuest:SHARed
 
                 Arguments: <string>,<integer>, INFinite
                 """
 
-            REQuest = REQuest()
+            REQuest = REQuest()  # type: ignore
             """
             SYSTem:LOCK:REQuest
 
@@ -26491,7 +26492,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SHARed"
-                args = []
+                args = []  # type: List[str]
 
                 class STRing(SCPINode, SCPIQuery):
                     """
@@ -26501,16 +26502,16 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STRing"
-                    args = []
+                    args = []  # type: List[str]
 
-                STRing = STRing()
+                STRing = STRing()  # type: ignore
                 """
                 SYSTem:LOCK:SHARed:STRing
 
                 Arguments:
                 """
 
-            SHARed = SHARed()
+            SHARed = SHARed()  # type: ignore
             """
             SYSTem:LOCK:SHARed
 
@@ -26527,14 +26528,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "TIMeout"
                 args = ["<integer>", "INFinite"]
 
-            TIMeout = TIMeout()
+            TIMeout = TIMeout()  # type: ignore
             """
             SYSTem:LOCK:TIMeout
 
             Arguments: <integer>, INFinite
             """
 
-        LOCK = LOCK()
+        LOCK = LOCK()  # type: ignore
         """
         SYSTem:LOCK
 
@@ -26549,7 +26550,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MMHead"
-            args = []
+            args = []  # type: List[str]
 
             class SELect(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -26561,14 +26562,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SELect"
                 args = ["FRONt", "NONE", "REAR"]
 
-            SELect = SELect()
+            SELect = SELect()  # type: ignore
             """
             SYSTem:MMHead:SELect
 
             Arguments: FRONt, NONE, REAR
             """
 
-        MMHead = MMHead()
+        MMHead = MMHead()  # type: ignore
         """
         SYSTem:MMHead
 
@@ -26583,7 +26584,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MSEQuence"
-            args = []
+            args = []  # type: List[str]
 
             class CATalog(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -26593,9 +26594,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             SYSTem:MSEQuence:CATalog
 
@@ -26612,7 +26613,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DELete"
                 args = ["'string'"]
 
-            DELete = DELete()
+            DELete = DELete()  # type: ignore
             """
             SYSTem:MSEQuence:DELete
 
@@ -26629,7 +26630,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DWELl"
                 args = ["1"]
 
-            DWELl = DWELl()
+            DWELl = DWELl()  # type: ignore
             """
             SYSTem:MSEQuence:DWELl
 
@@ -26644,7 +26645,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RCL"
-                args = []
+                args = []  # type: List[str]
 
                 class POINts(SCPINode, SCPIQuery):
                     """
@@ -26654,16 +26655,16 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "POINts"
-                    args = []
+                    args = []  # type: List[str]
 
-                POINts = POINts()
+                POINts = POINts()  # type: ignore
                 """
                 SYSTem:MSEQuence:RCL:POINts
 
                 Arguments:
                 """
 
-            RCL = RCL()
+            RCL = RCL()  # type: ignore
             """
             SYSTem:MSEQuence:RCL
 
@@ -26680,14 +26681,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SELect"
                 args = ["'string'"]
 
-            SELect = SELect()
+            SELect = SELect()  # type: ignore
             """
             SYSTem:MSEQuence:SELect
 
             Arguments: 'string'
             """
 
-        MSEQuence = MSEQuence()
+        MSEQuence = MSEQuence()  # type: ignore
         """
         SYSTem:MSEQuence
 
@@ -26702,9 +26703,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PDOWn"
-            args = []
+            args = []  # type: List[str]
 
-        PDOWn = PDOWn()
+        PDOWn = PDOWn()  # type: ignore
         """
         SYSTem:PDOWn
 
@@ -26714,7 +26715,7 @@ class SMB100A_gen(Instrument):
         class PRESet(SCPINode, SCPISet):
             """
             `SYSTem:PRESet
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/fea01e424ecf4cc4.htm#ID_a64c6dbf4ecf62470a00206a0141ec63-ed39c76a4ecf62470a00206a0024546d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/fea01e424ecf4cc4.htm#ID_a64c6dbf4ecf62470a00206a0141ec63-ed39c76a4ecf62470a00206a0024546d-en-US>`_
 
             Arguments: 'string'
             """
@@ -26730,9 +26731,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXECute"
-                args = []
+                args = []  # type: List[str]
 
-            EXECute = EXECute()
+            EXECute = EXECute()  # type: ignore
             """
             SYSTem:PRESet:EXECute
 
@@ -26749,7 +26750,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "LANGuage"
                 args = ["'string'"]
 
-            LANGuage = LANGuage()
+            LANGuage = LANGuage()  # type: ignore
             """
             SYSTem:PRESet:LANGuage
 
@@ -26764,9 +26765,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PERSistent"
-                args = []
+                args = []  # type: List[str]
 
-            PERSistent = PERSistent()
+            PERSistent = PERSistent()  # type: ignore
             """
             SYSTem:PRESet:PERSistent
 
@@ -26783,17 +26784,17 @@ class SMB100A_gen(Instrument):
                 _cmd = "PN"
                 args = ["NORMal", "QUICk"]
 
-            PN = PN()
+            PN = PN()  # type: ignore
             """
             SYSTem:PRESet:PN
 
             Arguments: NORMal, QUICk
             """
 
-        PRESet = PRESet()
+        PRESet = PRESet()  # type: ignore
         """
         `SYSTem:PRESet
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/fea01e424ecf4cc4.htm#ID_a64c6dbf4ecf62470a00206a0141ec63-ed39c76a4ecf62470a00206a0024546d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/fea01e424ecf4cc4.htm#ID_a64c6dbf4ecf62470a00206a0141ec63-ed39c76a4ecf62470a00206a0024546d-en-US>`_
 
         Arguments: 'string'
         """
@@ -26806,12 +26807,12 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PROTect"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPIQuery, SCPISet):
                 """
                 `SYSTem:PROTect:STATe
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2be619d631aa413c.htm#ID_8573e93571caebb10a00206a0185361b-8394d8f471caebb10a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2be619d631aa413c.htm#ID_8573e93571caebb10a00206a0185361b-8394d8f471caebb10a00206a012bc823-en-US>`_
 
                 Arguments: <boolean>,<numeric_value>
                 """
@@ -26819,15 +26820,15 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["<boolean>,<numeric_value>"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SYSTem:PROTect:STATe
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2be619d631aa413c.htm#ID_8573e93571caebb10a00206a0185361b-8394d8f471caebb10a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/2be619d631aa413c.htm#ID_8573e93571caebb10a00206a0185361b-8394d8f471caebb10a00206a012bc823-en-US>`_
 
             Arguments: <boolean>,<numeric_value>
             """
 
-        PROTect = PROTect()
+        PROTect = PROTect()  # type: ignore
         """
         SYSTem:PROTect
 
@@ -26844,7 +26845,7 @@ class SMB100A_gen(Instrument):
             _cmd = "RESet"
             args = ["'string'"]
 
-        RESet = RESet()
+        RESet = RESet()  # type: ignore
         """
         SYSTem:RESet
 
@@ -26871,7 +26872,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "COUNt"
                 args = ["1"]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             SYSTem:SECurity:COUNt
 
@@ -26888,7 +26889,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DISPlay"
                 args = ["1", "ON", "OFF"]
 
-            DISPlay = DISPlay()
+            DISPlay = DISPlay()  # type: ignore
             """
             SYSTem:SECurity:DISPlay
 
@@ -26903,9 +26904,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ERASeall"
-                args = []
+                args = []  # type: List[str]
 
-            ERASeall = ERASeall()
+            ERASeall = ERASeall()  # type: ignore
             """
             SYSTem:SECurity:ERASeall
 
@@ -26932,14 +26933,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "ON", "OFF"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SYSTem:SECurity:LEVel:STATe
 
                 Arguments: 1, ON, OFF
                 """
 
-            LEVel = LEVel()
+            LEVel = LEVel()  # type: ignore
             """
             SYSTem:SECurity:LEVel
 
@@ -26954,9 +26955,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "OVERwrite"
-                args = []
+                args = []  # type: List[str]
 
-            OVERwrite = OVERwrite()
+            OVERwrite = OVERwrite()  # type: ignore
             """
             SYSTem:SECurity:OVERwrite
 
@@ -26971,9 +26972,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SANitize"
-                args = []
+                args = []  # type: List[str]
 
-            SANitize = SANitize()
+            SANitize = SANitize()  # type: ignore
             """
             SYSTem:SECurity:SANitize
 
@@ -26990,14 +26991,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SYSTem:SECurity:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        SECurity = SECurity()
+        SECurity = SECurity()  # type: ignore
         """
         SYSTem:SECurity
 
@@ -27007,18 +27008,18 @@ class SMB100A_gen(Instrument):
         class SERRor(SCPINode, SCPIQuery):
             """
             `SYSTem:SERRor
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5399f400e2034c4e.htm#ID_6fc0f364cdeb59d40a00201901c90f84-6ec4330acdeb589c0a00201901e67c3d-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5399f400e2034c4e.htm#ID_6fc0f364cdeb59d40a00201901c90f84-6ec4330acdeb589c0a00201901e67c3d-en-US>`_
 
             Arguments:
             """
             __slots__ = ()
             _cmd = "SERRor"
-            args = []
+            args = []  # type: List[str]
 
-        SERRor = SERRor()
+        SERRor = SERRor()  # type: ignore
         """
         `SYSTem:SERRor
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5399f400e2034c4e.htm#ID_6fc0f364cdeb59d40a00201901c90f84-6ec4330acdeb589c0a00201901e67c3d-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/5399f400e2034c4e.htm#ID_6fc0f364cdeb59d40a00201901c90f84-6ec4330acdeb589c0a00201901e67c3d-en-US>`_
 
         Arguments:
         """
@@ -27031,7 +27032,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SSAVer"
-            args = []
+            args = []  # type: List[str]
 
             class DELay(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -27043,7 +27044,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DELay"
                 args = ["1"]
 
-            DELay = DELay()
+            DELay = DELay()  # type: ignore
             """
             SYSTem:SSAVer:DELay
 
@@ -27060,14 +27061,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "ON", "OFF"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             SYSTem:SSAVer:STATe
 
             Arguments: 1, ON, OFF
             """
 
-        SSAVer = SSAVer()
+        SSAVer = SSAVer()  # type: ignore
         """
         SYSTem:SSAVer
 
@@ -27082,9 +27083,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "STATe"
-            args = []
+            args = []  # type: List[str]
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         SYSTem:STATe
 
@@ -27094,13 +27095,13 @@ class SMB100A_gen(Instrument):
         class TIME(SCPINode):
             """
             `SYSTem:TIME
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0ad7e322edac4195.htm#ID_dbb4b4c671cb9ca10a00206a00ebeda8-374d740171cb9ca10a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0ad7e322edac4195.htm#ID_dbb4b4c671cb9ca10a00206a00ebeda8-374d740171cb9ca10a00206a012bc823-en-US>`_
 
             Arguments:
             """
             __slots__ = ()
             _cmd = "TIME"
-            args = []
+            args = []  # type: List[str]
 
             class DSTime(SCPINode):
                 """
@@ -27110,7 +27111,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DSTime"
-                args = []
+                args = []  # type: List[str]
 
                 class RULE(SCPINode):
                     """
@@ -27120,7 +27121,7 @@ class SMB100A_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RULE"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CATalog(SCPINode, SCPIQuery):
                         """
@@ -27130,23 +27131,23 @@ class SMB100A_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CATalog"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     SYSTem:TIME:DSTime:RULE:CATalog
 
                     Arguments:
                     """
 
-                RULE = RULE()
+                RULE = RULE()  # type: ignore
                 """
                 SYSTem:TIME:DSTime:RULE
 
                 Arguments:
                 """
 
-            DSTime = DSTime()
+            DSTime = DSTime()  # type: ignore
             """
             SYSTem:TIME:DSTime
 
@@ -27161,7 +27162,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "HRTimer"
-                args = []
+                args = []  # type: List[str]
 
                 class ABSolute(SCPINode, SCPISet):
                     """
@@ -27173,7 +27174,7 @@ class SMB100A_gen(Instrument):
                     _cmd = "ABSolute"
                     args = ["1"]
 
-                ABSolute = ABSolute()
+                ABSolute = ABSolute()  # type: ignore
                 """
                 SYSTem:TIME:HRTimer:ABSolute
 
@@ -27190,14 +27191,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "RELative"
                     args = ["1"]
 
-                RELative = RELative()
+                RELative = RELative()  # type: ignore
                 """
                 SYSTem:TIME:HRTimer:RELative
 
                 Arguments: 1
                 """
 
-            HRTimer = HRTimer()
+            HRTimer = HRTimer()  # type: ignore
             """
             SYSTem:TIME:HRTimer
 
@@ -27214,17 +27215,17 @@ class SMB100A_gen(Instrument):
                 _cmd = "LOCal"
                 args = ["<integer>,<integer>,<integer>"]
 
-            LOCal = LOCal()
+            LOCal = LOCal()  # type: ignore
             """
             SYSTem:TIME:LOCal
 
             Arguments: <integer>,<integer>,<integer>
             """
 
-        TIME = TIME()
+        TIME = TIME()  # type: ignore
         """
         `SYSTem:TIME
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0ad7e322edac4195.htm#ID_dbb4b4c671cb9ca10a00206a00ebeda8-374d740171cb9ca10a00206a012bc823-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/0ad7e322edac4195.htm#ID_dbb4b4c671cb9ca10a00206a00ebeda8-374d740171cb9ca10a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -27239,7 +27240,7 @@ class SMB100A_gen(Instrument):
             _cmd = "TZONe"
             args = ["<numeric_value>,<numeric_value>"]
 
-        TZONe = TZONe()
+        TZONe = TZONe()  # type: ignore
         """
         SYSTem:TZONe
 
@@ -27249,23 +27250,23 @@ class SMB100A_gen(Instrument):
         class VERSion(SCPINode, SCPIQuery):
             """
             `SYSTem:VERSion
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1687c21d3b684121.htm#ID_83b8bf4871d1f0010a00206a01566d1c-c7a8cef471d1f0010a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1687c21d3b684121.htm#ID_83b8bf4871d1f0010a00206a01566d1c-c7a8cef471d1f0010a00206a012bc823-en-US>`_
 
             Arguments:
             """
             __slots__ = ()
             _cmd = "VERSion"
-            args = []
+            args = []  # type: List[str]
 
-        VERSion = VERSion()
+        VERSion = VERSion()  # type: ignore
         """
         `SYSTem:VERSion
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1687c21d3b684121.htm#ID_83b8bf4871d1f0010a00206a01566d1c-c7a8cef471d1f0010a00206a012bc823-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/1687c21d3b684121.htm#ID_83b8bf4871d1f0010a00206a01566d1c-c7a8cef471d1f0010a00206a012bc823-en-US>`_
 
         Arguments:
         """
 
-    SYSTem = SYSTem()
+    SYSTem = SYSTem()  # type: ignore
     """
     SYSTem
 
@@ -27280,7 +27281,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "TAlk_terminator"
-        args = []
+        args = []  # type: List[str]
 
         class Cr_nl_end(SCPINode, SCPISet):
             """
@@ -27290,9 +27291,9 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Cr_nl_end"
-            args = []
+            args = []  # type: List[str]
 
-        Cr_nl_end = Cr_nl_end()
+        Cr_nl_end = Cr_nl_end()  # type: ignore
         """
         TAlk_terminator:Cr_nl_end
 
@@ -27307,16 +27308,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Nl_end"
-            args = []
+            args = []  # type: List[str]
 
-        Nl_end = Nl_end()
+        Nl_end = Nl_end()  # type: ignore
         """
         TAlk_terminator:Nl_end
 
         Arguments:
         """
 
-    TAlk_terminator = TAlk_terminator()
+    TAlk_terminator = TAlk_terminator()  # type: ignore
     """
     TAlk_terminator
 
@@ -27331,7 +27332,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "TEst"
-        args = []
+        args = []  # type: List[str]
 
         class Point(SCPINode, SCPIQuery, SCPISet):
             """
@@ -27343,7 +27344,7 @@ class SMB100A_gen(Instrument):
             _cmd = "Point"
             args = ["1"]
 
-        Point = Point()
+        Point = Point()  # type: ignore
         """
         TEst:Point
 
@@ -27358,16 +27359,16 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "Voltage"
-            args = []
+            args = []  # type: List[str]
 
-        Voltage = Voltage()
+        Voltage = Voltage()  # type: ignore
         """
         TEst:Voltage
 
         Arguments:
         """
 
-    TEst = TEst()
+    TEst = TEst()  # type: ignore
     """
     TEst
 
@@ -27382,7 +27383,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "TIme"
-        args = []
+        args = []  # type: List[str]
 
         class AF_swp(SCPINode, SCPIQuery, SCPISet):
             """
@@ -27394,7 +27395,7 @@ class SMB100A_gen(Instrument):
             _cmd = "AF_swp"
             args = ["1"]
 
-        AF_swp = AF_swp()
+        AF_swp = AF_swp()  # type: ignore
         """
         TIme:AF_swp
 
@@ -27411,7 +27412,7 @@ class SMB100A_gen(Instrument):
             _cmd = "CF_swp"
             args = ["1"]
 
-        CF_swp = CF_swp()
+        CF_swp = CF_swp()  # type: ignore
         """
         TIme:CF_swp
 
@@ -27438,14 +27439,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "Fast"
                 args = ["1"]
 
-            Fast = Fast()
+            Fast = Fast()  # type: ignore
             """
             TIme:MEmory_swp:Fast
 
             Arguments: 1
             """
 
-        MEmory_swp = MEmory_swp()
+        MEmory_swp = MEmory_swp()  # type: ignore
         """
         TIme:MEmory_swp
 
@@ -27462,14 +27463,14 @@ class SMB100A_gen(Instrument):
             _cmd = "RF_swp"
             args = ["1"]
 
-        RF_swp = RF_swp()
+        RF_swp = RF_swp()  # type: ignore
         """
         TIme:RF_swp
 
         Arguments: 1
         """
 
-    TIme = TIme()
+    TIme = TIme()  # type: ignore
     """
     TIme
 
@@ -27484,7 +27485,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "TRIGger"
-        args = []
+        args = []  # type: List[str]
 
         class DM(SCPINode):
             """
@@ -27494,7 +27495,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DM"
-            args = []
+            args = []  # type: List[str]
 
             class IMMediate(SCPINode, SCPISet):
                 """
@@ -27504,9 +27505,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMMediate"
-                args = []
+                args = []  # type: List[str]
 
-            IMMediate = IMMediate()
+            IMMediate = IMMediate()  # type: ignore
             """
             TRIGger:DM:IMMediate
 
@@ -27523,14 +27524,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             TRIGger:DM:SOURce
 
             Arguments: AUTO, EXTernal, SINGle
             """
 
-        DM = DM()
+        DM = DM()  # type: ignore
         """
         TRIGger:DM
 
@@ -27545,12 +27546,12 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FSWeep"
-            args = []
+            args = []  # type: List[str]
 
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `TRIGger:FSWeep:SOURce
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/673177c779ae404e.htm#ID_06cb678671bda0350a00206a01b91256-cb80732271bda0350a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/673177c779ae404e.htm#ID_06cb678671bda0350a00206a01b91256-cb80732271bda0350a00206a012bc823-en-US>`_
 
                 Arguments: AUTO, EXTernal, SINGle
                 """
@@ -27558,15 +27559,15 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `TRIGger:FSWeep:SOURce
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/673177c779ae404e.htm#ID_06cb678671bda0350a00206a01b91256-cb80732271bda0350a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/673177c779ae404e.htm#ID_06cb678671bda0350a00206a01b91256-cb80732271bda0350a00206a012bc823-en-US>`_
 
             Arguments: AUTO, EXTernal, SINGle
             """
 
-        FSWeep = FSWeep()
+        FSWeep = FSWeep()  # type: ignore
         """
         TRIGger:FSWeep
 
@@ -27576,18 +27577,18 @@ class SMB100A_gen(Instrument):
         class IMMediate(SCPINode, SCPISet):
             """
             `TRIGger:IMMediate
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d4ef093297e1451c.htm#ID_4d0a658571bdb5730a00206a006f27c0-2860086d71bdb5730a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d4ef093297e1451c.htm#ID_4d0a658571bdb5730a00206a006f27c0-2860086d71bdb5730a00206a012bc823-en-US>`_
 
             Arguments:
             """
             __slots__ = ()
             _cmd = "IMMediate"
-            args = []
+            args = []  # type: List[str]
 
-        IMMediate = IMMediate()
+        IMMediate = IMMediate()  # type: ignore
         """
         `TRIGger:IMMediate
-        <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d4ef093297e1451c.htm#ID_4d0a658571bdb5730a00206a006f27c0-2860086d71bdb5730a00206a012bc823-en-US>`_
+        <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/d4ef093297e1451c.htm#ID_4d0a658571bdb5730a00206a006f27c0-2860086d71bdb5730a00206a012bc823-en-US>`_
 
         Arguments:
         """
@@ -27600,7 +27601,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LIST"
-            args = []
+            args = []  # type: List[str]
 
             class IMMediate(SCPINode, SCPISet):
                 """
@@ -27610,9 +27611,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMMediate"
-                args = []
+                args = []  # type: List[str]
 
-            IMMediate = IMMediate()
+            IMMediate = IMMediate()  # type: ignore
             """
             TRIGger:LIST:IMMediate
 
@@ -27629,14 +27630,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             TRIGger:LIST:SOURce
 
             Arguments: AUTO, EXTernal, SINGle
             """
 
-        LIST = LIST()
+        LIST = LIST()  # type: ignore
         """
         TRIGger:LIST
 
@@ -27651,7 +27652,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MSEQuence"
-            args = []
+            args = []  # type: List[str]
 
             class IMMediate(SCPINode, SCPISet):
                 """
@@ -27661,9 +27662,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMMediate"
-                args = []
+                args = []  # type: List[str]
 
-            IMMediate = IMMediate()
+            IMMediate = IMMediate()  # type: ignore
             """
             TRIGger:MSEQuence:IMMediate
 
@@ -27680,14 +27681,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             TRIGger:MSEQuence:SOURce
 
             Arguments: AUTO, EXTernal, SINGle
             """
 
-        MSEQuence = MSEQuence()
+        MSEQuence = MSEQuence()  # type: ignore
         """
         TRIGger:MSEQuence
 
@@ -27704,7 +27705,7 @@ class SMB100A_gen(Instrument):
             _cmd = "ODELay"
             args = ["1"]
 
-        ODELay = ODELay()
+        ODELay = ODELay()  # type: ignore
         """
         TRIGger:ODELay
 
@@ -27719,7 +27720,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "OUTPut"
-            args = []
+            args = []  # type: List[str]
 
             class POLarity(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -27731,14 +27732,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "POLarity"
                 args = ["NEGative", "POSitive"]
 
-            POLarity = POLarity()
+            POLarity = POLarity()  # type: ignore
             """
             TRIGger:OUTPut:POLarity
 
             Arguments: NEGative, POSitive
             """
 
-        OUTPut = OUTPut()
+        OUTPut = OUTPut()  # type: ignore
         """
         TRIGger:OUTPut
 
@@ -27753,12 +27754,12 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PSWeep"
-            args = []
+            args = []  # type: List[str]
 
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `TRIGger:PSWeep:SOURce
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3bdb2b0d8df44740.htm#ID_77ad610d71bda6ec0a00206a018a2840-7d255c2071bda6ec0a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3bdb2b0d8df44740.htm#ID_77ad610d71bda6ec0a00206a018a2840-7d255c2071bda6ec0a00206a012bc823-en-US>`_
 
                 Arguments: AUTO, EXTernal, SINGle
                 """
@@ -27766,15 +27767,15 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `TRIGger:PSWeep:SOURce
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3bdb2b0d8df44740.htm#ID_77ad610d71bda6ec0a00206a018a2840-7d255c2071bda6ec0a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/3bdb2b0d8df44740.htm#ID_77ad610d71bda6ec0a00206a018a2840-7d255c2071bda6ec0a00206a012bc823-en-US>`_
 
             Arguments: AUTO, EXTernal, SINGle
             """
 
-        PSWeep = PSWeep()
+        PSWeep = PSWeep()  # type: ignore
         """
         TRIGger:PSWeep
 
@@ -27789,7 +27790,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PULSe"
-            args = []
+            args = []  # type: List[str]
 
             class EGATed(SCPINode):
                 """
@@ -27799,7 +27800,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EGATed"
-                args = []
+                args = []  # type: List[str]
 
                 class POLarity(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -27811,14 +27812,14 @@ class SMB100A_gen(Instrument):
                     _cmd = "POLarity"
                     args = ["INVerted", "NORMal"]
 
-                POLarity = POLarity()
+                POLarity = POLarity()  # type: ignore
                 """
                 TRIGger:PULSe:EGATed:POLarity
 
                 Arguments: INVerted, NORMal
                 """
 
-            EGATed = EGATed()
+            EGATed = EGATed()  # type: ignore
             """
             TRIGger:PULSe:EGATed
 
@@ -27833,9 +27834,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMMediate"
-                args = []
+                args = []  # type: List[str]
 
-            IMMediate = IMMediate()
+            IMMediate = IMMediate()  # type: ignore
             """
             TRIGger:PULSe:IMMediate
 
@@ -27852,7 +27853,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "LEVel"
                 args = ["TTL", "V05", "VM25"]
 
-            LEVel = LEVel()
+            LEVel = LEVel()  # type: ignore
             """
             TRIGger:PULSe:LEVel
 
@@ -27869,7 +27870,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SLOPe"
                 args = ["NEGative", "POSitive"]
 
-            SLOPe = SLOPe()
+            SLOPe = SLOPe()  # type: ignore
             """
             TRIGger:PULSe:SLOPe
 
@@ -27886,14 +27887,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["AUTO", "EGATed", "EXT_gated", "EXTern", "EXTernal", "SINGle"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             TRIGger:PULSe:SOURce
 
             Arguments: AUTO, EGATed, EXT_gated, EXTern, EXTernal, SINGle
             """
 
-        PULSe = PULSe()
+        PULSe = PULSe()  # type: ignore
         """
         TRIGger:PULSe
 
@@ -27908,7 +27909,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SEQuence"
-            args = []
+            args = []  # type: List[str]
 
             class IMMediate(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -27918,9 +27919,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMMediate"
-                args = []
+                args = []  # type: List[str]
 
-            IMMediate = IMMediate()
+            IMMediate = IMMediate()  # type: ignore
             """
             TRIGger:SEQuence:IMMediate
 
@@ -27937,7 +27938,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SLOPe"
                 args = ["NEGative", "POSitive"]
 
-            SLOPe = SLOPe()
+            SLOPe = SLOPe()  # type: ignore
             """
             TRIGger:SEQuence:SLOPe
 
@@ -27954,7 +27955,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["BUS", "EXTernal", "HOLD", "IMMediate"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             TRIGger:SEQuence:SOURce
 
@@ -27969,7 +27970,7 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STOP"
-                args = []
+                args = []  # type: List[str]
 
                 class SOURce(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -27981,21 +27982,21 @@ class SMB100A_gen(Instrument):
                     _cmd = "SOURce"
                     args = ["EXTernal", "IMMediate"]
 
-                SOURce = SOURce()
+                SOURce = SOURce()  # type: ignore
                 """
                 TRIGger:SEQuence:STOP:SOURce
 
                 Arguments: EXTernal, IMMediate
                 """
 
-            STOP = STOP()
+            STOP = STOP()  # type: ignore
             """
             TRIGger:SEQuence:STOP
 
             Arguments:
             """
 
-        SEQuence = SEQuence()
+        SEQuence = SEQuence()  # type: ignore
         """
         TRIGger:SEQuence
 
@@ -28012,7 +28013,7 @@ class SMB100A_gen(Instrument):
             _cmd = "SLOPe"
             args = ["EITHer", "NEGative", "POSitive"]
 
-        SLOPe = SLOPe()
+        SLOPe = SLOPe()  # type: ignore
         """
         TRIGger:SLOPe
 
@@ -28027,7 +28028,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "STARt"
-            args = []
+            args = []  # type: List[str]
 
             class IMMediate(SCPINode, SCPISet):
                 """
@@ -28037,9 +28038,9 @@ class SMB100A_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMMediate"
-                args = []
+                args = []  # type: List[str]
 
-            IMMediate = IMMediate()
+            IMMediate = IMMediate()  # type: ignore
             """
             TRIGger:STARt:IMMediate
 
@@ -28056,14 +28057,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["BUS", "EXTernal", "HOLD", "IMMediate"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             TRIGger:STARt:SOURce
 
             Arguments: BUS, EXTernal, HOLD, IMMediate
             """
 
-        STARt = STARt()
+        STARt = STARt()  # type: ignore
         """
         TRIGger:STARt
 
@@ -28078,23 +28079,23 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SWEep"
-            args = []
+            args = []  # type: List[str]
 
             class IMMediate(SCPINode, SCPISet):
                 """
                 `TRIGger:SWEep:IMMediate
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/20e5ba8fcf2b4332.htm#ID_88ce59a571bdae100a00206a008814e4-d4d3ebe871bdae100a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/20e5ba8fcf2b4332.htm#ID_88ce59a571bdae100a00206a008814e4-d4d3ebe871bdae100a00206a012bc823-en-US>`_
 
                 Arguments:
                 """
                 __slots__ = ()
                 _cmd = "IMMediate"
-                args = []
+                args = []  # type: List[str]
 
-            IMMediate = IMMediate()
+            IMMediate = IMMediate()  # type: ignore
             """
             `TRIGger:SWEep:IMMediate
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/20e5ba8fcf2b4332.htm#ID_88ce59a571bdae100a00206a008814e4-d4d3ebe871bdae100a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/20e5ba8fcf2b4332.htm#ID_88ce59a571bdae100a00206a008814e4-d4d3ebe871bdae100a00206a012bc823-en-US>`_
 
             Arguments:
             """
@@ -28102,7 +28103,7 @@ class SMB100A_gen(Instrument):
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
                 `TRIGger:SWEep:SOURce
-                <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e40fc9dd64154e1e.htm#ID_2d45b80571bd99020a00206a015e8a83-7005204271bd99020a00206a012bc823-en-US>`_
+                <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e40fc9dd64154e1e.htm#ID_2d45b80571bd99020a00206a015e8a83-7005204271bd99020a00206a012bc823-en-US>`_
 
                 Arguments: AUTO, EXTernal, SINGle
                 """
@@ -28110,22 +28111,22 @@ class SMB100A_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["AUTO", "EXTernal", "SINGle"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `TRIGger:SWEep:SOURce
-            <https://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e40fc9dd64154e1e.htm#ID_2d45b80571bd99020a00206a015e8a83-7005204271bd99020a00206a012bc823-en-US>`_
+            <http://www.rohde-schwarz.com/webhelp/smb100a_webhelp/Content/e40fc9dd64154e1e.htm#ID_2d45b80571bd99020a00206a015e8a83-7005204271bd99020a00206a012bc823-en-US>`_
 
             Arguments: AUTO, EXTernal, SINGle
             """
 
-        SWEep = SWEep()
+        SWEep = SWEep()  # type: ignore
         """
         TRIGger:SWEep
 
         Arguments:
         """
 
-    TRIGger = TRIGger()
+    TRIGger = TRIGger()  # type: ignore
     """
     TRIGger
 
@@ -28140,9 +28141,9 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "TSWeep"
-        args = []
+        args = []  # type: List[str]
 
-    TSWeep = TSWeep()
+    TSWeep = TSWeep()  # type: ignore
     """
     TSWeep
 
@@ -28157,7 +28158,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "VECTor"
-        args = []
+        args = []  # type: List[str]
 
         class CONFig(SCPINode, SCPIQuery):
             """
@@ -28167,7 +28168,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CONFig"
-            args = []
+            args = []  # type: List[str]
 
             class MIXer(SCPINode, SCPISet):
                 """
@@ -28179,7 +28180,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "MIXer"
                 args = ["EXTernal", "INTernal"]
 
-            MIXer = MIXer()
+            MIXer = MIXer()  # type: ignore
             """
             VECTor:CONFig:MIXer
 
@@ -28196,14 +28197,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "PULSe"
                 args = ["DISabled", "ENABled"]
 
-            PULSe = PULSe()
+            PULSe = PULSe()  # type: ignore
             """
             VECTor:CONFig:PULSe
 
             Arguments: DISabled, ENABled
             """
 
-        CONFig = CONFig()
+        CONFig = CONFig()  # type: ignore
         """
         VECTor:CONFig
 
@@ -28218,7 +28219,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FADing"
-            args = []
+            args = []  # type: List[str]
 
             class DIR_dopp(SCPINode, SCPISet):
                 """
@@ -28230,7 +28231,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "DIR_dopp"
                 args = ["1"]
 
-            DIR_dopp = DIR_dopp()
+            DIR_dopp = DIR_dopp()  # type: ignore
             """
             VECTor:FADing:DIR_dopp
 
@@ -28247,7 +28248,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "RATio"
                 args = ["1"]
 
-            RATio = RATio()
+            RATio = RATio()  # type: ignore
             """
             VECTor:FADing:RATio
 
@@ -28264,14 +28265,14 @@ class SMB100A_gen(Instrument):
                 _cmd = "SPEed"
                 args = ["1"]
 
-            SPEed = SPEed()
+            SPEed = SPEed()  # type: ignore
             """
             VECTor:FADing:SPEed
 
             Arguments: 1
             """
 
-        FADing = FADing()
+        FADing = FADing()  # type: ignore
         """
         VECTor:FADing
 
@@ -28286,7 +28287,7 @@ class SMB100A_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MODopt"
-            args = []
+            args = []  # type: List[str]
 
             class ENVelope(SCPINode, SCPISet):
                 """
@@ -28298,7 +28299,7 @@ class SMB100A_gen(Instrument):
                 _cmd = "ENVelope"
                 args = ["DISabled", "ENABled"]
 
-            ENVelope = ENVelope()
+            ENVelope = ENVelope()  # type: ignore
             """
             VECTor:MODopt:ENVelope
 
@@ -28315,21 +28316,21 @@ class SMB100A_gen(Instrument):
                 _cmd = "MODPol"
                 args = ["INVerse", "NORMal"]
 
-            MODPol = MODPol()
+            MODPol = MODPol()  # type: ignore
             """
             VECTor:MODopt:MODPol
 
             Arguments: INVerse, NORMal
             """
 
-        MODopt = MODopt()
+        MODopt = MODopt()  # type: ignore
         """
         VECTor:MODopt
 
         Arguments:
         """
 
-    VECTor = VECTor()
+    VECTor = VECTor()  # type: ignore
     """
     VECTor
 
@@ -28344,7 +28345,7 @@ class SMB100A_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "VMETer"
-        args = []
+        args = []  # type: List[str]
 
         class VOLTage(SCPINode, SCPIQuery):
             """
@@ -28356,14 +28357,14 @@ class SMB100A_gen(Instrument):
             _cmd = "VOLTage"
             args = ["1"]
 
-        VOLTage = VOLTage()
+        VOLTage = VOLTage()  # type: ignore
         """
         VMETer:VOLTage
 
         Arguments: 1
         """
 
-    VMETer = VMETer()
+    VMETer = VMETer()  # type: ignore
     """
     VMETer
 
@@ -28380,12 +28381,13 @@ class SMB100A_gen(Instrument):
         _cmd = "WAVeform"
         args = ["SAWTooth", "SINE", "SQUare", "TRIangle", "WGNoise"]
 
-    WAVeform = WAVeform()
+    WAVeform = WAVeform()  # type: ignore
     """
     WAVeform
 
     Arguments: SAWTooth, SINE, SQUare, TRIangle, WGNoise
     """
+
 
 SMB100A_gen._SCPI_class = SMB100A_gen
 # END OF SMB100A_gen

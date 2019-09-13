@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
-# Generated from ZNB_commands.inp on 2019-05-21 16:02
+# Generated from ZNB_commands.inp on 2019-09-13 11:59
+from typing import List
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
@@ -14,9 +15,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*CAL"
-        args = []
+        args = []  # type: List[str]
 
-    CAL = CAL()
+    CAL = CAL()  # type: ignore
     """
     `*CAL
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -33,9 +34,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*CLS"
-        args = []
+        args = []  # type: List[str]
 
-    CLS = CLS()
+    CLS = CLS()  # type: ignore
     """
     `*CLS
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -54,7 +55,7 @@ class ZNB_gen(Instrument):
         _cmd = "*ESE"
         args = ["1"]
 
-    ESE = ESE()
+    ESE = ESE()  # type: ignore
     """
     `*ESE
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -71,9 +72,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*ESR"
-        args = []
+        args = []  # type: List[str]
 
-    ESR = ESR()
+    ESR = ESR()  # type: ignore
     """
     `*ESR
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -90,9 +91,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*IDN"
-        args = []
+        args = []  # type: List[str]
 
-    IDN = IDN()
+    IDN = IDN()  # type: ignore
     """
     `*IDN
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -111,7 +112,7 @@ class ZNB_gen(Instrument):
         _cmd = "*IST"
         args = ["1"]
 
-    IST = IST()
+    IST = IST()  # type: ignore
     """
     `*IST
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -128,9 +129,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*OPC"
-        args = []
+        args = []  # type: List[str]
 
-    OPC = OPC()
+    OPC = OPC()  # type: ignore
     """
     `*OPC
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -147,9 +148,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*OPT"
-        args = []
+        args = []  # type: List[str]
 
-    OPT = OPT()
+    OPT = OPT()  # type: ignore
     """
     `*OPT
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -168,7 +169,7 @@ class ZNB_gen(Instrument):
         _cmd = "*PCB"
         args = ["1"]
 
-    PCB = PCB()
+    PCB = PCB()  # type: ignore
     """
     `*PCB
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -187,7 +188,7 @@ class ZNB_gen(Instrument):
         _cmd = "*PRE"
         args = ["1"]
 
-    PRE = PRE()
+    PRE = PRE()  # type: ignore
     """
     `*PRE
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -206,7 +207,7 @@ class ZNB_gen(Instrument):
         _cmd = "*PSC"
         args = ["1", "OFF", "ON"]
 
-    PSC = PSC()
+    PSC = PSC()  # type: ignore
     """
     `*PSC
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -223,9 +224,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*RST"
-        args = []
+        args = []  # type: List[str]
 
-    RST = RST()
+    RST = RST()  # type: ignore
     """
     `*RST
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -244,7 +245,7 @@ class ZNB_gen(Instrument):
         _cmd = "*SRE"
         args = ["1"]
 
-    SRE = SRE()
+    SRE = SRE()  # type: ignore
     """
     `*SRE
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -261,9 +262,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*STB"
-        args = []
+        args = []  # type: List[str]
 
-    STB = STB()
+    STB = STB()  # type: ignore
     """
     `*STB
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -280,9 +281,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*TRG"
-        args = []
+        args = []  # type: List[str]
 
-    TRG = TRG()
+    TRG = TRG()  # type: ignore
     """
     `*TRG
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -299,9 +300,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*TST"
-        args = []
+        args = []  # type: List[str]
 
-    TST = TST()
+    TST = TST()  # type: ignore
     """
     `*TST
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -318,9 +319,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "*WAI"
-        args = []
+        args = []  # type: List[str]
 
-    WAI = WAI()
+    WAI = WAI()  # type: ignore
     """
     `*WAI
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/557bd0d903194c76.htm>`_
@@ -337,9 +338,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "@DCL"
-        args = []
+        args = []  # type: List[str]
 
-    DCL = DCL()
+    DCL = DCL()  # type: ignore
     """
     `@DCL
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8e04d5566c46494a.htm>`_
@@ -356,9 +357,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "@GET"
-        args = []
+        args = []  # type: List[str]
 
-    GET = GET()
+    GET = GET()  # type: ignore
     """
     `@GET
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8e04d5566c46494a.htm>`_
@@ -375,9 +376,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "@LOC"
-        args = []
+        args = []  # type: List[str]
 
-    LOC = LOC()
+    LOC = LOC()  # type: ignore
     """
     `@LOC
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8e04d5566c46494a.htm>`_
@@ -394,9 +395,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "@REM"
-        args = []
+        args = []  # type: List[str]
 
-    REM = REM()
+    REM = REM()  # type: ignore
     """
     `@REM
     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8e04d5566c46494a.htm>`_
@@ -412,9 +413,9 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "ABORt"
-        args = []
+        args = []  # type: List[str]
 
-    ABORt = ABORt()
+    ABORt = ABORt()  # type: ignore
     """
     ABORt
 
@@ -429,7 +430,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "CALCulate"
-        args = []
+        args = []  # type: List[str]
 
         class CLIMits(SCPINode):
             """
@@ -439,7 +440,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CLIMits"
-            args = []
+            args = []  # type: List[str]
 
             class FAIL(SCPINode, SCPIQuery):
                 """
@@ -450,9 +451,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FAIL"
-                args = []
+                args = []  # type: List[str]
 
-            FAIL = FAIL()
+            FAIL = FAIL()  # type: ignore
             """
             `CALCulate:CLIMits:FAIL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b5d067ff75ce4bc8.htm#ID_eac6ce9afa8821ae0a00206a008389c0-9a887c81fa881c110a00206a01a6673d-en-US>`_
@@ -460,7 +461,7 @@ class ZNB_gen(Instrument):
             Arguments:
             """
 
-        CLIMits = CLIMits()
+        CLIMits = CLIMits()  # type: ignore
         """
         CALCulate:CLIMits
 
@@ -489,7 +490,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ALL"
                 args = ["FDATa", "MDATa", "SDATa"]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `CALCulate:DATA:ALL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a9e14432fedb4907.htm#ID_9bc5567afa8830e10a00206a01031e8d-018cf34507126a1d0a001ae703434e16-en-US>`_
@@ -517,9 +518,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CATalog"
-                    args = []
+                    args = []  # type: List[str]
 
-                CATalog = CATalog()
+                CATalog = CATalog()  # type: ignore
                 """
                 `CALCulate:DATA:CALL:CATalog
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2eb08e30e3664412.htm#ID_de9ddd49350a59e30a00206a0057b3a3-d34e11d1350a51e40a00206a01f2dc17-en-US>`_
@@ -527,7 +528,7 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            CALL = CALL()
+            CALL = CALL()  # type: ignore
             """
             `CALCulate:DATA:CALL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/342c7b12f0c3425b.htm#ID_50a40c98350a4f350a00206a008806a1-19dffcd1350a48200a00206a01f2dc17-en-US>`_
@@ -543,7 +544,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CHANnel"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -556,7 +557,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ALL"
                     args = ["FDATa", "MDATa", "SDATa"]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `CALCulate:DATA:CHANnel:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/67f03a3329554429.htm#ID_a6de926b5d2e7b7d0a001ae706ea3d2c-01ff1e255d2e79c70a001ae75392d2c4-en-US>`_
@@ -575,7 +576,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DALL"
                     args = ["FDATa", "MDATa", "SDATa"]
 
-                DALL = DALL()
+                DALL = DALL()  # type: ignore
                 """
                 `CALCulate:DATA:CHANnel:DALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/791f30dde0864bcc.htm#ID_ab2c40015d2e7d900a001ae75e144a27-d22c946e5d2e7c290a001ae75392d2c4-en-US>`_
@@ -583,7 +584,7 @@ class ZNB_gen(Instrument):
                 Arguments: FDATa, MDATa, SDATa
                 """
 
-            CHANnel = CHANnel()
+            CHANnel = CHANnel()  # type: ignore
             """
             CALCulate:DATA:CHANnel
 
@@ -601,7 +602,7 @@ class ZNB_gen(Instrument):
                 _cmd = "DALL"
                 args = ["FDATa", "MDATa", "SDATa"]
 
-            DALL = DALL()
+            DALL = DALL()  # type: ignore
             """
             `CALCulate:DATA:DALL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/44cd9ed2bdc14474.htm#ID_6a89a036fa8838a10a00206a00837657-b47c209efa8832c50a00206a01a6673d-en-US>`_
@@ -628,9 +629,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COUNt"
-                    args = []
+                    args = []  # type: List[str]
 
-                COUNt = COUNt()
+                COUNt = COUNt()  # type: ignore
                 """
                 `CALCulate:DATA:NSWeep:COUNt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/df64f664f7c341d7.htm#ID_675c2f06fa8840610a00206a00f5f114-74a998d4fa883a850a00206a01a6673d-en-US>`_
@@ -649,7 +650,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FIRSt"
                     args = ["SDATa"]
 
-                FIRSt = FIRSt()
+                FIRSt = FIRSt()  # type: ignore
                 """
                 `CALCulate:DATA:NSWeep:FIRSt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/db653262bea049c8.htm#ID_6f599dcafa8847e30a00206a01cb4396-4834fe6cfa8842360a00206a01a6673d-en-US>`_
@@ -668,7 +669,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LAST"
                     args = ["SDATa"]
 
-                LAST = LAST()
+                LAST = LAST()  # type: ignore
                 """
                 `CALCulate:DATA:NSWeep:LAST
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/68d77cb0c14a4fb8.htm#ID_79dc4d93fa884f650a00206a0014f820-5e0464d9fa8849b80a00206a01a6673d-en-US>`_
@@ -676,7 +677,7 @@ class ZNB_gen(Instrument):
                 Arguments: SDATa
                 """
 
-            NSWeep = NSWeep()
+            NSWeep = NSWeep()  # type: ignore
             """
             CALCulate:DATA:NSWeep
 
@@ -694,7 +695,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SGRoup"
                 args = ["FDATa", "MDATa", "SDATa"]
 
-            SGRoup = SGRoup()
+            SGRoup = SGRoup()  # type: ignore
             """
             `CALCulate:DATA:SGRoup
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d70ccd328fe648fb.htm#ID_f487020ffa8857250a00206a0013f6a1-b99c255cfa8851490a00206a01a6673d-en-US>`_
@@ -711,9 +712,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STIMulus"
-                args = []
+                args = []  # type: List[str]
 
-            STIMulus = STIMulus()
+            STIMulus = STIMulus()  # type: ignore
             """
             `CALCulate:DATA:STIMulus
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/038ef1cf7a044e85.htm#ID_c099a65ffa885eb70a00206a01a9364f-47a89778fa88590a0a00206a01a6673d-en-US>`_
@@ -732,7 +733,7 @@ class ZNB_gen(Instrument):
                 _cmd = "TRACe"
                 args = ["'string'"]
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             `CALCulate:DATA:TRACe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0ccb336efd194e81.htm#ID_c4253b7991da1d150a00206a01d5c62a-8d7fc8c091da15450a00206a00e9ecac-en-US>`_
@@ -740,7 +741,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         `CALCulate:DATA
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a9ce754f8a7c483a.htm#ID_40c37a8cfa8829400a00206a00988dcb-6469059ffa8823920a00206a01a6673d-en-US>`_
@@ -770,7 +771,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:DLINe:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/92cd9927bed242fd.htm#ID_a1d23145fa886de90a00206a00dd1777-52a9e9affa88684c0a00206a01a6673d-en-US>`_
@@ -778,7 +779,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        DLINe = DLINe()
+        DLINe = DLINe()  # type: ignore
         """
         `CALCulate:DLINe
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/789e52d0d45d4a05.htm#ID_86597917fa8866680a00206a00b6f794-18a084d6fa88608c0a00206a01a6673d-en-US>`_
@@ -794,7 +795,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DTIMe"
-            args = []
+            args = []  # type: List[str]
 
             class DATA(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -807,7 +808,7 @@ class ZNB_gen(Instrument):
                 _cmd = "DATA"
                 args = ["ALL"]
 
-            DATA = DATA()
+            DATA = DATA()  # type: ignore
             """
             `CALCulate:DTIMe:DATA
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ff7e4c8da1c74134.htm#ID_82578f8a72622caa0a001ae75fe582f8-25637d2672622b720a001ae7588b56f3-en-US>`_
@@ -823,7 +824,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LIMit"
-                args = []
+                args = []  # type: List[str]
 
                 class FAIL(SCPINode, SCPIQuery):
                     """
@@ -834,7 +835,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "FAIL"
-                    args = []
+                    args = []  # type: List[str]
 
                     class BEEP(SCPINode, SCPIBool):
                         """
@@ -847,7 +848,7 @@ class ZNB_gen(Instrument):
                         _cmd = "BEEP"
                         args = ["1", "OFF", "ON"]
 
-                    BEEP = BEEP()
+                    BEEP = BEEP()  # type: ignore
                     """
                     `CALCulate:DTIMe:LIMit:FAIL:BEEP
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/137f18a7656e4924.htm#ID_8c36daa9726230250a001ae73f95cb45-e7478cda72622f1b0a001ae7588b56f3-en-US>`_
@@ -855,7 +856,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                FAIL = FAIL()
+                FAIL = FAIL()  # type: ignore
                 """
                 `CALCulate:DTIMe:LIMit:FAIL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b500c06ed60f48a1.htm#ID_d4bbd43072622e6f0a001ae734f0be54-705416f772622d850a001ae7588b56f3-en-US>`_
@@ -874,7 +875,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LIMit"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                LIMit = LIMit()
+                LIMit = LIMit()  # type: ignore
                 """
                 `CALCulate:DTIMe:LIMit:LIMit
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7089fc90e70647dd.htm#ID_00e9ffb9726231da0a001ae7719d724f-54d98854726230c10a001ae7588b56f3-en-US>`_
@@ -893,7 +894,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:DTIMe:LIMit:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/100cd2af36e24c63.htm#ID_418cc9ff726233710a001ae736e576da-e24a2ed4726232570a001ae7588b56f3-en-US>`_
@@ -901,7 +902,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            LIMit = LIMit()
+            LIMit = LIMit()  # type: ignore
             """
             CALCulate:DTIMe:LIMit
 
@@ -919,7 +920,7 @@ class ZNB_gen(Instrument):
                 _cmd = "POSition"
                 args = ["1"]
 
-            POSition = POSition()
+            POSition = POSition()  # type: ignore
             """
             `CALCulate:DTIMe:POSition
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9fb90addd44040c2.htm#ID_42a58364726235550a001ae7630af22b-781e257c7262343c0a001ae7588b56f3-en-US>`_
@@ -938,7 +939,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:DTIMe:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fa071282da2b4bea.htm#ID_92fe5ca8726237390a001ae74ce161bf-a88a6bb9726236200a001ae7588b56f3-en-US>`_
@@ -957,7 +958,7 @@ class ZNB_gen(Instrument):
                 _cmd = "TARGet"
                 args = ["'string'"]
 
-            TARGet = TARGet()
+            TARGet = TARGet()  # type: ignore
             """
             `CALCulate:DTIMe:TARGet
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/67955541b2bd4010.htm#ID_30bfeb127262391e0a001ae71ef2c957-6ce92325726237f50a001ae7588b56f3-en-US>`_
@@ -965,7 +966,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        DTIMe = DTIMe()
+        DTIMe = DTIMe()  # type: ignore
         """
         CALCulate:DTIMe
 
@@ -980,7 +981,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "EYE"
-            args = []
+            args = []  # type: List[str]
 
             class DUT(SCPINode):
                 """
@@ -990,7 +991,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DUT"
-                args = []
+                args = []  # type: List[str]
 
                 class MODE(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -1003,7 +1004,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MODE"
                     args = ["IDEal", "MEASured"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CALCulate:EYE:DUT:MODE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6ca8e2c5936f4f32.htm#ID_0274b97b88f3a4cf0a001ae769a26a67-9b41492788f3a3b60a001ae77b2dc49c-en-US>`_
@@ -1011,7 +1012,7 @@ class ZNB_gen(Instrument):
                 Arguments: IDEal, MEASured
                 """
 
-            DUT = DUT()
+            DUT = DUT()  # type: ignore
             """
             CALCulate:EYE:DUT
 
@@ -1026,7 +1027,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EMPHasis"
-                args = []
+                args = []  # type: List[str]
 
                 class CURSor(SCPINode):
                     """
@@ -1036,7 +1037,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CURSor"
-                    args = []
+                    args = []  # type: List[str]
 
                     class POST(SCPINodeN, SCPIQuery, SCPISet):
                         """
@@ -1048,7 +1049,7 @@ class ZNB_gen(Instrument):
                         _cmd = "POST"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    POST = POST()
+                    POST = POST()  # type: ignore
                     """
                     CALCulate:EYE:EMPHasis:CURSor:POST
 
@@ -1066,7 +1067,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PRE"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PRE = PRE()
+                    PRE = PRE()  # type: ignore
                     """
                     `CALCulate:EYE:EMPHasis:CURSor:PRE
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a351e590610f4c6a.htm#ID_e654395088f3a9630a001ae7077aac4c-3929815e88f3a85a0a001ae77b2dc49c-en-US>`_
@@ -1074,7 +1075,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                CURSor = CURSor()
+                CURSor = CURSor()  # type: ignore
                 """
                 CALCulate:EYE:EMPHasis:CURSor
 
@@ -1092,7 +1093,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:EYE:EMPHasis:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4ab15eb6e85a4698.htm#ID_d20ee38988f3ab190a001ae724d8fb74-1ea2647288f3aa0f0a001ae77b2dc49c-en-US>`_
@@ -1100,7 +1101,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            EMPHasis = EMPHasis()
+            EMPHasis = EMPHasis()  # type: ignore
             """
             CALCulate:EYE:EMPHasis
 
@@ -1115,7 +1116,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EQUalization"
-                args = []
+                args = []  # type: List[str]
 
                 class CTLE(SCPINode):
                     """
@@ -1125,7 +1126,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CTLE"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DC(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1138,7 +1139,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DC"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    DC = DC()
+                    DC = DC()  # type: ignore
                     """
                     `CALCulate:EYE:EQUalization:CTLE:DC
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0f9954c9059449af.htm#ID_b689524b88f3aca00a001ae728374b3b-0030282a88f3abb50a001ae77b2dc49c-en-US>`_
@@ -1156,7 +1157,7 @@ class ZNB_gen(Instrument):
                         _cmd = "POLE"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    POLE = POLE()
+                    POLE = POLE()  # type: ignore
                     """
                     CALCulate:EYE:EQUalization:CTLE:POLE
 
@@ -1174,7 +1175,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ZERO"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    ZERO = ZERO()
+                    ZERO = ZERO()  # type: ignore
                     """
                     `CALCulate:EYE:EQUalization:CTLE:ZERO
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/24a6c5390bcf48fa.htm#ID_b9be79f188f3afcc0a001ae71acd713c-c254643a88f3aee20a001ae77b2dc49c-en-US>`_
@@ -1182,7 +1183,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                CTLE = CTLE()
+                CTLE = CTLE()  # type: ignore
                 """
                 CALCulate:EYE:EQUalization:CTLE
 
@@ -1200,7 +1201,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:EYE:EQUalization:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e583e5a17d6e4940.htm#ID_775ab3ef88f3b28b0a001ae7493b7dd3-f94757af88f3b1620a001ae77b2dc49c-en-US>`_
@@ -1208,7 +1209,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            EQUalization = EQUalization()
+            EQUalization = EQUalization()  # type: ignore
             """
             CALCulate:EYE:EQUalization
 
@@ -1223,7 +1224,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INPut"
-                args = []
+                args = []  # type: List[str]
 
                 class BPATtern(SCPINode):
                     """
@@ -1233,7 +1234,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BPATtern"
-                    args = []
+                    args = []  # type: List[str]
 
                     class TYPE(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1246,7 +1247,7 @@ class ZNB_gen(Instrument):
                         _cmd = "TYPE"
                         args = ["PRBS", "USER"]
 
-                    TYPE = TYPE()
+                    TYPE = TYPE()  # type: ignore
                     """
                     `CALCulate:EYE:INPut:BPATtern:TYPE
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ef1c9772c30d4d7f.htm#ID_10eb4f4f88f3b6060a001ae753071b39-63d12f0188f3b4be0a001ae77b2dc49c-en-US>`_
@@ -1254,7 +1255,7 @@ class ZNB_gen(Instrument):
                     Arguments: PRBS, USER
                     """
 
-                BPATtern = BPATtern()
+                BPATtern = BPATtern()  # type: ignore
                 """
                 CALCulate:EYE:INPut:BPATtern
 
@@ -1272,7 +1273,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DRATe"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DRATe = DRATe()
+                DRATe = DRATe()  # type: ignore
                 """
                 `CALCulate:EYE:INPut:DRATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6864b59265bc43de.htm#ID_e4873c1288f3b7fa0a001ae70118c47d-2d0d85a588f3b6c10a001ae77b2dc49c-en-US>`_
@@ -1288,7 +1289,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LENGth"
-                    args = []
+                    args = []  # type: List[str]
 
                     class BITS(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1301,7 +1302,7 @@ class ZNB_gen(Instrument):
                         _cmd = "BITS"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    BITS = BITS()
+                    BITS = BITS()  # type: ignore
                     """
                     `CALCulate:EYE:INPut:LENGth:BITS
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/863d20d948b348b9.htm#ID_602702a388f3b9fd0a001ae7566b7a2f-d218bf0188f3b8b50a001ae77b2dc49c-en-US>`_
@@ -1320,7 +1321,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PRBS"
                         args = ["L10", "L11", "L13", "L15", "L5", "L7", "L9"]
 
-                    PRBS = PRBS()
+                    PRBS = PRBS()  # type: ignore
                     """
                     `CALCulate:EYE:INPut:LENGth:PRBS
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d2d04050e8884a3e.htm#ID_72cf873f88f3bb840a001ae77098e400-fe0ceed588f3ba8a0a001ae77b2dc49c-en-US>`_
@@ -1328,7 +1329,7 @@ class ZNB_gen(Instrument):
                     Arguments: L10, L11, L13, L15, L5, L7, L9
                     """
 
-                LENGth = LENGth()
+                LENGth = LENGth()  # type: ignore
                 """
                 CALCulate:EYE:INPut:LENGth
 
@@ -1346,7 +1347,7 @@ class ZNB_gen(Instrument):
                     _cmd = "OLEVel"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                OLEVel = OLEVel()
+                OLEVel = OLEVel()  # type: ignore
                 """
                 `CALCulate:EYE:INPut:OLEVel
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f45096e29da04e79.htm#ID_ca75e2ee88f3bd0b0a001ae7542ede44-949d3d0b88f3bc110a001ae77b2dc49c-en-US>`_
@@ -1362,7 +1363,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RTIMe"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DATA(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1375,7 +1376,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DATA"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    DATA = DATA()
+                    DATA = DATA()  # type: ignore
                     """
                     `CALCulate:EYE:INPut:RTIMe:DATA
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c8c3bdafc68c4800.htm#ID_8562feb988f3bed00a001ae725dbb775-260d8dd888f3bd970a001ae77b2dc49c-en-US>`_
@@ -1394,7 +1395,7 @@ class ZNB_gen(Instrument):
                         _cmd = "THReshold"
                         args = ["T1_9", "T2_8"]
 
-                    THReshold = THReshold()
+                    THReshold = THReshold()  # type: ignore
                     """
                     `CALCulate:EYE:INPut:RTIMe:THReshold
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7f4bb5b9873b47e0.htm#ID_81b7453e88f3c0850a001ae732dbfe67-3db4434d88f3bf8b0a001ae77b2dc49c-en-US>`_
@@ -1402,7 +1403,7 @@ class ZNB_gen(Instrument):
                     Arguments: T1_9, T2_8
                     """
 
-                RTIMe = RTIMe()
+                RTIMe = RTIMe()  # type: ignore
                 """
                 CALCulate:EYE:INPut:RTIMe
 
@@ -1420,7 +1421,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ZLEVel"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                ZLEVel = ZLEVel()
+                ZLEVel = ZLEVel()  # type: ignore
                 """
                 `CALCulate:EYE:INPut:ZLEVel
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f45096e29da04e79.htm#ID_b7097be688f3c2b80a001ae707e97d13-2e70ec3988f3c17f0a001ae77b2dc49c-en-US>`_
@@ -1428,7 +1429,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            INPut = INPut()
+            INPut = INPut()  # type: ignore
             """
             CALCulate:EYE:INPut
 
@@ -1443,7 +1444,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "JITTer"
-                args = []
+                args = []  # type: List[str]
 
                 class DIRac(SCPINode):
                     """
@@ -1453,7 +1454,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DIRac"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DELTa(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1466,7 +1467,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DELTa"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    DELTa = DELTa()
+                    DELTa = DELTa()  # type: ignore
                     """
                     `CALCulate:EYE:JITTer:DIRac:DELTa
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/788ada66fa2f450a.htm#ID_e65431c988f3c44e0a001ae76de5ab43-f6a715a488f3c3730a001ae77b2dc49c-en-US>`_
@@ -1485,7 +1486,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PROBability"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PROBability = PROBability()
+                    PROBability = PROBability()  # type: ignore
                     """
                     `CALCulate:EYE:JITTer:DIRac:PROBability
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2284bea426ab4156.htm#ID_7d9e7ab788f3c6130a001ae7274c93a0-852452ab88f3c5190a001ae77b2dc49c-en-US>`_
@@ -1493,7 +1494,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                DIRac = DIRac()
+                DIRac = DIRac()  # type: ignore
                 """
                 CALCulate:EYE:JITTer:DIRac
 
@@ -1508,7 +1509,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PERiodic"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FREQuency(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1521,7 +1522,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FREQuency"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    FREQuency = FREQuency()
+                    FREQuency = FREQuency()  # type: ignore
                     """
                     `CALCulate:EYE:JITTer:PERiodic:FREQuency
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/51c3dd9953a34f92.htm#ID_84def9f088f3c7aa0a001ae730c4c981-62f78fd888f3c6bf0a001ae77b2dc49c-en-US>`_
@@ -1540,7 +1541,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MAGNitude"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    MAGNitude = MAGNitude()
+                    MAGNitude = MAGNitude()  # type: ignore
                     """
                     `CALCulate:EYE:JITTer:PERiodic:MAGNitude
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3df49ffe313c40d7.htm#ID_b6feaa0688f3c9400a001ae72a50cd3b-fca046bf88f3c8360a001ae77b2dc49c-en-US>`_
@@ -1559,7 +1560,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PHASe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PHASe = PHASe()
+                    PHASe = PHASe()  # type: ignore
                     """
                     `CALCulate:EYE:JITTer:PERiodic:PHASe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/28c6eea0b51a4c64.htm#ID_d65ac91d88f3cb050a001ae706367712-b9c0a7c088f3c9dc0a001ae77b2dc49c-en-US>`_
@@ -1567,7 +1568,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                PERiodic = PERiodic()
+                PERiodic = PERiodic()  # type: ignore
                 """
                 CALCulate:EYE:JITTer:PERiodic
 
@@ -1582,7 +1583,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RANDom"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STDDeviation(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1595,7 +1596,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STDDeviation"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STDDeviation = STDDeviation()
+                    STDDeviation = STDDeviation()  # type: ignore
                     """
                     `CALCulate:EYE:JITTer:RANDom:STDDeviation
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cded83eaa8f04e87.htm#ID_c6d7fcba88f3ccba0a001ae7724c568c-b9b6533588f3cba10a001ae77b2dc49c-en-US>`_
@@ -1603,7 +1604,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                RANDom = RANDom()
+                RANDom = RANDom()  # type: ignore
                 """
                 CALCulate:EYE:JITTer:RANDom
 
@@ -1621,7 +1622,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:EYE:JITTer:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e48dcc2fe41f47fe.htm#ID_aff936b988f3ceae0a001ae73e954187-39b5458a88f3cd950a001ae77b2dc49c-en-US>`_
@@ -1637,7 +1638,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TYPE"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DIRac(SCPINode, SCPIBool):
                         """
@@ -1650,7 +1651,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DIRac"
                         args = ["1", "OFF", "ON"]
 
-                    DIRac = DIRac()
+                    DIRac = DIRac()  # type: ignore
                     """
                     `CALCulate:EYE:JITTer:TYPE:DIRac
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/65f780ce599b421c.htm#ID_295f03fc88f3d0830a001ae7717ba401-d798ae1d88f3cf5a0a001ae77b2dc49c-en-US>`_
@@ -1669,7 +1670,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PERiodic"
                         args = ["1", "OFF", "ON"]
 
-                    PERiodic = PERiodic()
+                    PERiodic = PERiodic()  # type: ignore
                     """
                     `CALCulate:EYE:JITTer:TYPE:PERiodic
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/429dd9c2835a48b9.htm#ID_b0a0215d88f3d2390a001ae70a887194-1d5636db88f3d13f0a001ae77b2dc49c-en-US>`_
@@ -1688,7 +1689,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RANDom"
                         args = ["1", "OFF", "ON"]
 
-                    RANDom = RANDom()
+                    RANDom = RANDom()  # type: ignore
                     """
                     `CALCulate:EYE:JITTer:TYPE:RANDom
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f1ead16a13024b40.htm#ID_8af62ff088f3d3900a001ae7541ce86f-3abf0a9d88f3d2d50a001ae77b2dc49c-en-US>`_
@@ -1707,7 +1708,7 @@ class ZNB_gen(Instrument):
                         _cmd = "USER"
                         args = ["1", "OFF", "ON"]
 
-                    USER = USER()
+                    USER = USER()  # type: ignore
                     """
                     `CALCulate:EYE:JITTer:TYPE:USER
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/34ca0da794cf403d.htm#ID_6d13484088f3d66f0a001ae75cf4f504-f58bce7888f3d5750a001ae77b2dc49c-en-US>`_
@@ -1715,14 +1716,14 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                TYPE = TYPE()
+                TYPE = TYPE()  # type: ignore
                 """
                 CALCulate:EYE:JITTer:TYPE
 
                 Arguments:
                 """
 
-            JITTer = JITTer()
+            JITTer = JITTer()  # type: ignore
             """
             CALCulate:EYE:JITTer
 
@@ -1747,7 +1748,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CENTer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class HORizontal(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -1760,7 +1761,7 @@ class ZNB_gen(Instrument):
                         _cmd = "HORizontal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    HORizontal = HORizontal()
+                    HORizontal = HORizontal()  # type: ignore
                     """
                     `CALCulate:EYE:MASK:CENTer:HORizontal
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dc4c397db4894718.htm#ID_7b6ffba588f3d7d60a001ae700e9b26b-cde58e1588f3d70b0a001ae77b2dc49c-en-US>`_
@@ -1779,7 +1780,7 @@ class ZNB_gen(Instrument):
                         _cmd = "VERTical"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    VERTical = VERTical()
+                    VERTical = VERTical()  # type: ignore
                     """
                     `CALCulate:EYE:MASK:CENTer:VERTical
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/311d9091e1e34f17.htm#ID_cfe7728088f3d95d0a001ae70605e411-96ee646d88f3d8630a001ae77b2dc49c-en-US>`_
@@ -1787,7 +1788,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                CENTer = CENTer()
+                CENTer = CENTer()  # type: ignore
                 """
                 CALCulate:EYE:MASK:CENTer
 
@@ -1803,9 +1804,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DATA"
-                    args = []
+                    args = []  # type: List[str]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CALCulate:EYE:MASK:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b0646143f63d4d75.htm#ID_7f6b48fe88f3db120a001ae7323fdf81-c99f31b288f3da090a001ae77b2dc49c-en-US>`_
@@ -1822,7 +1823,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "FAIL"
-                    args = []
+                    args = []  # type: List[str]
 
                     class BEEP(SCPINode, SCPIBool):
                         """
@@ -1835,7 +1836,7 @@ class ZNB_gen(Instrument):
                         _cmd = "BEEP"
                         args = ["1", "OFF", "ON"]
 
-                    BEEP = BEEP()
+                    BEEP = BEEP()  # type: ignore
                     """
                     `CALCulate:EYE:MASK:FAIL:BEEP
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/591f2624b47b4744.htm#ID_47f2b37f88f3de3f0a001ae7199e5a62-1588540a88f3dd740a001ae77b2dc49c-en-US>`_
@@ -1854,7 +1855,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CONDition"
                         args = ["RATE", "SAMPles"]
 
-                    CONDition = CONDition()
+                    CONDition = CONDition()  # type: ignore
                     """
                     `CALCulate:EYE:MASK:FAIL:CONDition
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a6f2c3beca684951.htm#ID_e0350fac88f3dfc60a001ae763bc97d6-915144a388f3deeb0a001ae77b2dc49c-en-US>`_
@@ -1862,7 +1863,7 @@ class ZNB_gen(Instrument):
                     Arguments: RATE, SAMPles
                     """
 
-                FAIL = FAIL()
+                FAIL = FAIL()  # type: ignore
                 """
                 `CALCulate:EYE:MASK:FAIL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6e8751df0bda477f.htm#ID_23b1ad7888f3dcc80a001ae7662b21ff-8ab3f5dd88f3dbbe0a001ae77b2dc49c-en-US>`_
@@ -1878,7 +1879,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SHAPe"
-                    args = []
+                    args = []  # type: List[str]
 
                     class BOTTom(SCPINode):
                         """
@@ -1888,7 +1889,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "BOTTom"
-                        args = []
+                        args = []  # type: List[str]
 
                         class HORizontal(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -1901,7 +1902,7 @@ class ZNB_gen(Instrument):
                             _cmd = "HORizontal"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        HORizontal = HORizontal()
+                        HORizontal = HORizontal()  # type: ignore
                         """
                         `CALCulate:EYE:MASK:SHAPe:BOTTom:HORizontal
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cf05174ba4fa42a4.htm#ID_a5764ce788f3e14c0a001ae7443ed3a1-3a09e87988f3e0620a001ae77b2dc49c-en-US>`_
@@ -1920,7 +1921,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:EYE:MASK:SHAPe:BOTTom:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3c161bc70d0546de.htm#ID_2eeb5a1b88f3e3020a001ae709c4a9bf-a144e37488f3e1f80a001ae77b2dc49c-en-US>`_
@@ -1939,7 +1940,7 @@ class ZNB_gen(Instrument):
                             _cmd = "VERTical"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        VERTical = VERTical()
+                        VERTical = VERTical()  # type: ignore
                         """
                         `CALCulate:EYE:MASK:SHAPe:BOTTom:VERTical
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/16ac73dd86a54b09.htm#ID_d4b2b09388f3e4c70a001ae720d63fad-45ef16e388f3e38e0a001ae77b2dc49c-en-US>`_
@@ -1947,7 +1948,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    BOTTom = BOTTom()
+                    BOTTom = BOTTom()  # type: ignore
                     """
                     CALCulate:EYE:MASK:SHAPe:BOTTom
 
@@ -1962,7 +1963,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "POLYgon"
-                        args = []
+                        args = []  # type: List[str]
 
                         class HORizontal(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -1975,7 +1976,7 @@ class ZNB_gen(Instrument):
                             _cmd = "HORizontal"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        HORizontal = HORizontal()
+                        HORizontal = HORizontal()  # type: ignore
                         """
                         `CALCulate:EYE:MASK:SHAPe:POLYgon:HORizontal
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6fe25873a8624c93.htm#ID_3dd903eb88f3e6ca0a001ae730b8573c-9fc480fb88f3e5920a001ae77b2dc49c-en-US>`_
@@ -1994,7 +1995,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:EYE:MASK:SHAPe:POLYgon:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3c161bc70d0546de.htm#ID_77ed544188f3e8900a001ae7656d3c45-794d176d88f3e7760a001ae77b2dc49c-en-US>`_
@@ -2013,7 +2014,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TYPE"
                             args = ["HEXagon", "OCTogon", "RECTangle"]
 
-                        TYPE = TYPE()
+                        TYPE = TYPE()  # type: ignore
                         """
                         `CALCulate:EYE:MASK:SHAPe:POLYgon:TYPE
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6b472744023547a1.htm#ID_a9c13a4c88f3ea350a001ae705930055-1661d47488f3e93b0a001ae77b2dc49c-en-US>`_
@@ -2032,7 +2033,7 @@ class ZNB_gen(Instrument):
                             _cmd = "VERTical"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        VERTical = VERTical()
+                        VERTical = VERTical()  # type: ignore
                         """
                         `CALCulate:EYE:MASK:SHAPe:POLYgon:VERTical
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d774dcb745184296.htm#ID_5d5271b788f3ebbc0a001ae76f7492ad-cc2f698188f3ead20a001ae77b2dc49c-en-US>`_
@@ -2040,7 +2041,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    POLYgon = POLYgon()
+                    POLYgon = POLYgon()  # type: ignore
                     """
                     CALCulate:EYE:MASK:SHAPe:POLYgon
 
@@ -2055,7 +2056,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "TOP"
-                        args = []
+                        args = []  # type: List[str]
 
                         class HORizontal(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -2068,7 +2069,7 @@ class ZNB_gen(Instrument):
                             _cmd = "HORizontal"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        HORizontal = HORizontal()
+                        HORizontal = HORizontal()  # type: ignore
                         """
                         `CALCulate:EYE:MASK:SHAPe:TOP:HORizontal
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cf05174ba4fa42a4.htm#ID_cd06b70988f3ed720a001ae70ea59dd7-1e157ecb88f3ec580a001ae77b2dc49c-en-US>`_
@@ -2087,7 +2088,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:EYE:MASK:SHAPe:TOP:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3c161bc70d0546de.htm#ID_5b345f9688f3ef560a001ae7587f517e-3ff165a788f3ee3d0a001ae77b2dc49c-en-US>`_
@@ -2106,7 +2107,7 @@ class ZNB_gen(Instrument):
                             _cmd = "VERTical"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        VERTical = VERTical()
+                        VERTical = VERTical()  # type: ignore
                         """
                         `CALCulate:EYE:MASK:SHAPe:TOP:VERTical
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/16ac73dd86a54b09.htm#ID_bba3ff5288f3f10b0a001ae761b47661-b70409f588f3eff20a001ae77b2dc49c-en-US>`_
@@ -2114,14 +2115,14 @@ class ZNB_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    TOP = TOP()
+                    TOP = TOP()  # type: ignore
                     """
                     CALCulate:EYE:MASK:SHAPe:TOP
 
                     Arguments:
                     """
 
-                SHAPe = SHAPe()
+                SHAPe = SHAPe()  # type: ignore
                 """
                 CALCulate:EYE:MASK:SHAPe
 
@@ -2139,7 +2140,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SHOW"
                     args = ["1", "OFF", "ON"]
 
-                SHOW = SHOW()
+                SHOW = SHOW()  # type: ignore
                 """
                 `CALCulate:EYE:MASK:SHOW
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/315b9a876d764945.htm#ID_8a4a1e7c88f3f2ff0a001ae7775d8a93-8077f65288f3f1c70a001ae77b2dc49c-en-US>`_
@@ -2158,7 +2159,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:EYE:MASK:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fb0d14860aa84736.htm#ID_380db7a688f3f5320a001ae76bef1f4b-9aafcd9f88f3f3bb0a001ae77b2dc49c-en-US>`_
@@ -2174,7 +2175,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "VIOLation"
-                    args = []
+                    args = []  # type: List[str]
 
                     class RATE(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -2187,7 +2188,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RATE"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RATE = RATE()
+                    RATE = RATE()  # type: ignore
                     """
                     `CALCulate:EYE:MASK:VIOLation:RATE
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/06caefdd3f87445a.htm#ID_289a86a20992843e0a001ae767345ea0-83db806a099282f60a001ae7146ce1d5-en-US>`_
@@ -2206,7 +2207,7 @@ class ZNB_gen(Instrument):
                         _cmd = "TOLerance"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    TOLerance = TOLerance()
+                    TOLerance = TOLerance()  # type: ignore
                     """
                     `CALCulate:EYE:MASK:VIOLation:TOLerance
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/89eebd5920044714.htm#ID_7185eccb88f3f7260a001ae77ace6488-011cb28088f3f5fd0a001ae77b2dc49c-en-US>`_
@@ -2214,14 +2215,14 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                VIOLation = VIOLation()
+                VIOLation = VIOLation()  # type: ignore
                 """
                 CALCulate:EYE:MASK:VIOLation
 
                 Arguments:
                 """
 
-            MASK = MASK()
+            MASK = MASK()  # type: ignore
             """
             CALCulate:EYE:MASK
 
@@ -2236,7 +2237,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEASurement"
-                args = []
+                args = []  # type: List[str]
 
                 class DATA(SCPINode, SCPIQuery):
                     """
@@ -2247,9 +2248,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DATA"
-                    args = []
+                    args = []  # type: List[str]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CALCulate:EYE:MEASurement:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ff039718099a4a08.htm#ID_2835221188f3f8eb0a001ae73b78cddb-f59a869b88f3f7f10a001ae77b2dc49c-en-US>`_
@@ -2268,7 +2269,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:EYE:MEASurement:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1cfafc71d1f54dc7.htm#ID_b10994d688f3fa620a001ae75262b8ca-6e5668bc88f3f9780a001ae77b2dc49c-en-US>`_
@@ -2276,7 +2277,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            MEASurement = MEASurement()
+            MEASurement = MEASurement()  # type: ignore
             """
             CALCulate:EYE:MEASurement
 
@@ -2291,7 +2292,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NOISe"
-                args = []
+                args = []  # type: List[str]
 
                 class RMS(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -2304,7 +2305,7 @@ class ZNB_gen(Instrument):
                     _cmd = "RMS"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                RMS = RMS()
+                RMS = RMS()  # type: ignore
                 """
                 `CALCulate:EYE:NOISe:RMS
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/38aff658653a4d80.htm#ID_7402be0388f3fcf20a001ae711ff65dd-efcd09a888f3faef0a001ae77b2dc49c-en-US>`_
@@ -2323,7 +2324,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:EYE:NOISe:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/782e358a3e234615.htm#ID_dd48d20f88f3feb80a001ae727ecb1bf-ad10b37588f3fdae0a001ae77b2dc49c-en-US>`_
@@ -2331,7 +2332,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            NOISe = NOISe()
+            NOISe = NOISe()  # type: ignore
             """
             CALCulate:EYE:NOISe
 
@@ -2349,7 +2350,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:EYE:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8674f76d78df4eb9.htm#ID_9514d2e888f4004e0a001ae72e74247f-d60f0aa588f3ff630a001ae77b2dc49c-en-US>`_
@@ -2365,7 +2366,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STIMulus"
-                args = []
+                args = []  # type: List[str]
 
                 class ENCoder(SCPINode, SCPIBool):
                     """
@@ -2378,7 +2379,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ENCoder"
                     args = ["1", "OFF", "ON"]
 
-                ENCoder = ENCoder()
+                ENCoder = ENCoder()  # type: ignore
                 """
                 `CALCulate:EYE:STIMulus:ENCoder
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c612a42ea8fb4ac0.htm#ID_7751a3a688f401b50a001ae751dcf872-a0ae414f88f400cb0a001ae77b2dc49c-en-US>`_
@@ -2397,7 +2398,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LOWPass"
                     args = ["1", "OFF", "ON"]
 
-                LOWPass = LOWPass()
+                LOWPass = LOWPass()  # type: ignore
                 """
                 `CALCulate:EYE:STIMulus:LOWPass
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/889de7f760b54972.htm#ID_7c06be5988f4033c0a001ae73fe5a6c3-1ebdfd6188f402510a001ae77b2dc49c-en-US>`_
@@ -2416,7 +2417,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SCRambler"
                     args = ["1", "OFF", "ON"]
 
-                SCRambler = SCRambler()
+                SCRambler = SCRambler()  # type: ignore
                 """
                 `CALCulate:EYE:STIMulus:SCRambler
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/85ef89cb515743bb.htm#ID_fdc378c388f405010a001ae7180ec06d-9b00e1fa88f403e80a001ae77b2dc49c-en-US>`_
@@ -2424,7 +2425,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            STIMulus = STIMulus()
+            STIMulus = STIMulus()  # type: ignore
             """
             CALCulate:EYE:STIMulus
 
@@ -2442,7 +2443,7 @@ class ZNB_gen(Instrument):
                 _cmd = "VIEW"
                 args = ["DUT", "EMPHasis", "EQUalization", "JITTer", "NOISe", "STIMulus"]
 
-            VIEW = VIEW()
+            VIEW = VIEW()  # type: ignore
             """
             `CALCulate:EYE:VIEW
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/812004cf0845412b.htm#ID_009f396888f406f50a001ae726d4ee26-f62f5c0d88f405dc0a001ae77b2dc49c-en-US>`_
@@ -2450,7 +2451,7 @@ class ZNB_gen(Instrument):
             Arguments: DUT, EMPHasis, EQUalization, JITTer, NOISe, STIMulus
             """
 
-        EYE = EYE()
+        EYE = EYE()  # type: ignore
         """
         CALCulate:EYE
 
@@ -2465,7 +2466,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FILTer"
-            args = []
+            args = []  # type: List[str]
 
             class GATE(SCPINode):
                 """
@@ -2475,7 +2476,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "GATE"
-                args = []
+                args = []  # type: List[str]
 
                 class TIME(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -2498,7 +2499,7 @@ class ZNB_gen(Instrument):
                         _cmd = "AOFFset"
                         args = ["1", "OFF", "ON"]
 
-                    AOFFset = AOFFset()
+                    AOFFset = AOFFset()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:AOFFset
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/13b7cd6211a64886.htm#ID_76a35f12e2b27f340a00201900691b7c-b24d2b5c9d95c7d60a00201901108bad-en-US>`_
@@ -2517,7 +2518,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CENTer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    CENTer = CENTer()
+                    CENTer = CENTer()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:CENTer
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/708d0e1a2d574ab4.htm#ID_8939aaaffa88756b0a00206a00804a7d-9e5db8b9fa886fce0a00206a01a6673d-en-US>`_
@@ -2536,7 +2537,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DCHebyshev"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    DCHebyshev = DCHebyshev()
+                    DCHebyshev = DCHebyshev()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:DCHebyshev
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/65c43bf8cd18408a.htm#ID_7fba1aeafa887cce0a00206a019b2ba1-e5421c59fa8877500a00206a01a6673d-en-US>`_
@@ -2555,7 +2556,7 @@ class ZNB_gen(Instrument):
                         _cmd = "SHAPe"
                         args = ["MAXimum", "MINimum", "NORMal", "WIDE"]
 
-                    SHAPe = SHAPe()
+                    SHAPe = SHAPe()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:SHAPe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/54f92ea1195240bc.htm#ID_031b5b73fa88848e0a00206a00b00ed6-d02bdedbfa887ec20a00206a01a6673d-en-US>`_
@@ -2574,7 +2575,7 @@ class ZNB_gen(Instrument):
                         _cmd = "SHOW"
                         args = ["1", "OFF", "ON"]
 
-                    SHOW = SHOW()
+                    SHOW = SHOW()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:SHOW
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/df1959e8b0fc4cc4.htm#ID_5bdd49f3fa888c000a00206a0155fee8-5df0b4aafa8886730a00206a01a6673d-en-US>`_
@@ -2593,7 +2594,7 @@ class ZNB_gen(Instrument):
                         _cmd = "SPAN"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    SPAN = SPAN()
+                    SPAN = SPAN()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:SPAN
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a9ca210cb08a416a.htm#ID_1f821d5afa8893a20a00206a017ae442-3cf5253bfa888df40a00206a01a6673d-en-US>`_
@@ -2612,7 +2613,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:STARt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3d844b7111994adf.htm#ID_839a66a9fa889b620a00206a0160e4c2-22dadc45fa8895960a00206a01a6673d-en-US>`_
@@ -2631,7 +2632,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1222ca1a6262411a.htm#ID_8cc9db0bfa88a2c40a00206a007a16ad-6e3bd764fa889d370a00206a01a6673d-en-US>`_
@@ -2650,7 +2651,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:STOP
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3d844b7111994adf.htm#ID_7956fee9fa88aa560a00206a00a34674-2328ec2afa88a4990a00206a01a6673d-en-US>`_
@@ -2669,7 +2670,7 @@ class ZNB_gen(Instrument):
                         _cmd = "TYPE"
                         args = ["BPASs", "NOTCh"]
 
-                    TYPE = TYPE()
+                    TYPE = TYPE()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:TYPE
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7b8b789f4a4148ec.htm#ID_3e6d61d6fa88b9690a00206a0013cd15-cb383adafa88b39d0a00206a01a6673d-en-US>`_
@@ -2688,7 +2689,7 @@ class ZNB_gen(Instrument):
                         _cmd = "WINDow"
                         args = ["BOHMan", "DCHebyshev", "HAMMing", "HANNing", "RECT"]
 
-                    WINDow = WINDow()
+                    WINDow = WINDow()  # type: ignore
                     """
                     `CALCulate:FILTer:GATE:TIME:WINDow
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/aa512b0a1a7341fc.htm#ID_ef3431c2fa88b1c80a00206a003380d7-10ec9575fa88ac2b0a00206a01a6673d-en-US>`_
@@ -2696,21 +2697,21 @@ class ZNB_gen(Instrument):
                     Arguments: BOHMan, DCHebyshev, HAMMing, HANNing, RECT
                     """
 
-                TIME = TIME()
+                TIME = TIME()  # type: ignore
                 """
                 CALCulate:FILTer:GATE:TIME
 
                 Arguments: BPASs, NOTCh
                 """
 
-            GATE = GATE()
+            GATE = GATE()  # type: ignore
             """
             CALCulate:FILTer:GATE
 
             Arguments:
             """
 
-        FILTer = FILTer()
+        FILTer = FILTer()  # type: ignore
         """
         CALCulate:FILTer
 
@@ -2739,7 +2740,7 @@ class ZNB_gen(Instrument):
                 _cmd = "WQUType"
                 args = ["POWer", "VOLTage"]
 
-            WQUType = WQUType()
+            WQUType = WQUType()  # type: ignore
             """
             `CALCulate:FORMat:WQUType
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f59df8170e2e48b1.htm#ID_58fe9ca9134bbdc10a00206a01c60d6d-3d8b7753134bb65e0a00206a0182dc26-en-US>`_
@@ -2747,7 +2748,7 @@ class ZNB_gen(Instrument):
             Arguments: POWer, VOLTage
             """
 
-        FORMat = FORMat()
+        FORMat = FORMat()  # type: ignore
         """
         `CALCulate:FORMat
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/132d40cd4d1d43c4.htm#ID_d897b8eafa88c10a0a00206a011a6be4-72cc9cedfa88bb4e0a00206a01a6673d-en-US>`_
@@ -2763,7 +2764,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "GDAPerture"
-            args = []
+            args = []  # type: List[str]
 
             class SCOunt(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -2776,7 +2777,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SCOunt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SCOunt = SCOunt()
+            SCOunt = SCOunt()  # type: ignore
             """
             `CALCulate:GDAPerture:SCOunt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c736cb18a37c4bcf.htm#ID_71a00580fa88f5e50a00206a0102d135-12afaa0ffa88f0380a00206a01a6673d-en-US>`_
@@ -2784,7 +2785,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        GDAPerture = GDAPerture()
+        GDAPerture = GDAPerture()  # type: ignore
         """
         CALCulate:GDAPerture
 
@@ -2799,7 +2800,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LDEViation"
-            args = []
+            args = []  # type: List[str]
 
             class AUTO(SCPINode, SCPISet):
                 """
@@ -2811,7 +2812,7 @@ class ZNB_gen(Instrument):
                 _cmd = "AUTO"
                 args = ["ONCE"]
 
-            AUTO = AUTO()
+            AUTO = AUTO()  # type: ignore
             """
             CALCulate:LDEViation:AUTO
 
@@ -2828,7 +2829,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CONStant"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            CONStant = CONStant()
+            CONStant = CONStant()  # type: ignore
             """
             CALCulate:LDEViation:CONStant
 
@@ -2845,7 +2846,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ELENgth"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            ELENgth = ELENgth()
+            ELENgth = ELENgth()  # type: ignore
             """
             CALCulate:LDEViation:ELENgth
 
@@ -2862,7 +2863,7 @@ class ZNB_gen(Instrument):
                 _cmd = "MODE"
                 args = ["OFF", "ON", "TRACking"]
 
-            MODE = MODE()
+            MODE = MODE()  # type: ignore
             """
             CALCulate:LDEViation:MODE
 
@@ -2879,14 +2880,14 @@ class ZNB_gen(Instrument):
                 _cmd = "SLOPe"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SLOPe = SLOPe()
+            SLOPe = SLOPe()  # type: ignore
             """
             CALCulate:LDEViation:SLOPe
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        LDEViation = LDEViation()
+        LDEViation = LDEViation()  # type: ignore
         """
         CALCulate:LDEViation
 
@@ -2901,7 +2902,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LIMit"
-            args = []
+            args = []  # type: List[str]
 
             class CIRCle(SCPINode, SCPIBool):
                 """
@@ -2922,9 +2923,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CLEar"
-                    args = []
+                    args = []  # type: List[str]
 
-                CLEar = CLEar()
+                CLEar = CLEar()  # type: ignore
                 """
                 `CALCulate:LIMit:CIRCle:CLEar
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1f1b628da0ff4632.htm#ID_0e0cda67e2b28c830a00201900760f22-d4bd05cae2b28b4a0a002019017b841c-en-US>`_
@@ -2943,7 +2944,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CALCulate:LIMit:CIRCle:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2ed038e078b94e81.htm#ID_00d3a3fdbba6da9f0a002019017a3f54-baaba439bba6d9660a0020190170f726-en-US>`_
@@ -2972,7 +2973,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CALCulate:LIMit:CIRCle:DISPlay:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/95c25e5e1cc049ad.htm#ID_02d43bf1bba6dc440a002019016ba97e-a3f8e06fbba6db0c0a0020190170f726-en-US>`_
@@ -2980,7 +2981,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                DISPlay = DISPlay()
+                DISPlay = DISPlay()  # type: ignore
                 """
                 CALCulate:LIMit:CIRCle:DISPlay
 
@@ -2996,7 +2997,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "FAIL"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ALL(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -3009,7 +3010,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ALL"
                         args = ["'string'"]
 
-                    ALL = ALL()
+                    ALL = ALL()  # type: ignore
                     """
                     `CALCulate:LIMit:CIRCle:FAIL:ALL
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/68b9b4218ae94370.htm#ID_2ef23be7a1e90cd10a001ae723a88db3-babcf1ee071e3ffb0a001ae7079b6778-en-US>`_
@@ -3017,7 +3018,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                FAIL = FAIL()
+                FAIL = FAIL()  # type: ignore
                 """
                 `CALCulate:LIMit:CIRCle:FAIL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3a8b018f1c4549aa.htm#ID_6567a18abba6ddfa0a002019019eee1a-7b3fc002bba6dcb20a0020190170f726-en-US>`_
@@ -3046,7 +3047,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CALCulate:LIMit:CIRCle:SOUNd:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/154eb220f88d4f32.htm#ID_bc8304e0bba6dfa00a002019016c88e3-6624d71cbba6de770a0020190170f726-en-US>`_
@@ -3054,7 +3055,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                SOUNd = SOUNd()
+                SOUNd = SOUNd()  # type: ignore
                 """
                 CALCulate:LIMit:CIRCle:SOUNd
 
@@ -3072,7 +3073,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:CIRCle:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/47c20d06725748a5.htm#ID_a38a567ebba6e1550a00201900cb8393-0af63611bba6dffe0a0020190170f726-en-US>`_
@@ -3080,7 +3081,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            CIRCle = CIRCle()
+            CIRCle = CIRCle()  # type: ignore
             """
             CALCulate:LIMit:CIRCle
 
@@ -3096,9 +3097,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CLEar"
-                args = []
+                args = []  # type: List[str]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             `CALCulate:LIMit:CLEar
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f3d7c761247b47f0.htm#ID_dc89d368e2b28f900a0020190141c352-f1766415e2b28e570a002019017b841c-en-US>`_
@@ -3127,7 +3128,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CALCulate:LIMit:CONTrol:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7fb73b9082124702.htm#ID_8c0418dcfa89330e0a00206a00138405-43be1e80fa892d600a00206a01a6673d-en-US>`_
@@ -3146,7 +3147,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DOMain"
                     args = ["FLIN", "FLOG", "FSEG", "FSINgle", "PLIN", "PLOG", "PSINgle", "TLIN", "TLOG"]
 
-                DOMain = DOMain()
+                DOMain = DOMain()  # type: ignore
                 """
                 `CALCulate:LIMit:CONTrol:DOMain
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e8aa35068b694faf.htm#ID_b1c1b996fa8923eb0a00206a00a30cbc-432d059efa891e4d0a00206a01a6673d-en-US>`_
@@ -3165,7 +3166,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SHIFt = SHIFt()
+                SHIFt = SHIFt()  # type: ignore
                 """
                 `CALCulate:LIMit:CONTrol:SHIFt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c0acf94a1b904577.htm#ID_e02c13f2fa892b5d0a00206a00d97f61-ac43656dfa8925bf0a00206a01a6673d-en-US>`_
@@ -3173,7 +3174,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            CONTrol = CONTrol()
+            CONTrol = CONTrol()  # type: ignore
             """
             CALCulate:LIMit:CONTrol
 
@@ -3191,7 +3192,7 @@ class ZNB_gen(Instrument):
                 _cmd = "DATA"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            DATA = DATA()
+            DATA = DATA()  # type: ignore
             """
             `CALCulate:LIMit:DATA
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/980bfb2d9fc347a8.htm#ID_0edb9fe4fa893a8f0a00206a0022bc60-e6fbb4aa4b56d1d50a00206a01a60f5f-en-US>`_
@@ -3218,9 +3219,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CLEar"
-                    args = []
+                    args = []  # type: List[str]
 
-                CLEar = CLEar()
+                CLEar = CLEar()  # type: ignore
                 """
                 `CALCulate:LIMit:DCIRcle:CLEar
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4b35d96f647543d5.htm#ID_649bea3342ade7210a001ae77dacf09c-3c7f2a7042ade54c0a001ae769a5b4da-en-US>`_
@@ -3239,7 +3240,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CALCulate:LIMit:DCIRcle:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e2339de954c84af1.htm#ID_6d2d12e142ade9a10a001ae77edbd9d2-5721e13b42ade7cc0a001ae769a5b4da-en-US>`_
@@ -3268,7 +3269,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CALCulate:LIMit:DCIRcle:DISPlay:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ef4c569a517d45b4.htm#ID_f4917f2842adebb40a001ae7609910b4-f3b7ec5742adea2e0a001ae769a5b4da-en-US>`_
@@ -3276,7 +3277,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                DISPlay = DISPlay()
+                DISPlay = DISPlay()  # type: ignore
                 """
                 CALCulate:LIMit:DCIRcle:DISPlay
 
@@ -3294,7 +3295,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:DCIRcle:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6ef75dfe0c814d19.htm#ID_d5ff0bb142adeee10a001ae759857318-8dc472fa42adec600a001ae769a5b4da-en-US>`_
@@ -3302,7 +3303,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            DCIRcle = DCIRcle()
+            DCIRcle = DCIRcle()  # type: ignore
             """
             CALCulate:LIMit:DCIRcle
 
@@ -3317,7 +3318,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DELete"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPISet):
                     """
@@ -3328,9 +3329,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `CALCulate:LIMit:DELete:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7653993fc6474b79.htm#ID_8a7de250fa8942020a00206a002374c5-0bf55881fa893c740a00206a01a6673d-en-US>`_
@@ -3338,7 +3339,7 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            DELete = DELete()
+            DELete = DELete()  # type: ignore
             """
             CALCulate:LIMit:DELete
 
@@ -3366,7 +3367,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:DISPlay:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a620fa8c37b143ad.htm#ID_201695c6fa8949930a00206a0137b8c8-b12eb996fa8943e60a00206a01a6673d-en-US>`_
@@ -3374,7 +3375,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            DISPlay = DISPlay()
+            DISPlay = DISPlay()  # type: ignore
             """
             CALCulate:LIMit:DISPlay
 
@@ -3390,7 +3391,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FAIL"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -3403,7 +3404,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ALL"
                     args = ["'string'"]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `CALCulate:LIMit:FAIL:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4cb6463bcfa04116.htm#ID_847e9896a1e911e10a001ae76a2c60e0-a61f1b08072afe550a001ae71b730c3b-en-US>`_
@@ -3411,7 +3412,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            FAIL = FAIL()
+            FAIL = FAIL()  # type: ignore
             """
             `CALCulate:LIMit:FAIL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a70d2fed40134890.htm#ID_f86051f1fa8951150a00206a01cb3196-02514d2afa894b770a00206a01a6673d-en-US>`_
@@ -3440,7 +3441,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CALCulate:LIMit:LOWer:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0a592816179b4cae.htm#ID_ce8edc7ffa896f2c0a00206a00e12ff4-d2a79ea4fa89698e0a00206a01a6673d-en-US>`_
@@ -3459,7 +3460,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FEED"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                FEED = FEED()
+                FEED = FEED()  # type: ignore
                 """
                 `CALCulate:LIMit:LOWer:FEED
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/770736b607994ffc.htm#ID_0a02e1e6fa8958970a00206a01102a1b-58c77064fa8952ea0a00206a01a6673d-en-US>`_
@@ -3478,7 +3479,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SHIFt = SHIFt()
+                SHIFt = SHIFt()  # type: ignore
                 """
                 `CALCulate:LIMit:LOWer:SHIFt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/579c1f27b3e74ed6.htm#ID_42c4bc43fa8960280a00206a0190c6a5-473dcd87fa895a7b0a00206a01a6673d-en-US>`_
@@ -3497,7 +3498,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:LOWer:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b94fb57fc16a4021.htm#ID_5e22d895fa89679a0a00206a0189df49-6c41edc1fa8961fd0a00206a01a6673d-en-US>`_
@@ -3505,7 +3506,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            LOWer = LOWer()
+            LOWer = LOWer()  # type: ignore
             """
             CALCulate:LIMit:LOWer
 
@@ -3520,7 +3521,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RDOMain"
-                args = []
+                args = []  # type: List[str]
 
                 class COMPlex(SCPINode, SCPISet):
                     """
@@ -3533,7 +3534,7 @@ class ZNB_gen(Instrument):
                     _cmd = "COMPlex"
                     args = ["S", "SINV", "Y", "YREL", "Z", "ZREL"]
 
-                COMPlex = COMPlex()
+                COMPlex = COMPlex()  # type: ignore
                 """
                 `CALCulate:LIMit:RDOMain:COMPlex
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/238f51657b44402d.htm#ID_1bfa6dc5fa89770c0a00206a011e3406-6dd1f87bfa89715e0a00206a01a6673d-en-US>`_
@@ -3552,7 +3553,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FORMat"
                     args = ["C", "COMPlex", "GDELay", "IMAGinary", "L", "MAGNitude", "PHASe", "REAL", "SWR"]
 
-                FORMat = FORMat()
+                FORMat = FORMat()  # type: ignore
                 """
                 `CALCulate:LIMit:RDOMain:FORMat
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6cac5c97886d4899.htm#ID_d0fa1e97fa897ecc0a00206a00a410e7-fc19fdddfa8978f00a00206a01a6673d-en-US>`_
@@ -3571,7 +3572,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SPACing"
                     args = ["DB", "LINear", "LOGarithmic", "SIC"]
 
-                SPACing = SPACing()
+                SPACing = SPACing()  # type: ignore
                 """
                 `CALCulate:LIMit:RDOMain:SPACing
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fbdd7a3d75284494.htm#ID_d10f581ffa89866d0a00206a01cdc12f-072c5dfcfa8980c00a00206a01a6673d-en-US>`_
@@ -3579,7 +3580,7 @@ class ZNB_gen(Instrument):
                 Arguments: DB, LINear, LOGarithmic, SIC
                 """
 
-            RDOMain = RDOMain()
+            RDOMain = RDOMain()  # type: ignore
             """
             CALCulate:LIMit:RDOMain
 
@@ -3594,7 +3595,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SEGMent"
-                args = []
+                args = []  # type: List[str]
 
                 class AMPLitude(SCPINode):
                     """
@@ -3604,7 +3605,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "AMPLitude"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STARt(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -3617,7 +3618,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `CALCulate:LIMit:SEGMent:AMPLitude:STARt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/11b0747d8e944b4b.htm#ID_79d6b03cfa898f560a00206a0037e778-eaa1c80cfa89898a0a00206a01a6673d-en-US>`_
@@ -3636,7 +3637,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `CALCulate:LIMit:SEGMent:AMPLitude:STOP
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/11b0747d8e944b4b.htm#ID_82e40f82fa8996d80a00206a019caca5-517eee2dfa89913b0a00206a01a6673d-en-US>`_
@@ -3644,7 +3645,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                AMPLitude = AMPLitude()
+                AMPLitude = AMPLitude()  # type: ignore
                 """
                 CALCulate:LIMit:SEGMent:AMPLitude
 
@@ -3660,9 +3661,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COUNt"
-                    args = []
+                    args = []  # type: List[str]
 
-                COUNt = COUNt()
+                COUNt = COUNt()  # type: ignore
                 """
                 `CALCulate:LIMit:SEGMent:COUNt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f00309e159e4411c.htm#ID_a4781db3fa899eb80a00206a004cbe94-9a955102fa8998cc0a00206a01a6673d-en-US>`_
@@ -3678,7 +3679,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STIMulus"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STARt(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -3691,7 +3692,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `CALCulate:LIMit:SEGMent:STIMulus:STARt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d668e7d16044438d.htm#ID_d1275cb9fa89a6590a00206a01db09d6-4a3c58bdfa89a09c0a00206a01a6673d-en-US>`_
@@ -3710,7 +3711,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `CALCulate:LIMit:SEGMent:STIMulus:STOP
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d668e7d16044438d.htm#ID_f98528d0fa89adbb0a00206a011164e6-65241391fa89a83d0a00206a01a6673d-en-US>`_
@@ -3718,7 +3719,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                STIMulus = STIMulus()
+                STIMulus = STIMulus()  # type: ignore
                 """
                 CALCulate:LIMit:SEGMent:STIMulus
 
@@ -3736,7 +3737,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TYPE"
                     args = ["LMAX", "LMIN", "OFF"]
 
-                TYPE = TYPE()
+                TYPE = TYPE()  # type: ignore
                 """
                 `CALCulate:LIMit:SEGMent:TYPE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2b4cba8b57db4862.htm#ID_b6e64935fa89b55c0a00206a00c5b92a-00be6b1ffa89afa00a00206a01a6673d-en-US>`_
@@ -3744,7 +3745,7 @@ class ZNB_gen(Instrument):
                 Arguments: LMAX, LMIN, OFF
                 """
 
-            SEGMent = SEGMent()
+            SEGMent = SEGMent()  # type: ignore
             """
             CALCulate:LIMit:SEGMent
 
@@ -3772,7 +3773,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:SOUNd:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/eecfbfbc00724725.htm#ID_8cff667afa89bd0d0a00206a002b9bb9-c7083814fa89b7310a00206a01a6673d-en-US>`_
@@ -3780,7 +3781,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            SOUNd = SOUNd()
+            SOUNd = SOUNd()  # type: ignore
             """
             CALCulate:LIMit:SOUNd
 
@@ -3809,7 +3810,7 @@ class ZNB_gen(Instrument):
                     _cmd = "AREA"
                     args = ["LEFT", "MID", "RIGHt"]
 
-                AREA = AREA()
+                AREA = AREA()  # type: ignore
                 """
                 `CALCulate:LIMit:STATe:AREA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9d9e42e32fcf45e6.htm#ID_e4bbdf5091dad73d0a00206a015f6524-9e0d80eb91dacdd70a00206a00e9ecac-en-US>`_
@@ -3817,7 +3818,7 @@ class ZNB_gen(Instrument):
                 Arguments: LEFT, MID, RIGHt
                 """
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:LIMit:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/41d4ae0c38fe49c4.htm#ID_a2351470fa89c49f0a00206a003ef800-63a4586cfa89bef20a00206a01a6673d-en-US>`_
@@ -3846,7 +3847,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:TTLout:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8c5a247317814d57.htm#ID_cbcffdacfa89ccbd0a00206a00b40a25-4afe7823fa89c6930a00206a01a6673d-en-US>`_
@@ -3854,7 +3855,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            TTLout = TTLout()
+            TTLout = TTLout()  # type: ignore
             """
             CALCulate:LIMit:TTLout
 
@@ -3882,7 +3883,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CALCulate:LIMit:UPPer:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0a592816179b4cae.htm#ID_bc7a4fc8fa89ebbe0a00206a0189234d-9a27fa013c961f1f0a00201901e2ea6c-en-US>`_
@@ -3901,7 +3902,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FEED"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                FEED = FEED()
+                FEED = FEED()  # type: ignore
                 """
                 `CALCulate:LIMit:UPPer:FEED
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/770736b607994ffc.htm#ID_120c8703fa89d46d0a00206a0192176f-bb730b26fa89cea10a00206a01a6673d-en-US>`_
@@ -3920,7 +3921,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SHIFt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SHIFt = SHIFt()
+                SHIFt = SHIFt()  # type: ignore
                 """
                 `CALCulate:LIMit:UPPer:SHIFt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/579c1f27b3e74ed6.htm#ID_4049dd9cfa89dbff0a00206a01134819-274d8fa3fa89d6610a00206a01a6673d-en-US>`_
@@ -3939,7 +3940,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:LIMit:UPPer:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b94fb57fc16a4021.htm#ID_63005ebdfa89e3ee0a00206a016ea114-723fb281fa89ddf30a00206a01a6673d-en-US>`_
@@ -3947,14 +3948,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            UPPer = UPPer()
+            UPPer = UPPer()  # type: ignore
             """
             CALCulate:LIMit:UPPer
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        LIMit = LIMit()
+        LIMit = LIMit()  # type: ignore
         """
         CALCulate:LIMit
 
@@ -3980,9 +3981,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AOFF"
-                args = []
+                args = []  # type: List[str]
 
-            AOFF = AOFF()
+            AOFF = AOFF()  # type: ignore
             """
             `CALCulate:MARKer:AOFF
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fa000f93fd4f4c5b.htm#ID_c984dcecfa89f38e0a00206a00d27a1c-ca2a1fc1fa89edb20a00206a01a6673d-en-US>`_
@@ -4001,7 +4002,7 @@ class ZNB_gen(Instrument):
                 _cmd = "BWIDth"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            BWIDth = BWIDth()
+            BWIDth = BWIDth()  # type: ignore
             """
             `CALCulate:MARKer:BWIDth
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8db4f4a0d76a456e.htm#ID_c87ace40fa89fb3f0a00206a01891879-b1201654fa89f5820a00206a01a6673d-en-US>`_
@@ -4030,7 +4031,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:MARKer:COUPled:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1bd62bd7692f4e41.htm#ID_3afb171ffa8a030f0a00206a00a6f15a-8e7bcef9fa89fd230a00206a01a6673d-en-US>`_
@@ -4038,7 +4039,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            COUPled = COUPled()
+            COUPled = COUPled()  # type: ignore
             """
             CALCulate:MARKer:COUPled
 
@@ -4053,7 +4054,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DEFault"
-                args = []
+                args = []  # type: List[str]
 
                 class FORMat(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -4066,7 +4067,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FORMat"
                     args = ["ADMittance", "COMPlex", "DEFault", "GDELay", "IMAGinary", "IMPedance", "LINPhase", "LOGPhase", "MDB", "MDPHase", "MIMPedance", "MLINear", "MLOGarithmic", "MLPHase", "PHASe", "POLar", "REAL", "SWR"]
 
-                FORMat = FORMat()
+                FORMat = FORMat()  # type: ignore
                 """
                 `CALCulate:MARKer:DEFault:FORMat
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f47b7220e9a24599.htm#ID_a1916f36353430b80a001ae733a2d25d-cf535f9435342f120a001ae72ac1dc63-en-US>`_
@@ -4074,7 +4075,7 @@ class ZNB_gen(Instrument):
                 Arguments: ADMittance, COMPlex, DEFault, GDELay, IMAGinary, IMPedance, LINPhase, LOGPhase, MDB, MDPHase, MIMPedance, MLINear, MLOGarithmic, MLPHase, PHASe, POLar, REAL, SWR
                 """
 
-            DEFault = DEFault()
+            DEFault = DEFault()  # type: ignore
             """
             CALCulate:MARKer:DEFault
 
@@ -4102,7 +4103,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:MARKer:DELTa:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9a00eb7a33d84165.htm#ID_2ac31b0bfa8a0aa00a00206a014d68e5-7bbe3cfbfa8a04f30a00206a01a6673d-en-US>`_
@@ -4110,7 +4111,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            DELTa = DELTa()
+            DELTa = DELTa()  # type: ignore
             """
             CALCulate:MARKer:DELTa
 
@@ -4128,7 +4129,7 @@ class ZNB_gen(Instrument):
                 _cmd = "FORMat"
                 args = ["ADMittance", "COMPlex", "DEFault", "GDELay", "IMAGinary", "IMPedance", "LINPhase", "LOGPhase", "MDB", "MDPHase", "MIMPedance", "MLINear", "MLOGarithmic", "MLPHase", "PHASe", "POLar", "REAL", "SWR"]
 
-            FORMat = FORMat()
+            FORMat = FORMat()  # type: ignore
             """
             `CALCulate:MARKer:FORMat
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4c7af5ff6777435b.htm#ID_0c7f97fada30383f0a001ae704ff0606-a607c8b9fa8a0c750a00206a01a6673d-en-US>`_
@@ -4168,7 +4169,7 @@ class ZNB_gen(Instrument):
                         _cmd = "GMCenter"
                         args = ["1", "OFF", "ON"]
 
-                    GMCenter = GMCenter()
+                    GMCenter = GMCenter()  # type: ignore
                     """
                     `CALCulate:MARKer:FUNCtion:BWIDth:GMCenter
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9ea2897cc2074b65.htm#ID_09cba1695d2e9a7e0a001ae73dea0c2a-40db97d65d2e98f80a001ae75392d2c4-en-US>`_
@@ -4187,7 +4188,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MODE"
                         args = ["BPABsolute", "BPASs", "BPRMarker", "BSABsolute", "BSRMarker", "BSTop", "NONE"]
 
-                    MODE = MODE()
+                    MODE = MODE()  # type: ignore
                     """
                     `CALCulate:MARKer:FUNCtion:BWIDth:MODE
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0a26f3b8139d4bb4.htm#ID_791788fefa8a30c60a00206a00649e10-787c5f72fa8a2abb0a00206a01a6673d-en-US>`_
@@ -4195,7 +4196,7 @@ class ZNB_gen(Instrument):
                     Arguments: BPABsolute, BPASs, BPRMarker, BSABsolute, BSRMarker, BSTop, NONE
                     """
 
-                BWIDth = BWIDth()
+                BWIDth = BWIDth()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:BWIDth
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/18d64e401a3c4d78.htm#ID_e192fb1bfa8a28e60a00206a0079aa26-15468232fa8a23290a00206a01a6673d-en-US>`_
@@ -4212,9 +4213,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CENTer"
-                    args = []
+                    args = []  # type: List[str]
 
-                CENTer = CENTer()
+                CENTer = CENTer()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:CENTer
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8c94020d00ed4c26.htm#ID_365edbb4fa8a38960a00206a00bd8439-2a58127bfa8a32ba0a00206a01a6673d-en-US>`_
@@ -4230,7 +4231,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DELTa"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
@@ -4243,7 +4244,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CALCulate:MARKer:FUNCtion:DELTa:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6b65d72689764580.htm#ID_1d43c878fa8a40660a00206a011298cf-abb3447cfa8a3a8a0a00206a01a6673d-en-US>`_
@@ -4251,7 +4252,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                DELTa = DELTa()
+                DELTa = DELTa()  # type: ignore
                 """
                 CALCulate:MARKer:FUNCtion:DELTa
 
@@ -4266,7 +4267,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DOMain"
-                    args = []
+                    args = []  # type: List[str]
 
                     class USER(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -4289,7 +4290,7 @@ class ZNB_gen(Instrument):
                             _cmd = "RANGe"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        RANGe = RANGe()
+                        RANGe = RANGe()  # type: ignore
                         """
                         `CALCulate:MARKer:FUNCtion:DOMain:USER:RANGe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2af2a460e1634e13.htm#ID_ec748740a1e91ec20a001ae73c718e26-cff20544a1e91da90a001ae70a9caa95-en-US>`_
@@ -4308,7 +4309,7 @@ class ZNB_gen(Instrument):
                             _cmd = "SHOW"
                             args = ["1", "OFF", "ON"]
 
-                        SHOW = SHOW()
+                        SHOW = SHOW()  # type: ignore
                         """
                         `CALCulate:MARKer:FUNCtion:DOMain:USER:SHOW
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b996f7d9a11b400a.htm#ID_0bf0909ffa8a4fe60a00206a01917992-7f696627fa8a49dc0a00206a01a6673d-en-US>`_
@@ -4327,7 +4328,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STARt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        STARt = STARt()
+                        STARt = STARt()  # type: ignore
                         """
                         `CALCulate:MARKer:FUNCtion:DOMain:USER:STARt
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6b09f447b71d417a.htm#ID_a5f79d01fa8a57e50a00206a002de6dc-52538baffa8a51ea0a00206a01a6673d-en-US>`_
@@ -4346,7 +4347,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STOP"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        STOP = STOP()
+                        STOP = STOP()  # type: ignore
                         """
                         `CALCulate:MARKer:FUNCtion:DOMain:USER:STOP
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6b09f447b71d417a.htm#ID_687ae9d6fa8a60030a00206a007c1291-2f4051c6fa8a59ca0a00206a01a6673d-en-US>`_
@@ -4354,14 +4355,14 @@ class ZNB_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    USER = USER()
+                    USER = USER()  # type: ignore
                     """
                     CALCulate:MARKer:FUNCtion:DOMain:USER
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                DOMain = DOMain()
+                DOMain = DOMain()  # type: ignore
                 """
                 CALCulate:MARKer:FUNCtion:DOMain
 
@@ -4379,7 +4380,7 @@ class ZNB_gen(Instrument):
                     _cmd = "EXECute"
                     args = ["BFILter", "LPEak", "LTARget", "MAXimum", "MINimum", "MMAXimum", "MMINimum", "NPEak", "RPEak", "RTARget", "TARGet"]
 
-                EXECute = EXECute()
+                EXECute = EXECute()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:EXECute
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/600b76c1f17b4625.htm#ID_0f48fc24fa8a67f30a00206a017b7ffd-4761b5f8fa8a61e80a00206a01a6673d-en-US>`_
@@ -4396,9 +4397,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RESult"
-                    args = []
+                    args = []  # type: List[str]
 
-                RESult = RESult()
+                RESult = RESult()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:RESult
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c4a647dafdef46ee.htm#ID_ca4abd32fa8a6f840a00206a01da7da1-6cf5cdc7fa8a69c70a00206a01a6673d-en-US>`_
@@ -4417,7 +4418,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SELect"
                     args = ["BFILter", "LPEak", "LTARget", "MAXimum", "MINimum", "MMAXimum", "MMINimum", "NPEak", "RPEak", "RTARget", "TARGet"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:SELect
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c95147813aef4387.htm#ID_28ad0b13fa8a8e860a00206a002e5875-64e78ee7fa8a884c0a00206a01a6673d-en-US>`_
@@ -4434,9 +4435,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SPAN"
-                    args = []
+                    args = []  # type: List[str]
 
-                SPAN = SPAN()
+                SPAN = SPAN()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:SPAN
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d16c29d1400f4678.htm#ID_8d68f92e6c02ab810a00206a01c2603f-22bc3ca36c02a4da0a00206a01eade93-en-US>`_
@@ -4453,9 +4454,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STARt"
-                    args = []
+                    args = []  # type: List[str]
 
-                STARt = STARt()
+                STARt = STARt()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:STARt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ceab94aa505047d1.htm#ID_c6f90737fa8a77350a00206a00929601-35edf04bfa8a71780a00206a01a6673d-en-US>`_
@@ -4472,9 +4473,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STOP"
-                    args = []
+                    args = []  # type: List[str]
 
-                STOP = STOP()
+                STOP = STOP()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:STOP
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ceab94aa505047d1.htm#ID_c5b678bdfa8a7ed60a00206a007ab819-384b0a87fa8a790a0a00206a01a6673d-en-US>`_
@@ -4493,7 +4494,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TARGet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                TARGet = TARGet()
+                TARGet = TARGet()  # type: ignore
                 """
                 `CALCulate:MARKer:FUNCtion:TARGet
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7c2d30605ca841ae.htm#ID_bc960c67fa8a86770a00206a0083f28b-98cf2789fa8a80ab0a00206a01a6673d-en-US>`_
@@ -4501,7 +4502,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            FUNCtion = FUNCtion()
+            FUNCtion = FUNCtion()  # type: ignore
             """
             CALCulate:MARKer:FUNCtion
 
@@ -4517,9 +4518,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MAXimum"
-                args = []
+                args = []  # type: List[str]
 
-            MAXimum = MAXimum()
+            MAXimum = MAXimum()  # type: ignore
             """
             `CALCulate:MARKer:MAXimum
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dd071845c23d417a.htm#ID_8c34c922fa8a983a0a00206a00c82880-06d37e32fa8a91160a00206a01a6673d-en-US>`_
@@ -4536,9 +4537,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MINimum"
-                args = []
+                args = []  # type: List[str]
 
-            MINimum = MINimum()
+            MINimum = MINimum()  # type: ignore
             """
             `CALCulate:MARKer:MINimum
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dd071845c23d417a.htm#ID_4ad27e65fa8aa1420a00206a0153b85a-e85401f8fa8a9aba0a00206a01a6673d-en-US>`_
@@ -4557,7 +4558,7 @@ class ZNB_gen(Instrument):
                 _cmd = "MODE"
                 args = ["CONTinuous", "DISCrete"]
 
-            MODE = MODE()
+            MODE = MODE()  # type: ignore
             """
             `CALCulate:MARKer:MODE
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4010b689c6bf4ec7.htm#ID_b49e503bfa8aa9af0a00206a01c8eac3-1a6dc12efa8aa3a40a00206a01a6673d-en-US>`_
@@ -4576,7 +4577,7 @@ class ZNB_gen(Instrument):
                 _cmd = "NAME"
                 args = ["'string'"]
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `CALCulate:MARKer:NAME
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d956e2c3002e4abd.htm#ID_a680fdc9fa8ab2980a00206a000a65ae-163ea644fa8aaba30a00206a01a6673d-en-US>`_
@@ -4605,7 +4606,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MODE"
                     args = ["CONTinuous", "DISCrete"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:MODE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/44bfec6a89d24ef8.htm#ID_603a1492fa8abac50a00206a0069c536-856117a3fa8ab5180a00206a01a6673d-en-US>`_
@@ -4624,7 +4625,7 @@ class ZNB_gen(Instrument):
                     _cmd = "NAME"
                     args = ["'string'"]
 
-                NAME = NAME()
+                NAME = NAME()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:NAME
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/87ac5dca438a4cdd.htm#ID_999919fdfa8ac2950a00206a01882570-c28c1b05fa8abc9a0a00206a01a6673d-en-US>`_
@@ -4643,7 +4644,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6ea0ed2e1ddf4f74.htm#ID_38b890f5fa8b86330a00206a01954afc-5cd7d92dfa8b80760a00206a01a6673d-en-US>`_
@@ -4662,7 +4663,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TYPE"
                     args = ["ARBitrary", "FIXed", "NORMal"]
 
-                TYPE = TYPE()
+                TYPE = TYPE()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:TYPE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7c0f3d498f264e9e.htm#ID_20c235fafa8b6eb30a00206a01dede11-49a0afa4fa8b685a0a00206a01a6673d-en-US>`_
@@ -4681,7 +4682,7 @@ class ZNB_gen(Instrument):
                     _cmd = "X"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                X = X()
+                X = X()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:X
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/57b141f2e2c44fb9.htm#ID_17e585b9fa8b76b20a00206a002d73ab-c4bf51adfa8b70980a00206a01a6673d-en-US>`_
@@ -4700,7 +4701,7 @@ class ZNB_gen(Instrument):
                     _cmd = "Y"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                Y = Y()
+                Y = Y()  # type: ignore
                 """
                 `CALCulate:MARKer:REFerence:Y
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/90520d3afddd4fde.htm#ID_6e8f4665fa8b7e630a00206a01ed19b0-7b490ccffa8b78b60a00206a01a6673d-en-US>`_
@@ -4708,7 +4709,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            REFerence = REFerence()
+            REFerence = REFerence()  # type: ignore
             """
             CALCulate:MARKer:REFerence
 
@@ -4723,7 +4724,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SEARch"
-                args = []
+                args = []  # type: List[str]
 
                 class BFILter(SCPINode):
                     """
@@ -4733,7 +4734,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BFILter"
-                    args = []
+                    args = []  # type: List[str]
 
                     class RESult(SCPINode, SCPIBool):
                         """
@@ -4767,7 +4768,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "AREA"
                                 args = ["LEFT", "MID", "RIGHt"]
 
-                            AREA = AREA()
+                            AREA = AREA()  # type: ignore
                             """
                             `CALCulate:MARKer:SEARch:BFILter:RESult:STATe:AREA
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e2feccae7432448d.htm#ID_3d27cc9c91db00ce0a00206a01798cde-8853842091daf8230a00206a00e9ecac-en-US>`_
@@ -4775,7 +4776,7 @@ class ZNB_gen(Instrument):
                             Arguments: LEFT, MID, RIGHt
                             """
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:MARKer:SEARch:BFILter:RESult:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f2d891a03a1d49f9.htm#ID_b0cb39b7fa8b8e410a00206a00d7eda6-57e9f681fa8b88080a00206a01a6673d-en-US>`_
@@ -4783,14 +4784,14 @@ class ZNB_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    RESult = RESult()
+                    RESult = RESult()  # type: ignore
                     """
                     CALCulate:MARKer:SEARch:BFILter:RESult
 
                     Arguments: 1, OFF, ON
                     """
 
-                BFILter = BFILter()
+                BFILter = BFILter()  # type: ignore
                 """
                 CALCulate:MARKer:SEARch:BFILter
 
@@ -4808,7 +4809,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FORMat"
                     args = ["DEFault", "IMAGinary", "MLINear", "MLOGarithmic", "PHASe", "REAL", "SWR", "UPHase"]
 
-                FORMat = FORMat()
+                FORMat = FORMat()  # type: ignore
                 """
                 `CALCulate:MARKer:SEARch:FORMat
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d201a42d7ccc45ed.htm#ID_365c6ea35de572610a00201900016e84-655449015de571290a0020190152315a-en-US>`_
@@ -4825,9 +4826,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "IMMediate"
-                    args = []
+                    args = []  # type: List[str]
 
-                IMMediate = IMMediate()
+                IMMediate = IMMediate()  # type: ignore
                 """
                 `CALCulate:MARKer:SEARch:IMMediate
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4a78723c9cff4eef.htm#ID_8220efeafa8bb61c0a00206a002cc9cf-50585b86fa8baff20a00206a01a6673d-en-US>`_
@@ -4844,9 +4845,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LEFT"
-                    args = []
+                    args = []  # type: List[str]
 
-                LEFT = LEFT()
+                LEFT = LEFT()  # type: ignore
                 """
                 `CALCulate:MARKer:SEARch:LEFT
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cdfa7b0040b0418c.htm#ID_8278f555fa8b96210a00206a0146cca2-c96c28e0fa8b90160a00206a01a6673d-en-US>`_
@@ -4863,9 +4864,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "NEXT"
-                    args = []
+                    args = []  # type: List[str]
 
-                NEXT = NEXT()
+                NEXT = NEXT()  # type: ignore
                 """
                 `CALCulate:MARKer:SEARch:NEXT
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cdfa7b0040b0418c.htm#ID_3ef4139bfa8b9de10a00206a0020e6d6-55733c3dfa8b98150a00206a01a6673d-en-US>`_
@@ -4882,9 +4883,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RIGHt"
-                    args = []
+                    args = []  # type: List[str]
 
-                RIGHt = RIGHt()
+                RIGHt = RIGHt()  # type: ignore
                 """
                 `CALCulate:MARKer:SEARch:RIGHt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cdfa7b0040b0418c.htm#ID_f8f11fcbfa8ba61f0a00206a00095eea-c2ff6c7afa8ba0330a00206a01a6673d-en-US>`_
@@ -4903,7 +4904,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TRACking"
                     args = ["1", "OFF", "ON"]
 
-                TRACking = TRACking()
+                TRACking = TRACking()  # type: ignore
                 """
                 `CALCulate:MARKer:SEARch:TRACking
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/50067f6406044da9.htm#ID_47207a16fa8bae0e0a00206a008d852a-04f0dca6fa8ba8220a00206a01a6673d-en-US>`_
@@ -4911,7 +4912,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            SEARch = SEARch()
+            SEARch = SEARch()  # type: ignore
             """
             CALCulate:MARKer:SEARch
 
@@ -4940,7 +4941,7 @@ class ZNB_gen(Instrument):
                     _cmd = "AREA"
                     args = ["LEFT", "MID", "RIGHt"]
 
-                AREA = AREA()
+                AREA = AREA()  # type: ignore
                 """
                 `CALCulate:MARKer:STATe:AREA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/59688d861c344dbc.htm#ID_4bccbbec91db0bda0a00206a01d2f8b1-2b62471a91db04390a00206a00e9ecac-en-US>`_
@@ -4948,7 +4949,7 @@ class ZNB_gen(Instrument):
                 Arguments: LEFT, MID, RIGHt
                 """
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:MARKer:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d0472df6b3cb40c9.htm#ID_e745149dfa8be1340a00206a01305b71-b428f5aefa8bdb380a00206a01a6673d-en-US>`_
@@ -4967,7 +4968,7 @@ class ZNB_gen(Instrument):
                 _cmd = "TARGet"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            TARGet = TARGet()
+            TARGet = TARGet()  # type: ignore
             """
             `CALCulate:MARKer:TARGet
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8f93a1eedbcb4346.htm#ID_6773dc66fa8bbe890a00206a01e71f6d-ee358b16fa8bb7f10a00206a01a6673d-en-US>`_
@@ -4986,7 +4987,7 @@ class ZNB_gen(Instrument):
                 _cmd = "TYPE"
                 args = ["ARBitrary", "FIXed", "NORMal"]
 
-            TYPE = TYPE()
+            TYPE = TYPE()  # type: ignore
             """
             `CALCulate:MARKer:TYPE
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8740dafec1944a52.htm#ID_6ec07d71fa8bc8aa0a00206a01cd9de5-4689d12efa8bc0ea0a00206a01a6673d-en-US>`_
@@ -5005,7 +5006,7 @@ class ZNB_gen(Instrument):
                 _cmd = "X"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            X = X()
+            X = X()  # type: ignore
             """
             `CALCulate:MARKer:X
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4ef3e6895bcf42b7.htm#ID_2358db0ffa8bd1840a00206a01e12053-393c91dcfa8bcb690a00206a01a6673d-en-US>`_
@@ -5024,7 +5025,7 @@ class ZNB_gen(Instrument):
                 _cmd = "Y"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            Y = Y()
+            Y = Y()  # type: ignore
             """
             `CALCulate:MARKer:Y
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8d8c242cdd7e4572.htm#ID_68d57989fa8bd9540a00206a0034e41b-a588c4c5fa8bd3590a00206a01a6673d-en-US>`_
@@ -5032,7 +5033,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        MARKer = MARKer()
+        MARKer = MARKer()  # type: ignore
         """
         CALCulate:MARKer
 
@@ -5070,7 +5071,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DEFine"
                     args = ["(expression)"]
 
-                DEFine = DEFine()
+                DEFine = DEFine()  # type: ignore
                 """
                 `CALCulate:MATH:EXPRession:DEFine
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/49b93df4d2974c24.htm#ID_8520d66dfa8c11b90a00206a002e410f-5fdc9322fa8c0c0c0a00206a01a6673d-en-US>`_
@@ -5089,7 +5090,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SDEFine"
                     args = ["'string'"]
 
-                SDEFine = SDEFine()
+                SDEFine = SDEFine()  # type: ignore
                 """
                 `CALCulate:MATH:EXPRession:SDEFine
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7d726687c3514fa3.htm#ID_a2f75c6cfa8c0a370a00206a0145ed97-d61bd978fa8c049a0a00206a01a6673d-en-US>`_
@@ -5097,7 +5098,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            EXPRession = EXPRession()
+            EXPRession = EXPRession()  # type: ignore
             """
             CALCulate:MATH:EXPRession
 
@@ -5115,7 +5116,7 @@ class ZNB_gen(Instrument):
                 _cmd = "FUNCtion"
                 args = ["ADD", "DIVide", "MULTiply", "NORMal", "SUBTract"]
 
-            FUNCtion = FUNCtion()
+            FUNCtion = FUNCtion()  # type: ignore
             """
             `CALCulate:MATH:FUNCtion
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ffdc5ec43e98489c.htm#ID_39a94accfa8be8b50a00206a00eb9289-d8e4b798fa8be3080a00206a01a6673d-en-US>`_
@@ -5132,9 +5133,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MEMorize"
-                args = []
+                args = []  # type: List[str]
 
-            MEMorize = MEMorize()
+            MEMorize = MEMorize()  # type: ignore
             """
             `CALCulate:MATH:MEMorize
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1bc091561bf04c5d.htm#ID_8c53fd1afa8bf20c0a00206a01fcb1ce-8e069e7efa8beb260a00206a01a6673d-en-US>`_
@@ -5153,7 +5154,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:MATH:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5826421b58a046ed.htm#ID_68bf5aa0fa8bfae60a00206a01d8cc25-038f9478fa8bf43e0a00206a01a6673d-en-US>`_
@@ -5182,7 +5183,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:MATH:WUNit:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9628726622464f1c.htm#ID_020fd1e7fa8c02c50a00206a01046c97-6a5ac2ccfa8bfce90a00206a01a6673d-en-US>`_
@@ -5190,14 +5191,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            WUNit = WUNit()
+            WUNit = WUNit()  # type: ignore
             """
             CALCulate:MATH:WUNit
 
             Arguments: 1, OFF, ON
             """
 
-        MATH = MATH()
+        MATH = MATH()  # type: ignore
         """
         CALCulate:MATH
 
@@ -5212,7 +5213,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PARameter"
-            args = []
+            args = []  # type: List[str]
 
             class CATalog(SCPINode, SCPIQuery):
                 """
@@ -5223,7 +5224,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
                 class SENDed(SCPINode, SCPIQuery):
                     """
@@ -5234,9 +5235,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SENDed"
-                    args = []
+                    args = []  # type: List[str]
 
-                SENDed = SENDed()
+                SENDed = SENDed()  # type: ignore
                 """
                 `CALCulate:PARameter:CATalog:SENDed
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4aaff69b21544d46.htm#ID_72b3d670842dc4af0a00201900a9cfc5-ae203438842dc3380a00201901936165-en-US>`_
@@ -5244,7 +5245,7 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             `CALCulate:PARameter:CATalog
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2ce049f1af684d21.htm#ID_6d0f03abfa8c193b0a00206a003b5f50-8685a90cfa8c13bd0a00206a01a6673d-en-US>`_
@@ -5273,7 +5274,7 @@ class ZNB_gen(Instrument):
                     _cmd = "EXTended"
                     args = ["'string'"]
 
-                EXTended = EXTended()
+                EXTended = EXTended()  # type: ignore
                 """
                 CALCulate:PARameter:DEFine:EXTended
 
@@ -5291,7 +5292,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SGRoup"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SGRoup = SGRoup()
+                SGRoup = SGRoup()  # type: ignore
                 """
                 `CALCulate:PARameter:DEFine:SGRoup
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/78a4125ac51a435a.htm#ID_119cf020fa8c283f0a00206a00a5b7f1-6f48d8a2fa8c22920a00206a01a6673d-en-US>`_
@@ -5299,7 +5300,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            DEFine = DEFine()
+            DEFine = DEFine()  # type: ignore
             """
             `CALCulate:PARameter:DEFine
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/85c286e91d1f45c1.htm#ID_c26a23a6fa8c20bd0a00206a01ef3d1b-d5d71622fa8c1b100a00206a01a6673d-en-US>`_
@@ -5327,9 +5328,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `CALCulate:PARameter:DELete:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c33d8af74c784000.htm#ID_aaf85c1de1568dfc0a00206a01ec5604-135cad8de15685420a00206a00796295-en-US>`_
@@ -5346,9 +5347,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                CALL = CALL()
+                CALL = CALL()  # type: ignore
                 """
                 `CALCulate:PARameter:DELete:CALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8d937272d97244fb.htm#ID_8d9ff76be156a6a50a00206a01182ba4-6f8706dce1569d5e0a00206a00796295-en-US>`_
@@ -5365,9 +5366,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CMEMory"
-                    args = []
+                    args = []  # type: List[str]
 
-                CMEMory = CMEMory()
+                CMEMory = CMEMory()  # type: ignore
                 """
                 `CALCulate:PARameter:DELete:CMEMory
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cc3d9af74e704b5c.htm#ID_a75b324c4b6a080e0a001ae706c6f2b3-ded67b324b6a04740a001ae708cb241d-en-US>`_
@@ -5384,9 +5385,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MEMory"
-                    args = []
+                    args = []  # type: List[str]
 
-                MEMory = MEMory()
+                MEMory = MEMory()  # type: ignore
                 """
                 `CALCulate:PARameter:DELete:MEMory
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4613fe70603c4f9d.htm#ID_96a98c814b6a0ce00a001ae76e6a3196-75f503b24b6a09d30a001ae708cb241d-en-US>`_
@@ -5403,9 +5404,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SGRoup"
-                    args = []
+                    args = []  # type: List[str]
 
-                SGRoup = SGRoup()
+                SGRoup = SGRoup()  # type: ignore
                 """
                 `CALCulate:PARameter:DELete:SGRoup
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bc5ac4b592724e7a.htm#ID_f2764fe1fa8c37520a00206a01e48f49-65ba2f61fa8c31b50a00206a01a6673d-en-US>`_
@@ -5413,7 +5414,7 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            DELete = DELete()
+            DELete = DELete()  # type: ignore
             """
             `CALCulate:PARameter:DELete
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0763f74d0a2d4d61.htm#ID_8f70dcdefa8c2fe00a00206a003b801c-ee007debfa8c2a330a00206a01a6673d-en-US>`_
@@ -5443,7 +5444,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SENDed"
                     args = ["'string'"]
 
-                SENDed = SENDed()
+                SENDed = SENDed()  # type: ignore
                 """
                 `CALCulate:PARameter:MEASure:SENDed
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c7009e9c24ab41ca.htm#ID_e36c8c14842dcc210a00201900ce962e-6d066a16842dcac90a00201901936165-en-US>`_
@@ -5451,7 +5452,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             `CALCulate:PARameter:MEASure
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/10abfaa35dcf40f3.htm#ID_b2e7e077fa8c3ef30a00206a00c865a1-07a6d833fa8c39460a00206a01a6673d-en-US>`_
@@ -5467,7 +5468,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NFIGure"
-                args = []
+                args = []  # type: List[str]
 
                 class CSETtings(SCPINode, SCPISet):
                     """
@@ -5479,14 +5480,14 @@ class ZNB_gen(Instrument):
                     _cmd = "CSETtings"
                     args = ["'string'"]
 
-                CSETtings = CSETtings()
+                CSETtings = CSETtings()  # type: ignore
                 """
                 CALCulate:PARameter:NFIGure:CSETtings
 
                 Arguments: 'string'
                 """
 
-            NFIGure = NFIGure()
+            NFIGure = NFIGure()  # type: ignore
             """
             CALCulate:PARameter:NFIGure
 
@@ -5515,7 +5516,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SENDed"
                     args = ["'string'"]
 
-                SENDed = SENDed()
+                SENDed = SENDed()  # type: ignore
                 """
                 `CALCulate:PARameter:SDEFine:SENDed
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/87172ee6d3f0486d.htm#ID_22046707842dcee00a002019009c3503-c048e5e3842dcd5a0a00201901936165-en-US>`_
@@ -5523,7 +5524,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            SDEFine = SDEFine()
+            SDEFine = SDEFine()  # type: ignore
             """
             `CALCulate:PARameter:SDEFine
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e75d49e2a14541c5.htm#ID_e2a5b54afa8c4dd80a00206a00d8bd4a-b73200d6fa8c482b0a00206a01a6673d-en-US>`_
@@ -5542,7 +5543,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SELect"
                 args = ["'string'"]
 
-            SELect = SELect()
+            SELect = SELect()  # type: ignore
             """
             `CALCulate:PARameter:SELect
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3c03effa6de64ee5.htm#ID_fa5a7dabfa8c555a0a00206a00a4a885-9edb1c2efa8c4fac0a00206a01a6673d-en-US>`_
@@ -5550,7 +5551,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        PARameter = PARameter()
+        PARameter = PARameter()  # type: ignore
         """
         CALCulate:PARameter
 
@@ -5568,7 +5569,7 @@ class ZNB_gen(Instrument):
             _cmd = "PHOLd"
             args = ["MAX", "MIN", "OFF"]
 
-        PHOLd = PHOLd()
+        PHOLd = PHOLd()  # type: ignore
         """
         `CALCulate:PHOLd
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7be6f52751ea485d.htm#ID_98d0d154fa8c5cfb0a00206a01cc0c79-20de90e3fa8c573e0a00206a01a6673d-en-US>`_
@@ -5584,7 +5585,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "RIPPle"
-            args = []
+            args = []  # type: List[str]
 
             class CLEar(SCPINode, SCPISet):
                 """
@@ -5595,9 +5596,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CLEar"
-                args = []
+                args = []  # type: List[str]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             `CALCulate:RIPPle:CLEar
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bc102c309ca64801.htm#ID_30c2583ee2b2b2890a00201901f4a3cf-911a2616e2b2b1600a002019017b841c-en-US>`_
@@ -5613,7 +5614,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONTrol"
-                args = []
+                args = []  # type: List[str]
 
                 class DOMain(SCPINode, SCPISet):
                     """
@@ -5626,7 +5627,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DOMain"
                     args = ["FLIN", "FLOG", "FSEG", "FSINgle", "PLIN", "PLOG", "PSINgle", "TLIN", "TLOG"]
 
-                DOMain = DOMain()
+                DOMain = DOMain()  # type: ignore
                 """
                 `CALCulate:RIPPle:CONTrol:DOMain
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/efa433eb0a4a488d.htm#ID_6271dbebfa8c648c0a00206a01bc324d-fe0c5318fa8c5edf0a00206a01a6673d-en-US>`_
@@ -5634,7 +5635,7 @@ class ZNB_gen(Instrument):
                 Arguments: FLIN, FLOG, FSEG, FSINgle, PLIN, PLOG, PSINgle, TLIN, TLOG
                 """
 
-            CONTrol = CONTrol()
+            CONTrol = CONTrol()  # type: ignore
             """
             CALCulate:RIPPle:CONTrol
 
@@ -5652,7 +5653,7 @@ class ZNB_gen(Instrument):
                 _cmd = "DATA"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            DATA = DATA()
+            DATA = DATA()  # type: ignore
             """
             `CALCulate:RIPPle:DATA
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/003f16e0af9744b9.htm#ID_bd72ae33fa8c6bfe0a00206a0156adc6-dec22044fa8c66700a00206a01a6673d-en-US>`_
@@ -5668,7 +5669,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DELete"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPISet):
                     """
@@ -5679,9 +5680,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `CALCulate:RIPPle:DELete:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/80e7731362314ea3.htm#ID_cb829192fa8c73710a00206a00e729bd-16eb12ddfa8c6de30a00206a01a6673d-en-US>`_
@@ -5689,7 +5690,7 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            DELete = DELete()
+            DELete = DELete()  # type: ignore
             """
             CALCulate:RIPPle:DELete
 
@@ -5714,7 +5715,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RESult"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ALL(SCPINode, SCPIBool):
                         """
@@ -5737,7 +5738,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:RIPPle:DISPlay:RESult:ALL:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9252124bcddc41e8.htm#ID_283b9afd5d2eb3c30a001ae73e7db882-361816a15d2eb29a0a001ae75392d2c4-en-US>`_
@@ -5745,14 +5746,14 @@ class ZNB_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    ALL = ALL()
+                    ALL = ALL()  # type: ignore
                     """
                     CALCulate:RIPPle:DISPlay:RESult:ALL
 
                     Arguments: 1, OFF, ON
                     """
 
-                RESult = RESult()
+                RESult = RESult()  # type: ignore
                 """
                 CALCulate:RIPPle:DISPlay:RESult
 
@@ -5770,7 +5771,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:RIPPle:DISPlay:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/af30ef097a4240bb.htm#ID_eec53853fa8c7af20a00206a017b8a53-82ea5f14fa8c75360a00206a01a6673d-en-US>`_
@@ -5778,7 +5779,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            DISPlay = DISPlay()
+            DISPlay = DISPlay()  # type: ignore
             """
             CALCulate:RIPPle:DISPlay
 
@@ -5794,7 +5795,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FAIL"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -5807,7 +5808,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ALL"
                     args = ["'string'"]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `CALCulate:RIPPle:FAIL:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ec8efa734b1241f1.htm#ID_982687eba1e9377a0a001ae71d33ac9e-7a3c1ec70743f5380a001ae75038d756-en-US>`_
@@ -5815,7 +5816,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            FAIL = FAIL()
+            FAIL = FAIL()  # type: ignore
             """
             `CALCulate:RIPPle:FAIL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a6f184c34daa43c5.htm#ID_2d1b4441fa8c82840a00206a01c73f6d-bcd238bdfa8c7cc70a00206a01a6673d-en-US>`_
@@ -5831,7 +5832,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RDOMain"
-                args = []
+                args = []  # type: List[str]
 
                 class FORMat(SCPINode, SCPISet):
                     """
@@ -5844,7 +5845,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FORMat"
                     args = ["C", "COMPlex", "GDELay", "IMAGinary", "L", "MAGNitude", "PHASe", "REAL", "SWR"]
 
-                FORMat = FORMat()
+                FORMat = FORMat()  # type: ignore
                 """
                 `CALCulate:RIPPle:RDOMain:FORMat
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/96a8405a7acb4768.htm#ID_c02c1b65fa8c89f60a00206a00ef0219-80cbde3efa8c84590a00206a01a6673d-en-US>`_
@@ -5852,7 +5853,7 @@ class ZNB_gen(Instrument):
                 Arguments: C, COMPlex, GDELay, IMAGinary, L, MAGNitude, PHASe, REAL, SWR
                 """
 
-            RDOMain = RDOMain()
+            RDOMain = RDOMain()  # type: ignore
             """
             CALCulate:RIPPle:RDOMain
 
@@ -5878,9 +5879,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COUNt"
-                    args = []
+                    args = []  # type: List[str]
 
-                COUNt = COUNt()
+                COUNt = COUNt()  # type: ignore
                 """
                 `CALCulate:RIPPle:SEGMent:COUNt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f6dd927483bd4b0b.htm#ID_157eedbefa8c91680a00206a01a10a29-76eb58c0fa8c8bda0a00206a01a6673d-en-US>`_
@@ -5899,7 +5900,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LIMit"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                LIMit = LIMit()
+                LIMit = LIMit()  # type: ignore
                 """
                 `CALCulate:RIPPle:SEGMent:LIMit
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b53e47cd6ee84c63.htm#ID_c0af3f18fa8c98ea0a00206a0153bc80-411a2a59fa8c934d0a00206a01a6673d-en-US>`_
@@ -5916,9 +5917,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RESult"
-                    args = []
+                    args = []  # type: List[str]
 
-                RESult = RESult()
+                RESult = RESult()  # type: ignore
                 """
                 `CALCulate:RIPPle:SEGMent:RESult
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/588bd177edf54661.htm#ID_5ae347ddfa8ca08b0a00206a00280543-d97d0bb0fa8c9acf0a00206a01a6673d-en-US>`_
@@ -5937,7 +5938,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:RIPPle:SEGMent:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/56affa087259447b.htm#ID_a7b1806cfa8cb77e0a00206a017e3363-e5617d47fa8cb1c10a00206a01a6673d-en-US>`_
@@ -5953,7 +5954,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STIMulus"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STARt(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -5966,7 +5967,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `CALCulate:RIPPle:SEGMent:STIMulus:STARt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e14be574123e48c9.htm#ID_a5c3ac7ffa8ca83c0a00206a017a8448-adda4ba4fa8ca2600a00206a01a6673d-en-US>`_
@@ -5985,7 +5986,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `CALCulate:RIPPle:SEGMent:STIMulus:STOP
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e14be574123e48c9.htm#ID_10f947ddfa8cafed0a00206a0105be95-4d344ccefa8caa200a00206a01a6673d-en-US>`_
@@ -5993,14 +5994,14 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                STIMulus = STIMulus()
+                STIMulus = STIMulus()  # type: ignore
                 """
                 CALCulate:RIPPle:SEGMent:STIMulus
 
                 Arguments:
                 """
 
-            SEGMent = SEGMent()
+            SEGMent = SEGMent()  # type: ignore
             """
             CALCulate:RIPPle:SEGMent
 
@@ -6028,7 +6029,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:RIPPle:SOUNd:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3bf0aae076bc42bc.htm#ID_52557a3ffa8cbf100a00206a01806165-0b45785ffa8cb9530a00206a01a6673d-en-US>`_
@@ -6036,7 +6037,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            SOUNd = SOUNd()
+            SOUNd = SOUNd()  # type: ignore
             """
             CALCulate:RIPPle:SOUNd
 
@@ -6065,7 +6066,7 @@ class ZNB_gen(Instrument):
                     _cmd = "AREA"
                     args = ["LEFT", "MID", "RIGHt"]
 
-                AREA = AREA()
+                AREA = AREA()  # type: ignore
                 """
                 `CALCulate:RIPPle:STATe:AREA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4dc1b5a2821a4ae3.htm#ID_34fca1f991db93590a00206a01c30472-e3489bde91db8a700a00206a00e9ecac-en-US>`_
@@ -6073,7 +6074,7 @@ class ZNB_gen(Instrument):
                 Arguments: LEFT, MID, RIGHt
                 """
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:RIPPle:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fb623ebe7fb54f9b.htm#ID_f43adfc2fa8cc6820a00206a0172e6f5-e09bed1cfa8cc0e40a00206a01a6673d-en-US>`_
@@ -6081,7 +6082,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        RIPPle = RIPPle()
+        RIPPle = RIPPle()  # type: ignore
         """
         CALCulate:RIPPle
 
@@ -6109,7 +6110,7 @@ class ZNB_gen(Instrument):
                 _cmd = "APERture"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            APERture = APERture()
+            APERture = APERture()  # type: ignore
             """
             `CALCulate:SMOothing:APERture
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/529f93d8d2414119.htm#ID_0e07cb25fa8cce420a00206a0171f8ab-81a86b0efa8cc8660a00206a01a6673d-en-US>`_
@@ -6128,7 +6129,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:SMOothing:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7811d02911894706.htm#ID_671d4593fa8cd6120a00206a0062fcac-cbb8b985fa8cd0270a00206a01a6673d-en-US>`_
@@ -6136,7 +6137,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        SMOothing = SMOothing()
+        SMOothing = SMOothing()  # type: ignore
         """
         CALCulate:SMOothing
 
@@ -6161,7 +6162,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DOMain"
-                args = []
+                args = []  # type: List[str]
 
                 class USER(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -6185,7 +6186,7 @@ class ZNB_gen(Instrument):
                         _cmd = "SHOW"
                         args = ["1", "OFF", "ON"]
 
-                    SHOW = SHOW()
+                    SHOW = SHOW()  # type: ignore
                     """
                     `CALCulate:STATistics:DOMain:USER:SHOW
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7c04e1dc565f42fe.htm#ID_9b274ca7fa8ce5160a00206a01e534b5-014aff7efa8cdf880a00206a01a6673d-en-US>`_
@@ -6204,7 +6205,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `CALCulate:STATistics:DOMain:USER:STARt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8684a6f4edc14a42.htm#ID_feacdf2cfa8cec880a00206a00658f5d-d35f250cfa8ce6eb0a00206a01a6673d-en-US>`_
@@ -6223,7 +6224,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `CALCulate:STATistics:DOMain:USER:STOP
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8684a6f4edc14a42.htm#ID_9e04cc6bfa8cf4390a00206a016f509f-161fec51fa8cee9b0a00206a01a6673d-en-US>`_
@@ -6231,7 +6232,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                USER = USER()
+                USER = USER()  # type: ignore
                 """
                 `CALCulate:STATistics:DOMain:USER
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a589efe7a4ea4cd2.htm#ID_9f963f50fa8cddb30a00206a005d21da-5aafc2dafa8cd7f70a00206a01a6673d-en-US>`_
@@ -6239,7 +6240,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            DOMain = DOMain()
+            DOMain = DOMain()  # type: ignore
             """
             CALCulate:STATistics:DOMain
 
@@ -6267,7 +6268,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:STATistics:EPDelay:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dd777ffb23ef4a85.htm#ID_ddeec772fa8cfbca0a00206a00768219-c4a76b8efa8cf61d0a00206a01a6673d-en-US>`_
@@ -6275,7 +6276,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            EPDelay = EPDelay()
+            EPDelay = EPDelay()  # type: ignore
             """
             CALCulate:STATistics:EPDelay
 
@@ -6293,7 +6294,7 @@ class ZNB_gen(Instrument):
                 _cmd = "FORMat"
                 args = ["ADMittance", "IMPedance", "ZVAB"]
 
-            FORMat = FORMat()
+            FORMat = FORMat()  # type: ignore
             """
             `CALCulate:STATistics:FORMat
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5af594af8b3d4ad3.htm#ID_9c03469b97e84b1c0a001ae7788a17fc-113e556897e849e40a001ae760f7f904-en-US>`_
@@ -6322,7 +6323,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:STATistics:MMPTpeak:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dd777ffb23ef4a85.htm#ID_70eaa25efa8d034c0a00206a01b86abd-878c52c8fa8cfdbe0a00206a01a6673d-en-US>`_
@@ -6330,7 +6331,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            MMPTpeak = MMPTpeak()
+            MMPTpeak = MMPTpeak()  # type: ignore
             """
             CALCulate:STATistics:MMPTpeak
 
@@ -6358,7 +6359,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:STATistics:MSTDdev:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dd777ffb23ef4a85.htm#ID_68163564fa8d0ace0a00206a006a35c4-9131f9e9fa8d05210a00206a01a6673d-en-US>`_
@@ -6366,7 +6367,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            MSTDdev = MSTDdev()
+            MSTDdev = MSTDdev()  # type: ignore
             """
             CALCulate:STATistics:MSTDdev
 
@@ -6381,7 +6382,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NLINear"
-                args = []
+                args = []  # type: List[str]
 
                 class COMP(SCPINode, SCPIBool):
                     """
@@ -6404,7 +6405,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LEVel"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    LEVel = LEVel()
+                    LEVel = LEVel()  # type: ignore
                     """
                     `CALCulate:STATistics:NLINear:COMP:LEVel
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5d6c51b169d74dd1.htm#ID_c925aca6fa8d127f0a00206a00d4d7e8-4b0de918fa8d0cc20a00206a01a6673d-en-US>`_
@@ -6421,9 +6422,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "RESult"
-                        args = []
+                        args = []  # type: List[str]
 
-                    RESult = RESult()
+                    RESult = RESult()  # type: ignore
                     """
                     `CALCulate:STATistics:NLINear:COMP:RESult
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d066840052e34270.htm#ID_877f774dfa8d1a010a00206a000c5799-9a74d1cdfa8d14730a00206a01a6673d-en-US>`_
@@ -6442,7 +6443,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CALCulate:STATistics:NLINear:COMP:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6bb074b56dab4d34.htm#ID_4bc3ff91fa8d21920a00206a00c0450c-b88e3168fa8d1bd50a00206a01a6673d-en-US>`_
@@ -6450,14 +6451,14 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                COMP = COMP()
+                COMP = COMP()  # type: ignore
                 """
                 CALCulate:STATistics:NLINear:COMP
 
                 Arguments: 1, OFF, ON
                 """
 
-            NLINear = NLINear()
+            NLINear = NLINear()  # type: ignore
             """
             CALCulate:STATistics:NLINear
 
@@ -6475,7 +6476,7 @@ class ZNB_gen(Instrument):
                 _cmd = "RESult"
                 args = ["ALL", "ELENgth", "FLATness", "GAIN", "MAX", "MEAN", "MIN", "PDELay", "PEAK2p", "PTPeak", "RMS", "SLOPe", "STDDev"]
 
-            RESult = RESult()
+            RESult = RESult()  # type: ignore
             """
             `CALCulate:STATistics:RESult
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/504c1240aaf84b48.htm#ID_9ad8a052fa8d29240a00206a018e8f49-cc55af54fa8d23670a00206a01a6673d-en-US>`_
@@ -6504,7 +6505,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:STATistics:RMS:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5ab4519994e14adf.htm#ID_3614abc9fa8d30860a00206a00131843-d95b7e56fa8d2af80a00206a01a6673d-en-US>`_
@@ -6512,7 +6513,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            RMS = RMS()
+            RMS = RMS()  # type: ignore
             """
             CALCulate:STATistics:RMS
 
@@ -6540,7 +6541,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:STATistics:SFLatness:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5ab4519994e14adf.htm#ID_4120133afa8d38180a00206a01da59ef-a95d681dfa8d326b0a00206a01a6673d-en-US>`_
@@ -6548,7 +6549,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            SFLatness = SFLatness()
+            SFLatness = SFLatness()  # type: ignore
             """
             CALCulate:STATistics:SFLatness
 
@@ -6577,7 +6578,7 @@ class ZNB_gen(Instrument):
                     _cmd = "AREA"
                     args = ["LEFT", "MID", "RIGHt"]
 
-                AREA = AREA()
+                AREA = AREA()  # type: ignore
                 """
                 `CALCulate:STATistics:STATe:AREA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f48f70d27489445d.htm#ID_97e5221b91dbbcea0a00206a01e4bef3-0cc1fe9b91dbb5680a00206a00e9ecac-en-US>`_
@@ -6585,7 +6586,7 @@ class ZNB_gen(Instrument):
                 Arguments: LEFT, MID, RIGHt
                 """
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:STATistics:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2f7b3f85defe4eb2.htm#ID_a5c56f11fa8d3f8a0a00206a001597a1-2c31185bfa8d39fc0a00206a01a6673d-en-US>`_
@@ -6593,7 +6594,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        STATistics = STATistics()
+        STATistics = STATistics()  # type: ignore
         """
         CALCulate:STATistics
 
@@ -6608,7 +6609,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TRANsform"
-            args = []
+            args = []  # type: List[str]
 
             class COMPlex(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -6621,7 +6622,7 @@ class ZNB_gen(Instrument):
                 _cmd = "COMPlex"
                 args = ["S", "Y", "Z"]
 
-            COMPlex = COMPlex()
+            COMPlex = COMPlex()  # type: ignore
             """
             `CALCulate:TRANsform:COMPlex
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0ddb2fb52f9647b1.htm#ID_6763dcf5fa8d4ebc0a00206a0172615e-fc0db3f8fa8d492f0a00206a01a6673d-en-US>`_
@@ -6637,7 +6638,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMPedance"
-                args = []
+                args = []  # type: List[str]
 
                 class RNORmal(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -6650,7 +6651,7 @@ class ZNB_gen(Instrument):
                     _cmd = "RNORmal"
                     args = ["PWAVes", "TWAVes"]
 
-                RNORmal = RNORmal()
+                RNORmal = RNORmal()  # type: ignore
                 """
                 `CALCulate:TRANsform:IMPedance:RNORmal
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/14e821102ae54212.htm#ID_559024ddfa8d563e0a00206a008657c0-5f0233befa8d50a10a00206a01a6673d-en-US>`_
@@ -6658,7 +6659,7 @@ class ZNB_gen(Instrument):
                 Arguments: PWAVes, TWAVes
                 """
 
-            IMPedance = IMPedance()
+            IMPedance = IMPedance()  # type: ignore
             """
             CALCulate:TRANsform:IMPedance
 
@@ -6686,7 +6687,7 @@ class ZNB_gen(Instrument):
                     _cmd = "CENTer"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                CENTer = CENTer()
+                CENTer = CENTer()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:CENTer
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2d5ae32dc5f84be0.htm#ID_35afe348fa8d5dd00a00206a010edee7-6f4e2e2afa8d58320a00206a01a6673d-en-US>`_
@@ -6705,7 +6706,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DCHebyshev"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DCHebyshev = DCHebyshev()
+                DCHebyshev = DCHebyshev()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:DCHebyshev
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bd1362285dd64cb0.htm#ID_4c77cbdefa8d668a0a00206a012d61e1-ecea3751fa8d60ed0a00206a01a6673d-en-US>`_
@@ -6746,7 +6747,7 @@ class ZNB_gen(Instrument):
                             _cmd = "CONTinuous"
                             args = ["1", "OFF", "ON"]
 
-                        CONTinuous = CONTinuous()
+                        CONTinuous = CONTinuous()  # type: ignore
                         """
                         `CALCulate:TRANsform:TIME:LPASs:DCSParam:CONTinuous
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/eb8dd59636a74569.htm#ID_1c2005cafa8d7d4e0a00206a0174e6c4-98d7bc34fa8d77b10a00206a01a6673d-en-US>`_
@@ -6763,9 +6764,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "EXTRapolate"
-                            args = []
+                            args = []  # type: List[str]
 
-                        EXTRapolate = EXTRapolate()
+                        EXTRapolate = EXTRapolate()  # type: ignore
                         """
                         `CALCulate:TRANsform:TIME:LPASs:DCSParam:EXTRapolate
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2dcd2a27ce744b66.htm#ID_675aa806fa8d84c00a00206a01e30f89-cfb2563cfa8d7f230a00206a01a6673d-en-US>`_
@@ -6773,7 +6774,7 @@ class ZNB_gen(Instrument):
                         Arguments:
                         """
 
-                    DCSParam = DCSParam()
+                    DCSParam = DCSParam()  # type: ignore
                     """
                     `CALCulate:TRANsform:TIME:LPASs:DCSParam
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/53ce9e90e07e4a51.htm#ID_4a46c475fa8d75cc0a00206a01e0e76f-bd956431fa8d6fe10a00206a01a6673d-en-US>`_
@@ -6781,7 +6782,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                LPASs = LPASs()
+                LPASs = LPASs()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:LPASs
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f526f7ddf2884d92.htm#ID_170ddb9dfa8d6e0c0a00206a0187917f-377f1619fa8d686e0a00206a01a6673d-en-US>`_
@@ -6798,9 +6799,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LPFRequency"
-                    args = []
+                    args = []  # type: List[str]
 
-                LPFRequency = LPFRequency()
+                LPFRequency = LPFRequency()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:LPFRequency
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/27b41786fbb64c8c.htm#ID_e86cd025fa8d8c610a00206a00c7bfc0-581fc947fa8d86a50a00206a01a6673d-en-US>`_
@@ -6818,7 +6819,7 @@ class ZNB_gen(Instrument):
                     _cmd = "METHod"
                     args = ["CHIRp"]
 
-                METHod = METHod()
+                METHod = METHod()  # type: ignore
                 """
                 CALCulate:TRANsform:TIME:METHod
 
@@ -6833,7 +6834,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RESolution"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EFACtor(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -6846,7 +6847,7 @@ class ZNB_gen(Instrument):
                         _cmd = "EFACtor"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    EFACtor = EFACtor()
+                    EFACtor = EFACtor()  # type: ignore
                     """
                     `CALCulate:TRANsform:TIME:RESolution:EFACtor
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/635fc83aab98475a.htm#ID_ed455756fa8d9b840a00206a01cbf0cc-c0ea7111fa8d95c80a00206a01a6673d-en-US>`_
@@ -6854,7 +6855,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                RESolution = RESolution()
+                RESolution = RESolution()  # type: ignore
                 """
                 CALCulate:TRANsform:TIME:RESolution
 
@@ -6872,7 +6873,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SPAN"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SPAN = SPAN()
+                SPAN = SPAN()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:SPAN
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1e787fde60e7484a.htm#ID_e25bd601fa8da3060a00206a00fa1352-d688e1b8fa8d9d590a00206a01a6673d-en-US>`_
@@ -6891,7 +6892,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STARt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                STARt = STARt()
+                STARt = STARt()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:STARt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8ea0328127044ba9.htm#ID_6070a8edfa8daa980a00206a0032a239-a965258ffa8da4fa0a00206a01a6673d-en-US>`_
@@ -6910,7 +6911,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/83fed5073fde47ee.htm#ID_024e8732fa8db2480a00206a01f94674-e8c96f45fa8dac7c0a00206a01a6673d-en-US>`_
@@ -6929,7 +6930,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STIMulus"
                     args = ["IMPulse", "STEP"]
 
-                STIMulus = STIMulus()
+                STIMulus = STIMulus()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:STIMulus
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0157afe1515d4140.htm#ID_2274ec00fa8db9ea0a00206a01a73a83-47ff8851fa8db41d0a00206a01a6673d-en-US>`_
@@ -6948,7 +6949,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                STOP = STOP()
+                STOP = STOP()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:STOP
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4cd73ad6216545c4.htm#ID_c1eb53d4fa8dc18b0a00206a01c01ff2-c6268d0cfa8dbbce0a00206a01a6673d-en-US>`_
@@ -6967,7 +6968,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TYPE"
                     args = ["BPASs", "LPASs"]
 
-                TYPE = TYPE()
+                TYPE = TYPE()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:TYPE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/baf83ae4b9fc4af4.htm#ID_883048c0fa8dd8200a00206a001376e6-4965ba92fa8dd2920a00206a01a6673d-en-US>`_
@@ -6986,7 +6987,7 @@ class ZNB_gen(Instrument):
                     _cmd = "WINDow"
                     args = ["BOHMan", "DCHebyshev", "HAMMing", "HANNing", "RECT"]
 
-                WINDow = WINDow()
+                WINDow = WINDow()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:WINDow
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/aac0f28b6e3041a6.htm#ID_08a5b679fa8dc92c0a00206a0171d219-eeb23c46fa8dc38e0a00206a01a6673d-en-US>`_
@@ -7005,7 +7006,7 @@ class ZNB_gen(Instrument):
                     _cmd = "XAXis"
                     args = ["DISTance", "TIME"]
 
-                XAXis = XAXis()
+                XAXis = XAXis()  # type: ignore
                 """
                 `CALCulate:TRANsform:TIME:XAXis
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2e1c9ec5c19b4efa.htm#ID_9a53dbaffa8dd0ae0a00206a01f538e4-a3eff330fa8dcb010a00206a01a6673d-en-US>`_
@@ -7013,7 +7014,7 @@ class ZNB_gen(Instrument):
                 Arguments: DISTance, TIME
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             CALCulate:TRANsform:TIME
 
@@ -7028,7 +7029,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "VNETworks"
-                args = []
+                args = []  # type: List[str]
 
                 class BALanced(SCPINode):
                     """
@@ -7038,7 +7039,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BALanced"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPIBool):
                         """
@@ -7058,7 +7059,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -7071,7 +7072,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "GSSG", "GSSL", "LSSC", "LSSG", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "STSC", "STSG"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6f0c9d49615148c7.htm#ID_dd8133a4fa8ddfc10a00206a01185633-3d70b06bfa8dda040a00206a01a6673d-en-US>`_
@@ -7090,7 +7091,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "DATA"
                                 args = ["FPORts", "IPORts"]
 
-                            DATA = DATA()
+                            DATA = DATA()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters:DATA
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/59ae1ad9a60e4c58.htm#ID_84293532842de3240a00201901e6e490-deedc1c0842de18d0a00201901936165-en-US>`_
@@ -7109,7 +7110,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "G"
                                 args = ["GSSG", "GSSL", "LSSG", "SGGS", "SGLS", "SGST", "SLGS", "STSG"]
 
-                            G = G()
+                            G = G()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters:G
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3cb1c25a3e284cac.htm#ID_2b5d169b6f6624690a001ae7153f6596-6c03f7b66f6622f20a001ae727f5f310-en-US>`_
@@ -7128,7 +7129,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCLS", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1186eea832df4546.htm#ID_d84a0ce1fa8de7720a00206a00f5bb24-31cd32e7fa8de1a50a00206a01a6673d-en-US>`_
@@ -7147,7 +7148,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f2ea1c1f6a88461f.htm#ID_a9c33f0dfa8def320a00206a00518f0d-c5a4cd8ffa8de9560a00206a01a6673d-en-US>`_
@@ -7155,7 +7156,7 @@ class ZNB_gen(Instrument):
                             Arguments: CSSC, CSSL, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGLS, SLCS, SLGS, SLLS, SLST, STSC, STSL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:PARameters
 
@@ -7173,7 +7174,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4d9b6ee9116348ce.htm#ID_5172a9c4fa8dfe550a00206a01e07981-787e7537fa8df8980a00206a01a6673d-en-US>`_
@@ -7192,7 +7193,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "GSSG", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSG", "STSL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/12448e2e96f04df7.htm#ID_2a7d63bbfa8df6b40a00206a01d43e88-8940a4f2fa8df1160a00206a01a6673d-en-US>`_
@@ -7200,7 +7201,7 @@ class ZNB_gen(Instrument):
                         Arguments: CSSC, CSSL, FIMPort, GSSG, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, SLLS, SLST, STSC, STSG, STSL
                         """
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:BALanced:DEEMbedding
 
@@ -7225,7 +7226,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -7238,7 +7239,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "GSSG", "GSSL", "LSSC", "LSSG", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "STSC", "STSG"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8ec140379660414a.htm#ID_abf3f1e2fa8e05b80a00206a01a47cb4-e08b0c9ffa8e002a0a00206a01a6673d-en-US>`_
@@ -7257,7 +7258,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "DATA"
                                 args = ["FPORts", "IPORts"]
 
-                            DATA = DATA()
+                            DATA = DATA()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters:DATA
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/079e83a8c9584f42.htm#ID_5d9cf2fb842de70c0a00201900076709-7b992475842de5850a00201901936165-en-US>`_
@@ -7276,7 +7277,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "G"
                                 args = ["GSSG", "GSSL", "LSSG", "SGGS", "SGLS", "SGST", "SLGS", "STSG"]
 
-                            G = G()
+                            G = G()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters:G
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2ccae92408394fe5.htm#ID_7dea03e06f66334e0a001ae707928781-33d95ab56f6631c70a001ae727f5f310-en-US>`_
@@ -7295,7 +7296,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCLS", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a81a26b3e8d64942.htm#ID_ad04c1a1fa8e0d780a00206a0035eeba-bf4cbae4fa8e07ac0a00206a01a6673d-en-US>`_
@@ -7314,7 +7315,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/45b9a3fe38f24521.htm#ID_f782d205fa8e15290a00206a00731edf-a1857f58fa8e0f6c0a00206a01a6673d-en-US>`_
@@ -7322,7 +7323,7 @@ class ZNB_gen(Instrument):
                             Arguments: CSSC, CSSL, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGLS, SLCS, SLGS, SLLS, SLST, STSC, STSL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:BALanced:EMBedding:PARameters
 
@@ -7340,7 +7341,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0941b76a5f064868.htm#ID_4cee94dffa8e242c0a00206a001fceaf-644e4ad9fa8e1e8f0a00206a01a6673d-en-US>`_
@@ -7359,7 +7360,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "GSSG", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSG", "STSL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:BALanced:EMBedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2c2c0962a3db4ae5.htm#ID_44ab70c2fa8e1cab0a00206a0136415c-a9f9c620fa8e16fd0a00206a01a6673d-en-US>`_
@@ -7367,14 +7368,14 @@ class ZNB_gen(Instrument):
                         Arguments: CSSC, CSSL, FIMPort, GSSG, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, SLLS, SLST, STSC, STSG, STSL
                         """
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:BALanced:EMBedding
 
                     Arguments: 1, OFF, ON
                     """
 
-                BALanced = BALanced()
+                BALanced = BALanced()  # type: ignore
                 """
                 CALCulate:TRANsform:VNETworks:BALanced
 
@@ -7389,7 +7390,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DIFFerential"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EMBedding(SCPINodeN, SCPIBool):
                         """
@@ -7409,7 +7410,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -7422,7 +7423,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "C"
                                 args = ["SHLC"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:DIFFerential:EMBedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/80c9a3cffb4f4e17.htm#ID_429e54d35811f7050a001ae7223f1761-c3650e9b5811f5500a001ae75f9ff217-en-US>`_
@@ -7441,7 +7442,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "DATA"
                                 args = ["FPORts", "IPORts"]
 
-                            DATA = DATA()
+                            DATA = DATA()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:DIFFerential:EMBedding:PARameters:DATA
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ba87af15592944b1.htm#ID_6111424c5811f9d40a001ae752b7f8db-8e717b935811f84d0a001ae75f9ff217-en-US>`_
@@ -7460,7 +7461,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "G"
                                 args = ["SHLC"]
 
-                            G = G()
+                            G = G()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:DIFFerential:EMBedding:PARameters:G
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4b188e3593414a28.htm#ID_0fc049035811fc830a001ae77896ac76-12d2ae9f5811fb0c0a001ae75f9ff217-en-US>`_
@@ -7479,7 +7480,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "L"
                                 args = ["SHLC"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:DIFFerential:EMBedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1e62e495ff464265.htm#ID_e5653d405811ff140a001ae77606ea04-ba2c9fd65811fd7d0a001ae75f9ff217-en-US>`_
@@ -7498,7 +7499,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "R"
                                 args = ["SHLC"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:DIFFerential:EMBedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f95acab1da68435d.htm#ID_ed781559581202110a001ae74e1270a2-65654e575812004c0a001ae75f9ff217-en-US>`_
@@ -7506,7 +7507,7 @@ class ZNB_gen(Instrument):
                             Arguments: SHLC
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:DIFFerential:EMBedding:PARameters
 
@@ -7524,7 +7525,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:DIFFerential:EMBedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/148b0faee7ee405f.htm#ID_54768ad0581204d00a001ae71ebb62bb-6c8d7c8c5812031b0a001ae75f9ff217-en-US>`_
@@ -7543,7 +7544,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["FIMPort", "SHLC"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:DIFFerential:EMBedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fa133c6be7354958.htm#ID_63150e8d581207700a001ae7722d3053-8579f2a0581205ab0a001ae75f9ff217-en-US>`_
@@ -7551,14 +7552,14 @@ class ZNB_gen(Instrument):
                         Arguments: FIMPort, SHLC
                         """
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:DIFFerential:EMBedding
 
                     Arguments: 1, OFF, ON
                     """
 
-                DIFFerential = DIFFerential()
+                DIFFerential = DIFFerential()  # type: ignore
                 """
                 CALCulate:TRANsform:VNETworks:DIFFerential
 
@@ -7586,7 +7587,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CALCulate:TRANsform:VNETworks:FSIMulator:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d757c633360247c7.htm#ID_11fd85585d2ecf890a001ae7384a35ab-7de5b54a5d2ecdd30a001ae75392d2c4-en-US>`_
@@ -7594,7 +7595,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                FSIMulator = FSIMulator()
+                FSIMulator = FSIMulator()  # type: ignore
                 """
                 CALCulate:TRANsform:VNETworks:FSIMulator
 
@@ -7609,7 +7610,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "GLOop"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINode, SCPIBool):
                         """
@@ -7629,7 +7630,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -7642,7 +7643,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "C"
                                 args = ["SC", "SG"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/77956e5cf93946b3.htm#ID_81fff10dfa8e2bae0a00206a01a4b72d-5b3e5f86fa8e26110a00206a01a6673d-en-US>`_
@@ -7661,7 +7662,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "G"
                                 args = ["SG"]
 
-                            G = G()
+                            G = G()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:PARameters:G
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/aac6592ce85444e2.htm#ID_f8b2f8696f6642710a001ae710afca50-2f4c4e8c6f6640fa0a001ae727f5f310-en-US>`_
@@ -7680,7 +7681,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "L"
                                 args = ["SL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7a422b2f995d4f9a.htm#ID_a8965c72fa8e338e0a00206a0026bd75-609f9708fa8e2d830a00206a01a6673d-en-US>`_
@@ -7699,7 +7700,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "R"
                                 args = ["SC", "SL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5a1c1c036d584ff6.htm#ID_c0cffff5fa8e3b1f0a00206a008fe948-51c74c06fa8e35720a00206a01a6673d-en-US>`_
@@ -7707,7 +7708,7 @@ class ZNB_gen(Instrument):
                             Arguments: SC, SL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:PARameters
 
@@ -7725,7 +7726,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/97f3857893904d79.htm#ID_159ddfd4fa8e4a330a00206a013b7c49-dc269bc4fa8e44a50a00206a01a6673d-en-US>`_
@@ -7744,7 +7745,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["FIMPort", "SC", "SG", "SL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/799259b2b62f4149.htm#ID_2f36ab34fa8e42c00a00206a01fc84f3-043babf2fa8e3d040a00206a01a6673d-en-US>`_
@@ -7752,7 +7753,7 @@ class ZNB_gen(Instrument):
                         Arguments: FIMPort, SC, SG, SL
                         """
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:GLOop:DEEMbedding
 
@@ -7777,7 +7778,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -7790,7 +7791,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "C"
                                 args = ["SC", "SG"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:EMBedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5ea6451ed3a94d89.htm#ID_37668013fa8e51d40a00206a00c15700-894bed2efa8e4c360a00206a01a6673d-en-US>`_
@@ -7809,7 +7810,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "G"
                                 args = ["SG"]
 
-                            G = G()
+                            G = G()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:EMBedding:PARameters:G
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/53607605721e41d0.htm#ID_dc37fee66f664fb00a001ae766fe6587-ed213d396f664dfa0a001ae727f5f310-en-US>`_
@@ -7828,7 +7829,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "L"
                                 args = ["SL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:EMBedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6c564130695147b8.htm#ID_b2cd795dfa8e59840a00206a01453521-97ac064cfa8e53b80a00206a01a6673d-en-US>`_
@@ -7847,7 +7848,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "R"
                                 args = ["SC", "SL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:GLOop:EMBedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dbd85ab533b642e6.htm#ID_ed15dbb6fa8e61640a00206a01db511f-4a7a9660fa8e5b690a00206a01a6673d-en-US>`_
@@ -7855,7 +7856,7 @@ class ZNB_gen(Instrument):
                             Arguments: SC, SL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:GLOop:EMBedding:PARameters
 
@@ -7873,7 +7874,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:GLOop:EMBedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f05d33e191e54ad2.htm#ID_337b7158fa8e70970a00206a01e3e1bf-ad84cdf0fa8e6ada0a00206a01a6673d-en-US>`_
@@ -7892,7 +7893,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["FIMPort", "SC", "SG", "SL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:GLOop:EMBedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/99b65e02d497406d.htm#ID_756d6eb0fa8e68e60a00206a008cf339-f9a8da34fa8e63390a00206a01a6673d-en-US>`_
@@ -7900,14 +7901,14 @@ class ZNB_gen(Instrument):
                         Arguments: FIMPort, SC, SG, SL
                         """
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:GLOop:EMBedding
 
                     Arguments: 1, OFF, ON
                     """
 
-                GLOop = GLOop()
+                GLOop = GLOop()  # type: ignore
                 """
                 CALCulate:TRANsform:VNETworks:GLOop
 
@@ -7922,7 +7923,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PPAir"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPIBool):
                         """
@@ -7945,7 +7946,7 @@ class ZNB_gen(Instrument):
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        DEFine = DEFine()
+                        DEFine = DEFine()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:DEFine
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e8becb0a3078421b.htm#ID_3ba674b458120daa0a001ae715a0e5be-c703d9d69646cc8e0a001ae72394529b-en-US>`_
@@ -7962,9 +7963,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DELete"
-                            args = []
+                            args = []  # type: List[str]
 
-                        DELete = DELete()
+                        DELete = DELete()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:DELete
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/43d0e6d7b4144b08.htm#ID_1722509658120fbd0a001ae75e11b532-0381552758120e750a001ae75f9ff217-en-US>`_
@@ -7980,7 +7981,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -7992,7 +7993,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "GSSG", "GSSL", "LSSC", "LSSG", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "STSC", "STSG"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:PARameters:C
 
@@ -8009,7 +8010,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "G"
                                 args = ["GSSG", "GSSL", "LSSG", "SGGS", "SGLS", "SGST", "SLGS", "STSG"]
 
-                            G = G()
+                            G = G()  # type: ignore
                             """
                             CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:PARameters:G
 
@@ -8026,7 +8027,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCLS", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:PARameters:L
 
@@ -8043,14 +8044,14 @@ class ZNB_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:PARameters:R
 
                             Arguments: CSSC, CSSL, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGLS, SLCS, SLGS, SLLS, SLST, STSC, STSL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:PARameters
 
@@ -8068,7 +8069,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/46b480af07bb407f.htm#ID_4b3324f7581218d60a001ae751738823-c02afe855812176e0a001ae75f9ff217-en-US>`_
@@ -8087,7 +8088,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "GSSG", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSG", "STSL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/35ec3220c32e4f80.htm#ID_3c16a3b758121b560a001ae77271577c-a49e9fde581219ef0a001ae75f9ff217-en-US>`_
@@ -8095,7 +8096,7 @@ class ZNB_gen(Instrument):
                         Arguments: CSSC, CSSL, FIMPort, GSSG, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, SLLS, SLST, STSC, STSG, STSL
                         """
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:PPAir:DEEMbedding
 
@@ -8123,7 +8124,7 @@ class ZNB_gen(Instrument):
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        DEFine = DEFine()
+                        DEFine = DEFine()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:DEFine
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e400839544a94301.htm#ID_e83fd23258121d790a001ae73123507a-8e751156970d6a920a001ae74f7a64ee-en-US>`_
@@ -8140,9 +8141,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DELete"
-                            args = []
+                            args = []  # type: List[str]
 
-                        DELete = DELete()
+                        DELete = DELete()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:DELete
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6c61769117054661.htm#ID_6ae62e5b58121ffa0a001ae712441e42-cabb03ec58121e540a001ae75f9ff217-en-US>`_
@@ -8158,7 +8159,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -8170,7 +8171,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSSC", "CSSL", "GSSG", "GSSL", "LSSC", "LSSG", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "STSC", "STSG"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             CALCulate:TRANsform:VNETworks:PPAir:EMBedding:PARameters:C
 
@@ -8187,7 +8188,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "G"
                                 args = ["GSSG", "GSSL", "LSSG", "SGGS", "SGLS", "SGST", "SLGS", "STSG"]
 
-                            G = G()
+                            G = G()  # type: ignore
                             """
                             CALCulate:TRANsform:VNETworks:PPAir:EMBedding:PARameters:G
 
@@ -8204,7 +8205,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCLS", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             CALCulate:TRANsform:VNETworks:PPAir:EMBedding:PARameters:L
 
@@ -8221,14 +8222,14 @@ class ZNB_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSSC", "CSSL", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGLS", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             CALCulate:TRANsform:VNETworks:PPAir:EMBedding:PARameters:R
 
                             Arguments: CSSC, CSSL, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGLS, SLCS, SLGS, SLLS, SLST, STSC, STSL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:PPAir:EMBedding:PARameters
 
@@ -8246,7 +8247,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/db97017adcc64a9d.htm#ID_d3a37976581229510a001ae71520611c-bfc8ef34581227ca0a001ae75f9ff217-en-US>`_
@@ -8265,7 +8266,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSSC", "CSSL", "FIMPort", "GSSG", "GSSL", "LSSC", "LSSG", "LSSL", "SCCS", "SCLS", "SCST", "SGGS", "SGLS", "SGST", "SLCS", "SLGS", "SLLS", "SLST", "STSC", "STSG", "STSL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PPAir:EMBedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f4fd86459812485c.htm#ID_85b0b37258122b930a001ae750c1f98b-d10f3fff58122a0c0a001ae75f9ff217-en-US>`_
@@ -8273,14 +8274,14 @@ class ZNB_gen(Instrument):
                         Arguments: CSSC, CSSL, FIMPort, GSSG, GSSL, LSSC, LSSG, LSSL, SCCS, SCLS, SCST, SGGS, SGLS, SGST, SLCS, SLGS, SLLS, SLST, STSC, STSG, STSL
                         """
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:PPAir:EMBedding
 
                     Arguments: 1, OFF, ON
                     """
 
-                PPAir = PPAir()
+                PPAir = PPAir()  # type: ignore
                 """
                 CALCulate:TRANsform:VNETworks:PPAir
 
@@ -8295,7 +8296,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PSET"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN):
                         """
@@ -8305,7 +8306,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DEEMbedding"
-                        args = []
+                        args = []  # type: List[str]
 
                         class DEFine(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -8318,7 +8319,7 @@ class ZNB_gen(Instrument):
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        DEFine = DEFine()
+                        DEFine = DEFine()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PSET:DEEMbedding:DEFine
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c26ebc08e35d47c2.htm#ID_a38b0ffd97e86de70a001ae7390e6333-ea4870eef56304cf0a001ae7052253bf-en-US>`_
@@ -8326,7 +8327,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:PSET:DEEMbedding
 
@@ -8341,7 +8342,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EMBedding"
-                        args = []
+                        args = []  # type: List[str]
 
                         class DEFine(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -8354,7 +8355,7 @@ class ZNB_gen(Instrument):
                             _cmd = "DEFine"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        DEFine = DEFine()
+                        DEFine = DEFine()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:PSET:EMBedding:DEFine
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c26ebc08e35d47c2.htm#ID_2cfc1d2497e86fbb0a001ae70cbfb36f-86db8e31bc434b620a001ae77cf426ad-en-US>`_
@@ -8362,14 +8363,14 @@ class ZNB_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:PSET:EMBedding
 
                     Arguments:
                     """
 
-                PSET = PSET()
+                PSET = PSET()  # type: ignore
                 """
                 CALCulate:TRANsform:VNETworks:PSET
 
@@ -8384,7 +8385,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SENDed"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPIBool):
                         """
@@ -8404,7 +8405,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -8417,7 +8418,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSC", "CSL", "GSG", "GSL", "LSC", "LSG", "SCC", "SCL", "SGG", "SGL", "SHLC", "SLC", "SLG"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8f37b1c2acee44bf.htm#ID_5ef9469cfa8e78470a00206a003fb9da-e1c64a86fa8e727b0a00206a01a6673d-en-US>`_
@@ -8436,7 +8437,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "DATA"
                                 args = ["FPORts", "IPORts"]
 
-                            DATA = DATA()
+                            DATA = DATA()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters:DATA
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9fd3cb7e82ed444d.htm#ID_367ed7c5842dee7e0a0020190086f675-49915501842decb90a00201901936165-en-US>`_
@@ -8455,7 +8456,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "G"
                                 args = ["GSG", "GSL", "LSG", "SGG", "SGL", "SHLC", "SLG"]
 
-                            G = G()
+                            G = G()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters:G
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c51043739b194e65.htm#ID_7cd42ef3aac442490a00201901b51a4b-b2bda20baac440650a002019014405dd-en-US>`_
@@ -8474,7 +8475,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSL", "GSL", "LSC", "LSG", "LSL", "SCL", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ee2ffa524efe4143.htm#ID_ae17b162fa8e7fe80a00206a01b10570-63778782fa8e7a3b0a00206a01a6673d-en-US>`_
@@ -8493,7 +8494,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSC", "CSL", "GSL", "LSC", "LSG", "LSL", "SCC", "SCL", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fd7eabf9c9fe4f75.htm#ID_65259074fa8e877a0a00206a01c1d949-59bdb169fa8e81cd0a00206a01a6673d-en-US>`_
@@ -8501,7 +8502,7 @@ class ZNB_gen(Instrument):
                             Arguments: CSC, CSL, GSL, LSC, LSG, LSL, SCC, SCL, SGL, SHLC, SLC, SLG, SLL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:PARameters
 
@@ -8519,7 +8520,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/099a019b9af84e28.htm#ID_4425e038fa8e96ad0a00206a00a9bdd8-133ea7b3fa8e90ff0a00206a01a6673d-en-US>`_
@@ -8538,7 +8539,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSC", "CSL", "FIMPort", "GSG", "GSL", "LSC", "LSG", "LSL", "SCC", "SCL", "SGG", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/adbe16aed5bc4ba6.htm#ID_193f4b02fa8e8f2b0a00206a01d1a2a2-594a30cefa8e895e0a00206a01a6673d-en-US>`_
@@ -8546,7 +8547,7 @@ class ZNB_gen(Instrument):
                         Arguments: CSC, CSL, FIMPort, GSG, GSL, LSC, LSG, LSL, SCC, SCL, SGG, SGL, SHLC, SLC, SLG, SLL
                         """
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:SENDed:DEEMbedding
 
@@ -8571,7 +8572,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "PARameters"
-                            args = []
+                            args = []  # type: List[str]
 
                             class C(SCPINodeN, SCPIQuery, SCPISet):
                                 """
@@ -8584,7 +8585,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "C"
                                 args = ["CSC", "CSL", "GSG", "GSL", "LSC", "LSG", "SCC", "SCL", "SGG", "SGL", "SHLC", "SLC", "SLG"]
 
-                            C = C()
+                            C = C()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters:C
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9b3802e99dd04934.htm#ID_47ea57dcfa8e9e5d0a00206a01f8e797-a5454548fa8e98a00a00206a01a6673d-en-US>`_
@@ -8603,7 +8604,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "DATA"
                                 args = ["FPORts", "IPORts"]
 
-                            DATA = DATA()
+                            DATA = DATA()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters:DATA
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bc40013c1fd34de5.htm#ID_792b4296842df3210a00201901d6e9a7-4e187817842df19b0a00201901936165-en-US>`_
@@ -8622,7 +8623,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "G"
                                 args = ["GSG", "GSL", "LSG", "SGG", "SGL", "SHLC", "SLG"]
 
-                            G = G()
+                            G = G()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters:G
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c2e016fdee4e41e6.htm#ID_bcec6412aac4474a0a00201900615633-9bb80280aac445370a002019014405dd-en-US>`_
@@ -8641,7 +8642,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "L"
                                 args = ["CSL", "GSL", "LSC", "LSG", "LSL", "SCL", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
-                            L = L()
+                            L = L()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters:L
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/39cdaea4416a4c45.htm#ID_3c73b93dfa9057760a00206a0177c3c0-94278c7cfa9051a90a00206a01a6673d-en-US>`_
@@ -8660,7 +8661,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "R"
                                 args = ["CSC", "CSL", "GSL", "LSC", "LSG", "LSL", "SCC", "SCL", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
-                            R = R()
+                            R = R()  # type: ignore
                             """
                             `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters:R
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/60828f5f8b0946d5.htm#ID_06bb1196fa905f070a00206a01dc29e4-44a83d6cfa90595a0a00206a01a6673d-en-US>`_
@@ -8668,7 +8669,7 @@ class ZNB_gen(Instrument):
                             Arguments: CSC, CSL, GSL, LSC, LSG, LSL, SCC, SCL, SGL, SHLC, SLC, SLG, SLL
                             """
 
-                        PARameters = PARameters()
+                        PARameters = PARameters()  # type: ignore
                         """
                         CALCulate:TRANsform:VNETworks:SENDed:EMBedding:PARameters
 
@@ -8686,7 +8687,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ea669d4abf8a4e28.htm#ID_b1752cc1fa906e1a0a00206a01a677d6-a6a35038fa90685e0a00206a01a6673d-en-US>`_
@@ -8705,7 +8706,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TNDefinition"
                             args = ["CSC", "CSL", "FIMPort", "GSG", "GSL", "LSC", "LSG", "LSL", "SCC", "SCL", "SGG", "SGL", "SHLC", "SLC", "SLG", "SLL"]
 
-                        TNDefinition = TNDefinition()
+                        TNDefinition = TNDefinition()  # type: ignore
                         """
                         `CALCulate:TRANsform:VNETworks:SENDed:EMBedding:TNDefinition
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9741b5a2d5bc4f7b.htm#ID_8abb2864fa9066890a00206a0099762f-e45993bafa9060dc0a00206a01a6673d-en-US>`_
@@ -8713,28 +8714,28 @@ class ZNB_gen(Instrument):
                         Arguments: CSC, CSL, FIMPort, GSG, GSL, LSC, LSG, LSL, SCC, SCL, SGG, SGL, SHLC, SLC, SLG, SLL
                         """
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     CALCulate:TRANsform:VNETworks:SENDed:EMBedding
 
                     Arguments: 1, OFF, ON
                     """
 
-                SENDed = SENDed()
+                SENDed = SENDed()  # type: ignore
                 """
                 CALCulate:TRANsform:VNETworks:SENDed
 
                 Arguments:
                 """
 
-            VNETworks = VNETworks()
+            VNETworks = VNETworks()  # type: ignore
             """
             CALCulate:TRANsform:VNETworks
 
             Arguments:
             """
 
-        TRANsform = TRANsform()
+        TRANsform = TRANsform()  # type: ignore
         """
         CALCulate:TRANsform
 
@@ -8749,7 +8750,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TTIMe"
-            args = []
+            args = []  # type: List[str]
 
             class DATA(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -8762,7 +8763,7 @@ class ZNB_gen(Instrument):
                 _cmd = "DATA"
                 args = ["ALL"]
 
-            DATA = DATA()
+            DATA = DATA()  # type: ignore
             """
             `CALCulate:TTIMe:DATA
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8053b2746b294c82.htm#ID_5b08ed0b7262ab7f0a001ae76ed1b8da-b19aa5f17262aa660a001ae7588b56f3-en-US>`_
@@ -8781,7 +8782,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CALCulate:TTIMe:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c18d02bbe2fa4d55.htm#ID_b15ce6497262ad830a001ae714009482-f0151a457262ac690a001ae7588b56f3-en-US>`_
@@ -8800,7 +8801,7 @@ class ZNB_gen(Instrument):
                 _cmd = "THReshold"
                 args = ["1", "T1_9", "T2_8"]
 
-            THReshold = THReshold()
+            THReshold = THReshold()  # type: ignore
             """
             `CALCulate:TTIMe:THReshold
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/996021acfaf54f53.htm#ID_0de05d757262af480a001ae718266790-b1d8db787262ae2e0a001ae7588b56f3-en-US>`_
@@ -8808,14 +8809,14 @@ class ZNB_gen(Instrument):
             Arguments: 1, T1_9, T2_8
             """
 
-        TTIMe = TTIMe()
+        TTIMe = TTIMe()  # type: ignore
         """
         CALCulate:TTIMe
 
         Arguments:
         """
 
-    CALCulate = CALCulate()
+    CALCulate = CALCulate()  # type: ignore
     """
     CALCulate
 
@@ -8830,7 +8831,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "CONFigure"
-        args = []
+        args = []  # type: List[str]
 
         class CHANnel(SCPINodeN, SCPIBool):
             """
@@ -8851,9 +8852,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             `CONFigure:CHANnel:CATalog
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9c40b6d672e3489c.htm#ID_8267d8bffa90756d0a00206a012834d2-871f66dffa906fe00a00206a01a6673d-en-US>`_
@@ -8892,7 +8893,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CONFigure:CHANnel:MEASure:ALL:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f4de82a2bc4545d4.htm#ID_958019b491dbf9e30a00206a01973116-3beacfd491dbf1670a00206a00e9ecac-en-US>`_
@@ -8900,7 +8901,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 CONFigure:CHANnel:MEASure:ALL
 
@@ -8918,7 +8919,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CONFigure:CHANnel:MEASure:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2cd5e872062a431e.htm#ID_1cd54e3791dc03680a00206a012bd79a-94a956b691dbfc250a00206a00e9ecac-en-US>`_
@@ -8926,7 +8927,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            MEASure = MEASure()
+            MEASure = MEASure()  # type: ignore
             """
             CONFigure:CHANnel:MEASure
 
@@ -8955,7 +8956,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ID"
                     args = ["'string'"]
 
-                ID = ID()
+                ID = ID()  # type: ignore
                 """
                 `CONFigure:CHANnel:NAME:ID
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/da0a7bd5700f41f7.htm#ID_abefaec0fa9084b00a00206a000fc09f-f57f33a0fa907ec40a00206a01a6673d-en-US>`_
@@ -8963,7 +8964,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `CONFigure:CHANnel:NAME
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a31923122bab4e11.htm#ID_c3f9c539fa907cef0a00206a008fc1b5-8cf66519fa9077420a00206a01a6673d-en-US>`_
@@ -8982,7 +8983,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CONFigure:CHANnel:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5e82d96f75e24caa.htm#ID_2b6e28fdfa9093940a00206a00cd97da-23931b64fa908de70a00206a01a6673d-en-US>`_
@@ -8998,7 +8999,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRACe"
-                args = []
+                args = []  # type: List[str]
 
                 class CATalog(SCPINode, SCPIQuery):
                     """
@@ -9009,9 +9010,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CATalog"
-                    args = []
+                    args = []  # type: List[str]
 
-                CATalog = CATalog()
+                CATalog = CATalog()  # type: ignore
                 """
                 `CONFigure:CHANnel:TRACe:CATalog
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/08f2ade572024bd1.htm#ID_516e93ea91dc10e50a00206a01e04d6b-a40a757391dc09640a00206a00e9ecac-en-US>`_
@@ -9030,7 +9031,7 @@ class ZNB_gen(Instrument):
                     _cmd = "REName"
                     args = ["'string'"]
 
-                REName = REName()
+                REName = REName()  # type: ignore
                 """
                 `CONFigure:CHANnel:TRACe:REName
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bbb28f18094c4ae3.htm#ID_21f2bb55fa908c030a00206a0107df1a-9e702520fa9086840a00206a01a6673d-en-US>`_
@@ -9038,14 +9039,14 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             CONFigure:CHANnel:TRACe
 
             Arguments:
             """
 
-        CHANnel = CHANnel()
+        CHANnel = CHANnel()  # type: ignore
         """
         CONFigure:CHANnel
 
@@ -9060,7 +9061,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TRACe"
-            args = []
+            args = []  # type: List[str]
 
             class CATalog(SCPINode, SCPIQuery):
                 """
@@ -9071,9 +9072,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             `CONFigure:TRACe:CATalog
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/587cc54182fe483e.htm#ID_bce7da14fa909b060a00206a01cbd9eb-e44e55bcfa9095780a00206a01a6673d-en-US>`_
@@ -9089,7 +9090,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CHANnel"
-                args = []
+                args = []  # type: List[str]
 
                 class NAME(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -9113,7 +9114,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ID"
                         args = ["'string'"]
 
-                    ID = ID()
+                    ID = ID()  # type: ignore
                     """
                     `CONFigure:TRACe:CHANnel:NAME:ID
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/67062066b08c4c45.htm#ID_a007ba5bfa90aa0a0a00206a01848bb0-2e75d305fa90a47c0a00206a01a6673d-en-US>`_
@@ -9121,7 +9122,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                NAME = NAME()
+                NAME = NAME()  # type: ignore
                 """
                 `CONFigure:TRACe:CHANnel:NAME
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f94c4fcfb8094e4b.htm#ID_860185e0fa90a2980a00206a0129ec0d-0cfb8c52fa909ceb0a00206a01a6673d-en-US>`_
@@ -9129,7 +9130,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CHANnel = CHANnel()
+            CHANnel = CHANnel()  # type: ignore
             """
             CONFigure:TRACe:CHANnel
 
@@ -9158,7 +9159,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ID"
                     args = ["'string'"]
 
-                ID = ID()
+                ID = ID()  # type: ignore
                 """
                 `CONFigure:TRACe:NAME:ID
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1f10213a5d6b4a80.htm#ID_295113b4fa90b8fe0a00206a001dfba5-cb7079e8fa90b3700a00206a01a6673d-en-US>`_
@@ -9166,7 +9167,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `CONFigure:TRACe:NAME
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7a040ceb2d3a4047.htm#ID_e80abd45fa90b18c0a00206a01f4249c-c4d0154ffa90abee0a00206a01a6673d-en-US>`_
@@ -9185,7 +9186,7 @@ class ZNB_gen(Instrument):
                 _cmd = "REName"
                 args = ["'string'"]
 
-            REName = REName()
+            REName = REName()  # type: ignore
             """
             `CONFigure:TRACe:REName
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d4f06d994adb4ffa.htm#ID_18b7574dfa90c0af0a00206a01c49181-40592207fa90bad30a00206a01a6673d-en-US>`_
@@ -9215,7 +9216,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TRACe"
                     args = ["'string'"]
 
-                TRACe = TRACe()
+                TRACe = TRACe()  # type: ignore
                 """
                 `CONFigure:TRACe:WINDow:TRACe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/46d9e1a8f3dd4c7f.htm#ID_148894f091dc38240a00206a01003829-5f3601f391dc2edd0a00206a00e9ecac-en-US>`_
@@ -9223,7 +9224,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            WINDow = WINDow()
+            WINDow = WINDow()  # type: ignore
             """
             `CONFigure:TRACe:WINDow
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/668ea0c870b04c50.htm#ID_5352b2a291dc2c4d0a00206a005b7de7-e194934291dc23a20a00206a00e9ecac-en-US>`_
@@ -9231,14 +9232,14 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        TRACe = TRACe()
+        TRACe = TRACe()  # type: ignore
         """
         CONFigure:TRACe
 
         Arguments:
         """
 
-    CONFigure = CONFigure()
+    CONFigure = CONFigure()  # type: ignore
     """
     CONFigure
 
@@ -9253,7 +9254,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "CONTrol"
-        args = []
+        args = []  # type: List[str]
 
         class AUXiliary(SCPINode):
             """
@@ -9263,7 +9264,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "AUXiliary"
-            args = []
+            args = []  # type: List[str]
 
             class C(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -9286,7 +9287,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:AUXiliary:C:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3dabdd0b49f3469f.htm#ID_a8a179f7fa90c8400a00206a0033f6f5-e626ca43fa90c2840a00206a01a6673d-en-US>`_
@@ -9294,14 +9295,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            C = C()
+            C = C()  # type: ignore
             """
             CONTrol:AUXiliary:C
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        AUXiliary = AUXiliary()
+        AUXiliary = AUXiliary()  # type: ignore
         """
         CONTrol:AUXiliary
 
@@ -9329,7 +9330,7 @@ class ZNB_gen(Instrument):
                 _cmd = "RANGe"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            RANGe = RANGe()
+            RANGe = RANGe()  # type: ignore
             """
             `CONTrol:GPIO:RANGe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/349c9f24f7b3433f.htm#ID_fbbe897d42ae65c80a001ae7294019ae-ea623ece42ae63b50a001ae769a5b4da-en-US>`_
@@ -9345,7 +9346,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SENSe"
-                args = []
+                args = []  # type: List[str]
 
                 class CURRent(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -9358,7 +9359,7 @@ class ZNB_gen(Instrument):
                     _cmd = "CURRent"
                     args = ["ALL"]
 
-                CURRent = CURRent()
+                CURRent = CURRent()  # type: ignore
                 """
                 `CONTrol:GPIO:SENSe:CURRent
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/12d640f764314050.htm#ID_35b0fe9842ae69140a001ae7666f9572-5a4c017642ae66a30a001ae769a5b4da-en-US>`_
@@ -9377,7 +9378,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SUMCurrent"
                     args = ["1"]
 
-                SUMCurrent = SUMCurrent()
+                SUMCurrent = SUMCurrent()  # type: ignore
                 """
                 `CONTrol:GPIO:SENSe:SUMCurrent
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/341e4955993a40cd.htm#ID_1156e2c642ae6c6f0a001ae700b67a48-88f098063a4211160a001ae7584876d3-en-US>`_
@@ -9394,9 +9395,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TRIGger"
-                    args = []
+                    args = []  # type: List[str]
 
-                TRIGger = TRIGger()
+                TRIGger = TRIGger()  # type: ignore
                 """
                 `CONTrol:GPIO:SENSe:TRIGger
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5b1bfbc418d04401.htm#ID_eb45576a42ae6f1f0a001ae74d3d666e-3a5b4e6342ae6d2b0a001ae769a5b4da-en-US>`_
@@ -9415,7 +9416,7 @@ class ZNB_gen(Instrument):
                     _cmd = "VOLTage"
                     args = ["ALL"]
 
-                VOLTage = VOLTage()
+                VOLTage = VOLTage()  # type: ignore
                 """
                 `CONTrol:GPIO:SENSe:VOLTage
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0c5bc6da7bd14099.htm#ID_c60899b442ae726a0a001ae74f5e9a67-4245ee9c42ae70480a001ae769a5b4da-en-US>`_
@@ -9423,7 +9424,7 @@ class ZNB_gen(Instrument):
                 Arguments: ALL
                 """
 
-            SENSe = SENSe()
+            SENSe = SENSe()  # type: ignore
             """
             CONTrol:GPIO:SENSe
 
@@ -9439,9 +9440,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SHUNt"
-                args = []
+                args = []  # type: List[str]
 
-            SHUNt = SHUNt()
+            SHUNt = SHUNt()  # type: ignore
             """
             `CONTrol:GPIO:SHUNt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6b7dba82d2514647.htm#ID_bd7421c342ae74cc0a001ae706243599-6a4affa442ae73450a001ae769a5b4da-en-US>`_
@@ -9460,7 +9461,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `CONTrol:GPIO:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/33808ac223674735.htm#ID_d3192ded066b0d0c0a001ae756c50460-6c688743066b0a5c0a001ae733608be0-en-US>`_
@@ -9479,7 +9480,7 @@ class ZNB_gen(Instrument):
                 _cmd = "TIME"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             `CONTrol:GPIO:TIME
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/555a3361fb7246a1.htm#ID_4da2a64342ae77e90a001ae7608b44b4-7c39984c42ae75f50a001ae769a5b4da-en-US>`_
@@ -9508,7 +9509,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DEFault"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DEFault = DEFault()
+                DEFault = DEFault()  # type: ignore
                 """
                 `CONTrol:GPIO:VOLTage:DEFault
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6d98569ee4824333.htm#ID_8470b084066b0ffa0a001ae758e7691b-a4394381066b0dd70a001ae733608be0-en-US>`_
@@ -9525,9 +9526,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "OUTPut"
-                    args = []
+                    args = []  # type: List[str]
 
-                OUTPut = OUTPut()
+                OUTPut = OUTPut()  # type: ignore
                 """
                 `CONTrol:GPIO:VOLTage:OUTPut
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/17e1726b8d244456.htm#ID_a95593b7066b13260a001ae702394225-a4f6f8d5066b10e40a001ae733608be0-en-US>`_
@@ -9535,14 +9536,14 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            VOLTage = VOLTage()
+            VOLTage = VOLTage()  # type: ignore
             """
             CONTrol:GPIO:VOLTage
 
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        GPIO = GPIO()
+        GPIO = GPIO()  # type: ignore
         """
         CONTrol:GPIO
 
@@ -9557,7 +9558,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "HANDler"
-            args = []
+            args = []  # type: List[str]
 
             class A(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -9580,7 +9581,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:A:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/70c5f2d3b7f5451e.htm#ID_384549a9fa90d7630a00206a01da5d48-204d2afafa90d1970a00206a01a6673d-en-US>`_
@@ -9599,7 +9600,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CONTrol:HANDler:A:MODE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e8e24c1f0a8a4490.htm#ID_fd883255fa90cfc20a00206a01b43b71-8197967cfa90ca150a00206a01a6673d-en-US>`_
@@ -9607,7 +9608,7 @@ class ZNB_gen(Instrument):
                 Arguments: INPut, OUTPut
                 """
 
-            A = A()
+            A = A()  # type: ignore
             """
             CONTrol:HANDler:A
 
@@ -9635,7 +9636,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:B:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/70c5f2d3b7f5451e.htm#ID_82e32087fa90e6480a00206a009d90d0-a680df72fa90e0aa0a00206a01a6673d-en-US>`_
@@ -9654,7 +9655,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CONTrol:HANDler:B:MODE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e8e24c1f0a8a4490.htm#ID_df1b2421fa90dec60a00206a001fe8f9-a8227d8efa90d9280a00206a01a6673d-en-US>`_
@@ -9662,7 +9663,7 @@ class ZNB_gen(Instrument):
                 Arguments: INPut, OUTPut
                 """
 
-            B = B()
+            B = B()  # type: ignore
             """
             CONTrol:HANDler:B
 
@@ -9690,7 +9691,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:C:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/70c5f2d3b7f5451e.htm#ID_3f9af4e0fa90f57a0a00206a004e2c4f-374a812bfa90efec0a00206a01a6673d-en-US>`_
@@ -9709,7 +9710,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CONTrol:HANDler:C:MODE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e8e24c1f0a8a4490.htm#ID_30067fb2fa90ee180a00206a0024945a-45be43defa90e81c0a00206a01a6673d-en-US>`_
@@ -9717,7 +9718,7 @@ class ZNB_gen(Instrument):
                 Arguments: INPut, OUTPut
                 """
 
-            C = C()
+            C = C()  # type: ignore
             """
             CONTrol:HANDler:C
 
@@ -9745,7 +9746,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:D:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/70c5f2d3b7f5451e.htm#ID_d89e93e0fa91044f0a00206a0185bd14-2a93a2aafa90fec10a00206a01a6673d-en-US>`_
@@ -9764,7 +9765,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MODE"
                     args = ["INPut", "OUTPut"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CONTrol:HANDler:D:MODE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e8e24c1f0a8a4490.htm#ID_f1fbb137fa90fcec0a00206a011639d8-dc1e6f5bfa90f75f0a00206a01a6673d-en-US>`_
@@ -9772,7 +9773,7 @@ class ZNB_gen(Instrument):
                 Arguments: INPut, OUTPut
                 """
 
-            D = D()
+            D = D()  # type: ignore
             """
             CONTrol:HANDler:D
 
@@ -9800,7 +9801,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:E:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/70c5f2d3b7f5451e.htm#ID_03af4eaaaaa71b910a00206a014d37c1-e591bdf3aaa710370a00206a00dee6b8-en-US>`_
@@ -9808,7 +9809,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1
                 """
 
-            E = E()
+            E = E()  # type: ignore
             """
             CONTrol:HANDler:E
 
@@ -9823,7 +9824,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXTension"
-                args = []
+                args = []  # type: List[str]
 
                 class INDex(SCPINode):
                     """
@@ -9833,7 +9834,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "INDex"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
@@ -9846,7 +9847,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CONTrol:HANDler:EXTension:INDex:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e5d6a10fe5fd4fea.htm#ID_9ab7d58afa9122e30a00206a00a25190-37519af1fa911d260a00206a01a6673d-en-US>`_
@@ -9854,7 +9855,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                INDex = INDex()
+                INDex = INDex()  # type: ignore
                 """
                 CONTrol:HANDler:EXTension:INDex
 
@@ -9869,7 +9870,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RTRigger"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIBool):
                         """
@@ -9882,7 +9883,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `CONTrol:HANDler:EXTension:RTRigger:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/73c9b6934f5842f1.htm#ID_822beadefa912aa30a00206a00c2e325-f42ab4a7fa9124e70a00206a01a6673d-en-US>`_
@@ -9890,14 +9891,14 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                RTRigger = RTRigger()
+                RTRigger = RTRigger()  # type: ignore
                 """
                 CONTrol:HANDler:EXTension:RTRigger
 
                 Arguments:
                 """
 
-            EXTension = EXTension()
+            EXTension = EXTension()  # type: ignore
             """
             CONTrol:HANDler:EXTension
 
@@ -9925,7 +9926,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:F:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/70c5f2d3b7f5451e.htm#ID_65360c0daaa728920a00206a01178ad5-9c82b188aaa71e7f0a00206a00dee6b8-en-US>`_
@@ -9933,7 +9934,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1
                 """
 
-            F = F()
+            F = F()  # type: ignore
             """
             CONTrol:HANDler:F
 
@@ -9961,7 +9962,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:G:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/70c5f2d3b7f5451e.htm#ID_2f4e59f6aaa737090a00206a01d8c5a5-d3dd0524aaa72ae30a00206a00dee6b8-en-US>`_
@@ -9969,7 +9970,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1
                 """
 
-            G = G()
+            G = G()  # type: ignore
             """
             CONTrol:HANDler:G
 
@@ -9997,7 +9998,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:H:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/70c5f2d3b7f5451e.htm#ID_84a2a7bcaaa7460c0a00206a01237959-7700b423aaa73a350a00206a00dee6b8-en-US>`_
@@ -10005,7 +10006,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1
                 """
 
-            H = H()
+            H = H()  # type: ignore
             """
             CONTrol:HANDler:H
 
@@ -10021,9 +10022,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INPut"
-                args = []
+                args = []  # type: List[str]
 
-            INPut = INPut()
+            INPut = INPut()  # type: ignore
             """
             `CONTrol:HANDler:INPut
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/70a4807bdab549b6.htm#ID_817928e6aaa7560a0a00206a010ca1ce-6f60b089aaa749770a00206a00dee6b8-en-US>`_
@@ -10042,7 +10043,7 @@ class ZNB_gen(Instrument):
                 _cmd = "LOGic"
                 args = ["NEGative", "POSitive"]
 
-            LOGic = LOGic()
+            LOGic = LOGic()  # type: ignore
             """
             `CONTrol:HANDler:LOGic
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/49434e4fdc504d75.htm#ID_f78b1faaaaa766d30a00206a00cb9c6b-84654118aaa758e80a00206a00dee6b8-en-US>`_
@@ -10071,7 +10072,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:HANDler:OUTPut:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ef6b44dd6cba4bbd.htm#ID_eec504bdfa9113d00a00206a004e84e5-63c0c051fa910df40a00206a01a6673d-en-US>`_
@@ -10090,7 +10091,7 @@ class ZNB_gen(Instrument):
                     _cmd = "USER"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                USER = USER()
+                USER = USER()  # type: ignore
                 """
                 `CONTrol:HANDler:OUTPut:USER
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d384e87b03b14621.htm#ID_b6012b5ffa910c0f0a00206a00a5d890-7969a7c7fa9106240a00206a01a6673d-en-US>`_
@@ -10098,7 +10099,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            OUTPut = OUTPut()
+            OUTPut = OUTPut()  # type: ignore
             """
             CONTrol:HANDler:OUTPut
 
@@ -10113,7 +10114,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PASSfail"
-                args = []
+                args = []  # type: List[str]
 
                 class LOGic(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -10126,7 +10127,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LOGic"
                     args = ["NEGative", "POSitive"]
 
-                LOGic = LOGic()
+                LOGic = LOGic()  # type: ignore
                 """
                 `CONTrol:HANDler:PASSfail:LOGic
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/516e5268170e4c5e.htm#ID_2595b82eaaa775590a00206a007fcf6d-a5b09155aaa769530a00206a00dee6b8-en-US>`_
@@ -10145,7 +10146,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MODE"
                     args = ["FAIL", "NOWait", "PASS"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `CONTrol:HANDler:PASSfail:MODE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/398e74cccbe24f8e.htm#ID_f9bf98a0aaa783340a00206a00322e82-b914a914aaa777ea0a00206a00dee6b8-en-US>`_
@@ -10164,7 +10165,7 @@ class ZNB_gen(Instrument):
                     _cmd = "POLicy"
                     args = ["ALLMeas", "ALLTests"]
 
-                POLicy = POLicy()
+                POLicy = POLicy()  # type: ignore
                 """
                 `CONTrol:HANDler:PASSfail:POLicy
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2a9ec40efb5a4639.htm#ID_c5cf67d0aaa791ca0a00206a00b576ef-911cc27baaa785c40a00206a00dee6b8-en-US>`_
@@ -10183,7 +10184,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SCOPe"
                     args = ["CHANnel", "GLOBal"]
 
-                SCOPe = SCOPe()
+                SCOPe = SCOPe()  # type: ignore
                 """
                 `CONTrol:HANDler:PASSfail:SCOPe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5afac8c60ba640f8.htm#ID_8f644a34aaa7a10c0a00206a01c34f32-a532dcccaaa794f70a00206a00dee6b8-en-US>`_
@@ -10200,9 +10201,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STATus"
-                    args = []
+                    args = []  # type: List[str]
 
-                STATus = STATus()
+                STATus = STATus()  # type: ignore
                 """
                 `CONTrol:HANDler:PASSfail:STATus
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3b34ef7fb7554045.htm#ID_669da323aaa7adfd0a00206a01e58d7b-4babcd6caaa7a3eb0a00206a00dee6b8-en-US>`_
@@ -10210,7 +10211,7 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            PASSfail = PASSfail()
+            PASSfail = PASSfail()  # type: ignore
             """
             CONTrol:HANDler:PASSfail
 
@@ -10226,9 +10227,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RESet"
-                args = []
+                args = []  # type: List[str]
 
-            RESet = RESet()
+            RESet = RESet()  # type: ignore
             """
             `CONTrol:HANDler:RESet
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9c2c6a07af6245c0.htm#ID_feafcc0afa911b520a00206a01d0958a-3c810aa7fa9115c40a00206a01a6673d-en-US>`_
@@ -10247,7 +10248,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SWEepend"
                 args = ["CHANnel", "GLOBal", "SWEep"]
 
-            SWEepend = SWEepend()
+            SWEepend = SWEepend()  # type: ignore
             """
             `CONTrol:HANDler:SWEepend
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8f283b06a39b4f59.htm#ID_4b826235aaa7c8f70a00206a001fcebb-4e04fab1aaa7bc740a00206a00dee6b8-en-US>`_
@@ -10255,7 +10256,7 @@ class ZNB_gen(Instrument):
             Arguments: CHANnel, GLOBal, SWEep
             """
 
-        HANDler = HANDler()
+        HANDler = HANDler()  # type: ignore
         """
         CONTrol:HANDler
 
@@ -10270,7 +10271,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "RFFE"
-            args = []
+            args = []  # type: List[str]
 
             class COMMand(SCPINode):
                 """
@@ -10280,7 +10281,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COMMand"
-                args = []
+                args = []  # type: List[str]
 
                 class DATA(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -10293,7 +10294,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["'string'"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:RFFE:COMMand:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/aede8dcd348f4fab.htm#ID_3502760a066b1f8a0a001ae70c239c0e-3f81058e066b1d770a001ae733608be0-en-US>`_
@@ -10312,7 +10313,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SEND"
                     args = ["1"]
 
-                SEND = SEND()
+                SEND = SEND()  # type: ignore
                 """
                 `CONTrol:RFFE:COMMand:SEND
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a9c7e6ae7a424370.htm#ID_7aebff11066b22b70a001ae7728c5d1d-199a3e2481dfee9f0a001ae738278eca-en-US>`_
@@ -10320,7 +10321,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1
                 """
 
-            COMMand = COMMand()
+            COMMand = COMMand()  # type: ignore
             """
             CONTrol:RFFE:COMMand
 
@@ -10348,7 +10349,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 `CONTrol:RFFE:SETTings:FREQuency
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/86e7d9e9c64a4b80.htm#ID_e0afbdf3066b25c40a001ae7374f4675-88aae4cd066b23820a001ae733608be0-en-US>`_
@@ -10367,7 +10368,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `CONTrol:RFFE:SETTings:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ad56e7c2cd4c4c48.htm#ID_6e7676fa066b28440a001ae71c2aa9ef-7614426b066b26ae0a001ae733608be0-en-US>`_
@@ -10383,7 +10384,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "VOLTage"
-                    args = []
+                    args = []  # type: List[str]
 
                     class HIGH(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -10396,7 +10397,7 @@ class ZNB_gen(Instrument):
                         _cmd = "HIGH"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    HIGH = HIGH()
+                    HIGH = HIGH()  # type: ignore
                     """
                     `CONTrol:RFFE:SETTings:VOLTage:HIGH
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/40122cc0e02b4df5.htm#ID_b7836816066b2b330a001ae7691148d3-90a164dd966b72ac0a001ae70f280944-en-US>`_
@@ -10415,7 +10416,7 @@ class ZNB_gen(Instrument):
                         _cmd = "IO"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    IO = IO()
+                    IO = IO()  # type: ignore
                     """
                     `CONTrol:RFFE:SETTings:VOLTage:IO
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/40122cc0e02b4df5.htm#ID_911e89b3066b2da40a001ae73936a740-8055592b066b2bee0a001ae733608be0-en-US>`_
@@ -10434,7 +10435,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LOW"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    LOW = LOW()
+                    LOW = LOW()  # type: ignore
                     """
                     `CONTrol:RFFE:SETTings:VOLTage:LOW
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/40122cc0e02b4df5.htm#ID_d872d092066b30630a001ae75ad2e77f-1722156d066b2e8e0a001ae733608be0-en-US>`_
@@ -10442,14 +10443,14 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                VOLTage = VOLTage()
+                VOLTage = VOLTage()  # type: ignore
                 """
                 CONTrol:RFFE:SETTings:VOLTage
 
                 Arguments:
                 """
 
-            SETTings = SETTings()
+            SETTings = SETTings()  # type: ignore
             """
             CONTrol:RFFE:SETTings
 
@@ -10464,7 +10465,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TEST"
-                args = []
+                args = []  # type: List[str]
 
                 class CLOCk(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -10486,9 +10487,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CURRent"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CURRent = CURRent()
+                    CURRent = CURRent()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:CLOCk:CURRent
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cf63963efbf84711.htm#ID_3cd0732c42ae8e010a001ae75c5ad3c2-4429f3c442ae8c3c0a001ae769a5b4da-en-US>`_
@@ -10507,7 +10508,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RANGe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RANGe = RANGe()
+                    RANGe = RANGe()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:CLOCk:RANGe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/061fcdd33a664d9b.htm#ID_b8e7b1e542ae90ef0a001ae748dcafdb-9b5f956a42ae8ebd0a001ae769a5b4da-en-US>`_
@@ -10524,9 +10525,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SHUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SHUNt = SHUNt()
+                    SHUNt = SHUNt()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:CLOCk:SHUNt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a097b0172bac467a.htm#ID_0040e34542ae940c0a001ae723843b24-39e947dc42ae92090a001ae769a5b4da-en-US>`_
@@ -10543,9 +10544,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "VOLTage"
-                        args = []
+                        args = []  # type: List[str]
 
-                    VOLTage = VOLTage()
+                    VOLTage = VOLTage()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:CLOCk:VOLTage
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ad2db797ce1b4cea.htm#ID_6518d5f142ae963f0a001ae71acaf860-caee3aea42ae94c80a001ae769a5b4da-en-US>`_
@@ -10553,7 +10554,7 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                CLOCk = CLOCk()
+                CLOCk = CLOCk()  # type: ignore
                 """
                 `CONTrol:RFFE:TEST:CLOCk
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b623d921df9b4f32.htm#ID_fe07d53142ae8b900a001ae758d3d25c-b8f0fc1242ae89ac0a001ae769a5b4da-en-US>`_
@@ -10581,9 +10582,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CURRent"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CURRent = CURRent()
+                    CURRent = CURRent()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:DATA:CURRent
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cf63963efbf84711.htm#ID_537f944742ae9b210a001ae70088b5f7-939cdca842ae998a0a001ae769a5b4da-en-US>`_
@@ -10602,7 +10603,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RANGe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RANGe = RANGe()
+                    RANGe = RANGe()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:DATA:RANGe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/061fcdd33a664d9b.htm#ID_a9da484d42ae9d630a001ae73d1b6a0f-c9bffd9442ae9bbd0a001ae769a5b4da-en-US>`_
@@ -10619,9 +10620,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SHUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SHUNt = SHUNt()
+                    SHUNt = SHUNt()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:DATA:SHUNt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a097b0172bac467a.htm#ID_f2c0b0ea42ae9fe40a001ae73ebe1fb5-e2f7c72442ae9e3e0a001ae769a5b4da-en-US>`_
@@ -10638,9 +10639,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "VOLTage"
-                        args = []
+                        args = []  # type: List[str]
 
-                    VOLTage = VOLTage()
+                    VOLTage = VOLTage()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:DATA:VOLTage
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ad2db797ce1b4cea.htm#ID_d3c20f9542aea2550a001ae70a28fff2-afd4132142aea0800a001ae769a5b4da-en-US>`_
@@ -10648,7 +10649,7 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `CONTrol:RFFE:TEST:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b623d921df9b4f32.htm#ID_35850b0d42ae98ee0a001ae76f74a14f-6018214142ae97290a001ae769a5b4da-en-US>`_
@@ -10665,9 +10666,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "OUTPut"
-                    args = []
+                    args = []  # type: List[str]
 
-                OUTPut = OUTPut()
+                OUTPut = OUTPut()  # type: ignore
                 """
                 `CONTrol:RFFE:TEST:OUTPut
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/349450bbd5474192.htm#ID_289491a342aea4b60a001ae74d95b063-a4001e9e42aea3100a001ae769a5b4da-en-US>`_
@@ -10683,7 +10684,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SENSe"
-                    args = []
+                    args = []  # type: List[str]
 
                     class TRIGger(SCPINode, SCPISet):
                         """
@@ -10694,9 +10695,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "TRIGger"
-                        args = []
+                        args = []  # type: List[str]
 
-                    TRIGger = TRIGger()
+                    TRIGger = TRIGger()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:SENSe:TRIGger
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fc2f1b2520ad41db.htm#ID_c198b37442aea6aa0a001ae7130ede53-e70d1ff942aea5520a001ae769a5b4da-en-US>`_
@@ -10704,7 +10705,7 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                SENSe = SENSe()
+                SENSe = SENSe()  # type: ignore
                 """
                 CONTrol:RFFE:TEST:SENSe
 
@@ -10722,7 +10723,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                TIME = TIME()
+                TIME = TIME()  # type: ignore
                 """
                 `CONTrol:RFFE:TEST:TIME
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1ca1753cb9764fdd.htm#ID_af8ff50e42aea93a0a001ae704b63f39-0e0a68da42aea7940a001ae769a5b4da-en-US>`_
@@ -10750,9 +10751,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CURRent"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CURRent = CURRent()
+                    CURRent = CURRent()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:VIO:CURRent
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cf63963efbf84711.htm#ID_ff86537a42aeadbf0a001ae77b7fad68-ab7e749634e4dd0f0a001ae74d4c8092-en-US>`_
@@ -10771,7 +10772,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RANGe"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RANGe = RANGe()
+                    RANGe = RANGe()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:VIO:RANGe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/061fcdd33a664d9b.htm#ID_28d100dc42aeb0300a001ae712cc756f-d539c15c3480c6fc0a001ae728c0b35f-en-US>`_
@@ -10788,9 +10789,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SHUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SHUNt = SHUNt()
+                    SHUNt = SHUNt()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:VIO:SHUNt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a097b0172bac467a.htm#ID_626f704a42aeb2b00a001ae7326db161-465a75bf3483d4180a001ae71f7de4eb-en-US>`_
@@ -10807,9 +10808,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "VOLTage"
-                        args = []
+                        args = []  # type: List[str]
 
-                    VOLTage = VOLTage()
+                    VOLTage = VOLTage()  # type: ignore
                     """
                     `CONTrol:RFFE:TEST:VIO:VOLTage
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ad2db797ce1b4cea.htm#ID_1fe1f36c42aeb5120a001ae76970a3e7-6204744b34e588750a001ae75431d893-en-US>`_
@@ -10817,7 +10818,7 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                VIO = VIO()
+                VIO = VIO()  # type: ignore
                 """
                 `CONTrol:RFFE:TEST:VIO
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b623d921df9b4f32.htm#ID_da79227042aeab7c0a001ae757fdcd9e-e24566a43418ad380a001ae71794a01a-en-US>`_
@@ -10825,14 +10826,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            TEST = TEST()
+            TEST = TEST()  # type: ignore
             """
             CONTrol:RFFE:TEST
 
             Arguments:
             """
 
-        RFFE = RFFE()
+        RFFE = RFFE()  # type: ignore
         """
         CONTrol:RFFE
 
@@ -10847,7 +10848,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SEGMent"
-            args = []
+            args = []  # type: List[str]
 
             class SEQuence(SCPINodeN):
                 """
@@ -10857,7 +10858,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SEQuence"
-                args = []
+                args = []  # type: List[str]
 
                 class CLEar(SCPINode):
                     """
@@ -10867,7 +10868,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CLEar"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ALL(SCPINode, SCPISet):
                         """
@@ -10878,9 +10879,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ALL"
-                        args = []
+                        args = []  # type: List[str]
 
-                    ALL = ALL()
+                    ALL = ALL()  # type: ignore
                     """
                     `CONTrol:SEGMent:SEQuence:CLEar:ALL
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dce45392f23d4cd1.htm#ID_ba1740ff066b32e30a001ae7038cc690-e385c4e6066b312e0a001ae733608be0-en-US>`_
@@ -10888,7 +10889,7 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                CLEar = CLEar()
+                CLEar = CLEar()  # type: ignore
                 """
                 CONTrol:SEGMent:SEQuence:CLEar
 
@@ -10904,9 +10905,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COUNt"
-                    args = []
+                    args = []  # type: List[str]
 
-                COUNt = COUNt()
+                COUNt = COUNt()  # type: ignore
                 """
                 `CONTrol:SEGMent:SEQuence:COUNt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/863ad1f221e34a86.htm#ID_d8be4e36066b35060a001ae76687ab53-7eee6fdf066b33be0a001ae733608be0-en-US>`_
@@ -10925,7 +10926,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DELay = DELay()
+                DELay = DELay()  # type: ignore
                 """
                 `CONTrol:SEGMent:SEQuence:DELay
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cad27b08f5cd4a59.htm#ID_ff5337c49a5a3eae0a001ae7055abd97-52198a0c066b36ac0a001ae733608be0-en-US>`_
@@ -10941,7 +10942,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "GPIO"
-                    args = []
+                    args = []  # type: List[str]
 
                     class VOLTage(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -10954,7 +10955,7 @@ class ZNB_gen(Instrument):
                         _cmd = "VOLTage"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    VOLTage = VOLTage()
+                    VOLTage = VOLTage()  # type: ignore
                     """
                     `CONTrol:SEGMent:SEQuence:GPIO:VOLTage
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d59396a2d7e04724.htm#ID_b11ac4b4066b3b210a001ae7511309cd-19aa6061066b394c0a001ae733608be0-en-US>`_
@@ -10962,7 +10963,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                GPIO = GPIO()
+                GPIO = GPIO()  # type: ignore
                 """
                 CONTrol:SEGMent:SEQuence:GPIO
 
@@ -10977,7 +10978,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "RFFE"
-                    args = []
+                    args = []  # type: List[str]
 
                     class COMMand(SCPINode):
                         """
@@ -10987,7 +10988,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COMMand"
-                        args = []
+                        args = []  # type: List[str]
 
                         class DATA(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -11000,7 +11001,7 @@ class ZNB_gen(Instrument):
                             _cmd = "DATA"
                             args = ["'string'"]
 
-                        DATA = DATA()
+                        DATA = DATA()  # type: ignore
                         """
                         `CONTrol:SEGMent:SEQuence:RFFE:COMMand:DATA
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/391f2dd3ce594a86.htm#ID_06ace371066b3e5d0a001ae77224664e-1fcbae3c066b3c0b0a001ae733608be0-en-US>`_
@@ -11008,28 +11009,28 @@ class ZNB_gen(Instrument):
                         Arguments: 'string'
                         """
 
-                    COMMand = COMMand()
+                    COMMand = COMMand()  # type: ignore
                     """
                     CONTrol:SEGMent:SEQuence:RFFE:COMMand
 
                     Arguments:
                     """
 
-                RFFE = RFFE()
+                RFFE = RFFE()  # type: ignore
                 """
                 CONTrol:SEGMent:SEQuence:RFFE
 
                 Arguments:
                 """
 
-            SEQuence = SEQuence()
+            SEQuence = SEQuence()  # type: ignore
             """
             CONTrol:SEGMent:SEQuence
 
             Arguments:
             """
 
-        SEGMent = SEGMent()
+        SEGMent = SEGMent()  # type: ignore
         """
         CONTrol:SEGMent
 
@@ -11044,7 +11045,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SEQuence"
-            args = []
+            args = []  # type: List[str]
 
             class CLEar(SCPINode):
                 """
@@ -11054,7 +11055,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CLEar"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPISet):
                     """
@@ -11065,9 +11066,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `CONTrol:SEQuence:CLEar:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ae61df9a65994430.htm#ID_333f4491066b40ce0a001ae721c73f52-88df1fd0066b3f090a001ae733608be0-en-US>`_
@@ -11075,7 +11076,7 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             CONTrol:SEQuence:CLEar
 
@@ -11091,9 +11092,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COUNt"
-                args = []
+                args = []  # type: List[str]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `CONTrol:SEQuence:COUNt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/17252f9e8804497b.htm#ID_f18ea6b6066b42f10a001ae70911d2e1-27e2fa22066b416a0a001ae733608be0-en-US>`_
@@ -11112,7 +11113,7 @@ class ZNB_gen(Instrument):
                 _cmd = "DELay"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            DELay = DELay()
+            DELay = DELay()  # type: ignore
             """
             `CONTrol:SEQuence:DELay
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0bb940016a74464e.htm#ID_d484ffa7066b45230a001ae716a8581a-0dce9372066b43ac0a001ae733608be0-en-US>`_
@@ -11128,7 +11129,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "GPIO"
-                args = []
+                args = []  # type: List[str]
 
                 class VOLTage(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -11141,7 +11142,7 @@ class ZNB_gen(Instrument):
                     _cmd = "VOLTage"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                VOLTage = VOLTage()
+                VOLTage = VOLTage()  # type: ignore
                 """
                 `CONTrol:SEQuence:GPIO:VOLTage
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3fb7df3527744c2b.htm#ID_61c443f1066b47850a001ae76731bb7b-8bcc6627066b460e0a001ae733608be0-en-US>`_
@@ -11149,7 +11150,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            GPIO = GPIO()
+            GPIO = GPIO()  # type: ignore
             """
             CONTrol:SEQuence:GPIO
 
@@ -11164,7 +11165,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RFFE"
-                args = []
+                args = []  # type: List[str]
 
                 class COMMand(SCPINode):
                     """
@@ -11174,7 +11175,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COMMand"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DATA(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -11187,7 +11188,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DATA"
                         args = ["'string'"]
 
-                    DATA = DATA()
+                    DATA = DATA()  # type: ignore
                     """
                     `CONTrol:SEQuence:RFFE:COMMand:DATA
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b78d712928e44350.htm#ID_fca5b214066b4a240a001ae74dd3450e-e2ac204e066b48500a001ae733608be0-en-US>`_
@@ -11195,21 +11196,21 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                COMMand = COMMand()
+                COMMand = COMMand()  # type: ignore
                 """
                 CONTrol:SEQuence:RFFE:COMMand
 
                 Arguments:
                 """
 
-            RFFE = RFFE()
+            RFFE = RFFE()  # type: ignore
             """
             CONTrol:SEQuence:RFFE
 
             Arguments:
             """
 
-        SEQuence = SEQuence()
+        SEQuence = SEQuence()  # type: ignore
         """
         CONTrol:SEQuence
 
@@ -11226,14 +11227,14 @@ class ZNB_gen(Instrument):
             _cmd = "SIGNal"
             args = ["BNC1", "BNC2"]
 
-        SIGNal = SIGNal()
+        SIGNal = SIGNal()  # type: ignore
         """
         CONTrol:SIGNal
 
         Arguments: BNC1, BNC2
         """
 
-    CONTrol = CONTrol()
+    CONTrol = CONTrol()  # type: ignore
     """
     CONTrol
 
@@ -11248,7 +11249,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "DIAGnostic"
-        args = []
+        args = []  # type: List[str]
 
         class ALC(SCPINode):
             """
@@ -11258,7 +11259,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ALC"
-            args = []
+            args = []  # type: List[str]
 
             class SETTings(SCPINode, SCPIBool):
                 """
@@ -11280,21 +11281,21 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 DIAGnostic:ALC:SETTings:STATe
 
                 Arguments: 1, OFF, ON
                 """
 
-            SETTings = SETTings()
+            SETTings = SETTings()  # type: ignore
             """
             DIAGnostic:ALC:SETTings
 
             Arguments: 1, OFF, ON
             """
 
-        ALC = ALC()
+        ALC = ALC()  # type: ignore
         """
         DIAGnostic:ALC
 
@@ -11309,9 +11310,9 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DEFault"
-            args = []
+            args = []  # type: List[str]
 
-        DEFault = DEFault()
+        DEFault = DEFault()  # type: ignore
         """
         DIAGnostic:DEFault
 
@@ -11326,7 +11327,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DEVice"
-            args = []
+            args = []  # type: List[str]
 
             class STATe(SCPINode, SCPISet):
                 """
@@ -11339,7 +11340,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["'string'"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `DIAGnostic:DEVice:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b7b6e972a86f4997.htm#ID_4ccbc72a134d7a160a00206a00fc7723-c47502c8134d740b0a00206a0182dc26-en-US>`_
@@ -11347,7 +11348,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        DEVice = DEVice()
+        DEVice = DEVice()  # type: ignore
         """
         DIAGnostic:DEVice
 
@@ -11362,7 +11363,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DUMP"
-            args = []
+            args = []  # type: List[str]
 
             class SIZE(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -11375,7 +11376,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SIZE"
                 args = ["FULL", "LARGe", "MINI", "NONE", "NORMal"]
 
-            SIZE = SIZE()
+            SIZE = SIZE()  # type: ignore
             """
             `DIAGnostic:DUMP:SIZE
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ff494033e9a843aa.htm#ID_a7bac880066b4d220a001ae71bbc7e0d-90f2c5f2066b4b9b0a001ae733608be0-en-US>`_
@@ -11383,7 +11384,7 @@ class ZNB_gen(Instrument):
             Arguments: FULL, LARGe, MINI, NONE, NORMal
             """
 
-        DUMP = DUMP()
+        DUMP = DUMP()  # type: ignore
         """
         DIAGnostic:DUMP
 
@@ -11398,9 +11399,9 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PARSer"
-            args = []
+            args = []  # type: List[str]
 
-        PARSer = PARSer()
+        PARSer = PARSer()  # type: ignore
         """
         DIAGnostic:PARSer
 
@@ -11415,7 +11416,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PRODuct"
-            args = []
+            args = []  # type: List[str]
 
             class CATalog(SCPINode, SCPIQuery):
                 """
@@ -11425,9 +11426,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             DIAGnostic:PRODuct:CATalog
 
@@ -11442,9 +11443,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DESCription"
-                args = []
+                args = []  # type: List[str]
 
-            DESCription = DESCription()
+            DESCription = DESCription()  # type: ignore
             """
             DIAGnostic:PRODuct:DESCription
 
@@ -11459,9 +11460,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ID"
-                args = []
+                args = []  # type: List[str]
 
-            ID = ID()
+            ID = ID()  # type: ignore
             """
             DIAGnostic:PRODuct:ID
 
@@ -11476,9 +11477,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MACaddress"
-                args = []
+                args = []  # type: List[str]
 
-            MACaddress = MACaddress()
+            MACaddress = MACaddress()  # type: ignore
             """
             DIAGnostic:PRODuct:MACaddress
 
@@ -11493,7 +11494,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "OPTion"
-                args = []
+                args = []  # type: List[str]
 
                 class FACTory(SCPINode):
                     """
@@ -11503,7 +11504,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "FACTory"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CLEar(SCPINode, SCPISet):
                         """
@@ -11513,16 +11514,16 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CLEar"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CLEar = CLEar()
+                    CLEar = CLEar()  # type: ignore
                     """
                     DIAGnostic:PRODuct:OPTion:FACTory:CLEar
 
                     Arguments:
                     """
 
-                FACTory = FACTory()
+                FACTory = FACTory()  # type: ignore
                 """
                 DIAGnostic:PRODuct:OPTion:FACTory
 
@@ -11540,7 +11541,7 @@ class ZNB_gen(Instrument):
                     _cmd = "INFO"
                     args = ["'string'"]
 
-                INFO = INFO()
+                INFO = INFO()  # type: ignore
                 """
                 `DIAGnostic:PRODuct:OPTion:INFO
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0bab836e2f604f5e.htm#ID_5b4bc3d2a1e970ab0a001ae735fbde1d-a3143537a1e96f730a001ae70a9caa95-en-US>`_
@@ -11556,7 +11557,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LICence"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CHECk(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -11568,7 +11569,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CHECk"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    CHECk = CHECk()
+                    CHECk = CHECk()  # type: ignore
                     """
                     DIAGnostic:PRODuct:OPTion:LICence:CHECk
 
@@ -11585,14 +11586,14 @@ class ZNB_gen(Instrument):
                         _cmd = "UNLock"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    UNLock = UNLock()
+                    UNLock = UNLock()  # type: ignore
                     """
                     DIAGnostic:PRODuct:OPTion:LICence:UNLock
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                LICence = LICence()
+                LICence = LICence()  # type: ignore
                 """
                 DIAGnostic:PRODuct:OPTion:LICence
 
@@ -11607,9 +11608,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LIST"
-                    args = []
+                    args = []  # type: List[str]
 
-                LIST = LIST()
+                LIST = LIST()  # type: ignore
                 """
                 DIAGnostic:PRODuct:OPTion:LIST
 
@@ -11626,14 +11627,14 @@ class ZNB_gen(Instrument):
                     _cmd = "STATus"
                     args = ["#<block", "'string'"]
 
-                STATus = STATus()
+                STATus = STATus()  # type: ignore
                 """
                 DIAGnostic:PRODuct:OPTion:STATus
 
                 Arguments: #<block, 'string'
                 """
 
-            OPTion = OPTion()
+            OPTion = OPTion()  # type: ignore
             """
             DIAGnostic:PRODuct:OPTion
 
@@ -11650,7 +11651,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SELect"
                 args = ["'string'"]
 
-            SELect = SELect()
+            SELect = SELect()  # type: ignore
             """
             DIAGnostic:PRODuct:SELect
 
@@ -11665,7 +11666,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TIME"
-                args = []
+                args = []  # type: List[str]
 
                 class OPERating(SCPINode, SCPIQuery):
                     """
@@ -11675,23 +11676,23 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "OPERating"
-                    args = []
+                    args = []  # type: List[str]
 
-                OPERating = OPERating()
+                OPERating = OPERating()  # type: ignore
                 """
                 DIAGnostic:PRODuct:TIME:OPERating
 
                 Arguments:
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             DIAGnostic:PRODuct:TIME
 
             Arguments:
             """
 
-        PRODuct = PRODuct()
+        PRODuct = PRODuct()  # type: ignore
         """
         DIAGnostic:PRODuct
 
@@ -11706,7 +11707,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SERVice"
-            args = []
+            args = []  # type: List[str]
 
             class FUNCtion(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -11719,7 +11720,7 @@ class ZNB_gen(Instrument):
                 _cmd = "FUNCtion"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            FUNCtion = FUNCtion()
+            FUNCtion = FUNCtion()  # type: ignore
             """
             `DIAGnostic:SERVice:FUNCtion
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5ee0a31dd99445bf.htm#ID_351c4edbfa91942b0a00206a019938ad-c622f7b0fa918e7e0a00206a01a6673d-en-US>`_
@@ -11738,7 +11739,7 @@ class ZNB_gen(Instrument):
                 _cmd = "RFPower"
                 args = ["1", "OFF", "ON"]
 
-            RFPower = RFPower()
+            RFPower = RFPower()  # type: ignore
             """
             `DIAGnostic:SERVice:RFPower
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2d4511ee6367462c.htm#ID_05ffa5f6fa919bcc0a00206a006174c7-16a66f8cfa91960f0a00206a01a6673d-en-US>`_
@@ -11757,7 +11758,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SFUNction"
                 args = ["'string'"]
 
-            SFUNction = SFUNction()
+            SFUNction = SFUNction()  # type: ignore
             """
             `DIAGnostic:SERVice:SFUNction
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f85cfd9d4d74448e.htm#ID_48fd1718fa91a33e0a00206a0034447a-4ce344b0fa919da10a00206a01a6673d-en-US>`_
@@ -11765,7 +11766,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        SERVice = SERVice()
+        SERVice = SERVice()  # type: ignore
         """
         DIAGnostic:SERVice
 
@@ -11780,7 +11781,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "UPDate"
-            args = []
+            args = []  # type: List[str]
 
             class BOOT(SCPINode, SCPISet):
                 """
@@ -11790,9 +11791,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BOOT"
-                args = []
+                args = []  # type: List[str]
 
-            BOOT = BOOT()
+            BOOT = BOOT()  # type: ignore
             """
             DIAGnostic:UPDate:BOOT
 
@@ -11807,9 +11808,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             DIAGnostic:UPDate:CATalog
 
@@ -11824,7 +11825,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CHAP"
-                args = []
+                args = []  # type: List[str]
 
                 class CHALlenge(SCPINode, SCPIQuery):
                     """
@@ -11834,9 +11835,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CHALlenge"
-                    args = []
+                    args = []  # type: List[str]
 
-                CHALlenge = CHALlenge()
+                CHALlenge = CHALlenge()  # type: ignore
                 """
                 DIAGnostic:UPDate:CHAP:CHALlenge
 
@@ -11851,9 +11852,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PRESet"
-                    args = []
+                    args = []  # type: List[str]
 
-                PRESet = PRESet()
+                PRESet = PRESet()  # type: ignore
                 """
                 DIAGnostic:UPDate:CHAP:PRESet
 
@@ -11870,14 +11871,14 @@ class ZNB_gen(Instrument):
                     _cmd = "RESPonse"
                     args = ["#<block"]
 
-                RESPonse = RESPonse()
+                RESPonse = RESPonse()  # type: ignore
                 """
                 DIAGnostic:UPDate:CHAP:RESPonse
 
                 Arguments: #<block
                 """
 
-            CHAP = CHAP()
+            CHAP = CHAP()  # type: ignore
             """
             DIAGnostic:UPDate:CHAP
 
@@ -11894,7 +11895,7 @@ class ZNB_gen(Instrument):
                 _cmd = "EXECute"
                 args = ["NOWait", "OVERlay", "WAIT"]
 
-            EXECute = EXECute()
+            EXECute = EXECute()  # type: ignore
             """
             DIAGnostic:UPDate:EXECute
 
@@ -11919,9 +11920,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BEGin"
-                    args = []
+                    args = []  # type: List[str]
 
-                BEGin = BEGin()
+                BEGin = BEGin()  # type: ignore
                 """
                 DIAGnostic:UPDate:INSTall:BEGin
 
@@ -11936,9 +11937,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "END"
-                    args = []
+                    args = []  # type: List[str]
 
-                END = END()
+                END = END()  # type: ignore
                 """
                 DIAGnostic:UPDate:INSTall:END
 
@@ -11953,16 +11954,16 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STATus"
-                    args = []
+                    args = []  # type: List[str]
 
-                STATus = STATus()
+                STATus = STATus()  # type: ignore
                 """
                 DIAGnostic:UPDate:INSTall:STATus
 
                 Arguments:
                 """
 
-            INSTall = INSTall()
+            INSTall = INSTall()  # type: ignore
             """
             DIAGnostic:UPDate:INSTall
 
@@ -11979,7 +11980,7 @@ class ZNB_gen(Instrument):
                 _cmd = "PROGress"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            PROGress = PROGress()
+            PROGress = PROGress()  # type: ignore
             """
             DIAGnostic:UPDate:PROGress
 
@@ -11994,7 +11995,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRANsfer"
-                args = []
+                args = []  # type: List[str]
 
                 class CLOSe(SCPINode, SCPISet):
                     """
@@ -12004,9 +12005,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CLOSe"
-                    args = []
+                    args = []  # type: List[str]
 
-                CLOSe = CLOSe()
+                CLOSe = CLOSe()  # type: ignore
                 """
                 DIAGnostic:UPDate:TRANsfer:CLOSe
 
@@ -12023,7 +12024,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 DIAGnostic:UPDate:TRANsfer:DATA
 
@@ -12040,7 +12041,7 @@ class ZNB_gen(Instrument):
                     _cmd = "OPEN"
                     args = ["DATA", "DESCr"]
 
-                OPEN = OPEN()
+                OPEN = OPEN()  # type: ignore
                 """
                 DIAGnostic:UPDate:TRANsfer:OPEN
 
@@ -12055,30 +12056,30 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "VERSion"
-                    args = []
+                    args = []  # type: List[str]
 
-                VERSion = VERSion()
+                VERSion = VERSion()  # type: ignore
                 """
                 DIAGnostic:UPDate:TRANsfer:VERSion
 
                 Arguments:
                 """
 
-            TRANsfer = TRANsfer()
+            TRANsfer = TRANsfer()  # type: ignore
             """
             DIAGnostic:UPDate:TRANsfer
 
             Arguments:
             """
 
-        UPDate = UPDate()
+        UPDate = UPDate()  # type: ignore
         """
         DIAGnostic:UPDate
 
         Arguments:
         """
 
-    DIAGnostic = DIAGnostic()
+    DIAGnostic = DIAGnostic()  # type: ignore
     """
     DIAGnostic
 
@@ -12103,7 +12104,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ANNotation"
-            args = []
+            args = []  # type: List[str]
 
             class CHANnel(SCPINode, SCPIBool):
                 """
@@ -12126,7 +12127,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DISPlay:ANNotation:CHANnel:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/97b83eb36eea4b22.htm#ID_09283553fa921c940a00206a00bfb2e1-8c3c7511fa9216e70a00206a01a6673d-en-US>`_
@@ -12134,7 +12135,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            CHANnel = CHANnel()
+            CHANnel = CHANnel()  # type: ignore
             """
             DISPlay:ANNotation:CHANnel
 
@@ -12162,7 +12163,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DISPlay:ANNotation:FREQuency:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a9752bf5700b4921.htm#ID_a0b6805dfa9224350a00206a01dcf415-e0bc5d8cfa921e880a00206a01a6673d-en-US>`_
@@ -12170,7 +12171,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             DISPlay:ANNotation:FREQuency
 
@@ -12198,7 +12199,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DISPlay:ANNotation:TRACe:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/97b83eb36eea4b22.htm#ID_69d46e9ebba79eea0a002019006f313f-268f85a2bba79dc10a0020190170f726-en-US>`_
@@ -12206,14 +12207,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             DISPlay:ANNotation:TRACe
 
             Arguments: 1, OFF, ON
             """
 
-        ANNotation = ANNotation()
+        ANNotation = ANNotation()  # type: ignore
         """
         DISPlay:ANNotation
 
@@ -12228,7 +12229,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CMAP"
-            args = []
+            args = []  # type: List[str]
 
             class LIMit(SCPINode, SCPIBool):
                 """
@@ -12261,7 +12262,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `DISPlay:CMAP:LIMit:FCOLorize:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/92c1a74cdb3c4a2a.htm#ID_07203f1f996b99230a00206a01fea816-cd8545fd996b91050a00206a0049ced2-en-US>`_
@@ -12269,7 +12270,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                FCOLorize = FCOLorize()
+                FCOLorize = FCOLorize()  # type: ignore
                 """
                 DISPlay:CMAP:LIMit:FCOLorize
 
@@ -12297,7 +12298,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `DISPlay:CMAP:LIMit:FSYMbol:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/abb0167f87104421.htm#ID_a789ec67996ba7b90a00206a01775331-994b212d996b9e720a00206a0049ced2-en-US>`_
@@ -12305,7 +12306,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                FSYMbol = FSYMbol()
+                FSYMbol = FSYMbol()  # type: ignore
                 """
                 DISPlay:CMAP:LIMit:FSYMbol
 
@@ -12323,7 +12324,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DISPlay:CMAP:LIMit:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cca1b50b1c544b68.htm#ID_b72519cea06b7a720a00206a006d9d2b-2c0171cca06b736d0a00206a013722ca-en-US>`_
@@ -12331,7 +12332,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            LIMit = LIMit()
+            LIMit = LIMit()  # type: ignore
             """
             DISPlay:CMAP:LIMit
 
@@ -12359,7 +12360,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DISPlay:CMAP:MARKer:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cbc83abf1c254b94.htm#ID_e76ed6a7fa922c050a00206a00aef132-0ec64a50fa92261a0a00206a01a6673d-en-US>`_
@@ -12367,7 +12368,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            MARKer = MARKer()
+            MARKer = MARKer()  # type: ignore
             """
             DISPlay:CMAP:MARKer
 
@@ -12385,7 +12386,7 @@ class ZNB_gen(Instrument):
                 _cmd = "RGB"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            RGB = RGB()
+            RGB = RGB()  # type: ignore
             """
             `DISPlay:CMAP:RGB
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/752a679d99444b26.htm#ID_f96e2125fa9233b60a00206a0101687a-9f550bd8fa922dea0a00206a01a6673d-en-US>`_
@@ -12401,7 +12402,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRACe"
-                args = []
+                args = []  # type: List[str]
 
                 class COLor(SCPINode, SCPIBool):
                     """
@@ -12424,7 +12425,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `DISPlay:CMAP:TRACe:COLor:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/51188527f6d14e61.htm#ID_96913623fa923b670a00206a01ee5bbf-923eb8ebfa9235aa0a00206a01a6673d-en-US>`_
@@ -12432,7 +12433,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                COLor = COLor()
+                COLor = COLor()  # type: ignore
                 """
                 DISPlay:CMAP:TRACe:COLor
 
@@ -12450,7 +12451,7 @@ class ZNB_gen(Instrument):
                     _cmd = "RGB"
                     args = ["'string'"]
 
-                RGB = RGB()
+                RGB = RGB()  # type: ignore
                 """
                 `DISPlay:CMAP:TRACe:RGB
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6d8541ed390642ac.htm#ID_71191c2cfa9243080a00206a015c1979-8ce5c12bfa923d4b0a00206a01a6673d-en-US>`_
@@ -12458,14 +12459,14 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             DISPlay:CMAP:TRACe
 
             Arguments:
             """
 
-        CMAP = CMAP()
+        CMAP = CMAP()  # type: ignore
         """
         DISPlay:CMAP
 
@@ -12494,7 +12495,7 @@ class ZNB_gen(Instrument):
                 _cmd = "APPLy"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            APPLy = APPLy()
+            APPLy = APPLy()  # type: ignore
             """
             `DISPlay:LAYout:APPLy
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5ec7955dbc1f4eea.htm#ID_d6f4fe84ced4d31c0a00201901c85cc7-1dabc1deced4d1c40a0020190170f726-en-US>`_
@@ -12513,7 +12514,7 @@ class ZNB_gen(Instrument):
                 _cmd = "DEFine"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            DEFine = DEFine()
+            DEFine = DEFine()  # type: ignore
             """
             `DISPlay:LAYout:DEFine
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f39aa8b61fee48fd.htm#ID_4332cc0dbba7a40b0a0020190055a26c-111967f3bba7a2e20a0020190170f726-en-US>`_
@@ -12532,7 +12533,7 @@ class ZNB_gen(Instrument):
                 _cmd = "EXECute"
                 args = ["'string'"]
 
-            EXECute = EXECute()
+            EXECute = EXECute()  # type: ignore
             """
             `DISPlay:LAYout:EXECute
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ccb35e5e7c3b49fd.htm#ID_bd48f718bba7a5b10a002019009a678c-db3d473fbba7a4780a0020190170f726-en-US>`_
@@ -12551,7 +12552,7 @@ class ZNB_gen(Instrument):
                 _cmd = "GRID"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            GRID = GRID()
+            GRID = GRID()  # type: ignore
             """
             `DISPlay:LAYout:GRID
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f0abcfab12584f77.htm#ID_70abfb19aaa7e2990a00206a01d81c00-a7770b8aaaa7d7cc0a00206a00dee6b8-en-US>`_
@@ -12570,7 +12571,7 @@ class ZNB_gen(Instrument):
                 _cmd = "JOIN"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            JOIN = JOIN()
+            JOIN = JOIN()  # type: ignore
             """
             `DISPlay:LAYout:JOIN
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/53c5effa46dc4646.htm#ID_000c4953bba7a7760a00201901e721c0-4109ca06bba7a65c0a0020190170f726-en-US>`_
@@ -12578,7 +12579,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        LAYout = LAYout()
+        LAYout = LAYout()  # type: ignore
         """
         `DISPlay:LAYout
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/620d9d36a28c4ad0.htm#ID_42356ef6aaa7d54b0a00206a001cddae-8913c9f4aaa7cafb0a00206a00dee6b8-en-US>`_
@@ -12594,7 +12595,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "MENU"
-            args = []
+            args = []  # type: List[str]
 
             class KEY(SCPINode):
                 """
@@ -12604,7 +12605,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "KEY"
-                args = []
+                args = []  # type: List[str]
 
                 class ACTion(SCPINode):
                     """
@@ -12614,7 +12615,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ACTion"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CATalog(SCPINode, SCPIQuery):
                         """
@@ -12625,9 +12626,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CATalog"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     `DISPlay:MENU:KEY:ACTion:CATalog
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f6835e6d92de448c.htm#ID_40cd2d0f42aed01c0a001ae719dc4c53-7db06bd742aece950a001ae769a5b4da-en-US>`_
@@ -12635,7 +12636,7 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                ACTion = ACTion()
+                ACTion = ACTion()  # type: ignore
                 """
                 DISPlay:MENU:KEY:ACTion
 
@@ -12653,7 +12654,7 @@ class ZNB_gen(Instrument):
                     _cmd = "EXECute"
                     args = ["'string'"]
 
-                EXECute = EXECute()
+                EXECute = EXECute()  # type: ignore
                 """
                 `DISPlay:MENU:KEY:EXECute
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5f9d9a82fa7a43c5.htm#ID_3cfeb142fa924ac80a00206a01a8df15-3262509dfa9244ec0a00206a01a6673d-en-US>`_
@@ -12672,7 +12673,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SELect"
                     args = ["'string'"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `DISPlay:MENU:KEY:SELect
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f6979f1d623948b8.htm#ID_2fd74a4efa92522b0a00206a00390f14-27eea583fa924c9d0a00206a01a6673d-en-US>`_
@@ -12688,7 +12689,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "TOOL"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CATalog(SCPINode, SCPIQuery):
                         """
@@ -12699,9 +12700,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CATalog"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     `DISPlay:MENU:KEY:TOOL:CATalog
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a88b3c3cf6194874.htm#ID_52791e5d42aed3580a001ae725bfcd9e-fa48469242aed1830a001ae769a5b4da-en-US>`_
@@ -12709,21 +12710,21 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                TOOL = TOOL()
+                TOOL = TOOL()  # type: ignore
                 """
                 DISPlay:MENU:KEY:TOOL
 
                 Arguments:
                 """
 
-            KEY = KEY()
+            KEY = KEY()  # type: ignore
             """
             DISPlay:MENU:KEY
 
             Arguments:
             """
 
-        MENU = MENU()
+        MENU = MENU()  # type: ignore
         """
         DISPlay:MENU
 
@@ -12741,7 +12742,7 @@ class ZNB_gen(Instrument):
             _cmd = "RFSize"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-        RFSize = RFSize()
+        RFSize = RFSize()  # type: ignore
         """
         `DISPlay:RFSize
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0706f1b925af4b9a.htm#ID_26a7f2c7fa9259db0a00206a00f26a73-0ebe17bdfa9253ff0a00206a01a6673d-en-US>`_
@@ -12768,9 +12769,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CATalog"
-                args = []
+                args = []  # type: List[str]
 
-            CATalog = CATalog()
+            CATalog = CATalog()  # type: ignore
             """
             `DISPlay:WINDow:CATalog
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/abdd1db5dc0c48ee.htm#ID_84400b55fa92616d0a00206a006ce5e8-2bbb3a15fa925bb00a00206a01a6673d-en-US>`_
@@ -12789,7 +12790,7 @@ class ZNB_gen(Instrument):
                 _cmd = "MAXimize"
                 args = ["1", "OFF", "ON"]
 
-            MAXimize = MAXimize()
+            MAXimize = MAXimize()  # type: ignore
             """
             `DISPlay:WINDow:MAXimize
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/99dca8ff187d4000.htm#ID_f3f24319fa9268ef0a00206a01e4b6e2-f727d921fa9263420a00206a01a6673d-en-US>`_
@@ -12808,7 +12809,7 @@ class ZNB_gen(Instrument):
                 _cmd = "NAME"
                 args = ["'string'"]
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `DISPlay:WINDow:NAME
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2bf57f884ae84ed2.htm#ID_b9f0fbecfa9270de0a00206a00a45db7-1a416912fa926ad30a00206a01a6673d-en-US>`_
@@ -12837,7 +12838,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DISPlay:WINDow:OVERview:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/33fe4a73a2ab4070.htm#ID_10fbd8f3ced4d87b0a00201901b68cc7-1d9f9891ced4d7230a0020190170f726-en-US>`_
@@ -12845,7 +12846,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            OVERview = OVERview()
+            OVERview = OVERview()  # type: ignore
             """
             DISPlay:WINDow:OVERview
 
@@ -12863,7 +12864,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `DISPlay:WINDow:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/065c895d5a2c4230.htm#ID_8e3cb1f5fa9278600a00206a01851f55-928f75e4fa9272b30a00206a01a6673d-en-US>`_
@@ -12892,7 +12893,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["'string'"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `DISPlay:WINDow:TITLe:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ac203fe8a5b647c2.htm#ID_0f9ac45ffa9280010a00206a00e0d734-11ac0202fa927a540a00206a01a6673d-en-US>`_
@@ -12911,7 +12912,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `DISPlay:WINDow:TITLe:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/30e7340225704fd9.htm#ID_c1d70c02fa9287a20a00206a009fab43-d77d2d0bfa9281f50a00206a01a6673d-en-US>`_
@@ -12919,7 +12920,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            TITLe = TITLe()
+            TITLe = TITLe()  # type: ignore
             """
             DISPlay:WINDow:TITLe
 
@@ -12934,7 +12935,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRACe"
-                args = []
+                args = []  # type: List[str]
 
                 class CATalog(SCPINode, SCPIQuery):
                     """
@@ -12945,9 +12946,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CATalog"
-                    args = []
+                    args = []  # type: List[str]
 
-                CATalog = CATalog()
+                CATalog = CATalog()  # type: ignore
                 """
                 `DISPlay:WINDow:TRACe:CATalog
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f6c8345f1d4348ad.htm#ID_906f0858fa928f340a00206a012e7faf-69a2c93cfa9289860a00206a01a6673d-en-US>`_
@@ -12964,9 +12965,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DELete"
-                    args = []
+                    args = []  # type: List[str]
 
-                DELete = DELete()
+                DELete = DELete()  # type: ignore
                 """
                 `DISPlay:WINDow:TRACe:DELete
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/35e75331f5ce4fce.htm#ID_9bdc6b44fa9296c50a00206a00b068cd-6a447b3ffa9291280a00206a01a6673d-en-US>`_
@@ -12985,7 +12986,7 @@ class ZNB_gen(Instrument):
                     _cmd = "EFEed"
                     args = ["'string'"]
 
-                EFEed = EFEed()
+                EFEed = EFEed()  # type: ignore
                 """
                 `DISPlay:WINDow:TRACe:EFEed
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a702a260a63d4a10.htm#ID_e3fa49acfa929e470a00206a01a34211-1ed47549fa9298a90a00206a01a6673d-en-US>`_
@@ -13004,7 +13005,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FEED"
                     args = ["'string'"]
 
-                FEED = FEED()
+                FEED = FEED()  # type: ignore
                 """
                 `DISPlay:WINDow:TRACe:FEED
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/58dad852e7db48a0.htm#ID_d87ac43bfa92a5f80a00206a01214a13-c23d3890fa92a02b0a00206a01a6673d-en-US>`_
@@ -13023,7 +13024,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SHOW"
                     args = ["DALL", "MALL", "'string'"]
 
-                SHOW = SHOW()
+                SHOW = SHOW()  # type: ignore
                 """
                 `DISPlay:WINDow:TRACe:SHOW
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/666cb4f2f8874259.htm#ID_e087b135fa92ad990a00206a0109416c-3de7dacafa92a7ec0a00206a01a6673d-en-US>`_
@@ -13039,7 +13040,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "X"
-                    args = []
+                    args = []  # type: List[str]
 
                     class OFFSet(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13052,7 +13053,7 @@ class ZNB_gen(Instrument):
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    OFFSet = OFFSet()
+                    OFFSet = OFFSet()  # type: ignore
                     """
                     `DISPlay:WINDow:TRACe:X:OFFSet
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1efcc8fa102b4b9b.htm#ID_eb26dfc0fa92b51b0a00206a00214931-20aba55afa92af6d0a00206a01a6673d-en-US>`_
@@ -13060,7 +13061,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                X = X()
+                X = X()  # type: ignore
                 """
                 DISPlay:WINDow:TRACe:X
 
@@ -13075,7 +13076,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "Y"
-                    args = []
+                    args = []  # type: List[str]
 
                     class OFFSet(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -13088,7 +13089,7 @@ class ZNB_gen(Instrument):
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    OFFSet = OFFSet()
+                    OFFSet = OFFSet()  # type: ignore
                     """
                     `DISPlay:WINDow:TRACe:Y:OFFSet
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fba6bb59b840434f.htm#ID_65233ce8fa92bcbc0a00206a0082ad31-db88fa1afa92b6ff0a00206a01a6673d-en-US>`_
@@ -13104,7 +13105,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SCALe"
-                        args = []
+                        args = []  # type: List[str]
 
                         class AUTO(SCPINode, SCPISet):
                             """
@@ -13117,7 +13118,7 @@ class ZNB_gen(Instrument):
                             _cmd = "AUTO"
                             args = ["ONCE"]
 
-                        AUTO = AUTO()
+                        AUTO = AUTO()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:AUTO
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b1fbc2b484774b76.htm#ID_1feb2da3fa92c42e0a00206a01e047da-37730b41fa92bea00a00206a01a6673d-en-US>`_
@@ -13136,7 +13137,7 @@ class ZNB_gen(Instrument):
                             _cmd = "BOTTom"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        BOTTom = BOTTom()
+                        BOTTom = BOTTom()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:BOTTom
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2a89a2963b8843f8.htm#ID_8b51ec30fa92cbdf0a00206a0123a5f0-4e44393dfa92c6120a00206a01a6673d-en-US>`_
@@ -13155,7 +13156,7 @@ class ZNB_gen(Instrument):
                             _cmd = "PDIVision"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        PDIVision = PDIVision()
+                        PDIVision = PDIVision()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:PDIVision
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bdc5467b9ebd4d43.htm#ID_4c11fb55fa92d38f0a00206a000a08ea-2d92c4d5fa92cdd30a00206a01a6673d-en-US>`_
@@ -13174,7 +13175,7 @@ class ZNB_gen(Instrument):
                             _cmd = "RLEVel"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        RLEVel = RLEVel()
+                        RLEVel = RLEVel()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:RLEVel
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/65c5b3a27d46498f.htm#ID_21e8c0b9fa92db300a00206a01c11504-3791a074fa92d5740a00206a01a6673d-en-US>`_
@@ -13193,7 +13194,7 @@ class ZNB_gen(Instrument):
                             _cmd = "RPOSition"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        RPOSition = RPOSition()
+                        RPOSition = RPOSition()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:RPOSition
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ea8a750914d84285.htm#ID_1784a4a9fa92e2c20a00206a00192d65-a6fd3b12fa92dd150a00206a01a6673d-en-US>`_
@@ -13212,7 +13213,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TOP"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        TOP = TOP()
+                        TOP = TOP()  # type: ignore
                         """
                         `DISPlay:WINDow:TRACe:Y:SCALe:TOP
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2a89a2963b8843f8.htm#ID_2e553fc3fa92ea630a00206a014ba5b8-4b3a4019fa92e4b60a00206a01a6673d-en-US>`_
@@ -13220,14 +13221,14 @@ class ZNB_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    SCALe = SCALe()
+                    SCALe = SCALe()  # type: ignore
                     """
                     DISPlay:WINDow:TRACe:Y:SCALe
 
                     Arguments:
                     """
 
-                Y = Y()
+                Y = Y()  # type: ignore
                 """
                 DISPlay:WINDow:TRACe:Y
 
@@ -13255,7 +13256,7 @@ class ZNB_gen(Instrument):
                         _cmd = "BOTTom"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    BOTTom = BOTTom()
+                    BOTTom = BOTTom()  # type: ignore
                     """
                     `DISPlay:WINDow:TRACe:ZOOM:BOTTom
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/efc573f8a881441f.htm#ID_4c13e8946c07013b0a00206a005313ce-15625ccf6c06fa750a00206a01eade93-en-US>`_
@@ -13274,7 +13275,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `DISPlay:WINDow:TRACe:ZOOM:STARt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/174af930f3134c3c.htm#ID_f621ce186c070a050a00206a00e386d0-b4028b3f6c0703bc0a00206a01eade93-en-US>`_
@@ -13293,7 +13294,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `DISPlay:WINDow:TRACe:ZOOM:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/45c943218b544691.htm#ID_0801ee0a6c0728e80a00206a018f38c0-c5604fde6c0721180a00206a01eade93-en-US>`_
@@ -13312,7 +13313,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STOP = STOP()
+                    STOP = STOP()  # type: ignore
                     """
                     `DISPlay:WINDow:TRACe:ZOOM:STOP
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/174af930f3134c3c.htm#ID_3ce8f2656c0713d90a00206a010a19da-9ba5e7346c070cb50a00206a01eade93-en-US>`_
@@ -13331,7 +13332,7 @@ class ZNB_gen(Instrument):
                         _cmd = "TOP"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    TOP = TOP()
+                    TOP = TOP()  # type: ignore
                     """
                     `DISPlay:WINDow:TRACe:ZOOM:TOP
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/efc573f8a881441f.htm#ID_537535906c071e680a00206a01dff876-ecb2878b6c0716880a00206a01eade93-en-US>`_
@@ -13339,28 +13340,28 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                ZOOM = ZOOM()
+                ZOOM = ZOOM()  # type: ignore
                 """
                 DISPlay:WINDow:TRACe:ZOOM
 
                 Arguments: 1, OFF, ON
                 """
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             DISPlay:WINDow:TRACe
 
             Arguments:
             """
 
-        WINDow = WINDow()
+        WINDow = WINDow()  # type: ignore
         """
         DISPlay:WINDow
 
         Arguments: 1, OFF, ON
         """
 
-    DISPlay = DISPlay()
+    DISPlay = DISPlay()  # type: ignore
     """
     DISPlay
 
@@ -13388,7 +13389,7 @@ class ZNB_gen(Instrument):
             _cmd = "BORDer"
             args = ["NORMal", "SWAPped"]
 
-        BORDer = BORDer()
+        BORDer = BORDer()  # type: ignore
         """
         `FORMat:BORDer
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ba1085f79c8446de.htm#ID_3675bceefa92f1f40a00206a0080e1b0-61996525fa92ec470a00206a01a6673d-en-US>`_
@@ -13407,7 +13408,7 @@ class ZNB_gen(Instrument):
             _cmd = "DATA"
             args = ["ASCii", "REAL"]
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         `FORMat:DATA
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fd9584184d114c87.htm#ID_42b1c1edfa9301c30a00206a005a835f-27d15adffa92fc260a00206a01a6673d-en-US>`_
@@ -13423,7 +13424,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DEXPort"
-            args = []
+            args = []  # type: List[str]
 
             class SOURce(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -13436,7 +13437,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["FDATa", "MDATa", "SDATa"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `FORMat:DEXPort:SOURce
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a4122895a8614cd4.htm#ID_fc4eaae1fa92fa320a00206a008b9cce-81da4c17fa92f3d90a00206a01a6673d-en-US>`_
@@ -13444,14 +13445,14 @@ class ZNB_gen(Instrument):
             Arguments: FDATa, MDATa, SDATa
             """
 
-        DEXPort = DEXPort()
+        DEXPort = DEXPort()  # type: ignore
         """
         FORMat:DEXPort
 
         Arguments:
         """
 
-    FORMat = FORMat()
+    FORMat = FORMat()  # type: ignore
     """
     FORMat
 
@@ -13466,7 +13467,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "HCOPy"
-        args = []
+        args = []  # type: List[str]
 
         class DESTination(SCPINode, SCPIQuery, SCPISet):
             """
@@ -13479,7 +13480,7 @@ class ZNB_gen(Instrument):
             _cmd = "DESTination"
             args = ["'string'"]
 
-        DESTination = DESTination()
+        DESTination = DESTination()  # type: ignore
         """
         `HCOPy:DESTination
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/544cd093cf714000.htm#ID_4d99c38afa9309840a00206a01d41aa4-cb1d3d15fa9303a80a00206a01a6673d-en-US>`_
@@ -13495,7 +13496,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DEVice"
-            args = []
+            args = []  # type: List[str]
 
             class LANGuage(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -13508,7 +13509,7 @@ class ZNB_gen(Instrument):
                 _cmd = "LANGuage"
                 args = ["BMP", "EMF", "EWMF", "JPG", "PDF", "PNG", "SVG", "WMF"]
 
-            LANGuage = LANGuage()
+            LANGuage = LANGuage()  # type: ignore
             """
             `HCOPy:DEVice:LANGuage
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b63581d063d64859.htm#ID_bd2a6c37fa9311150a00206a01b42ce6-ccf29715fa930b680a00206a01a6673d-en-US>`_
@@ -13516,7 +13517,7 @@ class ZNB_gen(Instrument):
             Arguments: BMP, EMF, EWMF, JPG, PDF, PNG, SVG, WMF
             """
 
-        DEVice = DEVice()
+        DEVice = DEVice()  # type: ignore
         """
         HCOPy:DEVice
 
@@ -13532,9 +13533,9 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IMMediate"
-            args = []
+            args = []  # type: List[str]
 
-        IMMediate = IMMediate()
+        IMMediate = IMMediate()  # type: ignore
         """
         `HCOPy:IMMediate
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/816b5e0736804875.htm#ID_d21a6a5ffa9365110a00206a01870b2a-5d6c01cbfa935f640a00206a01a6673d-en-US>`_
@@ -13550,7 +13551,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ITEM"
-            args = []
+            args = []  # type: List[str]
 
             class ALL(SCPINode, SCPISet):
                 """
@@ -13561,9 +13562,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALL"
-                args = []
+                args = []  # type: List[str]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `HCOPy:ITEM:ALL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6e2192b0fd694e34.htm#ID_94da1e3bfa9318c60a00206a00ef3e34-3800e316fa9312ea0a00206a01a6673d-en-US>`_
@@ -13592,7 +13593,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `HCOPy:ITEM:LOGO:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/799e940d88a948d5.htm#ID_ac9df7a7fa9320860a00206a00ec5c45-4c4a58fcfa931a9b0a00206a01a6673d-en-US>`_
@@ -13600,7 +13601,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            LOGO = LOGO()
+            LOGO = LOGO()  # type: ignore
             """
             HCOPy:ITEM:LOGO
 
@@ -13628,7 +13629,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `HCOPy:ITEM:MLISt:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c0249c4bb08048fb.htm#ID_854db6e1fa9328370a00206a01529a20-c066e67cfa93227a0a00206a01a6673d-en-US>`_
@@ -13636,7 +13637,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            MLISt = MLISt()
+            MLISt = MLISt()  # type: ignore
             """
             HCOPy:ITEM:MLISt
 
@@ -13664,7 +13665,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `HCOPy:ITEM:TIME:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bb513d6eb53446e5.htm#ID_83e3f4d2fa932f9a0a00206a010f0f4e-404ea32bfa932a0c0a00206a01a6673d-en-US>`_
@@ -13672,14 +13673,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             HCOPy:ITEM:TIME
 
             Arguments: 1, OFF, ON
             """
 
-        ITEM = ITEM()
+        ITEM = ITEM()  # type: ignore
         """
         HCOPy:ITEM
 
@@ -13694,7 +13695,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PAGE"
-            args = []
+            args = []  # type: List[str]
 
             class COLor(SCPINode, SCPIBool):
                 """
@@ -13707,7 +13708,7 @@ class ZNB_gen(Instrument):
                 _cmd = "COLor"
                 args = ["1", "OFF", "ON"]
 
-            COLor = COLor()
+            COLor = COLor()  # type: ignore
             """
             `HCOPy:PAGE:COLor
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/17a9e2afff4e4737.htm#ID_5105d1a3134de2840a00206a0114a6f3-dca49ae8134ddcc80a00206a0182dc26-en-US>`_
@@ -13723,7 +13724,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MARGin"
-                args = []
+                args = []  # type: List[str]
 
                 class BOTTom(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -13736,7 +13737,7 @@ class ZNB_gen(Instrument):
                     _cmd = "BOTTom"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                BOTTom = BOTTom()
+                BOTTom = BOTTom()  # type: ignore
                 """
                 `HCOPy:PAGE:MARGin:BOTTom
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2b9d72caa0c1441a.htm#ID_3dea753bfa93372b0a00206a01c0ca2d-3f62fe82fa93317e0a00206a01a6673d-en-US>`_
@@ -13755,7 +13756,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LEFT"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                LEFT = LEFT()
+                LEFT = LEFT()  # type: ignore
                 """
                 `HCOPy:PAGE:MARGin:LEFT
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e2133f961a82484f.htm#ID_8992c875fa933ebc0a00206a00922775-5c119a03fa93390f0a00206a01a6673d-en-US>`_
@@ -13774,7 +13775,7 @@ class ZNB_gen(Instrument):
                     _cmd = "RIGHt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                RIGHt = RIGHt()
+                RIGHt = RIGHt()  # type: ignore
                 """
                 `HCOPy:PAGE:MARGin:RIGHt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bc4b30a21e3b467d.htm#ID_c7f0b442fa93465e0a00206a008d1d63-960d34d5fa9340b00a00206a01a6673d-en-US>`_
@@ -13793,7 +13794,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                TOP = TOP()
+                TOP = TOP()  # type: ignore
                 """
                 `HCOPy:PAGE:MARGin:TOP
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2dba0182de1f4ec0.htm#ID_6228e4b0fa934def0a00206a0086d622-cebe271bfa9348520a00206a01a6673d-en-US>`_
@@ -13801,7 +13802,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            MARGin = MARGin()
+            MARGin = MARGin()  # type: ignore
             """
             HCOPy:PAGE:MARGin
 
@@ -13819,7 +13820,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ORIentation"
                 args = ["LANDscape", "PORTrait"]
 
-            ORIentation = ORIentation()
+            ORIentation = ORIentation()  # type: ignore
             """
             `HCOPy:PAGE:ORIentation
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/34433d67ec69454b.htm#ID_f7b8f767fa9355a00a00206a00c03771-29a7b9bafa934fe30a00206a01a6673d-en-US>`_
@@ -13838,7 +13839,7 @@ class ZNB_gen(Instrument):
                 _cmd = "WINDow"
                 args = ["ACTive", "ALL", "HARDcopy", "NONE", "SINGle"]
 
-            WINDow = WINDow()
+            WINDow = WINDow()  # type: ignore
             """
             `HCOPy:PAGE:WINDow
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e7101f963f5c4de3.htm#ID_1c0c843ffa935d7f0a00206a015039a1-42f22e75fa9357840a00206a01a6673d-en-US>`_
@@ -13846,14 +13847,14 @@ class ZNB_gen(Instrument):
             Arguments: ACTive, ALL, HARDcopy, NONE, SINGle
             """
 
-        PAGE = PAGE()
+        PAGE = PAGE()  # type: ignore
         """
         HCOPy:PAGE
 
         Arguments:
         """
 
-    HCOPy = HCOPy()
+    HCOPy = HCOPy()  # type: ignore
     """
     HCOPy
 
@@ -13868,7 +13869,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "INITiate"
-        args = []
+        args = []  # type: List[str]
 
         class CONTinuous(SCPINode, SCPIBool):
             """
@@ -13892,7 +13893,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ALL"
                 args = ["1", "OFF", "ON"]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `INITiate:CONTinuous:ALL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/711c0f090e614190.htm#ID_6387403cd8d5523c0a00206a01023265-128b12f9d8d54b860a00206a0133a7b4-en-US>`_
@@ -13900,7 +13901,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        CONTinuous = CONTinuous()
+        CONTinuous = CONTinuous()  # type: ignore
         """
         `INITiate:CONTinuous
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2529407b6dba4f2e.htm#ID_a44b9c33fa936d000a00206a00766e71-d44acbdafa9367050a00206a01a6673d-en-US>`_
@@ -13916,7 +13917,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "IMMediate"
-            args = []
+            args = []  # type: List[str]
 
             class ALL(SCPINode, SCPISet):
                 """
@@ -13927,9 +13928,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALL"
-                args = []
+                args = []  # type: List[str]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `INITiate:IMMediate:ALL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/32492e7b327e4fdb.htm#ID_912c0160d8d55d770a00206a01491fbe-eddf9798d8d555d60a00206a0133a7b4-en-US>`_
@@ -13946,9 +13947,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DUMMy"
-                args = []
+                args = []  # type: List[str]
 
-            DUMMy = DUMMy()
+            DUMMy = DUMMy()  # type: ignore
             """
             `INITiate:IMMediate:DUMMy
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f79d0e51f1b440c9.htm#ID_8a697b81fa937c230a00206a01ed43fb-be0448b2fa9376660a00206a01a6673d-en-US>`_
@@ -13967,7 +13968,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SCOPe"
                 args = ["ALL", "SINGle"]
 
-            SCOPe = SCOPe()
+            SCOPe = SCOPe()  # type: ignore
             """
             `INITiate:IMMediate:SCOPe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d961912528a64003.htm#ID_0b426df9fa9374820a00206a00380abe-581c1051fa936ef40a00206a01a6673d-en-US>`_
@@ -13975,14 +13976,14 @@ class ZNB_gen(Instrument):
             Arguments: ALL, SINGle
             """
 
-        IMMediate = IMMediate()
+        IMMediate = IMMediate()  # type: ignore
         """
         INITiate:IMMediate
 
         Arguments:
         """
 
-    INITiate = INITiate()
+    INITiate = INITiate()  # type: ignore
     """
     INITiate
 
@@ -13997,7 +13998,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "INPut"
-        args = []
+        args = []  # type: List[str]
 
         class ATTenuation(SCPINode, SCPIQuery, SCPISet):
             """
@@ -14010,7 +14011,7 @@ class ZNB_gen(Instrument):
             _cmd = "ATTenuation"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-        ATTenuation = ATTenuation()
+        ATTenuation = ATTenuation()  # type: ignore
         """
         `INPut:ATTenuation
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7f41ca301ecf4a76.htm#ID_cec36677fa9383e30a00206a01063b02-23f6f3d6fa937e070a00206a01a6673d-en-US>`_
@@ -14018,7 +14019,7 @@ class ZNB_gen(Instrument):
         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
         """
 
-    INPut = INPut()
+    INPut = INPut()  # type: ignore
     """
     INPut
 
@@ -14046,7 +14047,7 @@ class ZNB_gen(Instrument):
             _cmd = "NSELect"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-        NSELect = NSELect()
+        NSELect = NSELect()  # type: ignore
         """
         `INSTrument:NSELect
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/36df88e0186d415f.htm#ID_078f22a7fa938ba40a00206a0072b3e0-af650a43fa9385d70a00206a01a6673d-en-US>`_
@@ -14062,7 +14063,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PORT"
-            args = []
+            args = []  # type: List[str]
 
             class COUNt(SCPINode, SCPIQuery):
                 """
@@ -14073,9 +14074,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COUNt"
-                args = []
+                args = []  # type: List[str]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `INSTrument:PORT:COUNt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e42a9c68e49441d1.htm#ID_9eb542a9fa9393a30a00206a01fd78a5-0f241535fa938d880a00206a01a6673d-en-US>`_
@@ -14083,7 +14084,7 @@ class ZNB_gen(Instrument):
             Arguments:
             """
 
-        PORT = PORT()
+        PORT = PORT()  # type: ignore
         """
         INSTrument:PORT
 
@@ -14101,7 +14102,7 @@ class ZNB_gen(Instrument):
             _cmd = "SELect"
             args = ["CHANnel1", "CHANnel2", "CHANnel3", "CHANnel4"]
 
-        SELect = SELect()
+        SELect = SELect()  # type: ignore
         """
         `INSTrument:SELect
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b6b290fa01464e05.htm#ID_49cfdf62fa939b440a00206a013fc5ae-d0c31584fa9395870a00206a01a6673d-en-US>`_
@@ -14120,7 +14121,7 @@ class ZNB_gen(Instrument):
             _cmd = "SMATrix"
             args = ["1", "OFF", "ON"]
 
-        SMATrix = SMATrix()
+        SMATrix = SMATrix()  # type: ignore
         """
         `INSTrument:SMATrix
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6cf81becf1d94292.htm#ID_c20108e4e2b32f990a002019011edfae-c2391792e2b32e510a002019017b841c-en-US>`_
@@ -14136,7 +14137,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TPORt"
-            args = []
+            args = []  # type: List[str]
 
             class COUNt(SCPINode, SCPIQuery):
                 """
@@ -14147,9 +14148,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COUNt"
-                args = []
+                args = []  # type: List[str]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `INSTrument:TPORt:COUNt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dffa886d18c44be6.htm#ID_a3c1b1d2e2b3316e0a00201901e88744-2e35c5e3e2b330060a002019017b841c-en-US>`_
@@ -14157,14 +14158,14 @@ class ZNB_gen(Instrument):
             Arguments:
             """
 
-        TPORt = TPORt()
+        TPORt = TPORt()  # type: ignore
         """
         INSTrument:TPORt
 
         Arguments:
         """
 
-    INSTrument = INSTrument()
+    INSTrument = INSTrument()  # type: ignore
     """
     INSTrument
 
@@ -14179,7 +14180,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MEMory"
-        args = []
+        args = []  # type: List[str]
 
         class CATalog(SCPINode, SCPIQuery):
             """
@@ -14190,7 +14191,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CATalog"
-            args = []
+            args = []  # type: List[str]
 
             class COUNt(SCPINode, SCPIQuery):
                 """
@@ -14201,9 +14202,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COUNt"
-                args = []
+                args = []  # type: List[str]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `MEMory:CATalog:COUNt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/24d4e6c36b6941d1.htm#ID_0562f2d34f2f3f8f0a001ae74fc3b6bb-a8d8bf024f2f3dd90a001ae7211c9327-en-US>`_
@@ -14211,7 +14212,7 @@ class ZNB_gen(Instrument):
             Arguments:
             """
 
-        CATalog = CATalog()
+        CATalog = CATalog()  # type: ignore
         """
         `MEMory:CATalog
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e8ee842e10b34a25.htm#ID_952acba6fa93a2a60a00206a00158e32-18081993fa939d180a00206a01a6673d-en-US>`_
@@ -14230,7 +14231,7 @@ class ZNB_gen(Instrument):
             _cmd = "DEFine"
             args = ["'string'"]
 
-        DEFine = DEFine()
+        DEFine = DEFine()  # type: ignore
         """
         `MEMory:DEFine
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ed449faf63004fdc.htm#ID_061ba650fa93aa180a00206a00c6cfff-c04a3e9ffa93a48b0a00206a01a6673d-en-US>`_
@@ -14257,9 +14258,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALL"
-                args = []
+                args = []  # type: List[str]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `MEMory:DELete:ALL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cc17ea685d8c443e.htm#ID_35efca29fa93b18b0a00206a00349680-421059c6fa93abfd0a00206a01a6673d-en-US>`_
@@ -14278,7 +14279,7 @@ class ZNB_gen(Instrument):
                 _cmd = "NAME"
                 args = ["'string'"]
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `MEMory:DELete:NAME
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e579c3d2535842d4.htm#ID_a4188fedfa93b8fd0a00206a007bbe38-13217951fa93b36f0a00206a01a6673d-en-US>`_
@@ -14286,7 +14287,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        DELete = DELete()
+        DELete = DELete()  # type: ignore
         """
         MEMory:DELete
 
@@ -14304,7 +14305,7 @@ class ZNB_gen(Instrument):
             _cmd = "SELect"
             args = ["'string'"]
 
-        SELect = SELect()
+        SELect = SELect()  # type: ignore
         """
         `MEMory:SELect
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6b5a13422595410a.htm#ID_346e954ffa93c0600a00206a00f12f17-1813a310fa93bae10a00206a01a6673d-en-US>`_
@@ -14312,7 +14313,7 @@ class ZNB_gen(Instrument):
         Arguments: 'string'
         """
 
-    MEMory = MEMory()
+    MEMory = MEMory()  # type: ignore
     """
     MEMory
 
@@ -14327,7 +14328,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "MMEMory"
-        args = []
+        args = []  # type: List[str]
 
         class AKAL(SCPINode):
             """
@@ -14337,7 +14338,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "AKAL"
-            args = []
+            args = []  # type: List[str]
 
             class FACTory(SCPINode):
                 """
@@ -14347,7 +14348,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FACTory"
-                args = []
+                args = []  # type: List[str]
 
                 class CONVersion(SCPINode, SCPISet):
                     """
@@ -14360,7 +14361,7 @@ class ZNB_gen(Instrument):
                     _cmd = "CONVersion"
                     args = ["'string'"]
 
-                CONVersion = CONVersion()
+                CONVersion = CONVersion()  # type: ignore
                 """
                 `MMEMory:AKAL:FACTory:CONVersion
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b8c6d4dc3fae4762.htm#ID_00f3bd41fa93c7f10a00206a01f83ace-1386d072fa93c2440a00206a01a6673d-en-US>`_
@@ -14368,7 +14369,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            FACTory = FACTory()
+            FACTory = FACTory()  # type: ignore
             """
             MMEMory:AKAL:FACTory
 
@@ -14383,7 +14384,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "USER"
-                args = []
+                args = []  # type: List[str]
 
                 class CONVersion(SCPINode, SCPISet):
                     """
@@ -14396,7 +14397,7 @@ class ZNB_gen(Instrument):
                     _cmd = "CONVersion"
                     args = ["'string'"]
 
-                CONVersion = CONVersion()
+                CONVersion = CONVersion()  # type: ignore
                 """
                 `MMEMory:AKAL:USER:CONVersion
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/73d7bff36b4646d7.htm#ID_0bfad8be134e0c050a00206a0178239a-ada6c16a134e06490a00206a0182dc26-en-US>`_
@@ -14404,14 +14405,14 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            USER = USER()
+            USER = USER()  # type: ignore
             """
             MMEMory:AKAL:USER
 
             Arguments:
             """
 
-        AKAL = AKAL()
+        AKAL = AKAL()  # type: ignore
         """
         MMEMory:AKAL
 
@@ -14440,7 +14441,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ALL"
                 args = ["'string'"]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `MMEMory:CATalog:ALL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/29a34569412140a3.htm#ID_6bb263ddfa93d6f50a00206a01b648d1-d7bba71dfa93d1670a00206a01a6673d-en-US>`_
@@ -14448,7 +14449,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        CATalog = CATalog()
+        CATalog = CATalog()  # type: ignore
         """
         `MMEMory:CATalog
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7f7650b75a604b3d.htm#ID_d67d6ebffa93cf820a00206a01a6fbab-84db8dd3fa93c9c60a00206a01a6673d-en-US>`_
@@ -14467,7 +14468,7 @@ class ZNB_gen(Instrument):
             _cmd = "CDIRectory"
             args = ["DEFault", "'string'"]
 
-        CDIRectory = CDIRectory()
+        CDIRectory = CDIRectory()  # type: ignore
         """
         `MMEMory:CDIRectory
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1a662eebe3174ccb.htm#ID_a851e04afa93deb50a00206a01ba773c-866493dbfa93d8f80a00206a01a6673d-en-US>`_
@@ -14483,7 +14484,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CKIT"
-            args = []
+            args = []  # type: List[str]
 
             class INFO(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -14496,7 +14497,7 @@ class ZNB_gen(Instrument):
                 _cmd = "INFO"
                 args = ["'string'"]
 
-            INFO = INFO()
+            INFO = INFO()  # type: ignore
             """
             `MMEMory:CKIT:INFO
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f05fc8cc8da8453b.htm#ID_977b912c842e29060a00201900b846e9-70e4c8b0842e27320a00201901936165-en-US>`_
@@ -14504,7 +14505,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        CKIT = CKIT()
+        CKIT = CKIT()  # type: ignore
         """
         MMEMory:CKIT
 
@@ -14522,7 +14523,7 @@ class ZNB_gen(Instrument):
             _cmd = "COPY"
             args = ["'string'"]
 
-        COPY = COPY()
+        COPY = COPY()  # type: ignore
         """
         `MMEMory:COPY
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/943281f4cd404b83.htm#ID_5982002afa93e6270a00206a00a5825e-91ceacf0fa93e08a0a00206a01a6673d-en-US>`_
@@ -14541,7 +14542,7 @@ class ZNB_gen(Instrument):
             _cmd = "DATA"
             args = ["'string'"]
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         `MMEMory:DATA
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bc869f8ce4744382.htm#ID_b272d43dfa93eda90a00206a004c602f-6ae124d7fa93e80c0a00206a01a6673d-en-US>`_
@@ -14571,7 +14572,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CORRection"
                 args = ["'string'"]
 
-            CORRection = CORRection()
+            CORRection = CORRection()  # type: ignore
             """
             `MMEMory:DELete:CORRection
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4c516e735b494084.htm#ID_f4141b0cfa93fceb0a00206a015c2d71-9c1f0333fa93f74e0a00206a01a6673d-en-US>`_
@@ -14579,7 +14580,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        DELete = DELete()
+        DELete = DELete()  # type: ignore
         """
         `MMEMory:DELete
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2b9bde64ba8b4ee1.htm#ID_4f6d0f68fa93f5690a00206a00977265-306d4498fa93efad0a00206a01a6673d-en-US>`_
@@ -14598,7 +14599,7 @@ class ZNB_gen(Instrument):
             _cmd = "FAVorite"
             args = ["'string'"]
 
-        FAVorite = FAVorite()
+        FAVorite = FAVorite()  # type: ignore
         """
         `MMEMory:FAVorite
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cda53011c4e5403d.htm#ID_b9c4d46242aef73c0a001ae75af528d0-f607fbd242aef5670a001ae769a5b4da-en-US>`_
@@ -14649,7 +14650,7 @@ class ZNB_gen(Instrument):
                         _cmd = "WLABel"
                         args = ["'string'"]
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     `MMEMory:LOAD:CKIT:SDATa:WLABel
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/765abd9f32e14000.htm#ID_05b1f69a066b76e20a001ae73aa0f2d0-7609eb53066b753c0a001ae733608be0-en-US>`_
@@ -14657,7 +14658,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                SDATa = SDATa()
+                SDATa = SDATa()  # type: ignore
                 """
                 `MMEMory:LOAD:CKIT:SDATa
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4fe03fc744814dcd.htm#ID_c1f39b85fa9413de0a00206a01268a9f-3cd2e2d6fa940e410a00206a01a6673d-en-US>`_
@@ -14676,7 +14677,7 @@ class ZNB_gen(Instrument):
                     _cmd = "UDIRectory"
                     args = ["'string'"]
 
-                UDIRectory = UDIRectory()
+                UDIRectory = UDIRectory()  # type: ignore
                 """
                 `MMEMory:LOAD:CKIT:UDIRectory
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/03dde4a1202c409e.htm#ID_3825c580fa941b7f0a00206a014d2f58-aa68faf7fa9415b30a00206a01a6673d-en-US>`_
@@ -14684,7 +14685,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CKIT = CKIT()
+            CKIT = CKIT()  # type: ignore
             """
             `MMEMory:LOAD:CKIT
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c78008ab43124a25.htm#ID_c78e3dc3fa940c6c0a00206a01f47c9b-d1fd8855fa9406a00a00206a01a6673d-en-US>`_
@@ -14703,7 +14704,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CMAP"
                 args = ["'string'"]
 
-            CMAP = CMAP()
+            CMAP = CMAP()  # type: ignore
             """
             `MMEMory:LOAD:CMAP
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d586655634a54b51.htm#ID_351cf3d6fa9422f20a00206a018d97ca-e2d6eb23fa941d540a00206a01a6673d-en-US>`_
@@ -14733,7 +14734,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MERGe"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                MERGe = MERGe()
+                MERGe = MERGe()  # type: ignore
                 """
                 `MMEMory:LOAD:CORRection:MERGe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4de4620d64e54bea.htm#ID_5fb89cc06c078fbf0a00206a00cc1f27-48b5ed616c0787820a00206a01eade93-en-US>`_
@@ -14752,7 +14753,7 @@ class ZNB_gen(Instrument):
                     _cmd = "RESolve"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                RESolve = RESolve()
+                RESolve = RESolve()  # type: ignore
                 """
                 `MMEMory:LOAD:CORRection:RESolve
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/02aae260a86c47ae.htm#ID_e782fc7bfa9431f50a00206a01e86316-b5f1ce83fa942c580a00206a01a6673d-en-US>`_
@@ -14771,7 +14772,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TCOefficient"
                     args = ["'string'"]
 
-                TCOefficient = TCOefficient()
+                TCOefficient = TCOefficient()  # type: ignore
                 """
                 `MMEMory:LOAD:CORRection:TCOefficient
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3391883fd0444077.htm#ID_160bbf146127a73d0a00206a0132199c-5dc6592961279f9c0a00206a01ed2866-en-US>`_
@@ -14779,7 +14780,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CORRection = CORRection()
+            CORRection = CORRection()  # type: ignore
             """
             `MMEMory:LOAD:CORRection
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/29210808950e462e.htm#ID_25d6c84ffa942a830a00206a0004052a-3d57daf0fa9424c60a00206a01a6673d-en-US>`_
@@ -14795,7 +14796,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EYE"
-                args = []
+                args = []  # type: List[str]
 
                 class BPATtern(SCPINode, SCPISet):
                     """
@@ -14808,7 +14809,7 @@ class ZNB_gen(Instrument):
                     _cmd = "BPATtern"
                     args = ["'string'"]
 
-                BPATtern = BPATtern()
+                BPATtern = BPATtern()  # type: ignore
                 """
                 `MMEMory:LOAD:EYE:BPATtern
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b3feb82126144ee8.htm#ID_d243f9a988f49b750a001ae72a347e86-16a9dbc488f49a0e0a001ae77b2dc49c-en-US>`_
@@ -14827,7 +14828,7 @@ class ZNB_gen(Instrument):
                     _cmd = "JITTer"
                     args = ["'string'"]
 
-                JITTer = JITTer()
+                JITTer = JITTer()  # type: ignore
                 """
                 `MMEMory:LOAD:EYE:JITTer
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3a6db511c0d74ac2.htm#ID_bd651b9e88f49f8c0a001ae768b6972e-5ce472ed88f49d980a001ae77b2dc49c-en-US>`_
@@ -14846,7 +14847,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MASK"
                     args = ["'string'"]
 
-                MASK = MASK()
+                MASK = MASK()  # type: ignore
                 """
                 `MMEMory:LOAD:EYE:MASK
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/30a568fd0b7a4832.htm#ID_0e3256ff88f4a1710a001ae75ab581a7-1d6fd32e88f4a0480a001ae77b2dc49c-en-US>`_
@@ -14854,7 +14855,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            EYE = EYE()
+            EYE = EYE()  # type: ignore
             """
             MMEMory:LOAD:EYE
 
@@ -14872,7 +14873,7 @@ class ZNB_gen(Instrument):
                 _cmd = "LIMit"
                 args = ["'string'"]
 
-            LIMit = LIMit()
+            LIMit = LIMit()  # type: ignore
             """
             `MMEMory:LOAD:LIMit
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8105ab89421143c4.htm#ID_2de53f9cfa9439870a00206a01216055-e1a5d1b6fa9433da0a00206a01a6673d-en-US>`_
@@ -14890,7 +14891,7 @@ class ZNB_gen(Instrument):
                 _cmd = "MDAData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            MDAData = MDAData()
+            MDAData = MDAData()  # type: ignore
             """
             MMEMory:LOAD:MDAData
 
@@ -14907,7 +14908,7 @@ class ZNB_gen(Instrument):
                 _cmd = "MDCData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            MDCData = MDCData()
+            MDCData = MDCData()  # type: ignore
             """
             MMEMory:LOAD:MDCData
 
@@ -14925,7 +14926,7 @@ class ZNB_gen(Instrument):
                 _cmd = "RIPPle"
                 args = ["'string'"]
 
-            RIPPle = RIPPle()
+            RIPPle = RIPPle()  # type: ignore
             """
             `MMEMory:LOAD:RIPPle
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d5bb5c6003e24c6a.htm#ID_53d05c7afa9457fc0a00206a0134102b-a6dd69cffa94523f0a00206a01a6673d-en-US>`_
@@ -14944,7 +14945,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SEGMent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SEGMent = SEGMent()
+            SEGMent = SEGMent()  # type: ignore
             """
             `MMEMory:LOAD:SEGMent
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0734578694ae40ab.htm#ID_1bff4bd6fa94bde90a00206a01c2ce76-065d4235fa94b7fd0a00206a01a6673d-en-US>`_
@@ -14963,7 +14964,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `MMEMory:LOAD:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7dda8a2a220446bf.htm#ID_98d61c75fa94c54c0a00206a003ae40a-d3527128fa94bfcd0a00206a01a6673d-en-US>`_
@@ -14993,7 +14994,7 @@ class ZNB_gen(Instrument):
                     _cmd = "AUTO"
                     args = ["'string'"]
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 `MMEMory:LOAD:TRACe:AUTO
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/19157a43e4c140cf.htm#ID_1129c438581269d50a001ae77ff8a3b6-a64b95bd5812685e0a001ae75f9ff217-en-US>`_
@@ -15001,7 +15002,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             `MMEMory:LOAD:TRACe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3bd2aef07f2641af.htm#ID_71cd29a3fa94ccdd0a00206a00176ef8-c8a94a32fa94c7300a00206a01a6673d-en-US>`_
@@ -15017,7 +15018,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "VNETworks"
-                args = []
+                args = []  # type: List[str]
 
                 class BALanced(SCPINode):
                     """
@@ -15027,7 +15028,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "BALanced"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPISet):
                         """
@@ -15040,7 +15041,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:BALanced:DEEMbedding
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/68d4179e5b9a4864.htm#ID_60f70d22fa94d4bd0a00206a01d5316a-546be1b0fa94ceb20a00206a01a6673d-en-US>`_
@@ -15059,7 +15060,7 @@ class ZNB_gen(Instrument):
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:BALanced:EMBedding
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f6b1b692bb9b47c5.htm#ID_1fb5e13dfa94dc2f0a00206a017b5ae4-afca2f18fa94d6a10a00206a01a6673d-en-US>`_
@@ -15067,7 +15068,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                BALanced = BALanced()
+                BALanced = BALanced()  # type: ignore
                 """
                 MMEMory:LOAD:VNETworks:BALanced
 
@@ -15082,7 +15083,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DIFFerential"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EMBedding(SCPINodeN, SCPISet):
                         """
@@ -15095,7 +15096,7 @@ class ZNB_gen(Instrument):
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:DIFFerential:EMBedding
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ff81a4aeab024e89.htm#ID_be273ac358126ce20a001ae744a1204a-bdcdcbf758126b6b0a001ae75f9ff217-en-US>`_
@@ -15103,7 +15104,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                DIFFerential = DIFFerential()
+                DIFFerential = DIFFerential()  # type: ignore
                 """
                 MMEMory:LOAD:VNETworks:DIFFerential
 
@@ -15118,7 +15119,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "GLOop"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINode, SCPISet):
                         """
@@ -15131,7 +15132,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:GLOop:DEEMbedding
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b4a3d6fa5ec24c48.htm#ID_90df2d0efa94e3c00a00206a00b81c60-551f17abfa94de130a00206a01a6673d-en-US>`_
@@ -15150,7 +15151,7 @@ class ZNB_gen(Instrument):
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:GLOop:EMBedding
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3d2e435406c14d5c.htm#ID_6cf57b55fa94eb520a00206a01f0b35d-3002adcbfa94e5a50a00206a01a6673d-en-US>`_
@@ -15158,7 +15159,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                GLOop = GLOop()
+                GLOop = GLOop()  # type: ignore
                 """
                 MMEMory:LOAD:VNETworks:GLOop
 
@@ -15173,7 +15174,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PPAir"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPISet):
                         """
@@ -15186,7 +15187,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:PPAir:DEEMbedding
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2cc34fe146bb4b3e.htm#ID_0d54645258126fb10a001ae7686ffa62-2155715958126e1a0a001ae75f9ff217-en-US>`_
@@ -15205,7 +15206,7 @@ class ZNB_gen(Instrument):
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:PPAir:EMBedding
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/806ed1787e384089.htm#ID_e33cac3b581272310a001ae769d4469b-f2244cfe5812709b0a001ae75f9ff217-en-US>`_
@@ -15213,7 +15214,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                PPAir = PPAir()
+                PPAir = PPAir()  # type: ignore
                 """
                 MMEMory:LOAD:VNETworks:PPAir
 
@@ -15228,7 +15229,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SENDed"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEEMbedding(SCPINodeN, SCPISet):
                         """
@@ -15241,7 +15242,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DEEMbedding"
                         args = ["'string'"]
 
-                    DEEMbedding = DEEMbedding()
+                    DEEMbedding = DEEMbedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:SENDed:DEEMbedding
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b4ab11f6c2d1486d.htm#ID_3dd89c63fa94f2d40a00206a00c9b7ad-74a2471cfa94ed360a00206a01a6673d-en-US>`_
@@ -15260,7 +15261,7 @@ class ZNB_gen(Instrument):
                         _cmd = "EMBedding"
                         args = ["'string'"]
 
-                    EMBedding = EMBedding()
+                    EMBedding = EMBedding()  # type: ignore
                     """
                     `MMEMory:LOAD:VNETworks:SENDed:EMBedding
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/535bed379ed64bb9.htm#ID_b61e5784fa94fa360a00206a01c80b0f-f1e321c8fa94f4a80a00206a01a6673d-en-US>`_
@@ -15268,21 +15269,21 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                SENDed = SENDed()
+                SENDed = SENDed()  # type: ignore
                 """
                 MMEMory:LOAD:VNETworks:SENDed
 
                 Arguments:
                 """
 
-            VNETworks = VNETworks()
+            VNETworks = VNETworks()  # type: ignore
             """
             MMEMory:LOAD:VNETworks
 
             Arguments:
             """
 
-        LOAD = LOAD()
+        LOAD = LOAD()  # type: ignore
         """
         MMEMory:LOAD
 
@@ -15300,7 +15301,7 @@ class ZNB_gen(Instrument):
             _cmd = "MDIRectory"
             args = ["'string'"]
 
-        MDIRectory = MDIRectory()
+        MDIRectory = MDIRectory()  # type: ignore
         """
         `MMEMory:MDIRectory
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/54f86d22aa074f57.htm#ID_fd35f1fcfa9501b80a00206a0100c42b-88ece1edfa94fc0b0a00206a01a6673d-en-US>`_
@@ -15319,7 +15320,7 @@ class ZNB_gen(Instrument):
             _cmd = "MOVE"
             args = ["'string'"]
 
-        MOVE = MOVE()
+        MOVE = MOVE()  # type: ignore
         """
         `MMEMory:MOVE
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/18e8e514161e4eb7.htm#ID_5a4f49b8fa95092a0a00206a01f9980a-904752d9fa95038d0a00206a01a6673d-en-US>`_
@@ -15338,7 +15339,7 @@ class ZNB_gen(Instrument):
             _cmd = "MSIS"
             args = ["'string'"]
 
-        MSIS = MSIS()
+        MSIS = MSIS()  # type: ignore
         """
         `MMEMory:MSIS
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/248a4e8c7f4c4778.htm#ID_6af3c4fbfa9510ac0a00206a01268e24-99d00b10fa950b0f0a00206a01a6673d-en-US>`_
@@ -15357,7 +15358,7 @@ class ZNB_gen(Instrument):
             _cmd = "NAME"
             args = ["'string'"]
 
-        NAME = NAME()
+        NAME = NAME()  # type: ignore
         """
         `MMEMory:NAME
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ebcb064b766b4ed8.htm#ID_7ed3f8e1fa95183e0a00206a018c947f-39b72916fa9512810a00206a01a6673d-en-US>`_
@@ -15376,7 +15377,7 @@ class ZNB_gen(Instrument):
             _cmd = "RDIRectory"
             args = ["'string'"]
 
-        RDIRectory = RDIRectory()
+        RDIRectory = RDIRectory()  # type: ignore
         """
         `MMEMory:RDIRectory
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3acf0f8a5fa1416e.htm#ID_13316b07fa951fdf0a00206a008fc1f6-bf8fd2b9fa951a220a00206a01a6673d-en-US>`_
@@ -15392,7 +15393,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "STORe"
-            args = []
+            args = []  # type: List[str]
 
             class CKIT(SCPINode, SCPISet):
                 """
@@ -15416,7 +15417,7 @@ class ZNB_gen(Instrument):
                     _cmd = "WLABel"
                     args = ["'string'"]
 
-                WLABel = WLABel()
+                WLABel = WLABel()  # type: ignore
                 """
                 `MMEMory:STORe:CKIT:WLABel
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/efd3c02d66084bdd.htm#ID_888d60aaced4f53a0a00201901d73653-9c37fbc3ced4f3a40a0020190170f726-en-US>`_
@@ -15424,7 +15425,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CKIT = CKIT()
+            CKIT = CKIT()  # type: ignore
             """
             `MMEMory:STORe:CKIT
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/446c9eb860c0491b.htm#ID_539cfe2efa9527410a00206a01d2a4ac-dd207886fa9521b40a00206a01a6673d-en-US>`_
@@ -15443,7 +15444,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CMAP"
                 args = ["'string'"]
 
-            CMAP = CMAP()
+            CMAP = CMAP()  # type: ignore
             """
             `MMEMory:STORe:CMAP
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/024e663656fc455e.htm#ID_cbd50bdafa952f400a00206a00ec799b-eab4a1d4fa9529260a00206a01a6673d-en-US>`_
@@ -15473,7 +15474,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TCOefficient"
                     args = ["'string'"]
 
-                TCOefficient = TCOefficient()
+                TCOefficient = TCOefficient()  # type: ignore
                 """
                 `MMEMory:STORe:CORRection:TCOefficient
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a0c818bdcc01478f.htm#ID_9ae3f47f6127dd220a00206a00f0280f-08ed84676127d39c0a00206a01ed2866-en-US>`_
@@ -15481,7 +15482,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CORRection = CORRection()
+            CORRection = CORRection()  # type: ignore
             """
             `MMEMory:STORe:CORRection
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/07e5bb4206f64b5d.htm#ID_c353e6ebfa9536b20a00206a01588c09-64171fb4fa9531150a00206a01a6673d-en-US>`_
@@ -15497,7 +15498,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EYE"
-                args = []
+                args = []  # type: List[str]
 
                 class MASK(SCPINode, SCPISet):
                     """
@@ -15521,7 +15522,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RESults"
                         args = ["'string'"]
 
-                    RESults = RESults()
+                    RESults = RESults()  # type: ignore
                     """
                     `MMEMory:STORe:EYE:MASK:RESults
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/26f174954ce54290.htm#ID_37aa2ebc88f4ad960a001ae724036915-1cfb19f688f4acbb0a001ae77b2dc49c-en-US>`_
@@ -15529,7 +15530,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                MASK = MASK()
+                MASK = MASK()  # type: ignore
                 """
                 `MMEMory:STORe:EYE:MASK
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/94f770900bd1416f.htm#ID_45d1dade88f4ac000a001ae76425c73a-1ce7cc5588f4ab250a001ae77b2dc49c-en-US>`_
@@ -15548,7 +15549,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MEASurements"
                     args = ["'string'"]
 
-                MEASurements = MEASurements()
+                MEASurements = MEASurements()  # type: ignore
                 """
                 `MMEMory:STORe:EYE:MEASurements
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8dc577a61b154526.htm#ID_d3e3117988f4af1d0a001ae70b423eef-bdf3e20788f4ae320a001ae77b2dc49c-en-US>`_
@@ -15556,7 +15557,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            EYE = EYE()
+            EYE = EYE()  # type: ignore
             """
             MMEMory:STORe:EYE
 
@@ -15574,7 +15575,7 @@ class ZNB_gen(Instrument):
                 _cmd = "LIMit"
                 args = ["'string'"]
 
-            LIMit = LIMit()
+            LIMit = LIMit()  # type: ignore
             """
             `MMEMory:STORe:LIMit
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2ef76634a95648ec.htm#ID_782b2ad6fa953e250a00206a019dc625-b89a0a63fa9538870a00206a01a6673d-en-US>`_
@@ -15593,7 +15594,7 @@ class ZNB_gen(Instrument):
                 _cmd = "MARKer"
                 args = ["'string'"]
 
-            MARKer = MARKer()
+            MARKer = MARKer()  # type: ignore
             """
             `MMEMory:STORe:MARKer
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f70a03bc15d4437f.htm#ID_3fc7f68bfa9545c60a00206a00581ca5-eb6af3e4fa9540090a00206a01a6673d-en-US>`_
@@ -15611,7 +15612,7 @@ class ZNB_gen(Instrument):
                 _cmd = "MDCData"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            MDCData = MDCData()
+            MDCData = MDCData()  # type: ignore
             """
             MMEMory:STORe:MDCData
 
@@ -15629,7 +15630,7 @@ class ZNB_gen(Instrument):
                 _cmd = "RIPPle"
                 args = ["'string'"]
 
-            RIPPle = RIPPle()
+            RIPPle = RIPPle()  # type: ignore
             """
             `MMEMory:STORe:RIPPle
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a4372f1c06a0463a.htm#ID_f13d0426fa955c6b0a00206a0012a7ed-6e6fe2c3fa9556bd0a00206a01a6673d-en-US>`_
@@ -15648,7 +15649,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SEGMent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SEGMent = SEGMent()
+            SEGMent = SEGMent()  # type: ignore
             """
             `MMEMory:STORe:SEGMent
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ec4e5d8a684b48d4.htm#ID_de67ac75fa95640c0a00206a0143d61b-7b9796ebfa955e3f0a00206a01a6673d-en-US>`_
@@ -15667,7 +15668,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `MMEMory:STORe:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5052a11828174526.htm#ID_905ac710fa956bad0a00206a0007bfeb-0c7b3364fa9566000a00206a01a6673d-en-US>`_
@@ -15697,7 +15698,7 @@ class ZNB_gen(Instrument):
                     _cmd = "CHANnel"
                     args = ["1", "ALL", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                CHANnel = CHANnel()
+                CHANnel = CHANnel()  # type: ignore
                 """
                 `MMEMory:STORe:TRACe:CHANnel
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5d8cb12038e14646.htm#ID_5e3f64c9fa957aa10a00206a0151de90-1d6679b9fa9575030a00206a01a6673d-en-US>`_
@@ -15713,7 +15714,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "OPTion"
-                    args = []
+                    args = []  # type: List[str]
 
                     class PLUS(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -15726,7 +15727,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PLUS"
                         args = ["PLUS", "SPACe", "VOID"]
 
-                    PLUS = PLUS()
+                    PLUS = PLUS()  # type: ignore
                     """
                     `MMEMory:STORe:TRACe:OPTion:PLUS
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ff40aa0133194ed1.htm#ID_b9900453a1e9a3150a001ae76280abec-a8ea7a81a1e9a1be0a001ae70a9caa95-en-US>`_
@@ -15745,7 +15746,7 @@ class ZNB_gen(Instrument):
                         _cmd = "SSEParator"
                         args = ["1", "OFF", "ON"]
 
-                    SSEParator = SSEParator()
+                    SSEParator = SSEParator()  # type: ignore
                     """
                     `MMEMory:STORe:TRACe:OPTion:SSEParator
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a565459101494c2b.htm#ID_5f64ab6ca1e9a4bb0a001ae77a2699fa-13ddc4d6a1e9a3920a001ae70a9caa95-en-US>`_
@@ -15764,7 +15765,7 @@ class ZNB_gen(Instrument):
                         _cmd = "TABS"
                         args = ["1", "OFF", "ON"]
 
-                    TABS = TABS()
+                    TABS = TABS()  # type: ignore
                     """
                     `MMEMory:STORe:TRACe:OPTion:TABS
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cc452c005766424d.htm#ID_fd30ef37a1e9a6710a001ae756b484ff-1daf23f2a1e9a5480a001ae70a9caa95-en-US>`_
@@ -15783,7 +15784,7 @@ class ZNB_gen(Instrument):
                         _cmd = "TRIM"
                         args = ["1", "OFF", "ON"]
 
-                    TRIM = TRIM()
+                    TRIM = TRIM()  # type: ignore
                     """
                     `MMEMory:STORe:TRACe:OPTion:TRIM
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/83a697c6e4ad47f1.htm#ID_6b425a6ba1e9a8170a001ae778e72705-0e2fc535a1e9a6ee0a001ae70a9caa95-en-US>`_
@@ -15791,7 +15792,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                OPTion = OPTion()
+                OPTion = OPTion()  # type: ignore
                 """
                 MMEMory:STORe:TRACe:OPTion
 
@@ -15809,7 +15810,7 @@ class ZNB_gen(Instrument):
                     _cmd = "PORTs"
                     args = ["1", "'string'", "COMPlex", "LINPhase", "LOGPhase", "CIMPedance", "PIMPedance"]
 
-                PORTs = PORTs()
+                PORTs = PORTs()  # type: ignore
                 """
                 `MMEMory:STORe:TRACe:PORTs
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bf349758d8b24668.htm#ID_39dd05bffa9582320a00206a01a97190-b9b34189fa957c850a00206a01a6673d-en-US>`_
@@ -15817,7 +15818,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, 'string', COMPlex, LINPhase, LOGPhase, CIMPedance, PIMPedance
                 """
 
-            TRACe = TRACe()
+            TRACe = TRACe()  # type: ignore
             """
             `MMEMory:STORe:TRACe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a65bbed6ba0147dc.htm#ID_4cefccb1fa95732f0a00206a000ff211-d0689586fa956d820a00206a01a6673d-en-US>`_
@@ -15825,14 +15826,14 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        STORe = STORe()
+        STORe = STORe()  # type: ignore
         """
         MMEMory:STORe
 
         Arguments:
         """
 
-    MMEMory = MMEMory()
+    MMEMory = MMEMory()  # type: ignore
     """
     MMEMory
 
@@ -15860,7 +15861,7 @@ class ZNB_gen(Instrument):
             _cmd = "DPORt"
             args = ["PORT1", "PORT2", "PORT3", "PORT4"]
 
-        DPORt = DPORt()
+        DPORt = DPORt()  # type: ignore
         """
         `OUTPut:DPORt
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0c0cec1ef82643e1.htm#ID_917ab5bffa95a7bc0a00206a01b0fd26-0934dcfcfa95a1ff0a00206a01a6673d-en-US>`_
@@ -15879,7 +15880,7 @@ class ZNB_gen(Instrument):
             _cmd = "STATe"
             args = ["1", "OFF", "ON"]
 
-        STATe = STATe()
+        STATe = STATe()  # type: ignore
         """
         `OUTPut:STATe
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5bef3747737e49a1.htm#ID_1d3950befa95a01a0a00206a004f6799-85cf6e20fa959a7d0a00206a01a6673d-en-US>`_
@@ -15895,7 +15896,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "UPORt"
-            args = []
+            args = []  # type: List[str]
 
             class ECBits(SCPINode, SCPIBool):
                 """
@@ -15908,7 +15909,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ECBits"
                 args = ["1", "OFF", "ON"]
 
-            ECBits = ECBits()
+            ECBits = ECBits()  # type: ignore
             """
             `OUTPut:UPORt:ECBits
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/07ea6f6c02734eb6.htm#ID_954978c2134e5c960a00206a00bd7009-5e1d0c11134e56e90a00206a0182dc26-en-US>`_
@@ -15924,7 +15925,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SEGMent"
-                args = []
+                args = []  # type: List[str]
 
                 class STATe(SCPINode, SCPIBool):
                     """
@@ -15937,7 +15938,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `OUTPut:UPORt:SEGMent:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/12e46200a6854129.htm#ID_73d9eb22fa9589950a00206a00ce3cdf-54427468fa9584070a00206a01a6673d-en-US>`_
@@ -15954,9 +15955,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "VALue"
-                    args = []
+                    args = []  # type: List[str]
 
-                VALue = VALue()
+                VALue = VALue()  # type: ignore
                 """
                 `OUTPut:UPORt:SEGMent:VALue
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/deb34bbe1e2d45ed.htm#ID_7bcd90e7fa9591360a00206a01ddaf17-bfc30114fa958b790a00206a01a6673d-en-US>`_
@@ -15964,7 +15965,7 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            SEGMent = SEGMent()
+            SEGMent = SEGMent()  # type: ignore
             """
             OUTPut:UPORt:SEGMent
 
@@ -15980,9 +15981,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "VALue"
-                args = []
+                args = []  # type: List[str]
 
-            VALue = VALue()
+            VALue = VALue()  # type: ignore
             """
             `OUTPut:UPORt:VALue
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e1e93d03a7df427c.htm#ID_135223a3fa9598a80a00206a01cafb20-52630dd2fa95931a0a00206a01a6673d-en-US>`_
@@ -15990,14 +15991,14 @@ class ZNB_gen(Instrument):
             Arguments:
             """
 
-        UPORt = UPORt()
+        UPORt = UPORt()  # type: ignore
         """
         OUTPut:UPORt
 
         Arguments:
         """
 
-    OUTPut = OUTPut()
+    OUTPut = OUTPut()  # type: ignore
     """
     OUTPut
 
@@ -16012,7 +16013,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "PROGram"
-        args = []
+        args = []  # type: List[str]
 
         class SELected(SCPINode):
             """
@@ -16022,7 +16023,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SELected"
-            args = []
+            args = []  # type: List[str]
 
             class EXECute(SCPINode, SCPISet):
                 """
@@ -16035,7 +16036,7 @@ class ZNB_gen(Instrument):
                 _cmd = "EXECute"
                 args = ["'string'"]
 
-            EXECute = EXECute()
+            EXECute = EXECute()  # type: ignore
             """
             `PROGram:SELected:EXECute
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/392c9cb1d1974b06.htm#ID_189c3c21fa95b6ee0a00206a00783ab2-c1c63606fa95b1310a00206a01a6673d-en-US>`_
@@ -16054,7 +16055,7 @@ class ZNB_gen(Instrument):
                 _cmd = "INIMessage"
                 args = ["'string'"]
 
-            INIMessage = INIMessage()
+            INIMessage = INIMessage()  # type: ignore
             """
             `PROGram:SELected:INIMessage
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/86c21f1e3d0446c6.htm#ID_40e3620ffa95bfa80a00206a008f8ff5-31d51170fa95ba0b0a00206a01a6673d-en-US>`_
@@ -16073,7 +16074,7 @@ class ZNB_gen(Instrument):
                 _cmd = "INIParameter"
                 args = ["'string'"]
 
-            INIParameter = INIParameter()
+            INIParameter = INIParameter()  # type: ignore
             """
             `PROGram:SELected:INIParameter
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d580824e115822.htm#ID_7a6b9636fa95c73a0a00206a00d1a901-d14937334d3699ed0a00206a01f0cf39-en-US>`_
@@ -16092,7 +16093,7 @@ class ZNB_gen(Instrument):
                 _cmd = "NAME"
                 args = ["PROG"]
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `PROGram:SELected:NAME
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/71cac3e812aa40bf.htm#ID_c54cbe36fa95cebc0a00206a00f8e5b9-e2ad44defa95c91e0a00206a01a6673d-en-US>`_
@@ -16109,9 +16110,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RETVal"
-                args = []
+                args = []  # type: List[str]
 
-            RETVal = RETVal()
+            RETVal = RETVal()  # type: ignore
             """
             `PROGram:SELected:RETVal
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/02fc3f1a6eaf42d6.htm#ID_94731fde6f66e3560a001ae73692d158-f209efbd6f66e1b00a001ae727f5f310-en-US>`_
@@ -16128,9 +16129,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "WAIT"
-                args = []
+                args = []  # type: List[str]
 
-            WAIT = WAIT()
+            WAIT = WAIT()  # type: ignore
             """
             `PROGram:SELected:WAIT
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/82b54e96d1e44f4f.htm#ID_6029b303fa95de0e0a00206a01d08fa1-a92a19e1fa95d8410a00206a01a6673d-en-US>`_
@@ -16138,14 +16139,14 @@ class ZNB_gen(Instrument):
             Arguments:
             """
 
-        SELected = SELected()
+        SELected = SELected()  # type: ignore
         """
         PROGram:SELected
 
         Arguments:
         """
 
-    PROGram = PROGram()
+    PROGram = PROGram()  # type: ignore
     """
     PROGram
 
@@ -16160,7 +16161,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SENSe"
-        args = []
+        args = []  # type: List[str]
 
         class AVERage(SCPINode, SCPIBool):
             """
@@ -16181,9 +16182,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CLEar"
-                args = []
+                args = []  # type: List[str]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             `SENSe:AVERage:CLEar
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ff10e010f00d4b14.htm#ID_f98b8f87fa95f4f10a00206a01537005-1a87cdf1fa95ef340a00206a01a6673d-en-US>`_
@@ -16202,7 +16203,7 @@ class ZNB_gen(Instrument):
                 _cmd = "COUNt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `SENSe:AVERage:COUNt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5f171177edec4acc.htm#ID_60175c19fa95fc920a00206a018e0d61-0ec39e5bfa95f6d50a00206a01a6673d-en-US>`_
@@ -16221,7 +16222,7 @@ class ZNB_gen(Instrument):
                 _cmd = "MODE"
                 args = ["AUTO", "FLATten", "MOVing", "REDuce"]
 
-            MODE = MODE()
+            MODE = MODE()  # type: ignore
             """
             `SENSe:AVERage:MODE
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b22adeaf572d4a3a.htm#ID_bb3fe278aaa7f2390a00206a00c5463f-a0adc45baaa7e6240a00206a00dee6b8-en-US>`_
@@ -16240,7 +16241,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SENSe:AVERage:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f2c90c7855f6416e.htm#ID_befa63f5fa9604240a00206a019d1b7a-b4429b00fa95fe760a00206a01a6673d-en-US>`_
@@ -16248,7 +16249,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, OFF, ON
             """
 
-        AVERage = AVERage()
+        AVERage = AVERage()  # type: ignore
         """
         SENSe:AVERage
 
@@ -16287,7 +16288,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SELect"
                     args = ["HIGH", "MEDium", "NORMal"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `SENSe:BANDwidth:RESolution:SELect
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5bf234a092e54a5c.htm#ID_ac511438fa9613080a00206a00a13823-54b75391fa960d6a0a00206a01a6673d-en-US>`_
@@ -16295,7 +16296,7 @@ class ZNB_gen(Instrument):
                 Arguments: HIGH, MEDium, NORMal
                 """
 
-            RESolution = RESolution()
+            RESolution = RESolution()  # type: ignore
             """
             `SENSe:BANDwidth:RESolution
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dd1fd694e0ce4dd8.htm#ID_97a679d7fa960b960a00206a00572e56-c5d81c23fa9606080a00206a01a6673d-en-US>`_
@@ -16303,7 +16304,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        BANDwidth = BANDwidth()
+        BANDwidth = BANDwidth()  # type: ignore
         """
         SENSe:BANDwidth
 
@@ -16342,7 +16343,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SELect"
                     args = ["HIGH", "MEDium", "NORMal"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `SENSe:BWIDth:RESolution:SELect
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5bf234a092e54a5c.htm#ID_ba204243fa96223b0a00206a007de2b3-d020815dfa961cad0a00206a01a6673d-en-US>`_
@@ -16350,7 +16351,7 @@ class ZNB_gen(Instrument):
                 Arguments: HIGH, MEDium, NORMal
                 """
 
-            RESolution = RESolution()
+            RESolution = RESolution()  # type: ignore
             """
             `SENSe:BWIDth:RESolution
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dd1fd694e0ce4dd8.htm#ID_3a4684e0fa961ad80a00206a013fb6ed-0a999090fa9614ec0a00206a01a6673d-en-US>`_
@@ -16358,7 +16359,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        BWIDth = BWIDth()
+        BWIDth = BWIDth()  # type: ignore
         """
         SENSe:BWIDth
 
@@ -16396,7 +16397,7 @@ class ZNB_gen(Instrument):
                     _cmd = "CATalog"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                CATalog = CATalog()
+                CATalog = CATalog()  # type: ignore
                 """
                 SENSe:CORRection:CDATa:CATalog
 
@@ -16424,14 +16425,14 @@ class ZNB_gen(Instrument):
                         _cmd = "CATalog"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     SENSe:CORRection:CDATa:PORT:CATalog
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                PORT = PORT()
+                PORT = PORT()  # type: ignore
                 """
                 `SENSe:CORRection:CDATa:PORT
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/56c4604324f74fdd.htm#ID_1d57879f3512ffaa0a00206a00fd361c-e90129e83512f8570a00206a01f2dc17-en-US>`_
@@ -16439,7 +16440,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CDATa = CDATa()
+            CDATa = CDATa()  # type: ignore
             """
             `SENSe:CORRection:CDATa
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/56c4604324f74fdd.htm#ID_61872ddefa962a0b0a00206a00f647f7-3f3fd3eafa96245d0a00206a01a6673d-en-US>`_
@@ -16455,7 +16456,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CKIT"
-                args = []
+                args = []  # type: List[str]
 
                 class CATalog(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -16468,7 +16469,7 @@ class ZNB_gen(Instrument):
                     _cmd = "CATalog"
                     args = ["'string'"]
 
-                CATalog = CATalog()
+                CATalog = CATalog()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:CATalog
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/20ee7245586f47ab.htm#ID_275e8b37fa96319c0a00206a00b96b39-8b99fd8cfa962bef0a00206a01a6673d-en-US>`_
@@ -16487,7 +16488,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DELete"
                     args = ["'string'"]
 
-                DELete = DELete()
+                DELete = DELete()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:DELete
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fde4bf40e21a4efa.htm#ID_d581a0a8fa96390e0a00206a0093c656-0318d330fa9633710a00206a01a6673d-en-US>`_
@@ -16506,7 +16507,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DMODe"
                     args = ["'string'"]
 
-                DMODe = DMODe()
+                DMODe = DMODe()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:DMODe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b0b16acb033e4002.htm#ID_3d0e560697e8eb360a001ae7274e8676-670d0e8997e8e99f0a001ae760f7f904-en-US>`_
@@ -16544,21 +16545,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:FFATten:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FFATten:WLABel
 
                     Arguments: 'string'
                     """
 
-                FFATten = FFATten()
+                FFATten = FFATten()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FFATten
 
@@ -16595,21 +16596,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:FFLine:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FFLine:WLABel
 
                     Arguments: 'string'
                     """
 
-                FFLine = FFLine()
+                FFLine = FFLine()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FFLine
 
@@ -16646,21 +16647,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:FFSNetwork:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FFSNetwork:WLABel
 
                     Arguments: 'string'
                     """
 
-                FFSNetwork = FFSNetwork()
+                FFSNetwork = FFSNetwork()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FFSNetwork
 
@@ -16697,21 +16698,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:FFTHrough:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FFTHrough:WLABel
 
                     Arguments: 'string'
                     """
 
-                FFTHrough = FFTHrough()
+                FFTHrough = FFTHrough()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FFTHrough
 
@@ -16748,21 +16749,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:FMTCh:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FMTCh:WLABel
 
                     Arguments: 'string'
                     """
 
-                FMTCh = FMTCh()
+                FMTCh = FMTCh()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FMTCh
 
@@ -16799,21 +16800,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:FOPen:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FOPen:WLABel
 
                     Arguments: 'string'
                     """
 
-                FOPen = FOPen()
+                FOPen = FOPen()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FOPen
 
@@ -16850,21 +16851,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:FOSHort:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FOSHort:WLABel
 
                     Arguments: 'string'
                     """
 
-                FOSHort = FOSHort()
+                FOSHort = FOSHort()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FOSHort
 
@@ -16901,21 +16902,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:FREFlect:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FREFlect:WLABel
 
                     Arguments: 'string'
                     """
 
-                FREFlect = FREFlect()
+                FREFlect = FREFlect()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FREFlect
 
@@ -16952,21 +16953,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:FSHort:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FSHort:WLABel
 
                     Arguments: 'string'
                     """
 
-                FSHort = FSHort()
+                FSHort = FSHort()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FSHort
 
@@ -17003,21 +17004,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:FSMatch:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:FSMatch:WLABel
 
                     Arguments: 'string'
                     """
 
-                FSMatch = FSMatch()
+                FSMatch = FSMatch()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:FSMatch
 
@@ -17035,7 +17036,7 @@ class ZNB_gen(Instrument):
                     _cmd = "INSTall"
                     args = ["'string'"]
 
-                INSTall = INSTall()
+                INSTall = INSTall()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:INSTall
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2ea5aa6c724a4255.htm#ID_0d28ed7afa968ceb0a00206a00c14d10-2f7f204bfa96872e0a00206a01a6673d-en-US>`_
@@ -17054,7 +17055,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LABel"
                     args = ["'string'"]
 
-                LABel = LABel()
+                LABel = LABel()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:LABel
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/468d3061fddc4522.htm#ID_a949aef5fa96949b0a00206a008cfdb4-08f09b7dfa968ecf0a00206a01a6673d-en-US>`_
@@ -17073,7 +17074,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LCATalog"
                     args = ["'string'"]
 
-                LCATalog = LCATalog()
+                LCATalog = LCATalog()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:LCATalog
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6e82c490f7f24b6b.htm#ID_bd9285fcced51a760a0020190106d279-9543f45cced5191e0a0020190170f726-en-US>`_
@@ -17092,7 +17093,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LDELete"
                     args = ["'string'"]
 
-                LDELete = LDELete()
+                LDELete = LDELete()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:LDELete
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e95eefb5eb454112.htm#ID_8cfb4403ced51c5a0a002019000160a1-3112cb6eced51af30a0020190170f726-en-US>`_
@@ -17111,7 +17112,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LLABel"
                     args = ["'string'"]
 
-                LLABel = LLABel()
+                LLABel = LLABel()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:LLABel
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/436dc8aef9bf4100.htm#ID_4ee989a8ced51e2f0a00201900885604-edc77a82ced51ce70a0020190170f726-en-US>`_
@@ -17130,7 +17131,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LSELect"
                     args = ["'string'"]
 
-                LSELect = LSELect()
+                LSELect = LSELect()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:LSELect
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/538cff17731d484f.htm#ID_16b73472ced51fe50a002019002e86ba-dbeec92aced51eac0a0020190170f726-en-US>`_
@@ -17168,21 +17169,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MFATten:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MFATten:WLABel
 
                     Arguments: 'string'
                     """
 
-                MFATten = MFATten()
+                MFATten = MFATten()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MFATten
 
@@ -17219,21 +17220,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MFLine:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MFLine:WLABel
 
                     Arguments: 'string'
                     """
 
-                MFLine = MFLine()
+                MFLine = MFLine()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MFLine
 
@@ -17270,21 +17271,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MFSNetwork:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MFSNetwork:WLABel
 
                     Arguments: 'string'
                     """
 
-                MFSNetwork = MFSNetwork()
+                MFSNetwork = MFSNetwork()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MFSNetwork
 
@@ -17321,21 +17322,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MFTHrough:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MFTHrough:WLABel
 
                     Arguments: 'string'
                     """
 
-                MFTHrough = MFTHrough()
+                MFTHrough = MFTHrough()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MFTHrough
 
@@ -17372,21 +17373,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MMATten:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MMATten:WLABel
 
                     Arguments: 'string'
                     """
 
-                MMATten = MMATten()
+                MMATten = MMATten()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MMATten
 
@@ -17423,21 +17424,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MMLine:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MMLine:WLABel
 
                     Arguments: 'string'
                     """
 
-                MMLine = MMLine()
+                MMLine = MMLine()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MMLine
 
@@ -17474,21 +17475,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MMSNetwork:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MMSNetwork:WLABel
 
                     Arguments: 'string'
                     """
 
-                MMSNetwork = MMSNetwork()
+                MMSNetwork = MMSNetwork()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MMSNetwork
 
@@ -17525,21 +17526,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MMTCh:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MMTCh:WLABel
 
                     Arguments: 'string'
                     """
 
-                MMTCh = MMTCh()
+                MMTCh = MMTCh()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MMTCh
 
@@ -17576,21 +17577,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MMTHrough:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MMTHrough:WLABel
 
                     Arguments: 'string'
                     """
 
-                MMTHrough = MMTHrough()
+                MMTHrough = MMTHrough()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MMTHrough
 
@@ -17627,21 +17628,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MOPen:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MOPen:WLABel
 
                     Arguments: 'string'
                     """
 
-                MOPen = MOPen()
+                MOPen = MOPen()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MOPen
 
@@ -17678,21 +17679,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MOSHort:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MOSHort:WLABel
 
                     Arguments: 'string'
                     """
 
-                MOSHort = MOSHort()
+                MOSHort = MOSHort()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MOSHort
 
@@ -17729,21 +17730,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MREFlect:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MREFlect:WLABel
 
                     Arguments: 'string'
                     """
 
-                MREFlect = MREFlect()
+                MREFlect = MREFlect()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MREFlect
 
@@ -17780,21 +17781,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MSHort:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MSHort:WLABel
 
                     Arguments: 'string'
                     """
 
-                MSHort = MSHort()
+                MSHort = MSHort()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MSHort
 
@@ -17831,21 +17832,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:MSMatch:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:MSMatch:WLABel
 
                     Arguments: 'string'
                     """
 
-                MSMatch = MSMatch()
+                MSMatch = MSMatch()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:MSMatch
 
@@ -17860,7 +17861,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "N"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FFATten(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -17872,7 +17873,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFATten"
                         args = ["'string'"]
 
-                    FFATten = FFATten()
+                    FFATten = FFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FFATten
 
@@ -17889,7 +17890,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFLine"
                         args = ["'string'"]
 
-                    FFLine = FFLine()
+                    FFLine = FFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FFLine
 
@@ -17906,7 +17907,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
-                    FFSNetwork = FFSNetwork()
+                    FFSNetwork = FFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FFSNetwork
 
@@ -17923,7 +17924,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
-                    FFTHrough = FFTHrough()
+                    FFTHrough = FFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FFTHrough
 
@@ -17940,7 +17941,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
-                    FMTCh = FMTCh()
+                    FMTCh = FMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FMTCh
 
@@ -17957,7 +17958,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FOPen"
                         args = ["'string'"]
 
-                    FOPen = FOPen()
+                    FOPen = FOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FOPen
 
@@ -17974,7 +17975,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
-                    FREFlect = FREFlect()
+                    FREFlect = FREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FREFlect
 
@@ -17991,7 +17992,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FSHort"
                         args = ["'string'"]
 
-                    FSHort = FSHort()
+                    FSHort = FSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FSHort
 
@@ -18008,7 +18009,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
-                    FSMatch = FSMatch()
+                    FSMatch = FSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:FSMatch
 
@@ -18025,7 +18026,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LSELect"
                         args = ["'string'"]
 
-                    LSELect = LSELect()
+                    LSELect = LSELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:LSELect
 
@@ -18042,7 +18043,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFATten"
                         args = ["'string'"]
 
-                    MFATten = MFATten()
+                    MFATten = MFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MFATten
 
@@ -18059,7 +18060,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFLine"
                         args = ["'string'"]
 
-                    MFLine = MFLine()
+                    MFLine = MFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MFLine
 
@@ -18076,7 +18077,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
-                    MFSNetwork = MFSNetwork()
+                    MFSNetwork = MFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MFSNetwork
 
@@ -18093,7 +18094,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
-                    MFTHrough = MFTHrough()
+                    MFTHrough = MFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MFTHrough
 
@@ -18110,7 +18111,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMATten"
                         args = ["'string'"]
 
-                    MMATten = MMATten()
+                    MMATten = MMATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MMATten
 
@@ -18127,7 +18128,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMLine"
                         args = ["'string'"]
 
-                    MMLine = MMLine()
+                    MMLine = MMLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MMLine
 
@@ -18144,7 +18145,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
-                    MMSNetwork = MMSNetwork()
+                    MMSNetwork = MMSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MMSNetwork
 
@@ -18161,7 +18162,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
-                    MMTCh = MMTCh()
+                    MMTCh = MMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MMTCh
 
@@ -18178,7 +18179,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
-                    MMTHrough = MMTHrough()
+                    MMTHrough = MMTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MMTHrough
 
@@ -18195,7 +18196,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MOPen"
                         args = ["'string'"]
 
-                    MOPen = MOPen()
+                    MOPen = MOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MOPen
 
@@ -18212,7 +18213,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
-                    MREFlect = MREFlect()
+                    MREFlect = MREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MREFlect
 
@@ -18229,7 +18230,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MSHort"
                         args = ["'string'"]
 
-                    MSHort = MSHort()
+                    MSHort = MSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MSHort
 
@@ -18246,7 +18247,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
-                    MSMatch = MSMatch()
+                    MSMatch = MSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:MSMatch
 
@@ -18263,14 +18264,14 @@ class ZNB_gen(Instrument):
                         _cmd = "SELect"
                         args = ["'string'"]
 
-                    SELect = SELect()
+                    SELect = SELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:N:SELect
 
                     Arguments: 'string'
                     """
 
-                N = N()
+                N = N()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:N
 
@@ -18307,21 +18308,21 @@ class ZNB_gen(Instrument):
                             _cmd = "SDATa"
                             args = ["'string'"]
 
-                        SDATa = SDATa()
+                        SDATa = SDATa()  # type: ignore
                         """
                         SENSe:CORRection:CKIT:OSHort:WLABel:SDATa
 
                         Arguments: 'string'
                         """
 
-                    WLABel = WLABel()
+                    WLABel = WLABel()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:OSHort:WLABel
 
                     Arguments: 'string'
                     """
 
-                OSHort = OSHort()
+                OSHort = OSHort()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:OSHort
 
@@ -18336,7 +18337,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PC"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FFATten(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -18348,7 +18349,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFATten"
                         args = ["'string'"]
 
-                    FFATten = FFATten()
+                    FFATten = FFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FFATten
 
@@ -18365,7 +18366,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFLine"
                         args = ["'string'"]
 
-                    FFLine = FFLine()
+                    FFLine = FFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FFLine
 
@@ -18382,7 +18383,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
-                    FFSNetwork = FFSNetwork()
+                    FFSNetwork = FFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FFSNetwork
 
@@ -18399,7 +18400,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
-                    FFTHrough = FFTHrough()
+                    FFTHrough = FFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FFTHrough
 
@@ -18416,7 +18417,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
-                    FMTCh = FMTCh()
+                    FMTCh = FMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FMTCh
 
@@ -18433,7 +18434,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FOPen"
                         args = ["'string'"]
 
-                    FOPen = FOPen()
+                    FOPen = FOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FOPen
 
@@ -18450,7 +18451,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
-                    FREFlect = FREFlect()
+                    FREFlect = FREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FREFlect
 
@@ -18467,7 +18468,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FSHort"
                         args = ["'string'"]
 
-                    FSHort = FSHort()
+                    FSHort = FSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FSHort
 
@@ -18484,7 +18485,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
-                    FSMatch = FSMatch()
+                    FSMatch = FSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:FSMatch
 
@@ -18501,7 +18502,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LSELect"
                         args = ["'string'"]
 
-                    LSELect = LSELect()
+                    LSELect = LSELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:LSELect
 
@@ -18518,7 +18519,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFATten"
                         args = ["'string'"]
 
-                    MFATten = MFATten()
+                    MFATten = MFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MFATten
 
@@ -18535,7 +18536,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFLine"
                         args = ["'string'"]
 
-                    MFLine = MFLine()
+                    MFLine = MFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MFLine
 
@@ -18552,7 +18553,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
-                    MFSNetwork = MFSNetwork()
+                    MFSNetwork = MFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MFSNetwork
 
@@ -18569,7 +18570,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
-                    MFTHrough = MFTHrough()
+                    MFTHrough = MFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MFTHrough
 
@@ -18586,7 +18587,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMATten"
                         args = ["'string'"]
 
-                    MMATten = MMATten()
+                    MMATten = MMATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MMATten
 
@@ -18603,7 +18604,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMLine"
                         args = ["'string'"]
 
-                    MMLine = MMLine()
+                    MMLine = MMLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MMLine
 
@@ -18620,7 +18621,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
-                    MMSNetwork = MMSNetwork()
+                    MMSNetwork = MMSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MMSNetwork
 
@@ -18637,7 +18638,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
-                    MMTCh = MMTCh()
+                    MMTCh = MMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MMTCh
 
@@ -18654,7 +18655,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
-                    MMTHrough = MMTHrough()
+                    MMTHrough = MMTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MMTHrough
 
@@ -18671,7 +18672,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MOPen"
                         args = ["'string'"]
 
-                    MOPen = MOPen()
+                    MOPen = MOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MOPen
 
@@ -18688,7 +18689,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
-                    MREFlect = MREFlect()
+                    MREFlect = MREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MREFlect
 
@@ -18705,7 +18706,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MSHort"
                         args = ["'string'"]
 
-                    MSHort = MSHort()
+                    MSHort = MSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MSHort
 
@@ -18722,7 +18723,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
-                    MSMatch = MSMatch()
+                    MSMatch = MSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:MSMatch
 
@@ -18739,14 +18740,14 @@ class ZNB_gen(Instrument):
                         _cmd = "SELect"
                         args = ["'string'"]
 
-                    SELect = SELect()
+                    SELect = SELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:PC:SELect
 
                     Arguments: 'string'
                     """
 
-                PC = PC()
+                PC = PC()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:PC
 
@@ -18764,7 +18765,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SELect"
                     args = ["'string'"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `SENSe:CORRection:CKIT:SELect
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/06f7e95c7bb841ff.htm#ID_b65e4b76fa9a70630a00206a0107a5c6-69af0339fa9a6aa60a00206a01a6673d-en-US>`_
@@ -18780,7 +18781,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SMA"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FFATten(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -18792,7 +18793,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFATten"
                         args = ["'string'"]
 
-                    FFATten = FFATten()
+                    FFATten = FFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FFATten
 
@@ -18809,7 +18810,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFLine"
                         args = ["'string'"]
 
-                    FFLine = FFLine()
+                    FFLine = FFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FFLine
 
@@ -18826,7 +18827,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
-                    FFSNetwork = FFSNetwork()
+                    FFSNetwork = FFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FFSNetwork
 
@@ -18843,7 +18844,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
-                    FFTHrough = FFTHrough()
+                    FFTHrough = FFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FFTHrough
 
@@ -18860,7 +18861,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
-                    FMTCh = FMTCh()
+                    FMTCh = FMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FMTCh
 
@@ -18877,7 +18878,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FOPen"
                         args = ["'string'"]
 
-                    FOPen = FOPen()
+                    FOPen = FOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FOPen
 
@@ -18894,7 +18895,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
-                    FREFlect = FREFlect()
+                    FREFlect = FREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FREFlect
 
@@ -18911,7 +18912,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FSHort"
                         args = ["'string'"]
 
-                    FSHort = FSHort()
+                    FSHort = FSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FSHort
 
@@ -18928,7 +18929,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
-                    FSMatch = FSMatch()
+                    FSMatch = FSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:FSMatch
 
@@ -18945,7 +18946,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LSELect"
                         args = ["'string'"]
 
-                    LSELect = LSELect()
+                    LSELect = LSELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:LSELect
 
@@ -18962,7 +18963,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFATten"
                         args = ["'string'"]
 
-                    MFATten = MFATten()
+                    MFATten = MFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MFATten
 
@@ -18979,7 +18980,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFLine"
                         args = ["'string'"]
 
-                    MFLine = MFLine()
+                    MFLine = MFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MFLine
 
@@ -18996,7 +18997,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
-                    MFSNetwork = MFSNetwork()
+                    MFSNetwork = MFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MFSNetwork
 
@@ -19013,7 +19014,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
-                    MFTHrough = MFTHrough()
+                    MFTHrough = MFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MFTHrough
 
@@ -19030,7 +19031,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMATten"
                         args = ["'string'"]
 
-                    MMATten = MMATten()
+                    MMATten = MMATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MMATten
 
@@ -19047,7 +19048,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMLine"
                         args = ["'string'"]
 
-                    MMLine = MMLine()
+                    MMLine = MMLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MMLine
 
@@ -19064,7 +19065,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
-                    MMSNetwork = MMSNetwork()
+                    MMSNetwork = MMSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MMSNetwork
 
@@ -19081,7 +19082,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
-                    MMTCh = MMTCh()
+                    MMTCh = MMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MMTCh
 
@@ -19098,7 +19099,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
-                    MMTHrough = MMTHrough()
+                    MMTHrough = MMTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MMTHrough
 
@@ -19115,7 +19116,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MOPen"
                         args = ["'string'"]
 
-                    MOPen = MOPen()
+                    MOPen = MOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MOPen
 
@@ -19132,7 +19133,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
-                    MREFlect = MREFlect()
+                    MREFlect = MREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MREFlect
 
@@ -19149,7 +19150,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MSHort"
                         args = ["'string'"]
 
-                    MSHort = MSHort()
+                    MSHort = MSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MSHort
 
@@ -19166,7 +19167,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
-                    MSMatch = MSMatch()
+                    MSMatch = MSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:MSMatch
 
@@ -19183,14 +19184,14 @@ class ZNB_gen(Instrument):
                         _cmd = "SELect"
                         args = ["'string'"]
 
-                    SELect = SELect()
+                    SELect = SELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:SMA:SELect
 
                     Arguments: 'string'
                     """
 
-                SMA = SMA()
+                SMA = SMA()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:SMA
 
@@ -19205,7 +19206,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "STANdard"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CATalog(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -19218,7 +19219,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CATalog"
                         args = ["'string'"]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     `SENSe:CORRection:CKIT:STANdard:CATalog
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/173aa73feb9f4da4.htm#ID_0c560487fa9b35f50a00206a018f09d5-04e887fdfa9b2fab0a00206a01a6673d-en-US>`_
@@ -19237,7 +19238,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DATA"
                         args = ["'string'"]
 
-                    DATA = DATA()
+                    DATA = DATA()  # type: ignore
                     """
                     `SENSe:CORRection:CKIT:STANdard:DATA
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6ed615a6cfde42d5.htm#ID_f9688ab997e995bf0a001ae742db5fd2-d35c0fa897e994970a001ae760f7f904-en-US>`_
@@ -19256,7 +19257,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LCATalog"
                         args = ["'string'"]
 
-                    LCATalog = LCATalog()
+                    LCATalog = LCATalog()  # type: ignore
                     """
                     `SENSe:CORRection:CKIT:STANdard:LCATalog
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3c29f476a1cb4a51.htm#ID_ef4a7ad2ced55c710a0020190114b7a4-6db5736aced55b390a0020190170f726-en-US>`_
@@ -19264,7 +19265,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                STANdard = STANdard()
+                STANdard = STANdard()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:STANdard
 
@@ -19279,7 +19280,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "USER"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FFATten(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -19291,7 +19292,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFATten"
                         args = ["'string'"]
 
-                    FFATten = FFATten()
+                    FFATten = FFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FFATten
 
@@ -19308,7 +19309,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFLine"
                         args = ["'string'"]
 
-                    FFLine = FFLine()
+                    FFLine = FFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FFLine
 
@@ -19325,7 +19326,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFSNetwork"
                         args = ["'string'"]
 
-                    FFSNetwork = FFSNetwork()
+                    FFSNetwork = FFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FFSNetwork
 
@@ -19342,7 +19343,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFTHrough"
                         args = ["'string'"]
 
-                    FFTHrough = FFTHrough()
+                    FFTHrough = FFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FFTHrough
 
@@ -19359,7 +19360,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FMTCh"
                         args = ["'string'"]
 
-                    FMTCh = FMTCh()
+                    FMTCh = FMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FMTCh
 
@@ -19376,7 +19377,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FOPen"
                         args = ["'string'"]
 
-                    FOPen = FOPen()
+                    FOPen = FOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FOPen
 
@@ -19393,7 +19394,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FOSHort"
                         args = ["'string'"]
 
-                    FOSHort = FOSHort()
+                    FOSHort = FOSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FOSHort
 
@@ -19410,7 +19411,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FREFlect"
                         args = ["'string'"]
 
-                    FREFlect = FREFlect()
+                    FREFlect = FREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FREFlect
 
@@ -19427,7 +19428,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FSHort"
                         args = ["'string'"]
 
-                    FSHort = FSHort()
+                    FSHort = FSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FSHort
 
@@ -19444,7 +19445,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FSMatch"
                         args = ["'string'"]
 
-                    FSMatch = FSMatch()
+                    FSMatch = FSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:FSMatch
 
@@ -19461,7 +19462,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LSELect"
                         args = ["'string'"]
 
-                    LSELect = LSELect()
+                    LSELect = LSELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:LSELect
 
@@ -19478,7 +19479,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFATten"
                         args = ["'string'"]
 
-                    MFATten = MFATten()
+                    MFATten = MFATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MFATten
 
@@ -19495,7 +19496,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFLine"
                         args = ["'string'"]
 
-                    MFLine = MFLine()
+                    MFLine = MFLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MFLine
 
@@ -19512,7 +19513,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFSNetwork"
                         args = ["'string'"]
 
-                    MFSNetwork = MFSNetwork()
+                    MFSNetwork = MFSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MFSNetwork
 
@@ -19529,7 +19530,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFTHrough"
                         args = ["'string'"]
 
-                    MFTHrough = MFTHrough()
+                    MFTHrough = MFTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MFTHrough
 
@@ -19546,7 +19547,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMATten"
                         args = ["'string'"]
 
-                    MMATten = MMATten()
+                    MMATten = MMATten()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MMATten
 
@@ -19563,7 +19564,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMLine"
                         args = ["'string'"]
 
-                    MMLine = MMLine()
+                    MMLine = MMLine()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MMLine
 
@@ -19580,7 +19581,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMSNetwork"
                         args = ["'string'"]
 
-                    MMSNetwork = MMSNetwork()
+                    MMSNetwork = MMSNetwork()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MMSNetwork
 
@@ -19597,7 +19598,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMTCh"
                         args = ["'string'"]
 
-                    MMTCh = MMTCh()
+                    MMTCh = MMTCh()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MMTCh
 
@@ -19614,7 +19615,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MMTHrough"
                         args = ["'string'"]
 
-                    MMTHrough = MMTHrough()
+                    MMTHrough = MMTHrough()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MMTHrough
 
@@ -19631,7 +19632,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MOPen"
                         args = ["'string'"]
 
-                    MOPen = MOPen()
+                    MOPen = MOPen()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MOPen
 
@@ -19648,7 +19649,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MOSHort"
                         args = ["'string'"]
 
-                    MOSHort = MOSHort()
+                    MOSHort = MOSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MOSHort
 
@@ -19665,7 +19666,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MREFlect"
                         args = ["'string'"]
 
-                    MREFlect = MREFlect()
+                    MREFlect = MREFlect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MREFlect
 
@@ -19682,7 +19683,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MSHort"
                         args = ["'string'"]
 
-                    MSHort = MSHort()
+                    MSHort = MSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MSHort
 
@@ -19699,7 +19700,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MSMatch"
                         args = ["'string'"]
 
-                    MSMatch = MSMatch()
+                    MSMatch = MSMatch()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:MSMatch
 
@@ -19716,7 +19717,7 @@ class ZNB_gen(Instrument):
                         _cmd = "OSHort"
                         args = ["'string'"]
 
-                    OSHort = OSHort()
+                    OSHort = OSHort()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:OSHort
 
@@ -19733,21 +19734,21 @@ class ZNB_gen(Instrument):
                         _cmd = "SELect"
                         args = ["'string'"]
 
-                    SELect = SELect()
+                    SELect = SELect()  # type: ignore
                     """
                     SENSe:CORRection:CKIT:USER:SELect
 
                     Arguments: 'string'
                     """
 
-                USER = USER()
+                USER = USER()  # type: ignore
                 """
                 SENSe:CORRection:CKIT:USER
 
                 Arguments:
                 """
 
-            CKIT = CKIT()
+            CKIT = CKIT()  # type: ignore
             """
             SENSe:CORRection:CKIT
 
@@ -19795,14 +19796,14 @@ class ZNB_gen(Instrument):
                             _cmd = "DEFault"
                             args = ["1", "OFF", "ON"]
 
-                        DEFault = DEFault()
+                        DEFault = DEFault()  # type: ignore
                         """
                         SENSe:CORRection:COLLect:ACQuire:RSAVe:DEFault
 
                         Arguments: 1, OFF, ON
                         """
 
-                    RSAVe = RSAVe()
+                    RSAVe = RSAVe()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:ACQuire:RSAVe
 
@@ -19820,7 +19821,7 @@ class ZNB_gen(Instrument):
                         _cmd = "SELected"
                         args = ["ATT", "ISOLation", "LINE", "LINe1", "LINe2", "LINe3", "MATCh", "NET", "OPEN", "OSHort", "OSHort1", "OSHort2", "OSHort3", "POWer", "REFL", "SHORt", "SLIDe", "THRough", "UTHRough"]
 
-                    SELected = SELected()
+                    SELected = SELected()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:ACQuire:SELected
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c6919bbe1b864cae.htm#ID_c00a21defa9d4bc30a00206a0122a8dd-5adea6c9fa9d46260a00206a01a6673d-en-US>`_
@@ -19828,7 +19829,7 @@ class ZNB_gen(Instrument):
                     Arguments: ATT, ISOLation, LINE, LINe1, LINe2, LINe3, MATCh, NET, OPEN, OSHort, OSHort1, OSHort2, OSHort3, POWer, REFL, SHORt, SLIDe, THRough, UTHRough
                     """
 
-                ACQuire = ACQuire()
+                ACQuire = ACQuire()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:ACQuire
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5bae4485a66a4fdb.htm#ID_ef5ce226fa9d34b10a00206a00b1eeba-d8380b43fa9d2ed50a00206a01a6673d-en-US>`_
@@ -19855,7 +19856,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ASSignment"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -19866,9 +19867,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:ASSignment:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c1af194ea15e4e74.htm#ID_5df4176ee2b44c640a002019017f4ab1-12b12dc3e2b44b0c0a002019017b841c-en-US>`_
@@ -19884,7 +19885,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ALL"
-                            args = []
+                            args = []  # type: List[str]
 
                             class COUNt(SCPINode, SCPIQuery):
                                 """
@@ -19895,9 +19896,9 @@ class ZNB_gen(Instrument):
                                 """
                                 __slots__ = ()
                                 _cmd = "COUNt"
-                                args = []
+                                args = []  # type: List[str]
 
-                            COUNt = COUNt()
+                            COUNt = COUNt()  # type: ignore
                             """
                             `SENSe:CORRection:COLLect:AUTO:ASSignment:ALL:COUNt
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d48b52bc242b4e32.htm#ID_959263675de614120a002019017e262e-dd26319f5de612c90a0020190152315a-en-US>`_
@@ -19905,7 +19906,7 @@ class ZNB_gen(Instrument):
                             Arguments:
                             """
 
-                        ALL = ALL()
+                        ALL = ALL()  # type: ignore
                         """
                         SENSe:CORRection:COLLect:AUTO:ASSignment:ALL
 
@@ -19921,9 +19922,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "COUNt"
-                            args = []
+                            args = []  # type: List[str]
 
-                        COUNt = COUNt()
+                        COUNt = COUNt()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:ASSignment:COUNt
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/18fc2beb38824da2.htm#ID_741269fee2b44e580a0020190035a217-8ce9a3a7e2b44d000a002019017b841c-en-US>`_
@@ -19953,7 +19954,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "DEFault"
                                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                            DEFault = DEFault()
+                            DEFault = DEFault()  # type: ignore
                             """
                             `SENSe:CORRection:COLLect:AUTO:ASSignment:DEFine:DEFault
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/64618e3b6c8a48f8.htm#ID_1806c3a7e2b452ec0a002019013da53d-5bf3d390e2b450e80a002019017b841c-en-US>`_
@@ -19983,7 +19984,7 @@ class ZNB_gen(Instrument):
                                     _cmd = "DEFault"
                                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                                DEFault = DEFault()
+                                DEFault = DEFault()  # type: ignore
                                 """
                                 `SENSe:CORRection:COLLect:AUTO:ASSignment:DEFine:TPORt:DEFault
                                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ffe7ec78e06d46ea.htm#ID_31e7cb915de618860a002019010fd717-b75dbe175de6175d0a0020190152315a-en-US>`_
@@ -19991,7 +19992,7 @@ class ZNB_gen(Instrument):
                                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                                 """
 
-                            TPORt = TPORt()
+                            TPORt = TPORt()  # type: ignore
                             """
                             `SENSe:CORRection:COLLect:AUTO:ASSignment:DEFine:TPORt
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5e83b118ba4a4af5.htm#ID_fefffc76ac615e840a00201901f142c0-e2627403ac615d3c0a0020190003471b-en-US>`_
@@ -19999,7 +20000,7 @@ class ZNB_gen(Instrument):
                             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                             """
 
-                        DEFine = DEFine()
+                        DEFine = DEFine()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:ASSignment:DEFine
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0b4c577ed7c44274.htm#ID_a4e0bf56e2b4504c0a002019012145a1-ee4aa62fe2b44ee40a002019017b841c-en-US>`_
@@ -20015,7 +20016,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DELete"
-                            args = []
+                            args = []  # type: List[str]
 
                             class ALL(SCPINode, SCPISet):
                                 """
@@ -20026,9 +20027,9 @@ class ZNB_gen(Instrument):
                                 """
                                 __slots__ = ()
                                 _cmd = "ALL"
-                                args = []
+                                args = []  # type: List[str]
 
-                            ALL = ALL()
+                            ALL = ALL()  # type: ignore
                             """
                             `SENSe:CORRection:COLLect:AUTO:ASSignment:DELete:ALL
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/39cbade56c074b32.htm#ID_f5aac7e8e2b4559b0a00201901c4483e-40720b28e2b453970a002019017b841c-en-US>`_
@@ -20036,14 +20037,14 @@ class ZNB_gen(Instrument):
                             Arguments:
                             """
 
-                        DELete = DELete()
+                        DELete = DELete()  # type: ignore
                         """
                         SENSe:CORRection:COLLect:AUTO:ASSignment:DELete
 
                         Arguments:
                         """
 
-                    ASSignment = ASSignment()
+                    ASSignment = ASSignment()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:AUTO:ASSignment
 
@@ -20072,7 +20073,7 @@ class ZNB_gen(Instrument):
                             _cmd = "PASSword"
                             args = ["'string'"]
 
-                        PASSword = PASSword()
+                        PASSword = PASSword()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:CKIT:PASSword
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d701c20914674143.htm#ID_2a769be13f255d480a00206a00c9e150-22af427d3f2551130a00206a01f2dc17-en-US>`_
@@ -20102,7 +20103,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "ADD"
                                 args = ["'string'"]
 
-                            ADD = ADD()
+                            ADD = ADD()  # type: ignore
                             """
                             `SENSe:CORRection:COLLect:AUTO:CKIT:PORTs:ADD
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d3fbc9d3f8b54fa6.htm#ID_22e73eec5de61b450a002019006fdae0-c43eb67b5de61a0d0a0020190152315a-en-US>`_
@@ -20110,7 +20111,7 @@ class ZNB_gen(Instrument):
                             Arguments: 'string'
                             """
 
-                        PORTs = PORTs()
+                        PORTs = PORTs()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:CKIT:PORTs
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/abf506d433e74aa3.htm#ID_f432d1b6e2b458890a00201900df2894-0415557ee2b456f30a002019017b841c-en-US>`_
@@ -20118,7 +20119,7 @@ class ZNB_gen(Instrument):
                         Arguments: 'string'
                         """
 
-                    CKIT = CKIT()
+                    CKIT = CKIT()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:CKIT
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9c183d7ea83443b9.htm#ID_53832a46fa9c6a2e0a00206a01a37c63-f7039c7cfa9c64810a00206a01a6673d-en-US>`_
@@ -20137,7 +20138,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CONFigure"
                         args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "PFNPort", "REFL", "RSHort", "RTRans", "UTRans"]
 
-                    CONFigure = CONFigure()
+                    CONFigure = CONFigure()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:CONFigure
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/43d940fc71ac4b9e.htm#ID_ec747919e2b45a4e0a00201900e617f8-1282c43ae2b458e70a002019017b841c-en-US>`_
@@ -20165,9 +20166,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "CONNection"
-                            args = []
+                            args = []  # type: List[str]
 
-                        CONNection = CONNection()
+                        CONNection = CONNection()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:PORTs:CONNection
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0fde24d25ade4bda.htm#ID_aaa87597fa9c79700a00206a006071b6-b18811a1fa9c73c30a00206a01a6673d-en-US>`_
@@ -20186,7 +20187,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TYPE"
                             args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "PFNPort", "REFL", "RSHort", "RTRans", "UTRans"]
 
-                        TYPE = TYPE()
+                        TYPE = TYPE()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:AUTO:PORTs:TYPE
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d551e43da6ab4f79.htm#ID_9ba6f23efa9c81020a00206a012c71ef-cfe00d3cfa9c7b540a00206a01a6673d-en-US>`_
@@ -20194,7 +20195,7 @@ class ZNB_gen(Instrument):
                         Arguments: FNPort, FOPort, FRTRans, FTRans, OPTPort, PFNPort, REFL, RSHort, RTRans, UTRans
                         """
 
-                    PORTs = PORTs()
+                    PORTs = PORTs()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:PORTs
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/50bac54fa7384143.htm#ID_3691cfa7fa9c71cf0a00206a0106bbfe-1e1e838afa9c6c220a00206a01a6673d-en-US>`_
@@ -20213,7 +20214,7 @@ class ZNB_gen(Instrument):
                         _cmd = "POWer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    POWer = POWer()
+                    POWer = POWer()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:POWer
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ece5a47d15bb4f5a.htm#ID_daecab843f258e990a00206a01d8b36c-57484f7f3f25861d0a00206a01f2dc17-en-US>`_
@@ -20230,9 +20231,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SAVE"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SAVE = SAVE()
+                    SAVE = SAVE()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:SAVE
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/df7c981e3a554bbb.htm#ID_b67aa0efe2b45f300a00201900118a61-f6c4fe37e2b45de80a002019017b841c-en-US>`_
@@ -20251,7 +20252,7 @@ class ZNB_gen(Instrument):
                         _cmd = "TYPE"
                         args = ["FNPort", "FOPort", "FRTRans", "FTRans", "OPTPort", "PFNPort", "REFL", "RSHort", "RTRans", "UTRans"]
 
-                    TYPE = TYPE()
+                    TYPE = TYPE()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:AUTO:TYPE
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7483c5a061284b1f.htm#ID_36396a4bfa9c894f0a00206a01b4efbf-b7c40877fa9c82e60a00206a01a6673d-en-US>`_
@@ -20259,7 +20260,7 @@ class ZNB_gen(Instrument):
                     Arguments: FNPort, FOPort, FRTRans, FTRans, OPTPort, PFNPort, REFL, RSHort, RTRans, UTRans
                     """
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:AUTO
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3f0c418e57de4397.htm#ID_cc386375fa9c629c0a00206a00bdf63e-10769a8bfa9c5cd00a00206a01a6673d-en-US>`_
@@ -20278,7 +20279,7 @@ class ZNB_gen(Instrument):
                     _cmd = "AVERage"
                     args = ["AUTO", "MANual"]
 
-                AVERage = AVERage()
+                AVERage = AVERage()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:AVERage
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/63d5284950ff4da7.htm#ID_08198f833f0376d20a00201900418d9e-7e26d60a3f03756a0a00201901e91f0b-en-US>`_
@@ -20294,7 +20295,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CHANnels"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ALL(SCPINode, SCPIBool):
                         """
@@ -20307,7 +20308,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ALL"
                         args = ["1", "OFF", "ON"]
 
-                    ALL = ALL()
+                    ALL = ALL()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:CHANnels:ALL
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/441ccb920f0b4445.htm#ID_34af02743512c65b0a00206a00362a14-7b024c7c3512beaa0a00206a01f2dc17-en-US>`_
@@ -20326,7 +20327,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MCTYpes"
                         args = ["1", "OFF", "ON"]
 
-                    MCTYpes = MCTYpes()
+                    MCTYpes = MCTYpes()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:CHANnels:MCTYpes
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a4e2f413400d479a.htm#ID_fb54ec3a42b0257e0a001ae77eed22c3-f1e1839d42b023c90a001ae769a5b4da-en-US>`_
@@ -20334,7 +20335,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                CHANnels = CHANnels()
+                CHANnels = CHANnels()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:CHANnels
 
@@ -20349,7 +20350,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CKIT"
-                    args = []
+                    args = []  # type: List[str]
 
                     class INSTall(SCPINode, SCPISet):
                         """
@@ -20362,7 +20363,7 @@ class ZNB_gen(Instrument):
                         _cmd = "INSTall"
                         args = ["'string'"]
 
-                    INSTall = INSTall()
+                    INSTall = INSTall()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:CKIT:INSTall
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d704124a02f74b82.htm#ID_a4fc6106842e87b10a00201901eee4e7-881b8a8f842e864a0a00201901936165-en-US>`_
@@ -20381,7 +20382,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LOAD"
                         args = ["'string'"]
 
-                    LOAD = LOAD()
+                    LOAD = LOAD()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:CKIT:LOAD
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/19eb6d332bd148fd.htm#ID_91e2e7bb842e89c40a00201901d9aa95-312cf34c842e883e0a00201901936165-en-US>`_
@@ -20400,7 +20401,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PORT"
                         args = ["CONNector", "GENDer", "LABel", "NAME"]
 
-                    PORT = PORT()
+                    PORT = PORT()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:CKIT:PORT
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0383cf4db4d4429e.htm#ID_05b047fd842e8be70a00201901d09b34-d6b0335d842e8a700a00201901936165-en-US>`_
@@ -20408,7 +20409,7 @@ class ZNB_gen(Instrument):
                     Arguments: CONNector, GENDer, LABel, NAME
                     """
 
-                CKIT = CKIT()
+                CKIT = CKIT()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:CKIT
 
@@ -20437,7 +20438,7 @@ class ZNB_gen(Instrument):
                         _cmd = "GENDers"
                         args = ["ALL", "SINGle"]
 
-                    GENDers = GENDers()
+                    GENDers = GENDers()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:CONNection:GENDers
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c63ca1c037e64fb8.htm#ID_b1dca677135238210a00206a00aaa3a0-d8439156135232640a00206a0182dc26-en-US>`_
@@ -20456,7 +20457,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PORTs"
                         args = ["ALL", "SINGle"]
 
-                    PORTs = PORTs()
+                    PORTs = PORTs()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:CONNection:PORTs
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8566df6a31664d76.htm#ID_00065edcfa9c99d90a00206a01564942-32668de0fa9c93af0a00206a01a6673d-en-US>`_
@@ -20464,7 +20465,7 @@ class ZNB_gen(Instrument):
                     Arguments: ALL, SINGle
                     """
 
-                CONNection = CONNection()
+                CONNection = CONNection()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:CONNection
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/03265a2065d24aa7.htm#ID_51cce608fa9c91bb0a00206a019f3803-81b5f60bfa9c8b910a00206a01a6673d-en-US>`_
@@ -20483,7 +20484,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DELete"
                     args = ["ALL", "'string'"]
 
-                DELete = DELete()
+                DELete = DELete()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:DELete
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2ad00861f5b34278.htm#ID_1eb59eedfa9ca2070a00206a002812f3-1406a431fa9c9bdc0a00206a01a6673d-en-US>`_
@@ -20499,9 +20500,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ERRor"
-                    args = []
+                    args = []  # type: List[str]
 
-                ERRor = ERRor()
+                ERRor = ERRor()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:ERRor
 
@@ -20529,7 +20530,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ACQuire"
                         args = ["OPEN", "SHORt"]
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:FIXTure:ACQuire
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/baea708b7c254238.htm#ID_c22640a8fa9ccde90a00206a0017e345-5e45eb40fa9cc7320a00206a01a6673d-en-US>`_
@@ -20548,7 +20549,7 @@ class ZNB_gen(Instrument):
                         _cmd = "EXPort"
                         args = ["'string'"]
 
-                    EXPort = EXPort()
+                    EXPort = EXPort()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:FIXTure:EXPort
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cdba7a0f9aab4eee.htm#ID_5b2eb4d5a6eab6940a001ae72c53e02a-418808e9a6eab51d0a001ae729ca0bb3-en-US>`_
@@ -20567,7 +20568,7 @@ class ZNB_gen(Instrument):
                         _cmd = "IMPort"
                         args = ["'string'"]
 
-                    IMPort = IMPort()
+                    IMPort = IMPort()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:FIXTure:IMPort
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cdba7a0f9aab4eee.htm#ID_c8c75a54a6eab8a80a001ae71f2af99f-b95927ecaae4e1f10a001ae70925c00c-en-US>`_
@@ -20606,7 +20607,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             `SENSe:CORRection:COLLect:FIXTure:LMParameter:LOSS:STATe
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/60ac72a649b24071.htm#ID_61297150fa9caa440a00206a01dd071f-244481e2fa9ca3fb0a00206a01a6673d-en-US>`_
@@ -20614,7 +20615,7 @@ class ZNB_gen(Instrument):
                             Arguments: 1, OFF, ON
                             """
 
-                        LOSS = LOSS()
+                        LOSS = LOSS()  # type: ignore
                         """
                         SENSe:CORRection:COLLect:FIXTure:LMParameter:LOSS
 
@@ -20632,7 +20633,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:FIXTure:LMParameter:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/594469a5314f4530.htm#ID_de9f2028fa9cb2fe0a00206a01cb5ae0-84440f34fa9cac480a00206a01a6673d-en-US>`_
@@ -20640,7 +20641,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    LMParameter = LMParameter()
+                    LMParameter = LMParameter()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:FIXTure:LMParameter
 
@@ -20656,9 +20657,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SAVE"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SAVE = SAVE()
+                    SAVE = SAVE()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:FIXTure:SAVE
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f8f30ac030744b53.htm#ID_6eec3f5efa9cbba90a00206a00d4fca3-753af30dfa9cb5210a00206a01a6673d-en-US>`_
@@ -20675,9 +20676,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STARt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:FIXTure:STARt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1ed97663b6774143.htm#ID_91250745fa9cc4e00a00206a01bd2953-4cf1ec84fa9cbdeb0a00206a01a6673d-en-US>`_
@@ -20685,7 +20686,7 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                FIXTure = FIXTure()
+                FIXTure = FIXTure()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:FIXTure
 
@@ -20700,7 +20701,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LOAD"
-                    args = []
+                    args = []  # type: List[str]
 
                     class SELected(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -20713,7 +20714,7 @@ class ZNB_gen(Instrument):
                         _cmd = "SELected"
                         args = ["'string'"]
 
-                    SELected = SELected()
+                    SELected = SELected()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:LOAD:SELected
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9494dd1d711a413b.htm#ID_c10b85456c0c5cad0a00206a002bc4d4-6857c5656c0c51cf0a00206a01eade93-en-US>`_
@@ -20721,7 +20722,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                LOAD = LOAD()
+                LOAD = LOAD()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:LOAD
 
@@ -20750,7 +20751,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DEFine"
                         args = ["1", "'string'", "ETOM", "ETSM", "FOPort1", "FOPort12", "FOPort2", "FOPTport", "FRTRans", "FTRans", "REFL1", "REFL12", "REFL2", "ROPTport", "RTRans", "TNA", "TOM", "TOSM", "TPORt", "TRL", "TRM", "TSM", "UOSM"]
 
-                    DEFine = DEFine()
+                    DEFine = DEFine()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:METHod:DEFine
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/24bc511f46a7483a.htm#ID_aaba0ddffa9cde440a00206a019c590e-74fbf89bfa9cd8490a00206a01a6673d-en-US>`_
@@ -20758,7 +20759,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, 'string', ETOM, ETSM, FOPort1, FOPort12, FOPort2, FOPTport, FRTRans, FTRans, REFL1, REFL12, REFL2, ROPTport, RTRans, TNA, TOM, TOSM, TPORt, TRL, TRM, TSM, UOSM
                     """
 
-                METHod = METHod()
+                METHod = METHod()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:METHod
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b70277ab91e94a61.htm#ID_3b1451ddfa9cd6450a00206a0173e35e-f66c5332fa9cd01b0a00206a01a6673d-en-US>`_
@@ -20786,7 +20787,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ACQuire"
                         args = ["ATTenuator", "RECeiver", "SOURce"]
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:NFIGure:ACQuire
 
@@ -20801,9 +20802,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "END"
-                        args = []
+                        args = []  # type: List[str]
 
-                    END = END()
+                    END = END()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:NFIGure:END
 
@@ -20818,9 +20819,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SAVE"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SAVE = SAVE()
+                    SAVE = SAVE()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:NFIGure:SAVE
 
@@ -20837,14 +20838,14 @@ class ZNB_gen(Instrument):
                         _cmd = "STARt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STARt = STARt()
+                    STARt = STARt()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:NFIGure:STARt
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                NFIGure = NFIGure()
+                NFIGure = NFIGure()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:NFIGure
 
@@ -20859,7 +20860,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PMETer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ID(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -20872,7 +20873,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ID"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    ID = ID()
+                    ID = ID()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:PMETer:ID
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6824c78ab7904089.htm#ID_5bda58c53512d2ed0a00206a010922a3-3fb7cfcf3512c9a60a00206a01f2dc17-en-US>`_
@@ -20880,7 +20881,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                PMETer = PMETer()
+                PMETer = PMETer()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:PMETer
 
@@ -20895,7 +20896,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SAVE"
-                    args = []
+                    args = []  # type: List[str]
 
                     class DEFault(SCPINode, SCPISet):
                         """
@@ -20906,9 +20907,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DEFault"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DEFault = DEFault()
+                    DEFault = DEFault()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:SAVE:DEFault
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/27cd611c98df422b.htm#ID_29dbd581fa9d097b0a00206a00f2378b-e91b3dc2fa9d03120a00206a01a6673d-en-US>`_
@@ -20925,9 +20926,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DUMMy"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DUMMy = DUMMy()
+                    DUMMy = DUMMy()  # type: ignore
                     """
                     `SENSe:CORRection:COLLect:SAVE:DUMMy
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9578a3d0f68b43f6.htm#ID_ef2c6f57fa9d24650a00206a00bbe1ad-9e8aac18fa9d1d700a00206a01a6673d-en-US>`_
@@ -20943,7 +20944,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SELected"
-                        args = []
+                        args = []  # type: List[str]
 
                         class DEFault(SCPINode, SCPISet):
                             """
@@ -20954,9 +20955,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DEFault"
-                            args = []
+                            args = []  # type: List[str]
 
-                        DEFault = DEFault()
+                        DEFault = DEFault()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:SAVE:SELected:DEFault
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d6b4af70d4224ab3.htm#ID_de443b96fa9d11e70a00206a014e80a8-932f4fb4fa9d0b9d0a00206a01a6673d-en-US>`_
@@ -20973,9 +20974,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DUMMy"
-                            args = []
+                            args = []  # type: List[str]
 
-                        DUMMy = DUMMy()
+                        DUMMy = DUMMy()  # type: ignore
                         """
                         `SENSe:CORRection:COLLect:SAVE:SELected:DUMMy
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1d56c9ae6dcd4805.htm#ID_6e9ab6f4fa9d1b1e0a00206a01a07be4-0f07f7f3fa9d14190a00206a01a6673d-en-US>`_
@@ -20983,14 +20984,14 @@ class ZNB_gen(Instrument):
                         Arguments:
                         """
 
-                    SELected = SELected()
+                    SELected = SELected()  # type: ignore
                     """
                     SENSe:CORRection:COLLect:SAVE:SELected
 
                     Arguments:
                     """
 
-                SAVE = SAVE()
+                SAVE = SAVE()  # type: ignore
                 """
                 SENSe:CORRection:COLLect:SAVE
 
@@ -21008,7 +21009,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SCONnection"
                     args = ["'string'"]
 
-                SCONnection = SCONnection()
+                SCONnection = SCONnection()  # type: ignore
                 """
                 `SENSe:CORRection:COLLect:SCONnection
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8da8250da50d4831.htm#ID_01899f1efa9d2cc20a00206a00e935a8-c3bdda95fa9d26d60a00206a01a6673d-en-US>`_
@@ -21016,7 +21017,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            COLLect = COLLect()
+            COLLect = COLLect()  # type: ignore
             """
             SENSe:CORRection:COLLect
 
@@ -21043,9 +21044,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CATalog"
-                    args = []
+                    args = []  # type: List[str]
 
-                CATalog = CATalog()
+                CATalog = CATalog()  # type: ignore
                 """
                 `SENSe:CORRection:CONNection:CATalog
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/40aa01430fea4e5e.htm#ID_79a95dcbfa9d5ac70a00206a00e29836-98a422edfa9d55290a00206a01a6673d-en-US>`_
@@ -21064,7 +21065,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DELete"
                     args = ["'string'"]
 
-                DELete = DELete()
+                DELete = DELete()  # type: ignore
                 """
                 `SENSe:CORRection:CONNection:DELete
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/48ba6caa89804951.htm#ID_395171f4fa9d62490a00206a001360eb-1041e23ffa9d5c9c0a00206a01a6673d-en-US>`_
@@ -21072,7 +21073,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            CONNection = CONNection()
+            CONNection = CONNection()  # type: ignore
             """
             `SENSe:CORRection:CONNection
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6a95957e0c09448f.htm#ID_8ce9dfd6fa9d53450a00206a0113cb5f-f8a0ef34fa9d4db70a00206a01a6673d-en-US>`_
@@ -21088,7 +21089,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CSET"
-                args = []
+                args = []  # type: List[str]
 
                 class ACTivate(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -21100,7 +21101,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ACTivate"
                     args = ["'string'"]
 
-                ACTivate = ACTivate()
+                ACTivate = ACTivate()  # type: ignore
                 """
                 SENSe:CORRection:CSET:ACTivate
 
@@ -21117,14 +21118,14 @@ class ZNB_gen(Instrument):
                     _cmd = "DESCription"
                     args = ["'string'"]
 
-                DESCription = DESCription()
+                DESCription = DESCription()  # type: ignore
                 """
                 SENSe:CORRection:CSET:DESCription
 
                 Arguments: 'string'
                 """
 
-            CSET = CSET()
+            CSET = CSET()  # type: ignore
             """
             SENSe:CORRection:CSET
 
@@ -21162,9 +21163,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     `SENSe:CORRection:DATA:PARameter:COUNt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d34a1f2a8f994c22.htm#ID_b4b8c587e2b476620a00201900e87abc-cccf6c58e2b475290a002019017b841c-en-US>`_
@@ -21183,7 +21184,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PORT"
                         args = ["ACAL", "BANDwidth", "CKIT", "FSMode", "LTSTamp", "MTESt", "MVNA", "PDLY", "POINts", "PORTs", "RATTenuation", "SPORt", "SPOWer", "STARt", "STOP", "STYPe", "THRoughs", "TSTamp", "TVNA", "TYPE"]
 
-                    PORT = PORT()
+                    PORT = PORT()  # type: ignore
                     """
                     `SENSe:CORRection:DATA:PARameter:PORT
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/23ded7e07ce64385.htm#ID_59416659351399f60a00206a01efcee1-dcc75689351391a90a00206a01f2dc17-en-US>`_
@@ -21191,7 +21192,7 @@ class ZNB_gen(Instrument):
                     Arguments: ACAL, BANDwidth, CKIT, FSMode, LTSTamp, MTESt, MVNA, PDLY, POINts, PORTs, RATTenuation, SPORt, SPOWer, STARt, STOP, STYPe, THRoughs, TSTamp, TVNA, TYPE
                     """
 
-                PARameter = PARameter()
+                PARameter = PARameter()  # type: ignore
                 """
                 `SENSe:CORRection:DATA:PARameter
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/23ded7e07ce64385.htm#ID_f3df74b6fa9d78fd0a00206a01be988b-a95dfeb4fa9d73600a00206a01a6673d-en-US>`_
@@ -21199,7 +21200,7 @@ class ZNB_gen(Instrument):
                 Arguments: ACAL, BANDwidth, CKIT, FSMode, LTSTamp, MTESt, MVNA, PDLY, POINts, PORTs, RATTenuation, SPORt, SPOWer, STARt, STOP, STYPe, THRoughs, TSTamp, TVNA, TYPE
                 """
 
-            DATA = DATA()
+            DATA = DATA()  # type: ignore
             """
             `SENSe:CORRection:DATA
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a4c46fde7af640d1.htm#ID_96ff5d0afa9d718b0a00206a01f3d838-01a15260fa9d6bbf0a00206a01a6673d-en-US>`_
@@ -21216,9 +21217,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DATE"
-                args = []
+                args = []  # type: List[str]
 
-            DATE = DATE()
+            DATE = DATE()  # type: ignore
             """
             `SENSe:CORRection:DATE
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4dd13cde83174c3c.htm#ID_5fc665affa9d806f0a00206a00be0e91-519f73bdfa9d7ae20a00206a01a6673d-en-US>`_
@@ -21234,9 +21235,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DSTate"
-                args = []
+                args = []  # type: List[str]
 
-            DSTate = DSTate()
+            DSTate = DSTate()  # type: ignore
             """
             SENSe:CORRection:DSTate
 
@@ -21264,7 +21265,7 @@ class ZNB_gen(Instrument):
                     _cmd = "AUTO"
                     args = ["ONCE"]
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 `SENSe:CORRection:EDELay:AUTO
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c0309a71cecc4d65.htm#ID_086c6faffa9d87e20a00206a009223dc-943616b5fa9d82440a00206a01a6673d-en-US>`_
@@ -21283,7 +21284,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DIELectric"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DIELectric = DIELectric()
+                DIELectric = DIELectric()  # type: ignore
                 """
                 `SENSe:CORRection:EDELay:DIELectric
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bfd7289a5fd44070.htm#ID_6ae1e633fa9d8f730a00206a01721163-3f04d6d3fa9d89c60a00206a01a6673d-en-US>`_
@@ -21302,7 +21303,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DISTance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DISTance = DISTance()
+                DISTance = DISTance()  # type: ignore
                 """
                 `SENSe:CORRection:EDELay:DISTance
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b7f8cd6052834f53.htm#ID_70b40f05fa9d96f50a00206a004c7fd4-86ce2b88fa9d91570a00206a01a6673d-en-US>`_
@@ -21321,7 +21322,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ELENgth"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                ELENgth = ELENgth()
+                ELENgth = ELENgth()  # type: ignore
                 """
                 `SENSe:CORRection:EDELay:ELENgth
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/157c536c22cf4d9a.htm#ID_640b9ad4fa9d9e670a00206a01bfa35f-8a305bbffa9d98d90a00206a01a6673d-en-US>`_
@@ -21340,7 +21341,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                TIME = TIME()
+                TIME = TIME()  # type: ignore
                 """
                 `SENSe:CORRection:EDELay:TIME
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e028626ab9d44bf9.htm#ID_ab5a15eefa9da6180a00206a0031b88e-9ce7e9c4fa9da04c0a00206a01a6673d-en-US>`_
@@ -21348,7 +21349,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            EDELay = EDELay()
+            EDELay = EDELay()  # type: ignore
             """
             SENSe:CORRection:EDELay
 
@@ -21377,7 +21378,7 @@ class ZNB_gen(Instrument):
                     _cmd = "AUTO"
                     args = ["ONCE"]
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 `SENSe:CORRection:LOSS:AUTO
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9c89299de8954e56.htm#ID_a9794b32fa9dbd0b0a00206a00198b3b-88926c88fa9db74e0a00206a01a6673d-en-US>`_
@@ -21396,7 +21397,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 `SENSe:CORRection:LOSS:FREQuency
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e17920dcadb14ebe.htm#ID_eaedac34fa9dc48d0a00206a0015b590-244f9ff3fa9dbeef0a00206a01a6673d-en-US>`_
@@ -21415,7 +21416,7 @@ class ZNB_gen(Instrument):
                     _cmd = "OFFSet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                OFFSet = OFFSet()
+                OFFSet = OFFSet()  # type: ignore
                 """
                 `SENSe:CORRection:LOSS:OFFSet
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bcbdd9797a884be7.htm#ID_1b00a820fa9dcc3d0a00206a018802f3-f294d833fa9dc6810a00206a01a6673d-en-US>`_
@@ -21423,7 +21424,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            LOSS = LOSS()
+            LOSS = LOSS()  # type: ignore
             """
             `SENSe:CORRection:LOSS
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2902157d598f48ce.htm#ID_e6e77f94fa9db56a0a00206a0193f03d-33f5f50ffa9daf8e0a00206a01a6673d-en-US>`_
@@ -21451,14 +21452,14 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SENSe:CORRection:NFIGure:STATe
 
                 Arguments: 1, OFF, ON
                 """
 
-            NFIGure = NFIGure()
+            NFIGure = NFIGure()  # type: ignore
             """
             SENSe:CORRection:NFIGure
 
@@ -21496,7 +21497,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:CORRection:OFFSet:COMPensation:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/238a1fddd13747e0.htm#ID_840216d6a6eac4dd0a001ae756bfb09a-f47f6deea6eac3660a001ae729ca0bb3-en-US>`_
@@ -21504,7 +21505,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                COMPensation = COMPensation()
+                COMPensation = COMPensation()  # type: ignore
                 """
                 SENSe:CORRection:OFFSet:COMPensation
 
@@ -21519,7 +21520,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DFComp"
-                    args = []
+                    args = []  # type: List[str]
 
                     class STATe(SCPINode, SCPIQuery):
                         """
@@ -21530,9 +21531,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "STATe"
-                        args = []
+                        args = []  # type: List[str]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:CORRection:OFFSet:DFComp:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/586836c972434d7e.htm#ID_df319251fa9ddc3b0a00206a000d80ee-97ada771fa9dd66f0a00206a01a6673d-en-US>`_
@@ -21540,7 +21541,7 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                DFComp = DFComp()
+                DFComp = DFComp()  # type: ignore
                 """
                 SENSe:CORRection:OFFSet:DFComp
 
@@ -21558,7 +21559,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MAGNitude"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                MAGNitude = MAGNitude()
+                MAGNitude = MAGNitude()  # type: ignore
                 """
                 `SENSe:CORRection:OFFSet:MAGNitude
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1e81fc08465043b6.htm#ID_8f8dc01ffa9de5630a00206a006db9af-424d6ac0fa9ddfa60a00206a01a6673d-en-US>`_
@@ -21577,7 +21578,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:CORRection:OFFSet:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6485389d1a28497a.htm#ID_5b5ee42bfa9ded040a00206a01bba80c-d2212d06fa9de7470a00206a01a6673d-en-US>`_
@@ -21585,7 +21586,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            OFFSet = OFFSet()
+            OFFSet = OFFSet()  # type: ignore
             """
             SENSe:CORRection:OFFSet
 
@@ -21603,7 +21604,7 @@ class ZNB_gen(Instrument):
                 _cmd = "PCAL"
                 args = ["ALL", "NONE"]
 
-            PCAL = PCAL()
+            PCAL = PCAL()  # type: ignore
             """
             `SENSe:CORRection:PCAL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f951bfb5b8df44ac.htm#ID_f2fa2fc6aaa800620a00206a0094909c-e54697eeaaa7f46c0a00206a00dee6b8-en-US>`_
@@ -21632,7 +21633,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ACQuire"
                     args = ["AWAVe", "B1", "B2", "B3", "B4", "BWAVe"]
 
-                ACQuire = ACQuire()
+                ACQuire = ACQuire()  # type: ignore
                 """
                 `SENSe:CORRection:POWer:ACQuire
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/11090299f2ed4cb0.htm#ID_e41508c7fa9df4950a00206a013d8a2a-c4d9f94dfa9deed90a00206a01a6673d-en-US>`_
@@ -21661,7 +21662,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:CORRection:POWer:AWAVe:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1066b6f12da342a8.htm#ID_39a8d55efa9dfc360a00206a016597eb-d55487bdfa9df6890a00206a01a6673d-en-US>`_
@@ -21669,7 +21670,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                AWAVe = AWAVe()
+                AWAVe = AWAVe()  # type: ignore
                 """
                 SENSe:CORRection:POWer:AWAVe
 
@@ -21698,7 +21699,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PORT"
                         args = ["'string'"]
 
-                    PORT = PORT()
+                    PORT = PORT()  # type: ignore
                     """
                     `SENSe:CORRection:POWer:DATA:PORT
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4395944f3bb14b42.htm#ID_e7e7d1f03513d0d40a00206a019c308c-9a1221113513c9530a00206a01f2dc17-en-US>`_
@@ -21706,7 +21707,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `SENSe:CORRection:POWer:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4395944f3bb14b42.htm#ID_da5741dffa9e04930a00206a01c80d11-15e9d1bffa9dfe2a0a00206a01a6673d-en-US>`_
@@ -21722,7 +21723,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HARMonic"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ACQuire(SCPINode, SCPISet):
                         """
@@ -21732,16 +21733,16 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ACQuire"
-                        args = []
+                        args = []  # type: List[str]
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     SENSe:CORRection:POWer:HARMonic:ACQuire
 
                     Arguments:
                     """
 
-                HARMonic = HARMonic()
+                HARMonic = HARMonic()  # type: ignore
                 """
                 SENSe:CORRection:POWer:HARMonic
 
@@ -21756,7 +21757,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "IMODulation"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ACQuire(SCPINode, SCPISet):
                         """
@@ -21767,9 +21768,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ACQuire"
-                        args = []
+                        args = []  # type: List[str]
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     `SENSe:CORRection:POWer:IMODulation:ACQuire
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e0a7ba12dfc644c7.htm#ID_8280b6dffa9e13e50a00206a00dfea28-2ca4e2bafa9e0e280a00206a01a6673d-en-US>`_
@@ -21777,7 +21778,7 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                IMODulation = IMODulation()
+                IMODulation = IMODulation()  # type: ignore
                 """
                 SENSe:CORRection:POWer:IMODulation
 
@@ -21792,7 +21793,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MIXer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class IF(SCPINode):
                         """
@@ -21802,7 +21803,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "IF"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -21812,23 +21813,23 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         SENSe:CORRection:POWer:MIXer:IF:ACQuire
 
                         Arguments:
                         """
 
-                    IF = IF()
+                    IF = IF()  # type: ignore
                     """
                     SENSe:CORRection:POWer:MIXer:IF
 
                     Arguments:
                     """
 
-                MIXer = MIXer()
+                MIXer = MIXer()  # type: ignore
                 """
                 SENSe:CORRection:POWer:MIXer
 
@@ -21846,7 +21847,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:CORRection:POWer:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7646142b089747f0.htm#ID_45ae6bc1fa9eeadb0a00206a011182c9-b8091dc0fa9ee4f00a00206a01a6673d-en-US>`_
@@ -21854,7 +21855,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             SENSe:CORRection:POWer
 
@@ -21870,9 +21871,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PSTate"
-                args = []
+                args = []  # type: List[str]
 
-            PSTate = PSTate()
+            PSTate = PSTate()  # type: ignore
             """
             `SENSe:CORRection:PSTate
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cc435717f8b94267.htm#ID_df533854e2b482770a002019006f0182-17cc5a84e2b4813f0a002019017b841c-en-US>`_
@@ -21888,7 +21889,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SMATrix"
-                args = []
+                args = []  # type: List[str]
 
                 class CDATa(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -21911,7 +21912,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CATalog"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     SENSe:CORRection:SMATrix:CDATa:CATalog
 
@@ -21939,14 +21940,14 @@ class ZNB_gen(Instrument):
                             _cmd = "CATalog"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        CATalog = CATalog()
+                        CATalog = CATalog()  # type: ignore
                         """
                         SENSe:CORRection:SMATrix:CDATa:PORT:CATalog
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    PORT = PORT()
+                    PORT = PORT()  # type: ignore
                     """
                     `SENSe:CORRection:SMATrix:CDATa:PORT
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/502fca8391fe467f.htm#ID_985f5c3ee2b4875a0a00201900ca10d1-4f0b1f65e2b486310a002019017b841c-en-US>`_
@@ -21954,7 +21955,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                CDATa = CDATa()
+                CDATa = CDATa()  # type: ignore
                 """
                 `SENSe:CORRection:SMATrix:CDATa
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/502fca8391fe467f.htm#ID_f5cc70d5e2b4840e0a002019018689c7-265a6a30e2b482d50a002019017b841c-en-US>`_
@@ -21962,7 +21963,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            SMATrix = SMATrix()
+            SMATrix = SMATrix()  # type: ignore
             """
             SENSe:CORRection:SMATrix
 
@@ -21978,9 +21979,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SSTate"
-                args = []
+                args = []  # type: List[str]
 
-            SSTate = SSTate()
+            SSTate = SSTate()  # type: ignore
             """
             `SENSe:CORRection:SSTate
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/032f6950568d45b0.htm#ID_ef2640f7fa9ef24e0a00206a0113e683-793bfa23fa9eecc00a00206a01a6673d-en-US>`_
@@ -21999,7 +22000,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SENSe:CORRection:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9e4376c2e66f46fb.htm#ID_1251d801fa9ef9c00a00206a00c826db-8d11769cfa9ef4320a00206a01a6673d-en-US>`_
@@ -22016,7 +22017,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STIMulus"
-                args = []
+                args = []  # type: List[str]
 
                 class PORT(SCPINodeN, SCPIQuery):
                     """
@@ -22027,9 +22028,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PORT"
-                    args = []
+                    args = []  # type: List[str]
 
-                PORT = PORT()
+                PORT = PORT()  # type: ignore
                 """
                 `SENSe:CORRection:STIMulus:PORT
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7c130eacff3645f3.htm#ID_aca3f0a13513ea960a00206a007adc1d-2c5c50a33513e3330a00206a01f2dc17-en-US>`_
@@ -22037,7 +22038,7 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            STIMulus = STIMulus()
+            STIMulus = STIMulus()  # type: ignore
             """
             `SENSe:CORRection:STIMulus
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7c130eacff3645f3.htm#ID_3870b1b51353668f0a00206a01286f0b-eaf26caa135360e10a00206a0182dc26-en-US>`_
@@ -22045,7 +22046,7 @@ class ZNB_gen(Instrument):
             Arguments:
             """
 
-        CORRection = CORRection()
+        CORRection = CORRection()  # type: ignore
         """
         SENSe:CORRection
 
@@ -22063,7 +22064,7 @@ class ZNB_gen(Instrument):
             _cmd = "COUPle"
             args = ["ALL", "AUTO", "NONE"]
 
-        COUPle = COUPle()
+        COUPle = COUPle()  # type: ignore
         """
         `SENSe:COUPle
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6bd6847283104056.htm#ID_b39880affa9f01320a00206a01556890-2f7c24edfa9efba40a00206a01a6673d-en-US>`_
@@ -22079,7 +22080,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DC"
-            args = []
+            args = []  # type: List[str]
 
             class RANGe(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -22092,7 +22093,7 @@ class ZNB_gen(Instrument):
                 _cmd = "RANGe"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            RANGe = RANGe()
+            RANGe = RANGe()  # type: ignore
             """
             `SENSe:DC:RANGe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/59cff42e06dc4f8e.htm#ID_85e3c36e1356b77d0a00206a0011de08-ec487a421356b1d00a00206a0182dc26-en-US>`_
@@ -22100,7 +22101,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        DC = DC()
+        DC = DC()  # type: ignore
         """
         SENSe:DC
 
@@ -22128,7 +22129,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CENTer"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            CENTer = CENTer()
+            CENTer = CENTer()  # type: ignore
             """
             `SENSe:FREQuency:CENTer
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/42d8825bb9304f5a.htm#ID_e2406746fa9f360d0a00206a00158714-aed43b75fa9f30700a00206a01a6673d-en-US>`_
@@ -22156,7 +22157,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ARBitrary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class PMETer(SCPINodeN, SCPIQuery, SCPISet):
                         """
@@ -22169,7 +22170,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PMETer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PMETer = PMETer()
+                    PMETer = PMETer()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:ARBitrary:PMETer
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/588399e0817144b3.htm#ID_f08d8321fa9f4c640a00206a00cb7453-0eba10acfa9f46e60a00206a01a6673d-en-US>`_
@@ -22177,7 +22178,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                ARBitrary = ARBitrary()
+                ARBitrary = ARBitrary()  # type: ignore
                 """
                 `SENSe:FREQuency:CONVersion:ARBitrary
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d580824e124617.htm#ID_98a8a17bfa9f45010a00206a009ce494-022448048c5dc3830a00206a0022f285-en-US>`_
@@ -22193,7 +22194,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "GAIN"
-                    args = []
+                    args = []  # type: List[str]
 
                     class LMCorrection(SCPINode, SCPIBool):
                         """
@@ -22206,7 +22207,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LMCorrection"
                         args = ["1", "OFF", "ON"]
 
-                    LMCorrection = LMCorrection()
+                    LMCorrection = LMCorrection()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:GAIN:LMCorrection
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ddf6ae7f67c14862.htm#ID_19b501f261299b6a0a00206a013f7404-10d65d59612992af0a00206a01ed2866-en-US>`_
@@ -22214,7 +22215,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                GAIN = GAIN()
+                GAIN = GAIN()  # type: ignore
                 """
                 SENSe:FREQuency:CONVersion:GAIN
 
@@ -22229,7 +22230,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HARMonic"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ORDer(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -22241,7 +22242,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ORDer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    ORDer = ORDer()
+                    ORDer = ORDer()  # type: ignore
                     """
                     SENSe:FREQuency:CONVersion:HARMonic:ORDer
 
@@ -22258,7 +22259,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RELative"
                         args = ["1", "OFF", "ON"]
 
-                    RELative = RELative()
+                    RELative = RELative()  # type: ignore
                     """
                     SENSe:FREQuency:CONVersion:HARMonic:RELative
 
@@ -22275,7 +22276,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RPORt = RPORt()
+                    RPORt = RPORt()  # type: ignore
                     """
                     SENSe:FREQuency:CONVersion:HARMonic:RPORt
 
@@ -22292,14 +22293,14 @@ class ZNB_gen(Instrument):
                         _cmd = "SPORt"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    SPORt = SPORt()
+                    SPORt = SPORt()  # type: ignore
                     """
                     SENSe:FREQuency:CONVersion:HARMonic:SPORt
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                HARMonic = HARMonic()
+                HARMonic = HARMonic()  # type: ignore
                 """
                 SENSe:FREQuency:CONVersion:HARMonic
 
@@ -22314,7 +22315,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MIXer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FFIXed(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -22326,7 +22327,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FFIXed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    FFIXed = FFIXed()
+                    FFIXed = FFIXed()  # type: ignore
                     """
                     SENSe:FREQuency:CONVersion:MIXer:FFIXed
 
@@ -22344,7 +22345,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FIXed"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
-                    FIXed = FIXed()
+                    FIXed = FIXed()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:FIXed
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/60891c3d7fd54ed6.htm#ID_4644b954fa9fa0fc0a00206a004be5bf-11ab3bc9fa9f9a740a00206a01a6673d-en-US>`_
@@ -22363,7 +22364,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FUNDamental"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
-                    FUNDamental = FUNDamental()
+                    FUNDamental = FUNDamental()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:FUNDamental
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a1c4edf2d1ac45cf.htm#ID_8a511aeefa9fa9f50a00206a01692dac-c23eb715fa9fa33e0a00206a01a6673d-en-US>`_
@@ -22382,7 +22383,7 @@ class ZNB_gen(Instrument):
                         _cmd = "IFFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    IFFixed = IFFixed()
+                    IFFixed = IFFixed()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:IFFixed
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d4618f47a32547be.htm#ID_bde6d3d2fa9fbcd10a00206a01d39589-e632964dfa9fb5100a00206a01a6673d-en-US>`_
@@ -22401,7 +22402,7 @@ class ZNB_gen(Instrument):
                         _cmd = "IFPort"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    IFPort = IFPort()
+                    IFPort = IFPort()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:IFPort
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/61bcffd9773b4ef3.htm#ID_815f1cf4aaa81e3b0a00206a0081c154-9df8ed98aaa812730a00206a00dee6b8-en-US>`_
@@ -22419,7 +22420,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LOEXternal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "SOURCE1", "SOURCE2", "UP"]
 
-                    LOEXternal = LOEXternal()
+                    LOEXternal = LOEXternal()  # type: ignore
                     """
                     SENSe:FREQuency:CONVersion:MIXer:LOEXternal
 
@@ -22437,7 +22438,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LOFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    LOFixed = LOFixed()
+                    LOFixed = LOFixed()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:LOFixed
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1ab6b41cb9554012.htm#ID_3de7c7c2fa9fcf7e0a00206a0006a831-25109360fa9fc8790a00206a01a6673d-en-US>`_
@@ -22455,7 +22456,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LOINternal"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "NONE", "UP"]
 
-                    LOINternal = LOINternal()
+                    LOINternal = LOINternal()  # type: ignore
                     """
                     SENSe:FREQuency:CONVersion:MIXer:LOINternal
 
@@ -22473,7 +22474,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LOMultiplier"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    LOMultiplier = LOMultiplier()
+                    LOMultiplier = LOMultiplier()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:LOMultiplier
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/743380a33eda455c.htm#ID_f3d77c26aaa82d3e0a00206a0170f2da-d163fc66aaa821860a00206a00dee6b8-en-US>`_
@@ -22492,7 +22493,7 @@ class ZNB_gen(Instrument):
                         _cmd = "LOPort"
                         args = ["GENerator", "NONE", "PORT"]
 
-                    LOPort = LOPort()
+                    LOPort = LOPort()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:LOPort
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/74fe7d03764c4a7f.htm#ID_6a4729ceaaa83b090a00206a01c4bfbd-de91c582aaa8301d0a00206a00dee6b8-en-US>`_
@@ -22511,7 +22512,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MFFixed"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
-                    MFFixed = MFFixed()
+                    MFFixed = MFFixed()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:MFFixed
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6b15b2a135cf44f0.htm#ID_be2dd1ceaaa848480a00206a004f1b7e-328d8895aaa83d6b0a00206a00dee6b8-en-US>`_
@@ -22530,7 +22531,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RFFixed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RFFixed = RFFixed()
+                    RFFixed = RFFixed()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:RFFixed
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9de0a6397341472b.htm#ID_b8a1fef7fa9fe1ae0a00206a00fb5452-640ab2c2fa9fdad80a00206a01a6673d-en-US>`_
@@ -22549,7 +22550,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RFMultiplier"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RFMultiplier = RFMultiplier()
+                    RFMultiplier = RFMultiplier()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:RFMultiplier
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f8796452875f445f.htm#ID_d37d6ecbaaa856ee0a00206a01f7adfa-b1ce8fe7aaa84bd20a00206a00dee6b8-en-US>`_
@@ -22568,7 +22569,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RFPort"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    RFPort = RFPort()
+                    RFPort = RFPort()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:RFPort
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e433724a23fd4a9e.htm#ID_9356f065aaa863900a00206a004b1cf6-82c43f97aaa859400a00206a00dee6b8-en-US>`_
@@ -22587,7 +22588,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STAGes"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    STAGes = STAGes()
+                    STAGes = STAGes()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:STAGes
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c8e19d7d125445db.htm#ID_1ef50da0aaa872460a00206a01ceb9d1-40349cbeaaa8665f0a00206a00dee6b8-en-US>`_
@@ -22606,7 +22607,7 @@ class ZNB_gen(Instrument):
                         _cmd = "TFRequency"
                         args = ["BAND1", "BAND2", "DCLower", "DCUPper", "UCONversion"]
 
-                    TFRequency = TFRequency()
+                    TFRequency = TFRequency()  # type: ignore
                     """
                     `SENSe:FREQuency:CONVersion:MIXer:TFRequency
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/52f5e8c3a19d41ca.htm#ID_51f82e6cfa9feac60a00206a002e1df4-7cc304a8fa9fe4000a00206a01a6673d-en-US>`_
@@ -22614,14 +22615,14 @@ class ZNB_gen(Instrument):
                     Arguments: BAND1, BAND2, DCLower, DCUPper, UCONversion
                     """
 
-                MIXer = MIXer()
+                MIXer = MIXer()  # type: ignore
                 """
                 SENSe:FREQuency:CONVersion:MIXer
 
                 Arguments:
                 """
 
-            CONVersion = CONVersion()
+            CONVersion = CONVersion()  # type: ignore
             """
             `SENSe:FREQuency:CONVersion
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c8efca597e3c4cad.htm#ID_a3bb2a00fa9f3d700a00206a01051abd-48ef6c66fa9f37e20a00206a01a6673d-en-US>`_
@@ -22640,7 +22641,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CW"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            CW = CW()
+            CW = CW()  # type: ignore
             """
             `SENSe:FREQuency:CW
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d19607b048a74a5e.htm#ID_2ac09567faa0b2f80a00206a013090e9-fc5e7f70faa0ad4a0a00206a01a6673d-en-US>`_
@@ -22659,7 +22660,7 @@ class ZNB_gen(Instrument):
                 _cmd = "FIXed"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            FIXed = FIXed()
+            FIXed = FIXed()  # type: ignore
             """
             `SENSe:FREQuency:FIXed
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d19607b048a74a5e.htm#ID_731505e2fa9ff2480a00206a01158020-7d13c8dafa9fec9b0a00206a01a6673d-en-US>`_
@@ -22687,14 +22688,14 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SENSe:FREQuency:IFConst:STATe
 
                 Arguments: 1, OFF, ON
                 """
 
-            IFConst = IFConst()
+            IFConst = IFConst()  # type: ignore
             """
             SENSe:FREQuency:IFConst
 
@@ -22709,7 +22710,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IMODulation"
-                args = []
+                args = []  # type: List[str]
 
                 class CONVersion(SCPINode, SCPISet):
                     """
@@ -22722,7 +22723,7 @@ class ZNB_gen(Instrument):
                     _cmd = "CONVersion"
                     args = ["OFF"]
 
-                CONVersion = CONVersion()
+                CONVersion = CONVersion()  # type: ignore
                 """
                 `SENSe:FREQuency:IMODulation:CONVersion
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4d584eff06f84733.htm#ID_23fcb342faa0017b0a00206a00b25587-58d97526fa9ffbce0a00206a01a6673d-en-US>`_
@@ -22741,7 +22742,7 @@ class ZNB_gen(Instrument):
                     _cmd = "LTONe"
                     args = ["GENerator", "NONE", "PORT"]
 
-                LTONe = LTONe()
+                LTONe = LTONe()  # type: ignore
                 """
                 `SENSe:FREQuency:IMODulation:LTONe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ab3534c8bace41b4.htm#ID_5bf57addfaa0091c0a00206a0142fa1e-01793a61faa0035f0a00206a01a6673d-en-US>`_
@@ -22770,7 +22771,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:FREQuency:IMODulation:ORDer:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8ad47d678f7f436b.htm#ID_06e1352dfaa010ad0a00206a003c0b60-aac10042faa00af00a00206a01a6673d-en-US>`_
@@ -22778,7 +22779,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                ORDer = ORDer()
+                ORDer = ORDer()  # type: ignore
                 """
                 SENSe:FREQuency:IMODulation:ORDer
 
@@ -22796,7 +22797,7 @@ class ZNB_gen(Instrument):
                     _cmd = "RECeiver"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                RECeiver = RECeiver()
+                RECeiver = RECeiver()  # type: ignore
                 """
                 `SENSe:FREQuency:IMODulation:RECeiver
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e1eb2d7b18c24a08.htm#ID_b274a1ddfaa0186e0a00206a0161499f-bf9aaa56faa012920a00206a01a6673d-en-US>`_
@@ -22825,7 +22826,7 @@ class ZNB_gen(Instrument):
                         _cmd = "MORDer"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    MORDer = MORDer()
+                    MORDer = MORDer()  # type: ignore
                     """
                     `SENSe:FREQuency:IMODulation:SPECtrum:MORDer
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b0c80ebe3fe84751.htm#ID_4245b5cdfaa0207c0a00206a0107003e-ab9dd1fffaa01a520a00206a01a6673d-en-US>`_
@@ -22844,7 +22845,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SENSe:FREQuency:IMODulation:SPECtrum:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3bf0c8d352974b60.htm#ID_01be2623faa029850a00206a018c40e0-1e47673cfaa0229f0a00206a01a6673d-en-US>`_
@@ -22852,7 +22853,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                SPECtrum = SPECtrum()
+                SPECtrum = SPECtrum()  # type: ignore
                 """
                 SENSe:FREQuency:IMODulation:SPECtrum
 
@@ -22870,7 +22871,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TDIStance"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                TDIStance = TDIStance()
+                TDIStance = TDIStance()  # type: ignore
                 """
                 `SENSe:FREQuency:IMODulation:TDIStance
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a7c1836cab484001.htm#ID_aafb6b64faa032bc0a00206a011bedae-83b2e89cfaa02bc70a00206a01a6673d-en-US>`_
@@ -22888,7 +22889,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TTOutput"
                     args = ["EDEVice", "PORT"]
 
-                TTOutput = TTOutput()
+                TTOutput = TTOutput()  # type: ignore
                 """
                 SENSe:FREQuency:IMODulation:TTOutput
 
@@ -22906,7 +22907,7 @@ class ZNB_gen(Instrument):
                     _cmd = "UTONe"
                     args = ["GENerator", "NONE", "PORT"]
 
-                UTONe = UTONe()
+                UTONe = UTONe()  # type: ignore
                 """
                 `SENSe:FREQuency:IMODulation:UTONe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ff61ec52404c4930.htm#ID_63f13342faa046530a00206a012e0ff3-67fe67dbfaa03f5e0a00206a01a6673d-en-US>`_
@@ -22914,7 +22915,7 @@ class ZNB_gen(Instrument):
                 Arguments: GENerator, NONE, PORT
                 """
 
-            IMODulation = IMODulation()
+            IMODulation = IMODulation()  # type: ignore
             """
             SENSe:FREQuency:IMODulation
 
@@ -22932,7 +22933,7 @@ class ZNB_gen(Instrument):
                 _cmd = "MODE"
                 args = ["CW", "FIXed", "SEGMent", "SWEep"]
 
-            MODE = MODE()
+            MODE = MODE()  # type: ignore
             """
             `SENSe:FREQuency:MODE
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/208318e5658e49fa.htm#ID_fe506898faa08cd20a00206a01a4bc44-203297cdfaa086e60a00206a01a6673d-en-US>`_
@@ -22951,7 +22952,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SBANd"
                 args = ["AUTO", "NEGative", "POSitive"]
 
-            SBANd = SBANd()
+            SBANd = SBANd()  # type: ignore
             """
             `SENSe:FREQuency:SBANd
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/020d819cc9124330.htm#ID_18e53f5efaa094830a00206a0157f1ef-0a15cef1faa08eb60a00206a01a6673d-en-US>`_
@@ -22967,7 +22968,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SEGMent"
-                args = []
+                args = []  # type: List[str]
 
                 class AXIS(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -22980,7 +22981,7 @@ class ZNB_gen(Instrument):
                     _cmd = "AXIS"
                     args = ["FREQuency", "POINt"]
 
-                AXIS = AXIS()
+                AXIS = AXIS()  # type: ignore
                 """
                 `SENSe:FREQuency:SEGMent:AXIS
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/79ff3cfca02d43db.htm#ID_e107f4ce6129d6200a00206a002cf90e-16bf461d6129cde30a00206a01ed2866-en-US>`_
@@ -22988,7 +22989,7 @@ class ZNB_gen(Instrument):
                 Arguments: FREQuency, POINt
                 """
 
-            SEGMent = SEGMent()
+            SEGMent = SEGMent()  # type: ignore
             """
             SENSe:FREQuency:SEGMent
 
@@ -23006,7 +23007,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SPAN"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SPAN = SPAN()
+            SPAN = SPAN()  # type: ignore
             """
             `SENSe:FREQuency:SPAN
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/880fb7cf42594d10.htm#ID_19d721c4faa09c240a00206a01889fa1-5f6f4612faa096670a00206a01a6673d-en-US>`_
@@ -23025,7 +23026,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STARt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             `SENSe:FREQuency:STARt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/62a9e33d543548b1.htm#ID_cb181842faa0a3d50a00206a0130d1a9-3b77cf21faa09df90a00206a01a6673d-en-US>`_
@@ -23044,7 +23045,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STOP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            STOP = STOP()
+            STOP = STOP()  # type: ignore
             """
             `SENSe:FREQuency:STOP
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/62a9e33d543548b1.htm#ID_8da94e0ffaa0ab560a00206a001393fe-a4f0d36bfaa0a5b90a00206a01a6673d-en-US>`_
@@ -23052,7 +23053,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         SENSe:FREQuency
 
@@ -23080,7 +23081,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ON"
                 args = ["'string'"]
 
-            ON = ON()
+            ON = ON()  # type: ignore
             """
             `SENSe:FUNCtion:ON
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a60c5184e5484818.htm#ID_5611a1c6faaa7b640a00206a00e83a51-a685455efaaa75a70a00206a01a6673d-en-US>`_
@@ -23088,7 +23089,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        FUNCtion = FUNCtion()
+        FUNCtion = FUNCtion()  # type: ignore
         """
         SENSe:FUNCtion
 
@@ -23104,7 +23105,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "HARMonic"
-            args = []
+            args = []  # type: List[str]
 
             class AUTO(SCPINode, SCPIBool):
                 """
@@ -23117,7 +23118,7 @@ class ZNB_gen(Instrument):
                 _cmd = "AUTO"
                 args = ["1", "OFF", "ON"]
 
-            AUTO = AUTO()
+            AUTO = AUTO()  # type: ignore
             """
             `SENSe:HARMonic:AUTO
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f961e1983ade4927.htm#ID_bb76c36488f5366e0a001ae7426087b1-ea24a49588f535450a001ae77b2dc49c-en-US>`_
@@ -23133,7 +23134,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DLENgth"
-                args = []
+                args = []  # type: List[str]
 
                 class DATA(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23146,7 +23147,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `SENSe:HARMonic:DLENgth:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4f31b3da63404c9d.htm#ID_8a861e5688f538330a001ae732d6903c-cd7a4f3388f537290a001ae77b2dc49c-en-US>`_
@@ -23154,7 +23155,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            DLENgth = DLENgth()
+            DLENgth = DLENgth()  # type: ignore
             """
             SENSe:HARMonic:DLENgth
 
@@ -23169,7 +23170,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ELENgth"
-                args = []
+                args = []  # type: List[str]
 
                 class DATA(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23182,7 +23183,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `SENSe:HARMonic:ELENgth:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5d520c433cb64cab.htm#ID_a05260f5726385e10a001ae743990efe-e0c4646c726384c80a001ae7588b56f3-en-US>`_
@@ -23190,7 +23191,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            ELENgth = ELENgth()
+            ELENgth = ELENgth()  # type: ignore
             """
             SENSe:HARMonic:ELENgth
 
@@ -23205,7 +23206,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MLENgth"
-                args = []
+                args = []  # type: List[str]
 
                 class DATA(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23218,7 +23219,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `SENSe:HARMonic:MLENgth:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0d66768221af4ab7.htm#ID_13f30da2726387c60a001ae77442b6d2-0749d448726386ac0a001ae7588b56f3-en-US>`_
@@ -23226,7 +23227,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            MLENgth = MLENgth()
+            MLENgth = MLENgth()  # type: ignore
             """
             SENSe:HARMonic:MLENgth
 
@@ -23241,7 +23242,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PERMittivity"
-                args = []
+                args = []  # type: List[str]
 
                 class DATA(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23254,7 +23255,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `SENSe:HARMonic:PERMittivity:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a92ddc3bb24f4035.htm#ID_0d98c971726389e80a001ae754580e7c-b851aaea726388910a001ae7588b56f3-en-US>`_
@@ -23262,7 +23263,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            PERMittivity = PERMittivity()
+            PERMittivity = PERMittivity()  # type: ignore
             """
             SENSe:HARMonic:PERMittivity
 
@@ -23277,7 +23278,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RTIMe"
-                args = []
+                args = []  # type: List[str]
 
                 class DATA(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23290,7 +23291,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `SENSe:HARMonic:RTIMe:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a337292cdf284f75.htm#ID_a836bc7788f539f80a001ae747e30563-5bbfc21088f5390e0a001ae77b2dc49c-en-US>`_
@@ -23309,7 +23310,7 @@ class ZNB_gen(Instrument):
                     _cmd = "THReshold"
                     args = ["T1_9", "T2_8"]
 
-                THReshold = THReshold()
+                THReshold = THReshold()  # type: ignore
                 """
                 `SENSe:HARMonic:RTIMe:THReshold
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ada5d90702ab4b38.htm#ID_d5c7c7c288f53b7f0a001ae77b69f9aa-2113501a88f53a940a001ae77b2dc49c-en-US>`_
@@ -23317,7 +23318,7 @@ class ZNB_gen(Instrument):
                 Arguments: T1_9, T2_8
                 """
 
-            RTIMe = RTIMe()
+            RTIMe = RTIMe()  # type: ignore
             """
             SENSe:HARMonic:RTIMe
 
@@ -23332,7 +23333,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "VELocity"
-                args = []
+                args = []  # type: List[str]
 
                 class DATA(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23345,7 +23346,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DATA"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `SENSe:HARMonic:VELocity:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/02a0199bc58d4322.htm#ID_62e5b52872638d150a001ae72c16f0d7-22ecb4e172638bbd0a001ae7588b56f3-en-US>`_
@@ -23353,14 +23354,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            VELocity = VELocity()
+            VELocity = VELocity()  # type: ignore
             """
             SENSe:HARMonic:VELocity
 
             Arguments:
             """
 
-        HARMonic = HARMonic()
+        HARMonic = HARMonic()  # type: ignore
         """
         `SENSe:HARMonic
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7d2547f84a1a4d78.htm#ID_272d33589a3f4ece0a001ae75b3c409e-8c8e41039a3f4d760a001ae737de4a6f-en-US>`_
@@ -23376,7 +23377,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LPORt"
-            args = []
+            args = []  # type: List[str]
 
             class ZCOMmon(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -23389,7 +23390,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ZCOMmon"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            ZCOMmon = ZCOMmon()
+            ZCOMmon = ZCOMmon()  # type: ignore
             """
             `SENSe:LPORt:ZCOMmon
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ff5f3222ee424c70.htm#ID_94158978faa1977b0a00206a00b62876-b7b2e2a9faa191ce0a00206a01a6673d-en-US>`_
@@ -23418,7 +23419,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SENSe:LPORt:ZDEFault:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b5192de6d67e4e20.htm#ID_b2a7efd9a6eae2890a001ae748b54b6c-29d33fd7a6eae0f30a001ae729ca0bb3-en-US>`_
@@ -23426,7 +23427,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            ZDEFault = ZDEFault()
+            ZDEFault = ZDEFault()  # type: ignore
             """
             SENSe:LPORt:ZDEFault
 
@@ -23444,7 +23445,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ZDIFferent"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            ZDIFferent = ZDIFferent()
+            ZDIFferent = ZDIFferent()  # type: ignore
             """
             `SENSe:LPORt:ZDIFferent
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ff5f3222ee424c70.htm#ID_96565f11faa19f0c0a00206a00efad8e-ed441534faa199500a00206a01a6673d-en-US>`_
@@ -23452,7 +23453,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        LPORt = LPORt()
+        LPORt = LPORt()  # type: ignore
         """
         SENSe:LPORt
 
@@ -23467,7 +23468,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "NFIGure"
-            args = []
+            args = []  # type: List[str]
 
             class ISNoise(SCPINode, SCPIBool):
                 """
@@ -23479,7 +23480,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ISNoise"
                 args = ["1", "OFF", "ON"]
 
-            ISNoise = ISNoise()
+            ISNoise = ISNoise()  # type: ignore
             """
             SENSe:NFIGure:ISNoise
 
@@ -23496,7 +23497,7 @@ class ZNB_gen(Instrument):
                 _cmd = "NDUT"
                 args = ["1", "OFF", "ON"]
 
-            NDUT = NDUT()
+            NDUT = NDUT()  # type: ignore
             """
             SENSe:NFIGure:NDUT
 
@@ -23513,7 +23514,7 @@ class ZNB_gen(Instrument):
                 _cmd = "RFICorr"
                 args = ["1", "OFF", "ON"]
 
-            RFICorr = RFICorr()
+            RFICorr = RFICorr()  # type: ignore
             """
             SENSe:NFIGure:RFICorr
 
@@ -23530,14 +23531,14 @@ class ZNB_gen(Instrument):
                 _cmd = "SEQuential"
                 args = ["1", "OFF", "ON"]
 
-            SEQuential = SEQuential()
+            SEQuential = SEQuential()  # type: ignore
             """
             SENSe:NFIGure:SEQuential
 
             Arguments: 1, OFF, ON
             """
 
-        NFIGure = NFIGure()
+        NFIGure = NFIGure()  # type: ignore
         """
         SENSe:NFIGure
 
@@ -23552,7 +23553,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PAE"
-            args = []
+            args = []  # type: List[str]
 
             class DCINput(SCPINode):
                 """
@@ -23562,7 +23563,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DCINput"
-                args = []
+                args = []  # type: List[str]
 
                 class MAIN(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23575,7 +23576,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MAIN"
                     args = ["DC1", "DC2", "DC3", "DC4"]
 
-                MAIN = MAIN()
+                MAIN = MAIN()  # type: ignore
                 """
                 `SENSe:PAE:DCINput:MAIN
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6fc282982d944daf.htm#ID_356ca9e6612ad1960a00206a008832d6-0a4f4b44612ac12b0a00206a01ed2866-en-US>`_
@@ -23594,7 +23595,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SECondary"
                     args = ["DC1", "DC2", "DC3", "DC4"]
 
-                SECondary = SECondary()
+                SECondary = SECondary()  # type: ignore
                 """
                 `SENSe:PAE:DCINput:SECondary
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bcee4f6f0bb44595.htm#ID_53a5ef24612ae56c0a00206a01de3061-47c198ac612ad7530a00206a01ed2866-en-US>`_
@@ -23602,7 +23603,7 @@ class ZNB_gen(Instrument):
                 Arguments: DC1, DC2, DC3, DC4
                 """
 
-            DCINput = DCINput()
+            DCINput = DCINput()  # type: ignore
             """
             SENSe:PAE:DCINput
 
@@ -23617,7 +23618,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PARameters"
-                args = []
+                args = []  # type: List[str]
 
                 class I(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23630,7 +23631,7 @@ class ZNB_gen(Instrument):
                     _cmd = "I"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                I = I()
+                I = I()  # type: ignore
                 """
                 `SENSe:PAE:PARameters:I
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/77a78fdc8983460b.htm#ID_70ab057e612a25690a00206a0159a980-61443cbe612a1e830a00206a01ed2866-en-US>`_
@@ -23649,7 +23650,7 @@ class ZNB_gen(Instrument):
                     _cmd = "R"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                R = R()
+                R = R()  # type: ignore
                 """
                 `SENSe:PAE:PARameters:R
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b8cc1a404aae4a06.htm#ID_cdd9f751612a2f8b0a00206a007085fc-71778e41612a28090a00206a01ed2866-en-US>`_
@@ -23668,7 +23669,7 @@ class ZNB_gen(Instrument):
                     _cmd = "U"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                U = U()
+                U = U()  # type: ignore
                 """
                 `SENSe:PAE:PARameters:U
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1412c2ce185c4b54.htm#ID_47333546612a392f0a00206a0172f758-80c4866f612a31dc0a00206a01ed2866-en-US>`_
@@ -23676,7 +23677,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            PARameters = PARameters()
+            PARameters = PARameters()  # type: ignore
             """
             SENSe:PAE:PARameters
 
@@ -23694,7 +23695,7 @@ class ZNB_gen(Instrument):
                 _cmd = "TYPE"
                 args = ["CURRent", "VCURrent", "VOLTage"]
 
-            TYPE = TYPE()
+            TYPE = TYPE()  # type: ignore
             """
             `SENSe:PAE:TYPE
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5425e7f0f7b24f8a.htm#ID_da0fd500612afa6b0a00206a006111f7-dab87b46612aed8a0a00206a01ed2866-en-US>`_
@@ -23702,7 +23703,7 @@ class ZNB_gen(Instrument):
             Arguments: CURRent, VCURrent, VOLTage
             """
 
-        PAE = PAE()
+        PAE = PAE()  # type: ignore
         """
         SENSe:PAE
 
@@ -23717,7 +23718,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PORT"
-            args = []
+            args = []  # type: List[str]
 
             class ZREFerence(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -23730,7 +23731,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ZREFerence"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            ZREFerence = ZREFerence()
+            ZREFerence = ZREFerence()  # type: ignore
             """
             `SENSe:PORT:ZREFerence
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9e4c4942dcf04a10.htm#ID_307cb740faa1b7b50a00206a0149fb85-20b51d47faa1b2080a00206a01a6673d-en-US>`_
@@ -23738,7 +23739,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        PORT = PORT()
+        PORT = PORT()  # type: ignore
         """
         SENSe:PORT
 
@@ -23753,7 +23754,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "POWer"
-            args = []
+            args = []  # type: List[str]
 
             class AGCMode(SCPINodeN):
                 """
@@ -23763,7 +23764,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AGCMode"
-                args = []
+                args = []  # type: List[str]
 
                 class ACQuire(SCPINode, SCPISet):
                     """
@@ -23774,9 +23775,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ACQuire"
-                    args = []
+                    args = []  # type: List[str]
 
-                ACQuire = ACQuire()
+                ACQuire = ACQuire()  # type: ignore
                 """
                 `SENSe:POWer:AGCMode:ACQuire
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f6d3c2eb53224cd3.htm#ID_287e0e5b5de650020a002019005cd65d-61ceda195de64ec90a0020190152315a-en-US>`_
@@ -23795,7 +23796,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MEASure"
                     args = ["AUTO", "LDIStortion", "LNOise"]
 
-                MEASure = MEASure()
+                MEASure = MEASure()  # type: ignore
                 """
                 `SENSe:POWer:AGCMode:MEASure
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d269bebea5074d09.htm#ID_818b778e135527390a00206a0179ba91-f9b489121355216d0a00206a0182dc26-en-US>`_
@@ -23812,9 +23813,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SAVE"
-                    args = []
+                    args = []  # type: List[str]
 
-                SAVE = SAVE()
+                SAVE = SAVE()  # type: ignore
                 """
                 `SENSe:POWer:AGCMode:SAVE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a69c75b84ab946d7.htm#ID_467705d35de651e60a002019015c7244-7af5781c5de650bd0a0020190152315a-en-US>`_
@@ -23822,7 +23823,7 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            AGCMode = AGCMode()
+            AGCMode = AGCMode()  # type: ignore
             """
             SENSe:POWer:AGCMode
 
@@ -23840,7 +23841,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ATTenuation"
                 args = ["1", "ARECeiver", "BRECeiver", "CRECeiver", "DEFault", "DOWN", "DRECeiver", "MAXimum", "MINimum", "UP"]
 
-            ATTenuation = ATTenuation()
+            ATTenuation = ATTenuation()  # type: ignore
             """
             `SENSe:POWer:ATTenuation
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/04a79a1d70d0496d.htm#ID_187ea6a6faa1bf460a00206a008dacb9-7302ebeefaa1b9990a00206a01a6673d-en-US>`_
@@ -23870,7 +23871,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ALL"
                     args = ["AUTO", "LDIStortion", "LNOise"]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `SENSe:POWer:GAINcontrol:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4a4451b271d14682.htm#ID_fbb74a189b3f7ca50a001ae7792f153e-a98ed4bb9b3f7b0f0a001ae77ea6eb4d-en-US>`_
@@ -23889,7 +23890,7 @@ class ZNB_gen(Instrument):
                     _cmd = "GLOBal"
                     args = ["AUTO", "LDIStortion", "LNOise", "MANual"]
 
-                GLOBal = GLOBal()
+                GLOBal = GLOBal()  # type: ignore
                 """
                 `SENSe:POWer:GAINcontrol:GLOBal
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6a22d5d655e84479.htm#ID_4c6eef1eaaa88fa10a00206a003fbf40-763d4d64aaa8838b0a00206a00dee6b8-en-US>`_
@@ -23897,7 +23898,7 @@ class ZNB_gen(Instrument):
                 Arguments: AUTO, LDIStortion, LNOise, MANual
                 """
 
-            GAINcontrol = GAINcontrol()
+            GAINcontrol = GAINcontrol()  # type: ignore
             """
             `SENSe:POWer:GAINcontrol
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/02bdb8f60bae4be0.htm#ID_b94cb83baaa880010a00206a0033f802-17c67bf9aaa875340a00206a00dee6b8-en-US>`_
@@ -23913,7 +23914,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "IFGain"
-                args = []
+                args = []  # type: List[str]
 
                 class MEASure(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23926,7 +23927,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MEASure"
                     args = ["AUTO", "LDIStortion", "LNOise"]
 
-                MEASure = MEASure()
+                MEASure = MEASure()  # type: ignore
                 """
                 `SENSe:POWer:IFGain:MEASure
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d269bebea5074d09.htm#ID_b103b97afaa1c7350a00206a01f123cc-0f4f1ee9faa1c13a0a00206a01a6673d-en-US>`_
@@ -23934,14 +23935,14 @@ class ZNB_gen(Instrument):
                 Arguments: AUTO, LDIStortion, LNOise
                 """
 
-            IFGain = IFGain()
+            IFGain = IFGain()  # type: ignore
             """
             SENSe:POWer:IFGain
 
             Arguments:
             """
 
-        POWer = POWer()
+        POWer = POWer()  # type: ignore
         """
         SENSe:POWer
 
@@ -23966,7 +23967,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EXTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -23979,7 +23980,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 `SENSe:ROSCillator:EXTernal:FREQuency
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8fdadbfdb9f9447f.htm#ID_6c4e79f3faa938c30a00206a013d1159-f5402c6afaa933070a00206a01a6673d-en-US>`_
@@ -23987,7 +23988,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            EXTernal = EXTernal()
+            EXTernal = EXTernal()  # type: ignore
             """
             SENSe:ROSCillator:EXTernal
 
@@ -24005,7 +24006,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["EXTernal", "INTernal"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `SENSe:ROSCillator:SOURce
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4314a7accd124cd8.htm#ID_c2c6217dfaa940550a00206a018060f9-42609acffaa93aa80a00206a01a6673d-en-US>`_
@@ -24013,7 +24014,7 @@ class ZNB_gen(Instrument):
             Arguments: EXTernal, INTernal
             """
 
-        ROSCillator = ROSCillator()
+        ROSCillator = ROSCillator()  # type: ignore
         """
         SENSe:ROSCillator
 
@@ -24039,9 +24040,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ADD"
-                args = []
+                args = []  # type: List[str]
 
-            ADD = ADD()
+            ADD = ADD()  # type: ignore
             """
             `SENSe:SEGMent:ADD
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8b499c72016147ec.htm#ID_42e94b09faa947f60a00206a01e7a868-404ea7abfaa942390a00206a01a6673d-en-US>`_
@@ -24081,7 +24082,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
-                    CONTrol = CONTrol()
+                    CONTrol = CONTrol()  # type: ignore
                     """
                     `SENSe:SEGMent:BWIDth:RESolution:CONTrol
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/85e00dbdac574895.htm#ID_7c9ad63afaa957280a00206a007d7923-baaeef63faa9516c0a00206a01a6673d-en-US>`_
@@ -24111,7 +24112,7 @@ class ZNB_gen(Instrument):
                             _cmd = "CONTrol"
                             args = ["1", "OFF", "ON"]
 
-                        CONTrol = CONTrol()
+                        CONTrol = CONTrol()  # type: ignore
                         """
                         `SENSe:SEGMent:BWIDth:RESolution:SELect:CONTrol
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d4fd2f19549e4c8c.htm#ID_77b69576faa966d80a00206a012e13eb-1431397ffaa960ec0a00206a01a6673d-en-US>`_
@@ -24119,7 +24120,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    SELect = SELect()
+                    SELect = SELect()  # type: ignore
                     """
                     `SENSe:SEGMent:BWIDth:RESolution:SELect
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8ea6af2b51f94fd7.htm#ID_1347f01dfaa95f080a00206a01678d97-70ffbea1faa9590d0a00206a01a6673d-en-US>`_
@@ -24127,7 +24128,7 @@ class ZNB_gen(Instrument):
                     Arguments: HIGH, MEDium, NORMal
                     """
 
-                RESolution = RESolution()
+                RESolution = RESolution()  # type: ignore
                 """
                 `SENSe:SEGMent:BWIDth:RESolution
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7f78d4cc550a43b4.htm#ID_a5fd34d6faa94f870a00206a0178a961-ff41de80faa949cb0a00206a01a6673d-en-US>`_
@@ -24135,7 +24136,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            BWIDth = BWIDth()
+            BWIDth = BWIDth()  # type: ignore
             """
             SENSe:SEGMent:BWIDth
 
@@ -24151,9 +24152,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CLEar"
-                args = []
+                args = []  # type: List[str]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             `SENSe:SEGMent:CLEar
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1e338ccd879849cc.htm#ID_ae21c7cdfaa96ec70a00206a00399727-eec3d465faa968eb0a00206a01a6673d-en-US>`_
@@ -24170,9 +24171,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COUNt"
-                args = []
+                args = []  # type: List[str]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `SENSe:SEGMent:COUNt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cc92badd888e4893.htm#ID_0aedf98efaa976b60a00206a015e9478-74d2e61cfaa970da0a00206a01a6673d-en-US>`_
@@ -24202,7 +24203,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SELect"
                     args = ["DWELl", "SWTime"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `SENSe:SEGMent:DEFine:SELect
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5d2d463b271f465e.htm#ID_104e6acbfaa985f90a00206a013334f3-d97a540afaa9804c0a00206a01a6673d-en-US>`_
@@ -24210,7 +24211,7 @@ class ZNB_gen(Instrument):
                 Arguments: DWELl, SWTime
                 """
 
-            DEFine = DEFine()
+            DEFine = DEFine()  # type: ignore
             """
             `SENSe:SEGMent:DEFine
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0fdd5bb7773c4237.htm#ID_68fd9307faa97e670a00206a007b59ed-faf43db76d4c9ff90a00206a00d96734-en-US>`_
@@ -24226,7 +24227,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DELete"
-                args = []
+                args = []  # type: List[str]
 
                 class ALL(SCPINode, SCPISet):
                     """
@@ -24237,9 +24238,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ALL"
-                    args = []
+                    args = []  # type: List[str]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `SENSe:SEGMent:DELete:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ab5e9487d6324d5d.htm#ID_d97d6288faa98db90a00206a0151f78f-1bf10634faa987ed0a00206a01a6673d-en-US>`_
@@ -24256,9 +24257,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "DUMMy"
-                    args = []
+                    args = []  # type: List[str]
 
-                DUMMy = DUMMy()
+                DUMMy = DUMMy()  # type: ignore
                 """
                 `SENSe:SEGMent:DELete:DUMMy
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8b87412b453542e4.htm#ID_e3d18ac5faa9955a0a00206a009f336d-55db9b98faa98f9d0a00206a01a6673d-en-US>`_
@@ -24266,7 +24267,7 @@ class ZNB_gen(Instrument):
                 Arguments:
                 """
 
-            DELete = DELete()
+            DELete = DELete()  # type: ignore
             """
             SENSe:SEGMent:DELete
 
@@ -24281,7 +24282,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FREQuency"
-                args = []
+                args = []  # type: List[str]
 
                 class CENTer(SCPINode, SCPIQuery):
                     """
@@ -24292,9 +24293,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CENTer"
-                    args = []
+                    args = []  # type: List[str]
 
-                CENTer = CENTer()
+                CENTer = CENTer()  # type: ignore
                 """
                 `SENSe:SEGMent:FREQuency:CENTer
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b20419a51aad471f.htm#ID_94785a74faa99cdc0a00206a01d13180-4e26a2dcfaa9974e0a00206a01a6673d-en-US>`_
@@ -24311,9 +24312,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SPAN"
-                    args = []
+                    args = []  # type: List[str]
 
-                SPAN = SPAN()
+                SPAN = SPAN()  # type: ignore
                 """
                 `SENSe:SEGMent:FREQuency:SPAN
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b20419a51aad471f.htm#ID_00b1210dfaa9a46d0a00206a00bfcdb7-5367f9bffaa99ed00a00206a01a6673d-en-US>`_
@@ -24332,7 +24333,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STARt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                STARt = STARt()
+                STARt = STARt()  # type: ignore
                 """
                 `SENSe:SEGMent:FREQuency:STARt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e6eca9c9cd1b422a.htm#ID_642356f7faa9abff0a00206a010d9e37-ddfabe24faa9a6520a00206a01a6673d-en-US>`_
@@ -24351,7 +24352,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STOP"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                STOP = STOP()
+                STOP = STOP()  # type: ignore
                 """
                 `SENSe:SEGMent:FREQuency:STOP
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e6eca9c9cd1b422a.htm#ID_e9561eb0faa9b3710a00206a002ba8aa-3587e257faa9add40a00206a01a6673d-en-US>`_
@@ -24359,7 +24360,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            FREQuency = FREQuency()
+            FREQuency = FREQuency()  # type: ignore
             """
             SENSe:SEGMent:FREQuency
 
@@ -24388,7 +24389,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SELect"
                     args = ["DWELl", "SWTime"]
 
-                SELect = SELect()
+                SELect = SELect()  # type: ignore
                 """
                 `SENSe:SEGMent:INSert:SELect
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/53faae429fbd4847.htm#ID_b802bcedfaa9c2f20a00206a00e943e9-dfd68ad3faa9bd640a00206a01a6673d-en-US>`_
@@ -24396,7 +24397,7 @@ class ZNB_gen(Instrument):
                 Arguments: DWELl, SWTime
                 """
 
-            INSert = INSert()
+            INSert = INSert()  # type: ignore
             """
             `SENSe:SEGMent:INSert
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a43fbabbfb8548ed.htm#ID_edfe071ffaa9bb510a00206a00232fd5-402184618754dbd40a00206a00048ead-en-US>`_
@@ -24415,7 +24416,7 @@ class ZNB_gen(Instrument):
                 _cmd = "OVERlap"
                 args = ["1", "OFF", "ON"]
 
-            OVERlap = OVERlap()
+            OVERlap = OVERlap()  # type: ignore
             """
             `SENSe:SEGMent:OVERlap
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d07bb6d0c6004991.htm#ID_ce5c83b4faa9cac20a00206a01aa0f97-808993ecfaa9c4d60a00206a01a6673d-en-US>`_
@@ -24455,7 +24456,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ALL"
                         args = ["AUTO", "LDIStortion", "LNOise"]
 
-                    ALL = ALL()
+                    ALL = ALL()  # type: ignore
                     """
                     `SENSe:SEGMent:POWer:GAINcontrol:ALL
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4ac0a752978a4be8.htm#ID_be73e5399b3f8a900a001ae76fd4e5e1-f73a0a119b3f89090a001ae77ea6eb4d-en-US>`_
@@ -24474,7 +24475,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
-                    CONTrol = CONTrol()
+                    CONTrol = CONTrol()  # type: ignore
                     """
                     `SENSe:SEGMent:POWer:GAINcontrol:CONTrol
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9608e4d687cd4b33.htm#ID_55e47952aaa8ae450a00206a01d7002f-41fdea03aaa8a3770a00206a00dee6b8-en-US>`_
@@ -24482,7 +24483,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                GAINcontrol = GAINcontrol()
+                GAINcontrol = GAINcontrol()  # type: ignore
                 """
                 `SENSe:SEGMent:POWer:GAINcontrol
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3efd8069d3aa445a.htm#ID_506a9a45aaa8a0a80a00206a014de620-c49903a0aaa892ed0a00206a00dee6b8-en-US>`_
@@ -24512,7 +24513,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
-                    CONTrol = CONTrol()
+                    CONTrol = CONTrol()  # type: ignore
                     """
                     `SENSe:SEGMent:POWer:LEVel:CONTrol
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bd27175de2174b8a.htm#ID_0889af7afaa9da230a00206a01faf0df-69290e76faa9d4950a00206a01a6673d-en-US>`_
@@ -24520,7 +24521,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                LEVel = LEVel()
+                LEVel = LEVel()  # type: ignore
                 """
                 `SENSe:SEGMent:POWer:LEVel
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/41f669a6f1ca47df.htm#ID_c32c7991faa9d2b10a00206a01709402-1a1b2272faa9cc970a00206a01a6673d-en-US>`_
@@ -24528,7 +24529,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            POWer = POWer()
+            POWer = POWer()  # type: ignore
             """
             SENSe:SEGMent:POWer
 
@@ -24546,7 +24547,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SENSe:SEGMent:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d3960bdbcfeb49f4.htm#ID_6dc91a91faaa0f4c0a00206a01341c39-ceac6573faaa09900a00206a01a6673d-en-US>`_
@@ -24562,7 +24563,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SWEep"
-                args = []
+                args = []  # type: List[str]
 
                 class DWELl(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -24586,7 +24587,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
-                    CONTrol = CONTrol()
+                    CONTrol = CONTrol()  # type: ignore
                     """
                     `SENSe:SEGMent:SWEep:DWELl:CONTrol
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dabe778ff0364c84.htm#ID_8056275efaa9e9750a00206a003922be-67d1b540faa9e3a90a00206a01a6673d-en-US>`_
@@ -24594,7 +24595,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                DWELl = DWELl()
+                DWELl = DWELl()  # type: ignore
                 """
                 `SENSe:SEGMent:SWEep:DWELl
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ce5c1223ab0542ed.htm#ID_011fb27efaa9e1c40a00206a009027ec-1580ec0bfaa9dc170a00206a01a6673d-en-US>`_
@@ -24613,7 +24614,7 @@ class ZNB_gen(Instrument):
                     _cmd = "GENeration"
                     args = ["ANALog", "STEPped"]
 
-                GENeration = GENeration()
+                GENeration = GENeration()  # type: ignore
                 """
                 `SENSe:SEGMent:SWEep:GENeration
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6ac02dfba9164182.htm#ID_7dff9430cf938f4d0a001ae76592e970-55859ec9cf938da70a001ae7061b2cf6-en-US>`_
@@ -24632,7 +24633,7 @@ class ZNB_gen(Instrument):
                     _cmd = "POINts"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                POINts = POINts()
+                POINts = POINts()  # type: ignore
                 """
                 `SENSe:SEGMent:SWEep:POINts
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/52d5a10625e64a82.htm#ID_04a142bffaa9f0e70a00206a01076885-20e0b786faa9eb4a0a00206a01a6673d-en-US>`_
@@ -24662,7 +24663,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CONTrol"
                         args = ["1", "OFF", "ON"]
 
-                    CONTrol = CONTrol()
+                    CONTrol = CONTrol()  # type: ignore
                     """
                     `SENSe:SEGMent:SWEep:TIME:CONTrol
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ff129a9296e54210.htm#ID_a22e28fffaaa00390a00206a0084a14b-e9c5fc67faa9fa8c0a00206a01a6673d-en-US>`_
@@ -24679,9 +24680,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SUM"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SUM = SUM()
+                    SUM = SUM()  # type: ignore
                     """
                     `SENSe:SEGMent:SWEep:TIME:SUM
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/89fbe395bfe44bc6.htm#ID_b1ba9049faaa07bb0a00206a0168c693-2fa53146faaa020e0a00206a01a6673d-en-US>`_
@@ -24689,7 +24690,7 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                TIME = TIME()
+                TIME = TIME()  # type: ignore
                 """
                 `SENSe:SEGMent:SWEep:TIME
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/37b7c642120149da.htm#ID_f5b6df0ffaa9f8a80a00206a013a9a75-542f6badfaa9f2fb0a00206a01a6673d-en-US>`_
@@ -24697,14 +24698,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            SWEep = SWEep()
+            SWEep = SWEep()  # type: ignore
             """
             SENSe:SEGMent:SWEep
 
             Arguments:
             """
 
-        SEGMent = SEGMent()
+        SEGMent = SEGMent()  # type: ignore
         """
         SENSe:SEGMent
 
@@ -24719,7 +24720,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SWEep"
-            args = []
+            args = []  # type: List[str]
 
             class AXIS(SCPINode):
                 """
@@ -24729,7 +24730,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AXIS"
-                args = []
+                args = []  # type: List[str]
 
                 class FREQuency(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -24742,7 +24743,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FREQuency"
                     args = ["'string'"]
 
-                FREQuency = FREQuency()
+                FREQuency = FREQuency()  # type: ignore
                 """
                 `SENSe:SWEep:AXIS:FREQuency
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8416b68505d74b1f.htm#ID_5571db31faaa18360a00206a01d696e2-91a48f48faaa12690a00206a01a6673d-en-US>`_
@@ -24761,7 +24762,7 @@ class ZNB_gen(Instrument):
                     _cmd = "POWer"
                     args = ["'string'"]
 
-                POWer = POWer()
+                POWer = POWer()  # type: ignore
                 """
                 `SENSe:SWEep:AXIS:POWer
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cfd456caf566495d.htm#ID_a33dcc53faaa1fb80a00206a016ce603-ccb15a96faaa1a2a0a00206a01a6673d-en-US>`_
@@ -24769,7 +24770,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            AXIS = AXIS()
+            AXIS = AXIS()  # type: ignore
             """
             SENSe:SWEep:AXIS
 
@@ -24798,7 +24799,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ALL"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `SENSe:SWEep:COUNt:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dcaaa04681474162.htm#ID_b22fd8a02b98b6df0a00206a00b47198-7af948622b98af1e0a00206a0020d3a0-en-US>`_
@@ -24806,7 +24807,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `SENSe:SWEep:COUNt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5cb1268b17f34710.htm#ID_16e99ab0faaa27490a00206a008e95d3-fd50d4b6faaa21ac0a00206a01a6673d-en-US>`_
@@ -24822,7 +24823,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DETector"
-                args = []
+                args = []  # type: List[str]
 
                 class TIME(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -24835,7 +24836,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TIME"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                TIME = TIME()
+                TIME = TIME()  # type: ignore
                 """
                 `SENSe:SWEep:DETector:TIME
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5e638bbfd9ca4218.htm#ID_6bf27c90faaa2efa0a00206a00bbbd04-fe2114b5faaa294d0a00206a01a6673d-en-US>`_
@@ -24843,7 +24844,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            DETector = DETector()
+            DETector = DETector()  # type: ignore
             """
             SENSe:SWEep:DETector
 
@@ -24872,7 +24873,7 @@ class ZNB_gen(Instrument):
                     _cmd = "IPOint"
                     args = ["ALL", "FIRSt"]
 
-                IPOint = IPOint()
+                IPOint = IPOint()  # type: ignore
                 """
                 `SENSe:SWEep:DWELl:IPOint
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8e067eefd1e34640.htm#ID_030aed4fbba8fcb80a00201901c6f0bf-a6d51bb2bba8fb7f0a0020190170f726-en-US>`_
@@ -24880,7 +24881,7 @@ class ZNB_gen(Instrument):
                 Arguments: ALL, FIRSt
                 """
 
-            DWELl = DWELl()
+            DWELl = DWELl()  # type: ignore
             """
             `SENSe:SWEep:DWELl
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/48bb45e33ab64490.htm#ID_c04c664efaaa36ca0a00206a01e7ac36-1d281f10faaa30de0a00206a01a6673d-en-US>`_
@@ -24907,7 +24908,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ANALog"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CONDition(SCPINode, SCPIQuery):
                         """
@@ -24918,9 +24919,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONDition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CONDition = CONDition()
+                    CONDition = CONDition()  # type: ignore
                     """
                     `SENSe:SWEep:GENeration:ANALog:CONDition
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c804742dafba418c.htm#ID_4422091acf9397d90a001ae74b49912d-26ef356bcf9395580a001ae7061b2cf6-en-US>`_
@@ -24928,14 +24929,14 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                ANALog = ANALog()
+                ANALog = ANALog()  # type: ignore
                 """
                 SENSe:SWEep:GENeration:ANALog
 
                 Arguments:
                 """
 
-            GENeration = GENeration()
+            GENeration = GENeration()  # type: ignore
             """
             `SENSe:SWEep:GENeration
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2298b3dd1e844065.htm#ID_7ee8413cfaaa3e5b0a00206a00e2e4dc-8f0aff4cfaaa389e0a00206a01a6673d-en-US>`_
@@ -24953,7 +24954,7 @@ class ZNB_gen(Instrument):
                 _cmd = "MODE"
                 args = ["CONTinuous", "HOLD"]
 
-            MODE = MODE()
+            MODE = MODE()  # type: ignore
             """
             SENSe:SWEep:MODE
 
@@ -24971,7 +24972,7 @@ class ZNB_gen(Instrument):
                 _cmd = "POINts"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            POINts = POINts()
+            POINts = POINts()  # type: ignore
             """
             `SENSe:SWEep:POINts
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/68b77d9828354b78.htm#ID_eaf7e123faaa4d8e0a00206a00265a51-df944ab9faaa47d10a00206a01a6673d-en-US>`_
@@ -24990,7 +24991,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SPACing"
                 args = ["LINear", "LOGarithmic"]
 
-            SPACing = SPACing()
+            SPACing = SPACing()  # type: ignore
             """
             `SENSe:SWEep:SPACing
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f3498d3b009e4326.htm#ID_fcf6483afaaa553e0a00206a0166926c-c3423ddbfaaa4f820a00206a01a6673d-en-US>`_
@@ -25009,7 +25010,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SRCPort"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            SRCPort = SRCPort()
+            SRCPort = SRCPort()  # type: ignore
             """
             `SENSe:SWEep:SRCPort
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/31cb07b38fbe4454.htm#ID_06884359faaa9a270a00206a01493bc8-eb083f47faaa944b0a00206a01a6673d-en-US>`_
@@ -25028,7 +25029,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STEP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            STEP = STEP()
+            STEP = STEP()  # type: ignore
             """
             `SENSe:SWEep:STEP
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6958d4fb3c5642a2.htm#ID_34eced8ffaaa5cef0a00206a0034523e-8bc6b624faaa57520a00206a01a6673d-en-US>`_
@@ -25058,7 +25059,7 @@ class ZNB_gen(Instrument):
                     _cmd = "AUTO"
                     args = ["1", "OFF", "ON"]
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 `SENSe:SWEep:TIME:AUTO
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4e1073e7fde645a8.htm#ID_7134b8a5faaa6c310a00206a002ca1b5-cd3732cffaaa66650a00206a01a6673d-en-US>`_
@@ -25066,7 +25067,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            TIME = TIME()
+            TIME = TIME()  # type: ignore
             """
             `SENSe:SWEep:TIME
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8227ae4383e449fe.htm#ID_68a69f3cfaaa64810a00206a010d0e5b-25292a32faaa5ee30a00206a01a6673d-en-US>`_
@@ -25082,7 +25083,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TRIGger"
-                args = []
+                args = []  # type: List[str]
 
                 class DELay(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -25094,7 +25095,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DELay = DELay()
+                DELay = DELay()  # type: ignore
                 """
                 SENSe:SWEep:TRIGger:DELay
 
@@ -25111,14 +25112,14 @@ class ZNB_gen(Instrument):
                     _cmd = "MODE"
                     args = ["CHANnel", "POINt", "SWEep", "TRACe"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 SENSe:SWEep:TRIGger:MODE
 
                 Arguments: CHANnel, POINt, SWEep, TRACe
                 """
 
-            TRIGger = TRIGger()
+            TRIGger = TRIGger()  # type: ignore
             """
             SENSe:SWEep:TRIGger
 
@@ -25136,7 +25137,7 @@ class ZNB_gen(Instrument):
                 _cmd = "TYPE"
                 args = ["CW", "LINear", "LOGarithmic", "POINt", "POWer", "SEGMent"]
 
-            TYPE = TYPE()
+            TYPE = TYPE()  # type: ignore
             """
             `SENSe:SWEep:TYPE
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/3092cc2858af4096.htm#ID_b8dccd81faaa73d30a00206a018614c7-c134571ffaaa6e060a00206a01a6673d-en-US>`_
@@ -25144,7 +25145,7 @@ class ZNB_gen(Instrument):
             Arguments: CW, LINear, LOGarithmic, POINt, POWer, SEGMent
             """
 
-        SWEep = SWEep()
+        SWEep = SWEep()  # type: ignore
         """
         SENSe:SWEep
 
@@ -25159,7 +25160,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "UDSParams"
-            args = []
+            args = []  # type: List[str]
 
             class ACTive(SCPINode, SCPIBool):
                 """
@@ -25172,7 +25173,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ACTive"
                 args = ["1", "OFF", "ON"]
 
-            ACTive = ACTive()
+            ACTive = ACTive()  # type: ignore
             """
             `SENSe:UDSParams:ACTive
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6648d86a94534c05.htm#ID_98fbfd15842ed63e0a002019008f7696-77db25eb842ed4c70a00201901936165-en-US>`_
@@ -25191,7 +25192,7 @@ class ZNB_gen(Instrument):
                 _cmd = "PARam"
                 args = ["'string'"]
 
-            PARam = PARam()
+            PARam = PARam()  # type: ignore
             """
             `SENSe:UDSParams:PARam
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9862134a154b4fea.htm#ID_6e316dbd842ed8610a002019005592c6-0069e2d3842ed6db0a00201901936165-en-US>`_
@@ -25199,14 +25200,14 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        UDSParams = UDSParams()
+        UDSParams = UDSParams()  # type: ignore
         """
         SENSe:UDSParams
 
         Arguments:
         """
 
-    SENSe = SENSe()
+    SENSe = SENSe()  # type: ignore
     """
     SENSe
 
@@ -25221,7 +25222,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SOURce"
-        args = []
+        args = []  # type: List[str]
 
         class FREQuency(SCPINodeN, SCPIQuery, SCPISet):
             """
@@ -25241,7 +25242,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONVersion"
-                args = []
+                args = []  # type: List[str]
 
                 class ARBitrary(SCPINode):
                     """
@@ -25251,7 +25252,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "ARBitrary"
-                    args = []
+                    args = []  # type: List[str]
 
                     class EFRequency(SCPINodeN, SCPIBool):
                         """
@@ -25264,7 +25265,7 @@ class ZNB_gen(Instrument):
                         _cmd = "EFRequency"
                         args = ["1", "OFF", "ON"]
 
-                    EFRequency = EFRequency()
+                    EFRequency = EFRequency()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:ARBitrary:EFRequency
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/323c75e925bb4524.htm#ID_b7a0eff3faaad3090a00206a0048d9a3-8f628099faaaccb00a00206a01a6673d-en-US>`_
@@ -25283,7 +25284,7 @@ class ZNB_gen(Instrument):
                         _cmd = "IFRequency"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    IFRequency = IFRequency()
+                    IFRequency = IFRequency()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:ARBitrary:IFRequency
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/59b39faac9d34290.htm#ID_f158a498faaadb850a00206a016d54a1-dca8927efaaad52c0a00206a01a6673d-en-US>`_
@@ -25291,7 +25292,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                ARBitrary = ARBitrary()
+                ARBitrary = ARBitrary()  # type: ignore
                 """
                 SOURce:FREQuency:CONVersion:ARBitrary
 
@@ -25306,7 +25307,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MIXer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class FUNDamental(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -25318,7 +25319,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FUNDamental"
                         args = ["LO", "RF"]
 
-                    FUNDamental = FUNDamental()
+                    FUNDamental = FUNDamental()  # type: ignore
                     """
                     SOURce:FREQuency:CONVersion:MIXer:FUNDamental
 
@@ -25335,7 +25336,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PFIXed"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PFIXed = PFIXed()
+                    PFIXed = PFIXed()  # type: ignore
                     """
                     SOURce:FREQuency:CONVersion:MIXer:PFIXed
 
@@ -25353,7 +25354,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PMFixed"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
-                    PMFixed = PMFixed()
+                    PMFixed = PMFixed()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:MIXer:PMFixed
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/90e5b7d03ba1419a.htm#ID_dcd270fcaaa8bb350a00206a006b2206-a481c9f8aaa8b0870a00206a00dee6b8-en-US>`_
@@ -25372,7 +25373,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PMODe"
                         args = ["IF", "LO", "LO1", "LO2", "RF"]
 
-                    PMODe = PMODe()
+                    PMODe = PMODe()  # type: ignore
                     """
                     `SOURce:FREQuency:CONVersion:MIXer:PMODe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6abc6f3ee12a4a89.htm#ID_eca305c5aaa8c8740a00206a010fb1c0-7aa0a2dfaaa8be420a00206a00dee6b8-en-US>`_
@@ -25380,14 +25381,14 @@ class ZNB_gen(Instrument):
                     Arguments: IF, LO, LO1, LO2, RF
                     """
 
-                MIXer = MIXer()
+                MIXer = MIXer()  # type: ignore
                 """
                 SOURce:FREQuency:CONVersion:MIXer
 
                 Arguments:
                 """
 
-            CONVersion = CONVersion()
+            CONVersion = CONVersion()  # type: ignore
             """
             SOURce:FREQuency:CONVersion
 
@@ -25405,7 +25406,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CW"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            CW = CW()
+            CW = CW()  # type: ignore
             """
             `SOURce:FREQuency:CW
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a3c66d1239f142f9.htm#ID_6590a713faaafaa60a00206a01616355-b65bc797faaaf4f90a00206a01a6673d-en-US>`_
@@ -25424,7 +25425,7 @@ class ZNB_gen(Instrument):
                 _cmd = "FIXed"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            FIXed = FIXed()
+            FIXed = FIXed()  # type: ignore
             """
             `SOURce:FREQuency:FIXed
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a3c66d1239f142f9.htm#ID_a7452765faaaf3240a00206a011db4aa-5fe941c7faaaed670a00206a01a6673d-en-US>`_
@@ -25432,7 +25433,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         SOURce:FREQuency
 
@@ -25461,7 +25462,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CLEar"
                 args = ["ALL"]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             `SOURce:GROup:CLEar
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/12c2fec8bb4c4781.htm#ID_ef09d686faab099a0a00206a01cdc798-26f736eafaab03fc0a00206a01a6673d-en-US>`_
@@ -25478,9 +25479,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "COUNt"
-                args = []
+                args = []  # type: List[str]
 
-            COUNt = COUNt()
+            COUNt = COUNt()  # type: ignore
             """
             `SOURce:GROup:COUNt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/08e95afdda7f45ce.htm#ID_fdf34ed4faab110c0a00206a00d13624-44e4ccb9faab0b6f0a00206a01a6673d-en-US>`_
@@ -25496,7 +25497,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DPORt"
-                args = []
+                args = []  # type: List[str]
 
                 class COUNt(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -25509,7 +25510,7 @@ class ZNB_gen(Instrument):
                     _cmd = "COUNt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                COUNt = COUNt()
+                COUNt = COUNt()  # type: ignore
                 """
                 `SOURce:GROup:DPORt:COUNt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f23e4eb88b3d40cb.htm#ID_d643aadd4f3002f00a001ae721324d54-2c3bec494f30011b0a001ae7211c9327-en-US>`_
@@ -25517,7 +25518,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            DPORt = DPORt()
+            DPORt = DPORt()  # type: ignore
             """
             SOURce:GROup:DPORt
 
@@ -25535,7 +25536,7 @@ class ZNB_gen(Instrument):
                 _cmd = "NAME"
                 args = ["'string'"]
 
-            NAME = NAME()
+            NAME = NAME()  # type: ignore
             """
             `SOURce:GROup:NAME
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dc3c54b22c6c4d29.htm#ID_46aebfb54f3005320a001ae7202c9a7a-48b729ec4f3003bb0a001ae7211c9327-en-US>`_
@@ -25554,7 +25555,7 @@ class ZNB_gen(Instrument):
                 _cmd = "PORDer"
                 args = ["'string'"]
 
-            PORDer = PORDer()
+            PORDer = PORDer()  # type: ignore
             """
             `SOURce:GROup:PORDer
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8bb14661984542c4.htm#ID_4350a1c542b09baa0a001ae76aa5c44f-d807389542b09a420a001ae769a5b4da-en-US>`_
@@ -25573,7 +25574,7 @@ class ZNB_gen(Instrument):
                 _cmd = "PORTs"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            PORTs = PORTs()
+            PORTs = PORTs()  # type: ignore
             """
             `SOURce:GROup:PORTs
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0ce89bb991c34110.htm#ID_7894c65cfaab18ad0a00206a0114eedb-ffa24f1afaab12f00a00206a01a6673d-en-US>`_
@@ -25589,7 +25590,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "PPORt"
-                args = []
+                args = []  # type: List[str]
 
                 class DPORt(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -25602,7 +25603,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DPORt"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DPORt = DPORt()
+                DPORt = DPORt()  # type: ignore
                 """
                 `SOURce:GROup:PPORt:DPORt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ca2c99de38a3435c.htm#ID_f929baf84f3008010a001ae7392085da-ccb6ff8f4f30065b0a001ae7211c9327-en-US>`_
@@ -25610,7 +25611,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            PPORt = PPORt()
+            PPORt = PPORt()  # type: ignore
             """
             SOURce:GROup:PPORt
 
@@ -25628,7 +25629,7 @@ class ZNB_gen(Instrument):
                 _cmd = "PPORts"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            PPORts = PPORts()
+            PPORts = PPORts()  # type: ignore
             """
             `SOURce:GROup:PPORts
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/64383fd17c2f4ab3.htm#ID_103793c84f300aef0a001ae70a6fae59-1dd2cbc84f93c6540a001ae7068aeca9-en-US>`_
@@ -25644,7 +25645,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SIMultaneous"
-                args = []
+                args = []  # type: List[str]
 
                 class FOFFset(SCPINode):
                     """
@@ -25654,7 +25655,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "FOFFset"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CONDition(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -25665,9 +25666,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONDition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CONDition = CONDition()
+                    CONDition = CONDition()  # type: ignore
                     """
                     `SOURce:GROup:SIMultaneous:FOFFset:CONDition
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1b6cecbf09ac48a2.htm#ID_6677f2c5f72899280a001ae7416d538d-ddecae76f72897730a001ae743c5d16b-en-US>`_
@@ -25683,7 +25684,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "MOFFset"
-                        args = []
+                        args = []  # type: List[str]
 
                         class BWFactor(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -25696,7 +25697,7 @@ class ZNB_gen(Instrument):
                             _cmd = "BWFactor"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        BWFactor = BWFactor()
+                        BWFactor = BWFactor()  # type: ignore
                         """
                         `SOURce:GROup:SIMultaneous:FOFFset:MOFFset:BWFactor
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ce7864aa9d144bfd.htm#ID_5d682b89f7289c160a001ae74facad20-13412b41f7289a130a001ae743c5d16b-en-US>`_
@@ -25715,7 +25716,7 @@ class ZNB_gen(Instrument):
                             _cmd = "DVALue"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        DVALue = DVALue()
+                        DVALue = DVALue()  # type: ignore
                         """
                         `SOURce:GROup:SIMultaneous:FOFFset:MOFFset:DVALue
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c51184c526f44c54.htm#ID_90c896a2f7289ec60a001ae70134d207-eeacc11bf7289cd20a001ae743c5d16b-en-US>`_
@@ -25734,7 +25735,7 @@ class ZNB_gen(Instrument):
                             _cmd = "MODE"
                             args = ["BANDwidth", "DIRect"]
 
-                        MODE = MODE()
+                        MODE = MODE()  # type: ignore
                         """
                         `SOURce:GROup:SIMultaneous:FOFFset:MOFFset:MODE
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2645ca2926bf4b9d.htm#ID_e1280075f728a29e0a001ae70b3b58c9-ddf54056f7289ffe0a001ae743c5d16b-en-US>`_
@@ -25742,7 +25743,7 @@ class ZNB_gen(Instrument):
                         Arguments: BANDwidth, DIRect
                         """
 
-                    MOFFset = MOFFset()
+                    MOFFset = MOFFset()  # type: ignore
                     """
                     SOURce:GROup:SIMultaneous:FOFFset:MOFFset
 
@@ -25760,7 +25761,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:GROup:SIMultaneous:FOFFset:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2878dd518aae4b66.htm#ID_8e29ec05f728a6a50a001ae76efa6673-4d24d4f7f728a3e60a001ae743c5d16b-en-US>`_
@@ -25768,21 +25769,21 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                FOFFset = FOFFset()
+                FOFFset = FOFFset()  # type: ignore
                 """
                 SOURce:GROup:SIMultaneous:FOFFset
 
                 Arguments:
                 """
 
-            SIMultaneous = SIMultaneous()
+            SIMultaneous = SIMultaneous()  # type: ignore
             """
             SOURce:GROup:SIMultaneous
 
             Arguments:
             """
 
-        GROup = GROup()
+        GROup = GROup()  # type: ignore
         """
         `SOURce:GROup
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fc145e54206141d3.htm#ID_57d9bdd7faab02280a00206a004a8d5f-d5e97631faaafc8a0a00206a01a6673d-en-US>`_
@@ -25812,7 +25813,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CLEar"
                 args = ["ALL"]
 
-            CLEar = CLEar()
+            CLEar = CLEar()  # type: ignore
             """
             `SOURce:LPORt:CLEar
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e2064f162cff4458.htm#ID_f7c17f6bfaab27a10a00206a00d8e015-8f1450e1faab22040a00206a01a6673d-en-US>`_
@@ -25820,7 +25821,7 @@ class ZNB_gen(Instrument):
             Arguments: ALL
             """
 
-        LPORt = LPORt()
+        LPORt = LPORt()  # type: ignore
         """
         `SOURce:LPORt
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/49f764b18ad748ff.htm#ID_45afb15efaab202f0a00206a00ad1683-d5ab93aafaab1a910a00206a01a6673d-en-US>`_
@@ -25846,7 +25847,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALC"
-                args = []
+                args = []  # type: List[str]
 
                 class MODE(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -25858,7 +25859,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MODE"
                     args = ["AUTO", "BBANd", "OFF", "SBANd"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 SOURce:POWer:ALC:MODE
 
@@ -25875,14 +25876,14 @@ class ZNB_gen(Instrument):
                     _cmd = "SVARiable"
                     args = ["AWAVe", "BWAVe", "SFK"]
 
-                SVARiable = SVARiable()
+                SVARiable = SVARiable()  # type: ignore
                 """
                 SOURce:POWer:ALC:SVARiable
 
                 Arguments: AWAVe, BWAVe, SFK
                 """
 
-            ALC = ALC()
+            ALC = ALC()  # type: ignore
             """
             SOURce:POWer:ALC
 
@@ -25909,14 +25910,14 @@ class ZNB_gen(Instrument):
                     _cmd = "AUTO"
                     args = ["1", "OFF", "ON"]
 
-                AUTO = AUTO()
+                AUTO = AUTO()  # type: ignore
                 """
                 SOURce:POWer:ATTenuation:AUTO
 
                 Arguments: 1, OFF, ON
                 """
 
-            ATTenuation = ATTenuation()
+            ATTenuation = ATTenuation()  # type: ignore
             """
             SOURce:POWer:ATTenuation
 
@@ -25952,7 +25953,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "VERification"
-                        args = []
+                        args = []  # type: List[str]
 
                         class RESult(SCPINode, SCPIQuery):
                             """
@@ -25963,9 +25964,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "RESult"
-                            args = []
+                            args = []  # type: List[str]
 
-                        RESult = RESult()
+                        RESult = RESult()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:ACQuire:VERification:RESult
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0467fd8923a74a33.htm#ID_10e7870afaae66ac0a00206a002942b3-138b97a9faae611f0a00206a01a6673d-en-US>`_
@@ -25973,14 +25974,14 @@ class ZNB_gen(Instrument):
                         Arguments:
                         """
 
-                    VERification = VERification()
+                    VERification = VERification()  # type: ignore
                     """
                     SOURce:POWer:CORRection:ACQuire:VERification
 
                     Arguments:
                     """
 
-                ACQuire = ACQuire()
+                ACQuire = ACQuire()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:ACQuire
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d611f3410d13473b.htm#ID_5975972bfaae5f3a0a00206a00433247-c9b39da2faae596e0a00206a01a6673d-en-US>`_
@@ -26029,21 +26030,21 @@ class ZNB_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             SOURce:POWer:CORRection:COLLect:ACQuire:VERification:STATe
 
                             Arguments: 1, OFF, ON
                             """
 
-                        VERification = VERification()
+                        VERification = VERification()  # type: ignore
                         """
                         SOURce:POWer:CORRection:COLLect:ACQuire:VERification
 
                         Arguments: 1, OFF, ON
                         """
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:COLLect:ACQuire
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/62891a00782d4b17.htm#ID_e8b93b83faadd71f0a00206a01d443f7-be19ecfffaadd1910a00206a01a6673d-en-US>`_
@@ -26072,7 +26073,7 @@ class ZNB_gen(Instrument):
                             _cmd = "COUNt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        COUNt = COUNt()
+                        COUNt = COUNt()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:COLLect:AVERage:COUNt
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f67677c7002d4509.htm#ID_bf5b43d3faadaa520a00206a01a628d2-72b9973ffaada4b50a00206a01a6673d-en-US>`_
@@ -26091,7 +26092,7 @@ class ZNB_gen(Instrument):
                             _cmd = "NTOLerance"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        NTOLerance = NTOLerance()
+                        NTOLerance = NTOLerance()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:COLLect:AVERage:NTOLerance
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/84fccbafdbda4d27.htm#ID_d92c259efaada2e00a00206a00f34412-cabca395faad9d430a00206a01a6673d-en-US>`_
@@ -26099,7 +26100,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    AVERage = AVERage()
+                    AVERage = AVERage()  # type: ignore
                     """
                     SOURce:POWer:CORRection:COLLect:AVERage
 
@@ -26117,7 +26118,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CFACtor"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    CFACtor = CFACtor()
+                    CFACtor = CFACtor()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:COLLect:CFACtor
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bd429ac245854fce.htm#ID_68824478faadb1d40a00206a00475d07-e8b2b329faadac370a00206a01a6673d-en-US>`_
@@ -26135,7 +26136,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FLATness"
                         args = ["1", "OFF", "ON"]
 
-                    FLATness = FLATness()
+                    FLATness = FLATness()  # type: ignore
                     """
                     SOURce:POWer:CORRection:COLLect:FLATness
 
@@ -26152,7 +26153,7 @@ class ZNB_gen(Instrument):
                         _cmd = "METHod"
                         args = ["PMONly", "RRAFter", "RRONly"]
 
-                    METHod = METHod()
+                    METHod = METHod()  # type: ignore
                     """
                     SOURce:POWer:CORRection:COLLect:METHod
 
@@ -26169,7 +26170,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PMReadings"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    PMReadings = PMReadings()
+                    PMReadings = PMReadings()  # type: ignore
                     """
                     SOURce:POWer:CORRection:COLLect:PMReadings
 
@@ -26186,14 +26187,14 @@ class ZNB_gen(Instrument):
                         _cmd = "RRECeiver"
                         args = ["1", "OFF", "ON"]
 
-                    RRECeiver = RRECeiver()
+                    RRECeiver = RRECeiver()  # type: ignore
                     """
                     SOURce:POWer:CORRection:COLLect:RRECeiver
 
                     Arguments: 1, OFF, ON
                     """
 
-                COLLect = COLLect()
+                COLLect = COLLect()  # type: ignore
                 """
                 SOURce:POWer:CORRection:COLLect
 
@@ -26231,9 +26232,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "COUNt"
-                            args = []
+                            args = []  # type: List[str]
 
-                        COUNt = COUNt()
+                        COUNt = COUNt()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:DATA:PARameter:COUNt
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0a721461bb424f11.htm#ID_09e9ca8be2b5015c0a00201900f8311e-9e62e375e2b500240a002019017b841c-en-US>`_
@@ -26241,7 +26242,7 @@ class ZNB_gen(Instrument):
                         Arguments:
                         """
 
-                    PARameter = PARameter()
+                    PARameter = PARameter()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:DATA:PARameter
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5e0229cc7b574769.htm#ID_8e7c1329e2b4ffc60a002019006b50ba-25446696e2b4fe8d0a002019017b841c-en-US>`_
@@ -26260,7 +26261,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PORT"
                         args = ["'string'"]
 
-                    PORT = PORT()
+                    PORT = PORT()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:DATA:PORT
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dc49fa70aee94a6e.htm#ID_a272ee70351562700a00206a00303ef7-9a74021135155b2c0a00206a01f2dc17-en-US>`_
@@ -26268,7 +26269,7 @@ class ZNB_gen(Instrument):
                     Arguments: 'string'
                     """
 
-                DATA = DATA()
+                DATA = DATA()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:DATA
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dc49fa70aee94a6e.htm#ID_b9bdd113faade6230a00206a0169b185-c18fca3afaade0660a00206a01a6673d-en-US>`_
@@ -26286,7 +26287,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DEFault"
                     args = ["1", "OFF", "ON"]
 
-                DEFault = DEFault()
+                DEFault = DEFault()  # type: ignore
                 """
                 SOURce:POWer:CORRection:DEFault
 
@@ -26303,7 +26304,7 @@ class ZNB_gen(Instrument):
                     _cmd = "FAST"
                     args = ["1", "OFF", "ON"]
 
-                FAST = FAST()
+                FAST = FAST()  # type: ignore
                 """
                 SOURce:POWer:CORRection:FAST
 
@@ -26328,7 +26329,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "LEVel"
-                        args = []
+                        args = []  # type: List[str]
 
                         class OFFSet(SCPINode, SCPIQuery, SCPISet):
                             """
@@ -26341,7 +26342,7 @@ class ZNB_gen(Instrument):
                             _cmd = "OFFSet"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        OFFSet = OFFSet()
+                        OFFSet = OFFSet()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:GENerator:LEVel:OFFSet
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0eb4b6bdcf0d4e21.htm#ID_abb96447faadfcd70a00206a018d0552-297bb390faadf6eb0a00206a01a6673d-en-US>`_
@@ -26349,7 +26350,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    LEVel = LEVel()
+                    LEVel = LEVel()  # type: ignore
                     """
                     SOURce:POWer:CORRection:GENerator:LEVel
 
@@ -26367,7 +26368,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:GENerator:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e9de207841044de6.htm#ID_fa7913e6faae04490a00206a01792c96-0729a476faadfebb0a00206a01a6673d-en-US>`_
@@ -26375,7 +26376,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                GENerator = GENerator()
+                GENerator = GENerator()  # type: ignore
                 """
                 SOURce:POWer:CORRection:GENerator
 
@@ -26390,7 +26391,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HARMonic"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ACQuire(SCPINode, SCPISet):
                         """
@@ -26400,16 +26401,16 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "ACQuire"
-                        args = []
+                        args = []  # type: List[str]
 
-                    ACQuire = ACQuire()
+                    ACQuire = ACQuire()  # type: ignore
                     """
                     SOURce:POWer:CORRection:HARMonic:ACQuire
 
                     Arguments:
                     """
 
-                HARMonic = HARMonic()
+                HARMonic = HARMonic()  # type: ignore
                 """
                 SOURce:POWer:CORRection:HARMonic
 
@@ -26424,7 +26425,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "IMODulation"
-                    args = []
+                    args = []  # type: List[str]
 
                     class LTONe(SCPINode, SCPISet):
                         """
@@ -26434,7 +26435,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "LTONe"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -26445,9 +26446,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:IMODulation:LTONe:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d3ff622b7a56411d.htm#ID_bb03f965faae136c0a00206a00c59a89-d9aa326efaae0da00a00206a01a6673d-en-US>`_
@@ -26455,7 +26456,7 @@ class ZNB_gen(Instrument):
                         Arguments:
                         """
 
-                    LTONe = LTONe()
+                    LTONe = LTONe()  # type: ignore
                     """
                     SOURce:POWer:CORRection:IMODulation:LTONe
 
@@ -26473,7 +26474,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PORT"
                         args = ["'string'"]
 
-                    PORT = PORT()
+                    PORT = PORT()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:IMODulation:PORT
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/41a0d5a57dba437b.htm#ID_2248f3c0bba91b3d0a00201900e05938-b5e967b0bba91a140a0020190170f726-en-US>`_
@@ -26489,7 +26490,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "UTONe"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -26500,9 +26501,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:IMODulation:UTONe:ACQuire
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5d8d28cae0ee4ec7.htm#ID_4887b100faae1ade0a00206a01623c15-4f33d57bfaae15410a00206a01a6673d-en-US>`_
@@ -26510,14 +26511,14 @@ class ZNB_gen(Instrument):
                         Arguments:
                         """
 
-                    UTONe = UTONe()
+                    UTONe = UTONe()  # type: ignore
                     """
                     SOURce:POWer:CORRection:IMODulation:UTONe
 
                     Arguments:
                     """
 
-                IMODulation = IMODulation()
+                IMODulation = IMODulation()  # type: ignore
                 """
                 SOURce:POWer:CORRection:IMODulation
 
@@ -26532,7 +26533,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "LEVel"
-                    args = []
+                    args = []  # type: List[str]
 
                     class OFFSet(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -26545,7 +26546,7 @@ class ZNB_gen(Instrument):
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    OFFSet = OFFSet()
+                    OFFSet = OFFSet()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:LEVel:OFFSet
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/25ace39a40ac49b1.htm#ID_00e3bf8afaae22800a00206a00b4aa09-059f33b0faae1cb30a00206a01a6673d-en-US>`_
@@ -26553,7 +26554,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                LEVel = LEVel()
+                LEVel = LEVel()  # type: ignore
                 """
                 SOURce:POWer:CORRection:LEVel
 
@@ -26568,7 +26569,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "MIXer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class IF(SCPINode, SCPISet):
                         """
@@ -26578,7 +26579,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "IF"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -26588,16 +26589,16 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         SOURce:POWer:CORRection:MIXer:IF:ACQuire
 
                         Arguments:
                         """
 
-                    IF = IF()
+                    IF = IF()  # type: ignore
                     """
                     SOURce:POWer:CORRection:MIXer:IF
 
@@ -26612,7 +26613,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "LO"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -26622,16 +26623,16 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         SOURce:POWer:CORRection:MIXer:LO:ACQuire
 
                         Arguments:
                         """
 
-                    LO = LO()
+                    LO = LO()  # type: ignore
                     """
                     SOURce:POWer:CORRection:MIXer:LO
 
@@ -26646,7 +26647,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "RF"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ACQuire(SCPINode, SCPISet):
                             """
@@ -26656,23 +26657,23 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ACQuire"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ACQuire = ACQuire()
+                        ACQuire = ACQuire()  # type: ignore
                         """
                         SOURce:POWer:CORRection:MIXer:RF:ACQuire
 
                         Arguments:
                         """
 
-                    RF = RF()
+                    RF = RF()  # type: ignore
                     """
                     SOURce:POWer:CORRection:MIXer:RF
 
                     Arguments:
                     """
 
-                MIXer = MIXer()
+                MIXer = MIXer()  # type: ignore
                 """
                 SOURce:POWer:CORRection:MIXer
 
@@ -26690,7 +26691,7 @@ class ZNB_gen(Instrument):
                     _cmd = "NREadings"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                NREadings = NREadings()
+                NREadings = NREadings()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:NREadings
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0ca09ffe643247a6.htm#ID_dec18885faae40580a00206a016a7cf9-b9a1534efaae3aca0a00206a01a6673d-en-US>`_
@@ -26719,7 +26720,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:OSOurces:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9d8512972ee64ae5.htm#ID_3b3d0ddbfaae47f90a00206a018e9655-fcf684aefaae424c0a00206a01a6673d-en-US>`_
@@ -26727,7 +26728,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                OSOurces = OSOurces()
+                OSOurces = OSOurces()  # type: ignore
                 """
                 SOURce:POWer:CORRection:OSOurces
 
@@ -26742,7 +26743,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PMETer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ID(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -26755,7 +26756,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ID"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    ID = ID()
+                    ID = ID()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:PMETer:ID
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/06787bd65aca481f.htm#ID_718458d9faae4fd90a00206a014851d1-3e93700cfaae49ce0a00206a01a6673d-en-US>`_
@@ -26763,7 +26764,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                PMETer = PMETer()
+                PMETer = PMETer()  # type: ignore
                 """
                 SOURce:POWer:CORRection:PMETer
 
@@ -26781,7 +26782,7 @@ class ZNB_gen(Instrument):
                     _cmd = "PPOWer"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                PPOWer = PPOWer()
+                PPOWer = PPOWer()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:PPOWer
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c5a8849efde0475a.htm#ID_b404743a3515a4a80a00206a014bce76-c8cda1ef351598740a00206a01f2dc17-en-US>`_
@@ -26800,7 +26801,7 @@ class ZNB_gen(Instrument):
                     _cmd = "PSELect"
                     args = ["CPOWer", "PPOWer"]
 
-                PSELect = PSELect()
+                PSELect = PSELect()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:PSELect
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/72023c98c65e447f.htm#ID_b7cb46713515b2e10a00206a00ab5074-98441fc73515aad30a00206a01f2dc17-en-US>`_
@@ -26819,7 +26820,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:POWer:CORRection:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dec754a87b374b92.htm#ID_aba4178bfaae57890a00206a00e59888-88fe3b6afaae51dc0a00206a01a6673d-en-US>`_
@@ -26848,7 +26849,7 @@ class ZNB_gen(Instrument):
                         _cmd = "CALibration"
                         args = ["1", "OFF", "ON"]
 
-                    CALibration = CALibration()
+                    CALibration = CALibration()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:CALibration
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/082d754c7e824b9e.htm#ID_ae42fb54612b11db0a00206a0127a802-26ad09a8612b05480a00206a01ed2866-en-US>`_
@@ -26865,9 +26866,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:COUNt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7467446d7bc7431b.htm#ID_173a4efd612b22460a00206a00ef257c-74e014cb612b15360a00206a01ed2866-en-US>`_
@@ -26886,7 +26887,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DEFine"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    DEFine = DEFine()
+                    DEFine = DEFine()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:DEFine
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/03d957429191480b.htm#ID_bda67605612b2f270a00206a01114ab4-aca50f20612b27470a00206a01ed2866-en-US>`_
@@ -26902,7 +26903,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DELete"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ALL(SCPINode, SCPISet):
                             """
@@ -26913,9 +26914,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ALL"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ALL = ALL()
+                        ALL = ALL()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:TCOefficient:DELete:ALL
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cf97363339154f86.htm#ID_9ef00398612b3c850a00206a00866808-d704ff41612b32340a00206a01ed2866-en-US>`_
@@ -26932,9 +26933,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "DUMMy"
-                            args = []
+                            args = []  # type: List[str]
 
-                        DUMMy = DUMMy()
+                        DUMMy = DUMMy()  # type: ignore
                         """
                         `SOURce:POWer:CORRection:TCOefficient:DELete:DUMMy
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2fbf785d99684f5f.htm#ID_f913fc5b612b483d0a00206a01410ab5-a060a1a1612b3ff00a00206a01ed2866-en-US>`_
@@ -26942,7 +26943,7 @@ class ZNB_gen(Instrument):
                         Arguments:
                         """
 
-                    DELete = DELete()
+                    DELete = DELete()  # type: ignore
                     """
                     SOURce:POWer:CORRection:TCOefficient:DELete
 
@@ -26960,7 +26961,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FEED"
                         args = ["'string'"]
 
-                    FEED = FEED()
+                    FEED = FEED()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:FEED
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7d96b4dfe19e4c9b.htm#ID_d8cc63b3612b525e0a00206a01d7a7c3-3305d9e8612b4a9e0a00206a01ed2866-en-US>`_
@@ -26979,7 +26980,7 @@ class ZNB_gen(Instrument):
                         _cmd = "INSert"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    INSert = INSert()
+                    INSert = INSert()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:INSert
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a7514edfae9d4a97.htm#ID_237311af612b5dd80a00206a003289ba-eeed4680612b558b0a00206a01ed2866-en-US>`_
@@ -26998,7 +26999,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:POWer:CORRection:TCOefficient:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2cc602d287784c4e.htm#ID_8bd9cb78612b69510a00206a01eabac8-91600e8e612b60870a00206a01ed2866-en-US>`_
@@ -27006,14 +27007,14 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                TCOefficient = TCOefficient()
+                TCOefficient = TCOefficient()  # type: ignore
                 """
                 SOURce:POWer:CORRection:TCOefficient
 
                 Arguments: 1, OFF, ON
                 """
 
-            CORRection = CORRection()
+            CORRection = CORRection()  # type: ignore
             """
             SOURce:POWer:CORRection
 
@@ -27030,7 +27031,7 @@ class ZNB_gen(Instrument):
                 _cmd = "COUPle"
                 args = ["1", "OFF", "ON"]
 
-            COUPle = COUPle()
+            COUPle = COUPle()  # type: ignore
             """
             SOURce:POWer:COUPle
 
@@ -27045,7 +27046,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "GENerator"
-                args = []
+                args = []  # type: List[str]
 
                 class LLIMit(SCPINode, SCPIBool):
                     """
@@ -27067,7 +27068,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     SOURce:POWer:GENerator:LLIMit:STATe
 
@@ -27084,14 +27085,14 @@ class ZNB_gen(Instrument):
                         _cmd = "VALue"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    VALue = VALue()
+                    VALue = VALue()  # type: ignore
                     """
                     SOURce:POWer:GENerator:LLIMit:VALue
 
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                LLIMit = LLIMit()
+                LLIMit = LLIMit()  # type: ignore
                 """
                 SOURce:POWer:GENerator:LLIMit
 
@@ -27109,7 +27110,7 @@ class ZNB_gen(Instrument):
                     _cmd = "OFFSet"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                OFFSet = OFFSet()
+                OFFSet = OFFSet()  # type: ignore
                 """
                 `SOURce:POWer:GENerator:OFFSet
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bf9688b40fbb4ac9.htm#ID_117aa5bafaae857f0a00206a002f271a-e6a66decfaae7fb30a00206a01a6673d-en-US>`_
@@ -27138,7 +27139,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SOURce:POWer:GENerator:PERManent:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/29150ecf191b40c9.htm#ID_11c0b55efaae8d9d0a00206a01b64dae-cda894d1faae87730a00206a01a6673d-en-US>`_
@@ -27146,7 +27147,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                PERManent = PERManent()
+                PERManent = PERManent()  # type: ignore
                 """
                 SOURce:POWer:GENerator:PERManent
 
@@ -27164,7 +27165,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:POWer:GENerator:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2b2ef3243ae24a58.htm#ID_0269c345faae950f0a00206a011daa70-fee7be52faae8f810a00206a01a6673d-en-US>`_
@@ -27172,7 +27173,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            GENerator = GENerator()
+            GENerator = GENerator()  # type: ignore
             """
             SOURce:POWer:GENerator
 
@@ -27210,7 +27211,7 @@ class ZNB_gen(Instrument):
                         _cmd = "AMPLitude"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    AMPLitude = AMPLitude()
+                    AMPLitude = AMPLitude()  # type: ignore
                     """
                     `SOURce:POWer:LEVel:IMMediate:AMPLitude
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cb0449cb743f4614.htm#ID_d19e984efaaef0ac0a00206a0031e7ac-96acb6e3faaeeb1e0a00206a01a6673d-en-US>`_
@@ -27238,7 +27239,7 @@ class ZNB_gen(Instrument):
                             _cmd = "DGRaccess"
                             args = ["1", "OFF", "ON"]
 
-                        DGRaccess = DGRaccess()
+                        DGRaccess = DGRaccess()  # type: ignore
                         """
                         SOURce:POWer:LEVel:IMMediate:LLIMit:DGRaccess
 
@@ -27255,7 +27256,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         SOURce:POWer:LEVel:IMMediate:LLIMit:STATe
 
@@ -27272,14 +27273,14 @@ class ZNB_gen(Instrument):
                             _cmd = "VALue"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        VALue = VALue()
+                        VALue = VALue()  # type: ignore
                         """
                         SOURce:POWer:LEVel:IMMediate:LLIMit:VALue
 
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    LLIMit = LLIMit()
+                    LLIMit = LLIMit()  # type: ignore
                     """
                     SOURce:POWer:LEVel:IMMediate:LLIMit
 
@@ -27297,7 +27298,7 @@ class ZNB_gen(Instrument):
                         _cmd = "OFFSet"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    OFFSet = OFFSet()
+                    OFFSet = OFFSet()  # type: ignore
                     """
                     `SOURce:POWer:LEVel:IMMediate:OFFSet
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d163782716654728.htm#ID_abfaa0e1faaed2b40a00206a00aa2a79-e7e8f447faaeccd80a00206a01a6673d-en-US>`_
@@ -27326,14 +27327,14 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         SOURce:POWer:LEVel:IMMediate:SLOPe:STATe
 
                         Arguments: 1, OFF, ON
                         """
 
-                    SLOPe = SLOPe()
+                    SLOPe = SLOPe()  # type: ignore
                     """
                     `SOURce:POWer:LEVel:IMMediate:SLOPe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6a3b406f0df84e3b.htm#ID_d01551b2faaee1b80a00206a0027f573-f0a6fd8cfaaedc2a0a00206a01a6673d-en-US>`_
@@ -27341,14 +27342,14 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                IMMediate = IMMediate()
+                IMMediate = IMMediate()  # type: ignore
                 """
                 SOURce:POWer:LEVel:IMMediate
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            LEVel = LEVel()
+            LEVel = LEVel()  # type: ignore
             """
             SOURce:POWer:LEVel
 
@@ -27376,7 +27377,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:POWer:PERManent:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4a52786e213a4377.htm#ID_33dd3b36faae9cc00a00206a01124b41-a709680bfaae97030a00206a01a6673d-en-US>`_
@@ -27384,7 +27385,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            PERManent = PERManent()
+            PERManent = PERManent()  # type: ignore
             """
             SOURce:POWer:PERManent
 
@@ -27412,7 +27413,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SDELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SDELay = SDELay()
+                SDELay = SDELay()  # type: ignore
                 """
                 `SOURce:POWer:REDuce:SDELay
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/76c24730662a4cc6.htm#ID_ad5bec09b7ffa5770a001ae7253f904c-2ad64f47b7ffa42e0a001ae732f546b3-en-US>`_
@@ -27431,7 +27432,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SOURce:POWer:REDuce:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/390210369fef483e.htm#ID_da2ac181b7ffa7990a001ae722723f79-9010cb6db7ffa6420a001ae732f546b3-en-US>`_
@@ -27439,7 +27440,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            REDuce = REDuce()
+            REDuce = REDuce()  # type: ignore
             """
             SOURce:POWer:REDuce
 
@@ -27457,7 +27458,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STARt"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             `SOURce:POWer:STARt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2facbd33341b4107.htm#ID_4899138ffaaea4800a00206a01efb643-73d350bafaae9ea40a00206a01a6673d-en-US>`_
@@ -27476,7 +27477,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STATe"
                 args = ["1", "OFF", "ON"]
 
-            STATe = STATe()
+            STATe = STATe()  # type: ignore
             """
             `SOURce:POWer:STATe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/64db3d3b774d43db.htm#ID_628e8e9bfaaeac210a00206a00f0e1b9-ac3408ddfaaea6550a00206a01a6673d-en-US>`_
@@ -27495,7 +27496,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STOP"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            STOP = STOP()
+            STOP = STOP()  # type: ignore
             """
             `SOURce:POWer:STOP
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2facbd33341b4107.htm#ID_f96cb7dbfaaeb4110a00206a01447348-2719bf89faaeae150a00206a01a6673d-en-US>`_
@@ -27511,7 +27512,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SWEepend"
-                args = []
+                args = []  # type: List[str]
 
                 class MODE(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -27524,7 +27525,7 @@ class ZNB_gen(Instrument):
                     _cmd = "MODE"
                     args = ["AUTO", "KEEP", "REDuce"]
 
-                MODE = MODE()
+                MODE = MODE()  # type: ignore
                 """
                 `SOURce:POWer:SWEepend:MODE
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9b72458c45a44cab.htm#ID_04ee670042b0cba40a001ae71571ea53-eeac341142b0c8f40a001ae769a5b4da-en-US>`_
@@ -27543,7 +27544,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SDELay"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                SDELay = SDELay()
+                SDELay = SDELay()  # type: ignore
                 """
                 `SOURce:POWer:SWEepend:SDELay
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0e8fcd86e44c4c30.htm#ID_60a3fe9e42b0cda70a001ae736ba83e3-ea985cc442b0cc300a001ae769a5b4da-en-US>`_
@@ -27551,14 +27552,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            SWEepend = SWEepend()
+            SWEepend = SWEepend()  # type: ignore
             """
             SOURce:POWer:SWEepend
 
             Arguments:
             """
 
-        POWer = POWer()
+        POWer = POWer()  # type: ignore
         """
         SOURce:POWer
 
@@ -27573,7 +27574,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "TDIF"
-            args = []
+            args = []  # type: List[str]
 
             class WAVes(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -27585,21 +27586,21 @@ class ZNB_gen(Instrument):
                 _cmd = "WAVes"
                 args = ["DCMode", "SENDed"]
 
-            WAVes = WAVes()
+            WAVes = WAVes()  # type: ignore
             """
             SOURce:TDIF:WAVes
 
             Arguments: DCMode, SENDed
             """
 
-        TDIF = TDIF()
+        TDIF = TDIF()  # type: ignore
         """
         SOURce:TDIF
 
         Arguments:
         """
 
-    SOURce = SOURce()
+    SOURce = SOURce()  # type: ignore
     """
     SOURce
 
@@ -27614,7 +27615,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "STATus"
-        args = []
+        args = []  # type: List[str]
 
         class OPERation(SCPINode, SCPIQuery, SCPISet):
             """
@@ -27624,7 +27625,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "OPERation"
-            args = []
+            args = []  # type: List[str]
 
             class CONDition(SCPINode, SCPIQuery):
                 """
@@ -27634,9 +27635,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONDition"
-                args = []
+                args = []  # type: List[str]
 
-            CONDition = CONDition()
+            CONDition = CONDition()  # type: ignore
             """
             STATus:OPERation:CONDition
 
@@ -27653,7 +27654,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ENABle"
                 args = ["1"]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             STATus:OPERation:ENABle
 
@@ -27668,9 +27669,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EVENt"
-                args = []
+                args = []  # type: List[str]
 
-            EVENt = EVENt()
+            EVENt = EVENt()  # type: ignore
             """
             STATus:OPERation:EVENt
 
@@ -27687,7 +27688,7 @@ class ZNB_gen(Instrument):
                 _cmd = "NTRansition"
                 args = ["1"]
 
-            NTRansition = NTRansition()
+            NTRansition = NTRansition()  # type: ignore
             """
             STATus:OPERation:NTRansition
 
@@ -27704,14 +27705,14 @@ class ZNB_gen(Instrument):
                 _cmd = "PTRansition"
                 args = ["1"]
 
-            PTRansition = PTRansition()
+            PTRansition = PTRansition()  # type: ignore
             """
             STATus:OPERation:PTRansition
 
             Arguments: 1
             """
 
-        OPERation = OPERation()
+        OPERation = OPERation()  # type: ignore
         """
         STATus:OPERation
 
@@ -27727,9 +27728,9 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PRESet"
-            args = []
+            args = []  # type: List[str]
 
-        PRESet = PRESet()
+        PRESet = PRESet()  # type: ignore
         """
         `STATus:PRESet
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/89de4158e9884847.htm#ID_14990f1cfaaf5cf30a00206a01af2d38-6dc6fe51faaf57740a00206a01a6673d-en-US>`_
@@ -27745,7 +27746,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "QUEStionable"
-            args = []
+            args = []  # type: List[str]
 
             class CONDition(SCPINode, SCPIQuery):
                 """
@@ -27756,9 +27757,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "CONDition"
-                args = []
+                args = []  # type: List[str]
 
-            CONDition = CONDition()
+            CONDition = CONDition()  # type: ignore
             """
             `STATus:QUEStionable:CONDition
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/acf0533fb1e4434e.htm#ID_ec46ac9afaaf64a30a00206a00c8bf13-aaf5fdf0faaf5ef60a00206a01a6673d-en-US>`_
@@ -27777,7 +27778,7 @@ class ZNB_gen(Instrument):
                 _cmd = "ENABle"
                 args = ["1"]
 
-            ENABle = ENABle()
+            ENABle = ENABle()  # type: ignore
             """
             `STATus:QUEStionable:ENABle
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/165d9083d7514744.htm#ID_cb2fe2bcfaaf6c250a00206a002a52d7-12884f3ffaaf66880a00206a01a6673d-en-US>`_
@@ -27794,9 +27795,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "EVENt"
-                args = []
+                args = []  # type: List[str]
 
-            EVENt = EVENt()
+            EVENt = EVENt()  # type: ignore
             """
             `STATus:QUEStionable:EVENt
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/217fd54d65ce45a1.htm#ID_85f7b6b5faaff47f0a00206a00265edf-50127a48faafeed20a00206a01a6673d-en-US>`_
@@ -27812,7 +27813,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INTegrity"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -27823,9 +27824,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 `STATus:QUEStionable:INTegrity:CONDition
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/acf0533fb1e4434e.htm#ID_0333fbe8faaf73a70a00206a013b59a3-26dc522ffaaf6e090a00206a01a6673d-en-US>`_
@@ -27844,7 +27845,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 `STATus:QUEStionable:INTegrity:ENABle
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/165d9083d7514744.htm#ID_3aabbef6faaf7b380a00206a01a6dac4-c217b852faaf757c0a00206a01a6673d-en-US>`_
@@ -27861,9 +27862,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 `STATus:QUEStionable:INTegrity:EVENt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/217fd54d65ce45a1.htm#ID_4cda7716faafb7a50a00206a0059dcea-fe65ae3cfaafb1e80a00206a01a6673d-en-US>`_
@@ -27879,7 +27880,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "HARDware"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CONDition(SCPINode, SCPIQuery):
                         """
@@ -27890,9 +27891,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONDition"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CONDition = CONDition()
+                    CONDition = CONDition()  # type: ignore
                     """
                     `STATus:QUEStionable:INTegrity:HARDware:CONDition
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/acf0533fb1e4434e.htm#ID_31ec8179faaf82ab0a00206a01399c5a-48b257acfaaf7d1d0a00206a01a6673d-en-US>`_
@@ -27911,7 +27912,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ENABle"
                         args = ["1"]
 
-                    ENABle = ENABle()
+                    ENABle = ENABle()  # type: ignore
                     """
                     `STATus:QUEStionable:INTegrity:HARDware:ENABle
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/165d9083d7514744.htm#ID_e278e1cafaaf8a4c0a00206a00eea680-6bd338a7faaf847f0a00206a01a6673d-en-US>`_
@@ -27928,9 +27929,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "EVENt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    EVENt = EVENt()
+                    EVENt = EVENt()  # type: ignore
                     """
                     `STATus:QUEStionable:INTegrity:HARDware:EVENt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/217fd54d65ce45a1.htm#ID_7c9f00d6faafa0d10a00206a017c8e51-d642c8f9faaf9b530a00206a01a6673d-en-US>`_
@@ -27949,7 +27950,7 @@ class ZNB_gen(Instrument):
                         _cmd = "NTRansition"
                         args = ["1"]
 
-                    NTRansition = NTRansition()
+                    NTRansition = NTRansition()  # type: ignore
                     """
                     `STATus:QUEStionable:INTegrity:HARDware:NTRansition
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8b6b137e86d7462f.htm#ID_2a6cb24efaaf91ce0a00206a001b46d6-3974f3f9faaf8c200a00206a01a6673d-en-US>`_
@@ -27968,7 +27969,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PTRansition"
                         args = ["1"]
 
-                    PTRansition = PTRansition()
+                    PTRansition = PTRansition()  # type: ignore
                     """
                     `STATus:QUEStionable:INTegrity:HARDware:PTRansition
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1bf60bca7cd4485b.htm#ID_00ec2fb7faaf996f0a00206a00babf2b-227ed9b6faaf93a20a00206a01a6673d-en-US>`_
@@ -27976,7 +27977,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1
                     """
 
-                HARDware = HARDware()
+                HARDware = HARDware()  # type: ignore
                 """
                 STATus:QUEStionable:INTegrity:HARDware
 
@@ -27994,7 +27995,7 @@ class ZNB_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 `STATus:QUEStionable:INTegrity:NTRansition
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8b6b137e86d7462f.htm#ID_4838dc31faafa8920a00206a013b68fd-a0b93b62faafa2d50a00206a01a6673d-en-US>`_
@@ -28013,7 +28014,7 @@ class ZNB_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 `STATus:QUEStionable:INTegrity:PTRansition
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1bf60bca7cd4485b.htm#ID_34bab32dfaafb0040a00206a01d13a50-6dab1c20faafaa760a00206a01a6673d-en-US>`_
@@ -28021,7 +28022,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1
                 """
 
-            INTegrity = INTegrity()
+            INTegrity = INTegrity()  # type: ignore
             """
             STATus:QUEStionable:INTegrity
 
@@ -28036,7 +28037,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "LIMit"
-                args = []
+                args = []  # type: List[str]
 
                 class CONDition(SCPINode, SCPIQuery):
                     """
@@ -28047,9 +28048,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONDition"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONDition = CONDition()
+                CONDition = CONDition()  # type: ignore
                 """
                 `STATus:QUEStionable:LIMit:CONDition
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/acf0533fb1e4434e.htm#ID_9ce66863faafbf460a00206a018efcc8-ad923fe4faafb97a0a00206a01a6673d-en-US>`_
@@ -28068,7 +28069,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 `STATus:QUEStionable:LIMit:ENABle
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/165d9083d7514744.htm#ID_ad66516bfaafc6d80a00206a0177398d-8207f46ffaafc13a0a00206a01a6673d-en-US>`_
@@ -28085,9 +28086,9 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "EVENt"
-                    args = []
+                    args = []  # type: List[str]
 
-                EVENt = EVENt()
+                EVENt = EVENt()  # type: ignore
                 """
                 `STATus:QUEStionable:LIMit:EVENt
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/217fd54d65ce45a1.htm#ID_f07789a5faafddda0a00206a0084664d-c2d70464faafd82d0a00206a01a6673d-en-US>`_
@@ -28106,7 +28107,7 @@ class ZNB_gen(Instrument):
                     _cmd = "NTRansition"
                     args = ["1"]
 
-                NTRansition = NTRansition()
+                NTRansition = NTRansition()  # type: ignore
                 """
                 `STATus:QUEStionable:LIMit:NTRansition
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8b6b137e86d7462f.htm#ID_1f6cf0c8faafce690a00206a00e85b2c-52051c71faafc8bc0a00206a01a6673d-en-US>`_
@@ -28125,7 +28126,7 @@ class ZNB_gen(Instrument):
                     _cmd = "PTRansition"
                     args = ["1"]
 
-                PTRansition = PTRansition()
+                PTRansition = PTRansition()  # type: ignore
                 """
                 `STATus:QUEStionable:LIMit:PTRansition
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1bf60bca7cd4485b.htm#ID_5f3a5c1dfaafd60a0a00206a00b66faf-afc7fac9faafd04d0a00206a01a6673d-en-US>`_
@@ -28133,7 +28134,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1
                 """
 
-            LIMit = LIMit()
+            LIMit = LIMit()  # type: ignore
             """
             STATus:QUEStionable:LIMit
 
@@ -28151,7 +28152,7 @@ class ZNB_gen(Instrument):
                 _cmd = "NTRansition"
                 args = ["1"]
 
-            NTRansition = NTRansition()
+            NTRansition = NTRansition()  # type: ignore
             """
             `STATus:QUEStionable:NTRansition
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8b6b137e86d7462f.htm#ID_5f4b6776faafe57b0a00206a008aebef-2ecf6d87faafdfce0a00206a01a6673d-en-US>`_
@@ -28170,7 +28171,7 @@ class ZNB_gen(Instrument):
                 _cmd = "PTRansition"
                 args = ["1"]
 
-            PTRansition = PTRansition()
+            PTRansition = PTRansition()  # type: ignore
             """
             `STATus:QUEStionable:PTRansition
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1bf60bca7cd4485b.htm#ID_135540eafaafecfd0a00206a009c969a-29d24063faafe7500a00206a01a6673d-en-US>`_
@@ -28178,7 +28179,7 @@ class ZNB_gen(Instrument):
             Arguments: 1
             """
 
-        QUEStionable = QUEStionable()
+        QUEStionable = QUEStionable()  # type: ignore
         """
         STATus:QUEStionable
 
@@ -28193,7 +28194,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "QUEue"
-            args = []
+            args = []  # type: List[str]
 
             class NEXT(SCPINode, SCPIQuery):
                 """
@@ -28204,9 +28205,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NEXT"
-                args = []
+                args = []  # type: List[str]
 
-            NEXT = NEXT()
+            NEXT = NEXT()  # type: ignore
             """
             `STATus:QUEue:NEXT
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/aa213f3a03ba4915.htm#ID_3d4f47acfaaffc300a00206a0013451f-0611f439faaff6630a00206a01a6673d-en-US>`_
@@ -28214,14 +28215,14 @@ class ZNB_gen(Instrument):
             Arguments:
             """
 
-        QUEue = QUEue()
+        QUEue = QUEue()  # type: ignore
         """
         STATus:QUEue
 
         Arguments:
         """
 
-    STATus = STATus()
+    STATus = STATus()  # type: ignore
     """
     STATus
 
@@ -28236,7 +28237,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "SYSTem"
-        args = []
+        args = []  # type: List[str]
 
         class COMMunicate(SCPINode):
             """
@@ -28246,7 +28247,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "COMMunicate"
-            args = []
+            args = []  # type: List[str]
 
             class AKAL(SCPINode):
                 """
@@ -28256,7 +28257,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "AKAL"
-                args = []
+                args = []  # type: List[str]
 
                 class CONNection(SCPINode, SCPISet):
                     """
@@ -28269,7 +28270,7 @@ class ZNB_gen(Instrument):
                     _cmd = "CONNection"
                     args = ["MATCh", "OPEN", "SHORt", "THRough"]
 
-                CONNection = CONNection()
+                CONNection = CONNection()  # type: ignore
                 """
                 `SYSTem:COMMunicate:AKAL:CONNection
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5f5eb381172c4a8e.htm#ID_b6e9a9a2fab003a20a00206a016cc0b8-27c8d699faaffe040a00206a01a6673d-en-US>`_
@@ -28298,7 +28299,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SYSTem:COMMunicate:AKAL:MMEMory:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/94871a811a9e4fda.htm#ID_34916594fab00b430a00206a0082898c-7dad1344fab005860a00206a01a6673d-en-US>`_
@@ -28306,14 +28307,14 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                MMEMory = MMEMory()
+                MMEMory = MMEMory()  # type: ignore
                 """
                 SYSTem:COMMunicate:AKAL:MMEMory
 
                 Arguments: 1, OFF, ON
                 """
 
-            AKAL = AKAL()
+            AKAL = AKAL()  # type: ignore
             """
             SYSTem:COMMunicate:AKAL
 
@@ -28331,7 +28332,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CODec"
                 args = ["ASCii", "SJIS", "UTF8"]
 
-            CODec = CODec()
+            CODec = CODec()  # type: ignore
             """
             `SYSTem:COMMunicate:CODec
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1052114e59e64095.htm#ID_696257e66f679a250a001ae70ec75580-d27074166f6798ae0a001ae727f5f310-en-US>`_
@@ -28347,7 +28348,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "GPIB"
-                args = []
+                args = []  # type: List[str]
 
                 class SELF(SCPINode):
                     """
@@ -28357,7 +28358,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SELF"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ADDRess(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -28370,7 +28371,7 @@ class ZNB_gen(Instrument):
                         _cmd = "ADDRess"
                         args = ["1"]
 
-                    ADDRess = ADDRess()
+                    ADDRess = ADDRess()  # type: ignore
                     """
                     `SYSTem:COMMunicate:GPIB:SELF:ADDRess
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b3ba68fb72ee42d8.htm#ID_61513521fab012e40a00206a01da716c-2ddf570ffab00d270a00206a01a6673d-en-US>`_
@@ -28386,7 +28387,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DCLear"
-                        args = []
+                        args = []  # type: List[str]
 
                         class SUPPress(SCPINode, SCPIBool):
                             """
@@ -28399,7 +28400,7 @@ class ZNB_gen(Instrument):
                             _cmd = "SUPPress"
                             args = ["1", "OFF", "ON"]
 
-                        SUPPress = SUPPress()
+                        SUPPress = SUPPress()  # type: ignore
                         """
                         `SYSTem:COMMunicate:GPIB:SELF:DCLear:SUPPress
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8052961da3cc46b4.htm#ID_13ef61cd9a3f887c0a001ae7150f1998-7ce365c19a3f87820a001ae737de4a6f-en-US>`_
@@ -28407,7 +28408,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    DCLear = DCLear()
+                    DCLear = DCLear()  # type: ignore
                     """
                     SYSTem:COMMunicate:GPIB:SELF:DCLear
 
@@ -28422,7 +28423,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "INIT"
-                        args = []
+                        args = []  # type: List[str]
 
                         class WAIT(SCPINode, SCPIBool):
                             """
@@ -28435,7 +28436,7 @@ class ZNB_gen(Instrument):
                             _cmd = "WAIT"
                             args = ["1", "OFF", "ON"]
 
-                        WAIT = WAIT()
+                        WAIT = WAIT()  # type: ignore
                         """
                         `SYSTem:COMMunicate:GPIB:SELF:INIT:WAIT
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/14a624620e7d44ab.htm#ID_68a7116fbe5215800a001ae738b88c4c-9d13e972be5213fa0a001ae76004eba8-en-US>`_
@@ -28443,7 +28444,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    INIT = INIT()
+                    INIT = INIT()  # type: ignore
                     """
                     SYSTem:COMMunicate:GPIB:SELF:INIT
 
@@ -28458,7 +28459,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "LPORt"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ALIGn(SCPINode, SCPIBool):
                             """
@@ -28471,7 +28472,7 @@ class ZNB_gen(Instrument):
                             _cmd = "ALIGn"
                             args = ["1", "OFF", "ON"]
 
-                        ALIGn = ALIGn()
+                        ALIGn = ALIGn()  # type: ignore
                         """
                         `SYSTem:COMMunicate:GPIB:SELF:LPORt:ALIGn
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1fec17069a1a42e4.htm#ID_83ec9beebe5217a30a001ae728c4b621-64202eadbe52160d0a001ae76004eba8-en-US>`_
@@ -28479,7 +28480,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    LPORt = LPORt()
+                    LPORt = LPORt()  # type: ignore
                     """
                     SYSTem:COMMunicate:GPIB:SELF:LPORt
 
@@ -28497,7 +28498,7 @@ class ZNB_gen(Instrument):
                         _cmd = "RTERminator"
                         args = ["EOI", "LFEoi"]
 
-                    RTERminator = RTERminator()
+                    RTERminator = RTERminator()  # type: ignore
                     """
                     `SYSTem:COMMunicate:GPIB:SELF:RTERminator
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bcbeaa2cc97c4e5a.htm#ID_ea61ddf3fab01a660a00206a01bf8be0-c5397efffab014c80a00206a01a6673d-en-US>`_
@@ -28505,14 +28506,14 @@ class ZNB_gen(Instrument):
                     Arguments: EOI, LFEoi
                     """
 
-                SELF = SELF()
+                SELF = SELF()  # type: ignore
                 """
                 SYSTem:COMMunicate:GPIB:SELF
 
                 Arguments:
                 """
 
-            GPIB = GPIB()
+            GPIB = GPIB()  # type: ignore
             """
             SYSTem:COMMunicate:GPIB
 
@@ -28527,7 +28528,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INTernal"
-                args = []
+                args = []  # type: List[str]
 
                 class COMMand(SCPINode):
                     """
@@ -28537,7 +28538,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "COMMand"
-                    args = []
+                    args = []  # type: List[str]
 
                     class TABLes(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -28549,14 +28550,14 @@ class ZNB_gen(Instrument):
                         _cmd = "TABLes"
                         args = ["'string'"]
 
-                    TABLes = TABLes()
+                    TABLes = TABLes()  # type: ignore
                     """
                     SYSTem:COMMunicate:INTernal:COMMand:TABLes
 
                     Arguments: 'string'
                     """
 
-                COMMand = COMMand()
+                COMMand = COMMand()  # type: ignore
                 """
                 SYSTem:COMMunicate:INTernal:COMMand
 
@@ -28573,14 +28574,14 @@ class ZNB_gen(Instrument):
                     _cmd = "REMote"
                     args = ["1", "OFF", "ON"]
 
-                REMote = REMote()
+                REMote = REMote()  # type: ignore
                 """
                 SYSTem:COMMunicate:INTernal:REMote
 
                 Arguments: 1, OFF, ON
                 """
 
-            INTernal = INTernal()
+            INTernal = INTernal()  # type: ignore
             """
             SYSTem:COMMunicate:INTernal
 
@@ -28595,7 +28596,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NET"
-                args = []
+                args = []  # type: List[str]
 
                 class HOSTname(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -28608,7 +28609,7 @@ class ZNB_gen(Instrument):
                     _cmd = "HOSTname"
                     args = ["'string'"]
 
-                HOSTname = HOSTname()
+                HOSTname = HOSTname()  # type: ignore
                 """
                 `SYSTem:COMMunicate:NET:HOSTname
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cfcd2bfc1c7740b5.htm#ID_ffe4951235162f730a00206a008ef8e4-2e19e65a3516267a0a00206a01f2dc17-en-US>`_
@@ -28616,7 +28617,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            NET = NET()
+            NET = NET()  # type: ignore
             """
             SYSTem:COMMunicate:NET
 
@@ -28631,7 +28632,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "RDEVice"
-                args = []
+                args = []  # type: List[str]
 
                 class AKAL(SCPINodeN):
                     """
@@ -28641,7 +28642,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "AKAL"
-                    args = []
+                    args = []  # type: List[str]
 
                     class ADDRess(SCPINode, SCPIQuery, SCPISet):
                         """
@@ -28663,9 +28664,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ALL"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ALL = ALL()
+                        ALL = ALL()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:AKAL:ADDRess:ALL
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/baed157b22c84d8e.htm#ID_12b46c80fab038fa0a00206a00cf3f89-d294ec5bfab0332e0a00206a01a6673d-en-US>`_
@@ -28673,7 +28674,7 @@ class ZNB_gen(Instrument):
                         Arguments:
                         """
 
-                    ADDRess = ADDRess()
+                    ADDRess = ADDRess()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:AKAL:ADDRess
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/7a0adfab1a314193.htm#ID_38ecc45ffab031490a00206a01f30588-bafade31fab02b9c0a00206a01a6673d-en-US>`_
@@ -28689,9 +28690,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CATalog"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:AKAL:CATalog
 
@@ -28706,7 +28707,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CKIT"
-                        args = []
+                        args = []  # type: List[str]
 
                         class CATalog(SCPINode, SCPIQuery):
                             """
@@ -28717,9 +28718,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "CATalog"
-                            args = []
+                            args = []  # type: List[str]
 
-                        CATalog = CATalog()
+                        CATalog = CATalog()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:AKAL:CKIT:CATalog
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/321d1d0427e343bf.htm#ID_e2b55a2491e0e9db0a00206a00224e9a-50e93f0f91e0dc6d0a00206a00e9ecac-en-US>`_
@@ -28735,7 +28736,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "STANdard"
-                            args = []
+                            args = []  # type: List[str]
 
                             class CATalog(SCPINode, SCPIQuery, SCPISet):
                                 """
@@ -28748,7 +28749,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "CATalog"
                                 args = ["'string'"]
 
-                            CATalog = CATalog()
+                            CATalog = CATalog()  # type: ignore
                             """
                             `SYSTem:COMMunicate:RDEVice:AKAL:CKIT:STANdard:CATalog
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/86aba03e3ec94134.htm#ID_ed1982c535163ef40a00206a01459e8b-5354b0a4351637530a00206a01f2dc17-en-US>`_
@@ -28756,14 +28757,14 @@ class ZNB_gen(Instrument):
                             Arguments: 'string'
                             """
 
-                        STANdard = STANdard()
+                        STANdard = STANdard()  # type: ignore
                         """
                         SYSTem:COMMunicate:RDEVice:AKAL:CKIT:STANdard
 
                         Arguments:
                         """
 
-                    CKIT = CKIT()
+                    CKIT = CKIT()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:AKAL:CKIT
 
@@ -28778,7 +28779,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONFigure"
-                        args = []
+                        args = []  # type: List[str]
 
                         class AUTO(SCPINode, SCPIBool):
                             """
@@ -28800,21 +28801,21 @@ class ZNB_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             SYSTem:COMMunicate:RDEVice:AKAL:CONFigure:AUTO:STATe
 
                             Arguments: 1, OFF, ON
                             """
 
-                        AUTO = AUTO()
+                        AUTO = AUTO()  # type: ignore
                         """
                         SYSTem:COMMunicate:RDEVice:AKAL:CONFigure:AUTO
 
                         Arguments: 1, OFF, ON
                         """
 
-                    CONFigure = CONFigure()
+                    CONFigure = CONFigure()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:AKAL:CONFigure
 
@@ -28829,9 +28830,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:AKAL:COUNt
 
@@ -28849,7 +28850,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DATE"
                         args = ["'string'"]
 
-                    DATE = DATE()
+                    DATE = DATE()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:AKAL:DATE
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/26a325509010424f.htm#ID_0a954ea791e0f9b90a00206a01b9cb3d-092c4e9f91e0f14d0a00206a00e9ecac-en-US>`_
@@ -28867,7 +28868,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DEFine"
                         args = ["'string'"]
 
-                    DEFine = DEFine()
+                    DEFine = DEFine()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:AKAL:DEFine
 
@@ -28882,9 +28883,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DELete"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DELete = DELete()
+                    DELete = DELete()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:AKAL:DELete
 
@@ -28902,7 +28903,7 @@ class ZNB_gen(Instrument):
                         _cmd = "FRANge"
                         args = ["'string'"]
 
-                    FRANge = FRANge()
+                    FRANge = FRANge()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:AKAL:FRANge
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2fe4d725e67f40c2.htm#ID_227c868091e1035e0a00206a00808933-f810ee9a91e0fc4a0a00206a00e9ecac-en-US>`_
@@ -28921,7 +28922,7 @@ class ZNB_gen(Instrument):
                         _cmd = "PORTs"
                         args = ["'string'"]
 
-                    PORTs = PORTs()
+                    PORTs = PORTs()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:AKAL:PORTs
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5257accae9324f22.htm#ID_9298113091e10ee70a00206a01d92f21-f852f2d391e105b00a00206a00e9ecac-en-US>`_
@@ -28950,7 +28951,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:AKAL:PREDuction:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/18713601a2c64ffc.htm#ID_79a5e788e15d18260a00206a0144c9a6-aa8db572e15d11020a00206a00796295-en-US>`_
@@ -28958,7 +28959,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    PREDuction = PREDuction()
+                    PREDuction = PREDuction()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:AKAL:PREDuction
 
@@ -28976,7 +28977,7 @@ class ZNB_gen(Instrument):
                         _cmd = "SDATa"
                         args = ["'string'"]
 
-                    SDATa = SDATa()
+                    SDATa = SDATa()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:AKAL:SDATa
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bedef83f5a58483f.htm#ID_8962fa362b9c026c0a00206a01432b9a-c7df0c252b9bfb280a00206a0020d3a0-en-US>`_
@@ -28992,7 +28993,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "WARMup"
-                        args = []
+                        args = []  # type: List[str]
 
                         class STATe(SCPINode, SCPIQuery):
                             """
@@ -29003,9 +29004,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "STATe"
-                            args = []
+                            args = []  # type: List[str]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:AKAL:WARMup:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/777edf7256764929.htm#ID_276e3c1791e11bb80a00206a01ac5dc5-a50c9ce891e1132d0a00206a00e9ecac-en-US>`_
@@ -29013,14 +29014,14 @@ class ZNB_gen(Instrument):
                         Arguments:
                         """
 
-                    WARMup = WARMup()
+                    WARMup = WARMup()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:AKAL:WARMup
 
                     Arguments:
                     """
 
-                AKAL = AKAL()
+                AKAL = AKAL()  # type: ignore
                 """
                 SYSTem:COMMunicate:RDEVice:AKAL
 
@@ -29035,7 +29036,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "GENerator"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CATalog(SCPINode, SCPIQuery):
                         """
@@ -29046,9 +29047,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CATalog"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:CATalog
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0aec52e1cf544e09.htm#ID_632db67afab04fbe0a00206a01429d80-e640b520fab04a200a00206a01a6673d-en-US>`_
@@ -29065,9 +29066,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:COUNt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/eab75c78a33a4309.htm#ID_3b5eb98efab0578e0a00206a017a57f7-77203d8ffab051d10a00206a01a6673d-en-US>`_
@@ -29086,7 +29087,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DEFine"
                         args = ["'string'"]
 
-                    DEFine = DEFine()
+                    DEFine = DEFine()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:DEFine
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8142ad99eab840e8.htm#ID_00159b1efab05f1f0a00206a01cbbccc-ec8148fbfab059820a00206a01a6673d-en-US>`_
@@ -29103,9 +29104,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DELete"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DELete = DELete()
+                    DELete = DELete()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:DELete
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8a77445e6b12408f.htm#ID_96c9fc01fab066ff0a00206a00727635-ee59ffa2fab061620a00206a01a6673d-en-US>`_
@@ -29124,7 +29125,7 @@ class ZNB_gen(Instrument):
                         _cmd = "SEPMode"
                         args = ["KEEP", "LOW", "OFF", "USER"]
 
-                    SEPMode = SEPMode()
+                    SEPMode = SEPMode()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:SEPMode
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a02e1397662d4b37.htm#ID_e2afc1d3e15d34390a00206a01d9fc25-db7b4172e15d2c980a00206a00796295-en-US>`_
@@ -29143,7 +29144,7 @@ class ZNB_gen(Instrument):
                         _cmd = "SEPower"
                         args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                    SEPower = SEPower()
+                    SEPower = SEPower()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:GENerator:SEPower
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/1fea9e339d68455f.htm#ID_33d0b7dde15d40ad0a00206a017d2253-032c215fe15d37560a00206a00796295-en-US>`_
@@ -29151,7 +29152,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                     """
 
-                GENerator = GENerator()
+                GENerator = GENerator()  # type: ignore
                 """
                 SYSTem:COMMunicate:RDEVice:GENerator
 
@@ -29166,7 +29167,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "PMETer"
-                    args = []
+                    args = []  # type: List[str]
 
                     class AZERo(SCPINode, SCPISet):
                         """
@@ -29177,9 +29178,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "AZERo"
-                        args = []
+                        args = []  # type: List[str]
 
-                    AZERo = AZERo()
+                    AZERo = AZERo()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:AZERo
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b47f04ba45f847b5.htm#ID_96b8e93efab06e710a00206a00ed7fa9-634f7de2fab068e30a00206a01a6673d-en-US>`_
@@ -29196,9 +29197,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CATalog"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:CATalog
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4a3fa363c3e44dda.htm#ID_11d8c23afab075f30a00206a007d910e-eda7f0a9fab070560a00206a01a6673d-en-US>`_
@@ -29214,7 +29215,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONFigure"
-                        args = []
+                        args = []  # type: List[str]
 
                         class AUTO(SCPINode, SCPIBool):
                             """
@@ -29237,7 +29238,7 @@ class ZNB_gen(Instrument):
                                 _cmd = "STATe"
                                 args = ["1", "OFF", "ON"]
 
-                            STATe = STATe()
+                            STATe = STATe()  # type: ignore
                             """
                             `SYSTem:COMMunicate:RDEVice:PMETer:CONFigure:AUTO:STATe
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5c3b3eaf608c4732.htm#ID_42018499fab07d850a00206a006d6b96-ccc5bc80fab077d70a00206a01a6673d-en-US>`_
@@ -29245,14 +29246,14 @@ class ZNB_gen(Instrument):
                             Arguments: 1, OFF, ON
                             """
 
-                        AUTO = AUTO()
+                        AUTO = AUTO()  # type: ignore
                         """
                         SYSTem:COMMunicate:RDEVice:PMETer:CONFigure:AUTO
 
                         Arguments: 1, OFF, ON
                         """
 
-                    CONFigure = CONFigure()
+                    CONFigure = CONFigure()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:PMETer:CONFigure
 
@@ -29268,9 +29269,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:COUNt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8ad0453b2f0148d6.htm#ID_86a7eabafab085350a00206a00f99a37-d17da2c6fab07f690a00206a01a6673d-en-US>`_
@@ -29289,7 +29290,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DEFine"
                         args = ["'string'"]
 
-                    DEFine = DEFine()
+                    DEFine = DEFine()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:DEFine
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/84bc325dc8a24407.htm#ID_f257effbfab08d050a00206a01c0972c-3e7d50f1fab0871a0a00206a01a6673d-en-US>`_
@@ -29306,9 +29307,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DELete"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DELete = DELete()
+                    DELete = DELete()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:PMETer:DELete
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/49f55f1b62d645fb.htm#ID_163a5ca7fab094870a00206a00ff0043-f41c5122fab08eea0a00206a01a6673d-en-US>`_
@@ -29337,7 +29338,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:PMETer:SPCorrection:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/abc28ee8793c4707.htm#ID_c30269e6e2b52a410a0020190063b2f1-4d844fb7e2b529080a002019017b841c-en-US>`_
@@ -29345,14 +29346,14 @@ class ZNB_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    SPCorrection = SPCorrection()
+                    SPCorrection = SPCorrection()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:PMETer:SPCorrection
 
                     Arguments: 1, OFF, ON
                     """
 
-                PMETer = PMETer()
+                PMETer = PMETer()  # type: ignore
                 """
                 SYSTem:COMMunicate:RDEVice:PMETer
 
@@ -29367,7 +29368,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SMATrix"
-                    args = []
+                    args = []  # type: List[str]
 
                     class CATalog(SCPINode, SCPIQuery):
                         """
@@ -29378,9 +29379,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CATalog"
-                        args = []
+                        args = []  # type: List[str]
 
-                    CATalog = CATalog()
+                    CATalog = CATalog()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:SMATrix:CATalog
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/78b19041e1da4d8c.htm#ID_c527b777e2b52c160a002019003c8932-17f21d0de2b52aae0a002019017b841c-en-US>`_
@@ -29398,7 +29399,7 @@ class ZNB_gen(Instrument):
                         _cmd = "COMMand"
                         args = ["'string'"]
 
-                    COMMand = COMMand()
+                    COMMand = COMMand()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:SMATrix:COMMand
 
@@ -29413,7 +29414,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "CONFigure"
-                        args = []
+                        args = []  # type: List[str]
 
                         class ABORt(SCPINode, SCPISet):
                             """
@@ -29424,9 +29425,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "ABORt"
-                            args = []
+                            args = []  # type: List[str]
 
-                        ABORt = ABORt()
+                        ABORt = ABORt()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:ABORt
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d864d14525904f3c.htm#ID_5af1ecc5e2b52f810a00201900488d61-917bd8cbe2b52e390a002019017b841c-en-US>`_
@@ -29443,9 +29444,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "END"
-                            args = []
+                            args = []  # type: List[str]
 
-                        END = END()
+                        END = END()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:END
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4ef25b4306be4226.htm#ID_2a271d6ee2b531460a002019017a6c38-50ea7940e2b52fee0a002019017b841c-en-US>`_
@@ -29464,7 +29465,7 @@ class ZNB_gen(Instrument):
                             _cmd = "MLTest"
                             args = ["'string'"]
 
-                        MLTest = MLTest()
+                        MLTest = MLTest()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:MLTest
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/35615f2b64f146bc.htm#ID_bab31821e2b534a10a00201900a1c622-7726b90fe2b533780a002019017b841c-en-US>`_
@@ -29483,7 +29484,7 @@ class ZNB_gen(Instrument):
                             _cmd = "MLVNa"
                             args = ["'string'"]
 
-                        MLVNa = MLVNa()
+                        MLVNa = MLVNa()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:MLVNa
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/424e6d88914a4f4d.htm#ID_9d5ed720e2b536470a002019014fc067-cea1e85ce2b5350f0a002019017b841c-en-US>`_
@@ -29502,7 +29503,7 @@ class ZNB_gen(Instrument):
                             _cmd = "MTESt"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        MTESt = MTESt()
+                        MTESt = MTESt()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:MTESt
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d580824e138142.htm#ID_02dd88c3e2b5384b0a00201900a1ec16-5e68904ee2b537120a002019017b841c-en-US>`_
@@ -29521,7 +29522,7 @@ class ZNB_gen(Instrument):
                             _cmd = "MVNA"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        MVNA = MVNA()
+                        MVNA = MVNA()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:MVNA
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d580824e138205.htm#ID_2e3b266be2b53a2f0a002019002c349a-fcb7090be2b538c80a002019017b841c-en-US>`_
@@ -29538,9 +29539,9 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "STARt"
-                            args = []
+                            args = []  # type: List[str]
 
-                        STARt = STARt()
+                        STARt = STARt()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:STARt
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fe47c0c30d1347f2.htm#ID_d606c1c2e2b53c620a002019016d84ea-1085e87be2b53adb0a002019017b841c-en-US>`_
@@ -29559,7 +29560,7 @@ class ZNB_gen(Instrument):
                             _cmd = "TVNA"
                             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                        TVNA = TVNA()
+                        TVNA = TVNA()  # type: ignore
                         """
                         `SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure:TVNA
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/dba8b46d76e64fa2.htm#ID_2e9f6208e2b53e170a002019008d85be-1778be60e2b53ccf0a002019017b841c-en-US>`_
@@ -29567,7 +29568,7 @@ class ZNB_gen(Instrument):
                         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                         """
 
-                    CONFigure = CONFigure()
+                    CONFigure = CONFigure()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:SMATrix:CONFigure
 
@@ -29583,9 +29584,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "COUNt"
-                        args = []
+                        args = []  # type: List[str]
 
-                    COUNt = COUNt()
+                    COUNt = COUNt()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:SMATrix:COUNt
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/0a53245cd6704fd1.htm#ID_54a467ace2b53fad0a0020190120e772-95630382e2b53e840a002019017b841c-en-US>`_
@@ -29604,7 +29605,7 @@ class ZNB_gen(Instrument):
                         _cmd = "DEFine"
                         args = ["'string'"]
 
-                    DEFine = DEFine()
+                    DEFine = DEFine()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:SMATrix:DEFine
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/01e5d99f805e431f.htm#ID_7496e554e2b541820a00201900a038ef-bbd862bae2b5402a0a002019017b841c-en-US>`_
@@ -29621,9 +29622,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "DELete"
-                        args = []
+                        args = []  # type: List[str]
 
-                    DELete = DELete()
+                    DELete = DELete()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:SMATrix:DELete
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2f34ce5940394635.htm#ID_78fa76a8e2b543380a00201900eaad26-32d0ac12e2b541ef0a002019017b841c-en-US>`_
@@ -29639,7 +29640,7 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "RELays"
-                        args = []
+                        args = []  # type: List[str]
 
                         class SWITch(SCPINode):
                             """
@@ -29649,7 +29650,7 @@ class ZNB_gen(Instrument):
                             """
                             __slots__ = ()
                             _cmd = "SWITch"
-                            args = []
+                            args = []  # type: List[str]
 
                             class COUNt(SCPINode, SCPIQuery):
                                 """
@@ -29660,9 +29661,9 @@ class ZNB_gen(Instrument):
                                 """
                                 __slots__ = ()
                                 _cmd = "COUNt"
-                                args = []
+                                args = []  # type: List[str]
 
-                            COUNt = COUNt()
+                            COUNt = COUNt()  # type: ignore
                             """
                             `SYSTem:COMMunicate:RDEVice:SMATrix:RELays:SWITch:COUNt
                             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/203db75605364802.htm#ID_8464a0fa842f0b490a00201901538ecb-ed9ae3ce842f09c20a00201901936165-en-US>`_
@@ -29670,14 +29671,14 @@ class ZNB_gen(Instrument):
                             Arguments:
                             """
 
-                        SWITch = SWITch()
+                        SWITch = SWITch()  # type: ignore
                         """
                         SYSTem:COMMunicate:RDEVice:SMATrix:RELays:SWITch
 
                         Arguments:
                         """
 
-                    RELays = RELays()
+                    RELays = RELays()  # type: ignore
                     """
                     SYSTem:COMMunicate:RDEVice:SMATrix:RELays
 
@@ -29693,9 +29694,9 @@ class ZNB_gen(Instrument):
                         """
                         __slots__ = ()
                         _cmd = "SCAN"
-                        args = []
+                        args = []  # type: List[str]
 
-                    SCAN = SCAN()
+                    SCAN = SCAN()  # type: ignore
                     """
                     `SYSTem:COMMunicate:RDEVice:SMATrix:SCAN
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bb5a2ce824f04a14.htm#ID_a5e70e1a42b0f6ac0a001ae702b3ea5d-4bc1954242b0f4d70a001ae769a5b4da-en-US>`_
@@ -29703,14 +29704,14 @@ class ZNB_gen(Instrument):
                     Arguments:
                     """
 
-                SMATrix = SMATrix()
+                SMATrix = SMATrix()  # type: ignore
                 """
                 SYSTem:COMMunicate:RDEVice:SMATrix
 
                 Arguments:
                 """
 
-            RDEVice = RDEVice()
+            RDEVice = RDEVice()  # type: ignore
             """
             SYSTem:COMMunicate:RDEVice
 
@@ -29725,7 +29726,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "TCPip"
-                args = []
+                args = []  # type: List[str]
 
                 class CONTrol(SCPINode, SCPIQuery):
                     """
@@ -29735,23 +29736,23 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "CONTrol"
-                    args = []
+                    args = []  # type: List[str]
 
-                CONTrol = CONTrol()
+                CONTrol = CONTrol()  # type: ignore
                 """
                 SYSTem:COMMunicate:TCPip:CONTrol
 
                 Arguments:
                 """
 
-            TCPip = TCPip()
+            TCPip = TCPip()  # type: ignore
             """
             SYSTem:COMMunicate:TCPip
 
             Arguments:
             """
 
-        COMMunicate = COMMunicate()
+        COMMunicate = COMMunicate()  # type: ignore
         """
         SYSTem:COMMunicate
 
@@ -29766,7 +29767,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CORRection"
-            args = []
+            args = []  # type: List[str]
 
             class FMPort(SCPINode, SCPIBool):
                 """
@@ -29788,14 +29789,14 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 SYSTem:CORRection:FMPort:STATe
 
                 Arguments: 1, OFF, ON
                 """
 
-            FMPort = FMPort()
+            FMPort = FMPort()  # type: ignore
             """
             SYSTem:CORRection:FMPort
 
@@ -29823,7 +29824,7 @@ class ZNB_gen(Instrument):
                     _cmd = "IMMediate"
                     args = ["CKIT", "MAIN"]
 
-                IMMediate = IMMediate()
+                IMMediate = IMMediate()  # type: ignore
                 """
                 `SYSTem:CORRection:WIZard:IMMediate
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bb92d217236749cd.htm#ID_098763ae42b0f9e80a001ae71e064621-0f2c9abc42b0f8520a001ae769a5b4da-en-US>`_
@@ -29831,14 +29832,14 @@ class ZNB_gen(Instrument):
                 Arguments: CKIT, MAIN
                 """
 
-            WIZard = WIZard()
+            WIZard = WIZard()  # type: ignore
             """
             SYSTem:CORRection:WIZard
 
             Arguments: CKIT, MAIN
             """
 
-        CORRection = CORRection()
+        CORRection = CORRection()  # type: ignore
         """
         SYSTem:CORRection
 
@@ -29856,7 +29857,7 @@ class ZNB_gen(Instrument):
             _cmd = "DATE"
             args = ["1"]
 
-        DATE = DATE()
+        DATE = DATE()  # type: ignore
         """
         `SYSTem:DATE
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/06074416ad144635.htm#ID_a847a1ebaaa8d6ac0a00206a006756f9-9b65deafaaa8cad50a00206a00dee6b8-en-US>`_
@@ -29873,9 +29874,9 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DFPRint"
-            args = []
+            args = []  # type: List[str]
 
-        DFPRint = DFPRint()
+        DFPRint = DFPRint()  # type: ignore
         """
         `SYSTem:DFPRint
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/16c0aaa4259448db.htm#ID_cae179f213575a160a00206a0180be6e-87f88bf6135754690a00206a0182dc26-en-US>`_
@@ -29891,7 +29892,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "DISPlay"
-            args = []
+            args = []  # type: List[str]
 
             class BAR(SCPINode):
                 """
@@ -29901,7 +29902,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "BAR"
-                args = []
+                args = []  # type: List[str]
 
                 class HKEY(SCPINode, SCPIBool):
                     """
@@ -29924,7 +29925,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SYSTem:DISPlay:BAR:HKEY:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2d91c8696dc148bb.htm#ID_04b780c5a07057500a00206a010feb2c-f9cca7aaa070500c0a00206a013722ca-en-US>`_
@@ -29932,7 +29933,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                HKEY = HKEY()
+                HKEY = HKEY()  # type: ignore
                 """
                 SYSTem:DISPlay:BAR:HKEY
 
@@ -29960,7 +29961,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SYSTem:DISPlay:BAR:MENU:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2d91c8696dc148bb.htm#ID_c7815f5ba07065d60a00206a01fcd35f-cee278d3a0705a1e0a00206a013722ca-en-US>`_
@@ -29968,7 +29969,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                MENU = MENU()
+                MENU = MENU()  # type: ignore
                 """
                 SYSTem:DISPlay:BAR:MENU
 
@@ -29996,7 +29997,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SYSTem:DISPlay:BAR:STATus:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2d91c8696dc148bb.htm#ID_7ceb2976a0706fc90a00206a01a03f62-0474fa26a07068960a00206a013722ca-en-US>`_
@@ -30004,7 +30005,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                STATus = STATus()
+                STATus = STATus()  # type: ignore
                 """
                 SYSTem:DISPlay:BAR:STATus
 
@@ -30032,7 +30033,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SYSTem:DISPlay:BAR:STOols:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2d91c8696dc148bb.htm#ID_29ae8142a0707a0a0a00206a018e633e-0c0c26d3a070725a0a00206a013722ca-en-US>`_
@@ -30040,7 +30041,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                STOols = STOols()
+                STOols = STOols()  # type: ignore
                 """
                 SYSTem:DISPlay:BAR:STOols
 
@@ -30068,7 +30069,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SYSTem:DISPlay:BAR:TITLe:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2d91c8696dc148bb.htm#ID_8e3e8248a07084c80a00206a014856cb-58386f94a0707ce90a00206a013722ca-en-US>`_
@@ -30076,7 +30077,7 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                TITLe = TITLe()
+                TITLe = TITLe()  # type: ignore
                 """
                 SYSTem:DISPlay:BAR:TITLe
 
@@ -30104,7 +30105,7 @@ class ZNB_gen(Instrument):
                         _cmd = "STATe"
                         args = ["1", "OFF", "ON"]
 
-                    STATe = STATe()
+                    STATe = STATe()  # type: ignore
                     """
                     `SYSTem:DISPlay:BAR:TOOLs:STATe
                     <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2d91c8696dc148bb.htm#ID_a45a5f24a0708fa60a00206a01841c0e-84805c29a07087780a00206a013722ca-en-US>`_
@@ -30112,14 +30113,14 @@ class ZNB_gen(Instrument):
                     Arguments: 1, OFF, ON
                     """
 
-                TOOLs = TOOLs()
+                TOOLs = TOOLs()  # type: ignore
                 """
                 SYSTem:DISPlay:BAR:TOOLs
 
                 Arguments: 1, OFF, ON
                 """
 
-            BAR = BAR()
+            BAR = BAR()  # type: ignore
             """
             SYSTem:DISPlay:BAR
 
@@ -30137,7 +30138,7 @@ class ZNB_gen(Instrument):
                 _cmd = "COLor"
                 args = ["BWLStyles", "BWSolid", "DBACkground", "LBACkground"]
 
-            COLor = COLor()
+            COLor = COLor()  # type: ignore
             """
             `SYSTem:DISPlay:COLor
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8bbb674b956c4ee7.htm#ID_21c088fffab0b33a0a00206a01c816e7-d31ab677fab0ad9d0a00206a01a6673d-en-US>`_
@@ -30156,7 +30157,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CONDuctances"
                 args = ["1", "OFF", "ON"]
 
-            CONDuctances = CONDuctances()
+            CONDuctances = CONDuctances()  # type: ignore
             """
             `SYSTem:DISPlay:CONDuctances
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/47c43a4d53b54002.htm#ID_d2271c9397ea6f290a001ae77f4a7568-33a77b2097ea6de10a001ae760f7f904-en-US>`_
@@ -30172,7 +30173,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DIALogs"
-                args = []
+                args = []  # type: List[str]
 
                 class SETup(SCPINode):
                     """
@@ -30182,7 +30183,7 @@ class ZNB_gen(Instrument):
                     """
                     __slots__ = ()
                     _cmd = "SETup"
-                    args = []
+                    args = []  # type: List[str]
 
                     class MCAL(SCPINode, SCPIBool):
                         """
@@ -30205,7 +30206,7 @@ class ZNB_gen(Instrument):
                             _cmd = "STATe"
                             args = ["1", "OFF", "ON"]
 
-                        STATe = STATe()
+                        STATe = STATe()  # type: ignore
                         """
                         `SYSTem:DISPlay:DIALogs:SETup:MCAL:STATe
                         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/52e327a6f3ea4d29.htm#ID_617f4b3de2b548580a00201900ff0001-63b39231e2b547100a002019017b841c-en-US>`_
@@ -30213,21 +30214,21 @@ class ZNB_gen(Instrument):
                         Arguments: 1, OFF, ON
                         """
 
-                    MCAL = MCAL()
+                    MCAL = MCAL()  # type: ignore
                     """
                     SYSTem:DISPlay:DIALogs:SETup:MCAL
 
                     Arguments: 1, OFF, ON
                     """
 
-                SETup = SETup()
+                SETup = SETup()  # type: ignore
                 """
                 SYSTem:DISPlay:DIALogs:SETup
 
                 Arguments:
                 """
 
-            DIALogs = DIALogs()
+            DIALogs = DIALogs()  # type: ignore
             """
             SYSTem:DISPlay:DIALogs
 
@@ -30245,7 +30246,7 @@ class ZNB_gen(Instrument):
                 _cmd = "UPDate"
                 args = ["1", "OFF", "ON", "ONCE"]
 
-            UPDate = UPDate()
+            UPDate = UPDate()  # type: ignore
             """
             `SYSTem:DISPlay:UPDate
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/703efa8ae9714a1a.htm#ID_4f17f97cfab0badb0a00206a019d73b8-482f9258fab0b53e0a00206a01a6673d-en-US>`_
@@ -30253,7 +30254,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, OFF, ON, ONCE
             """
 
-        DISPlay = DISPlay()
+        DISPlay = DISPlay()  # type: ignore
         """
         SYSTem:DISPlay
 
@@ -30268,7 +30269,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "ERRor"
-            args = []
+            args = []  # type: List[str]
 
             class ALL(SCPINode, SCPIQuery):
                 """
@@ -30279,9 +30280,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "ALL"
-                args = []
+                args = []  # type: List[str]
 
-            ALL = ALL()
+            ALL = ALL()  # type: ignore
             """
             `SYSTem:ERRor:ALL
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/719a0ae696d64fca.htm#ID_3bd07848fab0c23e0a00206a01bf19dc-2c14d208fab0bcb00a00206a01a6673d-en-US>`_
@@ -30310,7 +30311,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ERRor"
                     args = ["1", "OFF", "ON"]
 
-                ERRor = ERRor()
+                ERRor = ERRor()  # type: ignore
                 """
                 `SYSTem:ERRor:DISPlay:ERRor
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/93f34588e0f84634.htm#ID_a304d0093535fd6c0a001ae77611c020-d87f519f3535fbd50a001ae72ac1dc63-en-US>`_
@@ -30329,7 +30330,7 @@ class ZNB_gen(Instrument):
                     _cmd = "INFO"
                     args = ["1", "OFF", "ON"]
 
-                INFO = INFO()
+                INFO = INFO()  # type: ignore
                 """
                 `SYSTem:ERRor:DISPlay:INFO
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/93f34588e0f84634.htm#ID_eb5520e93535ffdd0a001ae76a65fef0-e504a00a3535fe270a001ae72ac1dc63-en-US>`_
@@ -30348,7 +30349,7 @@ class ZNB_gen(Instrument):
                     _cmd = "REMote"
                     args = ["1", "OFF", "ON"]
 
-                REMote = REMote()
+                REMote = REMote()  # type: ignore
                 """
                 `SYSTem:ERRor:DISPlay:REMote
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8bb7290d8cb44f14.htm#ID_b06832b2fab0c9c00a00206a00b9f04a-04495e7ffab0c4220a00206a01a6673d-en-US>`_
@@ -30367,7 +30368,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SYSTem:ERRor:DISPlay:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/4531bcee03ac438e.htm#ID_da0c4734353604800a001ae72d74b408-99f5ef9e353603090a001ae72ac1dc63-en-US>`_
@@ -30386,7 +30387,7 @@ class ZNB_gen(Instrument):
                     _cmd = "WARNings"
                     args = ["1", "OFF", "ON"]
 
-                WARNings = WARNings()
+                WARNings = WARNings()  # type: ignore
                 """
                 `SYSTem:ERRor:DISPlay:WARNings
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/93f34588e0f84634.htm#ID_d2602e9d353607010a001ae7089ac033-8bb3971d3536055b0a001ae72ac1dc63-en-US>`_
@@ -30394,7 +30395,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            DISPlay = DISPlay()
+            DISPlay = DISPlay()  # type: ignore
             """
             SYSTem:ERRor:DISPlay
 
@@ -30410,9 +30411,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "NEXT"
-                args = []
+                args = []  # type: List[str]
 
-            NEXT = NEXT()
+            NEXT = NEXT()  # type: ignore
             """
             `SYSTem:ERRor:NEXT
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/110a58f8c62244e2.htm#ID_7655f04ffab0d1510a00206a00680a86-25be5834fab0cbb40a00206a01a6673d-en-US>`_
@@ -30420,7 +30421,7 @@ class ZNB_gen(Instrument):
             Arguments:
             """
 
-        ERRor = ERRor()
+        ERRor = ERRor()  # type: ignore
         """
         SYSTem:ERRor
 
@@ -30435,7 +30436,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FIRMware"
-            args = []
+            args = []  # type: List[str]
 
             class UPDate(SCPINode, SCPISet):
                 """
@@ -30448,7 +30449,7 @@ class ZNB_gen(Instrument):
                 _cmd = "UPDate"
                 args = ["'string'"]
 
-            UPDate = UPDate()
+            UPDate = UPDate()  # type: ignore
             """
             `SYSTem:FIRMware:UPDate
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ebe19e05b1a8487a.htm#ID_0bcb7667fab0d8d30a00206a00b6a20a-9fd656e1fab0d3360a00206a01a6673d-en-US>`_
@@ -30456,7 +30457,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        FIRMware = FIRMware()
+        FIRMware = FIRMware()  # type: ignore
         """
         SYSTem:FIRMware
 
@@ -30472,9 +30473,9 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "FPReset"
-            args = []
+            args = []  # type: List[str]
 
-        FPReset = FPReset()
+        FPReset = FPReset()  # type: ignore
         """
         `SYSTem:FPReset
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/40c8db60ebf64644.htm#ID_f22e24cafab0e0650a00206a00d64c6a-b86b5b25fab0dab80a00206a01a6673d-en-US>`_
@@ -30493,7 +30494,7 @@ class ZNB_gen(Instrument):
             _cmd = "FREQuency"
             args = ["MAXimum", "MINimum"]
 
-        FREQuency = FREQuency()
+        FREQuency = FREQuency()  # type: ignore
         """
         `SYSTem:FREQuency
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/121cbe1a740f4f1a.htm#ID_1a39d97dfab0e7f60a00206a018a7f6e-2fc01ddafab0e2390a00206a01a6673d-en-US>`_
@@ -30520,9 +30521,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FACTory"
-                args = []
+                args = []  # type: List[str]
 
-            FACTory = FACTory()
+            FACTory = FACTory()  # type: ignore
             """
             `SYSTem:IDENtify:FACTory
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e6526c9c12e84a46.htm#ID_c1695db591e160a10a00206a00cd77f5-e99d3c9c91e158440a00206a00e9ecac-en-US>`_
@@ -30541,7 +30542,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STRing"
                 args = ["'string'"]
 
-            STRing = STRing()
+            STRing = STRing()  # type: ignore
             """
             `SYSTem:IDENtify:STRing
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/59d1792c4ef54142.htm#ID_437487be91e16d910a00206a003f7503-85833b1a91e164a80a00206a00e9ecac-en-US>`_
@@ -30549,7 +30550,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        IDENtify = IDENtify()
+        IDENtify = IDENtify()  # type: ignore
         """
         SYSTem:IDENtify
 
@@ -30564,7 +30565,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "INFO"
-            args = []
+            args = []  # type: List[str]
 
             class CONTrast(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -30577,7 +30578,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CONTrast"
                 args = ["1"]
 
-            CONTrast = CONTrast()
+            CONTrast = CONTrast()  # type: ignore
             """
             `SYSTem:INFO:CONTrast
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e4e198e6eab14f2c.htm#ID_961fc2d6842f14130a00201900e72704-c596e387842f12ab0a00201901936165-en-US>`_
@@ -30585,7 +30586,7 @@ class ZNB_gen(Instrument):
             Arguments: 1
             """
 
-        INFO = INFO()
+        INFO = INFO()  # type: ignore
         """
         SYSTem:INFO
 
@@ -30603,7 +30604,7 @@ class ZNB_gen(Instrument):
             _cmd = "KLOCk"
             args = ["1", "OFF", "ON"]
 
-        KLOCk = KLOCk()
+        KLOCk = KLOCk()  # type: ignore
         """
         `SYSTem:KLOCk
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bba09456c6c044dd.htm#ID_9346e83cfab0ef780a00206a01c95e16-25df267cfab0e9cb0a00206a01a6673d-en-US>`_
@@ -30622,7 +30623,7 @@ class ZNB_gen(Instrument):
             _cmd = "LANGuage"
             args = ["'string'"]
 
-        LANGuage = LANGuage()
+        LANGuage = LANGuage()  # type: ignore
         """
         `SYSTem:LANGuage
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/41d5dca1da124a72.htm#ID_869a87e0fab0f70a0a00206a0129131e-f2c4c937fab0f15c0a00206a01a6673d-en-US>`_
@@ -30638,7 +30639,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "LOGGing"
-            args = []
+            args = []  # type: List[str]
 
             class REMote(SCPINode, SCPIBool):
                 """
@@ -30661,7 +30662,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SYSTem:LOGGing:REMote:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d3ec37d3cbda4347.htm#ID_2859a837fab0feab0a00206a0104b6ad-22b5a74ffab0f8ee0a00206a01a6673d-en-US>`_
@@ -30669,14 +30670,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            REMote = REMote()
+            REMote = REMote()  # type: ignore
             """
             SYSTem:LOGGing:REMote
 
             Arguments: 1, OFF, ON
             """
 
-        LOGGing = LOGGing()
+        LOGGing = LOGGing()  # type: ignore
         """
         SYSTem:LOGGing
 
@@ -30691,9 +30692,9 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "NOPeration"
-            args = []
+            args = []  # type: List[str]
 
-        NOPeration = NOPeration()
+        NOPeration = NOPeration()  # type: ignore
         """
         SYSTem:NOPeration
 
@@ -30720,7 +30721,7 @@ class ZNB_gen(Instrument):
                 _cmd = "DISable"
                 args = ["'string'"]
 
-            DISable = DISable()
+            DISable = DISable()  # type: ignore
             """
             SYSTem:OPTions:DISable
 
@@ -30736,9 +30737,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "FACTory"
-                args = []
+                args = []  # type: List[str]
 
-            FACTory = FACTory()
+            FACTory = FACTory()  # type: ignore
             """
             `SYSTem:OPTions:FACTory
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bd9c3ffff2794e3b.htm#ID_efb9e44791e18d2f0a00206a01117c44-73da166c91e183f80a00206a00e9ecac-en-US>`_
@@ -30757,7 +30758,7 @@ class ZNB_gen(Instrument):
                 _cmd = "STRing"
                 args = ["'string'"]
 
-            STRing = STRing()
+            STRing = STRing()  # type: ignore
             """
             `SYSTem:OPTions:STRing
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/bf476bc336414e8e.htm#ID_fcf476dc91e1979f0a00206a008bad5a-3055959091e18fdf0a00206a00e9ecac-en-US>`_
@@ -30765,7 +30766,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        OPTions = OPTions()
+        OPTions = OPTions()  # type: ignore
         """
         SYSTem:OPTions
 
@@ -30793,7 +30794,7 @@ class ZNB_gen(Instrument):
                 _cmd = "CENable"
                 args = ["'string'"]
 
-            CENable = CENable()
+            CENable = CENable()  # type: ignore
             """
             `SYSTem:PASSword:CENable
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/8be43fcd785e4b58.htm#ID_5deccfb4fab1062c0a00206a015e85f5-4817c3fbfab1008f0a00206a01a6673d-en-US>`_
@@ -30801,7 +30802,7 @@ class ZNB_gen(Instrument):
             Arguments: 'string'
             """
 
-        PASSword = PASSword()
+        PASSword = PASSword()  # type: ignore
         """
         SYSTem:PASSword
 
@@ -30816,7 +30817,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "PRESet"
-            args = []
+            args = []  # type: List[str]
 
             class DUMMy(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -30827,9 +30828,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DUMMy"
-                args = []
+                args = []  # type: List[str]
 
-            DUMMy = DUMMy()
+            DUMMy = DUMMy()  # type: ignore
             """
             `SYSTem:PRESet:DUMMy
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/eee1ebe5a66049d5.htm#ID_0ce589adfab124920a00206a01485f4a-3a5f7062fab11e960a00206a01a6673d-en-US>`_
@@ -30858,7 +30859,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SYSTem:PRESet:REMote:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9fcef3bb614f452b.htm#ID_9e274d9e581341e70a001ae771e5dcc6-f3df5f90581340700a001ae75f9ff217-en-US>`_
@@ -30866,7 +30867,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            REMote = REMote()
+            REMote = REMote()  # type: ignore
             """
             SYSTem:PRESet:REMote
 
@@ -30884,7 +30885,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SCOPe"
                 args = ["ALL", "SINGle"]
 
-            SCOPe = SCOPe()
+            SCOPe = SCOPe()  # type: ignore
             """
             `SYSTem:PRESet:SCOPe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e8cf427a46394aac.htm#ID_f14f0f4efab10d9f0a00206a00724e94-7cbf2c2dfab108110a00206a01a6673d-en-US>`_
@@ -30913,7 +30914,7 @@ class ZNB_gen(Instrument):
                     _cmd = "CAL"
                     args = ["'string'"]
 
-                CAL = CAL()
+                CAL = CAL()  # type: ignore
                 """
                 `SYSTem:PRESet:USER:CAL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f0cd6bd78b8a463c.htm#ID_929a0b5bac61eaa90a00201900cbe46b-37784b03ac61e99f0a0020190003471b-en-US>`_
@@ -30932,7 +30933,7 @@ class ZNB_gen(Instrument):
                     _cmd = "NAME"
                     args = ["'string'"]
 
-                NAME = NAME()
+                NAME = NAME()  # type: ignore
                 """
                 `SYSTem:PRESet:USER:NAME
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a96979ad43ae4579.htm#ID_9e06eeaefab115300a00206a00cb4ce5-0538d3bbfab10f830a00206a01a6673d-en-US>`_
@@ -30951,7 +30952,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SYSTem:PRESet:USER:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/5378dfe143474c2e.htm#ID_66b8f316fab11cc20a00206a0087213c-35caa738fab117050a00206a01a6673d-en-US>`_
@@ -30959,14 +30960,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            USER = USER()
+            USER = USER()  # type: ignore
             """
             SYSTem:PRESet:USER
 
             Arguments: 1, OFF, ON
             """
 
-        PRESet = PRESet()
+        PRESet = PRESet()  # type: ignore
         """
         SYSTem:PRESet
 
@@ -30983,7 +30984,7 @@ class ZNB_gen(Instrument):
             _cmd = "PRIority"
             args = ["ANORmal", "HIGH", "NORMal"]
 
-        PRIority = PRIority()
+        PRIority = PRIority()  # type: ignore
         """
         SYSTem:PRIority
 
@@ -30998,7 +30999,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SETTings"
-            args = []
+            args = []  # type: List[str]
 
             class UPDate(SCPINode, SCPISet):
                 """
@@ -31011,7 +31012,7 @@ class ZNB_gen(Instrument):
                 _cmd = "UPDate"
                 args = ["ONCE"]
 
-            UPDate = UPDate()
+            UPDate = UPDate()  # type: ignore
             """
             `SYSTem:SETTings:UPDate
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/f32fcad83f5c4e5c.htm#ID_e5afdc76fab134220a00206a00902fa2-2837511dfab12e360a00206a01a6673d-en-US>`_
@@ -31019,7 +31020,7 @@ class ZNB_gen(Instrument):
             Arguments: ONCE
             """
 
-        SETTings = SETTings()
+        SETTings = SETTings()  # type: ignore
         """
         SYSTem:SETTings
 
@@ -31037,7 +31038,7 @@ class ZNB_gen(Instrument):
             _cmd = "SHUTdown"
             args = ["ABORt", "CLOSe", "HALT", "REBoot", "RESTart"]
 
-        SHUTdown = SHUTdown()
+        SHUTdown = SHUTdown()  # type: ignore
         """
         `SYSTem:SHUTdown
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/def2e5e153454147.htm#ID_19d5020713577b1b0a00206a019388f2-1efe305b1357755e0a00206a0182dc26-en-US>`_
@@ -31053,7 +31054,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SMATrix"
-            args = []
+            args = []  # type: List[str]
 
             class OPTimization(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -31066,7 +31067,7 @@ class ZNB_gen(Instrument):
                 _cmd = "OPTimization"
                 args = ["PRECision", "SPEed"]
 
-            OPTimization = OPTimization()
+            OPTimization = OPTimization()  # type: ignore
             """
             `SYSTem:SMATrix:OPTimization
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/6c0a61c173ee4de7.htm#ID_5e9bd4c9e2b551800a0020190004db0c-b8f06f0be2b550470a002019017b841c-en-US>`_
@@ -31074,7 +31075,7 @@ class ZNB_gen(Instrument):
             Arguments: PRECision, SPEed
             """
 
-        SMATrix = SMATrix()
+        SMATrix = SMATrix()  # type: ignore
         """
         SYSTem:SMATrix
 
@@ -31089,7 +31090,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SOUNd"
-            args = []
+            args = []  # type: List[str]
 
             class ALARm(SCPINode, SCPIBool):
                 """
@@ -31112,7 +31113,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SYSTem:SOUNd:ALARm:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2a6409afa1604928.htm#ID_cf6e6360fab13bf20a00206a01a85018-52ea9190fab136060a00206a01a6673d-en-US>`_
@@ -31120,7 +31121,7 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            ALARm = ALARm()
+            ALARm = ALARm()  # type: ignore
             """
             SYSTem:SOUNd:ALARm
 
@@ -31148,7 +31149,7 @@ class ZNB_gen(Instrument):
                     _cmd = "STATe"
                     args = ["1", "OFF", "ON"]
 
-                STATe = STATe()
+                STATe = STATe()  # type: ignore
                 """
                 `SYSTem:SOUNd:STATus:STATe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2a6409afa1604928.htm#ID_a23de053fab143740a00206a00e3a371-80e149c4fab13dd60a00206a01a6673d-en-US>`_
@@ -31156,14 +31157,14 @@ class ZNB_gen(Instrument):
                 Arguments: 1, OFF, ON
                 """
 
-            STATus = STATus()
+            STATus = STATus()  # type: ignore
             """
             SYSTem:SOUNd:STATus
 
             Arguments: 1, OFF, ON
             """
 
-        SOUNd = SOUNd()
+        SOUNd = SOUNd()  # type: ignore
         """
         SYSTem:SOUNd
 
@@ -31189,9 +31190,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "INTermediate"
-                args = []
+                args = []  # type: List[str]
 
-            INTermediate = INTermediate()
+            INTermediate = INTermediate()  # type: ignore
             """
             SYSTem:TIME:INTermediate
 
@@ -31206,9 +31207,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STARt"
-                args = []
+                args = []  # type: List[str]
 
-            STARt = STARt()
+            STARt = STARt()  # type: ignore
             """
             SYSTem:TIME:STARt
 
@@ -31223,9 +31224,9 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "STOP"
-                args = []
+                args = []  # type: List[str]
 
-            STOP = STOP()
+            STOP = STOP()  # type: ignore
             """
             SYSTem:TIME:STOP
 
@@ -31240,16 +31241,16 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "SYNC"
-                args = []
+                args = []  # type: List[str]
 
-            SYNC = SYNC()
+            SYNC = SYNC()  # type: ignore
             """
             SYSTem:TIME:SYNC
 
             Arguments:
             """
 
-        TIME = TIME()
+        TIME = TIME()  # type: ignore
         """
         `SYSTem:TIME
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/a7965f84d8ac4a09.htm#ID_c96fbd06aaa8f6690a00206a01148777-6b4f287aaaa8ea530a00206a00dee6b8-en-US>`_
@@ -31268,7 +31269,7 @@ class ZNB_gen(Instrument):
             _cmd = "TSLock"
             args = ["DIAGrams", "OFF", "SCReen"]
 
-        TSLock = TSLock()
+        TSLock = TSLock()  # type: ignore
         """
         `SYSTem:TSLock
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2c155c59dc324a1d.htm#ID_48769b733516bd2c0a00206a005ec64c-a13ed1c43516b4a10a00206a01f2dc17-en-US>`_
@@ -31284,7 +31285,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "USER"
-            args = []
+            args = []  # type: List[str]
 
             class DISPlay(SCPINode):
                 """
@@ -31294,7 +31295,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "DISPlay"
-                args = []
+                args = []  # type: List[str]
 
                 class TITLe(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -31307,7 +31308,7 @@ class ZNB_gen(Instrument):
                     _cmd = "TITLe"
                     args = ["'string'"]
 
-                TITLe = TITLe()
+                TITLe = TITLe()  # type: ignore
                 """
                 `SYSTem:USER:DISPlay:TITLe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d06008025b6042e5.htm#ID_c3284f63fab14af60a00206a015478ea-c45ce4a8fab145580a00206a01a6673d-en-US>`_
@@ -31315,7 +31316,7 @@ class ZNB_gen(Instrument):
                 Arguments: 'string'
                 """
 
-            DISPlay = DISPlay()
+            DISPlay = DISPlay()  # type: ignore
             """
             SYSTem:USER:DISPlay
 
@@ -31332,7 +31333,7 @@ class ZNB_gen(Instrument):
                 _cmd = "FKEY"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            FKEY = FKEY()
+            FKEY = FKEY()  # type: ignore
             """
             SYSTem:USER:FKEY
 
@@ -31360,14 +31361,14 @@ class ZNB_gen(Instrument):
                     _cmd = "FUNCtion"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                FUNCtion = FUNCtion()
+                FUNCtion = FUNCtion()  # type: ignore
                 """
                 SYSTem:USER:KEY:FUNCtion
 
                 Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
                 """
 
-            KEY = KEY()
+            KEY = KEY()  # type: ignore
             """
             `SYSTem:USER:KEY
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c09f159381ba407f.htm#ID_5b19f768fab15a190a00206a003ab4cd-5c1d14c8fab1547b0a00206a01a6673d-en-US>`_
@@ -31375,7 +31376,7 @@ class ZNB_gen(Instrument):
             Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
             """
 
-        USER = USER()
+        USER = USER()  # type: ignore
         """
         SYSTem:USER
 
@@ -31391,9 +31392,9 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "VERSion"
-            args = []
+            args = []  # type: List[str]
 
-        VERSion = VERSion()
+        VERSion = VERSion()  # type: ignore
         """
         `SYSTem:VERSion
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/695c6313296c4a8a.htm#ID_ae289010fab1693c0a00206a008797a2-0d4d3fbffab1637f0a00206a01a6673d-en-US>`_
@@ -31411,14 +31412,14 @@ class ZNB_gen(Instrument):
             _cmd = "WAIT"
             args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-        WAIT = WAIT()
+        WAIT = WAIT()  # type: ignore
         """
         SYSTem:WAIT
 
         Arguments: 1, DEFault, DOWN, MAXimum, MINimum, UP
         """
 
-    SYSTem = SYSTem()
+    SYSTem = SYSTem()  # type: ignore
     """
     SYSTem
 
@@ -31446,7 +31447,7 @@ class ZNB_gen(Instrument):
             _cmd = "CLEar"
             args = ["MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
-        CLEar = CLEar()
+        CLEar = CLEar()  # type: ignore
         """
         `TRACe:CLEar
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ac86031e502949ce.htm#ID_64dd94bdfab178ad0a00206a007cb1e5-5b0e530efab1730f0a00206a01a6673d-en-US>`_
@@ -31476,7 +31477,7 @@ class ZNB_gen(Instrument):
                 _cmd = "MATH"
                 args = ["MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8", "'string'"]
 
-            MATH = MATH()
+            MATH = MATH()  # type: ignore
             """
             `TRACe:COPY:MATH
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d4b3a8f7ac524edb.htm#ID_8db7b1cffab1880e0a00206a015a07f4-f95d19b4fab182510a00206a01a6673d-en-US>`_
@@ -31484,7 +31485,7 @@ class ZNB_gen(Instrument):
             Arguments: MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8, 'string'
             """
 
-        COPY = COPY()
+        COPY = COPY()  # type: ignore
         """
         `TRACe:COPY
         <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/97f98cc12fa04134.htm#ID_701570b0fab1805d0a00206a00ce1355-b06fb49ffab17aa10a00206a01a6673d-en-US>`_
@@ -31523,7 +31524,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ALL"
                     args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `TRACe:DATA:RESPonse:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/24de5bbd15544b94.htm#ID_2a0bba9afab1979e0a00206a01b06d03-c178a5b4fab191c20a00206a01a6673d-en-US>`_
@@ -31531,7 +31532,7 @@ class ZNB_gen(Instrument):
                 Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                 """
 
-            RESPonse = RESPonse()
+            RESPonse = RESPonse()  # type: ignore
             """
             TRACe:DATA:RESPonse
 
@@ -31559,7 +31560,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ALL"
                     args = ["CH1Data", "CH1Mem", "CH2Data", "CH2Mem", "CH3Data", "CH3Mem", "CH4Data", "CH4Mem", "MDATa1", "MDATa2", "MDATa3", "MDATa4", "MDATa5", "MDATa6", "MDATa7", "MDATa8"]
 
-                ALL = ALL()
+                ALL = ALL()  # type: ignore
                 """
                 `TRACe:DATA:STIMulus:ALL
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/b43fbe8986fb44c4.htm#ID_b73c7a35fab18fde0a00206a00c988a1-92a8d8b0fab189f20a00206a01a6673d-en-US>`_
@@ -31567,21 +31568,21 @@ class ZNB_gen(Instrument):
                 Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
                 """
 
-            STIMulus = STIMulus()
+            STIMulus = STIMulus()  # type: ignore
             """
             TRACe:DATA:STIMulus
 
             Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
             """
 
-        DATA = DATA()
+        DATA = DATA()  # type: ignore
         """
         TRACe:DATA
 
         Arguments: CH1Data, CH1Mem, CH2Data, CH2Mem, CH3Data, CH3Mem, CH4Data, CH4Mem, MDATa1, MDATa2, MDATa3, MDATa4, MDATa5, MDATa6, MDATa7, MDATa8
         """
 
-    TRACe = TRACe()
+    TRACe = TRACe()  # type: ignore
     """
     TRACe
 
@@ -31596,7 +31597,7 @@ class ZNB_gen(Instrument):
         """
         __slots__ = ()
         _cmd = "TRIGger"
-        args = []
+        args = []  # type: List[str]
 
         class CHANnel(SCPINodeN):
             """
@@ -31606,7 +31607,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "CHANnel"
-            args = []
+            args = []  # type: List[str]
 
             class AUXiliary(SCPINodeN, SCPIBool):
                 """
@@ -31629,7 +31630,7 @@ class ZNB_gen(Instrument):
                     _cmd = "DURation"
                     args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-                DURation = DURation()
+                DURation = DURation()  # type: ignore
                 """
                 `TRIGger:CHANnel:AUXiliary:DURation
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2ec0bc6b13f2415c.htm#ID_862e541aaaa940c00a00206a00c23306-85574235aaa935e20a00206a00dee6b8-en-US>`_
@@ -31648,7 +31649,7 @@ class ZNB_gen(Instrument):
                     _cmd = "ENABle"
                     args = ["1", "OFF", "ON"]
 
-                ENABle = ENABle()
+                ENABle = ENABle()  # type: ignore
                 """
                 `TRIGger:CHANnel:AUXiliary:ENABle
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/2f050fb4094d4096.htm#ID_47359972aaa9507f0a00206a00d85789-5734e0b5aaa943dc0a00206a00dee6b8-en-US>`_
@@ -31667,7 +31668,7 @@ class ZNB_gen(Instrument):
                     _cmd = "INTerval"
                     args = ["POINt", "SWEep"]
 
-                INTerval = INTerval()
+                INTerval = INTerval()  # type: ignore
                 """
                 `TRIGger:CHANnel:AUXiliary:INTerval
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/fb7f8a046d20447a.htm#ID_6e115f17aaa95ddd0a00206a00669cd7-e8362417aaa952b10a00206a00dee6b8-en-US>`_
@@ -31686,7 +31687,7 @@ class ZNB_gen(Instrument):
                     _cmd = "OPOLarity"
                     args = ["NEGative", "POSitive"]
 
-                OPOLarity = OPOLarity()
+                OPOLarity = OPOLarity()  # type: ignore
                 """
                 `TRIGger:CHANnel:AUXiliary:OPOLarity
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/d4cfc80a1c194fc3.htm#ID_a10e8d4caaa96bc70a00206a01c30908-19056cd3aaa9605d0a00206a00dee6b8-en-US>`_
@@ -31705,7 +31706,7 @@ class ZNB_gen(Instrument):
                     _cmd = "POSition"
                     args = ["AFTer", "BEFore"]
 
-                POSition = POSition()
+                POSition = POSition()  # type: ignore
                 """
                 `TRIGger:CHANnel:AUXiliary:POSition
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ddbb6ff54bfa4e49.htm#ID_0e644885aaa979540a00206a0189b3a3-f58ab43aaaa96e480a00206a00dee6b8-en-US>`_
@@ -31713,14 +31714,14 @@ class ZNB_gen(Instrument):
                 Arguments: AFTer, BEFore
                 """
 
-            AUXiliary = AUXiliary()
+            AUXiliary = AUXiliary()  # type: ignore
             """
             TRIGger:CHANnel:AUXiliary
 
             Arguments: 1, OFF, ON
             """
 
-        CHANnel = CHANnel()
+        CHANnel = CHANnel()  # type: ignore
         """
         TRIGger:CHANnel
 
@@ -31735,7 +31736,7 @@ class ZNB_gen(Instrument):
             """
             __slots__ = ()
             _cmd = "SEQuence"
-            args = []
+            args = []  # type: List[str]
 
             class HOLDoff(SCPINode, SCPIQuery, SCPISet):
                 """
@@ -31748,7 +31749,7 @@ class ZNB_gen(Instrument):
                 _cmd = "HOLDoff"
                 args = ["1", "DEFault", "DOWN", "MAXimum", "MINimum", "UP"]
 
-            HOLDoff = HOLDoff()
+            HOLDoff = HOLDoff()  # type: ignore
             """
             `TRIGger:SEQuence:HOLDoff
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/c7a1eba08bbc44bb.htm#ID_b0e57a38fab19f200a00206a00cbaf37-80f2d0b6fab199730a00206a01a6673d-en-US>`_
@@ -31767,7 +31768,7 @@ class ZNB_gen(Instrument):
                 _cmd = "LINK"
                 args = ["'string'"]
 
-            LINK = LINK()
+            LINK = LINK()  # type: ignore
             """
             `TRIGger:SEQuence:LINK
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/e09399d307a34f01.htm#ID_a4da22c4fab1a6c10a00206a01179287-42cdd25ffab1a1050a00206a01a6673d-en-US>`_
@@ -31783,7 +31784,7 @@ class ZNB_gen(Instrument):
                 """
                 __slots__ = ()
                 _cmd = "MULTiple"
-                args = []
+                args = []  # type: List[str]
 
                 class HOLDoff(SCPINode, SCPIQuery, SCPISet):
                     """
@@ -31796,7 +31797,7 @@ class ZNB_gen(Instrument):
                     _cmd = "HOLDoff"
                     args = ["POINt", "PPOint", "SEGMent", "SWEep"]
 
-                HOLDoff = HOLDoff()
+                HOLDoff = HOLDoff()  # type: ignore
                 """
                 `TRIGger:SEQuence:MULTiple:HOLDoff
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/020b4a1c90f348ff.htm#ID_adddb58013579dc60a00206a0121e541-a514b3ce135797fa0a00206a0182dc26-en-US>`_
@@ -31815,7 +31816,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SLOPe"
                     args = ["POINt", "PPOint", "SEGMent", "SWEep"]
 
-                SLOPe = SLOPe()
+                SLOPe = SLOPe()  # type: ignore
                 """
                 `TRIGger:SEQuence:MULTiple:SLOPe
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/ff1d260400c24bdf.htm#ID_af1475ce1357a5a60a00206a01d52097-fc26c60f13579fca0a00206a0182dc26-en-US>`_
@@ -31834,7 +31835,7 @@ class ZNB_gen(Instrument):
                     _cmd = "SOURce"
                     args = ["POINt", "PPOint", "SEGMent", "SWEep"]
 
-                SOURce = SOURce()
+                SOURce = SOURce()  # type: ignore
                 """
                 `TRIGger:SEQuence:MULTiple:SOURce
                 <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/12f6a33395644026.htm#ID_f37037d61357ad760a00206a00a7072a-cf0a0a421357a7a90a00206a0182dc26-en-US>`_
@@ -31842,7 +31843,7 @@ class ZNB_gen(Instrument):
                 Arguments: POINt, PPOint, SEGMent, SWEep
                 """
 
-            MULTiple = MULTiple()
+            MULTiple = MULTiple()  # type: ignore
             """
             TRIGger:SEQuence:MULTiple
 
@@ -31859,7 +31860,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SCOPe"
                 args = ["ALL", "CURRent"]
 
-            SCOPe = SCOPe()
+            SCOPe = SCOPe()  # type: ignore
             """
             TRIGger:SEQuence:SCOPe
 
@@ -31877,7 +31878,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SLOPe"
                 args = ["HIGH", "LOW", "NEGative", "POSitive"]
 
-            SLOPe = SLOPe()
+            SLOPe = SLOPe()  # type: ignore
             """
             `TRIGger:SEQuence:SLOPe
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/cbc5449b57664ad3.htm#ID_cb1b57a0fab1d4f50a00206a0000a5cb-21b2e7d1fab1cf580a00206a01a6673d-en-US>`_
@@ -31896,7 +31897,7 @@ class ZNB_gen(Instrument):
                 _cmd = "SOURce"
                 args = ["EXTernal", "IMMediate", "MANual", "MULTiple"]
 
-            SOURce = SOURce()
+            SOURce = SOURce()  # type: ignore
             """
             `TRIGger:SEQuence:SOURce
             <https://www.rohde-schwarz.com/webhelp/ZNB_ZNBT_HTML_UserManual_en/Content/9c62999c5a1642f2.htm#ID_3ee3f346fab1dc770a00206a0037b055-0940f367fab1d6da0a00206a01a6673d-en-US>`_
@@ -31904,19 +31905,20 @@ class ZNB_gen(Instrument):
             Arguments: EXTernal, IMMediate, MANual, MULTiple
             """
 
-        SEQuence = SEQuence()
+        SEQuence = SEQuence()  # type: ignore
         """
         TRIGger:SEQuence
 
         Arguments:
         """
 
-    TRIGger = TRIGger()
+    TRIGger = TRIGger()  # type: ignore
     """
     TRIGger
 
     Arguments:
     """
+
 
 ZNB_gen._SCPI_class = ZNB_gen
 # END OF ZNB_gen
