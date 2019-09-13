@@ -10,6 +10,7 @@
 /.externalToolBuilders
 /.settings
 /.idea
+.mypy_cache
 
 /scratch
 
