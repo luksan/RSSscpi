@@ -28,19 +28,19 @@ meas_bw = 10  # Hz
 ##
 
 zva.preset()
-zva.INITiate.CONTinuous().off()
+zva.INITiate.CONTinuous.off()
 
 ch1 = zva.get_channel(1)
 
 ch1.sweep.points = sweep_points
 ch1.SENSe.BANDwidth.w(meas_bw)
 
-ch1.TRIGger.SEQuence.LINK().w("POINt")
-ch1.TRIGger.SEQuence.SOURce().w("MAN")
+ch1.TRIGger.SEQuence.LINK.w("POINt")
+ch1.TRIGger.SEQuence.SOURce.w("MAN")
 
 ch1.init_sweep()
 
-sweep_time = float(zva.SENSe.SWEep.TIME().q())
+sweep_time = float(zva.SENSe.SWEep.TIME.q())
 print("Total sweep time:", sweep_time, "seconds")
 
 print("Starting sweep")

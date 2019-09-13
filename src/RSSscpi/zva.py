@@ -95,27 +95,27 @@ class Channel(znb.Channel):
     @property
     def CALC(self):
         # type: () -> ZVA_gen.CALCulate
-        return self.instrument.CALCulate(self.n)
+        return self.instrument.CALCulate[self.n]
 
     @property
     def CONFch(self):
         # type: () -> ZVA_gen.CONFigure.CHANnel
-        return self.instrument.CONFigure.CHANnel(self.n)
+        return self.instrument.CONFigure.CHANnel[self.n]
 
     @property
     def SENSe(self):
         # type: () -> ZVA_gen.SENSe
-        return self.instrument.SENSe(self.n)
+        return self.instrument.SENSe[self.n]
 
     @property
     def SOURce(self):
         # type: () -> ZVA_gen.SOURce
-        return self.instrument.SOURce(self.n)
+        return self.instrument.SOURce[self.n]
 
     @property
     def TRIGger(self):
         # type: () -> ZVA_gen.TRIGger
-        return self.instrument.TRIGger(self.n)
+        return self.instrument.TRIGger[self.n]
 
     @property
     def sweep(self) -> "Sweep":
@@ -156,12 +156,12 @@ class ChannelVNAPort(ZVA_gen.SOURce.POWer, znb.ChannelVNAPort):
 
         SOURce:POWer:ATTenuation / SOURce:POWer:ATTenuation:AUTO:VALue?
         """
-        return int(self.ATTenuation.AUTO.VALue().q())
+        return int(self.ATTenuation.AUTO.VALue.q())
 
     @src_attenuator.setter
     def src_attenuator(self, att):
         # TODO: check that the att parameter is within the range of the instrument
-        self.ATTenuation().w(int(att))
+        self.ATTenuation.w(int(att))
 
     src_attenuator_mode = SCPIProperty(ZVA_gen.SOURce.POWer.ATTenuation.MODE, str)
     """AUTO | MANual | LNOise"""
@@ -211,7 +211,7 @@ class SweepSegments(znb.SweepSegments):
         """
         if analog_sweep:
             raise ValueError("The ZVA does not support analog sweeps.")
-        self._SEG(position).INSert().w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity)
+        self._SEG[position].INSert.w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity)
         return self.get_segment(position)
 
 
@@ -222,7 +222,7 @@ class Trace(znb.Trace):
     def copy(self, new_name: str, diagram=None) -> "Trace":
         return super(Trace, self).copy(new_name, diagram)
 
-    def copy_assign_math(self, new_name: str, equation: str, diagram=None)  -> "Trace":
+    def copy_assign_math(self, new_name: str, equation: str, diagram=None) -> "Trace":
         return super(Trace, self).copy_assign_math(new_name, equation, diagram)
 
 

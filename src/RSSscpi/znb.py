@@ -98,7 +98,7 @@ class ZNB(ZNB_gen):
 
     def _set_codec(self):
         self._visa_res.encoding = "utf-8"
-        self.SYSTem.COMMunicate.CODec().w("UTF8")  # Set the character encoding
+        self.SYSTem.COMMunicate.CODec.w("UTF8")  # Set the character encoding
 
     def reset_remote_emulation(self):
         # type: () -> str
@@ -107,10 +107,10 @@ class ZNB(ZNB_gen):
 
         :return: The original SYSTem:LANGuage setting
         """
-        orig_lang = str(self.SYSTem.LANGuage().q())
+        orig_lang = str(self.SYSTem.LANGuage.q())
         if orig_lang != "SCPI":
             self.visa_logger.warning("Changing remote language from '%s' to 'SCPI' (default)", orig_lang)
-            self.SYSTem.LANGuage().w("SCPI")
+            self.SYSTem.LANGuage.w("SCPI")
         return orig_lang
 
     use_binary_data_transfer = SCPIPropertyMapping(ZNB_gen.FORMat.DATA, str, {"REAL": True, "ASCii": False})
@@ -120,13 +120,13 @@ class ZNB(ZNB_gen):
         """
         Get/set the active channel, INSTrument:NSELect?
         """
-        return self.get_channel(int(self.INSTrument.NSELect().q()))
+        return self.get_channel(int(self.INSTrument.NSELect.q()))
 
     @active_channel.setter
     def active_channel(self, n):
         if hasattr(n, "n"):
             n = n.n
-        self.INSTrument.NSELect().w(n)
+        self.INSTrument.NSELect.w(n)
 
     def get_channel(self, n):
         # type: (int) -> Channel
@@ -167,7 +167,7 @@ class ZNB(ZNB_gen):
         """
         if self._port_count:
             return self._port_count
-        x = int(self.INSTrument.PORT.COUNt().q())
+        x = int(self.INSTrument.PORT.COUNt.q())
         self._port_count = x
         return x
 
@@ -185,15 +185,15 @@ class ZNB(ZNB_gen):
         filetype = filetype[1:].upper()
         if filetype not in self.HCOPy.DEVice.LANGuage.args:
             raise ValueError("Invalid file extension for screenshot: " + filetype)
-        self.MMEMory.NAME().w(filename)  # Define the filename
-        self.HCOPy.DESTination().w("MMEM")  # Print to mass storage
-        self.HCOPy.DEVice.LANGuage().w(filetype)  # Define the file type
+        self.MMEMory.NAME.w(filename)  # Define the filename
+        self.HCOPy.DESTination.w("MMEM")  # Print to mass storage
+        self.HCOPy.DEVice.LANGuage.w(filetype)  # Define the file type
         if diagram is not None:
             diagram.select_diagram()
-            self.HCOPy.PAGE.WINDow().w("ACTive")  # Print only the active diagram
+            self.HCOPy.PAGE.WINDow.w("ACTive")  # Print only the active diagram
         else:
-            self.HCOPy.PAGE.WINDow().w("HARDcopy")
-        self.HCOPy.IMMediate().w()  # Perform the screen capture
+            self.HCOPy.PAGE.WINDow.w("HARDcopy")
+        self.HCOPy.IMMediate.w()  # Perform the screen capture
         return self.filesystem.file(filename)
 
 
@@ -236,27 +236,27 @@ class Channel(object):
     @property
     def CALC(self):
         # type: () -> ZNB_gen.CALCulate
-        return self.instrument.CALCulate(self.n)
+        return self.instrument.CALCulate[self.n]
 
     @property
     def CONFch(self):
         # type: () -> ZNB_gen.CONFigure.CHANnel
-        return self.instrument.CONFigure.CHANnel(self.n)
+        return self.instrument.CONFigure.CHANnel[self.n]
 
     @property
     def SENSe(self):
         # type: () -> ZNB_gen.SENSe
-        return self.instrument.SENSe(self.n)
+        return self.instrument.SENSe[self.n]
 
     @property
     def SOURce(self):
         # type: () -> ZNB_gen.SOURce
-        return self.instrument.SOURce(self.n)
+        return self.instrument.SOURce[self.n]
 
     @property
     def TRIGger(self):
         # type: () -> ZNB_gen.TRIGger
-        return self.instrument.TRIGger(self.n)
+        return self.instrument.TRIGger[self.n]
 
     name = SCPIProperty(ZNB_gen.CONFigure.CHANnel.NAME, str, get_root_node=lambda self: self.CONFch)
     """
@@ -298,7 +298,7 @@ class Channel(object):
         :return: A reference to the new trace
         :rtype: Trace
         """
-        self.CALC.PARameter.SDEFine().w(name, parameter)
+        self.CALC.PARameter.SDEFine.w(name, parameter)
         trace = self.get_trace(name)
         if diagram is not None:
             trace.assign_diagram(diagram)
@@ -311,14 +311,14 @@ class Channel(object):
 
         :rtype: Trace
         """
-        name = str(self.CALC.PARameter.SELect().q())
+        name = str(self.CALC.PARameter.SELect.q())
         # n = self.instrument.CONFigure.TRACe.CHANnel.NAME.ID.q(name)
         return self.get_trace(name)
 
     @active_trace.setter
     def active_trace(self, trace):
         name = trace.name if hasattr(trace, "name") else str(trace)
-        self.CALC.PARameter.SELect().w(name)
+        self.CALC.PARameter.SELect.w(name)
 
     power_level = SCPIProperty(ZNB_gen.SOURce.POWer.LEVel.IMMediate.AMPLitude, float, get_root_node=lambda self: self.SOURce)  # type: float
     """
@@ -344,11 +344,11 @@ class Channel(object):
     def cal_auto(self, vna_ports, cal_unit_ports=None, cal_type="FNPort", cal_unit_characterization=""):
         if cal_unit_ports:
             cmd_fmt = "{:s}, {:q}, {:d**}"
-            self.SENSe.CORRection.COLLect.AUTO.PORTs.TYPE().w(
+            self.SENSe.CORRection.COLLect.AUTO.PORTs.TYPE.w(
                 cal_type, cal_unit_characterization, zip(vna_ports, cal_unit_ports), fmt=cmd_fmt)
         else:
             cmd_fmt = "{:s}, {:q}, {:d*}"
-            self.SENSe.CORRection.COLLect.AUTO.TYPE().w(cal_type, cal_unit_characterization, vna_ports, fmt=cmd_fmt)
+            self.SENSe.CORRection.COLLect.AUTO.TYPE.w(cal_type, cal_unit_characterization, vna_ports, fmt=cmd_fmt)
 
     def configure_freq_sweep(self, start_freq, stop_freq, points=None, ifbw=None, power=None, log_sweep=False):
         """
@@ -387,8 +387,8 @@ class Channel(object):
         """
         self.sweep.type = Sweep.POWER
         self.freq_cw = freq
-        self.SOURce.POWer(1).STARt().w(start_power)  # The port number suffix on POWer is ignored by the instrument
-        self.SOURce.POWer(1).STOP().w(stop_power)
+        self.SOURce.POWer[1].STARt.w(start_power)  # The port number suffix on POWer is ignored by the instrument
+        self.SOURce.POWer[1].STOP.w(stop_power)
         if points:
             self.sweep.points = points
         if ifbw:
@@ -400,7 +400,7 @@ class Channel(object):
 
         This is valid in single sweep mode only.
         """
-        self.instrument.INITiate(self.n).IMMediate().w()
+        self.instrument.INITiate[self.n].IMMediate.w()
 
     def save_touchstone(self, filename, ports, fmt="LOGPhase", mode_impedance="CIMPedance"):
         """
@@ -416,7 +416,7 @@ class Channel(object):
         :rtype: ZNB.File
         """
         cmd_fmt = "{:d}, {:q}, {:s}, {:s}, {:d*}"
-        self.instrument.MMEMory.STORe.TRACe.PORTs().w(self.n, filename, fmt, mode_impedance, ports, fmt=cmd_fmt)
+        self.instrument.MMEMory.STORe.TRACe.PORTs.w(self.n, filename, fmt, mode_impedance, ports, fmt=cmd_fmt)
         return self.instrument.filesystem.file(filename)
 
 
@@ -445,7 +445,7 @@ class ChannelVNAPort(ZNB_gen.SOURce.POWer):
         The method returs a 2-tuple. The first element is the power offset in dB, the second element is True
         if the offset is relative to the channel base power. If false the first element is the port power in dBm.
         """
-        (power, rel) = self.LEVel.IMMediate.OFFSet().q().split_comma()
+        (power, rel) = self.LEVel.IMMediate.OFFSet.q().split_comma()
         return float(power), rel == "CPAD"
 
     def set_source_power_offset(self, power, relative=True):
@@ -460,7 +460,7 @@ class ChannelVNAPort(ZNB_gen.SOURce.POWer):
             x = 'CPAD'
         else:
             x = 'ONLY'
-        self.LEVel.IMMediate.OFFSet().w(power, x)
+        self.LEVel.IMMediate.OFFSet.w(power, x)
 
 
 class ChannelCal(object):
@@ -518,7 +518,7 @@ class SweepSegment(ZNB_gen.SENSe.SEGMent):
         self.n = n
 
     def delete(self):
-        self.DELete().w()
+        self.DELete.w()
 
     _SEG = ZNB_gen.SENSe.SEGMent
     dwell_time = SCPIProperty(_SEG.SWEep.DWELl, float)
@@ -543,7 +543,7 @@ class SweepSegments(object):
         self._SEG = sweep.channel.SENSe.SEGMent
 
     def __len__(self):
-        return int(self._SEG.COUNt().q())
+        return int(self._SEG.COUNt.q())
 
     def __getitem__(self, item):
         if isinstance(item, slice):
@@ -588,7 +588,7 @@ class SweepSegments(object):
             sweep_mode = "ANALog"
         else:
             sweep_mode = "STEPped"
-        self._SEG(position).INSert().w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity, sweep_mode)
+        self._SEG[position].INSert.w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity, sweep_mode)
         return self.get_segment(position)
 
     def delete_segment(self, n):
@@ -600,25 +600,25 @@ class SweepSegments(object):
         self.get_segment(n).delete()
 
     def delete_all_segments(self):
-        self._SEG.DELete.ALL().w()
+        self._SEG.DELete.ALL.w()
 
     def disable_per_segment_dwell_time(self):
-        self._SEG.SWEep.DWELl.CONTrol().w(False)
+        self._SEG.SWEep.DWELl.CONTrol.w(False)
 
     def disable_per_segment_ifbw(self):
         self._SEG.BWIDth.RESolution.CONTrol.w(False)
 
     def disable_per_segment_if_selectivity(self):
-        self._SEG.BWIDth.RESolution.SELect.CONTrol().w(False)
+        self._SEG.BWIDth.RESolution.SELect.CONTrol.w(False)
 
     def disable_per_segment_power(self):
-        self._SEG.POWer.LEVel.CONTrol().w(False)
+        self._SEG.POWer.LEVel.CONTrol.w(False)
 
     def disable_per_segment_sweep_time(self):
-        self._SEG.SWEep.TIME.CONTrol().w(False)
+        self._SEG.SWEep.TIME.CONTrol.w(False)
 
     def query_total_sweep_time(self):
-        return float(self._SEG.SWEep.TIME.SUM().q())
+        return float(self._SEG.SWEep.TIME.SUM.q())
 
 
 class Sweep(ZNB_gen.SENSe.SWEep):
@@ -719,16 +719,16 @@ class Trace(object):
         """
         Activate the autoscaling function for the trace
         """
-        self.channel.instrument.DISPlay.WINDow.TRACe.Y.SCALe.AUTO().w("ONCE", self.name, fmt="{:s}, {:q}")
+        self.channel.instrument.DISPlay.WINDow.TRACe.Y.SCALe.AUTO.w("ONCE", self.name, fmt="{:s}, {:q}")
 
     def copy_data_to_mem(self, target_trace_name):
         self.check_if_name_is_valid(target_trace_name, raise_err=True)
-        self.channel.instrument.TRACe.COPY().w(target_trace_name, self.name)
+        self.channel.instrument.TRACe.COPY.w(target_trace_name, self.name)
         return self.__class__(target_trace_name, self.channel)
 
     def copy_math_to_mem(self, target_trace_name):
         self.check_if_name_is_valid(target_trace_name, raise_err=True)
-        self.channel.instrument.TRACe.COPY.MATH().w(target_trace_name, self.name)
+        self.channel.instrument.TRACe.COPY.MATH.w(target_trace_name, self.name)
         return self.__class__(target_trace_name, self.channel)
 
     def copy(self, new_name: str, diagram: "Diagram" = None) -> "Trace":
@@ -757,7 +757,7 @@ class Trace(object):
         """
         Deletes the trace. CALCulate<Ch>:​PARameter:​DELete
         """
-        self.channel.CALC.PARameter.DELete().w(self.name)
+        self.channel.CALC.PARameter.DELete.w(self.name)
 
     @property
     def measurement(self):
@@ -769,11 +769,11 @@ class Trace(object):
 
         Example: tr1.measurement = tr1.MeasParam.Wave("b", 1, src_port=1, detector="sam")
         """
-        return str(self.channel.CALC.PARameter.MEASure().q(self.name))
+        return str(self.channel.CALC.PARameter.MEASure.q(self.name))
 
     @measurement.setter
     def measurement(self, param):
-        self.channel.CALC.PARameter.MEASure().w(self.name, str(param))
+        self.channel.CALC.PARameter.MEASure.w(self.name, str(param))
 
     @property
     def name(self) -> str:
@@ -786,7 +786,7 @@ class Trace(object):
     def name(self, name):
         name = str(name)
         self.check_if_name_is_valid(name, raise_err=True)
-        self.channel.instrument.CONFigure.TRACe.REName().w(self.name, name)
+        self.channel.instrument.CONFigure.TRACe.REName.w(self.name, name)
         self._name = name
 
     @staticmethod
@@ -809,7 +809,7 @@ class Trace(object):
         :return: CONFigure.TRACe.NAME.ID?
         """
         if not self._n:  # The trace number doesn't change with trace add/delete, so it's ok to cache it.
-            self._n = int(self.channel.instrument.CONFigure.TRACe.NAME.ID().q(self.name))
+            self._n = int(self.channel.instrument.CONFigure.TRACe.NAME.ID.q(self.name))
         return self._n
 
     def query_cal_state_label(self):
@@ -854,7 +854,7 @@ class Trace(object):
         """
         Makes the trace the active trace in the channel.
         """
-        self.channel.CALC.PARameter.SELect().w(self.name)
+        self.channel.CALC.PARameter.SELect.w(self.name)
 
     def get_marker(self, n):
         """
@@ -872,7 +872,7 @@ class Trace(object):
         :type diagram: Diagram
         """
         diagram.state = True
-        diagram.TRACe.EFEed().w(self.name)
+        diagram.TRACe.EFEed.w(self.name)
 
     def query_multiple_sweep_data(self, first_sweep: int, last_sweep: int = None) -> List[List[complex]]:
         """
@@ -962,7 +962,7 @@ class Diagram(ZNB_gen.DISPlay.WINDow):
         Also deletes all traces assigned to the diagram.
         :return:
         """
-        self.STATe().w("OFF")
+        self.STATe.w("OFF")
 
     def select_diagram(self):
         """
@@ -1017,7 +1017,7 @@ class Diagram(ZNB_gen.DISPlay.WINDow):
 
         :return: A generator returning Traces
         """
-        trace_list = self.TRACe.CATalog().q()
+        trace_list = self.TRACe.CATalog.q()
         for trace_number, name in trace_list.comma_list_pairs():
             ch_no = self.instrument.CONFigure.TRACe.CHANnel.NAME.ID.q(name)
             ch = self.instrument.get_channel(ch_no)
@@ -1034,7 +1034,7 @@ class Filesystem(ZNB_gen.MMEMory):
         :return: a string representing the current working directory on the instrument.
         :rtype: str
         """
-        return str(self.CDIRectory().q())
+        return str(self.CDIRectory.q())
 
     def chdir(self, path):
         """
@@ -1156,11 +1156,11 @@ class File(Path):
         return ntpath.join(self.path, self.filename)
 
     def read(self):
-        return self.instrument.MMEMory.DATA().q(self.full_path).block_data()
+        return self.instrument.MMEMory.DATA.q(self.full_path).block_data()
 
     def write(self, data):
         # FIXME: rename to reflect that the method overwrites the existing file
-        self.instrument.MMEMory.DATA().w(self.full_path, make_ieee_data_block(data))
+        self.instrument.MMEMory.DATA.w(self.full_path, make_ieee_data_block(data))
 
     def get(self, local_target):
         """
@@ -1189,7 +1189,7 @@ class File(Path):
 
         :param target: The location of the copy
         """
-        self.instrument.MMEMory.COPY().w(self.full_path, str(target))
+        self.instrument.MMEMory.COPY.w(self.full_path, str(target))
 
 
 if __name__ == "__main__":

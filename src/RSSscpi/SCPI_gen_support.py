@@ -6,9 +6,11 @@ Created on Thu Feb 11 11:30:33 2016
 """
 
 from itertools import zip_longest
-from typing import Generator, NoReturn, Type, Union
+from typing import Generator, NoReturn, Optional, Type, TypeVar, Union
 
 from RSSscpi.SCPI_response import SCPIResponse
+
+N = TypeVar("N", bound="SCPINodeBase")
 
 
 class SCPINodeBase(object):
@@ -22,8 +24,7 @@ class SCPINodeBase(object):
 
     __slots__ = ("_parent", )
 
-    def __init__(self, parent: Union["SCPINodeBase", int] = None):
-        # The Union[..] above is a hack to work around a confused type inference tool.
+    def __init__(self, parent: "SCPINodeBase" = None):
         """
         :param parent: The command node level above this node.
         """
@@ -119,10 +120,8 @@ class SCPINode(SCPINodeBase):
 
     __slots__ = ()
 
-    def __call__(self, *args):
-        if len(args):
-            raise TypeError(self.build_cmd() + "(XX) <- invalid index operation, SCPI node does not support indexing.")
-        return self
+    def __getitem__(self, item: int) -> NoReturn:
+        raise TypeError(self.build_cmd() + "(XX) <- invalid index operation, SCPI node does not support indexing.")
 
 
 class SCPINodeN(SCPINodeBase):
@@ -147,20 +146,19 @@ class SCPINodeN(SCPINodeBase):
         return int(self._n)
 
     @n.setter
-    def n(self, n: int):
-        if n is not None:
-            n = str(n)
-            if not n.isdigit():
-                raise ValueError(self.build_cmd() + "(%s) <- Node index must be integer, or None." % n)
-            self._n = n
-        else:
+    def n(self, n: Optional[int]):
+        if n is None or n == 0:
             self._n = ""
+            return
 
-    def __call__(self, n: int = None):
+        self._n = str(n)
+        if not self._n.isdigit():
+            raise ValueError(self.build_cmd() + "[%s] <- Node index must be integer, or None." % n)
+
+    def __getitem__(self: N, n: int = None) -> N:
         """
         Returns a copy of self, with the node index set to n.
-        :param int n: Integer index to be appended to the command node string.
-        :return: *self*
+        :param int n: Integer index to be appended to the command node string. If n is None or 0 the index is removed.
         """
         cpy = self.__class__(parent=self._parent)
         cpy.n = n

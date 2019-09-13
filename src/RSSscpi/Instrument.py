@@ -465,7 +465,7 @@ class Instrument(SCPINodeBase):
                 cmd = "ON"
         else:
             cmd = "OFF"
-        self.SYSTem.DISPlay.UPDate().w(cmd)
+        self.SYSTem.DISPlay.UPDate.w(cmd)
 
     def preset(self):
         """

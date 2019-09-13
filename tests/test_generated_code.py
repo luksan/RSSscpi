@@ -28,26 +28,26 @@ def test_basic(dummy_vna, visa):
     assert inspect.isclass(ZNB.ABORt)
     assert isinstance(znb.ABORt, SCPINodeBase)
 
-    znb.CALCulate.MARKer(3).FUNCtion().BWIDth.q("'asd'")
-    znb.CALCulate.MARKer(3).FUNCtion().BWIDth.q("asd")
+    znb.CALCulate.MARKer[3].FUNCtion.BWIDth.q("'asd'")
+    znb.CALCulate.MARKer[3].FUNCtion.BWIDth.q("asd")
 
-    znb.CALCulate.MARKer()
-    z = znb.CALCulate(2).MARKer("3").FUNCtion.BWIDth
+    assert znb.CALCulate.MARKer[None].build_cmd() == "CALCulate:MARKer"
+    z = znb.CALCulate[2].MARKer[3].FUNCtion.BWIDth
 
     z.MODE.w(123, 123, 123333)
 
     ass = znb.SENSe.CORRection.COLLect.AUTO.ASSignment
-    ass(2).DEFine.w(5, 4, 3, 2, 1)
-    ass(3).DEFine.w(5, 4, 3, 2, 1)
+    ass[2].DEFine.w(5, 4, 3, 2, 1)
+    ass[3].DEFine.w(5, 4, 3, 2, 1)
     x = [5, 4, 3]
-    ass(1).DEFine.w(*x)
+    ass[1].DEFine.w(*x)
     znb.OPC.q()
     znb.query_OPC()
 
-    z1 = znb.CALCulate(1)
-    z = z1.MARKer(1)
+    z1 = znb.CALCulate[1]
+    z = z1.MARKer[1]
     z.q()
-    y = z1(2).MARKer(3)
+    y = z1[2].MARKer[3]
     z.q()
     y.q()
     assert ["CALCulate:MARKer3:FUNCtion:BWIDth? 'asd'",
@@ -90,11 +90,11 @@ def test_attributes(visa):
 
 def test_relink_to_ancestor(visa):
     instr = VNA2(visa)
-    a = instr.A(2)
+    a = instr.A[2]
     d = VNA1.A.B.Ca.D.relink_to_ancestor(a)
     assert d.build_cmd() == "A2:B:Ca:D"
 
-    aa = instr.Aa(1)
+    aa = instr.Aa[1]
     with pytest.raises(AttributeError) as err:
         VNA1.A.B.Ca.D.relink_to_ancestor(aa)
         assert str(err).endswith("AttributeError: The given ancestor was not found in the command tree.")

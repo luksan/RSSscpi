@@ -82,14 +82,14 @@ def test_error_handling(dummy_zva, visa):
     # type: (ZVA, VISA) -> None
     zva = dummy_zva
     zva.init()
-    zva.SOURce(1).POWer(1).ATTenuation().w(80)
+    zva.SOURce[1].POWer[1].ATTenuation.w(80)
     visa.ret_dict["SYSTem:ERRor:ALL?"] = '-222,"Data out of range;SOURce1:POWer1:ATTenuation 80\n"'
     visa.raise_error()
     with pytest.raises(InstrumentError) as excinfo:
         zva.query_OPC()  # The exception won't be raised until the next SCPI operation
     assert excinfo.value.stack is not None
     visa.ret_dict["SYSTem:ERRor:ALL?"] = '''-151,"Invalid string data;CALCulate1:PARameter:SDEFine '...",-114,"Header suffix out of range;DISPlay:WINDow1:TRACe:EFEed 'A..."'''
-    zva.CALCulate(1).PARameter.SDEFine().w('AVG', 'BASD01D01AVG')
+    zva.CALCulate[1].PARameter.SDEFine.w('AVG', 'BASD01D01AVG')
     visa.raise_error()
     with pytest.raises(InstrumentError) as excinfo:
         zva.query_OPC()

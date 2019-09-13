@@ -75,7 +75,7 @@ class NRPxxSN(NRPxxSN_gen):
         """
         # SYST:INFO? => "A:B\nC:D\n....\n"
         info_list = str(self.SYSTem.INFO.q()).strip('" \n').split("\n")
-        return dict([x.split(":", 1) for x in info_list])
+        return dict([x.split(":", 1) for x in info_list])  # type: ignore
 
     def init_immediate(self):
         """
@@ -87,7 +87,7 @@ class NRPxxSN(NRPxxSN_gen):
         """
         Run the zero level adjustment routine. Disconnect power from the sensor before running.
         """
-        self.CALibration.ZERO.AUTO().w("ONCE")
+        self.CALibration.ZERO.AUTO.w("ONCE")
 
     def fetch_data(self) -> List[float]:
         """

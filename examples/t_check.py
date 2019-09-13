@@ -42,7 +42,7 @@ znb.init()
 # IF bandwidth
 
 znb.RST.w()
-znb.INITiate.CONTinuous.ALL().w("OFF")
+znb.INITiate.CONTinuous.ALL.w("OFF")
 
 ch = znb.get_channel(1)
 ch.name = "SP_ch_1"
@@ -59,7 +59,7 @@ tr_s22 = ch.create_trace("S22", "S22", dia1)
 
 # Create a diagram with the T-check equation trace
 dia2 = znb.get_diagram(2)
-dia2.STATe().w("ON")
+dia2.STATe.w("ON")
 dia2.name = "Tcheck"
 tr_Tcheck = ch.create_trace("T_check", "S11", dia2)
 tr_Tcheck.math_equation = "linMag(S11*(Re(S21)-Im(S21)) + S12*(Re(S22)-Im(S22))) / ((1-linMag(S11)^2-linMag(S12)^2)*(1-linMag(S21)^2-linMag(S22)^2))^0.5"

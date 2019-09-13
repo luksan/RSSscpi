@@ -37,17 +37,17 @@ def test_SCPICmdFormatter():
 def test_cmd_formatting(dummy_zva, visa):
     # type: (ZVA, VISA) -> None
     zva = dummy_zva
-    zva.TRACe.COPY.MATH().w("MDATA8")  # This shouldn't be quoted
-    zva.TRACe.COPY.MATH().w("sq")  # Quote
-    zva.SENSe.SWEep.POINts().w(1e9)
-    zva.SENSe.SWEep.POINts().w("1000000000")
-    zva.SENSe.SWEep.POINts().w(1000000000)
-    zva.TRIGger.SEQuence.LINK().w("POINt")  # This should be quoted
-    zva.TRIGger.SEQuence.LINK().w("'POINT'")  # This should only have one pair of quotes
+    zva.TRACe.COPY.MATH.w("MDATA8")  # This shouldn't be quoted
+    zva.TRACe.COPY.MATH.w("sq")  # Quote
+    zva.SENSe.SWEep.POINts.w(1e9)
+    zva.SENSe.SWEep.POINts.w("1000000000")
+    zva.SENSe.SWEep.POINts.w(1000000000)
+    zva.TRIGger.SEQuence.LINK.w("POINt")  # This should be quoted
+    zva.TRIGger.SEQuence.LINK.w("'POINT'")  # This should only have one pair of quotes
     with pytest.warns(UserWarning) as record:  # This should warn since ..:Y? has an empty argument list
-        zva.CALCulate.MARKer.Y().q("")
-        zva.CALCulate.MARKer.Y().q("asd", fmt="{:s}")
-        zva.CALCulate.MARKer.Y().q("asd", fmt="")
+        zva.CALCulate.MARKer.Y.q("")
+        zva.CALCulate.MARKer.Y.q("asd", fmt="{:s}")
+        zva.CALCulate.MARKer.Y.q("asd", fmt="")
     assert len(record) == 1
     assert ["TRACe:COPY:MATH MDATA8",
             "TRACe:COPY:MATH 'sq'",

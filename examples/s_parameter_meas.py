@@ -33,20 +33,20 @@ znb.init()
 # IF bandwidth
 
 znb.RST.w()
-znb.INITiate.CONTinuous.ALL().w("OFF")
+znb.INITiate.CONTinuous.ALL.w("OFF")
 
 ch_no = 1
 ch = znb.get_channel(1)
 ch.name = "SP_ch_1"
 dia1 = znb.get_diagram(1)
 
-sense = znb.SENSe(ch_no)
+sense = znb.SENSe[ch_no]
 
-sense.FREQuency.STARt().w(100e6)
-sense.FREQuency.STOP().w(3e9)
+sense.FREQuency.STARt.w(100e6)
+sense.FREQuency.STOP.w(3e9)
 
-sense.SWEep.POINts().w(10001)
-znb.SOURce(ch_no).POWer.LEVel().w("0 dBm")
+sense.SWEep.POINts.w(10001)
+znb.SOURce[ch_no].POWer.LEVel.w("0 dBm")
 
 
 # Add traces
