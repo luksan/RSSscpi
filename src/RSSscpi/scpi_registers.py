@@ -8,6 +8,8 @@ from collections import OrderedDict
 import logging
 
 # FIXME: There sould be some top-level management in RSSsscpi of the loggers
+from typing import Any, Type
+
 logger = logging.getLogger(__name__)
 
 
@@ -34,12 +36,7 @@ def scpi_bit(bit_number):
         def __init__(self, bit_func):
             super().__init__(fget=fget, fset=fset, fdel=None, doc=bit_func.__doc__)
             self.__doc__ = super().__doc__
-
-        def __set_name__(self, owner, name):
-            for bit in owner.BITS:
-                if bit[1] == bit_number:
-                    raise ValueError("A bit with number " + str(bit_number) + " is already defined in the register.")
-            owner.BITS.append((name, bit_number))
+            self.bit_number = bit_number
 
     return decorator
 
@@ -50,6 +47,17 @@ class MetaRegister(type):
         namespace = OrderedDict()
         namespace["BITS"] = []  # Create a new empty bit list for each subclass
         return namespace
+
+    def __new__(mcs, name, bases, dict_: dict) -> Any:
+        # noinspection PyTypeChecker
+        register_cls = super().__new__(mcs, name, bases, dict_)  # type: Type[SCPIRegister]
+        for name, val in dict_.items():
+            if not hasattr(val, "bit_number"):
+                continue
+            assert not any(map(lambda bit: bit[1] == val.bit_number, register_cls.BITS)), \
+                "A bit with number " + str(val.bit_number) + " is already defined in the register."
+            register_cls.BITS.append((name, val.bit_number))
+        return register_cls
 
 
 class SCPIRegister(metaclass=MetaRegister):

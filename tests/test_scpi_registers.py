@@ -6,7 +6,20 @@
 
 import pytest
 
-from RSSscpi.scpi_registers import StatusByteRegister, EventStatusRegister
+from RSSscpi.scpi_registers import SCPIRegister, scpi_bit, StatusByteRegister, EventStatusRegister
+
+
+# noinspection PyUnusedLocal
+def test_register_definition():
+    with pytest.raises(AssertionError):
+        class DuplicateBitDef(SCPIRegister):
+            @scpi_bit(2)
+            def a(self):
+                pass
+
+            @scpi_bit(2)
+            def b(self):
+                pass
 
 
 def test_stb(capsys, caplog):
