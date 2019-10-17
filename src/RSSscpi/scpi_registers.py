@@ -94,19 +94,23 @@ class SCPIRegister(metaclass=MetaRegister):
     def __str__(self):
         return str(self.value)
 
+    @classmethod
+    def _get_short_name(cls, bit_name: str):
+        short_name = getattr(cls, bit_name).__doc__.lstrip()[:4]
+        if not short_name[-1].isupper():
+            short_name = short_name[:-1]
+        return short_name
+
     def pprint(self):
-        print("0b{:08b}, {:}".format(self.value, self.value))
+        print("STB: 0b{:08b}, {:}".format(self.value, self.value))
         for name, bit_no in self.BITS:
-            print("{:>25} (bit {:}) {:}".format(name, bit_no, getattr(self, name)))
+            print("{:>25}, {:<4} (bit {:}) {:}".format(name, self._get_short_name(name), bit_no, getattr(self, name)))
 
     def short_status(self):
         status = []
         for name, bit_no in self.BITS:
-            if getattr(self, name):
-                short_name = getattr(type(self), name).__doc__.lstrip()[:4]
-                if not short_name[-1].isupper():
-                    short_name = short_name[:-1]
-                status.append(short_name)
+            if getattr(self, name):  # Check if the bit is set
+                status.append(self._get_short_name(name))
         return ",".join(status)
 
 
