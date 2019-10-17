@@ -414,6 +414,9 @@ def main():
     import zva
     zva.generate(download)
 
+    import zna
+    zna.generate(download)
+
     import znb
     znb.generate(download)
 
