@@ -4,7 +4,7 @@
 @author: Lukas Sandström
 """
 
-from typing import List
+from typing import Any, Callable, List, Tuple, TypeVar
 import warnings
 
 try:
@@ -15,6 +15,8 @@ except ImportError:
     class numpy:
         float64 = None
 
+T1 = TypeVar("T1")
+T2 = TypeVar("T2")
 
 class SCPIResponse(object):
     """
@@ -59,7 +61,7 @@ class SCPIResponse(object):
     def __hash__(self):
         return hash(str(self))
 
-    def comma_list_pairs(self, convert=lambda x: x):
+    def comma_list_pairs(self, convert: Callable[[Tuple[str, str]], Tuple[T1, T2]] = lambda x: x) -> List[Tuple[T1, T2]]:
         """
         Split the comma separated response into a list of tuples,
         with each tuple containing two consecutive response elements.
@@ -70,7 +72,7 @@ class SCPIResponse(object):
         x = self.split_comma()
         return list(convert(t) for t in zip(*[iter(x)]*2))
 
-    def split_comma(self, convert=lambda x: x):
+    def split_comma(self, convert: Callable[[str], T1] = lambda x: x) -> List[T1]:
         """
         Split the response at commas, and return the result as a list.
 
