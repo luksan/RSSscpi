@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
-# Generated from ZNB_commands.inp on 2019-09-13 11:59
+# Generated from ZNB_commands.inp on 2019-10-18 15:03
 from typing import List
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
 
-class ZNB_gen(Instrument):
+class ZNB_gen(SCPINode):
+    _cmd = ""
+
     class CAL(SCPINode, SCPIQuery):
         """
         `*CAL

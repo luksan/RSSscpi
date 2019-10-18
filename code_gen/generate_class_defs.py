@@ -298,7 +298,11 @@ class ClassCodeGen(object):
         self._out("from RSSscpi.Instrument import Instrument")
         self._out("")
         self._out("")
-        self._out("class " + self.class_name + "(Instrument):")
+        self._out("class " + self.class_name + "(SCPINode):")
+        self._indent += 1
+        self._out("_cmd = \"\"")
+        self._indent -= 1
+        self._out("")
 
     def gen(self):
         self._preamble()

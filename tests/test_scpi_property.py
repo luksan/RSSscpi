@@ -8,12 +8,13 @@ from __future__ import absolute_import, division, print_function
 import pytest
 from .conftest import VISA  # noqa: F401
 
+from RSSscpi.Instrument import Instrument
 from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
 from RSSscpi.gen import ZNB_gen
 from RSSscpi.gen import ZVA_gen
 
 
-class VNAProp(ZNB_gen):
+class VNAProp(Instrument, ZNB_gen):
     def __init__(self, *args, **kwargs):
         super(VNAProp, self).__init__(*args, **kwargs)
         self.cb_value = None

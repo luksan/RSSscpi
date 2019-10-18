@@ -120,8 +120,7 @@ class InstrumentError(BaseException):
         return ret
 
 
-class Instrument(SCPINodeBase):
-    _cmd = ""
+class Instrument:
 
     MAX_RESPONSE_LOG_LENGTH = 50
 
@@ -138,7 +137,7 @@ class Instrument(SCPINodeBase):
         :param visa_res:
         """
 
-        super(Instrument, self).__init__(None)
+        super().__init__()
 
         self._visa_res = visa_res
         self.command_cnt = 0

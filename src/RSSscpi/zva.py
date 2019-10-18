@@ -55,7 +55,7 @@ def find_zva(max_time=2, max_devices=None):
 
 class ZVA(ZVA_gen, znb.ZNB):
     def __init__(self, visa_res):
-        super(ZVA, self).__init__(visa_res=visa_res)
+        super().__init__(visa_res=visa_res)
         self.logger = logging.getLogger(__name__)
         self.visa_logger = self.logger.getChild("VISA")
 

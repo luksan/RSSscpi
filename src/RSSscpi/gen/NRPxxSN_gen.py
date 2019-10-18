@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
-# Generated from NRPxxSN_syntax.txt on 2019-09-13 11:59
+# Generated from NRPxxSN_syntax.txt on 2019-10-18 15:03
 from typing import List
 from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 from RSSscpi.Instrument import Instrument
 
 
-class NRPxxSN_gen(Instrument):
+class NRPxxSN_gen(SCPINode):
+    _cmd = ""
+
     class CLS(SCPINode, SCPISet):
         """
         *CLS

@@ -6,7 +6,7 @@ Created on Thu Feb 11 11:30:33 2016
 """
 
 from itertools import zip_longest
-from typing import Generator, NoReturn, Optional, Type, TypeVar, Union
+from typing import Generator, List, NoReturn, Optional, Type, TypeVar, Union
 
 from RSSscpi.SCPI_response import SCPIResponse
 
@@ -28,6 +28,7 @@ class SCPINodeBase(object):
         """
         :param parent: The command node level above this node.
         """
+        super().__init__()
         self._parent = parent
         if self.__class__._SCPI_class is None:
             self.__class__._SCPI_class = self.__class__
@@ -35,9 +36,9 @@ class SCPINodeBase(object):
     def __str__(self) -> str:
         return self._cmd
 
-    def __get__(self, instance: "SCPINodeBase", owner: Type["SCPINodeBase"]) -> Union["SCPINodeBase", Type["SCPINodeBase"]]:
+    def __get__(self: N, instance, owner: type) -> Union[N, Type[N]]:
         # Since the class definitions are nested we have to resolve the parent class at runtime
-        if self.__class__._parent_class is None:
+        if self.__class__._parent_class is None and issubclass(owner, SCPINodeBase):
             assert owner._SCPI_class is not None
             self.__class__._parent_class = owner._SCPI_class
         if not instance:
@@ -64,21 +65,20 @@ class SCPINodeBase(object):
             cls = cls._parent_class
 
     def _parent_instance_iter(self) -> Generator["SCPINodeBase", None, None]:
-        while self:
-            yield self
-            self = self._parent
+        node = self
+        while isinstance(node, SCPINodeBase):
+            yield node
+            node = node._parent
 
     def build_cmd(self) -> str:
         return ":".join(reversed([str(x) for x in self._parent_instance_iter() if str(x)]))
 
     def _get_instrument(self):
         """
-        :return: Returns the root node of the command tree, an Instrument.
+        :return: This method returns the Instrument associated with the command tree.
         :rtype: RSSscpi.Instrument.Instrument
         """
-        if not self._parent:
-            from RSSscpi.Instrument import Instrument  # FIXME: restructure the code to avoid circular import
-            assert isinstance(self, Instrument)
+        if self._parent is None:
             return self
         return self._parent._get_instrument()
 

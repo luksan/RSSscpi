@@ -7,6 +7,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 
 from typing import List, Dict
 
+from RSSscpi.Instrument import Instrument
 from RSSscpi.gen.NRPxxSN_gen import NRPxxSN_gen
 from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax
 import RSSscpi.network as net
@@ -58,7 +59,7 @@ def find_sensors(max_time=2, max_sensors=None):
     return net.zeroconf_scan(ZCListener(), max_time, max_sensors)
 
 
-class NRPxxSN(NRPxxSN_gen):
+class NRPxxSN(Instrument, NRPxxSN_gen):
     def __init__(self, visa_res):
         super(NRPxxSN, self).__init__(visa_res)
 

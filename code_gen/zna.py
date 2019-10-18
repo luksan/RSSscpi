@@ -11,6 +11,7 @@ class RohdeZNAWebhelp(ModernRohdeWebhelp):
     instrument_name = "ZNA"
     toc_file = "ZNA_webhelp_toc.xml"
     cmd_list_file = "ZNA_webhelp_command_list.htm"
+    _base_url = "https://www.rohde-schwarz.com/webhelp/ZNA_HTML_UserManual_en{0}"
 
     def parse_toc(self):
         super().parse_toc()

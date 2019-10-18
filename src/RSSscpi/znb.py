@@ -9,6 +9,7 @@ from __future__ import absolute_import, division, print_function, unicode_litera
 from typing import List
 
 from RSSscpi.gen import ZNB_gen
+from RSSscpi.Instrument import Instrument
 from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
 from RSSscpi.SCPI_response import make_ieee_data_block
 import RSSscpi.network as net
@@ -70,9 +71,9 @@ def find_znb(max_time=2, max_devices=None):
     return net.zeroconf_scan(ZCListener(), max_time, max_devices)
 
 
-class ZNB(ZNB_gen):
+class ZNB(Instrument, ZNB_gen):
     def __init__(self, visa_res):
-        super(ZNB, self).__init__(visa_res)
+        super().__init__(visa_res)
         self.logger = logging.getLogger(__name__)
         self.visa_logger = self.logger.getChild("VISA")
         self._port_count = None
@@ -91,7 +92,7 @@ class ZNB(ZNB_gen):
         return CalibrationManager(self)
 
     def init(self):
-        super(ZNB, self).init()
+        super().init()
 
         self._set_codec()
         self.reset_remote_emulation()
