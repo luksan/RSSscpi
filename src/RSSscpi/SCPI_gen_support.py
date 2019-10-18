@@ -52,7 +52,10 @@ class SCPINodeBase(object):
         try:
             x = object.__getattribute__(self, name)
         except AttributeError:
-            raise AttributeError("'%s' has no attribute '%s'" % (self.build_cmd(), name))
+            if name[:3].isupper():
+                raise AttributeError("'%s' has no attribute '%s'" % (self.build_cmd(), name)) from None
+            else:
+                raise
         cls = x.__class__
         if issubclass(cls, SCPINodeBase) and cls._SCPI_class.__module__ != self._SCPI_class.__module__:
             raise AttributeError("Refusing access to a SCPINode from another module. %s !-> %s" % (self._SCPI_class, cls))

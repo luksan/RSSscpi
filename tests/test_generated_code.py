@@ -76,6 +76,12 @@ def test_node_base(dummy_znb, visa):
     # Check that Instrument has _SCPI_class set correctly
     assert instr._SCPI_class.__module__ == instr.OPC.__class__.__module__
 
+    # Test that __getattribute__ gives the correct exception messages
+    with pytest.raises(AttributeError, match=r"'\*OPC' has no attribute 'NONexistant'"):
+        getattr(instr.OPC, "NONexistant")
+
+    with pytest.raises(AttributeError, match="'OPC' object has no attribute 'existant'"):
+        getattr(instr.OPC, "existant")
 
 def test_attributes(visa):
     v1 = VNA1(visa)
