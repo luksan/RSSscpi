@@ -71,7 +71,7 @@ class SCPINodeBase(object):
     def build_cmd(self) -> str:
         return ":".join(reversed([str(x) for x in self._parent_instance_iter() if str(x)]))
 
-    def _get_root(self):
+    def _get_instrument(self):
         """
         :return: Returns the root node of the command tree, an Instrument.
         :rtype: RSSscpi.Instrument.Instrument
@@ -80,7 +80,7 @@ class SCPINodeBase(object):
             from RSSscpi.Instrument import Instrument  # FIXME: restructure the code to avoid circular import
             assert isinstance(self, Instrument)
             return self
-        return self._parent._get_root()
+        return self._parent._get_instrument()
 
     @classmethod
     def relink_to_ancestor(cls, ancestor: "SCPINodeBase") -> "SCPINodeBase":
@@ -178,7 +178,7 @@ class SCPIQuery(SCPICmd):
 
         :returns: a SCPIResponse instance
         """
-        return self._get_root().query(self, *args, **kwargs)
+        return self._get_instrument().query(self, *args, **kwargs)
 
 
 class SCPISet(SCPICmd):
@@ -190,7 +190,7 @@ class SCPISet(SCPICmd):
 
         :rtype: None
         """
-        return self._get_root().write(self, *args, **kwargs)
+        return self._get_instrument().write(self, *args, **kwargs)
 
 
 class SCPIBool(SCPIQuery, SCPISet):
