@@ -246,31 +246,30 @@ class Channel(object):
         :param instrument: A SCPINode instance, linked to the instrument
         """
         self.n = n
-        self.instrument = instrument  # type: ZNB
+        self._instr = instrument  # type: ZNB
 
     @property
-    def CALC(self):
-        # type: () -> ZNB_gen.CALCulate
+    def instrument(self) -> ZNB:
+        return self._instr
+
+    @property
+    def CALC(self) -> ZNB_gen.CALCulate:
         return self.instrument.CALCulate[self.n]
 
     @property
-    def CONFch(self):
-        # type: () -> ZNB_gen.CONFigure.CHANnel
+    def CONFch(self) -> ZNB_gen.CONFigure.CHANnel:
         return self.instrument.CONFigure.CHANnel[self.n]
 
     @property
-    def SENSe(self):
-        # type: () -> ZNB_gen.SENSe
+    def SENSe(self) -> ZNB_gen.SENSe:
         return self.instrument.SENSe[self.n]
 
     @property
-    def SOURce(self):
-        # type: () -> ZNB_gen.SOURce
+    def SOURce(self) -> ZNB_gen.SOURce:
         return self.instrument.SOURce[self.n]
 
     @property
-    def TRIGger(self):
-        # type: () -> ZNB_gen.TRIGger
+    def TRIGger(self) -> ZNB_gen.TRIGger:
         return self.instrument.TRIGger[self.n]
 
     name = SCPIProperty(ZNB_gen.CONFigure.CHANnel.NAME, str, get_root_node=lambda self: self.CONFch)
