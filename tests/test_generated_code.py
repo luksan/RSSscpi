@@ -11,6 +11,7 @@ import inspect
 from .conftest import VISA  # noqa: F401
 
 from RSSscpi.znb import ZNB
+from RSSscpi.gen import ZNB_gen
 from RSSscpi.SCPI_gen_support import SCPINodeBase
 
 from .vna1 import VNA1
@@ -25,7 +26,7 @@ def test_basic(dummy_vna, visa):
     znb = dummy_vna
 
     assert inspect.isclass(znb.ABORt.__class__)
-    assert inspect.isclass(ZNB.ABORt)
+    assert inspect.isclass(ZNB_gen.ABORt)
     assert isinstance(znb.ABORt, SCPINodeBase)
 
     znb.CALCulate.MARKer[3].FUNCtion.BWIDth.q("'asd'")
@@ -66,7 +67,7 @@ def test_basic(dummy_vna, visa):
 def test_node_base(dummy_znb, visa):
     # type: (ZNB, VISA) -> None
 
-    instr = dummy_znb
+    instr = dummy_znb.scpi
 
     # Verify that assignment to the SPCINodes is prevented
     assert hasattr(instr, "OPC")

@@ -53,7 +53,13 @@ def find_zva(max_time=2, max_devices=None):
     return net.zeroconf_scan(ZCListener(), max_time, max_devices)
 
 
-class ZVA(ZVA_gen, znb.ZNB):
+class ZVA(znb.ZNB):
+    _scpi = ZVA_gen()
+
+    @property
+    def scpi(self) -> ZVA_gen:
+        return self._scpi
+
     def __init__(self, visa_res):
         super().__init__(visa_res=visa_res)
         self.logger = logging.getLogger(__name__)

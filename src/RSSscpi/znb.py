@@ -71,7 +71,18 @@ def find_znb(max_time=2, max_devices=None):
     return net.zeroconf_scan(ZCListener(), max_time, max_devices)
 
 
-class ZNB(Instrument, ZNB_gen):
+class ZNB(Instrument):
+    _scpi = ZNB_gen()  # type: ZNB_gen
+
+    @property
+    def scpi(self) -> ZNB_gen:
+        return self._scpi
+
+    def __getattr__(self, item):
+        if item[:3].isupper():  # Only allow SCPI node access
+            return getattr(self.scpi, item)
+        raise AttributeError
+
     def __init__(self, visa_res):
         super().__init__(visa_res)
         self.logger = logging.getLogger(__name__)
@@ -99,7 +110,7 @@ class ZNB(Instrument, ZNB_gen):
 
     def _set_codec(self):
         self._visa_res.encoding = "utf-8"
-        self.SYSTem.COMMunicate.CODec.w("UTF8")  # Set the character encoding
+        self.scpi.SYSTem.COMMunicate.CODec.w("UTF8")  # Set the character encoding
 
     def reset_remote_emulation(self):
         # type: () -> str
@@ -114,7 +125,10 @@ class ZNB(Instrument, ZNB_gen):
             self.SYSTem.LANGuage.w("SCPI")
         return orig_lang
 
-    use_binary_data_transfer = SCPIPropertyMapping(ZNB_gen.FORMat.DATA, str, {"REAL": True, "ASCii": False})
+    use_binary_data_transfer = SCPIPropertyMapping(ZNB_gen.FORMat.DATA,
+                                                   str,
+                                                   {"REAL": True, "ASCii": False},
+                                                   get_root_node=lambda x: x.scpi)
 
     @property
     def active_channel(self):
@@ -645,7 +659,9 @@ class Sweep(ZNB_gen.SENSe.SWEep):
         # type: (int) -> SweepSegment
         return SweepSegment(n, self.channel)
 
-    continuous_sweep = SCPIProperty(ZNB_gen.INITiate.CONTinuous, bool, get_root_node=lambda sweep: sweep.channel.instrument)
+    continuous_sweep = SCPIProperty(ZNB_gen.INITiate.CONTinuous,
+                                    bool,
+                                    get_root_node=lambda sweep: sweep.channel.instrument.scpi)
     _SWE = ZNB_gen.SENSe.SWEep
 
     analog_sweep_is_enabled = SCPIPropertyMapping(_SWE.GENeration, str, {"ANALog": True, "STEPped": False})

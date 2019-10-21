@@ -83,6 +83,8 @@ class SCPINodeBase(object):
         """
         if self._parent is None:
             return self
+        if not isinstance(self._parent, SCPINodeBase):
+            return self._parent
         return self._parent._get_instrument()
 
     @classmethod
