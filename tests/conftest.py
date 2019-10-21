@@ -12,6 +12,7 @@ import collections
 import pytest
 
 from RSSscpi.zva import ZVA
+from RSSscpi.zna import ZNA
 from RSSscpi.znb import ZNB
 import RSSscpi.nrp
 
@@ -133,19 +134,25 @@ def visa():
     return VISA()
 
 
-@pytest.fixture(params=["ZVA", "ZNB"])
+@pytest.fixture(params=["ZVA", "ZNA", "ZNB"])
 def dummy_vna(request, visa):
     visa.clear_cmd()
     if request.param == "ZVA":
         yield ZVA(visa_res=visa)
+    if request.param == "ZNA":
+        yield ZNA(visa)
     if request.param == "ZNB":
         yield ZNB(visa_res=visa)
+
 
 
 @pytest.fixture
 def dummy_zva(visa):
     return ZVA(visa_res=visa)
 
+@pytest.fixture
+def dummy_zna(visa):
+    return ZNA(visa_res=visa)
 
 @pytest.fixture
 def dummy_znb(visa):
