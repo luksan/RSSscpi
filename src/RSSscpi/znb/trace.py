@@ -1,3 +1,4 @@
+from math import floor, log10
 import re
 from typing import List
 
@@ -12,6 +13,7 @@ class MeasParamBase(object):
         self.dst_port = int(dst_port)
         self.src_port = int(src_port)
         self.detector = str(detector).upper()
+        self.port_digits = floor(log10(max(self.src_port, self.dst_port))) + 1
 
 
 class Trace(object):
@@ -22,7 +24,7 @@ class Trace(object):
     class MeasParam(object):
         class S(MeasParamBase):
             def __str__(self):
-                return "S{:02d}{:02d}{!s}".format(self.dst_port, self.src_port, self.detector)
+                return "S{0.dst_port:0{pad}d}{0.src_port:0{pad}d}{0.detector!s}".format(self, pad=self.port_digits)
 
         class Wave(MeasParamBase):
             def __init__(self, receiver, dst_port, src_port, detector=""):
@@ -30,7 +32,7 @@ class Trace(object):
                 self.receiver = str(receiver).upper()
 
             def __str__(self):
-                return "{!s}{:02d}D{:02d}{!s}".format(self.receiver, self.dst_port, self.src_port, self.detector)
+                return "{0.receiver!s}{0.dst_port:0{pad}d}D{0.src_port:0{pad}d}{0.detector!s}".format(self, pad=self.port_digits)
 
     def __init__(self, name: str, channel: "znb.Channel"):
         """

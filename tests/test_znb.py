@@ -216,7 +216,7 @@ class TestChannel(PropertyTester):
 
         tr = ch.create_trace("Tr1", "S11")
         assert tr.name == "Tr1"
-        tr = ch.create_trace("Tr2", "S22", dummy_vna.get_diagram(1))
+        tr = ch.create_trace("Tr2", tr.MeasParam.S(dst_port=2, src_port=2), dummy_vna.get_diagram(1))
         assert tr.name == "Tr2"
         assert ["CALCulate3:PARameter:SDEFine 'Tr1', 'S11'",
                 "CALCulate3:PARameter:SDEFine 'Tr2', 'S22'",
@@ -928,15 +928,21 @@ class TestTrace(PropertyTester):
                 "CALCulate2:PARameter:MEASure 'Tr3', 'S21AVG'",
                 ] == visa.cmd
         tr.measurement = tr.MeasParam.Wave("b", 1, src_port=1, detector="sam")
-        assert ["CALCulate2:PARameter:MEASure 'Tr3', 'B01D01SAM'"] == visa.cmd
+        assert ["CALCulate2:PARameter:MEASure 'Tr3', 'B1D1SAM'"] == visa.cmd
 
     def test_meas_param(self, tr, visa):
         # type: (znb.Trace, VISA) -> None
-        assert str(tr.MeasParam.S(2, 1)) == "S0201"
-        assert str(tr.MeasParam.S("2", 1, "RMS")) == "S0201RMS"
-        assert str(tr.MeasParam.Wave("A", 2, "2")) == "A02D02"
-        assert str(tr.MeasParam.Wave("B", 2, 1)) == "B02D01"
-        assert str(tr.MeasParam.Wave("B", 2, 2, detector="AVG")) == "B02D02AVG"
+        assert str(tr.MeasParam.S(2, 1)) == "S21"
+        assert str(tr.MeasParam.S("2", 1, "RMS")) == "S21RMS"
+        assert str(tr.MeasParam.Wave("A", 2, "2")) == "A2D2"
+        assert str(tr.MeasParam.Wave("B", 2, 1)) == "B2D1"
+        assert str(tr.MeasParam.Wave("B", 2, 2, detector="AVG")) == "B2D2AVG"
+        assert str(tr.MeasParam.S(dst_port=2, src_port=1)) == "S21"
+        assert str(tr.MeasParam.S(dst_port=20, src_port=1)) == "S2001"
+        assert str(tr.MeasParam.S(dst_port=20, src_port=1, detector="Avg")) == "S2001AVG"
+
+        assert str(tr.MeasParam.Wave(receiver="a", src_port=300, dst_port=25)) == "A025D300"
+        assert str(tr.MeasParam.Wave(receiver="B", src_port=3, dst_port=5, detector="rms")) == "B5D3RMS"
 
     def test_query_multiple_sweep_data(self, tr: znb.Trace, visa: VISA):
 
