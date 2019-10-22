@@ -3,12 +3,12 @@
 
 @author: Lukas Sandström
 """
-from __future__ import absolute_import, division, print_function
 
 from RSSscpi import nrp
 
 import csv
-import Tkinter, tkMessageBox
+import tkinter
+from tkinter import messagebox
 import logging
 import numpy
 import time
@@ -49,13 +49,13 @@ class VISAFilter(logging.Filter):
 
 
 def zero_cal():
-    ok = tkMessageBox.askyesno("Zero power sensor", "Perform zero level adjust? (Disconnect sensor from the signal source)")
+    ok = messagebox.askyesno("Zero power sensor", "Perform zero level adjust? (Disconnect sensor from the signal source)")
     if ok:
         sensor.cal_zero()
         sensor.send_OPC()
         print("Zeroing sensor. Please wait.")
         wait_on_queue_progress_bar(sensor.event_queue, 6)
-        tkMessageBox.showinfo("Zero power sensor", "Zero cal complete. Reconnect the power sensor to the signal source.")
+        messagebox.showinfo("Zero power sensor", "Zero cal complete. Reconnect the power sensor to the signal source.")
 
 
 def init_sensor(frequency):
@@ -136,7 +136,7 @@ if __name__ == "__main__":
     sensor.visa_logger.addHandler(logging.FileHandler(filename=__file__[:-3] + "_visa_log.txt", mode="wb"))
     logger.handlers[0].addFilter(VISAFilter())  # don't print VISA INFO logging to the console
 
-    tkRoot = Tkinter.Tk()
+    tkRoot = tkinter.Tk()
     tkRoot.withdraw()
     main()
     print("All good.")

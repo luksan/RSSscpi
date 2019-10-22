@@ -3,9 +3,8 @@
 
 @author: Lukas Sandström
 """
-from __future__ import print_function
 
-import Queue
+import queue
 import logging
 
 import RSSscpi.znb
@@ -14,7 +13,7 @@ logging.basicConfig(level=logging.WARN)
 # logging.basicConfig(level=logging.WARN, filename=__file__[:-3]+"_log.txt", filemode="w")
 
 
-#znb_ip = "10.188.178.47"
+# znb_ip = "10.188.178.47"
 znb_ip = "192.168.56.101"
 
 # VISA command logging
@@ -23,7 +22,7 @@ znb_ip = "192.168.56.101"
 znb = RSSscpi.znb.connect_ethernet(znb_ip)
 
 znb.visa_logger.setLevel(logging.DEBUG)
-znb.visa_logger.addHandler(logging.FileHandler(filename=__file__[:-3]+"_visa_log.txt", mode="wb"))
+znb.visa_logger.addHandler(logging.FileHandler(filename=__file__[:-3] + "_visa_log.txt", mode="w"))
 znb.init()
 
 # Instrument setup
@@ -48,7 +47,6 @@ sense.FREQuency.STOP.w(3e9)
 sense.SWEep.POINts.w(10001)
 znb.SOURce[ch_no].POWer.LEVel.w("0 dBm")
 
-
 # Add traces
 ch.active_trace.delete()  # remove the predefined trace
 tr_s11 = ch.create_trace("S11", "S11", dia1)
@@ -56,10 +54,9 @@ tr_s21 = ch.create_trace("S21", "S21", dia1)
 tr_s12 = ch.create_trace("S12", "S12", dia1)
 tr_s22 = ch.create_trace("S22", "S22", dia1)
 
-
 # Calibrate
 
-#ch.cal_auto((1, 2))
+# ch.cal_auto((1, 2))
 ch.init_sweep()
 znb.send_OPC()
 
@@ -69,15 +66,15 @@ def wait_for_event():
     for x in range(100):  # wait for at most 10 seconds for completion
         try:
             return znb.event_queue.get(timeout=0.1)
-        except Queue.Empty:
+        except queue.Empty:
             print(".", end="")
             continue
     return None
 
+
 print("Calibrating", end="")
 opc = wait_for_event()
 print("done")
-#print opc
 
 # Make the measurement
 ch.init_sweep()
@@ -88,6 +85,6 @@ wait_for_event()
 print("done")
 
 # Save the S-parameter data
-print(ch.save_touchstone("test.s2p", ports=(1,2)))
+print(ch.save_touchstone("test.s2p", ports=(1, 2)))
 # Final OPC before the program terminates
 znb.query_OPC()

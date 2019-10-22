@@ -4,7 +4,6 @@ This example shows how to configure the ZVA or ZNB for a per point triggered mea
 
 @author: Lukas Sandström
 """
-from __future__ import print_function
 
 import RSSscpi.zva
 import time
@@ -12,13 +11,13 @@ import time
 import logging
 # logging.basicConfig(level=logging.WARN, filename=__file__[:-3]+"_log.txt", filemode="w")
 
-#vna_ip = "10.188.178.48"
+# vna_ip = "10.188.178.48"
 vna_ip = "192.168.56.101"
 
 
 zva = RSSscpi.zva.connect_ethernet(vna_ip)
 zva.visa_logger.setLevel(logging.DEBUG)
-zva.visa_logger.addHandler(logging.FileHandler(filename=__file__[:-3] + "_visa_log.txt", mode="wb"))
+zva.visa_logger.addHandler(logging.FileHandler(filename=__file__[:-3] + "_visa_log.txt", mode="w"))
 zva.init()
 
 ##
