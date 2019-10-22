@@ -3,17 +3,16 @@
 
 @author: Lukas Sandström
 """
-from __future__ import absolute_import, division, print_function, unicode_literals
 
-import RSSscpi
+import logging
+from typing import Union
+
+from memoized_property import memoized_property
+
 from RSSscpi.gen import ZVA_gen
 from RSSscpi.SCPI_property import SCPIProperty
 from RSSscpi import znb
 import RSSscpi.network as net
-
-import logging
-
-from memoized_property import memoized_property
 
 
 def connect_ethernet(ip_address: str) -> "ZVA":
@@ -65,9 +64,6 @@ class ZVA(znb.ZNB):
         self.logger = logging.getLogger(__name__)
         self.visa_logger = self.logger.getChild("VISA")
 
-    #def init(self):
-        # SYSTem:DATA:SIZE ALL | AUTO
-
     @memoized_property
     def filesystem(self):
         """
@@ -98,6 +94,7 @@ class Channel(znb.Channel):
     """
     This class maps to the concept of a channel on the ZVA.
     """
+
     @property
     def instrument(self) -> ZVA:
         return self._instr
@@ -132,7 +129,7 @@ class Channel(znb.Channel):
     def get_vna_port(self, port_no: int):
         return ChannelVNAPort(self, port_no)
 
-    def create_trace(self, name: str, parameter: str, diagram=None) -> "Trace":
+    def create_trace(self, name: str, parameter: Union[str, znb.trace.MeasParamBase], diagram=None) -> "Trace":
         return super(Channel, self).create_trace(name, parameter, diagram)
 
 
