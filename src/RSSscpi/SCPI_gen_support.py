@@ -8,7 +8,7 @@ Created on Thu Feb 11 11:30:33 2016
 from itertools import zip_longest
 from typing import Generator, List, NoReturn, Optional, Type, TypeVar, Union
 
-from RSSscpi.SCPI_response import SCPIResponse
+from .SCPI_response import SCPIResponse
 
 N = TypeVar("N", bound="SCPINodeBase")
 

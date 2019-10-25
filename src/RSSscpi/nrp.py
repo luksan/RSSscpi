@@ -3,14 +3,12 @@
 
 @author: Lukas Sandström
 """
-from __future__ import absolute_import, division, print_function, unicode_literals
-
 from typing import List, Dict
 
-from RSSscpi.Instrument import Instrument
-from RSSscpi.gen.NRPxxSN_gen import NRPxxSN_gen
-from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax
-import RSSscpi.network as net
+from .Instrument import Instrument
+from .gen.NRPxxSN_gen import NRPxxSN_gen
+from .SCPI_property import SCPIProperty, SCPIPropertyMinMax
+from . import network as net
 
 import socket
 

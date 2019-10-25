@@ -6,7 +6,8 @@ from ..SCPI_property import SCPIProperty
 from ..gen import ZNB_gen
 from .diagram import Diagram
 
-import RSSscpi.znb as znb
+from .. import znb
+
 
 class MeasParamBase(object):
     def __init__(self, dst_port, src_port, detector=""):

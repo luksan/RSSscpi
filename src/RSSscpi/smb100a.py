@@ -3,10 +3,8 @@
 
 @author: Lukas Sandström
 """
-from __future__ import absolute_import, division, print_function, unicode_literals
-
-from RSSscpi.gen.SMB100A_gen import SMB100A_gen
-import RSSscpi.network as net
+from .gen.SMB100A_gen import SMB100A_gen
+from . import network as net
 
 
 def connect_ethernet(ip_address: str) -> "SMB100A":

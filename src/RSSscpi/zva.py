@@ -9,10 +9,10 @@ from typing import Union
 
 from memoized_property import memoized_property
 
-from RSSscpi.gen import ZVA_gen
-from RSSscpi.SCPI_property import SCPIProperty
-from RSSscpi import znb
-import RSSscpi.network as net
+from .gen import ZVA_gen
+from .SCPI_property import SCPIProperty
+from . import znb
+from . import network as net
 
 
 def connect_ethernet(ip_address: str) -> "ZVA":

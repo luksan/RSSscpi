@@ -1,4 +1,4 @@
-from RSSscpi import znb as znb
+from .. import znb
 from . import ZNA_gen
 
 

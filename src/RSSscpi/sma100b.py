@@ -3,11 +3,8 @@
 
 @author: Lukas Sandström
 """
-from __future__ import absolute_import, division, print_function, unicode_literals
-
-from RSSscpi.gen.SMA100B_gen import SMA100B_gen
-from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax
-import RSSscpi.network as net
+from .gen.SMA100B_gen import SMA100B_gen
+from . import network as net
 
 import socket
 

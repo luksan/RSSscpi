@@ -1,8 +1,6 @@
-from RSSscpi import znb as znb
-
+from .. import zna
+from .. import znb
 from . import ZNA_gen
-
-import RSSscpi.zna as zna
 from .trace import Trace
 
 

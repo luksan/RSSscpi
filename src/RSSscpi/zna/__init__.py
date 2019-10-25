@@ -1,6 +1,7 @@
-from RSSscpi.gen import ZNA_gen
-import RSSscpi.znb as znb
+from .. import znb
 from .. import network as net
+
+from ..gen import ZNA_gen
 
 from .channel import Channel
 from .diagram import Diagram
