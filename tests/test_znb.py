@@ -79,12 +79,12 @@ class PropertyTester(object):
         x = getattr(instance, prop_name)
         assert isinstance(x, type_) and x == scpi_values[0]
         setattr(instance, prop_name, scpi_values[0])
-        assert [scpi_query.format(scpi_cmd), scpi_write.format(scpi_cmd, scpi_values[1])] == visa.cmd
+        assert visa.cmd == [scpi_query.format(scpi_cmd), scpi_write.format(scpi_cmd, scpi_values[1])]
         minmax = prop_name + "_minmax"
         if hasattr(instance, minmax):
             assert isinstance(getattr(instance, minmax), SCPIPropertyMinMax)
             setattr(instance, minmax, scpi_values[0])
-            assert [scpi_write.format(scpi_cmd, scpi_values[1])] == visa.cmd
+            assert visa.cmd == [scpi_write.format(scpi_cmd, scpi_values[1])]
 
 
 class TestZNB(object):
