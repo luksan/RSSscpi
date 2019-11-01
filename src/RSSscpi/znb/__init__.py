@@ -4,7 +4,7 @@
 @author: Lukas Sandström
 """
 
-from typing import List
+from typing import List, Union
 
 from ..gen import ZNB_gen
 from ..Instrument import Instrument
@@ -17,7 +17,7 @@ from memoized_property import memoized_property
 
 from .channel import Channel, ChannelCal, ChannelVNAPort, Sweep, SweepSegments, SweepSegment
 from .diagram import Diagram
-from .filesystem import Filesystem
+from .filesystem import File, Filesystem
 from .trace import Trace, Marker, Limit
 
 
@@ -183,6 +183,25 @@ class ZNB(Instrument):
         x = int(self.INSTrument.PORT.COUNt.q())
         self._port_count = x
         return x
+
+    def save_recall_set(self, filename: Union[str, File]) -> File:
+        """
+        Saves the instrument state to `filename`. The standard file ending is .znx.
+        SCPI node: MMEMory:STORe:STATe
+
+        :param filename: The path/file that the instrument state should be stored at.
+        :return: A File object referring to the saved state
+        """
+        self.scpi.MMEMory.STORe.STATe.w(str(filename), fmt="1,{:q}")
+        return self.filesystem.file(str(filename))
+
+    def load_recall_set(self, filename: Union[str, File]):
+        """
+        Loads instrument state from the file filename on the VNA.
+
+        :param filename: The file on the VNA from which the state will be loadied
+        """
+        self.scpi.MMEMory.LOAD.STATe.w(str(filename), fmt="1,{:q}")
 
     def save_screenshot(self, filename, diagram=None):
         """

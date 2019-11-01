@@ -161,6 +161,31 @@ class TestZNB(object):
         assert x == 4
         assert [] == visa.cmd
 
+    def test_save_and_load_state(self, dummy_vna: ZNB, visa: VISA):
+        znb = dummy_vna
+        state1 = znb.save_recall_set("state1.znx")
+        assert str(state1) == r"C:\Rohde & Schwarz\Nwa\state1.znx"
+        state2 = znb.filesystem.file(r"c:\state2.znx")
+        assert str(state2) == r"c:\state2.znx"
+        state2_out = znb.save_recall_set(state2)
+        assert str(state2_out) == str(state2)
+
+        assert visa.cmd == [
+            "MMEMory:STORe:STATe 1,'state1.znx'",
+            "MMEMory:CDIRectory?",
+            "MMEMory:CDIRectory?",
+            "MMEMory:STORe:STATe 1,'c:\\state2.znx'",
+            "MMEMory:CDIRectory?",
+        ]
+
+        znb.load_recall_set("state1.znx")
+        znb.load_recall_set(state2_out)
+        assert visa.cmd == [
+            "MMEMory:LOAD:STATe 1,'state1.znx'",
+            "MMEMory:LOAD:STATe 1,'c:\\state2.znx'",
+        ]
+
+
     def test_znb_screenshot(self, dummy_vna, visa):
         # type: (ZNB, VISA) -> None
         vna = dummy_vna
