@@ -173,8 +173,11 @@ class Trace(object):
 
     # noinspection PyUnusedLocal
     def _add_trace_name_arg_cb(self, value=None, **kwargs):
-        ret = {"name": self.name, "fmt": "{name:q}"}
-        if value is not None:
+        ret = {"name": self.name}
+        if value is None:  # The command form with trace name only works for setting the value, not querying it
+            self._make_active_cb()
+            ret = {}
+        else:
             ret["value"] = value
             ret["fmt"] = "{value:s}, {name:q}"
         return ret

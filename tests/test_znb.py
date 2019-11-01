@@ -807,14 +807,15 @@ class TestTrace(PropertyTester):
 
     @pytest.fixture
     def prop_owner(self, tr):
+        tr._cmd_cnt = tr.channel.instrument.command_cnt
         return tr
 
     float_properties = [
-        ("scale_per_div",   "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision",   "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
-        ("scale_top",       "DISPlay:WINDow:TRACe:Y:SCALe:TOP",         "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
-        ("scale_bottom",    "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom",      "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
-        ("ref_level",       "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel",      "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
-        ("ref_pos",         "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition",   "{:s} {!s}, 'Tr3'", "{:s}? 'Tr3'"),
+        ("scale_per_div",   "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision",   "{:s} {!s}, 'Tr3'", "{:s}?"),
+        ("scale_top",       "DISPlay:WINDow:TRACe:Y:SCALe:TOP",         "{:s} {!s}, 'Tr3'", "{:s}?"),
+        ("scale_bottom",    "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom",      "{:s} {!s}, 'Tr3'", "{:s}?"),
+        ("ref_level",       "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel",      "{:s} {!s}, 'Tr3'", "{:s}?"),
+        ("ref_pos",         "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition",   "{:s} {!s}, 'Tr3'", "{:s}?"),
     ]
 
     def test_trace_format(self, tr, visa):
