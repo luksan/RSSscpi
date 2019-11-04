@@ -33,7 +33,8 @@ class Trace(object):
                 self.receiver = str(receiver).upper()
 
             def __str__(self):
-                return "{0.receiver!s}{0.dst_port:0{pad}d}D{0.src_port:0{pad}d}{0.detector!s}".format(self, pad=self.port_digits)
+                return "{0.receiver!s}{0.dst_port:0{pad}d}D{0.src_port:0{pad}d}{0.detector!s}".\
+                    format(self, pad=self.port_digits)
 
     def __init__(self, name: str, channel: "znb.Channel"):
         """

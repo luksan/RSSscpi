@@ -27,7 +27,7 @@ class PropertyTester(object):
         else:
             return
         if not props:
-            metafunc.parametrize('prop_name, scpi_cmd, scpi_write, scpi_query', ([None]*4, ))
+            metafunc.parametrize('prop_name, scpi_cmd, scpi_write, scpi_query', ([None] * 4,))
             return
         metafunc.parametrize('prop_name, scpi_cmd, scpi_write, scpi_query',
                              props, ids=[x[0] for x in props])
@@ -184,7 +184,6 @@ class TestZNB(object):
             "MMEMory:LOAD:STATe 1,'state1.znx'",
             "MMEMory:LOAD:STATe 1,'c:\\state2.znx'",
         ]
-
 
     def test_znb_screenshot(self, dummy_vna, visa):
         # type: (ZNB, VISA) -> None
@@ -1015,7 +1014,7 @@ class TestTrace(PropertyTester):
 
         # Test ascii response
         visa.ret = ",".join(map(str, range(24)))
-        data = tr.query_multiple_sweep_data(1,  3)
+        data = tr.query_multiple_sweep_data(1, 3)
         assert len(data) == 3
         assert len(data[0]) == 4
         assert isinstance(data[0][0], complex)
