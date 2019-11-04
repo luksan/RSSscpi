@@ -365,7 +365,7 @@ class Marker(ZNB_gen.CALCulate.MARKer):
 
     _MKR = ZNB_gen.CALCulate.MARKer
     tracking = SCPIProperty(_MKR.SEARch.TRACking, bool, callback=_prop_callback)  #: Marker tracking enabled
-    is_enabled = SCPIProperty(_MKR.STATe, bool, callback=_prop_callback)
+    state = SCPIProperty(_MKR.STATe, bool, callback=_prop_callback)
     """Enable/disable the marker"""
     #: Marker position
     x = SCPIProperty(_MKR.X, float, callback=_prop_callback)

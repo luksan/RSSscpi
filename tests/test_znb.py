@@ -766,24 +766,27 @@ def test_marker(dummy_vna, visa):
 
     tr.name = "Tr2"  # Change the trace name to force an "active trace" select
     visa.clear_cmd()
-    m1.is_enabled = True
-    x = m1.is_enabled
-    m1.is_enabled = "OFF"
-    assert ["CALCulate2:PARameter:SELect 'Tr2'",
-            "CALCulate2:MARKer3:STATe ON",
-            "CALCulate2:MARKer3:STATe?",
-            "CALCulate2:MARKer3:STATe OFF"] == visa.cmd
-    assert isinstance(x, bool)
+    m1.state = True
+    m1.state = False
+    assert m1.state is True
+    m1.state = "OFF"
+    assert visa.cmd == [
+        "CALCulate2:PARameter:SELect 'Tr2'",
+        "CALCulate2:MARKer3:STATe ON",
+        "CALCulate2:MARKer3:STATe OFF",
+        "CALCulate2:MARKer3:STATe?",
+        "CALCulate2:MARKer3:STATe OFF"]
 
     m1.x = 3.3
-    x = m1.x
-    assert ["CALCulate2:MARKer3:X 3.3",
-            "CALCulate2:MARKer3:X?"] == visa.cmd
-    assert isinstance(x, float)
+    assert isinstance(m1.x, float)
+    assert m1.x == 1.0
+    assert visa.cmd == [
+        "CALCulate2:MARKer3:X 3.3",
+        "CALCulate2:MARKer3:X?",
+        "CALCulate2:MARKer3:X?"]
 
-    x = m1.y
-    assert ["CALCulate2:MARKer3:Y?"] == visa.cmd
-    assert isinstance(x, float)
+    assert isinstance(m1.y, float)
+    assert visa.cmd == ["CALCulate2:MARKer3:Y?"]
 
 
 def test_marker_y_set(dummy_znb, visa):
