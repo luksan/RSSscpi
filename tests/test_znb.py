@@ -940,10 +940,48 @@ class TestTrace(PropertyTester):
             tr.copy_math_to_mem(name)
         assert [] == visa.cmd
 
-    def test_trace_scaling(self, tr, visa):
-        # type: (znb.Trace, VISA) -> None
+    def test_autoscale(self, tr: znb.Trace, visa: VISA):
         tr.autoscale()
         assert ["DISPlay:WINDow:TRACe:Y:SCALe:AUTO ONCE, 'Tr3'"] == visa.cmd
+
+    @pytest.mark.parametrize("scale_params,expected", [
+        ({"scale_div": 1}, ["DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 1, 'Tr3'"]),
+        ({"scale_div": 0}, (ValueError, [])),
+        ({"top": -30}, ["DISPlay:WINDow:TRACe:Y:SCALe:TOP -30, 'Tr3'"]),
+        ({"bottom": -100}, ["DISPlay:WINDow:TRACe:Y:SCALe:BOTTom -100, 'Tr3'"]),
+        ({"ref_level": 0.3}, ["DISPlay:WINDow:TRACe:Y:SCALe:RLEVel 0.3, 'Tr3'"]),
+        ({"ref_pos": 10}, ["DISPlay:WINDow:TRACe:Y:SCALe:RPOSition 10, 'Tr3'"]),
+        ({"ref_pos": 103}, (ValueError, [])),
+        ({"top": 10, "bottom": 0}, [
+            "DISPlay:WINDow:TRACe:Y:SCALe:TOP?",
+            "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom 0, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:TOP 10, 'Tr3'",
+        ]),
+        ({"top": 20, "bottom": 10}, [  # Reversed top/bottom setting, since bottom > old_top (1)
+            "DISPlay:WINDow:TRACe:Y:SCALe:TOP?",
+            "DISPlay:WINDow:TRACe:Y:SCALe:TOP 20, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom 10, 'Tr3'",
+        ]),
+        ({"top": 0, "bottom": 10}, (ValueError, [])),
+        ({"top": 10, "bottom": 0, "scale_div": 5}, (ValueError, [])),
+        ({"top": 10, "bottom": 0, "ref_level": -5}, (ValueError, [])),
+        ({"top": 10, "bottom": -10, "scale_div": 2, "ref_level": -2, "ref_pos": 40}, [
+            "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition 40, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel -2, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 2, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom -10, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:TOP 10, 'Tr3'",
+        ]),
+    ])
+    def test_set_scaling(self, scale_params, expected, tr: znb.Trace, visa: VISA):
+        tr._cmd_cnt = tr.channel.instrument.command_cnt  # don't test trace select all the time
+        if not isinstance(expected, tuple):
+            tr.set_scaling(**scale_params)
+            assert visa.cmd == expected
+        else:
+            with pytest.raises(expected[0]):
+                tr.set_scaling(**scale_params)
+            assert visa.cmd == expected[1]
 
     def test_trace_measurement(self, tr, visa):
         # type: (znb.Trace, VISA) -> None
