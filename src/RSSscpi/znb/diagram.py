@@ -7,11 +7,14 @@ class Diagram(ZNB_gen.DISPlay.WINDow):
         """
         :param n: Number of the diagram area
         :param instrument: Reference to the Instrument
-        :type instrument: ZNB
         """
         super(Diagram, self).__init__(parent=instrument.DISPlay)
-        self.instrument = instrument
+        self._instr = instrument
         self.n = n
+
+    @property
+    def instrument(self) -> "znb.ZNB":
+        return self._instr
 
     def delete(self):
         # FIXME: make some kind of callback to update all remaining Diagram instances?? requires a weakref dict.
