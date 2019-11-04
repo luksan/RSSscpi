@@ -14,23 +14,44 @@ class SCPIProperty(object):
     """
     Getter/setter class for turning SCPINodes to class properties
     """
-    def __init__(self, node,
+
+    def __init__(self,
+                 node: SCPINodeBase,
                  conv: Callable[[SCPIResponse], Any],
                  callback: Callable[..., Optional[Dict[str, Any]]] = None,
-                 get_root_node: Callable[[Any], SCPINodeBase] = lambda x: x,
+                 get_root_node: Callable[[Any], SCPINodeBase] = None,
+                 parent_prop: property = None,
                  docstr: str = None):
         """
 
-        :param SCPINodeBase node: A __class__ derived from SCPINodeBase, which q() and w() will be invoked on an instance of.
-        :param conv: A function which converts a SCPIResponse object to the desired type of the property.
-        :param callback: A function called before each write and query, returning either a dict or None. The dict will be used as parameters for write()/query()
-        :param get_root_node: A function returning a SCPINodeBase instance, called with instance as only parameter. Nodes between root and <node> will be instantiated an linked to root
-        :param str docstr: The property doctring
+        :param node:
+            A __class__ derived from SCPINodeBase, which q() and w() will be invoked on an instance of.
+        :param conv:
+            A function which converts a SCPIResponse object to the desired type of the property.
+        :param callback:
+            A function called before each write and query, returning either a dict or None.
+            The dict will be used as parameters for write()/query()
+        :param get_root_node:
+            A function returning a SCPINodeBase instance, called with instance as only parameter.
+            Nodes between root and <node> will be instantiated an linked to root
+        :param parent_prop:
+            If the node that would be returned by get_root_node can be accessed via a class property
+            that property can be given here instead of the get_root_node argument.
+        :param docstr:
+            The doctring of the SCPIProperty
         """
         self._leaf_node = node
         self._conv = conv
         self._callback = callback
-        self._get_root_node = get_root_node
+        if parent_prop:
+            assert get_root_node is None
+            # noinspection PyArgumentList
+            self._get_root_node = lambda instance: parent_prop.fget(instance)
+        else:
+            if get_root_node is None:
+                self._get_root_node = lambda x: x
+            else:
+                self._get_root_node = get_root_node
         self._set_doc()
         if docstr:  # FIXME: remove the argument and assign self.__doc__ =  node.__doc__ unconditionally
             self.__doc__ = docstr
