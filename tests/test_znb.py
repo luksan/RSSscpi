@@ -788,6 +788,14 @@ def test_marker(dummy_vna, visa):
     assert isinstance(m1.y, float)
     assert visa.cmd == ["CALCulate2:MARKer3:Y?"]
 
+    m1.format = "ADM"
+    visa.ret = "ADM"
+    assert m1.format == "ADM"
+    assert visa.cmd == [
+        "CALCulate2:MARKer3:FORMat ADM",
+        "CALCulate2:MARKer3:FORMat?",
+    ]
+
 
 def test_marker_y_set(dummy_znb, visa):
     # type: (ZNB, VISA) -> None

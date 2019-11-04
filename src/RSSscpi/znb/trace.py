@@ -372,6 +372,9 @@ class Marker(ZNB_gen.CALCulate.MARKer):
     #: Marker value
     y = SCPIProperty(_MKR.Y, float, callback=_prop_callback)
 
+    format = SCPIProperty(_MKR.FORMat, str, callback=_prop_callback)
+    """Get/set the y-value display format for the marker"""
+
 
 class Limit(ZNB_gen.CALCulate.LIMit):
     def __init__(self, trace):
