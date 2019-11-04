@@ -5,10 +5,11 @@
 """
 
 import logging
-from typing import Union
+from typing import NoReturn, Union
 
 from memoized_property import memoized_property
 
+from RSSscpi.gen import ZNB_gen
 from .gen import ZVA_gen
 from .SCPI_property import SCPIProperty
 from . import znb
@@ -133,8 +134,14 @@ class Channel(znb.Channel):
         return super(Channel, self).create_trace(name, parameter, diagram)
 
 
-class Diagram(ZVA_gen.DISPlay.WINDow, znb.Diagram):
-    pass
+class Diagram(znb.Diagram):
+    @property
+    def LAYout(self) -> NoReturn:
+        raise AttributeError("DISPlay:LAYout is not avalable on ZVA")
+
+    @property
+    def WINDow(self) -> ZVA_gen.DISPlay.WINDow:
+        return super().WINDow
 
 
 class Filesystem(ZVA_gen.MMEMory, znb.Filesystem):

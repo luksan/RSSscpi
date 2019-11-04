@@ -311,7 +311,7 @@ class Trace(object):
         :type diagram: Diagram
         """
         diagram.state = True
-        diagram.TRACe.EFEed.w(self.name)
+        diagram.WINDow.TRACe.EFEed.w(self.name)
 
     def query_multiple_sweep_data(self, first_sweep: int, last_sweep: int = None) -> List[List[complex]]:
         """
