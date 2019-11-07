@@ -7,7 +7,8 @@ import threading
 import timeit
 import traceback
 
-import visa
+import pyvisa
+import pyvisa.constants
 
 from .SCPI_gen_support import SCPINodeBase
 from .SCPI_response import SCPIResponse, make_ieee_data_block
@@ -174,8 +175,8 @@ class Instrument:
         self._write("*CLS;*ESE 127;*SRE 36")
 
         self._service_request_callback_handle = self._visa_res.install_handler(
-            visa.constants.EventType.service_request, self._service_request_handler, 0)
-        self._visa_res.enable_event(visa.constants.EventType.service_request, visa.constants.VI_HNDLR)
+            pyvisa.constants.EventType.service_request, self._service_request_handler, 0)
+        self._visa_res.enable_event(pyvisa.constants.EventType.service_request, pyvisa.constants.VI_HNDLR)
 
     @property
     def _log_time(self):
@@ -215,7 +216,7 @@ class Instrument:
 
                 if stb.error_queue_not_empty:
                     self._get_error_queue()
-        return visa.constants.VI_SUCCESS
+        return pyvisa.constants.VI_SUCCESS
 
     def _get_error_queue(self):
         err = self._query("SYSTem:ERRor:ALL?")
@@ -266,7 +267,7 @@ class Instrument:
 
         try:
             ret = func(*args, **kwargs)
-        except visa.Error as e:
+        except pyvisa.Error as e:
             err = "Resource error: " + str(e) + ", " + func.__name__
             self.visa_logger.exception(err)
             raise
@@ -287,7 +288,7 @@ class Instrument:
             if len(logged_response) > self.MAX_RESPONSE_LOG_LENGTH:  # Add "..." to show that the response is truncated
                 r = " -> '%s'..." % (logged_response[:self.MAX_RESPONSE_LOG_LENGTH])
             else:
-                r = " -> '%s'" % (logged_response)
+                r = " -> '%s'" % logged_response
         else:
             r = ""
         self.visa_logger.info("%5.1f ms %.2f ms\t%s%s",
@@ -354,7 +355,7 @@ class Instrument:
         str_args = SCPICmdFormatter().vformat(fmt, args, kwargs)
         return str_args.encode(self._visa_res.encoding)
 
-    def _build_arg_str_enc(self, *args, param_enc, **kwargs):
+    def _build_arg_str_enc(self, *args, param_enc):
         if isinstance(param_enc, str):
             param_enc = (param_enc, )
         assert len(args) == len(param_enc)
@@ -433,8 +434,8 @@ class Instrument:
             with self._visa_lock:
                 self._in_callback.release()
                 return self._query_raw(x)
-        except visa.VisaIOError as e:
-            if e.error_code == visa.constants.VI_ERROR_TMO:  # timeout
+        except pyvisa.VisaIOError as e:
+            if e.error_code == pyvisa.constants.VI_ERROR_TMO:  # timeout
                 if self.exception_on_error:
                     try:
                         # Wait for up to 1 s for the error callback to be processed
