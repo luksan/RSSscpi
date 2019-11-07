@@ -321,25 +321,7 @@ class Instrument:
         elif "fmt" in kwargs:
             arg_bytes = self._build_arg_str_fmt(*args, **kwargs)
         elif args:
-            # No format string specified, so try to guess something reasonable
-            # Assume that all positional arguments are to be sent comma separated, with the same formatting.
-            if "quote" in kwargs:
-                if kwargs["quote"]:
-                    fmt = "{:q*}"
-                else:
-                    fmt = "{:s*}"
-            elif "'string'" in cmd.args and str(args[0]).lower() not in (x.lower() for x in cmd.args):
-                fmt = "{:q*}"
-            elif cmd.args and all(x[0] == "'" and x[-1] == "'" for x in cmd.args if x):
-                # Quote the argument if all alternatives are quoted
-                # See TRIGger:SEQuence:LINK
-                fmt = "{:q*}"
-            else:
-                fmt = "{:s*}"
-            if not cmd.args:
-                warnings.warn("Command %s does not specify any arguments. "
-                              "Supply fmt= kwarg to suppress this warning." % cmd.build_cmd())
-            arg_bytes = self._build_arg_str_fmt(args, fmt=fmt, **kwargs)
+            arg_bytes = self._build_arg_str_guess_fmt(cmd, *args, **kwargs)
 
         if arg_bytes:
             ret.append(b" ")  # Separator between command and arguments
@@ -348,6 +330,27 @@ class Instrument:
         if termination:
             ret.append(termination.encode(encoding))
         return b"".join(ret)
+
+    def _build_arg_str_guess_fmt(self, cmd: SCPINodeBase, *args, **kwargs):
+        # No format string specified, so try to guess something reasonable
+        # Assume that all positional arguments are to be sent comma separated, with the same formatting.
+        if "quote" in kwargs:
+            if kwargs["quote"]:
+                fmt = "{:q*}"
+            else:
+                fmt = "{:s*}"
+        elif "'string'" in cmd.args and str(args[0]).lower() not in (x.lower() for x in cmd.args):
+            fmt = "{:q*}"
+        elif cmd.args and all(x[0] == "'" and x[-1] == "'" for x in cmd.args if x):
+            # Quote the argument if all alternatives are quoted
+            # See TRIGger:SEQuence:LINK
+            fmt = "{:q*}"
+        else:
+            fmt = "{:s*}"
+        if not cmd.args:
+            warnings.warn("Command %s does not specify any arguments. "
+                          "Supply fmt= kwarg to suppress this warning." % cmd.build_cmd())
+        return self._build_arg_str_fmt(args, fmt=fmt, **kwargs)
 
     def _build_arg_str_fmt(self, *args, fmt, **kwargs):
         assert isinstance(fmt, str)
