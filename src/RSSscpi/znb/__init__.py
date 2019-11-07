@@ -233,6 +233,42 @@ class ZNB(Instrument):
         self.HCOPy.IMMediate.w()  # Perform the screen capture
         return self.filesystem.file(filename)
 
+    def update_display(self, state=True, once=False):
+        if state:
+            if once:
+                cmd = "ONCE"
+            else:
+                cmd = "ON"
+        else:
+            cmd = "OFF"
+        self.scpi.SYSTem.DISPlay.UPDate.w(cmd)
+
+    def preset(self):
+        """
+        Send `*RST` to the instrument, and set up the event registers again.
+        """
+        self.scpi.RST.w()
+        self.query_OPC()
+        self._write("*CLS;*ESE 127;*SRE 36")
+
+    def query_OPC(self):
+        """
+        Send `*OPC?` to the instrument and wait for the response.
+        """
+        return str(self.scpi.OPC.q())
+
+    def send_OPC(self):
+        """
+        Send `*OPC` to the instrument.
+        """
+        self.scpi.OPC.w()
+
+    def send_TRG(self):
+        """
+        Send `*TRG` to the instrument.
+        """
+        self.scpi.TRG.w()
+
 
 class CalibrationManager(object):
     """

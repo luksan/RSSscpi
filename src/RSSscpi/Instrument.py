@@ -113,7 +113,6 @@ class InstrumentError(BaseException):
 
 
 class Instrument:
-
     MAX_RESPONSE_LOG_LENGTH = 50
 
     Error = InstrumentError
@@ -337,7 +336,8 @@ class Instrument:
             else:
                 fmt = "{:s*}"
             if not cmd.args:
-                warnings.warn("Command %s does not specify any arguments. Supply fmt= kwarg to suppress this warning." % cmd.build_cmd())
+                warnings.warn("Command %s does not specify any arguments. "
+                              "Supply fmt= kwarg to suppress this warning." % cmd.build_cmd())
             arg_bytes = self._build_arg_str_fmt(args, fmt=fmt, **kwargs)
 
         if arg_bytes:
@@ -437,43 +437,8 @@ class Instrument:
             if e.error_code == visa.constants.VI_ERROR_TMO:  # timeout
                 if self.exception_on_error:
                     try:
-                        raise self.error_queue.get(timeout=1)  # Wait for up to 1 s for the error callback to be processed
+                        # Wait for up to 1 s for the error callback to be processed
+                        raise self.error_queue.get(timeout=1)
                     except queue.Empty:
                         pass
             raise e
-
-    def update_display(self, state=True, once=False):
-        if state:
-            if once:
-                cmd = "ONCE"
-            else:
-                cmd = "ON"
-        else:
-            cmd = "OFF"
-        self.SYSTem.DISPlay.UPDate.w(cmd)
-
-    def preset(self):
-        """
-        Send `*RST` to the instrument, and set up the event registers again.
-        """
-        self.RST.w()
-        self.query_OPC()
-        self._write("*CLS;*ESE 127;*SRE 36")
-
-    def query_OPC(self):
-        """
-        Send `*OPC?` to the instrument and wait for the response.
-        """
-        return str(self.OPC.q())
-
-    def send_OPC(self):
-        """
-        Send `*OPC` to the instrument.
-        """
-        self.OPC.w()
-
-    def send_TRG(self):
-        """
-        Send `*TRG` to the instrument.
-        """
-        self.TRG.w()
