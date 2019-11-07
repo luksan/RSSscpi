@@ -4,7 +4,7 @@
 @author: Lukas Sandström
 """
 
-from typing import Any, Callable, List, Tuple, TypeVar
+from typing import Callable, List, Tuple, TypeVar
 import warnings
 
 try:
@@ -18,10 +18,12 @@ except ImportError:
 T1 = TypeVar("T1")
 T2 = TypeVar("T2")
 
+
 class SCPIResponse(object):
     """
     Class used for containing and parsing responses from SCPI queries.
     """
+
     def __init__(self, res, encoding='ascii'):
         if isinstance(res, str):
             res = res.encode(encoding)
@@ -61,7 +63,8 @@ class SCPIResponse(object):
     def __hash__(self):
         return hash(str(self))
 
-    def comma_list_pairs(self, convert: Callable[[Tuple[str, str]], Tuple[T1, T2]] = lambda x: x) -> List[Tuple[T1, T2]]:
+    def comma_list_pairs(self,
+                         convert: Callable[[Tuple[str, str]], Tuple[T1, T2]] = lambda x: x) -> List[Tuple[T1, T2]]:
         """
         Split the comma separated response into a list of tuples,
         with each tuple containing two consecutive response elements.
@@ -70,7 +73,8 @@ class SCPIResponse(object):
         :return: [ (str1, str2), ..]
         """
         x = self.split_comma()
-        return list(convert(t) for t in zip(*[iter(x)]*2))
+        # noinspection PyTypeChecker
+        return list(convert(t) for t in zip(*[iter(x)] * 2))
 
     def split_comma(self, convert: Callable[[str], T1] = lambda x: x) -> List[T1]:
         """
@@ -113,7 +117,7 @@ class SCPIResponse(object):
             return list(map(complex, real, imag))
 
         data = self.split_comma(float)
-        return list(map(complex, *[iter(data)]*2))
+        return list(map(complex, *[iter(data)] * 2))
 
     def numpy_array(self, dtype=numpy.float64):
         return numpy.fromstring(str(self), sep=",", dtype=dtype)
@@ -135,8 +139,8 @@ class SCPIResponse(object):
             if self.raw[0:1] != b"#":
                 raise ValueError("Missing # at start of data block.")
             hdr_len = int(self.raw[1:2].decode('ascii'))  # The number of digits in the data length specifier
-            data_len = int(self.raw[2:2+hdr_len].decode('ascii'))  # data length
-            data = memoryview(self.raw)[2+hdr_len:2+hdr_len+data_len]
+            data_len = int(self.raw[2:2 + hdr_len].decode('ascii'))  # data length
+            data = memoryview(self.raw)[2 + hdr_len:2 + hdr_len + data_len]
             if len(data) != data_len:
                 raise ValueError("Not enugh data in IEEE data block.")
             return data

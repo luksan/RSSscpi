@@ -51,8 +51,10 @@ def find_smb100a(max_time=2, max_devices=None):
 class SMB100A(SMB100A_gen):
     pass
 
+
 if __name__ == "__main__":
     import logging
+
     logging.basicConfig(level=logging.INFO)
     devices = find_smb100a(max_devices=1)
     print("Found %s" % devices[0])

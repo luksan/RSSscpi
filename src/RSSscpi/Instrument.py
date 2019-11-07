@@ -16,7 +16,8 @@ from .scpi_registers import StatusByteRegister, EventStatusRegister
 import queue
 
 from collections import OrderedDict
-import re, string
+import re
+import string
 
 import logging
 import warnings
@@ -299,18 +300,19 @@ class Instrument:
                               log_time, elapsed, cmd_str.strip(), r,
                               extra={"duration": elapsed, "response": response})
 
-    def _build_arg_str(self, cmd, args, kwargs, query):
+    def _build_arg_str(self, cmd: SCPINodeBase, args, kwargs, query: bool):
         """
 
-        :param SCPINode cmd: The SCPINode which the arguments belong to
+        :param SCPINodeBase cmd: The SCPINode which the arguments belong to
         :param tuple args: *args from query()/write()
         :param dict kwargs: **kwargs from query()/write()
+        :param bool query: If true a '?' is appended to the node name in the command
         :return: The formatted command arguments
         """
         encoding = self._visa_res.encoding
         termination = self._visa_res.write_termination
 
-        ret = [ bytes(cmd.build_cmd(), encoding=encoding) ]
+        ret = [bytes(cmd.build_cmd(), encoding=encoding)]
         if query:
             ret.append(b"?")
 
@@ -386,12 +388,11 @@ class Instrument:
         finally:
             self._end_visa_call(cmd_str, None)
 
-    def write(self, cmd, *args, **kwargs):
+    def write(self, cmd: SCPINodeBase, *args, **kwargs) -> None:
         """
         Send a string to the instrument, without reading a response.
 
-        :param cmd: The SCPI command
-        :type cmd: SCPINodeBase
+        :param SCPINodeBase cmd: The SCPI command
         :param args: Any number of arguments for the command, will be converted with str()
         :rtype: None
         """
@@ -421,12 +422,11 @@ class Instrument:
         finally:
             self._end_visa_call(cmd_str, x)
 
-    def query(self, cmd, *args, **kwargs):
+    def query(self, cmd: SCPINodeBase, *args, **kwargs) -> SCPIResponse:
         """
         Execute a SCPI query
 
-        :param cmd: The SCPI command
-        :type cmd: SCPINodeBase
+        :param SCPINodeBase cmd: The SCPI command
         :param args: A list of arguments for the command, will be converted with str() and joined with ", "
         :return: The response from the pyvisa query
         :rtype: SCPIResponse

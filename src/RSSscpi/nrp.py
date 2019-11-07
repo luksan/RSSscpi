@@ -33,7 +33,7 @@ class NRPZeroconf(net.ZeroconfInfo):
     def parse_zc_info(self, zeroconf_info):
         i = zeroconf_info
         self.name = i.name.split()[0]  # nrp33sn-100927
-        self.mac = i.name.split()[1][1:len("00:90:b8:1f:7c:29")+1]
+        self.mac = i.name.split()[1][1:len("00:90:b8:1f:7c:29") + 1]
         self.ip_address = socket.inet_ntoa(i.address)
 
 

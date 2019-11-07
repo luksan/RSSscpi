@@ -115,6 +115,7 @@ class SCPIPropertyMapping(SCPIProperty):
     A property which maps SCPI responses to different values. Can be used to create a boolean property
     from a SCPI command which returns two diffrent strings.
     """
+
     def __init__(self, node, conv, mapping, rev_mapping=None, *args, **kwargs):
         """
         Also see SCPIProperty
@@ -145,14 +146,15 @@ class SCPIPropertyMapping(SCPIProperty):
         x = super(SCPIPropertyMapping, self).__get__(instance, owner)
         try:
             return self._map[self._conv(x)]
-        except KeyError as e:  # TODO: How should values missing from the mapping be handled? type coercion? Exception?
-            raise KeyError("The response '{:s}' from the instrument was not found in the mapping dict.". format(str(x)))
+        except KeyError:  # TODO: How should values missing from the mapping be handled? type coercion? Exception?
+            raise KeyError(
+                "The response '{:s}' from the instrument was not found in the mapping dict.".format(str(x))) from None
 
     def __set__(self, instance, value):
         try:
             v = self._rev_map[value]
-        except KeyError as e:
-            raise KeyError("Value not found in the reverse mapping.")
+        except KeyError:
+            raise KeyError("Value {!r} not found in the reverse mapping.".format(value)) from None
         super(SCPIPropertyMapping, self).__set__(instance, v)
 
 
@@ -202,4 +204,3 @@ class SCPIPropertyMinMax(SCPIProperty):
     def set_default(self):
         """Set the property to the default value."""
         self._w("DEF")
-

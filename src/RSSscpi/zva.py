@@ -9,7 +9,6 @@ from typing import NoReturn, Union
 
 from memoized_property import memoized_property
 
-from RSSscpi.gen import ZNB_gen
 from .gen import ZVA_gen
 from .SCPI_property import SCPIProperty
 from . import znb

@@ -61,6 +61,7 @@ def find_sma100b(max_time=2, max_devices=None):
 class SMA100B(SMA100B_gen):
     pass
 
+
 if __name__ == "__main__":
     import logging
 

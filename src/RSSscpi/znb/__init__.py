@@ -20,6 +20,9 @@ from .diagram import Diagram
 from .filesystem import File, Filesystem
 from .trace import Trace, Marker, Limit
 
+__all__ = ["Channel", "ChannelCal", "ChannelVNAPort", "Sweep", "SweepSegments", "SweepSegment"]
+__all__ += ["Trace", "Marker", "Limit"]
+
 
 def connect_ethernet(ip_address: str) -> "ZNB":
     """
@@ -203,6 +206,7 @@ class ZNB(Instrument):
         """
         self.scpi.MMEMory.LOAD.STATe.w(str(filename), fmt="1,{:q}")
 
+    # noinspection PyShadowingNames
     def save_screenshot(self, filename, diagram=None):
         """
         Take a screenshot containing only this diagram. The file type is inferred from the filename extension,
