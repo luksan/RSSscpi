@@ -3,9 +3,15 @@
 
 @author: Lukas Sandström
 """
+import logging
+import queue
+import re
+import string
 import threading
 import timeit
 import traceback
+import warnings
+from collections import OrderedDict
 
 import pyvisa
 import pyvisa.constants
@@ -13,15 +19,6 @@ import pyvisa.constants
 from .scpi.gen_support import SCPINodeBase
 from .scpi.response import SCPIResponse, make_ieee_data_block
 from .scpi.scpi_registers import StatusByteRegister, EventStatusRegister
-
-import queue
-
-from collections import OrderedDict
-import re
-import string
-
-import logging
-import warnings
 
 
 class LimitedCapacityDict(OrderedDict):

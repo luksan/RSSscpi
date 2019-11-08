@@ -3,10 +3,11 @@
 
 @author: Lukas Sandström
 """
-import visa
+import logging
 import socket
 import threading
-import logging
+
+import pyvisa
 
 logger = logging.getLogger(__name__)
 
@@ -21,7 +22,7 @@ def connect_ethernet(instr_class, ip_address, proto="INSTR"):
     :param proto: The last part of the VISA resource string. Default is "INSTR", "hislip0" could be an alternative.
     :return: An initialized Instrument instance.
     """
-    rm = visa.ResourceManager()
+    rm = pyvisa.ResourceManager()
     visa_str = 'TCPIP::' + ip_address + '::' + proto
     visa_res = rm.open_resource(visa_str)
     dev = instr_class(visa_res)

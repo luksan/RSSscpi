@@ -4,14 +4,8 @@
 @author: Lukas Sandström
 """
 
-from typing import List, Union
-
-from ..gen import ZNB_gen
-from ..instrument import Instrument
-from ..scpi.class_property import SCPIPropertyMapping
-import RSSscpi.network as net
-
 import logging
+from typing import List, Union
 
 from memoized_property import memoized_property
 
@@ -19,6 +13,11 @@ from .channel import Channel, ChannelCal, ChannelVNAPort, Sweep, SweepSegments, 
 from .diagram import Diagram
 from .filesystem import File, Filesystem
 from .trace import Trace, Marker, Limit
+
+from .. import network as net
+from ..gen import ZNB_gen
+from ..instrument import Instrument
+from ..scpi.class_property import SCPIPropertyMapping
 
 __all__ = ["Channel", "ChannelCal", "ChannelVNAPort", "Sweep", "SweepSegments", "SweepSegment"]
 __all__ += ["Trace", "Marker", "Limit"]

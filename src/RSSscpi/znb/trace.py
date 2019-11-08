@@ -81,7 +81,7 @@ class Trace(object):
         self.channel.instrument.TRACe.COPY.MATH.w(target_trace_name, self.name)
         return self.__class__(target_trace_name, self.channel)
 
-    def copy(self, new_name: str, diagram: "Diagram" = None) -> "Trace":
+    def copy(self, new_name: str, diagram: Diagram = None) -> "Trace":
         """
         Create a copy of the trace. If the diagram parameter is provided the new trace will be assigned to
         that diagram.
