@@ -3,10 +3,10 @@
 
 @author: Lukas Sandström
 """
-from .gen.SMA100B_gen import SMA100B_gen
-from . import network as net
-
 import socket
+
+from . import network as net
+from .gen.SMA100B_gen import SMA100B_gen
 
 
 def connect_ethernet(ip_address: str) -> "SMA100B":
@@ -28,8 +28,8 @@ class SMA100BZeroconf(net.ZeroconfInfo):
 
     def parse_zc_info(self, zeroconf_info):
         i = zeroconf_info
-        (sma, fw, sn) = i.name.split()
-        self.name = sma + "-" + sn[:6]  # SMA100B-xxxxxx
+        (sma_type, fw, sn) = i.name.split()
+        self.name = sma_type + "-" + sn[:6]  # SMA100B-xxxxxx
         self.fw = fw.strip("()")
         self.ip_address = socket.inet_ntoa(i.address)
 

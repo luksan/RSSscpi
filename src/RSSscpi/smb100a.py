@@ -3,8 +3,8 @@
 
 @author: Lukas Sandström
 """
-from .gen.SMB100A_gen import SMB100A_gen
 from . import network as net
+from .gen.SMB100A_gen import SMB100A_gen
 
 
 def connect_ethernet(ip_address: str) -> "SMB100A":
@@ -20,16 +20,12 @@ def connect_ethernet(ip_address: str) -> "SMB100A":
 
 
 class SMB100AZeroconf(net.ZeroconfInfo):
-    def __init__(self, zeroconf_info):
-        super(SMB100AZeroconf, self).__init__(zeroconf_info)
+    """Zeroconf result parser"""
 
 
 class ZCListener(net.ZeroconfListener):
     info_class = SMB100AZeroconf
     service_name = "_workstation._tcp.local."
-
-    def __init__(self):
-        super(ZCListener, self).__init__()
 
     def filter_zc_info(self, zc_info):
         return zc_info.name.startswith("rssmb100a")
