@@ -31,7 +31,7 @@ def connect_ethernet(instr_class, ip_address, proto="INSTR"):
     return dev
 
 
-class ZeroconfInfo(object):
+class ZeroconfInfo:
     def __init__(self, zeroconf_info):
         self.name = ""
         self.ip_address = socket.inet_ntoa(zeroconf_info.address)
@@ -47,7 +47,7 @@ class ZeroconfInfo(object):
         return "%s, %s, %s" % (self.name, self.mac, self.ip_address)
 
 
-class ZeroconfListener(object):
+class ZeroconfListener:
     info_class = ZeroconfInfo
     service_name = "_hislip._tcp.local."
 

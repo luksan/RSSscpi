@@ -16,7 +16,7 @@ from RSSscpi.scpi.class_property import SCPIPropertyMinMax
 from RSSscpi.scpi.response import make_ieee_data_block
 
 
-class PropertyTester(object):
+class PropertyTester:
     def pytest_generate_tests(self, metafunc):
         if metafunc.function.__name__ == "test_bool_properties":
             props = self.bool_properties
@@ -87,7 +87,7 @@ class PropertyTester(object):
             assert visa.cmd == [scpi_write.format(scpi_cmd, scpi_values[1])]
 
 
-class TestZNB(object):
+class TestZNB:
     def test_init(self, dummy_znb, visa):
         # type: (ZNB, VISA) -> None
         dummy_znb.init()
@@ -202,7 +202,7 @@ class TestZNB(object):
         assert visa.cmd == []
 
 
-class TestCalibrationManager(object):
+class TestCalibrationManager:
     def test_calpool_ops(self, dummy_vna, visa):
         # type: (ZNB, VISA) -> None
         c = dummy_vna.cal_manager
@@ -370,7 +370,7 @@ class TestChannel(PropertyTester):
                 ] == visa.cmd
 
 
-class TestChannelCal(object):
+class TestChannelCal:
     def test_calgroup(self, dummy_vna, visa):
         # type: (ZNB, VISA) -> None
         cal = dummy_vna.get_channel(1).calibration
@@ -401,7 +401,7 @@ class TestChannelCal(object):
                 ] == visa.cmd
 
 
-class TestFilesystem(object):
+class TestFilesystem:
     import ntpath
 
     def test_basic_ops(self, dummy_vna, visa):
@@ -497,7 +497,7 @@ class TestSweep(PropertyTester):
     ]
 
 
-class TestSweepSegments(object):
+class TestSweepSegments:
     @pytest.fixture
     def sw(self, dummy_vna):
         return dummy_vna.get_channel(2).sweep

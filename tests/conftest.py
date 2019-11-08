@@ -25,7 +25,7 @@ def pytest_ignore_collect(path, config):
         print("Skipping collection of live tests")
         return True
 
-class VISA(object):
+class VISA:
     def __init__(self):
         self._cmd = []
         self._def_ret = "1"

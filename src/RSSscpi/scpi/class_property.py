@@ -10,7 +10,7 @@ from .gen_support import SCPINodeBase, SCPIQuery, SCPISet
 from .response import SCPIResponse
 
 
-class SCPIProperty(object):
+class SCPIProperty:
     """
     Getter/setter class for turning SCPINodes to class properties
     """

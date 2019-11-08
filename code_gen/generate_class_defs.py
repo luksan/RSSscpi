@@ -61,7 +61,7 @@ class CmdNode(dict):
         node.has_set |= not query
    
 
-class CmdListParser(object):
+class CmdListParser:
     """Parses a command set file obtained from RS GPIB Explorer (ICEWIN32)"""
     def __init__(self, filename):
         self.filename = filename   
@@ -89,7 +89,7 @@ class CmdListParser(object):
         self.cmd_tree.add_cmd(c, arg, unit, query)
 
 
-class Webhelp(object):
+class Webhelp:
     instrument_name = None  # type: str
 
     def get_help_url(self, cmd) -> Optional[str]:
@@ -219,7 +219,7 @@ class ModernRohdeWebhelp(Webhelp):
             return None
 
 
-class TreePatcher(object):
+class TreePatcher:
     def __init__(self):
         self.fixit = dict()
 
@@ -266,7 +266,7 @@ class SystHelpTreePatcher(TreePatcher):
         super(SystHelpTreePatcher, self).__call__(cmd_tree)
 
 
-class ClassCodeGen(object):
+class ClassCodeGen:
     """
     Generates a Python module with a SCPI command class structure for the instrument.
     """

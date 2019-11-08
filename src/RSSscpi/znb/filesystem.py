@@ -4,7 +4,7 @@ import os.path
 from memoized_property import memoized_property
 
 from ..scpi.response import make_ieee_data_block
-from . import ZNB_gen
+from ..gen import ZNB_gen
 
 
 class Filesystem(ZNB_gen.MMEMory):
@@ -56,7 +56,7 @@ class Filesystem(ZNB_gen.MMEMory):
         return Directory(path=path, instrument=self.instrument).listdir()
 
 
-class Path(object):
+class Path:
     def __init__(self, path, filename):
         if filename and ntpath.isabs(filename):
             self.path, self.filename = ntpath.split(filename)

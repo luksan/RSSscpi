@@ -269,7 +269,7 @@ class ZNB(Instrument):
         self.scpi.TRG.w()
 
 
-class CalibrationManager(object):
+class CalibrationManager:
     """
     Methods for handling the calibration pool, calkits, etc.
     """

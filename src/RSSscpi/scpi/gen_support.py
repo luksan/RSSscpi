@@ -13,7 +13,7 @@ from .response import SCPIResponse
 N = TypeVar("N", bound="SCPINodeBase")
 
 
-class SCPINodeBase(object):
+class SCPINodeBase:
     _cmd = "SCPINodeBase"
     _parent_class = None  # The class of the parent of the command node
     _SCPI_class = None  # Identifies the original class type in cases of subclassing

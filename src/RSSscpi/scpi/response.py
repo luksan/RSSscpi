@@ -19,7 +19,7 @@ T1 = TypeVar("T1")
 T2 = TypeVar("T2")
 
 
-class SCPIResponse(object):
+class SCPIResponse:
     """
     Class used for containing and parsing responses from SCPI queries.
     """

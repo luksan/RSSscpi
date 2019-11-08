@@ -9,7 +9,7 @@ from .diagram import Diagram
 from .. import znb
 
 
-class MeasParamBase(object):
+class MeasParamBase:
     def __init__(self, dst_port, src_port, detector=""):
         self.dst_port = int(dst_port)
         self.src_port = int(src_port)
@@ -17,12 +17,12 @@ class MeasParamBase(object):
         self.port_digits = floor(log10(max(self.src_port, self.dst_port))) + 1
 
 
-class Trace(object):
+class Trace:
     """
     A class representing a trace on the VNA. Instances are obtained via Channel.create_trace() and Channel.get_trace()
     """
 
-    class MeasParam(object):
+    class MeasParam:
         class S(MeasParamBase):
             def __str__(self):
                 return "S{0.dst_port:0{pad}d}{0.src_port:0{pad}d}{0.detector!s}".format(self, pad=self.port_digits)

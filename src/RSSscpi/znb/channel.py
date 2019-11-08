@@ -7,7 +7,7 @@ from ..gen import ZNB_gen
 from .trace import MeasParamBase, Trace
 
 
-class Channel(object):
+class Channel:
     def __init__(self, n: int, instrument: "znb.ZNB"):
         """
         :param n: Channel number
@@ -246,7 +246,7 @@ class ChannelVNAPort(ZNB_gen.SOURce.POWer):
         self.LEVel.IMMediate.OFFSet.w(power, x)
 
 
-class ChannelCal(object):
+class ChannelCal:
     def __init__(self, channel):
         """
 
@@ -317,7 +317,7 @@ class SweepSegment(ZNB_gen.SENSe.SEGMent):
     analog_sweep_is_enabled = SCPIPropertyMapping(_SEG.SWEep.GENeration, str, {"ANALog": True, "STEPped": False})
 
 
-class SweepSegments(object):
+class SweepSegments:
     def __init__(self, sweep):
         """
         :param Sweep sweep: The Sweep which the sweep segments belong to

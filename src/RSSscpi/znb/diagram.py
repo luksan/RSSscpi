@@ -3,7 +3,7 @@ from ..scpi.class_property import SCPIProperty
 from ..gen import ZNB_gen
 
 
-class Diagram(object):
+class Diagram:
     def __init__(self, n, instrument):
         """
         :param n: Number of the diagram area

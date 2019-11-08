@@ -55,7 +55,7 @@ class LimitedCapacityDict(OrderedDict):
         self._check_len()
 
 
-class VISAEvent(object):
+class VISAEvent:
     def __init__(self, duration, stb, esr):
         self.duration = duration
         self.stb = stb
