@@ -16,7 +16,7 @@ from dominate.tags import *
 import re
 
 from RSSscpi.gen import ZVA_gen, ZNB_gen
-from RSSscpi.SCPI_gen_support import SCPIQuery, SCPISet, SCPINodeBase
+from RSSscpi.scpi.gen_support import SCPIQuery, SCPISet, SCPINodeBase
 
 # dict(cmd string -> dict(vna name -> cmd object))
 

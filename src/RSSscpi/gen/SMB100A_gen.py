@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 # Generated from SMB100A_syntax.txt on 2019-10-18 15:03
 from typing import List
-from RSSscpi.SCPI_gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
-from RSSscpi.Instrument import Instrument
+from ..scpi.gen_support import SCPINode, SCPINodeN, SCPIQuery, SCPISet, SCPIBool
 
 
 class SMB100A_gen(SCPINode):

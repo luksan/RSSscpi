@@ -6,7 +6,7 @@
 from __future__ import absolute_import, division, print_function
 
 from RSSscpi.Instrument import Instrument
-from RSSscpi.SCPI_gen_support import SCPINodeN
+from RSSscpi.scpi.gen_support import SCPINodeN
 
 
 def node(name, *args):

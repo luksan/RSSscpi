@@ -10,7 +10,7 @@ from typing import NoReturn, Union
 from memoized_property import memoized_property
 
 from .gen import ZVA_gen
-from .SCPI_property import SCPIProperty
+from .scpi.class_property import SCPIProperty
 from . import znb
 from . import network as net
 

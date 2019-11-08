@@ -3,7 +3,7 @@ import os.path
 
 from memoized_property import memoized_property
 
-from ..SCPI_response import make_ieee_data_block
+from ..scpi.response import make_ieee_data_block
 from . import ZNB_gen
 
 

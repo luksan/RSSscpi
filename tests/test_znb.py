@@ -12,8 +12,8 @@ import struct
 
 from RSSscpi import znb  # noqa: F401
 from RSSscpi.znb import ZNB  # noqa: F401
-from RSSscpi.SCPI_property import SCPIPropertyMinMax
-from RSSscpi.SCPI_response import make_ieee_data_block
+from RSSscpi.scpi.class_property import SCPIPropertyMinMax
+from RSSscpi.scpi.response import make_ieee_data_block
 
 
 class PropertyTester(object):

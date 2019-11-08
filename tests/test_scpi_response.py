@@ -8,7 +8,7 @@ import pytest
 
 import struct
 
-from RSSscpi.SCPI_response import make_ieee_data_block, SCPIResponse  # noqa: F401
+from RSSscpi.scpi.response import make_ieee_data_block, SCPIResponse  # noqa: F401
 
 
 @pytest.mark.parametrize('expected, txt', [

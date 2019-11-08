@@ -6,8 +6,8 @@
 
 from typing import Any, Callable, Dict, Optional, Union
 
-from .SCPI_gen_support import SCPINodeBase, SCPIQuery, SCPISet
-from .SCPI_response import SCPIResponse
+from .gen_support import SCPINodeBase, SCPIQuery, SCPISet
+from .response import SCPIResponse
 
 
 class SCPIProperty(object):

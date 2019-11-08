@@ -9,7 +9,7 @@ import pytest
 from .conftest import VISA  # noqa: F401
 
 from RSSscpi.Instrument import Instrument
-from RSSscpi.SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
+from RSSscpi.scpi.class_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
 from RSSscpi.gen import ZNB_gen
 from RSSscpi.gen import ZVA_gen
 

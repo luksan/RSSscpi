@@ -1,5 +1,5 @@
 from .. import znb
-from ..SCPI_property import SCPIProperty
+from ..scpi.class_property import SCPIProperty
 from ..gen import ZNB_gen
 
 

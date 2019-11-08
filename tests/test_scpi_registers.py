@@ -6,7 +6,7 @@
 
 import pytest
 
-from RSSscpi.scpi_registers import SCPIRegister, scpi_bit, StatusByteRegister, EventStatusRegister
+from RSSscpi.scpi.scpi_registers import SCPIRegister, scpi_bit, StatusByteRegister, EventStatusRegister
 
 
 # noinspection PyUnusedLocal

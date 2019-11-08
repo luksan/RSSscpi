@@ -8,7 +8,7 @@ from typing import List, Union
 
 from ..gen import ZNB_gen
 from ..Instrument import Instrument
-from ..SCPI_property import SCPIPropertyMapping
+from ..scpi.class_property import SCPIPropertyMapping
 import RSSscpi.network as net
 
 import logging

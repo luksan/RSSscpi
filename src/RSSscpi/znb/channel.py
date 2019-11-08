@@ -1,7 +1,7 @@
 from typing import Union
 
 from .. import znb
-from ..SCPI_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
+from ..scpi.class_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
 from ..gen import ZNB_gen
 
 from .trace import MeasParamBase, Trace

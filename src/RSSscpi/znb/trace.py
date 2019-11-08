@@ -2,8 +2,8 @@ from math import floor, log10
 import re
 from typing import List
 
-from ..SCPI_property import SCPIProperty
 from ..gen import ZNB_gen
+from ..scpi.class_property import SCPIProperty
 from .diagram import Diagram
 
 from .. import znb

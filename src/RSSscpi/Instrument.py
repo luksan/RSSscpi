@@ -10,9 +10,9 @@ import traceback
 import pyvisa
 import pyvisa.constants
 
-from .SCPI_gen_support import SCPINodeBase
-from .SCPI_response import SCPIResponse, make_ieee_data_block
-from .scpi_registers import StatusByteRegister, EventStatusRegister
+from .scpi.gen_support import SCPINodeBase
+from .scpi.response import SCPIResponse, make_ieee_data_block
+from .scpi.scpi_registers import StatusByteRegister, EventStatusRegister
 
 import queue
 
