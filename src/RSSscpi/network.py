@@ -8,6 +8,7 @@ import socket
 import threading
 
 import pyvisa
+from zeroconf import Zeroconf, ServiceBrowser, ServiceInfo
 
 logger = logging.getLogger(__name__)
 
@@ -32,13 +33,13 @@ def connect_ethernet(instr_class, ip_address, proto="INSTR"):
 
 
 class ZeroconfInfo:
-    def __init__(self, zeroconf_info):
+    def __init__(self, zeroconf_info: ServiceInfo):
         self.name = ""
         self.ip_address = socket.inet_ntoa(zeroconf_info.address)
         self.mac = ""
         self.parse_zc_info(zeroconf_info)
 
-    def parse_zc_info(self, zeroconf_info):
+    def parse_zc_info(self, zeroconf_info: ServiceInfo):
         i = zeroconf_info
         self.name = i.name.split()[0]  # nrp33sn-100927
         self.mac = i.name.split()[1][1:len("00:90:b8:1f:7c:29") + 1]
@@ -82,8 +83,6 @@ def zeroconf_scan(listener, max_time=2, max_devices=None):
     :param int max_devices: Stop the search after this many devices have been found
     :return: A list of ZeroconfInfo objects describing the found devices.
     """
-    from zeroconf import Zeroconf, ServiceBrowser
-
     z = Zeroconf()
     listener.max_devices = max_devices
     try:

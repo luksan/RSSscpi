@@ -575,9 +575,9 @@ class TestSweepSegments:
         # type: (ZNB, VISA) -> None
         """ANALog sweeps are only supported on the ZNB"""
         sw = dummy_znb.get_channel(2).sweep
-        x = sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3)
+        x = sw.segments.insert_segment(1e6, 1e9, points=11, ifbw=1e3, power=-10, position=3)
         assert x.n == 3
-        sw.segments.insert_segment(1e6, 1e9, 11, 1e3, -10, position=3, analog_sweep=True)
+        sw.segments.insert_segment(1e6, 1e9, points=11, ifbw=1e3, power=-10, position=3, analog_sweep=True)
         assert ["SENSe2:SEGMent3:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, STEPped",
                 "SENSe2:SEGMent3:INSert 1000000.0, 1000000000.0, 11, -10, AUTO, 0, 1000.0, AUTO, NORMal, ANALog",
                 ] == visa.cmd

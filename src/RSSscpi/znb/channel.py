@@ -133,7 +133,7 @@ class Channel:
             cmd_fmt = "{:s}, {:q}, {:d*}"
             self.SENSe.CORRection.COLLect.AUTO.TYPE.w(cal_type, cal_unit_characterization, vna_ports, fmt=cmd_fmt)
 
-    def configure_freq_sweep(self, start_freq, stop_freq, points=None, ifbw=None, power=None, log_sweep=False):
+    def configure_freq_sweep(self, start_freq, stop_freq, *, points=None, ifbw=None, power=None, log_sweep=False):
         """
         Configure the instrument for a frequency sweep. Parameters which are not provided are left as is.
 
@@ -158,7 +158,7 @@ class Channel:
         if power is not None:
             self.power_level = power
 
-    def configure_power_sweep(self, freq, start_power, stop_power, points=None, ifbw=None):
+    def configure_power_sweep(self, freq, start_power, stop_power, *, points=None, ifbw=None):
         """
         Configure the channel for a power sweep. Unspecified parameters are not modified.
 
@@ -350,7 +350,7 @@ class SweepSegments:
         # type: (int) -> SweepSegment
         return self._sweep.get_segment(n)
 
-    def insert_segment(self, start_freq, stop_freq, points, ifbw, power, time="AUTO",
+    def insert_segment(self, start_freq, stop_freq, *, points, ifbw, power, time="AUTO",
                        lo_sideband="AUTO", if_selectivity="NORMal", analog_sweep=False, position=1):
         """
 

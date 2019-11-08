@@ -41,10 +41,10 @@ class ZNBZeroconf(net.ZeroconfInfo):
         self.serial = ""
         super(ZNBZeroconf, self).__init__(zeroconf_info)
 
-    def parse_zc_info(self, i):
-        self.name = i.properties['fqdn'].split(".")[0]
-        self.fw = i.properties['FirmwareVersion']
-        self.serial = i.properties['SerialNumber']
+    def parse_zc_info(self, zeroconf_info):
+        self.name = zeroconf_info.properties['fqdn'].split(".")[0]
+        self.fw = zeroconf_info.properties['FirmwareVersion']
+        self.serial = zeroconf_info.properties['SerialNumber']
 
     def __str__(self):
         return "%s, %s, %s" % (self.name, self.fw, self.ip_address)
@@ -90,7 +90,7 @@ class ZNB(Instrument):
         self._port_count = None
 
     @memoized_property
-    def filesystem(self):
+    def filesystem(self) -> Filesystem:
         """
         A Filsystem instance which enables filesystem operations on the instrument.
 
