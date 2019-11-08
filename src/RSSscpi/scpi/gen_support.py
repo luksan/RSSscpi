@@ -79,7 +79,7 @@ class SCPINodeBase(object):
     def _get_instrument(self):
         """
         :return: This method returns the Instrument associated with the command tree.
-        :rtype: RSSscpi.Instrument.Instrument
+        :rtype: RSSscpi.instrument.Instrument
         """
         if self._parent is None:
             return self

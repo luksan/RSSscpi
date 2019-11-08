@@ -5,7 +5,7 @@
 """
 from __future__ import absolute_import, division, print_function
 
-from RSSscpi.Instrument import Instrument
+from RSSscpi.instrument import Instrument
 from RSSscpi.scpi.gen_support import SCPINodeN
 
 

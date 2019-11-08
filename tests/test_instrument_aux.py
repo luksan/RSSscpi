@@ -7,8 +7,8 @@
 import pytest
 from .conftest import VISA  # noqa: F401
 
-from RSSscpi.Instrument import LimitedCapacityDict
-from RSSscpi.Instrument import SCPICmdFormatter
+from RSSscpi.instrument import LimitedCapacityDict
+from RSSscpi.instrument import SCPICmdFormatter
 
 
 def test_SCPICmdFormatter():

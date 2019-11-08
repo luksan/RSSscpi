@@ -5,7 +5,7 @@
 """
 from typing import List, Dict
 
-from .Instrument import Instrument
+from .instrument import Instrument
 from .gen.NRPxxSN_gen import NRPxxSN_gen
 from .scpi.class_property import SCPIProperty, SCPIPropertyMinMax
 from . import network as net
