@@ -12,7 +12,7 @@ from tkinter import messagebox
 import logging
 import numpy
 import time
-from RSSscpi.Instrument import Queue
+import queue as Queue
 
 
 def wait_on_queue_progress_bar(queue, expected_duration, tick_interval=1):
@@ -34,7 +34,7 @@ def wait_on_queue_progress_bar(queue, expected_duration, tick_interval=1):
                 prog_len = dots
             elapsed = time.time() - time_start
             print("\r|" + ("." * dots) + (" " * (prog_len - dots)) + "|  elapsed time: %.1f seconds" % elapsed, end="")
-    print("\r|" + "."*prog_len + "| elapsed time: %.2f seconds" % (time.time() - time_start))
+    print("\r|" + "." * prog_len + "| elapsed time: %.2f seconds" % (time.time() - time_start))
 
 
 class VISAFilter(logging.Filter):
@@ -49,7 +49,8 @@ class VISAFilter(logging.Filter):
 
 
 def zero_cal():
-    ok = messagebox.askyesno("Zero power sensor", "Perform zero level adjust? (Disconnect sensor from the signal source)")
+    ok = messagebox.askyesno("Zero power sensor",
+                             "Perform zero level adjust? (Disconnect sensor from the signal source)")
     if ok:
         sensor.cal_zero()
         sensor.send_OPC()
@@ -91,7 +92,7 @@ def prepare_avg_meas(buffer_size, avg_aperture, avg_count):
 
 def dBm(x):
     # return x
-    return 10*numpy.log10(x) + 30
+    return 10 * numpy.log10(x) + 30
 
 
 def main():
@@ -117,13 +118,28 @@ def main():
         wait_on_queue_progress_bar(sensor.event_queue, expected_duration, 1)
 
         result = sensor.fetch_numpy()
-        data.append((avg_aperture, avg_count, dBm(result.mean()), dBm(numpy.median(result)), dBm(result.max()), dBm(result.min()), result.ptp(), result.std()))
-        print("Avg aperture: {:g} s, Avg count {:g}, Mean: {:g} dBm, Median: {:g} dBm, max: {:g} dBm, min: {:g} dBm, peak-to-peak: {:g} W, std dev: {:g} W".format(*data[-1]))
+        data.append((avg_aperture,
+                     avg_count,
+                     dBm(result.mean()),
+                     dBm(numpy.median(result)),
+                     dBm(result.max()),
+                     dBm(result.min()),
+                     result.ptp(),
+                     result.std()))
+        print("Avg aperture: {:g} s, "
+              "Avg count {:g}, "
+              "Mean: {:g} dBm, "
+              "Median: {:g} dBm, "
+              "max: {:g} dBm, "
+              "min: {:g} dBm, "
+              "peak-to-peak: {:g} W, "
+              "std dev: {:g} W".format(*data[-1]))
 
     with open("avg_data.csv", "wb") as fd:
         csv_writer = csv.writer(fd)
         csv_writer.writerow(["Aperture", "Average count", "Mean", "Max", "Min", "Peak-to-peak", "Std. dev."])
         csv_writer.writerows(data)
+
 
 ask_zero_cal = True
 
