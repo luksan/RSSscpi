@@ -3,14 +3,13 @@
 
 @author: Lukas Sandström
 """
+import socket
 from typing import List, Dict
 
-from .instrument import Instrument
-from .gen.NRPxxSN_gen import NRPxxSN_gen
-from .scpi.class_property import SCPIProperty, SCPIPropertyMinMax
 from . import network as net
-
-import socket
+from .gen.NRPxxSN_gen import NRPxxSN_gen
+from .instrument import Instrument
+from .scpi.class_property import SCPIProperty, SCPIPropertyMinMax
 
 
 def connect_ethernet(ip_address: str) -> "NRPxxSN":
@@ -26,9 +25,6 @@ def connect_ethernet(ip_address: str) -> "NRPxxSN":
 
 
 class NRPZeroconf(net.ZeroconfInfo):
-
-    def __init__(self, zeroconf_info):
-        super(NRPZeroconf, self).__init__(zeroconf_info)
 
     def parse_zc_info(self, zeroconf_info):
         i = zeroconf_info
@@ -57,15 +53,18 @@ def find_sensors(max_time=2, max_sensors=None):
     return net.zeroconf_scan(ZCListener(), max_time, max_sensors)
 
 
-class NRPxxSN(Instrument, NRPxxSN_gen):
-    def __init__(self, visa_res):
-        super(NRPxxSN, self).__init__(visa_res)
+class NRPxxSN(Instrument):
+    _scpi = NRPxxSN_gen()
+
+    @property
+    def scpi(self) -> NRPxxSN_gen:
+        return self._scpi
 
     def init(self):
         super(NRPxxSN, self).init()
         self._visa_res.timeout = 6000  # Zeroing the sensor takes ca 5 seconds
-        self.ABORt.w()
-        idn = self.IDN.q()
+        self.scpi.ABORt.w()
+        idn = self.scpi.IDN.q()
         self.visa_logger.info("NRP sensor initialized: %s", idn)
 
     def query_system_info(self) -> Dict[str, str]:
@@ -73,20 +72,20 @@ class NRPxxSN(Instrument, NRPxxSN_gen):
         Queries SYSTem:INFO? and returns the respons parsed in to a dict()
         """
         # SYST:INFO? => "A:B\nC:D\n....\n"
-        info_list = str(self.SYSTem.INFO.q()).strip('" \n').split("\n")
+        info_list = str(self.scpi.SYSTem.INFO.q()).strip('" \n').split("\n")
         return dict([x.split(":", 1) for x in info_list])  # type: ignore
 
     def init_immediate(self):
         """
         Sends INITiate:IMMediate to the sensor to begin a measurement cycle.
         """
-        self.INITiate.IMMediate.w()  # TODO: this should be in Instrument
+        self.scpi.INITiate.IMMediate.w()  # TODO: this should be in Instrument
 
     def cal_zero(self):
         """
         Run the zero level adjustment routine. Disconnect power from the sensor before running.
         """
-        self.CALibration.ZERO.AUTO.w("ONCE")
+        self.scpi.CALibration.ZERO.AUTO.w("ONCE")
 
     def fetch_data(self) -> List[float]:
         """
@@ -94,7 +93,7 @@ class NRPxxSN(Instrument, NRPxxSN_gen):
 
         :return: A list of floats
         """
-        return self.FETCh.q().split_comma(convert=float)
+        return self.scpi.FETCh.q().split_comma(convert=float)
 
     def fetch_numpy(self):
         """
@@ -102,15 +101,16 @@ class NRPxxSN(Instrument, NRPxxSN_gen):
 
         :return: The data from the measurement buffer, stored in a numpy array.
         """
-        return self.FETCh.q().numpy_array()
+        return self.scpi.FETCh.q().numpy_array()
 
-    frequency = SCPIProperty(NRPxxSN_gen.SENSe.FREQuency, float)
+    frequency = SCPIProperty(NRPxxSN_gen.SENSe.FREQuency, float, parent_prop=scpi)
     frequency_minmax = SCPIPropertyMinMax(frequency)
-    init_cont = SCPIProperty(NRPxxSN_gen.INITiate.CONTinuous, bool)  # FIXME: This node should be a SCPIBool
+    init_cont = SCPIProperty(NRPxxSN_gen.INITiate.CONTinuous, bool, parent_prop=scpi)
 
 
 if __name__ == "__main__":
     import logging
+
     logging.basicConfig(level=logging.INFO)
     sensors = find_sensors(max_sensors=1)
     print("Found %s" % sensors[0])
