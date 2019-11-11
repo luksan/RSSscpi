@@ -5,17 +5,12 @@
 """
 import logging
 
-from RSSscpi import zva
+from connect_instrument import connect_zva
 
-# logging.basicConfig(level=logging.WARN, filename=__file__[:-3]+"_log.txt", filemode="w")
+logging.basicConfig()
 
-vna_ip = "10.188.178.82"
-# vna_ip = "192.168.56.101"
-
-instr = zva.connect_ethernet(vna_ip)
-instr.visa_logger.setLevel(logging.DEBUG)
-instr.visa_logger.addHandler(logging.FileHandler(filename=__file__[:-3] + "_visa_log.txt", mode="w"))
-instr.init()
+vna_ip = "localhost"
+instr = connect_zva(vna_ip)
 
 instr.preset()
 instr.INITiate.CONTinuous.off()
@@ -28,8 +23,8 @@ tr1 = ch1.get_trace("Trc1")
 tr1.name = "SAM"
 tr1.measurement = tr1.MeasParam.Wave("b", 1, src_port=1, detector="sam")
 
-tr2 = ch1.create_trace("RMS", zva.Trace.MeasParam.Wave(receiver="b", dst_port=1, src_port=1, detector="rms"), dia1)
-tr3 = ch1.create_trace("AVG", zva.Trace.MeasParam.Wave(receiver="b", dst_port=1, src_port=1, detector="avg"), dia1)
+tr2 = ch1.create_trace("RMS", tr1.MeasParam.Wave(receiver="b", dst_port=1, src_port=1, detector="rms"), dia1)
+tr3 = ch1.create_trace("AVG", tr1.MeasParam.Wave(receiver="b", dst_port=1, src_port=1, detector="avg"), dia1)
 
 ch1.sweep.DETector.TIME.w(0.01)
 ch1.get_vna_port(1).src_attenuator = 0

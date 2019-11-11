@@ -7,23 +7,12 @@
 import queue
 import logging
 
-import RSSscpi.znb
+from connect_instrument import connect_znb
 
 logging.basicConfig(level=logging.WARN)
-# logging.basicConfig(level=logging.WARN, filename=__file__[:-3]+"_log.txt", filemode="w")
 
-
-# znb_ip = "10.188.178.47"
-znb_ip = "192.168.56.101"
-
-# VISA command logging
-# Error checking / handling
-
-znb = RSSscpi.znb.connect_ethernet(znb_ip)
-
-znb.visa_logger.setLevel(logging.DEBUG)
-znb.visa_logger.addHandler(logging.FileHandler(filename=__file__[:-3] + "_visa_log.txt", mode="w"))
-znb.init()
+znb_ip = "localhost"
+znb = connect_znb(znb_ip)
 
 # Instrument setup
 # Number of points
@@ -31,7 +20,7 @@ znb.init()
 # Source power
 # IF bandwidth
 
-znb.RST.w()
+znb.preset()
 znb.INITiate.CONTinuous.ALL.w("OFF")
 
 ch_no = 1
