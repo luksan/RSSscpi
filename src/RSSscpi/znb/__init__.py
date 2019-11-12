@@ -82,7 +82,7 @@ class ZNB(Instrument):
     def __getattr__(self, item):
         if item[:3].isupper():  # Only allow SCPI node access
             return getattr(self.scpi, item)
-        raise AttributeError
+        return object.__getattribute__(self, item)  # This will raise an appropriate AttributeError
 
     def __init__(self, visa_res):
         super().__init__(visa_res)

@@ -88,6 +88,14 @@ class PropertyTester:
 
 
 class TestZNB:
+    def test_scpi_getattr(self, dummy_znb):
+        vna = dummy_znb
+        assert type(vna.IDN) == type(vna.scpi.IDN)
+        with pytest.raises(AttributeError, match="'ZNB' object has no attribute 'no_such_attr'"):
+            getattr(vna, "no_such_attr")
+        with pytest.raises(AttributeError, match="'' has no attribute 'NOTreallyanode'"):
+            getattr(vna, "NOTreallyanode")
+
     def test_init(self, dummy_znb, visa):
         # type: (ZNB, VISA) -> None
         dummy_znb.init()
