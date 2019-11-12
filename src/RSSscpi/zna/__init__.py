@@ -26,8 +26,20 @@ class ZNA(znb.ZNB):
     def scpi(self) -> ZNA_gen:
         return self._scpi
 
-    def get_channel(self, n: int):
+    def get_channel(self, n: int) -> Channel:
+        """
+        Creates a channel instance for the ZNA.
+
+        :param n: Channel number
+        :return: A Channel instance
+        """
         return Channel(n, instrument=self)
 
-    def get_diagram(self, n):
+    def get_diagram(self, n: int) -> Diagram:
+        """
+        Create a Diagram instance linked to the ZNA.
+
+        :param n: Diagram number
+        :return: A Diagram instance
+        """
         return Diagram(n, instrument=self)

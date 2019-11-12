@@ -10,6 +10,7 @@ class Channel(znb.Channel):
 
     @property
     def instrument(self) -> "zna.ZNA":
+        assert isinstance(self._instr, zna.ZNA)
         return self._instr
 
     @property
@@ -31,6 +32,28 @@ class Channel(znb.Channel):
     @property
     def TRIGger(self) -> ZNA_gen.TRIGger:
         return self.instrument.scpi.TRIGger[self.n]
+
+    def set_analog_IF_path(self, *, ifbw: float = None, path: str = None):
+        """
+        Sets the analog IF path. If ifbw is given then a suitable path is selected,
+        otherwise the path_name can be given as one of WIDeband, NORMal, NARRowband.
+        """
+        if ifbw and ifbw > 1.5e6:
+            if path and path not in ("WID", "WIDeband"):
+                raise ValueError("IF bandwidth higher than 1.5 MHz require the wide IF path")
+            self.SENSe.IFPath.w("WIDeband")
+            return
+        if path:
+            if path not in ("WIDeband", "WID", "NORMal", "NORM", "NARRowband", "NARR"):
+                raise ValueError("Invalid analog IF path: {:}".format(path))
+            self.SENSe.IFPath.w(path)
+        else:
+            self.SENSe.IFPath.w("NORMal")
+
+    def configure_freq_sweep(self, start_freq, stop_freq, *, points=None, ifbw=None, power=None, log_sweep=False):
+        if ifbw:
+            self.set_analog_IF_path(ifbw=ifbw)
+        super().configure_freq_sweep(start_freq, stop_freq, points=points, ifbw=ifbw, power=power, log_sweep=log_sweep)
 
     def get_trace(self, name: str) -> "Trace":
         """

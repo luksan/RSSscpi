@@ -281,9 +281,8 @@ class TestChannel(PropertyTester):
                 "SOURce3:POWer:LEVel:IMMediate:AMPLitude?",
                 ] == visa.cmd
 
-    def test_channel_sweep(self, dummy_vna, visa):
-        # type: (ZNB, VISA) -> None
-        ch = dummy_vna.get_channel(3)
+    def test_channel_sweep(self, dummy_znb: ZNB, visa: VISA):
+        ch = dummy_znb.get_channel(3)
         assert isinstance(ch.sweep.points_minmax.query_default(), int)
         ch.sweep.points = 301
         assert isinstance(ch.sweep.points, int)
