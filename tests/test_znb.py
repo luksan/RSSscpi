@@ -97,6 +97,14 @@ class TestZNB:
                 "SYSTem:LANGuage 'SCPI'",
                 ] == visa.cmd
 
+    def test_info(self, dummy_znb: ZNB, visa: VISA):
+        info = dummy_znb.info
+        assert info.manufacturer == "Rohde-Schwarz"
+        assert info.model == "ZNB8-4Port"
+        assert info.serial_number == "1311601044100005"
+        assert info.firmware == "2.90.1.125"
+        assert visa.cmd == ["*IDN?",]
+
     def test_reset_remote_emulation(self, dummy_vna, visa):
         # type: (ZNB, VISA) -> None
         visa.ret = "SCPI"

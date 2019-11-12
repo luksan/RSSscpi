@@ -25,6 +25,7 @@ def pytest_ignore_collect(path, config):
         print("Skipping collection of live tests")
         return True
 
+
 class VISA:
     def __init__(self):
         self._cmd = []
@@ -138,25 +139,41 @@ def visa():
 def dummy_vna(request, visa):
     visa.clear_cmd()
     if request.param == "ZVA":
-        yield ZVA(visa_res=visa)
+        return get_zva(visa)
     if request.param == "ZNA":
-        yield ZNA(visa)
+        return get_zna(visa)
     if request.param == "ZNB":
-        yield ZNB(visa_res=visa)
+        return get_znb(visa)
 
+
+def get_zva(visa):
+    visa.ret_dict["*IDN?"] = "Rohde&Schwarz,ZVA8-4Port,1145101010100001,0.10.1.23"
+    return ZVA(visa_res=visa)
 
 
 @pytest.fixture
 def dummy_zva(visa):
-    return ZVA(visa_res=visa)
+    return get_zva(visa)
+
+
+def get_zna(visa):
+    visa.ret_dict["*IDN?"] = "Rohde-Schwarz,ZNA43-4Port,1332450044101100,1.90"
+    return ZNA(visa_res=visa)
+
 
 @pytest.fixture
 def dummy_zna(visa):
-    return ZNA(visa_res=visa)
+    return get_zna(visa)
+
+
+def get_znb(visa):
+    visa.ret_dict["*IDN?"] = "Rohde-Schwarz,ZNB8-4Port,1311601044100005,2.90.1.125"
+    return ZNB(visa_res=visa)
+
 
 @pytest.fixture
 def dummy_znb(visa):
-    return ZNB(visa_res=visa)
+    return get_znb(visa)
 
 
 @pytest.fixture

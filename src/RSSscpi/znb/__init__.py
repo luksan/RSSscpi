@@ -17,6 +17,7 @@ from .trace import Trace, Marker, Limit
 from .. import network as net
 from ..gen import ZNB_gen
 from ..instrument import Instrument
+from ..instrument_info import InstrumentInfo
 from ..scpi.class_property import SCPIPropertyMapping
 
 __all__ = ["Channel", "ChannelCal", "ChannelVNAPort", "Sweep", "SweepSegments", "SweepSegment"]
@@ -87,6 +88,7 @@ class ZNB(Instrument):
         super().__init__(visa_res)
         self.logger = logging.getLogger(__name__)
         self.visa_logger = self.logger.getChild("VISA")
+        self.info = InstrumentInfo(self.scpi.IDN)
         self._port_count = None
 
     @memoized_property
