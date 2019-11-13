@@ -87,7 +87,7 @@ class SCPICmdFormatter(string.Formatter):
             format_spec = format_spec[:-1] + "s"
             value = str(value)
             if not value or value[0] not in ["'", '"'] or value[0] != value[-1]:  # The arg isn't quoted
-                value = "'%s'" % (value, )
+                value = "'%s'" % (value,)
         elif format_spec[-1] == "s":  # coerce everything with str() for convenience
             value = str(value)
 
@@ -162,14 +162,33 @@ class Instrument:
         _call_visa(...) stores the stack trace here for each command.
         """
 
-    def init(self):
+    default_sre = StatusByteRegister((
+            StatusByteRegister.error_queue_not_empty |
+            StatusByteRegister.event_status_summary
+    ))
+
+    default_ese = EventStatusRegister((
+            EventStatusRegister.operation_complete |
+            EventStatusRegister.query_error |
+            EventStatusRegister.device_dependent_error |
+            EventStatusRegister.exceution_error |
+            EventStatusRegister.command_error |
+            EventStatusRegister.user_request
+    ))
+
+    def init(self, sre: StatusByteRegister = None, ese: EventStatusRegister = None):
         """
         Setup the Service Request handling and turn on event reporting in the instrument.
         """
         # Clear the status register
         # Enable Operation Complete reporting with *OPC
         # Generate a Service Request when the event status register changes, or the error queue is non-empty
-        self._write("*CLS;*ESE 127;*SRE 36")
+        if ese is None:
+            ese = self.default_ese
+        if sre is None:
+            sre = self.default_sre
+
+        self._write("*CLS;*ESE {:};*SRE {:}".format(ese.value, sre.value))
 
         self._service_request_callback_handle = self._visa_res.install_handler(
             pyvisa.constants.EventType.service_request, self._service_request_handler, 0)
@@ -357,7 +376,7 @@ class Instrument:
 
     def _build_arg_str_enc(self, *args, param_enc):
         if isinstance(param_enc, str):
-            param_enc = (param_enc, )
+            param_enc = (param_enc,)
         assert len(args) == len(param_enc)
 
         arg_list = []

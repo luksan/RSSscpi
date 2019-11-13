@@ -14,10 +14,11 @@ from RSSscpi.zva import ZVA  # noqa: F401
 def test_init(dummy_zva, visa):
     # type: (ZVA, VISA) -> None
     dummy_zva.init()
-    assert ["*CLS;*ESE 127;*SRE 36",
-            "SYSTem:LANGuage?",
-            "SYSTem:LANGuage 'SCPI'",
-            ] == visa.cmd
+    assert visa.cmd == [
+        "*CLS;*ESE 125;*SRE 36",
+        "SYSTem:LANGuage?",
+        "SYSTem:LANGuage 'SCPI'",
+    ]
 
 
 def test_vna_port(dummy_zva, visa):

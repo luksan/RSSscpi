@@ -99,11 +99,12 @@ class TestZNB:
     def test_init(self, dummy_znb, visa):
         # type: (ZNB, VISA) -> None
         dummy_znb.init()
-        assert ["*CLS;*ESE 127;*SRE 36",
-                "SYSTem:COMMunicate:CODec UTF8",
-                "SYSTem:LANGuage?",
-                "SYSTem:LANGuage 'SCPI'",
-                ] == visa.cmd
+        assert visa.cmd == [
+            "*CLS;*ESE 125;*SRE 36",
+            "SYSTem:COMMunicate:CODec UTF8",
+            "SYSTem:LANGuage?",
+            "SYSTem:LANGuage 'SCPI'",
+        ]
 
     def test_info(self, dummy_znb: ZNB, visa: VISA):
         info = dummy_znb.info
@@ -111,7 +112,7 @@ class TestZNB:
         assert info.model == "ZNB8-4Port"
         assert info.serial_number == "1311601044100005"
         assert info.firmware == "2.90.1.125"
-        assert visa.cmd == ["*IDN?",]
+        assert visa.cmd == ["*IDN?", ]
 
     def test_reset_remote_emulation(self, dummy_vna, visa):
         # type: (ZNB, VISA) -> None

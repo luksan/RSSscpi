@@ -14,10 +14,11 @@ from RSSscpi.nrp import NRPxxSN  # noqa: F401
 def test_nrp_init(nrpxxsn, visa):
     # type: (NRPxxSN, VISA) -> None
     nrpxxsn.init()
-    assert ["*CLS;*ESE 127;*SRE 36",
-            "ABORt",
-            "*IDN?",
-            ] == visa.cmd
+    assert visa.cmd == [
+        "*CLS;*ESE 125;*SRE 36",
+        "ABORt",
+        "*IDN?",
+    ]
     # FIXME: add typical IDN string as test vector
 
 
