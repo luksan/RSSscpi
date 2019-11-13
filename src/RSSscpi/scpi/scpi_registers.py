@@ -23,6 +23,10 @@ def scpi_bit(bit_number):
 
     :param int bit_number: The number of the bit in the register. LSB is zero.
     """
+
+    class Bit(int):
+        """For attaching a doc string to an int"""
+
     def fget(reg):
         return reg.value & (1 << bit_number)
 
@@ -37,6 +41,14 @@ def scpi_bit(bit_number):
             super().__init__(fget=fget, fset=fset, fdel=None, doc=bit_func.__doc__)
             self.__doc__ = super().__doc__
             self.bit_number = bit_number
+
+        # noinspection PyMethodOverriding
+        def __get__(self, instance, owner):
+            if instance is None:
+                bit = Bit(1 << bit_number)
+                bit.__doc__ = self.__doc__
+                return bit
+            return super().__get__(instance, owner)
 
     return decorator
 

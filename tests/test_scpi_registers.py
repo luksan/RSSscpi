@@ -38,9 +38,16 @@ def test_stb(caplog):
 
 
 def test_esr():
-    esr = EventStatusRegister(255)
+    esr = EventStatusRegister(253)
     assert len(esr.BITS) == 7
     assert esr.short_status() == "OPC,QERR,DDE,EXE,CMD,USR,PWR"
+
+
+def test_bit_operations():
+    stb = StatusByteRegister((
+            StatusByteRegister.event_status_summary | StatusByteRegister.operation_status_summary
+    ))
+    assert stb.value == 32 + 128
 
 
 def test_pprint(capsys):
