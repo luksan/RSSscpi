@@ -44,11 +44,7 @@ def test_generic_commands(dummy_vna, visa):
             ] == visa.cmd
 
 
-def test_query_write(dummy_znb, visa):
-    """
-    :param ZNB znb:
-    :param VISA visa:
-    """
+def test_query_write(dummy_znb: ZNB, visa: VISA, recwarn):
     vna = dummy_znb
     vna.OPC.q("ABC", quote=True)
     vna.OPC.q("'ABC'", quote=True)
@@ -72,6 +68,11 @@ def test_query_write(dummy_znb, visa):
             "*OPC 'A', 'B', 'C', '', 'E'",
             "*OPC A, B, C, , E",
             ] == visa.cmd
+
+    assert len(recwarn)
+    for record in recwarn:
+        assert "Supply fmt=" in str(record.message)
+        assert record.category.__name__ == "UserWarning"
 
 
 def test_error_handling(dummy_zva, visa):
