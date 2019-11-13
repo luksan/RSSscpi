@@ -27,7 +27,6 @@ def test_generic_commands(dummy_vna, visa):
     vna.update_display(True, once=False)
     vna.update_display(False, once=True)
     vna.update_display(False, once=False)
-    vna.preset()
     vna.query_OPC()
     vna.send_OPC()
     vna.send_TRG()
@@ -39,9 +38,6 @@ def test_generic_commands(dummy_vna, visa):
             "SYSTem:DISPlay:UPDate ON",
             "SYSTem:DISPlay:UPDate OFF",
             "SYSTem:DISPlay:UPDate OFF",
-            "*RST",
-            "*OPC?",
-            "*CLS;*ESE 127;*SRE 36",
             "*OPC?",
             "*OPC",
             "*TRG",

@@ -190,8 +190,9 @@ class Instrument:
 
         self._write("*CLS;*ESE {:};*SRE {:}".format(ese.value, sre.value))
 
-        self._service_request_callback_handle = self._visa_res.install_handler(
-            pyvisa.constants.EventType.service_request, self._service_request_handler, 0)
+        if not self._service_request_callback_handle:
+            self._service_request_callback_handle = self._visa_res.install_handler(
+                pyvisa.constants.EventType.service_request, self._service_request_handler, 0)
         self._visa_res.enable_event(pyvisa.constants.EventType.service_request, pyvisa.constants.VI_HNDLR)
 
     @property

@@ -106,6 +106,17 @@ class TestZNB:
             "SYSTem:LANGuage 'SCPI'",
         ]
 
+    def test_preset(self, dummy_znb: ZNB, visa: VISA):
+        dummy_znb.preset()
+        assert visa.cmd == [
+            "*RST",
+            "*OPC?",
+            "*CLS;*ESE 125;*SRE 36",
+            "SYSTem:COMMunicate:CODec UTF8",
+            "SYSTem:LANGuage?",
+            "SYSTem:LANGuage 'SCPI'",
+        ]
+
     def test_info(self, dummy_znb: ZNB, visa: VISA):
         info = dummy_znb.info
         assert info.manufacturer == "Rohde-Schwarz"

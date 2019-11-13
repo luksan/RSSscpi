@@ -110,6 +110,14 @@ class ZNB(Instrument):
         self._set_codec()
         self.reset_remote_emulation()
 
+    def preset(self):
+        """
+        Send `*RST` to the instrument and run init().
+        """
+        self.scpi.RST.w()
+        self.query_OPC()
+        self.init()
+
     def _set_codec(self):
         self._visa_res.encoding = "utf-8"
         self.scpi.SYSTem.COMMunicate.CODec.w("UTF8")  # Set the character encoding
@@ -243,14 +251,6 @@ class ZNB(Instrument):
         else:
             cmd = "OFF"
         self.scpi.SYSTem.DISPlay.UPDate.w(cmd)
-
-    def preset(self):
-        """
-        Send `*RST` to the instrument, and set up the event registers again.
-        """
-        self.scpi.RST.w()
-        self.query_OPC()
-        self._write("*CLS;*ESE 127;*SRE 36")
 
     def query_OPC(self):
         """
