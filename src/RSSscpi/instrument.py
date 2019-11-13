@@ -162,19 +162,19 @@ class Instrument:
         _call_visa(...) stores the stack trace here for each command.
         """
 
-    default_sre = StatusByteRegister((
-            StatusByteRegister.error_queue_not_empty |
-            StatusByteRegister.event_status_summary
-    ))
+        self.default_sre = StatusByteRegister((
+                StatusByteRegister.error_queue_not_empty |
+                StatusByteRegister.event_status_summary
+        ))
 
-    default_ese = EventStatusRegister((
-            EventStatusRegister.operation_complete |
-            EventStatusRegister.query_error |
-            EventStatusRegister.device_dependent_error |
-            EventStatusRegister.exceution_error |
-            EventStatusRegister.command_error |
-            EventStatusRegister.user_request
-    ))
+        self.default_ese = EventStatusRegister((
+                EventStatusRegister.operation_complete |
+                EventStatusRegister.query_error |
+                EventStatusRegister.device_dependent_error |
+                EventStatusRegister.exceution_error |
+                EventStatusRegister.command_error |
+                EventStatusRegister.user_request
+        ))
 
     def init(self, sre: StatusByteRegister = None, ese: EventStatusRegister = None):
         """

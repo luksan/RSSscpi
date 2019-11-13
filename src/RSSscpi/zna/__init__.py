@@ -22,6 +22,13 @@ def connect_ip(ip_address: str) -> "ZNA":
 class ZNA(znb.ZNB):
     _scpi = ZNA_gen()
 
+    def init(self, ese=None, **kwargs):
+        if ese is None:
+            ese = self.default_ese
+            # Disable user request events, since that effectivly disables the Go to local button
+            ese.user_request = False
+        super().init(ese=ese, **kwargs)
+
     @property
     def scpi(self) -> ZNA_gen:
         return self._scpi

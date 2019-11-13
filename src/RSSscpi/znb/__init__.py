@@ -104,8 +104,8 @@ class ZNB(Instrument):
     def cal_manager(self):
         return CalibrationManager(self)
 
-    def init(self):
-        super().init()
+    def init(self, **kwargs):
+        super().init(**kwargs)
 
         self._set_codec()
         self.reset_remote_emulation()
