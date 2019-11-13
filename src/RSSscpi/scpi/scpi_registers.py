@@ -69,6 +69,7 @@ class SCPIRegister(metaclass=MetaRegister):
     """
 
     BITS = None  # This is a list of tuples in the subclasses, set to None here to detect programming errors
+    short_name = "base class"
 
     def __init__(self, value=0):
         self._bitmask = 0
@@ -85,7 +86,8 @@ class SCPIRegister(metaclass=MetaRegister):
     @value.setter
     def value(self, val):
         if val & ~self._bitmask:
-            logger.warning("Register value has set bits outside of the bits in the register definition. 0b{:08b}".format(val))
+            logger.warning(
+                "Register value has set bits outside of the bits in the register definition. 0b{:08b}".format(val))
         self._value = val
 
     def __int__(self):
@@ -101,10 +103,17 @@ class SCPIRegister(metaclass=MetaRegister):
             short_name = short_name[:-1]
         return short_name
 
-    def pprint(self):
-        print("STB: 0b{:08b}, {:}".format(self.value, self.value))
+    def pprint_str(self) -> str:
+        ret = ["{:}: 0b{:08b}, {:}".format(self.short_name, self.value, self.value)]
         for name, bit_no in self.BITS:
-            print("{:>25}, {:<4} (bit {:}) {:}".format(name, self._get_short_name(name), bit_no, getattr(self, name)))
+            ret.append("{:>25}, {:<4} (bit {:}) {:}".format(name,
+                                                            self._get_short_name(name),
+                                                            bit_no,
+                                                            getattr(self, name)))
+        return "\n".join(ret)
+
+    def pprint(self):
+        print(self.pprint_str())
 
     def short_status(self):
         status = []
@@ -125,6 +134,8 @@ class StatusByteRegister(SCPIRegister):
     The STB is read out using the command *STB? or a "Serial Poll".
     The SRE can be set using command *SRE and read using *SRE? .
     """
+    short_name = "STB"
+
     @scpi_bit(2)
     def error_queue_not_empty(self):
         """
@@ -194,6 +205,9 @@ class EventStatusRegister(SCPIRegister):
     The Event Status Register (ESR) can be queried using ESR?. The Event Status Enable (ESE) register can be set
     using the command *ESE and read using *ESE?.
     """
+
+    short_name = "ESR"
+
     @scpi_bit(0)
     def operation_complete(self):
         """
