@@ -134,11 +134,6 @@ class Instrument:
         A logging.Logger instance for all VISA interactions
         """
 
-        self._log_time_start = timeit.default_timer()
-        """
-        This is T0 for the log.
-        """
-
         self._service_request_callback_handle = None
         self._last_cmd_time = 0
 
@@ -197,7 +192,7 @@ class Instrument:
 
     @property
     def _log_time(self):
-        return (timeit.default_timer() - self._log_time_start) * 1e3
+        return (timeit.default_timer() - self._last_cmd_time) * 1e3
 
     def log_debug(self, fmt_string, *args, duration=None, **kwargs):
         time = "%5.1f ms" % self._log_time
@@ -291,10 +286,8 @@ class Instrument:
         return ret
 
     def _end_visa_call(self, cmd_str, response):
-        self._last_cmd_time = timeit.default_timer()
-        elapsed = (self._last_cmd_time - self._call_time_start) * 1e3
-        log_time = (self._last_cmd_time - self._log_time_start) * 1e3
-
+        now = timeit.default_timer()
+        elapsed = (now - self._call_time_start) * 1e3
         if hasattr(response, "strip"):
             if isinstance(response, bytes):
                 try:
@@ -309,8 +302,9 @@ class Instrument:
         else:
             r = ""
         self.visa_logger.info("%5.1f ms %.2f ms\t%s%s",
-                              log_time, elapsed, cmd_str.strip(), r,
+                              self._log_time, elapsed, cmd_str.strip(), r,
                               extra={"duration": elapsed, "response": response})
+        self._last_cmd_time = now
 
     def _build_arg_str(self, cmd: SCPINodeBase, args, kwargs, query: bool):
         """
