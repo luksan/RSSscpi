@@ -72,6 +72,7 @@ def test_complex_list():
     bin_data = make_ieee_data_block(b"".join(map(cplx2bin, expect)))
     assert SCPIResponse(bin_data).complex_list(float_size=4) == expect
     assert SCPIResponse(",".join(map(cplx2str, expect))).complex_list() == expect
+    assert SCPIResponse(b'\r\n').complex_list() == []
 
 
 def test_block_data_reponse():

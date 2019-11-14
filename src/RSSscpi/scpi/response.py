@@ -116,6 +116,9 @@ class SCPIResponse:
                 raise ValueError("Invalid number of binary values")
             return list(map(complex, real, imag))
 
+        if len(self.raw) < 5:  # We don't have a proper response
+            return []
+
         data = self.split_comma(float)
         return list(map(complex, *[iter(data)] * 2))
 
