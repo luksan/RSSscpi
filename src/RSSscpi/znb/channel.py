@@ -1,4 +1,4 @@
-from typing import Union
+from typing import List, Union
 
 from .. import znb
 from ..scpi.class_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
@@ -101,6 +101,13 @@ class Channel:
     def active_trace(self, trace):
         name = trace.name if hasattr(trace, "name") else str(trace)
         self.CALC.PARameter.SELect.w(name)
+
+    def query_trace_list(self) -> List[Trace]:
+        """
+        Returns a list of all the traces defined in the channel.
+        """
+        traces = self.CONFch.TRACe.CATalog.q()
+        return [self.get_trace(tr_name) for _tr_no, tr_name in traces.comma_list_pairs()]
 
     power_level = SCPIProperty(ZNB_gen.SOURce.POWer.LEVel.IMMediate.AMPLitude, float,
                                get_root_node=lambda self: self.SOURce)  # type: float

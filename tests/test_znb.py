@@ -293,6 +293,22 @@ class TestChannel(PropertyTester):
                 "SOURce3:POWer:LEVel:IMMediate:AMPLitude?",
                 ] == visa.cmd
 
+    def test_query_trace_list(self, dummy_vna, visa):
+        if type(dummy_vna).__name__ == "ZVA":
+            pytest.xfail("Not implemented on ZVA")
+        ch = dummy_vna.get_channel(2)
+        visa.ret = ""
+        assert ch.query_trace_list() == []
+        visa.ret = "1,Trc1,2,Ch2Trc"
+        traces = ch.query_trace_list()
+        assert len(traces) == 2
+        assert traces[0].name == "Trc1"
+        assert traces[1].name == "Ch2Trc"
+        assert visa.cmd == [
+            "CONFigure:CHANnel2:TRACe:CATalog?",
+            "CONFigure:CHANnel2:TRACe:CATalog?",
+        ]
+
     def test_channel_sweep(self, dummy_znb: ZNB, visa: VISA):
         ch = dummy_znb.get_channel(3)
         assert isinstance(ch.sweep.points_minmax.query_default(), int)

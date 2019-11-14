@@ -5,7 +5,7 @@
 """
 
 import logging
-from typing import NoReturn, Union
+from typing import NoReturn, Union, List
 
 from memoized_property import memoized_property
 
@@ -97,6 +97,7 @@ class Channel(znb.Channel):
 
     @property
     def instrument(self) -> ZVA:
+        assert isinstance(self._instr, ZVA)
         return self._instr
 
     @property
@@ -131,6 +132,9 @@ class Channel(znb.Channel):
 
     def create_trace(self, name: str, parameter: Union[str, znb.trace.MeasParamBase], diagram=None) -> "Trace":
         return super(Channel, self).create_trace(name, parameter, diagram)
+
+    def query_trace_list(self) -> List["Trace"]:
+        raise NotImplementedError("This method is not available for the ZVA.")
 
 
 class Diagram(znb.Diagram):
