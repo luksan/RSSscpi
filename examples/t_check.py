@@ -33,7 +33,8 @@ dia2 = znb.get_diagram(2)
 dia2.state = True
 dia2.name = "Tcheck"
 tr_Tcheck = ch.create_trace("T_check", "S11", dia2)
-tr_Tcheck.math_equation = "linMag(S11*(Re(S21)-Im(S21)) + S12*(Re(S22)-Im(S22))) / ((1-linMag(S11)^2-linMag(S12)^2)*(1-linMag(S21)^2-linMag(S22)^2))^0.5"
+tr_Tcheck.math_equation = "linMag(S11*(Re(S21)-j*Im(S21)) + S12*(Re(S22)-j*Im(S22))) / " \
+                          "((1-linMag(S11)^2-linMag(S12)^2)*(1-linMag(S21)^2-linMag(S22)^2))^0.5"
 tr_Tcheck.math_is_enabled = True
 tr_Tcheck.trace_format = "REAL"
 tr_Tcheck.scale_top = 1.25
