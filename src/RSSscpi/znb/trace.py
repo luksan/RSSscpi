@@ -9,12 +9,94 @@ from .diagram import Diagram
 from .. import znb
 
 
-class MeasParamBase:
-    def __init__(self, dst_port, src_port, detector=""):
-        self.dst_port = int(dst_port)
-        self.src_port = int(src_port)
-        self.detector = str(detector).upper()
-        self.port_digits = floor(log10(max(self.src_port, self.dst_port))) + 1
+class MeasParam:
+    """
+    Helper functions for creating the strings that define a measurement parameter.
+    """
+
+    @classmethod
+    def S(cls, dst_port: int, src_port: int, detector="") -> str:
+        """
+        S-parameter measurement.
+
+        :param int dst_port: Receiving port index, S21 -> 2
+        :param int src_port: Transmitting port index, S21 -> 1
+        :param str detector: SAM (sample/normal) or AVG (complex averaging)
+        """
+        port_digits = cls._port_digit_count(dst_port, src_port)
+        detector = detector.upper()
+        if detector and detector not in ("SAM", "AVG"):
+            raise ValueError("The S-parameter detector must be SAM or AVG")
+        return "S{0:0{pad}d}{1:0{pad}d}{2!s}".format(
+            dst_port, src_port, detector, pad=port_digits
+        )
+
+    @classmethod
+    def Ratio(
+        cls,
+        numerator_rec: str,
+        numerator_port: int,
+        denominator_rec: str,
+        denominator_port: int,
+        src_port: int,
+        detector: str = "",
+    ) -> str:
+        """
+        A measurement of the ratio between two receivers.
+
+        :param str numerator_rec: A, B, AP or BP, the P means primed detector, available in ZVA and ZNA.
+        :param int numerator_port: port index
+        :param str denominator_rec: see above
+        :param int denominator_port: port index
+        :param int src_port: Port index of the port generating the stimuli signal.
+        :param str detector: SAM, AVG, AMP or RMS
+        """
+
+        port_digits = cls._port_digit_count(numerator_port, denominator_port, src_port)
+        num = cls.Wave(
+            numerator_rec, numerator_port, src_port, port_digit_count=port_digits
+        )
+        denom = cls.Wave(
+            denominator_rec,
+            denominator_port,
+            src_port,
+            detector=detector,
+            port_digit_count=port_digits,
+        )
+        return "/".join((num, denom))
+
+    @classmethod
+    def Wave(
+        cls,
+        receiver: str,
+        dst_port: int,
+        src_port: int,
+        detector: str = "",
+        *,
+        port_digit_count: int = None
+    ) -> str:
+        """
+        A wave quantity
+
+        :param str receiver: A, B, AP, BP
+        :param int dst_port: Index of receiving port
+        :param int src_port: Index of port generating the stimuli
+        :param str detector: Detector type, SAM, AVG, AMP, RMS
+        :param port_digit_count: internal use only
+        """
+        receiver = receiver.upper()
+        detector = detector.upper()
+        if detector and detector not in ("SAM", "AVG", "AMP", "RMS"):
+            raise ValueError("'{:}' is not a valid detector".format(detector))
+        if not port_digit_count:
+            port_digit_count = cls._port_digit_count(dst_port, src_port)
+        return "{0!s}{1:0{pad}d}D{2:0{pad}d}{3!s}".format(
+            receiver, dst_port, src_port, detector, pad=port_digit_count
+        )
+
+    @staticmethod
+    def _port_digit_count(*ports: int) -> int:
+        return floor(log10(max(ports))) + 1
 
 
 class Trace:
@@ -22,19 +104,7 @@ class Trace:
     A class representing a trace on the VNA. Instances are obtained via Channel.create_trace() and Channel.get_trace()
     """
 
-    class MeasParam:
-        class S(MeasParamBase):
-            def __str__(self):
-                return "S{0.dst_port:0{pad}d}{0.src_port:0{pad}d}{0.detector!s}".format(self, pad=self.port_digits)
-
-        class Wave(MeasParamBase):
-            def __init__(self, receiver, dst_port, src_port, detector=""):
-                super(Trace.MeasParam.Wave, self).__init__(dst_port, src_port, detector)
-                self.receiver = str(receiver).upper()
-
-            def __str__(self):
-                return "{0.receiver!s}{0.dst_port:0{pad}d}D{0.src_port:0{pad}d}{0.detector!s}".\
-                    format(self, pad=self.port_digits)
+    MeasParam = MeasParam
 
     def __init__(self, name: str, channel: "znb.Channel"):
         """

@@ -5,7 +5,7 @@
 """
 
 import logging
-from typing import NoReturn, Union, List
+from typing import NoReturn, List
 
 from memoized_property import memoized_property
 
@@ -130,7 +130,7 @@ class Channel(znb.Channel):
     def get_vna_port(self, port_no: int):
         return ChannelVNAPort(self, port_no)
 
-    def create_trace(self, name: str, parameter: Union[str, znb.trace.MeasParamBase], diagram=None) -> "Trace":
+    def create_trace(self, name: str, parameter: str, diagram=None) -> "Trace":
         return super(Channel, self).create_trace(name, parameter, diagram)
 
     def query_trace_list(self) -> List["Trace"]:

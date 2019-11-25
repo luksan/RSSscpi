@@ -1041,17 +1041,20 @@ class TestTrace(PropertyTester):
         meas = tr.measurement
         assert isinstance(meas, str)
         tr.measurement = "S21AVG"
-        assert ["CALCulate2:PARameter:MEASure? 'Tr3'",
-                "CALCulate2:PARameter:MEASure 'Tr3', 'S21AVG'",
-                ] == visa.cmd
+        assert visa.cmd == [
+            "CALCulate2:PARameter:MEASure? 'Tr3'",
+            "CALCulate2:PARameter:MEASure 'Tr3', 'S21AVG'",
+            ]
         tr.measurement = tr.MeasParam.Wave("b", 1, src_port=1, detector="sam")
-        assert ["CALCulate2:PARameter:MEASure 'Tr3', 'B1D1SAM'"] == visa.cmd
+        assert visa.cmd == ["CALCulate2:PARameter:MEASure 'Tr3', 'B1D1SAM'"]
 
     def test_meas_param(self, tr, visa):
         # type: (znb.Trace, VISA) -> None
         assert str(tr.MeasParam.S(2, 1)) == "S21"
-        assert str(tr.MeasParam.S("2", 1, "RMS")) == "S21RMS"
-        assert str(tr.MeasParam.Wave("A", 2, "2")) == "A2D2"
+        assert tr.MeasParam.S(2, 1, detector="avg") == "S21AVG"
+        with pytest.raises(ValueError, match="The S-parameter detector must be SAM or AVG"):
+            tr.MeasParam.S(2, 1, "RMS")
+        assert str(tr.MeasParam.Wave("Ap", 2, 2)) == "AP2D2"
         assert str(tr.MeasParam.Wave("B", 2, 1)) == "B2D1"
         assert str(tr.MeasParam.Wave("B", 2, 2, detector="AVG")) == "B2D2AVG"
         assert str(tr.MeasParam.S(dst_port=2, src_port=1)) == "S21"

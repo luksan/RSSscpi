@@ -1,10 +1,10 @@
-from typing import List, Union
+from typing import List
 
 from .. import znb
 from ..scpi.class_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
 from ..gen import ZNB_gen
 
-from .trace import MeasParamBase, Trace
+from .trace import Trace
 
 
 class Channel:
@@ -69,7 +69,7 @@ class Channel:
     Returns True if the channel is activated. Set to True to create the channel, and to False to delete it.
     """
 
-    def create_trace(self, name, parameter: Union[str, MeasParamBase], diagram=None) -> Trace:
+    def create_trace(self, name, parameter: str, diagram=None) -> Trace:
         """
         Create a new trace with a measurement parameter according to CALCulate<Ch>:PARameter:SDEFine
 
