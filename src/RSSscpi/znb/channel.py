@@ -210,24 +210,27 @@ class Channel:
         return self.instrument.filesystem.file(filename)
 
 
-class ChannelVNAPort(ZNB_gen.SOURce.POWer):
+class ChannelVNAPort:
     def __init__(self, channel, port_no):
-        super(ChannelVNAPort, self).__init__(parent=channel.SOURce)
         self.channel = channel
         self.n = port_no
 
+    @property
+    def SOURcePOWer(self) -> ZNB_gen.SOURce.POWer:
+        return self.channel.SOURce.POWer[self.n]
+
     _POW = ZNB_gen.SOURce.POWer
 
-    cal_power_offset = SCPIProperty(_POW.CORRection.LEVel.OFFSet, float)
+    cal_power_offset = SCPIProperty(_POW.CORRection.LEVel.OFFSet, float, parent_prop=SOURcePOWer)
     """This offset only changes the displayed port power, the source level is not affected"""
 
-    power_enabled = SCPIProperty(_POW.STATe, bool)
+    power_enabled = SCPIProperty(_POW.STATe, bool, parent_prop=SOURcePOWer)
     """Turn the source power on or off"""
 
-    power_gen = SCPIProperty(_POW.PERManent.STATe, bool)
+    power_gen = SCPIProperty(_POW.PERManent.STATe, bool, parent_prop=SOURcePOWer)
     """If power_gen is set to True the port power is on for all partial measurements."""
 
-    power_slope = SCPIProperty(_POW.LEVel.IMMediate.SLOPe, float)
+    power_slope = SCPIProperty(_POW.LEVel.IMMediate.SLOPe, float, parent_prop=SOURcePOWer)
     """Set a slope for the port power in dB/GHz"""
 
     def get_source_power_offset(self):
@@ -235,7 +238,7 @@ class ChannelVNAPort(ZNB_gen.SOURce.POWer):
         The method returs a 2-tuple. The first element is the power offset in dB, the second element is True
         if the offset is relative to the channel base power. If false the first element is the port power in dBm.
         """
-        (power, rel) = self.LEVel.IMMediate.OFFSet.q().split_comma()
+        (power, rel) = self.SOURcePOWer.LEVel.IMMediate.OFFSet.q().split_comma()
         return float(power), rel == "CPAD"
 
     def set_source_power_offset(self, power, relative=True):
@@ -250,7 +253,7 @@ class ChannelVNAPort(ZNB_gen.SOURce.POWer):
             x = 'CPAD'
         else:
             x = 'ONLY'
-        self.LEVel.IMMediate.OFFSet.w(power, x)
+        self.SOURcePOWer.LEVel.IMMediate.OFFSet.w(power, x)
 
 
 class ChannelCal:

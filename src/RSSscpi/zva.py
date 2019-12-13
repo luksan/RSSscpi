@@ -159,7 +159,11 @@ class Marker(ZVA_gen.CALCulate.MARKer, znb.Marker):
     pass
 
 
-class ChannelVNAPort(ZVA_gen.SOURce.POWer, znb.ChannelVNAPort):
+class ChannelVNAPort(znb.ChannelVNAPort):
+    @property
+    def SOURcePOWer(self) -> ZVA_gen.SOURce.POWer:
+        return super().SOURcePOWer
+
     @property
     def src_attenuator(self):
         """
@@ -168,14 +172,14 @@ class ChannelVNAPort(ZVA_gen.SOURce.POWer, znb.ChannelVNAPort):
 
         SOURce:POWer:ATTenuation / SOURce:POWer:ATTenuation:AUTO:VALue?
         """
-        return int(self.ATTenuation.AUTO.VALue.q())
+        return int(self.SOURcePOWer.ATTenuation.AUTO.VALue.q())
 
     @src_attenuator.setter
     def src_attenuator(self, att):
         # TODO: check that the att parameter is within the range of the instrument
-        self.ATTenuation.w(int(att))
+        self.SOURcePOWer.ATTenuation.w(int(att))
 
-    src_attenuator_mode = SCPIProperty(ZVA_gen.SOURce.POWer.ATTenuation.MODE, str)
+    src_attenuator_mode = SCPIProperty(ZVA_gen.SOURce.POWer.ATTenuation.MODE, str, parent_prop=SOURcePOWer)
     """AUTO | MANual | LNOise"""
 
 

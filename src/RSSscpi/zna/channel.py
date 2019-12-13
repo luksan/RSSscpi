@@ -87,5 +87,7 @@ class ChannelCal(znb.ChannelCal):
     pass
 
 
-class ChannelVNAPort(ZNA_gen.SOURce.POWer, znb.ChannelVNAPort):
-    pass
+class ChannelVNAPort(znb.ChannelVNAPort):
+    @property
+    def SOURcePOWer(self) -> ZNA_gen.SOURce.POWer:
+        return super().SOURcePOWer
