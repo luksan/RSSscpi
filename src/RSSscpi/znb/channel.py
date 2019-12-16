@@ -233,6 +233,16 @@ class ChannelVNAPort:
     power_slope = SCPIProperty(_POW.LEVel.IMMediate.SLOPe, float, parent_prop=SOURcePOWer)
     """Set a slope for the port power in dB/GHz"""
 
+    def _rec_att_cb(self, get, value=None):
+        ret = {"fmt": "{port_no:d}", "port_no": self.n, "value": value}
+        if not get:
+            ret["fmt"] += ", {value:d}"
+        return ret
+
+    receiver_attenuator = SCPIProperty(ZNB_gen.SENSe.POWer.ATTenuation, int,
+                                       callback=_rec_att_cb,
+                                       get_root_node=lambda self: self.channel.SENSe)
+
     def get_source_power_offset(self):
         """
         The method returs a 2-tuple. The first element is the power offset in dB, the second element is True

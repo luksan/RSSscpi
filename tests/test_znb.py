@@ -444,6 +444,51 @@ class TestChannelCal:
                 ] == visa.cmd
 
 
+class TestChannelVNAPort(PropertyTester):
+    @pytest.fixture()
+    def prop_owner(self, dummy_vna):
+        return dummy_vna.get_channel(3).get_vna_port(2)
+
+    SOURcePOWer = "SOURce3:POWer2:"
+
+    bool_properties = [
+        ("power_enabled", SOURcePOWer + "STATe", "{:s} {:s}", "{:s}?"),
+        ("power_gen", SOURcePOWer + "PERManent:STATe", "{:s} {:s}", "{:s}?"),
+    ]
+
+    float_properties = [
+        ("cal_power_offset", SOURcePOWer + "CORRection:LEVel:OFFSet", "{:s} {!s}", "{:s}?"),
+        ("power_slope", SOURcePOWer + "LEVel:IMMediate:SLOPe", "{:s} {!s}", "{:s}?"),
+    ]
+
+    int_properties = [
+        ("receiver_attenuator", "SENSe3:POWer:ATTenuation", "{:s} 2, {:s}", "{:s}? 2"),
+    ]
+
+    def test_source_power_offset(self, dummy_vna: ZNB, visa: VISA):
+        ch = dummy_vna.get_channel(1)
+        p2 = ch.get_vna_port(2)
+
+        visa.ret = "-2,CPAD"
+        (power, rel) = p2.get_source_power_offset()
+        assert power == -2 and rel is True
+        visa.ret = "5.5, ONLY"
+        (power, rel) = p2.get_source_power_offset()
+        assert power == 5.5 and rel is False
+        assert visa.cmd == [
+            "SOURce1:POWer2:LEVel:IMMediate:OFFSet?"
+        ] * 2
+
+        p2.set_source_power_offset(0)
+        p2.set_source_power_offset(12.3, False)
+        p2.set_source_power_offset(3.45, True)
+        assert visa.cmd == [
+            "SOURce1:POWer2:LEVel:IMMediate:OFFSet 0, CPAD",
+            "SOURce1:POWer2:LEVel:IMMediate:OFFSet 12.3, ONLY",
+            "SOURce1:POWer2:LEVel:IMMediate:OFFSet 3.45, CPAD",
+        ]
+
+
 class TestFilesystem:
     import ntpath
 
@@ -669,50 +714,6 @@ class TestSweepSegment(PropertyTester):
         assert ["SENSe2:SEGMent6:STATe?",
                 "SENSe2:SEGMent6:BWIDth:RESolution:SELect?",
                 ] == visa.cmd
-
-
-def test_vna_port(dummy_vna, visa):
-    # type: (ZNB, VISA) -> None
-    ch = dummy_vna.get_channel(1)
-    p2 = ch.get_vna_port(2)
-
-    p2.cal_power_offset = -3.4
-    x = p2.cal_power_offset
-    assert isinstance(x, float) and x == 1
-    assert ["SOURce1:POWer2:CORRection:LEVel:OFFSet -3.4",
-            "SOURce1:POWer2:CORRection:LEVel:OFFSet?",
-            ] == visa.cmd
-
-    p2.power_enabled = False
-    assert p2.power_enabled is True
-    assert ["SOURce1:POWer2:STATe OFF",
-            "SOURce1:POWer2:STATe?",
-            ] == visa.cmd
-
-    p2.power_gen = False
-    assert p2.power_gen is True
-    assert ["SOURce1:POWer2:PERManent:STATe OFF",
-            "SOURce1:POWer2:PERManent:STATe?",
-            ] == visa.cmd
-
-    p2.power_slope = 13.3
-    x = p2.power_slope
-    assert isinstance(x, float) and x == 1
-    assert ["SOURce1:POWer2:LEVel:IMMediate:SLOPe 13.3",
-            "SOURce1:POWer2:LEVel:IMMediate:SLOPe?",
-            ] == visa.cmd
-
-    visa.ret = "-2,CPAD"
-    (power, rel) = p2.get_source_power_offset()
-    assert power == -2 and rel is True
-    p2.set_source_power_offset(0)
-    p2.set_source_power_offset(12.3, False)
-    p2.set_source_power_offset(3.45, True)
-    assert ["SOURce1:POWer2:LEVel:IMMediate:OFFSet?",
-            "SOURce1:POWer2:LEVel:IMMediate:OFFSet 0, CPAD",
-            "SOURce1:POWer2:LEVel:IMMediate:OFFSet 12.3, ONLY",
-            "SOURce1:POWer2:LEVel:IMMediate:OFFSet 3.45, CPAD",
-            ] == visa.cmd
 
 
 def test_diagram(dummy_vna, visa):
