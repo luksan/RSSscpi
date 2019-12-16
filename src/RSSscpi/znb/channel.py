@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Tuple
 
 from .. import znb
 from ..scpi.class_property import SCPIProperty, SCPIPropertyMinMax, SCPIPropertyMapping
@@ -284,15 +284,17 @@ class ChannelVNAPort:
         get_root_node=lambda self: self.channel.SENSe,
     )
 
-    def get_source_power_offset(self):
+    def get_source_power_offset(self) -> Tuple[float, bool]:
         """
         The method returs a 2-tuple. The first element is the power offset in dB, the second element is True
         if the offset is relative to the channel base power. If false the first element is the port power in dBm.
         """
         (power, rel) = self.SOURcePOWer.LEVel.IMMediate.OFFSet.q().split_comma()
+        rel = rel.upper()
+        assert rel in ("CPAD", "ONLY")
         return float(power), rel == "CPAD"
 
-    def set_source_power_offset(self, power, relative=True):
+    def set_source_power_offset(self, power: float, *, relative: bool = True):
         """
         Set the port power effset. If relative is true `power` is an offset to the channel base power. If `relative`
         is False then power is the port power in dBm.

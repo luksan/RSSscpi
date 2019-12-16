@@ -475,13 +475,16 @@ class TestChannelVNAPort(PropertyTester):
         visa.ret = "5.5, ONLY"
         (power, rel) = p2.get_source_power_offset()
         assert power == 5.5 and rel is False
+        visa.ret = "5.5, ON"
+        with pytest.raises(AssertionError):
+            p2.get_source_power_offset()
         assert visa.cmd == [
             "SOURce1:POWer2:LEVel:IMMediate:OFFSet?"
-        ] * 2
+        ] * 3
 
         p2.set_source_power_offset(0)
-        p2.set_source_power_offset(12.3, False)
-        p2.set_source_power_offset(3.45, True)
+        p2.set_source_power_offset(12.3, relative=False)
+        p2.set_source_power_offset(3.45, relative=True)
         assert visa.cmd == [
             "SOURce1:POWer2:LEVel:IMMediate:OFFSet 0, CPAD",
             "SOURce1:POWer2:LEVel:IMMediate:OFFSet 12.3, ONLY",
