@@ -88,7 +88,7 @@ class ZNB(Instrument):
         super().__init__(visa_res)
         self.logger = logging.getLogger(__name__)
         self.visa_logger = self.logger.getChild("VISA")
-        self.info = InstrumentInfo(self.scpi.IDN)
+        self.info = InstrumentInfo(self.scpi.IDN, self.scpi.OPT)
         self._port_count = None
 
     @memoized_property

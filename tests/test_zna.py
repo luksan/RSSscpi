@@ -15,6 +15,21 @@ class TestZNA:
             "SYSTem:LANGuage 'SCPI'",
         ]
 
+    def test_info(self, dummy_zna: ZNA, visa: VISA):
+        info = dummy_zna.info
+        assert info.manufacturer == "Rohde-Schwarz"
+        assert info.model == "ZNA26-4Port"
+        assert info.serial_number == "1332450024101220"
+        assert info.firmware == "1.91"
+        assert visa.cmd == ["*IDN?", ]
+
+        assert info.installed_options == tuple(visa.ret_dict["*OPT?"].split(","))
+        assert info.has_option("B34")
+        assert info.has_option("ZNA26-B34")
+        assert not info.has_option("K2")
+        assert not info.has_option("B1")
+        assert visa.cmd == ["*OPT?", ]
+
 
 class TestChannel:
     def test_IF_path(self, dummy_zna: ZNA, visa: VISA):

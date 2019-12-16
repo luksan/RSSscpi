@@ -157,7 +157,10 @@ def dummy_zva(visa):
 
 
 def get_zna(visa):
-    visa.ret_dict["*IDN?"] = "Rohde-Schwarz,ZNA43-4Port,1332450044101100,1.90"
+    visa.ret_dict["*IDN?"] = "Rohde-Schwarz,ZNA26-4Port,1332450024101220,1.91"
+    visa.ret_dict["*OPT?"] = "ZNA-K0,ZNA-B4,ZNA26-B21,ZNA26-B41,ZNA26-B32,"\
+                             "ZNA26-B42,ZNA26-B23,ZNA26-B43,ZNA26-B34," \
+                             "ZNA26-B44,ZNA-B5,ZNA26-B3,ZNA26-B16,ZNA-B26,ZNA-B91"
     return ZNA(visa_res=visa)
 
 
