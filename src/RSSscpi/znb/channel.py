@@ -40,7 +40,9 @@ class Channel:
     def TRIGger(self) -> ZNB_gen.TRIGger:
         return self.instrument.TRIGger[self.n]
 
-    name = SCPIProperty(ZNB_gen.CONFigure.CHANnel.NAME, str, get_root_node=lambda self: self.CONFch)
+    name = SCPIProperty(
+        ZNB_gen.CONFigure.CHANnel.NAME, str, get_root_node=lambda self: self.CONFch
+    )
     """
     The channel name, CONFigure:CHANnel<Ch>:NAME
     """
@@ -64,7 +66,9 @@ class Channel:
     def get_vna_port(self, port_no):
         return ChannelVNAPort(self, port_no)
 
-    state = SCPIProperty(ZNB_gen.CONFigure.CHANnel.STATe, bool, get_root_node=lambda self: self.CONFch)
+    state = SCPIProperty(
+        ZNB_gen.CONFigure.CHANnel.STATe, bool, get_root_node=lambda self: self.CONFch
+    )
     """
     Returns True if the channel is activated. Set to True to create the channel, and to False to delete it.
     """
@@ -107,10 +111,15 @@ class Channel:
         Returns a list of all the traces defined in the channel.
         """
         traces = self.CONFch.TRACe.CATalog.q()
-        return [self.get_trace(tr_name) for _tr_no, tr_name in traces.comma_list_pairs()]
+        return [
+            self.get_trace(tr_name) for _tr_no, tr_name in traces.comma_list_pairs()
+        ]
 
-    power_level = SCPIProperty(ZNB_gen.SOURce.POWer.LEVel.IMMediate.AMPLitude, float,
-                               get_root_node=lambda self: self.SOURce)  # type: float
+    power_level = SCPIProperty(
+        ZNB_gen.SOURce.POWer.LEVel.IMMediate.AMPLitude,
+        float,
+        get_root_node=lambda self: self.SOURce,
+    )  # type: float
     """
     The channel power level, in dBm.
     """
@@ -129,18 +138,41 @@ class Channel:
 
     ifbw = SCPIProperty(ZNB_gen.SENSe.BANDwidth, int, get_root_node=lambda x: x.SENSe)
     ifbw_minmax = SCPIPropertyMinMax(ifbw)
-    if_selectivity = SCPIProperty(ZNB_gen.SENSe.BANDwidth.RESolution.SELect, str, get_root_node=lambda x: x.SENSe)
+    if_selectivity = SCPIProperty(
+        ZNB_gen.SENSe.BANDwidth.RESolution.SELect, str, get_root_node=lambda x: x.SENSe
+    )
 
-    def cal_auto(self, vna_ports, cal_unit_ports=None, cal_type="FNPort", cal_unit_characterization=""):
+    def cal_auto(
+        self,
+        vna_ports,
+        cal_unit_ports=None,
+        cal_type="FNPort",
+        cal_unit_characterization="",
+    ):
         if cal_unit_ports:
             cmd_fmt = "{:s}, {:q}, {:d**}"
             self.SENSe.CORRection.COLLect.AUTO.PORTs.TYPE.w(
-                cal_type, cal_unit_characterization, zip(vna_ports, cal_unit_ports), fmt=cmd_fmt)
+                cal_type,
+                cal_unit_characterization,
+                zip(vna_ports, cal_unit_ports),
+                fmt=cmd_fmt,
+            )
         else:
             cmd_fmt = "{:s}, {:q}, {:d*}"
-            self.SENSe.CORRection.COLLect.AUTO.TYPE.w(cal_type, cal_unit_characterization, vna_ports, fmt=cmd_fmt)
+            self.SENSe.CORRection.COLLect.AUTO.TYPE.w(
+                cal_type, cal_unit_characterization, vna_ports, fmt=cmd_fmt
+            )
 
-    def configure_freq_sweep(self, start_freq, stop_freq, *, points=None, ifbw=None, power=None, log_sweep=False):
+    def configure_freq_sweep(
+        self,
+        start_freq,
+        stop_freq,
+        *,
+        points=None,
+        ifbw=None,
+        power=None,
+        log_sweep=False
+    ):
         """
         Configure the instrument for a frequency sweep. Parameters which are not provided are left as is.
 
@@ -165,7 +197,9 @@ class Channel:
         if power is not None:
             self.power_level = power
 
-    def configure_power_sweep(self, freq, start_power, stop_power, *, points=None, ifbw=None):
+    def configure_power_sweep(
+        self, freq, start_power, stop_power, *, points=None, ifbw=None
+    ):
         """
         Configure the channel for a power sweep. Unspecified parameters are not modified.
 
@@ -177,7 +211,9 @@ class Channel:
         """
         self.sweep.type = Sweep.POWER
         self.freq_cw = freq
-        self.SOURce.POWer[1].STARt.w(start_power)  # The port number suffix on POWer is ignored by the instrument
+        self.SOURce.POWer[1].STARt.w(
+            start_power
+        )  # The port number suffix on POWer is ignored by the instrument
         self.SOURce.POWer[1].STOP.w(stop_power)
         if points:
             self.sweep.points = points
@@ -192,7 +228,9 @@ class Channel:
         """
         self.instrument.INITiate[self.n].IMMediate.w()
 
-    def save_touchstone(self, filename, ports, fmt="LOGPhase", mode_impedance="CIMPedance"):
+    def save_touchstone(
+        self, filename, ports, fmt="LOGPhase", mode_impedance="CIMPedance"
+    ):
         """
         Save the S-parameters for the selected ports to a Touchstone file on the instrument.
         MMEMory:STORe:TRACe:PORTs
@@ -206,7 +244,9 @@ class Channel:
         :rtype: ZNB.File
         """
         cmd_fmt = "{:d}, {:q}, {:s}, {:s}, {:d*}"
-        self.instrument.MMEMory.STORe.TRACe.PORTs.w(self.n, filename, fmt, mode_impedance, ports, fmt=cmd_fmt)
+        self.instrument.MMEMory.STORe.TRACe.PORTs.w(
+            self.n, filename, fmt, mode_impedance, ports, fmt=cmd_fmt
+        )
         return self.instrument.filesystem.file(filename)
 
 
@@ -221,7 +261,9 @@ class ChannelVNAPort:
 
     _POW = ZNB_gen.SOURce.POWer
 
-    cal_power_offset = SCPIProperty(_POW.CORRection.LEVel.OFFSet, float, parent_prop=SOURcePOWer)
+    cal_power_offset = SCPIProperty(
+        _POW.CORRection.LEVel.OFFSet, float, parent_prop=SOURcePOWer
+    )
     """This offset only changes the displayed port power, the source level is not affected"""
 
     power_enabled = SCPIProperty(_POW.STATe, bool, parent_prop=SOURcePOWer)
@@ -230,7 +272,9 @@ class ChannelVNAPort:
     power_gen = SCPIProperty(_POW.PERManent.STATe, bool, parent_prop=SOURcePOWer)
     """If power_gen is set to True the port power is on for all partial measurements."""
 
-    power_slope = SCPIProperty(_POW.LEVel.IMMediate.SLOPe, float, parent_prop=SOURcePOWer)
+    power_slope = SCPIProperty(
+        _POW.LEVel.IMMediate.SLOPe, float, parent_prop=SOURcePOWer
+    )
     """Set a slope for the port power in dB/GHz"""
 
     def _rec_att_cb(self, get, value=None):
@@ -239,9 +283,12 @@ class ChannelVNAPort:
             ret["fmt"] += ", {value:d}"
         return ret
 
-    receiver_attenuator = SCPIProperty(ZNB_gen.SENSe.POWer.ATTenuation, int,
-                                       callback=_rec_att_cb,
-                                       get_root_node=lambda self: self.channel.SENSe)
+    receiver_attenuator = SCPIProperty(
+        ZNB_gen.SENSe.POWer.ATTenuation,
+        int,
+        callback=_rec_att_cb,
+        get_root_node=lambda self: self.channel.SENSe,
+    )
 
     def get_source_power_offset(self):
         """
@@ -297,7 +344,9 @@ class ChannelCal:
         """
         if filename[-4:] != ".cal":
             filename += ".cal"
-        self.channel.instrument.MMEMory.LOAD.CORRection.w(self.channel.n, filename, fmt="{:d}, {:q}")
+        self.channel.instrument.MMEMory.LOAD.CORRection.w(
+            self.channel.n, filename, fmt="{:d}, {:q}"
+        )
 
     def store_calibration(self, filename):
         """
@@ -307,7 +356,9 @@ class ChannelCal:
         """
         if filename[-4:] != ".cal":
             filename += ".cal"
-        self.channel.instrument.MMEMory.STORe.CORRection.w(self.channel.n, filename, fmt="{:d}, {:q}")
+        self.channel.instrument.MMEMory.STORe.CORRection.w(
+            self.channel.n, filename, fmt="{:d}, {:q}"
+        )
 
 
 class SweepSegment(ZNB_gen.SENSe.SEGMent):
@@ -334,7 +385,9 @@ class SweepSegment(ZNB_gen.SENSe.SEGMent):
     number_of_points = SCPIProperty(_SEG.SWEep.POINts, int)
     power_level = SCPIProperty(_SEG.POWer, float)
     sweep_time = SCPIProperty(_SEG.SWEep.TIME, float)  # type: float
-    analog_sweep_is_enabled = SCPIPropertyMapping(_SEG.SWEep.GENeration, str, {"ANALog": True, "STEPped": False})
+    analog_sweep_is_enabled = SCPIPropertyMapping(
+        _SEG.SWEep.GENeration, str, {"ANALog": True, "STEPped": False}
+    )
 
 
 class SweepSegments:
@@ -370,8 +423,20 @@ class SweepSegments:
         # type: (int) -> SweepSegment
         return self._sweep.get_segment(n)
 
-    def insert_segment(self, start_freq, stop_freq, *, points, ifbw, power, time="AUTO",
-                       lo_sideband="AUTO", if_selectivity="NORMal", analog_sweep=False, position=1):
+    def insert_segment(
+        self,
+        start_freq,
+        stop_freq,
+        *,
+        points,
+        ifbw,
+        power,
+        time="AUTO",
+        lo_sideband="AUTO",
+        if_selectivity="NORMal",
+        analog_sweep=False,
+        position=1
+    ):
         """
 
         :param float start_freq: Segment start frequency in Hz
@@ -391,8 +456,18 @@ class SweepSegments:
             sweep_mode = "ANALog"
         else:
             sweep_mode = "STEPped"
-        self._SEG[position].INSert.w(start_freq, stop_freq, points, power, time, "0", ifbw, lo_sideband, if_selectivity,
-                                     sweep_mode)
+        self._SEG[position].INSert.w(
+            start_freq,
+            stop_freq,
+            points,
+            power,
+            time,
+            "0",
+            ifbw,
+            lo_sideband,
+            if_selectivity,
+            sweep_mode,
+        )
         return self.get_segment(position)
 
     def delete_segment(self, n):
@@ -447,15 +522,21 @@ class Sweep(ZNB_gen.SENSe.SWEep):
         # type: (int) -> SweepSegment
         return SweepSegment(n, self.channel)
 
-    continuous_sweep = SCPIProperty(ZNB_gen.INITiate.CONTinuous,
-                                    bool,
-                                    get_root_node=lambda sweep: sweep.channel.instrument.scpi)
+    continuous_sweep = SCPIProperty(
+        ZNB_gen.INITiate.CONTinuous,
+        bool,
+        get_root_node=lambda sweep: sweep.channel.instrument.scpi,
+    )
     _SWE = ZNB_gen.SENSe.SWEep
 
-    analog_sweep_is_enabled = SCPIPropertyMapping(_SWE.GENeration, str, {"ANALog": True, "STEPped": False})
+    analog_sweep_is_enabled = SCPIPropertyMapping(
+        _SWE.GENeration, str, {"ANALog": True, "STEPped": False}
+    )
     count = SCPIProperty(_SWE.COUNt, int)
     dwell_time = SCPIProperty(_SWE.DWELl, float)
-    dwell_on_each_partial_measurement = SCPIPropertyMapping(_SWE.DWELl.IPOint, str, {"ALL": True, "FIRSt": False})
+    dwell_on_each_partial_measurement = SCPIPropertyMapping(
+        _SWE.DWELl.IPOint, str, {"ALL": True, "FIRSt": False}
+    )
     points = SCPIProperty(_SWE.POINts, int)
     points_minmax = SCPIPropertyMinMax(points)
     time = SCPIProperty(_SWE.TIME, float)
