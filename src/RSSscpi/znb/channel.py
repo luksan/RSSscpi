@@ -40,9 +40,7 @@ class Channel:
     def TRIGger(self) -> ZNB_gen.TRIGger:
         return self.instrument.TRIGger[self.n]
 
-    name = SCPIProperty(
-        ZNB_gen.CONFigure.CHANnel.NAME, str, get_root_node=lambda self: self.CONFch
-    )
+    name = SCPIProperty(ZNB_gen.CONFigure.CHANnel.NAME, str, parent_prop=CONFch)
     """
     The channel name, CONFigure:CHANnel<Ch>:NAME
     """
@@ -66,9 +64,7 @@ class Channel:
     def get_vna_port(self, port_no):
         return ChannelVNAPort(self, port_no)
 
-    state = SCPIProperty(
-        ZNB_gen.CONFigure.CHANnel.STATe, bool, get_root_node=lambda self: self.CONFch
-    )
+    state = SCPIProperty(ZNB_gen.CONFigure.CHANnel.STATe, bool, parent_prop=CONFch)
     """
     Returns True if the channel is activated. Set to True to create the channel, and to False to delete it.
     """
@@ -116,30 +112,28 @@ class Channel:
         ]
 
     power_level = SCPIProperty(
-        ZNB_gen.SOURce.POWer.LEVel.IMMediate.AMPLitude,
-        float,
-        get_root_node=lambda self: self.SOURce,
+        ZNB_gen.SOURce.POWer.LEVel.IMMediate.AMPLitude, float, parent_prop=SOURce
     )  # type: float
     """
     The channel power level, in dBm.
     """
 
     _FRQ = ZNB_gen.SENSe.FREQuency
-    freq_cw = SCPIProperty(_FRQ.CW, float, get_root_node=lambda x: x.SENSe)
+    freq_cw = SCPIProperty(_FRQ.CW, float, parent_prop=SENSe)
     freq_cw_minmax = SCPIPropertyMinMax(freq_cw)
-    freq_start = SCPIProperty(_FRQ.STARt, float, get_root_node=lambda x: x.SENSe)
+    freq_start = SCPIProperty(_FRQ.STARt, float, parent_prop=SENSe)
     freq_start_minmax = SCPIPropertyMinMax(freq_start)
-    freq_stop = SCPIProperty(_FRQ.STOP, float, get_root_node=lambda x: x.SENSe)
+    freq_stop = SCPIProperty(_FRQ.STOP, float, parent_prop=SENSe)
     freq_stop_minmax = SCPIPropertyMinMax(freq_stop)
-    freq_center = SCPIProperty(_FRQ.CENTer, float, get_root_node=lambda x: x.SENSe)
+    freq_center = SCPIProperty(_FRQ.CENTer, float, parent_prop=SENSe)
     freq_center_minmax = SCPIPropertyMinMax(freq_center)
-    freq_span = SCPIProperty(_FRQ.SPAN, float, get_root_node=lambda x: x.SENSe)
+    freq_span = SCPIProperty(_FRQ.SPAN, float, parent_prop=SENSe)
     freq_span_minmax = SCPIPropertyMinMax(freq_span)
 
-    ifbw = SCPIProperty(ZNB_gen.SENSe.BANDwidth, int, get_root_node=lambda x: x.SENSe)
+    ifbw = SCPIProperty(ZNB_gen.SENSe.BANDwidth, int, parent_prop=SENSe)
     ifbw_minmax = SCPIPropertyMinMax(ifbw)
     if_selectivity = SCPIProperty(
-        ZNB_gen.SENSe.BANDwidth.RESolution.SELect, str, get_root_node=lambda x: x.SENSe
+        ZNB_gen.SENSe.BANDwidth.RESolution.SELect, str, parent_prop=SENSe
     )
 
     def cal_auto(
