@@ -286,26 +286,15 @@ class Trace:
                     raise ValueError("Settings conflic results in different y axis ranges")
             scale_check = new_scale
 
-        prop_set_order = []  # the (prop, values) that will be set, in order
         if ref_pos is not None:
             if not 0 <= ref_pos <= 100:
                 raise ValueError("ref_pos must be in range [0-100]")
-            prop_set_order.append(("ref_pos", ref_pos))
-
-        if ref_level is not None:
-            prop_set_order.append(("ref_level", ref_level))
 
         if scale_div is not None:
             check_scaling(scale_div)
-            prop_set_order.append(("scale_per_div", scale_div))
 
-        tb_order = []
-        if bottom is not None:
-            tb_order.append(("scale_bottom", bottom))
-        if top is not None:
-            tb_order.append(("scale_top", top))
-
-        if len(tb_order) == 2:
+        set_top_before_bottom = False
+        if None not in (top, bottom):
             if top <= bottom:
                 raise ValueError("top must be greater than bottom")
             check_scaling((top - bottom) / 10.0)
@@ -313,6 +302,11 @@ class Trace:
             if ref_level is not None:
                 if not bottom <= ref_level <= top:
                     raise ValueError("ref_level is outside specified bottom-top range")
+            else:
+                # When setting both top and bottom
+                # check that we don't try to set a new bottom value higher than the current top
+                if self.scale_top <= bottom:
+                    set_top_before_bottom = True
 
         if scale_check and None not in (ref_level, ref_pos):
             # check that the ref level doesn't conflict with other settings
@@ -321,19 +315,22 @@ class Trace:
                     bottom is not None and bottom + rp * scale_check != ref_level):
                 raise ValueError("Y axis scaling parameters conflict")
 
-        if len(tb_order) == 2:
-            # When setting both top and bottom
-            # check that we don't try to set a new bottom value higher than the current top
-            if scale_check and None not in (ref_level, ref_pos):
-                current_top = ref_level + (10 - ref_pos / 10.0) * scale_check
-            else:
-                current_top = self.scale_top
-            if current_top <= bottom:  # The new bottom will be higher than current top, adjust top first
-                tb_order = reversed(tb_order)
-        prop_set_order.extend(tb_order)
-
-        for prop, value in prop_set_order:
-            setattr(self, prop, value)
+        if ref_pos is not None:
+            self.ref_pos = ref_pos
+        if ref_level is not None:
+            self.ref_level = ref_level
+        if scale_div is not None:
+            self.scale_per_div = scale_div
+        if set_top_before_bottom:
+            if top is not None:
+                self.scale_top = top
+            if bottom is not None:
+                self.scale_bottom = bottom
+        else:
+            if bottom is not None:
+                self.scale_bottom = bottom
+            if top is not None:
+                self.scale_top = top
 
     _SCALE = ZNB_gen.DISPlay.WINDow.TRACe.Y.SCALe
     scale_per_div = SCPIProperty(_SCALE.PDIVision, float, callback=_add_trace_name_arg_cb, get_root_node=_disp_node)

@@ -3,7 +3,8 @@
 
 @author: Lukas Sandström
 """
-from __future__ import absolute_import, division, print_function
+
+import math
 
 import pytest
 from .conftest import VISA  # noqa: F401
@@ -875,6 +876,72 @@ class TestTrace(PropertyTester):
         ("ref_pos",         "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition",   "{:s} {!s}, 'Tr3'", "{:s}?"),
     ]
 
+    class ScaleModel:
+        def __init__(self, cmds):
+            self.top = 10
+            self.bottom = -90
+            self._ref_pos = 0.9
+            self.parse_scpi_cmds(cmds)
+
+        @property
+        def ref_pos(self):
+            return self._ref_pos * 100
+
+        @ref_pos.setter
+        def ref_pos(self, value):
+            scale = self.scale_div
+            ref_level = self.ref_level
+            self._ref_pos = value / 100
+            self.bottom = ref_level - scale * 10 * self._ref_pos
+            self.top = self.bottom + scale * 10
+
+        @property
+        def scale_div(self):
+            return (self.top - self.bottom) / 10
+
+        @scale_div.setter
+        def scale_div(self, scale):
+            ref_value = self.ref_level
+            self.bottom = ref_value - scale * 10 * self._ref_pos
+            self.top = self.bottom + scale * 10
+
+        @property
+        def ref_level(self):
+            return self.bottom + self.scale_div * 10 * self._ref_pos
+
+        @ref_level.setter
+        def ref_level(self, value):
+            scale = self.scale_div
+            self.bottom = value - scale * 10 * self._ref_pos
+            self.top = self.bottom + scale * 10
+
+        def assert_params(self, scale_params):
+            for attr, expected in scale_params.items():
+                actual = getattr(self, attr)
+                assert math.isclose(actual, expected), \
+                    "Incorrect value for {}, {} (actual) != {} (expected)".format(attr, actual, expected)
+
+        def parse_scpi_cmds(self, cmd_list):
+            for cmd in cmd_list:
+                if cmd[-1] == "?":
+                    continue
+                node, args = cmd.split(" ", maxsplit=1)
+                leaf = node.split(":")[-1]
+                value = float(args.split(",")[0])
+                if leaf == "RPOSition":
+                    self.ref_pos = value
+                elif leaf == "RLEVel":
+                    self.ref_level = value
+                elif leaf == "PDIVision":
+                    self.scale_div = value
+                elif leaf == "BOTTom":
+                    self.bottom = value
+                elif leaf == "TOP":
+                    self.top = value
+                else:
+                    assert False, "Unknown command " + cmd
+
+
     def test_trace_format(self, tr, visa):
         # type: (ZNB, VISA) -> None
         visa.ret = "REAL"
@@ -1019,6 +1086,10 @@ class TestTrace(PropertyTester):
             "DISPlay:WINDow:TRACe:Y:SCALe:TOP 20, 'Tr3'",
             "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom 10, 'Tr3'",
         ]),
+        pytest.param({"top": -20, "scale_div": 20}, [
+            "DISPlay:WINDow:TRACe:Y:SCALe:TOP -20, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 20, 'Tr3'",
+        ], marks=pytest.mark.xfail),  # This case will have to be considered
         ({"top": 0, "bottom": 10}, (ValueError, [])),
         ({"top": 10, "bottom": 0, "scale_div": 5}, (ValueError, [])),
         ({"top": 10, "bottom": 0, "ref_level": -5}, (ValueError, [])),
@@ -1034,7 +1105,9 @@ class TestTrace(PropertyTester):
         tr._cmd_cnt = tr.channel.instrument.command_cnt  # don't test trace select all the time
         if not isinstance(expected, tuple):
             tr.set_scaling(**scale_params)
-            assert visa.cmd == expected
+            cmds = visa.cmd
+            self.ScaleModel(cmds).assert_params(scale_params)
+            assert cmds == expected
         else:
             with pytest.raises(expected[0]):
                 tr.set_scaling(**scale_params)
