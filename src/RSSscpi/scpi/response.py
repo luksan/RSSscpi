@@ -5,15 +5,23 @@
 """
 
 from typing import Callable, List, Tuple, TypeVar
-import warnings
 
 try:
     import numpy
-except ImportError:
-    warnings.warn("numpy import failed. Some functionality will be missing.")
+except ImportError as err:
+    def numpy_proxy(exception):
+        class Numpy:
+            def __setattr__(self, key, value):
+                raise exception from exception
 
-    class numpy:
-        float64 = None
+            def __getattribute__(self, item):
+                if item == "float64":
+                    # Needed since it is used as default param in func signature
+                    return None
+                raise exception from exception
+
+        return Numpy()
+    numpy = numpy_proxy(err)
 
 T1 = TypeVar("T1")
 T2 = TypeVar("T2")
