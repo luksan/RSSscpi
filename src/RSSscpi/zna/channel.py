@@ -74,7 +74,15 @@ class Channel(znb.Channel):
         return ChannelVNAPort(self, port_no)
 
 
-class Sweep(ZNA_gen.SENSe.SWEep, znb.Sweep):
+class Sweep(znb.Sweep):
+    @property
+    def INITiate(self) -> ZNA_gen.INITiate:
+        return super().INITiate
+
+    @property
+    def SWEep(self) -> ZNA_gen.SENSe.SWEep:
+        return super().SWEep
+
     def get_segment(self, n):
         return SweepSegment(n, channel=self.channel)
 

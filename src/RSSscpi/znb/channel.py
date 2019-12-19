@@ -496,7 +496,7 @@ class SweepSegments:
         return float(self._SEG.SWEep.TIME.SUM.q())
 
 
-class Sweep(ZNB_gen.SENSe.SWEep):
+class Sweep:
     # Using an Enum for the variuos sweep types only causes complications, with no clear benefit
     LIN = "LIN"
     LOG = "LOG"
@@ -505,12 +505,7 @@ class Sweep(ZNB_gen.SENSe.SWEep):
     POINT = "POIN"
     SEGMENT = "SEGM"
 
-    def __init__(self, channel):
-        """
-
-        :param Channel channel:
-        """
-        super(Sweep, self).__init__(parent=channel.SENSe)
+    def __init__(self, channel: Channel):
         self.channel = channel
         self.segments = SweepSegments(self)
 
@@ -518,26 +513,32 @@ class Sweep(ZNB_gen.SENSe.SWEep):
         # type: (int) -> SweepSegment
         return SweepSegment(n, self.channel)
 
+    @property
+    def INITiate(self) -> ZNB_gen.INITiate:
+        return self.channel.instrument.scpi.INITiate[self.channel.n]
+
+    @property
+    def SWEep(self) -> ZNB_gen.SENSe.SWEep:
+        return self.channel.SENSe.SWEep
+
     continuous_sweep = SCPIProperty(
-        ZNB_gen.INITiate.CONTinuous,
-        bool,
-        get_root_node=lambda sweep: sweep.channel.instrument.scpi,
+        ZNB_gen.INITiate.CONTinuous, bool, parent_prop=INITiate
     )
     _SWE = ZNB_gen.SENSe.SWEep
 
     analog_sweep_is_enabled = SCPIPropertyMapping(
-        _SWE.GENeration, str, {"ANALog": True, "STEPped": False}
+        _SWE.GENeration, str, {"ANALog": True, "STEPped": False}, parent_prop=SWEep
     )
-    count = SCPIProperty(_SWE.COUNt, int)
-    dwell_time = SCPIProperty(_SWE.DWELl, float)
+    count = SCPIProperty(_SWE.COUNt, int, parent_prop=SWEep)
+    dwell_time = SCPIProperty(_SWE.DWELl, float, parent_prop=SWEep)
     dwell_on_each_partial_measurement = SCPIPropertyMapping(
-        _SWE.DWELl.IPOint, str, {"ALL": True, "FIRSt": False}
+        _SWE.DWELl.IPOint, str, {"ALL": True, "FIRSt": False}, parent_prop=SWEep
     )
-    points = SCPIProperty(_SWE.POINts, int)
+    points = SCPIProperty(_SWE.POINts, int, parent_prop=SWEep)
     points_minmax = SCPIPropertyMinMax(points)
-    time = SCPIProperty(_SWE.TIME, float)
+    time = SCPIProperty(_SWE.TIME, float, parent_prop=SWEep)
     time_minmax = SCPIPropertyMinMax(time)
-    type = SCPIProperty(_SWE.TYPE, str)
-    use_auto_time = SCPIProperty(_SWE.TIME.AUTO, bool)
-    step_size = SCPIProperty(_SWE.STEP, float)
+    type = SCPIProperty(_SWE.TYPE, str, parent_prop=SWEep)
+    use_auto_time = SCPIProperty(_SWE.TIME.AUTO, bool, parent_prop=SWEep)
+    step_size = SCPIProperty(_SWE.STEP, float, parent_prop=SWEep)
     step_size_minmax = SCPIPropertyMinMax(step_size)

@@ -316,7 +316,7 @@ class TestChannel(PropertyTester):
         ch.sweep.points = 301
         assert isinstance(ch.sweep.points, int)
         ch.sweep.points_minmax = 301
-        ch.sweep.TYPE.w("LIN")
+        ch.sweep.SWEep.TYPE.w("LIN")
         assert ["SENSe3:SWEep:POINts? DEF",
                 "SENSe3:SWEep:POINts 301",
                 "SENSe3:SWEep:POINts?",
@@ -574,7 +574,7 @@ class TestSweep(PropertyTester):
                 ] == visa.cmd
 
     bool_properties = [
-        ("continuous_sweep", "INITiate:CONTinuous", "{:s} {:s}", "{:s}?"),
+        ("continuous_sweep", "INITiate2:CONTinuous", "{:s} {:s}", "{:s}?"),
     ]
 
     float_properties = [
@@ -600,7 +600,7 @@ class TestSweepSegments:
 
     def test_segments_properties(self, sw, visa):
         # type: (znb.Sweep, VISA) -> None
-        sw.TYPE.w(sw.SEGMENT)
+        sw.SWEep.TYPE.w(sw.SEGMENT)
 
         sw.analog_sweep_is_enabled = True
         sw.analog_sweep_is_enabled = False

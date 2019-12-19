@@ -183,10 +183,18 @@ class ChannelVNAPort(znb.ChannelVNAPort):
     """AUTO | MANual | LNOise"""
 
 
-class Sweep(ZVA_gen.SENSe.SWEep, znb.Sweep):
+class Sweep(znb.Sweep):
     def __init__(self, channel):
         super(Sweep, self).__init__(channel=channel)
         self.segments = SweepSegments(self)
+
+    @property
+    def INITiate(self) -> ZVA_gen.INITiate:
+        return super().INITiate
+
+    @property
+    def SWEep(self) -> ZVA_gen.SENSe.SWEep:
+        return super().SWEep
 
     @property
     def dwell_on_each_partial_measurement(self):
