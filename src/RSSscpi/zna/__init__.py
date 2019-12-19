@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+
+@author: Lukas Sandström
+"""
+
+import logging
+
 from .. import znb
 from .. import network as net
 
@@ -21,6 +29,11 @@ def connect_ip(ip_address: str) -> "ZNA":
 
 class ZNA(znb.ZNB):
     _scpi = ZNA_gen()
+
+    def __init__(self, visa_res):
+        super().__init__(visa_res)
+        self.logger = logging.getLogger(__name__)
+        self.visa_logger = self.logger.getChild("VISA")
 
     def init(self, ese=None, **kwargs):
         if ese is None:
