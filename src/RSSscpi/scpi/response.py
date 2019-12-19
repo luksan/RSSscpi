@@ -50,6 +50,9 @@ class SCPIResponse:
 
     __bool__ = __nonzero__
 
+    def __repr__(self):
+        return "{}('{}')".format(type(self).__name__, str(self))
+
     def __str__(self):
         x = self.raw.decode(self.encoding).replace("\r", "\n")
         return x.strip().strip("'")
