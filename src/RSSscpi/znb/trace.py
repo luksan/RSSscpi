@@ -1,3 +1,4 @@
+import math
 from math import floor, log10
 import re
 from typing import List
@@ -275,45 +276,69 @@ class Trace:
         :param ref_pos:
         :return:
         """
-        scale_check = 0
+        def get_ref_pos():
+            if ref_pos is None:
+                return self.ref_pos
+            return ref_pos
 
-        def check_scaling(new_scale):
-            nonlocal scale_check
-            if new_scale <= 0:
-                raise ValueError("Scaling must be larger than 0.")
-            if scale_check:
-                if new_scale != scale_check:
-                    raise ValueError("Settings conflic results in different y axis ranges")
-            scale_check = new_scale
+        def check_invariants():
+            if ref_level is not None:
+                if bottom is not None:
+                    if bottom > ref_level:
+                        raise ValueError("bottom must be lower or equal to ref_level")
+                if top is not None:
+                    if top < ref_level:
+                        raise ValueError("top must be higher than or equal top ref_level")
+            if None not in (top, bottom):
+                if top <= bottom:
+                    raise ValueError("top must be higher than bottom")
+                if scale_div is not None:
+                    if not math.isclose(scale_div, (top - bottom) / 10):
+                        raise ValueError("Settings conflict with scaling.")
+            if scale_div is not None:
+                if scale_div <= 0:
+                    raise ValueError("scale_div must be greater than 0")
 
         if ref_pos is not None:
             if not 0 <= ref_pos <= 100:
                 raise ValueError("ref_pos must be in range [0-100]")
 
+        check_invariants()
+
         if scale_div is not None:
-            check_scaling(scale_div)
-
-        set_top_before_bottom = False
-        if None not in (top, bottom):
-            if top <= bottom:
-                raise ValueError("top must be greater than bottom")
-            check_scaling((top - bottom) / 10.0)
-
             if ref_level is not None:
-                if not bottom <= ref_level <= top:
-                    raise ValueError("ref_level is outside specified bottom-top range")
-            else:
-                # When setting both top and bottom
-                # check that we don't try to set a new bottom value higher than the current top
-                if self.scale_top <= bottom:
-                    set_top_before_bottom = True
-
-        if scale_check and None not in (ref_level, ref_pos):
-            # check that the ref level doesn't conflict with other settings
-            rp = ref_pos / 10.0
-            if (top is not None and top - (10 - rp) * scale_check != ref_level) or (
-                    bottom is not None and bottom + rp * scale_check != ref_level):
-                raise ValueError("Y axis scaling parameters conflict")
+                # The scaling is fully determined, ignore top and bottom
+                top = None
+                bottom = None
+            elif top is not None:
+                # Set scale and ref level instead of top/bottom to avoid
+                # conflicts with previous top/bottom settings
+                ref_level = top - (100 - get_ref_pos()) * scale_div / 10
+                check_invariants()
+                top = None
+                bottom = None
+            elif bottom is not None:
+                ref_level = bottom + get_ref_pos() * scale_div / 10
+                check_invariants()
+                bottom = None
+        elif ref_level is not None:
+            if top is not None:
+                scale_div = 10 * (top - ref_level) / (100 - get_ref_pos())
+                check_invariants()
+                top = None
+                bottom = None
+            elif bottom is not None:
+                scale_div = 10 * (ref_level - bottom) / get_ref_pos()
+                check_invariants()
+                bottom = None
+        elif None not in (top, bottom):
+            # Set scale and ref level instead of top/bottom to avoid
+            # conflicts with previous top/bottom settings
+            scale_div = (top - bottom) / 10
+            ref_level = top - (100 - get_ref_pos()) * scale_div / 10
+            check_invariants()
+            top = None
+            bottom = None
 
         if ref_pos is not None:
             self.ref_pos = ref_pos
@@ -321,16 +346,10 @@ class Trace:
             self.ref_level = ref_level
         if scale_div is not None:
             self.scale_per_div = scale_div
-        if set_top_before_bottom:
-            if top is not None:
-                self.scale_top = top
-            if bottom is not None:
-                self.scale_bottom = bottom
-        else:
-            if bottom is not None:
-                self.scale_bottom = bottom
-            if top is not None:
-                self.scale_top = top
+        if top is not None:
+            self.scale_top = top
+        if bottom is not None:
+            self.scale_bottom = bottom
 
     _SCALE = ZNB_gen.DISPlay.WINDow.TRACe.Y.SCALe
     scale_per_div = SCPIProperty(_SCALE.PDIVision, float, callback=_add_trace_name_arg_cb, get_root_node=_disp_node)

@@ -878,10 +878,28 @@ class TestTrace(PropertyTester):
 
     class ScaleModel:
         def __init__(self, cmds):
-            self.top = 10
-            self.bottom = -90
+            self._top = 10
+            self._bottom = -90
             self._ref_pos = 0.9
             self.parse_scpi_cmds(cmds)
+
+        @property
+        def top(self):
+            return self._top
+
+        @top.setter
+        def top(self, value):
+            assert value > self.bottom
+            self._top = value
+
+        @property
+        def bottom(self):
+            return self._bottom
+
+        @bottom.setter
+        def bottom(self, value):
+            assert value < self.top
+            self._bottom = value
 
         @property
         def ref_pos(self):
@@ -889,6 +907,7 @@ class TestTrace(PropertyTester):
 
         @ref_pos.setter
         def ref_pos(self, value):
+            assert 0 <= value <= 100
             scale = self.scale_div
             ref_level = self.ref_level
             self._ref_pos = value / 100
@@ -901,6 +920,7 @@ class TestTrace(PropertyTester):
 
         @scale_div.setter
         def scale_div(self, scale):
+            assert scale > 0
             ref_value = self.ref_level
             self.bottom = ref_value - scale * 10 * self._ref_pos
             self.top = self.bottom + scale * 10
@@ -1077,32 +1097,41 @@ class TestTrace(PropertyTester):
         ({"ref_pos": 10}, ["DISPlay:WINDow:TRACe:Y:SCALe:RPOSition 10, 'Tr3'"]),
         ({"ref_pos": 103}, (ValueError, [])),
         ({"top": 10, "bottom": 0}, [
-            "DISPlay:WINDow:TRACe:Y:SCALe:TOP?",
-            "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom 0, 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:TOP 10, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition?",
+            "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel 9.0, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 1.0, 'Tr3'",
         ]),
-        ({"top": 20, "bottom": 10}, [  # Reversed top/bottom setting, since bottom > old_top (1)
-            "DISPlay:WINDow:TRACe:Y:SCALe:TOP?",
-            "DISPlay:WINDow:TRACe:Y:SCALe:TOP 20, 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom 10, 'Tr3'",
+        ({"top": 20, "bottom": 10}, [
+            "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition?",
+            "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel 19.0, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 1.0, 'Tr3'",
         ]),
-        pytest.param({"top": -20, "scale_div": 20}, [
+        ({"top": -20, "ref_pos": 30}, [
+            "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition 30, 'Tr3'",
             "DISPlay:WINDow:TRACe:Y:SCALe:TOP -20, 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 20, 'Tr3'",
-        ], marks=pytest.mark.xfail),  # This case will have to be considered
+        ]),
+        ({"top": -20, "ref_level": -40}, [
+            "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition?",
+            "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel -40, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 20.0, 'Tr3'",
+        ]),
+        ({"top": -20, "scale_div": 20}, [
+            "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition?",
+            "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel -40.0, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 20, 'Tr3'"
+        ]),
         ({"top": 0, "bottom": 10}, (ValueError, [])),
         ({"top": 10, "bottom": 0, "scale_div": 5}, (ValueError, [])),
         ({"top": 10, "bottom": 0, "ref_level": -5}, (ValueError, [])),
         ({"top": 10, "bottom": -10, "scale_div": 2, "ref_level": -2, "ref_pos": 40}, [
             "DISPlay:WINDow:TRACe:Y:SCALe:RPOSition 40, 'Tr3'",
             "DISPlay:WINDow:TRACe:Y:SCALe:RLEVel -2, 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 2, 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:BOTTom -10, 'Tr3'",
-            "DISPlay:WINDow:TRACe:Y:SCALe:TOP 10, 'Tr3'",
+            "DISPlay:WINDow:TRACe:Y:SCALe:PDIVision 2, 'Tr3'"
         ]),
     ])
     def test_set_scaling(self, scale_params, expected, tr: znb.Trace, visa: VISA):
         tr._cmd_cnt = tr.channel.instrument.command_cnt  # don't test trace select all the time
+        visa.ret = "90"  # default ref pos
         if not isinstance(expected, tuple):
             tr.set_scaling(**scale_params)
             cmds = visa.cmd
