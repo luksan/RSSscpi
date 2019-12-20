@@ -121,6 +121,9 @@ class Trace:
     def _calc_node(self):
         return self.channel.CALC
 
+    def _conf_node(self):
+        return self.channel.instrument.scpi.CONFigure
+
     def _corr_node(self):
         return self.channel.SENSe.CORRection
 
@@ -128,7 +131,7 @@ class Trace:
         return self.channel.SENSe.SWEep
 
     def _disp_node(self):
-        return self.channel.instrument.DISPlay
+        return self.channel.instrument.scpi.DISPlay
 
     # noinspection PyUnusedLocal
     def _make_active_cb(self, *args, **kwargs):
@@ -398,6 +401,12 @@ class Trace:
         """
         diagram.state = True
         diagram.WINDow.TRACe.EFEed.w(self.name)
+
+    def query_diagram(self):
+        n = int(self._conf_node().TRACe.WINDow.q(self.name))
+        if not n:
+            return None
+        return self.channel.instrument.get_diagram(n)
 
     def query_multiple_sweep_data(self, first_sweep: int, last_sweep: int = None) -> List[List[complex]]:
         """

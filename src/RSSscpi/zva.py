@@ -249,6 +249,9 @@ class Trace(znb.Trace):
     def copy_assign_math(self, new_name: str, equation: str, diagram=None) -> "Trace":
         return super(Trace, self).copy_assign_math(new_name, equation, diagram)
 
+    def query_diagram(self) -> NoReturn:
+        raise NotImplementedError("The ZVA does not support CONF:TRAC:WIND?")
+
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)

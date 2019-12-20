@@ -961,7 +961,6 @@ class TestTrace(PropertyTester):
                 else:
                     assert False, "Unknown command " + cmd
 
-
     def test_trace_format(self, tr, visa):
         # type: (ZNB, VISA) -> None
         visa.ret = "REAL"
@@ -976,9 +975,24 @@ class TestTrace(PropertyTester):
         # type: (znb.Trace, VISA) -> None
         dia = tr.channel.instrument.get_diagram(2)
         tr.assign_diagram(dia)
-        assert ["DISPlay:WINDow2:STATe ON",
-                "DISPlay:WINDow2:TRACe:EFEed 'Tr3'",
-                ] == visa.cmd
+        assert visa.cmd == [
+            "DISPlay:WINDow2:STATe ON",
+            "DISPlay:WINDow2:TRACe:EFEed 'Tr3'",
+        ]
+
+    def test_query_diagram(self, tr: znb.Trace, visa: VISA):
+        if type(tr.channel.instrument).__name__ == "ZVA":
+            with pytest.raises(NotImplementedError):
+                tr.query_diagram()
+            return
+        visa.ret = "0"
+        assert tr.query_diagram() is None
+        visa.ret = "1"
+        assert tr.query_diagram().n == 1
+        assert visa.cmd == [
+            "CONFigure:TRACe:WINDow? 'Tr3'",
+            "CONFigure:TRACe:WINDow? 'Tr3'",
+        ]
 
     def test_trace_copy(self, tr, visa):
         # type: (znb.Trace, VISA) -> None
