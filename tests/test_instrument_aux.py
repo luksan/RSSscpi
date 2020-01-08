@@ -104,6 +104,10 @@ def test_LimitedCapacityDict():
         d[n] = str(n)
     assert len(d) == 100
     assert list(d.keys()) == list(range(100))
+    d.max_len = 150
+    assert len(d) == 100
+    d.max_len = 100
+    assert len(d) == 100
     d.max_len = 50
     assert len(d) == 50
     assert list(d.keys()) == list(range(50, 100))
@@ -111,3 +115,8 @@ def test_LimitedCapacityDict():
         d[n] = str(n)
     assert len(d) == 50
     assert list(d.keys()) == list(range(70, 100)) + list(range(20))
+
+    # check that rewritten elements are moved to the end
+    for n in range(70, 80):
+        d[n] = str(n)
+    assert list(d.keys()) == list(range(80, 100)) + list(range(20)) + list(range(70, 80))

@@ -22,7 +22,7 @@ from .scpi.scpi_registers import StatusByteRegister, EventStatusRegister
 
 
 class LimitedCapacityDict(OrderedDict):
-    def __init__(self, max_len=None):
+    def __init__(self, max_len: int = None):
         """
         Creates a LimitedCapacity dict, which will hold a maximum of max_len entries.
         Setting max_len to None or 0 will make the capacity unlimited.
@@ -30,7 +30,7 @@ class LimitedCapacityDict(OrderedDict):
         :param int or None max_len: The maximum number of entries in the dict.
         """
         self._max_len = max_len
-        super(LimitedCapacityDict, self).__init__()
+        super().__init__()
 
     @property
     def max_len(self):
@@ -42,16 +42,13 @@ class LimitedCapacityDict(OrderedDict):
         self._check_len()
 
     def _check_len(self):
-        if self._max_len and self._max_len < len(self):
-            excess = len(self) - self._max_len
-            keys = [key for n, key in zip(range(excess), self)]  # Create a list contaioning overflowing keys
-            for key in keys:  # Don't iterate over self while deleting
-                del self[key]
+        if self._max_len:
+            for _ in range(len(self) - self._max_len):
+                self.popitem(last=False)
 
     def __setitem__(self, key, value):
-        if key in self:  # Move the element to the end, if already inserted
-            del self[key]
-        super(LimitedCapacityDict, self).__setitem__(key, value)
+        self.pop(key, None)  # Remove the element so that it is moved to the end, if it already is present
+        super().__setitem__(key, value)
         self._check_len()
 
 
