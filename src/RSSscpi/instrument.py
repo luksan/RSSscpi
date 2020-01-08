@@ -410,7 +410,7 @@ class Instrument:
             self._in_callback.release()
             self._write_raw(x)
 
-    def _query(self, cmd_str):
+    def _query(self, cmd_str: str):
         c = self._begin_visa_call(cmd_str)
         x = None
         try:
@@ -419,7 +419,7 @@ class Instrument:
         finally:
             self._end_visa_call(c, x)
 
-    def _query_raw(self, data):
+    def _query_raw(self, data: bytes):
         cmd_str = self._begin_visa_call(data)
         x = None
         try:

@@ -40,7 +40,7 @@ class SCPIProperty:
         :param docstr:
             The doctring of the SCPIProperty
         """
-        self._leaf_node = node
+        self._leaf_node = node  # type: SCPINodeBase
         self._conv = conv
         self._callback = callback
         if parent_prop:

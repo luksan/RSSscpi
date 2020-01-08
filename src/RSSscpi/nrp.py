@@ -79,7 +79,7 @@ class NRPxxSN(Instrument):
         """
         Sends INITiate:IMMediate to the sensor to begin a measurement cycle.
         """
-        self.scpi.INITiate.IMMediate.w()  # TODO: this should be in Instrument
+        self.scpi.INITiate.IMMediate.w()
 
     def cal_zero(self):
         """

@@ -216,7 +216,8 @@ class Trace:
     @staticmethod
     def check_if_name_is_valid(name: str, raise_err: bool = False) -> bool:
         """
-        The first character of a trace name can be either one of the upper case letters A to Z, one of the lower case letters a to z, an underscore _ or a square bracket [ or ].
+        The first character of a trace name can be either one of the upper case letters A to Z,
+        one of the lower case letters a to z, an underscore _ or a square bracket [ or ].
         For all other characters of a trace name, the numbers 0 to 9 can be used in addition.
 
         :param name: A string which will be checked to see if it is a valid trace name
@@ -413,7 +414,7 @@ class Trace:
         This function is used to read back trace data when the instrument is setup to perform multiple
         sweeps in single sweep mode.
 
-        It does not work if the instrument is in continiuous sweep mode, or if the sweep count is 1.
+        It does not work if the instrument is in continuous sweep mode, or if the sweep count is 1.
 
         :param int first_sweep: The number of the first sweep to return, starting from 1
         :param int last_sweep: The number of the last sweep, or None. If None, only one sweep is returned.
