@@ -93,7 +93,7 @@ class SCPICmdFormatter(string.Formatter):
 
 # http://stackoverflow.com/questions/16244923/how-to-make-a-custom-exception-class-with-multiple-init-args-pickleable
 # http://bugs.python.org/issue1692335
-class InstrumentError(BaseException):
+class InstrumentError(Exception):
     def __init__(self, err_no=0, err_str="", stack=None):
         super(InstrumentError, self).__init__()
         self.err_no = err_no
