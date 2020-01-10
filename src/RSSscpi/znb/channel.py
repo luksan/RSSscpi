@@ -94,7 +94,9 @@ class Channel:
         :rtype: Trace
         """
         name = str(self.CALC.PARameter.SELect.q())
-        # n = self.instrument.CONFigure.TRACe.CHANnel.NAME.ID.q(name)
+        if name is "":
+            # There is no active trace in the channel
+            return None
         return self.get_trace(name)
 
     @active_trace.setter
