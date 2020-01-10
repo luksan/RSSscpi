@@ -237,6 +237,12 @@ class Trace:
             self._n = int(self.channel.instrument.CONFigure.TRACe.NAME.ID.q(self.name))
         return self._n
 
+    def _query_WndTr(self):
+        n = int(self._conf_node().TRACe.WINDow.TRACe.q(self.name))
+        if not n:
+            return None
+        return n
+
     def query_cal_state_label(self):
         """
         Returns the system error correction state label for the trace as a string.
